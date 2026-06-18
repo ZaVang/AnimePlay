@@ -1,7 +1,7 @@
 {
     "id": 880,
     "name": "水果篮子",
-    "image_path": "data/images/anime/880.jpg",
+    "image_path": "data\\images\\anime\\880.jpg",
     "points": 7.5,
     "cost": 1,
     "rarity": "N",

@@ -1,0 +1,40 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/86/f0/95784_crt_IyU9O.jpg?r=1751205899",
+        "grid": "https://lain.bgm.tv/pic/crt/g/86/f0/95784_crt_IyU9O.jpg?r=1751205899",
+        "large": "https://lain.bgm.tv/pic/crt/l/86/f0/95784_crt_IyU9O.jpg?r=1751205899",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/86/f0/95784_crt_IyU9O.jpg?r=1751205899"
+    },
+    "summary": "本作の主人公。唯一の属性「反転」により全てのステータス値が0となっているものの、勇者パーティに選ばれてしまい、賢者のジーンに虐められた挙句、騙されて奴隷商に売られてしまう。",
+    "name": "フラム・アプリコット",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "芙兰姆·艾布利科德"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 5,
+        "collects": 18
+    },
+    "id": 95784,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        555445
+    ]
+}

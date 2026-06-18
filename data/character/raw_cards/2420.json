@@ -1,0 +1,61 @@
+{
+    "birth_mon": 5,
+    "gender": "female",
+    "birth_day": 3,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e6/37/2420_crt_IQN42.jpg?r=1725459671",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e6/37/2420_crt_IQN42.jpg?r=1725459671",
+        "large": "https://lain.bgm.tv/pic/crt/l/e6/37/2420_crt_IQN42.jpg?r=1725459671",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e6/37/2420_crt_IQN42.jpg?r=1725459671"
+    },
+    "summary": "蒂法·洛克哈特，《最终幻想》中的女主角，反神罗组织“雪崩”的成员，在米德加7号街经营着一家名为“第七天堂”的酒吧。",
+    "name": "ティファ・ロックハート",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "蒂法·洛克哈特"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Tifa Lockhart"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "5月3日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "167cm"
+        },
+        {
+            "key": "BWH",
+            "value": "B92/W60/H88"
+        }
+    ],
+    "stat": {
+        "comments": 47,
+        "collects": 286
+    },
+    "id": 2420,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        1890
+    ]
+}

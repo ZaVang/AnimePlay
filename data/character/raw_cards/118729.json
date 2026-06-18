@@ -1,0 +1,44 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f6/12/118729_crt_i8coM.jpg?r=1749903959",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f6/12/118729_crt_i8coM.jpg?r=1749903959",
+        "large": "https://lain.bgm.tv/pic/crt/l/f6/12/118729_crt_i8coM.jpg?r=1749903959",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f6/12/118729_crt_i8coM.jpg?r=1749903959"
+    },
+    "summary": "農場主・カーソン家の一人娘。\r\n夢は医者になったジョンの助けになること。幼いころジョンに助けられて以来恋心を抱いている。\r\nソフィアが異母姉（同い年だがフェイのほうが数か月遅れて生まれている）であることを知っており、人前では立場上呼び捨てる一方で二人きりの時だけ「ソフィア姉さま」と呼ぶ。",
+    "name": "フェイ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "菲"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "ja.wikipedia.org/wiki/フロントイノセント"
+        }
+    ],
+    "stat": {
+        "comments": 2,
+        "collects": 14
+    },
+    "id": 118729,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        3206
+    ]
+}

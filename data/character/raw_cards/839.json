@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/25/54/839_crt_tPUzm.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/25/54/839_crt_tPUzm.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/25/54/839_crt_tPUzm.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/25/54/839_crt_tPUzm.jpg"
+    },
+    "summary": "香港人，操纸师，三姊妹侦探社成员之一，黄色头发，\r\n能够把纸变成纸弓箭。\r\n三姊妹中的大姐，25岁，紧张或不安时会有搣自己面颊的小动作。\r\n性格活泼开朗，头脑冷静，于执行任务时多负责拟定战略。",
+    "name": "ミシェール ・チャン",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "蜜雪儿·张"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "ミシェール・チャン"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Michelle Cheung"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "stat": {
+        "comments": 7,
+        "collects": 20
+    },
+    "id": 839,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        1850
+    ]
+}

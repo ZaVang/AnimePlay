@@ -1,0 +1,61 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/dd/9e/8496_crt_608n0.jpg?r=1507282451",
+        "grid": "https://lain.bgm.tv/pic/crt/g/dd/9e/8496_crt_608n0.jpg?r=1507282451",
+        "large": "https://lain.bgm.tv/pic/crt/l/dd/9e/8496_crt_608n0.jpg?r=1507282451",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dd/9e/8496_crt_608n0.jpg?r=1507282451"
+    },
+    "summary": "4年月組。青い髪をシニヨンにしている。",
+    "name": "涼水玉青",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "凉水玉青"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "涼水玉青"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Suzumi Tamao"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        },
+        {
+            "key": "身高",
+            "value": "162cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "stat": {
+        "comments": 34,
+        "collects": 80
+    },
+    "id": 8496,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        2813
+    ]
+}

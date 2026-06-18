@@ -1,0 +1,91 @@
+{
+    "id": 403238,
+    "name": "机动战士高达 水星的魔女 第二季",
+    "image_path": "data\\images\\anime\\403238.jpg",
+    "points": 5.3,
+    "cost": 1,
+    "rarity": "N",
+    "description": "A.S. 122年――\r\n这是许多企业进出宇宙，建构起巨大经济圈的时代。\r\n从水星转学到阿斯提卡西亚高等专门学园的斯莱塔·墨丘利，\r\n作为米奥莉奈的新郎，作为股份有限公司高达的一员，度过了充满邂逅与刺激的学园生活。\r\n\r\n自奎达工厂发生的事件至今已过了两个星期。\r\n斯莱塔身处学园，日日衷心期待米奥莉奈再会之日的到来。\r\n而米奥莉奈则置身贝纳里特集团本部，紧盯着父亲的状态。\r\n新的困难袭向两人，并且将被迫做出决断。\r\n少女们将各自的思想心怀于胸，前行面对高达所带来的强大诅咒。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "百合",
+        "机战",
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "2023-04-09",
+    "rating_rank": 9487,
+    "rating_score": 5.3,
+    "rating_total": 6046,
+    "main_character_ids": [
+        111918,
+        111919
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c4/33/111918_crt_1PK1F.jpg?r=1657925886",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c4/33/111918_crt_1PK1F.jpg?r=1657925886",
+                "large": "https://lain.bgm.tv/pic/crt/l/c4/33/111918_crt_1PK1F.jpg?r=1657925886",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c4/33/111918_crt_1PK1F.jpg?r=1657925886"
+            },
+            "name": "スレッタ・マーキュリー",
+            "summary": "来自水星的转学生，驾驶科2年级生。\r\n性格内向，有些不擅与人沟通。\r\n是水星所开发的MS，GUNDAM AERIAL的驾驶员。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/eb/38/31136_prsn_BfZxJ.jpg?r=1737363637",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/eb/38/31136_prsn_BfZxJ.jpg?r=1737363637",
+                        "large": "https://lain.bgm.tv/pic/crt/l/eb/38/31136_prsn_BfZxJ.jpg?r=1737363637",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/eb/38/31136_prsn_BfZxJ.jpg?r=1737363637"
+                    },
+                    "name": "市ノ瀬加那",
+                    "short_summary": "北海道帯広工業高等学校建築科出身。\r\n札幌スクールオブミュージック&ダンス専門学校出身。2016年4月に事務所に入所。\r\n\r\n2018年1月より放送のTVアニメ『ダーリン・イン・ザ・フランキス』のイチゴ役は市ノ瀬にとって、初のメインキャストとなった。\r\n2018年10月、超!A&G+とAG-ON Premiumで配信している「ラジオどっとあい」第76代目パーソナリティーに選ばれる。\r\n2019年4月7日、Twitterを始める。\r\n\r\n趣味は一人旅、スカイウォッチング、映画鑑賞。小・中学生時代にバスケットボールをやっており、現在も特技としている。\r\n\r\n危険物取扱者丙種、プレゼンテーション作成検定3級、日本語ワープロ検定3級、情報処理技能検定2級、パソコンスピード認定3級の資格を所持している。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 31136,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 111918
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f0/bd/111919_crt_36ee0.jpg?r=1657925907",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f0/bd/111919_crt_36ee0.jpg?r=1657925907",
+                "large": "https://lain.bgm.tv/pic/crt/l/f0/bd/111919_crt_36ee0.jpg?r=1657925907",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f0/bd/111919_crt_36ee0.jpg?r=1657925907"
+            },
+            "name": "ミオリネ・レンブラン",
+            "summary": "容貌美丽，成绩出色的经营战略科2年级生。\r\n是学园理事长，贝纳里特集团总裁德林·伦布兰的独生女。\r\n对自己的父亲怀有强烈的反抗心。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/76/43/15497_prsn_b9qz3.jpg?r=1709906632",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/76/43/15497_prsn_b9qz3.jpg?r=1709906632",
+                        "large": "https://lain.bgm.tv/pic/crt/l/76/43/15497_prsn_b9qz3.jpg?r=1709906632",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/76/43/15497_prsn_b9qz3.jpg?r=1709906632"
+                    },
+                    "name": "Lynn",
+                    "short_summary": "日本的女性声优。アーツビジョン所属。成长于新潟县（出生地为神奈川县）。\r\n兴趣：看电影、照相、乒乓球\r\n由声优事务所ARTSVISION附属的声优养成所日本播音演技研究所，所毕业。\r\n喜欢猫科动物，最喜欢的歌手绚香，最喜欢食物拉面。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 15497,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 111919
+        }
+    ]
+}

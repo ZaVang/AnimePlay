@@ -1,0 +1,40 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ce/48/169203_crt_U7rII.jpg?r=1735630941",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ce/48/169203_crt_U7rII.jpg?r=1735630941",
+        "large": "https://lain.bgm.tv/pic/crt/l/ce/48/169203_crt_U7rII.jpg?r=1735630941",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ce/48/169203_crt_U7rII.jpg?r=1735630941"
+    },
+    "summary": "アメリカ・ミズーリ州に暮らす15歳の少年。\r\n\r\nゲノム編集技術によって生み出された、世界で唯一の、半分ヒトで半分チンパンジーの「ヒューマンジー」で、人間を超える知能とチンパンジーを超える身体能力を併せもつ。冷静沈着で飄々としているが、15歳になって地元の高校に入学してからは、人間への強い興味が芽生えた。他方で、里親であるギルバートとハンナ以外の人間とはこれまでほとんど交流を持ってこなかったため、 しばしば周囲の人間を驚かす言動を取る。",
+    "name": "チャーリー",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "查理"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 65,
+        "collects": 4
+    },
+    "id": 169203,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        495531
+    ]
+}

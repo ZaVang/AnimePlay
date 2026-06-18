@@ -1,0 +1,53 @@
+{
+    "birth_mon": 7,
+    "gender": "female",
+    "birth_day": 7,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/13/26/67584_crt_zitNT.jpg?r=1555251724",
+        "grid": "https://lain.bgm.tv/pic/crt/g/13/26/67584_crt_zitNT.jpg?r=1555251724",
+        "large": "https://lain.bgm.tv/pic/crt/l/13/26/67584_crt_zitNT.jpg?r=1555251724",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/13/26/67584_crt_zitNT.jpg?r=1555251724"
+    },
+    "summary": "本作の主人公。柄井高校の1年生で、部活動は文芸部。\r\n口下手で、伝えたいことがあるときは短冊に川柳を書いている。やや天然なところがある美少女で、男子生徒から密かに人気を集めているが、本人はエイジに恋しており、彼に積極的にアプローチしている。また、見た目に似合わず健啖家である。\r\n父・吉彦、母・千冬、弟・ヒロと4人で暮らしており、特に父親からは溺愛されている。",
+    "name": "雪白七々子",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "雪白七七子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ゆきしろ ななこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yukishiro Nanako"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月7日"
+        }
+    ],
+    "stat": {
+        "comments": 21,
+        "collects": 95
+    },
+    "id": 67584,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        268510
+    ]
+}

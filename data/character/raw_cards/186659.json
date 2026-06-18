@@ -1,0 +1,45 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c8/81/186659_crt_7rdyr.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c8/81/186659_crt_7rdyr.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/c8/81/186659_crt_7rdyr.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c8/81/186659_crt_7rdyr.jpg"
+    },
+    "summary": "高い実力を持った、騎士選抜試験に挑む少女騎士。\r\n\r\n真面目でひたむきに努力を重ねる性格の持ち主。 貧しい村の出身で、礼儀作法には少し不慣れだが、その分、実直さと情熱にあふれている。",
+    "name": "シャーリー・グランズ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "雪莉·格兰兹"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "SHIRLEY GRANTZ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 4,
+        "collects": 6
+    },
+    "id": 186659,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        531724
+    ]
+}

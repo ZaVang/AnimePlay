@@ -1,0 +1,52 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/03/53/86627_crt_iJ2IU.jpg?r=1639328299",
+        "grid": "https://lain.bgm.tv/pic/crt/g/03/53/86627_crt_iJ2IU.jpg?r=1639328299",
+        "large": "https://lain.bgm.tv/pic/crt/l/03/53/86627_crt_iJ2IU.jpg?r=1639328299",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/03/53/86627_crt_iJ2IU.jpg?r=1639328299"
+    },
+    "summary": "ギデオンの妹。「勇者」の加護によって、魔王討伐にのみ向かうことを宿命づけられている。ケタ外れの強さを備えている反面、感情表現も含めた人間らしさは、勇者に必要のないものとして加護の力で制限されている。",
+    "name": "ルーティ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "露缇"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "ルーティ・ラグナソン"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ruti"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://sneakerbunko.jp/series/shinnonakama/"
+        }
+    ],
+    "stat": {
+        "comments": 31,
+        "collects": 122
+    },
+    "id": 86627,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        319739
+    ]
+}

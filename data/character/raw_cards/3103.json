@@ -1,0 +1,61 @@
+{
+    "birth_mon": 1,
+    "gender": null,
+    "birth_day": 3,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/96/62/3103_crt_anidb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/96/62/3103_crt_anidb.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/96/62/3103_crt_anidb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/96/62/3103_crt_anidb.jpg"
+    },
+    "summary": "本机是由联邦海军战略研究所（Strategic Naval Research Institute，按首字母缩写“S.N.R.I.”读为“萨纳利”）所进行的小型MS开发计划——“F计划”中诞生的试作型MS，是以“达到目前MS 的极限性能”为目标而开发的机体。开发时以F90V为基础，搭载了高出力的发电机；武器方面则装备了VSBR（Variable Speed Beam Rifle，无段速光束步枪的缩写）及光束盾牌；还装备了生物电脑系统以辅助操作，大幅度提高了机体的追踪性能。",
+    "name": "ガンダムF91",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "高达F91"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "ガンダムF91"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Gundam F91"
+                }
+            ]
+        },
+        {
+            "key": "生日",
+            "value": "U.C.0123"
+        },
+        {
+            "key": "身高",
+            "value": "15.2 m"
+        },
+        {
+            "key": "体重",
+            "value": "本体重量：7.8吨   全备重量：19.9吨"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "stat": {
+        "comments": 4,
+        "collects": 21
+    },
+    "id": 3103,
+    "locked": false,
+    "type": 2,
+    "nsfw": false,
+    "anime_ids": [
+        4482
+    ]
+}

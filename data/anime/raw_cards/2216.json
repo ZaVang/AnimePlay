@@ -1,0 +1,405 @@
+{
+    "date": "2001-10-18",
+    "platform": "TV",
+    "images": {
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/59/38/2216_TclUH.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/59/38/2216_TclUH.jpg",
+        "large": "https://lain.bgm.tv/pic/cover/l/59/38/2216_TclUH.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/59/38/2216_TclUH.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/59/38/2216_TclUH.jpg"
+    },
+    "summary": "　　故事延续著[Bram Stoker]的《吸血鬼德古拉》，HELLSING教授打倒了不死的德古拉之后，时间过了约100年，英国王立国教骑士团是专门歼灭对抗大英帝国和英国国教的反基督怪物的特殊机关，而其中的王牌是拿着常人无法使用的大口径手枪的吸血鬼阿尔卡特，在一次任务中转化了被狭持的女警西洛斯，之后两人就以主仆的关系进行任务。\r\n　　但是潜伏在历史阴影中的敌人也正在重整旗鼓，一连串不寻常的人造吸血鬼肆虐事件指向了一个秘密的组织“千禧年”，这个组织由躲藏在南美的纳粹残党所建立，在领导人少校的指挥之下，许多加入组织的党卫军老兵接受了改造成了不死的吸血鬼军团“最后的大队”，另外，少校手下的“狼人部队”拥有超乎知识的超自然能力以及杀戮的意志，也成了相当恐 怖的敌人。\r\n　　他们的目标是：消灭阿尔卡特以及Hellsing，毁灭英国，将无尽的战火再度带到这世界上。\r\n　　Hellsing不得已与平时在政教上为敌对关系，却又同为消灭异端怪物的机关，法王厅十三课合作。但是拥有强大军团的 法王厅却有着自己的打算，使得情形更加复杂。\r\n　　此时，最后的大队以及狼人部队终于对伦敦发动歼灭战，潜伏的吸血鬼支持者也倾巢而出。英国各处死伤惨重，Hellsing也元气大伤，法王厅十三课课长马克斯威尔趁机发动第九次十字军登陆战，企图作收渔翁之利，让国教徒永远从英国消失。英国女王也宣布在最后手段下，将动用核武攻击已为死城的伦敦。\r\n　　在阿尔卡特发动死河之后，最后的大队以及十字军迅速溃败，法王厅十三课也近乎毁灭。血腥的黎明来到之前，三方的战力已剩下最后的底牌，然而少校似乎有着更大的阴谋……\r\n　　这场地狱之战中，谁会是最后一个活下来的人？",
+    "name": "HELLSING",
+    "name_cn": "皇家国教骑士团",
+    "tags": [
+        {
+            "name": "HELLSING",
+            "count": 373,
+            "total_cont": 0
+        },
+        {
+            "name": "暴力美學",
+            "count": 368,
+            "total_cont": 0
+        },
+        {
+            "name": "吸血鬼",
+            "count": 302,
+            "total_cont": 0
+        },
+        {
+            "name": "GONZO",
+            "count": 266,
+            "total_cont": 0
+        },
+        {
+            "name": "TV",
+            "count": 250,
+            "total_cont": 0
+        },
+        {
+            "name": "2001",
+            "count": 168,
+            "total_cont": 0
+        },
+        {
+            "name": "漫画改",
+            "count": 166,
+            "total_cont": 0
+        },
+        {
+            "name": "战争",
+            "count": 125,
+            "total_cont": 0
+        },
+        {
+            "name": "阿卡德",
+            "count": 108,
+            "total_cont": 0
+        },
+        {
+            "name": "2001年10月",
+            "count": 100,
+            "total_cont": 0
+        },
+        {
+            "name": "战斗",
+            "count": 73,
+            "total_cont": 0
+        },
+        {
+            "name": "漫改",
+            "count": 63,
+            "total_cont": 0
+        },
+        {
+            "name": "补旧番",
+            "count": 56,
+            "total_cont": 0
+        },
+        {
+            "name": "经典",
+            "count": 37,
+            "total_cont": 0
+        },
+        {
+            "name": "烂尾",
+            "count": 32,
+            "total_cont": 0
+        },
+        {
+            "name": "日本",
+            "count": 26,
+            "total_cont": 0
+        },
+        {
+            "name": "男人",
+            "count": 18,
+            "total_cont": 0
+        },
+        {
+            "name": "奇幻",
+            "count": 18,
+            "total_cont": 0
+        },
+        {
+            "name": "暴力美学",
+            "count": 13,
+            "total_cont": 0
+        },
+        {
+            "name": "热血",
+            "count": 10,
+            "total_cont": 0
+        },
+        {
+            "name": "小中千昭",
+            "count": 9,
+            "total_cont": 0
+        },
+        {
+            "name": "平野耕太",
+            "count": 8,
+            "total_cont": 0
+        },
+        {
+            "name": "血腥",
+            "count": 7,
+            "total_cont": 0
+        },
+        {
+            "name": "日本动画",
+            "count": 6,
+            "total_cont": 0
+        },
+        {
+            "name": "浦田保則",
+            "count": 6,
+            "total_cont": 0
+        },
+        {
+            "name": "暴力",
+            "count": 5,
+            "total_cont": 0
+        },
+        {
+            "name": "2001年",
+            "count": 5,
+            "total_cont": 0
+        },
+        {
+            "name": "动画",
+            "count": 5,
+            "total_cont": 0
+        },
+        {
+            "name": "浦田保则",
+            "count": 5,
+            "total_cont": 0
+        },
+        {
+            "name": "石井妥師",
+            "count": 4,
+            "total_cont": 0
+        }
+    ],
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "皇家国教骑士团"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "厄夜怪客"
+                },
+                {
+                    "v": "地狱之歌"
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "13"
+        },
+        {
+            "key": "放送开始",
+            "value": "2001年10月18日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期四"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://www.gonzo.co.jp/works/hellsing/index.html"
+        },
+        {
+            "key": "播放电视台",
+            "value": "フジテレビ系列"
+        },
+        {
+            "key": "其他电视台",
+            "value": "東海テレビ / サンテレビ"
+        },
+        {
+            "key": "播放结束",
+            "value": "2002年1月17日"
+        },
+        {
+            "key": "导演",
+            "value": "浦田保則"
+        },
+        {
+            "key": "音乐",
+            "value": "石井妥師"
+        },
+        {
+            "key": "Copyright",
+            "value": "©平野耕太・少年画報社／WILD GEESE"
+        },
+        {
+            "key": "原作",
+            "value": "平野耕太（少年画報社刊「月刊YOUNG KING OURs」連載）"
+        },
+        {
+            "key": "系列构成",
+            "value": "小中千昭"
+        },
+        {
+            "key": "人物设定",
+            "value": "村田俊治"
+        },
+        {
+            "key": "美术监督",
+            "value": "片平真司"
+        },
+        {
+            "key": "色彩设计",
+            "value": "甲斐けいこ"
+        },
+        {
+            "key": "摄影监督",
+            "value": "武山篤"
+        },
+        {
+            "key": "音响监督",
+            "value": "鶴岡陽太"
+        },
+        {
+            "key": "动画制作",
+            "value": "GONZO/Digimation"
+        },
+        {
+            "key": "製作",
+            "value": "Hellsing製作委員会（フジテレビ、ジェネオンエンタテインメント、GONZO）"
+        },
+        {
+            "key": "制片人",
+            "value": "川上大輔、植田康之、石川真一郎"
+        },
+        {
+            "key": "动画制片人",
+            "value": "石川学"
+        }
+    ],
+    "rating": {
+        "rank": 4109,
+        "total": 1771,
+        "count": {
+            "1": 11,
+            "2": 6,
+            "3": 22,
+            "4": 90,
+            "5": 181,
+            "6": 453,
+            "7": 514,
+            "8": 339,
+            "9": 93,
+            "10": 62
+        },
+        "score": 6.7
+    },
+    "total_episodes": 13,
+    "collection": {
+        "on_hold": 278,
+        "dropped": 170,
+        "wish": 1672,
+        "collect": 3045,
+        "doing": 382
+    },
+    "id": 2216,
+    "eps": 13,
+    "meta_tags": [
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "volumes": 0,
+    "series": false,
+    "locked": false,
+    "nsfw": false,
+    "type": 2,
+    "main_character_ids": [
+        6688,
+        6689,
+        15029
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/99/e7/6688_crt_anidb.jpg?r=1491908314",
+                "grid": "https://lain.bgm.tv/pic/crt/g/99/e7/6688_crt_anidb.jpg?r=1491908314",
+                "large": "https://lain.bgm.tv/pic/crt/l/99/e7/6688_crt_anidb.jpg?r=1491908314",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/99/e7/6688_crt_anidb.jpg?r=1491908314"
+            },
+            "name": "インテグラル・ファルブルケ・ウィンゲーツ・ヘルシング",
+            "summary": "",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/60/91/3940_prsn_nisVV.jpg?r=1586115828",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/60/91/3940_prsn_nisVV.jpg?r=1586115828",
+                        "large": "https://lain.bgm.tv/pic/crt/l/60/91/3940_prsn_nisVV.jpg?r=1586115828",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/60/91/3940_prsn_nisVV.jpg?r=1586115828"
+                    },
+                    "name": "榊原良子",
+                    "short_summary": "1981年“六神合体”中担当芙萝蕾出道。\r\n\r\n从女主角到邪恶老板，通常都是配大姊姊和老奶奶的角色，还有喜剧的角色，不论年龄。\r\n\r\n新闻节目的旁白大多是她处理，因此还特别在“NEWS STATION”担任10年以上的主要旁白。\r\n\r\n押井守爱用的主要配音演员，并在押井的作品里好几次担任重要的角色，如押井担任原作、脚本的广播剧“押井守剧场 地狱看门犬钢铁的猎犬”里担当主角。她也在“攻壳机动队”的部分重制版“攻殻机动队2.0”里替代了原版的家弓家正出演傀儡木偶。\r\n\r\n高桥留美子的“福星小子”、“相聚一刻”、“犬夜叉”等动画作品里都可以听到她这一位老牌配音演员的演出。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 3940,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 6688
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/41/25/6689_crt_wqW0T.jpg?r=1475205209",
+                "grid": "https://lain.bgm.tv/pic/crt/g/41/25/6689_crt_wqW0T.jpg?r=1475205209",
+                "large": "https://lain.bgm.tv/pic/crt/l/41/25/6689_crt_wqW0T.jpg?r=1475205209",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/41/25/6689_crt_wqW0T.jpg?r=1475205209"
+            },
+            "name": "セラス・ヴィクトリア",
+            "summary": "",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b9/7a/4042_prsn_rDhDy.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b9/7a/4042_prsn_rDhDy.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/b9/7a/4042_prsn_rDhDy.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b9/7a/4042_prsn_rDhDy.jpg"
+                    },
+                    "name": "折笠富美子",
+                    "short_summary": "名字“富美子”的意思是，她的母亲希望她成为一个内心丰“富”“美”丽的人。\r\n    自幼在东京台东区浅草长大，高中毕业后不读大学为了不增加母亲的负担，因为出身于单亲家庭，家庭成员有母亲及一个姐姐，中学及高中时期因受姐姐影响都就读女校。\r\n    从小便学习电子琴，因此中学及高中时期皆为轻音乐社的社员，高中时期还担任学生会副会长的职位。\r\n    高二时期参与了日本的知名剧团“Super Eccentric Theater”的招募活动，自幼开始便不擅长在人群前表演，所以在决定参加SET剧团招募活动时家人感到惊讶但支持她去尝试，于最后面谈唱了迪士尼的“星に愿いを”令人留下印象之后通过测验，高三时期便成为剧团之第三期研究生培训，研究生毕业公演担当主角后成为正式成员剧团的一员。\r\n    演技广泛，不论是活泼少女、坚强女性，甚至是阴郁内向的女生，她都能完美地诠释。\r\n    1996年，曾参加“辉く日本の星!---平成的原节子”的比赛，在比赛中最后获得第二名。\r\n    得知自己被选为动画版GTO女主角时高兴地说“我快成了松岛菜菜子了”。\r\n    在2006年12月9日和嘉数由美、丰口惠共同组成演剧团体“R*L（ラフラフ）”(R＝Rough，L＝Laugh)。\r\n    1999年，加入东京俳优生活协同组合（俳协），俳协主页上把麾下声优按照声型逐个分为高、中、低不同的声部，她被划分为女高音。\r\n    2007年3月1日离开俳协，并在2007年2月28日加入新的声优事务所“Atomic Monkey”。\r\n    目前正在学习手语，已取得NPO手语检定2级及全国手语检定3级的资格。\r\n    在家中饲养了一只名叫SERORI的猫咪。\r\n    曾自言不擅长杂志采访和出席广播谈话节目。\r\n    喜欢搜集簪子及手帕。\r\n    似乎是个灵感很强的人，常可以感应到一些东西，但本人对于此不是很在意，而且可以若无其事的说出鬼故事。\r\n    在业界中跟嘉数由美是很好的朋友，嘉数低调结婚到生子的时候，都去为她祝贺，且时不时在一起相聚喝茶。\r\n    是“和服社”的一员（嘉数由美是目前的社长）；不论公私活动，出外都穿着和服；和服部其他的成员还有：大原沙耶香、菊池志穗、丰口惠、浅野真由美等。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 4042,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 6689
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/45/0b/15029_crt_mKzV7.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/45/0b/15029_crt_mKzV7.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/45/0b/15029_crt_mKzV7.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/45/0b/15029_crt_mKzV7.jpg"
+            },
+            "name": "アーカード",
+            "summary": "王立國教騎士團的王牌(垃圾處理員)，過去不詳的吸血鬼，通常使用常人臂力所無法使用的超大口徑手槍「豺狼」（Jackal）和「加斯爾」（caskal）作戰，對於敵人不管是人或超自然生物都是虐殺\r\n對一般人類或新生吸血鬼都是不屑的態度，但因某種理由不得不幫助Hellsing機關(在中古世紀時，伊特古拉的祖先-Hellsing博士與其夥伴，擊敗了阿爾卡特，依照吸血鬼的傳統，被擊敗者要永遠服從擊敗他的人及其後代)\r\n阿爾卡特（Alucard）是ANAGRAM（迴文構詞法）反着拼寫即是德古拉（Dracula）。\r\n擁有多種能力，有No Life King稱呼的他可以自由開放自己的能力（一式到三式制御模式），而零式則是最強絕招「死河」，可以召喚無數亡靈大軍展開虐殺，而這些亡靈大軍其實是他所吞噬的生命，這些生命平日就藏於他的身體內，而這些生命的數量賜予他同等數量的命，故此在不用「死河」時，他是不死的。\r\n作品中將阿爾卡特的過去進行了揭露，證實他就是歷史上的串刺公爵德古拉。\r\n本身有變化形態的能力，外貌、身形、性別也可變化，在Hellsing外傳「The Dawn」裡阿爾卡特不知何故以小女孩的姿態現身戰鬥，意外贏得許多讀者的支持，有「羅莉卡」（Girlcard/ロリカード）的暱稱。\r\n在本篇中，與安德路森神父對決時的回想，其中談到阿爾卡特幼年時所受到的殘害。\r\n被送入相位空間後，透過將身體內的3,424,867條生命互相廝殺到只剩薛丁格准尉一人，從而獲得了他的能力，終於在30年後成功逃脫，結局中回到了伊特古拉身邊。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7b/cb/3971_prsn_8ygm9.jpg?r=1518234792",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7b/cb/3971_prsn_8ygm9.jpg?r=1518234792",
+                        "large": "https://lain.bgm.tv/pic/crt/l/7b/cb/3971_prsn_8ygm9.jpg?r=1518234792",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7b/cb/3971_prsn_8ygm9.jpg?r=1518234792"
+                    },
+                    "name": "中田譲治",
+                    "short_summary": "日本男性声优、演员、旁白。\r\n声优代表作为Giroro伍长（Keroro军曹），基督山伯爵（岩窟王），阿卡特（Alucard／アーカード）（厄夜怪客），言峰绮礼（Fate/stay night和Fate/Zero）等。\r\n\r\n隶属于大泽事务所，本名中田均志（なかた ひとし），出身于东京都。大多配军人的角色，或是做电影预告的旁白，早年原以演员身份，在特摄作品与刑事剧、NHK大河剧中演出，后来才转换跑道从事配音工作。\r\n有着低沉和磁性的声调，大多数为成年至中年男性角色配音。\r\n工作态度认真，个性温柔幽默，对声优迷常保感谢与服务的心态。从其推特上的留言，及动漫声优见面会中的发言与角色扮演式的穿着打扮，可窥知一二。\r\n从TYPE-MOON同人时期开始，每有作品，必有一角由中田让治配音。\r\nFate/Stay Night，Fate/Zero - 言峰绮礼\r\n空之境界 - 荒耶宗莲\r\nMelty Blood - 尼禄‧卡欧斯、混沌猫姬\r\nCANAAN - 上海司机\r\n座右铭是“解体，然后再构筑”。曾两度赴美参加北卡洛兰州的Animazement动漫大会。乃国际知名声优。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 3971,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 15029
+        }
+    ]
+}

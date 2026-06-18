@@ -1,0 +1,237 @@
+{
+    "id": 18635,
+    "name": "罪恶王冠",
+    "image_path": "data\\images\\anime\\18635.jpg",
+    "points": 6.5,
+    "cost": 1,
+    "rarity": "N",
+    "description": "时间是2039年，在10年前突然爆发的“末日病毒”使日本陷入无政府的混乱状态，被跨国组织GHQ武力介入并统治。在日后被称为“失落圣诞”（Lost X'mas）的此次事件之后，日本丧失了独立主权，仅剩形式上的自治权，人们得以享受暂时的和平。\r\n10年后，过着平稳生活的天王洲第一高中2年生樱满集，偶然邂逅了所憧憬的网络人气歌姬楪いのり，而她的另一重身份却是“葬仪社”的成员。“葬仪社”是由17岁的年轻首领恙神涯领导的民间反抗组织，致力于从GHQ手中解放日本，为此不惜赌上性命孤独战斗。在いのり和涯的带领下加入葬仪社的集，右手浮现了“王之刻印”，拥有刻印的集可以从他人的身体中唤出名为“Void”的物质，并以此为武器战斗。然而这只是集所背负的“罪恶王冠”的故事的开始……。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 22,
+    "synergy_tags": [
+        "科幻",
+        "TV",
+        "日本",
+        "原创",
+        "战斗"
+    ],
+    "date": "2011-10-13",
+    "rating_rank": 5218,
+    "rating_score": 6.5,
+    "rating_total": 17127,
+    "main_character_ids": [
+        13176,
+        13177,
+        13178
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/4f/cd/13176_crt_P90Zr.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/4f/cd/13176_crt_P90Zr.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/4f/cd/13176_crt_P90Zr.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4f/cd/13176_crt_P90Zr.jpg"
+            },
+            "name": "桜満集",
+            "summary": "故事的主角。就读天王洲第一高校，17岁。\r\n    对每个人都显得很冷淡，而且对同学也显得沉默拘礼，不过对他人的察言观色却很擅长。\r\n    小时候与涯相识，当时集果断、勇敢、强大，是涯憧憬的对象，两人皆心爱着真名，集在目睹真名暴走后便自我封印与她相关的记忆。\r\n    第一话与涯和祈相遇后，右腕在意外中获得了真正虚空基因组“王之能力”，其纹章与次级品有所分别。\r\n    对祈有朋友以上的好感。\r\n    比较懦弱，后加入葬仪社，但是因为使用谷寻的虚空而杀死谷寻的弟弟而拒绝使用王的能力。\r\n    后来经过鸫的原因，重新振作，召集了魂馆飒太、寒川谷寻、校条祭、草间花音、供奉院亚里沙到达羽田，之后祈被神秘少年劫走，目睹涯在自己面前被砍。\r\n    在涯的帮助下恢复封闭了关于真言的记忆，同时王的力量随记忆的恢复而升级，能在抽出虚空时让被抽取者保持清醒并能使用自身的虚空。并在涯的帮助下救出了祈。\r\n    在第十四话中成为了天王州的学生会会长。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/51/73/5209_prsn_bD3dr.jpg?r=1478379077",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/51/73/5209_prsn_bD3dr.jpg?r=1478379077",
+                        "large": "https://lain.bgm.tv/pic/crt/l/51/73/5209_prsn_bD3dr.jpg?r=1478379077",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/51/73/5209_prsn_bD3dr.jpg?r=1478379077"
+                    },
+                    "name": "梶裕貴",
+                    "short_summary": "ARTSVISION第17期免费新人培育选拔会合格，并且加入了事务所ARTSVISION。\r\n2009年获得第3届声优奖—新人男声优赏，且开始了“G.Addict”的活动。\r\n2012年2月22日以本人的名义开始歌手的活动，发售第一张单曲《sense of wonder》。2012年9月5日发售第二张单曲《Hello！》。\r\n2013年获得第7届声优奖—主演男声优赏。\r\n2013年10月1日，由原来的事务所ARTSVISION转入VIMS。\r\n2014年获得第8届声优奖—主演男声优赏。\r\n\r\n拥有中性的声音，能演出从少年到青年、动物等各式各样的角色。\r\n担任剧团“妄想中毒”的pretty团长。\r\n中小学时代担任过学生会长，有体育或美术被表扬等表现，是个非常有才能的小孩。\r\n声优伙伴或支持者称呼他为“王子”。\r\n和代永翼组成团体“BRAVE WING”。\r\n与寺岛拓笃、堀江一真和阿部敦等四人组成团体“G.Addict”。\r\n性格极其纯良，待人有礼温善。虽然人前很活泼开朗，但其实是个喜欢宁静安逸的人，只有与亲近的人在一起时才会放松的流露真实自我。\r\n不只声音，外型也很中性，现在也还会被误认成女生。本人对此表示否定，表示“内在意外地很有男子气概”。\r\n虽然年轻，但是性格相当认真。寺岛拓笃评价他“面对工作上的态度很严谨”，大亲友下野纮也说：“他真的很可靠，很会待人处世，作为声优也相当优秀。”\r\n\r\n代表作品有《进击的巨人》艾伦·耶格尔、《夜樱四重奏》比泉秋名、《未来都市NO.6》紫苑、《罪恶王冠》樱满集、《七大罪》梅利奥达斯、《加速世界》有田春雪、《魔笛MAGI》阿里巴巴·沙尔贾等。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 5209,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b8/b0/5736_prsn_6MaTt.jpg?r=1705471478",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b8/b0/5736_prsn_6MaTt.jpg?r=1705471478",
+                        "large": "https://lain.bgm.tv/pic/crt/l/b8/b0/5736_prsn_6MaTt.jpg?r=1705471478",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b8/b0/5736_prsn_6MaTt.jpg?r=1705471478"
+                    },
+                    "name": "津田美波",
+                    "short_summary": "津田美波是1989年出生于日本神奈川县，是一位日本的女性声优，所属于青二プロダクション。从2009年开始出道， 声线从幼女到青少年的少女。近来则出演过随和系，小大人系，娇蛮系，腹黑少女，纯情派等多种多样的配角色。在2011年的新番Fractale中首次主役。歌唱的不错在平时也很喜欢听歌\r\n\r\n2024年6月8日，宣布与橘龍丸结婚",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 5736,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7d/23/78930_prsn_7LJ74.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7d/23/78930_prsn_7LJ74.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/7d/23/78930_prsn_7LJ74.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7d/23/78930_prsn_7LJ74.jpg"
+                    },
+                    "name": "宋昱璁",
+                    "short_summary": "台湾男性配音员。号称「配音界的美乃滋」。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 78930,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ff/1a/78943_prsn_qhf0l.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ff/1a/78943_prsn_qhf0l.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/ff/1a/78943_prsn_qhf0l.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ff/1a/78943_prsn_qhf0l.jpg"
+                    },
+                    "name": "龍顯蕙",
+                    "short_summary": "台湾女性配音员。\r\n\r\n华视配音训练班第16期学员出身，同期同学有谢佼娟和李明幸。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 78943,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 13176
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/05/21/13177_crt_6QlXD.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/05/21/13177_crt_6QlXD.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/05/21/13177_crt_6QlXD.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/05/21/13177_crt_6QlXD.jpg"
+            },
+            "name": "恙神涯",
+            "summary": "率领鼓吹日本独立的反抗组织“葬仪社”的年轻头领。和集一样17岁，但已是十分有势力有强大魅力的少年。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a4/66/4032_prsn_A288v.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a4/66/4032_prsn_A288v.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/a4/66/4032_prsn_A288v.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a4/66/4032_prsn_A288v.jpg"
+                    },
+                    "name": "渡辺明乃",
+                    "short_summary": "日本的女性声优，千叶县船桥市出身\r\n    代表作有《重生传奇》（毛）、《魔法老师》（络操茶茶丸）、《超级机器人大战系列》（爱比丝·道格拉斯）等\r\n    以童星起家的女性声优，童星时期属于剧团日本儿童，后因崇拜幽游白书中绪方惠美演出的藏马角色而转行。\r\n    有点沙哑的声音（husky voice）为其特征。像テイルズオブリバース的マオ、韦駄天翔的山登翔之类活泼少年、IGPX的リズ那样的强气娘、爆裂天使的ジョウ和魔法老师的络缲茶々丸那样的（阴沉）寡言的脚色等，不限定于特定性格，可以演出各种性格角色的声优。另外不知为什么，百合类的演出也不少。\r\n    第一人称“仆”，不过偶尔会用“俺”，在传颂之物广播第13回也曾说过，有时会根据年龄使用“あたし”自称。 （仆，ボク，Boku——ボク一般是男性专用的自称。俺，おれ，Ore——一般是男性用自称，详见仆少女。あたし为女性专用自称。另一种则为“私”一般念作“わたし”（Watashi），是两性通用自称，“わたくし”（watakushi）则为古语，不过仍有人在使用）\r\n    非常讨厌别人讲黄色笑话。在担任某电台节目的特别来宾演出时，对于小野坂昌也说著一连串黄色笑话的时候，也不管当时正在录音，就突然生气，彻底的将小野坂斥责一遍。现在随着和同性声优的共演作品较多，常常被生天目仁美和伊藤静等用“近似”性骚扰的行为捉弄，渐渐的多少对这种事有点抵抗力了。\r\n    声优界知名的巨乳。因此常遭声优界有名的“揉乳狂”生天目仁美的“毒手”。\r\n    生天目仁美与伊藤静曾说“（明乃）是我们身体的偶像！”；柚木凉香和三宅华也也曾在渡边本人不在时的电台节目中讨论“胸部很大”的话题。\r\n    本人曾说“就算谁说了什么，のとまみ（能登麻美子爱称之一）也是我的人。不可以。不让给任何人。まーたん（指能登，亦为能登爱称之一，亦有直译（音译）为麻炭）是我的。看，我们在交往啊。就算不是在交往也绝对不让给人。”（但却比不上生天目仁美和同公司前辈川澄绫子她们对能登麻美子的溺爱程度。）\r\n    很喜欢酒，和声优界公认的“酒女”伊藤静是酒友。\r\n    曾在涩谷喝酒喝到天亮，原本打算坐涩谷到品川方面的电车的，但醒来时已经到了原宿这样的喝酒失败谭。明明打算坐首班车的，醒来时已经到了中午了（根据あまえないでよっ!!声优SP）。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 4032,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7a/78/4724_prsn_7TvWV.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7a/78/4724_prsn_7TvWV.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/7a/78/4724_prsn_7TvWV.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7a/78/4724_prsn_7TvWV.jpg"
+                    },
+                    "name": "中村悠一",
+                    "short_summary": "爱称是ゆうきゃん，由铃村健一命名。英文标记法为‘yuu-kyan’\r\n与声优的杉田智和的私交良好，是在声优界著名的好友。\r\n兴趣是玩游戏、看电影等。\r\n不喜欢吃拉面。喜欢的食物是肉、奶酪、甜食。\r\n2020年10月1日，宣布从Sigma Seven移籍至INTENTION。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 4724,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/53/10/78917_prsn_En4iw.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/53/10/78917_prsn_En4iw.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/53/10/78917_prsn_En4iw.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/53/10/78917_prsn_En4iw.jpg"
+                    },
+                    "name": "孫誠",
+                    "short_summary": "台湾男性配音员。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 78917,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/56/66/79118_prsn_sk33N.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/56/66/79118_prsn_sk33N.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/56/66/79118_prsn_sk33N.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/56/66/79118_prsn_sk33N.jpg"
+                    },
+                    "name": "林沛笭",
+                    "short_summary": "台湾女性配音员。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 79118,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 13177
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/4a/a2/13178_crt_1IGg0.jpg?r=1417850545",
+                "grid": "https://lain.bgm.tv/pic/crt/g/4a/a2/13178_crt_1IGg0.jpg?r=1417850545",
+                "large": "https://lain.bgm.tv/pic/crt/l/4a/a2/13178_crt_1IGg0.jpg?r=1417850545",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4a/a2/13178_crt_1IGg0.jpg?r=1417850545"
+            },
+            "name": "楪いのり",
+            "summary": "《罪恶王冠》女主角。\r\n一个如CG般的美丽少女，浅粉色头发深红色眼眸。\r\n不常表达感情、十分神秘的少女。\r\n对集来说是憧憬的存在，与她的相会使集的命运之轮开始转动。\r\n有着天籁般的嗓音，一面是网络偶像egoist的歌手，同时也是反抗组织“葬仪社”的成员。\r\n其真实身分为茎道修一郎率领的“源质基因研究所”沟通真名的克隆人的工具（出身和机制仍然是谜），在茎道发动生化政变时，成为让真名复活的祭品。\r\n被茎道修一郎称为“王妃”。\r\n本应追随拥有真正“王之能力”的集，但因为失去记忆而没有行动。\r\n对集有着特殊的感情，为了集第一次违抗了涯的命令。\r\n其血液及歌声能抑制启示病毒（Apokalypsis Virus）恶化，基因共呜突破临界点时能彻底消灭启示病毒（Apokalypsis Virus）癌化结晶现象。\r\n\r\n虚空外型︰大剑\r\n虚空能力︰物理斩击，具备与其他虚空(Void)结合的能力。 （第六话与城戸研二的虚空(Void)结合后，衍生发出雷光进行远距离攻击的能力。）\r\n虚空数值为 OVER 。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8d/62/5847_prsn_G6LsO.jpg?r=1594216311",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/8d/62/5847_prsn_G6LsO.jpg?r=1594216311",
+                        "large": "https://lain.bgm.tv/pic/crt/l/8d/62/5847_prsn_G6LsO.jpg?r=1594216311",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8d/62/5847_prsn_G6LsO.jpg?r=1594216311"
+                    },
+                    "name": "茅野愛衣",
+                    "short_summary": "茅野爱衣曾经想做治愈他人的工作，因此在做声优之前是美容工作者。\r\n因为常工作到深夜，回家后看到动画《ARIA》后觉得“动画也有治愈人心的力量”，于是开始以声优为目标。\r\n一边坚持美容工作一边积攒学费去学习声优的课程。\r\n\r\n2010年3月，作为Pro·Fit声优养成所11期毕业生，成为正式声优。，2010年4月初次主役登台亮相。\r\n2012年3月，获得第六届声优奖新人女优赏，同年并获颁日刊体育第1回日刊动画最高赏MIP新人声优赏。\r\n2014年9月，退出Pro-Fit，成为自由身。2015年1月加入大泽事务所。\r\n2015年3月，于AnimeJapan举办的“第1回动画广播评选”上，以《NO RADIO NO LIFE 玩家兄妹似乎要搞广播》主持人身份拿下“最优秀广播奖”和“复活希望广播奖”。\r\n\r\n由于在主持『我们仍未知道那天所看见的花的名字』动画广播的第一回的时候有爱称，而在次回广播时对听众的邮件中的「かやのん」这个称呼最为喜欢，以后便成为了爱衣的爱称。杉田智和和樱井孝宏称呼他是[茅野君]。\r\n中学时代第一次知道声优这个工作，是因为同学对这个工作的内幕了解的很详细。那时候还没考虑过做这个工作，想做美容和咖啡店等工作，疗伤成为主题一样的工作。社团活动则是加入了美术部，因为常画水彩画，插画也很擅长。\r\n高中时代在一般女子高中就读的同时在专门的美容学校学习，取得美容师的资格。\r\n大学时代则是一边读书，一边从事着美容工作。 高中的时候还画过西洋画，觉得西洋画“怎样才能让动作景色表现出声音呢”，也开始对声优这个工作产生了兴趣。\r\n和声优赤崎千夏在成为声优前就已相互认识，曾有过同时在同一家咖啡厅打工的经历。\r\n家中的独女，从小就做事好强，不管是运动会还是各种比赛，都是练习最久，希望可以拿到最好的成绩。家中养着一只名叫「杏・杏」雌性约克夏犬，名字中「・」是由母亲特意而取。\r\n\r\n拥有高柔的音质，声线多变，从幼女、少女到成熟女性角色都能贴切演绎，从无口阴郁至活泼温柔的角色也都能完美驾驭，在三无角色（无口、无心、无表情）方面的演出也相当有代表性，在声优圈内有着“治愈系声音”的美称。又因爱衣性格温和、外表文静，曾从花泽香菜那里得到“外表也是治愈系”的评价。\r\n在『我女友与青梅竹马的惨烈修罗场』中饰演冬海爱衣一角，因冬海爱衣有一句经典台词为“爱衣酱大胜利”，又由同名的爱衣来演绎，便也成为爱衣的经典代表句，此后在爱衣角色取得优势的场合常能见到许多“爱衣酱大胜利”的留言。\r\n在声优圈内爱衣因其温和体贴却又时而抖S的性格，造就了相当不错的人缘。\r\n因爱衣酒量出名的好，并曾谈过自己喜欢日本酒，便得到了一份专门介绍日本酒的节目『毛衣品酒（かやのみ）』主持人的工作，2016年5月14日起播出第一集，以约莫两个礼拜一集的速度于animate Times的YouTube频道上更新至今。虽然在节目中总是从头喝到尾，但据工作人员表示即使喝的相当多也从来没看过爱衣醉过。\r\n\r\n2020年，在自己生日9月13日当天，开设了一系列官方网站。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 5847,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ad/50/58222_prsn_Xs64d.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ad/50/58222_prsn_Xs64d.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/ad/50/58222_prsn_Xs64d.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ad/50/58222_prsn_Xs64d.jpg"
+                    },
+                    "name": "林美秀",
+                    "short_summary": "台湾女性配音员。\r\n\r\n与同时也曾参与过一些配音作品的知名艺人暨演员林美秀同名同姓。\r\n\r\n华视配音训练班出身，与詹雅菁是同期的配音班同学。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 58222,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 13178
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/54/0b/86626_crt_992YF.jpg?r=1632401622",
+        "grid": "https://lain.bgm.tv/pic/crt/g/54/0b/86626_crt_992YF.jpg?r=1632401622",
+        "large": "https://lain.bgm.tv/pic/crt/l/54/0b/86626_crt_992YF.jpg?r=1632401622",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/54/0b/86626_crt_992YF.jpg?r=1632401622"
+    },
+    "summary": "辺境の町ゾルタンのBランク冒険者。ギデオンとは旧知の仲。冒険者ギルドで聞いたレッドがギデオンその人ではないかと考え、開店したばかりの薬屋を訪れる。店の仕事を手伝いながら同居生活を送ることに。",
+    "name": "リット",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "莉特"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "リーズレット・オブ・ロガーヴィア"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Rit"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://sneakerbunko.jp/series/shinnonakama/"
+        }
+    ],
+    "stat": {
+        "comments": 32,
+        "collects": 93
+    },
+    "id": 86626,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        319739
+    ]
+}

@@ -1,0 +1,69 @@
+{
+    "birth_mon": 10,
+    "gender": "female",
+    "birth_day": 9,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c7/63/1124_xoAfZ.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c7/63/1124_xoAfZ.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/c7/63/1124_xoAfZ.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c7/63/1124_xoAfZ.jpg"
+    },
+    "summary": "师父小虎真传的格斗技，破坏力格外惊人！小小的身躯，却蕴含著难以想象的强大破坏力，就连东方领主都难以抵挡。不过她似乎……有点不会控制力道呢！对付领主跟绫音倒还没问题，只是对行人嘛~或许要温柔一点比较好哦。\r\n小铃最怕的就是鬼。别说是用绝招「过肩摔」来对付它了，就连直视对方她都不敢。之前鬼鬼出现的时候是行人救了她的，不过小铃怕鬼的个性似乎完全没有进步。有时麻知姊会召唤出鱼的灵魂，搞不好她连这都怕呢！",
+    "name": "すず",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小铃"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "すず"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Suzu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "10月9日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "151cm"
+        },
+        {
+            "key": "体重",
+            "value": "40kg"
+        },
+        {
+            "key": "年龄",
+            "value": "13岁"
+        }
+    ],
+    "stat": {
+        "comments": 13,
+        "collects": 36
+    },
+    "id": 1124,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        2333
+    ]
+}

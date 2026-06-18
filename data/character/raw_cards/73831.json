@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d8/3b/73831_crt_IK56b.jpg?r=1649770553",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d8/3b/73831_crt_IK56b.jpg?r=1649770553",
+        "large": "https://lain.bgm.tv/pic/crt/l/d8/3b/73831_crt_IK56b.jpg?r=1649770553",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d8/3b/73831_crt_IK56b.jpg?r=1649770553"
+    },
+    "summary": "「異世界人は、私たち処刑人が根絶すべき『禁忌指定』よ」\r\n\r\n主人公。迷い込んだ日本人を処理する処刑人。迷い人に近付き能力を把握してから確実に殺害するのが基本スタンス。そのため、普段はわりとクールだが、外面を取り繕う演技に長ける。武器は教典と短剣。",
+    "name": "メノウ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "玛瑙"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "梅诺"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Menou"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 782,
+        "collects": 97
+    },
+    "id": 73831,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        326871
+    ]
+}

@@ -1,0 +1,45 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5b/e0/19078_crt_JJmNh.jpg?r=1361596764",
+        "grid": "https://lain.bgm.tv/pic/crt/g/5b/e0/19078_crt_JJmNh.jpg?r=1361596764",
+        "large": "https://lain.bgm.tv/pic/crt/l/5b/e0/19078_crt_JJmNh.jpg?r=1361596764",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5b/e0/19078_crt_JJmNh.jpg?r=1361596764"
+    },
+    "summary": "上条と出会い、インデックスと友情を結んだ『無能力者（レベル０）』の少女。路上ライブを続けながらデビューを目指していたところ、オーディションでエンデュミオン開通キャンペーンのイメージソングに大抜擢される。魔術・科学サイド間の戦争の引き金となる『とある謎』に関わっているらしいが、本人に心当たりはない。",
+    "name": "鳴護アリサ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "鸣护艾丽莎"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Meigo Arisa"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 2,
+        "collects": 40
+    },
+    "id": 19078,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        26804
+    ]
+}

@@ -1,0 +1,44 @@
+{
+    "birth_mon": 5,
+    "gender": "female",
+    "birth_day": 25,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a3/91/61335_crt_K9UKK.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a3/91/61335_crt_K9UKK.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/a3/91/61335_crt_K9UKK.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a3/91/61335_crt_K9UKK.jpg"
+    },
+    "summary": "一个住在小村庄里，憧憬成为魔法使的女孩。虽然乖巧，但也有活泼淘气的一面。因为不小心临摹了「绘本」里的图案，将母亲和房子化为了石头。",
+    "name": "ココ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "可可"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "5月25日"
+        }
+    ],
+    "stat": {
+        "comments": 30,
+        "collects": 59
+    },
+    "id": 61335,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        377130
+    ]
+}

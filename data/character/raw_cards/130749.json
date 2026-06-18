@@ -1,0 +1,73 @@
+{
+    "birth_mon": 6,
+    "gender": "male",
+    "birth_day": 7,
+    "birth_year": 2000,
+    "blood_type": 1,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/57/64/130749_crt_3dnmP.jpg?r=1722438897",
+        "grid": "https://lain.bgm.tv/pic/crt/g/57/64/130749_crt_3dnmP.jpg?r=1722438897",
+        "large": "https://lain.bgm.tv/pic/crt/l/57/64/130749_crt_3dnmP.jpg?r=1722438897",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/57/64/130749_crt_3dnmP.jpg?r=1722438897"
+    },
+    "summary": "坂本の殺し屋時代の部下で、他人の心が読めるエスパー。\r\n組織の命令で坂本を暗殺しようとするが、逆に坂本ファミリーの温かさに触れ、殺し屋を引退。坂本商店で働くようになる。坂本のことを慕い、目標としている。",
+    "name": "朝倉シン",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "朝仓信"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "朝倉 シン"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あさくら しん"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Asakura Shin"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "2000年6月7日"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "身高",
+            "value": "172cm"
+        },
+        {
+            "key": "体重",
+            "value": "67kg"
+        },
+        {
+            "key": "年龄",
+            "value": "21"
+        }
+    ],
+    "stat": {
+        "comments": 2,
+        "collects": 14
+    },
+    "id": 130749,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        496617
+    ]
+}

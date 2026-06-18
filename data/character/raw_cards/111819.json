@@ -1,0 +1,44 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/51/76/111819_crt_6oI3v.jpg?r=1655132419",
+        "grid": "https://lain.bgm.tv/pic/crt/g/51/76/111819_crt_6oI3v.jpg?r=1655132419",
+        "large": "https://lain.bgm.tv/pic/crt/l/51/76/111819_crt_6oI3v.jpg?r=1655132419",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/51/76/111819_crt_6oI3v.jpg?r=1655132419"
+    },
+    "summary": "16岁。在奴隶商的店中被出售的兽人狼族少女。\r\n\r\n道夫が異世界で出会った狼人族の少女。道夫に付き従い、戦闘から家事に至るまであらゆることをこなす。異世界のことを何も知らない道夫に、この世界の常識から迷宮攻略のアドバイスなど様々なことを教えてくれる。",
+    "name": "ロクサーヌ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "罗克珊"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki、https://isekai-harem.com/character.html"
+        }
+    ],
+    "stat": {
+        "comments": 32,
+        "collects": 108
+    },
+    "id": 111819,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        322130
+    ]
+}

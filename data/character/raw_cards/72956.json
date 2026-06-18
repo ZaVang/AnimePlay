@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f3/c4/72956_crt_veBE6.jpg?r=1624498233",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f3/c4/72956_crt_veBE6.jpg?r=1624498233",
+        "large": "https://lain.bgm.tv/pic/crt/l/f3/c4/72956_crt_veBE6.jpg?r=1624498233",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f3/c4/72956_crt_veBE6.jpg?r=1624498233"
+    },
+    "summary": "グレイス王国・近衛騎士団の隊長。薄い水色がかった銀髪に抜群のスタイルを持つ美女。スラムのみなしごから近衛騎士団の隊長まで登り詰めた努力家でもある。出世欲が強く、手柄の取り分にうるさい。ローンの支払いに苦しんでいる。",
+    "name": "スノウ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "雪诺"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "施诺"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Snow"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 6,
+        "collects": 33
+    },
+    "id": 72956,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        302190
+    ]
+}

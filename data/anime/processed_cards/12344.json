@@ -1,7 +1,7 @@
 {
     "id": 12344,
     "name": "游戏王",
-    "image_path": "data/images/anime/12344.jpg",
+    "image_path": "data\\images\\anime\\12344.jpg",
     "points": 7.3,
     "cost": 1,
     "rarity": "N",

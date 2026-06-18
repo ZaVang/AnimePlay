@@ -1,0 +1,65 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/43/21/19201_crt_7kJsZ.jpg?r=1676107778",
+        "grid": "https://lain.bgm.tv/pic/crt/g/43/21/19201_crt_7kJsZ.jpg?r=1676107778",
+        "large": "https://lain.bgm.tv/pic/crt/l/43/21/19201_crt_7kJsZ.jpg?r=1676107778",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/43/21/19201_crt_7kJsZ.jpg?r=1676107778"
+    },
+    "summary": "突然打破窗户飞进房间的魔法少女。自称是“爱与勇气的公主☆魔法少女彩虹由莉佳”，却因太夸张的衣服被当成角色扮演狂，没人愿意听她说话。后来在106号房发生战斗时张开结界保护房间，证明了自己是货真价实的魔法少女。\r\n主张106号房充满了庞大魔力，很快就会出现想要滥用这股力量的邪恶份子出现，要大家快点离开房间，却因为内容太突兀，而且服装怎么看都是角色扮演服，以至于孝太郎和早苗一直都不想理她，还一直遭到不幸事故袭击。在106号房发生战斗时张开结界保护房间，让伤害减到最低，是台面下的最大功臣，努力却一直得不到回报。\r\n异常害怕幽灵，对早苗没辙。在扮演动物这方面似乎有超人的资质，因此演戏时多被分配为动物角色。对孝太郎有微妙的感觉。",
+    "name": "虹野ゆりか",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "虹野由莉佳"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "虹野 ゆりか"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "にじの ゆりか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Nijino Yurika"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "159cm"
+        },
+        {
+            "key": "BWH",
+            "value": "B84/W60/H83"
+        },
+        {
+            "key": "引用来源",
+            "value": "Wiki"
+        }
+    ],
+    "stat": {
+        "comments": 26,
+        "collects": 105
+    },
+    "id": 19201,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        98286
+    ]
+}

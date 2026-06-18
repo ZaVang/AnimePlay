@@ -1,0 +1,65 @@
+{
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 2,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ce/8d/47162_crt_Sy9aS.jpg?r=1515357927",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ce/8d/47162_crt_Sy9aS.jpg?r=1515357927",
+        "large": "https://lain.bgm.tv/pic/crt/l/ce/8d/47162_crt_Sy9aS.jpg?r=1515357927",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ce/8d/47162_crt_Sy9aS.jpg?r=1515357927"
+    },
+    "summary": "乌菈菈见习生。15岁。为了见母亲而来到迷路町的少女，从小在山里长大。常做露出度高的打扮。\r\n有着无形中就会被动物亲近的体质，不清楚学校的事情。",
+    "name": "千矢",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "千矢"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ちや"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Chiya"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月2日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "154cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "stat": {
+        "comments": 14,
+        "collects": 121
+    },
+    "id": 47162,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        173303
+    ]
+}

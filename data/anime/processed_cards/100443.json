@@ -1,0 +1,124 @@
+{
+    "id": 100443,
+    "name": "东京残响",
+    "image_path": "data\\images\\anime\\100443.jpg",
+    "points": 7.1,
+    "cost": 1,
+    "rarity": "N",
+    "description": "某个平凡的夏日。\r\n突然，东京遭到了大规模炸弹恐怖袭击。\r\n这个导致日本从平稳的睡梦中惊醒的事件的犯人，仅仅是两个少年。\r\n自称为“斯芬克斯”的犯人们，将把全日本卷中一场壮大的游戏。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 11,
+    "synergy_tags": [
+        "悬疑",
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "2014-07-10",
+    "rating_rank": 2189,
+    "rating_score": 7.1,
+    "rating_total": 7163,
+    "main_character_ids": [
+        25782,
+        25783,
+        25784
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/13/56/25782_crt_9zS4Q.jpg?r=1410111742",
+                "grid": "https://lain.bgm.tv/pic/crt/g/13/56/25782_crt_9zS4Q.jpg?r=1410111742",
+                "large": "https://lain.bgm.tv/pic/crt/l/13/56/25782_crt_9zS4Q.jpg?r=1410111742",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/13/56/25782_crt_9zS4Q.jpg?r=1410111742"
+            },
+            "name": "ナイン",
+            "summary": "頭脳明晰で常に冷静。ツエルブとともに東京で高校生として生活を始める。\r\nだが、その真の目的は謎に包まれている。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/af/c4/9953_prsn_O0Dsl.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/af/c4/9953_prsn_O0Dsl.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/af/c4/9953_prsn_O0Dsl.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/af/c4/9953_prsn_O0Dsl.jpg"
+                    },
+                    "name": "石川界人",
+                    "short_summary": "日本男性声优。隶属于Stay Luck，出生于东京都。\r\n\r\n趣味\t読書、一人劇\r\n特技\t水泳、ウィンタースポーツ\r\n経歴\tプロ・フィット声優養成所　卒\r\n2014年第八回声優アワードにて「新人男優賞」受賞。\r\n2020年第十四回声優アワードにて「助演男優賞」受賞。\r\n2022年2月1日、ステイラックへ移籍。\r\n\r\n2025年9月30日，宣布与内田真礼结婚。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 9953,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 25782
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/bb/fd/25783_crt_cWa79.jpg?r=1410111852",
+                "grid": "https://lain.bgm.tv/pic/crt/g/bb/fd/25783_crt_cWa79.jpg?r=1410111852",
+                "large": "https://lain.bgm.tv/pic/crt/l/bb/fd/25783_crt_cWa79.jpg?r=1410111852",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bb/fd/25783_crt_cWa79.jpg?r=1410111852"
+            },
+            "name": "ツエルブ",
+            "summary": "像孩子一样天真，非常尊敬九重新，觉得他像哥哥一样，跟他一起转学到东京，两人经常一起行动。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8c/e3/14604_prsn_b1xVh.jpg?r=1758100707",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/8c/e3/14604_prsn_b1xVh.jpg?r=1758100707",
+                        "large": "https://lain.bgm.tv/pic/crt/l/8c/e3/14604_prsn_b1xVh.jpg?r=1758100707",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8c/e3/14604_prsn_b1xVh.jpg?r=1758100707"
+                    },
+                    "name": "斉藤壮馬",
+                    "short_summary": "高校生活に入って環境の変化に馴染めず、しばらく学校に行っていなかった時期があった。自宅で映画やアニメを見て過ごす時間の中で、『ぼくらの』の石田彰の演技をきっかけに、画面の「向こう側」への憧れを抱いていったという。\r\n2008年に第2回81オーディションに参加し、優秀賞を受賞。\r\n2009年に行われた第33回全国高等学校総合文化祭において、朗読部門にて審査員特別賞を受賞。\r\n高校卒業後、早稲田大学文学部に進学。大学生活に加え、声優の養成所に通っての練習、仕事、さらに慣れない一人暮らしなど、全てをバランス良く続けられなくなったと判断したため、一旦学業に専念し、大学3年の時養成所に通い直した。\r\n大学での勉強が一段落してきた大学4年の頃、声優の仕事を本格的に始めた。2014年春より放送されたテレビアニメ『ハイキュー!!』にて山口忠役を務め注目を集める。同年夏に放送された『アカメが斬る!』のタツミ役、『残響のテロル』のツエルブ（久見冬二）役で初主演を果たす。\r\n2015年、第9回声優アワード新人男優賞を受賞。\r\n2017年、ソロアーティストとしてSACRA MUSICよりデビュー。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 14604,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 25783
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/5b/3e/25784_crt_XXb28.jpg?r=1410111898",
+                "grid": "https://lain.bgm.tv/pic/crt/g/5b/3e/25784_crt_XXb28.jpg?r=1410111898",
+                "large": "https://lain.bgm.tv/pic/crt/l/5b/3e/25784_crt_XXb28.jpg?r=1410111898",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5b/3e/25784_crt_XXb28.jpg?r=1410111898"
+            },
+            "name": "三島リサ",
+            "summary": "与九重新和冬二在一所学校上学。在学校受欺负，家庭内部也有问题。在遇到冬二后，她的命运发生了巨大的变化。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7a/a7/7575_prsn_8TJlL.jpg?r=1671262190",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7a/a7/7575_prsn_8TJlL.jpg?r=1671262190",
+                        "large": "https://lain.bgm.tv/pic/crt/l/7a/a7/7575_prsn_8TJlL.jpg?r=1671262190",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7a/a7/7575_prsn_8TJlL.jpg?r=1671262190"
+                    },
+                    "name": "種﨑敦美",
+                    "short_summary": "種﨑 敦美（たねざき あつみ、9月27日 - ）は日本の女性声優。トリトリオフィス所属。大分県出身。\r\n\r\n声優を職業として認識したきっかけは『美少女戦士セーラームーン』である。同作品のテレビアニメ第45話「セーラー戦士死す!悲壮なる最終戦」を視聴したことから、その話の演技力に魅了されて声優になろうと決心する。その後、大分県から上京、高校を出てから養成所に入るため働いてためた資金で本格的に演技の勉強を始める。\r\n\r\n憧れの声優は、沢城みゆきと田中真弓。また子供の頃に同じ大分県出身の岩男潤子のコンサートへ行ったことがあり、彼女と話す機会に恵まれた際、「声優になりたいんです」と告げると「いつか共演できるといいね」と答えてもらっている。のちに現場で岩男と会ったときに当時の話をしたところ、「嬉しい」と喜んでもらえたという。\r\n\r\n2015年6月1日、トリトリオフィスを離れ、フリーになった事を発表した。同年10月1日、東京俳優生活協同組合に所属。\r\n\r\n姉と弟がおり、弟に対してブラザーコンプレックスを持っている。\r\n趣味は邦画鑑賞。\r\n動物好きであり、象や猿を見るとテンションがあがる。\r\nファッションの面では、Tシャツにジーンズなどラフなスタイルを好んでいる。\r\n好きな食べ物について、お子様ランチのメニューといった子供が好む物が好きだと語っている。\r\n仲の良い声優には深田愛衣がいる。\r\nインタビューにて、免許は持っていないがドライブが好きだと語っている。\r\n\r\n桐谷 華（きりたに はな）は、日本の女性声優。主にアダルトゲームに声をあてている。\r\n\r\n小学生の頃、クラスで演じた芝居で先生に演技をほめられ、それが嬉しくて芝居をやろうと考えた。ちょうどその頃見ていたアニメの『美少女戦士セーラームーン』から、声で芝居をする仕事を知り、声優を目指すことに決めた。家が貧乏だったため、上京する時も実家には全く頼らず、最初の4年間は普通のOLをして貯金して養成所に入った。\r\n\r\n芸名は、名字の「桐谷」は自身が好きな俳優の桐谷健太から名付けた。「華」は最初はひらがなにしようと思ったが、名字に合わせて漢字の方が綺麗だと思い、和風のイメージを出したかったこともあり漢字に決めた。\r\n\r\n控え目・おとなし目の役や、冷静に突っ込む委員長役などを演じることが多いが、自身が演じやすいのは天真爛漫な子どもっぽい役だという。\r\n\r\nエビ好きである。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 7575,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 25784
+        }
+    ]
+}

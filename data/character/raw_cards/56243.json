@@ -1,0 +1,45 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f9/a4/56243_crt_II9e2.jpg?r=1605797404",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f9/a4/56243_crt_II9e2.jpg?r=1605797404",
+        "large": "https://lain.bgm.tv/pic/crt/l/f9/a4/56243_crt_II9e2.jpg?r=1605797404",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f9/a4/56243_crt_II9e2.jpg?r=1605797404"
+    },
+    "summary": "師匠（ししょう） / レジー\r\n声 - 渡辺明乃（回想）、翠準子（老人） / Lynn（回想）、沢田敏子（老人）\r\n第二主线的主角。使用说服者（枪支）的能手，是曾在各国引起大骚动的问题人物，教导奇诺说服者跟旅行知识的女人。\r\n晚年居住在森林小屋里，但没有和昔日的伙伴“弟子”在一起。",
+    "name": "師匠",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "师父"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Shishou"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 5,
+        "collects": 20
+    },
+    "id": 56243,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        10582
+    ]
+}

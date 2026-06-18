@@ -1,0 +1,58 @@
+{
+    "id": 329114,
+    "name": "想要成为影之实力者！",
+    "image_path": "data\\images\\anime\\329114.jpg",
+    "points": 7.1,
+    "cost": 1,
+    "rarity": "N",
+    "description": "主人公最强×压倒的中二病×因误会造成的严肃喜剧！？\r\n“影之实力者”\r\n既不是主人公，也不是终极大BOSS，而是平日里彻底隐藏自己的实力、在暗中介入事件并施展自身实力的存在。\r\n憧憬着“影之实力者”、每天过着不起眼的生活、为了追求力量而修行的少年，在事故中丧生，转生到了异世界。\r\n重生为希德·卡盖诺的少年庆幸地在异世界享受着“影之实力者”这个设定，为了打倒“妄想”出来的“黑暗教团”（开玩笑）而暗中活动的时候，却发现“黑暗教团”似乎真的存在……？\r\n收为部下的少女们由于会错意误把希德作为影而崇拜，希德在一无所知的情况下成为了真正的“影之实力者”，他们一行人建立所起来的“暗影庭园”将毁灭这个世界上的黑暗――。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 20,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "穿越",
+        "小说改"
+    ],
+    "date": "2022-10-05",
+    "rating_rank": 2042,
+    "rating_score": 7.1,
+    "rating_total": 13329,
+    "main_character_ids": [
+        104269
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/af/eb/104269_crt_SvQKJ.jpg?r=1675247488",
+                "grid": "https://lain.bgm.tv/pic/crt/g/af/eb/104269_crt_SvQKJ.jpg?r=1675247488",
+                "large": "https://lain.bgm.tv/pic/crt/l/af/eb/104269_crt_SvQKJ.jpg?r=1675247488",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/af/eb/104269_crt_SvQKJ.jpg?r=1675247488"
+            },
+            "name": "シド・カゲノー / シャドウ",
+            "summary": "憧憬「影之强者」、追求力量的转生少年。表面上是乡下贵族卡盖诺男爵家的二男，在米德加尔魔剑士学园享受着“龙套”生活，但背地里却作为影之组织「暗影庭园」的盟主暗影，与「黑暗教团」对峙着（以这样的设定遨游）。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/67/99/12143_prsn_f8HZa.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/67/99/12143_prsn_f8HZa.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/67/99/12143_prsn_f8HZa.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/67/99/12143_prsn_f8HZa.jpg"
+                    },
+                    "name": "山下誠一郎",
+                    "short_summary": "山下 誠一郎（やました せいいちろう、1992年5月21日 - ）は、日本の男性声優。\r\n大沢事務所所属。広島県出身。アミューズメントメディア総合学院声優タレント学科卒業。\r\n\r\n高校卒業後、アミューズメントメディア総合学院へ入学。2012年に洋画『グッド・ドクター 禁断のカルテ』で声優デビューを果たした後、2013年1月から3月にかけて行われた「プロダクション所属学内オーディション」で大沢事務所に合格。同年10月にはテレビアニメ『ワルキューレ ロマンツェ』で主役デビューを果たした。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 12143,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 104269
+        }
+    ]
+}

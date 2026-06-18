@@ -1,0 +1,138 @@
+{
+    "id": 193619,
+    "name": "一拳超人 第二季",
+    "image_path": "data\\images\\anime\\193619.jpg",
+    "points": 6.5,
+    "cost": 1,
+    "rarity": "N",
+    "description": "因兴趣而开始做英雄的男人，埼玉。\r\n他通过3年的特训获得了无敌的力量，成为仅凭一击就能打倒任何敌人的英雄。\r\n他和偶然成为自己弟子的杰诺斯一起，开始在英雄协会正式展开英雄活动。\r\n在怪人发生率异常上升的同时，英雄协会想到大预言家皱巴巴婆婆留下的“地球完蛋了”的灾害的可能性，并准备开始研究对策。\r\n此时，对怪人感到憧憬的饿狼出现了。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "漫画改",
+        "战斗"
+    ],
+    "date": "2019-04-02",
+    "rating_rank": 5395,
+    "rating_score": 6.5,
+    "rating_total": 8935,
+    "main_character_ids": [
+        19243,
+        19671,
+        19684
+    ],
+    "main_characters": [
+        {
+            "id": 19243,
+            "name": "サイタマ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/62/e6/19243_crt_oBuev.jpg?r=1599062038",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/62/e6/19243_crt_oBuev.jpg?r=1599062038",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/62/e6/19243_crt_oBuev.jpg?r=1599062038",
+                "grid": "https://lain.bgm.tv/pic/crt/g/62/e6/19243_crt_oBuev.jpg?r=1599062038"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 12483,
+                    "name": "古川慎",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/15/71/12483_prsn_pXYzu.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/15/71/12483_prsn_pXYzu.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/15/71/12483_prsn_pXYzu.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/15/71/12483_prsn_pXYzu.jpg"
+                    },
+                    "short_summary": "古川 慎（ふるかわ まこと、1989年9月29日 - ）は、日本の男性声優。トイズファクトリー所属。\r\n熊本県出身。福岡スクールオブミュージック専門学校卒業。\r\n\r\n5歳の時に見た『新機動戦記ガンダムW』のヒイロ・ユイを充てた緑川光の声に憧れたことで声優への興味を持つようになった。その後中学生時代にスカパーのアニメ専門チャンネルを見てアニメ好きになったという。\r\n高校生の時、友達からもらった専門学校のパンフレットに緑川光が特別講師としてくることを見て、挑戦してみようと思い専門学校に通い始めた。\r\n\r\n趣味は雑貨屋めぐり、神社や寺などのパワースポットを巡ること。\r\n一番好きな食べ物はお好み焼き。キュウリとカリフラワーが苦手。\r\n好きなアーティストはL'Arc〜en〜Ciel、Mr.Children、ゴスペラーズ、GRANRODEO、BUMP OF CHICKEN。\r\n\r\n2011年にWebアニメ「武装中学生」吉野サトシ役で声優デビュー。\r\n2012年にアルバイトでPS3専用ソフト「白騎士物語」のモーションアクターを演じた経験を持つ。\r\n2016年、7月より声優の小林裕介と共にパーソナリティを務めるラジオ『なんでもヒーロー！ ゆっけとまーぼー』の放送を開始。\r\n2017年10月に開催された、初バースデーイベント「古川慎　秋の収穫祭2017」にて、2018年アーティスト活動を開始することを発表。\r\n2018年7月、Lantisより歌手デビュー。同年8月31日、6年間所属していたスペースクラフト・エンタテインメントを退所し、フリーでの活動期間を経て同年12月1日、トイズファクトリーに所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 19671,
+            "name": "ジェノス",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/15/92/19671_crt_tT7zy.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/15/92/19671_crt_tT7zy.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/15/92/19671_crt_tT7zy.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/15/92/19671_crt_tT7zy.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 9953,
+                    "name": "石川界人",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/af/c4/9953_prsn_O0Dsl.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/af/c4/9953_prsn_O0Dsl.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/af/c4/9953_prsn_O0Dsl.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/af/c4/9953_prsn_O0Dsl.jpg"
+                    },
+                    "short_summary": "日本男性声优。隶属于Stay Luck，出生于东京都。\r\n\r\n趣味\t読書、一人劇\r\n特技\t水泳、ウィンタースポーツ\r\n経歴\tプロ・フィット声優養成所　卒\r\n2014年第八回声優アワードにて「新人男優賞」受賞。\r\n2020年第十四回声優アワードにて「助演男優賞」受賞。\r\n2022年2月1日、ステイラックへ移籍。\r\n\r\n2025年9月30日，宣布与内田真礼结婚。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 19684,
+            "name": "ガロウ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/38/42/19684_crt_wo3Nx.jpg?r=1599062540",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/38/42/19684_crt_wo3Nx.jpg?r=1599062540",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/38/42/19684_crt_wo3Nx.jpg?r=1599062540",
+                "grid": "https://lain.bgm.tv/pic/crt/g/38/42/19684_crt_wo3Nx.jpg?r=1599062540"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3967,
+                    "name": "緑川光",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/ad/f7/3967_prsn_XC09F.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ad/f7/3967_prsn_XC09F.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ad/f7/3967_prsn_XC09F.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ad/f7/3967_prsn_XC09F.jpg"
+                    },
+                    "short_summary": "绿川光是日本声优界青年声优中的佼佼者之一，以其纯净纤细的独特声线为观众所喜爱。他偏冷色的音质十分适合饰演一些感性的角色，如《不思议游戏》中的鬼宿和《精灵使》中的觉罗。有时也会出演一些冷酷的恶役角色。其出演的角色中，有不少是看似性格孤僻、很难接近的人物，他声音中的“冷感”在这一类型的角色身上得到了充分的发挥。如《新机动战记高达W》中的希罗·尤尔和《灌篮高手》中的流川枫，但是细细品来可以发觉这些人物大都是本质纯朴、性格率直的少年。不甘被定型的绿川光还为拓展戏路而饰演了《白色猎人》中邪恶阴险的基路德比、《魔剑美神》（又名：秀逗魔导士）中笑料百出的杰路·刚帝士等与之前角色迥然不同的人物，其表现也十分出色 。最近还在乙女向游戏《Starry☆Sky～in Spring～》中担当人气的土萌羊配音。",
+                    "locked": false
+                },
+                {
+                    "id": 29828,
+                    "name": "真野あゆみ",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b6/22/29828_prsn_67n7O.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b6/22/29828_prsn_67n7O.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b6/22/29828_prsn_67n7O.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b6/22/29828_prsn_67n7O.jpg"
+                    },
+                    "short_summary": "真野 あゆみ（まの あゆみ、4月24日 - ）は、日本の女性声優。埼玉県出身。ステイラック預かり。\r\n\r\n2014年にスペルバウンド所属。2015年にステイラックワークショップ生となり、2016年にステイラック預かりとなる。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

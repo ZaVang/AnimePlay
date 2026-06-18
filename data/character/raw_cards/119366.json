@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/19/e8/119366_crt_Z2fgi.jpg?r=1674008609",
+        "grid": "https://lain.bgm.tv/pic/crt/g/19/e8/119366_crt_Z2fgi.jpg?r=1674008609",
+        "large": "https://lain.bgm.tv/pic/crt/l/19/e8/119366_crt_Z2fgi.jpg?r=1674008609",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/19/e8/119366_crt_Z2fgi.jpg?r=1674008609"
+    },
+    "summary": "加恋の幼なじみで、ポチ太の実家の隣に住んでいるクラスメイト。\r\n犬が苦手で、ポチ太のことを怖がっている。\r\nチューリップの香りがする。",
+    "name": "猫谷ミケ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "猫谷米可"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "猫谷美华"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ねこたに ミケ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://inuhiro-anime.com/character/"
+        }
+    ],
+    "stat": {
+        "comments": 17,
+        "collects": 40
+    },
+    "id": 119366,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        374319
+    ]
+}

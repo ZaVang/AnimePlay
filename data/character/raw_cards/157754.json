@@ -1,0 +1,86 @@
+{
+    "birth_mon": 1,
+    "gender": "female",
+    "birth_day": 26,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b1/97/157754_crt_2YkX9.jpg?r=1726054932",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b1/97/157754_crt_2YkX9.jpg?r=1726054932",
+        "large": "https://lain.bgm.tv/pic/crt/l/b1/97/157754_crt_2YkX9.jpg?r=1726054932",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b1/97/157754_crt_2YkX9.jpg?r=1726054932"
+    },
+    "summary": "李之丘高中二年级生。广播社社长。个性开朗，是引导大家的领袖。以全国大赛决赛为目标，对此的热情超乎常人。\r\n\r\n[简介原文]\r\nすももが丘高校二年生。放送部部長。\r\n朗らかな性格で部員たちを引っ張るリーダー。\r\n全国大会決勝を目指して人一倍情熱を燃やす。",
+    "name": "薄頼瑞希",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "薄赖瑞希"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "薄頼 瑞希"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "うすらい みずき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Usurai Mizuki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1月26日"
+        },
+        {
+            "key": "身高",
+            "value": "171cm"
+        },
+        {
+            "key": "引用来源",
+            "value": [
+                {
+                    "k": "公式サイト",
+                    "v": "https://hanashura-anime.com/character/detail.html#character02"
+                }
+            ]
+        },
+        {
+            "key": "出身",
+            "value": "美芭蕉市"
+        },
+        {
+            "key": "就读学校",
+            "value": "鳴野中学/すももが丘高校"
+        },
+        {
+            "key": "喜欢的东西",
+            "value": "友達、昔の映画"
+        },
+        {
+            "key": "讨厌的东西",
+            "value": "祖母、将来"
+        }
+    ],
+    "stat": {
+        "comments": 31,
+        "collects": 32
+    },
+    "id": 157754,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        498934
+    ]
+}

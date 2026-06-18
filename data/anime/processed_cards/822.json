@@ -1,0 +1,122 @@
+{
+    "id": 822,
+    "name": "FLCL",
+    "image_path": "data\\images\\anime\\822.jpg",
+    "points": 8.3,
+    "cost": 4,
+    "rarity": "SSR",
+    "description": "近未来的日本，一个叫做“疏濑”的城市中，市民过着平凡的生活，只不过，在城市的一角，山冈上面耸立着医疗机器制造厂建造的外形酷似熨斗的工厂，每天固定时刻，那个工厂都像刚烫完东西一样散发出大量蒸汽。\r\n小学六年级学生直太，与高中女生真见美，直太那个留学的哥哥的女友，一起在河边打发时间。本该是继续平凡的日子，随着传说中的蜜蜂女——睛子驾驶的电车撞上直太而结束了。直太头上长出了奇怪的角！而睛子居然成为直太家的佣人进入了直太家。睛子的秘密与她口中常念起的“FLCL”的含义，令直太的生活有了翻天覆地的改变。",
+    "type": 2,
+    "platform": "OVA",
+    "episodes_for_hangup": 6,
+    "synergy_tags": [
+        "日本",
+        "OVA",
+        "原创"
+    ],
+    "date": "2000-04-26",
+    "rating_rank": 88,
+    "rating_score": 8.3,
+    "rating_total": 10165,
+    "main_character_ids": [
+        8327,
+        8328,
+        16967
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/bc/6d/8327_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/bc/6d/8327_crt_anidb.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/bc/6d/8327_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bc/6d/8327_crt_anidb.jpg"
+            },
+            "name": "ナンダバ・ナオ太",
+            "summary": "小学6年级生，纯情害羞的普通少年。被晴子的电贝斯打中额头后，额头开始长出奇妙的角，然后从那跑出各式各样的物体。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6e/48/4079_prsn_rV5FG.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/6e/48/4079_prsn_rV5FG.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/6e/48/4079_prsn_rV5FG.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6e/48/4079_prsn_rV5FG.jpg"
+                    },
+                    "name": "水樹洵",
+                    "short_summary": "",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 4079,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 8327
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/bc/95/8328_crt_vqp0K.jpg?r=1584811397",
+                "grid": "https://lain.bgm.tv/pic/crt/g/bc/95/8328_crt_vqp0K.jpg?r=1584811397",
+                "large": "https://lain.bgm.tv/pic/crt/l/bc/95/8328_crt_vqp0K.jpg?r=1584811397",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bc/95/8328_crt_vqp0K.jpg?r=1584811397"
+            },
+            "name": "サメジマ・マミ美",
+            "summary": "不知为何跟着直太的女高中生。17歳。跟直太的哥哥タスク在交往，但是タスク因留学而有了新恋人，所以实际上是失恋了。因此而自暴自弃，因为性格上的转变而有孤独的一面。有吸烟。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ad/68/4078_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ad/68/4078_seiyu_anidb.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/ad/68/4078_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ad/68/4078_seiyu_anidb.jpg"
+                    },
+                    "name": "笠木泉",
+                    "short_summary": "",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 4078,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 8328
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a0/bc/16967_crt_XnOo9.jpg?r=1379608420",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a0/bc/16967_crt_XnOo9.jpg?r=1379608420",
+                "large": "https://lain.bgm.tv/pic/crt/l/a0/bc/16967_crt_XnOo9.jpg?r=1379608420",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a0/bc/16967_crt_XnOo9.jpg?r=1379608420"
+            },
+            "name": "ハルハラ・ハル子",
+            "summary": "在直太面前突然出现的谜样少女。本名为ハルハ・ラハル。自称19岁的“宇宙人”。个性常常傍若无人。所拿的电贝斯是乐器同时也是武器，还有各式各样的用途。想利用直太来达成自己的愿望。在剧中常装扮成护士、女仆及兔女郎。左撇子。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8f/25/4318_prsn_jwFsf.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/8f/25/4318_prsn_jwFsf.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/8f/25/4318_prsn_jwFsf.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8f/25/4318_prsn_jwFsf.jpg"
+                    },
+                    "name": "新谷真弓",
+                    "short_summary": "日本女性演员、声优，广岛县出身。\r\n演员方面：1995年成为NYLON100℃剧团成员。曾为“天然Robot”剧团和星尘传播(Stardust Promotion)旗下成员，现为自由身。\r\n声优方面：2014年3月加入Kenyu Office事务所。\r\n在其出道作品《他和她的事情》曾出演芝姬翼受到导演庵野秀明的赏识，之后参演了其执导的动画《FLCL》和真人版电影《甜心战士》。",
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 4318,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 16967
+        }
+    ]
+}

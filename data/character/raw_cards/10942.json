@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/33/8b/10942_crt_cpVIE.jpg?r=1567408767",
+        "grid": "https://lain.bgm.tv/pic/crt/g/33/8b/10942_crt_cpVIE.jpg?r=1567408767",
+        "large": "https://lain.bgm.tv/pic/crt/l/33/8b/10942_crt_cpVIE.jpg?r=1567408767",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/33/8b/10942_crt_cpVIE.jpg?r=1567408767"
+    },
+    "summary": "御伽学园高中部一年F班学生。原型角色是《小红帽》里的小红帽和《白雪公主》里的“毒苹果”。",
+    "name": "赤井林檎",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "赤井林檎"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "あかい りんご"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Akai Ringo"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 2,
+        "collects": 33
+    },
+    "id": 10942,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        5652
+    ]
+}

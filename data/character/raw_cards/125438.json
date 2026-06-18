@@ -1,0 +1,57 @@
+{
+    "birth_mon": 10,
+    "gender": "female",
+    "birth_day": 18,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/86/26/125438_crt_9bguO.jpg?r=1692363659",
+        "grid": "https://lain.bgm.tv/pic/crt/g/86/26/125438_crt_9bguO.jpg?r=1692363659",
+        "large": "https://lain.bgm.tv/pic/crt/l/86/26/125438_crt_9bguO.jpg?r=1692363659",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/86/26/125438_crt_9bguO.jpg?r=1692363659"
+    },
+    "summary": "海果のクラスメイトで隣の席。クラスの副学級委員長も務める。温和な性格で誰とでも仲良くなれる。",
+    "name": "宝木遥乃",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "宝木遥乃"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "たからき はるの"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Haruno Takaragi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "10月18日"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://hoshitele-anime.com/#Character"
+        }
+    ],
+    "stat": {
+        "comments": 19,
+        "collects": 32
+    },
+    "id": 125438,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        404115
+    ]
+}

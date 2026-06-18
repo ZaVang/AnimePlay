@@ -1,0 +1,59 @@
+{
+    "id": 330973,
+    "name": "看得见的女孩",
+    "image_path": "data\\images\\anime\\330973.jpg",
+    "points": 6.8,
+    "cost": 1,
+    "rarity": "N",
+    "description": "看见应该看不见的东西时，看见不应该看见的东西时，换作是你会怎么做呢……？\r\n要是“那些东西”和你讲话，亦或是朝着你走过来的话，你又会怎么做呢……？\r\n会拔腿就跑吗？还是会学习可疑的法术？又或者是会拜托灵媒师，选择战斗呢？女高中生‧四谷见子所采取的行动是——彻底的无视。\r\n什么也没看见，什么也没察觉到。这是拥有着钢铁般的精神的女高中生靠着她的无视技能，回避那些异形般的可怕家伙们的故事。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改",
+        "恐怖"
+    ],
+    "date": "2021-10-03",
+    "rating_rank": 3673,
+    "rating_score": 6.8,
+    "rating_total": 4971,
+    "main_character_ids": [
+        98447
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ba/52/98447_crt_V1Rbi.jpg?r=1634074304",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ba/52/98447_crt_V1Rbi.jpg?r=1634074304",
+                "large": "https://lain.bgm.tv/pic/crt/l/ba/52/98447_crt_V1Rbi.jpg?r=1634074304",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ba/52/98447_crt_V1Rbi.jpg?r=1634074304"
+            },
+            "name": "四谷みこ",
+            "summary": "ある日異形な化け物たちが、唐突に“見える”ようになってしまった普通の女子高生。普通なだけあって、異形のものどもなんてフツーに恐い。気がついたら見えなくなってることを願いつつ、日々奮闘している。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a2/62/12568_prsn_jLLz4.jpg?r=1693248727",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a2/62/12568_prsn_jLLz4.jpg?r=1693248727",
+                        "large": "https://lain.bgm.tv/pic/crt/l/a2/62/12568_prsn_jLLz4.jpg?r=1693248727",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a2/62/12568_prsn_jLLz4.jpg?r=1693248727"
+                    },
+                    "name": "雨宮天",
+                    "short_summary": "雨宫天（あまみや そら）是日本的女性声优、歌手，1993年8月28日出生于日本东京都。\r\n\r\n[b]经历[/b]\r\n1993年8月28日出生于日本东京都；因憧憬声优[url=https://bgm.tv/person/4244]泽城美雪[/url]而向往成为一名声优。\r\n在2011年举办的第2回MusicRay'n超级声优试镜中合格，2012年声优活动开始，2014年在TV动画《[url=https://bgm.tv/subject/88493]一周的朋友。[/url]》担任[url=https://bgm.tv/character/23104]藤宫香织[/url]CV,为初主役角色。\r\n2014年12月21日，与同事务所的[url=https://bgm.tv/person/13565]麻仓桃[/url]、[url=https://bgm.tv/person/13581]夏川椎菜[/url]组成声优组合“[url=https://bgm.tv/person/18492]TrySail[/url]”，并于2015年·正式开始活动。\r\n2015年第9回声优奖中获得新人女声优奖。\r\n2015年10月2日，发行自己的第一部写真集《ソライロ～青と旅する～》。\r\n2020年4月17日，开通绘画日记企划期间限定Twitter账号(现已转为永久账号)",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 12568,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 98447
+        }
+    ]
+}

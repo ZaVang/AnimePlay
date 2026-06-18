@@ -1,0 +1,77 @@
+{
+    "id": 238,
+    "name": "攻壳机动队2 无罪",
+    "image_path": "data\\images\\anime\\238.jpg",
+    "points": 8.7,
+    "cost": 6,
+    "rarity": "UR",
+    "description": "故事发生在不远的将来，那时科学技术相当发达，出现了纳米机械和生物电脑，Cyborg义体开始全面普及，整个世界由光和电子连接，人脑也可以直接联入网络。\r\n主人公是专门打击恐怖犯罪的政府直属机关公安九课的刑警巴特。巴特其实也是一个机械化了的人类，他的四肢以及大部分身体都是人造机械代替品。在他的大脑中仅残留微薄的人间记忆，那个叫“素子”的女孩总是浮现在他的脑海中，怎么忘也忘不掉。\r\n某天，一个少女型的玩偶机器人突然失控，杀害了拥有她的主人。“为人类服务而制造的机器人，为什么反过来袭击人类？”为了弄清除原因，巴特和搭档德古沙立即展开调查。进入电脑网络后，巴特的“脑”不断受到无名黑客的攻击，他也在艰难中，一步步接近事情的真相……",
+    "type": 2,
+    "platform": "剧场版",
+    "episodes_for_hangup": 1,
+    "synergy_tags": [
+        "科幻",
+        "科幻",
+        "剧场版",
+        "剧场版",
+        "日本",
+        "日本",
+        "漫画改",
+        "漫画改"
+    ],
+    "date": "2004-03-06",
+    "rating_rank": 20,
+    "rating_score": 8.7,
+    "rating_total": 8110,
+    "main_character_ids": [
+        3002,
+        3008
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/da/95/3002_crt_I1bP7.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/da/95/3002_crt_I1bP7.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/da/95/3002_crt_I1bP7.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/da/95/3002_crt_I1bP7.jpg"
+            },
+            "name": "バトー",
+            "summary": "公安9课成员，前陆上自卫队游骑兵部队成员。\r\n近乎通身义体化，比例仅次于草薙素子。\r\n佩戴于陆上自卫队时期特制的特殊义眼，带有传感器阵列、热传感器等。\r\n能熟练操控从小型到重型的各种武器。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/18/8c/3832_prsn_O1E5c.jpg?r=1545044333",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/18/8c/3832_prsn_O1E5c.jpg?r=1545044333",
+                        "large": "https://lain.bgm.tv/pic/crt/l/18/8c/3832_prsn_O1E5c.jpg?r=1545044333",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/18/8c/3832_prsn_O1E5c.jpg?r=1545044333"
+                    },
+                    "name": "大塚明夫",
+                    "short_summary": "日本の声優、俳優、ナレーター。マウスプロモーション所属。\r\n父は同じく俳優・声優の大塚周夫、元妻は声優の沢海陽子。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 3832,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 3002
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f5/c8/3008_crt_ftTsK.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f5/c8/3008_crt_ftTsK.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/f5/c8/3008_crt_ftTsK.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f5/c8/3008_crt_ftTsK.jpg"
+            },
+            "name": "公安9課",
+            "summary": "由前军官、法医科学家和警察侦探组成的信息安全和情报部门。\r\n组织结构以德国GSG-9特种部队为基础，与英国特种空勤团亦有交叉训练。\r\n是直属日本内务省，听命于总局长和日本首相的独立部队。\r\n有关第9课的大部分信息为高度机密，内务省不对其活动细节发表评论。\r\n公众并不知晓第9课的存在，国会和其他安全部队部门对9课的认识也仅为一个“黑色行动单位”。这使得9课能够独立运作，不受政府监督，以避免繁文缛节和官僚主义。\r\n9课负责众多独特职能，包括国家层面的信息安全、要员保护、调查贪污、打击恐怖组织乃至于暗杀，其形态的特殊也令其直面新型犯罪事件。",
+            "relation": "主角",
+            "actors": [],
+            "type": 4,
+            "id": 3008
+        }
+    ]
+}

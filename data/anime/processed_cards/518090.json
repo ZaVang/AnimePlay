@@ -1,0 +1,93 @@
+{
+    "id": 518090,
+    "name": "九龙大众浪漫",
+    "image_path": "data\\images\\anime\\518090.jpg",
+    "points": 6.2,
+    "cost": 1,
+    "rarity": "N",
+    "description": "充满怀旧气息的街区“九龙城寨”，在这里的一家房地产公司工作的鲸井令子，迷上了公司前辈工藤发。\r\n有一天，意识到这份恋情的鲸井令子从一张照片中得知工藤发曾经有过未婚妻，而且那个未婚妻竟然和自己长得一模一样。\r\n另一个鲸井令子的存在让她意识到自己没有过去的记忆。\r\n在妖艳美丽的九龙街区上展开的日常。\r\n没有记忆却感到怀念的风景。\r\n以及不可阻挡的爱。\r\n在过去与现在的时间轴交错之中，恋爱将解开所有的秘密。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "科幻",
+        "悬疑",
+        "TV",
+        "恋爱",
+        "日本",
+        "漫画改"
+    ],
+    "date": "2025-04-05",
+    "rating_rank": 7134,
+    "rating_score": 6.2,
+    "rating_total": 3884,
+    "main_character_ids": [
+        165525,
+        165526
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/df/9d/165525_crt_Mx6yA.jpg?r=1734532261",
+                "grid": "https://lain.bgm.tv/pic/crt/g/df/9d/165525_crt_Mx6yA.jpg?r=1734532261",
+                "large": "https://lain.bgm.tv/pic/crt/l/df/9d/165525_crt_Mx6yA.jpg?r=1734532261",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/df/9d/165525_crt_Mx6yA.jpg?r=1734532261"
+            },
+            "name": "鯨井令子",
+            "summary": "九龍城砦の不動産会社「旺来地產公司」に務める会社員。スイカを食べながらタバコを吸うことが好き。同じ職場の先輩・工藤への恋心を自覚したと同時にこの九龍の違和感に気づき、その謎に迫ることになる…。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a9/6f/18600_prsn_LGgtC.jpg?r=1585323843",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a9/6f/18600_prsn_LGgtC.jpg?r=1585323843",
+                        "large": "https://lain.bgm.tv/pic/crt/l/a9/6f/18600_prsn_LGgtC.jpg?r=1585323843",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a9/6f/18600_prsn_LGgtC.jpg?r=1585323843"
+                    },
+                    "name": "白石晴香",
+                    "short_summary": "日本の女優、声優。\r\n特长：爵士舞、芭蕾、花道、书法、舞蹈、足球。\r\n\r\n2007年より女優として活動し、舞台などに出演。2011年に『コクリコ坂から』の松崎空役で声優デビュー。\r\n2019年12月31日，退出ヒラタオフィス事务所\r\n2020年1月1日开始作为自由声优活动并开设了新的Twitter帐号（shiraharu48）。\r\n2020年6月1日开始进入TOY'S FACTORY(トイズファクトリー)事务所。",
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 18600,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 165525
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/30/13/165526_crt_7uUaP.jpg?r=1734532262",
+                "grid": "https://lain.bgm.tv/pic/crt/g/30/13/165526_crt_7uUaP.jpg?r=1734532262",
+                "large": "https://lain.bgm.tv/pic/crt/l/30/13/165526_crt_7uUaP.jpg?r=1734532262",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/30/13/165526_crt_7uUaP.jpg?r=1734532262"
+            },
+            "name": "工藤発",
+            "summary": "九龍城砦の不動産会社「旺来地產公司」に務める令子の先輩社員。大雑把な性格で遅刻の常習犯。「八」の数字を見かけると触ってしまう癖がある。九龍を知り尽くしており、この街の人や文化、食べ物が大好き。令子を気にかけながらもある秘密を抱えている。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/72/98/4513_prsn_o6DbE.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/72/98/4513_prsn_o6DbE.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/72/98/4513_prsn_o6DbE.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/72/98/4513_prsn_o6DbE.jpg"
+                    },
+                    "name": "杉田智和",
+                    "short_summary": "在其代表作品中常出演擅长吐槽的男主角（特别是凉宫春日中的阿虚），号称“第一吐槽男”。\r\n专长是按摩、少林寺拳法初段。爱犬的名字为Naoji。\r\n著名的“超级机器人大战FAN”，其称为“老师”的绿川光是著名的“超级玩家”，并且同为系列死忠。\r\n在声优界亲近的友人有中村悠一、铃村健一、樱井孝宏、小野大辅、神谷浩史等人。\r\n经常对外宣称与中村悠一的亲密关系（广播节目、声优见面会以及自己的生日庆祝EVENT等），还说过“只要有中村和直司（Naoji，杉田家的狗）就够了，我是杉田智和。”两人关系好得经常被其他声优说“像在交往一样”。\r\n另外与同为声优的铃木达央、羽多野涉、寺岛拓笃、市来光弘等人关系友好，合称为“杉田组”，杉田智和是杉田组的组长。\r\n崇拜的业内人士有若本规夫（杉田喜欢模仿这位是出了名的）、速水奖（中学时代就常听他的radio节目） 、铃置洋孝、绿川光（机器人大战同好）、置鲇龙太郎。\r\nLOVEPLUS的重度中毒者之一，跟阪口大助同为攻略游戏中的高岭爱花，并有在杉田的广播节目互相交流“女友经”。\r\n学园传奇冒险游戏月英学园 -kou-的原作者，其饰演执事一角。\r\n与中村悠一多次使用过淫梦梗，被鉴定为淫梦民。\r\n\r\n2009年获得声优奖男优部门配角赏",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 4513,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 165526
+        }
+    ]
+}

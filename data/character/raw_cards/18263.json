@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ce/87/18263_crt_C40w5.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ce/87/18263_crt_C40w5.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/ce/87/18263_crt_C40w5.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ce/87/18263_crt_C40w5.jpg"
+    },
+    "summary": "",
+    "name": "水野楓",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "水野枫"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "水野 楓"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "みずの かえで"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Mizuno Kaede"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 5,
+        "collects": 22
+    },
+    "id": 18263,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        2735
+    ]
+}

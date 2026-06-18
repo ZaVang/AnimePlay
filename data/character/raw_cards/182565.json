@@ -1,0 +1,40 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a7/71/182565_crt_qWIW1.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a7/71/182565_crt_qWIW1.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/a7/71/182565_crt_qWIW1.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a7/71/182565_crt_qWIW1.jpg"
+    },
+    "summary": "魔術適性：盗みの魔術\r\n人でなしの父親を持ち、奴隷として売られるところをヴァンに買われた。そのため、ヴァンに心酔しており、絶対の忠誠を誓っている。",
+    "name": "カムシン",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "卡姆辛"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 3,
+        "collects": 8
+    },
+    "id": 182565,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        554013
+    ]
+}

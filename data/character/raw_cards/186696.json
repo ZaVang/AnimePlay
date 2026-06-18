@@ -1,0 +1,66 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c9/d6/186696_crt_b68Qi.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c9/d6/186696_crt_b68Qi.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/c9/d6/186696_crt_b68Qi.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c9/d6/186696_crt_b68Qi.jpg"
+    },
+    "summary": "修古利亚王国的第九公主。库诺的未婚妻。\r\n\r\nヒューグリア王国の第九王女でクノンの許嫁。初めは心を閉ざしているクノンと過ごす時間を憂鬱に思っていたが、大きな目標に向かって成長していくクノンの姿に惹かれていく。クノンを慕っており、健気で真っ直ぐな女の子。",
+    "name": "ミリカ・ヒューグリア",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "蜜莉卡·修古利亚"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "韩语名",
+                    "v": "미리카 휴그리아"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Mirika Huglia"
+                },
+                {
+                    "k": "日文名",
+                    "v": "ミリカ・ヒューグリア"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": [
+                {
+                    "k": "动画官网",
+                    "v": "http://kunonanime.jp/"
+                },
+                {
+                    "k": "wiki",
+                    "v": "https://zh.wikipedia.org/wiki/%E9%AD%94%E8%A1%93%E5%B8%AB%E5%BA%AB%E8%AB%BE%E7%9C%8B%E5%BE%97%E8%A6%8B%E4%B8%80%E5%88%87#%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9"
+                }
+            ]
+        }
+    ],
+    "stat": {
+        "comments": 12,
+        "collects": 39
+    },
+    "id": 186696,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        534674
+    ]
+}

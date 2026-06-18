@@ -1,0 +1,242 @@
+{
+    "id": 302,
+    "name": "龙猫",
+    "image_path": "data\\images\\anime\\302.jpg",
+    "points": 8.2,
+    "cost": 3,
+    "rarity": "SR",
+    "description": "本片是對日本鄉村生活的迷人及節奏緩慢的描繪。故事背景設定於1958年（昭和33年），一位大學教授和他的兩個女兒搬進一個森林附近的一所舊房子，因為他的妻子染上了結核病，在附近的一所醫院康復中。他的女兒們發現了「煤炭屎」，她們又名「煤炭屎鬼」。\r\n\r\n次子追趕一隻小龍貓，牠引領了她去找到森林守護者「龍貓」。次子被牠們迷住了，並且下定決心去尋找大龍貓。一個下雨的晚上，當女孩們在等爸爸時，她們遇到了一個，用樹葉擋雨的大龍貓。當次子想把一個成熟的玉米帶給住在醫院的媽媽時，但迷了路，草子到處尋找她，最後去找大龍貓幫忙。並且在牠的幫助下，梅被迅速找到了。龍貓召喚而來的貓公車，接送草子和次子穿過鄉間，到醫院探望她們的媽媽。",
+    "type": 2,
+    "platform": "剧场版",
+    "episodes_for_hangup": 1,
+    "synergy_tags": [
+        "剧场版",
+        "日本",
+        "奇幻",
+        "原创"
+    ],
+    "date": "1988-04-16",
+    "rating_rank": 128,
+    "rating_score": 8.2,
+    "rating_total": 12845,
+    "main_character_ids": [
+        3582,
+        35245,
+        70027
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/9d/68/3582_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/9d/68/3582_crt_anidb.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/9d/68/3582_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9d/68/3582_crt_anidb.jpg"
+            },
+            "name": "草壁メイ",
+            "summary": "",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7e/8d/4092_prsn_666bW.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7e/8d/4092_prsn_666bW.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/7e/8d/4092_prsn_666bW.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7e/8d/4092_prsn_666bW.jpg"
+                    },
+                    "name": "坂本千夏",
+                    "short_summary": "",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 4092,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/79/fe/79137_prsn_PT3Eu.jpg?r=1756628770",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/79/fe/79137_prsn_PT3Eu.jpg?r=1756628770",
+                        "large": "https://lain.bgm.tv/pic/crt/l/79/fe/79137_prsn_PT3Eu.jpg?r=1756628770",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/79/fe/79137_prsn_PT3Eu.jpg?r=1756628770"
+                    },
+                    "name": "Elle Fanning",
+                    "short_summary": "美国女演员，为达科塔·范宁的胞妹。",
+                    "career": [
+                        "producer",
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 79137,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "",
+                        "grid": "",
+                        "large": "",
+                        "medium": ""
+                    },
+                    "name": "陳若甄",
+                    "short_summary": "台湾女性配音员。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 79168,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/08/e0/81521_prsn_3cxJX.jpg?r=1760276976",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/08/e0/81521_prsn_3cxJX.jpg?r=1760276976",
+                        "large": "https://lain.bgm.tv/pic/crt/l/08/e0/81521_prsn_3cxJX.jpg?r=1760276976",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/08/e0/81521_prsn_3cxJX.jpg?r=1760276976"
+                    },
+                    "name": "杨鸣",
+                    "short_summary": "中国内地女性配音演员。\r\n毕业于吉林艺术学院2003级，2007年加入长春电影译制厂担任配音演员至今。声音清脆，从成熟少女到活泼萝莉角色均可演绎。\r\n现居吉林长春。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 81521,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 3582
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a8/c9/35245_crt_AEP5s.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a8/c9/35245_crt_AEP5s.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/a8/c9/35245_crt_AEP5s.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a8/c9/35245_crt_AEP5s.jpg"
+            },
+            "name": "草壁サツキ",
+            "summary": "故事的主角，为一名11岁就读小学四年级的女孩。\r\n性格坚毅有朝气，因母亲住院因素而在家中代理母职，负责打理大部分的家务。\r\n名字的日语原名“サツキ”（Satsuki）是日语里“皋月”（五月的别称）的念法。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5e/57/4024_prsn_bMBgq.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/5e/57/4024_prsn_bMBgq.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/5e/57/4024_prsn_bMBgq.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5e/57/4024_prsn_bMBgq.jpg"
+                    },
+                    "name": "日髙のり子",
+                    "short_summary": "日髙 のり子（ひだか のりこ、1962年5月31日 - ）は、日本の声優、女優、ラジオパーソナリティ、ナレーターである。\r\n東京都千代田区九段出身。愛称は「ノン子（さん）」。本名の旧姓は伊東。名は範子。身長157cm。血液型はAB型。既婚。2009年1月19日に事務所「コンビネーション」を三ツ矢雄二と共に設立する。\r\n代表作に『タッチ』（浅倉南）、『となりのトトロ』（草壁サツキ）、『らんま1/2』（天道あかね）など。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 4024,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/35/75/72254_prsn_iJnXg.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/35/75/72254_prsn_iJnXg.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/35/75/72254_prsn_iJnXg.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/35/75/72254_prsn_iJnXg.jpg"
+                    },
+                    "name": "傅其慧",
+                    "short_summary": "台湾女性配音演员，毕业于世新大学广电系广播组。\r\n1998年10月开始进入配音行业。\r\n本人最喜欢的三部作品：日本动画《大嘴鸟》、日本动画电影《龙猫》、韩剧《预约爱情》。\r\n与日本声优钉宫理惠同年同月同日生。\r\n较为著名的角色有《大嘴鸟》主角大嘴鸟、《网球王子》主角越前龙马（前期）、《灼眼的夏娜》主角夏娜、《凉宫春日的忧郁》主角凉宫春日、《轻音少女》琴吹紬等。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 72254,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/03/71/78912_prsn_Q4Qaz.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/03/71/78912_prsn_Q4Qaz.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/03/71/78912_prsn_Q4Qaz.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/03/71/78912_prsn_Q4Qaz.jpg"
+                    },
+                    "name": "賀世芳",
+                    "short_summary": "台湾女性配音员、演员。",
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 78912,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/37/7f/79502_prsn_s5iJ1.jpg?r=1756909583",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/37/7f/79502_prsn_s5iJ1.jpg?r=1756909583",
+                        "large": "https://lain.bgm.tv/pic/crt/l/37/7f/79502_prsn_s5iJ1.jpg?r=1756909583",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/37/7f/79502_prsn_s5iJ1.jpg?r=1756909583"
+                    },
+                    "name": "Dakota Fanning",
+                    "short_summary": "美国女演员，2000年以童星出道。达科塔的成名作是2001年的《我是山姆》、2005年的《世界大战》、《捉迷藏》和2006年的《夏洛特的网》。达科塔亦是美国演员工会奖最年轻的提名者之一。其胞妹艾丽·范宁亦是知名女演员。",
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 79502,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 35245
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/98/6b/70027_crt_9cbSz.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/98/6b/70027_crt_9cbSz.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/98/6b/70027_crt_9cbSz.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/98/6b/70027_crt_9cbSz.jpg"
+            },
+            "name": "トトロ",
+            "summary": "森林里的精灵，以橡子为食物",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e4/1e/5527_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e4/1e/5527_seiyu_anidb.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/e4/1e/5527_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e4/1e/5527_seiyu_anidb.jpg"
+                    },
+                    "name": "高木均",
+                    "short_summary": "",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 5527,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/09/7c/34998_prsn_N7mXE.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/09/7c/34998_prsn_N7mXE.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/09/7c/34998_prsn_N7mXE.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/09/7c/34998_prsn_N7mXE.jpg"
+                    },
+                    "name": "Frank Welker",
+                    "short_summary": "美国配音演员，生于科罗拉多州丹佛。知名角色有《变形金刚》中的威震天。",
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 34998,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 70027
+        }
+    ]
+}

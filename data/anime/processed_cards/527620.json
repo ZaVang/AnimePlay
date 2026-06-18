@@ -1,0 +1,191 @@
+{
+    "id": 527620,
+    "name": "章鱼哔的原罪",
+    "image_path": "data\\images\\anime\\527620.jpg",
+    "points": 6.8,
+    "cost": 1,
+    "rarity": "N",
+    "description": "来自HAPPY星的外星人章鱼哔，目的是在地球散播HAPPY。结果出师不利，一来到地球他就差点饿死，此时救了他一命的是平凡的少女小静。然而章鱼哔发现，小静却始终没有笑容。为了让小静找回遗失的笑容，章鱼哔努力奔走，但小静所处的环境却是远超乎章鱼哔所能想象的严苛。在这样的情况下，章鱼哔究竟犯下了什么样的大罪......？ \r\n\r\n\r\n[简介原文]\r\nハッピーを広めるため地球に降り立ったハッピー星人のタコピーは人間の女の子しずかと出会う。\r\nピンチを救ってもらったタコピーはしずかの笑顔を取り戻すため不思議な力を持つハッピー道具で奔走する。\r\nしかし、しずかはおうちと学校で何か事情を抱えているようで…。\r\nこれは、ぼくときみの最高にハッピーな物語——",
+    "type": 2,
+    "platform": "WEB",
+    "episodes_for_hangup": 6,
+    "synergy_tags": [
+        "校园",
+        "日本",
+        "奇幻",
+        "漫画改",
+        "少年向",
+        "WEB"
+    ],
+    "date": "2025-06-28",
+    "rating_rank": 3437,
+    "rating_score": 6.8,
+    "rating_total": 10512,
+    "main_character_ids": [
+        162156,
+        162157,
+        162158,
+        162159
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/29/9b/162156_crt_tS4oC.jpg?r=1741526778",
+                "grid": "https://lain.bgm.tv/pic/crt/g/29/9b/162156_crt_tS4oC.jpg?r=1741526778",
+                "large": "https://lain.bgm.tv/pic/crt/l/29/9b/162156_crt_tS4oC.jpg?r=1741526778",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/29/9b/162156_crt_tS4oC.jpg?r=1741526778"
+            },
+            "name": "タコピー",
+            "summary": "ハッピーを広めるため\r\n地球に来たハッピー星人。\r\n見た目がタコに似ているため、\r\nしずかにはタコピーと呼ばれている。\r\n無垢すぎるが故に、\r\nずれた言動をすることもしばしば。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5c/bb/4948_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/5c/bb/4948_seiyu_anidb.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/5c/bb/4948_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5c/bb/4948_seiyu_anidb.jpg"
+                    },
+                    "name": "間宮くるみ",
+                    "short_summary": "",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 4948,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c5/14/13164_prsn_KWnmW.jpg?r=1752543801",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c5/14/13164_prsn_KWnmW.jpg?r=1752543801",
+                        "large": "https://lain.bgm.tv/pic/crt/l/c5/14/13164_prsn_KWnmW.jpg?r=1752543801",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c5/14/13164_prsn_KWnmW.jpg?r=1752543801"
+                    },
+                    "name": "上田麗奈",
+                    "short_summary": "日本的女性声优，富山县出身，所属事务所为81 Produce。\r\n初中时同属演剧部的女生有声优志向者，尊敬她的上田觉得“声优肯定是很美妙的职业”，又担心“自己的性格很奇怪”，本来以美术大学为志愿的她最终在声优试音报名结束前三天才报名。\r\n2011年，在第5回81 Audition中获得准优秀奖，之后加入81 Produce。\r\n获第九届声优奖新人女声优奖。\r\n是声优组合Anisonia的成员之一。\r\n在电视动画《摸索吧！部活剧》中，一人分饰18角。\r\n绘画力极强，《摸索吧！部活剧》的试音中因为绘画好而被选中，后来也在花舞少女广播中绘画并得到采用，还担任了《骇客娃娃》第五话的Endcard。\r\n不擅长运动。\r\n在各种场合被人说“凡骨”，自己的性格也很天然。\r\n自称只要对她好，就能喜欢上那个人。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 13164,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b7/e5/27194_prsn_p1LPy.jpg?r=1719567844",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b7/e5/27194_prsn_p1LPy.jpg?r=1719567844",
+                        "large": "https://lain.bgm.tv/pic/crt/l/b7/e5/27194_prsn_p1LPy.jpg?r=1719567844",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b7/e5/27194_prsn_p1LPy.jpg?r=1719567844"
+                    },
+                    "name": "小原好美",
+                    "short_summary": "日本女性配音员、演员。大泽事务所所属。\r\n\r\n国中时开始喜欢动画，并想要成为声优。高中毕业后进入Human Academy综合学园。2012年开始当了两年的演员，之后加入大泽事务所。\r\n\r\n2017年7月起3个月间在长寿电台节目《Radio Dottoai》就任第71代主持人。\r\n\r\n2017年4月至6月播出的《月色真美》中初次担任主演。同年7月播出《咕噜咕噜魔法阵 (2017年版)》中担演女主角而掀起话题，并与共同主演的石上静香主持同名动画的广播节目。同年11月10日Instagram开设。\r\n\r\n2019年于《Star☆Twinkle 光之美少女》中第一次出演光之美少女系列。同年4月，由文化放送“超！A&G+”制作的广播节目《小原好美のココロおきなく》开播，5月开设节目官方Twitter。2020年3月，该广播节目获得第6届Aniradi Award“BEST COMFORT RADIO 疗愈电台奖”。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 27194,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 162156
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/21/99/162157_crt_nFNmp.jpg?r=1754315600",
+                "grid": "https://lain.bgm.tv/pic/crt/g/21/99/162157_crt_nFNmp.jpg?r=1754315600",
+                "large": "https://lain.bgm.tv/pic/crt/l/21/99/162157_crt_nFNmp.jpg?r=1754315600",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/21/99/162157_crt_nFNmp.jpg?r=1754315600"
+            },
+            "name": "久世しずか",
+            "summary": "タコピーが出会った人間の女の子。\r\nお腹を空かせていたタコピーを\r\n助けたことで、仲良くなる。\r\nめったに笑わないが、ペットの\r\nチャッピーの前では笑顔を見せる。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c5/14/13164_prsn_KWnmW.jpg?r=1752543801",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c5/14/13164_prsn_KWnmW.jpg?r=1752543801",
+                        "large": "https://lain.bgm.tv/pic/crt/l/c5/14/13164_prsn_KWnmW.jpg?r=1752543801",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c5/14/13164_prsn_KWnmW.jpg?r=1752543801"
+                    },
+                    "name": "上田麗奈",
+                    "short_summary": "日本的女性声优，富山县出身，所属事务所为81 Produce。\r\n初中时同属演剧部的女生有声优志向者，尊敬她的上田觉得“声优肯定是很美妙的职业”，又担心“自己的性格很奇怪”，本来以美术大学为志愿的她最终在声优试音报名结束前三天才报名。\r\n2011年，在第5回81 Audition中获得准优秀奖，之后加入81 Produce。\r\n获第九届声优奖新人女声优奖。\r\n是声优组合Anisonia的成员之一。\r\n在电视动画《摸索吧！部活剧》中，一人分饰18角。\r\n绘画力极强，《摸索吧！部活剧》的试音中因为绘画好而被选中，后来也在花舞少女广播中绘画并得到采用，还担任了《骇客娃娃》第五话的Endcard。\r\n不擅长运动。\r\n在各种场合被人说“凡骨”，自己的性格也很天然。\r\n自称只要对她好，就能喜欢上那个人。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 13164,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 162157
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/19/fa/162158_crt_564Ir.jpg?r=1741527029",
+                "grid": "https://lain.bgm.tv/pic/crt/g/19/fa/162158_crt_564Ir.jpg?r=1741527029",
+                "large": "https://lain.bgm.tv/pic/crt/l/19/fa/162158_crt_564Ir.jpg?r=1741527029",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/19/fa/162158_crt_564Ir.jpg?r=1741527029"
+            },
+            "name": "雲母坂まりな",
+            "summary": "しずかのクラスメイト。\r\n明るく友達も多いが、\r\nしずかにだけは強く当たる。\r\n必要以上に敵対視するのには\r\n深い理由があるようで･･･。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b7/e5/27194_prsn_p1LPy.jpg?r=1719567844",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b7/e5/27194_prsn_p1LPy.jpg?r=1719567844",
+                        "large": "https://lain.bgm.tv/pic/crt/l/b7/e5/27194_prsn_p1LPy.jpg?r=1719567844",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b7/e5/27194_prsn_p1LPy.jpg?r=1719567844"
+                    },
+                    "name": "小原好美",
+                    "short_summary": "日本女性配音员、演员。大泽事务所所属。\r\n\r\n国中时开始喜欢动画，并想要成为声优。高中毕业后进入Human Academy综合学园。2012年开始当了两年的演员，之后加入大泽事务所。\r\n\r\n2017年7月起3个月间在长寿电台节目《Radio Dottoai》就任第71代主持人。\r\n\r\n2017年4月至6月播出的《月色真美》中初次担任主演。同年7月播出《咕噜咕噜魔法阵 (2017年版)》中担演女主角而掀起话题，并与共同主演的石上静香主持同名动画的广播节目。同年11月10日Instagram开设。\r\n\r\n2019年于《Star☆Twinkle 光之美少女》中第一次出演光之美少女系列。同年4月，由文化放送“超！A&G+”制作的广播节目《小原好美のココロおきなく》开播，5月开设节目官方Twitter。2020年3月，该广播节目获得第6届Aniradi Award“BEST COMFORT RADIO 疗愈电台奖”。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 27194,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 162158
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e0/79/162159_crt_8F6Bk.jpg?r=1741527031",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e0/79/162159_crt_8F6Bk.jpg?r=1741527031",
+                "large": "https://lain.bgm.tv/pic/crt/l/e0/79/162159_crt_8F6Bk.jpg?r=1741527031",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e0/79/162159_crt_8F6Bk.jpg?r=1741527031"
+            },
+            "name": "東直樹",
+            "summary": "しずかのクラスメイト。\r\nクラスで学級委員長を\r\n務めている優等生。\r\n何かとしずかを気にかけている。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ca/8f/41550_prsn_tahHG.jpg?r=1765900231",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ca/8f/41550_prsn_tahHG.jpg?r=1765900231",
+                        "large": "https://lain.bgm.tv/pic/crt/l/ca/8f/41550_prsn_tahHG.jpg?r=1765900231",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ca/8f/41550_prsn_tahHG.jpg?r=1765900231"
+                    },
+                    "name": "永瀬アンナ",
+                    "short_summary": "日本の女性声優。東京都出身。81プロデュース所属\r\n\r\n[b]趣味・特技[/b]\r\n読書、演劇鑑賞、イラスト、漫画制作\r\nクラシックバレエ、ギター、トランペット、ピアノ、ダンス\r\n\r\n[b]受賞歴[/b]\r\n第17回声優アワード　新人声優賞",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 41550,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 162159
+        }
+    ]
+}

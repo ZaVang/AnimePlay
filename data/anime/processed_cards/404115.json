@@ -1,0 +1,123 @@
+{
+    "id": 404115,
+    "name": "星灵感应",
+    "image_path": "data\\images\\anime\\404115.jpg",
+    "points": 6.3,
+    "cost": 1,
+    "rarity": "N",
+    "description": "不擅长与人交流的女高中生小之星海果与自称外星人的明内幽邂逅，约定以宇宙为目标。然后在遇见副班长宝木遥乃和总是旷课的雷门瞬等人之后开始制作火箭。女高中生们制作火箭以宇宙作为目标的“青春火箭”故事。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "百合",
+        "TV",
+        "日本",
+        "漫画改",
+        "日常"
+    ],
+    "date": "2023-10-09",
+    "rating_rank": 6511,
+    "rating_score": 6.3,
+    "rating_total": 3997,
+    "main_character_ids": [
+        125436,
+        125437,
+        125438
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a5/b7/125436_crt_3QTqz.jpg?r=1692363654",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a5/b7/125436_crt_3QTqz.jpg?r=1692363654",
+                "large": "https://lain.bgm.tv/pic/crt/l/a5/b7/125436_crt_3QTqz.jpg?r=1692363654",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a5/b7/125436_crt_3QTqz.jpg?r=1692363654"
+            },
+            "name": "小ノ星海果",
+            "summary": "主人公。極度のあがり症で友達ができず、地球以外の星に住む宇宙人相手なら自分の気持ちを伝えられると夢見ている。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/91/96/26512_prsn_1pLqD.jpg?r=1687066830",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/91/96/26512_prsn_1pLqD.jpg?r=1687066830",
+                        "large": "https://lain.bgm.tv/pic/crt/l/91/96/26512_prsn_1pLqD.jpg?r=1687066830",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/91/96/26512_prsn_1pLqD.jpg?r=1687066830"
+                    },
+                    "name": "船戸ゆり絵",
+                    "short_summary": "アニメ\r\n\r\n「ドリフェス！」出演（現在放送中）\r\nOVA「12歳。～Boyfriend～age3」女子（ちゃお2015.11月号付録）\r\n \r\nゲーム\r\n\r\nアプリ「八月のシンデレラナイン」椎名ゆかり\r\nPSVita「デモンゲイズ2」レプス\r\nアプリ「スクール・オブ・セイヴァーズ～聖剣使いの禁呪詠唱ONLINE～」風祭花\r\nアプリ「東京ファントム」出演\r\nアプリ「海賊ファンタジア」出演\r\n \r\n舞台\r\n\r\n「スタア誕生　神ボーイズ始動」桃（2015.10.7～11　テアトルBONBON）\r\n「新八犬伝」沼田ユイ役（2015.2.26～28　全労済ホール／スペースゼロ）\r\n「飛ぶ教室」出演（2014.11.19～24　全労済ホール／スペース・ゼロ）\r\n「クジラの歌」一葉役（2014.5.26～6.1　Geki 地下liberty）\r\n「ドラゴンスカイ」出演（2014.2.27～3.1　全労済ホール／スペース・ゼロ）\r\n「サンゴクシ」出演（2013.11.16～24　全労済ホール／スペースゼロ）\r\n \r\nその他\r\n\r\nFlick!On!TV YouTubeチャンネル「【芸人、熟れる。】～企業に媚びる。編～」ナレーション\r\nAT-X「新春GIRLS☆演芸」出演（2016年1月放送）\r\nニコニコ生放送『「リーリヤのおともだち」リリース記念ニコ生！」出演\r\nWebCM「渡辺高等学院」ナレーション\r\nCM「東進ハイスクール」出演\r\nアニソンライブ「二次元コンプレックス」出演\r\nWEB「Fuu Fuu Girls モデルカレンダー」出演\r\n短編映像「春まで待てない」出演",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 26512,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 125436
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e0/16/125437_crt_LncCN.jpg?r=1692363657",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e0/16/125437_crt_LncCN.jpg?r=1692363657",
+                "large": "https://lain.bgm.tv/pic/crt/l/e0/16/125437_crt_LncCN.jpg?r=1692363657",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e0/16/125437_crt_LncCN.jpg?r=1692363657"
+            },
+            "name": "明内ユウ",
+            "summary": "転校生で宇宙人。地球に来るまでの記憶がなく、目覚めた時に学生証を手にしていた。「おでこぱしー」という宇宙人の能力を持っており…？",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e1/4e/14897_prsn_0KADc.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e1/4e/14897_prsn_0KADc.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/e1/4e/14897_prsn_0KADc.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e1/4e/14897_prsn_0KADc.jpg"
+                    },
+                    "name": "深川芹亜",
+                    "short_summary": "日本の女性声優。アクセルワン所属。佐賀県出身。\r\n\r\n■アニメ\r\n「グラスリップ」 深水透子（主役）\r\n■GAME\r\n「ヒーローズプレイスメント」 ソーニャ=スモノ=オカメキケ役、睦峰火狩役\r\n■その他\r\nNTT東日本フレッツ光「方言だらけのオウチWi-Fi講座」 方言彼女。（佐賀県）",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 14897,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 125437
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/86/26/125438_crt_9bguO.jpg?r=1692363659",
+                "grid": "https://lain.bgm.tv/pic/crt/g/86/26/125438_crt_9bguO.jpg?r=1692363659",
+                "large": "https://lain.bgm.tv/pic/crt/l/86/26/125438_crt_9bguO.jpg?r=1692363659",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/86/26/125438_crt_9bguO.jpg?r=1692363659"
+            },
+            "name": "宝木遥乃",
+            "summary": "海果のクラスメイトで隣の席。クラスの副学級委員長も務める。温和な性格で誰とでも仲良くなれる。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/91/34/55139_prsn_vQ070.jpg?r=1687067037",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/91/34/55139_prsn_vQ070.jpg?r=1687067037",
+                        "large": "https://lain.bgm.tv/pic/crt/l/91/34/55139_prsn_vQ070.jpg?r=1687067037",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/91/34/55139_prsn_vQ070.jpg?r=1687067037"
+                    },
+                    "name": "永牟田萌",
+                    "short_summary": "趣味・特技歴史、アイスの食べ歩き / 歌唱、モダンダンス、ピアノ\r\n資格カッパ捕獲資格",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 55139,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 125438
+        }
+    ]
+}

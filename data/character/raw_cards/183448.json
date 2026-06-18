@@ -1,0 +1,40 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a3/c8/183448_crt_ENfI9.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a3/c8/183448_crt_ENfI9.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/a3/c8/183448_crt_ENfI9.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a3/c8/183448_crt_ENfI9.jpg"
+    },
+    "summary": "小学校の庭でニワトリとして暮らしている。",
+    "name": "ユウト",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "悠斗"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 0,
+        "collects": 0
+    },
+    "id": 183448,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        582501
+    ]
+}

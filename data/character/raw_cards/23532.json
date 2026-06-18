@@ -1,0 +1,65 @@
+{
+    "birth_mon": 12,
+    "gender": "female",
+    "birth_day": 24,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1e/0a/23532_crt_281pV.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/1e/0a/23532_crt_281pV.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/1e/0a/23532_crt_281pV.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1e/0a/23532_crt_281pV.jpg"
+    },
+    "summary": "本作のヒロイン。私立朱雀高校2年。超常現象研究部部長。入れ替わりの魔女。胸のサイズはEカップ。トップクラスの学力を誇るが、勉強一辺倒で周りから避けられている。また、学園においていじめの対象にされており、当初は学校をつまらないものと考え、大学への進学希望もしていなかった。しかし、山田と入れ替わり普段と異なる学園生活を送るにつれ、いじめもなくなり、学校を楽しめるようになる。\r\n「キスした相手と身体を入れ替わる能力」の持ち主。山田と共に階段から転落したことで初めて能力が発現した。なお、山田以外との人物とはキスをしておらず、第三者が入れ替わりを行う際は能力をコピーした山田が代行する。",
+    "name": "白石うらら",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "白石丽"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "白石うらら"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "しらいし うらら"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shiraishi urara"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "12月24日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "星座",
+            "value": "山羊座"
+        }
+    ],
+    "stat": {
+        "comments": 25,
+        "collects": 163
+    },
+    "id": 23532,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        118906
+    ]
+}

@@ -1,0 +1,102 @@
+{
+    "id": 4859,
+    "name": "×××HOLiC 笼",
+    "image_path": "data\\images\\anime\\4859.jpg",
+    "points": 7.8,
+    "cost": 2,
+    "rarity": "R",
+    "description": "故事开始于四月一日君寻和壹原侑子的命运相遇。自从遇到侑子后，四月一日遇到了形形色色的人和物，发生了许许多多的好事坏事，他自己也发生了很大的改变。然而店主人侑子留下了最后的愿望之后，却消失了。于是四月一日守在店里，等待有一天与她重逢。\r\n这十年来，四月一日每日守着店，昔日的高中生业已成熟。这天，已经成为大学助教的百目鬼静来到店里，跟四月一日说起一件怪事。因为他是民俗学方面的专家，于是被一户大家族委托鉴定父辈遗留下来的古物。他发现了荼吉尼天手札，同时也发现这户人家十分不同寻常。四月一日通过录像接受了委托，于是派出管狐，让它和百目鬼一起到那户人家里完成任务……",
+    "type": 2,
+    "platform": "OVA",
+    "episodes_for_hangup": 1,
+    "synergy_tags": [
+        "日本",
+        "OVA",
+        "漫画改"
+    ],
+    "date": "2010-04-23",
+    "rating_rank": 472,
+    "rating_score": 7.8,
+    "rating_total": 2099,
+    "main_character_ids": [
+        1698,
+        1699,
+        2626
+    ],
+    "main_characters": [
+        {
+            "id": 1698,
+            "name": "四月一日君尋",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/02/87/1698_crt_AL2He.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/02/87/1698_crt_AL2He.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/02/87/1698_crt_AL2He.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/02/87/1698_crt_AL2He.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3818,
+                    "name": "福山潤",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/bf/00/3818_prsn_vlWlO.jpg?r=1669378022",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bf/00/3818_prsn_vlWlO.jpg?r=1669378022",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bf/00/3818_prsn_vlWlO.jpg?r=1669378022",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/bf/00/3818_prsn_vlWlO.jpg?r=1669378022"
+                    },
+                    "short_summary": "福山润（1978年11月26日－）是一名日本男性声优。大阪府高槻市出身。2000年于21岁时加入PRODUCTION baobab，2011年退出和PRODUCTION baobab，并与森川智之共同设立AXL ONE事务所。2018年3月31日，与立花慎之介一起离开AXL ONE；同年4月1日，与立花合伙成立小型事务所“BLACK SHIP”。\r\n初试啼声的动画作品是1998年的《罗德斯岛战记》。初次担任主角的动画作品是2000年到2001年的《无敌王TRI-ZENON》，饰演神威章。此部作品同时也是无职身分的福山润再次以声优身分回归声优界的复归代表作。而令福山润真正登上事业上第一次颠峰的角色，则是《反叛的鲁路修》中的腹黑王子鲁路修，他就是凭着这个角色而获得了第一回声优悬赏奖的最佳男声优。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 1699,
+            "name": "百目鬼静",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/0b/69/1699_crt_3I31A.jpg?r=1416813491",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0b/69/1699_crt_3I31A.jpg?r=1416813491",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/0b/69/1699_crt_3I31A.jpg?r=1416813491",
+                "grid": "https://lain.bgm.tv/pic/crt/g/0b/69/1699_crt_3I31A.jpg?r=1416813491"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4424,
+                    "name": "中井和哉",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/83/45/4424_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/83/45/4424_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/83/45/4424_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/83/45/4424_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の男性声優、ナレーター。兵庫県神戸市出身。青二プロダクション所属。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 2626,
+            "name": "五月七日小羽",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/e3/54/2626_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e3/54/2626_crt_anidb.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e3/54/2626_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e3/54/2626_crt_anidb.jpg"
+            },
+            "relation": "主角",
+            "actors": []
+        }
+    ]
+}

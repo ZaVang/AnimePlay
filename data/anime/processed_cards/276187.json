@@ -1,0 +1,124 @@
+{
+    "id": 276187,
+    "name": "你遭难了吗？",
+    "image_path": "data\\images\\anime\\276187.jpg",
+    "points": 6.6,
+    "cost": 1,
+    "rarity": "N",
+    "description": "没有家，没有食物，也没有水……\r\n女高中生4人组，在不知何处的无人岛上陷入遭难的大危机！\r\n原本是这样的，但她们都相当有精神！\r\n因为一无所有，所以什么都可以制作！什么都可以吃！\r\n智慧与勇气的无人岛生存剧！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "百合",
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "2019-07-02",
+    "rating_rank": 4920,
+    "rating_score": 6.6,
+    "rating_total": 4415,
+    "main_character_ids": [
+        69068,
+        69069,
+        69070
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d2/50/69068_crt_05NQm.jpg?r=1562108140",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d2/50/69068_crt_05NQm.jpg?r=1562108140",
+                "large": "https://lain.bgm.tv/pic/crt/l/d2/50/69068_crt_05NQm.jpg?r=1562108140",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d2/50/69068_crt_05NQm.jpg?r=1562108140"
+            },
+            "name": "鬼島ほまれ",
+            "summary": "父の教えで身に付けたサバイバル術を駆使して、\r\n無人島を生き延びる。\r\nサバイバルに関してはストイックな反面、それ以外のことには\r\n無関心で、女子高生らしい恥じらいは、持ち合わせていない。\r\n本人は父を尊敬しているつもりだが、ほかの3人からは、\r\nファザコンだと思われている。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b7/93/10887_prsn_q7Vnh.jpg?r=1692450821",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b7/93/10887_prsn_q7Vnh.jpg?r=1692450821",
+                        "large": "https://lain.bgm.tv/pic/crt/l/b7/93/10887_prsn_q7Vnh.jpg?r=1692450821",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b7/93/10887_prsn_q7Vnh.jpg?r=1692450821"
+                    },
+                    "name": "M・A・O",
+                    "short_summary": "出生于日本大阪府，日本女演员、声优，前属大阪堀制作事务所所属女艺人，现为Yellow Cab NEXT旗下的女艺人。\r\n2006年10月，市道真央曾在大阪堀制作的HOP CLUB组合面试之中夺得大奖。2010年中，移居到东京。同年8月，在周刊少年JUMP的读者投稿角落《JUM魂G！》以职员身份登场。2011年2月，她在参演超级战队系列特摄作品《海贼战队豪快者》之中，饰演女主角之一“Luka Millfy／豪快黄”。2012年，以M·A·O的名义在电视动画《料理偶像》出演奇拉奇拉，正式开始声优活动。\r\n\r\n个人生活\r\n特色是关西腔。于2014年因出演《极黑的布伦希尔德》中的和美一角而出名。\r\n小的时候就很喜欢动画和漫画，不过，直接的契机是在特摄剧《海贼战队豪快者》中出演。由于对于这种化装后再配音的工作很感兴趣，所以希望有机会能从事与声音有关的工作。\r\n喜欢看书，但最喜欢的还是漫画，尤其是《周刊少年JUMP》。\r\n憧憬的角色不分身份、性别，只要能够锻炼演技都会广泛出演。希望尝试小男孩一类或者有着古怪变化的角色。\r\n在成为声优前亦有为《海贼战队豪快者》配音，因此拥有一定的基础，声线恬静柔和，无论是幼女还是青年女子都能够出演。",
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 10887,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 69068
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/25/30/69069_crt_AH4Dt.jpg?r=1562745621",
+                "grid": "https://lain.bgm.tv/pic/crt/g/25/30/69069_crt_AH4Dt.jpg?r=1562745621",
+                "large": "https://lain.bgm.tv/pic/crt/l/25/30/69069_crt_AH4Dt.jpg?r=1562745621",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/25/30/69069_crt_AH4Dt.jpg?r=1562745621"
+            },
+            "name": "鈴森明日香",
+            "summary": "ほまれ達と一緒に遭難したC組の生徒。\r\nバスケ部兼陸上部所属の体育会系女子だが、実は怖がりな一面も。\r\n考えるより先に、体が動いてしまう活発な性格。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/55/6a/31411_prsn_C0BAL.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/55/6a/31411_prsn_C0BAL.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/55/6a/31411_prsn_C0BAL.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/55/6a/31411_prsn_C0BAL.jpg"
+                    },
+                    "name": "河野ひより",
+                    "short_summary": "河野日和，日本女性声优。FIRST WIND production所属声优。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 31411,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 69069
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ae/9d/69070_crt_4IOki.jpg?r=1563601987",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ae/9d/69070_crt_4IOki.jpg?r=1563601987",
+                "large": "https://lain.bgm.tv/pic/crt/l/ae/9d/69070_crt_4IOki.jpg?r=1563601987",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ae/9d/69070_crt_4IOki.jpg?r=1563601987"
+            },
+            "name": "天谷睦",
+            "summary": "ほまれ達と一緒に遭難したA組の生徒。\r\n勉強が得意なメガネっ子。\r\n慎重な性格ながら、BL好きで妄想は大胆。\r\nサバイバル術の飲み込みの早さには、ほまれも一目置いている。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6f/7f/7185_prsn_ct6ST.jpg?r=1733569204",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/6f/7f/7185_prsn_ct6ST.jpg?r=1733569204",
+                        "large": "https://lain.bgm.tv/pic/crt/l/6f/7f/7185_prsn_ct6ST.jpg?r=1733569204",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6f/7f/7185_prsn_ct6ST.jpg?r=1733569204"
+                    },
+                    "name": "安野希世乃",
+                    "short_summary": "安野 希世乃（やすの きよの、1989年7月9日 - ）は、日本の女性声優、歌手。エイベックス・ピクチャーズ（事務所）、フライングドッグ（音楽レーベル）に所属。宮城県出身。旧芸名は、目澤 希世乃（めざわ きよの）。\r\n\r\n京都府で生まれて間もなく函館市、宮城県へと転居を重ね、小学6年生から東京都で暮らす。\r\n声優を目指したきっかけは、幼少期に見たアニメのアフレコ密着番組でアニメの裏側で活躍している声優の存在を知り、この職業に就きたいと感じたからである。\r\n高校生（15歳）の頃、エイベックス・アーティストアカデミー声優タレントコースに特待生として入学。21歳の時、アニメ映画『キズナ一撃』の轟キズナ役で主役デビューを果たす。\r\n歌手としては複数の声優ユニットに所属しており、2017年にはミニアルバム『涙。』でフライングドッグからソロデビューすることが決まった。\r\n\r\n趣味は自転車とバスに乗ること。特技は似顔絵と歌。\r\nサインを書くときには、その時に演じたキャラクターのイラストをサインの左下に添えることが多い。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 7185,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 69070
+        }
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "birth_mon": 11,
+    "gender": "female",
+    "birth_day": 11,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5e/a4/74329_crt_Xj2Xr.jpg?r=1722001449",
+        "grid": "https://lain.bgm.tv/pic/crt/g/5e/a4/74329_crt_Xj2Xr.jpg?r=1722001449",
+        "large": "https://lain.bgm.tv/pic/crt/l/5e/a4/74329_crt_Xj2Xr.jpg?r=1722001449",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5e/a4/74329_crt_Xj2Xr.jpg?r=1722001449"
+    },
+    "summary": "リィズとアンセムの妹にして、クライの幼馴染の一人。\r\nかつて帝都で「最優」と謳われた事もある優秀な錬金術師（アルケミスト）。各種の知識が豊富で、《嘆きの亡霊（ストレンジ・グリーフ）》では司令塔を担うほか、料理やパーティ内での財政面を支えるなど、何でもそつなくこなす。\r\n将来の夢はお嫁さんらしい。",
+    "name": "シトリー・スマート",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "西多莉·斯玛特"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "希特莉·斯玛特"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "11月11日"
+        },
+        {
+            "key": "所属",
+            "value": "嘆きの亡霊"
+        },
+        {
+            "key": "职业",
+            "value": "炼金术师"
+        }
+    ],
+    "stat": {
+        "comments": 54,
+        "collects": 130
+    },
+    "id": 74329,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        481410
+    ]
+}

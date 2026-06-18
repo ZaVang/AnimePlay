@@ -1,0 +1,45 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/45/96/76545_crt_AqAid.jpg?r=1586167380",
+        "grid": "https://lain.bgm.tv/pic/crt/g/45/96/76545_crt_AqAid.jpg?r=1586167380",
+        "large": "https://lain.bgm.tv/pic/crt/l/45/96/76545_crt_AqAid.jpg?r=1586167380",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/45/96/76545_crt_AqAid.jpg?r=1586167380"
+    },
+    "summary": "彼女自身が主人公の変身着ぐるのみの中に入ることで主人公の力を引き出すことができる。",
+    "name": "青木紅愛",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "青木红爱"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "あおき くれあ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 19,
+        "collects": 77
+    },
+    "id": 76545,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        276705
+    ]
+}

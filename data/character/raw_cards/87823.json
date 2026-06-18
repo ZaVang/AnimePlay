@@ -1,0 +1,74 @@
+{
+    "birth_mon": 5,
+    "gender": "female",
+    "birth_day": 5,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0e/c2/87823_crt_y3z8W.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/0e/c2/87823_crt_y3z8W.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/0e/c2/87823_crt_y3z8W.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0e/c2/87823_crt_y3z8W.jpg"
+    },
+    "summary": "七番組隊員。組の最年少・11歳ながら、先に入隊した上司として優希を気にかける。千里眼のような力で隊を補佐。",
+    "name": "大川村寧",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "大川村宁"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "大川村 寧"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "おおかわむら ねい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Nei Ookawamura"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "5月5日"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        },
+        {
+            "key": "身高",
+            "value": "145cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://mabotai.jp/character/#/nei"
+        },
+        {
+            "key": "能力",
+            "value": "一定能够找到（Promise）"
+        }
+    ],
+    "stat": {
+        "comments": 20,
+        "collects": 62
+    },
+    "id": 87823,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        357962,
+        486054
+    ]
+}

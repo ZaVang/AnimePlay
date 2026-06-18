@@ -1,0 +1,40 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a6/5a/200848_crt_KC0uT.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a6/5a/200848_crt_KC0uT.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/a6/5a/200848_crt_KC0uT.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a6/5a/200848_crt_KC0uT.jpg"
+    },
+    "summary": "ひょんなことから命を落としてしまい、「魂タイプ：イレギュラー」に選別された青年。\r\n人気転生先の膨大な待ち時間を回避するために、ハーレムなチート勇者の「肋骨」など、型破りな転生を繰り返す主人公。",
+    "name": "俺",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "我"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 11,
+        "collects": 9
+    },
+    "id": 200848,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        623854
+    ]
+}

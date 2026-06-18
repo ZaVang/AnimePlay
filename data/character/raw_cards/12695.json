@@ -1,0 +1,65 @@
+{
+    "birth_mon": 5,
+    "gender": "female",
+    "birth_day": 2,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/83/a6/12695_crt_tJ2T9.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/83/a6/12695_crt_tJ2T9.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/83/a6/12695_crt_tJ2T9.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/83/a6/12695_crt_tJ2T9.jpg"
+    },
+    "summary": "比哥哥长濑准一小一岁的妹妹。家事、体育万能，可说是个完美的女孩子。言行举止很温和，平时也一直带着温柔的笑容，不过在对待孩子气的准一时却经常很严肃。\r\n四岁起与父母“出外旅行”，在旅行的过程中习得了“全范围野外求生”，“军用徒手搏击”，“追踪／反追踪”，“全地形特种作战”，“兵器操作”，“侦搜与渗透”，“动物习性与沟通”，“高段刀法”…等等有趣的技巧，并在与优姬聊到当年旅行时说出“不够坚强的话，如果不让自己坚强起来就活不下去呢。”，后来返回日本与哥哥一起居住，发展出了“厨艺无敌”与“一碗拉面治感冒”这种特殊技能，TV版最后由父亲透露可能不是主角的亲妹妹，Ｘ计划当事人之一。",
+    "name": "長瀬湊",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "长濑凑"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ながせ みなと"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "nagase minato"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "5月2日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "162cm"
+        },
+        {
+            "key": "BWH",
+            "value": "83C 57 84（据雾生司目测）"
+        }
+    ],
+    "stat": {
+        "comments": 40,
+        "collects": 136
+    },
+    "id": 12695,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        1271
+    ]
+}

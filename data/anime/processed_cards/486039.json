@@ -1,0 +1,106 @@
+{
+    "id": 486039,
+    "name": "全修。",
+    "image_path": "data\\images\\anime\\486039.jpg",
+    "points": 6.7,
+    "cost": 1,
+    "rarity": "N",
+    "description": "全修，即全部重新画过的意思。\r\n高中毕业后怀揣着梦想成为动画师的广濑夏子，她的才华得到发挥，并迅速出道为导演。\r\n首次导演的作品大受欢迎，成为一种社会现象。\r\n她被世间评价为新锐的天才导演，下一部作品决定是以初恋为主题的恋爱喜剧电影。\r\n然而，从未喜欢过一个人的夏子不太了解初恋，无法画出分镜，电影制作陷入僵局。\r\n一天，她在画分镜时突然失去意识，醒来以后发现自己身处小时候热衷的动画电影《走向毁灭的故事》的世界里。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "原创",
+        "穿越"
+    ],
+    "date": "2025-01-05",
+    "rating_rank": 4084,
+    "rating_score": 6.7,
+    "rating_total": 5941,
+    "main_character_ids": [
+        154314,
+        154315
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/6c/b7/154314_crt_d0B1W.jpg?r=1711117748",
+                "grid": "https://lain.bgm.tv/pic/crt/g/6c/b7/154314_crt_d0B1W.jpg?r=1711117748",
+                "large": "https://lain.bgm.tv/pic/crt/l/6c/b7/154314_crt_d0B1W.jpg?r=1711117748",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6c/b7/154314_crt_d0B1W.jpg?r=1711117748"
+            },
+            "name": "広瀬ナツ子",
+            "summary": "アニメ監督・アニメーター。22歳。\r\n好きなことには努力を惜しまない。夢中になると周りが見えなくなる。他人を信用せず、何事も全て自分でやった方が早いと思っている。思い付いたらすぐ行動するため周囲をギョッとさせることもある。コミュニケーション能力に難あり。\r\n劇場作品のコンテがあがるまで髪を切らないと願を懸けたらこんなになってしまったが、本人は気にしていない。美味しいものを食べている時は機嫌がいい。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ca/8f/41550_prsn_tahHG.jpg?r=1765900231",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ca/8f/41550_prsn_tahHG.jpg?r=1765900231",
+                        "large": "https://lain.bgm.tv/pic/crt/l/ca/8f/41550_prsn_tahHG.jpg?r=1765900231",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ca/8f/41550_prsn_tahHG.jpg?r=1765900231"
+                    },
+                    "name": "永瀬アンナ",
+                    "short_summary": "日本の女性声優。東京都出身。81プロデュース所属\r\n\r\n[b]趣味・特技[/b]\r\n読書、演劇鑑賞、イラスト、漫画制作\r\nクラシックバレエ、ギター、トランペット、ピアノ、ダンス\r\n\r\n[b]受賞歴[/b]\r\n第17回声優アワード　新人声優賞",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 41550,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 154314
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d0/1c/154315_crt_v4gcC.jpg?r=1711117910",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d0/1c/154315_crt_v4gcC.jpg?r=1711117910",
+                "large": "https://lain.bgm.tv/pic/crt/l/d0/1c/154315_crt_v4gcC.jpg?r=1711117910",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d0/1c/154315_crt_v4gcC.jpg?r=1711117910"
+            },
+            "name": "ルーク・ブレイブハート",
+            "summary": "映画『滅びゆく物語』の主人公。伝説の勇者。18歳。\r\n光の国出身。勇者の家系に生まれ、代々受け継いできたキングブレイブソードを武器に、幼い頃から戦いの訓練を受けてきた。両親はすでに死亡し家族はいない。ヴォイド討伐のため各国の精鋭を集めたナインソルジャーの中心的存在。\r\n自分の使命はソウルフューチャーを守ることだと信じ、戦う以外のことをあまりしたことがない。真面目。若い女の子の集団が苦手。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8a/4a/32253_prsn_226mf.jpg?r=1740106755",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/8a/4a/32253_prsn_226mf.jpg?r=1740106755",
+                        "large": "https://lain.bgm.tv/pic/crt/l/8a/4a/32253_prsn_226mf.jpg?r=1740106755",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8a/4a/32253_prsn_226mf.jpg?r=1740106755"
+                    },
+                    "name": "杉山里穂",
+                    "short_summary": "专门学校札幌漫画、动画＆声优专门学校毕业。\r\n2013年加入YU-RIN PRO。2018年加入Mausu Promotion。\r\n2020年放映のテレビアニメ「波よ聞いてくれ」の主役・鼓田ミナレ役に抜擢され、本編約24分のうち6～7割を1人で喋り倒すという難役をこなして注目される。オーディションでは膨大な量の台詞を噛まずにこなせること、一般的なアニメのヒロイン像とは異なるミナレの人物像を掴めることが条件となり、ベテラン2人と杉山の3人が候補に残ったが、ミナレと同じ北海道出身でミナレと同い年であったことから等身大のミナレを表現できると期待され、杉山が抜擢された。スタッフからも「Aパートだけでこんなワード数、初めて見ました…」と言われるほどの台詞量であったが、杉山は「噛んだら最初からやり直す」というストイックな姿勢で収録に臨んだという。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 32253,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/09/a8/42619_prsn_5DYHX.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/09/a8/42619_prsn_5DYHX.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/09/a8/42619_prsn_5DYHX.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/09/a8/42619_prsn_5DYHX.jpg"
+                    },
+                    "name": "浦和希",
+                    "short_summary": "出身地\t大阪府\r\n方言\t関西弁\r\n趣味・特技\t趣味：サッカー、トロンボーン\r\n特技：ゲームプレイ\r\n資格\tCGエンジニア検定エキスパート、第三級陸上特殊無線技士\r\n芸歴\t日本ナレーション演技研究所",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 42619,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 154315
+        }
+    ]
+}

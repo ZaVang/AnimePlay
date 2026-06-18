@@ -1,0 +1,121 @@
+{
+    "id": 505895,
+    "name": "悲喜渔生",
+    "image_path": "data\\images\\anime\\505895.jpg",
+    "points": 7.3,
+    "cost": 1,
+    "rarity": "N",
+    "description": "大学生佐佐木常宏身背巨额债务，又被医生告知只余两年寿命。\r\n他终日郁郁寡欢，在一次被催债人追逐中失足坠海，幸而被热爱垂钓的少女花以及钓友贵明救助。\r\n在花的劝说下，常宏开始了人生中第一次垂钓，与其他钓友也逐渐熟悉，并开始在花以及贵明工作的便利店打工。\r\n起初，他一度苦于各种生涩的术语和糠虾的腥味，但还是逐渐喜欢上了垂钓。\r\n鱼儿中钩的触感触达手中，那也是生命的实感——\r\n“一路下坡，只能抬头仰望的人生，不可能轻易改观”\r\n抱有如此想法的常宏，会通过垂钓获得怎样的感悟？",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "2024-10-03",
+    "rating_rank": 1475,
+    "rating_score": 7.3,
+    "rating_total": 5278,
+    "main_character_ids": [
+        162210,
+        162211,
+        162212
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f1/6e/162210_crt_jbMZI.jpg?r=1722327158",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f1/6e/162210_crt_jbMZI.jpg?r=1722327158",
+                "large": "https://lain.bgm.tv/pic/crt/l/f1/6e/162210_crt_jbMZI.jpg?r=1722327158",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f1/6e/162210_crt_jbMZI.jpg?r=1722327158"
+            },
+            "name": "佐々木常宏",
+            "summary": "元来の根暗な性格にくわえ、何をやってもうまくいかず、人生がどうでも良くなったダメ大学生。自暴自棄に陥る中で『エブリマート』の面々、そして釣りというモノと出会い、渋々ながらも付き合っていく。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0d/e4/28150_prsn_7q3ad.jpg?r=1740106650",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/0d/e4/28150_prsn_7q3ad.jpg?r=1740106650",
+                        "large": "https://lain.bgm.tv/pic/crt/l/0d/e4/28150_prsn_7q3ad.jpg?r=1740106650",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0d/e4/28150_prsn_7q3ad.jpg?r=1740106650"
+                    },
+                    "name": "岩中睦樹",
+                    "short_summary": "誕生日 1月7日 \r\n出身地 福岡県 \r\n方言 北九州弁・博多弁 \r\n趣味・特技 ヘアセット（男女）・鼻笛・効果音・声帯模写",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 28150,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 162210
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/05/4b/162211_crt_Pwxee.jpg?r=1722327266",
+                "grid": "https://lain.bgm.tv/pic/crt/g/05/4b/162211_crt_Pwxee.jpg?r=1722327266",
+                "large": "https://lain.bgm.tv/pic/crt/l/05/4b/162211_crt_Pwxee.jpg?r=1722327266",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/05/4b/162211_crt_Pwxee.jpg?r=1722327266"
+            },
+            "name": "鮎川ハナ",
+            "summary": "エブリマートで働く高校3年生。釣り好きたちが集まるコンビニの中でも、きっての天才アングラー。誰にでも好かれる明るい性格の一方で、大の負けず嫌い。お店に勝手に釣り具コーナーを作るなど破天荒な一面も。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8e/ad/34397_prsn_Fif7I.jpg?r=1722000886",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/8e/ad/34397_prsn_Fif7I.jpg?r=1722000886",
+                        "large": "https://lain.bgm.tv/pic/crt/l/8e/ad/34397_prsn_Fif7I.jpg?r=1722000886",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8e/ad/34397_prsn_Fif7I.jpg?r=1722000886"
+                    },
+                    "name": "ファイルーズあい",
+                    "short_summary": "（日语：ファイルーズ あい Fairūzu Ai；英语：Fairouz Ai；埃及阿拉伯语：عاي فيروز；1993年7月6日－）出身于日本东京都的女性配音员。Raccoon Dog所属，Pro-Fit声优养成所毕业。\r\n\r\n日本与埃及的混血儿，父亲为埃及人，母亲为日本人。\r\n\r\n菲鲁兹是她的第一个名字，昵称“ファイちゃん”，这也是她从小取的昵称。在广播剧CD《新娘特别班》演出当时使用全名“门田·菲鲁兹·蓝（門田ファイルーズあい）”，而现在艺名“菲鲁兹·蓝（ファイルーズあい）”则是只有名字。不过菲鲁兹的日文发音“ファイルーズ”和“ファブリーズ”两个都是一模一样的。\r\n\r\n小学5年级中途开始直到小学毕业都住在埃及开罗。上国中后回日本。国中时期喜欢上漫画《JoJo的奇妙冒险 石之海》，并参加过Skype举办的《JoJo》朗读会，从此之后把声优当作将来目标。\r\n\r\n由于双亲的反对，她在高中毕业后进入了平面设计专门学校，但最终还是希望进入声优养成所，在担任了1年的牙医助理后进入Pro-Fit声优养成所，毕业后正式成为Pro Fit所属。\r\n\r\n2019年，于电视动画《流汗吧！健身少女》初次主演。\r\n\r\n2020年，获得第14届声优Award新人女演员奖。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 34397,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 162211
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/82/16/162212_crt_b1Est.jpg?r=1722327439",
+                "grid": "https://lain.bgm.tv/pic/crt/g/82/16/162212_crt_b1Est.jpg?r=1722327439",
+                "large": "https://lain.bgm.tv/pic/crt/l/82/16/162212_crt_b1Est.jpg?r=1722327439",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/82/16/162212_crt_b1Est.jpg?r=1722327439"
+            },
+            "name": "躑躅森貴明",
+            "summary": "エブリマートのアルバイト。見た目も言動もチャラく、一見いい加減なようだが、情に厚く面倒見のいい兄貴的な一面もある。ひょんなことから常宏と出会って以降は、何かと気に掛け世話を焼くようになる。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/af/c4/9953_prsn_O0Dsl.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/af/c4/9953_prsn_O0Dsl.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/af/c4/9953_prsn_O0Dsl.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/af/c4/9953_prsn_O0Dsl.jpg"
+                    },
+                    "name": "石川界人",
+                    "short_summary": "日本男性声优。隶属于Stay Luck，出生于东京都。\r\n\r\n趣味\t読書、一人劇\r\n特技\t水泳、ウィンタースポーツ\r\n経歴\tプロ・フィット声優養成所　卒\r\n2014年第八回声優アワードにて「新人男優賞」受賞。\r\n2020年第十四回声優アワードにて「助演男優賞」受賞。\r\n2022年2月1日、ステイラックへ移籍。\r\n\r\n2025年9月30日，宣布与内田真礼结婚。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 9953,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 162212
+        }
+    ]
+}

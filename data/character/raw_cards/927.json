@@ -1,0 +1,57 @@
+{
+    "birth_mon": 8,
+    "gender": "female",
+    "birth_day": 25,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/81/2c/927_crt_BujUj.jpg?r=1677396318",
+        "grid": "https://lain.bgm.tv/pic/crt/g/81/2c/927_crt_BujUj.jpg?r=1677396318",
+        "large": "https://lain.bgm.tv/pic/crt/l/81/2c/927_crt_BujUj.jpg?r=1677396318",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/81/2c/927_crt_BujUj.jpg?r=1677396318"
+    },
+    "summary": "藏臼和夏妃的女儿。\r\n按顺序来说，最终会成为右代宫家的继承者（严谨的来说是她的丈夫）。\r\n但是她本人对此并没什么兴趣。\r\n生下来的时候就支气管很衰弱，曾发生过突发性的哮喘发病。",
+    "name": "右代宫朱志香",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "右代宫朱志香"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "うしろみや じぇしか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ushiromiya Jessica"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "8月25日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        }
+    ],
+    "stat": {
+        "comments": 10,
+        "collects": 42
+    },
+    "id": 927,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        1377
+    ]
+}

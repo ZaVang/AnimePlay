@@ -1,0 +1,73 @@
+{
+    "birth_mon": 3,
+    "gender": "female",
+    "birth_day": 25,
+    "birth_year": 1981,
+    "blood_type": 1,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1e/4d/1983_crt_anidb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/1e/4d/1983_crt_anidb.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/1e/4d/1983_crt_anidb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1e/4d/1983_crt_anidb.jpg"
+    },
+    "summary": "LOVE HINA的女主角，1981年3月25日生，18岁，雏田庄304号房房客，小时也入住过雏田庄。头上有被作者设定为“会招来不幸的男孩，并导致男孩爱上她”的“不幸天线”。近视很深，脱下眼镜后，甚至连在身旁的人也不能分清楚是谁。最初因为在露天温泉意外和景太郎有“亲密”接触，于是认定他是色狼而极度讨厌他。后来却被浦岛晴香说服，于是将景太郎带回旅馆。\r\n在学业上帮助景太郎，使其成绩大跃进。虽然是“全国模拟考第一”，却意外落榜一次。巧合地在独自“伤心旅行”时遇上景太郎。经此之后与景太郎的感情不断加深，口头上却经常否认恋上对方。景太郎有不当行为后会实行“铁拳制裁”，将景太郎打到远方。虽然被景太郎讥为“暴力女”，但亦有细心及体贴的一面，加上善于装扮，在脱下眼镜后被众人认为是美女。在考入东大后不久确认恋情，最终话与景太郎结婚并成为教师。",
+    "name": "成瀬川なる",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "成濑川奈留"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "成瀬川なる"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "なるせがわ なる"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Narusegawa Naru"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1981年3月25日"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "身高",
+            "value": "163cm"
+        },
+        {
+            "key": "BWH",
+            "value": "83/56/86"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "stat": {
+        "comments": 8,
+        "collects": 41
+    },
+    "id": 1983,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        2121
+    ]
+}

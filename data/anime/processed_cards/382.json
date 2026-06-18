@@ -1,0 +1,218 @@
+{
+    "id": 382,
+    "name": "萤火虫之墓",
+    "image_path": "data\\images\\anime\\382.jpg",
+    "points": 7.5,
+    "cost": 1,
+    "rarity": "N",
+    "description": "故事讲述大战末期，十四岁的哥哥和四岁的妹妹在空袭中失去了母亲，而当地政府为了强迫人民节省战争下剩余的物资，对他们实施严厉的管制，哥哥和妹妹两人都不愿意在这种管制下生活，两兄妹遂以洞穴为家，没有大人帮助他们，要自行找寻食物维生，生活刻苦之余，他们也像其他小孩一样活泼好动，闲来在杂乱下的田间玩乐，夜晚更一起在草地上观看漫天飞舞的萤火虫。可是快乐的日子不长……",
+    "type": 2,
+    "platform": "剧场版",
+    "episodes_for_hangup": 1,
+    "synergy_tags": [
+        "剧场版",
+        "日本",
+        "原创"
+    ],
+    "date": "1988-04-16",
+    "rating_rank": 900,
+    "rating_score": 7.5,
+    "rating_total": 4309,
+    "main_character_ids": [
+        7153,
+        114219
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/63/b9/7153_crt_UWza8.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/63/b9/7153_crt_UWza8.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/63/b9/7153_crt_UWza8.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/63/b9/7153_crt_UWza8.jpg"
+            },
+            "name": "清太",
+            "summary": "",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "",
+                        "grid": "",
+                        "large": "",
+                        "medium": ""
+                    },
+                    "name": "辰巳努",
+                    "short_summary": "辰巳 努（たつみ つとむ、1972年3月 - ）は、関西出身の元俳優、元子役。当時の所属事務所はアクタープロ。\r\n\r\n子役として1980年代を中心に活動し、映画『瀬戸内少年野球団』の吉沢孝行（ダン吉）や、『愛しき日々よ』の主人公の少年期を演じ、高い評価を得たのち、1988年の映画『火垂るの墓』では主人公の清太の声を演じ、注目をあびた。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 4538,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b9/32/32633_prsn_m47pt.jpg?r=1756525664",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b9/32/32633_prsn_m47pt.jpg?r=1756525664",
+                        "large": "https://lain.bgm.tv/pic/crt/l/b9/32/32633_prsn_m47pt.jpg?r=1756525664",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b9/32/32633_prsn_m47pt.jpg?r=1756525664"
+                    },
+                    "name": "于正昇",
+                    "short_summary": "台灣男性配音員。\r\n曾任意妍堂製作公司總經理，於該處進行配音工作的節目經常由他擔任領班。\r\n2015年7月開設藝昇國際有限公司。\r\n妻子王中璇曾從事過配音事業，現已退休，兩人育有1子1女。胞弟于正昌和弟媳楊凱凱亦從事配音行業。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 32633,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e3/2f/72255_prsn_M5uAT.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e3/2f/72255_prsn_M5uAT.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/e3/2f/72255_prsn_M5uAT.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e3/2f/72255_prsn_M5uAT.jpg"
+                    },
+                    "name": "官志宏",
+                    "short_summary": "台湾地区著名配音演员、配音导演(领班)。1984年开始从事配音工作。\r\n动画代表作：《名侦探柯南》毛利小五郎（拆分版523集之前）、《犬夜叉》杀生丸、《灌篮高手》流川枫、《哆啦A梦》小夫、《中华小当家》李提督等。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 72255,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3c/75/79084_prsn_XxFRx.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/3c/75/79084_prsn_XxFRx.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/3c/75/79084_prsn_XxFRx.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3c/75/79084_prsn_XxFRx.jpg"
+                    },
+                    "name": "何志威",
+                    "short_summary": "台湾男性配音员。\r\n\r\n声线属于中偏高类型，常饰演青少年类型角色。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 79084,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/92/d4/79085_prsn_AZ577.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/92/d4/79085_prsn_AZ577.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/92/d4/79085_prsn_AZ577.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/92/d4/79085_prsn_AZ577.jpg"
+                    },
+                    "name": "劉明勳",
+                    "short_summary": "台湾男性配音员、演员，本名刘馥缘。主要业务范围在于广告配音，1995年6月创立演声文化工作室成为负责人。",
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 79085,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9a/1e/79172_prsn_vD7bf.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/9a/1e/79172_prsn_vD7bf.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/9a/1e/79172_prsn_vD7bf.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9a/1e/79172_prsn_vD7bf.jpg"
+                    },
+                    "name": "鍾少庭",
+                    "short_summary": "台湾男性配音员。\r\n\r\n于民国96年入配音训练班。其作品配音语音含括国语、台语、客语。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 79172,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 7153
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/7d/ab/114219_crt_Q1x0B.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/7d/ab/114219_crt_Q1x0B.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/7d/ab/114219_crt_Q1x0B.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7d/ab/114219_crt_Q1x0B.jpg"
+            },
+            "name": "横川節子",
+            "summary": "年龄4岁、清太的妹妹。\r\n\r\n在神户大空袭后失去了住家及母亲，跟哥哥清太前往远亲家居住。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/27/33/47249_prsn_ii42P.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/27/33/47249_prsn_ii42P.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/27/33/47249_prsn_ii42P.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/27/33/47249_prsn_ii42P.jpg"
+                    },
+                    "name": "白石绫乃",
+                    "short_summary": "白石绫乃为动画电影《萤火虫之墓》主角节子配音时，时年5岁又11个月。当时以默默无名的儿童担任动画电影配音演员是前所未闻的创举。\r\n\r\n与其共同演出的男主角辰巳努表示，因为跟角色的年龄相近，所以比较容易带入剧情（节子的设定是4岁），白石绫乃负责配音的部分也是采用先录音后作画的制作模式（prescoring）。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 47249,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ad/50/58222_prsn_Xs64d.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ad/50/58222_prsn_Xs64d.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/ad/50/58222_prsn_Xs64d.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ad/50/58222_prsn_Xs64d.jpg"
+                    },
+                    "name": "林美秀",
+                    "short_summary": "台湾女性配音员。\r\n\r\n与同时也曾参与过一些配音作品的知名艺人暨演员林美秀同名同姓。\r\n\r\n华视配音训练班出身，与詹雅菁是同期的配音班同学。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 58222,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bf/78/78920_prsn_6ylEy.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/bf/78/78920_prsn_6ylEy.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/bf/78/78920_prsn_6ylEy.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bf/78/78920_prsn_6ylEy.jpg"
+                    },
+                    "name": "許淑嬪",
+                    "short_summary": "台湾女性配音员。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 78920,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f7/17/79171_prsn_32TLL.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f7/17/79171_prsn_32TLL.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/f7/17/79171_prsn_32TLL.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f7/17/79171_prsn_32TLL.jpg"
+                    },
+                    "name": "李昀晴",
+                    "short_summary": "台湾女性配音员。\r\n\r\n华视配音训练班第66期杰出学员，2013年开始从业。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 79171,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 114219
+        }
+    ]
+}

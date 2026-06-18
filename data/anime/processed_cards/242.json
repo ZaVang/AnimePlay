@@ -1,0 +1,124 @@
+{
+    "id": 242,
+    "name": "穿越时空的少女",
+    "image_path": "data\\images\\anime\\242.jpg",
+    "points": 7.8,
+    "cost": 2,
+    "rarity": "R",
+    "description": "　　17岁的绀野真琴是一个活泼跳脱的少女。在一次普通值日工作中，真琴不小心摔倒了，自此她发现自己拥有了穿越时空的能力。她兴奋不已，掌握了穿越时空的方法后，她经常用这个方法去解决生活中许多令她十分困扰的事。\r\n　　喜欢棒球的真琴与同班的两名男生千昭与功介有着共同爱好。一天，与她本是好朋友的千昭突然向她表达爱意，手足无措的她再次穿越时空，希望可以躲避这件事的发生。但没想到，千昭会跟同学友梨在一起，而友梨也一直喜欢千昭。此时，暗恋功介的果穗误以为真琴是功介的女友。\r\n　　为了帮忙解决朋友的问题，真琴不断以同样的方法回到过去。她突然发现自己手臂上的数字原来是穿越时空的次数，次数变得越来越少，与此同时，她也发现了千昭的秘密…… ",
+    "type": 2,
+    "platform": "剧场版",
+    "episodes_for_hangup": 1,
+    "synergy_tags": [
+        "剧场版",
+        "校园",
+        "恋爱",
+        "日本",
+        "小说改"
+    ],
+    "date": "2006-07-15",
+    "rating_rank": 463,
+    "rating_score": 7.8,
+    "rating_total": 13402,
+    "main_character_ids": [
+        3724,
+        14467
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/41/72/3724_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/41/72/3724_crt_anidb.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/41/72/3724_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/41/72/3724_crt_anidb.jpg"
+            },
+            "name": "間宮千昭",
+            "summary": "",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d9/14/4759_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d9/14/4759_seiyu_anidb.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/d9/14/4759_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d9/14/4759_seiyu_anidb.jpg"
+                    },
+                    "name": "石田卓也",
+                    "short_summary": "",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 4759,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3c/75/79084_prsn_XxFRx.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/3c/75/79084_prsn_XxFRx.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/3c/75/79084_prsn_XxFRx.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3c/75/79084_prsn_XxFRx.jpg"
+                    },
+                    "name": "何志威",
+                    "short_summary": "台湾男性配音员。\r\n\r\n声线属于中偏高类型，常饰演青少年类型角色。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 79084,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 3724
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b4/5e/14467_crt_O53oq.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b4/5e/14467_crt_O53oq.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/b4/5e/14467_crt_O53oq.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b4/5e/14467_crt_O53oq.jpg"
+            },
+            "name": "紺野真琴",
+            "summary": "女主角。东京的高二女学生，有一天忽然获得了时间跳跃的能力“Time Leap”。学校成绩中下，早上常常睡过头迟到。有两个男生好友千昭与功介，放学后三人常一起玩棒球。使用时间跳跃来吃到妹妹偷吃的布丁、或是回到早上以避免迟到，甚至回到考试之前来获得好成绩。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/14/50/5110_prsn_mwg1o.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/14/50/5110_prsn_mwg1o.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/14/50/5110_prsn_mwg1o.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/14/50/5110_prsn_mwg1o.jpg"
+                    },
+                    "name": "仲里依紗",
+                    "short_summary": "",
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 5110,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ad/50/58222_prsn_Xs64d.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ad/50/58222_prsn_Xs64d.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/ad/50/58222_prsn_Xs64d.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ad/50/58222_prsn_Xs64d.jpg"
+                    },
+                    "name": "林美秀",
+                    "short_summary": "台湾女性配音员。\r\n\r\n与同时也曾参与过一些配音作品的知名艺人暨演员林美秀同名同姓。\r\n\r\n华视配音训练班出身，与詹雅菁是同期的配音班同学。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 58222,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 14467
+        }
+    ]
+}

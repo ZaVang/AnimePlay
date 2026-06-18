@@ -1,0 +1,125 @@
+{
+    "id": 292222,
+    "name": "魔王学院的不适任者～史上最强的魔王始祖，转生就读子孙们的学校～",
+    "image_path": "data\\images\\anime\\292222.jpg",
+    "points": 6.2,
+    "cost": 1,
+    "rarity": "N",
+    "description": "历经两千年的时光，苏醒了的暴虐魔王——\r\n但他在培育魔王候补的学院中的适性却是——《不适任》！？\r\n尽管具备能毁灭人类、精灵，甚至是众神的力量，暴虐魔王“阿诺斯·波鲁迪戈乌多”却厌倦了永无止尽的斗争，梦想着和平的世界进行转生。然而在两千年后，转生后的他所迎来的，却是适应和平生活而变得过于弱小的子孙们，以及各种衰退至极的魔法。\r\n阿诺斯虽然进入了对被视作魔王转世之人进行集中教育的“魔王学院”，但学院却无法看出他的实力，使得他被刻上不适任者这一烙印。不仅如此，传说中的魔王还变成了和自己完全不同的其他人。\r\n在众人都瞧不起他的环境里，他将唯一亲切对待自己的少女米夏纳为部下， 作为不适任者（魔王），在魔族的等级制度上迈向巅峰！！\r\n“不论天理、命运还是奇迹，在我的眼前只有俯首受戮一途而已。”",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "后宫",
+        "TV",
+        "日本",
+        "奇幻",
+        "小说改"
+    ],
+    "date": "2020-07-04",
+    "rating_rank": 6816,
+    "rating_score": 6.2,
+    "rating_total": 6651,
+    "main_character_ids": [
+        72255,
+        72256,
+        72257
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/3c/41/72255_crt_mN4nR.jpg?r=1596720337",
+                "grid": "https://lain.bgm.tv/pic/crt/g/3c/41/72255_crt_mN4nR.jpg?r=1596720337",
+                "large": "https://lain.bgm.tv/pic/crt/l/3c/41/72255_crt_mN4nR.jpg?r=1596720337",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3c/41/72255_crt_mN4nR.jpg?r=1596720337"
+            },
+            "name": "アノス・ヴォルディゴード",
+            "summary": "泰然にして不敵、絶対の力と自信を備え、《暴虐の魔王》と恐れられた男が転生した姿。\r\n現在の魔法技術ではその力が測りきれず、《不適合者》の烙印を押される。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e2/3f/5031_prsn_vLlNL.jpg?r=1626693147",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e2/3f/5031_prsn_vLlNL.jpg?r=1626693147",
+                        "large": "https://lain.bgm.tv/pic/crt/l/e2/3f/5031_prsn_vLlNL.jpg?r=1626693147",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e2/3f/5031_prsn_vLlNL.jpg?r=1626693147"
+                    },
+                    "name": "鈴木達央",
+                    "short_summary": "日本の男性声優、歌手である。アイムエンタープライズ所属。\r\n\r\n千葉県市川市生まれ、愛知県岡崎市出身\r\n\r\n日本ナレーション演技研究所名古屋校に3年通った後、アイムエンタープライズの所属となる。所属後は日本ナレーション演技研究所に1年通っている。\r\n\r\nテレビアニメ『DEAR BOYS』の石井努役で声優デビュー。「セイント・ビースト 〜ケダモノたちの聖なる宴〜」で「Black or White?」を披露しているところを見ていた堤健一郎（ランティスのプロデューサー）から歌手デビューの誘いを受けて『Just a Survivor』を発売。\r\n\r\nその後は自分名義の音楽活動を控え、バンド・OLDCODEXを結成し、2009年10月21日にミニアルバム「OLDCODEX」を発売。再度メジャーデビューを果たした。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 5031,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 72255
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/0a/77/72256_crt_W9t66.jpg?r=1596720441",
+                "grid": "https://lain.bgm.tv/pic/crt/g/0a/77/72256_crt_W9t66.jpg?r=1596720441",
+                "large": "https://lain.bgm.tv/pic/crt/l/0a/77/72256_crt_W9t66.jpg?r=1596720441",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0a/77/72256_crt_W9t66.jpg?r=1596720441"
+            },
+            "name": "ミーシャ・ネクロン",
+            "summary": "寡黙でおとなしいアノスの同級生で、彼の転生後最初にできた友人。\r\nサーシャの双子の妹で、一五歳の誕生日に消えるはずだったが、アノスに救われた。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b8/95/29965_prsn_iY5Xl.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b8/95/29965_prsn_iY5Xl.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/b8/95/29965_prsn_iY5Xl.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b8/95/29965_prsn_iY5Xl.jpg"
+                    },
+                    "name": "楠木ともり",
+                    "short_summary": "女性声优、歌手，所属经纪公司为Sony Music Artists，唱片公司为SACRA MUSIC。\r\n\r\n楠木灯自初中二年级起喜欢动画，在《小鸠》再播时为花泽香菜演技所动，志向成为声优。她未在声优养成所学习，而是自学。\r\n2016年，于Sony Music Artists主办的试音企画Anistoteles第5回中获特别奖。楠木灯当时是没有经验，觉得声优试音很严酷，以歌手志愿参加的试音。\r\n2017年，借由电视动画《埃罗芒阿老师》女中学生声优出道。次年以《原书·原书使》键村叶月声优的身份首次担任动画主演。\r\n2018年4月15日，SMA voice内成员网站“TOMOROOM”开设。\r\n2018年8月8日在其个人Twitter正式表明自己的中文名为“楠木灯”。\r\n2018年8月24日，以《刀剑神域外传 Gun Gale Online》莲的声优之名义出演Animelo Summer Live 2018 \"OK!\"。\r\n2019年3月9日，获第13回声优奖新人女优奖。\r\n2019年12月29日，在楠木灯 生日演唱会 2019 Kusunoki Tomori coming-of-age『WRAPPED///LIVE廿』中正式出道。\r\n2020年6月12日，宣布了首张正式出道独唱专辑《不适任者》的发售决定。\r\n\r\n楠木灯自3岁起学习钢琴，初中时代加入吹奏乐社，高中时代加入轻音社。对作词作曲感兴趣[，发布有原创CD。喜欢Sayuri、遥与美幸等歌手，以及投入自身感情的歌曲。\r\n她在志向成为声优时，对设计感兴趣，想边读美术学校，边实现成为声优的梦想。但得到动画主演的决定后，觉得无法兼顾工作和学业而选择了工作。成为声优后，有时也有机会设计演唱会商品。她有绘画方面的特长，常常绘制本人出演角色的画像。\r\n她在初中时代做过学生会长，觉得人前和平常的自己如同两人而有乐趣，认为声优职业是“成为自己本无法成为的人”，两者的共同点是工作的乐趣。她对“变身”有强烈的憧憬，喜欢这类题材的魔法少女动画，其中《东京喵喵》是她喜欢动画的契机。她还喜欢物语系列、《盗梦侦探》等作品。\r\n她认为自己“不服弱”。周围人对她也多有“认真”的印象。东方收音机的中田敦彦在初次共同广播谈话时，评价她为多才，是“小岛瑠璃子以来的冲击”。\r\n她表示，她在活动时以“大家的心是明灯”为指针，希望能陪伴在痛苦者的身边。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 29965,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 72256
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f1/cc/72257_crt_BYzNF.jpg?r=1596720542",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f1/cc/72257_crt_BYzNF.jpg?r=1596720542",
+                "large": "https://lain.bgm.tv/pic/crt/l/f1/cc/72257_crt_BYzNF.jpg?r=1596720542",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f1/cc/72257_crt_BYzNF.jpg?r=1596720542"
+            },
+            "name": "サーシャ・ネクロン",
+            "summary": "ちょっぴり攻撃的で自信家、でも妹と仲間想いなミーシャの双子の姉。\r\n両の瞳に万物を自壊させる《破滅の魔眼》を宿す、通称《破滅の魔女》。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7d/6d/36024_prsn_r2T92.jpg?r=1692460579",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7d/6d/36024_prsn_r2T92.jpg?r=1692460579",
+                        "large": "https://lain.bgm.tv/pic/crt/l/7d/6d/36024_prsn_r2T92.jpg?r=1692460579",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7d/6d/36024_prsn_r2T92.jpg?r=1692460579"
+                    },
+                    "name": "夏吉ゆうこ",
+                    "short_summary": "夏吉 ゆうこは、日本の声優、舞台女優。大阪府出身。\r\n「2016声優アーティスト育成プログラム・セレクション」に合格。\r\nスクールデュオ卒業後、2018年4月より賢プロダクション所属となる。\r\n声優になったきっかけとなるオーディションを受けた際、「とりあえず合格しないと始まらない」という思いから、その先の事を考えず応募した上で、合格後に上京するための費用および両親との説明にあたふたしたという。\r\n2018年に『ぐらんぶる』で声優デビュー。その後、『SHOW BY ROCK!!』のマシマヒメコ役が初めてオーディションに合格した作品となった。\r\n\r\n趣味・特技はダンス、歌、関西弁。\r\n幼少期に見ていた『美少女戦士セーラームーン』では変身シーンが大好きだったことから、その部分を繰り返し観ていたという。大人になってから同作品を観た時は悪役キャラもすごく魅力的だったと語っている。その他の好きな作品として『モノノ怪』と『昭和元禄落語心中』をそれぞれ挙げている。\r\n愛称について、「おなつ」は遠野ひかるがつけたものであり、「なっちゃん」は賢プロダクション所属の先輩である逢田梨香子がつけたものだという。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 36024,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 72257
+        }
+    ]
+}

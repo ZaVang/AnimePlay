@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/52/ef/33247_crt_3oQf3.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/52/ef/33247_crt_3oQf3.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/52/ef/33247_crt_3oQf3.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/52/ef/33247_crt_3oQf3.jpg"
+    },
+    "summary": "大陸で強大な力を持つピエナ王国の第一王女。兎を模した兜の愛くるしい容貌ながら、神前武闘会で優勝するほどの腕を持つ＜刃＞の聖者でもある。自由奔放でいたずら好きな性格。",
+    "name": "ナッシェタニア",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "娜榭塔妮亚"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "娜榭塔妮亚·露伊·彼埃纳·奥古斯特"
+                },
+                {
+                    "k": "日文名",
+                    "v": "ナッシェタニア・ルーイ・ピエナ・アウグストラ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "rokka-anime.jp/character/nachetanya"
+        }
+    ],
+    "stat": {
+        "comments": 13,
+        "collects": 40
+    },
+    "id": 33247,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        118067
+    ]
+}

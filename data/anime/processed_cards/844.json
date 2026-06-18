@@ -1,0 +1,108 @@
+{
+    "id": 844,
+    "name": "人狼",
+    "image_path": "data\\images\\anime\\844.jpg",
+    "points": 8,
+    "cost": 3,
+    "rarity": "SR",
+    "description": "二战后的十数年，日本从战败的阴影中逐渐走出，进入了经济高度增长的时代。然而强硬的经济政策也导致失业率的不断攀升，各种反政府武装势力不断抬头，安定的社会治安荡然无存。为了应对这一难题，政府建立了拥有高度自主权的首都圈治安警察机构，通过精良的装备和果断的武力来打击以“党派”为首的反政府组织。随着经济不断发展，崇尚暴力的首都圈警察和“党派”逐渐遭到民众的厌弃和孤立。\r\n在一次激烈血腥的交战中，隶属“党派”的少女阿川引爆炸弹自杀，目睹这一幕的首都圈警察成员伏一贵心灵受到前所未有的冲击。这一刻起，他的人生悄悄发生转变……",
+    "type": 2,
+    "platform": "剧场版",
+    "episodes_for_hangup": 1,
+    "synergy_tags": [
+        "科幻",
+        "剧场版",
+        "日本",
+        "原创"
+    ],
+    "date": "1999-11-17",
+    "rating_rank": 218,
+    "rating_score": 8,
+    "rating_total": 3139,
+    "main_character_ids": [
+        9571,
+        32904
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/4f/64/9571_crt_anidb.jpg?r=1722845999",
+                "grid": "https://lain.bgm.tv/pic/crt/g/4f/64/9571_crt_anidb.jpg?r=1722845999",
+                "large": "https://lain.bgm.tv/pic/crt/l/4f/64/9571_crt_anidb.jpg?r=1722845999",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4f/64/9571_crt_anidb.jpg?r=1722845999"
+            },
+            "name": "伏一貴",
+            "summary": "首都圏治安警察機構警備部特殊機甲大隊第2中隊第3突入小隊の前衛隊員、巡査。セクトの運び屋の少女「赤ずきん」の制圧に失敗し彼女の自爆を許し、その結果部隊を危険にさらしたことから、査問委員会で責を問われた。以後、特機隊員養成学校で再訓練を命じられる。\r\n特機隊の前衛隊員を務めるだけあって体格に恵まれているが、口数も表情の変化も異様に少なく、辺見以外の友人がいる様子はない。首都警の人事評価によると「情緒面に難有り。但し、射撃、格闘技、ストーキングなど、あらゆる戦闘技術に抜群の技量を有する」。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1d/fc/4526_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/1d/fc/4526_seiyu_anidb.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/1d/fc/4526_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1d/fc/4526_seiyu_anidb.jpg"
+                    },
+                    "name": "藤木義勝",
+                    "short_summary": "",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 4526,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/37/63/16427_prsn_0j8zH.jpg?r=1421999042",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/37/63/16427_prsn_0j8zH.jpg?r=1421999042",
+                        "large": "https://lain.bgm.tv/pic/crt/l/37/63/16427_prsn_0j8zH.jpg?r=1421999042",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/37/63/16427_prsn_0j8zH.jpg?r=1421999042"
+                    },
+                    "name": "古天樂",
+                    "short_summary": "香港男演員、歌手，暱稱「古仔」。1993年，簽約無綫電視，後憑《神鵰俠侶》中出演活亦正亦邪的「楊過」一角而備受關注。2001年，以《尋秦記》引起話題，其後，將工作重心放入電影。\r\n\r\n出生於香港，中學時,中一至中三就讀於迦密中學,而中四和中五就讀於迦密主恩中學，成為演員之前曾做過時裝廣告及MV模特兒，1991年至1993年期間曾參與拍攝過多名歌手的MV。入行途徑是1993年加入無綫電視，成為全經理人合約藝員之前在1992年電視專業訓練中心的無綫電視藝員訓練班第五期藝員進修班旁聽生。2001年，古天樂離開無綫電視後，正式加入電影圈，當時正逢香港電影工業低谷，但他仍有不俗表現，之後獲導演杜琪峰賞識，開始拍攝多部戲劇，使他成為當今香港一線電影演員。\r\n\r\n1999年，以無綫電視的《刑事偵緝檔案IV》中飾演的徐飛一角而獲得1999年萬千星輝頒獎典禮「最佳男主角」一獎。2000年，以無綫電視的《創世紀II天地有情》中的大反派張自力而獲得2000年萬千星輝頒獎典禮「本年度我最喜愛的電視角色」一獎。隔年，以無綫電視《尋秦記》中的項少龍再次獲得2001年萬千星輝頒獎典禮「最佳男主角」及「本年度我最喜愛的電視角色」兩個獎項。\r\n\r\n2006年，憑《黑社會以和為貴》獲得「UA全港觀眾至愛電影大賞2006」全港觀眾至愛男演員大獎。並於2011年獲得中國移動「我最喜愛男演員獎」。\r\n\r\n2009年，憑<一個好爸爸>更首次提名香港電影金像獎最佳男主角。\r\n\r\n雖然已經離開無綫，但古天樂經常於專訪中提及自己欠無綫一套40集的劇集，自言有時間便會回巢還劇債。",
+                    "career": [
+                        "producer",
+                        "artist",
+                        "actor"
+                    ],
+                    "id": 16427,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 9571
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/af/0b/32904_crt_m02J9.jpg?r=1432406891",
+                "grid": "https://lain.bgm.tv/pic/crt/g/af/0b/32904_crt_m02J9.jpg?r=1432406891",
+                "large": "https://lain.bgm.tv/pic/crt/l/af/0b/32904_crt_m02J9.jpg?r=1432406891",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/af/0b/32904_crt_m02J9.jpg?r=1432406891"
+            },
+            "name": "雨宮圭",
+            "summary": "かつて「赤ずきん」だった少女で、組織名ラングハール（長毛のジャーマン・ポインター）が示す通り髪はやや長め。逮捕歴数回（前科なし）の筋金入りの活動家だったが、首都警公安部にその身柄を押さえられて以後は、公安部の意向に沿って動く。\r\n阿川と似通った顔立ちを見込んだ辺見の命令を受け、阿川の姉を騙り伏に近づく。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4e/f1/4589_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/4e/f1/4589_seiyu_anidb.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/4e/f1/4589_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4e/f1/4589_seiyu_anidb.jpg"
+                    },
+                    "name": "武藤寿美",
+                    "short_summary": "日本的女性配音员、演员。出身于东京都。已婚，丈夫为动画师冲浦启之。\r\n\r\n以前所属的经纪公司是剧团若草（1982年－1992年）、Liberta，现隶属于株式会社ALBA。早稻田大学第二文学部演剧学科毕业。\r\n为人熟悉的代表配音作品是电影导演冲浦启之执导动画《人狼 JIN-ROH》的雨宫圭和《星之声》的长峰美加子。\r\n兴趣是电影和音乐鉴赏、读书、散步。特技为日本舞蹈。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 4589,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 32904
+        }
+    ]
+}

@@ -1,0 +1,98 @@
+{
+    "id": 61962,
+    "name": "机巧少女不会受伤",
+    "image_path": "data\\images\\anime\\61962.jpg",
+    "points": 6.3,
+    "cost": 1,
+    "rarity": "N",
+    "description": "本作主要围绕人偶师赤羽雷真和他的少女型人偶搭档夜夜，以及参加决出最强人偶师「魔王」的名为「夜会」比赛的各种参赛选手之间的学院战斗。关于机巧魔法即是指内置魔法回路的人偶和人偶师使用的魔法。而「夜会」比赛正是作为这方面的最高学府英国瓦尔普吉斯之夜皇家机巧学院举办的大会。从日本来的留学生雷真和他的少女型人偶搭档夜夜决定从参赛候选人那里用武力夺取夜会的参加资格。他的目标就是下任魔王的热门候补，拥有「暴龙」名号的美少女夏尔！但是正在雷真向她挑战的时候，意想不到的事情发生了……\r\n",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "后宫",
+        "后宫",
+        "TV",
+        "TV",
+        "日本",
+        "日本",
+        "战斗",
+        "战斗",
+        "小说改",
+        "小说改"
+    ],
+    "date": "2013-10-07",
+    "rating_rank": 6544,
+    "rating_score": 6.3,
+    "rating_total": 7144,
+    "main_character_ids": [
+        14165,
+        19565
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a5/ca/14165_crt_41ma7.jpg?r=1678852114",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a5/ca/14165_crt_41ma7.jpg?r=1678852114",
+                "large": "https://lain.bgm.tv/pic/crt/l/a5/ca/14165_crt_41ma7.jpg?r=1678852114",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a5/ca/14165_crt_41ma7.jpg?r=1678852114"
+            },
+            "name": "夜々",
+            "summary": "雷真所持有的人偶。为当代名匠花柳斋得意之作<雪月花>三部作品之一的<月>之人偶，外型为黑发少女，拥有令人讶异的精致容貌。\r\n对于雷真十分依赖，有着超出主人以上的感情，经常醋劲大发，也有着略为色气的一面，只要有关雷真的话题就会特别敏感，也很容易暴走。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/02/2d/5206_prsn_LxV5Y.jpg?r=1740106109",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/02/2d/5206_prsn_LxV5Y.jpg?r=1740106109",
+                        "large": "https://lain.bgm.tv/pic/crt/l/02/2d/5206_prsn_LxV5Y.jpg?r=1740106109",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/02/2d/5206_prsn_LxV5Y.jpg?r=1740106109"
+                    },
+                    "name": "原田ひとみ",
+                    "short_summary": "出身于山口县宇部市。\r\n结束在TWOFIVE的歌手身份后，移籍至Production baobab（ぷろだくしょんバオバブ）。\r\n\r\n歌手としてスカウトされ、音響制作会社ツーファイブで歌手活動を始める。その後、声優として活動するためにぷろだくしょんバオバブへ移籍。\r\nバオバブ移籍後、声優としては主に吹き替えやゲーム、ディズニー関連の仕事などをしていたが、2009年頃からアニメのオーディションも受けるようになり、『バカとテストと召喚獣』の姫路瑞希役で初ヒロインを務めた。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 5206,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 14165
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/1b/68/19565_crt_NFPpw.jpg?r=1365191139",
+                "grid": "https://lain.bgm.tv/pic/crt/g/1b/68/19565_crt_NFPpw.jpg?r=1365191139",
+                "large": "https://lain.bgm.tv/pic/crt/l/1b/68/19565_crt_NFPpw.jpg?r=1365191139",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1b/68/19565_crt_NFPpw.jpg?r=1365191139"
+            },
+            "name": "赤羽雷真",
+            "summary": "本作主角。极东人偶师名门“赤羽一族”的幸存者，为了向杀了全家人的哥哥报仇，远渡重洋来到皇家机巧学院。\r\n拥有无法对需要帮助之人坐视不管的鸡婆性格，五感敏锐，思绪灵巧，但对男女间的感情却十分迟钝。\r\n对于自身的评价极低，由于接触机巧魔术的时间太短，无法跟上学院繁重的课程，学园生活充斥着补考。\r\n刚入学后不久参与了学力测验，结果成绩为倒数第二名，因此<夜会>的登录代号被戏称为“倒数第二名”，顺位为第一百名。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d0/62/4262_prsn_tbC5r.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d0/62/4262_prsn_tbC5r.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/d0/62/4262_prsn_tbC5r.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d0/62/4262_prsn_tbC5r.jpg"
+                    },
+                    "name": "下野紘",
+                    "short_summary": "下野 紘は、日本の男性声優。アイムエンタープライズ所属。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 4262,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 19565
+        }
+    ]
+}

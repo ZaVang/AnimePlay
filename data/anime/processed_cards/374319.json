@@ -1,0 +1,123 @@
+{
+    "id": 374319,
+    "name": "无意间变成狗，被喜欢的女生捡回家。",
+    "image_path": "data\\images\\anime\\374319.jpg",
+    "points": 5.3,
+    "cost": 1,
+    "rarity": "N",
+    "description": "醒来后，发现自己变成了心仪的同班同学 犬饲 养的狗！在学校面无表情的她，其实超爱狗的！散步、洗澡、上厕所——被当作狗饲养的每一天突发事件都不断。虽然想早点变回人类，但是被喜欢的人彻底爱着的生活是幸福的......再这样下去，身心都会变成狗！？从“狗的视角”观赏的全新爱情喜剧！\r\n",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "漫画改"
+    ],
+    "date": "2023-01-06",
+    "rating_rank": 9468,
+    "rating_score": 5.3,
+    "rating_total": 4016,
+    "main_character_ids": [
+        119364,
+        119365,
+        119366
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b8/8a/119364_crt_4L9mM.jpg?r=1674008590",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b8/8a/119364_crt_4L9mM.jpg?r=1674008590",
+                "large": "https://lain.bgm.tv/pic/crt/l/b8/8a/119364_crt_4L9mM.jpg?r=1674008590",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b8/8a/119364_crt_4L9mM.jpg?r=1674008590"
+            },
+            "name": "ポチ太",
+            "summary": "ある日突然、なぜか犬になってしまった男子高校生。\r\n片思いしているクラスメイト・犬飼加恋に拾われ、ペットとして一緒に暮らすことに。\r\n早く人間に戻りたいと願いつつも、犬としての生活の魅力に抗えず日々葛藤している。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/dd/dc/41073_prsn_ol77n.jpg?r=1633081644",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/dd/dc/41073_prsn_ol77n.jpg?r=1633081644",
+                        "large": "https://lain.bgm.tv/pic/crt/l/dd/dc/41073_prsn_ol77n.jpg?r=1633081644",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dd/dc/41073_prsn_ol77n.jpg?r=1633081644"
+                    },
+                    "name": "梅田修一朗",
+                    "short_summary": "梅田 修一朗（うめだ しゅういちろう、10月11日）は、日本の男性声優。千葉県出身。賢プロダクション所属。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 41073,
+                    "type": 2,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 119364
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/9d/e2/119365_crt_Zq5i3.jpg?r=1674008600",
+                "grid": "https://lain.bgm.tv/pic/crt/g/9d/e2/119365_crt_Zq5i3.jpg?r=1674008600",
+                "large": "https://lain.bgm.tv/pic/crt/l/9d/e2/119365_crt_Zq5i3.jpg?r=1674008600",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9d/e2/119365_crt_Zq5i3.jpg?r=1674008600"
+            },
+            "name": "犬飼加恋",
+            "summary": "ポチ太の人間時代のクラスメイト。\r\n道端でポチ太と出会い、家に連れて帰る。\r\n普段は無表情でクールだが、実は常軌を逸した犬好きで、あらゆる手でポチ太とスキンシップを取ろうとする。\r\nラベンダーの香りがする。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/90/82/30881_prsn_AIJiD.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/90/82/30881_prsn_AIJiD.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/90/82/30881_prsn_AIJiD.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/90/82/30881_prsn_AIJiD.jpg"
+                    },
+                    "name": "会沢紗弥",
+                    "short_summary": "趣味：睡眠\r\n特技：ソフトクリームを巻くこと\r\n資格：情報処理検定2級，簿記実務検定2級，秘書技能検定2級，普通自動車免許\r\n\r\n2025年3月31日をもってスターダストプロモーションを退所、フリーランスとなる。10月1日、大沢事務所に所属。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 30881,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 119365
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/19/e8/119366_crt_Z2fgi.jpg?r=1674008609",
+                "grid": "https://lain.bgm.tv/pic/crt/g/19/e8/119366_crt_Z2fgi.jpg?r=1674008609",
+                "large": "https://lain.bgm.tv/pic/crt/l/19/e8/119366_crt_Z2fgi.jpg?r=1674008609",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/19/e8/119366_crt_Z2fgi.jpg?r=1674008609"
+            },
+            "name": "猫谷ミケ",
+            "summary": "加恋の幼なじみで、ポチ太の実家の隣に住んでいるクラスメイト。\r\n犬が苦手で、ポチ太のことを怖がっている。\r\nチューリップの香りがする。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/48/d0/23429_prsn_ewa0I.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/48/d0/23429_prsn_ewa0I.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/48/d0/23429_prsn_ewa0I.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/48/d0/23429_prsn_ewa0I.jpg"
+                    },
+                    "name": "相良茉優",
+                    "short_summary": "趣味：カラオケ/美味しいお店探し\r\n特技：そろばん/ダーツ/テナーサックス\r\n資格：暗算五段/普通自動車免許\r\n経歴：プロ・フィット声優養成所　卒",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 23429,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 119366
+        }
+    ]
+}

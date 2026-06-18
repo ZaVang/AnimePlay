@@ -1,0 +1,40 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b6/c7/169683_crt_G39N8.jpg?r=1736845648",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b6/c7/169683_crt_G39N8.jpg?r=1736845648",
+        "large": "https://lain.bgm.tv/pic/crt/l/b6/c7/169683_crt_G39N8.jpg?r=1736845648",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b6/c7/169683_crt_G39N8.jpg?r=1736845648"
+    },
+    "summary": "ザイロと契約を交わした剣の《女神》。聖剣や魔剣といった数多の剣を召喚する。自尊心が高く褒め称えられることを好む一方で、自己犠牲的な行動をしてしまうという《女神》らしい一面を持つ。頭を撫でられるのが好き。",
+    "name": "テオリッタ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "泰奥莉塔"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 66,
+        "collects": 134
+    },
+    "id": 169683,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        445905
+    ]
+}

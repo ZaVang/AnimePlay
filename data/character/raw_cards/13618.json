@@ -1,0 +1,53 @@
+{
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 27,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8d/e8/13618_crt_mHxYY.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/8d/e8/13618_crt_mHxYY.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/8d/e8/13618_crt_mHxYY.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8d/e8/13618_crt_mHxYY.jpg"
+    },
+    "summary": "丸富大学付属高校一年生。イタリア人の母を持つハーフ。佐藤 洋の従兄弟で、誕生日も同じ。実家同士も近いため、幼い頃から双子のように育ってきた。佐藤は著莪あやめのいいなりになりがち。ぼさぼさの金髪",
+    "name": "著莪あやめ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "著莪菖蒲"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "しゃが あやめ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shaga ayame"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "04.27"
+        }
+    ],
+    "stat": {
+        "comments": 6,
+        "collects": 44
+    },
+    "id": 13618,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        19540
+    ]
+}

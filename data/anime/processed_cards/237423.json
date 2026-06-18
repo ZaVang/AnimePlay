@@ -1,7 +1,7 @@
 {
     "id": 237423,
     "name": "烟草",
-    "image_path": "data/images/anime/237423.jpg",
+    "image_path": "data\\images\\anime\\237423.jpg",
     "points": 7.4,
     "cost": 1,
     "rarity": "N",

@@ -1,0 +1,44 @@
+{
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 10,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/df/9d/165525_crt_Mx6yA.jpg?r=1734532261",
+        "grid": "https://lain.bgm.tv/pic/crt/g/df/9d/165525_crt_Mx6yA.jpg?r=1734532261",
+        "large": "https://lain.bgm.tv/pic/crt/l/df/9d/165525_crt_Mx6yA.jpg?r=1734532261",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/df/9d/165525_crt_Mx6yA.jpg?r=1734532261"
+    },
+    "summary": "九龍城砦の不動産会社「旺来地產公司」に務める会社員。スイカを食べながらタバコを吸うことが好き。同じ職場の先輩・工藤への恋心を自覚したと同時にこの九龍の違和感に気づき、その謎に迫ることになる…。",
+    "name": "鯨井令子",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "鲸井令子"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月10日"
+        }
+    ],
+    "stat": {
+        "comments": 59,
+        "collects": 100
+    },
+    "id": 165525,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        518090
+    ]
+}

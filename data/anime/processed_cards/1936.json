@@ -1,0 +1,125 @@
+{
+    "id": 1936,
+    "name": "星之声",
+    "image_path": "data\\images\\anime\\1936.jpg",
+    "points": 7.2,
+    "cost": 1,
+    "rarity": "N",
+    "description": "2039年时，人类火星调查队在火星的塔尔西斯高地上发现了异文明的遗迹，但却被突然出现的异生命体攻击而全军覆没。于是为了对抗被命名为塔尔西斯（Tarsian）人的异生命体的威胁，联合国组成了联合国宇宙军。\r\n\r\n2046年时，当时就读于中学三年级的长峰美加子参加了联合国宇宙军的机器人驾驶选拔被录取了。翌年为了追查塔尔西斯人而被编入里希提亚舰队，跟着舰队旗舰里希提亚号从地球出发，留下她所喜欢的人，寺尾升。当调查舰队追寻塔尔西斯人的痕迹，离地球越来越远时，两人的距离变成以光年来计算，两人的移动电话电子邮件要抵达所花费的时间也越来越长。\r\n\r\n终于，美加子抵达了距离地球8.7光年的半人马座α星系中的一颗行星。在那里，美加子传送了费时8.7年才能到达地球的手机短信给寺尾升。在随后进行的与塔而西斯人的战斗中，联合国军几乎全军覆没，但美加子幸存。",
+    "type": 2,
+    "platform": "剧场版",
+    "episodes_for_hangup": 1,
+    "synergy_tags": [
+        "科幻",
+        "剧场版",
+        "恋爱",
+        "日本",
+        "原创"
+    ],
+    "date": "2002-02-02",
+    "rating_rank": 1757,
+    "rating_score": 7.2,
+    "rating_total": 5145,
+    "main_character_ids": [
+        2766,
+        27785
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/04/5c/2766_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/04/5c/2766_crt_anidb.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/04/5c/2766_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/04/5c/2766_crt_anidb.jpg"
+            },
+            "name": "長峰美加子",
+            "summary": "",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "",
+                        "grid": "",
+                        "large": "",
+                        "medium": ""
+                    },
+                    "name": "篠原美香",
+                    "short_summary": "",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 4527,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4e/f1/4589_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/4e/f1/4589_seiyu_anidb.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/4e/f1/4589_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4e/f1/4589_seiyu_anidb.jpg"
+                    },
+                    "name": "武藤寿美",
+                    "short_summary": "日本的女性配音员、演员。出身于东京都。已婚，丈夫为动画师冲浦启之。\r\n\r\n以前所属的经纪公司是剧团若草（1982年－1992年）、Liberta，现隶属于株式会社ALBA。早稻田大学第二文学部演剧学科毕业。\r\n为人熟悉的代表配音作品是电影导演冲浦启之执导动画《人狼 JIN-ROH》的雨宫圭和《星之声》的长峰美加子。\r\n兴趣是电影和音乐鉴赏、读书、散步。特技为日本舞蹈。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 4589,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 2766
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/71/be/27785_crt_uuuH8.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/71/be/27785_crt_uuuH8.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/71/be/27785_crt_uuuH8.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/71/be/27785_crt_uuuH8.jpg"
+            },
+            "name": "寺尾昇",
+            "summary": "",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1c/06/2064_prsn_KT8q7.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/1c/06/2064_prsn_KT8q7.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/1c/06/2064_prsn_KT8q7.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1c/06/2064_prsn_KT8q7.jpg"
+                    },
+                    "name": "新海誠",
+                    "short_summary": "新海 诚（Makoto Shinkai，まこと しんかい，1973年2月9日－），男，居住在东京。日本长野县野泽北高等学校、日本中央大学文学部国文学专攻毕业。1996-2001年就职于Falcom游戏会社，目前自由职业，以制作个人动画为主。 \r\n\r\n《永远的Ys2》的OP动画对于Falcom玩家而言应该记忆犹新。绚丽的2D动画效果配合近乎完美的节奏感，给人以强烈的感官震撼。这就是新海诚在职F社5年间的代表作之一。 1996年，新海诚在大学结业后加入日本Falcom游戏会社（通常在相关仕事中以新津诚名义出现），负责程序、美工、动画与宣传影片制作。在职Falcom期间，新海氏开始了个人动画短片创作。包括1997年的黑白短片《遥远世界》（1分30秒）、1998年的3D短片《被包围的世界》（30秒）、1999-2000年的黑白短片《她和她的猫》（5分钟）。 2000年初夏，新海氏开始制作个人映像动画《星之声》。但由于工作的繁忙，导致《星之声》一度停滞不前。2001年5月，新海氏向Falcom提交辞职。之后《星之声》的制作步上正轨，2002年1月宣告完工，历时共计7个月。此外，新海氏也曾外注参与制作Minori游戏会社游戏《Bittersweet Fools》（2001）、《Wind·a breath of heart》（2002）片头动画。 2003年新海诚新作《云的彼端，约定的地方》（预定片长50分钟）。在背景设定与情节方面，与架空感十足的《星之声》相比更加的平稳自然。由田泽潮担任人设更是弥补了新海人设较苍白的缺陷。担任Minori游戏会社游戏《EF - the first tale》(2006)的动画监制(Animation Movie Director)。",
+                    "career": [
+                        "producer",
+                        "seiyu"
+                    ],
+                    "id": 2064,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/50/75/3903_prsn_0N07U.jpg?r=1478378135",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/50/75/3903_prsn_0N07U.jpg?r=1478378135",
+                        "large": "https://lain.bgm.tv/pic/crt/l/50/75/3903_prsn_0N07U.jpg?r=1478378135",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/50/75/3903_prsn_0N07U.jpg?r=1478378135"
+                    },
+                    "name": "鈴木千尋",
+                    "short_summary": "日本の男性声優。山形県出身。血液型はA型。身長165cm、体重50kg。フリー、オフィスモノリス（業務提携）。星座はみずがめ座。干支はへび。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 3903,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 27785
+        }
+    ]
+}

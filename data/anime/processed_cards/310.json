@@ -1,0 +1,194 @@
+{
+    "id": 310,
+    "name": "幽灵公主",
+    "image_path": "data\\images\\anime\\310.jpg",
+    "points": 8.4,
+    "cost": 4,
+    "rarity": "SSR",
+    "description": "大和王权时期蝦夷族末代王子阿席达卡，在保卫他的村庄时被一恶魔诅咒受不治创伤。村里的巫婆劝他前往西方，寻找恶魔的来源和解除诅咒的方法。在他的旅途中，他來到山獸神森林，认识了被称为“魔法公主”的、由犬神抚养大的小桑。\r\n\r\n在這個過程中，阿席達卡发现恶魔本来是一个山猪神，但体内中了一颗铁弹后，对人类憎恨无比，变成了恶魔。铁弹是工業之城達達拉的統治者幻姬领导的穷人在铁城里制造的，为了保护自己不被贪心的封建贵族吞并，幻姬使用火器和铁弹作为武器，而为了制造火器和铁弹，她又必须从大自然中开发木头和铁矿石，由此与原始森林中的兽神交恶。\r\n\r\n阿席达卡试图在双方调停，但却越来越深地被牵入了这场冲突。",
+    "type": 2,
+    "platform": "剧场版",
+    "episodes_for_hangup": 1,
+    "synergy_tags": [
+        "剧场版",
+        "日本",
+        "奇幻",
+        "原创",
+        "冒险"
+    ],
+    "date": "1997-07-12",
+    "rating_rank": 77,
+    "rating_score": 8.4,
+    "rating_total": 12322,
+    "main_character_ids": [
+        6745,
+        27786
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/32/64/6745_crt_TYL2m.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/32/64/6745_crt_TYL2m.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/32/64/6745_crt_TYL2m.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/32/64/6745_crt_TYL2m.jpg"
+            },
+            "name": "サン",
+            "summary": "人类少女，拥有“幽灵公主”的名号，与山犬神族[url=https://bgm.tv/character/175410]莫娜[/url]一族为伴，将侵略森林的人类视为敌人。\r\n外观上平时以披带着狼毛皮及挂着赤色的奇异造型面具打扮，并在脸上刺有红色图像的刺青，身配利器专门刺杀企图毁灭森林的人类。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8c/58/4522_prsn_goeMe.jpg?r=1727800953",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/8c/58/4522_prsn_goeMe.jpg?r=1727800953",
+                        "large": "https://lain.bgm.tv/pic/crt/l/8c/58/4522_prsn_goeMe.jpg?r=1727800953",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8c/58/4522_prsn_goeMe.jpg?r=1727800953"
+                    },
+                    "name": "石田ゆり子",
+                    "short_summary": "",
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 4522,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "",
+                        "grid": "",
+                        "large": "",
+                        "medium": ""
+                    },
+                    "name": "林元春",
+                    "short_summary": "香港的女配音演员，1988年加入无线电视配音组。\r\n\r\n于1979年参加第八期无线电视艺员训练班出身，但为了逃避练功夫而参加正缺人的配音组，其后亦爱上配音工作。擅长配温柔或大方得体的少女角色，亦擅长反串男童角色，有时也会尝试腹黑的角色。\r\n\r\n元春姐姐是少女变身动画的大热人选，无论是早期的美少女战士，中期是小魔女DOREMI，及现在的光之美少女系列，均有她声影。现时是《光之美少女系列》领军人物\r\n\r\n代表作有：木之本樱（百变小樱Magic咭）、穗波小玉（樱桃小丸子）、多啦美（哆啦A梦）、花带柑（我们这一家)等",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 7191,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f9/81/17193_prsn_b893t.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f9/81/17193_prsn_b893t.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/f9/81/17193_prsn_b893t.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f9/81/17193_prsn_b893t.jpg"
+                    },
+                    "name": "徐静蕾",
+                    "short_summary": "徐静蕾（1974年4月16日－），出生于北京，祖籍湖南，毕业于北京电影学院表演系，中国女演员、导演。与周迅、赵薇和章子怡并称为中国四大花旦。",
+                    "career": [
+                        "producer",
+                        "actor"
+                    ],
+                    "id": 17193,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f5/ba/79160_prsn_r1O1R.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f5/ba/79160_prsn_r1O1R.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/f5/ba/79160_prsn_r1O1R.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f5/ba/79160_prsn_r1O1R.jpg"
+                    },
+                    "name": "林芳雪",
+                    "short_summary": "台湾女性配音员、演员、歌手。世界新闻专科学校毕业。",
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 79160,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e2/41/81504_prsn_0KEtY.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e2/41/81504_prsn_0KEtY.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/e2/41/81504_prsn_0KEtY.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e2/41/81504_prsn_0KEtY.jpg"
+                    },
+                    "name": "赵丽颖",
+                    "short_summary": "赵丽颖，1987年10月16日出生于河北省廊坊市，中国内地影视女演员。\r\n\r\n2006年，因获得雅虎搜星比赛冯小刚组冠军而进入演艺圈 ；同年，在冯小刚执导的广告片《跪族篇》中担任女主角 。2011年，因在古装剧《新还珠格格》中饰演晴儿一角而被观众认识。2013年，凭借古装剧《陆贞传奇》获得更多关注。2014年10月，在第10届金鹰电视艺术节举办的投票活动中被选为“金鹰女神” ；12月，凭借都市爱情剧《杉杉来了》获得第5届国剧盛典内地最具人气女演员奖 ；同年，成立海润传媒赵丽颖工作室。\r\n\r\n2015年，主演的仙侠剧《花千骨》打破中国内地周播剧收视纪录，而其个人则凭借该剧先后获得第6届澳门国际电视节金莲花最佳女主角奖、第6届国剧盛典最具收视号召力演员奖、第22届上海电视节白玉兰奖最佳女主角奖提名、第28届中国电视金鹰奖观众喜爱的女演员奖 。2017年，凭借电影《乘风破浪》获得第24届北京大学生电影节最受大学生欢迎女演员奖 ；同年主演的古装剧《楚乔传》成为中国内地首部在播期间网络播放量突破400亿次的电视剧 。2018年，主演的都市剧《你和我的倾城时光》和古装剧《知否知否应是绿肥红瘦》相继播出。",
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 81504,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 6745
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/5b/cd/27786_crt_6gHcQ.jpg?r=1746536171",
+                "grid": "https://lain.bgm.tv/pic/crt/g/5b/cd/27786_crt_6gHcQ.jpg?r=1746536171",
+                "large": "https://lain.bgm.tv/pic/crt/l/5b/cd/27786_crt_6gHcQ.jpg?r=1746536171",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5b/cd/27786_crt_6gHcQ.jpg?r=1746536171"
+            },
+            "name": "アシタカ",
+            "summary": "一个有着领导者血统、性格正直、温柔寡言、箭术优异的虾夷少年。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b3/9c/4532_prsn_uzghu.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b3/9c/4532_prsn_uzghu.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/b3/9c/4532_prsn_uzghu.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b3/9c/4532_prsn_uzghu.jpg"
+                    },
+                    "name": "松田洋治",
+                    "short_summary": "日本の俳優、声優。\r\n\r\n東京都世田谷区砧生まれ。\r\n\r\nTMエンタテインメント所属。\r\n\r\n5歳上の兄はミュージカル翻訳者・駒澤大学教授の松田直行。",
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 4532,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3d/8b/32637_prsn_Yjnjd.jpg?r=1718260318",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/3d/8b/32637_prsn_Yjnjd.jpg?r=1718260318",
+                        "large": "https://lain.bgm.tv/pic/crt/l/3d/8b/32637_prsn_Yjnjd.jpg?r=1718260318",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3d/8b/32637_prsn_Yjnjd.jpg?r=1718260318"
+                    },
+                    "name": "谷江山",
+                    "short_summary": "中国男性配音演员。音色温柔清亮，跨度较广，常为少年、青年男性角色配音。\r\n\r\n毕业于成都理工大学。2015年参加四川省电影电视节《大圣归来》配音比赛，获得最佳配音奖、最具创意奖。2017年7月，参加729声工场第一期声优育成计划，12月签约729声工场。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 32637,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/dd/eb/78964_prsn_VmVvv.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/dd/eb/78964_prsn_VmVvv.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/dd/eb/78964_prsn_VmVvv.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dd/eb/78964_prsn_VmVvv.jpg"
+                    },
+                    "name": "李勇",
+                    "short_summary": "台湾男性配音员、广播节目主持人。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 78964,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 27786
+        }
+    ]
+}

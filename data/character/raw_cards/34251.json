@@ -1,0 +1,61 @@
+{
+    "birth_mon": 5,
+    "gender": "female",
+    "birth_day": 13,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e3/87/34251_crt_u88eC.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e3/87/34251_crt_u88eC.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/e3/87/34251_crt_u88eC.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e3/87/34251_crt_u88eC.jpg"
+    },
+    "summary": "旭川に古くから建っているモダンな白い屋敷に邸を構える、20代半ばの女性。良家の出身ながら『骨』に対して強い執着を持ち、拾った死骸を材料に骨格標本を作る趣味の持ち主。標本士としての資格を持ち、素人ながら検死に関する知識も持ち合わせている。過去にまだ幼かった弟を亡くしている。",
+    "name": "九条櫻子",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "九条樱子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "九条 櫻子"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "くじょう さくらこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kujou Sakurako"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "5月13日"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "stat": {
+        "comments": 23,
+        "collects": 104
+    },
+    "id": 34251,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        126461
+    ]
+}

@@ -1,0 +1,90 @@
+{
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 13,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4d/a0/68383_crt_n40An.jpg?r=1716643041",
+        "grid": "https://lain.bgm.tv/pic/crt/g/4d/a0/68383_crt_n40An.jpg?r=1716643041",
+        "large": "https://lain.bgm.tv/pic/crt/l/4d/a0/68383_crt_n40An.jpg?r=1716643041",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4d/a0/68383_crt_n40An.jpg?r=1716643041"
+    },
+    "summary": "为了达成自己的肉体改造研究而来到了训中学园的赛马娘。把训练员视为为了研究的实验体兼助手。\r\n性格「理智」且是个「怪胎」。虽然怪不过并没有恶意，可爱不可恨。\r\n***\r\nアグネスタキオン（1998年4月13日~2009年6月22日）栗色\r\n公马\r\n出生地：日本（北海道千歳市）",
+    "name": "アグネスタキオン",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "爱丽速子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "爱丽快子"
+                },
+                {
+                    "v": "美龄快子"
+                },
+                {
+                    "v": "美龄速子"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Agnes Tachyon"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月13日"
+        },
+        {
+            "key": "身高",
+            "value": "159cm"
+        },
+        {
+            "key": "体重",
+            "value": "拒绝测量"
+        },
+        {
+            "key": "BWH",
+            "value": "B83・W55・H81"
+        },
+        {
+            "key": "毛色",
+            "value": "栗毛"
+        },
+        {
+            "key": "现实马主",
+            "value": "渡辺 孝男"
+        },
+        {
+            "key": "成績(勝率)",
+            "value": "4戦4勝（100%）"
+        },
+        {
+            "key": "獲得賞金",
+            "value": "2億2,208万円 (中央)"
+        },
+        {
+            "key": "固有二つ名",
+            "value": "超光速のプリンセス"
+        }
+    ],
+    "stat": {
+        "comments": 8,
+        "collects": 83
+    },
+    "id": 68383,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        472620
+    ]
+}

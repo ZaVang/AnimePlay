@@ -1,0 +1,190 @@
+{
+    "id": 424573,
+    "name": "擅长逃跑的殿下",
+    "image_path": "data\\images\\anime\\424573.jpg",
+    "points": 6.9,
+    "cost": 1,
+    "rarity": "N",
+    "description": "公元1333年，为日本的武士治国打下基础的镰仓幕府，\r\n因为深得信赖的幕臣·足立高氏的谋反而灭亡。\r\n\r\n失去一切、被推入绝望深渊的幕府正统继承人·北条时行，\r\n在自称是神的神官·诹访赖重的指引下逃出了化为焦土的镰仓……。\r\n\r\n时行在逃亡到诹访后，遇见了值得信赖的伙伴，并慢慢累积夺回镰仓所需的力量。\r\n面对时代变迁的惊涛骇浪，与「战斗」、「死亡」的武士生存之道背道而驰，\r\n时行选择以「逃跑」、「求生」克服困境。\r\n\r\n开始于这英雄众多的乱世，时行重新夺回天下的鬼抓人游戏将如何发展呢――。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "漫画改",
+        "战斗",
+        "历史",
+        "少年向"
+    ],
+    "date": "2024-07-06",
+    "rating_rank": 2919,
+    "rating_score": 6.9,
+    "rating_total": 6414,
+    "main_character_ids": [
+        127003,
+        127004,
+        139814,
+        141537,
+        148233
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/21/75/127003_crt_Jw9MC.jpg?r=1728290976",
+                "grid": "https://lain.bgm.tv/pic/crt/g/21/75/127003_crt_Jw9MC.jpg?r=1728290976",
+                "large": "https://lain.bgm.tv/pic/crt/l/21/75/127003_crt_Jw9MC.jpg?r=1728290976",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/21/75/127003_crt_Jw9MC.jpg?r=1728290976"
+            },
+            "name": "北条時行",
+            "summary": "鎌倉幕府を治める執権・北条高時の息子。\r\n地位や権力といったものには関心がなく、\r\n争いごとを好まない優しい性格で、誰よりも鎌倉の平和を願っている。\r\n武芸は苦手だが、逃げ隠れの能力はずば抜けており、\r\n大人ですら容易に捕まえることができない。\r\n忠義の武士と信頼していた足利高氏の裏切りによって全てを奪われ、\r\n大切な故郷・鎌倉を取り戻すための戦いに身を投じていく。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/75/93/52711_prsn_V3SYV.jpg?r=1701261455",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/75/93/52711_prsn_V3SYV.jpg?r=1701261455",
+                        "large": "https://lain.bgm.tv/pic/crt/l/75/93/52711_prsn_V3SYV.jpg?r=1701261455",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/75/93/52711_prsn_V3SYV.jpg?r=1701261455"
+                    },
+                    "name": "結川あさき",
+                    "short_summary": "出身地：東京都\r\n趣味・スポーツ：音楽、ゲーム\r\n特技：フットサル\r\n資格：日本漢字能力検定準1級\r\n芸歴：日本ナレーション演技研究所",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 52711,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 127003
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/2e/fc/127004_crt_Ksd46.jpg?r=1697555340",
+                "grid": "https://lain.bgm.tv/pic/crt/g/2e/fc/127004_crt_Ksd46.jpg?r=1697555340",
+                "large": "https://lain.bgm.tv/pic/crt/l/2e/fc/127004_crt_Ksd46.jpg?r=1697555340",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2e/fc/127004_crt_Ksd46.jpg?r=1697555340"
+            },
+            "name": "諏訪頼重",
+            "summary": "信濃国・諏訪大社の当主。\r\n人であり神でもある「現人神」と呼ばれ、\r\n民から絶大な信仰を集めている。\r\n神力を操ることができ、未来をも見ることが可能…といっても\r\nおぼろげな未来が見えるだけなのでどこか胡散臭い。\r\n滅びゆく鎌倉で時行を救い出し、諏訪で匿った。\r\n時行の逃げ上手の才を見抜き、鎌倉奪還のために厳しい試練を与えつつも、\r\n一大事にならないかハラハラしている…。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7a/78/4724_prsn_7TvWV.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7a/78/4724_prsn_7TvWV.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/7a/78/4724_prsn_7TvWV.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7a/78/4724_prsn_7TvWV.jpg"
+                    },
+                    "name": "中村悠一",
+                    "short_summary": "爱称是ゆうきゃん，由铃村健一命名。英文标记法为‘yuu-kyan’\r\n与声优的杉田智和的私交良好，是在声优界著名的好友。\r\n兴趣是玩游戏、看电影等。\r\n不喜欢吃拉面。喜欢的食物是肉、奶酪、甜食。\r\n2020年10月1日，宣布从Sigma Seven移籍至INTENTION。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 4724,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 127004
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/76/7a/139814_crt_pFbn3.jpg?r=1766295198",
+                "grid": "https://lain.bgm.tv/pic/crt/g/76/7a/139814_crt_pFbn3.jpg?r=1766295198",
+                "large": "https://lain.bgm.tv/pic/crt/l/76/7a/139814_crt_pFbn3.jpg?r=1766295198",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/76/7a/139814_crt_pFbn3.jpg?r=1766295198"
+            },
+            "name": "雫",
+            "summary": "諏訪大社の巫女であり、鎌倉奪還を目指す\r\n時行の郎党「逃若党」の優秀な執事。\r\nお家全般を取り仕切り、頼重を「父様」と呼び慕うなど\r\n基本的に品行方正だが、\r\n時折周囲を驚かせるような言動をとることも。\r\n頼重ほどではないが神力を操る秘術を使うことができる。\r\n洞察力にも優れているため、戦いでは後方支援を\r\n担当しながら、頼重の名代も務める。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/44/96/38883_prsn_Lx6i4.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/44/96/38883_prsn_Lx6i4.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/44/96/38883_prsn_Lx6i4.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/44/96/38883_prsn_Lx6i4.jpg"
+                    },
+                    "name": "矢野妃菜喜",
+                    "short_summary": "日本の声優、歌手、女優。兵庫県出身。ソニー・ミュージックアーティスツ所属。DUSTY FRUITS CLUBのボーカリスト。うたたねこ歌劇団、私立恵比寿中学、momonaki、pieceesの元メンバー。\r\n\r\nかつてはスターダストプロモーションに所属し、2008年から「piecees」、2009年から「momonaki」のメンバーとして活動していた。\r\n\r\n2010年2月14日、アイドルグループ「私立恵比寿中学」に加入。2011年4月17日、私立恵比寿中学を転校（脱退）。当初の転校予定日は2011年3月20日であったが、東日本大震災の影響でライブが中止になったため、4月17日に延期となった。\r\n2013年、WARAHATAに移籍し、映画『INORIGAMI』『ブラックリスター ゼロ』で主演を務める。\r\nその後、ソニーミュージックアーティスツに移籍。月影妃菜喜として、陽光真理愛とのユニット「うたたねこ歌劇団」の活動を開始。2014年4月3日、OVA『12歳。』の主題歌「恋の12歳」を担当。同年5月13日、新曲「パンパカパン」のミュージックビデオを公開。\r\n2016年、アニメコラボカフェ・SHIROBACOのキャストとして活動開始。2018年10月20日、SHIROBACOを卒業。\r\n2017年、バンド「DUSTY FRUITS CLUB」のボーカリストとして活動開始。\r\n\r\n趣味はゲーム、アニメ鑑賞、美少女の写真集め。特技はダンス。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 38883,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 139814
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/06/5b/141537_crt_i0i7v.jpg?r=1766295086",
+                "grid": "https://lain.bgm.tv/pic/crt/g/06/5b/141537_crt_i0i7v.jpg?r=1766295086",
+                "large": "https://lain.bgm.tv/pic/crt/l/06/5b/141537_crt_i0i7v.jpg?r=1766295086",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/06/5b/141537_crt_i0i7v.jpg?r=1766295086"
+            },
+            "name": "亜也子",
+            "summary": "天真爛漫な「逃若党」の怪力娘。\r\n普段は時行のお世話係や武芸の稽古役を務めるが、\r\n少し甘やかしすぎる節がある。\r\n主君を守り支えられるような強い女性に憧れている。\r\n日頃から弧次郎と切磋琢磨し合っており、\r\n戦場での二人の息はピッタリ。\r\n音楽や舞踊など多彩な芸も習得しているらしい。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8a/42/32687_prsn_GF9g5.jpg?r=1688106625",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/8a/42/32687_prsn_GF9g5.jpg?r=1688106625",
+                        "large": "https://lain.bgm.tv/pic/crt/l/8a/42/32687_prsn_GF9g5.jpg?r=1688106625",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8a/42/32687_prsn_GF9g5.jpg?r=1688106625"
+                    },
+                    "name": "鈴代紗弓",
+                    "short_summary": "",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 32687,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 141537
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/dd/ff/148233_crt_VGCK2.jpg?r=1766294982",
+                "grid": "https://lain.bgm.tv/pic/crt/g/dd/ff/148233_crt_VGCK2.jpg?r=1766294982",
+                "large": "https://lain.bgm.tv/pic/crt/l/dd/ff/148233_crt_VGCK2.jpg?r=1766294982",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dd/ff/148233_crt_VGCK2.jpg?r=1766294982"
+            },
+            "name": "弧次郎",
+            "summary": "大人に引けを取らない剣術の腕を持つ「逃若党」の剣士。\r\n血気盛んで物怖じしない性格。\r\n戦いでは周囲の状況を観察・分析しつつ、仲間への気配りや鼓舞も欠かさない。\r\n時行とは主従関係ながらも良き友人のように接している。\r\n個性が強すぎる「逃若党」の中では比較的常識人なため、\r\nツッコミ役になることが多い。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ac/1e/16068_prsn_tUzzW.jpg?r=1704783709",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ac/1e/16068_prsn_tUzzW.jpg?r=1704783709",
+                        "large": "https://lain.bgm.tv/pic/crt/l/ac/1e/16068_prsn_tUzzW.jpg?r=1704783709",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ac/1e/16068_prsn_tUzzW.jpg?r=1704783709"
+                    },
+                    "name": "日野まり",
+                    "short_summary": "日本の女性声優、ナレーター。シグマ・セブンe所属。\r\n\r\n趣味：乾燥機の中をながめること・カラオケ\r\n資格：英検準２級\r\n特技：ピアノ\r\n経歴：シグマ・セブン声優養成所\r\n        【（株）Doa The・声優塾 】",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 16068,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 148233
+        }
+    ]
+}

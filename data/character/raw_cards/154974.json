@@ -1,0 +1,61 @@
+{
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 17,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ea/a8/154974_crt_mQHS6.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ea/a8/154974_crt_mQHS6.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/ea/a8/154974_crt_mQHS6.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ea/a8/154974_crt_mQHS6.jpg"
+    },
+    "summary": "本作のメインヒロイン。放送部所属。声優志望。\r\n\r\n楓林高校２年生。声優を目指している。\r\nコスプレイヤーとしても活動中。\r\n活発ではっきり物が言えるクラスの人気者タイプ。\r\n放送部のコーナーでも漫画やアニメのキャラを演じるが、漢字が苦手でよくセリフを読み間違える。",
+    "name": "日芽川寧々",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "日芽川宁宁"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "日芽川 寧々"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ひめかわ ねね"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Nene Himekawa"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月17日"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://mayochu-anime.com/#character"
+        }
+    ],
+    "stat": {
+        "comments": 42,
+        "collects": 67
+    },
+    "id": 154974,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        544109
+    ]
+}

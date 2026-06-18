@@ -1,0 +1,45 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/30/a4/186657_crt_xv4v3.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/30/a4/186657_crt_xv4v3.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/30/a4/186657_crt_xv4v3.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/30/a4/186657_crt_xv4v3.jpg"
+    },
+    "summary": "皇帝の十三番目の子供に転生し、十三親王となった６歳。\r\n\r\n生まれながらの地位チートに加え、 生まれつきレベル上限∞、かつ、従えた他人の能力を自分の能力にプラスできるチートスキルをもつ。",
+    "name": "ノア・アララート",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "诺亚·亚拉拉特"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "NOAH ALARART"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 4,
+        "collects": 1
+    },
+    "id": 186657,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        531724
+    ]
+}

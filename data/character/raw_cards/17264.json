@@ -1,0 +1,45 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/24/30/17264_crt_6mPKT.jpg?r=1421592989",
+        "grid": "https://lain.bgm.tv/pic/crt/g/24/30/17264_crt_6mPKT.jpg?r=1421592989",
+        "large": "https://lain.bgm.tv/pic/crt/l/24/30/17264_crt_6mPKT.jpg?r=1421592989",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/24/30/17264_crt_6mPKT.jpg?r=1421592989"
+    },
+    "summary": "土地神になった奈々生に仕える妖怪。もともとは野狐（やこ）で、犬が嫌いな神・ミカゲに、狛犬代用としてスカウトされ、彼に仕えていた。ミカゲが「家出」してからは、彼の留守を預かっていた。天邪鬼でその上つっけんどん。口も悪く喧嘩腰のときも多いが、奈々生の神使となった際に、荒れていた寝所を彼女が寝ている間に整えたりするなどさりげない優しさも持ち合わせている。奈々生が黄泉の国に落ち、神使から野狐に戻るが、奈々生の事をずっと考えている事に気付き奈々生の事が好きなのを自覚した。笹餅が好物。",
+    "name": "巴衛",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "巴卫"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ともえ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 9,
+        "collects": 91
+    },
+    "id": 17264,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        43525
+    ]
+}

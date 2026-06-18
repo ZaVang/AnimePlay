@@ -1,0 +1,66 @@
+{
+    "birth_mon": 11,
+    "gender": "male",
+    "birth_day": 24,
+    "birth_year": null,
+    "blood_type": 1,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/78/39/166836_crt_Pbszz.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/78/39/166836_crt_Pbszz.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/78/39/166836_crt_Pbszz.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/78/39/166836_crt_Pbszz.jpg"
+    },
+    "summary": "殺しのプロ『使い手』の中でも最強格となる五大名家『毒使い』下呂家の跡取り。超一流の殺し屋。\r\n裏稼業に身を置くため恋愛経験は皆無で、女性が苦手。家を継ぐために必要にかられ婚活を始める。趣味は遊具菓子。",
+    "name": "下呂ヒカル",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "下吕光"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "下呂 ヒカル"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "HIKARU GERO"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "11月24日"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "引用来源",
+            "value": [
+                {
+                    "k": "动画官网",
+                    "v": "https://www.marriagetoxin-anime.com/#chara"
+                }
+            ]
+        }
+    ],
+    "stat": {
+        "comments": 9,
+        "collects": 6
+    },
+    "id": 166836,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        590353
+    ]
+}

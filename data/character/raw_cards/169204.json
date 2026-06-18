@@ -1,0 +1,40 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/88/5e/169204_crt_6x6zY.jpg?r=1735630924",
+        "grid": "https://lain.bgm.tv/pic/crt/g/88/5e/169204_crt_6x6zY.jpg?r=1735630924",
+        "large": "https://lain.bgm.tv/pic/crt/l/88/5e/169204_crt_6x6zY.jpg?r=1735630924",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/88/5e/169204_crt_6x6zY.jpg?r=1735630924"
+    },
+    "summary": "シュルーズ高校に通う、チャーリーの同級生。\r\n\r\n物おじしない性格で行動力があり、加えて頭脳明晰の優等生だが、町や高校での人間関係にはうんざりしている。そのため、これまで積極的に他者とかかわりを持ってこなかった。\r\nしかし、木から落ちるところをチャーリーに救助されてから、彼に強い興味を持ち、親交を持つようになる。",
+    "name": "ルーシー・エルドレッド",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "露西·艾尔德里德"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 10,
+        "collects": 1
+    },
+    "id": 169204,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        495531
+    ]
+}

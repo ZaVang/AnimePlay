@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7f/e4/77131_crt_s7HpQ.jpg?r=1592197564",
+        "grid": "https://lain.bgm.tv/pic/crt/g/7f/e4/77131_crt_s7HpQ.jpg?r=1592197564",
+        "large": "https://lain.bgm.tv/pic/crt/l/7f/e4/77131_crt_s7HpQ.jpg?r=1592197564",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7f/e4/77131_crt_s7HpQ.jpg?r=1592197564"
+    },
+    "summary": "寡黙で無愛想なベテラン装甲修理人。かつてはスゴ腕の戦士として活躍していたが、今は戦いに興味を示さず、無気力な日々を送っている。夢を諦めないナツメとの出会いにより、その心境に変化が生まれる。",
+    "name": "カブラギ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "镝木"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Kaburagi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://decadence-anime.com/"
+        }
+    ],
+    "stat": {
+        "comments": 7,
+        "collects": 11
+    },
+    "id": 77131,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        285879
+    ]
+}

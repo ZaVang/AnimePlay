@@ -1,0 +1,52 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/12/fe/86628_crt_p44Dc.jpg?r=1632401272",
+        "grid": "https://lain.bgm.tv/pic/crt/g/12/fe/86628_crt_p44Dc.jpg?r=1632401272",
+        "large": "https://lain.bgm.tv/pic/crt/l/12/fe/86628_crt_p44Dc.jpg?r=1632401272",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/12/fe/86628_crt_p44Dc.jpg?r=1632401272"
+    },
+    "summary": "辺境の町ゾルタンのDランク冒険者。薬草の採取と販売で生計を立てながら、自ら薬屋を営んで穏やかに暮らすことを目指している。勇者の旅立ちを守り導く「導き手」の加護を持ち、元々はパーティーの一員でもあった。",
+    "name": "レッド",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "雷德"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "ギデオン・ラグナソン"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Red"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://sneakerbunko.jp/series/shinnonakama/"
+        }
+    ],
+    "stat": {
+        "comments": 7,
+        "collects": 9
+    },
+    "id": 86628,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        319739
+    ]
+}

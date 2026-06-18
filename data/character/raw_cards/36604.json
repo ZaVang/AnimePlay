@@ -1,0 +1,45 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ea/62/36604_crt_V0N03.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ea/62/36604_crt_V0N03.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/ea/62/36604_crt_V0N03.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ea/62/36604_crt_V0N03.jpg"
+    },
+    "summary": "真名不详。泥暗之魔女。《零之书》的作者，魔法的创始人。性格天然善良，有时会有坏心眼，贪吃。拥有强大的魔力。因为受不了等待于是自己开始寻找《零之书》，与佣兵签下契约答应解开佣兵的兽化。但第一卷最后因为魔力消耗太大再加上佣兵被恶魔附身的影响，灵魂的粘附性似乎更强了所以没有解除。",
+    "name": "ゼロ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "零"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Zero"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 19,
+        "collects": 88
+    },
+    "id": 36604,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        194259
+    ]
+}

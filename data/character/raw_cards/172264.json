@@ -1,0 +1,47 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0b/9b/172264_crt_eqHwZ.jpg?r=1740928796",
+        "grid": "https://lain.bgm.tv/pic/crt/g/0b/9b/172264_crt_eqHwZ.jpg?r=1740928796",
+        "large": "https://lain.bgm.tv/pic/crt/l/0b/9b/172264_crt_eqHwZ.jpg?r=1740928796",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0b/9b/172264_crt_eqHwZ.jpg?r=1740928796"
+    },
+    "summary": "迷宮に蠢く魔獣を討伐する探索者で、未だ誰一人として最下層の第100層まで到達していない迷宮で、前人未到の第94層へと到達した「勇者パーティ」に所属していた。\r\n仲間のために【剣士】から【付与術士】へとコンバートし、独自の魔術を開発。\r\n様々な面でサポートをしていたが、ある日突然、『器用貧乏』だとバカにされ、 パーティからも追放されてしまう。\r\nその後は心機一転、『万能者』と呼ばれるような最強の探索者を目指している。",
+    "name": "オルン・ドゥーラ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "奥伦·图拉"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "奥伦·杜勒"
+                },
+                {
+                    "v": "欧伦·杜拉"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 9,
+        "collects": 5
+    },
+    "id": 172264,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        541336
+    ]
+}

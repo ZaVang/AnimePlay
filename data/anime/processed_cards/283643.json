@@ -1,0 +1,127 @@
+{
+    "id": 283643,
+    "name": "吹响吧！上低音号 第三季",
+    "image_path": "data\\images\\anime\\283643.jpg",
+    "points": 5,
+    "cost": 1,
+    "rarity": "N",
+    "description": "春。北宇治高校吹奏楽部の3年、\r\n部長の黄前久美子は、期待と不安を抱いていた。\r\n\r\nどんな新入部員がやって来るのか、\r\n部長として皆をまとめていけるのか、\r\nそして悲願の目標である「全国大会金賞」を達成できるのか――。\r\n\r\nそんな思いを胸に久美子は部長として奔走する日々を送っているのだが、\r\n奏者としても久美子の前に大きな壁が現れる。\r\n\r\n全国大会出場常連の強豪校から転校してきた黒江真由。\r\n手にした楽器は久美子と同じ――ユーフォニアム。\r\n華やかな音色、卓越した演奏技術、\r\nそして穏やかな人柄で周囲からも慕われる、完璧な少女。\r\n\r\nしかし、そんな真由が時折のぞかせる影に\r\n久美子は何とも形容しがたい感情を抱く。\r\n\r\n「たかが部活なんだし、無理してしがみつくものじゃないと思う…」\r\n\r\n果たして久美子は真由にどう向き合うのか……。\r\n\r\nそして、吹奏楽に懸けた青春に“卒業”が近づいてきていた――。\r\n\r\n「いくよ、みんな」\r\n\r\n久美子、高校最後の1年が始まる！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "校园",
+        "TV",
+        "日本",
+        "音乐",
+        "小说改"
+    ],
+    "date": "2024-04-07",
+    "rating_rank": 9776,
+    "rating_score": 5,
+    "rating_total": 11461,
+    "main_character_ids": [
+        29282,
+        29283,
+        29284
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/48/cc/29282_crt_VJ77t.jpg?r=1754658149",
+                "grid": "https://lain.bgm.tv/pic/crt/g/48/cc/29282_crt_VJ77t.jpg?r=1754658149",
+                "large": "https://lain.bgm.tv/pic/crt/l/48/cc/29282_crt_VJ77t.jpg?r=1754658149",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/48/cc/29282_crt_VJ77t.jpg?r=1754658149"
+            },
+            "name": "黄前久美子",
+            "summary": "一年级生，使用的乐器是上低音号。\r\n因为憧憬水手服和希望人际关系有新的开始，选择进入北宇治高中就读。\r\n初中时曾是管乐团的成员，进入高中后本不愿加入管乐团，在周围人怂恿下终于还是选择加入。\r\n较为没有主见，有着想说什么就说什么的习惯。\r\n♪好きな色\r\n白、黄\r\n♪趣味\r\n音楽を聞くこと、家でダラダラすること\r\n♪特技\r\n缶に入ったコーンスープを飲むときに、ひと粒も残さず飲むことができる\r\n♪好きなもの\r\n卵料理、洋菓子。大好物はオムライスとショートケーキ\r\n♪嫌いなもの\r\n虫！　とくにトビケラ！",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/dd/f8/9560_prsn_X7Z7F.jpg?r=1688189964",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/dd/f8/9560_prsn_X7Z7F.jpg?r=1688189964",
+                        "large": "https://lain.bgm.tv/pic/crt/l/dd/f8/9560_prsn_X7Z7F.jpg?r=1688189964",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dd/f8/9560_prsn_X7Z7F.jpg?r=1688189964"
+                    },
+                    "name": "黒沢ともよ",
+                    "short_summary": "黒沢 ともよ（くろさわ ともよ、1996年4月10日 - ）は、日本の女性女優、声優、歌手。マウスプロモーション所属。埼玉県秩父市出身。\r\n\r\n3歳頃から演技の勉強を始め、2003年頃から子役としてテレビドラマ、CM、舞台へ出演。\r\n2008年よりSound Horizonのサポートメンバーとして参加。6th Story CD『Moira』のPV「冥王 -Θανατος-」、及びコンサート「Sound Horizon 6th Story Concert Moira 〜其れでも、お征きなさい仔等よ〜」に幼少期アルテミシア役で出演。いずれも発声無しの子役（モーションアクター）としての出演であったが、2010年の7th Story CD『Märchen』ではボーカル・ボイスアクターなども務めている。\r\n2010年、劇場アニメ『宇宙ショーへようこそ』の小山夏紀役にて声優デビュー。その後、テレビアニメ等、活躍の幅を広げている。\r\n東京児童劇団を退団後、2012年よりマウスプロモーションに所属。",
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 9560,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 29282
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/bd/68/29283_crt_vL1H3.jpg?r=1559645553",
+                "grid": "https://lain.bgm.tv/pic/crt/g/bd/68/29283_crt_vL1H3.jpg?r=1559645553",
+                "large": "https://lain.bgm.tv/pic/crt/l/bd/68/29283_crt_vL1H3.jpg?r=1559645553",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bd/68/29283_crt_vL1H3.jpg?r=1559645553"
+            },
+            "name": "加藤葉月",
+            "summary": "久美子的同班同学，与久美子和绿关系要好。\r\n加入吹奏部之前完全没有乐器演奏经验，中学时代加入的是网球部。\r\n♪好きな色\r\n黄、橙\r\n♪趣味\r\nテニス\r\n♪特技\r\n小さいころ空手をやっていた\r\n♪好きなもの\r\n菓子\r\n♪嫌いなもの\r\n野菜",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2c/01/16264_prsn_eDeSy.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2c/01/16264_prsn_eDeSy.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/2c/01/16264_prsn_eDeSy.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2c/01/16264_prsn_eDeSy.jpg"
+                    },
+                    "name": "朝井彩加",
+                    "short_summary": "日本の声優、女優。\r\n2013年1月1日より青年座映画放送に所属。同年、アミューズメントメディア総合学院東京校を卒業、および声優活動を開始し、『私がモテないのはどう考えてもお前らが悪い!』で初のレギュラー出演。\r\n2015年、『新妹魔王の契約者』の成瀬澪役で初のヒロイン役を務める。\r\n2017年5月に青年座映画放送を退所し、その後はフリーで活動。10月より東映撮影所に所属。\r\n2020年8月にインテンションへの移籍を報告した。",
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 16264,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 29283
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/1c/2f/29284_crt_2JDJs.jpg?r=1559645629",
+                "grid": "https://lain.bgm.tv/pic/crt/g/1c/2f/29284_crt_2JDJs.jpg?r=1559645629",
+                "large": "https://lain.bgm.tv/pic/crt/l/1c/2f/29284_crt_2JDJs.jpg?r=1559645629",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1c/2f/29284_crt_2JDJs.jpg?r=1559645629"
+            },
+            "name": "川島緑輝",
+            "summary": "一年級生，使用的樂器是低音提琴。\r\n初中時代就讀專門訓練大小姐的學校。為了把帶給自己歡樂的樂器演奏延續下去，因此加入管樂團。\r\n對於自己的名字非常介意，總是用「綠（みどり）」自稱。\r\n名字 Sapphire 意为 蓝宝石\r\n♪好きな色\r\nピンク、パステルカラー\r\n♪趣味\r\nお菓子作り、ぬいぐるみ収集\r\n♪特技\r\n料理、裁縫が得意\r\n♪好きなもの\r\n甘いもの、可愛いもの全部。爬虫類が大好き。ペットはイグアナ（名前はマカロン）\r\n♪嫌いなもの\r\n苦いもの、可愛くないもの、パソコン（操作方法がわからないから）",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/62/56/13214_prsn_85HbA.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/62/56/13214_prsn_85HbA.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/62/56/13214_prsn_85HbA.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/62/56/13214_prsn_85HbA.jpg"
+                    },
+                    "name": "豊田萌絵",
+                    "short_summary": "2013年起成为声优组合StylipS的成员。\r\n\r\n“声優になる前からリアルタイムで見ていた大好きな咲に関われる事が出来てとっても嬉しいです！　キャストが決まった時は泣いて喜びました。ちっちゃいけれどしっかりしている胡桃を精一杯演じ、胡桃と一緒に咲-Saki-全国編を盛り上げて行きたいと思います！　応援宜しくお願い致します。”",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 13214,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 29284
+        }
+    ]
+}

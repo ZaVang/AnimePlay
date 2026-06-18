@@ -1,0 +1,84 @@
+{
+    "birth_mon": 3,
+    "gender": "female",
+    "birth_day": 5,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a0/82/60525_crt_3rr63.jpg?r=1716643954",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a0/82/60525_crt_3rr63.jpg?r=1716643954",
+        "large": "https://lain.bgm.tv/pic/crt/l/a0/82/60525_crt_3rr63.jpg?r=1716643954",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a0/82/60525_crt_3rr63.jpg?r=1716643954"
+    },
+    "summary": "有着一头美丽的漆黑长发的马娘。\r\n一眼看上去是不知道在想什么的有些诡异的人，实际上是喜欢着训练员的单纯性格。\r\n追求着“其他方式所追求不到的快乐”所以参加了赛马。本人语「如果不是马娘的话，人生会实在是无聊过头，大概就会去犯罪了……」。\r\n同时作为女优活动着。\r\n***\r\n曼城茶座（1998年3月5日~2015年8月13日）棕色\r\n公马\r\n出生地：日本（北海道千歳市）",
+    "name": "マンハッタンカフェ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "曼城茶座"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Manhattan Café"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Manhattan Cafe"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "3月5日"
+        },
+        {
+            "key": "身高",
+            "value": "155cm"
+        },
+        {
+            "key": "体重",
+            "value": "无增减"
+        },
+        {
+            "key": "BWH",
+            "value": "B73・W54・H78"
+        },
+        {
+            "key": "毛色",
+            "value": "青鹿毛"
+        },
+        {
+            "key": "现实马主",
+            "value": "西川 清"
+        },
+        {
+            "key": "成績(勝率)",
+            "value": "12戦6勝（50%）"
+        },
+        {
+            "key": "獲得賞金",
+            "value": "5億2,283万円 (中央)"
+        },
+        {
+            "key": "固有二つ名",
+            "value": "漆黒の幻影"
+        }
+    ],
+    "stat": {
+        "comments": 21,
+        "collects": 85
+    },
+    "id": 60525,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        472620
+    ]
+}

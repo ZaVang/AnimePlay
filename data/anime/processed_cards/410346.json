@@ -1,0 +1,127 @@
+{
+    "id": 410346,
+    "name": "2.5次元的诱惑",
+    "image_path": "data\\images\\anime\\410346.jpg",
+    "points": 6.7,
+    "cost": 1,
+    "rarity": "N",
+    "description": "“莉莉艾露！！！”\r\n对3次元的女生不感兴趣！漫画研究社社长奥村正宗今天也一个人在活动室里，喊着屏幕那头他深爱的二次元角色莉莉艾露的名字。\r\n但是，一位名叫“天乃莉莉纱”的3次元少女来到了奥村正宗身边，并表示“想成为莉莉艾露”。\r\n她非常喜欢漫画里的女孩子穿的色色又可爱的“服装”。而且，她还是一个对莉莉艾露的爱不亚于奥村正宗的同好阿宅。\r\n天乃莉莉纱向奥村正宗表明了自己的秘密爱好是cosplay，并给他看了装满cosplay照片和视频的收藏光盘，告诉他——\r\n“我……想出这个！！”\r\n在只有两个人的活动室开展cosplay活动，天乃莉莉纱cosplay的莉莉艾露还原到让奥村正宗受到冲击。被热情压倒的奥村正宗也拿起了照相机。\r\n真挚热情地面对cosplay的他们，送给“热爱着某物”的所有阿宅的cosplay青春故事，就此开幕。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 24,
+    "synergy_tags": [
+        "喜剧",
+        "校园",
+        "TV",
+        "恋爱",
+        "日本",
+        "漫画改",
+        "少年向"
+    ],
+    "date": "2024-07-05",
+    "rating_rank": 4097,
+    "rating_score": 6.7,
+    "rating_total": 4565,
+    "main_character_ids": [
+        103263,
+        103264,
+        133652
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b9/65/103263_crt_PkUb6.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b9/65/103263_crt_PkUb6.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/b9/65/103263_crt_PkUb6.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b9/65/103263_crt_PkUb6.jpg"
+            },
+            "name": "天乃リリサ",
+            "summary": "高校１年生。漫画やアニメが好きなオタク女子。特に作中に登場する女の子の「衣装」が大好き。中学生の頃に初めて参加したイベントをきっかけに、リリエルへの愛をコスプレで表現する。コスプレのクオリティはリリエルオタクの奥村が驚嘆するレベル。\r\n\r\n女主角，高中1年生。喜欢Cosplay。主要扮演的角色为莉莉艾露。\r\n非常喜欢漫画，以拍摄莉莉艾露的ROM为目标入部。\r\n恋爱迟钝。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/04/06/30811_prsn_t0VG9.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/04/06/30811_prsn_t0VG9.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/04/06/30811_prsn_t0VG9.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/04/06/30811_prsn_t0VG9.jpg"
+                    },
+                    "name": "前田佳織里",
+                    "short_summary": "前田佳織里（まえだ かおり）は、日本の女性声優、歌手。福岡県北九州市出身。アミューズ所属。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 30811,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 103263
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/4e/6d/103264_crt_a2Tjh.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/4e/6d/103264_crt_a2Tjh.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/4e/6d/103264_crt_a2Tjh.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4e/6d/103264_crt_a2Tjh.jpg"
+            },
+            "name": "橘美花莉",
+            "summary": "リリサのクラスメイトで、抜群のルックスとスタイルを兼ね備えた人気モデル。ファンからの愛称は「ミカリン」。幼馴染みの奥村のことを10年間一途に想い続けているが、彼が3次元女子に興味がないため、気持ちに気づいてもらえない。\r\n\r\n与莉莉纱同班的高中1年生。爱称是「みかリン」。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a1/78/19339_prsn_R7laF.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a1/78/19339_prsn_R7laF.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/a1/78/19339_prsn_R7laF.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a1/78/19339_prsn_R7laF.jpg"
+                    },
+                    "name": "鬼頭明里",
+                    "short_summary": "鬼頭明里（きとう あかり）は、日本の女性声優である。ラクーンドッグ所属。\r\nあだ名は「あかりん」。\r\n\r\n10月16日生まれ、愛知県出身、血液型B型、153cm。プロ・フィット声優養成所を経て、現事務所に2015年4月から所属。\r\n趣味は絵を描くこと、歌うこと。特技は絵を描くこと、歌うこと、湯切り。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 19339,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 103264
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b4/84/133652_crt_SRDRN.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b4/84/133652_crt_SRDRN.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/b4/84/133652_crt_SRDRN.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b4/84/133652_crt_SRDRN.jpg"
+            },
+            "name": "奥村正宗",
+            "summary": "高校２年生。漫画研究部の部長を務めるオタク男子。2次元のキャラクター・リリエルをこよなく愛しており、その愛の強さは「俺の嫁」と豪語するほど。漫研にやってきたリリサに頼まれ、彼女のコスプレ撮影を手伝うことになる。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d0/70/16353_prsn_Tk4x9.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d0/70/16353_prsn_Tk4x9.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/d0/70/16353_prsn_Tk4x9.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d0/70/16353_prsn_Tk4x9.jpg"
+                    },
+                    "name": "榎木淳弥",
+                    "short_summary": "大学時代に周囲の影響でアニメを見始めるようになり、『天元突破グレンラガン』に感動したことがきっかけで声優を目指す。アトミックモンキー 声優・演技研究所に3期生として入所、卒業後に事務所所属となる。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 16353,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 133652
+        }
+    ]
+}

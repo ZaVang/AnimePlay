@@ -1,0 +1,92 @@
+{
+    "id": 119889,
+    "name": "我老婆是学生会长",
+    "image_path": "data\\images\\anime\\119889.jpg",
+    "points": 6,
+    "cost": 1,
+    "rarity": "N",
+    "description": "誓约之吻是亲吻左胸！？\r\n完美无瑕的学生会长以毫无防备的姿态嫁给了我♡\r\n被迫开始的同居生活，男人的贞操即将崩坏！？\r\n就这样开始的“同一个屋檐下的恋爱喜剧”♡",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "后宫",
+        "TV",
+        "恋爱",
+        "日本",
+        "漫画改"
+    ],
+    "date": "2015-07-01",
+    "rating_rank": 7758,
+    "rating_score": 6,
+    "rating_total": 3976,
+    "main_character_ids": [
+        33248,
+        33770
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/48/25/33248_crt_q0idO.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/48/25/33248_crt_q0idO.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/48/25/33248_crt_q0idO.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/48/25/33248_crt_q0idO.jpg"
+            },
+            "name": "若菜羽衣",
+            "summary": "学业和体育表现均优秀的美少女。学生会会长。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2b/7b/5228_prsn_tIY4W.jpg?r=1718206051",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2b/7b/5228_prsn_tIY4W.jpg?r=1718206051",
+                        "large": "https://lain.bgm.tv/pic/crt/l/2b/7b/5228_prsn_tIY4W.jpg?r=1718206051",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2b/7b/5228_prsn_tIY4W.jpg?r=1718206051"
+                    },
+                    "name": "竹達彩奈",
+                    "short_summary": "日本的女性声优，1989年6月23日出生，埼玉县出身，所属事务所为LINK・PLAN 。身高151cm，血型为O型。代表作品有《轻音少女》中的中野梓、《kiss×sis》中的住之江亚香、《我的妹妹不可能那么可爱》中的高坂桐乃、《只有神知道的世界》中的高原步美、《玉响》中的泽渡枫、《MM一族》中的石动美绪、《迷途猫》中的雾谷希等。\r\n\r\n2019年6月23日，即竹达彩奈生日当天，宣布了与梶裕贵的婚讯。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 5228,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 33248
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/08/e8/33770_crt_ZmTKg.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/08/e8/33770_crt_ZmTKg.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/08/e8/33770_crt_ZmTKg.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/08/e8/33770_crt_ZmTKg.jpg"
+            },
+            "name": "和泉隼斗",
+            "summary": "生徒会副会長を務めるメガネ男子。会長選挙では羽衣に大差を付けられ落選し、結果副会長となる。父親（声 - 山口和理）が羽衣の両親とは懇意の仲で、彼女の嫁入りを公認している。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9e/df/5007_prsn_LClCs.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/9e/df/5007_prsn_LClCs.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/9e/df/5007_prsn_LClCs.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9e/df/5007_prsn_LClCs.jpg"
+                    },
+                    "name": "興津和幸",
+                    "short_summary": "兵庫県立洲本高等学校、大阪芸術大学芸術学部放送学科卒。RME（ - 2006年10月）を経て、2007年5月よりケッケコーポレーションに所属。\r\n端役を多く演じているが、『屍鬼』や『れでぃ×ばと!』で主演としてのキャリアを積み、2012年にテレビアニメ化が実現した『ジョジョの奇妙な冒険』で主人公のジョナサン・ジョースター役に抜擢される。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 5007,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 33770
+        }
+    ]
+}

@@ -1,0 +1,65 @@
+{
+    "birth_mon": 12,
+    "gender": "female",
+    "birth_day": 31,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9d/7f/57719_crt_Ufukc.jpg?r=1571310712",
+        "grid": "https://lain.bgm.tv/pic/crt/g/9d/7f/57719_crt_Ufukc.jpg?r=1571310712",
+        "large": "https://lain.bgm.tv/pic/crt/l/9d/7f/57719_crt_Ufukc.jpg?r=1571310712",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9d/7f/57719_crt_Ufukc.jpg?r=1571310712"
+    },
+    "summary": "雨露と同じ高校の女子生徒。\r\n三つ編みに眼鏡という地味な容姿に付け加え、雨露を毒舌でからかって楽しんでいることから、雨露からは嫌われている。\r\n\r\n昼休みにいつも図書室にいる少女。パンジーの由来は、本名を省略すると「三色菫」になることから。気品がありそうな名前だけど、なんというか超地味。眼鏡に三つ編みだし、それに何を考えているか分かんない。そして『僕』にだけ超毒舌！　まぁつまり僕はこいつのことが嫌いってこと。",
+    "name": "三色院菫子",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "三色院堇子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "さんしょくいん すみれこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sanshokuin Sumireko"
+                },
+                {
+                    "k": "昵称",
+                    "v": "パンジー、Pansy"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "12月31日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://ore.ski/character/pansy.html"
+        }
+    ],
+    "stat": {
+        "comments": 22,
+        "collects": 98
+    },
+    "id": 57719,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        262943
+    ]
+}

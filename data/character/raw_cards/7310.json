@@ -1,0 +1,49 @@
+{
+    "birth_mon": 9,
+    "gender": "female",
+    "birth_day": 7,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ac/61/7310_crt_qV4Ov.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ac/61/7310_crt_qV4Ov.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/ac/61/7310_crt_qV4Ov.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ac/61/7310_crt_qV4Ov.jpg"
+    },
+    "summary": "出生国家：温德布卢姆王国\r\n拥有GEM・称号：漆黑之金刚石（Ultimate Black Diamond，起源：阿尔泰公国）\r\n主人：阿尔泰大公—炎风‧戴‧阿尔塔\r\n在珊瑚乙HiME有着No.1的实力，真正身份是温德布卢姆王国的公主，非常喜欢自己的养父—王‧塞鲁哥，因而对爱莉卡有强烈的嫉妒心，也因此与漆黑之金刚石有了反应，和阿尔泰签订了契约，结果却意外杀死了了自己的好朋友“爱尔斯汀”，与爱莉卡之间产生嫌隙，最后因为想让塞鲁哥活着而发动了簧风琴，最后再和爱莉卡的激烈战斗后终于和解，战斗后剪短了头发，与失去记忆的塞鲁哥居住在一起。\r\n意外地十分害怕被搔痒，可以说是妮娜的弱点。",
+    "name": "ニナ・ウォン",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "妮娜・翁"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Nina Wáng"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "9月7日"
+        }
+    ],
+    "stat": {
+        "comments": 3,
+        "collects": 10
+    },
+    "id": 7310,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        1028
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d2/50/69068_crt_05NQm.jpg?r=1562108140",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d2/50/69068_crt_05NQm.jpg?r=1562108140",
+        "large": "https://lain.bgm.tv/pic/crt/l/d2/50/69068_crt_05NQm.jpg?r=1562108140",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d2/50/69068_crt_05NQm.jpg?r=1562108140"
+    },
+    "summary": "父の教えで身に付けたサバイバル術を駆使して、\r\n無人島を生き延びる。\r\nサバイバルに関してはストイックな反面、それ以外のことには\r\n無関心で、女子高生らしい恥じらいは、持ち合わせていない。\r\n本人は父を尊敬しているつもりだが、ほかの3人からは、\r\nファザコンだと思われている。",
+    "name": "鬼島ほまれ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "鬼岛誉"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "おにしま ほまれ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Onishima Homare"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "159cm"
+        }
+    ],
+    "stat": {
+        "comments": 16,
+        "collects": 90
+    },
+    "id": 69068,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        276187
+    ]
+}

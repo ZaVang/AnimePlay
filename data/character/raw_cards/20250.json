@@ -1,0 +1,77 @@
+{
+    "birth_mon": 12,
+    "gender": "female",
+    "birth_day": 28,
+    "birth_year": null,
+    "blood_type": 4,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e1/d5/20250_crt_wYB98.jpg?r=1496766642",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e1/d5/20250_crt_wYB98.jpg?r=1496766642",
+        "large": "https://lain.bgm.tv/pic/crt/l/e1/d5/20250_crt_wYB98.jpg?r=1496766642",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e1/d5/20250_crt_wYB98.jpg?r=1496766642"
+    },
+    "summary": "父母早年因车祸丧生，之后被朝仓家收养。\r\n与纯一同一天出生，但称纯一为兄（「兄さん」）。因为身体虚弱，经常发热，所以纯一经常帮她检查体温。\r\n在学校担任风纪委员，成绩优秀，性格活泼可爱，所以在学校很受欢迎。其料理水平实在不敢恭维，甚至连纯一也畏惧，因此多以便当与外卖解决，很少下厨。  \r\n非常在意纯一，对纯一抱有超越兄妹的感情，见到纯一跟其他女生一起会动用暴力镇压。也嫉妒纯一跟樱的关系，将樱在美国写给纯一的信全部丢掉。后前往护理学校实习。\r\n几经波折,在D.C.S.S中的结局,因为纯一和她各自的情侣表而想起一切,后与纯一结婚.D.C II的故事以音梦与纯一结婚为基础，二代女主角朝仓音姬和朝仓由梦为纯一和音梦的孙女。",
+    "name": "朝倉音夢",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "朝仓音梦"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Nemu Asakura"
+                },
+                {
+                    "k": "日文名",
+                    "v": "朝倉音夢"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あさくら ねむ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Asakura Nemu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "12月28日"
+        },
+        {
+            "key": "血型",
+            "value": "O"
+        },
+        {
+            "key": "身高",
+            "value": "155 cm"
+        },
+        {
+            "key": "体重",
+            "value": "37 kg"
+        },
+        {
+            "key": "BWH",
+            "value": "B79 W53 H82"
+        }
+    ],
+    "stat": {
+        "comments": 25,
+        "collects": 88
+    },
+    "id": 20250,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        2063
+    ]
+}

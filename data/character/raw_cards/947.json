@@ -1,0 +1,63 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f4/74/947_crt_uxUWw.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f4/74/947_crt_uxUWw.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/f4/74/947_crt_uxUWw.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f4/74/947_crt_uxUWw.jpg"
+    },
+    "summary": "通过与人类合体而是对方拥有最强武器的圣战天使，是梅扎兰斯一族的最终血统。是能力格外高强、因稀少而价值高昂的七煌宝树之一。其攻击像风一样锐利迅猛，能将钢铁像纸一样劈开，像羽毛一样轻盈。核石在额头上，是绿色的，成宝石状。沉睡之中被酷解开了持续500年的封印。虽然讨厌人类，但在旅途中逐渐向酷敞开了心扉。",
+    "name": "レンレヴェリー=メザーランス",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "蕾芙丽·梅扎兰斯"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "レン"
+                },
+                {
+                    "v": "Ren"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Reverie Metherience"
+                },
+                {
+                    "k": "日文名",
+                    "v": "レンレヴェリー=メザーランス"
+                },
+                {
+                    "k": "昵称",
+                    "v": "蕾"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "声优",
+            "value": "高桥美佳子"
+        }
+    ],
+    "stat": {
+        "comments": 10,
+        "collects": 75
+    },
+    "id": 947,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        2293
+    ]
+}

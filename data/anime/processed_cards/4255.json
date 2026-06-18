@@ -1,7 +1,7 @@
 {
     "id": 4255,
     "name": "迷糊餐厅",
-    "image_path": "data/images/anime/4255.jpg",
+    "image_path": "data\\images\\anime\\4255.jpg",
     "points": 7.5,
     "cost": 1,
     "rarity": "N",

@@ -1,0 +1,80 @@
+{
+    "birth_mon": 8,
+    "gender": "female",
+    "birth_day": 15,
+    "birth_year": null,
+    "blood_type": 1,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f0/45/10467_crt_jhOQu.jpg?r=1398389400",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f0/45/10467_crt_jhOQu.jpg?r=1398389400",
+        "large": "https://lain.bgm.tv/pic/crt/l/f0/45/10467_crt_jhOQu.jpg?r=1398389400",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f0/45/10467_crt_jhOQu.jpg?r=1398389400"
+    },
+    "summary": "经常驾驶机车，個性看似倔強，其實非常率直，容易被人猜中心意。由於懷疑母親玖我紗江子的死與一番地有關，所以不斷的查探其秘密及戰鬥。愛好收集內衣、打電動和賽馬，在游戏中还有害怕幽灵这一特征。喜歡的食物是美乃滋（就算即食麵也喜歡加進去）；和鴇羽為隔壁班同學，和學生會長藤乃靜留關係曖昧，和初中部的結城奈緒之間有點過節，二人只要見面就會發生爭執；子獸為迪蘭（デュラン）（狼型態。攻擊技有裝填鉻彈（火）/銀彈（冰）），元素武具為雙槍（銃型のエレメント）。开始时带着很小的迪兰满处走的样子很萌哦。在结尾处驾驭巨大化迪兰与静留双飘，并于最终话复生。最重要的人是藤乃靜留。",
+    "name": "玖我なつき",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "玖我夏树"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "玖我夏姬"
+                },
+                {
+                    "k": "日文名",
+                    "v": "玖我 なつき"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "くが なつき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kuga Natsuki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "8/15"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "身高",
+            "value": "160cm"
+        },
+        {
+            "key": "体重",
+            "value": "47kg"
+        },
+        {
+            "key": "BWH",
+            "value": "82/57/83"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://www.sunrise-inc.co.jp/my-hime/web/character/index.html"
+        }
+    ],
+    "stat": {
+        "comments": 7,
+        "collects": 31
+    },
+    "id": 10467,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        1027
+    ]
+}

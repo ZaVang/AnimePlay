@@ -1,0 +1,57 @@
+{
+    "birth_mon": 9,
+    "gender": "male",
+    "birth_day": 29,
+    "birth_year": null,
+    "blood_type": 2,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bd/61/185506_crt_ng1gt.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/bd/61/185506_crt_ng1gt.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/bd/61/185506_crt_ng1gt.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bd/61/185506_crt_ng1gt.jpg"
+    },
+    "summary": "高校１年生。誰に対してもフラットに接し、空気を読むのが得意。孤立しがちな人にも積極的に声をかけ、他人との間に壁をつくらない。異性からはかなりモテており、来るもの拒まずのスタンスだが、別れる時はいつも相手からフラれている。",
+    "name": "雨宮湊",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "雨宫凑"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Minato Amamiya"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "9月29日"
+        },
+        {
+            "key": "血型",
+            "value": "B"
+        },
+        {
+            "key": "身高",
+            "value": "176cm"
+        }
+    ],
+    "stat": {
+        "comments": 17,
+        "collects": 5
+    },
+    "id": 185506,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        535669
+    ]
+}

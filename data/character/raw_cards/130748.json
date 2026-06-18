@@ -1,0 +1,73 @@
+{
+    "birth_mon": 11,
+    "gender": "male",
+    "birth_day": 21,
+    "birth_year": 1993,
+    "blood_type": 3,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/41/d9/130748_crt_i45Il.jpg?r=1716809879",
+        "grid": "https://lain.bgm.tv/pic/crt/g/41/d9/130748_crt_i45Il.jpg?r=1716809879",
+        "large": "https://lain.bgm.tv/pic/crt/l/41/d9/130748_crt_i45Il.jpg?r=1716809879",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/41/d9/130748_crt_i45Il.jpg?r=1716809879"
+    },
+    "summary": "かつては最強の殺し屋だったが、妻の葵に恋をして引退。\r\n現在はのどかな町で「坂本商店」を営んでいる。\r\n結婚してふくよかな見た目となったが、殺し屋時代の実力は今も健在。\r\n特定の武器は持たず、その場にあるものを武器にして戦うスタイル。\r\n妻と娘を何よりも愛している。",
+    "name": "坂本太郎",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "坂本太郎"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "坂本 太郎"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "さかもと たろう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sakamoto Tarō"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "1993年11月21日"
+        },
+        {
+            "key": "血型",
+            "value": "AB"
+        },
+        {
+            "key": "身高",
+            "value": "188cm"
+        },
+        {
+            "key": "体重",
+            "value": "140kg"
+        },
+        {
+            "key": "年龄",
+            "value": "27"
+        }
+    ],
+    "stat": {
+        "comments": 10,
+        "collects": 8
+    },
+    "id": 130748,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        496617
+    ]
+}

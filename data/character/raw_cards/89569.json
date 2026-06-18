@@ -1,0 +1,85 @@
+{
+    "birth_mon": 1,
+    "gender": "female",
+    "birth_day": 30,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b5/7d/89569_crt_NKk2o.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b5/7d/89569_crt_NKk2o.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/b5/7d/89569_crt_NKk2o.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b5/7d/89569_crt_NKk2o.jpg"
+    },
+    "summary": "动画S2：\r\n純情可憐なお嬢様。 \r\n物腰柔らかな言動に反して、精神は頑固。 \r\nメジロマックイーンの大フアンで出走するレ —スは必ず応援に駆けつけている。\r\n キタサンブラックとは親友であリライバルで あるとも思っている。\r\n\r\n手游：\r\nある資産家の家に生まれ、愛情たっぷりに育てられた箱入りウマ娘。\r\nそのためか、世間知らずな一面を覗かせることも。\r\n素直でおっとり、お嬢様然としているが、その内側にはダイヤモンド級の意志の強さが秘められている。\r\nジンクスを破り、家族の夢を叶えるため、今日も彼女は挑戦する。\r\n***\r\n里见光钻（2013年1月30日~）枣色\r\n公马\r\n出生地：日本（北海道安平町）",
+    "name": "サトノダイヤモンド",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "里见光钻"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Satono Diamond"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1月30日"
+        },
+        {
+            "key": "身高",
+            "value": "158cm;135cm(S2)"
+        },
+        {
+            "key": "体重",
+            "value": "増減なしですよ？"
+        },
+        {
+            "key": "BWH",
+            "value": "B87・W54・H84"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://anime-umamusume.jp/character"
+        },
+        {
+            "key": "毛色",
+            "value": "鹿毛"
+        },
+        {
+            "key": "现实马主",
+            "value": "里見 治 →(株)サトミホースカンパニー"
+        },
+        {
+            "key": "成績(勝率)",
+            "value": "18戦8勝（44.4%）"
+        },
+        {
+            "key": "獲得賞金",
+            "value": "8億6,512万円 (中央)"
+        },
+        {
+            "key": "固有二つ名",
+            "value": "願い叶える宝石"
+        }
+    ],
+    "stat": {
+        "comments": 38,
+        "collects": 143
+    },
+    "id": 89569,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        407332
+    ]
+}

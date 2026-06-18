@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ed/72/11941_crt_58KyL.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ed/72/11941_crt_58KyL.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/ed/72/11941_crt_58KyL.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ed/72/11941_crt_58KyL.jpg"
+    },
+    "summary": "本作のヒロイン。イサムとガルドの幼馴染み。23歳の中国系白人[1]。幼少より歌を愛し、歌手になることを志していた。ハイスクールのマドンナ的存在だったが、ある事件をきっかけに地球に渡り、一度は歌を捨てる。7年後にシャロン・アップル・プロジェクトのプロデューサーとしてエデンに戻り、イサムとガルドとの恋の板挟みで苦悩する。持ち歌「VOICES」はハイスクール時代に作ったもの。",
+    "name": "ミュン・ファン・ローン",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "谬芳容"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Myung Fang Lone"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://ja.wikipedia.org"
+        }
+    ],
+    "stat": {
+        "comments": 5,
+        "collects": 18
+    },
+    "id": 11941,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        3168
+    ]
+}

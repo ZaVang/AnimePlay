@@ -1,7 +1,7 @@
 {
     "id": 254,
     "name": "混沌武士",
-    "image_path": "data/images/anime/254.jpg",
+    "image_path": "data\\images\\anime\\254.jpg",
     "points": 8.5,
     "cost": 5,
     "rarity": "HR",

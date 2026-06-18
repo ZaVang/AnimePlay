@@ -1,0 +1,68 @@
+{
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7f/f0/26175_crt_vf1yZ.jpg?r=1406819044",
+        "grid": "https://lain.bgm.tv/pic/crt/g/7f/f0/26175_crt_vf1yZ.jpg?r=1406819044",
+        "large": "https://lain.bgm.tv/pic/crt/l/7f/f0/26175_crt_vf1yZ.jpg?r=1406819044",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7f/f0/26175_crt_vf1yZ.jpg?r=1406819044"
+    },
+    "summary": "男性でありながら、精霊と契約することができる特権を持つ少年。\r\n姫巫女たちの学び舎アレイツア精霊学院に編入し、唯一の男子学生となる。\r\n大陸の東方にある辺境の島国出身。",
+    "name": "カゼハヤ・カミト",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "风早神人"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "レン・アッシュベル"
+                },
+                {
+                    "k": "日文名",
+                    "v": "カゼハヤ・カミト"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kazehaya Kamito"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "♂"
+        },
+        {
+            "key": "精霊魔装「右手」",
+            "value": "魔王殺しの聖剣（デモン・スレイヤー）〉"
+        },
+        {
+            "key": "契約精霊「右手」",
+            "value": "テルミヌス・エスト"
+        },
+        {
+            "key": "精霊魔装「左手」",
+            "value": "真実を貫く剣（ヴォーパル・ソード）"
+        },
+        {
+            "key": "契約精霊「左手」",
+            "value": "レスティア"
+        }
+    ],
+    "stat": {
+        "comments": 12,
+        "collects": 7
+    },
+    "id": 26175,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        79226
+    ]
+}

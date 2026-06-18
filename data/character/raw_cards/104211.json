@@ -1,0 +1,45 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/da/41/104211_crt_a0MAl.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/da/41/104211_crt_a0MAl.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/da/41/104211_crt_a0MAl.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/da/41/104211_crt_a0MAl.jpg"
+    },
+    "summary": "犬丸の孫娘と名乗る17歳の少女。極めて古風な道徳観と忠誠心で犬丸とその父、甲子国を翻弄させる。だが、その実体は謎に包まれている。時間渡航者の掟を破り、タイムパトロールの室戸文明に追われる身でもある。",
+    "name": "四方田麿子",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "四方田磨子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "よもた まろこ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 0,
+        "collects": 10
+    },
+    "id": 104211,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        4042
+    ]
+}

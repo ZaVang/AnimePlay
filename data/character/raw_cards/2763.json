@@ -1,0 +1,69 @@
+{
+    "birth_mon": 9,
+    "gender": "female",
+    "birth_day": 24,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f8/04/2763_crt_anidb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f8/04/2763_crt_anidb.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/f8/04/2763_crt_anidb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f8/04/2763_crt_anidb.jpg"
+    },
+    "summary": "口下手な性格が災いし、「クール」というキャラが学校で一人歩き…。\r\nほんとうの自分とのギャップに悩む５年生の女の子。\r\nある夜、素直な自分に「生まれかわりたい」と祈ったら、突然、３つのたまごがベッドの中に！\r\n翌日、ガーディアン総会が行われる中、あむは突然あこがれの人、\r\n辺里唯世に告白するが、フラれてしまう。\r\nその原因はしゅごキャラだった！\r\nしかし、学校の友達からは親近感を持たれ、その上聖夜学園小ガーディアン（生徒会）の\r\nジョーカー（特別職）にスカウトされてしまう。",
+    "name": "日奈森亜夢",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "日奈森亚梦"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "日奈森あむ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ひなもりあむ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hinamori Amu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "????-09-24"
+        },
+        {
+            "key": "血型",
+            "value": "Ｏ型"
+        },
+        {
+            "key": "身高",
+            "value": "152"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "stat": {
+        "comments": 15,
+        "collects": 98
+    },
+    "id": 2763,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        2427
+    ]
+}

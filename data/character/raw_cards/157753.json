@@ -1,0 +1,86 @@
+{
+    "birth_mon": 5,
+    "gender": "female",
+    "birth_day": 7,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/cd/a0/157753_crt_LHrZa.jpg?r=1738033734",
+        "grid": "https://lain.bgm.tv/pic/crt/g/cd/a0/157753_crt_LHrZa.jpg?r=1738033734",
+        "large": "https://lain.bgm.tv/pic/crt/l/cd/a0/157753_crt_LHrZa.jpg?r=1738033734",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cd/a0/157753_crt_LHrZa.jpg?r=1738033734"
+    },
+    "summary": "李之丘高中一年级生。热爱朗读，甚至会朗诵给岛上的小孩子们听。天生音质能吸引他人，在看上她的才华的瑞希邀请下加入广播社。\r\n\r\n[简介原文]\r\nすももが丘高校一年生。\r\n朗読が大好きで、島の子供たちに向けて読み聞かせをしていた。\r\n人を惹きつける天性の声質を持っており、その才能に惚れ込んだ瑞希の勧誘で放送部に入ることに。",
+    "name": "春山花奈",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "春山花奈"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "春山 花奈"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "はるやま はな"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Haruyama Hana"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "5月7日"
+        },
+        {
+            "key": "身高",
+            "value": "151cm"
+        },
+        {
+            "key": "引用来源",
+            "value": [
+                {
+                    "k": "公式サイト",
+                    "v": "https://hanashura-anime.com/character/detail.html#character01"
+                }
+            ]
+        },
+        {
+            "key": "出身",
+            "value": "十鳴島（となきじま）"
+        },
+        {
+            "key": "就读学校",
+            "value": "十鳴中学/すももが丘高校"
+        },
+        {
+            "key": "喜欢的东西",
+            "value": "朗読、お母さん"
+        },
+        {
+            "key": "讨厌的东西",
+            "value": "お化け屋敷、暗算"
+        }
+    ],
+    "stat": {
+        "comments": 91,
+        "collects": 205
+    },
+    "id": 157753,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        498934
+    ]
+}

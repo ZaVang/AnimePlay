@@ -1,0 +1,73 @@
+{
+    "birth_mon": 1,
+    "gender": "female",
+    "birth_day": 11,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e7/d8/14551_crt_16ZOf.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e7/d8/14551_crt_16ZOf.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/e7/d8/14551_crt_16ZOf.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e7/d8/14551_crt_16ZOf.jpg"
+    },
+    "summary": "旧校舍的幽灵，怪异调查部的部长，调查部就是她成立的；由于没有人看得见因而自称代理部长，并且对外说明部长不会随意胡来(部长は灭多に来ない)。\r\n刚开始是穿着学校现行的服装，后来才换成建校时期的装束。\r\n基本上只有雾江和贞一看的见，偶而细小的声音会被他人听见，在校内除了夕子以外的幽灵都不存在，而自己跟学校以外的不自然现象等事物因为“旧校舍的幽灵”的关系而与之无关，直到夕子的负的部分被分割层面，而产生了“影子夕子”。\r\n喜欢将学校的一些东西搜刮起来并占有着，也因为她这玩闹的小举止使得学校的怪谈多个没完。\r\n作为年长(死去时15岁)的夕子经常戏弄或诱惑贞一，玩笑的言行特别多，不过，在暑假怪异调查部的合宿中却表现脸红羞涩的一面。",
+    "name": "庚夕子",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "庚夕子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "かのえゆうこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kanoe Yuuko"
+                },
+                {
+                    "k": "昵称",
+                    "v": "夕子学姐"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1月11日"
+        },
+        {
+            "key": "身高",
+            "value": "168cm"
+        },
+        {
+            "key": "体重",
+            "value": "56.2kg"
+        },
+        {
+            "key": "BWH",
+            "value": "B88/W65/H89"
+        },
+        {
+            "key": "年龄",
+            "value": "15(65)"
+        }
+    ],
+    "stat": {
+        "comments": 30,
+        "collects": 210
+    },
+    "id": 14551,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        29060
+    ]
+}

@@ -1,0 +1,45 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1e/81/11037_crt_GPPoU.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/1e/81/11037_crt_GPPoU.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/1e/81/11037_crt_GPPoU.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1e/81/11037_crt_GPPoU.jpg"
+    },
+    "summary": "自身を「鬼ヶ島の鬼」「西海の鬼神」と称する、長曾我部家の当主にして総大将。",
+    "name": "長曾我部元親",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "长曾我部元亲"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ちょうそかべ もとちか"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 1,
+        "collects": 8
+    },
+    "id": 11037,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        1429
+    ]
+}

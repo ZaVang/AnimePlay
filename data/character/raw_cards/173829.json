@@ -1,0 +1,48 @@
+{
+    "birth_mon": 12,
+    "gender": "male",
+    "birth_day": 22,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/28/07/173829_crt_IIziG.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/28/07/173829_crt_IIziG.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/28/07/173829_crt_IIziG.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/28/07/173829_crt_IIziG.jpg"
+    },
+    "summary": "ポンコツ風紀委員。\r\n誰よりも風紀の乱れに厳しく、毎朝登校する生徒たちの身だしなみチェックをしている。\r\n純粋で真っ直ぐな人物であり、堅物で融通が利かない真面目な性格である。\r\n実は勉強が苦手であり、常識外れなポンコツな部分も多い。\r\n自分が世間知らずであることを自覚しており、指摘されれば素直に相手の意見を受け入れられる。\r\n極度の天然であり、思ったことは打算ゼロで言葉にする。そのため、いつも微笑ちゃんのことをホメまくっている。",
+    "name": "桜大門統悟",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "樱大门统悟"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "12月22日"
+        },
+        {
+            "key": "身高",
+            "value": "175cm"
+        }
+    ],
+    "stat": {
+        "comments": 12,
+        "collects": 6
+    },
+    "id": 173829,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        551123
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "birth_mon": 8,
+    "gender": "female",
+    "birth_day": 7,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fa/2a/75065_crt_Q9U98.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/fa/2a/75065_crt_Q9U98.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/fa/2a/75065_crt_Q9U98.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fa/2a/75065_crt_Q9U98.jpg"
+    },
+    "summary": "19歳の大学2年生。\r\n桜井の高校時代の部活の後輩。\r\n大学でいつも一人の桜井を不憫に思い、\r\n何かとちょっかいをかけている。\r\nノリとテンションで行動する脳天気なタイプ。\r\n勉強やスボーツは苦手だが、ゲームは得意......！？",
+    "name": "宇崎花",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "宇崎花"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Uzaki Hana"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "8月7日"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://uzakichan.com/#chara"
+        }
+    ],
+    "stat": {
+        "comments": 25,
+        "collects": 82
+    },
+    "id": 75065,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        299498
+    ]
+}

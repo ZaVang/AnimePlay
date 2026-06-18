@@ -1,0 +1,40 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/85/f8/165927_crt_0woOc.jpg?r=1729311947",
+        "grid": "https://lain.bgm.tv/pic/crt/g/85/f8/165927_crt_0woOc.jpg?r=1729311947",
+        "large": "https://lain.bgm.tv/pic/crt/l/85/f8/165927_crt_0woOc.jpg?r=1729311947",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/85/f8/165927_crt_0woOc.jpg?r=1729311947"
+    },
+    "summary": "ナイジェリア出身。チームの頭脳として作戦立案に関わる知性派だが、身体能力も高い。\r\n冷静沈着に見えるが、実は熱い心を秘めている。\r\n学生時代は物理学を専攻し、スキナー博士を尊敬していた。\r\n神経質で繊細、細かいことを気にする。\r\nそしてプライドが高い。",
+    "name": "ダグ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "道格"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 13,
+        "collects": 5
+    },
+    "id": 165927,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        446296
+    ]
+}

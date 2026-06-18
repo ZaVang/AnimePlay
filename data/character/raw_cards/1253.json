@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d0/46/1253_crt_72vHb.jpg?r=1391862189",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d0/46/1253_crt_72vHb.jpg?r=1391862189",
+        "large": "https://lain.bgm.tv/pic/crt/l/d0/46/1253_crt_72vHb.jpg?r=1391862189",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d0/46/1253_crt_72vHb.jpg?r=1391862189"
+    },
+    "summary": "凛、美美的同班同学及好友。\r\n富有的大小姐。主要身着哥特萝莉服装。身体比一般的小学三年生来得娇小。最喜欢凛，总是幻想着凛是男孩子就好了。",
+    "name": "鏡黒",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "镜黑"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "鏡 黒"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kagami Kuro"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 6,
+        "collects": 34
+    },
+    "id": 1253,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        2482
+    ]
+}

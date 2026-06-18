@@ -1,0 +1,92 @@
+{
+    "id": 623854,
+    "name": "女神“异世界转生想成为什么”我“勇者的肋骨”",
+    "image_path": "data\\images\\anime\\623854.jpg",
+    "points": 7.2,
+    "cost": 1,
+    "rarity": "N",
+    "description": "转生处是…「开后宫又有快乐结局的开挂勇者…的肋骨」！？\r\n颠覆动画常识的异世界转生动画诞生了！\r\n除了动画之外，还会用定格动画、人偶剧、真人拍摄等打破常规的手法呈现，为大家献上冷淡的异世界转生负责人「女神大人」与重复进行奇葩转生的主角「我」的痛快异世界转生记！\r\n\r\n\r\n\r\n[简介原文]\r\n転生先は…「ハーレムかつハッピーエンドなチート勇者、の肋骨」！？アニメーションの常識を覆す、異世界転生アニメが誕生！\r\n舞台は転生先を自由に選べる世界。――しかし近頃は転生希望者の数が増えすぎて「チート持ちハーレム勇者」は待ち時間が５万年！「魔王」への転生すら千年単位の待ち時間が当たり前。それなら、と主人公が選んだ転生先は「ハーレムかつハッピーエンドなチート勇者、の肋骨」だった！\r\nさらに、「ヤドカリ」や「野菜」に「リア充を爆発させる時に使う爆発物」まで、次々と転生を繰り返し！？\r\nアニメ映像に加えて、ストップモーション、人形劇、実写など型破りな映像手法でお届けする、塩対応な異世界転生担当の「女神さま」と、トンデモ転生を繰り返す主人公「俺」の痛快異世界転生記！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "小说改"
+    ],
+    "date": "2026-04-07",
+    "rating_rank": 1920,
+    "rating_score": 7.2,
+    "rating_total": 1856,
+    "main_character_ids": [
+        200848,
+        200849
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a6/5a/200848_crt_KC0uT.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a6/5a/200848_crt_KC0uT.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/a6/5a/200848_crt_KC0uT.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a6/5a/200848_crt_KC0uT.jpg"
+            },
+            "name": "俺",
+            "summary": "ひょんなことから命を落としてしまい、「魂タイプ：イレギュラー」に選別された青年。\r\n人気転生先の膨大な待ち時間を回避するために、ハーレムなチート勇者の「肋骨」など、型破りな転生を繰り返す主人公。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/36/ae/5015_prsn_2iZsa.jpg?r=1515335203",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/36/ae/5015_prsn_2iZsa.jpg?r=1515335203",
+                        "large": "https://lain.bgm.tv/pic/crt/l/36/ae/5015_prsn_2iZsa.jpg?r=1515335203",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/36/ae/5015_prsn_2iZsa.jpg?r=1515335203"
+                    },
+                    "name": "阿部敦",
+                    "short_summary": "阿部 敦（あべ あつし、1981年3月25日 - ）は、日本の声優、俳優、歌手。賢プロダクション所属。栃木県足利市出身。血液型はO型。身長161cm。",
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 5015,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 200848
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a6/fd/200849_crt_zg7XX.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a6/fd/200849_crt_zg7XX.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/a6/fd/200849_crt_zg7XX.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a6/fd/200849_crt_zg7XX.jpg"
+            },
+            "name": "女神",
+            "summary": "異世界転生の前舞台で「俺」を転生先に送り込む塩対応な案内役。\r\nいつも「俺」の異世界転生記に冷静にツッコんでいる。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b7/93/10887_prsn_q7Vnh.jpg?r=1692450821",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b7/93/10887_prsn_q7Vnh.jpg?r=1692450821",
+                        "large": "https://lain.bgm.tv/pic/crt/l/b7/93/10887_prsn_q7Vnh.jpg?r=1692450821",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b7/93/10887_prsn_q7Vnh.jpg?r=1692450821"
+                    },
+                    "name": "M・A・O",
+                    "short_summary": "出生于日本大阪府，日本女演员、声优，前属大阪堀制作事务所所属女艺人，现为Yellow Cab NEXT旗下的女艺人。\r\n2006年10月，市道真央曾在大阪堀制作的HOP CLUB组合面试之中夺得大奖。2010年中，移居到东京。同年8月，在周刊少年JUMP的读者投稿角落《JUM魂G！》以职员身份登场。2011年2月，她在参演超级战队系列特摄作品《海贼战队豪快者》之中，饰演女主角之一“Luka Millfy／豪快黄”。2012年，以M·A·O的名义在电视动画《料理偶像》出演奇拉奇拉，正式开始声优活动。\r\n\r\n个人生活\r\n特色是关西腔。于2014年因出演《极黑的布伦希尔德》中的和美一角而出名。\r\n小的时候就很喜欢动画和漫画，不过，直接的契机是在特摄剧《海贼战队豪快者》中出演。由于对于这种化装后再配音的工作很感兴趣，所以希望有机会能从事与声音有关的工作。\r\n喜欢看书，但最喜欢的还是漫画，尤其是《周刊少年JUMP》。\r\n憧憬的角色不分身份、性别，只要能够锻炼演技都会广泛出演。希望尝试小男孩一类或者有着古怪变化的角色。\r\n在成为声优前亦有为《海贼战队豪快者》配音，因此拥有一定的基础，声线恬静柔和，无论是幼女还是青年女子都能够出演。",
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 10887,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 200849
+        }
+    ]
+}

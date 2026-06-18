@@ -1,0 +1,121 @@
+{
+    "id": 4213,
+    "name": "机动战士高达ZZ",
+    "image_path": "data\\images\\anime\\4213.jpg",
+    "points": 7.0,
+    "cost": 1,
+    "rarity": "N",
+    "description": "宇宙世纪0088年，经过格利普斯战役，提坦兹（Titans）被消灭，奥古（AEUG）的实力也大大削弱。吉恩军残余部队在摄政王哈曼・坎恩的率领下趁机以“新吉恩”的名义称霸地球。\r\n在格利普斯战役中受损的奥古军宇宙战舰“阿伽马号”临时停靠在Side1的殖民卫星“香格里拉”。此地经营废品回收业务的捷度・阿西塔和朋友们盯上了阿伽马内的Z高达，准备偷出来卖钱。恰好此时与阿伽马敌对的新吉恩军巡洋舰“安多拉号”也来到了香格里拉，捷度等人被卷入了战斗。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 47,
+    "synergy_tags": [
+        "机战",
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "1986-03-01",
+    "rating_rank": 2756,
+    "rating_score": 7.0,
+    "rating_total": 2066,
+    "main_character_ids": [
+        3704,
+        4333,
+        13286
+    ],
+    "main_characters": [
+        {
+            "id": 3704,
+            "name": "ハマーン・カーン",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/e6/fd/3704_crt_DGy8k.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e6/fd/3704_crt_DGy8k.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e6/fd/3704_crt_DGy8k.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e6/fd/3704_crt_DGy8k.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3940,
+                    "name": "榊原良子",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/60/91/3940_prsn_nisVV.jpg?r=1586115828",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/60/91/3940_prsn_nisVV.jpg?r=1586115828",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/60/91/3940_prsn_nisVV.jpg?r=1586115828",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/60/91/3940_prsn_nisVV.jpg?r=1586115828"
+                    },
+                    "short_summary": "1981年“六神合体”中担当芙萝蕾出道。\r\n\r\n从女主角到邪恶老板，通常都是配大姊姊和老奶奶的角色，还有喜剧的角色，不论年龄。\r\n\r\n新闻节目的旁白大多是她处理，因此还特别在“NEWS STATION”担任10年以上的主要旁白。\r\n\r\n押井守爱用的主要配音演员，并在押井的作品里好几次担任重要的角色，如押井担任原作、脚本的广播剧“押井守剧场 地狱看门犬钢铁的猎犬”里担当主角。她也在“攻壳机动队”的部分重制版“攻殻机动队2.0”里替代了原版的家弓家正出演傀儡木偶。\r\n\r\n高桥留美子的“福星小子”、“相聚一刻”、“犬夜叉”等动画作品里都可以听到她这一位老牌配音演员的演出。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 4333,
+            "name": "ブライト・ノア",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/6c/83/4333_crt_AvdQf.jpg?r=1781363867",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6c/83/4333_crt_AvdQf.jpg?r=1781363867",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/6c/83/4333_crt_AvdQf.jpg?r=1781363867",
+                "grid": "https://lain.bgm.tv/pic/crt/g/6c/83/4333_crt_AvdQf.jpg?r=1781363867"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3989,
+                    "name": "鈴置洋孝",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/65/16/3989_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/65/16/3989_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/65/16/3989_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/65/16/3989_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の声優、俳優、ナレーターであり、劇団プロデューサー。\r\n\r\n愛知県名古屋市出身、東京経済大学卒業。身長166 cm、体重59kg。血液型はA型。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 13286,
+            "name": "ジュドー・アーシタ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/12/72/13286_crt_t6eB5.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/12/72/13286_crt_t6eB5.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/12/72/13286_crt_t6eB5.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/12/72/13286_crt_t6eB5.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4085,
+                    "name": "矢尾一樹",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b1/1d/4085_prsn_Rp5pe.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b1/1d/4085_prsn_Rp5pe.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b1/1d/4085_prsn_Rp5pe.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b1/1d/4085_prsn_Rp5pe.jpg"
+                    },
+                    "short_summary": "日本的男性声优、演员、解说。东京俳优生活协同组合、M COMPANY、Sigma Seven（2004年5月20日 - 2009年5月）经历，2009年6月1日起Max Mix所属。\r\n认为既然这是自己选择的工作，那么声优出演18X游戏的时候都应该像工作人员一样以真名饰演，不应该写伪名。[ヤオヒラ塾 第一回]",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

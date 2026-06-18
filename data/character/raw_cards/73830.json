@@ -1,0 +1,61 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/24/c0/73830_crt_wk0Bm.jpg?r=1649770583",
+        "grid": "https://lain.bgm.tv/pic/crt/g/24/c0/73830_crt_wk0Bm.jpg?r=1649770583",
+        "large": "https://lain.bgm.tv/pic/crt/l/24/c0/73830_crt_wk0Bm.jpg?r=1649770583",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/24/c0/73830_crt_wk0Bm.jpg?r=1649770583"
+    },
+    "summary": "「ふむふむ。メノウちゃんはあれなんだね。エージェントだね！」\r\n\r\n日本から来た迷い人。自覚は無いものの、とある能力により実質不死身。彼女を殺しきる方法を探すメノウに丸め込まれて共に旅をすることになるが、のほほんと楽しんでいる。",
+    "name": "アカリ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "灯里"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "时任灯里"
+                },
+                {
+                    "k": "日文名",
+                    "v": "トキトウアカリ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ときとう アカリ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Tokitou Akari"
+                },
+                {
+                    "k": "本名",
+                    "v": "時任灯里"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 24,
+        "collects": 31
+    },
+    "id": 73830,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        326871
+    ]
+}

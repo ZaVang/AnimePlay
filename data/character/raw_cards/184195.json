@@ -1,0 +1,45 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bc/f5/184195_crt_w5sCv.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/bc/f5/184195_crt_w5sCv.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/bc/f5/184195_crt_w5sCv.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bc/f5/184195_crt_w5sCv.jpg"
+    },
+    "summary": "山を熟知し、弓の腕に秀でた狩人の少年。",
+    "name": "ユル",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "尤尔"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Yuru"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 9,
+        "collects": 18
+    },
+    "id": 184195,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        568572
+    ]
+}

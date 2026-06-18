@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d2/84/1027_crt_g0fH5.jpg?r=1376726040",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d2/84/1027_crt_g0fH5.jpg?r=1376726040",
+        "large": "https://lain.bgm.tv/pic/crt/l/d2/84/1027_crt_g0fH5.jpg?r=1376726040",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d2/84/1027_crt_g0fH5.jpg?r=1376726040"
+    },
+    "summary": "428\r\n[mask]穿成猫型吉祥物的人物，为了凑钱买某样东西而打工。天然呆，自称“柔弱少女”，但也有着为了打工挣钱而拼命努力的一面。\r\n428当日在涩谷车站前穿着猫型服装分发叫做“Burning Hammer”的减肥饮料试用品。看上去很开心，其实里面是非常的热。在杂货店偶然看见的一条项链，小玉总觉得无论如何也要买到手，于是才开始了这项工作。由于发生了种种事件，打工的工钱真的能拿到手吗？[/mask]\r\n\r\nCANAAN\r\n[mask]迦南的朋友，三流闲话杂志“ヘブン出版”的摄影师，非常喜欢使用胶卷式相机。性格方面说好听点很开朗，说难听点很轻率。为了某个傻瓜般的企划取材而与御法川一起来到了上海。[/mask]",
+    "name": "大沢マリア",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "大泽玛利亚"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "大沢マリア"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Oosawa Maria"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "声优",
+            "value": "南条爱乃"
+        }
+    ],
+    "stat": {
+        "comments": 17,
+        "collects": 46
+    },
+    "id": 1027,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        1952
+    ]
+}

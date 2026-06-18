@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/25/30/69069_crt_AH4Dt.jpg?r=1562745621",
+        "grid": "https://lain.bgm.tv/pic/crt/g/25/30/69069_crt_AH4Dt.jpg?r=1562745621",
+        "large": "https://lain.bgm.tv/pic/crt/l/25/30/69069_crt_AH4Dt.jpg?r=1562745621",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/25/30/69069_crt_AH4Dt.jpg?r=1562745621"
+    },
+    "summary": "ほまれ達と一緒に遭難したC組の生徒。\r\nバスケ部兼陸上部所属の体育会系女子だが、実は怖がりな一面も。\r\n考えるより先に、体が動いてしまう活発な性格。",
+    "name": "鈴森明日香",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "铃森明日香"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "すずもり あすか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Suzumori Asuka"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "163cm"
+        }
+    ],
+    "stat": {
+        "comments": 1,
+        "collects": 19
+    },
+    "id": 69069,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        276187
+    ]
+}

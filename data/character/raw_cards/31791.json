@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/85/7b/31791_crt_y3eBv.jpg?r=1675931660",
+        "grid": "https://lain.bgm.tv/pic/crt/g/85/7b/31791_crt_y3eBv.jpg?r=1675931660",
+        "large": "https://lain.bgm.tv/pic/crt/l/85/7b/31791_crt_y3eBv.jpg?r=1675931660",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/85/7b/31791_crt_y3eBv.jpg?r=1675931660"
+    },
+    "summary": "无法说出真心话的空气少年。",
+    "name": "坂上拓実",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "坂上拓实"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "坂上 拓実"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "さかがみ たくみ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sakagami Takumi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://www.kokosake.jp/character/"
+        }
+    ],
+    "stat": {
+        "comments": 12,
+        "collects": 11
+    },
+    "id": 31791,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        119344
+    ]
+}

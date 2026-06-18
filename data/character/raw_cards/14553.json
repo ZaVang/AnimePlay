@@ -1,0 +1,57 @@
+{
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 2,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3f/b8/14553_crt_XzM5N.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/3f/b8/14553_crt_XzM5N.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/3f/b8/14553_crt_XzM5N.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3f/b8/14553_crt_XzM5N.jpg"
+    },
+    "summary": "国中部2年B班学生。\r\n对于神怪类的东西有浓厚的兴趣，胆子却非常小，一开始也因为自己玩捉迷藏被吓得半死。\r\n点心屋的女儿，因而自己开设魄力全无的“小此木紧急会议”，就是在她家边喝下午茶边闲话家常的聚会。",
+    "name": "小此木ももえ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小此木桃绘"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "小此木 ももえ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "おこのぎももえ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Okonogi Momoe"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月2日"
+        }
+    ],
+    "stat": {
+        "comments": 0,
+        "collects": 9
+    },
+    "id": 14553,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        29060
+    ]
+}

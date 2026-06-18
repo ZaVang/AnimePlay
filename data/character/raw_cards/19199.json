@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1f/35/19199_crt_aedZm.jpg?r=1676109298",
+        "grid": "https://lain.bgm.tv/pic/crt/g/1f/35/19199_crt_aedZm.jpg?r=1676109298",
+        "large": "https://lain.bgm.tv/pic/crt/l/1f/35/19199_crt_aedZm.jpg?r=1676109298",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1f/35/19199_crt_aedZm.jpg?r=1676109298"
+    },
+    "summary": "本作主角。高中入学前父亲雄一郎突然被调职而开始独自生活，租下了月租5000日圆的超便宜房间可乐娜庄106号房。国中参加棒球社，升上高中后为了打工而放弃了棒球社，改加入编织社。\r\n自从在挖掘遗迹时发现古代文明石像的遗迹后，不断出现企图占领106号房的怪人，让孝太郎非常烦恼。\r\n和侵略者一众经过一段时间后，渐渐对他们打开心扉，并不把她们当成侵略者般对待，反而是非常关心她们。",
+    "name": "里見孝太郎",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "里见孝太郎"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "里见 幸太郎"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "さとみ こうたろう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Satomi Koutarou"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "Wiki"
+        }
+    ],
+    "stat": {
+        "comments": 3,
+        "collects": 9
+    },
+    "id": 19199,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        98286
+    ]
+}

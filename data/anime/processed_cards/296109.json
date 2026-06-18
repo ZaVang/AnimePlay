@@ -1,0 +1,91 @@
+{
+    "id": 296109,
+    "name": "国王排名",
+    "image_path": "data\\images\\anime\\296109.jpg",
+    "points": 4.8,
+    "cost": 1,
+    "rarity": "N",
+    "description": "国家的丰饶程度，拥有的强者数量，以及国王本人是否像勇者一样强大，将这些综合起来进行的排名就是“国王排名”。\r\n主人公波吉，是国王排名第7名的伯斯王所统治的王国的第一王子。然而，波吉生来就失聪，身体孱弱得举不起剑，不光家臣，就连民众都蔑视他“不是当国王的料”。这样的波吉交到了第一个朋友，卡克。\r\n随着与卡克的相遇，以及一点点小小的勇气，波吉的人生迈出一大步——",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 23,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "漫画改",
+        "冒险"
+    ],
+    "date": "2021-10-14",
+    "rating_rank": 9883,
+    "rating_score": 4.8,
+    "rating_total": 6955,
+    "main_character_ids": [
+        99576,
+        99577
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/56/ab/99576_crt_szT6g.jpg?r=1685793335",
+                "grid": "https://lain.bgm.tv/pic/crt/g/56/ab/99576_crt_szT6g.jpg?r=1685793335",
+                "large": "https://lain.bgm.tv/pic/crt/l/56/ab/99576_crt_szT6g.jpg?r=1685793335",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/56/ab/99576_crt_szT6g.jpg?r=1685793335"
+            },
+            "name": "ボッジ",
+            "summary": "ボッス王国の第一王子。\r\n耳が聞こえず、短剣も振れないほど非力だが、\r\n夢は世界一立派な王様になること！",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/00/1e/42142_prsn_dmbdn.jpg?r=1733931384",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/00/1e/42142_prsn_dmbdn.jpg?r=1733931384",
+                        "large": "https://lain.bgm.tv/pic/crt/l/00/1e/42142_prsn_dmbdn.jpg?r=1733931384",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/00/1e/42142_prsn_dmbdn.jpg?r=1733931384"
+                    },
+                    "name": "日向未南",
+                    "short_summary": "特技·趣味：\r\n歌唱，読書・ゲーム・イラストを描く(水彩とデジタル)\r\n所属事務所：アクセルワン",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 42142,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 99576
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b6/6f/99577_crt_wwOzv.jpg?r=1685793350",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b6/6f/99577_crt_wwOzv.jpg?r=1685793350",
+                "large": "https://lain.bgm.tv/pic/crt/l/b6/6f/99577_crt_wwOzv.jpg?r=1685793350",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b6/6f/99577_crt_wwOzv.jpg?r=1685793350"
+            },
+            "name": "カゲ",
+            "summary": "根絶やしにされた暗殺集団「影の一族」の生き残り。\r\n盗みを生業にしている。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ee/d9/8253_prsn_5s7m7.jpg?r=1775328732",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ee/d9/8253_prsn_5s7m7.jpg?r=1775328732",
+                        "large": "https://lain.bgm.tv/pic/crt/l/ee/d9/8253_prsn_5s7m7.jpg?r=1775328732",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ee/d9/8253_prsn_5s7m7.jpg?r=1775328732"
+                    },
+                    "name": "村瀬歩",
+                    "short_summary": "日本の男性声優。アメリカ合衆国出身。ヴィムス所属。\r\n\r\nアメリカで生まれた後、高校時代まで愛知県で過ごし、京都府の大学に進学後上京。\r\n芝居を観るのが好きだったことから声優を目指し、日本ナレーション演技研究所へ入所。2012年、『Persona4 the ANIMATION』で声優デビュー。同年、『新世界より』の青沼瞬（14歳）役で初のメインキャラクターを演じた。2014年、『ハイキュー!!』の日向翔陽役で初主演を果たした。\r\n2016年に、第10回声優アワードで新人男優賞を受賞した。\r\n\r\n尊敬する声優は、自身が声優を目指すきっかけとなった大友龍三郎や、年齢が近く共演も多い松岡禎丞。\r\n中性的な音質を生かした役を演じることが多く、女性のガヤに加わったり、『チア男子!!』では佐久間龍造役と姉3名の役も兼ねるなど、女性キャラクターを演じることもある。またラジオなどでも村瀬歩（あゆみ）という女子の設定で話すことがある。一方で、『M3〜ソノ黒キ鋼〜』の伊削ヘイト役のように狂気じみた低音ボイスもこなせるほど声域が非常に広い。\r\n帰国子女のため英会話が堪能で、英語を必要とするモブキャラやガヤもこなし、洋画の吹き替えも増えている。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 8253,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 99577
+        }
+    ]
+}

@@ -1,0 +1,90 @@
+{
+    "id": 407332,
+    "name": "赛马娘 Pretty Derby 第三季",
+    "image_path": "data\\images\\anime\\407332.jpg",
+    "points": 5,
+    "cost": 1,
+    "rarity": "N",
+    "description": "这里是从异世界传承下光辉的姓名与竞跑能力的「马娘」，自久以来与人类共存着的世界的故事。\r\n凝望着同一片风景，「北部玄驹」开始追寻着仰慕的背影。背负着一族的期待，「里见光钻」开始挑战G1的悲愿。从来都是二位一体的两人，迈向新的梦想......。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "原创",
+        "运动"
+    ],
+    "date": "2023-10-04",
+    "rating_rank": 9768,
+    "rating_score": 5,
+    "rating_total": 4759,
+    "main_character_ids": [
+        89568,
+        89569
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f5/f4/89568_crt_Cj56X.jpg?r=1719295543",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f5/f4/89568_crt_Cj56X.jpg?r=1719295543",
+                "large": "https://lain.bgm.tv/pic/crt/l/f5/f4/89568_crt_Cj56X.jpg?r=1719295543",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f5/f4/89568_crt_Cj56X.jpg?r=1719295543"
+            },
+            "name": "キタサンブラック",
+            "summary": "动画S2：\r\n明朗快活で元気いっぱいな女の子。\r\n無邪気でどんなことにも積極的にチャレンジ\r\nする行動力も魅力のひとつ。\r\nトウカイテイオーに憧れの感情を抱いている。\r\nサトノダイヤモンドとは幼馴染ともいえる仲。\r\n\r\n手游：\r\nお祭り大好き！元気で明るい人情派ウマ娘。\r\n困っている人を見れば助け、悩んでいる人には話を聞き……\r\nたくさんの人に慕われる優しい子だが、たまにべらんめぇ口調が飛び出す。\r\nそんな彼女は夢をいまだ知らない。\r\nだからまっさらなまま笑顔で走る。\r\n眩い光に溢れる未来に向かって！\r\n***\r\n北部玄驹（2012年3月10日~）枣色\r\n公马\r\n出生地：日本（北海道沙流郡日高町）",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/44/96/38883_prsn_Lx6i4.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/44/96/38883_prsn_Lx6i4.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/44/96/38883_prsn_Lx6i4.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/44/96/38883_prsn_Lx6i4.jpg"
+                    },
+                    "name": "矢野妃菜喜",
+                    "short_summary": "日本の声優、歌手、女優。兵庫県出身。ソニー・ミュージックアーティスツ所属。DUSTY FRUITS CLUBのボーカリスト。うたたねこ歌劇団、私立恵比寿中学、momonaki、pieceesの元メンバー。\r\n\r\nかつてはスターダストプロモーションに所属し、2008年から「piecees」、2009年から「momonaki」のメンバーとして活動していた。\r\n\r\n2010年2月14日、アイドルグループ「私立恵比寿中学」に加入。2011年4月17日、私立恵比寿中学を転校（脱退）。当初の転校予定日は2011年3月20日であったが、東日本大震災の影響でライブが中止になったため、4月17日に延期となった。\r\n2013年、WARAHATAに移籍し、映画『INORIGAMI』『ブラックリスター ゼロ』で主演を務める。\r\nその後、ソニーミュージックアーティスツに移籍。月影妃菜喜として、陽光真理愛とのユニット「うたたねこ歌劇団」の活動を開始。2014年4月3日、OVA『12歳。』の主題歌「恋の12歳」を担当。同年5月13日、新曲「パンパカパン」のミュージックビデオを公開。\r\n2016年、アニメコラボカフェ・SHIROBACOのキャストとして活動開始。2018年10月20日、SHIROBACOを卒業。\r\n2017年、バンド「DUSTY FRUITS CLUB」のボーカリストとして活動開始。\r\n\r\n趣味はゲーム、アニメ鑑賞、美少女の写真集め。特技はダンス。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 38883,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 89568
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b5/7d/89569_crt_NKk2o.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b5/7d/89569_crt_NKk2o.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/b5/7d/89569_crt_NKk2o.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b5/7d/89569_crt_NKk2o.jpg"
+            },
+            "name": "サトノダイヤモンド",
+            "summary": "动画S2：\r\n純情可憐なお嬢様。 \r\n物腰柔らかな言動に反して、精神は頑固。 \r\nメジロマックイーンの大フアンで出走するレ —スは必ず応援に駆けつけている。\r\n キタサンブラックとは親友であリライバルで あるとも思っている。\r\n\r\n手游：\r\nある資産家の家に生まれ、愛情たっぷりに育てられた箱入りウマ娘。\r\nそのためか、世間知らずな一面を覗かせることも。\r\n素直でおっとり、お嬢様然としているが、その内側にはダイヤモンド級の意志の強さが秘められている。\r\nジンクスを破り、家族の夢を叶えるため、今日も彼女は挑戦する。\r\n***\r\n里见光钻（2013年1月30日~）枣色\r\n公马\r\n出生地：日本（北海道安平町）",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/49/ab/34404_prsn_l4dCp.jpg?r=1564558147",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/49/ab/34404_prsn_l4dCp.jpg?r=1564558147",
+                        "large": "https://lain.bgm.tv/pic/crt/l/49/ab/34404_prsn_l4dCp.jpg?r=1564558147",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/49/ab/34404_prsn_l4dCp.jpg?r=1564558147"
+                    },
+                    "name": "立花日菜",
+                    "short_summary": "Arts Vision所属\r\n\r\n出身地：宮城県\r\n芸歴：日本ナレーション演技研究所\r\n趣味・特技：エレキギター、歌うこと",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 34404,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 89569
+        }
+    ]
+}

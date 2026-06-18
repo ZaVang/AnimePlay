@@ -1,0 +1,122 @@
+{
+    "id": 511207,
+    "name": "前桥魔女",
+    "image_path": "data\\images\\anime\\511207.jpg",
+    "points": 7.2,
+    "cost": 1,
+    "rarity": "N",
+    "description": "在本地（前桥）做魔女也太心动了吧。\r\n群马县前桥市。 高中一年级学生・赤城结奈马马虎虎无法满足的日常……\r\n“那你来做魔女试试吧。”因为神秘青蛙呱洛贝的出现而完全改变。房间里的衣柜与不可思议的空间连了起来——\r\n新里杏珠：“你想当魔女的决心不够！”\r\n北原镜华：“……别吵架了，一起实现客人的愿望吧？”\r\n三俣巧可：“心怀梦想是很棒的！快乐快乐巧可哦！”\r\n上泉舞衣：“我这人很服强者的♪”\r\n有5个人感觉会发生很开心的事情。最刺激的魔女，我们前桥魔女，会实现你的心愿。\r\n赤城结奈 ：“这里是只属于你的花店。是让你内心深处的花朵绽放的地方。”\r\n唱歌跳舞的魔法花店（in商店街）、奇迹OPEN。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "原创",
+        "音乐"
+    ],
+    "date": "2025-04-06",
+    "rating_rank": 1859,
+    "rating_score": 7.2,
+    "rating_total": 3993,
+    "main_character_ids": [
+        163997,
+        163998,
+        163999
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/bf/00/163997_crt_eaLT2.jpg?r=1725532020",
+                "grid": "https://lain.bgm.tv/pic/crt/g/bf/00/163997_crt_eaLT2.jpg?r=1725532020",
+                "large": "https://lain.bgm.tv/pic/crt/l/bf/00/163997_crt_eaLT2.jpg?r=1725532020",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bf/00/163997_crt_eaLT2.jpg?r=1725532020"
+            },
+            "name": "赤城ユイナ",
+            "summary": "とにかく明るい高校1年生。カメラが好きで、“エモエモ最強マックスな1枚”を撮るのを目標にしている。流行にはとりあえず乗っかるが、全てにわか。フラットな視点で物事を捉えており、魔女修業の中で周囲を無自覚のうちに変えていく。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/84/fe/45928_prsn_MlqA9.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/84/fe/45928_prsn_MlqA9.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/84/fe/45928_prsn_MlqA9.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/84/fe/45928_prsn_MlqA9.jpg"
+                    },
+                    "name": "春日さくら",
+                    "short_summary": "青二プロダクション所属の女性声優。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 45928,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 163997
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/88/ef/163998_crt_BVfyT.jpg?r=1747034364",
+                "grid": "https://lain.bgm.tv/pic/crt/g/88/ef/163998_crt_BVfyT.jpg?r=1747034364",
+                "large": "https://lain.bgm.tv/pic/crt/l/88/ef/163998_crt_BVfyT.jpg?r=1747034364",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/88/ef/163998_crt_BVfyT.jpg?r=1747034364"
+            },
+            "name": "新里アズ",
+            "summary": "ファッションとコスメが好きな女の子。流行への感度も高く、SNSでの情報収集も欠かさない。好き嫌いが激しい性格で、驚くほど口が悪い。魔女修業を達成して願いを叶えることに、誰よりも熱意がある。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/76/55/67775_prsn_LCDY7.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/76/55/67775_prsn_LCDY7.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/76/55/67775_prsn_LCDY7.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/76/55/67775_prsn_LCDY7.jpg"
+                    },
+                    "name": "咲川ひなの",
+                    "short_summary": "出身地\r\n山形県\r\n芸歴\r\n2020年 Follow-Up養成所\r\n2022年 ステイラック\r\n特技\r\n新体操\r\n趣味\r\n柔軟、ピアノ、ヘアアレンジ\r\nSNS\r\nTwitter：@hinano_sak122",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 67775,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 163998
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/46/7c/163999_crt_4d82E.jpg?r=1747034409",
+                "grid": "https://lain.bgm.tv/pic/crt/g/46/7c/163999_crt_4d82E.jpg?r=1747034409",
+                "large": "https://lain.bgm.tv/pic/crt/l/46/7c/163999_crt_4d82E.jpg?r=1747034409",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/46/7c/163999_crt_4d82E.jpg?r=1747034409"
+            },
+            "name": "北原キョウカ",
+            "summary": "ウィッチーズ1番の常識人。常に俯瞰で状況を見ており、ユイナとアズの口論も冷静に窘める。裕福な家庭に生まれ育ち、県内トップクラスの進学校に通っている。頼りがいがある一方で、理想が高く、世間知らずな天然発言で周囲を驚かせることも。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/44/37/67776_prsn_gG7Gp.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/44/37/67776_prsn_gG7Gp.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/44/37/67776_prsn_gG7Gp.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/44/37/67776_prsn_gG7Gp.jpg"
+                    },
+                    "name": "本村玲奈",
+                    "short_summary": "出身大阪府\r\n趣味・特技絵を描くこと、脚本、音楽鑑賞／クラシックバレエ（5年間）、極真空手（3年間）",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 67776,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 163999
+        }
+    ]
+}

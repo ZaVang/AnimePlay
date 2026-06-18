@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/12/8b/121304_crt_bSYp3.jpg?r=1677332500",
+        "grid": "https://lain.bgm.tv/pic/crt/g/12/8b/121304_crt_bSYp3.jpg?r=1677332500",
+        "large": "https://lain.bgm.tv/pic/crt/l/12/8b/121304_crt_bSYp3.jpg?r=1677332500",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/12/8b/121304_crt_bSYp3.jpg?r=1677332500"
+    },
+    "summary": "有着「歼灭天使」的外号的天使族。擅长使用支配魔像的魔法。\r\n为了追寻消失踪影的路而造访森林，并与火乐和露一起开始在森林生活。\r\n\r\n\r\n「殲滅天使」の二つ名を持つ天使族。ゴーレムを使役する魔法を得意とする。\r\n姿を消したルーを追って森に訪れ、ヒラクやルーと共に森での生活を始める。",
+    "name": "ティア",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "蒂雅"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Tia"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://nonbiri-nouka.com/character/"
+        },
+        {
+            "key": "种族",
+            "value": "天使族"
+        }
+    ],
+    "stat": {
+        "comments": 14,
+        "collects": 58
+    },
+    "id": 121304,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        376137
+    ]
+}

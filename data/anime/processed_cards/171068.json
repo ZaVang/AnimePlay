@@ -1,0 +1,110 @@
+{
+    "id": 171068,
+    "name": "文豪野犬 第二季",
+    "image_path": "data\\images\\anime\\171068.jpg",
+    "points": 6.8,
+    "cost": 1,
+    "rarity": "N",
+    "description": "",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "漫画改",
+        "战斗"
+    ],
+    "date": "2016-10-05",
+    "rating_rank": 3310,
+    "rating_score": 6.8,
+    "rating_total": 3704,
+    "main_character_ids": [
+        35238,
+        35241
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/76/25/35238_crt_vs2vv.jpg?r=1446950816",
+                "grid": "https://lain.bgm.tv/pic/crt/g/76/25/35238_crt_vs2vv.jpg?r=1446950816",
+                "large": "https://lain.bgm.tv/pic/crt/l/76/25/35238_crt_vs2vv.jpg?r=1446950816",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/76/25/35238_crt_vs2vv.jpg?r=1446950816"
+            },
+            "name": "太宰治",
+            "summary": "　　前港口黑手党成员，现在则是武装异能侦探社成员。与港口黑手党的中原中也过去并称为“双黑”的实力派角色，并且受到现任港口黑手党首领森鸥外的信任。毒舌、讨厌麻烦、总是喊着想要自杀跟美女殉情，看似性格扭曲的烂人，但实际上是个温柔的好人。\r\n　　能力：“人间失格”，可使接触到的一切异能无效化。\r\n　　典故：出自同名小说家太宰治(だざい おさむ)的作品《人间失格》，作品描述一个名为大庭叶藏的青年，由于生长背景而养成的个性的缘故，总是处处跟他人格格不入。无法融入他人规则的叶藏，短短一生就自杀未遂多次，故事的最后叶藏二十七岁时，外表竟已看似四十来岁。作品中虽然以“失去作人的资格”来描写主角，但在篇尾又以对主角简单的肯定，让人反思究竟失去作人的资格的，是主角、还是其他人？这篇通常被外界认为是作者太宰治在影射自己的半自传小说。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fa/cc/4697_prsn_1t8UM.jpg?r=1730622307",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/fa/cc/4697_prsn_1t8UM.jpg?r=1730622307",
+                        "large": "https://lain.bgm.tv/pic/crt/l/fa/cc/4697_prsn_1t8UM.jpg?r=1730622307",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fa/cc/4697_prsn_1t8UM.jpg?r=1730622307"
+                    },
+                    "name": "宮野真守",
+                    "short_summary": "小学生時代から劇団ひまわりに所属し、主に舞台などで活動した。高校生時代に海外ドラマ『私はケイトリン』の吹替で声優デビューする。PS2用ゲーム『キングダム ハーツ』のリク役で注目を集め、その後は、『機動戦士ガンダム00』や『DEATH NOTE』の主役を務めるなど、数々の人気作品に出演している。\r\n第1回声優アワード主演男優賞および新人賞にノミネートされた（『DEATH NOTE』夜神月役）。 2008年の第2回声優アワード主演男優賞受賞。東京国際アニメフェア2008・第7回東京アニメアワード個人賞（声優部門）受賞（『DEATH NOTE』『機動戦士ガンダム00』）。 2008年12月1日、劇団ひまわりのHPで結婚と子供を授かったことを公表した。結婚相手や子供の性別は非公開。 2011年、ノン子とのび太のアニメスクランブルにて第21回アニメグランプリ最優秀男性声優賞受賞。 2012年、第6回声優アワードにて助演男優賞と歌唱賞（後者はST☆RISHとして）、日刊スポーツ第1回日刊アニメグランプリにてMIP男性声優賞、アニメージュ第34回アニメグランプリ声優部門においてグランプリを受賞。\r\n\r\n2025年6月8日宣布与向日葵剧团合约期满退团，次日宣布加入研音。",
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 4697,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 35238
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/be/16/35241_crt_QjBQE.jpg?r=1446950805",
+                "grid": "https://lain.bgm.tv/pic/crt/g/be/16/35241_crt_QjBQE.jpg?r=1446950805",
+                "large": "https://lain.bgm.tv/pic/crt/l/be/16/35241_crt_QjBQE.jpg?r=1446950805",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/be/16/35241_crt_QjBQE.jpg?r=1446950805"
+            },
+            "name": "中島敦",
+            "summary": "　　本作的主角，个性单纯耿直，但却因为无法控制自身异能而暴走，变成巨虎到处伤人，后来在武装侦探社成员的太宰治帮助下，以“人间失格”能力解除暴走，并且被邀请加入异能侦探社。因为不明的原因，被港口黑手党与海外异能组织Guild追捕中，目前和从港口黑手党脱离的泉镜花同居中。\r\n　　能力：“月下兽”，可变形为一只巨大的老虎。\r\n　　典故：出自同名小说家中岛敦(なかじま あつし)的作品《山月记》，作品改编自中国明代《古今说海》中的《人虎传》，描述一名叫做李征的进士因官场不得志，郁郁寡欢后性情否变，最终变为山中虎怪的故事。故事原篇名为《李征》出自唐代张读《宣室志》后收录于宋代李昉编著之《太平广记》中。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/55/d3/13932_prsn_0fAUx.jpg?r=1727754511",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/55/d3/13932_prsn_0fAUx.jpg?r=1727754511",
+                        "large": "https://lain.bgm.tv/pic/crt/l/55/d3/13932_prsn_0fAUx.jpg?r=1727754511",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/55/d3/13932_prsn_0fAUx.jpg?r=1727754511"
+                    },
+                    "name": "上村祐翔",
+                    "short_summary": "日本の俳優、声優である。\r\n埼玉県出身。劇団ひまわり所属。",
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 13932,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/76/43/15497_prsn_b9qz3.jpg?r=1709906632",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/76/43/15497_prsn_b9qz3.jpg?r=1709906632",
+                        "large": "https://lain.bgm.tv/pic/crt/l/76/43/15497_prsn_b9qz3.jpg?r=1709906632",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/76/43/15497_prsn_b9qz3.jpg?r=1709906632"
+                    },
+                    "name": "Lynn",
+                    "short_summary": "日本的女性声优。アーツビジョン所属。成长于新潟县（出生地为神奈川县）。\r\n兴趣：看电影、照相、乒乓球\r\n由声优事务所ARTSVISION附属的声优养成所日本播音演技研究所，所毕业。\r\n喜欢猫科动物，最喜欢的歌手绚香，最喜欢食物拉面。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 15497,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 35241
+        }
+    ]
+}

@@ -1,0 +1,45 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0a/35/71238_crt_3K4CQ.jpg?r=1571129023",
+        "grid": "https://lain.bgm.tv/pic/crt/g/0a/35/71238_crt_3K4CQ.jpg?r=1571129023",
+        "large": "https://lain.bgm.tv/pic/crt/l/0a/35/71238_crt_3K4CQ.jpg?r=1571129023",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0a/35/71238_crt_3K4CQ.jpg?r=1571129023"
+    },
+    "summary": "15歳で、ハンターランクEの魔術師。\r\n人呼んで「赤のレーナ」。\r\nその名が示す通り、火属性の魔法を得意としている。\r\n仲間に対して、普段は厳しく見える態度で接することもあるが、実際には「相手を思いやっての行動」をする、いわゆる“ツンデレ”的な属性を持っている。",
+    "name": "レーナ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "烈娜"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Reina"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 2,
+        "collects": 25
+    },
+    "id": 71238,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        238962
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "birth_mon": 5,
+    "gender": null,
+    "birth_day": 18,
+    "birth_year": null,
+    "blood_type": 3,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/68/1c/166837_crt_MjdKd.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/68/1c/166837_crt_MjdKd.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/68/1c/166837_crt_MjdKd.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/68/1c/166837_crt_MjdKd.jpg"
+    },
+    "summary": "30秒あれば男女問わずほとんどの相手はオトせると豪語する凄腕結婚詐欺師。\r\n下呂と出逢い、思わぬ流れで婚活を手伝うことに。美味しいものが大好きで、見かけによらずかなりの大食い。\r\n\r\n结婚欺诈师。\r\n会根据目标对象变换女装/男装，通常30秒拿下目标。\r\n目前正在帮助下吕进行结婚活动。",
+    "name": "城崎メイ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "城崎芽衣"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "城崎 メイ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "MEI KINOSAKI"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男（自称）"
+        },
+        {
+            "key": "生日",
+            "value": "5月18日"
+        },
+        {
+            "key": "血型",
+            "value": "AB"
+        },
+        {
+            "key": "引用来源",
+            "value": [
+                {
+                    "k": "动画官网",
+                    "v": "https://www.marriagetoxin-anime.com/#chara"
+                }
+            ]
+        }
+    ],
+    "stat": {
+        "comments": 123,
+        "collects": 214
+    },
+    "id": 166837,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        590353
+    ]
+}

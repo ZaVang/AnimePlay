@@ -1,7 +1,7 @@
 {
     "id": 276,
     "name": "幸运星",
-    "image_path": "data/images/anime/276.jpg",
+    "image_path": "data\\images\\anime\\276.jpg",
     "points": 8.3,
     "cost": 4,
     "rarity": "SSR",

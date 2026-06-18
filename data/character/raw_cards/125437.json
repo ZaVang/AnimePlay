@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e0/16/125437_crt_LncCN.jpg?r=1692363657",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e0/16/125437_crt_LncCN.jpg?r=1692363657",
+        "large": "https://lain.bgm.tv/pic/crt/l/e0/16/125437_crt_LncCN.jpg?r=1692363657",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e0/16/125437_crt_LncCN.jpg?r=1692363657"
+    },
+    "summary": "転校生で宇宙人。地球に来るまでの記憶がなく、目覚めた時に学生証を手にしていた。「おでこぱしー」という宇宙人の能力を持っており…？",
+    "name": "明内ユウ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "明内幽"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "あけうち ユウ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yu Akeuchi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://hoshitele-anime.com/#Character"
+        }
+    ],
+    "stat": {
+        "comments": 34,
+        "collects": 94
+    },
+    "id": 125437,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        404115
+    ]
+}

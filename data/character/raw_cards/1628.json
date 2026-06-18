@@ -1,0 +1,81 @@
+{
+    "birth_mon": 9,
+    "gender": "female",
+    "birth_day": 23,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ac/16/1628_crt_7Rz7c.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ac/16/1628_crt_7Rz7c.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/ac/16/1628_crt_7Rz7c.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ac/16/1628_crt_7Rz7c.jpg"
+    },
+    "summary": "繼承了陰陽道名家『草壁流』的血脈的地道的陰陽師。\r\n    由小時候就開始進行陰陽師地獄式的嚴格修煉，會運用各種各樣的術，以及草壁家相傳的退魔之妖刀五件、俗稱『草壁五寶』攻擊敵人。\r\n    在被卷進了有異形敵人出現的「赤之夜」的同伴之中，發揮出領導才能的她，常常站在同伴的前面戰鬥。\r\n    不管是作為術者還是劍士，這都是為了引以自豪的堅定的生存信念。\r\n    但是，因為這個信念，有時也讓她過於正經而不講人情。該去熟悉世俗事物的時候卻將心機都放在了陰陽道上，因此也有不懂人情世故的一面。與表面相反，她也有少女趣味的一面，喜歡純真的少女漫畫。\r\n    面對突如其來的命運，她能否憑藉她們的力量得到她所希望的世界呢？這雙猛烈揮舞著的小手，能否抓住完美的勝利呢，還是說……\r\n\r\n    「我所需要的是力量，還有粉碎敵人的鋼鐵的意志。」",
+    "name": "草壁美鈴",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "草壁美铃"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "草壁美鈴"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "くさかべ みすず"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "KUSAKABE MiSUZU"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "9月23日"
+        },
+        {
+            "key": "身高",
+            "value": "169cm"
+        },
+        {
+            "key": "体重",
+            "value": "50kg"
+        },
+        {
+            "key": "BWH",
+            "value": "B83/W56/H81"
+        },
+        {
+            "key": "罪名",
+            "value": "傲慢"
+        },
+        {
+            "key": "班级",
+            "value": "虹陵館学園3年A組"
+        },
+        {
+            "key": "能力",
+            "value": "阴阳术，剑术"
+        }
+    ],
+    "stat": {
+        "comments": 22,
+        "collects": 107
+    },
+    "id": 1628,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        2566
+    ]
+}

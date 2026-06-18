@@ -1,0 +1,69 @@
+{
+    "birth_mon": 12,
+    "gender": "female",
+    "birth_day": 25,
+    "birth_year": null,
+    "blood_type": 2,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/35/c3/948_crt_IAMba.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/35/c3/948_crt_IAMba.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/35/c3/948_crt_IAMba.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/35/c3/948_crt_IAMba.jpg"
+    },
+    "summary": "Cisqua圣战天使完全保护协会“ARC AILE”的一员。 热心工作，意志坚强，有时也很冲动，有时也优柔寡断，很多心情。 希丝卡并不是圣战天使使用者，因此她将各式各样的武器藏在衣服中。靠格斗技和武器战斗，强悍的女性。 虽然一身装束显得身材矮小，但是充满活力。在与酷等人的路途中，明白了应与她结缔契约的女孩的眼泪的意思，那意味着：再也不能在一起了，是她把关系切断了，她很后悔地哭了。 希丝卡并不是真名，而是在“ARC AILE”的代号。",
+    "name": "シスカ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "希丝卡"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "シスカ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Cisqua"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "12月25日"
+        },
+        {
+            "key": "血型",
+            "value": "B"
+        },
+        {
+            "key": "身高",
+            "value": "147cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "年龄",
+            "value": "16"
+        }
+    ],
+    "stat": {
+        "comments": 4,
+        "collects": 15
+    },
+    "id": 948,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        2293
+    ]
+}

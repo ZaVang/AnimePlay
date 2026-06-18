@@ -1,0 +1,123 @@
+{
+    "id": 276150,
+    "name": "恋爱小行星",
+    "image_path": "data\\images\\anime\\276150.jpg",
+    "points": 6.9,
+    "cost": 1,
+    "rarity": "N",
+    "description": "木之幡米拉在小时候与在露营地遇见的男生约定，“要找到小行星”。上了高中后她本打算加入天文社，但从今年开始“天文社”就和“地质研究会”合并成了“地学社”……！？和地学系女孩们一起，去寻找各种各样闪闪发亮的东西吧。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "百合",
+        "TV",
+        "日本",
+        "漫画改",
+        "日常"
+    ],
+    "date": "2020-01-03",
+    "rating_rank": 2828,
+    "rating_score": 6.9,
+    "rating_total": 5001,
+    "main_character_ids": [
+        72648,
+        72649,
+        72650
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f0/9f/72648_crt_BXKXY.jpg?r=1578712929",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f0/9f/72648_crt_BXKXY.jpg?r=1578712929",
+                "large": "https://lain.bgm.tv/pic/crt/l/f0/9f/72648_crt_BXKXY.jpg?r=1578712929",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f0/9f/72648_crt_BXKXY.jpg?r=1578712929"
+            },
+            "name": "木ノ幡みら",
+            "summary": "天文组的高中一年级生。\r\n小时候做了寻找小行星的约定以来对天文有了兴趣，在高中决心加入天文社。\r\n由于天真烂漫、一有想法就立即行动的性格，也有冒失的一面。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/32/80/25978_prsn_1321f.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/32/80/25978_prsn_1321f.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/32/80/25978_prsn_1321f.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/32/80/25978_prsn_1321f.jpg"
+                    },
+                    "name": "高柳知葉",
+                    "short_summary": "ラクーンドック所属\r\n\r\n出身地：千葉県\r\n方言：なし\r\n趣味：観劇、イラストを描く、女性アイドルのフリコピ\r\n特技：茶道、ヒップホップダンス、エレキベース\r\n資格：英語検定準２級、漢字検定準２級\r\n経歴：プロ・フィット声優養成所　卒",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 25978,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 72648
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ab/bb/72649_crt_PZoRr.jpg?r=1578712977",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ab/bb/72649_crt_PZoRr.jpg?r=1578712977",
+                "large": "https://lain.bgm.tv/pic/crt/l/ab/bb/72649_crt_PZoRr.jpg?r=1578712977",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ab/bb/72649_crt_PZoRr.jpg?r=1578712977"
+            },
+            "name": "真中あお",
+            "summary": "天文组的高中一年级生。\r\n从小就对天文感兴趣，在高中加入了地学社。\r\n不擅长与人交谈、老实的性格。\r\n书包上挂着鲸的吉祥物。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/45/f9/5185_prsn_XM3PB.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/45/f9/5185_prsn_XM3PB.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/45/f9/5185_prsn_XM3PB.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/45/f9/5185_prsn_XM3PB.jpg"
+                    },
+                    "name": "山口愛",
+                    "short_summary": "山口愛（やまぐち めぐみ、1997年5月12日 - ）は、日本の女優（元・子役）、声優である。\r\n\r\n劇団ひまわり所属。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 5185,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 72649
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e6/19/72650_crt_nmSjn.jpg?r=1579404754",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e6/19/72650_crt_nmSjn.jpg?r=1579404754",
+                "large": "https://lain.bgm.tv/pic/crt/l/e6/19/72650_crt_nmSjn.jpg?r=1579404754",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e6/19/72650_crt_nmSjn.jpg?r=1579404754"
+            },
+            "name": "猪瀬舞",
+            "summary": "地质组的高中二年级生。\r\n很喜欢随性看着地图到处走。\r\n在（地学社[译注]）还是地质研究会的时候就和美景相遇，入会。\r\n仰慕着可靠的美景，很懂她。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c0/51/30812_prsn_AOw1h.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c0/51/30812_prsn_AOw1h.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/c0/51/30812_prsn_AOw1h.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c0/51/30812_prsn_AOw1h.jpg"
+                    },
+                    "name": "指出毬亜",
+                    "short_summary": "指出 毬亜（さしで まりあ、1998年9月20日 - ）は、日本の女性声優。WITH LINE所属。埼玉県出身。身長163cm、血液型はAB型。\r\n\r\nアニメ好きな母親の影響で幼少期からアニメを観ており、その時から自然と声優についても意識していたと語っている。\r\n元々は舞台が好きで舞台女優を目指していたが、声が変わっていると言われたことをきっかけに声優を目指すようになった。\r\nA&Gアカデミーの卒業生で、2015年、高校在学中に「チェンクロキャラクターボイスオーディション」最終審査に進出。その後、A&Gアカデミーを経て、2016年4月から現在の事務所に所属となった。\r\n\r\n人物\r\n幼少期に好きだったアニメは、『ソウルイーター』、『天元突破グレンラガン』、『鋼の錬金術師』。\r\n趣味・長所に歌、声楽、ジャズダンス、タップダンス、ピアノを挙げている。姉がおり、姉の作ったオリジナルソングをよく歌うと語っている。その姉が指出を「うみちゃん」と呼んだことから家族には「うみちゃん」と呼ばれている。\r\n動物好きでもあり、家では猫を飼っている。リアルな猫の鳴き声が得意である。また、ヘビやトカゲといった爬虫類も平気だと語っている。\r\n得意料理はプリンである。\r\n人見知りが激しく、相手と毎日、顔を合わせて喋ることができるまでに2～3年かかるほどだと語っている。\r\n乃木坂46、欅坂46、ハロー!プロジェクトといったアイドルが好きである。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 30812,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 72650
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/54/2d/23541_crt_w1zBz.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/54/2d/23541_crt_w1zBz.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/54/2d/23541_crt_w1zBz.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/54/2d/23541_crt_w1zBz.jpg"
+    },
+    "summary": "片桐财阀董事长的女儿。在街上被骚扰时受到准一的帮助。因为突然发生的某件不能原谅的事情，导致和长濑准一之间成了水火不容的地步，实际上是长准一的未婚妻。性格倔强不服输，而且非常的傲娇，虽然不擅长和人交往，容易感情用事，但在那外表和性格之下，也有开朗的一面。这位名门小姐不太知道平民生活，经常会做出些傻傻的事情来，而且是越面对自己喜欢的人越紧张的类型。因为名字和性格的关系，在同学中有“公主”这一称号（是司给她起的），非常受欢迎，睡觉会梦游，梦游的样子很可爱。长濑准一评价她是个“天然呆”，不过好像对长濑准一的感觉没有表面的那么坏。",
+    "name": "片桐優姫",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "片桐优姫"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "153cm"
+        },
+        {
+            "key": "BWH",
+            "value": "79(B)/55/82"
+        }
+    ],
+    "stat": {
+        "comments": 12,
+        "collects": 68
+    },
+    "id": 23541,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        1271
+    ]
+}

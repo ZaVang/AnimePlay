@@ -1,0 +1,81 @@
+{
+    "birth_mon": 12,
+    "gender": "female",
+    "birth_day": 1,
+    "birth_year": null,
+    "blood_type": 2,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/46/7c/163999_crt_4d82E.jpg?r=1747034409",
+        "grid": "https://lain.bgm.tv/pic/crt/g/46/7c/163999_crt_4d82E.jpg?r=1747034409",
+        "large": "https://lain.bgm.tv/pic/crt/l/46/7c/163999_crt_4d82E.jpg?r=1747034409",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/46/7c/163999_crt_4d82E.jpg?r=1747034409"
+    },
+    "summary": "ウィッチーズ1番の常識人。常に俯瞰で状況を見ており、ユイナとアズの口論も冷静に窘める。裕福な家庭に生まれ育ち、県内トップクラスの進学校に通っている。頼りがいがある一方で、理想が高く、世間知らずな天然発言で周囲を驚かせることも。",
+    "name": "北原キョウカ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "北原镜华"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "北原 キョウカ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "きたはら キョウカ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kitahara Kyōka"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "12月1日"
+        },
+        {
+            "key": "血型",
+            "value": "B"
+        },
+        {
+            "key": "身高",
+            "value": "169cm"
+        },
+        {
+            "key": "年龄",
+            "value": "15岁（高校1年生）"
+        },
+        {
+            "key": "喜欢的食物",
+            "value": "蕎麦"
+        },
+        {
+            "key": "讨厌的食物",
+            "value": "ニンジンのグラッセ"
+        },
+        {
+            "key": "兴趣",
+            "value": "音楽鑑賞、読書、モグタングッズ集め"
+        }
+    ],
+    "stat": {
+        "comments": 24,
+        "collects": 37
+    },
+    "id": 163999,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        511207
+    ]
+}

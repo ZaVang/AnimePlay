@@ -1,0 +1,57 @@
+{
+    "birth_mon": 6,
+    "gender": "female",
+    "birth_day": 9,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0b/3e/13617_crt_mQy0e.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/0b/3e/13617_crt_mQy0e.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/0b/3e/13617_crt_mQy0e.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0b/3e/13617_crt_mQy0e.jpg"
+    },
+    "summary": "烏田高校二年生。HP同好会会長。二つ名は「氷結の魔女」。色白の美人だがダーク系のアイシャドウに黒いストッキング、ハードなブーツという装いをしており、どこか人を寄せ付けない雰囲気を纏っている。しかし優しさもあり、言い訳等を嫌う凛とした性格。",
+    "name": "槍水仙",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "枪水仙"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "槍水 仙"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "やりずい せん"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yarizui Sen"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "06.09"
+        }
+    ],
+    "stat": {
+        "comments": 16,
+        "collects": 97
+    },
+    "id": 13617,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        19540
+    ]
+}

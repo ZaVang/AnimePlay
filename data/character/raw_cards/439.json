@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b9/0b/439_crt_leqT2.jpg?r=1389762279",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b9/0b/439_crt_leqT2.jpg?r=1389762279",
+        "large": "https://lain.bgm.tv/pic/crt/l/b9/0b/439_crt_leqT2.jpg?r=1389762279",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b9/0b/439_crt_leqT2.jpg?r=1389762279"
+    },
+    "summary": "作为燐的助手，在“麻生祗咨询”工作。工作内容是财务管理以及其他杂事。一直劝燐好好工作。一样拥有不死之身。",
+    "name": "ミミ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "咪咪"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "美美"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Mimi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 8,
+        "collects": 31
+    },
+    "id": 439,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        1257
+    ]
+}

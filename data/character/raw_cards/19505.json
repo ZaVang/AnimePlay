@@ -1,0 +1,45 @@
+{
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e9/84/19505_crt_jtZuA.jpg?r=1374569101",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e9/84/19505_crt_jtZuA.jpg?r=1374569101",
+        "large": "https://lain.bgm.tv/pic/crt/l/e9/84/19505_crt_jtZuA.jpg?r=1374569101",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e9/84/19505_crt_jtZuA.jpg?r=1374569101"
+    },
+    "summary": "レドが搭乗するマシンキャリバー。パイロットと対話することでより優秀な兵士へと育成していくことを任務とする「パイロット支援啓発インターフェイスシステム」を搭載し、自律して行動できる。レドにとってかけがえのない存在。",
+    "name": "チェインバー",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "钱伯"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Chamber"
+                }
+            ]
+        },
+        {
+            "key": "身高",
+            "value": "8m"
+        }
+    ],
+    "stat": {
+        "comments": 13,
+        "collects": 52
+    },
+    "id": 19505,
+    "locked": false,
+    "type": 2,
+    "nsfw": false,
+    "anime_ids": [
+        56091
+    ]
+}

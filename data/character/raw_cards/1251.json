@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6a/85/1251_crt_U1uJe.jpg?r=1391862153",
+        "grid": "https://lain.bgm.tv/pic/crt/g/6a/85/1251_crt_U1uJe.jpg?r=1391862153",
+        "large": "https://lain.bgm.tv/pic/crt/l/6a/85/1251_crt_U1uJe.jpg?r=1391862153",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6a/85/1251_crt_U1uJe.jpg?r=1391862153"
+    },
+    "summary": "中途来到双桥小学执教的23岁教师。至今恋爱经验稀少。\r\n工作热心，但经验不足导致失败也很多。希望成为学生心目中具备正义感、严厉的教师。",
+    "name": "青木大介",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "青木大介"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "青木 大介"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Aoki Daisuke"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 4,
+        "collects": 2
+    },
+    "id": 1251,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        2482
+    ]
+}

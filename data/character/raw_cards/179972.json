@@ -1,0 +1,44 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1b/f9/179972_crt_z2K2i.jpg?r=1752907783",
+        "grid": "https://lain.bgm.tv/pic/crt/g/1b/f9/179972_crt_z2K2i.jpg?r=1752907783",
+        "large": "https://lain.bgm.tv/pic/crt/l/1b/f9/179972_crt_z2K2i.jpg?r=1752907783",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1b/f9/179972_crt_z2K2i.jpg?r=1752907783"
+    },
+    "summary": "小さな開拓村にある武器屋の息子。村の子供たちのガキ大将的な存在。負けず嫌いな性格で感情的になりやすい。持って生まれた才能は「斧使い」。自身より身分が低いアレンによくちょっかいをかけている。",
+    "name": "ドゴラ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "多戈拉"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "德古拉"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 1,
+        "collects": 0
+    },
+    "id": 179972,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        526979
+    ]
+}

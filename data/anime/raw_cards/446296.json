@@ -1,0 +1,418 @@
+{
+    "date": "2025-04-06",
+    "platform": "TV",
+    "images": {
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/29/22/446296_rRM5n.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/29/22/446296_rRM5n.jpg",
+        "large": "https://lain.bgm.tv/pic/cover/l/29/22/446296_rRM5n.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/29/22/446296_rRM5n.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/29/22/446296_rRM5n.jpg"
+    },
+    "summary": "公元2052年。\r\n世界迎来了前所未有的和平时代，脑神经学博士斯金纳开发的止痛药“哈普娜”做出了巨大贡献。\r\n作为无副作用的“奇迹之药”在全世界传播，将人类从痛苦中解放出来。\r\n但作为其开发者的斯金纳却突然消失，谁也不知道其下落。\r\n——3年后，他将作为引领世界走向毁灭的恶魔再次出现。\r\n哈普娜是一种能使服用者在3年后发病致死的药物，是设下的陷阱。\r\n“还有30天。如果在那之前找到我的位置，人类便能延续下去。”\r\n除了使用斯金纳拥有的唯一一种疫苗外，别无他法。\r\n然而，若想得到疫苗，就得先找到斯金纳。\r\n为了对抗斯金纳的阴谋，从世界各地召集来的5人特工队“Lazarus”。\r\n他们能拯救人类吗？\r\n以及斯金纳的真正目的究竟是什么——？",
+    "name": "LAZARUS",
+    "name_cn": "拉撒路",
+    "tags": [
+        {
+            "name": "原创",
+            "count": 1508,
+            "total_cont": 0
+        },
+        {
+            "name": "MAPPA",
+            "count": 1348,
+            "total_cont": 0
+        },
+        {
+            "name": "科幻",
+            "count": 1186,
+            "total_cont": 0
+        },
+        {
+            "name": "2025年4月",
+            "count": 1066,
+            "total_cont": 0
+        },
+        {
+            "name": "TV",
+            "count": 903,
+            "total_cont": 0
+        },
+        {
+            "name": "渡辺信一郎",
+            "count": 803,
+            "total_cont": 0
+        },
+        {
+            "name": "渡边信一郎",
+            "count": 608,
+            "total_cont": 0
+        },
+        {
+            "name": "动作",
+            "count": 591,
+            "total_cont": 0
+        },
+        {
+            "name": "2025",
+            "count": 526,
+            "total_cont": 0
+        },
+        {
+            "name": "日本",
+            "count": 430,
+            "total_cont": 0
+        },
+        {
+            "name": "战斗",
+            "count": 398,
+            "total_cont": 0
+        },
+        {
+            "name": "音乐",
+            "count": 204,
+            "total_cont": 0
+        },
+        {
+            "name": "查德·斯塔尔斯基",
+            "count": 46,
+            "total_cont": 0
+        },
+        {
+            "name": "2025年",
+            "count": 36,
+            "total_cont": 0
+        },
+        {
+            "name": "4月",
+            "count": 20,
+            "total_cont": 0
+        },
+        {
+            "name": "林明美",
+            "count": 14,
+            "total_cont": 0
+        },
+        {
+            "name": "悬疑",
+            "count": 12,
+            "total_cont": 0
+        },
+        {
+            "name": "无法预测的命运之舞台",
+            "count": 12,
+            "total_cont": 0
+        },
+        {
+            "name": "2024",
+            "count": 11,
+            "total_cont": 0
+        },
+        {
+            "name": "宫野真守",
+            "count": 10,
+            "total_cont": 0
+        },
+        {
+            "name": "未定档",
+            "count": 8,
+            "total_cont": 0
+        },
+        {
+            "name": "2020s",
+            "count": 8,
+            "total_cont": 0
+        },
+        {
+            "name": "搞笑",
+            "count": 7,
+            "total_cont": 0
+        },
+        {
+            "name": "SF",
+            "count": 5,
+            "total_cont": 0
+        },
+        {
+            "name": "TVA",
+            "count": 5,
+            "total_cont": 0
+        },
+        {
+            "name": "内田真礼",
+            "count": 5,
+            "total_cont": 0
+        },
+        {
+            "name": "追番",
+            "count": 5,
+            "total_cont": 0
+        },
+        {
+            "name": "宮野真守",
+            "count": 5,
+            "total_cont": 0
+        },
+        {
+            "name": "古川慎",
+            "count": 5,
+            "total_cont": 0
+        },
+        {
+            "name": "末世",
+            "count": 4,
+            "total_cont": 0
+        }
+    ],
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "拉撒路"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "ラザロ"
+                },
+                {
+                    "v": "LAZARUS 拉撒路"
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "13"
+        },
+        {
+            "key": "放送开始",
+            "value": "2025年4月6日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期日"
+        },
+        {
+            "key": "官方网站",
+            "value": "https://lazarus.aniplex.co.jp/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "テレ東系列"
+        },
+        {
+            "key": "播放结束",
+            "value": "2025年6月29日"
+        },
+        {
+            "key": "导演",
+            "value": "渡辺信一郎"
+        },
+        {
+            "key": "音乐",
+            "value": "Kamasi Washington・Bonobo・Floating Points"
+        },
+        {
+            "key": "Copyright",
+            "value": "©2024 The Cartoon Network, Inc. All Rights Reserved"
+        },
+        {
+            "key": "原作",
+            "value": "渡辺信一郎"
+        },
+        {
+            "key": "监修",
+            "value": "Chad Stahelski (动作设计监修)"
+        },
+        {
+            "key": "人物设定",
+            "value": "林明美"
+        },
+        {
+            "key": "脚本",
+            "value": "渡辺信一郎(1,12-13)、近藤司(2,5,8,11)、小沢高広(3,6-7,10)、佐藤大(4,9)"
+        },
+        {
+            "key": "构图",
+            "value": "圡屋陽平 (3D构图)"
+        },
+        {
+            "key": "音效",
+            "value": "Lauren Stephens(Formosa Group)"
+        },
+        {
+            "key": "企画",
+            "value": "企画プロデュース：SOLA ENTERTAINMENT"
+        },
+        {
+            "key": "OP・ED 分镜",
+            "value": "渡辺信一郎 / 米山舞"
+        },
+        {
+            "key": "画面设计",
+            "value": "坂本拓馬、敷城こなつ、樋上翔悟、五十嵐愛美、亀井樹"
+        },
+        {
+            "key": "OP・ED 演出",
+            "value": "渡辺信一郎 / 米山舞"
+        },
+        {
+            "key": "分镜",
+            "value": "渡辺信一郎(1)、岡村天斎(2,7)、三宅和男(3)、宮繁之(3)、山下明彦(4,8,10-13)、寺岡巌(5)、伊東伸高(6)、圡屋陽平(9)；动作分镜：小田剛生(1,9)、関弘光(1)、河野悦子(5)；AVANT分镜：山下清悟(1)"
+        },
+        {
+            "key": "演出",
+            "value": "三宅和男(1,4-5,10,13)、圡屋陽平(1,3,8,11)、飛田剛(2)、安彦英二(6,12)、イム・ガヒ [ 林嘉姬 ] (7)、灰谷平八郎(7)、森川さやか(9)、岡本泰知(11)；AVANT演出：山下清悟(1)"
+        },
+        {
+            "key": "分镜抄写",
+            "value": "コンテ着彩：品川宏樹"
+        },
+        {
+            "key": "印象板",
+            "value": "森山洋"
+        }
+    ],
+    "rating": {
+        "rank": 9906,
+        "total": 4789,
+        "count": {
+            "1": 124,
+            "2": 231,
+            "3": 566,
+            "4": 1237,
+            "5": 1255,
+            "6": 884,
+            "7": 331,
+            "8": 124,
+            "9": 18,
+            "10": 19
+        },
+        "score": 4.7
+    },
+    "total_episodes": 13,
+    "collection": {
+        "on_hold": 581,
+        "dropped": 2355,
+        "wish": 1705,
+        "collect": 5069,
+        "doing": 2102
+    },
+    "id": 446296,
+    "eps": 13,
+    "meta_tags": [
+        "科幻",
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "volumes": 0,
+    "series": false,
+    "locked": false,
+    "nsfw": false,
+    "type": 2,
+    "main_character_ids": [
+        165926,
+        165927,
+        165933
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ca/9a/165926_crt_MBF2k.jpg?r=1729311945",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ca/9a/165926_crt_MBF2k.jpg?r=1729311945",
+                "large": "https://lain.bgm.tv/pic/crt/l/ca/9a/165926_crt_MBF2k.jpg?r=1729311945",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ca/9a/165926_crt_MBF2k.jpg?r=1729311945"
+            },
+            "name": "アクセル",
+            "summary": "ブラジル出身。得意技はパルクール。\r\n驚異的な身体能力と素早い判断力で、街中をまるで鳥の\r\nように軽々と飛び回る。\r\n刑務所に収容されるが脱獄に脱獄を繰り返し、\r\nもはや刑務所業界の有名人。\r\n危険を愛し、ギリギリのスリルを好む。\r\n表裏がなく、人懐こい性格だが、どこか孤高な雰囲気も\r\n漂わせる。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fa/cc/4697_prsn_1t8UM.jpg?r=1730622307",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/fa/cc/4697_prsn_1t8UM.jpg?r=1730622307",
+                        "large": "https://lain.bgm.tv/pic/crt/l/fa/cc/4697_prsn_1t8UM.jpg?r=1730622307",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fa/cc/4697_prsn_1t8UM.jpg?r=1730622307"
+                    },
+                    "name": "宮野真守",
+                    "short_summary": "小学生時代から劇団ひまわりに所属し、主に舞台などで活動した。高校生時代に海外ドラマ『私はケイトリン』の吹替で声優デビューする。PS2用ゲーム『キングダム ハーツ』のリク役で注目を集め、その後は、『機動戦士ガンダム00』や『DEATH NOTE』の主役を務めるなど、数々の人気作品に出演している。\r\n第1回声優アワード主演男優賞および新人賞にノミネートされた（『DEATH NOTE』夜神月役）。 2008年の第2回声優アワード主演男優賞受賞。東京国際アニメフェア2008・第7回東京アニメアワード個人賞（声優部門）受賞（『DEATH NOTE』『機動戦士ガンダム00』）。 2008年12月1日、劇団ひまわりのHPで結婚と子供を授かったことを公表した。結婚相手や子供の性別は非公開。 2011年、ノン子とのび太のアニメスクランブルにて第21回アニメグランプリ最優秀男性声優賞受賞。 2012年、第6回声優アワードにて助演男優賞と歌唱賞（後者はST☆RISHとして）、日刊スポーツ第1回日刊アニメグランプリにてMIP男性声優賞、アニメージュ第34回アニメグランプリ声優部門においてグランプリを受賞。\r\n\r\n2025年6月8日宣布与向日葵剧团合约期满退团，次日宣布加入研音。",
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 4697,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 165926
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/85/f8/165927_crt_0woOc.jpg?r=1729311947",
+                "grid": "https://lain.bgm.tv/pic/crt/g/85/f8/165927_crt_0woOc.jpg?r=1729311947",
+                "large": "https://lain.bgm.tv/pic/crt/l/85/f8/165927_crt_0woOc.jpg?r=1729311947",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/85/f8/165927_crt_0woOc.jpg?r=1729311947"
+            },
+            "name": "ダグ",
+            "summary": "ナイジェリア出身。チームの頭脳として作戦立案に関わる知性派だが、身体能力も高い。\r\n冷静沈着に見えるが、実は熱い心を秘めている。\r\n学生時代は物理学を専攻し、スキナー博士を尊敬していた。\r\n神経質で繊細、細かいことを気にする。\r\nそしてプライドが高い。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/15/71/12483_prsn_pXYzu.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/15/71/12483_prsn_pXYzu.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/15/71/12483_prsn_pXYzu.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/15/71/12483_prsn_pXYzu.jpg"
+                    },
+                    "name": "古川慎",
+                    "short_summary": "古川 慎（ふるかわ まこと、1989年9月29日 - ）は、日本の男性声優。トイズファクトリー所属。\r\n熊本県出身。福岡スクールオブミュージック専門学校卒業。\r\n\r\n5歳の時に見た『新機動戦記ガンダムW』のヒイロ・ユイを充てた緑川光の声に憧れたことで声優への興味を持つようになった。その後中学生時代にスカパーのアニメ専門チャンネルを見てアニメ好きになったという。\r\n高校生の時、友達からもらった専門学校のパンフレットに緑川光が特別講師としてくることを見て、挑戦してみようと思い専門学校に通い始めた。\r\n\r\n趣味は雑貨屋めぐり、神社や寺などのパワースポットを巡ること。\r\n一番好きな食べ物はお好み焼き。キュウリとカリフラワーが苦手。\r\n好きなアーティストはL'Arc〜en〜Ciel、Mr.Children、ゴスペラーズ、GRANRODEO、BUMP OF CHICKEN。\r\n\r\n2011年にWebアニメ「武装中学生」吉野サトシ役で声優デビュー。\r\n2012年にアルバイトでPS3専用ソフト「白騎士物語」のモーションアクターを演じた経験を持つ。\r\n2016年、7月より声優の小林裕介と共にパーソナリティを務めるラジオ『なんでもヒーロー！ ゆっけとまーぼー』の放送を開始。\r\n2017年10月に開催された、初バースデーイベント「古川慎　秋の収穫祭2017」にて、2018年アーティスト活動を開始することを発表。\r\n2018年7月、Lantisより歌手デビュー。同年8月31日、6年間所属していたスペースクラフト・エンタテインメントを退所し、フリーでの活動期間を経て同年12月1日、トイズファクトリーに所属。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 12483,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 165927
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c3/1b/165933_crt_rZ7jV.jpg?r=1729311949",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c3/1b/165933_crt_rZ7jV.jpg?r=1729311949",
+                "large": "https://lain.bgm.tv/pic/crt/l/c3/1b/165933_crt_rZ7jV.jpg?r=1729311949",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c3/1b/165933_crt_rZ7jV.jpg?r=1729311949"
+            },
+            "name": "クリスティン",
+            "summary": "ロシア出身。通称クリス。基本、陽気でフランク、\r\n誰とでも気さくに話す。\r\n男性にも女性にも媚びない姉御肌。\r\n銃のスペシャリストで、あらゆる銃器の扱いにたけている。\r\n酒飲みで楽観的、おおざっぱな性格。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4c/23/6724_prsn_DIyje.jpg?r=1738653463",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/4c/23/6724_prsn_DIyje.jpg?r=1738653463",
+                        "large": "https://lain.bgm.tv/pic/crt/l/4c/23/6724_prsn_DIyje.jpg?r=1738653463",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4c/23/6724_prsn_DIyje.jpg?r=1738653463"
+                    },
+                    "name": "内田真礼",
+                    "short_summary": "内田 真礼（うちだ まあや、1989年12月27日 - ）は、日本の声優、歌手、女優、タレント。\r\nアイムエンタープライズ（事務所）、ポニーキャニオン（レコード会社）に所属。愛称は主にまややん、まれいたそ。東京都出身。血液型はA型。本名同じ。声優の内田雄馬は実弟。\r\n\r\n2025年9月30日，宣布与石川界人结婚。",
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 6724,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 165933
+        }
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8b/c6/121303_crt_zkTqd.jpg?r=1677332447",
+        "grid": "https://lain.bgm.tv/pic/crt/g/8b/c6/121303_crt_zkTqd.jpg?r=1677332447",
+        "large": "https://lain.bgm.tv/pic/crt/l/8b/c6/121303_crt_zkTqd.jpg?r=1677332447",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8b/c6/121303_crt_zkTqd.jpg?r=1677332447"
+    },
+    "summary": "著名的吸血鬼，有着一头银色的长发，能自由改变身体尺寸（年龄）的吸血鬼。\r\n擅长魔法，且能够飞行。喜欢的东西是番茄。\r\n在森林中与火乐相遇，之后就这么开始和他一起生活。\r\n\r\n吸血鬼として有名な銀髪ロングで、身体のサイズ（年齢）を自由に変化できる吸血鬼。\r\n魔法が得意で飛ぶこともできる。トマトが好物。\r\n森でヒラクと出会い、そのまま共同生活を送る。",
+    "name": "ルールーシー＝ルー",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "露露西·露"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Rurushi Loo"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "种族",
+            "value": "吸血鬼"
+        }
+    ],
+    "stat": {
+        "comments": 39,
+        "collects": 106
+    },
+    "id": 121303,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        376137
+    ]
+}

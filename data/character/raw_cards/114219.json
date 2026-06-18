@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7d/ab/114219_crt_Q1x0B.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/7d/ab/114219_crt_Q1x0B.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/7d/ab/114219_crt_Q1x0B.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7d/ab/114219_crt_Q1x0B.jpg"
+    },
+    "summary": "年龄4岁、清太的妹妹。\r\n\r\n在神户大空袭后失去了住家及母亲，跟哥哥清太前往远亲家居住。",
+    "name": "横川節子",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "节子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Setsuko Yokokawa"
+                },
+                {
+                    "k": "日文名",
+                    "v": "節子"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yokokawa Setsuko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 2,
+        "collects": 8
+    },
+    "id": 114219,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        382
+    ]
+}

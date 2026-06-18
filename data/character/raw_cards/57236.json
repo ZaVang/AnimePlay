@@ -1,0 +1,81 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ac/33/57236_crt_3sYsj.jpg?r=1628997274",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ac/33/57236_crt_3sYsj.jpg?r=1628997274",
+        "large": "https://lain.bgm.tv/pic/crt/l/ac/33/57236_crt_3sYsj.jpg?r=1628997274",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ac/33/57236_crt_3sYsj.jpg?r=1628997274"
+    },
+    "summary": "７年間、神浜市で魔女と戦ってきたベテランの魔法少女。神浜市や魔法少女についての情報に精通している。他の魔法少女とも距離を置き、神浜市で発生している「うわさ」をファイリングしている。",
+    "name": "七海やちよ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "七海八千代"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "七海 やちよ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ななみ やちよ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Nanami Yachiyo"
+                },
+                {
+                    "k": "昵称",
+                    "v": "小八（やっちゃん）"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "165cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "magireco.moe/wiki/七海八千代"
+        },
+        {
+            "key": "年龄",
+            "value": "19岁（大1），于12岁签约"
+        },
+        {
+            "key": "出身",
+            "value": "神滨市新西区"
+        },
+        {
+            "key": "学校",
+            "value": "神滨市立大附属学校→神滨市立大学"
+        },
+        {
+            "key": "人设",
+            "value": "苍树梅"
+        }
+    ],
+    "stat": {
+        "comments": 28,
+        "collects": 106
+    },
+    "id": 57236,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        159690
+    ]
+}

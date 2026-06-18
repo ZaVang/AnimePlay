@@ -1,7 +1,7 @@
 {
     "id": 100405,
     "name": "HELLO!! 黄金拼图",
-    "image_path": "data/images/anime/100405.jpg",
+    "image_path": "data\\images\\anime\\100405.jpg",
     "points": 7.3,
     "cost": 1,
     "rarity": "N",

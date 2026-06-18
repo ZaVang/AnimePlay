@@ -1,0 +1,87 @@
+{
+    "birth_mon": 9,
+    "gender": "male",
+    "birth_day": 19,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f8/5a/2876_crt_0lHnW.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f8/5a/2876_crt_0lHnW.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/f8/5a/2876_crt_0lHnW.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f8/5a/2876_crt_0lHnW.jpg"
+    },
+    "summary": "剑桥大学的天才学生（圣三一学院），主修宗教哲学。SPR·涉谷特异功能调查所所长。\r\n酷酷的、冷酷英俊、头脑聪明的超级自信的人。自恋的关系大家称他为小恋（那鲁）。",
+    "name": "渋谷一也",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "涩谷一也"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "涉谷一也"
+                },
+                {
+                    "v": "オリヴァー・デイヴィス"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "奥利弗·戴维斯"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Oliver Davis"
+                },
+                {
+                    "k": "日文名",
+                    "v": "渋谷一也"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "しぶや かずや"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shibuya Kazuya"
+                },
+                {
+                    "k": "昵称",
+                    "v": "ナル"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "9月19日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "175cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "stat": {
+        "comments": 3,
+        "collects": 14
+    },
+    "id": 2876,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        1531
+    ]
+}

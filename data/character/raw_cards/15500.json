@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b1/7c/15500_crt_BI8hT.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b1/7c/15500_crt_BI8hT.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/b1/7c/15500_crt_BI8hT.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b1/7c/15500_crt_BI8hT.jpg"
+    },
+    "summary": "本作男主角，秋子的哥哥。高中二年级生。外貌、学业平凡。父母双亡后，被鹰乃宫家收养，目前以创作小说为生，笔名是新藤光一郎，出道作是《禁忌之爱的故事》（禁じられた愛の物語），将“与姬小路秋子没有血缘关系”的事实视为最高机密。",
+    "name": "姫小路秋人",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "姬小路秋人"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Akito Himenokouji"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ひめのこうじ あきと"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "wikipedia"
+        }
+    ],
+    "stat": {
+        "comments": 2,
+        "collects": 6
+    },
+    "id": 15500,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        40339
+    ]
+}

@@ -1,0 +1,40 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fe/aa/182564_crt_gd2Y5.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/fe/aa/182564_crt_gd2Y5.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/fe/aa/182564_crt_gd2Y5.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fe/aa/182564_crt_gd2Y5.jpg"
+    },
+    "summary": "魔術適性：？？？\r\n侯爵家に仕えるヴァン専属メイドの一人。追放されたヴァンに付いていくほど、ヴァンを弟のように溺愛している。明るい性格で、褒められるとすぐ調子に乗る。",
+    "name": "ティル",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "蒂儿"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 25,
+        "collects": 53
+    },
+    "id": 182564,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        554013
+    ]
+}

@@ -1,7 +1,7 @@
 {
     "id": 3425,
     "name": "火影忍者",
-    "image_path": "data/images/anime/3425.jpg",
+    "image_path": "data\\images\\anime\\3425.jpg",
     "points": 7.6,
     "cost": 1,
     "rarity": "N",

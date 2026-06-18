@@ -1,0 +1,96 @@
+{
+    "id": 474906,
+    "name": "小市民系列",
+    "image_path": "data\\images\\anime\\474906.jpg",
+    "points": 6.2,
+    "cost": 1,
+    "rarity": "N",
+    "description": "「让我们互相帮助，努力成为完美的小市民吧。」\r\n\r\n过去因为进行称为「侦探」的推理活动，经历痛苦回忆的小鸠，下定决心要当一个低调不起眼的小市民。\r\n\r\n他与志同道合的同学小佐内私底下结成「互惠关系」，打算在高中营造小市民的形象，度过安稳的生活，\r\n但是不知为何，神秘的事件和灾难总是接二连三降临到他们的校园生活中。\r\n\r\n小鸠和小佐内真的能作为小市民过上安稳的生活吗？",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 10,
+    "synergy_tags": [
+        "TV",
+        "TV",
+        "日本",
+        "日本",
+        "推理",
+        "推理",
+        "日常",
+        "日常",
+        "小说改",
+        "小说改"
+    ],
+    "date": "2024-07-06",
+    "rating_rank": 6997,
+    "rating_score": 6.2,
+    "rating_total": 7338,
+    "main_character_ids": [
+        150623,
+        150624
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/8f/16/150623_crt_7xiao.jpg?r=1724765519",
+                "grid": "https://lain.bgm.tv/pic/crt/g/8f/16/150623_crt_7xiao.jpg?r=1724765519",
+                "large": "https://lain.bgm.tv/pic/crt/l/8f/16/150623_crt_7xiao.jpg?r=1724765519",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8f/16/150623_crt_7xiao.jpg?r=1724765519"
+            },
+            "name": "小鳩常悟朗",
+            "summary": "船戸高校１年。\r\n“知恵働き”と称する優れた推理力を持ちながら、小市民ともいうべき普通の生活に憧れている。\r\n中学のある時期から小佐内さんとは助け合う“互恵関係”でいることを約束している。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/dd/dc/41073_prsn_ol77n.jpg?r=1633081644",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/dd/dc/41073_prsn_ol77n.jpg?r=1633081644",
+                        "large": "https://lain.bgm.tv/pic/crt/l/dd/dc/41073_prsn_ol77n.jpg?r=1633081644",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dd/dc/41073_prsn_ol77n.jpg?r=1633081644"
+                    },
+                    "name": "梅田修一朗",
+                    "short_summary": "梅田 修一朗（うめだ しゅういちろう、10月11日）は、日本の男性声優。千葉県出身。賢プロダクション所属。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 41073,
+                    "type": 2,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 150623
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/1a/22/150624_crt_suCuN.jpg?r=1724765521",
+                "grid": "https://lain.bgm.tv/pic/crt/g/1a/22/150624_crt_suCuN.jpg?r=1724765521",
+                "large": "https://lain.bgm.tv/pic/crt/l/1a/22/150624_crt_suCuN.jpg?r=1724765521",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1a/22/150624_crt_suCuN.jpg?r=1724765521"
+            },
+            "name": "小佐内ゆき",
+            "summary": "船戸高校１年。\r\n鋭い洞察力と行動力がありつつも、過去の失敗から小鳩くんと同じように小市民であることを目指している。\r\n甘いものに目がなく、放課後はしばしば街のスイーツショップに繰り出している。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f3/83/40794_prsn_4cu5z.jpg?r=1731846554",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f3/83/40794_prsn_4cu5z.jpg?r=1731846554",
+                        "large": "https://lain.bgm.tv/pic/crt/l/f3/83/40794_prsn_4cu5z.jpg?r=1731846554",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f3/83/40794_prsn_4cu5z.jpg?r=1731846554"
+                    },
+                    "name": "羊宮妃那",
+                    "short_summary": "資格・免許：剣道初段\r\n趣味：描画、読書、映画鑑賞、音楽鑑賞、アコースティックギター弾き語り\r\n特技：ダンス\r\n方言：関西弁",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 40794,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 150624
+        }
+    ]
+}

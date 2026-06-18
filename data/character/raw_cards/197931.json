@@ -1,0 +1,44 @@
+{
+    "birth_mon": 6,
+    "gender": "female",
+    "birth_day": 6,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c8/5f/197931_crt_XHp4p.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c8/5f/197931_crt_XHp4p.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/c8/5f/197931_crt_XHp4p.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c8/5f/197931_crt_XHp4p.jpg"
+    },
+    "summary": "カラマーゾフのリーダー。猛毒電波少女。不敵な笑みをたたえる、新たな配信者。",
+    "name": "パープル・ロリポップ",
+    "infobox": [
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "6月6日"
+        },
+        {
+            "key": "身高",
+            "value": "152cm"
+        }
+    ],
+    "stat": {
+        "comments": 12,
+        "collects": 9
+    },
+    "id": 197931,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        606263
+    ]
+}

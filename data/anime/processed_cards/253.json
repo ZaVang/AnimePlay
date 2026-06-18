@@ -1,7 +1,7 @@
 {
     "id": 253,
     "name": "星际牛仔",
-    "image_path": "data/images/anime/253.jpg",
+    "image_path": "data\\images\\anime\\253.jpg",
     "points": 9.1,
     "cost": 6,
     "rarity": "UR",

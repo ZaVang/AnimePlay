@@ -1,0 +1,123 @@
+{
+    "id": 397808,
+    "name": "不死不幸",
+    "image_path": "data\\images\\anime\\397808.jpg",
+    "points": 6.4,
+    "cost": 1,
+    "rarity": "N",
+    "description": "「不运要来了。不错哦，太棒了！！」\r\n风子是会使触碰到她的人遭遇不幸事故的「不运」少女。拥有绝对不会死的不死之身的「不死」的安迪，出现在因为自己的特异体质而一度打算寻短的风子面前。他为了借由风子的力量获得「真正的死」，决定与她一起行动。\r\n然而，锁定像安迪和风子这种拥有异能之力的「否定者」下手的神秘组织「UNION」，却出现在他们的面前，试图将他们带回组织。安迪为了完成心愿，带着风子展开逃亡，他们的命运将会如何？那个组织又是什么来头？\r\n这是，两人找寻着最棒的死亡的故事。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 24,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "漫画改",
+        "战斗"
+    ],
+    "date": "2023-10-06",
+    "rating_rank": 6014,
+    "rating_score": 6.4,
+    "rating_total": 5189,
+    "main_character_ids": [
+        115898,
+        115899
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a1/7d/115898_crt_P3Hnw.jpg?r=1692546851",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a1/7d/115898_crt_P3Hnw.jpg?r=1692546851",
+                "large": "https://lain.bgm.tv/pic/crt/l/a1/7d/115898_crt_P3Hnw.jpg?r=1692546851",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a1/7d/115898_crt_P3Hnw.jpg?r=1692546851"
+            },
+            "name": "アンディ",
+            "summary": "否定者。\r\n能力：不死(UNDEAD/アンデッド)。自对象，强制发动型。\r\n把可能让自身接近死亡的一切事物全部否定。再生基本全自动。但经过长年的练习后可有意识地让再生速度加快或变慢。\r\n因老去也被判断为接近死亡的因素，所以外表停留在了25岁左右的样子。虽然有痛觉但据本人说「疼痛能人感知到死亡，因此才会有疼痛。而我的疼痛和你们的疼痛作用不同，我的疼痛仅是杂音」。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7a/78/4724_prsn_7TvWV.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7a/78/4724_prsn_7TvWV.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/7a/78/4724_prsn_7TvWV.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7a/78/4724_prsn_7TvWV.jpg"
+                    },
+                    "name": "中村悠一",
+                    "short_summary": "爱称是ゆうきゃん，由铃村健一命名。英文标记法为‘yuu-kyan’\r\n与声优的杉田智和的私交良好，是在声优界著名的好友。\r\n兴趣是玩游戏、看电影等。\r\n不喜欢吃拉面。喜欢的食物是肉、奶酪、甜食。\r\n2020年10月1日，宣布从Sigma Seven移籍至INTENTION。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 4724,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3b/f5/79101_prsn_Y812N.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/3b/f5/79101_prsn_Y812N.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/3b/f5/79101_prsn_Y812N.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3b/f5/79101_prsn_Y812N.jpg"
+                    },
+                    "name": "馬國堯",
+                    "short_summary": "台湾男性配音员。为华视配音班第49期杰出学员。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 79101,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 115898
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e2/d1/115899_crt_WjWjq.jpg?r=1692546854",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e2/d1/115899_crt_WjWjq.jpg?r=1692546854",
+                "large": "https://lain.bgm.tv/pic/crt/l/e2/d1/115899_crt_WjWjq.jpg?r=1692546854",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e2/d1/115899_crt_WjWjq.jpg?r=1692546854"
+            },
+            "name": "出雲風子",
+            "summary": "否定者。\r\n能力：不幸(UNLUCK/アンラック）。他对象，强制发动型。\r\n给身体直接接触到的对象带去不幸。规模依好感度、接触方式、面积、时间等决定。\r\n但自己ー直没有完全把握清整规则。因能力在面对好感度低的敌人时会很无力，所以她很担心自己今后在做任务时是否会给安迪添麻烦。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bd/89/41551_prsn_7fbIF.jpg?r=1706188505",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/bd/89/41551_prsn_7fbIF.jpg?r=1706188505",
+                        "large": "https://lain.bgm.tv/pic/crt/l/bd/89/41551_prsn_7fbIF.jpg?r=1706188505",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bd/89/41551_prsn_7fbIF.jpg?r=1706188505"
+                    },
+                    "name": "佳原萌枝",
+                    "short_summary": "岸本 萌佳（きしもと もえか、2000年12月18日 - ）は、日本の女性声優。大阪府出身。ゆーりんプロ所属。\r\n\r\n2021年7月1日宣布艺名更改为 佳原萌枝\r\n\r\n誕生日：12月18日\r\n出身地：大阪府\r\n特　技：ダンス、歌、細かい作業\r\n趣　味：読書、ゲーム、作詞作曲、絵",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 41551,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f7/17/79171_prsn_32TLL.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f7/17/79171_prsn_32TLL.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/f7/17/79171_prsn_32TLL.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f7/17/79171_prsn_32TLL.jpg"
+                    },
+                    "name": "李昀晴",
+                    "short_summary": "台湾女性配音员。\r\n\r\n华视配音训练班第66期杰出学员，2013年开始从业。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 79171,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 115899
+        }
+    ]
+}

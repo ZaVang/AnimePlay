@@ -1,0 +1,53 @@
+{
+    "birth_mon": 3,
+    "gender": "female",
+    "birth_day": 3,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/60/81/132319_crt_OLd5I.jpg?r=1698678494",
+        "grid": "https://lain.bgm.tv/pic/crt/g/60/81/132319_crt_OLd5I.jpg?r=1698678494",
+        "large": "https://lain.bgm.tv/pic/crt/l/60/81/132319_crt_OLd5I.jpg?r=1698678494",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/60/81/132319_crt_OLd5I.jpg?r=1698678494"
+    },
+    "summary": "王女にして、国王軍第三騎士団の騎士団長。数々の戦場を生き抜き、多くの武勲をあげてきた。現在は魔王軍に囚われの身となり、“拷問”を受ける日々を送っている。厳しい教育と鍛錬を重ねた誇り高い孤高の騎士に見えるが……？",
+    "name": "姫",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "公主"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "3月3日"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://himesama-goumon.com/"
+        },
+        {
+            "key": "喜欢的食物",
+            "value": "あんパン・中華料理・お菓子"
+        }
+    ],
+    "stat": {
+        "comments": 37,
+        "collects": 117
+    },
+    "id": 132319,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        443112,
+        486763
+    ]
+}

@@ -1,0 +1,100 @@
+{
+    "birth_mon": 6,
+    "gender": "female",
+    "birth_day": 10,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/57/f5/14693_crt_4xsUo.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/57/f5/14693_crt_4xsUo.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/57/f5/14693_crt_4xsUo.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/57/f5/14693_crt_4xsUo.jpg"
+    },
+    "summary": "接近第一学期结束的时候，海人（主人公）的学校里来了一个留学归来的三年级女生。\r\n大大的眼睛，长长的红头发，容姿出众，很快就成为学园瞩目的对象。\r\n性格稳重、理性——但是因为不习惯日本文化，言行有点奇怪。\r\n虽然在这个学园留学是件好事，但是由于被卷入麻烦中不能回自己的公寓了，渐渐地住进了海人的家。\r\n总是随身带着“尼农”。",
+    "name": "貴月イチカ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "贵月一夏"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "贵月一花"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "贵月一歌"
+                },
+                {
+                    "k": "日文名",
+                    "v": "貴月 イチカ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "たかつき いちか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Takatsuki  Ichika"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "6月10日"
+        },
+        {
+            "key": "血型",
+            "value": "星型"
+        },
+        {
+            "key": "身高",
+            "value": "163cm"
+        },
+        {
+            "key": "体重",
+            "value": "45kg"
+        },
+        {
+            "key": "BWH",
+            "value": "92/58/88"
+        },
+        {
+            "key": "兴趣",
+            "value": "阿拉松（像练习活动一类的项目）"
+        },
+        {
+            "key": "喜欢的东西",
+            "value": "读书、米奈伊路、（在咖啡里放相似的饮料）、咖啡、奇露露巧克力。"
+        },
+        {
+            "key": "讨厌的东西",
+            "value": "基多马格（像G一样的虫子）"
+        },
+        {
+            "key": "喜欢的类型",
+            "value": "喜欢自己的类型"
+        },
+        {
+            "key": "电影职务",
+            "value": "主演（演员）"
+        }
+    ],
+    "stat": {
+        "comments": 6,
+        "collects": 47
+    },
+    "id": 14693,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        22657
+    ]
+}

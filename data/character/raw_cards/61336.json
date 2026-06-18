@@ -1,0 +1,49 @@
+{
+    "birth_mon": 7,
+    "gender": "female",
+    "birth_day": 8,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f7/40/61336_crt_Zh566.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f7/40/61336_crt_Zh566.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/f7/40/61336_crt_Zh566.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f7/40/61336_crt_Zh566.jpg"
+    },
+    "summary": "奇弗利的弟子之一。勤奋努力，反对可可成为魔法使。",
+    "name": "アガット",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "玛瑙"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "阿嘉朵"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月8日"
+        }
+    ],
+    "stat": {
+        "comments": 59,
+        "collects": 19
+    },
+    "id": 61336,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        377130
+    ]
+}

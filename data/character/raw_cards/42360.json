@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9c/81/42360_crt_X7gc1.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/9c/81/42360_crt_X7gc1.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/9c/81/42360_crt_X7gc1.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9c/81/42360_crt_X7gc1.jpg"
+    },
+    "summary": "ゼネラル・ギャラクシー社の開発主任兼テストパイロット。25歳。新型可変戦闘機YF-21を担当する。沈着冷静だが、イサムとは意地を張りあうライバル同士。ゼントラーディと地球人の共存により生まれた混血児（いわゆるピースチルドレン）で、遺伝により明晰な頭脳と屈強な肉体を具えている。しかし、成長と共に巨人族の血の発作的な攻撃衝動に襲われ、密かに抑用薬を服用していたが、これが後々テスト中に重大な事件を引き起こす。\r\n\r\nOVA版と映画版では、その結末が若干変更されている。",
+    "name": "ガルド・ゴア・ボーマン",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "加鲁特·加奥·保曼"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "卡尔德·哥文·波文"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Guld Goa Bowman"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 3,
+        "collects": 4
+    },
+    "id": 42360,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        3168
+    ]
+}

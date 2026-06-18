@@ -1,0 +1,69 @@
+{
+    "birth_mon": 2,
+    "gender": "female",
+    "birth_day": 1,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/66/8d/47164_crt_99030.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/66/8d/47164_crt_99030.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/66/8d/47164_crt_99030.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/66/8d/47164_crt_99030.jpg"
+    },
+    "summary": "乌菈菈见习生。雪见财阀的大小姐。喜欢西洋文化。对自己的名字抱持复杂的情绪。",
+    "name": "雪見小梅",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "雪见小梅"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "雪見 小梅"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ゆきみ こうめ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yukimi Koume"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2月1日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "156cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "stat": {
+        "comments": 12,
+        "collects": 64
+    },
+    "id": 47164,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        173303
+    ]
+}

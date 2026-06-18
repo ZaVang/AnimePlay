@@ -1,0 +1,49 @@
+{
+    "birth_mon": 9,
+    "gender": "female",
+    "birth_day": 7,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1c/57/7311_crt_uAgft.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/1c/57/7311_crt_uAgft.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/1c/57/7311_crt_uAgft.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1c/57/7311_crt_uAgft.jpg"
+    },
+    "summary": "出生国家：？\r\n拥有GEM：苍天之青玉\r\n契约的乙HiME：爱莉卡‧梦宮\r\n温德布卢姆王国女王，生日是9月7日与妮娜和爱莉卡同一天，她是不是真正的公主，在大臣和各国间一直被讨论，的确她并不是真正的公主。她的个性非常任性，但她发奋向上，又受到舞衣的指导和爱莉卡的鼓励以及学习葵的必死决心，成为一个真正的君王，后来与爱莉卡一同夺回城堡。",
+    "name": "マシロ・ブラン・ド・ヴィントブルーム",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "真白・布兰・杜・温德布伦"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Mashiro Blan de Windbloom"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "9月7日"
+        }
+    ],
+    "stat": {
+        "comments": 1,
+        "collects": 10
+    },
+    "id": 7311,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        1028
+    ]
+}

@@ -1,0 +1,259 @@
+{
+    "date": "2001-12-19",
+    "platform": "OVA",
+    "images": {
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/7b/0b/13553_7swXF.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/7b/0b/13553_7swXF.jpg",
+        "large": "https://lain.bgm.tv/pic/cover/l/7b/0b/13553_7swXF.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/7b/0b/13553_7swXF.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/7b/0b/13553_7swXF.jpg"
+    },
+    "summary": "* 此篇乃是制作动画小组自行产出的剧情，并非原作者和月的构想。\r\n\r\n星霜篇故事发生于人诛篇约十多年后，晚年的剑心与神谷薰同患上不治之症，剑心在甲午战争（日本称为“日清战争”）时于中国失去记忆。故事前半主要以神谷薰的视点描述与剑心的往事，其间亦加插了少量人诛篇的回忆画面。",
+    "name": "るろうに剣心 -明治剣客浪漫譚- 星霜編",
+    "name_cn": "浪客剑心 星霜篇",
+    "tags": [
+        {
+            "name": "OVA",
+            "count": 4,
+            "total_cont": 0
+        },
+        {
+            "name": "剧场版",
+            "count": 2,
+            "total_cont": 0
+        },
+        {
+            "name": "2001古橋一浩",
+            "count": 2,
+            "total_cont": 0
+        },
+        {
+            "name": "漫画改",
+            "count": 2,
+            "total_cont": 0
+        },
+        {
+            "name": "日本",
+            "count": 2,
+            "total_cont": 0
+        },
+        {
+            "name": "老番",
+            "count": 1,
+            "total_cont": 0
+        }
+    ],
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "浪客剑心 星霜篇"
+        },
+        {
+            "key": "话数",
+            "value": "2"
+        },
+        {
+            "key": "发售日",
+            "value": "2001年12月19日"
+        },
+        {
+            "key": "开始",
+            "value": "2001年12月19日"
+        },
+        {
+            "key": "结束",
+            "value": "2002年3月20日"
+        },
+        {
+            "key": "原作",
+            "value": "和月伸宏（集英社/ジャンプ・コミックス)"
+        },
+        {
+            "key": "企画",
+            "value": "白川隆三 (SME・ビジュアルワークス)、長谷川洋 (スタジオディーン)"
+        },
+        {
+            "key": "制片人",
+            "value": "桐山恵奈 (SME・ビジュアルワークス)、松田桂一 (スタジオディーン)"
+        },
+        {
+            "key": "人物设定",
+            "value": "松島晃 (Jec.E)"
+        },
+        {
+            "key": "美术监督",
+            "value": "萩原正巳"
+        },
+        {
+            "key": "色彩设计",
+            "value": "村上智美 (エムアイ)"
+        },
+        {
+            "key": "摄影监督",
+            "value": "沖野雅英"
+        },
+        {
+            "key": "原画",
+            "value": "松永晃、あべたくじ[阿部卓司]、斉藤哲人、神戸洋行、中嶋敦子、松本憲生、松島晃、西村博之、外崎春雄、佐藤和巳、及川ひろみ、石川智美、桂木杏、小松英司、金原廣子、熊田明子、村田睦明、清水貴子、米山浩平、八木元喜、いのうえみえ、小田真弓、森寛之、杉山京子、中村与史子、米本亨"
+        },
+        {
+            "key": "剪辑",
+            "value": "瀬山武司"
+        },
+        {
+            "key": "音乐监督",
+            "value": "児玉隆 (SME・ビジュアルワークス)"
+        },
+        {
+            "key": "音响监督",
+            "value": "录音演出：三ツ矢雄二"
+        },
+        {
+            "key": "音乐",
+            "value": "岩崎琢"
+        },
+        {
+            "key": "脚本",
+            "value": "吉田玲子"
+        },
+        {
+            "key": "动画制作",
+            "value": "スタジオディーン"
+        },
+        {
+            "key": "製作",
+            "value": "制作・著作：SME・ビジュアルワークス"
+        },
+        {
+            "key": "导演",
+            "value": "古橋一浩"
+        },
+        {
+            "key": "人物设定",
+            "value": "松島晃"
+        }
+    ],
+    "rating": {
+        "rank": 2092,
+        "total": 1084,
+        "count": {
+            "1": 10,
+            "2": 1,
+            "3": 10,
+            "4": 25,
+            "5": 59,
+            "6": 173,
+            "7": 362,
+            "8": 323,
+            "9": 86,
+            "10": 35
+        },
+        "score": 7.1
+    },
+    "total_episodes": 3,
+    "collection": {
+        "on_hold": 55,
+        "dropped": 44,
+        "wish": 454,
+        "collect": 1620,
+        "doing": 74
+    },
+    "id": 13553,
+    "eps": 2,
+    "meta_tags": [
+        "日本",
+        "OVA",
+        "漫画改"
+    ],
+    "volumes": 0,
+    "series": false,
+    "locked": false,
+    "nsfw": false,
+    "type": 2,
+    "main_character_ids": [
+        2328,
+        31873
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/9e/03/2328_crt_c14zj.jpg?r=1724610225",
+                "grid": "https://lain.bgm.tv/pic/crt/g/9e/03/2328_crt_c14zj.jpg?r=1724610225",
+                "large": "https://lain.bgm.tv/pic/crt/l/9e/03/2328_crt_c14zj.jpg?r=1724610225",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9e/03/2328_crt_c14zj.jpg?r=1724610225"
+            },
+            "name": "緋村剣心",
+            "summary": "温和な雰囲気が漂う放浪の剣客。その正体は、神速の殺人剣「飛天御剣流」により「人斬り抜刀斎」と恐れられた幕末の志士。赤毛と頬の十字傷が特徴で、腰には峰と刃が逆の「逆刃刀」を差している。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0d/e5/3992_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/0d/e5/3992_seiyu_anidb.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/0d/e5/3992_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0d/e5/3992_seiyu_anidb.jpg"
+                    },
+                    "name": "涼風真世",
+                    "short_summary": "日本の女優、声優、歌手。元宝塚歌劇団月組トップスター。\r\n\r\n宮城県石巻市出身。愛称は本名の「かなめ」で、個人事務所の名称にもなっている。身長166cm、血液型はO型。大阪薫英女子高等学校卒業。\r\n\r\n声優としてはアニメ『るろうに剣心』の緋村剣心役として知られる。",
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 3992,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/59/11/4528_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/59/11/4528_seiyu_anidb.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/59/11/4528_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/59/11/4528_seiyu_anidb.jpg"
+                    },
+                    "name": "鈴木真仁",
+                    "short_summary": "鈴木 真仁（すずき まさみ、1972年7月14日 - ）は、日本の声優、歌手、舞台女優。神奈川県茅ヶ崎市出身。日本芸術専門学校特別講師。大阪芸術大学短期大学部メディア芸術学科声優コース非常勤講師。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 4528,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 2328
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/28/fa/31873_crt_Dg20G.jpg?r=1724610391",
+                "grid": "https://lain.bgm.tv/pic/crt/g/28/fa/31873_crt_Dg20G.jpg?r=1724610391",
+                "large": "https://lain.bgm.tv/pic/crt/l/28/fa/31873_crt_Dg20G.jpg?r=1724610391",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/28/fa/31873_crt_Dg20G.jpg?r=1724610391"
+            },
+            "name": "神谷薫",
+            "summary": "神谷薰为《浪客剑心》中的女主角。薰从小就失去了母亲，父亲失踪，但她没有因为失去双亲而被击倒，反而更坚强积极面对自己的人生。以「活留口剑术─活人剑」为精神的神谷活心流之代理师父。在城内主持一家道场，有竹剑美少女之外号，可见其剑术之精湛。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/34/01/18129_prsn_YmC17.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/34/01/18129_prsn_YmC17.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/34/01/18129_prsn_YmC17.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/34/01/18129_prsn_YmC17.jpg"
+                    },
+                    "name": "藤谷美紀",
+                    "short_summary": "",
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 18129,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 31873
+        }
+    ]
+}

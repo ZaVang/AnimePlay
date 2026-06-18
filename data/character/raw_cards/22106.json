@@ -1,0 +1,52 @@
+{
+    "birth_mon": 9,
+    "gender": "female",
+    "birth_day": 7,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3f/4f/22106_crt_sn55G.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/3f/4f/22106_crt_sn55G.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/3f/4f/22106_crt_sn55G.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3f/4f/22106_crt_sn55G.jpg"
+    },
+    "summary": "出生国家：温德布卢姆王国\r\n拥有GEM・称号：苍天之青玉（Blue Sky Sapphire，起源：移民历前所创造的超级Meister GEM 蕾娜家的传家宝玉）\r\n主人：温德布卢姆王国女王－真白‧布兰‧杜‧温德布伦\r\n本作品主角，生日是9月7日与妮娜和真白同一天，蕾娜‧赛雅斯的女儿，自小和母亲分离，个性非常开朗和和蔼可亲，不过，有着绝对也不死心的精神，擅自与真白签订契约，是奈绪的服务员，在风华事变中，一边苦恼自己的宿命，一边也很认真的在终结战斗，在Zwei已经变成真白的乙HiME了，不过至今还未能毕业，战袍已经从Ver1.5进化到Ver2.0，能使用苍天之青玉的真正力量。另外，爱莉卡的舞斗服裤子本来为黑色，得到“苍天之青玉”的真正力量后变成蓝白相间的裤子。",
+    "name": "アリカ・ユメミヤ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "爱莉卡‧梦宫"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "夢宮ありか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Arika Yumemiya"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "9月7日"
+        }
+    ],
+    "stat": {
+        "comments": 3,
+        "collects": 13
+    },
+    "id": 22106,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        1028
+    ]
+}

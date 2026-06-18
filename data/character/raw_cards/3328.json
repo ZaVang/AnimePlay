@@ -1,0 +1,65 @@
+{
+    "birth_mon": 2,
+    "gender": "male",
+    "birth_day": 23,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c6/00/3328_crt_cMG6F.jpg?r=1648101550",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c6/00/3328_crt_cMG6F.jpg?r=1648101550",
+        "large": "https://lain.bgm.tv/pic/crt/l/c6/00/3328_crt_cMG6F.jpg?r=1648101550",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c6/00/3328_crt_cMG6F.jpg?r=1648101550"
+    },
+    "summary": "继承了三国名将周瑜之名的高中生斗士。南阳新四天王之一，擅长以战略家的名义制定战略，有王佐之才的能力，精通少林拳及八卦掌。原来在学校中并不高调，但因周瑜之名已经受到王允子师的留意，在青梅竹马孙策伯符转校以后也被迫登上斗争的舞台，也因此下定了要保护伯符的决心，不想重蹈一千八百年前的覆辙，并以此为动力不断变强。之后在原作的赤壁之战中表现活跃，与诸葛亮孔明一起构造出了赤壁之战的整体战略。",
+    "name": "周瑜公瑾",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "周瑜公瑾"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "しゅうゆ こうきん"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shuuyu Koukin"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "2月23日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "165cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "stat": {
+        "comments": 1,
+        "collects": 6
+    },
+    "id": 3328,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        3909
+    ]
+}

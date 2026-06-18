@@ -1,0 +1,57 @@
+{
+    "id": 112146,
+    "name": "OVERLORD",
+    "image_path": "data\\images\\anime\\112146.jpg",
+    "points": 6.9,
+    "cost": 1,
+    "rarity": "N",
+    "description": "作品主要讲述了某天，一款掀起大热潮的VRMMORPG「YGGDRASIL」原本会停止一切服务，但即使过了结束时间，玩家也不会退出游戏，NPC也有了各自的思想。现实世界中喜爱电玩的主人公铃木悟（真名）在等待系统强制登出时，与“安兹·乌尔·恭”公会的成员意外穿越到了异世界，并且自己还变成了拥有骷髅外表的最强魔法师——“飞鼠”。就这样，真正的奇幻传说正式拉开帷幕。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "小说改"
+    ],
+    "date": "2015-07-07",
+    "rating_rank": 3019,
+    "rating_score": 6.9,
+    "rating_total": 14523,
+    "main_character_ids": [
+        33391
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b1/36/33391_crt_s38wD.jpg?r=1604343668",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b1/36/33391_crt_s38wD.jpg?r=1604343668",
+                "large": "https://lain.bgm.tv/pic/crt/l/b1/36/33391_crt_s38wD.jpg?r=1604343668",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b1/36/33391_crt_s38wD.jpg?r=1604343668"
+            },
+            "name": "アインズ・ウール・ゴウン",
+            "summary": "职位：至高无上的四十一位至尊\r\n住处：纳萨力克地下大坟墓地下第九层的房间\r\n属性：极恶↔正义值:-500\r\n种族：骷髅魔法师(Skeleton Mage)Lv15\r\n死者大魔法师(Elder Lich)Lv10\r\n死之统治者(オーバーロード overlord)Lv5\r\n职业：死灵法师(ネクロマンサー Necromancer)Lv10\r\n巅峰不死者Lv10\r\n持有：十一个世界级道具\r\n公会武器：安兹乌尔恭之杖\r\n<复活魔杖/wand of resurrection>(蘇生の短杖/ワンド・オブ・リザレクション)\r\n无限背包(インフィニティ・ハヴァサック)\r\n在网路游戏「YGGDRASIL」关闭运营的最后，依旧留在游戏中等待系统强制登出时，意外穿越至异世界的本书的主人公。现实世界当中是一名喜欢电玩的普通青年，在游戏中是一名拥有骷髅外表的最强魔法咏唱者，所属「安兹．乌尔．恭」公会。\r\n元角色名音译为“莫莫伽”。\r\n在第一卷中把自己的名字改为安兹·乌尔·恭，作为纳萨里克的象征及核心。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/91/df/4256_prsn_fbfFG.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/91/df/4256_prsn_fbfFG.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/91/df/4256_prsn_fbfFG.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/91/df/4256_prsn_fbfFG.jpg"
+                    },
+                    "name": "日野聡",
+                    "short_summary": "经常带着眼镜的日野聪，不抽烟，喜欢口香糖和FRISK。\r\n美国出生东京长大。5岁之前生活在旧金山，当时使用着英语会话，但因为年幼的关系并没有清楚记得这样的事情。\r\n十几岁开始从属于儿童剧团。\r\n刚出道时主要是以西洋电影及电视系列剧的配音为主，直到灼眼的夏娜（坂井悠二）后，在日本动画方面的配音才多了起来。经常为J.C.STAFF、Geneon Entertainment制作的TV动画献声。其他方面、出演Square Enix的关联作品也很多。\r\n\r\n2015年1月11日，在博客宣布自己与声优·中岛沙树结婚的消息，目前育有一子。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 4256,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 33391
+        }
+    ]
+}

@@ -1,0 +1,173 @@
+{
+    "id": 1905,
+    "name": "夏日大作战",
+    "image_path": "data\\images\\anime\\1905.jpg",
+    "points": 7.7,
+    "cost": 2,
+    "rarity": "R",
+    "description": "高二的暑假，性格懦弱的天才数学少年小矶健二答应为憧憬的前辈夏希打工。于是，两人来到夏希的长野老家。没想到夏希的老家是一个有着27人的大家族。夏希的曾祖母荣则是从室町时代起就延续下来的战国一家·阵内家的大当家，也是这一族的一家之主。全家人为了2010年8月1日荣的90岁生日从全国各地赶来祝寿。这个时候，夏希突然拜托健二假装成她的未婚夫……于是，在荣的强留下，健二不得不在乡下多住几天。面对夏希亲戚的盛情款待，健二拼命扮演着未婚夫的角色倍感压力。然后一天夜里，他突然收到一封有着神秘数字的短信。擅长数学的健二立刻对这些数字沉迷起来并想方法解读……第二天，世界发生了天翻地覆的变化。欺骗了健二的神秘人物将世界陷入了混乱……“一切都由我们一族一力承担！”在荣的号令下，健二、夏希还有阵内家的人们团结起来一致对抗世界危机……",
+    "type": 2,
+    "platform": "剧场版",
+    "episodes_for_hangup": 1,
+    "synergy_tags": [
+        "科幻",
+        "剧场版",
+        "日本",
+        "原创"
+    ],
+    "date": "2009-08-01",
+    "rating_rank": 486,
+    "rating_score": 7.7,
+    "rating_total": 11416,
+    "main_character_ids": [
+        788,
+        789,
+        6410
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c1/5d/788_QvxuR.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c1/5d/788_QvxuR.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/c1/5d/788_QvxuR.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c1/5d/788_QvxuR.jpg"
+            },
+            "name": "小磯健二",
+            "summary": "17岁，东京都内久远寺院高中二年级学生，从属于物理部，性格畏缩的理科男子。原本打算在暑假里和朋友一起做网络维护来打工，不过，出乎意料的被自己憧憬的前辈筱原夏希邀请，访问其位于长野县上田市的老家。拿手的科目是数学，不过却很遗憾的失去了数学奥林匹克运动会的日本代表选手权的资格。只是他那最拿手的数学，不久以后，就将成为解决世界的危机的王牌。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b0/4d/10972_prsn_HTDq2.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b0/4d/10972_prsn_HTDq2.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/b0/4d/10972_prsn_HTDq2.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b0/4d/10972_prsn_HTDq2.jpg"
+                    },
+                    "name": "神木隆之介",
+                    "short_summary": "　  自出道以来，神木隆之介跃于电视剧、电影、电视广告、电台广播剧等多个领域。1999年至今每年都有参加电视剧或电影的演出。8岁时，天真可爱又富表现力的声音被宫崎骏发掘，作为吉卜力工作室培养出来的声优，已参与过《千与千寻》等5部吉卜力出品的作品的配音。还曾在2005年的爱知世博会闭幕式上作为日本儿童的代表主持文艺演出，并在同年举行的第18届东京国际电影节上担当开幕宣言人。",
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 10972,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3c/75/79084_prsn_XxFRx.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/3c/75/79084_prsn_XxFRx.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/3c/75/79084_prsn_XxFRx.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3c/75/79084_prsn_XxFRx.jpg"
+                    },
+                    "name": "何志威",
+                    "short_summary": "台湾男性配音员。\r\n\r\n声线属于中偏高类型，常饰演青少年类型角色。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 79084,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 788
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/68/05/789_1O1hq.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/68/05/789_1O1hq.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/68/05/789_1O1hq.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/68/05/789_1O1hq.jpg"
+            },
+            "name": "篠原夏希",
+            "summary": "1992年（平成4年）7月19日生。18岁，筱原家的长女，同时亦是阵内荣的曾孙女。从属于剑术部的校园偶像，健二的前辈。为了向曾祖母阵内荣祝寿而回到了位于长野县的上田市的老家。为了完成与曾祖母“下次再来的话，就把未婚夫带来”的约定，拜托小矶健二来冒充自己的未婚夫。是个喜欢穿白色连衣裙的清爽少女，不过其实是个天然呆。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f4/f4/5116_prsn_PkdTT.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f4/f4/5116_prsn_PkdTT.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/f4/f4/5116_prsn_PkdTT.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f4/f4/5116_prsn_PkdTT.jpg"
+                    },
+                    "name": "桜庭ななみ",
+                    "short_summary": "日本の女優。鹿児島県出身。スウィートパワー所属。\r\n\r\nデビュー前よりその容姿は地元で話題になっており、「鹿児島県にものすごい美少女がいる」という噂を聞きつけた現事務所からスカウトされて、2007年夏に芸能界入りする。スカウトされた時は、地元のゲームセンターで友人達とプリクラの撮影中だった。\r\n2008年、2月9日放送の『栞と紙魚子の怪奇事件簿』第6話で、デビュー。同年5月、同時公開の『同級生』と『体育館ベイビー』で、映画初出演。また、ミスマガジン2008グランプリに約17,000人の中から選ばれ、同年の全国高校ラグビーフットボール大会においてイメージキャラクターを務めた。\r\n2009年、劇場アニメ『サマーウォーズ』で声優に初挑戦。10月、TBSのホームページで配信された自身出演のネットドラマをきっかけに演劇・音楽グループbump.yが結成され、メンバーとなる。\r\n2010年、日本雑誌協会キャンペーンキャラクターに選出された。ヒロインを演じた映画『最後の忠臣蔵』では高い評価を受け、日本アカデミー賞新人俳優賞など、多数の賞を受賞する。\r\n2012年10月17日、20歳の誕生日に記念写真集「Birth」を発売。\r\n2014年4月、6月末にbump.yを卒業することを発表。\r\n\r\n・趣味は、ピアノ、アコーディオン中国語（北京語）、映画鑑賞。特技は中国語（北京語中級レベル以上）・韓国語（日常会話レベル・テニス・バレーボール・書道。\r\n・ドラマ『ふたつのスピカ』出演時には着衣水泳のシーンを演じているが、元々カナヅチだったため、事前に特訓したとのこと。\r\n・『東京少女』のプロデューサー・丹羽多聞アンドリウは、桜庭を「長澤まさみさんのような女優になる」と評している。\r\n・姉と弟がいる。\r\n・性格は、先のことをクヨクヨ考えずに行動する。\r\n・好きな人のタイプは、親を大事にしている人。\r\n・好きな芸能人は、沢尻エリカと長渕剛、相武紗季、長澤まさみ。\r\n・好きなアニメは、『クレヨンしんちゃん』。",
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 5116,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d9/0d/72274_prsn_jjZfO.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d9/0d/72274_prsn_jjZfO.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/d9/0d/72274_prsn_jjZfO.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d9/0d/72274_prsn_jjZfO.jpg"
+                    },
+                    "name": "楊凱凱",
+                    "short_summary": "台湾女性配音员，声域极广，声线属中偏高类型。常饰演少女类型角色，业界中时常与许淑嫔并称典型“天使声”代表。\r\n配音的代表作品有《小魔女Doremi》的春风Doremi、《魔卡少女樱》中的木之本樱（小樱）、《哆啦A梦》野比大雄、《真珠美人鱼》的七海露西亚等。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 72274,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 789
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/4c/32/6410_crt_K8w4o.jpg?r=1449746118",
+                "grid": "https://lain.bgm.tv/pic/crt/g/4c/32/6410_crt_K8w4o.jpg?r=1449746118",
+                "large": "https://lain.bgm.tv/pic/crt/l/4c/32/6410_crt_K8w4o.jpg?r=1449746118",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4c/32/6410_crt_K8w4o.jpg?r=1449746118"
+            },
+            "name": "池沢佳主馬",
+            "summary": "13岁，夏希的表弟。阵内荣曾孙之一。总是喜欢一个人待在房间里，看起来与普通的宅男少年没有什么不同，实际却是网络格斗大赛的世界冠军。在OZ中的身份为“KING KAZMA（王者·和马）”，是拥有跨国企业赞助的超级玩家。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0d/2b/4761_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/0d/2b/4761_seiyu_anidb.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/0d/2b/4761_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0d/2b/4761_seiyu_anidb.jpg"
+                    },
+                    "name": "谷村美月",
+                    "short_summary": "",
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 4761,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d6/aa/58216_prsn_42A0C.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d6/aa/58216_prsn_42A0C.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/d6/aa/58216_prsn_42A0C.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d6/aa/58216_prsn_42A0C.jpg"
+                    },
+                    "name": "雷碧文",
+                    "short_summary": "台灣女性配音員。\r\n對電視幕後工作有興趣，差點因此在柴智屏創立的可米公司創業或是擔任詞曲製作人，但因為當時學習配音的關係而作罷。\r\n在從事配音工作前曾做過電視、廣播節目等相關工作，如替兒童美語雜誌錄製童謠、在廣播節目擔任中文主播，也做過電視綜藝節目的執行製作。\r\n偶然在報紙上有錄音室徵求行政人員外同時應徵培訓成為配音員的人才，覺得自己的國語還不錯因而跑去應徵；之後在錄音室待了一年半學習基本的配音技巧，再去外面跟班一年左右，就這樣慢慢正式進入配音圈。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 58216,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 6410
+        }
+    ]
+}

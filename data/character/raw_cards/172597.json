@@ -1,0 +1,66 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5a/cc/172597_crt_fc5aF.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/5a/cc/172597_crt_fc5aF.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/5a/cc/172597_crt_fc5aF.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5a/cc/172597_crt_fc5aF.jpg"
+    },
+    "summary": "本作的主角，因祖先圣骑士希斯托牙·修古利亚在讨伐魔王时失去一臂一足\"英雄的伤痕\"，导致后代子孙有些会缺乏某些部位，而他则是失明。也因为先天性失明，导致小时候觉得世界很无趣，性格阴暗。直到遇到担任魔术家教的洁尼教导水魔法才对世界产生希望。蜜莉卡的未婚夫。\r\n\r\n本作の主人公。かつて魔王を倒した英雄、その子孫に時々現れるという「英雄の傷跡」を持っており、生まれつき目が見えない。水魔術の扱いに非常に長けており、魔術で新たな目を作るという目標を持っている。侍女のイコの影響で少々変わった紳士になりつつある。",
+    "name": "クノン・グリオン",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "库诺·格里翁"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "库诺·古里翁"
+                },
+                {
+                    "k": "韩语名",
+                    "v": "쿠논 그리온"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Kunon Gurion"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": [
+                {
+                    "k": "动画官网",
+                    "v": "http://kunonanime.jp/"
+                },
+                {
+                    "k": "wiki",
+                    "v": "https://zh.wikipedia.org/wiki/%E9%AD%94%E8%A1%93%E5%B8%AB%E5%BA%AB%E8%AB%BE%E7%9C%8B%E5%BE%97%E8%A6%8B%E4%B8%80%E5%88%87#%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9"
+                }
+            ]
+        }
+    ],
+    "stat": {
+        "comments": 17,
+        "collects": 15
+    },
+    "id": 172597,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        534674
+    ]
+}

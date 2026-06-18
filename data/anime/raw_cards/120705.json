@@ -1,0 +1,492 @@
+{
+    "date": "2015-10-10",
+    "platform": "TV",
+    "images": {
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/bf/69/120705_vJwsZ.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/bf/69/120705_vJwsZ.jpg",
+        "large": "https://lain.bgm.tv/pic/cover/l/bf/69/120705_vJwsZ.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/bf/69/120705_vJwsZ.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/bf/69/120705_vJwsZ.jpg"
+    },
+    "summary": "",
+    "name": "終わりのセラフ 名古屋決戦編",
+    "name_cn": "终结的炽天使 名古屋决战篇",
+    "tags": [
+        {
+            "name": "漫画改",
+            "count": 634,
+            "total_cont": 0
+        },
+        {
+            "name": "2015年10月",
+            "count": 616,
+            "total_cont": 0
+        },
+        {
+            "name": "WITSTUDIO",
+            "count": 552,
+            "total_cont": 0
+        },
+        {
+            "name": "战斗",
+            "count": 506,
+            "total_cont": 0
+        },
+        {
+            "name": "TV",
+            "count": 484,
+            "total_cont": 0
+        },
+        {
+            "name": "终结的炽天使",
+            "count": 450,
+            "total_cont": 0
+        },
+        {
+            "name": "奇幻",
+            "count": 326,
+            "total_cont": 0
+        },
+        {
+            "name": "吸血鬼",
+            "count": 324,
+            "total_cont": 0
+        },
+        {
+            "name": "澤野弘之",
+            "count": 275,
+            "total_cont": 0
+        },
+        {
+            "name": "2015",
+            "count": 270,
+            "total_cont": 0
+        },
+        {
+            "name": "漫改",
+            "count": 235,
+            "total_cont": 0
+        },
+        {
+            "name": "泽野弘之",
+            "count": 104,
+            "total_cont": 0
+        },
+        {
+            "name": "热血",
+            "count": 103,
+            "total_cont": 0
+        },
+        {
+            "name": "日本",
+            "count": 69,
+            "total_cont": 0
+        },
+        {
+            "name": "镜贵也",
+            "count": 68,
+            "total_cont": 0
+        },
+        {
+            "name": "中村悠一",
+            "count": 37,
+            "total_cont": 0
+        },
+        {
+            "name": "续作",
+            "count": 25,
+            "total_cont": 0
+        },
+        {
+            "name": "山本ヤマト",
+            "count": 18,
+            "total_cont": 0
+        },
+        {
+            "name": "徳土大介",
+            "count": 16,
+            "total_cont": 0
+        },
+        {
+            "name": "2015年",
+            "count": 13,
+            "total_cont": 0
+        },
+        {
+            "name": "早见沙织",
+            "count": 12,
+            "total_cont": 0
+        },
+        {
+            "name": "基",
+            "count": 11,
+            "total_cont": 0
+        },
+        {
+            "name": "动画",
+            "count": 10,
+            "total_cont": 0
+        },
+        {
+            "name": "入野自由",
+            "count": 9,
+            "total_cont": 0
+        },
+        {
+            "name": "WIT_STUDIO",
+            "count": 9,
+            "total_cont": 0
+        },
+        {
+            "name": "BL",
+            "count": 9,
+            "total_cont": 0
+        },
+        {
+            "name": "樱井孝宏",
+            "count": 7,
+            "total_cont": 0
+        },
+        {
+            "name": "日漫",
+            "count": 7,
+            "total_cont": 0
+        },
+        {
+            "name": "悠木碧",
+            "count": 7,
+            "total_cont": 0
+        },
+        {
+            "name": "小野贤章",
+            "count": 7,
+            "total_cont": 0
+        }
+    ],
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "终结的炽天使 名古屋决战篇"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Owari no Seraph: Nagoya Kessen Hen"
+                },
+                {
+                    "v": "Seraph of the End: Battle in Nagoya"
+                },
+                {
+                    "v": "终结的炽天使 第2期"
+                },
+                {
+                    "v": "终结的炽天使 后半"
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "12"
+        },
+        {
+            "key": "放送开始",
+            "value": "2015年10月10日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期六"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://owarino-seraph.jp/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "TOKYO MX"
+        },
+        {
+            "key": "其他电视台",
+            "value": "BS11 / テレビ愛知 / MBS / ニコニコ生放送"
+        },
+        {
+            "key": "播放结束",
+            "value": "2015年12月26日"
+        },
+        {
+            "key": "导演",
+            "value": "徳土大介"
+        },
+        {
+            "key": "音乐",
+            "value": "澤野弘之、和田貴史、橘麻美、白石めぐみ"
+        },
+        {
+            "key": "Copyright",
+            "value": "©鏡貴也・山本ヤマト・降矢大輔／集英社・終わりのセラフ製作委員会"
+        },
+        {
+            "key": "原作",
+            "value": "原作：鏡貴也（集英社「ジャンプスクエア」連載）‖漫画：山本ヤマト‖コンテ構成：降矢大輔"
+        },
+        {
+            "key": "企画",
+            "value": "臼井久人、渡辺直樹、和田丈嗣"
+        },
+        {
+            "key": "人物设定",
+            "value": "門脇聡"
+        },
+        {
+            "key": "イメージボード",
+            "value": "品川宏樹"
+        },
+        {
+            "key": "道具设计",
+            "value": "胡拓磨"
+        },
+        {
+            "key": "总作画监督",
+            "value": "門脇聡、山田歩"
+        },
+        {
+            "key": "主动画师",
+            "value": "富田恵美、加藤美穂、杉崎由佳、胡拓磨"
+        },
+        {
+            "key": "色彩设计",
+            "value": "沼畑富美子"
+        },
+        {
+            "key": "美术监督",
+            "value": "吉岡誠子"
+        },
+        {
+            "key": "美术设计",
+            "value": "藤井一志"
+        },
+        {
+            "key": "背景美术",
+            "value": "スタジオ Pablo"
+        },
+        {
+            "key": "摄影监督",
+            "value": "頓所信二"
+        },
+        {
+            "key": "CG 导演",
+            "value": "さいとうつかさ"
+        },
+        {
+            "key": "摄影",
+            "value": "チップチューン"
+        },
+        {
+            "key": "2D设计",
+            "value": "荒木宏文"
+        },
+        {
+            "key": "剪辑",
+            "value": "編集：宇都宮正記"
+        },
+        {
+            "key": "音响监督",
+            "value": "鶴岡陽太"
+        },
+        {
+            "key": "音乐制作",
+            "value": "堀口泰史（レジェンドア）"
+        },
+        {
+            "key": "总制片人",
+            "value": "上田耕行、足立聡史"
+        },
+        {
+            "key": "制片人",
+            "value": "服部健太郎、大山礼子、和田丈嗣"
+        },
+        {
+            "key": "动画制作",
+            "value": "WIT STUDIO"
+        },
+        {
+            "key": "动画制片人",
+            "value": "中武哲也"
+        },
+        {
+            "key": "系列构成",
+            "value": "瀬古浩司"
+        },
+        {
+            "key": "副导演",
+            "value": "肥塚正史"
+        },
+        {
+            "key": "製作",
+            "value": "終わりのセラフ製作委員会"
+        },
+        {
+            "key": "OP・ED 分镜",
+            "value": "肥塚正史 / 徳土大介、品川宏樹"
+        },
+        {
+            "key": "主题歌编曲",
+            "value": "八木沼悟志、藤間仁"
+        },
+        {
+            "key": "主题歌作曲",
+            "value": "八木沼悟志、藤間仁"
+        },
+        {
+            "key": "主题歌作词",
+            "value": "八木沼悟志、やなぎなぎ"
+        },
+        {
+            "key": "主题歌演出",
+            "value": "fripSide、やなぎなぎ"
+        }
+    ],
+    "rating": {
+        "rank": 8725,
+        "total": 3998,
+        "count": {
+            "1": 31,
+            "2": 52,
+            "3": 139,
+            "4": 385,
+            "5": 922,
+            "6": 1546,
+            "7": 651,
+            "8": 191,
+            "9": 25,
+            "10": 56
+        },
+        "score": 5.7
+    },
+    "total_episodes": 17,
+    "collection": {
+        "on_hold": 155,
+        "dropped": 215,
+        "wish": 465,
+        "collect": 7812,
+        "doing": 225
+    },
+    "id": 120705,
+    "eps": 12,
+    "meta_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "漫画改",
+        "战斗"
+    ],
+    "volumes": 0,
+    "series": false,
+    "locked": false,
+    "nsfw": false,
+    "type": 2,
+    "main_character_ids": [
+        28623,
+        28624,
+        28625
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e5/45/28623_crt_yQCkv.jpg?r=1420137123",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e5/45/28623_crt_yQCkv.jpg?r=1420137123",
+                "large": "https://lain.bgm.tv/pic/crt/l/e5/45/28623_crt_yQCkv.jpg?r=1420137123",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e5/45/28623_crt_yQCkv.jpg?r=1420137123"
+            },
+            "name": "百夜優一郎",
+            "summary": "8岁时母亲自杀，在差点被父亲杀死的时候被送到百夜孤儿院。融入了新家庭后遇上毁灭性的病毒爆发，此后4年一直为吸血鬼的供体。在好友米迦尔舍命相助下从地下都市桑古奈姆逃出，之后受到日本帝鬼军的保护。为了报复杀死家人的吸血鬼，选择投身战斗。视百夜米迦尔为最重要的人。实则是百夜教的人体试验体，身体里有一部分不是人类。在漫画第十三话中非人类部分暴走觉醒，企图杀死靠近的人，醒来后失去暴走期间的记忆。现为吸血鬼歼灭部队“月鬼组”一员。与柊筱娅、早乙女与一、君月士方、三宫三叶为五人小队。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/49/47/4258_prsn_99973.jpg?r=1552624013",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/49/47/4258_prsn_99973.jpg?r=1552624013",
+                        "large": "https://lain.bgm.tv/pic/crt/l/49/47/4258_prsn_99973.jpg?r=1552624013",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/49/47/4258_prsn_99973.jpg?r=1552624013"
+                    },
+                    "name": "入野自由",
+                    "short_summary": "日本の男性声優、俳優、歌手。ジャンクション所属。既婚。\r\n\r\n両親と観に行った劇団四季の舞台に興味を持ったことがきっかけで、4歳の時劇団ひまわりに入団し、その2年後に歴史ドラマ『コルチャック先生』（原題：Korczak）の幼い少年役を演じ俳優デビュー。同劇団には2006年3月まで所属し、ジャンクションへ移籍。\r\n\r\n声優デビュー作は『逮捕しちゃうぞ』のショウ役で、楽しかったことを覚えているという。2001年に公開された『千と千尋の神隠し』（日本歴代興行収入第2位）でメインキャラクターのハク役のオーディションに合格する。同年『パラッパラッパー』のパラッパ（初代）役でテレビアニメ初主演を果たし、2002年の『キングダム ハーツ』で主役のソラを演じ知名度を広げた。2012年時点で芸歴20年を重ねており、2011年頃のインタビューでは「昔は年上ばっかりだったが、最近は自分と同年代の人と共演することが増えた」と語っている。\r\n\r\n2009年6月24日、Kiramuneレーベルから歌手デビュー。\r\n\r\n2010年、明治学院大学経済学部経営学科卒業。同年5月11日、Kiramuneレーベル内新ユニットとして、神谷浩史と「KAmiYU」を結成し、11月6日にデビュー。\r\n\r\n2016年11月30日、翌年1月のソロライブを最後に海外留学のため、活動を一時休業することをブログで発表。\r\n\r\n2021年9月3日、所属事務所ジャンクションの公式サイトにて結婚を報告した。",
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 4258,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 28623
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/bd/5b/28624_crt_Egkc1.jpg?r=1420139194",
+                "grid": "https://lain.bgm.tv/pic/crt/g/bd/5b/28624_crt_Egkc1.jpg?r=1420139194",
+                "large": "https://lain.bgm.tv/pic/crt/l/bd/5b/28624_crt_Egkc1.jpg?r=1420139194",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bd/5b/28624_crt_Egkc1.jpg?r=1420139194"
+            },
+            "name": "百夜ミカエラ",
+            "summary": "优一郎的好友，同时也是最重要的家人。小时候被父母虐待然后抛弃，进入了百夜孤儿院。为人开朗。为了让优一郎逃出，被吸血鬼重伤濒临死亡（优一郎以为其已经死亡），后喝下第三始祖克鲁鲁·采佩西的血成为吸血鬼，得到贵族地位和力量。第三话以吸血鬼的身份同费里德一起出现。第十三话与家人优重逢，企图带走优，两人离开人类和吸血鬼的世界。小优眼见同伴们被吸血鬼吸血，导致体内非人类部分觉醒。第十四话米迦尔未能阻止优的暴走，并且没法带回昏迷的优，表露出了对优加以利用的人类的憎恨。\r\n    与百夜优一郎之间有着不可磨灭的羁绊。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/22/85/4965_prsn_7w6iz.jpg?r=1709906610",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/22/85/4965_prsn_7w6iz.jpg?r=1709906610",
+                        "large": "https://lain.bgm.tv/pic/crt/l/22/85/4965_prsn_7w6iz.jpg?r=1709906610",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/22/85/4965_prsn_7w6iz.jpg?r=1709906610"
+                    },
+                    "name": "小野賢章",
+                    "short_summary": "小野賢章（1989年10月5日－）是日本的男性演員、聲優。福岡縣出生、東京都出身。\r\n以前是劇團向日葵系列的砂岡事務所所屬。2012年9月30日退出約14年所屬的砂岡事務所。目前的事务所为Animo Produce。\r\n2013年12月，宣布将在2014年2月以黑子的篮球 第二季的片尾曲“FANTASTIC TUNE”为个人名义歌手身份出道。\r\n\r\n以哈利波特日语吹替版作为契机而成为声优。本人说过“声优只能以声音来传达事物，不过演员能用表情跟肢体动作表达出来，虽然两边都有困难的地方，不过能作为演员用身体表演也很快乐。”所以并没有特别把声优跟演员的工作区别开来，今后也不会拘泥于声音的工作，会挑战更多共种各样的工作。2014年动过声带息肉切除手术。\r\n从12岁开始的10年间，一直在为哈利波特日语版中的主角哈利·波特配音。当时本人并没有读过哈利波特原作。是因为母亲是哈利波特的大粉丝，所以被母亲劝诱去参加征选会。当确定要饰演主角时，身为哈利波特粉丝的双亲比他还高兴。名字的由来是来自于设计家安部兼章。由于当时还是小学6年级生，不太懂得要怎么表演，所以都是照着导演的指示来配音的，后期渐渐的开始能自己理解该怎么演。在配第三作“哈利波特─阿兹卡班的逃犯”时，因为正处于变声期，所以当中战斗场面的嘶吼声配得非常辛苦。一直拼命努力演出的他，也以变声期作为契机开始会思考更多关于演技的事情。\r\n\r\n2017年2月19日，有相关报道证实与同是声优的花泽香菜是恋人关系，并同居于东京港区某公寓。本人亦于2017年2月22日在个人部落格承认交往。\r\n2020年7月8日，宣布与花泽香菜结婚。\r\n2025年9月14日，宣布与花泽香菜离婚。",
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 4965,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 28624
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/64/61/28625_crt_pLxZl.jpg?r=1420139381",
+                "grid": "https://lain.bgm.tv/pic/crt/g/64/61/28625_crt_pLxZl.jpg?r=1420139381",
+                "large": "https://lain.bgm.tv/pic/crt/l/64/61/28625_crt_pLxZl.jpg?r=1420139381",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/64/61/28625_crt_pLxZl.jpg?r=1420139381"
+            },
+            "name": "一瀬グレン",
+            "summary": "前传小说的男主\r\n日本帝鬼军吸血鬼歼灭部队“月鬼组”的中佐。保护了逃出的优一郎并向其发出邀请。\r\n带领的五人小队成员有：花依小百合少尉、十条美十大佐、雪见时雨少尉、五士典人大佐。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7a/78/4724_prsn_7TvWV.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7a/78/4724_prsn_7TvWV.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/7a/78/4724_prsn_7TvWV.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7a/78/4724_prsn_7TvWV.jpg"
+                    },
+                    "name": "中村悠一",
+                    "short_summary": "爱称是ゆうきゃん，由铃村健一命名。英文标记法为‘yuu-kyan’\r\n与声优的杉田智和的私交良好，是在声优界著名的好友。\r\n兴趣是玩游戏、看电影等。\r\n不喜欢吃拉面。喜欢的食物是肉、奶酪、甜食。\r\n2020年10月1日，宣布从Sigma Seven移籍至INTENTION。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 4724,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 28625
+        }
+    ]
+}

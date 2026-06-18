@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/06/0a/221_92489947d410d897474079c1477_dUrNG.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/06/0a/221_92489947d410d897474079c1477_dUrNG.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/06/0a/221_92489947d410d897474079c1477_dUrNG.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/06/0a/221_92489947d410d897474079c1477_dUrNG.jpg"
+    },
+    "summary": "アルテナの忠実な部下。ソルダの暗殺者。霧香とミレイユに対し、自分を真の「ノワール」と名乗る。",
+    "name": "クロエ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "克罗维"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Chloe"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": [
+                {
+                    "v": "https://www.jvcmusic.co.jp/flyingdog/tv/noir/chara.html"
+                }
+            ]
+        }
+    ],
+    "stat": {
+        "comments": 5,
+        "collects": 15
+    },
+    "id": 221,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        788
+    ]
+}

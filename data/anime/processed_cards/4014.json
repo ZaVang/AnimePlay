@@ -1,0 +1,92 @@
+{
+    "id": 4014,
+    "name": "异邦人 无皇刃谭",
+    "image_path": "data\\images\\anime\\4014.jpg",
+    "points": 7.8,
+    "cost": 2,
+    "rarity": "R",
+    "description": "　　在天下失序、列强割据的战乱时代，僧人祥庵将一名孤儿从中国带到了日本。孤儿名叫仔太郎，他背负着一个惊人的秘密。与祥庵失散后，孤苦无依的仔太郎带着爱犬飞丸前往赤池之国的万觉寺，在途中遇见了神秘剑士“无名”。仔太郎遭到追杀，危急时刻无名救了他一命。从此两人结伴同行。性格乖僻的浪人和紧闭心扉的少年虽然磕磕碰碰不断，但渐渐成了好朋友。\r\n　　白鸾率领的追杀组织还是抓住了仔太郎，他们开始着手筹备某种仪式。金发碧眼的剑士“罗狼”也是追杀组织中的一员，他虽然听命行事但并不真正在意组织的目的，对他来说，寻找可以与自己匹敌的对手才是生命的意义。罗狼与无名之间的生死对决拉开了帷幕……",
+    "type": 2,
+    "platform": "剧场版",
+    "episodes_for_hangup": 1,
+    "synergy_tags": [
+        "剧场版",
+        "日本",
+        "原创",
+        "战斗"
+    ],
+    "date": "2007-09-29",
+    "rating_rank": 364,
+    "rating_score": 7.8,
+    "rating_total": 5108,
+    "main_character_ids": [
+        7078,
+        26072
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/da/c3/7078_crt_anidb.jpg?r=1413817061",
+                "grid": "https://lain.bgm.tv/pic/crt/g/da/c3/7078_crt_anidb.jpg?r=1413817061",
+                "large": "https://lain.bgm.tv/pic/crt/l/da/c3/7078_crt_anidb.jpg?r=1413817061",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/da/c3/7078_crt_anidb.jpg?r=1413817061"
+            },
+            "name": "仔太郎",
+            "summary": "",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fa/13/4588_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/fa/13/4588_seiyu_anidb.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/fa/13/4588_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fa/13/4588_seiyu_anidb.jpg"
+                    },
+                    "name": "知念侑李",
+                    "short_summary": "知念 侑李（ちねん ゆうり、1993年11月30日- ）は、日本の歌手、アイドル、俳優、タレントで、男性アイドルグループ・Hey! Say! JUMPのメンバー。\r\n\r\n静岡県浜松市出身。ジャニーズ事務所所属。",
+                    "career": [
+                        "artist",
+                        "actor"
+                    ],
+                    "id": 4588,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 7078
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/9c/bd/26072_crt_00P2z.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/9c/bd/26072_crt_00P2z.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/9c/bd/26072_crt_00P2z.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9c/bd/26072_crt_00P2z.jpg"
+            },
+            "name": "名無し",
+            "summary": "一个舍弃名字，拥有一流剑术的无名氏浪人。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/99/de/15373_prsn_Gv4mX.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/99/de/15373_prsn_Gv4mX.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/99/de/15373_prsn_Gv4mX.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/99/de/15373_prsn_Gv4mX.jpg"
+                    },
+                    "name": "長瀬智也",
+                    "short_summary": "出身于神奈川县横滨市青叶区，是日本歌手、乐队主唱、演员、词曲创作者，为杰尼斯事务所旗下团体TOKIO的一员。",
+                    "career": [
+                        "artist",
+                        "actor"
+                    ],
+                    "id": 15373,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 26072
+        }
+    ]
+}

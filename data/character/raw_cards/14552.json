@@ -1,0 +1,53 @@
+{
+    "birth_mon": 9,
+    "gender": "male",
+    "birth_day": 23,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fd/8c/14552_crt_939ZT.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/fd/8c/14552_crt_939ZT.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/fd/8c/14552_crt_939ZT.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fd/8c/14552_crt_939ZT.jpg"
+    },
+    "summary": "城教学院国中部1年C班，在旧校舍与新校舍错纵复杂在一起的学校中迷路，而偶然遇见人称“七大不可思议”旧校舍的幽灵夕子，并且找到她在旧校舍下的遗骸。\r\n唯一可以看见夕子真正样貌的人。\r\n现为阐明在学园内屡次发生的各种各样的怪异现象的原因和找寻夕子的过去而成立奇异调查部。\r\n对恋爱能直接表现好意(主要是夕子)，但经常表现的十分踌躇，或许是适值困惑的年龄。\r\n影夕子出现后，对消去记忆的夕子宣告感情。",
+    "name": "新谷貞一",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "新谷贞一"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "にいやていいち"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Niiya Teiichi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "9月23日"
+        }
+    ],
+    "stat": {
+        "comments": 3,
+        "collects": 8
+    },
+    "id": 14552,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        29060
+    ]
+}

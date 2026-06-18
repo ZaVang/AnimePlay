@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6d/6b/14247_crt_qQMqZ.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/6d/6b/14247_crt_qQMqZ.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/6d/6b/14247_crt_qQMqZ.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6d/6b/14247_crt_qQMqZ.jpg"
+    },
+    "summary": "由母亲一人抚养长大，母亲去世后在从未谋面的父亲安排下进入阿纳海姆电子工业专科学校就读。",
+    "name": "バナージ・リンクス",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "巴纳吉·林克斯"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Banagher Links"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "U.C.0080"
+        }
+    ],
+    "stat": {
+        "comments": 13,
+        "collects": 21
+    },
+    "id": 14247,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        3113
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "birth_mon": 5,
+    "gender": "male",
+    "birth_day": 10,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/30/54/7486_crt_anidb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/30/54/7486_crt_anidb.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/30/54/7486_crt_anidb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/30/54/7486_crt_anidb.jpg"
+    },
+    "summary": "　梦想成为电影制片人，一天放学后在学校楼顶遇见一位穿草莓内裤从天而降的美少女，见到她在夕阳下的美丽身影，淳平顿时迷恋上了她。\r\n 　而在两位损友误导和唆使下，淳平误以为那位美少女就是校花西野司，准备向其告白。并向偶然情况下相识不久的同班同学东城绫寻求意见，且听从小绫的建议，以出人意料的方式向西野司告白，意外地获得小司的芳心后，却发现那天的美少女并不是西野而是东城绫。",
+    "name": "真中淳平",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "真中淳平"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "真中 淳平"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "まなか じゅんぺい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Manaka Junpei"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "5月10日"
+        },
+        {
+            "key": "身高",
+            "value": "170cm"
+        }
+    ],
+    "stat": {
+        "comments": 4,
+        "collects": 5
+    },
+    "id": 7486,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        1415
+    ]
+}

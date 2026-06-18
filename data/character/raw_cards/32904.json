@@ -1,0 +1,44 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/af/0b/32904_crt_m02J9.jpg?r=1432406891",
+        "grid": "https://lain.bgm.tv/pic/crt/g/af/0b/32904_crt_m02J9.jpg?r=1432406891",
+        "large": "https://lain.bgm.tv/pic/crt/l/af/0b/32904_crt_m02J9.jpg?r=1432406891",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/af/0b/32904_crt_m02J9.jpg?r=1432406891"
+    },
+    "summary": "かつて「赤ずきん」だった少女で、組織名ラングハール（長毛のジャーマン・ポインター）が示す通り髪はやや長め。逮捕歴数回（前科なし）の筋金入りの活動家だったが、首都警公安部にその身柄を押さえられて以後は、公安部の意向に沿って動く。\r\n阿川と似通った顔立ちを見込んだ辺見の命令を受け、阿川の姉を騙り伏に近づく。",
+    "name": "雨宮圭",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "雨宫圭"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://ja.wikipedia.org/wiki/%E4%BA%BA%E7%8B%BC_JIN-ROH"
+        }
+    ],
+    "stat": {
+        "comments": 9,
+        "collects": 18
+    },
+    "id": 32904,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        844
+    ]
+}

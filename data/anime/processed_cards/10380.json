@@ -1,7 +1,7 @@
 {
     "id": 10380,
     "name": "命运石之门",
-    "image_path": "data/images/anime/10380.jpg",
+    "image_path": "data\\images\\anime\\10380.jpg",
     "points": 8.8,
     "cost": 6,
     "rarity": "UR",

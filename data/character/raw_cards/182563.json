@@ -1,0 +1,40 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/47/0a/182563_crt_Fq9Da.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/47/0a/182563_crt_Fq9Da.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/47/0a/182563_crt_Fq9Da.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/47/0a/182563_crt_Fq9Da.jpg"
+    },
+    "summary": "魔術適性：生産の魔術\r\n侯爵家の四男に生まれたが、貴族として相応しくない魔術適性だったため、辺境の村へと追放されてしまう。のんびりした仲間想いな性格で、追放先で魔術を活かして楽しく暮らすことに。前世の記憶がある。",
+    "name": "ヴァン・ネイ・フェルティオ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "范恩·奈伊·菲尔提欧"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 3,
+        "collects": 13
+    },
+    "id": 182563,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        554013
+    ]
+}

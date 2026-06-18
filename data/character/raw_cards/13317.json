@@ -1,0 +1,56 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4a/a1/13317_crt_4Fmsy.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/4a/a1/13317_crt_4Fmsy.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/4a/a1/13317_crt_4Fmsy.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4a/a1/13317_crt_4Fmsy.jpg"
+    },
+    "summary": "地球联邦军远东方面军机械化混成大队第08MS小队队长，军衔是少尉。\r\n高达系列中为数不多的一出场就是成年人而且是军人的主人公（另一个是浦木宏）。\r\n出生于Side2的第8号宇宙殖民卫星“伊菲修岛”。U.C.0075年进入军官学校，之后在U.C.0079年由于吉恩对殖民卫星发动毒气袭击，导致天田士郎的家人全部死亡。\r\n同年10月天田从军官学校毕业，配属在东南亚战线，战后消息不明。",
+    "name": "シロー・アマダ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "天田士郎"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "西罗·亚马达"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "斯罗·阿玛达"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shiro Amada"
+                },
+                {
+                    "k": "昵称",
+                    "v": "天天色狼"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 11,
+        "collects": 41
+    },
+    "id": 13317,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        2664
+    ]
+}

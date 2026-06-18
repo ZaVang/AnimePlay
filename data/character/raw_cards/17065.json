@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3f/3d/17065_crt_80oym.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/3f/3d/17065_crt_80oym.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/3f/3d/17065_crt_80oym.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3f/3d/17065_crt_80oym.jpg"
+    },
+    "summary": "本作的男主角，是一名大學生，被沖浦清花的爸爸收養，是個被生母拋棄的孤兒。為了幫助托兒所，不斷的打工。表面上對小鳩不太抱著好意，但到緊要關頭還是會幫她一把。雖然毒舌，實際上是個相當溫柔的好人,討厭雪和聖誕節(因為就是在聖誕節那一天被拋棄的)。漫畫中提到，清和曾經非常喜歡清花老師直到小鳩出現之後。\r\n動畫版收尾中：在小鳩臨走前，陪著自己的行為覺得煩，在小鳩不告而別時，才了解她對自己的重要性。當小鳩的靈魂差點被帶走時，自己的金平糖讓小鳩的瓶子填滿了，使小鳩的願望得以實現。小鳩消失後，記憶被消除，不再記得小鳩，只覺得少了甚麼重要的東西。後來看見小鳩留下的金平糖，才想起她的一切。到處去問人有關於小鳩的事情時，才發現已經沒有人記得她。後來問天使琥珀，才知道小鳩的秘密。四年後，努力考上律師，在繼承案件中，遇見轉世後的小鳩，把金平糖還給小鳩後，讓她想起以前的事，相擁重逢。",
+    "name": "藤本清和",
+    "infobox": [
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "藤本清和"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ふじもと きよかず"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "fujimoto kiyokazu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "stat": {
+        "comments": 1,
+        "collects": 5
+    },
+    "id": 17065,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        2478
+    ]
+}

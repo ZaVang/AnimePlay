@@ -1,0 +1,220 @@
+{
+    "id": 28440,
+    "name": "狼的孩子雨和雪",
+    "image_path": "data\\images\\anime\\28440.jpg",
+    "points": 8,
+    "cost": 2,
+    "rarity": "R",
+    "description": "女大学生的花，与一个在大学教室认识的男子结婚，并成为两个孩子的母亲。\r\n\r\n不过，那个男子是“狼人”，姐姐“雪”和弟弟“雨”都是“狼的孩子”。即便如此，一家人还是在城市里过着幸福的生活。然而，在“雨”出生之后，男子却因为意外而去世。\r\n\r\n对于丈夫去世的悲伤，同时也为孩子未来“人·狼”抉择的担心。花决定带着孩子移居到深山的古居中，于是三人开始了新的生活……",
+    "type": 2,
+    "platform": "剧场版",
+    "episodes_for_hangup": 1,
+    "synergy_tags": [
+        "剧场版",
+        "日本",
+        "原创"
+    ],
+    "date": "2012-07-21",
+    "rating_rank": 260,
+    "rating_score": 8,
+    "rating_total": 8005,
+    "main_character_ids": [
+        17841,
+        17842,
+        17843
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/1b/12/17841_crt_8k2I8.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/1b/12/17841_crt_8k2I8.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/1b/12/17841_crt_8k2I8.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1b/12/17841_crt_8k2I8.jpg"
+            },
+            "name": "花",
+            "summary": "动画中的女主角，生长在单亲家庭、高中时因为父亲身亡而独自生活。她在大学时代遇见男主角“彼”而一见钟情，后来得知他的身份后仍然与他继续生活，并生下两个“狼的孩子”雨与雪。他们一家四口后来在城市的角落过著平静的生活，但是“彼”死亡后；花便带着两个孩子远离都市，共同到田舍町的乡下生活。\r\n\r\n本作の主人公。父子家庭に育つが、高校生の時に父親を亡くし天涯孤独の身となる。東京のはずれにある国立大学の社会学部社会学科に進学。大学生の時に出会った、「彼」（おおかみおとこ）に一目惚れし、彼の正体を知った後もその想いは変わらず、二人の「おおかみこども」雪と雨を産む。「彼」の死を機に田舎へ引っ越し、二人の子供を育てることを決意する。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d6/34/10563_prsn_YwoUK.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d6/34/10563_prsn_YwoUK.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/d6/34/10563_prsn_YwoUK.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d6/34/10563_prsn_YwoUK.jpg"
+                    },
+                    "name": "宮﨑あおい",
+                    "short_summary": "宫崎葵是出生于日本东京的女演员及模特，是平田事务所旗下的艺人。身高163厘米，血型O型，其兄长宫崎将亦为演员，兄妹曾多次共演。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 10563,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/df/82/72263_prsn_9jNJa.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/df/82/72263_prsn_9jNJa.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/df/82/72263_prsn_9jNJa.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/df/82/72263_prsn_9jNJa.jpg"
+                    },
+                    "name": "馮嘉德",
+                    "short_summary": "台湾女性配音演员，多为动画和韩剧作品配音，其丈夫黄天佑亦从事配音行业。\r\n常饰演少女、小男孩等类型角色。\r\n代表作主要有《BLEACH》（井上织姬）、《结界师》（雪村时音）、《凉宫春日的忧郁》（长门有希）等。 ",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 72263,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/17/e1/78953_prsn_zH773.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/17/e1/78953_prsn_zH773.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/17/e1/78953_prsn_zH773.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/17/e1/78953_prsn_zH773.jpg"
+                    },
+                    "name": "連思宇",
+                    "short_summary": "台湾女性配音员、广播节目助理主持人、漫画家、日文翻译员、声音导演。声音甜美可爱，是少女声代表之一。声线极广，主要属于高音类型，通常饰演少女或小女孩类型角色，也能诠释男孩角色。\r\n\r\n出道作品为迪士尼影集《天才学园》，担任主角之一──奥莉。",
+                    "career": [
+                        "mangaka",
+                        "seiyu"
+                    ],
+                    "id": 78953,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 17841
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d3/fc/17842_crt_ZYIA7.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d3/fc/17842_crt_ZYIA7.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/d3/fc/17842_crt_ZYIA7.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d3/fc/17842_crt_ZYIA7.jpg"
+            },
+            "name": "彼",
+            "summary": "雨と雪の父親。本名不明（運転免許証には名前が載っているが、それが本名かどうかは不明）、作中では「彼」と呼ばれる。運転免許証記載の生年月日は昭和54年2月12日。街で運送ドライバーとして働く一方、花の大学に忍び込んで勉強していた。実は、ニホンオオカミの末裔。花との間に2人の子供を授かるが、突然事故で死去する。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d2/64/4198_prsn_WGwHZ.jpg?r=1718961088",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d2/64/4198_prsn_WGwHZ.jpg?r=1718961088",
+                        "large": "https://lain.bgm.tv/pic/crt/l/d2/64/4198_prsn_WGwHZ.jpg?r=1718961088",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d2/64/4198_prsn_WGwHZ.jpg?r=1718961088"
+                    },
+                    "name": "大沢たかお",
+                    "short_summary": "大沢 たかお（おおさわ たかお、1968年3月11日 - ）は、日本の俳優、ナレーター、声優、歌手。東京都出身。コアインターナショナル所属。",
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 4198,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ef/81/47194_prsn_111Sm.jpg?r=1699370488",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ef/81/47194_prsn_111Sm.jpg?r=1699370488",
+                        "large": "https://lain.bgm.tv/pic/crt/l/ef/81/47194_prsn_111Sm.jpg?r=1699370488",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ef/81/47194_prsn_111Sm.jpg?r=1699370488"
+                    },
+                    "name": "蔣鐵城",
+                    "short_summary": "",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 47194,
+                    "type": 2,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/81/63/78972_prsn_Z2ZPK.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/81/63/78972_prsn_Z2ZPK.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/81/63/78972_prsn_Z2ZPK.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/81/63/78972_prsn_Z2ZPK.jpg"
+                    },
+                    "name": "黃天佑",
+                    "short_summary": "台湾男性配音员。妻子冯嘉德亦从事配音行业。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 78972,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 17842
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/71/b1/17843_crt_4e2WO.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/71/b1/17843_crt_4e2WO.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/71/b1/17843_crt_4e2WO.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/71/b1/17843_crt_4e2WO.jpg"
+            },
+            "name": "雪",
+            "summary": "おおかみこどもで、雨の姉。名前は、雪の日に生まれたことから名付けられた。お転婆で活発な性格だが、小学校生活の中で、自分のような女子がいないことを知り、淑やかに振る舞うようになる。悩んだ末に、「人間」として生きることを選ぶ。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5f/f1/18327_prsn_HxwB4.jpg?r=1726984148",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/5f/f1/18327_prsn_HxwB4.jpg?r=1726984148",
+                        "large": "https://lain.bgm.tv/pic/crt/l/5f/f1/18327_prsn_HxwB4.jpg?r=1726984148",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5f/f1/18327_prsn_HxwB4.jpg?r=1726984148"
+                    },
+                    "name": "黒木華",
+                    "short_summary": "黑木华（日语：黒木 華，1990年3月14日－），是日本大阪府出身的女演员。京都造形艺术大学艺术学院电影系毕业，PAPADO公司所属，身高164CM，血型B型。",
+                    "career": [
+                        "actor"
+                    ],
+                    "id": 18327,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9e/94/21610_prsn_HM2T8.jpg?r=1456325339",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/9e/94/21610_prsn_HM2T8.jpg?r=1456325339",
+                        "large": "https://lain.bgm.tv/pic/crt/l/9e/94/21610_prsn_HM2T8.jpg?r=1456325339",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9e/94/21610_prsn_HM2T8.jpg?r=1456325339"
+                    },
+                    "name": "大野百花",
+                    "short_summary": "日本の女優（元・子役）である。東京都出身。アミューズ所属。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 21610,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/56/66/79118_prsn_sk33N.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/56/66/79118_prsn_sk33N.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/56/66/79118_prsn_sk33N.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/56/66/79118_prsn_sk33N.jpg"
+                    },
+                    "name": "林沛笭",
+                    "short_summary": "台湾女性配音员。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 79118,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 17843
+        }
+    ]
+}

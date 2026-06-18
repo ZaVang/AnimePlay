@@ -1,0 +1,61 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9d/e2/119365_crt_Zq5i3.jpg?r=1674008600",
+        "grid": "https://lain.bgm.tv/pic/crt/g/9d/e2/119365_crt_Zq5i3.jpg?r=1674008600",
+        "large": "https://lain.bgm.tv/pic/crt/l/9d/e2/119365_crt_Zq5i3.jpg?r=1674008600",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9d/e2/119365_crt_Zq5i3.jpg?r=1674008600"
+    },
+    "summary": "ポチ太の人間時代のクラスメイト。\r\n道端でポチ太と出会い、家に連れて帰る。\r\n普段は無表情でクールだが、実は常軌を逸した犬好きで、あらゆる手でポチ太とスキンシップを取ろうとする。\r\nラベンダーの香りがする。",
+    "name": "犬飼加恋",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "犬饲加恋"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Karen Inukai"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "いぬかい かれん"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Inukai Karen"
+                },
+                {
+                    "k": "韩文名",
+                    "v": "이누카이 카렌"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://inuhiro-anime.com/character/"
+        }
+    ],
+    "stat": {
+        "comments": 28,
+        "collects": 60
+    },
+    "id": 119365,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        374319
+    ]
+}

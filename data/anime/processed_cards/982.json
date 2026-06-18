@@ -1,7 +1,7 @@
 {
     "id": 982,
     "name": "大剑",
-    "image_path": "data/images/anime/982.jpg",
+    "image_path": "data\\images\\anime\\982.jpg",
     "points": 7.4,
     "cost": 1,
     "rarity": "N",

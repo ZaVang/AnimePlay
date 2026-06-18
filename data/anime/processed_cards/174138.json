@@ -1,0 +1,139 @@
+{
+    "id": 174138,
+    "name": "不正经的魔术讲师与禁忌教典",
+    "image_path": "data\\images\\anime\\174138.jpg",
+    "points": 6.2,
+    "cost": 1,
+    "rarity": "N",
+    "description": "厌恶魔术的魔术讲师所展开的叛逆英雄幻想剧！\r\n魔术与科学共同发展的世界——卢瓦佛斯。\r\n位于魔导大国·阿尔扎诺帝国南部的“阿尔扎诺帝国魔法学院”，是学习世界最先端魔术的最高学舍。\r\n拥有约四百年历史的这所学院，是所有有志于魔术之道人们的憧憬，学院的讲师和学生们也因自己的身份而自豪。\r\n突然来到这所正统学院赴任的非常勤讲师，格伦·勒达斯。\r\n“我来教给你们真正的魔术吧”\r\n被称作“不正经”的这个男人的破天荒授课，就此开始。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "校园",
+        "后宫",
+        "TV",
+        "日本",
+        "奇幻",
+        "战斗",
+        "小说改"
+    ],
+    "date": "2017-04-04",
+    "rating_rank": 7064,
+    "rating_score": 6.2,
+    "rating_total": 5826,
+    "main_character_ids": [
+        47614,
+        47615,
+        47616
+    ],
+    "main_characters": [
+        {
+            "id": 47614,
+            "name": "グレン＝レーダス",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/f9/da/47614_crt_aF4qp.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f9/da/47614_crt_aF4qp.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f9/da/47614_crt_aF4qp.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f9/da/47614_crt_aF4qp.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5745,
+                    "name": "佐倉綾音",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b3/1a/5745_prsn_0GjVg.jpg?r=1643856929",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b3/1a/5745_prsn_0GjVg.jpg?r=1643856929",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b3/1a/5745_prsn_0GjVg.jpg?r=1643856929",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b3/1a/5745_prsn_0GjVg.jpg?r=1643856929"
+                    },
+                    "short_summary": "佐仓绫音（さくら あやね）是日本的女性声优，1994年1月29日出生及成长于东京都；曾为[url=www.imenterprise.jp]I'm Enterprise[/url]旗下声优，2022年2月1日移籍至[url=www.aoni.co.jp]青二Production[/url]。\r\n\r\n[b]经历[/b]\r\n中学时所属剧团东俳，[url=https://nichinare.com/]日本播音演技研究所[/url]出身。《Dottoai广播》第45代主持人。2011年，在TV动画《[url=https://bgm.tv/subject/8990]食梦者玛利[/url]》出演[url=https://bgm.tv/character/10571]玛利·梦魔[/url]，首次出演主角。同年在剧场版动画《[url=https://bgm.tv/subject/12544]萤火之森[/url]》中出演[url=https://bgm.tv/character/15896]竹川萤[/url]，首次担当主役。\r\n其他代表作品有《[url=https://bgm.tv/subject/88287]请问您今天要来点兔子吗？[/url]》[url=https://bgm.tv/character/23647]保登心爱[/url]、《[url=https://bgm.tv/subject/78405]悠哉日常大王[/url]》[url=https://bgm.tv/character/21370]越谷夏海[/url]、《[url=https://bgm.tv/subject/37685]心理测量者[/url]》[url=https://bgm.tv/character/18476]霜月美佳[/url]、《[url=https://bgm.tv/subject/54433]我的青春恋爱物语果然有问题[/url]》[url=https://bgm.tv/character/26090]一色彩羽[/url]、《[url=https://bgm.tv/subject/120925]夏洛特[/url]》[url=https://bgm.tv/character/29511]友利奈绪[/url]、《[url=https://bgm.tv/subject/100444]四月是你的谎言[/url]》[url=https://bgm.tv/character/26004]泽部椿[/url]等。\r\n\r\n[b]其他[/b]\r\n昵称“あやねる（ayaneru）”是由[url=https://bgm.tv/person/4950]冈本信彦[/url]（《[url=https://bgm.tv/subject/8990]食梦者玛利[/url]》的合演者）给予的。关于昵称（本人说）“没什么特别的”。“あやねる”只是“绫音”和“睡觉（寝る）”的组合。\r\n完全的百合脑、百合控，非常喜欢[url=https://bgm.tv/person/4765]花泽香菜[/url]。\r\n爱好读书，特技是插图。",
+                    "locked": false
+                },
+                {
+                    "id": 14604,
+                    "name": "斉藤壮馬",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/8c/e3/14604_prsn_b1xVh.jpg?r=1758100707",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8c/e3/14604_prsn_b1xVh.jpg?r=1758100707",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8c/e3/14604_prsn_b1xVh.jpg?r=1758100707",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/8c/e3/14604_prsn_b1xVh.jpg?r=1758100707"
+                    },
+                    "short_summary": "高校生活に入って環境の変化に馴染めず、しばらく学校に行っていなかった時期があった。自宅で映画やアニメを見て過ごす時間の中で、『ぼくらの』の石田彰の演技をきっかけに、画面の「向こう側」への憧れを抱いていったという。\r\n2008年に第2回81オーディションに参加し、優秀賞を受賞。\r\n2009年に行われた第33回全国高等学校総合文化祭において、朗読部門にて審査員特別賞を受賞。\r\n高校卒業後、早稲田大学文学部に進学。大学生活に加え、声優の養成所に通っての練習、仕事、さらに慣れない一人暮らしなど、全てをバランス良く続けられなくなったと判断したため、一旦学業に専念し、大学3年の時養成所に通い直した。\r\n大学での勉強が一段落してきた大学4年の頃、声優の仕事を本格的に始めた。2014年春より放送されたテレビアニメ『ハイキュー!!』にて山口忠役を務め注目を集める。同年夏に放送された『アカメが斬る!』のタツミ役、『残響のテロル』のツエルブ（久見冬二）役で初主演を果たす。\r\n2015年、第9回声優アワード新人男優賞を受賞。\r\n2017年、ソロアーティストとしてSACRA MUSICよりデビュー。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 47615,
+            "name": "システィーナ＝フィーベル",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/42/20/47615_crt_z9ErG.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/42/20/47615_crt_z9ErG.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/42/20/47615_crt_z9ErG.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/42/20/47615_crt_z9ErG.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 17981,
+                    "name": "藤田茜",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/a4/de/17981_prsn_gMWIZ.jpg?r=1616944577",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a4/de/17981_prsn_gMWIZ.jpg?r=1616944577",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a4/de/17981_prsn_gMWIZ.jpg?r=1616944577",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a4/de/17981_prsn_gMWIZ.jpg?r=1616944577"
+                    },
+                    "short_summary": "藤田 茜（ふじた あかね、1993年1月26日 - ）は、日本の女性声優。賢プロダクション所属。静岡県出身。賢プロダクション全国声優オーディション2011準グランプリ受賞。\r\n趣味は、競技かるた・手芸・カフェ巡り。また、インドア派である。\r\n小学生の頃から本を声に出して読むことが大好きで、高校時代は放送部で朗読をしていた。三年次にはNHK杯全国高校放送コンテストの全国大会に出場した。ラジオから声優を好きになることが多く、田村ゆかりや小野坂昌也の番組を聞いていたという。\r\n学生時代、「あねご」と呼ばれていた。\r\n座右の銘は「何とかなるさ」。2015年5月現在、ひとり暮らしをしている。\r\n賢プロダクションの声優によるユニット『VvoxX』のメンバー。儚さ担当、不思議担当。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 47616,
+            "name": "ルミア＝ティンジェル",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/81/3a/47616_crt_112hi.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/81/3a/47616_crt_112hi.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/81/3a/47616_crt_112hi.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/81/3a/47616_crt_112hi.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 5494,
+                    "name": "宮本侑芽",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/50/20/5494_prsn_D5oPm.jpg?r=1740727987",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/50/20/5494_prsn_D5oPm.jpg?r=1740727987",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/50/20/5494_prsn_D5oPm.jpg?r=1740727987",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/50/20/5494_prsn_D5oPm.jpg?r=1740727987"
+                    },
+                    "short_summary": "日本の女優（元子役）、声優、ナレーター。福岡県出身。劇団ひまわり所属。\r\n\r\n矢沢永吉への憧れから演者の道に進むことを選んだ。4歳頃に福岡で劇団ひまわりへ入団、6歳頃からは東京の劇団ひまわりで活動している。\r\n幼少時から子役として舞台・テレビドラマなどに出演し、以後女優、声優として活躍している。\r\n第5回アニラジアワードにて広瀬裕也とパーソナリティを務める「アニメGRIDMAN ラジオ とりあえずUNION」が「BEST FUNNY RADIO 大笑いラジオ賞」を受賞。\r\n\r\n特技にはジャズやヒップホップに乗せたダンス、博多弁を挙げている。所持している資格は英語検定準2級、語彙・読解力検定準2級。\r\n中高時代はダンス部、大学では演劇部に所属。\r\n運動は不得手だがダンスは得意。自転車に乗れないが一輪車には乗れる。一輪車ならアイドリングやスピンもできる。\r\nラーメンやお酒、辛い物等が好物。健啖家であり、ブログ内で｢餃子は100個くらい、寿司は母と二人で84貫食べたことがある｣と述べている。唯一苦手だったパクチーも4日続けて食べることで克服した。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

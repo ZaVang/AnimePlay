@@ -1,0 +1,45 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/56/e8/76544_crt_gS54l.jpg?r=1586167270",
+        "grid": "https://lain.bgm.tv/pic/crt/g/56/e8/76544_crt_gS54l.jpg?r=1586167270",
+        "large": "https://lain.bgm.tv/pic/crt/l/56/e8/76544_crt_gS54l.jpg?r=1586167270",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/56/e8/76544_crt_gS54l.jpg?r=1586167270"
+    },
+    "summary": "優れた嗅覚を持ち、犬の着ぐるみに変身できる。",
+    "name": "加賀谷修一",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "加贺谷修一"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "かがや しゅういち"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 3,
+        "collects": 2
+    },
+    "id": 76544,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        276705
+    ]
+}

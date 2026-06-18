@@ -1,0 +1,85 @@
+{
+    "birth_mon": 6,
+    "gender": "female",
+    "birth_day": 21,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f1/5a/1627_crt_MlmZ3.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f1/5a/1627_crt_MlmZ3.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/f1/5a/1627_crt_MlmZ3.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f1/5a/1627_crt_MlmZ3.jpg"
+    },
+    "summary": "駆的青梅竹馬。自小父母雙亡，與駆一同生長在養護設施中，後來被水奈瀬家收養。\r\n    只要在駆的身邊就會感到高興，儘管希望竭盡全力地完成他所希望的事情，然而駆本人并没有正视她的這份心意。对驱的占有欲极为强烈，非常害怕驱终有一天会离开她身边。\r\n    因為體貼而大方的性格，總是被人看作是小女孩。\r\n    目標是成為做什麼也稱心如意的大人女性，這裡所謂的大人就是指胸部與屁股都發育得很好。總是對因為童顏、長不高、口舌不清而被周圍的人當作笨蛋感到非常煩惱。\r\n    表面上，她具有将特殊能力無效化的能力。\r\n    突然被卷進這異常殘酷的命運的由佳，最終會與心愛的駆打開怎麼樣的命運之門呢？她會得到永遠的愛嗎，還是……？\r\n\r\n    「如果這個世界上，只剩下我與駆君兩人的話……」",
+    "name": "水奈瀬ゆか",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "水奈濑由佳"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "水奈瀬 ゆか"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "みなせ ゆか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Minase Yuka"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "6月21日"
+        },
+        {
+            "key": "身高",
+            "value": "154cm"
+        },
+        {
+            "key": "体重",
+            "value": "46kg"
+        },
+        {
+            "key": "BWH",
+            "value": "B88/W59/H89"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "罪名",
+            "value": "嫉妒"
+        },
+        {
+            "key": "班级",
+            "value": "虹陵館学園2年A組"
+        },
+        {
+            "key": "能力",
+            "value": "幻灯结界，使敌我双方力量无效化，同制造赤夜的结界同一种力量"
+        }
+    ],
+    "stat": {
+        "comments": 16,
+        "collects": 54
+    },
+    "id": 1627,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        2566
+    ]
+}

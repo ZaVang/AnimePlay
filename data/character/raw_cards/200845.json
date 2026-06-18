@@ -1,0 +1,40 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c2/52/200845_crt_JgUBx.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c2/52/200845_crt_JgUBx.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/c2/52/200845_crt_JgUBx.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c2/52/200845_crt_JgUBx.jpg"
+    },
+    "summary": "世を、変えるために。\r\n\r\n愛媛郡出身の青年。\r\n理屈屋で、旧文明の知識に長けている。\r\n妻との誓いを果たすべく「日本再統一」を志す。\r\n\r\n生まれ年：大和暦41年\r\n出身地：愛媛郡",
+    "name": "三角青輝",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "三角青辉"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 3,
+        "collects": 7
+    },
+    "id": 200845,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        623851
+    ]
+}

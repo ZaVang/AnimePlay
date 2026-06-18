@@ -1,0 +1,125 @@
+{
+    "id": 373712,
+    "name": "不道德公会",
+    "image_path": "data\\images\\anime\\373712.jpg",
+    "points": 7.1,
+    "cost": 1,
+    "rarity": "N",
+    "description": "“…我的青春，就仅此而已了吗？”虽是年轻人，但却是以公会第一的讨伐数而自豪的猎人基克尔。从小训练成为一流猎人…他的愿望居然是辞去工作！？为了找回失去的青春的一页，他想尽快退役，他的首要任务是培养继任者！但是，带着胡来的新人守卫的任务，不知为何只发生了不道德的意外。我的青春会怎么样呢!？基克尔无德的新人教育现在开始了！！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "后宫",
+        "TV",
+        "日本",
+        "奇幻",
+        "漫画改"
+    ],
+    "date": "2022-10-05",
+    "rating_rank": 2156,
+    "rating_score": 7.1,
+    "rating_total": 6424,
+    "main_character_ids": [
+        115039,
+        115040,
+        115041
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/5c/32/115039_crt_C589V.jpg?r=1675666261",
+                "grid": "https://lain.bgm.tv/pic/crt/g/5c/32/115039_crt_C589V.jpg?r=1675666261",
+                "large": "https://lain.bgm.tv/pic/crt/l/5c/32/115039_crt_C589V.jpg?r=1675666261",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5c/32/115039_crt_C589V.jpg?r=1675666261"
+            },
+            "name": "キクル・マダン",
+            "summary": "メブキの街ギルド所属の狩人。20歳にして魔物討伐数一位の若きエース。しかし10代を訓練と仕事に費やしたため、女性との交際経験はゼロ。仕事を辞めて失われた青春を取り戻すために、後継者の育成を決意する。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/73/30/29132_prsn_0Cm03.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/73/30/29132_prsn_0Cm03.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/73/30/29132_prsn_0Cm03.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/73/30/29132_prsn_0Cm03.jpg"
+                    },
+                    "name": "福原かつみ",
+                    "short_summary": "REAGIONAL LANGAGE 茨城弁\r\n資格 普通自動車運転免許\r\nHOBBY 太鼓の達人、服を買うこと、ドライブ\r\n特技 テニス、バスケットボール、卓球、太鼓の達人、歌唱",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 29132,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 115039
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/13/a0/115040_crt_8OOo9.jpg?r=1675666289",
+                "grid": "https://lain.bgm.tv/pic/crt/g/13/a0/115040_crt_8OOo9.jpg?r=1675666289",
+                "large": "https://lain.bgm.tv/pic/crt/l/13/a0/115040_crt_8OOo9.jpg?r=1675666289",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/13/a0/115040_crt_8OOo9.jpg?r=1675666289"
+            },
+            "name": "ヒタム・キャン",
+            "summary": "明るく元気で、やる気いっぱいの新米ガード。\r\nしかし武道家ゆえの（？）正々堂々な性格も災いし、\r\nスライムにすら負けてしまうポンコツっぷり。\r\nしかも魔物と絡むとなぜか必ずエロ…\r\nえらい目にあってしまうお約束体質。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1e/54/20438_prsn_OGlKo.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/1e/54/20438_prsn_OGlKo.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/1e/54/20438_prsn_OGlKo.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1e/54/20438_prsn_OGlKo.jpg"
+                    },
+                    "name": "礒部花凜",
+                    "short_summary": "礒部 花凛（いそべ かりん、1994年5月26日 - ）は、日本の女優、歌手、声優。奈良県出身。\r\n\r\n身長157cm。血液型はA型。アミューズ所属。大阪芸術大学舞台芸術学科ミュージカルコース卒業。\r\n\r\n2014年、ミス・ユニバース・ジャパン奈良代表に選ばれた。\r\n2015年2月1日からテレビ朝日系列で放送開始されるテレビアニメ『Go!プリンセスプリキュア』のオープニング主題歌「Miracle Go!プリンセスプリキュア」のボーカルを担当する。",
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 20438,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 115040
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b5/df/115041_crt_vRc1P.jpg?r=1675666307",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b5/df/115041_crt_vRc1P.jpg?r=1675666307",
+                "large": "https://lain.bgm.tv/pic/crt/l/b5/df/115041_crt_vRc1P.jpg?r=1675666307",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b5/df/115041_crt_vRc1P.jpg?r=1675666307"
+            },
+            "name": "メイデナ・アンジェ",
+            "summary": "敬虔なフェニザスク教徒。若干15歳にして歴代トップクラスの才能を持つ天才白魔術師。\r\nその才能ゆえにプライドが高く生意気な態度だが、\r\nいざ実戦となるとヘタレで泣き虫な役立たずに…。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0f/2c/28749_prsn_3ESas.jpg?r=1492655255",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/0f/2c/28749_prsn_3ESas.jpg?r=1492655255",
+                        "large": "https://lain.bgm.tv/pic/crt/l/0f/2c/28749_prsn_3ESas.jpg?r=1492655255",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0f/2c/28749_prsn_3ESas.jpg?r=1492655255"
+                    },
+                    "name": "渋谷彩乃",
+                    "short_summary": "渋谷 彩乃（しぶや あやの、5月18日 - ）は、日本の女性声優。東京都出身。賢プロダクション所属。特技・趣味はクラシックバレエ。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 28749,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 115041
+        }
+    ]
+}

@@ -1,0 +1,127 @@
+{
+    "id": 345980,
+    "name": "四叠半时光机布鲁斯",
+    "image_path": "data\\images\\anime\\345980.jpg",
+    "points": 7.7,
+    "cost": 2,
+    "rarity": "R",
+    "description": "8月12日，灼热的京都左京区。“下鸭幽水庄”唯一的空调不开了。坏朋友小津昨晚把遥控器给淹了。正当“我”和电影社团“みそぎ”的冷酷美人明石商量对策时，出现了一个长相木讷、素不相识的男学生·田村。据说他是乘坐时光机从25年后的未来过来的。就在这时，“我”突然灵光一闪。用这个时间机器回到昨天，拿起坏掉之前的遥控器不就行了吗！但是，小津他们随心所欲地改变昨天，改写过去。预感到世界毁灭危机的“我”，慌忙介入阻止，不过，已经晚了!最后，遥控器和日常生活能平安回来吗！？以及，“我”和明石的恋爱去向是——?在“昨天”与“今天”之间，放眼世界稀里糊涂胡乱使用时间机器的故事，开始了!",
+    "type": 2,
+    "platform": "WEB",
+    "episodes_for_hangup": 6,
+    "synergy_tags": [
+        "科幻",
+        "恋爱",
+        "日本",
+        "小说改",
+        "WEB"
+    ],
+    "date": "2022-09-14",
+    "rating_rank": 493,
+    "rating_score": 7.7,
+    "rating_total": 4201,
+    "main_character_ids": [
+        19915,
+        19916,
+        19917
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ba/4c/19915_crt_Iknb2.jpg?r=1605090949",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ba/4c/19915_crt_Iknb2.jpg?r=1605090949",
+                "large": "https://lain.bgm.tv/pic/crt/l/ba/4c/19915_crt_Iknb2.jpg?r=1605090949",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ba/4c/19915_crt_Iknb2.jpg?r=1605090949"
+            },
+            "name": "明石さん",
+            "summary": "京都大学一年级学生。和小津同学部。个性理智，冷淡的黑发少女。\r\n讨厌蛾，看到蛾会发出奇怪的惨叫声。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d4/88/3877_prsn_VOY27.jpg?r=1574050572",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d4/88/3877_prsn_VOY27.jpg?r=1574050572",
+                        "large": "https://lain.bgm.tv/pic/crt/l/d4/88/3877_prsn_VOY27.jpg?r=1574050572",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d4/88/3877_prsn_VOY27.jpg?r=1574050572"
+                    },
+                    "name": "坂本真綾",
+                    "short_summary": "坂本真绫（さかもと まあや、1980年3月31日 - ），日本女声优、歌手、演员、电台主持。东京都板桥区出身，东京都立武蔵丘高等学校及东洋大学社会学部毕业，父亲是舞台照明家坂本义美。\r\n8岁进入儿童剧团，开始艺能活动，曾演唱广告歌、童谣，为外国电影剧集配音，出演电视节目等。15岁时，被音乐制作人菅野洋子发掘，真正地开始了音乐活动。16岁在歌坛出道。\r\n坂本真绫在音乐以外的领域也具有丰富的才能，广泛活跃在舞台表演、电台主持、电视节目主持、执笔等领域，被称为“才女”，她是现在日本乐坛少数的实力派之一。\r\n\r\n2011年8月13日，在网志上正式宣布和声优铃村健一在2011年8月8日结婚。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 3877,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 19915
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/45/4c/19916_crt_DkS5W.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/45/4c/19916_crt_DkS5W.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/45/4c/19916_crt_DkS5W.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/45/4c/19916_crt_DkS5W.jpg"
+            },
+            "name": "わたし",
+            "summary": "本作主角。故事以主角的第一人称进行。京都大学三级学生。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/01/b3/4779_prsn_R85b5.jpg?r=1740105927",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/01/b3/4779_prsn_R85b5.jpg?r=1740105927",
+                        "large": "https://lain.bgm.tv/pic/crt/l/01/b3/4779_prsn_R85b5.jpg?r=1740105927",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/01/b3/4779_prsn_R85b5.jpg?r=1740105927"
+                    },
+                    "name": "浅沼晋太郎",
+                    "short_summary": "浅沼 晋太郎（あさぬま しんたろう、1976年1月5日 - ）は、日本の脚本家、演出家、俳優、 声優、ナレーター、コピーライター、デザイナー。\r\n岩手県盛岡市出身。仙台育英学園高等学校特別進学コース卒業、多摩美術大学造形表現学部 映像演劇学科 卒業。血液型はO型。左利き。身長175cm。",
+                    "career": [
+                        "producer",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 4779,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 19916
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b8/bc/19917_crt_kpgSK.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b8/bc/19917_crt_kpgSK.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/b8/bc/19917_crt_kpgSK.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b8/bc/19917_crt_kpgSK.jpg"
+            },
+            "name": "小津",
+            "summary": "被主角唾弃的朋友。虽然就读京都大学电气电子工程学科，对电气、电子、工学都很讨厌。\r\n做坏事比吃饭还重要。外表诡异，好像是个妖怪。把自己的快乐建筑在别人的痛苦上。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1a/4b/3955_prsn_YCKdG.jpg?r=1553254153",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/1a/4b/3955_prsn_YCKdG.jpg?r=1553254153",
+                        "large": "https://lain.bgm.tv/pic/crt/l/1a/4b/3955_prsn_YCKdG.jpg?r=1553254153",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1a/4b/3955_prsn_YCKdG.jpg?r=1553254153"
+                    },
+                    "name": "吉野裕行",
+                    "short_summary": "日本の男性声優、歌手、ナレーターである。らえら所属。千葉県出身。身長163cm、血液型はB型。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 3955,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 19917
+        }
+    ]
+}

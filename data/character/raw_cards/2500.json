@@ -1,0 +1,73 @@
+{
+    "birth_mon": 12,
+    "gender": "male",
+    "birth_day": 28,
+    "birth_year": null,
+    "blood_type": 1,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f1/69/2500_crt_z3393.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f1/69/2500_crt_z3393.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/f1/69/2500_crt_z3393.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f1/69/2500_crt_z3393.jpg"
+    },
+    "summary": "ゲーム本編およびアニメ一作目（俗称ファーストシーズン）では風見学園付属の3年1組在籍（出席番号は常に1番）。両親は海外へ赴任中で、血の繋がらない妹（誕生日が同じなので表向きは似ていない双子で通している）朝倉音夢と共に初音島で暮らしている。",
+    "name": "朝倉純一",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "朝仓纯一"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "朝倉純一"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あさくら じゅんいち"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Asakura Jun`ichi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "????-12-28"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "身高",
+            "value": "168cm"
+        },
+        {
+            "key": "体重",
+            "value": "61kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "stat": {
+        "comments": 1,
+        "collects": 3
+    },
+    "id": 2500,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        2063
+    ]
+}

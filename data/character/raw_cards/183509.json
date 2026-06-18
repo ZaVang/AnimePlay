@@ -1,0 +1,40 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/df/56/183509_crt_Ra90A.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/df/56/183509_crt_Ra90A.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/df/56/183509_crt_Ra90A.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/df/56/183509_crt_Ra90A.jpg"
+    },
+    "summary": "",
+    "name": "吉岡ハル",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "吉冈春"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 1,
+        "collects": 1
+    },
+    "id": 183509,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        506
+    ]
+}

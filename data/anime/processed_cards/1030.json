@@ -1,7 +1,7 @@
 {
     "id": 1030,
     "name": "翼神传说",
-    "image_path": "data/images/anime/1030.jpg",
+    "image_path": "data\\images\\anime\\1030.jpg",
     "points": 7.5,
     "cost": 1,
     "rarity": "N",

@@ -1,0 +1,61 @@
+{
+    "birth_mon": 7,
+    "gender": "female",
+    "birth_day": 2,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9b/7f/115337_crt_333R3.jpg?r=1754795508",
+        "grid": "https://lain.bgm.tv/pic/crt/g/9b/7f/115337_crt_333R3.jpg?r=1754795508",
+        "large": "https://lain.bgm.tv/pic/crt/l/9b/7f/115337_crt_333R3.jpg?r=1754795508",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9b/7f/115337_crt_333R3.jpg?r=1754795508"
+    },
+    "summary": "渴望死亡的少女。有着吸引妖怪的特殊肉体、时常成为妖怪的目标。",
+    "name": "八百歳比名子",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "八百岁比名子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "八百歳 比名子"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "やおとせ ひなこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yaotose Hinako"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月2日"
+        },
+        {
+            "key": "身高",
+            "value": "159cm"
+        }
+    ],
+    "stat": {
+        "comments": 30,
+        "collects": 99
+    },
+    "id": 115337,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        520842
+    ]
+}

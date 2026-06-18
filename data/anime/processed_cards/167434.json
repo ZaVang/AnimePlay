@@ -1,0 +1,122 @@
+{
+    "id": 167434,
+    "name": "少女编号",
+    "image_path": "data\\images\\anime\\167434.jpg",
+    "points": 6.5,
+    "cost": 1,
+    "rarity": "N",
+    "description": "　　拥有可爱的外表以及蔑视世间内心的女大学生·乌丸千岁，在怀抱着梦想与希望与野心踏入的声优业界，她所见到的是，残酷业界的种种严苛现实——。无工作×无干劲的新人声优·千岁，究竟能否开辟通往人气声优的道路！？",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "原创",
+        "职场"
+    ],
+    "date": "2016-10-06",
+    "rating_rank": 5071,
+    "rating_score": 6.5,
+    "rating_total": 5207,
+    "main_character_ids": [
+        38478,
+        38514,
+        38515
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f5/b6/38478_crt_qaWAI.jpg?r=1476449430",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f5/b6/38478_crt_qaWAI.jpg?r=1476449430",
+                "large": "https://lain.bgm.tv/pic/crt/l/f5/b6/38478_crt_qaWAI.jpg?r=1476449430",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f5/b6/38478_crt_qaWAI.jpg?r=1476449430"
+            },
+            "name": "烏丸千歳",
+            "summary": "本作的主人公，长相可爱但个性很差的新人声优。一边上大学一边在新人声优的道路上努力奋斗着。外表可爱，却对工作和人生采取轻蔑的态度。很容易得意忘形，很容易服输。对于尽在演些路人角色的现状有着危机感。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/56/7f/10838_prsn_vhSS9.jpg?r=1740109911",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/56/7f/10838_prsn_vhSS9.jpg?r=1740109911",
+                        "large": "https://lain.bgm.tv/pic/crt/l/56/7f/10838_prsn_vhSS9.jpg?r=1740109911",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/56/7f/10838_prsn_vhSS9.jpg?r=1740109911"
+                    },
+                    "name": "千本木彩花",
+                    "short_summary": "日本の女性声優。 埼玉県出身。アイムエンタープライズ所属。\r\n\r\n日本ナレーション演技研究所で演技を学ぶ。同研究所卒業前の、高校生時にテレビアニメ『帰宅部活動記録』で九重クレア役としてデビュー。\r\n2015年にアイムエンタープライズへの所属が発表された。9月より「講談社ラノベ文庫チャンネル」のMCをつとめる。2016年4月に『甲鉄城のカバネリ』の無名役で初のメインヒロインを演じ、同年10月に『ガーリッシュナンバー』で、初主役となる烏丸千歳役を演じる。\r\n2017年、第11回声優アワードで新人女優賞を受賞。\r\n\r\n高校では部活動でベーム式B♭クラリネットを演奏。コンクールに出場していた。\r\n『甲鉄城のカバネリ』で共演した内田真礼は「1話ですでに（無名の）キャラクターが出来上がっていてすごい」と絶賛している。\r\n『ガーリッシュ ナンバー』の烏丸千歳役は100人以上の候補の中からオーディションを経てスタッフの満場一致で選ばれたのだが、実は千本木がオーディションを受けた役は八重役であった。監督の井畑翔太と原作者の渡航は千本木の演技だけが方向性がいい意味で異質であり、ほとんどの声優が空気を読んで適度にブレーキをかける中、千本木だけはアクセルをベタ踏み状態であったと述べている。また、本来千本木のキャリアよりもう1つ、2つ、上の世代がやっていてもおかしくない難しいことを求められている中で、こちらの要望によく応えてくれたともコメントしている。\r\n\r\n2019年12月29日、アニメ『甲鉄城のカバネリ』で共演した声優、畠中祐との結婚を発表。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 10838,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 38478
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/1c/47/38514_crt_HCnUp.jpg?r=1476449710",
+                "grid": "https://lain.bgm.tv/pic/crt/g/1c/47/38514_crt_HCnUp.jpg?r=1476449710",
+                "large": "https://lain.bgm.tv/pic/crt/l/1c/47/38514_crt_HCnUp.jpg?r=1476449710",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1c/47/38514_crt_HCnUp.jpg?r=1476449710"
+            },
+            "name": "苑生百花",
+            "summary": "现役女高中生声优。在偶像、声优、音乐界都很活跃的高中生。双亲是业界的大人物，虽然也有着性格有些狂妄自大的一面，但比起千岁来还算是有常识。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6e/8a/14259_prsn_Hb4sa.jpg?r=1689739914",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/6e/8a/14259_prsn_Hb4sa.jpg?r=1689739914",
+                        "large": "https://lain.bgm.tv/pic/crt/l/6e/8a/14259_prsn_Hb4sa.jpg?r=1689739914",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6e/8a/14259_prsn_Hb4sa.jpg?r=1689739914"
+                    },
+                    "name": "鈴木絵理",
+                    "short_summary": "日本の女性声優。東京俳優生活協同組合所属。俳協ボイスアクターズスタジオ40期生。\r\n\r\n元々女優志望だったが初めて聴いたドラマCDに感銘を受け声優を志す。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 14259,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 38514
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/96/9e/38515_crt_080YA.jpg?r=1478337499",
+                "grid": "https://lain.bgm.tv/pic/crt/g/96/9e/38515_crt_080YA.jpg?r=1478337499",
+                "large": "https://lain.bgm.tv/pic/crt/l/96/9e/38515_crt_080YA.jpg?r=1478337499",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/96/9e/38515_crt_080YA.jpg?r=1478337499"
+            },
+            "name": "柴崎万葉",
+            "summary": "自视甚高系声优。虽然很受欢迎，但却总接一些有关轻改动画以及除表演以外的工作，对于这一现状感到不满。作为艺人，对于声优过分执著，经常和周围发生冲突。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/67/e3/14320_prsn_NkyKy.jpg?r=1606880325",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/67/e3/14320_prsn_NkyKy.jpg?r=1606880325",
+                        "large": "https://lain.bgm.tv/pic/crt/l/67/e3/14320_prsn_NkyKy.jpg?r=1606880325",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/67/e3/14320_prsn_NkyKy.jpg?r=1606880325"
+                    },
+                    "name": "大西沙織",
+                    "short_summary": "大西 沙織（おおにし さおり、1992年8月6日 - ）は、日本の女性声優。千葉県出身。アイムエンタープライズ所属。\r\n\r\n小学校、中学校では吹奏楽部に所属し、サックスを吹いていた。高校時代は理系クラスで部活に入らず、養成学校に通っていた。\r\n声優を目指したきっかけは、小学4年生の頃テレビを観ていてアニメがおもしろいと思い、そのうち自然と「私は声優になるんだ」と考えるようになった。憧れの声優は坂本真綾と小林沙苗。\r\n事務所入所後の初仕事は2012年発売のドラマCD『ペンギンゑにし 第二譚 少女神隠し』。初めてオーディションで頂いた役は『ストライク・ザ・ブラッド』のラ・フォリア・リハヴァイン。\r\n『ラジオどっとあい』第60代目パーソナリティを2014年10月から同年12月まで務めた。\r\n特技はイラストを描くこと。\r\n趣味はアニメ・ドラマのサントラ鑑賞。\r\n2018年3月3日、第12回声優アワード助演女優賞・パーソナリティ賞受賞。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 14320,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 38515
+        }
+    ]
+}

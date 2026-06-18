@@ -1,0 +1,77 @@
+{
+    "birth_mon": 7,
+    "gender": "female",
+    "birth_day": 22,
+    "birth_year": null,
+    "blood_type": 4,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/66/4a/5678_crt_NczPK.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/66/4a/5678_crt_NczPK.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/66/4a/5678_crt_NczPK.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/66/4a/5678_crt_NczPK.jpg"
+    },
+    "summary": "本动画之主角。15岁，生日为7/22，O型，身长157cm，体重46公斤，鸨羽巧海的姊姊。认真且责任感强，擅长料理，常常到处打工赚取所需花费。与菊川雪之、原田千绘、日暮茜、瀬能葵等为同班同学，室友为美袋命。她以迦具土身体抵挡爱莉莎•西亚斯子兽Artemis的射击，从而使迦具土变为新型迦具土。后半部一直想阻止HiME之间的战斗，但因目睹弟弟鸨羽巧海及楯祐一的消失，使情绪多次崩溃，甚至曾对失控的美袋命产生厌恶感。虽然鸨羽舞衣个人战斗能力一般，但其子兽迦具土却是众多子兽中最强最具破坏力，总括而言是实力首三位的HiME之一。\r\n    印记位置：胸前\r\n    元素武具（Element）：宝轮/风火轮（带火焰，脚上亦有宝轮帮助飞行，攻守兼备的武具。）\r\n    子兽（Child）：迦具土→新型迦具土（龙型态，以日本传说的火之神为原型，主要攻击方式为从嘴部喷出火焰，其破坏力惊人。）\r\n    最重要的人（大切な人）：鸨羽巧海→楯祐一\r\n    后半部败北原因：没有，她与美袋命都没有败北。",
+    "name": "鴇羽舞衣",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "鸨羽舞衣"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "鴇羽舞衣"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ときは まい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Tokiha Mai"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "????-07-22"
+        },
+        {
+            "key": "血型",
+            "value": "O"
+        },
+        {
+            "key": "身高",
+            "value": "157"
+        },
+        {
+            "key": "体重",
+            "value": "46"
+        },
+        {
+            "key": "BWH",
+            "value": "87/56/83"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "stat": {
+        "comments": 3,
+        "collects": 27
+    },
+    "id": 5678,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        1027
+    ]
+}

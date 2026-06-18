@@ -1,0 +1,77 @@
+{
+    "birth_mon": 5,
+    "gender": "female",
+    "birth_day": 5,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b9/65/103263_crt_PkUb6.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b9/65/103263_crt_PkUb6.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/b9/65/103263_crt_PkUb6.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b9/65/103263_crt_PkUb6.jpg"
+    },
+    "summary": "高校１年生。漫画やアニメが好きなオタク女子。特に作中に登場する女の子の「衣装」が大好き。中学生の頃に初めて参加したイベントをきっかけに、リリエルへの愛をコスプレで表現する。コスプレのクオリティはリリエルオタクの奥村が驚嘆するレベル。\r\n\r\n女主角，高中1年生。喜欢Cosplay。主要扮演的角色为莉莉艾露。\r\n非常喜欢漫画，以拍摄莉莉艾露的ROM为目标入部。\r\n恋爱迟钝。",
+    "name": "天乃リリサ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "天乃莉莉纱"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "天乃理理沙"
+                },
+                {
+                    "k": "日文名",
+                    "v": "天乃 リリサ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あまの リリサ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "RIRISA AMANO"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "5月5日"
+        },
+        {
+            "key": "身高",
+            "value": "不到160cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://ririsa-official.com/"
+        },
+        {
+            "key": "擅长的科目",
+            "value": "家政"
+        },
+        {
+            "key": "不擅长的科目",
+            "value": "几乎全部科目"
+        }
+    ],
+    "stat": {
+        "comments": 45,
+        "collects": 129
+    },
+    "id": 103263,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        410346
+    ]
+}

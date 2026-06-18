@@ -1,0 +1,73 @@
+{
+    "birth_mon": 6,
+    "gender": "female",
+    "birth_day": 15,
+    "birth_year": null,
+    "blood_type": 2,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/32/9a/38705_crt_5uK3u.jpg?r=1610523033",
+        "grid": "https://lain.bgm.tv/pic/crt/g/32/9a/38705_crt_5uK3u.jpg?r=1610523033",
+        "large": "https://lain.bgm.tv/pic/crt/l/32/9a/38705_crt_5uK3u.jpg?r=1610523033",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/32/9a/38705_crt_5uK3u.jpg?r=1610523033"
+    },
+    "summary": "梅ノ森学園の支配者の娘。\r\n「世界が自分を中心に回っていると思っている」お嬢様。巧のことを下僕としている。",
+    "name": "梅ノ森千世",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "梅之森千世"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "うめのもり ちせ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Umenomori Chise"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "6月15日"
+        },
+        {
+            "key": "血型",
+            "value": "B"
+        },
+        {
+            "key": "身高",
+            "value": "146cm"
+        },
+        {
+            "key": "体重",
+            "value": "34kg"
+        },
+        {
+            "key": "BWH",
+            "value": "75/60/80"
+        },
+        {
+            "key": "引用来源",
+            "value": "patisserie-straycats.com/character.html"
+        }
+    ],
+    "stat": {
+        "comments": 3,
+        "collects": 23
+    },
+    "id": 38705,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        4292
+    ]
+}

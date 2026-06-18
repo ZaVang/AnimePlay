@@ -1,7 +1,7 @@
 {
     "id": 1515,
     "name": "玩偶游戏",
-    "image_path": "data/images/anime/1515.jpg",
+    "image_path": "data\\images\\anime\\1515.jpg",
     "points": 7.5,
     "cost": 1,
     "rarity": "N",

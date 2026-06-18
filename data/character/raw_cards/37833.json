@@ -1,0 +1,65 @@
+{
+    "birth_mon": 9,
+    "gender": "male",
+    "birth_day": 21,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/96/33/37833_crt_yWoyF.jpg?r=1461771892",
+        "grid": "https://lain.bgm.tv/pic/crt/g/96/33/37833_crt_yWoyF.jpg?r=1461771892",
+        "large": "https://lain.bgm.tv/pic/crt/l/96/33/37833_crt_yWoyF.jpg?r=1461771892",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/96/33/37833_crt_yWoyF.jpg?r=1461771892"
+    },
+    "summary": "有话直说，稍显粗鲁的少年。17岁，天生有着良好的节奏感，但本人对此无自觉。没有找到具体的梦想或是目标，也没有持久的工作，辗转来往于银河当中。胸口挂有颜色跟雪露的耳坠十分相似的挂坠，为父亲的遗物。实际上对猫过敏，连海猫和龙猫也不意外。\r\n因巻入狂暴化综合症感染者引发的暴动之中试图救助芙蕾雅而驾驶受损的VF-171，虽然因完全没有接触战斗机而在不久就被击落，但也在有音乐之下展现出操作VF的优秀才能，意外地找出了成为VF驾驶员的未来。后驾驶专用机VF-31J。",
+    "name": "ハヤテ・インメルマン",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "疾风·英麦曼"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "飒·殷麦曼"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Hayate Immelmann"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ハヤテ インメルマン"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "9月21日"
+        },
+        {
+            "key": "身高",
+            "value": "169cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "stat": {
+        "comments": 26,
+        "collects": 20
+    },
+    "id": 37833,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        100858
+    ]
+}

@@ -1,0 +1,45 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/29/18/118764_crt_jPVi1.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/29/18/118764_crt_jPVi1.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/29/18/118764_crt_jPVi1.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/29/18/118764_crt_jPVi1.jpg"
+    },
+    "summary": "FAF少佐。イギリス出身。\r\nフェアリィ空軍の特殊戦出撃管理担当。\r\n作戦立案や、機体整備の指導、出撃機スケジュールの調整などのデスクワークを主な任務とし、「絶対生還」を至上命令とする、特殊戦戦隊機の帰還を待ち続ける。\r\n部下である深井少尉には、単なる職務以上の友情を示している。趣味はブーメラン作り。",
+    "name": "ジェイムズ・ブッカー",
+    "infobox": [
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "James Bukhar"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://www.faf.jp/#a02"
+        }
+    ],
+    "stat": {
+        "comments": 2,
+        "collects": 1
+    },
+    "id": 118764,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        2842
+    ]
+}

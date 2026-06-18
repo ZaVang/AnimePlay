@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/45/05/35453_crt_CvV1B.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/45/05/35453_crt_CvV1B.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/45/05/35453_crt_CvV1B.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/45/05/35453_crt_CvV1B.jpg"
+    },
+    "summary": "黑主学园普通科一年级学生，应理事长请求保守夜间部秘密而伪装的风纪委员。封印吸血鬼因子的人类时期是及肩的棕色短发，有些零碎。有一双硕大明亮闪烁的棕红色眸子。乐观直率，坚持维护夜间部的秘密不被外人发现。善良可爱，热爱和平且有责任心，坚信和平主义。",
+    "name": "黒主優姫",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "黑主优姬"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "玖兰优姬"
+                },
+                {
+                    "k": "日文名",
+                    "v": "くらん ゆうき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kuran Yuki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 1,
+        "collects": 13
+    },
+    "id": 35453,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        1970
+    ]
+}

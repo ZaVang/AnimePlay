@@ -1,0 +1,41 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5e/3a/26621_crt_edF2J.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/5e/3a/26621_crt_edF2J.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/5e/3a/26621_crt_edF2J.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5e/3a/26621_crt_edF2J.jpg"
+    },
+    "summary": "纯涩闷骚男,驾驶车辆为Trans Am20000改WR。",
+    "name": "JP",
+    "infobox": [
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Joshua Punkhead"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 9,
+        "collects": 25
+    },
+    "id": 26621,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        8726
+    ]
+}

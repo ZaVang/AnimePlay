@@ -1,0 +1,108 @@
+{
+    "id": 37898,
+    "name": "我的妹妹哪有这么可爱。",
+    "image_path": "data\\images\\anime\\37898.jpg",
+    "points": 6.9,
+    "cost": 1,
+    "rarity": "N",
+    "description": "哥哥高坂京介（17岁）和妹妹高坂桐乃（14岁）兄妹两人的关系近几年处于冷战状态。从某个时间点开始，桐乃看到哥哥时连打招呼都没有，只会用像是看到脏东西般的眼神瞪他。京介认为这种关系也会一直持续下去。\r\n某天，京介在门口捡到从来没看过的魔法少女动画《星尘☆小魔女梅露露》的DVD盒子，里面竟然不是动画的DVD，而是成人游戏《和妹妹恋爱吧~》的光碟。京介在晚餐时用梅露露的话题试探谁是光碟的物主，但只得到父母充满偏见的否定意见。\r\n就在那天晚上，连打招呼都不会的妹妹突然来到京介房间，并且说她有事情想要商量。原来桐乃迷上了萌系动画以及美少女游戏中的妹系角色，却都不敢告诉别人，只能一直闷在心里。被哥哥知道了自己的秘密后，从此开始了和哥哥之间的「人生咨询」。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 16,
+    "synergy_tags": [
+        "后宫",
+        "TV",
+        "恋爱",
+        "日本",
+        "小说改"
+    ],
+    "date": "2013-04-06",
+    "rating_rank": 3075,
+    "rating_score": 6.9,
+    "rating_total": 13352,
+    "main_character_ids": [
+        10473,
+        10814
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/73/7d/10473_crt_glsIT.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/73/7d/10473_crt_glsIT.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/73/7d/10473_crt_glsIT.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/73/7d/10473_crt_glsIT.jpg"
+            },
+            "name": "高坂桐乃",
+            "summary": "《我的妹妹哪有这么可爱》（俺の妹がこんなに可爱いわけがない）男主角高坂京介的妹妹，出生于1997年,居住于千叶市,目前就读国中二年级。和平凡的哥哥相反，外表出众，在流行杂志担任模特儿赚了不少钱。不知不觉间爱上了萌系动画和美少女游戏（不分是不是限制级），喜欢逛かーずSP和アキバBlog等网志，常因此冲动购物。对旁人的眼光十分在意而不敢公开自己的兴趣而闷在心理，刚好此时装在“梅露露”盒子中的“和妹妹恋爱吧♪”被哥哥发现，虽然不是她的本意，但还是向哥哥商量该怎么办。 在京介的建议和陪同下参加了“宅女集合”的线下聚会。在参加夏Comi后回家时偶遇好友新垣绫濑，并且暴露了自己的兴趣，曾一度绝交。在京介的介入下得以和绫濑恢复关系。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2b/7b/5228_prsn_tIY4W.jpg?r=1718206051",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2b/7b/5228_prsn_tIY4W.jpg?r=1718206051",
+                        "large": "https://lain.bgm.tv/pic/crt/l/2b/7b/5228_prsn_tIY4W.jpg?r=1718206051",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2b/7b/5228_prsn_tIY4W.jpg?r=1718206051"
+                    },
+                    "name": "竹達彩奈",
+                    "short_summary": "日本的女性声优，1989年6月23日出生，埼玉县出身，所属事务所为LINK・PLAN 。身高151cm，血型为O型。代表作品有《轻音少女》中的中野梓、《kiss×sis》中的住之江亚香、《我的妹妹不可能那么可爱》中的高坂桐乃、《只有神知道的世界》中的高原步美、《玉响》中的泽渡枫、《MM一族》中的石动美绪、《迷途猫》中的雾谷希等。\r\n\r\n2019年6月23日，即竹达彩奈生日当天，宣布了与梶裕贵的婚讯。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 5228,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 10473
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a6/6d/10814_crt_NYJ04.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a6/6d/10814_crt_NYJ04.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/a6/6d/10814_crt_NYJ04.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a6/6d/10814_crt_NYJ04.jpg"
+            },
+            "name": "高坂京介",
+            "summary": "男主角，是个长着一张“一看就是日后在某个不知名的可怜企业当小小室长”（加奈子语）的大众脸，喜欢喝麦茶的高中二年级学生。作为本作最接近“现实真实感”的人物，对于观众来说应该是最能引起共鸣的一个角色了，也正如他所说：“做人平凡最好”。其人一个突出的地方就是具有很强大的语言辩论能力（原作中表现为无时无刻的吐槽），甚至还有相当推理的思维出现（与黑猫一起为妹妹解决手机小说被侵权问题）。一直以来莫名其妙的被妹妹藐视，并且两人话少得可怜，自从在门口捡到以“梅露露”为封套实际为18x内容的DVD后，得知妹妹的秘密（当夜就被妹妹桐乃抓去进行“人生商谈”），在后来的日子里便一直为妹妹遮风挡雨奔波劳碌，是个典型口硬心软的好哥哥。经常把H书藏在床底下，被妈妈发现过。\r\n不知道是不是因为麻奈实的原因，偷藏的Ｈ书，多半是眼镜娘的类型。为此桐乃曾大发脾气（实际上是恼怒为什么没有妹控系列）在第七卷最后疑似跟黑猫交往。\r\n自从得知妹妹不想被别人知道的秘密以后，开始了被桐乃强迫玩“和妹妹谈恋爱吧♪”、“妹歼”多支18禁恋爱冒险游戏的生活。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7a/78/4724_prsn_7TvWV.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7a/78/4724_prsn_7TvWV.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/7a/78/4724_prsn_7TvWV.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7a/78/4724_prsn_7TvWV.jpg"
+                    },
+                    "name": "中村悠一",
+                    "short_summary": "爱称是ゆうきゃん，由铃村健一命名。英文标记法为‘yuu-kyan’\r\n与声优的杉田智和的私交良好，是在声优界著名的好友。\r\n兴趣是玩游戏、看电影等。\r\n不喜欢吃拉面。喜欢的食物是肉、奶酪、甜食。\r\n2020年10月1日，宣布从Sigma Seven移籍至INTENTION。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 4724,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c8/71/23302_prsn_IDI5i.jpg?r=1461729365",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c8/71/23302_prsn_IDI5i.jpg?r=1461729365",
+                        "large": "https://lain.bgm.tv/pic/crt/l/c8/71/23302_prsn_IDI5i.jpg?r=1461729365",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c8/71/23302_prsn_IDI5i.jpg?r=1461729365"
+                    },
+                    "name": "ふじたまみ",
+                    "short_summary": "日本の声優。\r\n日本ナレーション演技研究所の21期生で、「無料新人育成オーディション」に合格し、特待生に選ばれる。\r\n2013年11月30日をもってアイムエンタープライズを退所。\r\n趣味は、舞台鑑賞、イラスト、歌唱、バスケットボール、テニス。特技は、ピアノ。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 23302,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 10814
+        }
+    ]
+}

@@ -1,0 +1,141 @@
+{
+    "id": 317614,
+    "name": "辉夜大小姐想让我告白？～天才们的恋爱头脑战～ OVA",
+    "image_path": "data\\images\\anime\\317614.jpg",
+    "points": 7.3,
+    "cost": 1,
+    "rarity": "N",
+    "description": "かぐや様は告らせたい 第22巻 アニメDVD同梱版 ~天才たちの恋愛頭脳戦~\r\n\r\n「かぐや様ダークネスvolume1」プール終わりのシャワー室。水着姿のかぐや・藤原の身に次々と巻き起こるあんなことやこんなこと…！？秀知院学園、とある夏の日の物語。\r\n「かぐや様ダークネスvolume2」コインパーキングでエロ本を見つけた石上と白銀。中を覗くとかぐやや藤原、ミコ似のキャラクターが。エロ本に興味をそそられつつも生徒会メンバーの顔がチラつき我に返り帰路についたと思われた二人だったが…！？\r\n「かぐや様は食べさせたい」突如幕をあけた生徒会ガチンコチャーハン対決。白銀・かぐや・石上が腕をふるう三者三様のチャーハンに審査員の藤原・ミコが舌鼓を打つ。果たして優勝の座は誰の手に！？\r\n©赤坂アカ／集英社・かぐや様は告らせたい製作委員会",
+    "type": 2,
+    "platform": "OVA",
+    "episodes_for_hangup": 1,
+    "synergy_tags": [
+        "校园",
+        "恋爱",
+        "日本",
+        "OVA",
+        "漫画改"
+    ],
+    "date": "2021-05-19",
+    "rating_rank": 1577,
+    "rating_score": 7.3,
+    "rating_total": 5423,
+    "main_character_ids": [
+        66899,
+        66900,
+        67408
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/9e/72/66899_crt_kNOM3.jpg?r=1547389516",
+                "grid": "https://lain.bgm.tv/pic/crt/g/9e/72/66899_crt_kNOM3.jpg?r=1547389516",
+                "large": "https://lain.bgm.tv/pic/crt/l/9e/72/66899_crt_kNOM3.jpg?r=1547389516",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9e/72/66899_crt_kNOM3.jpg?r=1547389516"
+            },
+            "name": "四宮かぐや",
+            "summary": "本作的主角。秀知院学园高中部2年A班的女学生，担任学生会副会长。参加的社团是弓道部。\r\n四大财阀之一，四宫集团的千金。 \r\n万能型的天才，但是不谙世故，无意识中会瞧不起人。\r\n想告诉白银御行他和猫耳很般配。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/39/93/19606_prsn_TEs83.jpg?r=1576158151",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/39/93/19606_prsn_TEs83.jpg?r=1576158151",
+                        "large": "https://lain.bgm.tv/pic/crt/l/39/93/19606_prsn_TEs83.jpg?r=1576158151",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/39/93/19606_prsn_TEs83.jpg?r=1576158151"
+                    },
+                    "name": "古賀葵",
+                    "short_summary": "日本の女性声優。佐賀県出身。\r\n2014年3月代々木アニメーション学院福岡校を卒業後、81プロデュース所属。\r\n\r\n9歳ごろ、アニメを見ていて、その番組後に声優のアフレコ現場を紹介するような番組から声優と職業を知り、声を使う仕事をやってみたいと思う。中学生ごろから、自分を表現することや意見をいうのが苦手であったことが嫌で、役を通じていろんな自分を表現することができるというきっかけで声優の道を目指した。高校卒業後、電車で佐賀から代々木アニメーション学院福岡校に通う。単身上京し、81ACTOR'S STUDIOに通い、81プロデュース所属。お金がなかった時期には、ご飯にポン酢をかけて食べてたこともある。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 19606,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 66899
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ca/44/66900_crt_26nTL.jpg?r=1545567638",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ca/44/66900_crt_26nTL.jpg?r=1545567638",
+                "large": "https://lain.bgm.tv/pic/crt/l/ca/44/66900_crt_26nTL.jpg?r=1545567638",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ca/44/66900_crt_26nTL.jpg?r=1545567638"
+            },
+            "name": "白銀御行",
+            "summary": "本作的另一个主角。秀知院学园高中部2年B班的男学生，担任学生会的会长，有着凶恶的眼神。\r\n和父亲妹妹三人一起生活，妹妹白银圭在秀知院学园初中部就读。\r\n可以说是努力中毒的努力型天才。\r\n一天学习十小时，剩下的时间用来打工。\r\n想告诉四宫辉夜她和猫耳很般配。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f0/96/10869_prsn_nWIUY.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f0/96/10869_prsn_nWIUY.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/f0/96/10869_prsn_nWIUY.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f0/96/10869_prsn_nWIUY.jpg"
+                    },
+                    "name": "大地葉",
+                    "short_summary": "日本女性声优，埼玉县出生。日本播音演技研究所出身，隶属于VIMS。名字“大地叶”（たいち よう／Taichi You）是艺名，由来是学生时期的绰号たいちょー（“队长”，日语读音：Taichō）。\r\n\r\n趣味・特技：インド映画鑑賞、ピアノ弾き語り、曲のコピー（譜面をおこせる）\r\n芸歴：日本ナレーション演技研究所",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 10869,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/15/71/12483_prsn_pXYzu.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/15/71/12483_prsn_pXYzu.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/15/71/12483_prsn_pXYzu.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/15/71/12483_prsn_pXYzu.jpg"
+                    },
+                    "name": "古川慎",
+                    "short_summary": "古川 慎（ふるかわ まこと、1989年9月29日 - ）は、日本の男性声優。トイズファクトリー所属。\r\n熊本県出身。福岡スクールオブミュージック専門学校卒業。\r\n\r\n5歳の時に見た『新機動戦記ガンダムW』のヒイロ・ユイを充てた緑川光の声に憧れたことで声優への興味を持つようになった。その後中学生時代にスカパーのアニメ専門チャンネルを見てアニメ好きになったという。\r\n高校生の時、友達からもらった専門学校のパンフレットに緑川光が特別講師としてくることを見て、挑戦してみようと思い専門学校に通い始めた。\r\n\r\n趣味は雑貨屋めぐり、神社や寺などのパワースポットを巡ること。\r\n一番好きな食べ物はお好み焼き。キュウリとカリフラワーが苦手。\r\n好きなアーティストはL'Arc〜en〜Ciel、Mr.Children、ゴスペラーズ、GRANRODEO、BUMP OF CHICKEN。\r\n\r\n2011年にWebアニメ「武装中学生」吉野サトシ役で声優デビュー。\r\n2012年にアルバイトでPS3専用ソフト「白騎士物語」のモーションアクターを演じた経験を持つ。\r\n2016年、7月より声優の小林裕介と共にパーソナリティを務めるラジオ『なんでもヒーロー！ ゆっけとまーぼー』の放送を開始。\r\n2017年10月に開催された、初バースデーイベント「古川慎　秋の収穫祭2017」にて、2018年アーティスト活動を開始することを発表。\r\n2018年7月、Lantisより歌手デビュー。同年8月31日、6年間所属していたスペースクラフト・エンタテインメントを退所し、フリーでの活動期間を経て同年12月1日、トイズファクトリーに所属。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 12483,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 66900
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/38/34/67408_crt_rrE4W.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/38/34/67408_crt_rrE4W.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/38/34/67408_crt_rrE4W.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/38/34/67408_crt_rrE4W.jpg"
+            },
+            "name": "藤原千花",
+            "summary": "本作的女主角，高中部2年B班的女学生，担任学生会书记。桌游部所属，三姐妹中的次女。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b7/e5/27194_prsn_p1LPy.jpg?r=1719567844",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b7/e5/27194_prsn_p1LPy.jpg?r=1719567844",
+                        "large": "https://lain.bgm.tv/pic/crt/l/b7/e5/27194_prsn_p1LPy.jpg?r=1719567844",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b7/e5/27194_prsn_p1LPy.jpg?r=1719567844"
+                    },
+                    "name": "小原好美",
+                    "short_summary": "日本女性配音员、演员。大泽事务所所属。\r\n\r\n国中时开始喜欢动画，并想要成为声优。高中毕业后进入Human Academy综合学园。2012年开始当了两年的演员，之后加入大泽事务所。\r\n\r\n2017年7月起3个月间在长寿电台节目《Radio Dottoai》就任第71代主持人。\r\n\r\n2017年4月至6月播出的《月色真美》中初次担任主演。同年7月播出《咕噜咕噜魔法阵 (2017年版)》中担演女主角而掀起话题，并与共同主演的石上静香主持同名动画的广播节目。同年11月10日Instagram开设。\r\n\r\n2019年于《Star☆Twinkle 光之美少女》中第一次出演光之美少女系列。同年4月，由文化放送“超！A&G+”制作的广播节目《小原好美のココロおきなく》开播，5月开设节目官方Twitter。2020年3月，该广播节目获得第6届Aniradi Award“BEST COMFORT RADIO 疗愈电台奖”。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 27194,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 67408
+        }
+    ]
+}

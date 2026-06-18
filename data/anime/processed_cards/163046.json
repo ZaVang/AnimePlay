@@ -1,0 +1,91 @@
+{
+    "id": 163046,
+    "name": "迷家",
+    "image_path": "data\\images\\anime\\163046.jpg",
+    "points": 3.6,
+    "cost": 1,
+    "rarity": "N",
+    "description": "30名男女出于兴趣而参加了一个可疑的巴士旅游。旅游的目的地是名为纳鸣村的、无法确定其存在的奇幻村庄。根据都市传说，“纳鸣村”里面可以让人享受如同乌托邦一样的生活。\r\n对于现实的世界绝望……想要从无聊的日常中脱身……想要人生重新来过……这30个人带着各自的思绪和心灵创伤，坐着巴士进入了深山之中……\r\n而当他们来到目的地后，发现这儿是已经腐朽、稍微有一点点人气的无人部落。那么追逐着30人的、“纳鸣村”的真相是……",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "悬疑",
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "2016-04-01",
+    "rating_rank": 10084,
+    "rating_score": 3.6,
+    "rating_total": 5491,
+    "main_character_ids": [
+        37656,
+        37674
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/2a/1b/37656_crt_VifGc.jpg?r=1454600966",
+                "grid": "https://lain.bgm.tv/pic/crt/g/2a/1b/37656_crt_VifGc.jpg?r=1454600966",
+                "large": "https://lain.bgm.tv/pic/crt/l/2a/1b/37656_crt_VifGc.jpg?r=1454600966",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2a/1b/37656_crt_VifGc.jpg?r=1454600966"
+            },
+            "name": "酒井光宗",
+            "summary": "年齢：16歳\r\n職業：学生\r\n性格：成績優秀だがそれを鼻にかけず、\r\nおっとりとした人を信じやすい少年。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/93/ab/19651_prsn_bqMz1.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/93/ab/19651_prsn_bqMz1.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/93/ab/19651_prsn_bqMz1.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/93/ab/19651_prsn_bqMz1.jpg"
+                    },
+                    "name": "酒井広大",
+                    "short_summary": "日本の男性声優。福岡県久留米市出身。Ability Soul Pro準所属、EARLY WING準所属を経て、EARLY WING所属。\r\n特技はバドミントン。声優になる以前は福岡県の企業でシステムエンジニアとして働いていた。\r\n名前の由来は出身地に溢れる広大な自然にちなむ。\r\nマイブームはインターネットショッピング。洋服や日用品などを買っている。\r\n好きな食べ物は納豆。苦手な食べ物はイクラである。\r\nテレビアニメ『迷家-マヨイガ-』にて初主演を果たす。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 19651,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 37656
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c9/2f/37674_crt_047Dt.jpg?r=1454600941",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c9/2f/37674_crt_047Dt.jpg?r=1454600941",
+                "large": "https://lain.bgm.tv/pic/crt/l/c9/2f/37674_crt_047Dt.jpg?r=1454600941",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c9/2f/37674_crt_047Dt.jpg?r=1454600941"
+            },
+            "name": "真咲",
+            "summary": "年齢：17歳\r\n職業：学生\r\n性格：少し不思議ちゃんのきらいはあるものの、\r\n素直で明るく一途な性格。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8a/6f/13563_prsn_10w0h.jpg?r=1708616771",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/8a/6f/13563_prsn_10w0h.jpg?r=1708616771",
+                        "large": "https://lain.bgm.tv/pic/crt/l/8a/6f/13563_prsn_10w0h.jpg?r=1708616771",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8a/6f/13563_prsn_10w0h.jpg?r=1708616771"
+                    },
+                    "name": "相坂優歌",
+                    "short_summary": "相坂 優歌（あいさか ゆうか、9月5日- ）は、日本の女性声優。アプトプロ所属。千葉県出身。\r\n\r\n特技・趣味：歌、イラスト、料理、パズルゲーム",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 13563,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 37674
+        }
+    ]
+}

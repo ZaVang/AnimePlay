@@ -1,0 +1,56 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/46/d6/438_crt_lzaCr.jpg?r=1423096105",
+        "grid": "https://lain.bgm.tv/pic/crt/g/46/d6/438_crt_lzaCr.jpg?r=1423096105",
+        "large": "https://lain.bgm.tv/pic/crt/l/46/d6/438_crt_lzaCr.jpg?r=1423096105",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/46/d6/438_crt_lzaCr.jpg?r=1423096105"
+    },
+    "summary": "主人公。看起来二十五六岁，但实际年龄不明，独身。戴眼镜是她的魅力之处。平时常穿黑色的套装。在西新宿古旧大楼中经营着“麻生祇咨询（麻生祇コンサルティング）”事务所。拥有不死之身。",
+    "name": "麻生祇燐",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "麻生祇燐"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "斉藤珠樹"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "齐藤珠树"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あそうぎ りん"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Asougi Rin"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 5,
+        "collects": 43
+    },
+    "id": 438,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        1257
+    ]
+}

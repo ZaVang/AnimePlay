@@ -1,0 +1,124 @@
+{
+    "id": 20799,
+    "name": "爱杀宝贝",
+    "image_path": "data\\images\\anime\\20799.jpg",
+    "points": 7.1,
+    "cost": 1,
+    "rarity": "N",
+    "description": "原作为2008年起在《まんがタイムきららCarat》（芳文社）连载的四格漫画。\r\n学校に通う殺し屋の少女と、その友人が繰り広げる他愛なく少し危険な日常を描いたコメディ。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "百合",
+        "TV",
+        "日本",
+        "漫画改",
+        "日常"
+    ],
+    "date": "2012-01-05",
+    "rating_rank": 2160,
+    "rating_score": 7.1,
+    "rating_total": 4842,
+    "main_character_ids": [
+        14682,
+        14683,
+        14684
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/dc/b4/14682_crt_ns1ZI.jpg?r=1563687040",
+                "grid": "https://lain.bgm.tv/pic/crt/g/dc/b4/14682_crt_ns1ZI.jpg?r=1563687040",
+                "large": "https://lain.bgm.tv/pic/crt/l/dc/b4/14682_crt_ns1ZI.jpg?r=1563687040",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dc/b4/14682_crt_ns1ZI.jpg?r=1563687040"
+            },
+            "name": "ソーニャ",
+            "summary": "某杀手组织的少女，出身外国。金发双马尾。有因为感到害羞而傲娇的一面。\r\n平常像一般人一样上学，接到任务电话则会立刻行动（作品没有描述任务如何执行）。\r\n擅长体术与各种武器，但也有害怕妖怪、动物和虫的另一面。\r\n感觉到背后有人、或是看到像武器的东西会反射性的出手。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/39/84/5636_prsn_p449k.jpg?r=1665351736",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/39/84/5636_prsn_p449k.jpg?r=1665351736",
+                        "large": "https://lain.bgm.tv/pic/crt/l/39/84/5636_prsn_p449k.jpg?r=1665351736",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/39/84/5636_prsn_p449k.jpg?r=1665351736"
+                    },
+                    "name": "田村睦心",
+                    "short_summary": "日本东京都出身的女性声优，现时隶属 I'm Enterprise。\r\n\r\n日本解说表演研究所毕业。2007年，在电视动画《悠久之翼》中以声优身份出道。2008年，在《Battle Spirits 少年突破马神》中首次担任主演。\r\n嗓音沙哑，多出演动画男主角的少年时期形象的角色。\r\n2014年8月，因为喉咙问题切除了息肉而暂时休息。9月1日在博客上记载康复，9月8日在广播节目中说明情况。\r\n\r\n官方说法上爱好是书法和长笛。从小学1年级开始练习书法，擅长草书和行书。实际上私下里喜欢一个人望着墙壁发呆。\r\n喜欢吃东西和睡觉。喜欢的食物是意大利面、梅干一类的下酒菜。也喜欢喝酒。\r\n喜欢布娃娃。\r\n家中有一个比自己小1岁的弟弟。\r\n昵称是“田村少年”，但是这个名字和自己担任少年役居多没有直接关系。\r\n与共同出演过《Battle Spirits 少年突破马神》、《爱杀宝贝》的赤崎千夏有深交。\r\n把bl游戏藏在书柜的最下层。“其实我根本就没有藏，只是放在那里而已。”",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 5636,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 14682
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d0/a5/14683_crt_z4HoU.jpg?r=1563687058",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d0/a5/14683_crt_z4HoU.jpg?r=1563687058",
+                "large": "https://lain.bgm.tv/pic/crt/l/d0/a5/14683_crt_z4HoU.jpg?r=1563687058",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d0/a5/14683_crt_z4HoU.jpg?r=1563687058"
+            },
+            "name": "折部やすな",
+            "summary": "自称索妮雅的朋友。黑色短发。\r\n天然呆角色，常想捉弄索妮雅而受到迎头痛击。\r\n偶尔会用意料之外的方式向索妮雅反击。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/18/51/7297_prsn_9Dfe9.jpg?r=1496038723",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/18/51/7297_prsn_9Dfe9.jpg?r=1496038723",
+                        "large": "https://lain.bgm.tv/pic/crt/l/18/51/7297_prsn_9Dfe9.jpg?r=1496038723",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/18/51/7297_prsn_9Dfe9.jpg?r=1496038723"
+                    },
+                    "name": "赤﨑千夏",
+                    "short_summary": "81プロデュース所属。鹿児島県出身。\r\n\r\n声優を志したのは小学5、6年生頃のこと。中学生時代はバスケットボール部と放送部に所属し、放送部では鹿児島県大会での受賞経歴がある。錦江湾高校在学中は同高校に演劇部がなかったため、地元の市民劇団「劇団いぶき」に所属した。\r\n\r\n家族に2歳上の姉がいる。目標にしている先輩として皆口裕子の名を挙げている。方言は鹿児島弁。趣味・特技は歌。\r\n\r\n東京学芸大学教育学部演劇専修（ゼロ免課程）卒業。大学では第2外国語としてイタリア語を履修。\r\nボイスニュータイプ・サマーオーディション2008で文化放送賞、81プロデュース賞、アルケミスト賞を受賞。81プロデュース賞の受賞特典として2008年10月から、81ACTOR'S STUDIO（81プロデュース付属俳優養成所）に通っていた。2009年10月に養成所を卒業、2010年4月に81プロデュース所属となった。\r\n\r\n2012年にテレビアニメ『キルミーベイベー』で折部やすな役で初めての主役級キャラクターに抜擢。その後の『モーレツ宇宙海賊』『中二病でも恋がしたい!』『恋愛ラボ』等でも主要キャラクターを演じ、2013年に放送された『俺の彼女と幼なじみが修羅場すぎる』では初の（主役ではない）メインヒロインを務めた。\r\n\r\n2018年8月10日、自身のTwitterで結婚を発表した。2020年8月10日、第1子男児の出産を報告。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 7297,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 14683
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/fb/34/14684_crt_5k42S.jpg?r=1563687029",
+                "grid": "https://lain.bgm.tv/pic/crt/g/fb/34/14684_crt_5k42S.jpg?r=1563687029",
+                "large": "https://lain.bgm.tv/pic/crt/l/fb/34/14684_crt_5k42S.jpg?r=1563687029",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fb/34/14684_crt_5k42S.jpg?r=1563687029"
+            },
+            "name": "呉織あぎり",
+            "summary": "和索妮雅同组织的忍者。黑色长发。\r\n平常潜伏在前忍者同好会的社团教室。\r\n使用的忍术大部分是唬人把戏，但偶尔也会使用真正的忍术。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/95/34/5187_prsn_97h73.jpg?r=1514122363",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/95/34/5187_prsn_97h73.jpg?r=1514122363",
+                        "large": "https://lain.bgm.tv/pic/crt/l/95/34/5187_prsn_97h73.jpg?r=1514122363",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/95/34/5187_prsn_97h73.jpg?r=1514122363"
+                    },
+                    "name": "高部あい",
+                    "short_summary": "高部爱是日本的女演员、模特、声优。\r\n2004年8月，在第10回全日本国民美少女大赛中获得写真奖出道。同年9月30日，成为美少女俱乐部31（原名美少女俱乐部21）的新成员。\r\n2005年5月，第1次「错误周刊Playboy」受赏。\r\n2006年1月9日，出演电视剧特别版《真爱》，以演员身份出道。\r\n2009年7月出演电视动画《蓝花》，以声优身份出道。2012年在新番《爱杀宝贝》中出演吴织亚切，与赤崎千夏、田村睦心合作。\r\n2015年10月15日，因持有可卡因违反法律而被警方逮捕，所属事务所Oscar Promotion也解除了她的合同。同年11月4日，由于涉嫌可卡因的使用而再度遭到逮捕。11月11日，由于被查出已有身孕而被暂时释放。孩子的父亲不明。\r\n2016年3月29日，东京地方检察院判决高部爱不起诉处分释放。\r\n2017年10月20日，宣布已与一位律师结婚。",
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 5187,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 14684
+        }
+    ]
+}

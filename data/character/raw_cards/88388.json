@@ -1,0 +1,44 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d8/e3/88388_crt_yz57x.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d8/e3/88388_crt_yz57x.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/d8/e3/88388_crt_yz57x.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d8/e3/88388_crt_yz57x.jpg"
+    },
+    "summary": "Trinity is a fictional character and Neo's love interest in The Matrix universe, played by Carrie-Anne Moss in the films. In the gameplay segments of Path of Neo, she is voiced by Jennifer Hale. Trinity first appears in the original Matrix film and is a major character throughout the trilogy.",
+    "name": "Trinity",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "崔妮蒂"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://neoencyclopedia.fandom.com/wiki/Trinity_(The_Matrix)#Other_portrayals"
+        }
+    ],
+    "stat": {
+        "comments": 0,
+        "collects": 1
+    },
+    "id": 88388,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        496
+    ]
+}

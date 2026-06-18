@@ -1,0 +1,65 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/61/c7/62524_crt_o4n88.jpg?r=1562492089",
+        "grid": "https://lain.bgm.tv/pic/crt/g/61/c7/62524_crt_o4n88.jpg?r=1562492089",
+        "large": "https://lain.bgm.tv/pic/crt/l/61/c7/62524_crt_o4n88.jpg?r=1562492089",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/61/c7/62524_crt_o4n88.jpg?r=1562492089"
+    },
+    "summary": "ミステリアスな文芸部員。「死ぬ前にしたいことは？」という話題で、「セックス」の一言を投じ、文芸部に混乱を招く。周囲から「掃き溜めに鶴」と噂されるほどの美少女。\r\n\r\n愛読書は『眼球譚』。",
+    "name": "菅原新菜",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "菅原新菜"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "菅原 新菜"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "すがわら にいな"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sugawara Niina"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "160cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "wikipedia"
+        }
+    ],
+    "stat": {
+        "comments": 57,
+        "collects": 167
+    },
+    "id": 62524,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        268070
+    ]
+}

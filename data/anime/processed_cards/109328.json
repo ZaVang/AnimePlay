@@ -1,0 +1,125 @@
+{
+    "id": 109328,
+    "name": "结城友奈是勇者",
+    "image_path": "data\\images\\anime\\109328.jpg",
+    "points": 7.1,
+    "cost": 1,
+    "rarity": "N",
+    "description": "结城友奈每天早上起床、做好准备出门上学、上课、参加社团活动、和朋友一起玩……她就是这样每天过着普通日常的中学2年生。\r\n如果非要找出特殊的地方的话，那就是她所属的社团是“勇者部”。社团的活动内容是什么？不可思议的存在“Vertex”又是什么？\r\n神世纪300年，少女们的物语——。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "百合",
+        "TV",
+        "日本",
+        "原创",
+        "战斗"
+    ],
+    "date": "2014-10-16",
+    "rating_rank": 2181,
+    "rating_score": 7.1,
+    "rating_total": 5217,
+    "main_character_ids": [
+        27412,
+        27413,
+        27414
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/8c/2c/27412_crt_NlJsH.jpg?r=1489882066",
+                "grid": "https://lain.bgm.tv/pic/crt/g/8c/2c/27412_crt_NlJsH.jpg?r=1489882066",
+                "large": "https://lain.bgm.tv/pic/crt/l/8c/2c/27412_crt_NlJsH.jpg?r=1489882066",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8c/2c/27412_crt_NlJsH.jpg?r=1489882066"
+            },
+            "name": "結城友奈",
+            "summary": "守护精灵：牛鬼\r\n每天开朗地度过中学生活的，本作的主人公。\r\n虽然个性轻率，但不论何时都能积极地向前看，\r\n关键时刻会变得很可靠，让大家心服口服。\r\n特技是从父母那里习得的武术。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/41/87/13177_prsn_Zomq0.jpg?r=1512661684",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/41/87/13177_prsn_Zomq0.jpg?r=1512661684",
+                        "large": "https://lain.bgm.tv/pic/crt/l/41/87/13177_prsn_Zomq0.jpg?r=1512661684",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/41/87/13177_prsn_Zomq0.jpg?r=1512661684"
+                    },
+                    "name": "照井春佳",
+                    "short_summary": "照井 春佳（てるい はるか、1987年3月7日 - ）は、日本の女性声優、ナレーター。青二プロダクション所属。岩手県出身。A&Gアカデミー卒業。血液型はA型。\r\n\r\n幼い頃観ていた『らんま1/2』での林原めぐみの演技に感銘を受け、小学4年生の時に声優になることを決意。その後中学時代に、とある劇団での舞台経験を経て、高校でも演劇部に所属するなど日頃から芝居と接する環境下にあったという。A&Gアカデミーで演技を学び、2009年より『智一・美樹のラジオビッグバン』約1年間アシスタントを務める。 デビュー当時は飲食店、アパレル、コールセンターのアルバイトをしながら生計を立てたという。\r\n\r\n愛称はぱるにゃす。ふわふわっとした声が特徴。\r\n趣味はカラオケ、散歩。\r\n姉がいる。彼女は『未確認で進行形』の紅緒を思わせるシスコン的な性格だが、紅緒から残念な部分を抜いたしっかりした姉だという。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 13177,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 27412
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/bd/15/27413_crt_6mmYe.jpg?r=1489104205",
+                "grid": "https://lain.bgm.tv/pic/crt/g/bd/15/27413_crt_6mmYe.jpg?r=1489104205",
+                "large": "https://lain.bgm.tv/pic/crt/l/bd/15/27413_crt_6mmYe.jpg?r=1489104205",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bd/15/27413_crt_6mmYe.jpg?r=1489104205"
+            },
+            "name": "犬吠埼風",
+            "summary": "守护精灵：犬神\r\n勇者部部长。\r\n性格直率，有着能把人们强力地吸引过来的魅力的大姐姐。\r\n很疼爱妹妹树，也经常拿她没办法。\r\n家务万能，做的料理也很美味。\r\n此外还是个吃货。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/99/e6/6560_prsn_gZezL.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/99/e6/6560_prsn_gZezL.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/99/e6/6560_prsn_gZezL.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/99/e6/6560_prsn_gZezL.jpg"
+                    },
+                    "name": "内山夕実",
+                    "short_summary": "内山 夕実（うちやま ゆみ、1987年10月30日 - ）は、日本の女性声優。東京都出身。大沢事務所所属。音域はアルト。\r\n\r\n中高一貫学校の出身で、15歳で日本ナレーション演技研究所のジュニアクラスに入所。日ナレ時代は、ならはしみき指導の下でレッスンを受けている。声優になった理由として中学時代に放送劇部に入ったことを挙げている。\r\nアーツビジョンに所属し、2005年に別名義でデビューするが、家庭の事情により20歳の時に一旦引退して就職する。3年のブランクを経て、2010年に元の事務所に再所属し、BeeTVで配信された海外ドラマ『バンパイアに恋して』のアビー役の吹き替えで再デビュー。翌年『Aチャンネル』のナギ役で初のレギュラーを獲得。\r\n2017年4月、アーツビジョンから大沢事務所に移籍したことを報告した。\r\n趣味は写真撮影で、ブログには彼女が撮った写真が掲載されている。特技はカラオケで、いきものがかりの「ありがとう」をよく歌っている。\r\n\r\n2024年12月31日发表与小林裕介结婚",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 6560,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 27413
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/de/a9/27414_crt_tD78Y.jpg?r=1489104248",
+                "grid": "https://lain.bgm.tv/pic/crt/g/de/a9/27414_crt_tD78Y.jpg?r=1489104248",
+                "large": "https://lain.bgm.tv/pic/crt/l/de/a9/27414_crt_tD78Y.jpg?r=1489104248",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/de/a9/27414_crt_tD78Y.jpg?r=1489104248"
+            },
+            "name": "犬吠埼樹",
+            "summary": "守护精灵：木灵\r\n风的妹妹，非常喜欢姐姐。\r\n有着很多像小动物般的举动，经常躲在姐姐的影子当中，不过也作为勇者部唯一的1年生而每天都在努力着。\r\n兴趣是占卜，尤其擅长塔罗牌。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/dd/f8/9560_prsn_X7Z7F.jpg?r=1688189964",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/dd/f8/9560_prsn_X7Z7F.jpg?r=1688189964",
+                        "large": "https://lain.bgm.tv/pic/crt/l/dd/f8/9560_prsn_X7Z7F.jpg?r=1688189964",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dd/f8/9560_prsn_X7Z7F.jpg?r=1688189964"
+                    },
+                    "name": "黒沢ともよ",
+                    "short_summary": "黒沢 ともよ（くろさわ ともよ、1996年4月10日 - ）は、日本の女性女優、声優、歌手。マウスプロモーション所属。埼玉県秩父市出身。\r\n\r\n3歳頃から演技の勉強を始め、2003年頃から子役としてテレビドラマ、CM、舞台へ出演。\r\n2008年よりSound Horizonのサポートメンバーとして参加。6th Story CD『Moira』のPV「冥王 -Θανατος-」、及びコンサート「Sound Horizon 6th Story Concert Moira 〜其れでも、お征きなさい仔等よ〜」に幼少期アルテミシア役で出演。いずれも発声無しの子役（モーションアクター）としての出演であったが、2010年の7th Story CD『Märchen』ではボーカル・ボイスアクターなども務めている。\r\n2010年、劇場アニメ『宇宙ショーへようこそ』の小山夏紀役にて声優デビュー。その後、テレビアニメ等、活躍の幅を広げている。\r\n東京児童劇団を退団後、2012年よりマウスプロモーションに所属。",
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 9560,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 27414
+        }
+    ]
+}

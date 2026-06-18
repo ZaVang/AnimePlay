@@ -1,0 +1,45 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2c/30/38040_crt_TMg2a.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/2c/30/38040_crt_TMg2a.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/2c/30/38040_crt_TMg2a.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2c/30/38040_crt_TMg2a.jpg"
+    },
+    "summary": "輝日南高校２年Ａ組。１つ年下の妹・菜々がいる。水澤摩央や真田光一とは家も近く、４人とも幼馴染みの間柄。光一に劣らず優柔不断だが、一度決めると何も考えずに行動に移すところがある。映画研究部とサッカー部に所属。サッカー部での実力は補欠クラスで、映研で活動していることが多い。ただし、サッカー部の咲野明日夏には、個人練習にたびたびつき合わされている。",
+    "name": "相原一輝",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "相原一辉"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Kazuki Aihara"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 1,
+        "collects": 3
+    },
+    "id": 38040,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        308
+    ]
+}

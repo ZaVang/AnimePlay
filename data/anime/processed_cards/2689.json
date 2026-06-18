@@ -1,0 +1,94 @@
+{
+    "id": 2689,
+    "name": "全金属狂潮 The Second Raid OVA 战队长悠闲的一天",
+    "image_path": "data\\images\\anime\\2689.jpg",
+    "points": 7.4,
+    "cost": 1,
+    "rarity": "N",
+    "description": "　　做料理的加里宁？看动画片的克鲁佐？这些正剧中无法表现出来的人物的另一面，在这部短篇中将一一呈现。故事以泰莎舰长的日记作为铺垫，从更私人的角度描写泰莎对舰内众人的看法，以及对宗介的感情。当然，整个故事的基调还是轻松活泼的，一些经典搞笑的段子也都会出现在OVA中。",
+    "type": 2,
+    "platform": "OVA",
+    "episodes_for_hangup": 1,
+    "synergy_tags": [
+        "科幻",
+        "喜剧",
+        "校园",
+        "机战",
+        "日本",
+        "OVA",
+        "小说改"
+    ],
+    "date": "2006-05-26",
+    "rating_rank": 1100,
+    "rating_score": 7.4,
+    "rating_total": 2155,
+    "main_character_ids": [
+        2901,
+        2902
+    ],
+    "main_characters": [
+        {
+            "id": 2901,
+            "name": "相良宗介",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/e2/02/2901_crt_LtmKT.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e2/02/2901_crt_LtmKT.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e2/02/2901_crt_LtmKT.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e2/02/2901_crt_LtmKT.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3868,
+                    "name": "関智一",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/40/94/3868_prsn_Qw2i5.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/40/94/3868_prsn_Qw2i5.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/40/94/3868_prsn_Qw2i5.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/40/94/3868_prsn_Qw2i5.jpg"
+                    },
+                    "short_summary": "日本男性配音员。东京俳优生活协同组合→Atomic Monkey所属。东京都江东区深川出身。以热血激昂的声线闻名，昵称为“チイチ”（ChiIChi, 智一的音读）。\r\n\r\n在机动武斗传G高达的主角选角时，自己参加试音的路上因积雪滑了一跤，心想“这下肯定落选了”结果反而在两天后宣布中选。\r\n非常爱开黄腔，也因此冒犯许多不好此道的女声优，曾因尺度太大被电台高层警告。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 2902,
+            "name": "テレサ・テスタロッサ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/cb/45/2902_crt_2iLUM.jpg?r=1524978105",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cb/45/2902_crt_2iLUM.jpg?r=1524978105",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/cb/45/2902_crt_2iLUM.jpg?r=1524978105",
+                "grid": "https://lain.bgm.tv/pic/crt/g/cb/45/2902_crt_2iLUM.jpg?r=1524978105"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3824,
+                    "name": "ゆかな",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/e6/9b/3824_prsn_12Hwy.jpg?r=1460304394",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e6/9b/3824_prsn_12Hwy.jpg?r=1460304394",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e6/9b/3824_prsn_12Hwy.jpg?r=1460304394",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e6/9b/3824_prsn_12Hwy.jpg?r=1460304394"
+                    },
+                    "short_summary": "小时候体弱多病，甚至被医生说“有可能活不过20岁”。特别是在十岁的时候经历病情恶化，被告知“可能就剩几个月的生命了”。这段经历对ゆかな的人生观产生了很大影响。还是小学生的她却时常在考虑“想留下自己曾经在世界上存在过的证明”。自己曾经在接受采访的时候坦言，这成了自己选择艺人道路的很大原因。\r\n现在的艺名 ゆかな是过去作为歌手时使用的，本名和过去的声优艺名都是 野上ゆかな 。出于「希望别人只叫后面的名字」的理由，因此省略野上而以ゆかな当作艺名。 \r\n小时候属于蜗居派，喜欢看广辞苑和六法全书什么的。甚至有一天在家对着电话簿看了一整天。后来描述说这是因为小时候体弱多病的缘故。 \r\n因为双亲均为合唱团的声部领唱，所以在很小的时候就开始接受古典音乐发声训练，5岁开始弹钢琴。升入中学后加入吹奏乐部开始演奏长笛。十分喜爱歌唱，在唱歌时会有一种“在音乐的海洋里畅游”的感觉。 \r\n1996年到1997年间，曾作为日本乐队组合W&#39;s中的“YUKA”为乐队的一周年限定活动而忙碌。在1998年，在音乐活动上与Absord Music Japan签订了专属协议，在此期间根据协议的内容，以“ゆかな”的名义进行音乐活动。这也成了以后将自己的活动名统一成“ゆかな”的契机。 \r\n配音的出道作是动画『MOLDIVER 』、一开始隶属于ARTSVISION Inc、转换了几家事务所之后才隶属于现在的事务所。 \r\n身材很好。有一个一岁就分开的妹妹。\r\n与同年龄的池泽春菜在事业初期就开始深交，在《银河少女警察》系列、《光之美少女》系列等作品中共同演出。并且于2006年结成“ゆかな*はるな”声优组合。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

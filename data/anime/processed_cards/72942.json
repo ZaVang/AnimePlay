@@ -1,0 +1,126 @@
+{
+    "id": 72942,
+    "name": "中二病也要谈恋爱！恋",
+    "image_path": "data\\images\\anime\\72942.jpg",
+    "points": 7,
+    "cost": 1,
+    "rarity": "N",
+    "description": "由于各种原因导致失去住所的六花开始寻找新家，但过程并不顺利，最终来到了勇太的家里。\r\n然而，勇太的家人却留下勇太一个人到雅加达去了。\r\n现在开始的同栖生活！？这样想着心跳不已的两个人。\r\n但此时樟叶为了迎考而回到了家中。不知应该感到安心还是遗憾，3人开始了奇妙的共同生活。\r\n另一方面，原小鸟游家搬进了新的住户。\r\n那是以前勇太曾经憧憬的，自称为魔法魔王少女、索非亚琳·SP·撒旦7世的七宫智音……\r\n如此这般，仍然完全称不上普通的、勇太的高二第一学期开始了。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "校园",
+        "TV",
+        "恋爱",
+        "日本",
+        "小说改"
+    ],
+    "date": "2014-01-08",
+    "rating_rank": 2629,
+    "rating_score": 7,
+    "rating_total": 16178,
+    "main_character_ids": [
+        17362,
+        17363,
+        17364
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a7/6c/17362_crt_yPAVp.jpg?r=1642151054",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a7/6c/17362_crt_yPAVp.jpg?r=1642151054",
+                "large": "https://lain.bgm.tv/pic/crt/l/a7/6c/17362_crt_yPAVp.jpg?r=1642151054",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a7/6c/17362_crt_yPAVp.jpg?r=1642151054"
+            },
+            "name": "小鳥遊六花",
+            "summary": "メインヒロイン。現役中二病患者で、自称「邪王真眼の使い手」。理数系は壊滅的なほどできないが、中二病の影響で国語や社会および英語はそこそこできる。裁縫は得意だが料理はできない。作者あとがきによると最終的にお馬鹿でまったく面影もなくなってしまったが涼宮ハルヒシリーズの長門有希がモデルの模様。アニメ公式HPのトップでもっている銃はモーゼルC96(モーゼルミリタリー)である。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4c/23/6724_prsn_DIyje.jpg?r=1738653463",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/4c/23/6724_prsn_DIyje.jpg?r=1738653463",
+                        "large": "https://lain.bgm.tv/pic/crt/l/4c/23/6724_prsn_DIyje.jpg?r=1738653463",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4c/23/6724_prsn_DIyje.jpg?r=1738653463"
+                    },
+                    "name": "内田真礼",
+                    "short_summary": "内田 真礼（うちだ まあや、1989年12月27日 - ）は、日本の声優、歌手、女優、タレント。\r\nアイムエンタープライズ（事務所）、ポニーキャニオン（レコード会社）に所属。愛称は主にまややん、まれいたそ。東京都出身。血液型はA型。本名同じ。声優の内田雄馬は実弟。\r\n\r\n2025年9月30日，宣布与石川界人结婚。",
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 6724,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 17362
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/07/83/17363_crt_efqIF.jpg?r=1361630049",
+                "grid": "https://lain.bgm.tv/pic/crt/g/07/83/17363_crt_efqIF.jpg?r=1361630049",
+                "large": "https://lain.bgm.tv/pic/crt/l/07/83/17363_crt_efqIF.jpg?r=1361630049",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/07/83/17363_crt_efqIF.jpg?r=1361630049"
+            },
+            "name": "富樫勇太",
+            "summary": "主人公。元中二病患者で高校生活を充実した物にするため中学卒業とともに猛勉強して中二病も卒業した。しかし、屋上で隠れて中二病的なセリフを叫んだり、学校に「闇」の文字が入ったTシャツを着てきたりするなどまだ完治はしていない。そこを六花に目撃され、契約する羽目になった。周囲に元中二病だったことを隠しているが、Tシャツなどの件はバレバレ。猛勉強したため成績は全般的に優秀。英語が比較的苦手の模様。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bf/00/3818_prsn_vlWlO.jpg?r=1669378022",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/bf/00/3818_prsn_vlWlO.jpg?r=1669378022",
+                        "large": "https://lain.bgm.tv/pic/crt/l/bf/00/3818_prsn_vlWlO.jpg?r=1669378022",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bf/00/3818_prsn_vlWlO.jpg?r=1669378022"
+                    },
+                    "name": "福山潤",
+                    "short_summary": "福山润（1978年11月26日－）是一名日本男性声优。大阪府高槻市出身。2000年于21岁时加入PRODUCTION baobab，2011年退出和PRODUCTION baobab，并与森川智之共同设立AXL ONE事务所。2018年3月31日，与立花慎之介一起离开AXL ONE；同年4月1日，与立花合伙成立小型事务所“BLACK SHIP”。\r\n初试啼声的动画作品是1998年的《罗德斯岛战记》。初次担任主角的动画作品是2000年到2001年的《无敌王TRI-ZENON》，饰演神威章。此部作品同时也是无职身分的福山润再次以声优身分回归声优界的复归代表作。而令福山润真正登上事业上第一次颠峰的角色，则是《反叛的鲁路修》中的腹黑王子鲁路修，他就是凭着这个角色而获得了第一回声优悬赏奖的最佳男声优。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 3818,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 17363
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/34/20/17364_crt_klp1q.jpg?r=1610523138",
+                "grid": "https://lain.bgm.tv/pic/crt/g/34/20/17364_crt_klp1q.jpg?r=1610523138",
+                "large": "https://lain.bgm.tv/pic/crt/l/34/20/17364_crt_klp1q.jpg?r=1610523138",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/34/20/17364_crt_klp1q.jpg?r=1610523138"
+            },
+            "name": "丹生谷森夏",
+            "summary": "高等部1年4組→2年4組。勇太のクラスメイトで委員長。容姿端麗、クラスでも一、二を争う美少女で男子の人気を集めるマドンナであり「学級王」とも呼ばれる。ピンクのクリップで前髪を整えている。学業成績は優秀だが数学だけは苦手。ダンス部に所属している。「もりさま」と呼ばれると怒る。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/18/51/7297_prsn_9Dfe9.jpg?r=1496038723",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/18/51/7297_prsn_9Dfe9.jpg?r=1496038723",
+                        "large": "https://lain.bgm.tv/pic/crt/l/18/51/7297_prsn_9Dfe9.jpg?r=1496038723",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/18/51/7297_prsn_9Dfe9.jpg?r=1496038723"
+                    },
+                    "name": "赤﨑千夏",
+                    "short_summary": "81プロデュース所属。鹿児島県出身。\r\n\r\n声優を志したのは小学5、6年生頃のこと。中学生時代はバスケットボール部と放送部に所属し、放送部では鹿児島県大会での受賞経歴がある。錦江湾高校在学中は同高校に演劇部がなかったため、地元の市民劇団「劇団いぶき」に所属した。\r\n\r\n家族に2歳上の姉がいる。目標にしている先輩として皆口裕子の名を挙げている。方言は鹿児島弁。趣味・特技は歌。\r\n\r\n東京学芸大学教育学部演劇専修（ゼロ免課程）卒業。大学では第2外国語としてイタリア語を履修。\r\nボイスニュータイプ・サマーオーディション2008で文化放送賞、81プロデュース賞、アルケミスト賞を受賞。81プロデュース賞の受賞特典として2008年10月から、81ACTOR'S STUDIO（81プロデュース付属俳優養成所）に通っていた。2009年10月に養成所を卒業、2010年4月に81プロデュース所属となった。\r\n\r\n2012年にテレビアニメ『キルミーベイベー』で折部やすな役で初めての主役級キャラクターに抜擢。その後の『モーレツ宇宙海賊』『中二病でも恋がしたい!』『恋愛ラボ』等でも主要キャラクターを演じ、2013年に放送された『俺の彼女と幼なじみが修羅場すぎる』では初の（主役ではない）メインヒロインを務めた。\r\n\r\n2018年8月10日、自身のTwitterで結婚を発表した。2020年8月10日、第1子男児の出産を報告。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 7297,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 17364
+        }
+    ]
+}

@@ -1,7 +1,7 @@
 {
     "id": 1959,
     "name": "怪物",
-    "image_path": "data/images/anime/1959.jpg",
+    "image_path": "data\\images\\anime\\1959.jpg",
     "points": 8.3,
     "cost": 3,
     "rarity": "SR",

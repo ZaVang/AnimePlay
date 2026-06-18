@@ -1,0 +1,141 @@
+{
+    "id": 375735,
+    "name": "恋爱FLOPS",
+    "image_path": "data\\images\\anime\\375735.jpg",
+    "points": 6.7,
+    "cost": 1,
+    "rarity": "N",
+    "description": "平凡的男子高中生柏树朝，像往常一样走在一成不变的通学路上。\r\n然而，正和出门前无意间打开的电视里播放的奇妙占卜说的一样，他在这个早晨遭遇到了各种各样的灾难。\r\n在一个接一个发生的灾难中，朝和5名少女发生了可说是最糟糕的相遇。\r\n当他身心俱疲、好不容易到达学校时，作为转校生和新任教师的5名少女的身影却再次出现在了他的面前。\r\n朝努力隐藏自己的脸，但根本藏不住……\r\n自称是朝的好友伊集院好雄，向朝询问与5人之间的关系。\r\n随着与5人相处，解开了彼此之间的误会，关系也稍微融洽了一些。\r\n放学后，朝打开鞋柜准备回家，却发现里面放着一封情书。\r\n寄件人不明的情书上，写着“在校舍后面的樱花树下等你”。这也如占卜所说的一样。\r\n事到如今，打算把一切都弄清楚的朝，向樱花树下走去。\r\n樱花飞舞的季节，5阵恋风带来的淡淡苦闷的青春爱情故事，现在，拉开帷幕！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "后宫",
+        "TV",
+        "恋爱",
+        "日本",
+        "原创"
+    ],
+    "date": "2022-10-12",
+    "rating_rank": 4168,
+    "rating_score": 6.7,
+    "rating_total": 7345,
+    "main_character_ids": [
+        108600,
+        108601,
+        108602
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/09/48/108600_crt_qhb7R.jpg?r=1648212738",
+                "grid": "https://lain.bgm.tv/pic/crt/g/09/48/108600_crt_qhb7R.jpg?r=1648212738",
+                "large": "https://lain.bgm.tv/pic/crt/l/09/48/108600_crt_qhb7R.jpg?r=1648212738",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/09/48/108600_crt_qhb7R.jpg?r=1648212738"
+            },
+            "name": "柏樹朝",
+            "summary": "本作の主人公。\r\nどこにでもいる、ごくごく普通の男子高校生。\r\nしかしある日突然、５人の転校生との恋の嵐に巻き込まれることに。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/81/c0/7385_prsn_3DfT0.jpg?r=1543641007",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/81/c0/7385_prsn_3DfT0.jpg?r=1543641007",
+                        "large": "https://lain.bgm.tv/pic/crt/l/81/c0/7385_prsn_3DfT0.jpg?r=1543641007",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/81/c0/7385_prsn_3DfT0.jpg?r=1543641007"
+                    },
+                    "name": "逢坂良太",
+                    "short_summary": "日本男性声优，隶属日本EARLY WING公司。德岛县出身。\r\n\r\n原本只是很喜欢动画，并没有以成为声优为目标，但是在高中的入学式突然觉得“要成为声优”为目标。在家乡的工业高中毕业后，就和一起想要成为声优的朋友一起来到东京，在日本工学院八王子专门学校的舞台科花了两年学习舞台的基础，最后在专门学校毕业后就到了事务所参加考试，但是不幸落选了，在之后，参加了EARLY WING的追加面试中得到了正选。\r\n在2012年4月中，《钓球》的真田雪是成为声优后的第一次主役。\r\n在2015年的第9回声优奖获得新人男优赏。\r\n\r\n兴趣是散步和电玩，假日会花数个小时散步。\r\n喜欢的歌手是JAM Project。\r\n有一个姐姐和一个弟弟。\r\n喜欢玩Tales of Eternia，甚至列入喜欢的游戏前三名。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 7385,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/80/d1/35605_prsn_6LRuC.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/80/d1/35605_prsn_6LRuC.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/80/d1/35605_prsn_6LRuC.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/80/d1/35605_prsn_6LRuC.jpg"
+                    },
+                    "name": "南真由",
+                    "short_summary": "声優養成所「スタジオカンブリア」在籍時に『ガンダムビルドファイターズトライ』の生徒役でテレビアニメ初出演。\r\n\r\n『放課後ガールズトライブ』のキャスティングをユーザー投票で決定するオーディションで、清涼院撫子役を演じることとなる。\r\n\r\n2016年、円演劇研究所に入所。2017年2月より演劇集団円の会員昇格をする。\r\n\r\n2017年、ゲーム「Leaugue of Angels」ジーナ役オーディションにてグランプリを獲得する。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 35605,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 108600
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/42/7c/108601_crt_7gWF4.jpg?r=1648212728",
+                "grid": "https://lain.bgm.tv/pic/crt/g/42/7c/108601_crt_7gWF4.jpg?r=1648212728",
+                "large": "https://lain.bgm.tv/pic/crt/l/42/7c/108601_crt_7gWF4.jpg?r=1648212728",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/42/7c/108601_crt_7gWF4.jpg?r=1648212728"
+            },
+            "name": "和泉沢愛生",
+            "summary": "朝のクラスに転校してきた明るく元気でまっすぐな少女。\r\n家事全般が得意で、なんでもこなすオールマイティ。\r\n控えめな性格で、皆のまとめ役的な立ち位置でもある。\r\nちょっとやきもち焼きなところも。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/72/5a/10600_prsn_g9nsO.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/72/5a/10600_prsn_g9nsO.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/72/5a/10600_prsn_g9nsO.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/72/5a/10600_prsn_g9nsO.jpg"
+                    },
+                    "name": "伊藤美来",
+                    "short_summary": "伊藤 美来（いとう みく、1996年10月12日 - ）は、日本の女性声優。スタイルキューブ所属。\r\n東京都出身。\r\n\r\n2012年、第1回スタイルキューブ声優オーディションに合格。研修生として現事務所に所属。\r\n2013年、同じ研修生の豊田萌絵とともにStylipSへの加入が発表された。豊田と同時に研修生から本所属に切り替わった。\r\n\r\n趣味：観劇、仮面ライダー・戦隊ヒーロー鑑賞\r\n特技：けん玉",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 10600,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 108601
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/77/8c/108602_crt_mJqoo.jpg?r=1668273976",
+                "grid": "https://lain.bgm.tv/pic/crt/g/77/8c/108602_crt_mJqoo.jpg?r=1668273976",
+                "large": "https://lain.bgm.tv/pic/crt/l/77/8c/108602_crt_mJqoo.jpg?r=1668273976",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/77/8c/108602_crt_mJqoo.jpg?r=1668273976"
+            },
+            "name": "アメリア・アーヴィング",
+            "summary": "来自美国的留学生。\r\n性格天真烂漫，也有笨拙任性的一面。\r\n表达爱情的方式非常直接，很容易暴走。\r\n傲娇，无法坦率地说出内心的想法。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2b/7b/5228_prsn_tIY4W.jpg?r=1718206051",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2b/7b/5228_prsn_tIY4W.jpg?r=1718206051",
+                        "large": "https://lain.bgm.tv/pic/crt/l/2b/7b/5228_prsn_tIY4W.jpg?r=1718206051",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2b/7b/5228_prsn_tIY4W.jpg?r=1718206051"
+                    },
+                    "name": "竹達彩奈",
+                    "short_summary": "日本的女性声优，1989年6月23日出生，埼玉县出身，所属事务所为LINK・PLAN 。身高151cm，血型为O型。代表作品有《轻音少女》中的中野梓、《kiss×sis》中的住之江亚香、《我的妹妹不可能那么可爱》中的高坂桐乃、《只有神知道的世界》中的高原步美、《玉响》中的泽渡枫、《MM一族》中的石动美绪、《迷途猫》中的雾谷希等。\r\n\r\n2019年6月23日，即竹达彩奈生日当天，宣布了与梶裕贵的婚讯。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 5228,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 108602
+        }
+    ]
+}

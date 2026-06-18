@@ -1,0 +1,124 @@
+{
+    "id": 110049,
+    "name": "进击的巨人 无悔的选择 OAD",
+    "image_path": "data\\images\\anime\\110049.jpg",
+    "points": 7.6,
+    "cost": 1,
+    "rarity": "N",
+    "description": "外传「进击的巨人 无悔的选择」OAD化决定！\r\n「进击的巨人」单行本第15、16卷同捆OAD。\r\n讲述了利威尔与调查兵团的团长艾尔文两人相遇的故事。",
+    "type": 2,
+    "platform": "OVA",
+    "episodes_for_hangup": 2,
+    "synergy_tags": [
+        "日本",
+        "OVA",
+        "漫画改",
+        "战斗"
+    ],
+    "date": "2014-12-09",
+    "rating_rank": 802,
+    "rating_score": 7.6,
+    "rating_total": 5162,
+    "main_character_ids": [
+        19546,
+        19633,
+        28281
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e5/b3/19546_crt_UP2v0.jpg?r=1611927735",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e5/b3/19546_crt_UP2v0.jpg?r=1611927735",
+                "large": "https://lain.bgm.tv/pic/crt/l/e5/b3/19546_crt_UP2v0.jpg?r=1611927735",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e5/b3/19546_crt_UP2v0.jpg?r=1611927735"
+            },
+            "name": "リヴァイ",
+            "summary": "",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/96/fa/4232_prsn_bBAP2.jpg?r=1675677585",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/96/fa/4232_prsn_bBAP2.jpg?r=1675677585",
+                        "large": "https://lain.bgm.tv/pic/crt/l/96/fa/4232_prsn_bBAP2.jpg?r=1675677585",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/96/fa/4232_prsn_bBAP2.jpg?r=1675677585"
+                    },
+                    "name": "神谷浩史",
+                    "short_summary": "高中时期是理科生，加入青二塾以前只是一般地看着动画，没有想要成为声优的念头。高三时，于7月份加入同年级朋友组建的演剧团，在9月份的地区演剧大赛中意外获得“个人演技奖”，自此开始对演剧事业产生兴趣。想考艺术类大学所以在高三理转文，并不成功，高考落榜。\r\n另寻出路的时候在杂志上看到了青二塾的广告，征得父母同意考上其东京校第14期。当时不了解其实这里培养的是声优而不是演员，起初产生了“别干了”的消极情绪，但之后仍在青二塾坚持学习了下去，不过是“不良墅生”，同学和老师之后都笑称当时他“很狂妄”，并不参加到同学间的自主练习中。1994年，19岁的神谷从青二塾毕业，顺利加入青二事务所。\r\n出道的头几年，相比于同期甚至后期的声优们很快的大放异彩，神谷则是全部出演酱油的路人角色。2006年8月7日，因为遭逢交通事故而住院治疗。虽然经纪公司并不愿透漏事故的原因，但从关系人口中得知似乎是骑乘机车时发生的。车祸似乎是神谷事业的一个拐点。2007年因担任《再见!绝望先生》、《高达00》等作品主角的CV而受到瞩目，之后在《夏目友人帐》、《化物语》等作品中为主角配音获得极高人气，目前则是因为饰演《进击的巨人》中的里维兵长而再度爆红。\r\n\r\n2025年1月1日，宣布与女演员、模特逢泽莉娜结婚。1月4日，在广播节目中透露自己于8年前起单身，后因此节目而与逢泽莉娜结缘，大约2年前开始交往。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 4232,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 19546
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/da/c5/19633_crt_8hFNc.jpg?r=1410321853",
+                "grid": "https://lain.bgm.tv/pic/crt/g/da/c5/19633_crt_8hFNc.jpg?r=1410321853",
+                "large": "https://lain.bgm.tv/pic/crt/l/da/c5/19633_crt_8hFNc.jpg?r=1410321853",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/da/c5/19633_crt_8hFNc.jpg?r=1410321853"
+            },
+            "name": "エルヴィン・スミス",
+            "summary": "调查军团分队长→调查兵团第13任团长\r\n\r\n拥有过人的判断力以及指挥能力，行动及考虑总是想得比任何人还要深远，就连兵团里资历深的老兵也没能理解太多。可以为了墙内全人类的生存，选择舍弃100个同伴的性命，是可以舍弃最重要的东西的人，虽然看似冷酷无情，但正因如此才可以被以利威尔为首的部下们深深信赖。\r\n过去艾尔文让曾在首都地下街相当出名的流氓利威尔进入调查兵团。在得知艾伦的能力后不顾周遭反对，说服达里斯总统让艾伦进入调查兵团。\r\n角色模特儿为漫画守护者的智谋者（Ozymandias）\r\n小时候的绰号是“眉毛”。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c4/8e/4456_prsn_HEQe3.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c4/8e/4456_prsn_HEQe3.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/c4/8e/4456_prsn_HEQe3.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c4/8e/4456_prsn_HEQe3.jpg"
+                    },
+                    "name": "小野大輔",
+                    "short_summary": "在日本大学艺术学部放送学科就读时，主要是专攻电视节目制作。但因为当时提出的企划作品被教授评价的很差，所以转而改以演出者方式参与，并在参与过程中感受到演戏的有趣，因此决定以成为声优为目标。\r\n　　 出道当时，以动画节目的准常态出演（担任非固定角色名的小角色配音）为主。\r\n　　 第一部担任主角的动画作品是「AIR」TV动画版的男主角国崎往人。\r\n　　 在2006年放送的动画《凉宫春日的忧郁》以古泉一树这个角色获得广大知名度，其後也陆续获得许多要角演出。从帅气知性的青年到有点脱线的搞笑角色，演出的类型范围十分广泛。\r\n　　 2008年以《南家三姐妹》保坂这个角色获得第二回声优奖男优部门配角赏。　\r\n　　据来自2010年6月14日，IT世界网的咨询《Voice NewType投票，新一代声优崭露头角》中报道：男性榜单这边倒几乎都是老面孔，不过占据首位的再也不是福山润和神谷浩史等人，今次终于也轮到了小野大辅。长期以来如同劳模一般辛苦工作的小野大辅，如今终于名利双收，不但摘得上届声优大赏最佳男主角赏，如今人气投票又问鼎冠军，实在可喜可贺。\r\n　　 2010年1月31日その执事、狂騒～赤いヴァレンタイン声优见面会中被主持人吉田尚记称为声优界的谷原章介。\r\n　　 2010年3月以《黑执事》塞巴斯蒂安这个角色获得第四回声优奖主演男优赏。\r\n　　 2010年4月新番《迷糊餐馆working》中担任佐藤润的声优。\r\n　　 2010年4月新番《无法逃离的背叛》中担任莲城焰椎真的声优\r\n　　 2010年7月新番《传说中的勇者传说》中担任西昂·阿斯塔尔的声优。《黑执事2》中继续担任塞巴斯蒂安的声优。\r\n　　在《背叛》中的热血少年，《传说中的勇者传说》的拥有伟大理想又腹黑的西昂使小野大辅的声线变化发挥地更为淋漓尽致。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 4456,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 19633
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c0/2a/28281_crt_obTjb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c0/2a/28281_crt_obTjb.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/c0/2a/28281_crt_obTjb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c0/2a/28281_crt_obTjb.jpg"
+            },
+            "name": "ファーラン・チャーチ",
+            "summary": "リヴァイのゴロツキ時代の仲間の一人。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9e/0b/4614_prsn_qQyu9.jpg?r=1573408993",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/9e/0b/4614_prsn_qQyu9.jpg?r=1573408993",
+                        "large": "https://lain.bgm.tv/pic/crt/l/9e/0b/4614_prsn_qQyu9.jpg?r=1573408993",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9e/0b/4614_prsn_qQyu9.jpg?r=1573408993"
+                    },
+                    "name": "遊佐浩二",
+                    "short_summary": "",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 4614,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 28281
+        }
+    ]
+}

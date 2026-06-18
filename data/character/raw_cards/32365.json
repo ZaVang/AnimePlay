@@ -1,0 +1,81 @@
+{
+    "birth_mon": 2,
+    "gender": "female",
+    "birth_day": 10,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5e/f2/32365_crt_Jet0R.jpg?r=1441778216",
+        "grid": "https://lain.bgm.tv/pic/crt/g/5e/f2/32365_crt_Jet0R.jpg?r=1441778216",
+        "large": "https://lain.bgm.tv/pic/crt/l/5e/f2/32365_crt_Jet0R.jpg?r=1441778216",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5e/f2/32365_crt_Jet0R.jpg?r=1441778216"
+    },
+    "summary": "女主角之一，绫斗的同学，相隔六年后再次见面的青梅竹马。\r\n一名路痴，会在路上不知不觉走失，经常因此打电话求助他人。脸上几乎没有表情变化，加上慢条斯理的说话方式，就算在战斗中也感觉不到紧张感，但是相反的使用的煌式武装却都是威力极强大的枪炮型武装，而且小时候为了能够和绫斗进行对练，以天雾辰明流为基础学会运用庞大的炮身进行近身战的技术。\r\n使用父亲所制作的十多种枪炮型煌式武装，拥有相当恐怖的炮击威力。",
+    "name": "沙々宮紗夜",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "沙沙宫纱夜"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Saya Sasamiya"
+                },
+                {
+                    "k": "日文名",
+                    "v": "沙々宮 紗夜"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ささみや さや"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sasamiya Saya"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2月10日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "148cm"
+        },
+        {
+            "key": "所属",
+            "value": "星導館学園高等部1年→2年"
+        },
+        {
+            "key": "序列",
+            "value": "星導館学園5位同等"
+        },
+        {
+            "key": "最終武装",
+            "value": "四十一式煌型粒子双方ヴァルデンホルト"
+        }
+    ],
+    "stat": {
+        "comments": 10,
+        "collects": 67
+    },
+    "id": 32365,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        130250
+    ]
+}

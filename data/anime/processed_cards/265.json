@@ -1,7 +1,7 @@
 {
     "id": 265,
     "name": "新世纪福音战士",
-    "image_path": "data/images/anime/265.jpg",
+    "image_path": "data\\images\\anime\\265.jpg",
     "points": 8.7,
     "cost": 6,
     "rarity": "UR",

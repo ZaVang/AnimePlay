@@ -1,0 +1,65 @@
+{
+    "birth_mon": 7,
+    "gender": "female",
+    "birth_day": 3,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a1/57/56653_crt_L9o9s.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a1/57/56653_crt_L9o9s.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/a1/57/56653_crt_L9o9s.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a1/57/56653_crt_L9o9s.jpg"
+    },
+    "summary": "高校一年级学生，是一个有预知和感应能力，头脑聪明父母双亡的孤女。\r\n某日在学校无意间弄倒了那鲁的摄像机，害那鲁的助手林先生受伤无法工作，从而在那鲁的提议下开始成为那鲁的助手，一直迷恋那鲁的纯情小女生。",
+    "name": "谷山麻衣",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "谷山麻衣"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "谷山 麻衣"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "たにやま まい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Taniyama Mai"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月3日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "155cm"
+        }
+    ],
+    "stat": {
+        "comments": 2,
+        "collects": 12
+    },
+    "id": 56653,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        1531
+    ]
+}

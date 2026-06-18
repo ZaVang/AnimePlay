@@ -1,0 +1,52 @@
+{
+    "birth_mon": 10,
+    "gender": "female",
+    "birth_day": 10,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5f/f6/74328_crt_9qfBb.jpg?r=1722001436",
+        "grid": "https://lain.bgm.tv/pic/crt/g/5f/f6/74328_crt_9qfBb.jpg?r=1722001436",
+        "large": "https://lain.bgm.tv/pic/crt/l/5f/f6/74328_crt_9qfBb.jpg?r=1722001436",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5f/f6/74328_crt_9qfBb.jpg?r=1722001436"
+    },
+    "summary": "シトリーの姉・アンセムの妹にあたり、ティノの師匠でもある。\r\n二つ名《絶影（ぜつえい）》は彼女が師事した盗賊（シーフ）から襲名した名で、影すら残さぬ神速を誇る技名に由来する。\r\nその戦う様はまさにジェノサイドモンスター。\r\n一人称が「リィズちゃん」になるのはキレてるときなので要注意。",
+    "name": "リィズ・スマート",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "莉兹·斯玛特"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "10月10日"
+        },
+        {
+            "key": "所属",
+            "value": "嘆きの亡霊"
+        },
+        {
+            "key": "职业",
+            "value": "盗贼"
+        }
+    ],
+    "stat": {
+        "comments": 20,
+        "collects": 50
+    },
+    "id": 74328,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        481410
+    ]
+}

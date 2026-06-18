@@ -1,0 +1,140 @@
+{
+    "id": 407133,
+    "name": "转生为第七王子，随心所欲的魔法学习之路",
+    "image_path": "data\\images\\anime\\407133.jpg",
+    "points": 6.4,
+    "cost": 1,
+    "rarity": "N",
+    "description": "魔法最重要的是“家世”“才能”“努力”。有一位热爱魔法，却缺乏血统和才能，最后死于非命的“凡人”魔法师。临死前期望“想要钻研学习更多魔法”的这个男人在转生后，成为了拥有强大魔法血统的沙鲁姆王国第七王子·罗伊德。\r\n拥有过去的记忆，带着完美的血统及才能投胎转世的他，怀抱着前世没能实现的心愿，即将以超乎常人的魔力“随心所欲地学习魔法”，享受他的无双生活。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "漫画改",
+        "战斗"
+    ],
+    "date": "2024-04-01",
+    "rating_rank": 5842,
+    "rating_score": 6.4,
+    "rating_total": 4563,
+    "main_character_ids": [
+        132836,
+        132837,
+        132838
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/22/33/132836_crt_73Vn3.jpg?r=1709647787",
+                "grid": "https://lain.bgm.tv/pic/crt/g/22/33/132836_crt_73Vn3.jpg?r=1709647787",
+                "large": "https://lain.bgm.tv/pic/crt/l/22/33/132836_crt_73Vn3.jpg?r=1709647787",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/22/33/132836_crt_73Vn3.jpg?r=1709647787"
+            },
+            "name": "ロイド=ディ=サルーム",
+            "summary": "サルーム王国を統べる王族の第七王子。\r\n転生者であり、魔術師だった前世の記憶を持ったまま成長。\r\n10歳ながら膨大な魔術の知識を持ち、魔人レベルでも震え上がるほどの魔力を内に秘めている。\r\n王位継承や女性、恋愛などには興味が無く、その行動と欲求の全ては自分の大好きな魔術を極めるための研究と実践にのみ注がれている。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e2/e6/20631_prsn_bTC2c.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e2/e6/20631_prsn_bTC2c.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/e2/e6/20631_prsn_bTC2c.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e2/e6/20631_prsn_bTC2c.jpg"
+                    },
+                    "name": "小市眞琴",
+                    "short_summary": "小市真琴是日本的女性声优、舞台演员、编舞家，东京都出身。隶属于stay luck。",
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 20631,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 132836
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/36/b7/132837_crt_666K7.jpg?r=1688436136",
+                "grid": "https://lain.bgm.tv/pic/crt/g/36/b7/132837_crt_666K7.jpg?r=1688436136",
+                "large": "https://lain.bgm.tv/pic/crt/l/36/b7/132837_crt_666K7.jpg?r=1688436136",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/36/b7/132837_crt_666K7.jpg?r=1688436136"
+            },
+            "name": "グリモワール",
+            "summary": "かつてサルーム王国を滅亡寸前にまで追いやった古代魔術を操る魔人。\r\n王国の封印書庫にある禁書の中に数百年にわたって封じ込められていたのをロイドが解放し、相まみえる。しかし、ロイドの底知れない魔力と魔術に圧倒され屈服。\r\nかわいらしい使い魔の姿に身を変えてロイドに仕えるようになった。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/18/8c/3832_prsn_O1E5c.jpg?r=1545044333",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/18/8c/3832_prsn_O1E5c.jpg?r=1545044333",
+                        "large": "https://lain.bgm.tv/pic/crt/l/18/8c/3832_prsn_O1E5c.jpg?r=1545044333",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/18/8c/3832_prsn_O1E5c.jpg?r=1545044333"
+                    },
+                    "name": "大塚明夫",
+                    "short_summary": "日本の声優、俳優、ナレーター。マウスプロモーション所属。\r\n父は同じく俳優・声優の大塚周夫、元妻は声優の沢海陽子。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 3832,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8e/ad/34397_prsn_Fif7I.jpg?r=1722000886",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/8e/ad/34397_prsn_Fif7I.jpg?r=1722000886",
+                        "large": "https://lain.bgm.tv/pic/crt/l/8e/ad/34397_prsn_Fif7I.jpg?r=1722000886",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8e/ad/34397_prsn_Fif7I.jpg?r=1722000886"
+                    },
+                    "name": "ファイルーズあい",
+                    "short_summary": "（日语：ファイルーズ あい Fairūzu Ai；英语：Fairouz Ai；埃及阿拉伯语：عاي فيروز；1993年7月6日－）出身于日本东京都的女性配音员。Raccoon Dog所属，Pro-Fit声优养成所毕业。\r\n\r\n日本与埃及的混血儿，父亲为埃及人，母亲为日本人。\r\n\r\n菲鲁兹是她的第一个名字，昵称“ファイちゃん”，这也是她从小取的昵称。在广播剧CD《新娘特别班》演出当时使用全名“门田·菲鲁兹·蓝（門田ファイルーズあい）”，而现在艺名“菲鲁兹·蓝（ファイルーズあい）”则是只有名字。不过菲鲁兹的日文发音“ファイルーズ”和“ファブリーズ”两个都是一模一样的。\r\n\r\n小学5年级中途开始直到小学毕业都住在埃及开罗。上国中后回日本。国中时期喜欢上漫画《JoJo的奇妙冒险 石之海》，并参加过Skype举办的《JoJo》朗读会，从此之后把声优当作将来目标。\r\n\r\n由于双亲的反对，她在高中毕业后进入了平面设计专门学校，但最终还是希望进入声优养成所，在担任了1年的牙医助理后进入Pro-Fit声优养成所，毕业后正式成为Pro Fit所属。\r\n\r\n2019年，于电视动画《流汗吧！健身少女》初次主演。\r\n\r\n2020年，获得第14届声优Award新人女演员奖。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 34397,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 132837
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ab/76/132838_crt_vZYYS.jpg?r=1709647824",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ab/76/132838_crt_vZYYS.jpg?r=1709647824",
+                "large": "https://lain.bgm.tv/pic/crt/l/ab/76/132838_crt_vZYYS.jpg?r=1709647824",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ab/76/132838_crt_vZYYS.jpg?r=1709647824"
+            },
+            "name": "シルファ",
+            "summary": "サルーム王国に仕えるメイドで、ロイドを溺愛する教育係。\r\n類まれな剣術の使い手で、“銀の剣姫”という異名を持つ。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/76/43/15497_prsn_b9qz3.jpg?r=1709906632",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/76/43/15497_prsn_b9qz3.jpg?r=1709906632",
+                        "large": "https://lain.bgm.tv/pic/crt/l/76/43/15497_prsn_b9qz3.jpg?r=1709906632",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/76/43/15497_prsn_b9qz3.jpg?r=1709906632"
+                    },
+                    "name": "Lynn",
+                    "short_summary": "日本的女性声优。アーツビジョン所属。成长于新潟县（出生地为神奈川县）。\r\n兴趣：看电影、照相、乒乓球\r\n由声优事务所ARTSVISION附属的声优养成所日本播音演技研究所，所毕业。\r\n喜欢猫科动物，最喜欢的歌手绚香，最喜欢食物拉面。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 15497,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 132838
+        }
+    ]
+}

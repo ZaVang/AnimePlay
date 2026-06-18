@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5d/03/42371_crt_73Mx6.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/5d/03/42371_crt_73Mx6.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/5d/03/42371_crt_73Mx6.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5d/03/42371_crt_73Mx6.jpg"
+    },
+    "summary": "18歳。統合宇宙軍少尉。日系2世のアメリカ人。幼い頃に異星人の宇宙戦艦ASS-1（のちのSDF-1マクロス）の墜落を遠方より目撃する。その後勃発した統合戦争で両親を亡くし、統合軍に入隊後パイロットとなる。腕は優秀だが自分勝手な言動が多く、同僚達からは距離を置かれている。ノーラの駆るSV-51γと交戦し、その変幻自在の機動の前に撃墜される。脱出して一命をとりとめフォッカー指揮するスカル小隊に転属となるも、それまでとは勝手の異なる可変戦闘機への機種転換に手を焼くこととなる。物語冒頭ではF-14に搭乗し、その後VF-0D、VF-0Aへと乗り換える。左目の泣きぼくろが特徴。サラやマオ、フォッカーたちとの触れ合いの中で、それまで閉ざしていた心を徐々に開いてゆく。",
+    "name": "工藤シン",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "工藤真"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "工藤 シン"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "くどう シン"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kudou Shin"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 4,
+        "collects": 2
+    },
+    "id": 42371,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        3170
+    ]
+}

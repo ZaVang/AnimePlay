@@ -1,0 +1,51 @@
+{
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/36/b7/132837_crt_666K7.jpg?r=1688436136",
+        "grid": "https://lain.bgm.tv/pic/crt/g/36/b7/132837_crt_666K7.jpg?r=1688436136",
+        "large": "https://lain.bgm.tv/pic/crt/l/36/b7/132837_crt_666K7.jpg?r=1688436136",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/36/b7/132837_crt_666K7.jpg?r=1688436136"
+    },
+    "summary": "かつてサルーム王国を滅亡寸前にまで追いやった古代魔術を操る魔人。\r\n王国の封印書庫にある禁書の中に数百年にわたって封じ込められていたのをロイドが解放し、相まみえる。しかし、ロイドの底知れない魔力と魔術に圧倒され屈服。\r\nかわいらしい使い魔の姿に身を変えてロイドに仕えるようになった。",
+    "name": "グリモワール",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "古雷莫瓦尔"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "グリモ"
+                },
+                {
+                    "v": "古雷莫"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "古力莫瓦"
+                }
+            ]
+        },
+        {
+            "key": "引用来源",
+            "value": "https://dainanaoji.com/"
+        }
+    ],
+    "stat": {
+        "comments": 14,
+        "collects": 11
+    },
+    "id": 132837,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        407133
+    ]
+}

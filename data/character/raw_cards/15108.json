@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/75/e3/15108_crt_J9uup.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/75/e3/15108_crt_J9uup.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/75/e3/15108_crt_J9uup.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/75/e3/15108_crt_J9uup.jpg"
+    },
+    "summary": "日本动漫2012年1月新番《Another》中主角见崎鸣的双胞胎妹妹,将于 5月6号发售的《Another》漫画第0卷同捆的OVA中登场.\r\n患有嚴重腎臟疾病，於東京的醫院接受腎臟移植手術後轉到夜見北市立醫院。",
+    "name": "藤岡未咲",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "藤冈未咲"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ふじおかみさき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Fujioka Misaki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 12,
+        "collects": 58
+    },
+    "id": 15108,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        24540
+    ]
+}

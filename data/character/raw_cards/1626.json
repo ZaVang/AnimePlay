@@ -1,0 +1,77 @@
+{
+    "birth_mon": 7,
+    "gender": "male",
+    "birth_day": 18,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c6/f2/1626_crt_5Q45D.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c6/f2/1626_crt_5Q45D.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/c6/f2/1626_crt_5Q45D.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c6/f2/1626_crt_5Q45D.jpg"
+    },
+    "summary": "本作的主人公。\r\n    罪名『怠惰』。\r\n    因為虹膜異色症，所以右眼(劫之眼：能預知對方動作或重現他人的招式)生來就看不見東西。與姐姐『皋月菊理』一起在兒童養護設施長大。\r\n    與青梅竹馬『水奈瀬由佳』是在設施時代開始時就走在一起的好朋友。\r\n    自從7年前姐姐菊理神秘自殺以後，因此深受打擊而變得毫無鬥志,过着行尸走肉的生活。\r\n    儘管因為由佳一直為他打氣，現在回復了平常人的生活，然而其實只是過著毫無將來與希望可言的、倦怠的每一天。\r\n    看見了在『赤之夜』中戰鬥的少女們的身影後，他拾回了自己應該去守護什麼的鬥志……\r\n\r\n    「如果完全的世界是不存在的話，無論做什麼也是無濟於事的吧——」",
+    "name": "皐月駆",
+    "infobox": [
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "SATSUKI KAKERU"
+                },
+                {
+                    "k": "日文名",
+                    "v": "皐月駆"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "皐月驅"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "さつき かける"
+                }
+            ]
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "简体中文名",
+            "value": "皋月驱"
+        },
+        {
+            "key": "生日",
+            "value": "7月18日"
+        },
+        {
+            "key": "身高",
+            "value": "179cm"
+        },
+        {
+            "key": "体重",
+            "value": "63kg"
+        },
+        {
+            "key": "声优",
+            "value": "小野大輔"
+        }
+    ],
+    "stat": {
+        "comments": 14,
+        "collects": 15
+    },
+    "id": 1626,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        2566
+    ]
+}

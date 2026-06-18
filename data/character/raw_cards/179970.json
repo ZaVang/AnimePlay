@@ -1,0 +1,70 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7b/8f/179970_crt_aDK5N.jpg?r=1752907725",
+        "grid": "https://lain.bgm.tv/pic/crt/g/7b/8f/179970_crt_aDK5N.jpg?r=1752907725",
+        "large": "https://lain.bgm.tv/pic/crt/l/7b/8f/179970_crt_aDK5N.jpg?r=1752907725",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7b/8f/179970_crt_aDK5N.jpg?r=1752907725"
+    },
+    "summary": "名も無き小さな開拓村で暮らす少年。身分は農奴。表向きは才能無しとなっているが、実は世界で唯一無二の才能「召喚士」を持つ。実は前世は熱狂的なゲーマーであり、理不尽な高難易度のゲームをクリアしてきた経験と熱意で、「ヘルモード」な異世界へと挑んでいく。",
+    "name": "アレン",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "亚莲"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "艾伦"
+                },
+                {
+                    "k": "韩语名",
+                    "v": "앨런"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Allen"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "アレン"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Aren"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "链接",
+            "value": [
+                {
+                    "k": "召唤兽",
+                    "v": "https://hellmode-anime.com/summon/"
+                }
+            ]
+        }
+    ],
+    "stat": {
+        "comments": 3,
+        "collects": 8
+    },
+    "id": 179970,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        526979
+    ]
+}

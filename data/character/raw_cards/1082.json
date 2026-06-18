@@ -1,0 +1,69 @@
+{
+    "birth_mon": 6,
+    "gender": "female",
+    "birth_day": 8,
+    "birth_year": null,
+    "blood_type": 4,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/81/8f/1082_3rfyT.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/81/8f/1082_3rfyT.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/81/8f/1082_3rfyT.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/81/8f/1082_3rfyT.jpg"
+    },
+    "summary": "瑞穗的青梅竹马借着某人的遗言为盾牌,让瑞穗女装进入女校,并乐在其中所属是田径部.她有时经常为瑞穗乱出主意,搞得瑞穗团团乱转,有时做事甚至不考虑后果但是仍然是瑞穗的好参谋",
+    "name": "御門まりや",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "御门玛利亚"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "御門 まりや"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "みかどまりや"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Mikado Mariya"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "6月8日"
+        },
+        {
+            "key": "血型",
+            "value": "O"
+        },
+        {
+            "key": "身高",
+            "value": "161cm"
+        },
+        {
+            "key": "声优",
+            "value": "あおいひとみ"
+        }
+    ],
+    "stat": {
+        "comments": 1,
+        "collects": 12
+    },
+    "id": 1082,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        3828
+    ]
+}

@@ -1,0 +1,155 @@
+{
+    "id": 269235,
+    "name": "天气之子",
+    "image_path": "data\\images\\anime\\269235.jpg",
+    "points": 7.1,
+    "cost": 1,
+    "rarity": "N",
+    "description": "「想要试着去往那道光芒当中」\r\n\r\n高中一年级的夏天。从离岛离家出走，来到东京的帆高。\r\n他的生活立刻变得困窘，在度过孤独的每一天之后终于找到的工作，\r\n是为古怪的超自然杂志撰稿。\r\n\r\n如同预示着他接下来的命运一般，连日不断降下雨水。\r\n此时，在人潮熙熙攘攘的都市一角，帆高遇到了一位少女。\r\n\r\n由于某些缘故，和弟弟两个人一起坚强生活的少女·阳菜。\r\n她拥有不可思议的能力。\r\n\r\n「呐，现在开始就要放晴了哦」\r\n\r\n雨水逐渐停止，街道笼罩在美丽的光芒中。\r\n那是，仅仅在心中祈祷，就能让天空放晴的力量——",
+    "type": 2,
+    "platform": "剧场版",
+    "episodes_for_hangup": 1,
+    "synergy_tags": [
+        "剧场版",
+        "恋爱",
+        "日本",
+        "奇幻",
+        "原创"
+    ],
+    "date": "2019-07-19",
+    "rating_rank": 1980,
+    "rating_score": 7.1,
+    "rating_total": 18843,
+    "main_character_ids": [
+        68978,
+        70544
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/2a/94/68978_crt_1XY27.jpg?r=1572894773",
+                "grid": "https://lain.bgm.tv/pic/crt/g/2a/94/68978_crt_1XY27.jpg?r=1572894773",
+                "large": "https://lain.bgm.tv/pic/crt/l/2a/94/68978_crt_1XY27.jpg?r=1572894773",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2a/94/68978_crt_1XY27.jpg?r=1572894773"
+            },
+            "name": "天野陽菜",
+            "summary": "本作のヒロイン。8月22日生まれの獅子座。\r\n    代々木に存する廃ビル屋上に鎮座する小さな鳥居をくぐったことで、局地的な範囲を祈りによって一時的に晴れにする能力を手に入れる。しかし、その能力を行使するごとに身体が徐々に透明化していく代償を抱えることになる。当初はそのことを自覚しておらず、「100％の晴れ女」業を天職だと考えたほどであるが、後にこの能力は自らの命と引き換えに得られたものであることを知ることとなる。\r\n    歌舞伎町のマクドナルドで年齢を偽ってバイトしている最中に、お金を使い果たしてひもじそうにしている帆高を見つけビッグマックをおごる。このことが縁で後に帆高と知り合うことになる。帆高に最初に出会った時点では14歳だったが、2021年の誕生日で18歳になると彼に伝えた。\r\n\r\n本作女主角，自称18岁，实际年龄仅15岁，一年前母亲因病去世后与弟弟天野凪两人住在一起，偶然在打工的麦当劳邂逅了帆高，以此契机和后者结下不解之缘。颈部上戴有母亲生前戴的手环。擅长料理和裁缝，拥有让天空放晴的不可思议的能力的少女。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/00/69/34207_prsn_EAeWA.jpg?r=1551110461",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/00/69/34207_prsn_EAeWA.jpg?r=1551110461",
+                        "large": "https://lain.bgm.tv/pic/crt/l/00/69/34207_prsn_EAeWA.jpg?r=1551110461",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/00/69/34207_prsn_EAeWA.jpg?r=1551110461"
+                    },
+                    "name": "森七菜",
+                    "short_summary": "日本女演员。出身于日本大分县，隶属于ARBRE，身高154公分。兴趣是视频制作，弹钢琴，舞蹈。\r\n\r\n2016年，国中3年级的暑假和家人一起出去吃饭时被星探挖掘进入艺能界。10月演出雀巢咖啡的网络广告。\r\n\r\n2017年，6月演出网络剧《东京吸血鬼旅馆》。7月首次演出电影《好想大声说出心底的话。》。10月首次演出电视剧《只是先出生的我》。\r\n\r\n2018年，4月演出NHK土曜剧《崩坏的教育现场战斗校园律师》，饰演被同学欺凌而自杀未遂并努力振作起来的学生山下未希，生动的演技引起瞩目。12月13日公布担任新海诚执导的动画电影《天气之子》女主角天野阳菜的配音员。",
+                    "career": [
+                        "actor"
+                    ],
+                    "id": 34207,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f7/17/79171_prsn_32TLL.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f7/17/79171_prsn_32TLL.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/f7/17/79171_prsn_32TLL.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f7/17/79171_prsn_32TLL.jpg"
+                    },
+                    "name": "李昀晴",
+                    "short_summary": "台湾女性配音员。\r\n\r\n华视配音训练班第66期杰出学员，2013年开始从业。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 79171,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/08/e0/81521_prsn_3cxJX.jpg?r=1760276976",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/08/e0/81521_prsn_3cxJX.jpg?r=1760276976",
+                        "large": "https://lain.bgm.tv/pic/crt/l/08/e0/81521_prsn_3cxJX.jpg?r=1760276976",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/08/e0/81521_prsn_3cxJX.jpg?r=1760276976"
+                    },
+                    "name": "杨鸣",
+                    "short_summary": "中国内地女性配音演员。\r\n毕业于吉林艺术学院2003级，2007年加入长春电影译制厂担任配音演员至今。声音清脆，从成熟少女到活泼萝莉角色均可演绎。\r\n现居吉林长春。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 81521,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 68978
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ed/fe/70544_crt_md3YW.jpg?r=1563597156",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ed/fe/70544_crt_md3YW.jpg?r=1563597156",
+                "large": "https://lain.bgm.tv/pic/crt/l/ed/fe/70544_crt_md3YW.jpg?r=1563597156",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ed/fe/70544_crt_md3YW.jpg?r=1563597156"
+            },
+            "name": "森嶋帆高",
+            "summary": "本作男主角，16岁，高一生。原本住在神津岛上，因故离家出走后来到东京，在须贺经营的事务所撰写要投稿给超自然杂志的文章。在找打工时邂逅在麦当劳打工的阳菜。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f6/81/34863_prsn_q8851.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f6/81/34863_prsn_q8851.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/f6/81/34863_prsn_q8851.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f6/81/34863_prsn_q8851.jpg"
+                    },
+                    "name": "醍醐虎汰朗",
+                    "short_summary": "醍醐 虎汰朗（だいご こたろう、2000年9月1日 - ）は、日本の俳優。東京都出身。エーライツ所属。",
+                    "career": [
+                        "actor"
+                    ],
+                    "id": 34863,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/25/68/72212_prsn_PM179.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/25/68/72212_prsn_PM179.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/25/68/72212_prsn_PM179.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/25/68/72212_prsn_PM179.jpg"
+                    },
+                    "name": "高晗",
+                    "short_summary": "",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 72212,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ee/8f/79178_prsn_2X686.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ee/8f/79178_prsn_2X686.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/ee/8f/79178_prsn_2X686.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ee/8f/79178_prsn_2X686.jpg"
+                    },
+                    "name": "張立昂",
+                    "short_summary": "台湾男性配音员，师从冯友薇。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 79178,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 70544
+        }
+    ]
+}

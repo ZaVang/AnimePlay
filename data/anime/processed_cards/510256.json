@@ -1,0 +1,93 @@
+{
+    "id": 510256,
+    "name": "与游戏中心的少女异文化交流的故事",
+    "image_path": "data\\images\\anime\\510256.jpg",
+    "points": 6.4,
+    "cost": 1,
+    "rarity": "N",
+    "description": "ゲームセンターでアルバイト中の青年・草壁蓮司が目にしたのは、\r\nバレンタインデーにひとりクレーンゲームに熱中する英国少女・リリー。\r\n何度挑戦しても景品を手にできず涙目の彼女に、思わず蓮司は手を貸す。\r\n無事にぬいぐるみを手にしたリリーから後日渡されたのは、思わぬメッセージカード───\r\n\r\n“Be My Valentine!”（私の恋人になって！）\r\n\r\nキュートで天真爛漫な英国少女との出会い。勘違いから始まる、ゲーセンでの異文化交流！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "恋爱",
+        "日本",
+        "漫画改",
+        "日常"
+    ],
+    "date": "2025-07-06",
+    "rating_rank": 6161,
+    "rating_score": 6.4,
+    "rating_total": 3933,
+    "main_character_ids": [
+        167988,
+        167989
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/3a/0e/167988_crt_EmMaQ.jpg?r=1733452290",
+                "grid": "https://lain.bgm.tv/pic/crt/g/3a/0e/167988_crt_EmMaQ.jpg?r=1733452290",
+                "large": "https://lain.bgm.tv/pic/crt/l/3a/0e/167988_crt_EmMaQ.jpg?r=1733452290",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3a/0e/167988_crt_EmMaQ.jpg?r=1733452290"
+            },
+            "name": "リリー・ベイカー",
+            "summary": "13歳の女の子。イギリスから引っ越してきたが、日本語はまだまだ勉強中。\r\nゲームセンターでの遊びに熱中するも、こちらも腕前はまだまだ。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c6/55/31776_prsn_fzgJz.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c6/55/31776_prsn_fzgJz.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/c6/55/31776_prsn_fzgJz.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c6/55/31776_prsn_fzgJz.jpg"
+                    },
+                    "name": "天城サリー",
+                    "short_summary": "出生并成长于美国洛杉矶，双亲都是日本人。以声优为志向于2016年单人赴日。\r\n精通英语、日语以及西班牙语，也会说法语。\r\n2016年12月24日，在Aniplex等公司开办的「数字偶像声优Audition」中合格。\r\n口号是「根暗な明るいオタク、天城サリーです。食も笑顔もアメリカンサイズで頑張ります！」。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 31776,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 167988
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/4b/19/167989_crt_g8OAF.jpg?r=1733452288",
+                "grid": "https://lain.bgm.tv/pic/crt/g/4b/19/167989_crt_g8OAF.jpg?r=1733452288",
+                "large": "https://lain.bgm.tv/pic/crt/l/4b/19/167989_crt_g8OAF.jpg?r=1733452288",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4b/19/167989_crt_g8OAF.jpg?r=1733452288"
+            },
+            "name": "草壁蓮司",
+            "summary": "18歳の学生。自宅近くのゲームセンターでアルバイトをしている。\r\nどんなジャンルのゲームでも見事な腕前を披露する。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2d/3a/19619_prsn_booOs.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2d/3a/19619_prsn_booOs.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/2d/3a/19619_prsn_booOs.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2d/3a/19619_prsn_booOs.jpg"
+                    },
+                    "name": "千葉翔也",
+                    "short_summary": "千叶翔也（1995年8月29日－）是日本男性声优及演员（前儿童演员），TOY'S FACTORY所属。\r\n\r\n兴趣及专长是吉他、看音乐剧。是宝冢歌剧团的粉丝。\r\n高中时期曾经加入了轻音乐部。\r\n在广播节目“千叶翔也的浪漫千层派”里提到自己崇拜的声优前辈是逢坂良太。",
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 19619,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 167989
+        }
+    ]
+}

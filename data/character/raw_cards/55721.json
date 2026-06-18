@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/43/f4/55721_crt_kXk7h.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/43/f4/55721_crt_kXk7h.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/43/f4/55721_crt_kXk7h.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/43/f4/55721_crt_kXk7h.jpg"
+    },
+    "summary": "才色兼備の大和撫子、それでいて天真爛漫で、男女とも好られる文句なしのパーフェクトヒロイン。\r\n\r\n関友高校の誇るパーフェクトヒロイン。\r\nその実、誰より努力と結果を重んじる現実主義者。\r\nチーズが大好物。\r\n陸上部所属。",
+    "name": "日南葵",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "日南葵"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ひなみ あおい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Aoi Hinami"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "弱キャラ友崎くん Lv.1 (ガガガ文庫)、https://tomozaki-koushiki.com/character/"
+        }
+    ],
+    "stat": {
+        "comments": 40,
+        "collects": 100
+    },
+    "id": 55721,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        292527
+    ]
+}

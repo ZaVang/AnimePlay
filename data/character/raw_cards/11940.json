@@ -1,0 +1,57 @@
+{
+    "birth_mon": 3,
+    "gender": "male",
+    "birth_day": 27,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f2/13/11940_crt_Cr6Cy.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f2/13/11940_crt_Cr6Cy.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/f2/13/11940_crt_Cr6Cy.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f2/13/11940_crt_Cr6Cy.jpg"
+    },
+    "summary": "主人公。フルネームはイサム・アルヴァ・ダイソン。階級は中尉。2015年3月27日生まれの24歳。テストパイロットとして新星インダストリー社の新型可変戦闘機YF-19を担当する。ガルドとミュンとは旧知の仲。幼少より大空を飛ぶことに魅せられ、ダルメシアンハイスクール時代のある事件をきっかけに惑星エデンを離れ、統合軍にパイロットとして入隊。腕前は超一流であり、エースパイロットの証「ロイ・フォッカー勲章」を3度受章しているが、自由奔放な性格で軍規違反を繰り返し、前述勲章を3度とも剥奪されるほどの問題児でもある。統合軍内をたらい回しにされ、辺境でゼントラーディ残存兵と戦っていたが、前任者を何人も病院送りにした「じゃじゃ馬」YF-19のテストパイロットとしてエデンへと戻ってきた。",
+    "name": "イサム・ダイソン",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "勇·戴森"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "イサム・ダイソン"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Isamu Alva Dyson"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "3月27日"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://ja.wikipedia.org"
+        }
+    ],
+    "stat": {
+        "comments": 4,
+        "collects": 8
+    },
+    "id": 11940,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        3168
+    ]
+}

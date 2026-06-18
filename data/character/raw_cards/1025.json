@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c5/cb/1025_crt_8W3U7.jpg?r=1376725945",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c5/cb/1025_crt_8W3U7.jpg?r=1376725945",
+        "large": "https://lain.bgm.tv/pic/crt/l/c5/cb/1025_crt_8W3U7.jpg?r=1376725945",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c5/cb/1025_crt_8W3U7.jpg?r=1376725945"
+    },
+    "summary": "对抗犯罪组织“蛇”的组织所属成员，铁之斗争代行人。是一名能将独立的五感同时发挥机能的“共感觉者”，使用该能力能如同豹一般，以十分柔软优美的动作将敌人打倒。在中东的某街道上与大沢玛利亚相逢并成为朋友。",
+    "name": "カナン",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "迦南"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Canaan"
+                },
+                {
+                    "k": "日文名",
+                    "v": "カナン"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "声优",
+            "value": "沢城みゆき"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "stat": {
+        "comments": 8,
+        "collects": 68
+    },
+    "id": 1025,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        1952
+    ]
+}

@@ -1,0 +1,73 @@
+{
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 8,
+    "birth_year": null,
+    "blood_type": 2,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3e/96/130750_crt_SAC5r.jpg?r=1722438983",
+        "grid": "https://lain.bgm.tv/pic/crt/g/3e/96/130750_crt_SAC5r.jpg?r=1722438983",
+        "large": "https://lain.bgm.tv/pic/crt/l/3e/96/130750_crt_SAC5r.jpg?r=1722438983",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3e/96/130750_crt_SAC5r.jpg?r=1722438983"
+    },
+    "summary": "元・マフィアで、太極拳の使い手。敵組織に追われていたところを、坂本とシンに助けられる。現在は坂本商店で働いている。明るくおおらかな性格で花ちゃんとも仲良しだが、シンとはよく喧嘩になる。\r\n肉まん作りが得意。",
+    "name": "陸少糖",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "陆少糖"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "陸 少糖"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ルー シャオタン"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Rū Shaotan"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月8日"
+        },
+        {
+            "key": "血型",
+            "value": "B"
+        },
+        {
+            "key": "身高",
+            "value": "165cm"
+        },
+        {
+            "key": "体重",
+            "value": "48kg"
+        },
+        {
+            "key": "年龄",
+            "value": "18"
+        }
+    ],
+    "stat": {
+        "comments": 20,
+        "collects": 38
+    },
+    "id": 130750,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        496617
+    ]
+}

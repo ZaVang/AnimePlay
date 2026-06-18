@@ -1,0 +1,93 @@
+{
+    "id": 240838,
+    "name": "多罗罗",
+    "image_path": "data\\images\\anime\\240838.jpg",
+    "points": 6.6,
+    "cost": 1,
+    "rarity": "N",
+    "description": "时为战国。\r\n醍醐之国主景光，在某所寺院的大堂中，向12尊鬼神像许愿领土繁荣。作为交换而诞生的景光之后嗣，身体各处都有所欠缺，被视作不祥之子而抛弃到河川之中。时光流逝，鬼神实现了与景光的约定，国家迎来了平安。这样的某天，名为“多罗罗”的年幼盗贼，与某个男人相遇。\r\n那是鬼，还是人——\r\n两臂装有刀剑，全身皆为人造的男人“百鬼丸”，用他那无神光的双瞳紧紧盯着袭来的妖魔。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 24,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "漫画改",
+        "战斗"
+    ],
+    "date": "2019-01-07",
+    "rating_rank": 4727,
+    "rating_score": 6.6,
+    "rating_total": 6068,
+    "main_character_ids": [
+        66142,
+        66143
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/87/77/66142_crt_e881t.jpg?r=1537243424",
+                "grid": "https://lain.bgm.tv/pic/crt/g/87/77/66142_crt_e881t.jpg?r=1537243424",
+                "large": "https://lain.bgm.tv/pic/crt/l/87/77/66142_crt_e881t.jpg?r=1537243424",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/87/77/66142_crt_e881t.jpg?r=1537243424"
+            },
+            "name": "百鬼丸",
+            "summary": "生まれる際に12体の鬼神に奪われた身体を取り戻すために旅をしている。\r\n目が見えない代わりに他者の存在を炎のような光として認識し、\r\n義手に仕込んだ刀を振るって闘う。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c7/e0/33359_prsn_fmmqz.jpg?r=1537242927",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c7/e0/33359_prsn_fmmqz.jpg?r=1537242927",
+                        "large": "https://lain.bgm.tv/pic/crt/l/c7/e0/33359_prsn_fmmqz.jpg?r=1537242927",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c7/e0/33359_prsn_fmmqz.jpg?r=1537242927"
+                    },
+                    "name": "鈴木拡樹",
+                    "short_summary": "鈴木 拡樹（すずき ひろき、1985年6月4日 - ）は、株式会社オウサム所属の大阪府堺市出身の俳優である。\r\n\r\n元美容師。趣味はランニング、ポケットモンスター。特技はデザインアート。好物はスイカ、オリーブ、オムライス、イタリアン、カフェラテ。",
+                    "career": [
+                        "actor"
+                    ],
+                    "id": 33359,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 66142
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/45/98/66143_crt_zL66L.jpg?r=1537243638",
+                "grid": "https://lain.bgm.tv/pic/crt/g/45/98/66143_crt_zL66L.jpg?r=1537243638",
+                "large": "https://lain.bgm.tv/pic/crt/l/45/98/66143_crt_zL66L.jpg?r=1537243638",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/45/98/66143_crt_zL66L.jpg?r=1537243638"
+            },
+            "name": "どろろ",
+            "summary": "根は優しいが、一方で生意気かつ強かな一面も持つ。\r\n鬼神に襲われていた所を百鬼丸に救われて以来、共に旅をするようになる。\r\n民を虐げる侍が嫌い。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b8/68/33360_prsn_Ar1ra.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b8/68/33360_prsn_Ar1ra.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/b8/68/33360_prsn_Ar1ra.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b8/68/33360_prsn_Ar1ra.jpg"
+                    },
+                    "name": "鈴木梨央",
+                    "short_summary": "鈴木 梨央（すずき りお、2005年2月10日 - ）は、日本の子役、タレント、歌手。埼玉県出身。ジョビィキッズプロダクション所属。所属レーベルはavex trax。",
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 33360,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 66143
+        }
+    ]
+}

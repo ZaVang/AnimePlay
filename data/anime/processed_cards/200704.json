@@ -1,0 +1,125 @@
+{
+    "id": 200704,
+    "name": "烟花",
+    "image_path": "data\\images\\anime\\200704.jpg",
+    "points": 6,
+    "cost": 1,
+    "rarity": "N",
+    "description": "　　故事发生在8月1日的茂下町，当时全町正举办烟火大会，主角岛田典道和伙伴们就因为烟花的一些事情起争论，但吵了一阵子后还是没有结果，于是他们决定到灯塔观赏烟花，以解决彼此的困惑。同时，典道班上的班花及川菜津奈因母亲再婚一事感到苦恼。后来她突发奇想，提议与典道一行人比赛游泳，再与胜者私奔。由此刻开始，典道为着追求某些结果而不断努力，直至他最后看到的那幕烟花……",
+    "type": 2,
+    "platform": "剧场版",
+    "episodes_for_hangup": 1,
+    "synergy_tags": [
+        "剧场版",
+        "恋爱",
+        "日本",
+        "奇幻",
+        "影视改"
+    ],
+    "date": "2017-08-18",
+    "rating_rank": 7884,
+    "rating_score": 6,
+    "rating_total": 6824,
+    "main_character_ids": [
+        49053,
+        49054
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/cb/fc/49053_crt_Bbshj.jpg?r=1512317917",
+                "grid": "https://lain.bgm.tv/pic/crt/g/cb/fc/49053_crt_Bbshj.jpg?r=1512317917",
+                "large": "https://lain.bgm.tv/pic/crt/l/cb/fc/49053_crt_Bbshj.jpg?r=1512317917",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cb/fc/49053_crt_Bbshj.jpg?r=1512317917"
+            },
+            "name": "及川なずな",
+            "summary": "及川荠：天闻角川译名&香港译名\r\n及川奈砂：台湾译名\r\n及川菜津奈：大陆电影版译名",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/06/d6/21607_prsn_qS98S.jpg?r=1756478328",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/06/d6/21607_prsn_qS98S.jpg?r=1756478328",
+                        "large": "https://lain.bgm.tv/pic/crt/l/06/d6/21607_prsn_qS98S.jpg?r=1756478328",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/06/d6/21607_prsn_qS98S.jpg?r=1756478328"
+                    },
+                    "name": "広瀬すず",
+                    "short_summary": "1998年6月19日生まれ。2012年より、雑誌「Seventeen」の専属モデルとして活動するほか、ドラマ、映画、CMと幅広く活躍中。7代目の「ゼクシィ」CMガールに選ばれ、脚光を浴びる。2013年『謝罪の王様』（水田伸生監督）でスクリーンデビュー。2015年には「学校のカイダン」にて、連続ドラマ初主演。その他出演作は『クローズEXPLODE』（14年／豊田利晃監督）。『海街diary』（１５年／是枝裕和監督）の公開を控える。劇場版アニメへの出演は本作が初めてとなる。",
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 21607,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/08/e0/81521_prsn_3cxJX.jpg?r=1760276976",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/08/e0/81521_prsn_3cxJX.jpg?r=1760276976",
+                        "large": "https://lain.bgm.tv/pic/crt/l/08/e0/81521_prsn_3cxJX.jpg?r=1760276976",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/08/e0/81521_prsn_3cxJX.jpg?r=1760276976"
+                    },
+                    "name": "杨鸣",
+                    "short_summary": "中国内地女性配音演员。\r\n毕业于吉林艺术学院2003级，2007年加入长春电影译制厂担任配音演员至今。声音清脆，从成熟少女到活泼萝莉角色均可演绎。\r\n现居吉林长春。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 81521,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 49053
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/1d/2f/49054_crt_1XpzA.jpg?r=1499842916",
+                "grid": "https://lain.bgm.tv/pic/crt/g/1d/2f/49054_crt_1XpzA.jpg?r=1499842916",
+                "large": "https://lain.bgm.tv/pic/crt/l/1d/2f/49054_crt_1XpzA.jpg?r=1499842916",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1d/2f/49054_crt_1XpzA.jpg?r=1499842916"
+            },
+            "name": "島田典道",
+            "summary": "",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/91/88/23093_prsn_5QZgU.jpg?r=1723993758",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/91/88/23093_prsn_5QZgU.jpg?r=1723993758",
+                        "large": "https://lain.bgm.tv/pic/crt/l/91/88/23093_prsn_5QZgU.jpg?r=1723993758",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/91/88/23093_prsn_5QZgU.jpg?r=1723993758"
+                    },
+                    "name": "菅田将暉",
+                    "short_summary": "本名は菅生大将（読みは「すごう たいしょう」。大阪府箕面市出身。トップコート所属。\r\n\r\n2007年、アミューズが行った「アミューズ30周年記念オーディション」で応募者65,368人の中からファイナリスト31人に残るが落選。\r\n\r\n2008年、第21回ジュノン・スーパーボーイ・コンテストでファイナリスト12人に選出される。このコンテストがきっかけで、トップコートに所属が決定した。\r\n\r\n2009年、芸名が「菅田 将暉（すだ まさき）」と決まる。同年9月より、平成仮面ライダーシリーズ第11作『仮面ライダーW』にて仮面ライダーシリーズ最年少でフィリップ / 仮面ライダーW（声）役で連続テレビドラマ初出演・初主演を飾り、桐山漣とW主演を務め、放送開始前の8月に公開された『劇場版 仮面ライダーディケイド オールライダー対大ショッカー』で特別出演・声の出演のみながら映画初出演、12月に公開された『仮面ライダー×仮面ライダー W&ディケイド MOVIE大戦2010』で映画初主演を務めた。",
+                    "career": [
+                        "artist",
+                        "actor"
+                    ],
+                    "id": 23093,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/25/68/72212_prsn_PM179.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/25/68/72212_prsn_PM179.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/25/68/72212_prsn_PM179.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/25/68/72212_prsn_PM179.jpg"
+                    },
+                    "name": "高晗",
+                    "short_summary": "",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 72212,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 49054
+        }
+    ]
+}

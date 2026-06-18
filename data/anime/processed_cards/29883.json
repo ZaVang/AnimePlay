@@ -1,0 +1,293 @@
+{
+    "id": 29883,
+    "name": "新・福音战士剧场版：终",
+    "image_path": "data\\images\\anime\\29883.jpg",
+    "points": 8.4,
+    "cost": 4,
+    "rarity": "SSR",
+    "description": "这是《福音战士新剧场版》的第四部，也是最终版。美里以及她的反 NERV 组织 Wille 来到巴黎，这里被核心染成红色，奇迹号战舰的船员降落在安全塔上，他们只有720秒能修复这个城市。 NERV的福音战士群出现时，真理的EVA改八号机进行拦截。与此同时，真嗣、明日香和绫波丽（暂定名）在日本的土地上徘徊。",
+    "type": 2,
+    "platform": "剧场版",
+    "episodes_for_hangup": 1,
+    "synergy_tags": [
+        "科幻",
+        "剧场版",
+        "机战",
+        "日本",
+        "原创",
+        "剧情"
+    ],
+    "date": "2021-03-08",
+    "rating_rank": 70,
+    "rating_score": 8.4,
+    "rating_total": 14509,
+    "main_character_ids": [
+        302,
+        12702,
+        17836
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e1/af/302_crt_ce4yO.jpg?r=1616247180",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e1/af/302_crt_ce4yO.jpg?r=1616247180",
+                "large": "https://lain.bgm.tv/pic/crt/l/e1/af/302_crt_ce4yO.jpg?r=1616247180",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e1/af/302_crt_ce4yO.jpg?r=1616247180"
+            },
+            "name": "碇シンジ",
+            "summary": "本故事的主角，14岁，操纵EVA初号机的第三适格者（THIRD CHILDREN）。 \r\n\r\nNERV司令碇源堂的独子。母亲死后，他就住在亲戚家中，和碇源堂分居了十年，突然接到父亲的信而来到第三新东京都市。有着极端内向的性格，极其害怕与陌生人接触，不知如何和别人相处而感到害怕，一直只是照着别人的要求而生活，之后慢慢地敞開了心扉。\r\n\r\n作为驾驶员的他与EVA初号机的同步值最高，在歼灭使徒的各次战役中的表现亦最为突出。但其本人性格内向、处事态度消极、遇事总是用“对不起”来逃避现实成为明日香对其最为反感的原因。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/37/ce/4054_prsn_wWwqj.jpg?r=1702781847",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/37/ce/4054_prsn_wWwqj.jpg?r=1702781847",
+                        "large": "https://lain.bgm.tv/pic/crt/l/37/ce/4054_prsn_wWwqj.jpg?r=1702781847",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/37/ce/4054_prsn_wWwqj.jpg?r=1702781847"
+                    },
+                    "name": "緒方恵美",
+                    "short_summary": "绪方惠美是日本东京都出生的女配音兼歌手（当歌手时的艺名为‘em:óu’），B型双子座。桐朋女子中学、高中毕业；东海大学海洋学系肄业。东京声专音乐学校（现在为昭和音乐艺术学院）歌剧科及同研究科毕业。\r\n主要以低沉沙哑的音质，替少年角色配音的她，其他也多半是替美型青年或男性化的女性等中性化角色配音为主。本人也曾经自己承认，或许是因为自己也是男性化的性格，所以也被称为「男八段」（这个绰号是广播节目《绪方惠美的向银河呐喊中》与听众一边交谈，一边所喝的酒的名字）。\r\n代表作有《幽游白书》（藏马／南野秀一）、《美少女战士Sailor Moon S》（天王遥／水手天王星）、《新世纪福音战士》（碇真嗣）等。",
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 4054,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b0/4d/10972_prsn_HTDq2.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b0/4d/10972_prsn_HTDq2.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/b0/4d/10972_prsn_HTDq2.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b0/4d/10972_prsn_HTDq2.jpg"
+                    },
+                    "name": "神木隆之介",
+                    "short_summary": "　  自出道以来，神木隆之介跃于电视剧、电影、电视广告、电台广播剧等多个领域。1999年至今每年都有参加电视剧或电影的演出。8岁时，天真可爱又富表现力的声音被宫崎骏发掘，作为吉卜力工作室培养出来的声优，已参与过《千与千寻》等5部吉卜力出品的作品的配音。还曾在2005年的爱知世博会闭幕式上作为日本儿童的代表主持文艺演出，并在同年举行的第18届东京国际电影节上担当开幕宣言人。",
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 10972,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/71/32/35812_prsn_gjVgQ.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/71/32/35812_prsn_gjVgQ.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/71/32/35812_prsn_gjVgQ.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/71/32/35812_prsn_gjVgQ.jpg"
+                    },
+                    "name": "常蓉珊",
+                    "short_summary": "配音演员常蓉珊，2017年，加入北斗企鹅工作室；2022年，加入藤韵文化。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 35812,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/87/c6/44221_prsn_xpxaw.jpg?r=1718789322",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/87/c6/44221_prsn_xpxaw.jpg?r=1718789322",
+                        "large": "https://lain.bgm.tv/pic/crt/l/87/c6/44221_prsn_xpxaw.jpg?r=1718789322",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/87/c6/44221_prsn_xpxaw.jpg?r=1718789322"
+                    },
+                    "name": "杨昕燃",
+                    "short_summary": "中国配音演员，本名杨建。毕业于武汉大学，2019年，参加了光合积木工作室为期一个月左右的第四期配音培训班，后又加入北斗企鹅工作室进行培训，开始从事职业配音。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 44221,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ef/81/47194_prsn_111Sm.jpg?r=1699370488",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ef/81/47194_prsn_111Sm.jpg?r=1699370488",
+                        "large": "https://lain.bgm.tv/pic/crt/l/ef/81/47194_prsn_111Sm.jpg?r=1699370488",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ef/81/47194_prsn_111Sm.jpg?r=1699370488"
+                    },
+                    "name": "蔣鐵城",
+                    "short_summary": "",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 47194,
+                    "type": 2,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 302
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a2/6c/12702_crt_2Az63.jpg?r=1689076399",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a2/6c/12702_crt_2Az63.jpg?r=1689076399",
+                "large": "https://lain.bgm.tv/pic/crt/l/a2/6c/12702_crt_2Az63.jpg?r=1689076399",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a2/6c/12702_crt_2Az63.jpg?r=1689076399"
+            },
+            "name": "真希波・マリ・イラストリアス",
+            "summary": "福音战士新剧场版：破中的出场人物，棕色的双马尾（最初人设是紫红色头发），蓝绿色双瞳，带着红框板材眼镜，发带是A10神经连接端口。\r\n真希波是EVA五号机的适格者，战斗服绿色。后来代替明日香驾驶EVA二号机，战斗服换为粉色\r\n真希波之名，取自大日本帝国海军夕云型驱逐舰五号舰“巻波”。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d4/88/3877_prsn_VOY27.jpg?r=1574050572",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d4/88/3877_prsn_VOY27.jpg?r=1574050572",
+                        "large": "https://lain.bgm.tv/pic/crt/l/d4/88/3877_prsn_VOY27.jpg?r=1574050572",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d4/88/3877_prsn_VOY27.jpg?r=1574050572"
+                    },
+                    "name": "坂本真綾",
+                    "short_summary": "坂本真绫（さかもと まあや、1980年3月31日 - ），日本女声优、歌手、演员、电台主持。东京都板桥区出身，东京都立武蔵丘高等学校及东洋大学社会学部毕业，父亲是舞台照明家坂本义美。\r\n8岁进入儿童剧团，开始艺能活动，曾演唱广告歌、童谣，为外国电影剧集配音，出演电视节目等。15岁时，被音乐制作人菅野洋子发掘，真正地开始了音乐活动。16岁在歌坛出道。\r\n坂本真绫在音乐以外的领域也具有丰富的才能，广泛活跃在舞台表演、电台主持、电视节目主持、执笔等领域，被称为“才女”，她是现在日本乐坛少数的实力派之一。\r\n\r\n2011年8月13日，在网志上正式宣布和声优铃村健一在2011年8月8日结婚。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 3877,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/15/d6/35810_prsn_7dw28.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/15/d6/35810_prsn_7dw28.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/15/d6/35810_prsn_7dw28.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/15/d6/35810_prsn_7dw28.jpg"
+                    },
+                    "name": "月夜桥",
+                    "short_summary": "中国配音演员，武汉人。2010年至2014年在晋江文学城创作网络小说。2013年参与《高考恋爱一百天》配音，2017年加入北斗企鹅工作室，期间结识男友李轻扬，2022年与男友一同加入藤韵文化。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 35810,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0e/af/48876_prsn_F0FF2.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/0e/af/48876_prsn_F0FF2.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/0e/af/48876_prsn_F0FF2.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0e/af/48876_prsn_F0FF2.jpg"
+                    },
+                    "name": "Deneen Melody",
+                    "short_summary": "美国配音演员。",
+                    "career": [
+                        "producer",
+                        "seiyu"
+                    ],
+                    "id": 48876,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2c/05/58215_prsn_9lEQ0.jpg?r=1699370815",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2c/05/58215_prsn_9lEQ0.jpg?r=1699370815",
+                        "large": "https://lain.bgm.tv/pic/crt/l/2c/05/58215_prsn_9lEQ0.jpg?r=1699370815",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2c/05/58215_prsn_9lEQ0.jpg?r=1699370815"
+                    },
+                    "name": "穆宣名",
+                    "short_summary": "台湾女性配音员。台北市立第一女子高级中学、国立台北大学法律学系毕业。华视配音训练班第46期杰出学员。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 58215,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 12702
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/9e/43/17836_crt_4b2Aj.jpg?r=1687792941",
+                "grid": "https://lain.bgm.tv/pic/crt/g/9e/43/17836_crt_4b2Aj.jpg?r=1687792941",
+                "large": "https://lain.bgm.tv/pic/crt/l/9e/43/17836_crt_4b2Aj.jpg?r=1687792941",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9e/43/17836_crt_4b2Aj.jpg?r=1687792941"
+            },
+            "name": "アヤナミレイ(仮称)",
+            "summary": "前作において初号機のコアに取り込まれたレイとは異なる、三人目のユイのクローンとなる「アヤナミレイ（仮称）」が登場。EVANGERION Mark.09に搭乗し、着用するプラグスーツの色は、白を基調としていた綾波レイとは対照的に、黒を基調としたものになっている。\r\nゲンドウの命令を受け、ヴィレの戦艦AAAヴンダーをMark.09で襲撃し、シンジを新設NERVへ連行する。シンジが第10使徒から命懸けで守ろうとしたレイとは似て異なる存在（別人）であるため、彼のことは名前以外ろくに知らず、無関心な接し方しかしなかった。ゲンドウの命令には忠実に従う。\r\nその後、第13号機のセントラルドグマ降下を支援してアスカの改2号機と交戦し、ヴンダーのシステムを乗っ取ろうとしたところを、獣化第2形態へ移行した改2号機に組み付かれて自爆攻撃を受けるが、エントリープラグで脱出したために無事だった。マリいわく、「アダムスの器」。\r\n前作まで登場していた綾波レイの生存は、本作では明かされておらず不明。また、本作ではレイがシンジの母・ユイのクローンであることが明確に明かされ、ユイの旧名が「綾波ユイ」であった事実が、冬月によってシンジに告げられている。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/86/ff/3919_prsn_0rRbZ.jpg?r=1681447490",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/86/ff/3919_prsn_0rRbZ.jpg?r=1681447490",
+                        "large": "https://lain.bgm.tv/pic/crt/l/86/ff/3919_prsn_0rRbZ.jpg?r=1681447490",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/86/ff/3919_prsn_0rRbZ.jpg?r=1681447490"
+                    },
+                    "name": "林原めぐみ",
+                    "short_summary": "日本的声优、歌手、DJ、作词家（化名为MEGUMI）、作家。出生于日本东京都北区。\r\n歌迷与动漫迷常以“小惠”（めぐさん）、“惠姐”（めぐ姉）及“阁下”（声优平松晶子命名）等方式称呼她。\r\n林原惠演过多部著名作品的主要女角及担任部分片头、片尾曲演唱，包含《新世纪福音战士》的绫波丽、《乱马1/2》的女乱马、《秀逗魔导士》的莉娜·因巴斯、《口袋妖怪》的武藏、《名侦探柯南》的灰原哀、《通灵王》的恐山安娜等，为日本公认的“声优女王”。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 3919,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b7/7a/7282_prsn_F374m.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b7/7a/7282_prsn_F374m.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/b7/7a/7282_prsn_F374m.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b7/7a/7282_prsn_F374m.jpg"
+                    },
+                    "name": "阎萌萌",
+                    "short_summary": "女性配音演员，擅长演绎灵动活泼的少女角色。1981年出生，毕业于北京广播学院（中国传媒大学前身），现居北京宣武区，已结婚，2016年荣获第十六届中国广播剧研究会广播剧专家评析最佳女演员奖。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 7282,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/43/c9/35035_prsn_MdW1u.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/43/c9/35035_prsn_MdW1u.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/43/c9/35035_prsn_MdW1u.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/43/c9/35035_prsn_MdW1u.jpg"
+                    },
+                    "name": "Amanda Winn-Lee",
+                    "short_summary": "Amanda Winn-Lee is an American voice actress, writer and ADR director who mainly works on anime dubs. She voiced Heather Mason in the Silent Hill HD Collection and Silent Hill: Book of Memories.\r\n\r\nAmanda Beth Winn-Lee (born Amanda Winn) was born on November 14, 1972 in Houston, Texas. On June 22, 1997 she married Jason Lee. Amanda and Jason's son, Nicholas \"Noodle\" Lee, was born in November 2004. Her son was soon discovered to have infant leukemia, requiring extensive treatment before he was one year old. Amanda and Jason were not involved in any new projects for several years, because they were caring for their son. However, by November 2008, Nicholas has been cancer-free for three years, which is the benchmark for doctors that his odds of cancer recurrence are virtually non-existent.",
+                    "career": [
+                        "writer",
+                        "producer",
+                        "seiyu"
+                    ],
+                    "id": 35035,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/17/e1/78953_prsn_zH773.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/17/e1/78953_prsn_zH773.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/17/e1/78953_prsn_zH773.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/17/e1/78953_prsn_zH773.jpg"
+                    },
+                    "name": "連思宇",
+                    "short_summary": "台湾女性配音员、广播节目助理主持人、漫画家、日文翻译员、声音导演。声音甜美可爱，是少女声代表之一。声线极广，主要属于高音类型，通常饰演少女或小女孩类型角色，也能诠释男孩角色。\r\n\r\n出道作品为迪士尼影集《天才学园》，担任主角之一──奥莉。",
+                    "career": [
+                        "mangaka",
+                        "seiyu"
+                    ],
+                    "id": 78953,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 17836
+        }
+    ]
+}

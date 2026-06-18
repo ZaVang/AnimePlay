@@ -1,0 +1,158 @@
+{
+    "id": 271145,
+    "name": "理科生坠入情网，故尝试证明。",
+    "image_path": "data\\images\\anime\\271145.jpg",
+    "points": 6.2,
+    "cost": 1,
+    "rarity": "N",
+    "description": "如果对研究充满热情的科学女孩和科学男孩坠入爱河怎么办？彩玉大学理科研究生的才女，冰室菖蒲向同一实验室雪村心夜告白。当然“喜欢”是没有逻辑根据的！但是，作为理工学专业的学生，“如果不能用逻辑证明自己的喜好，就不能说是喜欢，作为理科也不合格！”以那个信念为基础，两人卷进研究室的成员关于“恋”的定义的证明实验即将开始！约会实验，了解喜欢的构成要素，测量心率实验，情绪值的测量……个性过强的理科生们用逻辑证明“恋爱”有笑有心跳的理科爱情喜剧！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "校园",
+        "TV",
+        "恋爱",
+        "日本",
+        "漫画改"
+    ],
+    "date": "2020-01-10",
+    "rating_rank": 6787,
+    "rating_score": 6.2,
+    "rating_total": 5592,
+    "main_character_ids": [
+        70824,
+        70825
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f9/2e/70824_crt_aOaGU.jpg?r=1562716685",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f9/2e/70824_crt_aOaGU.jpg?r=1562716685",
+                "large": "https://lain.bgm.tv/pic/crt/l/f9/2e/70824_crt_aOaGU.jpg?r=1562716685",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f9/2e/70824_crt_aOaGU.jpg?r=1562716685"
+            },
+            "name": "雪村心夜",
+            "summary": "国立彩玉大学の理工学研究科大学院1年生。23歳。\r\n骨の髄まで超理系、天才型。\r\n幼い頃から神童と称された頭脳の持ち主。\r\nこの世の事象はシステムを解明しないと気が済まない。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f0/96/10869_prsn_nWIUY.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f0/96/10869_prsn_nWIUY.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/f0/96/10869_prsn_nWIUY.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f0/96/10869_prsn_nWIUY.jpg"
+                    },
+                    "name": "大地葉",
+                    "short_summary": "日本女性声优，埼玉县出生。日本播音演技研究所出身，隶属于VIMS。名字“大地叶”（たいち よう／Taichi You）是艺名，由来是学生时期的绰号たいちょー（“队长”，日语读音：Taichō）。\r\n\r\n趣味・特技：インド映画鑑賞、ピアノ弾き語り、曲のコピー（譜面をおこせる）\r\n芸歴：日本ナレーション演技研究所",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 10869,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/38/47/15390_prsn_p9SMm.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/38/47/15390_prsn_p9SMm.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/38/47/15390_prsn_p9SMm.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/38/47/15390_prsn_p9SMm.jpg"
+                    },
+                    "name": "内田雄馬",
+                    "short_summary": "日本の男性声優。\r\n東京都出身。インテンション所属。実姉は、同じく声優の内田真礼。\r\n\r\n趣味は音楽、散歩、森林浴、山登り。特技は作曲、モノマネ、焼肉を焼く、ジャケットプレイ。\r\n好きな言葉は、『為せば成る、為さねば成らぬ何事も』だという。\r\n衝撃を受けた声優には、関智一を挙げている。\r\n将来的には、どの世代でも主役をこなせていける声優になりたいとしている。\r\n声優仲間である石川界人と仲が良い。\r\n\r\n一家揃ってのゲーム好きだった影響で、13歳の時に『サクラ大戦』がきっかけで声優業に関心を持ち、進路を考える17歳の時に声優への志望を強め、日本ナレーション演技研究所に入学。\r\n同養成所在籍中の2012年に、『Holy Knight』のアニメ版のアフレコで声優デビューを果たした後、養成所を卒業し、2013年4月1日付けで現事務所所属となる。\r\n声優としてはまだ無名だった2013年に、杉田智和に誘われてパシフィコ横浜で開催された「A＆Gオールスター2013」に、女装姿で飛び入り出演した。\r\n2017年1月より、パーソナリティを務める一人しゃべりラジオ番組『内田雄馬 君の話を焼かせて』の放送を開始。\r\n2017年、第11回声優アワードで新人男優賞を受賞。\r\n同年秋、コーエーテクモゲームスからNintendo Switch向けに発売されるファイアーエムブレムと無双シリーズとのコラボ作品『ファイアーエムブレム無双』で、姉・真礼とダブル主演を果たす。\r\n2018年、KING AMUSEMNET CREATIVEよりアーティストデビュー。\r\n2019年3月9日、第13回声優アワード主演男優賞を受賞。\r\n2022年12月31日、10年在籍したアイムエンタープライズを退所。翌2023年1月1日よりインテンションに所属。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 15390,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/19/06/29648_prsn_x4L1I.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/19/06/29648_prsn_x4L1I.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/19/06/29648_prsn_x4L1I.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/19/06/29648_prsn_x4L1I.jpg"
+                    },
+                    "name": "谢添天",
+                    "short_summary": "谢添天，1982年10月9日出生于上海市，毕业于上海戏剧学院表演系，中国内地配音男演员。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 29648,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c6/bc/44011_prsn_78CJZ.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c6/bc/44011_prsn_78CJZ.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/c6/bc/44011_prsn_78CJZ.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c6/bc/44011_prsn_78CJZ.jpg"
+                    },
+                    "name": "富贵",
+                    "short_summary": "中国内地女性配音演员。音熊联盟配音工作室所属，V17声优少女二周目正式成员。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 44011,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 70824
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/2c/19/70825_crt_KDlx9.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/2c/19/70825_crt_KDlx9.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/2c/19/70825_crt_KDlx9.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2c/19/70825_crt_KDlx9.jpg"
+            },
+            "name": "氷室菖蒲",
+            "summary": "国立彩玉大学の理工学研究科大学院1年生。23歳。\r\n骨の髄まで理系。成績優秀、天才型。\r\nいかなる時も冷静沈着に振る舞い、氷のように鋭い頭脳を振るう。この世のどんな事象もシステムを理解しないと気が済まない。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a2/62/12568_prsn_jLLz4.jpg?r=1693248727",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a2/62/12568_prsn_jLLz4.jpg?r=1693248727",
+                        "large": "https://lain.bgm.tv/pic/crt/l/a2/62/12568_prsn_jLLz4.jpg?r=1693248727",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a2/62/12568_prsn_jLLz4.jpg?r=1693248727"
+                    },
+                    "name": "雨宮天",
+                    "short_summary": "雨宫天（あまみや そら）是日本的女性声优、歌手，1993年8月28日出生于日本东京都。\r\n\r\n[b]经历[/b]\r\n1993年8月28日出生于日本东京都；因憧憬声优[url=https://bgm.tv/person/4244]泽城美雪[/url]而向往成为一名声优。\r\n在2011年举办的第2回MusicRay'n超级声优试镜中合格，2012年声优活动开始，2014年在TV动画《[url=https://bgm.tv/subject/88493]一周的朋友。[/url]》担任[url=https://bgm.tv/character/23104]藤宫香织[/url]CV,为初主役角色。\r\n2014年12月21日，与同事务所的[url=https://bgm.tv/person/13565]麻仓桃[/url]、[url=https://bgm.tv/person/13581]夏川椎菜[/url]组成声优组合“[url=https://bgm.tv/person/18492]TrySail[/url]”，并于2015年·正式开始活动。\r\n2015年第9回声优奖中获得新人女声优奖。\r\n2015年10月2日，发行自己的第一部写真集《ソライロ～青と旅する～》。\r\n2020年4月17日，开通绘画日记企划期间限定Twitter账号(现已转为永久账号)",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 12568,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b5/d2/23022_prsn_52rrR.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b5/d2/23022_prsn_52rrR.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/b5/d2/23022_prsn_52rrR.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b5/d2/23022_prsn_52rrR.jpg"
+                    },
+                    "name": "冯骏骅",
+                    "short_summary": "冯骏骅，中国女性配音演员。毕业于上海师范大学广播电视文学专业。音熊联萌配音工作室艺术总监、总导演。配偶为谢添天，二人育有二子。\r\n\r\n冯骏骅父亲是导演冯广泉，3岁起便开始学习表演，6岁起师从上海电视台译制部的配音演员张欢学习配音，并跟随上海市工人文化宫话剧团一起演出。\r\n1990年，参与配音电视剧《十六岁的花季》，开始参加配音工作。\r\n2003年，任上海东方电台动漫节目策划主持、播音员。\r\n2013年，与谢添天、夏磊、沈达威等共同成立音熊联萌配音工作室。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 23022,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 70825
+        }
+    ]
+}

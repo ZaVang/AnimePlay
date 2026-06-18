@@ -1,0 +1,72 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ab/fd/107084_crt_6bxxu.jpg?r=1755797434",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ab/fd/107084_crt_6bxxu.jpg?r=1755797434",
+        "large": "https://lain.bgm.tv/pic/crt/l/ab/fd/107084_crt_6bxxu.jpg?r=1755797434",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ab/fd/107084_crt_6bxxu.jpg?r=1755797434"
+    },
+    "summary": "「部活で汗かいたあとに、きっちりネクタイなんて締められますかっての」\r\nバスケ部のエースをつとめるスポーティ少女。バストはB。\r\n小柄で運動神経バツグン。性格は竹を割ったようにまっすぐさっぱりしている。\r\n誰に対しても物怖じせず、コミュ力も高いため、自然とトップカーストに属している。\r\n\r\n藤志高校2年生の体育会系女子。小さな身体にエネルギーを詰め込んだように快活で、クラスをいつも明るく照らすムードメーカー。バスケ部ではエースとしてコートを駆け回り、悠月とのコンビは折り紙付き。",
+    "name": "青海陽",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "青海阳"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "青海 陽"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あおみ はる"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Aomi Haru"
+                },
+                {
+                    "k": "昵称",
+                    "v": "ウミ"
+                },
+                {
+                    "v": "小海"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "152cm"
+        },
+        {
+            "key": "BWH",
+            "value": "B/?/?"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://chiramune.com/chara/05.html"
+        }
+    ],
+    "stat": {
+        "comments": 19,
+        "collects": 62
+    },
+    "id": 107084,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        507634
+    ]
+}

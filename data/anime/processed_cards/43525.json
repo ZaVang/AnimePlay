@@ -1,0 +1,95 @@
+{
+    "id": 43525,
+    "name": "元气少女缘结神",
+    "image_path": "data\\images\\anime\\43525.jpg",
+    "points": 7,
+    "cost": 1,
+    "rarity": "N",
+    "description": "桃园奈奈生因好赌的父亲在欠下一屁股债后离家出走，被赶出去流落街头的时候帮助了一位被狗追到树下的神秘男人，神秘男人知道她的遭遇后说：“那我把我的家给你吧！”，于是无家可归的奈奈生在半信半疑之下前往那个\"家\"，发现那竟是一间荒废许久的神社，还出现一个狐狸妖怪，自称是侍奉土地神的狐妖巴卫，而神秘男人竟然是土地神，神秘男人把家让给她，也就是连土地神的职位也一并交给她，从此奈奈生开始了当土地神之路……",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "TV",
+        "恋爱",
+        "日本",
+        "漫画改",
+        "少女向"
+    ],
+    "date": "2012-10-01",
+    "rating_rank": 2599,
+    "rating_score": 7,
+    "rating_total": 3676,
+    "main_character_ids": [
+        17263,
+        17264
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a5/c6/17263_crt_FllTV.jpg?r=1421593043",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a5/c6/17263_crt_FllTV.jpg?r=1421593043",
+                "large": "https://lain.bgm.tv/pic/crt/l/a5/c6/17263_crt_FllTV.jpg?r=1421593043",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a5/c6/17263_crt_FllTV.jpg?r=1421593043"
+            },
+            "name": "桃園奈々生",
+            "summary": "快活で前向きで何があってもへこたれない性格の高校2年生。父親が蒸発し、家を借金のカタに取り上げられて行き場がなくなりホームレス状態になるが途方に暮れているときにミカゲと出会う。その後、巴衛との出会いを経て土地神としての生活をスタートさせた。巴衛の事が好き。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ed/4c/6707_prsn_ci4Zs.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ed/4c/6707_prsn_ci4Zs.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/ed/4c/6707_prsn_ci4Zs.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ed/4c/6707_prsn_ci4Zs.jpg"
+                    },
+                    "name": "三森すずこ",
+                    "short_summary": "三森铃子（三森 すずこ／みもり すずこ / Mimori Suzuko），本名黑川铃子（黒川 鈴子／くろかわ すずこ / Kurokawa Suzuko），是日本女演员、声优、歌手，目前隶属于“响”；日本企业家黑川文雄是其堂兄。\r\n\r\n日本东京都出身。成为声优之前，以“黑川铃子”本名在音乐剧和舞台剧活动。有次在舞台表演时，被武士道社长木谷先生问到:“要不要试试当声优？”，此后便转向声优界活动。\r\n曾经以少女偶像团体Cutie Pai的团员“スージー”的身份在2009年7月至10月间活动。\r\n因为参加《侦探歌剧 少女福尔摩斯》的配音工作，与另外三位也担任主角的声优德井青空、佐佐木未来、橘田泉共组声优团体“Milky Holmes”。\r\n2012年12月31日宣布以个人名义歌手出道。\r\n2018年1月13日，《东京体育》报道称三森与日本职业摔角运动员冈田和睦交往，此消息获得本人确认。2019年4月12日，二人公布婚讯。\r\n\r\n在《侦探歌剧 少女福尔摩斯》一起共事的新谷良子，是三森主演的东京迪士尼海洋音乐剧《Mickey&#39;s Dream Company（米奇梦想剧团）》的剧迷，因此向三森索求签名。\r\n黑川铃子时期，时任武士道副社长的企业家黑川文雄以堂兄身份大力推荐。\r\n《SEIGURA》杂志上，以“有名插图画家——Okuzushi. M. Romi——オクズシ・ロミ”名义开设专栏，公布读者的来信和自绘插图。“Okuzushi. M. Romi”，其实就是本身艺名罗马拼音“Mimori Suzuko”倒过来念。",
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 6707,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 17263
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/24/30/17264_crt_6mPKT.jpg?r=1421592989",
+                "grid": "https://lain.bgm.tv/pic/crt/g/24/30/17264_crt_6mPKT.jpg?r=1421592989",
+                "large": "https://lain.bgm.tv/pic/crt/l/24/30/17264_crt_6mPKT.jpg?r=1421592989",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/24/30/17264_crt_6mPKT.jpg?r=1421592989"
+            },
+            "name": "巴衛",
+            "summary": "土地神になった奈々生に仕える妖怪。もともとは野狐（やこ）で、犬が嫌いな神・ミカゲに、狛犬代用としてスカウトされ、彼に仕えていた。ミカゲが「家出」してからは、彼の留守を預かっていた。天邪鬼でその上つっけんどん。口も悪く喧嘩腰のときも多いが、奈々生の神使となった際に、荒れていた寝所を彼女が寝ている間に整えたりするなどさりげない優しさも持ち合わせている。奈々生が黄泉の国に落ち、神使から野狐に戻るが、奈々生の事をずっと考えている事に気付き奈々生の事が好きなのを自覚した。笹餅が好物。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bc/f9/4645_prsn_h3TZT.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/bc/f9/4645_prsn_h3TZT.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/bc/f9/4645_prsn_h3TZT.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bc/f9/4645_prsn_h3TZT.jpg"
+                    },
+                    "name": "立花慎之介",
+                    "short_summary": "日本男性声优，出身于岐阜县。过去曾隶属于Production baobab，2011年6月1日移籍于AXL ONE，并于2018年3月31日离开，移籍到与福山润一同创立的BLACK SHIP。\r\n\r\n“立花慎之介”为艺名，本姓是与“立花”同音的“橘”（第40弹おまえらのためだろ!），原名是“橘秀宣”（たちばなひでのり）。\r\n儿时看动画幸运女神，而立志成为声优。\r\n声音透明且清爽，常常负责少年与青年角色的配音。\r\n与成濑诚组成音乐团体Lux-age；其后与日野聪组成ELEKITER ROUND φ。\r\n在进入配音行业之前从事了4年左右的默剧与日本舞踊（深水流）演出。\r\n与福山润、菅沼久义、日野聪、小野大辅、间岛淳司以及近藤孝行同年出生，并组成DABA。\r\n喜爱城堡，在熊本城修复之际因捐款之由名字被记在了天守阁。\r\n喜爱玩Battle Spirits，还经常在其日志谈及游戏相关的话题。\r\n家里养了一只叫Lily的挪威森林猫。\r\n2013年以漫画原作家身份出道，出道作是“箱庭の令嬢探侦”，于杂志YOUNG ACE连载，其后更亲自编写了小说版。\r\n2017年1月5日宣布已于1月1日跟声优高梁碧结婚。",
+                    "career": [
+                        "writer",
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 4645,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 17264
+        }
+    ]
+}

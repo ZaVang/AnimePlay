@@ -1,0 +1,409 @@
+{
+    "date": "2020-04-08",
+    "platform": "TV",
+    "images": {
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/24/5a/285905_3tF33.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/24/5a/285905_3tF33.jpg",
+        "large": "https://lain.bgm.tv/pic/cover/l/24/5a/285905_3tF33.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/24/5a/285905_3tF33.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/24/5a/285905_3tF33.jpg"
+    },
+    "summary": "21世纪，一直以来隐藏在历史暗处的兽人们的存在开始为人所知。曾是普通人类的影森满，某天突然变成了狸兽人。她为了逃避人类而前往的兽人特区“动物都市”，是十年前兽人为了像兽人一样活着而建造的兽人专属的城镇。满在那里与厌恶人类的狼兽人·大神士郎相遇，并和他一起行动。在此期间，她学习到自己在人类世界所不知道的“兽人们”的烦恼、生活以及喜悦。满为何会变成兽人呢？就在追寻谜底的过程中，她自身也被卷入了意想不到的巨大事件当中。",
+    "name": "BNA ビー・エヌ・エー",
+    "name_cn": "动物新世代",
+    "tags": [
+        {
+            "name": "TRIGGER",
+            "count": 1293,
+            "total_cont": 0
+        },
+        {
+            "name": "原创",
+            "count": 1132,
+            "total_cont": 0
+        },
+        {
+            "name": "吉成曜",
+            "count": 749,
+            "total_cont": 0
+        },
+        {
+            "name": "2020年4月",
+            "count": 710,
+            "total_cont": 0
+        },
+        {
+            "name": "TV",
+            "count": 582,
+            "total_cont": 0
+        },
+        {
+            "name": "奇幻",
+            "count": 501,
+            "total_cont": 0
+        },
+        {
+            "name": "2020",
+            "count": 407,
+            "total_cont": 0
+        },
+        {
+            "name": "furry",
+            "count": 342,
+            "total_cont": 0
+        },
+        {
+            "name": "战斗",
+            "count": 268,
+            "total_cont": 0
+        },
+        {
+            "name": "中岛一基",
+            "count": 180,
+            "total_cont": 0
+        },
+        {
+            "name": "动作",
+            "count": 173,
+            "total_cont": 0
+        },
+        {
+            "name": "中島かずき",
+            "count": 110,
+            "total_cont": 0
+        },
+        {
+            "name": "日本动画",
+            "count": 73,
+            "total_cont": 0
+        },
+        {
+            "name": "諸星すみれ",
+            "count": 52,
+            "total_cont": 0
+        },
+        {
+            "name": "日本",
+            "count": 51,
+            "total_cont": 0
+        },
+        {
+            "name": "动物",
+            "count": 23,
+            "total_cont": 0
+        },
+        {
+            "name": "TRIGGER社",
+            "count": 23,
+            "total_cont": 0
+        },
+        {
+            "name": "Netflix",
+            "count": 19,
+            "total_cont": 0
+        },
+        {
+            "name": "科幻",
+            "count": 16,
+            "total_cont": 0
+        },
+        {
+            "name": "搞笑",
+            "count": 15,
+            "total_cont": 0
+        },
+        {
+            "name": "补标",
+            "count": 14,
+            "total_cont": 0
+        },
+        {
+            "name": "2020年",
+            "count": 13,
+            "total_cont": 0
+        },
+        {
+            "name": "慎重外推",
+            "count": 13,
+            "total_cont": 0
+        },
+        {
+            "name": "可外推",
+            "count": 13,
+            "total_cont": 0
+        },
+        {
+            "name": "百合",
+            "count": 11,
+            "total_cont": 0
+        },
+        {
+            "name": "今石洋之",
+            "count": 10,
+            "total_cont": 0
+        },
+        {
+            "name": "BNA",
+            "count": 9,
+            "total_cont": 0
+        },
+        {
+            "name": "冒险",
+            "count": 9,
+            "total_cont": 0
+        },
+        {
+            "name": "扳机社",
+            "count": 8,
+            "total_cont": 0
+        },
+        {
+            "name": "mabanua",
+            "count": 7,
+            "total_cont": 0
+        }
+    ],
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "动物新世代"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "BNA"
+                },
+                {
+                    "v": "Brand New Animal"
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "12"
+        },
+        {
+            "key": "放送开始",
+            "value": "2020年4月8日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期三"
+        },
+        {
+            "key": "官方网站",
+            "value": "https://bna-anime.com/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "フジテレビ「+Ultra」"
+        },
+        {
+            "key": "其他电视台",
+            "value": "BSフジ"
+        },
+        {
+            "key": "播放结束",
+            "value": "2020年6月24日"
+        },
+        {
+            "key": "导演",
+            "value": "吉成曜"
+        },
+        {
+            "key": "音乐",
+            "value": "mabanua"
+        },
+        {
+            "key": "Copyright",
+            "value": "© 2020 TRIGGER・中島かずき／『BNA ビー・エヌ・エー』製作委員会"
+        },
+        {
+            "key": "脚本",
+            "value": "中島かずき"
+        },
+        {
+            "key": "系列构成",
+            "value": "中島かずき"
+        },
+        {
+            "key": "人物设定",
+            "value": "芳垣祐介"
+        },
+        {
+            "key": "总作画监督",
+            "value": "竹田直樹"
+        },
+        {
+            "key": "美术监督",
+            "value": "野村正信"
+        },
+        {
+            "key": "色彩设计",
+            "value": "垣田由紀子"
+        },
+        {
+            "key": "摄影监督",
+            "value": "設楽希"
+        },
+        {
+            "key": "剪辑",
+            "value": "坪根健太郎"
+        },
+        {
+            "key": "先行配信",
+            "value": "Netflix2020年3月21日1话-6话先行配信"
+        },
+        {
+            "key": "主题歌演出",
+            "value": "Shin Sakiura featuring AAAMYYY、影森みちる(CV:諸星すみれ)"
+        },
+        {
+            "key": "原作",
+            "value": "TRIGGER・中島かずき"
+        }
+    ],
+    "rating": {
+        "rank": 5580,
+        "total": 4283,
+        "count": {
+            "1": 11,
+            "2": 12,
+            "3": 34,
+            "4": 136,
+            "5": 505,
+            "6": 1423,
+            "7": 1532,
+            "8": 545,
+            "9": 47,
+            "10": 38
+        },
+        "score": 6.5
+    },
+    "total_episodes": 12,
+    "collection": {
+        "on_hold": 465,
+        "dropped": 483,
+        "wish": 1073,
+        "collect": 6364,
+        "doing": 462
+    },
+    "id": 285905,
+    "eps": 12,
+    "meta_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "原创",
+        "战斗"
+    ],
+    "volumes": 0,
+    "series": false,
+    "locked": false,
+    "nsfw": false,
+    "type": 2,
+    "main_character_ids": [
+        74069,
+        74070,
+        74071
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/4b/d1/74069_crt_CyyyC.jpg?r=1576658633",
+                "grid": "https://lain.bgm.tv/pic/crt/g/4b/d1/74069_crt_CyyyC.jpg?r=1576658633",
+                "large": "https://lain.bgm.tv/pic/crt/l/4b/d1/74069_crt_CyyyC.jpg?r=1576658633",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4b/d1/74069_crt_CyyyC.jpg?r=1576658633"
+            },
+            "name": "影森みちる",
+            "summary": "とある秘密を抱えてアニマシティへ逃げ込んできた女子高生のタヌキ獣人。\r\nコミュ力が高く、明るく快活な性格。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/55/56/5107_prsn_HQ05E.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/55/56/5107_prsn_HQ05E.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/55/56/5107_prsn_HQ05E.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/55/56/5107_prsn_HQ05E.jpg"
+                    },
+                    "name": "諸星すみれ",
+                    "short_summary": "童星出身，是女性声优、演员、歌手。向日葵剧团所属。有一个妹妹。\r\n代表作品包括TBS『ほーむめーかー』朋実役；NHK『连続テレビ小说「天花」』诸川すみれ役；舞台『お月さま、笑った』速水花菜役。\r\n\r\n艺名就是本名。据说当初父母本想给她起名为「莉桜（りお）」而不是「すみれ」。可是，刚出生不久的诸星右半身得了麻痹症，就连吃母乳都很困难。如果一辈子都得麻痹症的话，可能连自己的名字都写不好，于是父母就将她的名字改成了书写起来较简单的平假名。不过，在产后数月之后，麻痹症就自动痊愈了。\r\n3岁的时候加入了向日葵剧团。入团的契机是来自《千与千寻》中的角色汤婆婆，告诉父母自己也“想成为汤婆婆”。\r\n最崇拜的声优是曾经看过的『Hannah Montana』中参加演出的白石凉子等。\r\n擅长唱歌，拥有英语检定2级资格。受其父亲有搞乐团的喜好影响，而在高中时买了吉他来玩。\r\n今后被期待着有更活跃的表现。\r\n\r\n2006年，在7岁时出演《血色花园》的凯莉，被共演的子安武人的声调转换演技所折服，从那个时候开始产生了专业的自觉。\r\n2009年，在9岁时以妮娜·塔克 Nina Tucker 这一角色参加了《钢之炼金术师FULLMENTAL ALCHEMIST》。以其稚嫩的音质和富含表现力的演技得到了其他声优与动画制作人员的一致好评。朴璐美曾经赞赏她“是一名充满感性的演员”“在现场为她的演技所震撼”等，钉宫理惠也同意了这一说法。她的超高演技让包括朴璐美在内的现场声优都萌生了不服输的念头。其中，据说内海贤二先生因为太在意诸星的演技，自己也燃起了斗志投入了角色的演出。\r\n2012年，在13岁时以《偶像活动!》中的星宫莓一角在电视动画中首次作为主角参演。\r\n2018年3月毕业于堀越高等学校，同年4月开始进入大学就读。\r\n2019年5月31日，宣布将于秋季歌手solo出道。\r\n2022年3月26日，青山学院大学毕业。",
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 5107,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 74069
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/8b/2d/74070_crt_B0oTr.jpg?r=1576658611",
+                "grid": "https://lain.bgm.tv/pic/crt/g/8b/2d/74070_crt_B0oTr.jpg?r=1576658611",
+                "large": "https://lain.bgm.tv/pic/crt/l/8b/2d/74070_crt_B0oTr.jpg?r=1576658611",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8b/2d/74070_crt_B0oTr.jpg?r=1576658611"
+            },
+            "name": "大神士郎",
+            "summary": "人間嫌いのオオカミ獣人。\r\nある成り行きから仕方なくみちるの面倒を見ることになる。ぶっきらぼうだが実は優しいところもあり、獣人を守ることを信条にする昔気質の男。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/40/4e/4982_prsn_XOxkm.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/40/4e/4982_prsn_XOxkm.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/40/4e/4982_prsn_XOxkm.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/40/4e/4982_prsn_XOxkm.jpg"
+                    },
+                    "name": "細谷佳正",
+                    "short_summary": "高中时代参加的社团是戏剧社和剑道社。后来只专注於戏剧社。\r\n专门学校时期和友人一起组成街头艺人，由于是新人加上良好的歌声和歌曲，被同一个事务所的前辈大须贺纯所称赞。与其搭档的友人是吉他老师。名字倾向本身的创作风格，用了‘不协和音’来命名。歌曲由两人共同创作。其中‘雪’这首曲子几乎是一个人完成的。而在当时的演出地点是在京王线府中站。\r\n在网球王子的试镜会中也参与了平古场凛的角色。\r\n以网球王子白石藏之介名义连续两个月发行角色专辑，为网球王子角色歌曲首例，2010年04月14日发行的首张专辑《Medicine or...?》在Oricon Style拿下首日第七名，首周第十名。2010年05月19日发行的第二张专辑《POISON》登上Oricon Style首日第三名，首周第六名。其中，《Medicine or...?》中的＜I.ng＞及《POISON》中的＜エピローグ＞皆由细谷本人亲自做词。\r\n\r\n兴趣是射击运动和吉他。\r\n喜欢的艺人以男性居多，像是藤原龙也和洼冢洋介。\r\n无关年龄，喜欢思想较为成熟的女性。\r\n讨厌的食物是牡蛎，连碰都不能碰。喜欢红酒。\r\n喜欢Ne-Yo的音乐。\r\n喜欢猫，会和流浪猫玩在一起，所以身上容易残留猫毛。有一次到电台参与‘电波系彼女’的录制，后来才知道小林ゆう对猫过敏，并且向她道歉。\r\n电台‘テニスの王子様 オン・ザ・レイディオ’中被认定了是欺负的一群，常被前辈声优欺负。\r\n身材较为纤细修长，非常容易出汗。\r\n经常有电波系的恐怖经验。\r\n被小林ゆう称赞其说话技巧很好。\r\n对电脑等电子装置很不熟悉的缘故，家中并没有电脑。工作上请附近的香烟店帮忙传真。\r\n对于星座很了解，不过否定自己的水瓶座B型是个“怪人”的见解。\r\n为了演出不良少年柔沢ジュウ的感觉，在自家的厕所里一边冲水一边大叫磨损喉咙。\r\n在过去的事件中，曾比喻自己“声音像没特色的茶泡饭”。\r\n\r\n2014年荣获第八届日本声优大赏“助演男优赏”。\r\n\r\n曾属Mausu Promotion。2014年在广播『天才軍師』2014年7月13日放送回中，宣布自2014年7月1日恢复为自由身。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 4982,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 74070
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b5/4b/74071_crt_53C27.jpg?r=1589818151",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b5/4b/74071_crt_53C27.jpg?r=1589818151",
+                "large": "https://lain.bgm.tv/pic/crt/l/b5/4b/74071_crt_53C27.jpg?r=1589818151",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b5/4b/74071_crt_53C27.jpg?r=1589818151"
+            },
+            "name": "日渡なずな",
+            "summary": "みちるの親友で、アイドル志望の美少女。\r\nある日突然獣人に変わり、みちるの目の前で何者かに拐われてしまった。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5b/8c/14918_prsn_1V1dU.jpg?r=1676109778",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/5b/8c/14918_prsn_1V1dU.jpg?r=1676109778",
+                        "large": "https://lain.bgm.tv/pic/crt/l/5b/8c/14918_prsn_1V1dU.jpg?r=1676109778",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5b/8c/14918_prsn_1V1dU.jpg?r=1676109778"
+                    },
+                    "name": "長縄まりあ",
+                    "short_summary": "日本的女性声优，爱知县出身。I'm Enterprise所属。\r\n\r\n成为声优的契机是在国中时代参与呼吁禁烟运动的时候，曾被路上的人称赞 “你的声音很棒”，同时在学校也常被同学模仿，因此知道自己的声音并不普通。\r\n就读日本播音演技研究所的基本科时，在进级审查中的试镜中合格，并加入I'm Enterprise。\r\n\r\n憧憬的声优为大谷育江与钉宫理惠。\r\n喜欢的食物是煎饼、零食。有在寿司店打工的经验。\r\n特别喜欢少年系的动画。\r\n2016年的访谈中提到今后想以演出吉祥物角色为目标。\r\n\r\n与同期出身的声优小泽亚李交情很好。同时与在《三坪房间的侵略者！？》演出的大森日雅、铃木绘理、田泽茉纯亦有深交。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 14918,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 74071
+        }
+    ]
+}

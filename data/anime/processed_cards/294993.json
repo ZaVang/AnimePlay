@@ -1,0 +1,174 @@
+{
+    "id": 294993,
+    "name": "咒术回战",
+    "image_path": "data\\images\\anime\\294993.jpg",
+    "points": 7.1,
+    "cost": 1,
+    "rarity": "N",
+    "description": "少年战斗着——「为寻求正确的死亡」\r\n辛酸·后悔·耻辱人类产生的负面情感，化为诅咒，潜入日常生活诅咒是蔓延于世界的祸源，最糟糕的情况下，会让人类踏入死亡，并且诅咒只能以诅咒拔除。\r\n虎杖悠仁是一位体育万能的高中生，某天他为了从“咒物”危机中解救学姐，而吞下了被诅咒的手指“两面宿傩之指”，让“宿傩”这种诅咒跟自己合而为一。\r\n在最强咒术师五条悟的指引下，进入对诅咒专门机关「东京都立咒术高等专门学校」，并遇到了伏黑惠与钉崎野蔷薇这两位同学。\r\n某日，突然出现“特级咒物”，他们三人就奉命到现场支援。为了实现爷爷要他“助人”的遗言，虎杖将会继续与“诅咒”奋斗下去。\r\n为了祓除诅咒而成为诅咒的少年，无法回头的壮阔故事开始了——",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 24,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "漫画改",
+        "战斗",
+        "少年向"
+    ],
+    "date": "2020-10-02",
+    "rating_rank": 2205,
+    "rating_score": 7.1,
+    "rating_total": 16829,
+    "main_character_ids": [
+        73336,
+        73337,
+        73338
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b4/cd/73336_crt_XHJ7U.jpg?r=1608836932",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b4/cd/73336_crt_XHJ7U.jpg?r=1608836932",
+                "large": "https://lain.bgm.tv/pic/crt/l/b4/cd/73336_crt_XHJ7U.jpg?r=1608836932",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b4/cd/73336_crt_XHJ7U.jpg?r=1608836932"
+            },
+            "name": "虎杖悠仁",
+            "summary": "本作主人公，爱看电视，常做些微妙的模仿，拿手戏很多，体脂率极低，有极强的运动神经，同时有超乎常人的身体能力可以将铅球扔向运动场的另一端并把笼门框打坏。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d0/70/16353_prsn_Tk4x9.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d0/70/16353_prsn_Tk4x9.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/d0/70/16353_prsn_Tk4x9.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d0/70/16353_prsn_Tk4x9.jpg"
+                    },
+                    "name": "榎木淳弥",
+                    "short_summary": "大学時代に周囲の影響でアニメを見始めるようになり、『天元突破グレンラガン』に感動したことがきっかけで声優を目指す。アトミックモンキー 声優・演技研究所に3期生として入所、卒業後に事務所所属となる。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 16353,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/82/14/78977_prsn_9ZQc0.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/82/14/78977_prsn_9ZQc0.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/82/14/78977_prsn_9ZQc0.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/82/14/78977_prsn_9ZQc0.jpg"
+                    },
+                    "name": "江志倫",
+                    "short_summary": "台湾男性配音员。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 78977,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 73336
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/8a/c3/73337_crt_DlZDY.jpg?r=1608837008",
+                "grid": "https://lain.bgm.tv/pic/crt/g/8a/c3/73337_crt_DlZDY.jpg?r=1608837008",
+                "large": "https://lain.bgm.tv/pic/crt/l/8a/c3/73337_crt_DlZDY.jpg?r=1608837008",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8a/c3/73337_crt_DlZDY.jpg?r=1608837008"
+            },
+            "name": "伏黒恵",
+            "summary": "东京咒术高专一年级男学生，入学第一年就被冠以二级咒术师称号的天才少年，有禅院家的血脉，被加茂评价道论天赋比宗家还优秀。擅长使用以影子作为媒介的动物式神。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/38/47/15390_prsn_p9SMm.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/38/47/15390_prsn_p9SMm.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/38/47/15390_prsn_p9SMm.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/38/47/15390_prsn_p9SMm.jpg"
+                    },
+                    "name": "内田雄馬",
+                    "short_summary": "日本の男性声優。\r\n東京都出身。インテンション所属。実姉は、同じく声優の内田真礼。\r\n\r\n趣味は音楽、散歩、森林浴、山登り。特技は作曲、モノマネ、焼肉を焼く、ジャケットプレイ。\r\n好きな言葉は、『為せば成る、為さねば成らぬ何事も』だという。\r\n衝撃を受けた声優には、関智一を挙げている。\r\n将来的には、どの世代でも主役をこなせていける声優になりたいとしている。\r\n声優仲間である石川界人と仲が良い。\r\n\r\n一家揃ってのゲーム好きだった影響で、13歳の時に『サクラ大戦』がきっかけで声優業に関心を持ち、進路を考える17歳の時に声優への志望を強め、日本ナレーション演技研究所に入学。\r\n同養成所在籍中の2012年に、『Holy Knight』のアニメ版のアフレコで声優デビューを果たした後、養成所を卒業し、2013年4月1日付けで現事務所所属となる。\r\n声優としてはまだ無名だった2013年に、杉田智和に誘われてパシフィコ横浜で開催された「A＆Gオールスター2013」に、女装姿で飛び入り出演した。\r\n2017年1月より、パーソナリティを務める一人しゃべりラジオ番組『内田雄馬 君の話を焼かせて』の放送を開始。\r\n2017年、第11回声優アワードで新人男優賞を受賞。\r\n同年秋、コーエーテクモゲームスからNintendo Switch向けに発売されるファイアーエムブレムと無双シリーズとのコラボ作品『ファイアーエムブレム無双』で、姉・真礼とダブル主演を果たす。\r\n2018年、KING AMUSEMNET CREATIVEよりアーティストデビュー。\r\n2019年3月9日、第13回声優アワード主演男優賞を受賞。\r\n2022年12月31日、10年在籍したアイムエンタープライズを退所。翌2023年1月1日よりインテンションに所属。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 15390,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7d/23/78930_prsn_7LJ74.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7d/23/78930_prsn_7LJ74.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/7d/23/78930_prsn_7LJ74.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7d/23/78930_prsn_7LJ74.jpg"
+                    },
+                    "name": "宋昱璁",
+                    "short_summary": "台湾男性配音员。号称「配音界的美乃滋」。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 78930,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 73337
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/61/fd/73338_crt_m212p.jpg?r=1608836839",
+                "grid": "https://lain.bgm.tv/pic/crt/g/61/fd/73338_crt_m212p.jpg?r=1608836839",
+                "large": "https://lain.bgm.tv/pic/crt/l/61/fd/73338_crt_m212p.jpg?r=1608836839",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/61/fd/73338_crt_m212p.jpg?r=1608836839"
+            },
+            "name": "釘崎野薔薇",
+            "summary": "东京咒术高专一年级女学生，发色是染出来的。很尊敬同样身为女性咒术师的禅院真希。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2a/b7/5766_prsn_6q644.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2a/b7/5766_prsn_6q644.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/2a/b7/5766_prsn_6q644.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2a/b7/5766_prsn_6q644.jpg"
+                    },
+                    "name": "瀬戸麻沙美",
+                    "short_summary": "中学生2年生の時、偶然視聴したアニメ『D.Gray-man』の主人公、アレン・ウォーカー（声：小林沙苗）に魅せられ、キャラクターだけでなく演者の声優にも興味が湧き、声優を志す。高校在学中の2009年に声優事務所のオーディションを受験、翌2010年より声優活動を開始する。\r\n2010年、初めて受けたオーディションでテレビアニメ『放浪息子』（2011年）の準主人公 \"高槻よしの\" 役に抜擢される。彼女にとって初仕事の収録だったが、演技などに関して事前の指示はほとんど必要としなかったと監督のあおきえいは述べている。\r\n2011年、日本テレビ系テレビアニメ『ちはやふる』で主演（ \"綾瀬千早\" 役）とエンディング主題歌の歌唱を担当。同局系列のテレビアニメ『HUNTER×HUNTER』の \"クラピカ\" 役オーディションに参加していた瀬戸の演技が『ちはやふる』番組関係者の目に留まり、改めて \"綾瀬千早\" 役のオーディションを行ったところ満場一致で瀬戸の起用が決定した。\r\n2015年4月1日付けで、シグマ・セブンeからシグマ・セブンへ移動。\r\n2021年11月1日よりStarCrewへ移籍。あわせて公式Twitterアカウントを開設した。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 5766,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b3/fe/79188_prsn_cWqRq.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b3/fe/79188_prsn_cWqRq.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/b3/fe/79188_prsn_cWqRq.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b3/fe/79188_prsn_cWqRq.jpg"
+                    },
+                    "name": "楊詩穎",
+                    "short_summary": "台湾女性配音员，师从姜瑰瑾。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 79188,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 73338
+        }
+    ]
+}

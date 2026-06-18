@@ -1,0 +1,40 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a6/fd/200849_crt_zg7XX.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a6/fd/200849_crt_zg7XX.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/a6/fd/200849_crt_zg7XX.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a6/fd/200849_crt_zg7XX.jpg"
+    },
+    "summary": "異世界転生の前舞台で「俺」を転生先に送り込む塩対応な案内役。\r\nいつも「俺」の異世界転生記に冷静にツッコんでいる。",
+    "name": "女神",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "女神"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 65,
+        "collects": 199
+    },
+    "id": 200849,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        623854
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0d/fa/18460_crt_w6LWY.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/0d/fa/18460_crt_w6LWY.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/0d/fa/18460_crt_w6LWY.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0d/fa/18460_crt_w6LWY.jpg"
+    },
+    "summary": "姑且算是主人公，爱称是キョロ（kyoro）的高中一年生。逍遥自在的和平主义者，因为总是说出不合时宜的台词而每天遭到GJ部其他成员的欺负。",
+    "name": "四ノ宮京夜",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "四之宫京夜"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "四ノ宮 京夜"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "しのみや きょうや"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "wikipedia/百度百科"
+        }
+    ],
+    "stat": {
+        "comments": 9,
+        "collects": 21
+    },
+    "id": 18460,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        48031
+    ]
+}

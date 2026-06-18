@@ -1,0 +1,65 @@
+{
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 18,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7c/0d/171451_crt_mAe8s.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/7c/0d/171451_crt_mAe8s.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/7c/0d/171451_crt_mAe8s.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7c/0d/171451_crt_mAe8s.jpg"
+    },
+    "summary": "血の気の薄い肌に長い髪、碧眼の少女。\r\n殺人ゲームの賞金で日々を生きている。\r\n生活力は乏しく、いろいろと無頓着。\r\n\r\n趣味・特技：夜の散歩、背後から近づいてくる気配を読むこと\r\n苦手なこと：日が昇っている時間に起きること\r\n次回参加予定：GHOST HOUSE",
+    "name": "幽鬼",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "幽鬼"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "本名",
+                    "v": "反町友树"
+                },
+                {
+                    "k": "日文名",
+                    "v": "反町 友樹"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "そりまち ゆうき"
+                },
+                {
+                    "k": "昵称",
+                    "v": "ユウキ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月18日"
+        },
+        {
+            "key": "年龄",
+            "value": "17岁"
+        }
+    ],
+    "stat": {
+        "comments": 38,
+        "collects": 83
+    },
+    "id": 171451,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        510753
+    ]
+}

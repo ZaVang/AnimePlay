@@ -1,0 +1,124 @@
+{
+    "id": 404809,
+    "name": "末日列车去哪里？",
+    "image_path": "data\\images\\anime\\404809.jpg",
+    "points": 6.6,
+    "cost": 1,
+    "rarity": "N",
+    "description": "郊外的某个小镇。\r\n这里不是一个随处可见的普通乡村……。\r\n这里的居民产生了巨大的异变。\r\n即使在这样的情况下，千仓静留也有着坚定的想法。\r\n想再一次见到行踪不明的朋友们！\r\n静留她们在被废弃且停止行驶的电车里，在不知道能不能活着回来的情况下前往外面的世界。\r\n开始运行的末日列车的终点，到底有什么？",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "原创",
+        "冒险"
+    ],
+    "date": "2024-04-01",
+    "rating_rank": 4696,
+    "rating_score": 6.6,
+    "rating_total": 7808,
+    "main_character_ids": [
+        133182,
+        134182,
+        134183
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/3c/ad/133182_crt_0ZsWf.jpg?r=1689090025",
+                "grid": "https://lain.bgm.tv/pic/crt/g/3c/ad/133182_crt_0ZsWf.jpg?r=1689090025",
+                "large": "https://lain.bgm.tv/pic/crt/l/3c/ad/133182_crt_0ZsWf.jpg?r=1689090025",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3c/ad/133182_crt_0ZsWf.jpg?r=1689090025"
+            },
+            "name": "千倉静留",
+            "summary": "みんなと一緒に電車で、突然いなくなった親友を探しに行く。考えるよりも先に体が動く性分で、頼れるような放っておけないようなリーダー。祖父からならった柔術が得意で、身体能力にも自信をもっている。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e9/02/11485_prsn_63BEE.jpg?r=1688702458",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e9/02/11485_prsn_63BEE.jpg?r=1688702458",
+                        "large": "https://lain.bgm.tv/pic/crt/l/e9/02/11485_prsn_63BEE.jpg?r=1688702458",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e9/02/11485_prsn_63BEE.jpg?r=1688702458"
+                    },
+                    "name": "安済知佳",
+                    "short_summary": "所属事务所为Avex Planning & Development。\r\n\r\n小学5年级时开始知道声优这个职业，中学生时进入了Avex Artist Academy。当初因为交通费的关系，15岁时独自一人从福井县到东京，并过着一个月一次从东京回到福井县高中读书的生活。\r\n\r\n勉強を始めてから4年目の2009年、テレビアニメ『あにゃまる探偵 キルミンずぅ』のメインキャラクター、御子神ナギサ役でデビュー。\r\n2014年、テレビアニメ『棺姫のチャイカ』のチャイカ・トラバント役で初主演。\r\n\r\n2020年8月1日，在Instagram上公布结婚的消息。\r\n\r\nYTB频道：\r\nhttps://www.youtube.com/channel/UCdWglOsvq7Q_3-XM5XMxaqQ",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 11485,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 133182
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/65/c5/134182_crt_3yVE6.jpg?r=1690702918",
+                "grid": "https://lain.bgm.tv/pic/crt/g/65/c5/134182_crt_3yVE6.jpg?r=1690702918",
+                "large": "https://lain.bgm.tv/pic/crt/l/65/c5/134182_crt_3yVE6.jpg?r=1690702918",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/65/c5/134182_crt_3yVE6.jpg?r=1690702918"
+            },
+            "name": "星撫子",
+            "summary": "優しく穏やかな性格で争い事が嫌いなため、言うべきことははっきり言う。よくケンカをする玲実と晶を止めたり、静留の相談役になったり、一行の仲をとりもつまとめ役。本名は「なでしこ」だが「なでこ」という愛称で呼ばれている。弓道を習っていて飛び道具が得意。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b7/ea/19353_prsn_AJuZS.jpg?r=1687968758",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b7/ea/19353_prsn_AJuZS.jpg?r=1687968758",
+                        "large": "https://lain.bgm.tv/pic/crt/l/b7/ea/19353_prsn_AJuZS.jpg?r=1687968758",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b7/ea/19353_prsn_AJuZS.jpg?r=1687968758"
+                    },
+                    "name": "和氣あず未",
+                    "short_summary": "和氣 あず未（わき あずみ、1994年9月8日 - ）は、日本の女性声優。東京俳優生活協同組合所属。東京都出身。\r\n\r\n13歳の時に好きであったアニメに出演していた声優のアフレコ映像を見て、声優業に興味を持った。\r\n東京アニメ・声優専門学校第3期卒業生である。中学時代はキャビンアテンダントを目指していたが、高校に入ると、英語が苦手なことから声優志望に転向した。\r\n2014年に俳協に所属。\r\n元々は人前で何かすることが苦手であったと語っている。\r\n所属後、初めてオーディションを受けた作品がアイドルマスター シンデレラガールズであった。\r\n初ライブとなった「THE IDOLM@STER CINDERELLA GIRLS 3rdLIVE シンデレラの舞踏会」には養成所の名誉会長にあたる津川雅彦からフラワースタンドが贈られている。\r\n\r\n名前の「あず未」は本名だが、長野県の安曇野から取られた名前だと自身のTwitterにて語っている。\r\n年の離れた兄が３人いる。\r\n中学、高校とテニス部に所属していたため、運動神経は良いと自負している。\r\n趣味はお菓子作りとイラスト。\r\n寝る事が好きである。\r\n好きなアニメは「鋼の錬金術師」である。この作品に登場するロイ・マスタングのようにちょっとSなキャラクターが好きと語っている。\r\nファンから友達感覚でいてもらえるような親しみやすい声優を目指している。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 19353,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 134182
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/9a/26/134183_crt_bXzOD.jpg?r=1690703048",
+                "grid": "https://lain.bgm.tv/pic/crt/g/9a/26/134183_crt_bXzOD.jpg?r=1690703048",
+                "large": "https://lain.bgm.tv/pic/crt/l/9a/26/134183_crt_bXzOD.jpg?r=1690703048",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9a/26/134183_crt_bXzOD.jpg?r=1690703048"
+            },
+            "name": "久賀玲実",
+            "summary": "ミーハーで都会に憧れていてカワイイものが好き。何事にもストレートな性格で感情表現もわかりやすい。考えることは得意ではないが、五感が鋭い野生児のような直感タイプ。アニメ「練馬の国のアリス」が好き。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/18/43/40346_prsn_ZDSuK.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/18/43/40346_prsn_ZDSuK.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/18/43/40346_prsn_ZDSuK.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/18/43/40346_prsn_ZDSuK.jpg"
+                    },
+                    "name": "久遠エリサ",
+                    "short_summary": "久遠 エリサ（くおん えりさ、1996年7月17日 - ）は、日本の女性声優、紙芝居師。フィリピン出身。81プロデュース所属。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 40346,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 134183
+        }
+    ]
+}

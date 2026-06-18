@@ -1,0 +1,107 @@
+{
+    "id": 174143,
+    "name": "人渣的本愿",
+    "image_path": "data\\images\\anime\\174143.jpg",
+    "points": 6.6,
+    "cost": 1,
+    "rarity": "N",
+    "description": "无法得到回报之恋、痛切之恋、单恋，那是如此美丽的事物吗？\r\n高中二年级的安乐冈花火，因无从实现的恋情而饱受煎熬。\r\n伤害重要的人，即使受伤也要追求的那份人间温暖。\r\n这是，过于纯粹的扭曲恋爱物语。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "校园",
+        "TV",
+        "恋爱",
+        "日本",
+        "漫画改"
+    ],
+    "date": "2017-01-12",
+    "rating_rank": 4860,
+    "rating_score": 6.6,
+    "rating_total": 8100,
+    "main_character_ids": [
+        20405,
+        20406
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/37/37/20405_crt_M2p92.jpg?r=1479999592",
+                "grid": "https://lain.bgm.tv/pic/crt/g/37/37/20405_crt_M2p92.jpg?r=1479999592",
+                "large": "https://lain.bgm.tv/pic/crt/l/37/37/20405_crt_M2p92.jpg?r=1479999592",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/37/37/20405_crt_M2p92.jpg?r=1479999592"
+            },
+            "name": "安楽岡花火",
+            "summary": "17岁。\r\n跟麦在交往。\r\n喜欢大哥哥。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e9/02/11485_prsn_63BEE.jpg?r=1688702458",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e9/02/11485_prsn_63BEE.jpg?r=1688702458",
+                        "large": "https://lain.bgm.tv/pic/crt/l/e9/02/11485_prsn_63BEE.jpg?r=1688702458",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e9/02/11485_prsn_63BEE.jpg?r=1688702458"
+                    },
+                    "name": "安済知佳",
+                    "short_summary": "所属事务所为Avex Planning & Development。\r\n\r\n小学5年级时开始知道声优这个职业，中学生时进入了Avex Artist Academy。当初因为交通费的关系，15岁时独自一人从福井县到东京，并过着一个月一次从东京回到福井县高中读书的生活。\r\n\r\n勉強を始めてから4年目の2009年、テレビアニメ『あにゃまる探偵 キルミンずぅ』のメインキャラクター、御子神ナギサ役でデビュー。\r\n2014年、テレビアニメ『棺姫のチャイカ』のチャイカ・トラバント役で初主演。\r\n\r\n2020年8月1日，在Instagram上公布结婚的消息。\r\n\r\nYTB频道：\r\nhttps://www.youtube.com/channel/UCdWglOsvq7Q_3-XM5XMxaqQ",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 11485,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 20405
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/2a/54/20406_crt_f72Sz.jpg?r=1480000106",
+                "grid": "https://lain.bgm.tv/pic/crt/g/2a/54/20406_crt_f72Sz.jpg?r=1480000106",
+                "large": "https://lain.bgm.tv/pic/crt/l/2a/54/20406_crt_f72Sz.jpg?r=1480000106",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2a/54/20406_crt_f72Sz.jpg?r=1480000106"
+            },
+            "name": "粟屋麦",
+            "summary": "17岁。与花火交往中。\r\n很受女生欢迎。\r\n喜欢茜小姐。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/65/0b/7392_prsn_85bDV.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/65/0b/7392_prsn_85bDV.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/65/0b/7392_prsn_85bDV.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/65/0b/7392_prsn_85bDV.jpg"
+                    },
+                    "name": "島﨑信長",
+                    "short_summary": "岛﨑信长（1988年12月6日－），日本男性配音演员。隶属于青二Production。出身于宫城县。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 7392,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a3/ad/16265_prsn_ZVq96.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a3/ad/16265_prsn_ZVq96.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/a3/ad/16265_prsn_ZVq96.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a3/ad/16265_prsn_ZVq96.jpg"
+                    },
+                    "name": "大津愛理",
+                    "short_summary": "日本の女性声優。リマックス所属。東京都出身。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 16265,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 20406
+        }
+    ]
+}

@@ -1,0 +1,45 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/70/83/186658_crt_FLCZh.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/70/83/186658_crt_FLCZh.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/70/83/186658_crt_FLCZh.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/70/83/186658_crt_FLCZh.jpg"
+    },
+    "summary": "ノアに仕える専属メイドの少女。\r\n\r\nよく気が利き、仕事も丁寧。ノアの身の回りの世話を一手に担うなど、最も身近で支える存在。 その忠誠心は深く、常にノアの力になろうと尽くしている。",
+    "name": "ゾーイ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "佐伊"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "ZOEY"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 3,
+        "collects": 9
+    },
+    "id": 186658,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        531724
+    ]
+}

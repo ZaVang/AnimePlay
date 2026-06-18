@@ -1,0 +1,40 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/44/b2/33401_crt_sfo5Y.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/44/b2/33401_crt_sfo5Y.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/44/b2/33401_crt_sfo5Y.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/44/b2/33401_crt_sfo5Y.jpg"
+    },
+    "summary": "「山」の神の力を持つ聖者。聖者を統括する万天神殿の長。武装は鉄甲。千里眼や山の精気を使った傷の治療、やまびこで声を遠方に届けるなどの能力を持つ。文武両道で経験と実力も豊富な年長の勇者だが、一度思い込んだらなかなか修正が効かない頑固さが欠点。",
+    "name": "モーラ・チェスター",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "莫拉·切斯特"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 2,
+        "collects": 6
+    },
+    "id": 33401,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        118067
+    ]
+}

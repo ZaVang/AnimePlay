@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/09/16/172738_crt_PDVAq.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/09/16/172738_crt_PDVAq.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/09/16/172738_crt_PDVAq.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/09/16/172738_crt_PDVAq.jpg"
+    },
+    "summary": "担任舍监的大学四年级生。\r\n喜欢喝酒，对酒也相当有研究。\r\n不太喜欢在人前喝酒，通常是一个人静静享受。\r\n\r\n\r\n寮長を務める大学4年生。\r\nお酒が好きで、お酒に関する知識も豊富。\r\n人前でお酒を飲むことが苦手で、一人で楽しんでいる。",
+    "name": "砺波いぶき",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "砺波伊吹"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "砺波 いぶき"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "となみ いぶき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ibuki Tonami"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 74,
+        "collects": 149
+    },
+    "id": 172738,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        543360
+    ]
+}

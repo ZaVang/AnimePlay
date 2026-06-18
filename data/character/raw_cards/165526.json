@@ -1,0 +1,40 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/30/13/165526_crt_7uUaP.jpg?r=1734532262",
+        "grid": "https://lain.bgm.tv/pic/crt/g/30/13/165526_crt_7uUaP.jpg?r=1734532262",
+        "large": "https://lain.bgm.tv/pic/crt/l/30/13/165526_crt_7uUaP.jpg?r=1734532262",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/30/13/165526_crt_7uUaP.jpg?r=1734532262"
+    },
+    "summary": "九龍城砦の不動産会社「旺来地產公司」に務める令子の先輩社員。大雑把な性格で遅刻の常習犯。「八」の数字を見かけると触ってしまう癖がある。九龍を知り尽くしており、この街の人や文化、食べ物が大好き。令子を気にかけながらもある秘密を抱えている。",
+    "name": "工藤発",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "工藤发"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 13,
+        "collects": 4
+    },
+    "id": 165526,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        518090
+    ]
+}

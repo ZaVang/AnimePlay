@@ -1,0 +1,77 @@
+{
+    "birth_mon": 5,
+    "gender": "female",
+    "birth_day": 8,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/09/7f/1243_crt_8xbza.jpg?r=1450714023",
+        "grid": "https://lain.bgm.tv/pic/crt/g/09/7f/1243_crt_8xbza.jpg?r=1450714023",
+        "large": "https://lain.bgm.tv/pic/crt/l/09/7f/1243_crt_8xbza.jpg?r=1450714023",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/09/7f/1243_crt_8xbza.jpg?r=1450714023"
+    },
+    "summary": "仪容端丽、头脑学识都很完美的美少女。她的原形是一个吸血鬼，喜欢第一次直接吸的月音的血。因为在人间的学校被孤立，所以讨厌一个人做事，一直想要朋友。在阳海学园的考试中成绩是排第13名，与月音一样是新闻部的成员 \r\n　　因为有胸前的十字架暂时抑制吸血鬼的力量，但不知为何月音能除下十字架。当十字架除下时，萌香便会“醒觉”，变成别的人格，成为冷静凶恶的不死吸血鬼。在妖怪中是最强的种族，被称为“力量的大妖”。平时她是红发黑眼的〈动画中为粉红色头发、绿色虹膜〉，当醒觉时会变成银发红眼。在醒觉后依然喜欢月音的血。虽然没有明确表示，但对月音抱有好意，在醒觉时萌香有与月音拥抱。",
+    "name": "赤夜萌香",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "赤夜萌香"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "赤夜 萌香"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あかしや モカ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Akashiya Moka"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "5月8日"
+        },
+        {
+            "key": "身高",
+            "value": "166cm"
+        },
+        {
+            "key": "体重",
+            "value": "47kg"
+        },
+        {
+            "key": "BWH",
+            "value": "B86(C)・W56・H86"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "声优",
+            "value": "水树奈奈"
+        }
+    ],
+    "stat": {
+        "comments": 7,
+        "collects": 65
+    },
+    "id": 1243,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        2474
+    ]
+}

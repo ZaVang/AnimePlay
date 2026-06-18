@@ -1,0 +1,45 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/28/67/184196_crt_n50VY.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/28/67/184196_crt_n50VY.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/28/67/184196_crt_n50VY.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/28/67/184196_crt_n50VY.jpg"
+    },
+    "summary": "黒尽くめで眼帯の少女。ユルの双子の妹。",
+    "name": "アサ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "阿萨"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Asa"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 25,
+        "collects": 35
+    },
+    "id": 184196,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        568572
+    ]
+}

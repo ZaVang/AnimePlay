@@ -1,0 +1,91 @@
+{
+    "id": 364822,
+    "name": "关于邻家的天使大人不知不觉把我惯成了废人这档子事",
+    "image_path": "data\\images\\anime\\364822.jpg",
+    "points": 4.5,
+    "cost": 1,
+    "rarity": "N",
+    "description": "升入高中一年级的藤宫周开始独居生活。\r\n他住的公寓隔壁住着学校里最出色的美少女椎名真昼。\r\n两人虽然没有什么特别的关系，但因为周把伞借给了在雨中湿透的她，所以两人开始了奇妙的交流。\r\n看着独自过着堕落生活的周，真昼忙着做饭、打扫房间、在各方面照顾着他。\r\n作为邻居朝夕相处的两人，慢慢地，一点点地，连通了彼此的心。\r\n这是一个和可爱的邻居甜蜜而焦躁的恋爱故事。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "校园",
+        "TV",
+        "恋爱",
+        "日本",
+        "小说改"
+    ],
+    "date": "2023-01-07",
+    "rating_rank": 9977,
+    "rating_score": 4.5,
+    "rating_total": 5148,
+    "main_character_ids": [
+        76270,
+        108640
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f2/15/76270_crt_PPV8N.jpg?r=1675514638",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f2/15/76270_crt_PPV8N.jpg?r=1675514638",
+                "large": "https://lain.bgm.tv/pic/crt/l/f2/15/76270_crt_PPV8N.jpg?r=1675514638",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f2/15/76270_crt_PPV8N.jpg?r=1675514638"
+            },
+            "name": "椎名真昼",
+            "summary": "学习与运动全能的美少女。拥有着不符合女子高中生身份程度的家务能力。被学校里的人称为天使大人。因与家人有矛盾而选择一人独居，在与周相遇后逐渐找回了家的感觉喜欢甜食和可爱的物品。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7e/2b/27559_prsn_3lWOx.jpg?r=1726923710",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7e/2b/27559_prsn_3lWOx.jpg?r=1726923710",
+                        "large": "https://lain.bgm.tv/pic/crt/l/7e/2b/27559_prsn_3lWOx.jpg?r=1726923710",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7e/2b/27559_prsn_3lWOx.jpg?r=1726923710"
+                    },
+                    "name": "石見舞菜香",
+                    "short_summary": "日本女性声优。出生于埼玉县。所属事务所为Raccoon Dog（ラクーンドッグ）。\r\n毕业于Pro Fit声优培训学校。\r\n\r\n初中时期观看《我们仍未知道那天所看见的花的名字。》（あの日見た花の名前を僕達はまだ知らない。）时，被茅野爱衣的演技深深打动，萌生了\"想用声音感动人心\"的愿望，从此立志成为声优。而让她初识声优职业的契机是《无头骑士异闻录》（デュラララ!!）。\r\n\r\n因自觉发音不够清晰，石见认为必须比他人更早开始专业训练才能成为职业声优。为此她向父亲立下\"若不同意自己就读声优培训学校就拒绝升学高中\"的宣言，最终成功说服家人。\r\n\r\n2016年，在《未闻花名》编剧冈田麿里首部执导作品《朝花夕誓——于离别之朝束起约定之花》（さよならの朝に約束の花をかざろう）中，石见被选拔担任女主角玛奇亚的配音。该作中更实现了与饰演玛奇亚挚友蕾莉亚的茅野爱衣同台演出。\r\n\r\n兴趣爱好是散步、读书，特长是演奏大号（チューバ）和动耳神功。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 27559,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 76270
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/78/17/108640_crt_p1xLU.jpg?r=1648253834",
+                "grid": "https://lain.bgm.tv/pic/crt/g/78/17/108640_crt_p1xLU.jpg?r=1648253834",
+                "large": "https://lain.bgm.tv/pic/crt/l/78/17/108640_crt_p1xLU.jpg?r=1648253834",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/78/17/108640_crt_p1xLU.jpg?r=1648253834"
+            },
+            "name": "藤宮周",
+            "summary": "一人暮らしの高校一年生。\r\nぶっきらぼうで人付き合いが苦手だが、優しく思いやりのある性格。成績はそこそこ優秀。家事が苦手で自堕落な生活を送っていた。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/de/86/31434_prsn_20u1i.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/de/86/31434_prsn_20u1i.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/de/86/31434_prsn_20u1i.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/de/86/31434_prsn_20u1i.jpg"
+                    },
+                    "name": "坂泰斗",
+                    "short_summary": "坂 泰斗は、日本の男性声優。福岡県出身。大沢事務所所属。\r\n\r\n略歴\r\n\r\n福岡県で生まれ、茨城県で育つ。父の仕事の関係でメキシコに住んでいた時期があり、帰国子女である。\r\n\r\n昔は職業としての声優は無知で、アニメも見ていなかった。帰国後の高校2年生ぐらいにアニメを見始めて、「こんな職業あるんだ、やってみよう」と声優を目指した。高校の頃に見ていたアニメは『けいおん!』。\r\n\r\nプロ・フィット声優養成所卒業。2017年4月よりプロ・フィット所属して、声優としての活動を始める。2019年4月1日より事務所預かりから準所属。2022年1月1日、プロ・フィットが同年3月末で閉鎖することに伴い、大沢事務所へ移籍。\r\n\r\nゲーム『メモリーズオフ -Innocent Fille-』の楠瀬累役で初主人公を務める。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 31434,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 108640
+        }
+    ]
+}

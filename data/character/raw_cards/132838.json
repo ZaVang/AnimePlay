@@ -1,0 +1,40 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ab/76/132838_crt_vZYYS.jpg?r=1709647824",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ab/76/132838_crt_vZYYS.jpg?r=1709647824",
+        "large": "https://lain.bgm.tv/pic/crt/l/ab/76/132838_crt_vZYYS.jpg?r=1709647824",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ab/76/132838_crt_vZYYS.jpg?r=1709647824"
+    },
+    "summary": "サルーム王国に仕えるメイドで、ロイドを溺愛する教育係。\r\n類まれな剣術の使い手で、“銀の剣姫”という異名を持つ。",
+    "name": "シルファ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "希露法"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 56,
+        "collects": 185
+    },
+    "id": 132838,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        407133
+    ]
+}

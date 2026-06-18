@@ -1,0 +1,117 @@
+{
+    "birth_mon": 9,
+    "gender": "female",
+    "birth_day": 16,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bd/d5/7489_crt_Dkc1F.jpg?r=1572755950",
+        "grid": "https://lain.bgm.tv/pic/crt/g/bd/d5/7489_crt_Dkc1F.jpg?r=1572755950",
+        "large": "https://lain.bgm.tv/pic/crt/l/bd/d5/7489_crt_Dkc1F.jpg?r=1572755950",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bd/d5/7489_crt_Dkc1F.jpg?r=1572755950"
+    },
+    "summary": "",
+    "name": "西野つかさ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "西野司"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "西野 つかさ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "にしの つかさ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Nishino Tsukasa"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "9月16日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "158cm"
+        },
+        {
+            "key": "体重",
+            "value": "42kg"
+        },
+        {
+            "key": "BWH",
+            "value": "B84 W57 H87"
+        },
+        {
+            "key": "喜欢的食物",
+            "value": "樱桃派"
+        },
+        {
+            "key": "职业",
+            "value": "甜点师、学生偶像"
+        },
+        {
+            "key": "兴趣",
+            "value": "做蛋糕、购物"
+        },
+        {
+            "key": "胸部",
+            "value": "B cup（高中）"
+        },
+        {
+            "key": "迷人之处",
+            "value": "嘴唇"
+        },
+        {
+            "key": "洗澡从哪个部位洗起",
+            "value": "发"
+        },
+        {
+            "key": "对男生身体的哪个部位感到心动",
+            "value": "手·指头"
+        },
+        {
+            "key": "癖",
+            "value": "偶尔会用男生的口气说话，还会嘟嘴。"
+        },
+        {
+            "key": "作者的评语",
+            "value": "性格很难掌握，累死我了。真是很难缠的角色~~~~~~！！！"
+        },
+        {
+            "key": "年龄",
+            "value": "15岁(初登场），22岁（结局）"
+        },
+        {
+            "key": "手机型号",
+            "value": "SHARP 903SH"
+        }
+    ],
+    "stat": {
+        "comments": 25,
+        "collects": 116
+    },
+    "id": 7489,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        1415
+    ]
+}

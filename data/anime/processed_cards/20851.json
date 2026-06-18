@@ -1,0 +1,93 @@
+{
+    "id": 20851,
+    "name": "Another",
+    "image_path": "data\\images\\anime\\20851.jpg",
+    "points": 6.9,
+    "cost": 1,
+    "rarity": "N",
+    "description": "26年前夜见山北中学的三年三班里，曾经有一位名叫「misaki」的学生。她不仅是位运动天才还是个优等生，个性平易近人广受众人喜爱的她却在某日突然猝死，极度悲伤的同班同学们无法接受这件事实，众人决定到毕业之前仍想像见崎还活著般度过每一天。因此见崎的座位就这样一大早上课会有人来打招呼，偶而还会有人藉机搭话——但这段美丽的插曲却对三年三班带来某种扭曲的现象。而在1998年春天，转到三年三班的榊原恒一，莫名感到班上的气氛持续著不安感。在这样的班级里，有位行事异于常人，孤高的美少女见崎鸣——一只眼睛遮著眼罩总是独自一人在画画，拥有不可思议的存在感让恒一不禁想试著接近她，但却就此陷入更深的谜团之中。 　　随著故事的进展，班上的气氛越来越紧张，也有越来越多的人不知是巧合还是「诅咒」而意外生亡。在绫辻大师的笔触下，恐怖的气氛越发浓厚。\r\n\r\n\r\n\r\n[简介原文]\r\n死者は、誰――? その学校のそのクラスには、誰にも話してはならない“秘密”がある――1998年、春｡ 夜見山北中学に転校してきた 榊原恒一(15歳)は、何かに怯えているようなクラスの雰囲気に違和感を覚える｡不思議な存在感を放つ美少女、見崎鳴に惹かれ、接触を試みる恒一だが、いっそう謎は深まるばかり｡そんな中、予想もしなかった惨事が!・・・・・・この“世界”ではいったい、何が起こっているのか・・・? “新本格ミステリ”ムーブメントの旗手・綾辻行人がおくる、いまだかつてない学園ミステリ&ホラー｢Another｣驚天動地の学園本格ミステリホラーがついにTVアニメ化!キャラクター原案は｢涼宮ハルヒの憂鬱｣などの大ヒット作品を手掛ける【いとう のいぢ】が担当!監督:水島努、キャラクターデザイン:石井百合子、そして…アニメ制作:P.A.WORKS大ヒットを連発しているスタッフ&スタジオが、超豪華チームを結成し、ホラーアニメの決定版に挑む｡",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "悬疑",
+        "TV",
+        "日本",
+        "推理",
+        "小说改"
+    ],
+    "date": "2012-01-09",
+    "rating_rank": 2895,
+    "rating_score": 6.9,
+    "rating_total": 14106,
+    "main_character_ids": [
+        14068,
+        14069
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/3e/fe/14068_crt_D0fF0.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/3e/fe/14068_crt_D0fF0.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/3e/fe/14068_crt_D0fF0.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3e/fe/14068_crt_D0fF0.jpg"
+            },
+            "name": "榊原恒一",
+            "summary": "榊原家的独生子。15岁。中学时期的3年5月转入了夜见山北中学的3年3班。\r\n有自发性气胸的疾病。在住院期间认识了水野小姐。因为事先不瞭解班级内部状况而打破了班级要将见崎当作\"不存在\"的约定，后来也被纳入“不存在”的人之一。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/36/ae/5015_prsn_2iZsa.jpg?r=1515335203",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/36/ae/5015_prsn_2iZsa.jpg?r=1515335203",
+                        "large": "https://lain.bgm.tv/pic/crt/l/36/ae/5015_prsn_2iZsa.jpg?r=1515335203",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/36/ae/5015_prsn_2iZsa.jpg?r=1515335203"
+                    },
+                    "name": "阿部敦",
+                    "short_summary": "阿部 敦（あべ あつし、1981年3月25日 - ）は、日本の声優、俳優、歌手。賢プロダクション所属。栃木県足利市出身。血液型はO型。身長161cm。",
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 5015,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 14068
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/99/2f/14069_crt_GZElu.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/99/2f/14069_crt_GZElu.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/99/2f/14069_crt_GZElu.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/99/2f/14069_crt_GZElu.jpg"
+            },
+            "name": "見崎鳴",
+            "summary": "神秘美少女，一只眼睛总是戴著眼罩， 经常独自画画，让人感觉不可思议的存在。\r\n被遮住的左眼被称为\"苍之眼\"，能看到“眼不见为净”的东西。家里开了一家玩偶店，她就住在玩偶店的楼上。被视为“不存在”的人之一。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/01/4a/7302_prsn_V44Vn.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/01/4a/7302_prsn_V44Vn.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/01/4a/7302_prsn_V44Vn.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/01/4a/7302_prsn_V44Vn.jpg"
+                    },
+                    "name": "高森奈津美",
+                    "short_summary": "高森奈津美（たかもり なつみ、1987年2月14日），日本女声优。出身于山梨县，血型是A型。\r\n\r\nPro Fit声优养成所第10期生出身。2009年10月毕业。\r\n高中时加入羽毛球部，并有参加校际间运动会的经历。\r\n兴趣爱好是逛咖啡馆和插画。\r\n特技是握力“40”以上和随便到哪里都能睡着。\r\n持有全商情报处理检定2级、汉字检定3级别、全经计算器检定3级以及秘书实务检定3级。\r\n因山梨县出身的，使用方言为关东方言的甲州弁，曾出任山梨县富士吉田市“樱织”旅游宣传大使。\r\n稍微下垂的黑色双目是她的典型特征，本人自嘲为“エロ目”。\r\n同事务所的茅野爱衣曾对高森给出“胸部好大”的第一印象。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 7302,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 14069
+        }
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "birth_mon": 7,
+    "gender": "female",
+    "birth_day": 3,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/86/16/62397_crt_Ar7w3.jpg?r=1587733404",
+        "grid": "https://lain.bgm.tv/pic/crt/g/86/16/62397_crt_Ar7w3.jpg?r=1587733404",
+        "large": "https://lain.bgm.tv/pic/crt/l/86/16/62397_crt_Ar7w3.jpg?r=1587733404",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/86/16/62397_crt_Ar7w3.jpg?r=1587733404"
+    },
+    "summary": "圣良是芽美的同班同学，也是芽美的好朋友。\r\n在平时，圣良是个可爱又文静的学生，但是在下课之后，她换上白色的修女服，到校园里的教堂做见习修女。\r\n通常那些无助的人们会到教堂来祈求上帝的帮助，而圣良会聆听他们的故事。接著她会将人们碰到的困难告诉芽美，芽美再变身成St.Tail来解决困难。\r\n圣良早已把心交给了上帝，是个很虔诚的教徒\r\n她是第一个知道芽美是St.Tail秘密的人，而且常常为了帮助芽美去打听多有用的消息，或是改装成不同样子。\r\n圣良最喜欢的科目是英文和音乐课，而最不喜欢体育课。",
+    "name": "深森聖良",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "深森圣良"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "深森 聖良"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "みもり せいら"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月3日"
+        },
+        {
+            "key": "身高",
+            "value": "152cm"
+        },
+        {
+            "key": "体重",
+            "value": "43.5kg"
+        }
+    ],
+    "stat": {
+        "comments": 0,
+        "collects": 7
+    },
+    "id": 62397,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        11132
+    ]
+}

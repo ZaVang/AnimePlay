@@ -1,0 +1,126 @@
+{
+    "id": 52170,
+    "name": "问题儿童都来自异世界？",
+    "image_path": "data\\images\\anime\\52170.jpg",
+    "points": 6.5,
+    "cost": 1,
+    "rarity": "N",
+    "description": "      某个已经对世界厌烦的男生——逆回十六夜收到了一封邀请函，当他看清信中内容写着：「望你舍弃一切，前来‘箱庭’」的瞬间，他被带到奇妙的异世界！眼前是带著猫的沉默少女与态度高傲的大小姐，还有召唤他们的罪魁祸首──黑兔。当黑兔正在说明箱庭世界的规则时，十六夜却突然表示：「来打倒魔王吧！」，但黑兔并没有拜托那种事情呀！于是三个超级问题儿和萌少女黑兔的「打倒魔王」冒险故事开始上演！？",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 10,
+    "synergy_tags": [
+        "后宫",
+        "TV",
+        "日本",
+        "战斗",
+        "小说改"
+    ],
+    "date": "2013-01-11",
+    "rating_rank": 5288,
+    "rating_score": 6.5,
+    "rating_total": 6398,
+    "main_character_ids": [
+        18256,
+        18257,
+        18258
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/71/ad/18256_crt_jihfk.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/71/ad/18256_crt_jihfk.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/71/ad/18256_crt_jihfk.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/71/ad/18256_crt_jihfk.jpg"
+            },
+            "name": "逆廻十六夜",
+            "summary": "問題児その１\r\nとにかく何でも拳で倒す、傲岸不遜な少年。彼のギフトネームは\"正体不明（コード・アンノウン）\"と呼ばれ、他人のギフトを砕くというこの世界ではありえない力を持っている。\r\n来到箱庭的问题儿童之一。17岁。持有恩赐为真相不明（Code Unknown），恩赐卡（正式名称是「拉普拉斯纸片」）是钴蓝色。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/01/b3/4779_prsn_R85b5.jpg?r=1740105927",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/01/b3/4779_prsn_R85b5.jpg?r=1740105927",
+                        "large": "https://lain.bgm.tv/pic/crt/l/01/b3/4779_prsn_R85b5.jpg?r=1740105927",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/01/b3/4779_prsn_R85b5.jpg?r=1740105927"
+                    },
+                    "name": "浅沼晋太郎",
+                    "short_summary": "浅沼 晋太郎（あさぬま しんたろう、1976年1月5日 - ）は、日本の脚本家、演出家、俳優、 声優、ナレーター、コピーライター、デザイナー。\r\n岩手県盛岡市出身。仙台育英学園高等学校特別進学コース卒業、多摩美術大学造形表現学部 映像演劇学科 卒業。血液型はO型。左利き。身長175cm。",
+                    "career": [
+                        "producer",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 4779,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 18256
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/94/a1/18257_crt_oYYAL.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/94/a1/18257_crt_oYYAL.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/94/a1/18257_crt_oYYAL.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/94/a1/18257_crt_oYYAL.jpg"
+            },
+            "name": "久遠飛鳥",
+            "summary": "問題児その２\r\n美貌のお嬢さま。彼女のギフトネームは\"威光\"と呼ばれ、発した言葉で相手やギフトを操ることができる。ただし格下の相手やアイテムにしか通用しない。\r\n来到箱庭的问题儿童之一。15岁，来自194x年的日本。持有恩赐为威光，恩赐卡是酒红色。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5a/87/9077_prsn_w2JLj.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/5a/87/9077_prsn_w2JLj.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/5a/87/9077_prsn_w2JLj.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5a/87/9077_prsn_w2JLj.jpg"
+                    },
+                    "name": "ブリドカットセーラ恵美",
+                    "short_summary": "福島県いわき市出身。日本大学芸術学部演劇学科卒業。プロダクション・エース（預かり）所属。オーストラリア人と日本人のハーフ。声優を目指したきっかけは、『名探偵コナン』を観て江戸川コナン役の高山みなみに憧れたから。\r\n布莱德库特·莎拉·惠美的本名“ブリドカット セーラ 恵美”来自于澳大利亚父亲的姓氏“布莱德库特（ブリドカット，Bridcutt）”，以及亚伯拉罕“元配”（Sara）的名字（英语中的Sarah）。是日本配音演员中名字最长的人。使用英文时表示为“Sarah Emi Bridcutt”，Sarah为名，Emi为中间名，Bridcut为姓。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 9077,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 18257
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/89/a1/18258_crt_g88q1.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/89/a1/18258_crt_g88q1.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/89/a1/18258_crt_g88q1.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/89/a1/18258_crt_g88q1.jpg"
+            },
+            "name": "春日部耀",
+            "summary": "問題児その３\r\n動物と話すことができる無口な少女。ギフトネームは\"生命の目録（ゲノム・ツリー）\"と\"ノーフォーマー\"。\"生命の目録（ゲノム・ツリー）\"は耀の父親が作ったらしく、謎に包まれている。\r\n来到箱庭的问题儿童之一。14岁。持有恩赐为‘生命目录（Genome Tree）、‘No Former，恩赐卡是祖母绿色。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6c/3e/4953_prsn_7p2Va.jpg?r=1571039881",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/6c/3e/4953_prsn_7p2Va.jpg?r=1571039881",
+                        "large": "https://lain.bgm.tv/pic/crt/l/6c/3e/4953_prsn_7p2Va.jpg?r=1571039881",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6c/3e/4953_prsn_7p2Va.jpg?r=1571039881"
+                    },
+                    "name": "中島愛",
+                    "short_summary": "中岛爱（1989年6月5日 - ），日本茨城县出身的女性声优、歌手。\r\ne-stone music所属，血型A型，出道作品为Macross Frontier的女主角兰花·李。\r\n日菲混血，父亲是日本人，母亲是菲律宾人。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 4953,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 18258
+        }
+    ]
+}

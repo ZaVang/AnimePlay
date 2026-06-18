@@ -1,0 +1,563 @@
+{
+    "date": "2025-11-08",
+    "platform": "WEB",
+    "images": {
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/fb/2b/582501_A5ytA.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/fb/2b/582501_A5ytA.jpg",
+        "large": "https://lain.bgm.tv/pic/cover/l/fb/2b/582501_A5ytA.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/fb/2b/582501_A5ytA.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/fb/2b/582501_A5ytA.jpg"
+    },
+    "summary": "以《炎拳》、《链锯人》和《Look Back -蓦然回首-》响乎盛名的鬼才漫画家藤本树，于其17至26岁期间所创作的八部短篇作品生动地描绘了青春爱恋、混乱、疯狂，以及人际之间的情感纠葛，如今这些作品全部动画化！ \r\nPART.1聚焦于《17-21》的动画化合集，内容涵盖了人类灭亡后最后两位生还者之间的羁绊的《从前，庭院里有两只鸡。》、描写少年爆炸冲动的《佐佐木同学接住了子弹》，宇宙级失控的科幻爱情喜剧《恋爱是盲目的》以及疯狂少女杀手的爱情故事《Shikaku》。\r\nPART.2聚焦于《22-26》系列，包括以海中钢琴谱写少年与人鱼浪漫恋曲的《人鱼狂想曲》、探讨性别框架与自我认同的《一觉醒来变成了女孩子的病》、讲述宿命兄妹重生的殒地悲歌《预言的那由多》以及描绘姐妹间嫉妒与成长的《妹妹的姐姐》。\r\n短篇集由六家动画工作室联手七位导演精心打造，以各自独特的视觉风格，重新诠释藤本树天马行空、绚丽多姿的创作世界！\r\n\r\n\r\n\r\n[简介原文]\r\n藤本タツキ氏が17歳～26歳の間に発表した読切作品を収録した「藤本タツキ短編集17-21」「藤本タツキ短編集22-26」。これらに収録された、人類が滅亡した世界で生き残った2人の絆を描く『庭には二羽ニワトリがいた。』、思春期の衝動がさく裂する『佐々木くんが銃弾止めた』、恋心が宇宙規模で暴走するSFラブコメ『恋は盲目』、ネジの外れた殺し屋少女の暴走愛『シカク』、海中のピアノが奏でる少年と人魚の恋『人魚ラプソディ』、ジェンダーの枠を超えて“自分らしさ”を見つける『目が覚めたら女の子になっていた病』、過酷な宿命を背負った兄妹の再生の物語『予言のナユタ』、絵に懸ける姉妹の嫉妬や葛藤、そして成長を描く『妹の姉』の全8作品がアニメ化されることが決まった。渡邉徹明氏（『ブルーロック』など）、武内宣之氏（『打ち上げ花火、下から見るか？横から見るか？』など）、寺澤和晃氏（『魔法使いの嫁 SEASON2』など）ら7名の監督と、ZEXCS、ラパントラック、GRAPH77、100studio、スタジオカフカ、P.A.WORKSら6つのスタジオが制作を担当。キャストには小野賢章さん・堀江瞬さん・花澤香菜さん・杉田智和さんが起用されており、2025年11月8日（土）よりPrime Videoにて世界独占配信を予定している。",
+    "name": "藤本タツキ17-26",
+    "name_cn": "藤本树17-26",
+    "tags": [
+        {
+            "name": "藤本树",
+            "count": 954,
+            "total_cont": 0
+        },
+        {
+            "name": "漫画改",
+            "count": 914,
+            "total_cont": 0
+        },
+        {
+            "name": "2025",
+            "count": 763,
+            "total_cont": 0
+        },
+        {
+            "name": "短片",
+            "count": 735,
+            "total_cont": 0
+        },
+        {
+            "name": "WEB",
+            "count": 585,
+            "total_cont": 0
+        },
+        {
+            "name": "P.A.WORKS",
+            "count": 445,
+            "total_cont": 0
+        },
+        {
+            "name": "日本",
+            "count": 382,
+            "total_cont": 0
+        },
+        {
+            "name": "漫改",
+            "count": 286,
+            "total_cont": 0
+        },
+        {
+            "name": "StudioKAFKA",
+            "count": 282,
+            "total_cont": 0
+        },
+        {
+            "name": "100studio",
+            "count": 224,
+            "total_cont": 0
+        },
+        {
+            "name": "GRAPH77",
+            "count": 180,
+            "total_cont": 0
+        },
+        {
+            "name": "ZEXCS",
+            "count": 170,
+            "total_cont": 0
+        },
+        {
+            "name": "奇幻",
+            "count": 166,
+            "total_cont": 0
+        },
+        {
+            "name": "LapinTrack",
+            "count": 159,
+            "total_cont": 0
+        },
+        {
+            "name": "2025年10月",
+            "count": 100,
+            "total_cont": 0
+        },
+        {
+            "name": "恋爱",
+            "count": 68,
+            "total_cont": 0
+        },
+        {
+            "name": "校园",
+            "count": 54,
+            "total_cont": 0
+        },
+        {
+            "name": "TV",
+            "count": 40,
+            "total_cont": 0
+        },
+        {
+            "name": "短片集",
+            "count": 34,
+            "total_cont": 0
+        },
+        {
+            "name": "武内宣之",
+            "count": 22,
+            "total_cont": 0
+        },
+        {
+            "name": "搞笑",
+            "count": 21,
+            "total_cont": 0
+        },
+        {
+            "name": "安藤尚也",
+            "count": 18,
+            "total_cont": 0
+        },
+        {
+            "name": "2025年11月",
+            "count": 18,
+            "total_cont": 0
+        },
+        {
+            "name": "木村延景",
+            "count": 16,
+            "total_cont": 0
+        },
+        {
+            "name": "短篇集",
+            "count": 15,
+            "total_cont": 0
+        },
+        {
+            "name": "2025年",
+            "count": 14,
+            "total_cont": 0
+        },
+        {
+            "name": "战斗",
+            "count": 14,
+            "total_cont": 0
+        },
+        {
+            "name": "剧场版",
+            "count": 14,
+            "total_cont": 0
+        },
+        {
+            "name": "OVA",
+            "count": 13,
+            "total_cont": 0
+        },
+        {
+            "name": "本間修",
+            "count": 11,
+            "total_cont": 0
+        }
+    ],
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "藤本树17-26"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Fujimoto Tatsuki 17-26"
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "8"
+        },
+        {
+            "key": "放送开始",
+            "value": "2025年11月8日"
+        },
+        {
+            "key": "官方网站",
+            "value": "https://fujimototatsuki17-26.com/"
+        },
+        {
+            "key": "在线播放平台",
+            "value": "Prime Video"
+        },
+        {
+            "key": "导演",
+            "value": "長屋誠志郎、木村延景、武内宣之、安藤尚也、渡邉徹明、寺澤和晃、本間修"
+        },
+        {
+            "key": "音乐",
+            "value": "石塚玲依、井内啓二、yuma yamaguchi、川井憲次、Kevin Penkin、得田真裕"
+        },
+        {
+            "key": "Copyright",
+            "value": "©藤本タツキ／集英社・「藤本タツキ17-26」製作委員会"
+        },
+        {
+            "key": "原作",
+            "value": "藤本タツキ「藤本タツキ短編集17-21」「藤本タツキ短編集22-26」（集英社ジャンプコミック刊）"
+        },
+        {
+            "key": "人物设定",
+            "value": "Moaang、小園菜穂、もりともこ、MYOUN、島崎望、徳岡紘平、東島久志、佐川遥"
+        },
+        {
+            "key": "脚本",
+            "value": "長屋誠志郎、内海照子、安藤尚也、小林達夫、寺澤和晃、渡邉徹明、米内山陽子"
+        },
+        {
+            "key": "分镜",
+            "value": "長屋誠志郎、木村延景、武内宣之、安藤尚也、渡邉徹明、寺澤和晃、本間修"
+        },
+        {
+            "key": "演出",
+            "value": "長屋誠志郎、木村延景、武内宣之、安藤尚也、渡邉徹明、寺澤和晃、羽迫凱、本間修"
+        },
+        {
+            "key": "副导演",
+            "value": "羽迫凱(7)"
+        },
+        {
+            "key": "演出助理",
+            "value": "中込健人(4)、木村海偉(7)"
+        },
+        {
+            "key": "副人物设定",
+            "value": "柳元絵梨子(人设辅佐#5)"
+        },
+        {
+            "key": "作画监督",
+            "value": "Moaang、小園菜穂、もりともこ、MYOUN、飯飼一幸、鈴木政彦、江影、麻糬(麻薯)、徳岡紘平、古泉竜五、島崎望、木村奈波、兼村萌恵、松本幸恵、下条愛、山口綾加、柳元絵梨子、山吉香奈、金子菜月、山口綾香、黄洋、靈夢(灵梦)、何文、王火龙、餅餅(饼饼)、王力、杨国福、翁春华、朱至峰、潘悦婷、曹建偉、華柄炎(华炳炎)、佐川遥"
+        },
+        {
+            "key": "总作画监督",
+            "value": "島崎望(5)、東島久志(7)"
+        },
+        {
+            "key": "作画监督助理",
+            "value": "加藤けい(加藤恵子)、山本もも、金子菜月、松本幸恵、吉澤実布由"
+        },
+        {
+            "key": "道具设计",
+            "value": "山本もも、宮城有輝、牧野博美、佐川遥；铳器设计：髙田晃"
+        },
+        {
+            "key": "背景设定",
+            "value": "劇団イヌカレー・泥犬(心象世界表现#6)"
+        },
+        {
+            "key": "监修",
+            "value": "山下清悟(技术顾问#1)"
+        },
+        {
+            "key": "概念艺术",
+            "value": "長砂ヒロ・フジモトゴールト・鐘ヶ江尚"
+        },
+        {
+            "key": "色彩设计",
+            "value": "中村絢郁、辻田邦夫、相田美里、吉田小百合、のぼりはるこ、小針裕子、野地弘納、有澤法子"
+        },
+        {
+            "key": "色彩设计助理",
+            "value": "大西萌華"
+        },
+        {
+            "key": "美术监督",
+            "value": "谷岡善王、中村千恵子、岡本穂高、高橋佐知、森川篤、金子雄司、東地和生"
+        },
+        {
+            "key": "美术设计",
+            "value": "天田俊貴、竹内柚紀、高橋佐知、森川篤、米田隆裕、鍋田香代子"
+        },
+        {
+            "key": "美术",
+            "value": "神山瑤子(美术担当#8)"
+        },
+        {
+            "key": "美术板",
+            "value": "谷岡善王、高橋佐知、森川篤"
+        },
+        {
+            "key": "色彩脚本",
+            "value": "谷岡善王、伊豫遼太郎"
+        },
+        {
+            "key": "2D 设计",
+            "value": "川島千尋、川瀬紗織、佐藤菜津子、内海紗耶、江頭鈴々、由佐万織、ぽきろ、村上瞭"
+        },
+        {
+            "key": "特效",
+            "value": "内海紗耶、江頭鈴々、二瓶綾香、杉本友美、羽迫凱、村上正博、村上寿美江"
+        },
+        {
+            "key": "CG 导演",
+            "value": "田中祐輔(5)、内藤博高(7)"
+        },
+        {
+            "key": "3DCG 导演",
+            "value": "越田祐史(2-3)、市川元成(8)；3DCG监修：長澤洋二・田口愛(4)"
+        },
+        {
+            "key": "3D 设计",
+            "value": "越田祐史"
+        },
+        {
+            "key": "摄影监督",
+            "value": "千葉大輔、田村仁、河原秀樹、伊藤哲平、小川克人、並木智"
+        },
+        {
+            "key": "剪辑",
+            "value": "齋藤朱里、黒澤雅之、三嶋章紀、長谷川舞、今井大介、高橋歩"
+        },
+        {
+            "key": "录音",
+            "value": "住谷真 (STUDIO SIERRA)、星野賢爾 (dugout studio)、松下春香 (Studio Dan Juan)、上野未来 (アオイスタジオ)、八巻大樹 (デルファイサウンド)、篠原茉莉 (デルファイサウンド)、太田泰明"
+        },
+        {
+            "key": "录音助理",
+            "value": "渡部陽亮、高梨日菜、菱沼里穂子、篠原茉莉、佐藤喬花、石井佑樹"
+        },
+        {
+            "key": "音响监督",
+            "value": "亀山俊樹、本山哲、山田陽、高寺たけし、郷文裕貴、はたしょう二、小沼則義、木村絵理子"
+        },
+        {
+            "key": "音效",
+            "value": "倉橋裕宗、安藤由衣、三井友和、武藤晶子、小山健二、上野励、出雲範子、八十正太；助手：馬場將実、高良康平"
+        },
+        {
+            "key": "音响",
+            "value": "ビットグルーヴプロモーション (吉澤美由希、濱亮平)、dugout (平山涼香)、サウンドチーム・ドンファン (有馬加奈子)、穂積千愛、東北新社 (加藤真之、鳥飼昌寛)"
+        },
+        {
+            "key": "音乐监督",
+            "value": "飯島弘光(7)"
+        },
+        {
+            "key": "音乐制作",
+            "value": "avex pictures、IMAGINE、オーブ、IRMA LA DOUCE"
+        },
+        {
+            "key": "动画制作",
+            "value": "ZEXCS、ラパントラック、GRAPH77、100studio、スタジオカフカ、P.A.WORKS"
+        },
+        {
+            "key": "动画制片人",
+            "value": "松尾明子、渡部正和、木田和哉、高田祐樹、成瀬晃一、大山裕一、辻充仁"
+        },
+        {
+            "key": "监制",
+            "value": "松村一人(4)"
+        },
+        {
+            "key": "制作统括",
+            "value": "FLAGSHIP LINE；堀口広太郎(スタジオ統括#5, 7)"
+        },
+        {
+            "key": "制作管理",
+            "value": "藤田雄大、吉田好湖、板井將悟、福田一夫、金子義典"
+        },
+        {
+            "key": "设定制作",
+            "value": "向野忠政、吉田好湖、高安俊徳、涼村千夏"
+        },
+        {
+            "key": "设定制作助理",
+            "value": "浦賀弘和"
+        },
+        {
+            "key": "制作进行",
+            "value": "藤田雄大、荒尾匠、遠山駿輔、板井將悟、福田一夫、さとうつかさ、金延真由、金子義典、辻充仁"
+        },
+        {
+            "key": "制作进行协力",
+            "value": "仲野佳廉、浅古詠士、南澤鈴音、安西昌平、Lim Hyun、村田あゆみ"
+        },
+        {
+            "key": "宣传制片人",
+            "value": "瀧清加"
+        },
+        {
+            "key": "标题设计",
+            "value": "岡下陽平"
+        },
+        {
+            "key": "製作",
+            "value": "「藤本タツキ17-26 製作委員会」（avex pictures (飯泉朝一、大竹海南、倉島洋一)、集英社 (土生田高裕、林辰朗)、Amazon MGM Studios、ツインエンジン (高橋登)）；勝股英夫、瓶子吉久、山本幸治"
+        },
+        {
+            "key": "企画",
+            "value": "大山良、大好誠"
+        },
+        {
+            "key": "制片人",
+            "value": "岩瀬智彦、篠崎真哉；原作担当制片人：林士平"
+        },
+        {
+            "key": "副制片人",
+            "value": "志賀友理絵、藤山直廉、今川華蓮、佐藤翔太、木田和哉、川路ゆきの"
+        },
+        {
+            "key": "助理制片人",
+            "value": "[原作担当助理制片人]清岡海月"
+        },
+        {
+            "key": "协力",
+            "value": "[原作协力]「少年ジャンプ+」編集部 (細野修平、中路靖二郎)"
+        }
+    ],
+    "rating": {
+        "rank": 1437,
+        "total": 3994,
+        "count": {
+            "1": 1,
+            "2": 3,
+            "3": 5,
+            "4": 21,
+            "5": 67,
+            "6": 444,
+            "7": 1844,
+            "8": 1388,
+            "9": 168,
+            "10": 53
+        },
+        "score": 7.3
+    },
+    "total_episodes": 8,
+    "collection": {
+        "on_hold": 162,
+        "dropped": 61,
+        "wish": 2101,
+        "collect": 6029,
+        "doing": 1456
+    },
+    "id": 582501,
+    "eps": 8,
+    "meta_tags": [
+        "校园",
+        "恋爱",
+        "日本",
+        "奇幻",
+        "漫画改",
+        "WEB"
+    ],
+    "volumes": 0,
+    "series": false,
+    "locked": false,
+    "nsfw": false,
+    "type": 2,
+    "main_character_ids": [
+        183448,
+        183449,
+        183450
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a3/c8/183448_crt_ENfI9.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a3/c8/183448_crt_ENfI9.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/a3/c8/183448_crt_ENfI9.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a3/c8/183448_crt_ENfI9.jpg"
+            },
+            "name": "ユウト",
+            "summary": "小学校の庭でニワトリとして暮らしている。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/22/85/4965_prsn_7w6iz.jpg?r=1709906610",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/22/85/4965_prsn_7w6iz.jpg?r=1709906610",
+                        "large": "https://lain.bgm.tv/pic/crt/l/22/85/4965_prsn_7w6iz.jpg?r=1709906610",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/22/85/4965_prsn_7w6iz.jpg?r=1709906610"
+                    },
+                    "name": "小野賢章",
+                    "short_summary": "小野賢章（1989年10月5日－）是日本的男性演員、聲優。福岡縣出生、東京都出身。\r\n以前是劇團向日葵系列的砂岡事務所所屬。2012年9月30日退出約14年所屬的砂岡事務所。目前的事务所为Animo Produce。\r\n2013年12月，宣布将在2014年2月以黑子的篮球 第二季的片尾曲“FANTASTIC TUNE”为个人名义歌手身份出道。\r\n\r\n以哈利波特日语吹替版作为契机而成为声优。本人说过“声优只能以声音来传达事物，不过演员能用表情跟肢体动作表达出来，虽然两边都有困难的地方，不过能作为演员用身体表演也很快乐。”所以并没有特别把声优跟演员的工作区别开来，今后也不会拘泥于声音的工作，会挑战更多共种各样的工作。2014年动过声带息肉切除手术。\r\n从12岁开始的10年间，一直在为哈利波特日语版中的主角哈利·波特配音。当时本人并没有读过哈利波特原作。是因为母亲是哈利波特的大粉丝，所以被母亲劝诱去参加征选会。当确定要饰演主角时，身为哈利波特粉丝的双亲比他还高兴。名字的由来是来自于设计家安部兼章。由于当时还是小学6年级生，不太懂得要怎么表演，所以都是照着导演的指示来配音的，后期渐渐的开始能自己理解该怎么演。在配第三作“哈利波特─阿兹卡班的逃犯”时，因为正处于变声期，所以当中战斗场面的嘶吼声配得非常辛苦。一直拼命努力演出的他，也以变声期作为契机开始会思考更多关于演技的事情。\r\n\r\n2017年2月19日，有相关报道证实与同是声优的花泽香菜是恋人关系，并同居于东京港区某公寓。本人亦于2017年2月22日在个人部落格承认交往。\r\n2020年7月8日，宣布与花泽香菜结婚。\r\n2025年9月14日，宣布与花泽香菜离婚。",
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 4965,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 183448
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d8/ea/183449_crt_stDKv.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d8/ea/183449_crt_stDKv.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/d8/ea/183449_crt_stDKv.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d8/ea/183449_crt_stDKv.jpg"
+            },
+            "name": "アミ",
+            "summary": "ユウトとともに暮らしている。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a3/e3/79452_prsn_LmCLN.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a3/e3/79452_prsn_LmCLN.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/a3/e3/79452_prsn_LmCLN.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a3/e3/79452_prsn_LmCLN.jpg"
+                    },
+                    "name": "桜井しおん",
+                    "short_summary": "",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 79452,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 183449
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/4c/eb/183450_crt_KeFWh.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/4c/eb/183450_crt_KeFWh.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/4c/eb/183450_crt_KeFWh.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4c/eb/183450_crt_KeFWh.jpg"
+            },
+            "name": "佐々木くん",
+            "summary": "川口先生を慕っている学生。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ac/f9/44491_prsn_UavW4.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ac/f9/44491_prsn_UavW4.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/ac/f9/44491_prsn_UavW4.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ac/f9/44491_prsn_UavW4.jpg"
+                    },
+                    "name": "熊谷俊輝",
+                    "short_summary": "",
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 44491,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 183450
+        }
+    ]
+}

@@ -1,0 +1,142 @@
+{
+    "id": 302076,
+    "name": "全员恶玉",
+    "image_path": "data\\images\\anime\\302076.jpg",
+    "points": 4.7,
+    "cost": 1,
+    "rarity": "N",
+    "description": "全·员·恶·人\r\n犯罪者们的犯罪动作剧开幕！\r\n遥远的过去，关东和关西之间爆发战争，世界分裂了。\r\n关西成为关东的属国，并实现了独立的发展。\r\n但相对地，其政治与警力衰退，犯罪横行。\r\n这些犯罪者，被称作恶棍——。\r\n本作品的舞台，是高度发达却又高度扭曲的社会。\r\n在这样的社会中，恶棍们将会如何以自己的风格生存呢。\r\n齐聚一堂的恶棍们的美学，彼此发生碰撞。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "科幻",
+        "TV",
+        "日本",
+        "原创",
+        "战斗"
+    ],
+    "date": "2020-10-08",
+    "rating_rank": 9900,
+    "rating_score": 4.7,
+    "rating_total": 5144,
+    "main_character_ids": [
+        81417,
+        81418,
+        81419
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/fc/ac/81417_crt_49yxx.jpg?r=1599461596",
+                "grid": "https://lain.bgm.tv/pic/crt/g/fc/ac/81417_crt_49yxx.jpg?r=1599461596",
+                "large": "https://lain.bgm.tv/pic/crt/l/fc/ac/81417_crt_49yxx.jpg?r=1599461596",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fc/ac/81417_crt_49yxx.jpg?r=1599461596"
+            },
+            "name": "一般人",
+            "summary": "普通の家に生まれ、普通に就職し、普通に人生を歩んでいた、ごく普通の女性。不幸が重なり、アクダマの犯罪に巻き込まれてしまう。変に落ち込まず、何があっても前向きに突き進む性格。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/dd/f8/9560_prsn_X7Z7F.jpg?r=1688189964",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/dd/f8/9560_prsn_X7Z7F.jpg?r=1688189964",
+                        "large": "https://lain.bgm.tv/pic/crt/l/dd/f8/9560_prsn_X7Z7F.jpg?r=1688189964",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dd/f8/9560_prsn_X7Z7F.jpg?r=1688189964"
+                    },
+                    "name": "黒沢ともよ",
+                    "short_summary": "黒沢 ともよ（くろさわ ともよ、1996年4月10日 - ）は、日本の女性女優、声優、歌手。マウスプロモーション所属。埼玉県秩父市出身。\r\n\r\n3歳頃から演技の勉強を始め、2003年頃から子役としてテレビドラマ、CM、舞台へ出演。\r\n2008年よりSound Horizonのサポートメンバーとして参加。6th Story CD『Moira』のPV「冥王 -Θανατος-」、及びコンサート「Sound Horizon 6th Story Concert Moira 〜其れでも、お征きなさい仔等よ〜」に幼少期アルテミシア役で出演。いずれも発声無しの子役（モーションアクター）としての出演であったが、2010年の7th Story CD『Märchen』ではボーカル・ボイスアクターなども務めている。\r\n2010年、劇場アニメ『宇宙ショーへようこそ』の小山夏紀役にて声優デビュー。その後、テレビアニメ等、活躍の幅を広げている。\r\n東京児童劇団を退団後、2012年よりマウスプロモーションに所属。",
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 9560,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 81417
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/bb/3f/81418_crt_s11h3.jpg?r=1599462534",
+                "grid": "https://lain.bgm.tv/pic/crt/g/bb/3f/81418_crt_s11h3.jpg?r=1599462534",
+                "large": "https://lain.bgm.tv/pic/crt/l/bb/3f/81418_crt_s11h3.jpg?r=1599462534",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bb/3f/81418_crt_s11h3.jpg?r=1599462534"
+            },
+            "name": "運び屋",
+            "summary": "天才的なドライビングセンスを持ち、武器でもなんでも取り扱う。幼い頃から大人にいろんなものを運ばされてきた。自分の仕事に絶対的な自信を持つが、ややワーカホリック気味。\r\n口数は少ないが的確なひと言を放つ。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/66/57/15592_prsn_pnB8p.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/66/57/15592_prsn_pnB8p.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/66/57/15592_prsn_pnB8p.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/66/57/15592_prsn_pnB8p.jpg"
+                    },
+                    "name": "梅原裕一郎",
+                    "short_summary": "梅原 裕一郎（うめはら ゆういちろう、1991年3月8日 - ）は、日本の男性声優。アーツビジョン所属。静岡県出身。\r\n\r\n声優という職業を知ったきっかけは中学1年の頃に『ロード・オブ・ザ・リング』でアラゴルン役を演じていた大塚芳忠の声に惹かれたことから。\r\nその後、大学受験の浪人中に息抜きとして見ていた洋画がきっかけで、声優という仕事の楽しさに興味を持ち目指すようになった。大学2年から日本ナレーション演技研究所に通い始め、1年後に現事務所に所属。同期に山下大輝がいる。\r\n2013年に声優デビューし、2014年の『オレん家のフロ事情』でテレビアニメ初レギュラーを果たした。放送は「オレん家のフロ事情」が先だったが、実際にアニメ作品で名前のある役がオーディションで決まったのは『美男高校地球防衛部LOVE!』の由布院煙役が初めてだった。2015年10月、『ヤングブラック・ジャック』の間黒男役で初主演。\r\n2016年、第10回声優アワードで新人男優賞を受賞。\r\n2017年10月、Newtype×マチ★アソビ アニメアワード2017において男性声優賞を受賞。\r\n2018年5月10日、所属事務所から急性散在性脳脊髄炎の治療のため休業することを発表。同年7月30日、体調を考慮しながら徐々に活動を再開することが発表された。\r\n\r\n先述の経験から憧れの声優は大塚芳忠であり、彼のように外画の悪役などで名を馳せる役者になることを目標としている。アニメでは新海誠の『言の葉の庭』に感銘を受けたことから、彼の監督作品に出演するのが夢だと語っている。\r\n趣味はクラシック音楽、映画、ドラマ鑑賞。その中でも、ロシアの作曲家イゴール・ストラヴィンスキーの曲を好んで聴いている。\r\n好きな食べ物は唐揚げやヨーグルトなどを挙げており、苦手な食べ物はかつて磯臭いものを挙げていたが、食べられるようになったと語っている。\r\nピアノを8年ほど、ギターを3年ほど弾いていた。小学校時代は器楽部所属、高校時代は軽音楽部に所属し、ボーカルとエレキギターを担当していた。\r\nカラオケの十八番は尾崎紀世彦の「また逢う日まで」。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 15592,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5d/16/22712_prsn_8UvLE.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/5d/16/22712_prsn_8UvLE.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/5d/16/22712_prsn_8UvLE.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5d/16/22712_prsn_8UvLE.jpg"
+                    },
+                    "name": "藤原夏海",
+                    "short_summary": "日本の女性声優。静岡県浜松市出身。アーツビジョン所属。\r\n\r\n趣味・特技：歌唱、キャッチボール、鉄棒、けん玉",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 22712,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 81418
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c1/37/81419_crt_KKgcY.jpg?r=1599463713",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c1/37/81419_crt_KKgcY.jpg?r=1599463713",
+                "large": "https://lain.bgm.tv/pic/crt/l/c1/37/81419_crt_KKgcY.jpg?r=1599463713",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c1/37/81419_crt_KKgcY.jpg?r=1599463713"
+            },
+            "name": "喧嘩屋",
+            "summary": "“カこそすべて”という脳筋思考を地で行く戦闘バカ。強い者と戦えるならば、自分の命すら惜しまない。\r\n行動原理は単純だが、それゆえ純粋で真っ直ぐな性格をしている。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b9/41/16361_prsn_6vPo1.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b9/41/16361_prsn_6vPo1.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/b9/41/16361_prsn_6vPo1.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b9/41/16361_prsn_6vPo1.jpg"
+                    },
+                    "name": "武内駿輔",
+                    "short_summary": "武内 駿輔（たけうち しゅんすけ、1997年9月12日 - ）是日本的男性声优。81produce所属。\r\n\r\n兴趣是DTM、飞镖、台球、扑克等。IM@S中喜欢的偶像是高槻やよい。\r\n\r\n10歳の時、映画『ダークナイト』の敵役・ジョーカーを演じるヒース・レジャーに感動し、俳優になりたいという夢を持つ。俳優を研究するため多数のハリウッド映画を見るうち、吹き替えを行う声優を意識するようになる。\r\n中学では陸上部だったが、両親を説得、3年生の頃に養成所に入所。中学卒業後81プロデュースの養成所から声がかかり、週1回のレッスンに通う。\r\n17歳で『アイドルマスター シンデレラガールズ』のプロデューサー役に大抜擢され、注目を浴びる。オーディションを受けた時、まず「アイドルのプロデューサーはどんな仕事なのか」というところから調べ、さらに「長身」「無口で不器用」という設定から、アニメやドラマ、映画などから同じ共通点をもつキャラを探して、それを演じている役者の演技を研究したという。\r\n2016年には、第10回声優アワードで新人男優賞を受賞した。\r\n\r\n一人っ子である。「高校生とは思えないダンディすぎる声」と評される低い声質で、主に青年役を演じている。\r\n好きな教科は英語で、声優の仕事に活きるように発音を特に勉強している。\r\n好きな芸能人はGACKT。GACKTについては自身が声優としてデビューした時に、その生き様や歌に励まされたためと語っている。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 16361,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 81419
+        }
+    ]
+}

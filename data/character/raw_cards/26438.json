@@ -1,0 +1,92 @@
+{
+    "birth_mon": 6,
+    "gender": "female",
+    "birth_day": 21,
+    "birth_year": 1936,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e3/75/26438_crt_SFGgH.jpg?r=1581614467",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e3/75/26438_crt_SFGgH.jpg?r=1581614467",
+        "large": "https://lain.bgm.tv/pic/crt/l/e3/75/26438_crt_SFGgH.jpg?r=1581614467",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e3/75/26438_crt_SFGgH.jpg?r=1581614467"
+    },
+    "summary": "白露型駆逐艦の４番艦、夕立です。第三次ソロモン海戦では、けっこう頑張ったっぽい？でも、何気に「アイアンボトム・サウンド」って、ホントに怖い言葉よね？\r\n\r\n我是白露级驱逐舰4号舰，夕立。第三次所罗门海战的时候，似乎是非常努力了？不过，总觉得这个“IRON BOTTOM SOUND”啊，是个很可怕的词吧？",
+    "name": "夕立",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "夕立"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Yuudachi"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "夕立号驱逐舰"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Yudachi"
+                },
+                {
+                    "k": "日文名",
+                    "v": "白露型駆逐艦四番艦"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ゆうだち"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yūdachi"
+                },
+                {
+                    "k": "昵称",
+                    "v": "所罗门的噩梦，狂犬，Poi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1936-06-21"
+        },
+        {
+            "key": "体重",
+            "value": "1,685吨"
+        },
+        {
+            "key": "BWH",
+            "value": "长111米/宽9.9米/吃水3.5米"
+        },
+        {
+            "key": "引用来源",
+            "value": "zh.kcwiki.cn/wiki/夕立"
+        },
+        {
+            "key": "图鉴编号",
+            "value": "82→82a（改）→144（改二）"
+        },
+        {
+            "key": "画师",
+            "value": "玖条イチソ"
+        }
+    ],
+    "stat": {
+        "comments": 29,
+        "collects": 133
+    },
+    "id": 26438,
+    "locked": false,
+    "type": 3,
+    "nsfw": false,
+    "anime_ids": [
+        84386
+    ]
+}

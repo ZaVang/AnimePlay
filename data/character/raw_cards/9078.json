@@ -1,0 +1,65 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/39/f2/9078_crt_2oIwf.jpg?r=1507394940",
+        "grid": "https://lain.bgm.tv/pic/crt/g/39/f2/9078_crt_2oIwf.jpg?r=1507394940",
+        "large": "https://lain.bgm.tv/pic/crt/l/39/f2/9078_crt_2oIwf.jpg?r=1507394940",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/39/f2/9078_crt_2oIwf.jpg?r=1507394940"
+    },
+    "summary": "光莉・蕾と共に「お茶会」参加者の1人。天音の次期エトワール選出馬阻止を画策する要と桃実に煽られる形で光莉の唇を強引に奪い、関係が冷え切ってしまうが、渚砂と玉青の仲介により和解。その後も互いに距離を置く関係が続いていたが、最終的には天音と光莉のエトワール選出馬を暖かく送り出す。",
+    "name": "南都夜々",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "南都夜夜"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "南都夜々"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "なんと やや"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Nanto Yaya"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "161cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "stat": {
+        "comments": 7,
+        "collects": 19
+    },
+    "id": 9078,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        2813
+    ]
+}

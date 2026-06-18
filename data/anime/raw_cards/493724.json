@@ -1,0 +1,551 @@
+{
+    "date": "2026-04-09",
+    "platform": "TV",
+    "images": {
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/bd/33/493724_V6lXx.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/bd/33/493724_V6lXx.jpg",
+        "large": "https://lain.bgm.tv/pic/cover/l/bd/33/493724_V6lXx.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/bd/33/493724_V6lXx.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/bd/33/493724_V6lXx.jpg"
+    },
+    "summary": "淡岛歌剧学校里，梦想着站上舞台的少女们自全国各地齐聚而来。憧憬着歌舞剧明星而入学的新生・若菜。背负着挚友的思念努力学习的舍长・绢枝。散发出压倒性存在感的，美丽特待生・绘美。憧憬她、嫉妒她，并不断渴求她目光的桂子与其家人――。她们无可替代的日子，随着人物视角的转换，在彼此交错之中缓缓连结起来。活在当下的少女们的，清新而鲜烈的青春涂鸦。\r\n\r\n\r\n[简介原文]\r\n淡島（あわじま）歌劇学校には、舞台に立つことを夢みる少女たちが全国から集まってくる。\r\nミュージカルスターに憧れて入学した、新入生の若菜。\r\n親友の思いを背負って学び続ける、寮長の絹枝。\r\n圧倒的な存在感を放つ、美しき特待生の絵美。\r\n彼女に憧れ、妬み、視線を求め続けた桂子とその家族――。\r\n彼女たちのかけがえのない日々が、人物の視点を変え、交錯しながらゆるやかに繋がっていく。\r\n今を生きる少女たちの、瑞々しく鮮烈な青春グラフィティ。",
+    "name": "淡島百景",
+    "name_cn": "淡岛百景",
+    "tags": [
+        {
+            "name": "2026年4月",
+            "count": 526,
+            "total_cont": 0
+        },
+        {
+            "name": "MADHouse",
+            "count": 520,
+            "total_cont": 0
+        },
+        {
+            "name": "百合",
+            "count": 474,
+            "total_cont": 0
+        },
+        {
+            "name": "漫画改",
+            "count": 456,
+            "total_cont": 0
+        },
+        {
+            "name": "TV",
+            "count": 387,
+            "total_cont": 0
+        },
+        {
+            "name": "校园",
+            "count": 360,
+            "total_cont": 0
+        },
+        {
+            "name": "2026",
+            "count": 290,
+            "total_cont": 0
+        },
+        {
+            "name": "浅香守生",
+            "count": 223,
+            "total_cont": 0
+        },
+        {
+            "name": "青春",
+            "count": 202,
+            "total_cont": 0
+        },
+        {
+            "name": "群像",
+            "count": 200,
+            "total_cont": 0
+        },
+        {
+            "name": "漫改",
+            "count": 146,
+            "total_cont": 0
+        },
+        {
+            "name": "日本",
+            "count": 140,
+            "total_cont": 0
+        },
+        {
+            "name": "文艺",
+            "count": 104,
+            "total_cont": 0
+        },
+        {
+            "name": "志村贵子",
+            "count": 79,
+            "total_cont": 0
+        },
+        {
+            "name": "滨田邦彦",
+            "count": 19,
+            "total_cont": 0
+        },
+        {
+            "name": "歌剧",
+            "count": 13,
+            "total_cont": 0
+        },
+        {
+            "name": "2026年",
+            "count": 11,
+            "total_cont": 0
+        },
+        {
+            "name": "日常",
+            "count": 6,
+            "total_cont": 0
+        },
+        {
+            "name": "志村貴子",
+            "count": 5,
+            "total_cont": 0
+        },
+        {
+            "name": "未定档",
+            "count": 5,
+            "total_cont": 0
+        },
+        {
+            "name": "中西泰博",
+            "count": 4,
+            "total_cont": 0
+        },
+        {
+            "name": "追番",
+            "count": 4,
+            "total_cont": 0
+        },
+        {
+            "name": "治愈",
+            "count": 4,
+            "total_cont": 0
+        },
+        {
+            "name": "TVA",
+            "count": 4,
+            "total_cont": 0
+        },
+        {
+            "name": "4月",
+            "count": 3,
+            "total_cont": 0
+        },
+        {
+            "name": "銀さん",
+            "count": 3,
+            "total_cont": 0
+        },
+        {
+            "name": "中西やすひろ",
+            "count": 3,
+            "total_cont": 0
+        },
+        {
+            "name": "中林新夏",
+            "count": 3,
+            "total_cont": 0
+        },
+        {
+            "name": "大地葉",
+            "count": 3,
+            "total_cont": 0
+        },
+        {
+            "name": "星期四",
+            "count": 2,
+            "total_cont": 0
+        }
+    ],
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "淡岛百景"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Awajima Hyakkei"
+                },
+                {
+                    "v": "Awashima Hyakkei, One Hundred Views of Awajima"
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "12"
+        },
+        {
+            "key": "放送开始",
+            "value": "2026年4月9日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期四"
+        },
+        {
+            "key": "官方网站",
+            "value": "https://awajima-anime.com/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "フジテレビ"
+        },
+        {
+            "key": "导演",
+            "value": "浅香守生"
+        },
+        {
+            "key": "音乐",
+            "value": "小畑貴裕"
+        },
+        {
+            "key": "Copyright",
+            "value": "©志村貴子・太田出版／淡島百景製作委員会"
+        },
+        {
+            "key": "原作",
+            "value": "志村貴子（『淡島百景』太田出版）"
+        },
+        {
+            "key": "系列构成",
+            "value": "中西やすひろ"
+        },
+        {
+            "key": "人物设定",
+            "value": "濱田邦彦"
+        },
+        {
+            "key": "副人物设定",
+            "value": "今野亜希子；副人设辅佐：永山章太郎"
+        },
+        {
+            "key": "总作画监督",
+            "value": "濱田邦彦"
+        },
+        {
+            "key": "美术监督",
+            "value": "中村豪希"
+        },
+        {
+            "key": "美术设计",
+            "value": "杉山晋史"
+        },
+        {
+            "key": "色彩设计",
+            "value": "大野春恵"
+        },
+        {
+            "key": "摄影监督",
+            "value": "酒井淳子"
+        },
+        {
+            "key": "摄影",
+            "value": "摄影担当：渡部美由起、川下裕樹；酒井淳子、菅原司、福井友里恵、島史也"
+        },
+        {
+            "key": "摄影监督助理",
+            "value": "菅原司"
+        },
+        {
+            "key": "3DCG 导演",
+            "value": "田中康隆"
+        },
+        {
+            "key": "剪辑",
+            "value": "木村佳史子；剪辑助手：塚常真理子、タンザオソン；剪辑工作室：MADBOX"
+        },
+        {
+            "key": "音乐制作人",
+            "value": "水鳥智栄子"
+        },
+        {
+            "key": "音乐制作",
+            "value": "KADOKAWA"
+        },
+        {
+            "key": "主题歌作词",
+            "value": "Hana Hope, 矢野水音 / 中島美嘉"
+        },
+        {
+            "key": "主题歌作曲",
+            "value": "栗原暁 (Jazzin'park) , 前田佑 / 大野裕一"
+        },
+        {
+            "key": "主题歌编曲",
+            "value": "前田佑 (Sony Music Labels) / 江崎文武 (Sony Music Labels)"
+        },
+        {
+            "key": "主题歌演出",
+            "value": "Hana Hope / 中島美嘉"
+        },
+        {
+            "key": "音响监督",
+            "value": "明田川仁"
+        },
+        {
+            "key": "音效",
+            "value": "中島勝大"
+        },
+        {
+            "key": "录音",
+            "value": "录音调整：根岸信洋"
+        },
+        {
+            "key": "整音",
+            "value": "录音调整：根岸信洋"
+        },
+        {
+            "key": "录音助理",
+            "value": "藤野雅子"
+        },
+        {
+            "key": "音响制作担当",
+            "value": "見留滉平"
+        },
+        {
+            "key": "音响",
+            "value": "マジックカプセル"
+        },
+        {
+            "key": "动画制片人",
+            "value": "髙橋美紗"
+        },
+        {
+            "key": "制作统括",
+            "value": "豊田智紀"
+        },
+        {
+            "key": "制作管理",
+            "value": "木村駿"
+        },
+        {
+            "key": "设定制作",
+            "value": "田口夢叶"
+        },
+        {
+            "key": "动画制作",
+            "value": "MADHOUSE"
+        },
+        {
+            "key": "执行制片人",
+            "value": "田中翔、田代早苗、高瀬透子 (フジテレビ) 、小林克彦、臼井裕詞"
+        },
+        {
+            "key": "制片人",
+            "value": "吉岡拓也、古屋沢彌、田口亜有理、熊本統夫 (フジテレビ) 、長渕陽介、片山陽、内山航"
+        },
+        {
+            "key": "宣传制片人",
+            "value": "古舘凜子"
+        },
+        {
+            "key": "宣传",
+            "value": "岡沢太一、佐々木結香 (フジテレビ) 、川迫麻佑美、淡路真紀、前川一成"
+        },
+        {
+            "key": "标题设计",
+            "value": "芥陽子"
+        },
+        {
+            "key": "原作协力",
+            "value": "上村晶、吉田悠子 (太田出版)"
+        },
+        {
+            "key": "企画",
+            "value": "工藤大丈"
+        },
+        {
+            "key": "企画协力",
+            "value": "笠原周造、清原誠巳、中山卓也"
+        },
+        {
+            "key": "製作",
+            "value": "淡島百景製作委員会 (KADOKAWA、MADHOUSE、フジテレビジョン、楽天グループ、BSフジ)"
+        },
+        {
+            "key": "脚本",
+            "value": "中西やすひろ(1-3,5-6,8,10-11)、綾奈ゆにこ(4,7,9)"
+        },
+        {
+            "key": "分镜",
+            "value": "浅香守生(1,10)、渡邉こと乃(2,5,7,10)、銀さん(3,8)、いしづかあつこ(4,9)、内野宮晃希(6)、山村日向(11)"
+        },
+        {
+            "key": "分镜协力",
+            "value": "分镜摄：中野彰子(3)"
+        },
+        {
+            "key": "演出",
+            "value": "内野宮晃希(1,6)、渡邉こと乃(2,7)、森洸貴(3)、いしづかあつこ(4,9)、田部伸一(5,10)、増原光幸(8)、Hwang Il-jin(8)、山村日向(11)"
+        },
+        {
+            "key": "OP・ED 分镜",
+            "value": "浅香守生 / 濱田邦彦"
+        },
+        {
+            "key": "OP・ED 演出",
+            "value": "浅香守生 / 濱田邦彦"
+        },
+        {
+            "key": "作画监督",
+            "value": "濱田邦彦、渡辺未來、髙橋愛里、藤澤俊幸、SEN、銀さん、DR MOVIE (Go Yu-il、Kim Bong-deok[김봉덕]、Park Jae-seok[朴在石]、Sin Seong-min、Jo Mi-jeong、Han Seung jin) 、西田亜沙子、川口裕子、st.シルバー (佐々木政勝、磯野智、河西睦月、苗木陽子) 、阿部純子、村上史明、吉川真一、戸沢東、臼田美夫"
+        },
+        {
+            "key": "制作进行",
+            "value": "髙橋美紗、大内昂志郎、汪珂屹、Lee Hye-min、Park Chae-hee、植田理紗子、尾高怜、岡恒成、鳩谷恵里菜、折田夏葵、Jeong jae-ho、Kim Jihye、Park seong-ho、イシダタカヒサ"
+        },
+        {
+            "key": "协力",
+            "value": "石澤紀子、石井一成、大谷志穂、藤多由衣菜、村上知己、金丸裕、山本麻未子、森彬俊、小黑凜々花、保田潤平、尾形光広、有水宗治郎"
+        }
+    ],
+    "rating": {
+        "rank": 1028,
+        "total": 1057,
+        "count": {
+            "1": 7,
+            "2": 2,
+            "3": 2,
+            "4": 10,
+            "5": 37,
+            "6": 110,
+            "7": 306,
+            "8": 434,
+            "9": 117,
+            "10": 32
+        },
+        "score": 7.5
+    },
+    "total_episodes": 12,
+    "collection": {
+        "on_hold": 175,
+        "dropped": 235,
+        "wish": 1488,
+        "collect": 159,
+        "doing": 4053
+    },
+    "id": 493724,
+    "eps": 12,
+    "meta_tags": [
+        "百合",
+        "校园",
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "volumes": 0,
+    "series": false,
+    "locked": false,
+    "nsfw": false,
+    "type": 2,
+    "main_character_ids": [
+        29075,
+        175998,
+        175999
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e1/ab/29075_crt_wyNyL.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e1/ab/29075_crt_wyNyL.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/e1/ab/29075_crt_wyNyL.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e1/ab/29075_crt_wyNyL.jpg"
+            },
+            "name": "上田良子",
+            "summary": "就读于藤之谷女子高中，是奥平明二年级时的同班同学。文静、沉稳，喜爱阅读，是图书部成员。在二年级戏剧祭时，在高中部表演的剧目《鹿鸣馆》中反串男主。\r\n和竹原绢枝是至交。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8d/62/5847_prsn_G6LsO.jpg?r=1594216311",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/8d/62/5847_prsn_G6LsO.jpg?r=1594216311",
+                        "large": "https://lain.bgm.tv/pic/crt/l/8d/62/5847_prsn_G6LsO.jpg?r=1594216311",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8d/62/5847_prsn_G6LsO.jpg?r=1594216311"
+                    },
+                    "name": "茅野愛衣",
+                    "short_summary": "茅野爱衣曾经想做治愈他人的工作，因此在做声优之前是美容工作者。\r\n因为常工作到深夜，回家后看到动画《ARIA》后觉得“动画也有治愈人心的力量”，于是开始以声优为目标。\r\n一边坚持美容工作一边积攒学费去学习声优的课程。\r\n\r\n2010年3月，作为Pro·Fit声优养成所11期毕业生，成为正式声优。，2010年4月初次主役登台亮相。\r\n2012年3月，获得第六届声优奖新人女优赏，同年并获颁日刊体育第1回日刊动画最高赏MIP新人声优赏。\r\n2014年9月，退出Pro-Fit，成为自由身。2015年1月加入大泽事务所。\r\n2015年3月，于AnimeJapan举办的“第1回动画广播评选”上，以《NO RADIO NO LIFE 玩家兄妹似乎要搞广播》主持人身份拿下“最优秀广播奖”和“复活希望广播奖”。\r\n\r\n由于在主持『我们仍未知道那天所看见的花的名字』动画广播的第一回的时候有爱称，而在次回广播时对听众的邮件中的「かやのん」这个称呼最为喜欢，以后便成为了爱衣的爱称。杉田智和和樱井孝宏称呼他是[茅野君]。\r\n中学时代第一次知道声优这个工作，是因为同学对这个工作的内幕了解的很详细。那时候还没考虑过做这个工作，想做美容和咖啡店等工作，疗伤成为主题一样的工作。社团活动则是加入了美术部，因为常画水彩画，插画也很擅长。\r\n高中时代在一般女子高中就读的同时在专门的美容学校学习，取得美容师的资格。\r\n大学时代则是一边读书，一边从事着美容工作。 高中的时候还画过西洋画，觉得西洋画“怎样才能让动作景色表现出声音呢”，也开始对声优这个工作产生了兴趣。\r\n和声优赤崎千夏在成为声优前就已相互认识，曾有过同时在同一家咖啡厅打工的经历。\r\n家中的独女，从小就做事好强，不管是运动会还是各种比赛，都是练习最久，希望可以拿到最好的成绩。家中养着一只名叫「杏・杏」雌性约克夏犬，名字中「・」是由母亲特意而取。\r\n\r\n拥有高柔的音质，声线多变，从幼女、少女到成熟女性角色都能贴切演绎，从无口阴郁至活泼温柔的角色也都能完美驾驭，在三无角色（无口、无心、无表情）方面的演出也相当有代表性，在声优圈内有着“治愈系声音”的美称。又因爱衣性格温和、外表文静，曾从花泽香菜那里得到“外表也是治愈系”的评价。\r\n在『我女友与青梅竹马的惨烈修罗场』中饰演冬海爱衣一角，因冬海爱衣有一句经典台词为“爱衣酱大胜利”，又由同名的爱衣来演绎，便也成为爱衣的经典代表句，此后在爱衣角色取得优势的场合常能见到许多“爱衣酱大胜利”的留言。\r\n在声优圈内爱衣因其温和体贴却又时而抖S的性格，造就了相当不错的人缘。\r\n因爱衣酒量出名的好，并曾谈过自己喜欢日本酒，便得到了一份专门介绍日本酒的节目『毛衣品酒（かやのみ）』主持人的工作，2016年5月14日起播出第一集，以约莫两个礼拜一集的速度于animate Times的YouTube频道上更新至今。虽然在节目中总是从头喝到尾，但据工作人员表示即使喝的相当多也从来没看过爱衣醉过。\r\n\r\n2020年，在自己生日9月13日当天，开设了一系列官方网站。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 5847,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 29075
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/fd/75/175998_crt_FfYzi.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/fd/75/175998_crt_FfYzi.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/fd/75/175998_crt_FfYzi.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fd/75/175998_crt_FfYzi.jpg"
+            },
+            "name": "田畑若菜",
+            "summary": "群馬出身の淡島歌劇学校予科生。ミュージカルスターに憧れて淡島に入学。人懐っこく素直な性格。舞台に立つ日を夢見て、厳しくも充実した学びに全力で向き合っている。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5f/d7/75274_prsn_7pdT2.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/5f/d7/75274_prsn_7pdT2.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/5f/d7/75274_prsn_7pdT2.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5f/d7/75274_prsn_7pdT2.jpg"
+                    },
+                    "name": "中林新夏",
+                    "short_summary": "出身地 東京\r\n資格 英語検定2級\r\n特技 書道・イラスト\r\n趣味 歌・お菓子作り\r\n経歴 日本ナレーション演技研究所",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 75274,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 175998
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/8f/fc/175999_crt_U82y3.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/8f/fc/175999_crt_U82y3.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/8f/fc/175999_crt_U82y3.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8f/fc/175999_crt_U82y3.jpg"
+            },
+            "name": "竹原絹枝",
+            "summary": "淡島歌劇学校本科生で寮長。若菜のルームメイトでもある。藤が谷女学院時代から演劇に情熱を注ぎ込み、親友・良子の思いを背負って舞台の道を突き進んでいる。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f0/96/10869_prsn_nWIUY.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f0/96/10869_prsn_nWIUY.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/f0/96/10869_prsn_nWIUY.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f0/96/10869_prsn_nWIUY.jpg"
+                    },
+                    "name": "大地葉",
+                    "short_summary": "日本女性声优，埼玉县出生。日本播音演技研究所出身，隶属于VIMS。名字“大地叶”（たいち よう／Taichi You）是艺名，由来是学生时期的绰号たいちょー（“队长”，日语读音：Taichō）。\r\n\r\n趣味・特技：インド映画鑑賞、ピアノ弾き語り、曲のコピー（譜面をおこせる）\r\n芸歴：日本ナレーション演技研究所",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 10869,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 175999
+        }
+    ]
+}

@@ -1,0 +1,45 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/93/b9/9970_crt_sSfu3.jpg?r=1609846440",
+        "grid": "https://lain.bgm.tv/pic/crt/g/93/b9/9970_crt_sSfu3.jpg?r=1609846440",
+        "large": "https://lain.bgm.tv/pic/crt/l/93/b9/9970_crt_sSfu3.jpg?r=1609846440",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/93/b9/9970_crt_sSfu3.jpg?r=1609846440"
+    },
+    "summary": "",
+    "name": "ポニョ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "波妞"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Ponyo"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 3,
+        "collects": 12
+    },
+    "id": 9970,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        313
+    ]
+}

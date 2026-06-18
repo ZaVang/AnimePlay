@@ -1,0 +1,271 @@
+{
+    "id": 295,
+    "name": "风之谷",
+    "image_path": "data\\images\\anime\\295.jpg",
+    "points": 8.3,
+    "cost": 4,
+    "rarity": "SSR",
+    "description": "該作品背景設定在未來，世界的產業文明達致巔峰後，經歷一場稱為「火之七日」的戰爭而毀於一旦。世界被一種由菌類和巨型昆蟲構成，名叫腐海的新生態體系所掩蓋，僅存的人類生活在小面積土地，在面對巨型昆蟲和會釋放瘴氣的腐海森林包圍威脅下積極求存。\r\n\r\n風之谷 (Valley Of The Wind) ，一個靠海的小王國因為在海風的庇護下，不被腐海森林的袍子侵入而得以保持原貌。小王國的公主——娜烏西卡 (Nausicaä)，一位善良慈和聰明及勇敢的 16 歲女孩，擅於駕馭滑翔翼，能知道風及御風，還具備和王蟲溝通的能力。當載著千年前火之七日戰爭中，毀滅大地一切的生化武器「巨神兵」之多魯美奇亞運輸機不幸墜毀於風之谷之後，風之谷和娜烏西卡捲入了爭奪巨神兵的戰爭旋渦中。\r\n\r\n第二日，當眾人清理昨日墜機事件的同時，多魯美奇亞軍隊在第四公主庫夏娜的指揮下，一架柯貝特戰艦及四架貨機迅速入谷，不花一兵一卒及佔領了風之谷，風之谷基爾王遇害。之後更為了填補國內，更帶走了谷內物資，只留下巨神兵在堡內，並將巨神兵復活工作交給了參謀克羅托瓦。\r\n\r\n隔天，娜烏西卡、米特以及其他三名人質隨著庫夏娜前往培吉特，途中不幸被培吉特砲艇發現，砲艇駕駛者阿斯貝魯立刻攻擊多魯美奇亞機隊，除了柯貝特戰艦及風之谷貨機之外，其他四架貨機皆中彈墜毀，只有娜烏西卡、米特及庫夏娜逃出生天並帶著風之谷貨機離開空戰現場。\r\n\r\n最後，娜烏西卡掉落腐海，到達腐海的底部，發現了腐海的秘密。腐海把污染的大地淨化，過程中會產生有毒的瘴氣。被淨化後的地底有著乾淨的空氣和水源，而王蟲則是守護腐海的生物。故事的尾聲當培吉特餘黨拿小王蟲來誘使王蟲群攻擊風之谷，企圖從多魯美奇亞人手中奪回巨神兵之際，娜烏西卡解救了小王蟲，以身為盾來制止王蟲群的憤怒衝擊而犧牲。冷靜下來的王蟲群以特殊能力救活娜烏西卡。在晨陽中，娜烏西卡站立在王蟲們的觸鬚所構成的金色草原上快樂地舞動，印證了古老的傳說--藍衣人在金色的草原帶來了希望。\r\n\r\nhttp://zh.wikipedia.org/wiki/%E9%A3%8E%E4%B9%8B%E8%B0%B7",
+    "type": 2,
+    "platform": "剧场版",
+    "episodes_for_hangup": 1,
+    "synergy_tags": [
+        "科幻",
+        "剧场版",
+        "日本",
+        "奇幻",
+        "原创",
+        "冒险"
+    ],
+    "date": "1984-03-11",
+    "rating_rank": 80,
+    "rating_score": 8.3,
+    "rating_total": 8864,
+    "main_character_ids": [
+        255,
+        6891,
+        6892
+    ],
+    "main_characters": [
+        {
+            "id": 255,
+            "name": "ナウシカ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/84/fe/255_crt_mOuf7.jpg?r=1573972845",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/84/fe/255_crt_mOuf7.jpg?r=1573972845",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/84/fe/255_crt_mOuf7.jpg?r=1573972845",
+                "grid": "https://lain.bgm.tv/pic/crt/g/84/fe/255_crt_mOuf7.jpg?r=1573972845"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4182,
+                    "name": "島本須美",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/5c/22/4182_prsn_3uB3Y.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5c/22/4182_prsn_3uB3Y.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5c/22/4182_prsn_3uB3Y.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/5c/22/4182_prsn_3uB3Y.jpg"
+                    },
+                    "short_summary": "日本著名女性声优。由于声质有如琉璃，故又有琉璃嗓的美誉。\r\n与潘惠子合称声优双圣。\r\n声优代表作有鲁邦三世·卡利欧斯特罗城（克拉利丝）、风之谷(娜吾西卡)、莎拉公主（莎拉·克鲁）、相聚一刻（音无响子）、机械巨人（银铃）、梦幻战士（麻生优子）等脍炙人口的女性角色。\r\n丈夫是越川大介，育有一女。\r\n自小在大自然环境下长大的岛本，养成了豪迈的男孩子气性格，本人对于体育活动也有相当亮眼的成绩，中学时期曾有连续参加四国新体操大会的纪录。\r\n岛本给人的印象几乎跟他配过的气质女性角色画上等号，但根据岛本个人的说法， 其实她本人比较像魔法公主的阿时与柯南的工藤有希子，这两位女性的综合体。\r\n进入高知商业高校时，做下了与以往不同的选择 因为高中社团没有体操部，选择排球部的岛本也仅露脸三天就未再出现，之后的社团选择并未再度选择本人喜爱的体育活动社团，反倒是参加了演剧部，这项选择会替岛本的配音事业打下未来的雄厚基础 。\r\n由于以清纯温柔的少女角色奠定岛本须美的声优路线，使得岛本在日后接演的人物大都是圣女性质的女性。虽然岛本积极争取恶役等角色，但由于其本人的气质跟定位被公认为是扮演圣女的不二人选，让制作单位几乎不考虑让岛本接演善良女性以外的角色。同时，岛本的支持者们也不希望岛本接演恶役角色，这些状况导致岛本在争取圣女性质以外的配音角色屡屡以失败收场。让岛本扮演恶役的角色次数为乎其微，使得岛本自己也认为自己的戏路被拘束了。虽然岛本自己很想走出圣女性质的定位，但是强大的外力阻拦让岛本始终未能如愿在非圣女性质的角色上尽情挥洒她丰富的才艺。\r\n\r\n为世界名作小公主莎拉配音时，同时把剧中人物演活的岛本（莎拉·克鲁）与中西妙子（玛莉亚·明晴）却有截然不同的反响。将莎拉诠释的楚楚可怜却又不失气质的岛本再度获得大众的肯定，然而同样也将明晴院长这恶人角色演的入木三分的中西妙子，却有者跟岛本截然不同的对待。不时收到支持者们寄来的抗议信以及被剃刀片威胁的恶运。气的中西妙子大呼把明晴院长演的这么坏又不是我愿意的，并说出我再也不配明晴这角色的话来，这种情况比对日后岛本想接演恶役角色不可得的窘境，而大叹自己的戏路被拘束的情况，颇让人有哭笑不得之感。",
+                    "locked": false
+                },
+                {
+                    "id": 16655,
+                    "name": "陳慧嫻",
+                    "type": 1,
+                    "career": [
+                        "artist"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/86/aa/16655_prsn_e7MS4.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/86/aa/16655_prsn_e7MS4.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/86/aa/16655_prsn_e7MS4.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/86/aa/16655_prsn_e7MS4.jpg"
+                    },
+                    "short_summary": "陳慧嫻，籍貫廣東番禺，生於香港，香港著名實力派女歌手，於1980年代及1990年代紅極一時，以清晰而充滿感情的唱腔著稱。",
+                    "locked": false
+                },
+                {
+                    "id": 78912,
+                    "name": "賀世芳",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/03/71/78912_prsn_Q4Qaz.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/03/71/78912_prsn_Q4Qaz.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/03/71/78912_prsn_Q4Qaz.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/03/71/78912_prsn_Q4Qaz.jpg"
+                    },
+                    "short_summary": "台湾女性配音员、演员。",
+                    "locked": false
+                },
+                {
+                    "id": 78920,
+                    "name": "許淑嬪",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/bf/78/78920_prsn_6ylEy.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bf/78/78920_prsn_6ylEy.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bf/78/78920_prsn_6ylEy.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/bf/78/78920_prsn_6ylEy.jpg"
+                    },
+                    "short_summary": "台湾女性配音员。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 6891,
+            "name": "ユパ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/fc/4b/6891_crt_fZ73A.jpg?r=1452023130",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fc/4b/6891_crt_fZ73A.jpg?r=1452023130",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/fc/4b/6891_crt_fZ73A.jpg?r=1452023130",
+                "grid": "https://lain.bgm.tv/pic/crt/g/fc/4b/6891_crt_fZ73A.jpg?r=1452023130"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4218,
+                    "name": "納谷悟朗",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d2/78/4218_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d2/78/4218_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d2/78/4218_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d2/78/4218_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の俳優、声優、ナレーター、舞台演出家。テアトル・エコー所属。\r\n\r\n北海道函館市出身。立命館大学法学部中退。弟は俳優・声優の納谷六朗、妻は女優・声優の火野カチ子。代表作に『ルパン三世』シリーズ（銭形警部役）がある。洋画ではクラーク・ゲーブル、チャールトン・ヘストン、ジョン・ウェインの声の吹き替えを担当。\r\n\r\n2008年の舞台公演中に体調不良を訴え俳優業を引退し、2009年に都内から千葉市に転居。その後も声優業は続け、日曜洋画劇場で2012年5月28日に収録した『インセプション』の吹き替え収録後体調を崩し入退院を繰り返していたが、2013年3月5日、慢性呼吸不全のため千葉市内の自宅で死去。83歳没。通夜及び告別式は近親者のみで行われ、3月11日にマスコミに公表された。5月21日には恵比寿・エコー劇場でお別れの会が行われ、栗田貫一、小林清志、増山江威子、野沢雅子、山寺宏一ら声優仲間やファンおよそ300人が訪れた。また、神谷明や麻上洋子、井上真樹夫、松井菜桜子は納谷の訃報が発表された際、自身のブログで追悼のコメントを述べている。",
+                    "locked": false
+                },
+                {
+                    "id": 33298,
+                    "name": "黄霑",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/94/23/33298_prsn_z4DAJ.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/94/23/33298_prsn_z4DAJ.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/94/23/33298_prsn_z4DAJ.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/94/23/33298_prsn_z4DAJ.jpg"
+                    },
+                    "short_summary": "黄霑，香港著名作家、词曲家。1949年随父母移民香港；早年入读喇沙书院，后升读港大，1963年毕业于港大中文系；先前从业广告、电影、作曲。任过香港电视台、电台主持人。为电影、电视剧、歌手、演员作品、导演作品、文学创作、古装歌舞剧、综艺晚会写过歌词。与金庸、倪匡、蔡澜一起被称为“香港四大才子”，又与倪匡、蔡澜一同被称为“香港三大名嘴”。",
+                    "locked": false
+                },
+                {
+                    "id": 34242,
+                    "name": "Patrick Stewart",
+                    "type": 1,
+                    "career": [
+                        "producer",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/48/68/34242_prsn_ERrrc.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/48/68/34242_prsn_ERrrc.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/48/68/34242_prsn_ERrrc.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/48/68/34242_prsn_ERrrc.jpg"
+                    },
+                    "short_summary": "英国演员 / 配音 / 制片人 / 导演。生于英格兰，约克郡，米尔菲尔德。知名角色有《星际旅行：下一代》中的星舰进取号舰长让-吕克·皮卡德，《X战警》电影中的X教授。",
+                    "locked": false
+                },
+                {
+                    "id": 72267,
+                    "name": "孫中台",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/f0/4c/72267_prsn_74L7N.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f0/4c/72267_prsn_74L7N.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f0/4c/72267_prsn_74L7N.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f0/4c/72267_prsn_74L7N.jpg"
+                    },
+                    "short_summary": "台湾男配音员，他所参与的作品主要为动漫类。声线属于低音类型，大多饰演成年与中年男性角色；\r\n他所饰演过的角色主要有《海贼王》山治，《灌篮高手》木暮公延、安西光义，《七龙珠》龟仙人等。",
+                    "locked": false
+                },
+                {
+                    "id": 79087,
+                    "name": "趙明哲",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/2a/3a/79087_prsn_dVQE1.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2a/3a/79087_prsn_dVQE1.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2a/3a/79087_prsn_dVQE1.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2a/3a/79087_prsn_dVQE1.jpg"
+                    },
+                    "short_summary": "台湾男性配音员。\r\n\r\n妻子郑仁丽及小姨郑仁君亦从事配音行业。\r\n\r\n2005年11月24日凌晨因大肠癌病逝于台北县新店市慈济医院。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 6892,
+            "name": "アスベル",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/eb/be/6892_crt_JJcRF.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/eb/be/6892_crt_JJcRF.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/eb/be/6892_crt_JJcRF.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/eb/be/6892_crt_JJcRF.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4532,
+                    "name": "松田洋治",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/b3/9c/4532_prsn_uzghu.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b3/9c/4532_prsn_uzghu.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b3/9c/4532_prsn_uzghu.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b3/9c/4532_prsn_uzghu.jpg"
+                    },
+                    "short_summary": "日本の俳優、声優。\r\n\r\n東京都世田谷区砧生まれ。\r\n\r\nTMエンタテインメント所属。\r\n\r\n5歳上の兄はミュージカル翻訳者・駒澤大学教授の松田直行。",
+                    "locked": false
+                },
+                {
+                    "id": 72273,
+                    "name": "符爽",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/2a/1f/72273_prsn_2CvvG.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2a/1f/72273_prsn_2CvvG.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2a/1f/72273_prsn_2CvvG.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2a/1f/72273_prsn_2CvvG.jpg"
+                    },
+                    "short_summary": "台湾配音员，台北市配音人员职业公会理事长。华视配音训练班第二期学员出身。主要代表角色为《猎人》中的西索和《海贼王》中的乌索普等。他在《网球王子》剧中一共饰演了二十六名主要与次要角色，为台湾配音界之最。",
+                    "locked": false
+                },
+                {
+                    "id": 79084,
+                    "name": "何志威",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/3c/75/79084_prsn_XxFRx.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3c/75/79084_prsn_XxFRx.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3c/75/79084_prsn_XxFRx.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/3c/75/79084_prsn_XxFRx.jpg"
+                    },
+                    "short_summary": "台湾男性配音员。\r\n\r\n声线属于中偏高类型，常饰演青少年类型角色。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

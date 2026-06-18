@@ -1,0 +1,52 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/73/cb/72953_crt_0Is9i.jpg?r=1624498143",
+        "grid": "https://lain.bgm.tv/pic/crt/g/73/cb/72953_crt_0Is9i.jpg?r=1624498143",
+        "large": "https://lain.bgm.tv/pic/crt/l/73/cb/72953_crt_0Is9i.jpg?r=1624498143",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/73/cb/72953_crt_0Is9i.jpg?r=1624498143"
+    },
+    "summary": "世界征服を目標に掲げる悪の組織『秘密結社キサラギ』の戦闘員。幹部とも仲が良く、高校生の頃からキサラギで働いている最古参。地球外惑星で人類の移住が可能かどうかを調査する任務を与えられた。軽薄で女に目がなく、常にセクハラまがいのことをするが、一線を越えそうになると躊躇するヘタレ。",
+    "name": "戦闘員六号",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "战斗员六号"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Combat Agent 6"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Combat Agent Six"
+                },
+                {
+                    "k": "日文名",
+                    "v": "戦闘員六号"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 7,
+        "collects": 9
+    },
+    "id": 72953,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        302190
+    ]
+}

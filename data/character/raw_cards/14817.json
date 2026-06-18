@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/96/f2/14817_crt_cGmQR.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/96/f2/14817_crt_cGmQR.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/96/f2/14817_crt_cGmQR.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/96/f2/14817_crt_cGmQR.jpg"
+    },
+    "summary": "小鳥遊三姉妹の次女で、金髪ツインテールの美少女小学生。\r\n三姉妹の中でも女子力の高い小悪魔系である。",
+    "name": "小鳥遊美羽",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小鸟游美羽"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "たかなしみう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Takanashi Miu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 22,
+        "collects": 97
+    },
+    "id": 14817,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        25444
+    ]
+}

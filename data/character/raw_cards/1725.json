@@ -1,0 +1,61 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d7/bf/1725_crt_aCL1l.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d7/bf/1725_crt_aCL1l.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/d7/bf/1725_crt_aCL1l.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d7/bf/1725_crt_aCL1l.jpg"
+    },
+    "summary": "一名拥有琥珀之眼的优秀信蜂\r\n　　能力：1-其琥珀之眼可与心枪上的精灵琥珀共鸣使心枪的威力大大提升 \r\n　　2-因为其有琥珀之眼原因有着可以让自己和别人看见附着在物体上的人类的“心”\r\n　　性格：活泼开朗是个爱哭鬼小正太",
+    "name": "ラグ・シーイング",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "拉格·辛谷"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "拉格·西恩"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Lag Seeing"
+                },
+                {
+                    "k": "日文名",
+                    "v": "ラグ・シーイング"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "ragu・shingu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "声优",
+            "value": "泽城美雪"
+        }
+    ],
+    "stat": {
+        "comments": 3,
+        "collects": 21
+    },
+    "id": 1725,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        2476
+    ]
+}

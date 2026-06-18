@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/98/81/114584_crt_78bJ7.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/98/81/114584_crt_78bJ7.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/98/81/114584_crt_78bJ7.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/98/81/114584_crt_78bJ7.jpg"
+    },
+    "summary": "20才男性、ナチュラル。\r\n地球連合軍第81独立機動群、通称「ファントムペイン」中尉。\r\nモビルスーツGAT-X105Eストライクノワールのパイロット。\r\nシャムス・コーザ中尉、ミューディー・ホルクロフト少尉と３人で特殊戦モビルスーツ小隊を構成している。\r\n幼い頃、事故の巻き添えを食い、両親を失って孤児となり、養護施設に引き取られた。この施設で、コーディネイター殲滅戦の戦闘要員としての徹底したエリート教育を受けた。その教育により、現在ではコーディネイターに強い憎悪を抱く冷酷非情な戦闘マシンとなっている。",
+    "name": "スウェン・カル・バヤン",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "史温·卡尔·巴延"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "史温·卡尔·巴扬"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Sven Cal Bayang"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://www.seed-stargazer.net/character/index.html"
+        }
+    ],
+    "stat": {
+        "comments": 1,
+        "collects": 2
+    },
+    "id": 114584,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        21065
+    ]
+}

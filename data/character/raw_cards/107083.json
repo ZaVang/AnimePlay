@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/dc/c3/107083_crt_F9Rgg.jpg?r=1755797148",
+        "grid": "https://lain.bgm.tv/pic/crt/g/dc/c3/107083_crt_F9Rgg.jpg?r=1755797148",
+        "large": "https://lain.bgm.tv/pic/crt/l/dc/c3/107083_crt_F9Rgg.jpg?r=1755797148",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dc/c3/107083_crt_F9Rgg.jpg?r=1755797148"
+    },
+    "summary": "「ほら、朔くんかっこいいしモテるから、やっかんだりする人も多いんだよ」\r\n努力型の後天的リア充。バストはD。\r\n「正妻」を自認する夕湖に対し、朔の「妾（めかけ）」扱いされることもしばしば。\r\n元々は地味なほうだったが、高校１年生の途中から朔たちと行動を共にするように。\r\n\r\n温和で気遣い上手な藤志高校2年生。大和撫子のような落ち着いた雰囲気を持ち、周囲の空気をさりげなく和らげる縁の下の力持ち。家庭的で料理上手な一面もあり、みんなに頼られる存在。",
+    "name": "内田優空",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "内田优空"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "内田 優空"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "うちだ ゆあ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Uchida Yua"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://chiramune.com/chara/03.html"
+        }
+    ],
+    "stat": {
+        "comments": 78,
+        "collects": 89
+    },
+    "id": 107083,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        507634
+    ]
+}

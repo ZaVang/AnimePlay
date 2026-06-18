@@ -1,0 +1,65 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/aa/04/19200_crt_BoGm7.jpg?r=1676108885",
+        "grid": "https://lain.bgm.tv/pic/crt/g/aa/04/19200_crt_BoGm7.jpg?r=1676108885",
+        "large": "https://lain.bgm.tv/pic/crt/l/aa/04/19200_crt_BoGm7.jpg?r=1676108885",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/aa/04/19200_crt_BoGm7.jpg?r=1676108885"
+    },
+    "summary": "住在106号房的地缚灵，外表像是国中生少女。主张自己要在房间等父母回来，每当有人搬进106号房就用心灵现象把房客吓走。因为孝太郎能看到也能摸到她而没办法把孝太郎赶走，不得不暂时休战。对孝太郎有好感，两人之间的情感近似于兄妹。\r\n由于是幽灵，不会受到物理性攻击，但很怕护符之类的幸运物。",
+    "name": "東本願早苗",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "东本愿早苗"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "東本願 早苗"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ひがしほんがん さなえ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Higashihongan Sanae"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "145cm"
+        },
+        {
+            "key": "BWH",
+            "value": "B74/W58/H74"
+        },
+        {
+            "key": "引用来源",
+            "value": "Wiki"
+        }
+    ],
+    "stat": {
+        "comments": 14,
+        "collects": 80
+    },
+    "id": 19200,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        98286
+    ]
+}

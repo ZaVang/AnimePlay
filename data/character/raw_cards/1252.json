@@ -1,0 +1,53 @@
+{
+    "birth_mon": 8,
+    "gender": "female",
+    "birth_day": 17,
+    "birth_year": 1998,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4e/99/1252_crt_K8LKE.jpg?r=1391862227",
+        "grid": "https://lain.bgm.tv/pic/crt/g/4e/99/1252_crt_K8LKE.jpg?r=1391862227",
+        "large": "https://lain.bgm.tv/pic/crt/l/4e/99/1252_crt_K8LKE.jpg?r=1391862227",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4e/99/1252_crt_K8LKE.jpg?r=1391862227"
+    },
+    "summary": "小学三年级的女孩子。双桥小学3年级1班所属。\r\n告别母亲后，现与母亲的亲戚零次2个人共同生活。\r\n以难以想象是三年级小学生的行动、语言对待新任老师青木。",
+    "name": "九重りん",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "九重凛"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "九重 りん"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kokonoe Rin"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1998年8月17日"
+        }
+    ],
+    "stat": {
+        "comments": 24,
+        "collects": 101
+    },
+    "id": 1252,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        2482
+    ]
+}

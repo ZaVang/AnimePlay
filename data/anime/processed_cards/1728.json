@@ -1,0 +1,109 @@
+{
+    "id": 1728,
+    "name": "浪客剑心 追忆篇",
+    "image_path": "data\\images\\anime\\1728.jpg",
+    "points": 8.9,
+    "cost": 6,
+    "rarity": "UR",
+    "description": "幕府时代末期，外忧内患，山河动荡，百姓生活困苦，且生命时刻受到威胁。少年心太因其善良纯洁之心感动飞天御剑流高手比古清十郎，被其收入门下学习剑法，更名剑心。\r\n在国家危难之际，年轻的剑心怀揣改变时代的梦想下山，加入奇兵队，日后更被桂小五郎纳入麾下，以刽子手的身份为时代的变革尽一份绵薄之力。年仅15岁的剑心接连刺杀多名政府要员，令对手闻风丧胆，直到某一天，一名下级武士在他的脸上留下一道无法愈合的伤疤。\r\n来至京都寻找爱人的雪代巴邂逅了剑心，正是眼前这名瘦弱的男子将爱人从她的生命中带走。巴走入剑心的生活，随之经历了政治斗争的血雨腥风和田园乡下的宁静淡雅。也许她正是剑心那把狂舞之刀的刀鞘，但在大时代的背景之下，两个人的渺小幸福一触即碎……",
+    "type": 2,
+    "platform": "OVA",
+    "episodes_for_hangup": 4,
+    "synergy_tags": [
+        "日本",
+        "OVA",
+        "漫画改",
+        "战斗",
+        "历史"
+    ],
+    "date": "1999-02-20",
+    "rating_rank": 6,
+    "rating_score": 8.9,
+    "rating_total": 9476,
+    "main_character_ids": [
+        2328,
+        5893
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/9e/03/2328_crt_c14zj.jpg?r=1724610225",
+                "grid": "https://lain.bgm.tv/pic/crt/g/9e/03/2328_crt_c14zj.jpg?r=1724610225",
+                "large": "https://lain.bgm.tv/pic/crt/l/9e/03/2328_crt_c14zj.jpg?r=1724610225",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9e/03/2328_crt_c14zj.jpg?r=1724610225"
+            },
+            "name": "緋村剣心",
+            "summary": "温和な雰囲気が漂う放浪の剣客。その正体は、神速の殺人剣「飛天御剣流」により「人斬り抜刀斎」と恐れられた幕末の志士。赤毛と頬の十字傷が特徴で、腰には峰と刃が逆の「逆刃刀」を差している。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0d/e5/3992_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/0d/e5/3992_seiyu_anidb.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/0d/e5/3992_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0d/e5/3992_seiyu_anidb.jpg"
+                    },
+                    "name": "涼風真世",
+                    "short_summary": "日本の女優、声優、歌手。元宝塚歌劇団月組トップスター。\r\n\r\n宮城県石巻市出身。愛称は本名の「かなめ」で、個人事務所の名称にもなっている。身長166cm、血液型はO型。大阪薫英女子高等学校卒業。\r\n\r\n声優としてはアニメ『るろうに剣心』の緋村剣心役として知られる。",
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 3992,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/59/11/4528_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/59/11/4528_seiyu_anidb.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/59/11/4528_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/59/11/4528_seiyu_anidb.jpg"
+                    },
+                    "name": "鈴木真仁",
+                    "short_summary": "鈴木 真仁（すずき まさみ、1972年7月14日 - ）は、日本の声優、歌手、舞台女優。神奈川県茅ヶ崎市出身。日本芸術専門学校特別講師。大阪芸術大学短期大学部メディア芸術学科声優コース非常勤講師。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 4528,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 2328
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f1/dc/5893_crt_icg7g.jpg?r=1747104535",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f1/dc/5893_crt_icg7g.jpg?r=1747104535",
+                "large": "https://lain.bgm.tv/pic/crt/l/f1/dc/5893_crt_icg7g.jpg?r=1747104535",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f1/dc/5893_crt_icg7g.jpg?r=1747104535"
+            },
+            "name": "雪代巴",
+            "summary": "在明治维新中对剑心影响最大的一位女子。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2b/64/3916_prsn_AJ57r.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2b/64/3916_prsn_AJ57r.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/2b/64/3916_prsn_AJ57r.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2b/64/3916_prsn_AJ57r.jpg"
+                    },
+                    "name": "岩男潤子",
+                    "short_summary": "岩男 潤子（いわお じゅんこ、1970年2月18日 - ）は、日本の女性声優、歌手、アイドル。大分県別府市出身。岩男潤子オフィス所属。\r\n初期の頃は、「いわお潤」や「潤」名義で活動していた時期もある。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 3916,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 5893
+        }
+    ]
+}

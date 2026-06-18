@@ -1,0 +1,78 @@
+{
+    "birth_mon": 11,
+    "gender": "female",
+    "birth_day": 13,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e0/87/87822_crt_2W1Om.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e0/87/87822_crt_2W1Om.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/e0/87/87822_crt_2W1Om.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e0/87/87822_crt_2W1Om.jpg"
+    },
+    "summary": "七番組隊員。好奇心旺盛な性格で優希にも興味津々。身体の大きさを変化させる「玉体革命」（パラダイムシフト）で醜鬼を圧倒する。",
+    "name": "駿河朱々",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "骏河朱朱"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "駿河 朱々"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "するが しゅしゅ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Syusyu Suruga"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "11月13日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "165cm"
+        },
+        {
+            "key": "BWH",
+            "value": "B:85（E）"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://mabotai.jp/character/#/syusyu"
+        },
+        {
+            "key": "能力",
+            "value": "玉体革命（Paradigm Shift）"
+        }
+    ],
+    "stat": {
+        "comments": 29,
+        "collects": 60
+    },
+    "id": 87822,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        357962,
+        486054
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/26/49/9624_crt_anidb.jpg?r=1745863541",
+        "grid": "https://lain.bgm.tv/pic/crt/g/26/49/9624_crt_anidb.jpg?r=1745863541",
+        "large": "https://lain.bgm.tv/pic/crt/l/26/49/9624_crt_anidb.jpg?r=1745863541",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/26/49/9624_crt_anidb.jpg?r=1745863541"
+    },
+    "summary": "",
+    "name": "宗介",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "宗介"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "宗介"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sousuke"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "stat": {
+        "comments": 2,
+        "collects": 7
+    },
+    "id": 9624,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        313
+    ]
+}

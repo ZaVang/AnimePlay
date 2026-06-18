@@ -1,0 +1,75 @@
+{
+    "id": 390353,
+    "name": "我独自升级",
+    "image_path": "data\\images\\anime\\390353.jpg",
+    "points": 6.5,
+    "cost": 1,
+    "rarity": "N",
+    "description": "连接异次元和现世界的通道“门”突然出现十来年后，世界上出现觉醒了超能力被称为“猎人”之人。\r\n猎人使用力量以攻占门内地下城并获得报酬为生，但在强者齐聚的猎人们中，“水篠旬”作为被称为人类最弱兵器的低等猎人而艰难生活。\r\n某日，水篠旬遭遇某个被隐藏在低等级迷宫中的高等级重迷宫，在身负濒死重伤的水篠旬面前出现了神秘的探索窗口。\r\n他在临死之际，决定接受任务之际，成为唯一能“升级”之人。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "漫画改",
+        "战斗"
+    ],
+    "date": "2024-01-06",
+    "rating_rank": 5108,
+    "rating_score": 6.5,
+    "rating_total": 10175,
+    "main_character_ids": [
+        112749
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/37/88/112749_crt_G7RO2.jpg?r=1711342273",
+                "grid": "https://lain.bgm.tv/pic/crt/g/37/88/112749_crt_G7RO2.jpg?r=1711342273",
+                "large": "https://lain.bgm.tv/pic/crt/l/37/88/112749_crt_G7RO2.jpg?r=1711342273",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/37/88/112749_crt_G7RO2.jpg?r=1711342273"
+            },
+            "name": "성진우 / 水篠旬",
+            "summary": "有着「人類最弱兵器」之称的原E级猎人。\r\n[mask]在系统的帮助下提升了各项数值并成功转职死灵法师，成为了世界顶尖的猎人。[/mask] \r\n\r\nE級ハンター。\r\n『人類最弱兵器』と呼ばれていたが、二重ダンジョンの事件をきっかけに「システム」の力を手に入れる。\r\n自分だけが見えるウィンドウのミッションをクリアすることで、スキルやパワーがアップし、成長が可能となる。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/de/86/31434_prsn_20u1i.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/de/86/31434_prsn_20u1i.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/de/86/31434_prsn_20u1i.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/de/86/31434_prsn_20u1i.jpg"
+                    },
+                    "name": "坂泰斗",
+                    "short_summary": "坂 泰斗は、日本の男性声優。福岡県出身。大沢事務所所属。\r\n\r\n略歴\r\n\r\n福岡県で生まれ、茨城県で育つ。父の仕事の関係でメキシコに住んでいた時期があり、帰国子女である。\r\n\r\n昔は職業としての声優は無知で、アニメも見ていなかった。帰国後の高校2年生ぐらいにアニメを見始めて、「こんな職業あるんだ、やってみよう」と声優を目指した。高校の頃に見ていたアニメは『けいおん!』。\r\n\r\nプロ・フィット声優養成所卒業。2017年4月よりプロ・フィット所属して、声優としての活動を始める。2019年4月1日より事務所預かりから準所属。2022年1月1日、プロ・フィットが同年3月末で閉鎖することに伴い、大沢事務所へ移籍。\r\n\r\nゲーム『メモリーズオフ -Innocent Fille-』の楠瀬累役で初主人公を務める。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 31434,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/99/f4/42215_prsn_q2E25.jpg?r=1625723379",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/99/f4/42215_prsn_q2E25.jpg?r=1625723379",
+                        "large": "https://lain.bgm.tv/pic/crt/l/99/f4/42215_prsn_q2E25.jpg?r=1625723379",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/99/f4/42215_prsn_q2E25.jpg?r=1625723379"
+                    },
+                    "name": "민승우",
+                    "short_summary": "韩国男性声优。\r\n2014年大教广播声优剧会6期出道。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 42215,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 112749
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f9/88/218_crt_eAzaD.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f9/88/218_crt_eAzaD.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/f9/88/218_crt_eAzaD.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f9/88/218_crt_eAzaD.jpg"
+    },
+    "summary": "暴走族じみた荒武者揃いの伊達軍を束ね奥州から天下を狙う若きカリスマ。その隻眼の風貌から「独眼竜」と渾名され、また伊達軍の兵士達からは「筆頭」と呼ばれ慕われている。他にも「戦場の蒼い稲妻」「伊達男」などの異名を持ち、小十郎と二人組の時は「双竜」とも呼ばれる。",
+    "name": "伊達政宗",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "伊达政宗"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "身高",
+            "value": "160"
+        }
+    ],
+    "stat": {
+        "comments": 19,
+        "collects": 81
+    },
+    "id": 218,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        1429
+    ]
+}

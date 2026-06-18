@@ -1,0 +1,77 @@
+{
+    "birth_mon": 3,
+    "gender": "female",
+    "birth_day": 27,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fa/2a/116432_crt_JjVd9.jpg?r=1754307091",
+        "grid": "https://lain.bgm.tv/pic/crt/g/fa/2a/116432_crt_JjVd9.jpg?r=1754307091",
+        "large": "https://lain.bgm.tv/pic/crt/l/fa/2a/116432_crt_JjVd9.jpg?r=1754307091",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fa/2a/116432_crt_JjVd9.jpg?r=1754307091"
+    },
+    "summary": "落語家の最高位“真打”を目指す女子高生。負けん気が強く、これと決めたらとことんやり抜くタイプ。\r\n父・志ん太の落語が好きで、幼い頃から父の稽古の様子をこっそり覗いては、見よう見まねで再現していた。\r\n志ん太の真打昇進試験でのとある出来事をきっかけに、本格的に落語の道を志すことに。",
+    "name": "桜咲朱音",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "樱咲朱音"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "阿良川朱音"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Akane Ousaki"
+                },
+                {
+                    "k": "日文名",
+                    "v": "桜咲 朱音"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "3月27日"
+        },
+        {
+            "key": "身高",
+            "value": "158cm"
+        },
+        {
+            "key": "年龄",
+            "value": "16"
+        },
+        {
+            "key": "喜欢的食物",
+            "value": "那不勒斯意大利面、可乐饼"
+        },
+        {
+            "key": "讨厌的食物",
+            "value": "所有辣的东西"
+        },
+        {
+            "key": "爱好",
+            "value": "收集唱片、逛咖啡厅"
+        }
+    ],
+    "stat": {
+        "comments": 36,
+        "collects": 85
+    },
+    "id": 116432,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        576121
+    ]
+}

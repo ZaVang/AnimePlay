@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e6/40/8002_crt_vrOiK.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e6/40/8002_crt_vrOiK.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/e6/40/8002_crt_vrOiK.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e6/40/8002_crt_vrOiK.jpg"
+    },
+    "summary": "FAF少尉（後に中尉）。日本国出身。\r\nフェアリィ空軍・特殊戦第５飛行隊のパイロット。極めて無口で内向的な性格。\r\n過去に負った心の傷により、他人への関心や交流を持とうとしない。\r\n自らの愛機である特殊戦第５飛行隊３番機（パーソナルネーム“雪風”）に対し、絶対的な信頼を抱いている。",
+    "name": "深井零",
+    "infobox": [
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "深井零"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Fukai Rei"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "stat": {
+        "comments": 10,
+        "collects": 16
+    },
+    "id": 8002,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        2842
+    ]
+}

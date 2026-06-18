@@ -1,0 +1,126 @@
+{
+    "id": 181640,
+    "name": "亚人 第2部分",
+    "image_path": "data\\images\\anime\\181640.jpg",
+    "points": 7,
+    "cost": 1,
+    "rarity": "N",
+    "description": "高校生亜人・永井圭。下校時、交通事故に遭い、亜人であることが発覚。以降、警察、及び、亜人管理委員会から追われる身となる。\r\n圭が逃走中に接触を図ったのが、亜人テロリスト・佐藤だった。佐藤は圭を教育するため、彼を亜人管理委員会に引き渡す。が、試みは失敗。佐藤は圭と袂を分かち、独自に集めた亜人協力者と共に、グラント製薬爆破という大規模テロを引き起こす。\r\nそして、現在。\r\n亜人テロリスト・佐藤と亜人管理委員会との戦いは、新たな局面を迎える。\r\n「第2ウェーブのテーマは、『浄化』だ」\r\n佐藤による第2の犯行予告。それは、亜人関連要人15名の連続暗殺計画だった。\r\n亜人対日本国政府、佐藤対永井圭の、国の存亡を賭けた最後の戦いが、幕を開ける……！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "科幻",
+        "TV",
+        "日本",
+        "漫画改",
+        "战斗"
+    ],
+    "date": "2016-10-07",
+    "rating_rank": 2625,
+    "rating_score": 7,
+    "rating_total": 3809,
+    "main_character_ids": [
+        26369,
+        34559,
+        34560
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/19/c3/26369_crt_p0JF1.jpg?r=1447318790",
+                "grid": "https://lain.bgm.tv/pic/crt/g/19/c3/26369_crt_p0JF1.jpg?r=1447318790",
+                "large": "https://lain.bgm.tv/pic/crt/l/19/c3/26369_crt_p0JF1.jpg?r=1447318790",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/19/c3/26369_crt_p0JF1.jpg?r=1447318790"
+            },
+            "name": "永井圭",
+            "summary": "全国模拟考试中取得第一位的天才、拥有看到的东西大部分都能记住的可怕的记忆力。幼年时亚人的特殊能力「黑色幽灵」就发现可以使用。\r\n黑色幽灵与其他亚人的不同，不能凭借自身操纵，佐藤对此是「平面」评价。黑色幽灵乃「原型」，较接近于人的形状。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fa/cc/4697_prsn_1t8UM.jpg?r=1730622307",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/fa/cc/4697_prsn_1t8UM.jpg?r=1730622307",
+                        "large": "https://lain.bgm.tv/pic/crt/l/fa/cc/4697_prsn_1t8UM.jpg?r=1730622307",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fa/cc/4697_prsn_1t8UM.jpg?r=1730622307"
+                    },
+                    "name": "宮野真守",
+                    "short_summary": "小学生時代から劇団ひまわりに所属し、主に舞台などで活動した。高校生時代に海外ドラマ『私はケイトリン』の吹替で声優デビューする。PS2用ゲーム『キングダム ハーツ』のリク役で注目を集め、その後は、『機動戦士ガンダム00』や『DEATH NOTE』の主役を務めるなど、数々の人気作品に出演している。\r\n第1回声優アワード主演男優賞および新人賞にノミネートされた（『DEATH NOTE』夜神月役）。 2008年の第2回声優アワード主演男優賞受賞。東京国際アニメフェア2008・第7回東京アニメアワード個人賞（声優部門）受賞（『DEATH NOTE』『機動戦士ガンダム00』）。 2008年12月1日、劇団ひまわりのHPで結婚と子供を授かったことを公表した。結婚相手や子供の性別は非公開。 2011年、ノン子とのび太のアニメスクランブルにて第21回アニメグランプリ最優秀男性声優賞受賞。 2012年、第6回声優アワードにて助演男優賞と歌唱賞（後者はST☆RISHとして）、日刊スポーツ第1回日刊アニメグランプリにてMIP男性声優賞、アニメージュ第34回アニメグランプリ声優部門においてグランプリを受賞。\r\n\r\n2025年6月8日宣布与向日葵剧团合约期满退团，次日宣布加入研音。",
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 4697,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 26369
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/73/c9/34559_crt_CgqCW.jpg?r=1447318925",
+                "grid": "https://lain.bgm.tv/pic/crt/g/73/c9/34559_crt_CgqCW.jpg?r=1447318925",
+                "large": "https://lain.bgm.tv/pic/crt/l/73/c9/34559_crt_CgqCW.jpg?r=1447318925",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/73/c9/34559_crt_CgqCW.jpg?r=1447318925"
+            },
+            "name": "佐藤",
+            "summary": "ハンチング帽をかぶった糸目の男。戸崎や研究機関からは「帽子」と呼ばれている。本名は不明。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e8/44/3879_prsn_KLC77.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e8/44/3879_prsn_KLC77.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/e8/44/3879_prsn_KLC77.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e8/44/3879_prsn_KLC77.jpg"
+                    },
+                    "name": "大塚芳忠",
+                    "short_summary": "日本の男性声優、ナレーター。クレイジーボックス所属。元は本名で出演していたが、各所で名前を「ほうちゅう」と呼ばれることから、2001年頃に現在の芸名に変えた（ほぼ同時期に事務所を移籍）。『SoltyRei』では自らの名から付けられたホウ・チュウを演じている。\r\n妻は声優の弥永和子（1947年4月14日-2014年11月1日）。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 3879,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 34559
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/8f/2b/34560_crt_z213y.jpg?r=1447318982",
+                "grid": "https://lain.bgm.tv/pic/crt/g/8f/2b/34560_crt_z213y.jpg?r=1447318982",
+                "large": "https://lain.bgm.tv/pic/crt/l/8f/2b/34560_crt_z213y.jpg?r=1447318982",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8f/2b/34560_crt_z213y.jpg?r=1447318982"
+            },
+            "name": "戸崎優",
+            "summary": "厚生労働省から派遣された亜人担当の職員。ミントのタブレットを常に持ち歩いている。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/06/29/4015_prsn_4TZox.jpg?r=1638448222",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/06/29/4015_prsn_4TZox.jpg?r=1638448222",
+                        "large": "https://lain.bgm.tv/pic/crt/l/06/29/4015_prsn_4TZox.jpg?r=1638448222",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/06/29/4015_prsn_4TZox.jpg?r=1638448222"
+                    },
+                    "name": "櫻井孝宏",
+                    "short_summary": "爱知县冈崎市老家的本业是米店，店名为“樱井米谷店”，在当地小有名气。\r\n初中时的一个冬天，怕冷的他擅自把酒精灯里的液体倒在理科实验室的桌子上，点起火取暖，引响了火灾报警器，被赶来的老师狠狠教训了一顿。于是在老师的国语课上捣乱报复，夸张地朗读课文，实在听不过去的老师求他：“拜托，别念得跟声优似的好不好！”——这话对那时的樱井冲击很大，给他留下了声优不过是连小孩子都做得来的简单工作的印象。所以高中毕业后，乐得找轻松的樱井选择进入东京的声优专科学校。待迈入这一行，他才吐血地发现，且不说成为佼佼者，就是普通从业者也得掌握高超的专业技巧。\r\n2005年8月《最终幻想VII：降临之子》于第62届威尼斯影展参展。樱井以担任主角配音的身份，成为继山寺宏一后第2位踏上星光大道的日本籍声优。\r\n虽然戴着眼镜，可是樱井二眼视力皆为2.0，植田佳奈笑称那是“骗人眼镜”。那付眼镜的意义是“梦想与希望与对声迷们的爱”。\r\n最初的错误是BL DRAMA制作社Inter communications（inter桑）的一张drama的BK上打成了樱井考宏，之后《无法逃离的背叛》某个活动的官方网站上亦把樱井孝宏的名字写成“樱井考宏”，所以有昵称考哥，而并非是他的名字中的“孝”字与“考”字很像才有此外号。\r\n桜井(sakurai)，桜井さん（sakurai san），sakura i san，樱13",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 4015,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 34560
+        }
+    ]
+}

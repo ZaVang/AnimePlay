@@ -1,0 +1,476 @@
+{
+    "date": "2004-09-30",
+    "platform": "TV",
+    "images": {
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/88/3e/1027_7reJ8.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/88/3e/1027_7reJ8.jpg",
+        "large": "https://lain.bgm.tv/pic/cover/l/88/3e/1027_7reJ8.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/88/3e/1027_7reJ8.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/88/3e/1027_7reJ8.jpg"
+    },
+    "summary": "每三百年，將會出現一次由黑曜之君展開的舞姬之戰。在戰鬥過程中，舞姬（HiME：Highly-Advanced Materializing Equipment）須擊倒無依者（ORPHAN）及其同伴，成爲衆多HiME之中唯一的勝出者，終能得到黑曜之君所賜予的力量：“媛星”。HiME將會依靠她們不同的武具（Element）和子獸（Child）作戰，有的具備相當戰力，有的却衹能偵察情報。概念上，HiME有權選擇于任何情况下使用能力與否，然而説穿了，就如黄金天使的歌一樣，她們衹是籠中之鳥，無法順利得到愛情也難以共持友情的少女。",
+    "name": "舞-HiME",
+    "name_cn": "舞-HiME",
+    "tags": [
+        {
+            "name": "百合",
+            "count": 505,
+            "total_cont": 0
+        },
+        {
+            "name": "舞-HiME",
+            "count": 482,
+            "total_cont": 0
+        },
+        {
+            "name": "SUNRISE",
+            "count": 378,
+            "total_cont": 0
+        },
+        {
+            "name": "梶浦由记",
+            "count": 255,
+            "total_cont": 0
+        },
+        {
+            "name": "TV",
+            "count": 221,
+            "total_cont": 0
+        },
+        {
+            "name": "2004",
+            "count": 196,
+            "total_cont": 0
+        },
+        {
+            "name": "吐便当",
+            "count": 172,
+            "total_cont": 0
+        },
+        {
+            "name": "校园",
+            "count": 151,
+            "total_cont": 0
+        },
+        {
+            "name": "中原麻衣",
+            "count": 147,
+            "total_cont": 0
+        },
+        {
+            "name": "原创",
+            "count": 133,
+            "total_cont": 0
+        },
+        {
+            "name": "全员白魔法",
+            "count": 57,
+            "total_cont": 0
+        },
+        {
+            "name": "战斗",
+            "count": 54,
+            "total_cont": 0
+        },
+        {
+            "name": "玖我夏树",
+            "count": 52,
+            "total_cont": 0
+        },
+        {
+            "name": "最萌2005推荐",
+            "count": 34,
+            "total_cont": 0
+        },
+        {
+            "name": "奇幻",
+            "count": 32,
+            "total_cont": 0
+        },
+        {
+            "name": "会长",
+            "count": 30,
+            "total_cont": 0
+        },
+        {
+            "name": "吉野弘幸",
+            "count": 28,
+            "total_cont": 0
+        },
+        {
+            "name": "小原正和",
+            "count": 28,
+            "total_cont": 0
+        },
+        {
+            "name": "2004年10月",
+            "count": 23,
+            "total_cont": 0
+        },
+        {
+            "name": "恋爱",
+            "count": 23,
+            "total_cont": 0
+        },
+        {
+            "name": "舞HIME",
+            "count": 22,
+            "total_cont": 0
+        },
+        {
+            "name": "日本",
+            "count": 20,
+            "total_cont": 0
+        },
+        {
+            "name": "神棍",
+            "count": 19,
+            "total_cont": 0
+        },
+        {
+            "name": "梶浦由記",
+            "count": 13,
+            "total_cont": 0
+        },
+        {
+            "name": "2004年",
+            "count": 13,
+            "total_cont": 0
+        },
+        {
+            "name": "2004年9月",
+            "count": 12,
+            "total_cont": 0
+        },
+        {
+            "name": "最萌",
+            "count": 9,
+            "total_cont": 0
+        },
+        {
+            "name": "动画",
+            "count": 7,
+            "total_cont": 0
+        },
+        {
+            "name": "补番",
+            "count": 6,
+            "total_cont": 0
+        },
+        {
+            "name": "清水爱",
+            "count": 6,
+            "total_cont": 0
+        }
+    ],
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "舞-HiME"
+        },
+        {
+            "key": "话数",
+            "value": "26"
+        },
+        {
+            "key": "放送开始",
+            "value": "2004年9月30日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期四"
+        },
+        {
+            "key": "官方网站",
+            "value": "https://www.sunrise-inc.co.jp/my-hime/web/index.html"
+        },
+        {
+            "key": "播放电视台",
+            "value": "テレビ東京系列"
+        },
+        {
+            "key": "其他电视台",
+            "value": "AT-X"
+        },
+        {
+            "key": "播放结束",
+            "value": "2005年3月31日"
+        },
+        {
+            "key": "导演",
+            "value": "小原正和、久行宏和（动画导演）"
+        },
+        {
+            "key": "音乐",
+            "value": "梶浦由記"
+        },
+        {
+            "key": "Copyright",
+            "value": "© サンライズ"
+        },
+        {
+            "key": "企画",
+            "value": "サンライズ"
+        },
+        {
+            "key": "原作",
+            "value": "矢立肇"
+        },
+        {
+            "key": "系列构成",
+            "value": "吉野弘幸"
+        },
+        {
+            "key": "人物设定",
+            "value": "久行宏和"
+        },
+        {
+            "key": "制片人",
+            "value": "古里尚丈、国崎久徳"
+        },
+        {
+            "key": "设定",
+            "value": "カグツチ&オーファン：宮武一貴（スタジオぬえ）；チャイルド&エレメント：阿久津潤一（ビークラフト）"
+        },
+        {
+            "key": "道具设计",
+            "value": "エレメント銃デザイン：平井久司"
+        },
+        {
+            "key": "机械设定",
+            "value": "ゲストメカデザイン：大河広行"
+        },
+        {
+            "key": "音乐制作人",
+            "value": "井上俊次、伊藤善之"
+        },
+        {
+            "key": "製作",
+            "value": "サンライズ、バンダイビジュアル"
+        },
+        {
+            "key": "美术设计",
+            "value": "泉寛（スタジオ・イースター）"
+        },
+        {
+            "key": "音乐制作",
+            "value": "ランティス；协力：サンライズ音楽出版[现サンライズミュージック:]、テレビ東京ミュージック"
+        },
+        {
+            "key": "主题歌演出",
+            "value": "栗林みな実（OP）、美郷あき（ED）"
+        },
+        {
+            "key": "主题歌作词",
+            "value": "栗林みな実（OP）、畑亜貴（ED）"
+        },
+        {
+            "key": "主题歌作曲",
+            "value": "飯塚昌明"
+        },
+        {
+            "key": "脚本",
+            "value": "吉野弘幸、木村暢"
+        },
+        {
+            "key": "分镜",
+            "value": "小原正和、久行宏和、小野学、長井龍雪、鎌倉由実、太田雅彦、水草一馬（増井壮一）、菱川直樹、須永司、南康宏"
+        },
+        {
+            "key": "演出",
+            "value": "西村大樹、太田雅彦、小野学、長井龍雪、鎌倉由実、福本潔、菱川直樹、玉川達文（伊藤達文）、南康宏"
+        },
+        {
+            "key": "作画监督",
+            "value": "久行宏和、米山浩平、竹内浩志、しんぼたくろう、高瀬健一、相坂直紀（相坂ナオキ）、実原登、田中将賀、石野聡、坂本修司、稲吉智重、高野和史"
+        },
+        {
+            "key": "机械作画监督",
+            "value": "重田智、金田正彦、坂本修司、大塚健、市川敬三、永田正美、川原智弘"
+        },
+        {
+            "key": "总作画监督助理",
+            "value": "总作监协力：竹内浩志"
+        },
+        {
+            "key": "作画监督助理",
+            "value": "高野和史"
+        },
+        {
+            "key": "服装设计",
+            "value": "制服设计原案：猪股むつみ；私服设计原案：内藤沙織"
+        },
+        {
+            "key": "设定协力",
+            "value": "重田智、坂本修司、金田正彦"
+        },
+        {
+            "key": "OP・ED 分镜",
+            "value": "久行宏和 /小原正和"
+        },
+        {
+            "key": "OP・ED 演出",
+            "value": "長井龍雪"
+        },
+        {
+            "key": "录音",
+            "value": "山田富二男；录音工作室：アオイスタジオ"
+        },
+        {
+            "key": "录音助理",
+            "value": "藤林繁"
+        },
+        {
+            "key": "宣传",
+            "value": "清水博之、松村起代子"
+        },
+        {
+            "key": "创意制片人",
+            "value": "谷口悟朗"
+        }
+    ],
+    "rating": {
+        "rank": 1559,
+        "total": 1844,
+        "count": {
+            "1": 0,
+            "2": 6,
+            "3": 3,
+            "4": 29,
+            "5": 59,
+            "6": 300,
+            "7": 660,
+            "8": 583,
+            "9": 153,
+            "10": 51
+        },
+        "score": 7.3
+    },
+    "total_episodes": 27,
+    "collection": {
+        "on_hold": 220,
+        "dropped": 94,
+        "wish": 1390,
+        "collect": 2592,
+        "doing": 158
+    },
+    "id": 1027,
+    "eps": 26,
+    "meta_tags": [
+        "百合",
+        "校园",
+        "TV",
+        "恋爱",
+        "日本",
+        "原创",
+        "战斗"
+    ],
+    "volumes": 0,
+    "series": false,
+    "locked": false,
+    "nsfw": false,
+    "type": 2,
+    "main_character_ids": [
+        5678,
+        10467,
+        48197
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/66/4a/5678_crt_NczPK.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/66/4a/5678_crt_NczPK.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/66/4a/5678_crt_NczPK.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/66/4a/5678_crt_NczPK.jpg"
+            },
+            "name": "鴇羽舞衣",
+            "summary": "本动画之主角。15岁，生日为7/22，O型，身长157cm，体重46公斤，鸨羽巧海的姊姊。认真且责任感强，擅长料理，常常到处打工赚取所需花费。与菊川雪之、原田千绘、日暮茜、瀬能葵等为同班同学，室友为美袋命。她以迦具土身体抵挡爱莉莎•西亚斯子兽Artemis的射击，从而使迦具土变为新型迦具土。后半部一直想阻止HiME之间的战斗，但因目睹弟弟鸨羽巧海及楯祐一的消失，使情绪多次崩溃，甚至曾对失控的美袋命产生厌恶感。虽然鸨羽舞衣个人战斗能力一般，但其子兽迦具土却是众多子兽中最强最具破坏力，总括而言是实力首三位的HiME之一。\r\n    印记位置：胸前\r\n    元素武具（Element）：宝轮/风火轮（带火焰，脚上亦有宝轮帮助飞行，攻守兼备的武具。）\r\n    子兽（Child）：迦具土→新型迦具土（龙型态，以日本传说的火之神为原型，主要攻击方式为从嘴部喷出火焰，其破坏力惊人。）\r\n    最重要的人（大切な人）：鸨羽巧海→楯祐一\r\n    后半部败北原因：没有，她与美袋命都没有败北。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d0/9c/4145_prsn_66APz.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d0/9c/4145_prsn_66APz.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/d0/9c/4145_prsn_66APz.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d0/9c/4145_prsn_66APz.jpg"
+                    },
+                    "name": "中原麻衣",
+                    "short_summary": "小时候经常搬家，但仍能清楚记得什么时期居住在什么地方。从幼儿直至中学三年级第2学期约10年，都是跟祖母住在爱媛县西宇和郡伊方町。因此在出演‘アイドル大阪環状線’时，表示出自己对爱媛丰富的知识。\r\n受到《[url=https://chii.in/subject/80237]七海的堤可[/url]》的影响，从小学5年级就立志成为配音演员，初中毕业时向父母表示“希望能进入声优训练学校”。后来在父母的劝告下高中毕业，18岁时一人从九州搬至东京，在没有两亲的援助下过著一边从事医疗事务的OL的工作，一边在声优训练学校上课，每天都抑郁着的生活。本人说自己当时非常希望当配音演员。\r\n在日本旁白演技研究所的考试中取得合格。在2000年10月被电台节目‘VOICE CREW’起用。\r\n2001年声演[url=https://chii.in/subject/75188]パラッパラッパー[/url]的路人B，并于2002年以[url=https://chii.in/subject/74906]七人之奈奈[/url]中奈奈一角正式于动画界出道。同年开始声演《[url=https://chii.in/subject/23443]魔法咪路咪路[/url]》的主角[url=https://chii.in/character/187824]南枫[/url]，这长达3年半的长期系列作品成为中原麻衣初期的代表作。其后，2004年的《[url=https://chii.in/subject/1027]舞-HiME[/url]》，2006年的《[url=https://chii.in/subject/289]寒蝉鸣泣之时[/url]》，2007年的《[url=https://chii.in/subject/51]CLANNAD[/url]》等动画作品都担任著主角。\r\n当初成为声优时多于个人电台活动。\r\n从声演‘暮蝉悲鸣时’的[url=https://chii.in/character/5678]龙宫礼奈[/url]，‘舞-HiME’的[url=https://chii.in/character/5678]鸨羽舞衣[/url]中，得到了“擅长狂怒的声音”的评价。声演的多为动画的主角，角色比如傲娇、女王系、病弱等形形色色的角色也声演过。\r\n就读声优训练学校的时期被说“你的声音只能当配角”。但是，除了出道作外声演的角色为主角的都压倒性地多。\r\n唱的多为动画或游戏的角色歌曲。2002年与曾参与七人之奈奈的声优[url=https://chii.in/person/1]水树奈奈[/url]、[url=https://chii.in/person/5569]秋田まどか[/url]、浅木舞、[url=https://chii.in/person/3922]名冢佳织[/url]、[url=https://chii.in/person/4185]福井裕佳梨[/url]和[url=https://chii.in/person/44829]桃森すもも[/url]组成“nanaxnana”的组合，并歌唱此作品的主题曲。又以自己作领导，与[url=https://chii.in/person/4263]植田佳奈[/url]、[url=https://chii.in/person/4249]斎藤千和[/url]、[url=https://chii.in/person/4695]森永理科[/url]结成名为‘みっくすJUICE’的组合，2004年起与[url=https://chii.in/person/4064]清水爱[/url]组成“PoppinS”、“中原麻衣&清水爱”。\r\n2004年起展开个人歌手的活动。直至2008年6月共推出了9枚CD。\r\n2006年到台湾的同人活动出席嘉宾。\r\n2007年出演以广播员训练学校为舞台的电视剧‘女子アナ一直線!’以嘉宾形式出演读原稿，教授演技的配音演员“中原麻衣”。\r\n手脚长的苗条体型，经常被称为模特体型。\r\n非常喜欢狗，爱犬是モカ。\r\n醉酒时会说出“你幸福吗？”、“不想回家”等话。\r\n自“[url=https://chii.in/subject/104176]妄想科学[/url]”和“[url=https://chii.in/subject/1852]星空的邂逅2[/url]”起，中原与清水爱在动画及电台的共演作品就非常的多。2人的关系在公在私亦非常良好，在清水爱的日记也可常看到有关中原的事，亦曾一起推出过声优CD。\r\n同经纪公司的[url=https://chii.in/person/3965]田村由香里[/url]在自己的电台节目表示中原麻衣服装诱人，会使自己变得紧张。田村由香里甚至称赞她“很会打扮而且全都很可爱”。\r\n与植田佳奈的感情非常好。其余的亲交有[url=https://chii.in/person/4412]高桥美佳子[/url]、[url=https://chii.in/person/4305]新谷良子[/url]、[url=https://chii.in/person/4032]渡边明乃[/url]、[url=https://chii.in/person/3936]钉宫理恵[/url]、[url=https://chii.in/person/4394]生天目仁美[/url]、[url=https://chii.in/person/4353]松来未祐[/url]等。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 4145,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 5678
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f0/45/10467_crt_jhOQu.jpg?r=1398389400",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f0/45/10467_crt_jhOQu.jpg?r=1398389400",
+                "large": "https://lain.bgm.tv/pic/crt/l/f0/45/10467_crt_jhOQu.jpg?r=1398389400",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f0/45/10467_crt_jhOQu.jpg?r=1398389400"
+            },
+            "name": "玖我なつき",
+            "summary": "经常驾驶机车，個性看似倔強，其實非常率直，容易被人猜中心意。由於懷疑母親玖我紗江子的死與一番地有關，所以不斷的查探其秘密及戰鬥。愛好收集內衣、打電動和賽馬，在游戏中还有害怕幽灵这一特征。喜歡的食物是美乃滋（就算即食麵也喜歡加進去）；和鴇羽為隔壁班同學，和學生會長藤乃靜留關係曖昧，和初中部的結城奈緒之間有點過節，二人只要見面就會發生爭執；子獸為迪蘭（デュラン）（狼型態。攻擊技有裝填鉻彈（火）/銀彈（冰）），元素武具為雙槍（銃型のエレメント）。开始时带着很小的迪兰满处走的样子很萌哦。在结尾处驾驭巨大化迪兰与静留双飘，并于最终话复生。最重要的人是藤乃靜留。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7a/6a/4129_seiyu_anidb.jpg?r=1400776553",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7a/6a/4129_seiyu_anidb.jpg?r=1400776553",
+                        "large": "https://lain.bgm.tv/pic/crt/l/7a/6a/4129_seiyu_anidb.jpg?r=1400776553",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7a/6a/4129_seiyu_anidb.jpg?r=1400776553"
+                    },
+                    "name": "千葉紗子",
+                    "short_summary": "千葉 紗子（ちば さえこ、1977年8月26日 - ）は、日本の女性声優。東京都出身。血液型はA型。スペースクラフトに所属していた。\r\n\r\n2007年，8月27日、30歳を迎えると同時にブログで結婚を発表。翌年以降、アニメ『ストライクウィッチーズ』の坂本美緒役を降板するなど、声優としての活動を一時休業した時期もあったが、現在も声優として活動を続けている。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 4129,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 10467
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/8a/3d/48197_crt_n3jFX.jpg?r=1495560461",
+                "grid": "https://lain.bgm.tv/pic/crt/g/8a/3d/48197_crt_n3jFX.jpg?r=1495560461",
+                "large": "https://lain.bgm.tv/pic/crt/l/8a/3d/48197_crt_n3jFX.jpg?r=1495560461",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8a/3d/48197_crt_n3jFX.jpg?r=1495560461"
+            },
+            "name": "美袋命",
+            "summary": "中等部3-G組在籍。14歳。舞衣のルームメイト。いつも腹を空かせている大食漢で、舞衣の作る料理が大好物。特にラーメンがお気に入りの様子。野生児と言ってもよい少女で、舞衣にはまるでペットのように懐いている。\r\nHiMEの祭事を司る家に生まれ、その血を引く者として召使いの「ジイ」によって山奥で育てられる。生き別れの兄を探しに風華学園に来たが、それがどのような人物であったのか、記憶があいまいになっている。チャイルドをほとんど使わずにHiMEを屠ることが可能なほどの凄まじい戦闘力を誇る。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4f/f7/4064_prsn_iIIrR.jpg?r=1619283480",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/4f/f7/4064_prsn_iIIrR.jpg?r=1619283480",
+                        "large": "https://lain.bgm.tv/pic/crt/l/4f/f7/4064_prsn_iIIrR.jpg?r=1619283480",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4f/f7/4064_prsn_iIIrR.jpg?r=1619283480"
+                    },
+                    "name": "清水愛",
+                    "short_summary": "清水爱（1981年3月26日－），日本女性声优兼职业摔角选手，生于东京都。于2016年7月3日在Triangle ribbon获得第22届冠军。\r\n高中时就读关东国际高等学校所属的是外语专业的汉语课程，学习普通话及各种汉语方言，当中以北京方言尤为擅长，已通过汉语二级考试HSK2级水平，也就是现在HSK中级A水平。\r\n高中毕业后进入日本工学院专门学校演剧俳优科声优班学习。日本工学院在册时代与新谷良子和坂本美里一起组成“めえめえもお”。此后与新谷在各处也共同演出，结成“テディミルク”。\r\n喜欢猫，兴趣是汉语和器械体操。在个人博客上特技一栏写着“我认为是公主抱”。\r\n视力很低，所以经常佩戴隐形眼镜。声质为高音，所以能担当不同类型的女性角色的配音。\r\n喜欢哥德萝莉风格的衣服，经常这样穿着出席各种活动。\r\n虽然与中原麻衣不同事务所，但自妄想科学美少女和拜托了双子星起常与声优中原麻衣共演，两人公私关系都非常良好，常以“姐妹”的身份同时出席各种活动，在清水爱的日记中也常看到提及中原麻衣的事情。\r\n在魔力女管家、这丑陋又美丽的世界中与川澄绫子共演姊妹角色，因此她间中会称川澄绫子为姊姊。此外与笹岛薰感情也非常深厚。\r\n\r\n2001年开始声优活动，所属事务所红屋25时，不久后移籍至81 Produce。\r\n2003年与Warner Music （华纳唱片）签约成为旗下歌手，7月推出第一张个人音乐CD。\r\n2008年11月1日，退出81 Produce，12月1日加入东京俳优生活协同组合。\r\n2009年7月，受邀前往台湾担任同人即卖会FF14嘉宾（同场嘉宾：声优小清水亚美及画师七濑葵）。\r\n作为知名声优，清水爱在演唱、电台节目和现场活动中非常活跃，照片和访谈也经常出现在动画和声优杂志上，曾经创下一年中出席200多场见面会的纪录。\r\n2016年8月2日在本人推特上公开了与摔跤评论家井上マイク的婚讯。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 4064,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 48197
+        }
+    ]
+}

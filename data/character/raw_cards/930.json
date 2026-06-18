@@ -1,0 +1,65 @@
+{
+    "birth_mon": 3,
+    "gender": "male",
+    "birth_day": 16,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/53/f5/930_crt_tFyB5.jpg?r=1677396519",
+        "grid": "https://lain.bgm.tv/pic/crt/g/53/f5/930_crt_tFyB5.jpg?r=1677396519",
+        "large": "https://lain.bgm.tv/pic/crt/l/53/f5/930_crt_tFyB5.jpg?r=1677396519",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/53/f5/930_crt_tFyB5.jpg?r=1677396519"
+    },
+    "summary": "绘羽和秀吉的儿子。\r\n待人接物很不错的好青年，亲戚们都很喜欢他。\r\n现在在父亲的公司跟着学习，抱着有一天能独立创业的梦想。\r\n作为堂兄妹四人组年龄最大的，自然成了统一协调他们的兄长。",
+    "name": "右代宫譲治",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "右代宫让治"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "右代宮 譲治"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "うしろみや じょうじ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ushiromiya George"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "3月16日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "声优",
+            "value": "铃村健一"
+        }
+    ],
+    "stat": {
+        "comments": 22,
+        "collects": 16
+    },
+    "id": 930,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        1377
+    ]
+}

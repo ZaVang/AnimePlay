@@ -1,0 +1,91 @@
+{
+    "id": 883,
+    "name": "黑执事",
+    "image_path": "data\\images\\anime\\883.jpg",
+    "points": 7.0,
+    "cost": 1,
+    "rarity": "N",
+    "description": "以19世纪后半，处于维多利亚女王时代的英国为背景，主角是名门贵族法多姆海恩家的管家塞巴斯蒂安。他集知识、教养、品位、料理、武术……等十八般武器于一身，可说是个找不出来缺点的管家。而他所侍奉的主人是个任性的12岁大少爷夏尔。今天塞巴斯蒂安也穿着漆黑的燕尾服在华丽地执行自己的任务…… ",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 24,
+    "synergy_tags": [
+        "悬疑",
+        "TV",
+        "日本",
+        "奇幻",
+        "漫画改"
+    ],
+    "date": "2008-10-02",
+    "rating_rank": 2657,
+    "rating_score": 7.0,
+    "rating_total": 4407,
+    "main_character_ids": [
+        1228,
+        1229
+    ],
+    "main_characters": [
+        {
+            "id": 1228,
+            "name": "セバスチャン・ミカエリス",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/63/9b/1228_crt_66huh.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/63/9b/1228_crt_66huh.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/63/9b/1228_crt_66huh.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/63/9b/1228_crt_66huh.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4456,
+                    "name": "小野大輔",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c4/8e/4456_prsn_HEQe3.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c4/8e/4456_prsn_HEQe3.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c4/8e/4456_prsn_HEQe3.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c4/8e/4456_prsn_HEQe3.jpg"
+                    },
+                    "short_summary": "在日本大学艺术学部放送学科就读时，主要是专攻电视节目制作。但因为当时提出的企划作品被教授评价的很差，所以转而改以演出者方式参与，并在参与过程中感受到演戏的有趣，因此决定以成为声优为目标。\r\n　　 出道当时，以动画节目的准常态出演（担任非固定角色名的小角色配音）为主。\r\n　　 第一部担任主角的动画作品是「AIR」TV动画版的男主角国崎往人。\r\n　　 在2006年放送的动画《凉宫春日的忧郁》以古泉一树这个角色获得广大知名度，其後也陆续获得许多要角演出。从帅气知性的青年到有点脱线的搞笑角色，演出的类型范围十分广泛。\r\n　　 2008年以《南家三姐妹》保坂这个角色获得第二回声优奖男优部门配角赏。　\r\n　　据来自2010年6月14日，IT世界网的咨询《Voice NewType投票，新一代声优崭露头角》中报道：男性榜单这边倒几乎都是老面孔，不过占据首位的再也不是福山润和神谷浩史等人，今次终于也轮到了小野大辅。长期以来如同劳模一般辛苦工作的小野大辅，如今终于名利双收，不但摘得上届声优大赏最佳男主角赏，如今人气投票又问鼎冠军，实在可喜可贺。\r\n　　 2010年1月31日その执事、狂騒～赤いヴァレンタイン声优见面会中被主持人吉田尚记称为声优界的谷原章介。\r\n　　 2010年3月以《黑执事》塞巴斯蒂安这个角色获得第四回声优奖主演男优赏。\r\n　　 2010年4月新番《迷糊餐馆working》中担任佐藤润的声优。\r\n　　 2010年4月新番《无法逃离的背叛》中担任莲城焰椎真的声优\r\n　　 2010年7月新番《传说中的勇者传说》中担任西昂·阿斯塔尔的声优。《黑执事2》中继续担任塞巴斯蒂安的声优。\r\n　　在《背叛》中的热血少年，《传说中的勇者传说》的拥有伟大理想又腹黑的西昂使小野大辅的声线变化发挥地更为淋漓尽致。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 1229,
+            "name": "シエル・ファントムハイヴ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/b8/68/1229_crt_ii44s.jpg?r=1422632634",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b8/68/1229_crt_ii44s.jpg?r=1422632634",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b8/68/1229_crt_ii44s.jpg?r=1422632634",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b8/68/1229_crt_ii44s.jpg?r=1422632634"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3877,
+                    "name": "坂本真綾",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/d4/88/3877_prsn_VOY27.jpg?r=1574050572",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d4/88/3877_prsn_VOY27.jpg?r=1574050572",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d4/88/3877_prsn_VOY27.jpg?r=1574050572",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d4/88/3877_prsn_VOY27.jpg?r=1574050572"
+                    },
+                    "short_summary": "坂本真绫（さかもと まあや、1980年3月31日 - ），日本女声优、歌手、演员、电台主持。东京都板桥区出身，东京都立武蔵丘高等学校及东洋大学社会学部毕业，父亲是舞台照明家坂本义美。\r\n8岁进入儿童剧团，开始艺能活动，曾演唱广告歌、童谣，为外国电影剧集配音，出演电视节目等。15岁时，被音乐制作人菅野洋子发掘，真正地开始了音乐活动。16岁在歌坛出道。\r\n坂本真绫在音乐以外的领域也具有丰富的才能，广泛活跃在舞台表演、电台主持、电视节目主持、执笔等领域，被称为“才女”，她是现在日本乐坛少数的实力派之一。\r\n\r\n2011年8月13日，在网志上正式宣布和声优铃村健一在2011年8月8日结婚。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

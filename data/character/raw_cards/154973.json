@@ -1,0 +1,61 @@
+{
+    "birth_mon": 2,
+    "gender": "female",
+    "birth_day": 1,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/16/12/154973_crt_EIIkn.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/16/12/154973_crt_EIIkn.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/16/12/154973_crt_EIIkn.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/16/12/154973_crt_EIIkn.jpg"
+    },
+    "summary": "本作のメインヒロイン。放送部所属。アナウンサー志望。\r\n\r\n楓林高校２年生。アナウンサー志望。\r\n放送部の活動もしっかりこなし、生徒会副会長としても活躍。\r\n模範的な優等生でみんなから頼りにされている。\r\nだが噛みグセがひどく、一部のファンからはむしろそこがいいと喜ばれている。",
+    "name": "雨月しのぶ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "雨月忍"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "雨月 しのぶ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "うづきしのぶ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shinobu Uzuki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2月1日"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://mayochu-anime.com/#character"
+        }
+    ],
+    "stat": {
+        "comments": 67,
+        "collects": 129
+    },
+    "id": 154973,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        544109
+    ]
+}

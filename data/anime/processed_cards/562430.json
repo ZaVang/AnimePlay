@@ -1,0 +1,59 @@
+{
+    "id": 562430,
+    "name": "能帮我弄干净吗？",
+    "image_path": "data\\images\\anime\\562430.jpg",
+    "points": 6.1,
+    "cost": 1,
+    "rarity": "N",
+    "description": "温泉が湧き出る海辺の街・熱海。\r\n\r\n小さなクリーニング店を営む金目綿花奈さんは、\r\n明るくて働き者で温泉が大好きな女の子。\r\n彼女と彼女を巡る人々が織りなす、ひきこもごもストーリー、始まります。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改",
+        "日常"
+    ],
+    "date": "2026-01-05",
+    "rating_rank": 7386,
+    "rating_score": 6.1,
+    "rating_total": 1814,
+    "main_character_ids": [
+        168375
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a8/fa/168375_crt_l0qlL.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a8/fa/168375_crt_l0qlL.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/a8/fa/168375_crt_l0qlL.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a8/fa/168375_crt_l0qlL.jpg"
+            },
+            "name": "金目綿花奈",
+            "summary": "海辺の街・熱海でクリーニング店「キンメクリーニング」を営む。\r\n明るくて働き者で温泉が大好き。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8a/42/32687_prsn_GF9g5.jpg?r=1688106625",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/8a/42/32687_prsn_GF9g5.jpg?r=1688106625",
+                        "large": "https://lain.bgm.tv/pic/crt/l/8a/42/32687_prsn_GF9g5.jpg?r=1688106625",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8a/42/32687_prsn_GF9g5.jpg?r=1688106625"
+                    },
+                    "name": "鈴代紗弓",
+                    "short_summary": "",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 32687,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 168375
+        }
+    ]
+}

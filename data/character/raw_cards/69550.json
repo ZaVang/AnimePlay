@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/20/48/69550_crt_E42iX.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/20/48/69550_crt_E42iX.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/20/48/69550_crt_E42iX.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/20/48/69550_crt_E42iX.jpg"
+    },
+    "summary": "慧辉的学妹，有着可爱的外表，同时本性也是一个抖S变态。希望慧辉成为自己的“奴隶”；与朱鹭原纱雪是争夺慧辉的对手。",
+    "name": "古賀唯花",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "古贺唯花"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "こが ゆいか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Koga Yuika"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 16,
+        "collects": 80
+    },
+    "id": 69550,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        275371
+    ]
+}

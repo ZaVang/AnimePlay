@@ -1,0 +1,91 @@
+{
+    "id": 12544,
+    "name": "萤火之森",
+    "image_path": "data\\images\\anime\\12544.jpg",
+    "points": 7.3,
+    "cost": 1,
+    "rarity": "N",
+    "description": "某年夏天，6岁小女孩竹川萤来到爷爷家度假，她闯进了传说住满妖怪的山神森林。正当她因为迷路而焦急万分的时候，一个戴着狐狸面具的大男孩出现在她面前，并引领着萤找到回家的路。虽然萤分外感激，可是男孩却禁止她碰触自己的身体，原来这名叫银的男孩并非人类，他一旦被人类碰触就会烟消云散。在此后的日子里，萤和银成为好朋友，他们走遍了森林的每一个角落玩耍。日复一日，年复一年，每到夏天的时候萤就会如约来到森林和好朋友见面。她遵守着和银的约定，无论如何也不碰触银的身体。随着年龄的增长，萤和银对彼此的情感都悄悄发生了变化，他们共同期待相聚的日子，共同期待拥抱对方……",
+    "type": 2,
+    "platform": "剧场版",
+    "episodes_for_hangup": 1,
+    "synergy_tags": [
+        "剧场版",
+        "恋爱",
+        "日本",
+        "奇幻",
+        "漫画改"
+    ],
+    "date": "2011-09-17",
+    "rating_rank": 1369,
+    "rating_score": 7.3,
+    "rating_total": 9641,
+    "main_character_ids": [
+        15895,
+        15896
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b1/c9/15895_crt_4FP4s.jpg?r=1565255276",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b1/c9/15895_crt_4FP4s.jpg?r=1565255276",
+                "large": "https://lain.bgm.tv/pic/crt/l/b1/c9/15895_crt_4FP4s.jpg?r=1565255276",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b1/c9/15895_crt_4FP4s.jpg?r=1565255276"
+            },
+            "name": "ギン",
+            "summary": "",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0f/d1/5768_prsn_35lt8.jpg?r=1637964101",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/0f/d1/5768_prsn_35lt8.jpg?r=1637964101",
+                        "large": "https://lain.bgm.tv/pic/crt/l/0f/d1/5768_prsn_35lt8.jpg?r=1637964101",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0f/d1/5768_prsn_35lt8.jpg?r=1637964101"
+                    },
+                    "name": "内山昂輝",
+                    "short_summary": "内山 昂輝（うちやま こうき、1990年8月16日 - ）は、日本の声優、俳優。劇団ひまわり所属。\r\n早稲田大学卒業。 国際基督教大学高等学校出身。 1993年に劇団ひまわりに入団し、子役としてテレビドラマへの出演や少年役の吹き替えを主に行っていた。舞台経験はない。なお、声優として初めて参加した作品はA.I.である。\r\n2005年に発売された『キングダム ハーツII』のロクサス役で注目を浴び、その後は声優としての活動が多くなっている。内山本人も自身を「明朗快活なタイプではない」と語っているように、主にどこか影のある少年役を演じるが、明るい少年役を演じることも多くなっている。\r\n2011年、第5回声優アワードにて新人男優賞を受賞。2015年、東京アニメアワード2015で発表されたアニメ オブ ザ イヤーで声優賞を受賞。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 5768,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 15895
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/78/5c/15896_crt_46UUx.jpg?r=1565255257",
+                "grid": "https://lain.bgm.tv/pic/crt/g/78/5c/15896_crt_46UUx.jpg?r=1565255257",
+                "large": "https://lain.bgm.tv/pic/crt/l/78/5c/15896_crt_46UUx.jpg?r=1565255257",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/78/5c/15896_crt_46UUx.jpg?r=1565255257"
+            },
+            "name": "竹川蛍",
+            "summary": "",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b3/1a/5745_prsn_0GjVg.jpg?r=1643856929",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b3/1a/5745_prsn_0GjVg.jpg?r=1643856929",
+                        "large": "https://lain.bgm.tv/pic/crt/l/b3/1a/5745_prsn_0GjVg.jpg?r=1643856929",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b3/1a/5745_prsn_0GjVg.jpg?r=1643856929"
+                    },
+                    "name": "佐倉綾音",
+                    "short_summary": "佐仓绫音（さくら あやね）是日本的女性声优，1994年1月29日出生及成长于东京都；曾为[url=www.imenterprise.jp]I'm Enterprise[/url]旗下声优，2022年2月1日移籍至[url=www.aoni.co.jp]青二Production[/url]。\r\n\r\n[b]经历[/b]\r\n中学时所属剧团东俳，[url=https://nichinare.com/]日本播音演技研究所[/url]出身。《Dottoai广播》第45代主持人。2011年，在TV动画《[url=https://bgm.tv/subject/8990]食梦者玛利[/url]》出演[url=https://bgm.tv/character/10571]玛利·梦魔[/url]，首次出演主角。同年在剧场版动画《[url=https://bgm.tv/subject/12544]萤火之森[/url]》中出演[url=https://bgm.tv/character/15896]竹川萤[/url]，首次担当主役。\r\n其他代表作品有《[url=https://bgm.tv/subject/88287]请问您今天要来点兔子吗？[/url]》[url=https://bgm.tv/character/23647]保登心爱[/url]、《[url=https://bgm.tv/subject/78405]悠哉日常大王[/url]》[url=https://bgm.tv/character/21370]越谷夏海[/url]、《[url=https://bgm.tv/subject/37685]心理测量者[/url]》[url=https://bgm.tv/character/18476]霜月美佳[/url]、《[url=https://bgm.tv/subject/54433]我的青春恋爱物语果然有问题[/url]》[url=https://bgm.tv/character/26090]一色彩羽[/url]、《[url=https://bgm.tv/subject/120925]夏洛特[/url]》[url=https://bgm.tv/character/29511]友利奈绪[/url]、《[url=https://bgm.tv/subject/100444]四月是你的谎言[/url]》[url=https://bgm.tv/character/26004]泽部椿[/url]等。\r\n\r\n[b]其他[/b]\r\n昵称“あやねる（ayaneru）”是由[url=https://bgm.tv/person/4950]冈本信彦[/url]（《[url=https://bgm.tv/subject/8990]食梦者玛利[/url]》的合演者）给予的。关于昵称（本人说）“没什么特别的”。“あやねる”只是“绫音”和“睡觉（寝る）”的组合。\r\n完全的百合脑、百合控，非常喜欢[url=https://bgm.tv/person/4765]花泽香菜[/url]。\r\n爱好读书，特技是插图。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 5745,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 15896
+        }
+    ]
+}

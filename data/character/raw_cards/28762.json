@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bc/60/28762_crt_ClM3O.jpg?r=1428501415",
+        "grid": "https://lain.bgm.tv/pic/crt/g/bc/60/28762_crt_ClM3O.jpg?r=1428501415",
+        "large": "https://lain.bgm.tv/pic/crt/l/bc/60/28762_crt_ClM3O.jpg?r=1428501415",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bc/60/28762_crt_ClM3O.jpg?r=1428501415"
+    },
+    "summary": "父親と暮らす男子生徒。\r\n突然できた義妹に戸惑う。\r\n正体は元勇者の一族で、\r\n自身の持つ力で彼女たちを守ろうと誓う。",
+    "name": "東城刃更",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "东城刃更"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "とうじょう ばさら"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Tojo Basara"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://anime-shinmaimaou.com/character"
+        }
+    ],
+    "stat": {
+        "comments": 6,
+        "collects": 7
+    },
+    "id": 28762,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        100205
+    ]
+}

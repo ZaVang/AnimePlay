@@ -1,0 +1,65 @@
+{
+    "birth_mon": 11,
+    "gender": "female",
+    "birth_day": 1,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0e/4f/3526_crt_anidb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/0e/4f/3526_crt_anidb.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/0e/4f/3526_crt_anidb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0e/4f/3526_crt_anidb.jpg"
+    },
+    "summary": "２年Ｃ組所属。ＩＱ190以上の、輝日南高校創設以来の天才少女。周囲に奇異な目で見られることが多く、孤独を好む。教師たちの期待も高いが、学校の授業に魅力を見出せず、授業もサボりがちである。",
+    "name": "二見瑛理子",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "二见瑛理子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Futami Eriko"
+                },
+                {
+                    "k": "昵称",
+                    "v": "Eriko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "11月１日"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        },
+        {
+            "key": "身高",
+            "value": "162cm"
+        },
+        {
+            "key": "BWH",
+            "value": "B78・W55・H79"
+        }
+    ],
+    "stat": {
+        "comments": 14,
+        "collects": 52
+    },
+    "id": 3526,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        308
+    ]
+}

@@ -1,0 +1,45 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/28/32/17696_crt_00jD2.jpg?r=1664071894",
+        "grid": "https://lain.bgm.tv/pic/crt/g/28/32/17696_crt_00jD2.jpg?r=1664071894",
+        "large": "https://lain.bgm.tv/pic/crt/l/28/32/17696_crt_00jD2.jpg?r=1664071894",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/28/32/17696_crt_00jD2.jpg?r=1664071894"
+    },
+    "summary": "錯乱坊の姪で巫女。本作初のレギュラーキャラの三親等親族キャラ。姓が不明で、皆からは「サクラ」「サクラさん」「サクラ先生」等としか呼ばれず、更に書き文字では「さくら」とは表記しない。婚約者に西洋魔術師（悪魔祓い師）の「尾津乃つばめ」がいる。スタイル抜群の美人だが、「〜じゃ」「おぬし〜」など、外見とつりあわない古臭い口調で話す。原作では第4話「あなたにあげる」が初登場。自宅の鳥居には「正一位」の扁額がかけられて、自宅表札は「妖怪屋敷」とある。また、自宅は最初は平屋建てだったが、いつの間にか二階建てに増築されている。",
+    "name": "サクラ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "樱花"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Sakura"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 13,
+        "collects": 34
+    },
+    "id": 17696,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        40003
+    ]
+}

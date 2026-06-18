@@ -1,0 +1,65 @@
+{
+    "birth_mon": 9,
+    "gender": "female",
+    "birth_day": 19,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2b/5f/57718_crt_PBAJN.jpg?r=1504868735",
+        "grid": "https://lain.bgm.tv/pic/crt/g/2b/5f/57718_crt_PBAJN.jpg?r=1504868735",
+        "large": "https://lain.bgm.tv/pic/crt/l/2b/5f/57718_crt_PBAJN.jpg?r=1504868735",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2b/5f/57718_crt_PBAJN.jpg?r=1504868735"
+    },
+    "summary": "雨露の先輩で、高校の生徒会長でもある。\r\n\r\n『僕』の通う西木蔦高校の生徒会長。三年生。コスモスの由来は、本名から一文字抜かすと「秋桜」になることから。一見クールそうだけど、とっても親しみやすくて、校内の評判も本当に高い。容姿端麗なだけでなく、なんと成績も学年ナンバーワン！　まさに完璧って感じなんだ。",
+    "name": "秋野桜",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "秋野樱"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "あきの さくら"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Akino Sakura"
+                },
+                {
+                    "k": "昵称",
+                    "v": "コスモス先輩、Cosmos学姐"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "9月19日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://ore.ski/character/cosmos.html"
+        }
+    ],
+    "stat": {
+        "comments": 4,
+        "collects": 31
+    },
+    "id": 57718,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        262943
+    ]
+}

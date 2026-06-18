@@ -1,0 +1,107 @@
+{
+    "id": 387822,
+    "name": "白圣女与黑牧师",
+    "image_path": "data\\images\\anime\\387822.jpg",
+    "points": 6.7,
+    "cost": 1,
+    "rarity": "N",
+    "description": "某国的教会住着长相可爱但有着懒洋洋小毛病的圣女——塞西莉亚，以及外表严肃却十分温柔，对圣女过度保护、家务全能的牧师——劳伦斯，两人一起度过的每一天，无时无刻都在不自觉地放闪。\r\n圣女×牧师×同居=奇迹般令人心焦！在幻想世界中展开的“不自觉的爱情喜剧”，开幕！！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "恋爱",
+        "日本",
+        "漫画改",
+        "日常"
+    ],
+    "date": "2023-07-12",
+    "rating_rank": 4154,
+    "rating_score": 6.7,
+    "rating_total": 5087,
+    "main_character_ids": [
+        116743,
+        116744
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c0/22/116743_crt_sSz37.jpg?r=1689608845",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c0/22/116743_crt_sSz37.jpg?r=1689608845",
+                "large": "https://lain.bgm.tv/pic/crt/l/c0/22/116743_crt_sSz37.jpg?r=1689608845",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c0/22/116743_crt_sSz37.jpg?r=1689608845"
+            },
+            "name": "セシリア",
+            "summary": "ある日ローレンスの住む街にやってきた聖女。\r\nローレンスと共に暮らしている。街の人々に慕われており、教会で悩み相談にのることも。人前ではきちんと振る舞うが、ローレンスの前ではだらけた姿を見せる。ローレンスのことは「ローレン」と呼んでいる。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/46/44/48181_prsn_XJX2Z.jpg?r=1750563963",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/46/44/48181_prsn_XJX2Z.jpg?r=1750563963",
+                        "large": "https://lain.bgm.tv/pic/crt/l/46/44/48181_prsn_XJX2Z.jpg?r=1750563963",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/46/44/48181_prsn_XJX2Z.jpg?r=1750563963"
+                    },
+                    "name": "澤田姫",
+                    "short_summary": "出身地：東京都\r\n\r\n趣味・特技：アクション、アクロバット、野球観戦、迷子、恋愛相談にのること\r\n所属場所：東京",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 48181,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 116743
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/cd/e8/116744_crt_1jNZa.jpg?r=1686747562",
+                "grid": "https://lain.bgm.tv/pic/crt/g/cd/e8/116744_crt_1jNZa.jpg?r=1686747562",
+                "large": "https://lain.bgm.tv/pic/crt/l/cd/e8/116744_crt_1jNZa.jpg?r=1686747562",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cd/e8/116744_crt_1jNZa.jpg?r=1686747562"
+            },
+            "name": "ローレンス",
+            "summary": "小さな教会を営む牧師。\r\n真面目で誰に対しても誠実に接する。セシリアに対して過保護な面もあるが、彼女から向けられる好意には全く気付いていない。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/af/c4/9953_prsn_O0Dsl.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/af/c4/9953_prsn_O0Dsl.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/af/c4/9953_prsn_O0Dsl.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/af/c4/9953_prsn_O0Dsl.jpg"
+                    },
+                    "name": "石川界人",
+                    "short_summary": "日本男性声优。隶属于Stay Luck，出生于东京都。\r\n\r\n趣味\t読書、一人劇\r\n特技\t水泳、ウィンタースポーツ\r\n経歴\tプロ・フィット声優養成所　卒\r\n2014年第八回声優アワードにて「新人男優賞」受賞。\r\n2020年第十四回声優アワードにて「助演男優賞」受賞。\r\n2022年2月1日、ステイラックへ移籍。\r\n\r\n2025年9月30日，宣布与内田真礼结婚。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 9953,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4c/b9/31512_prsn_Z57Xv.jpg?r=1551440055",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/4c/b9/31512_prsn_Z57Xv.jpg?r=1551440055",
+                        "large": "https://lain.bgm.tv/pic/crt/l/4c/b9/31512_prsn_Z57Xv.jpg?r=1551440055",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4c/b9/31512_prsn_Z57Xv.jpg?r=1551440055"
+                    },
+                    "name": "島袋美由利",
+                    "short_summary": "『ゆらぎ荘の幽奈さん』の湯ノ花幽奈役で初のメインキャラクターを担当。\r\n\r\n日本的女性声优，冲绳县出身。大泽事务所所属。\r\n\r\n2017年、『キラキラ☆プリキュアアラモード』でデビュー。2020年、第14回声優アワードで新人女優賞を受賞。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 31512,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 116744
+        }
+    ]
+}

@@ -1,0 +1,68 @@
+{
+    "birth_mon": 8,
+    "gender": "male",
+    "birth_day": 12,
+    "birth_year": null,
+    "blood_type": 3,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/15/61/14027_crt_3c6RC.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/15/61/14027_crt_3c6RC.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/15/61/14027_crt_3c6RC.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/15/61/14027_crt_3c6RC.jpg"
+    },
+    "summary": "《圣少女》的男主角。因为他的爸爸是一个警察所以他也很想当一名好警察，并立志抓住圣少女。但他并不知道一直和自己斗嘴的比丘芽美就是圣少女，因为尽管为了抓住圣少女他费尽心机，可每次都是无功而返。其实，内心常常会因为太在乎芽美而吃醋，导致自己胡言乱语，他心里暗暗地喜欢羽丘芽美。",
+    "name": "飛鳥大貴 / アスカJr.",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "飞鸟大贵/飞鸟二世"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "アスカ・ジュニア"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Asuka Junior"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あすか だいき"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "8月12日"
+        },
+        {
+            "key": "血型",
+            "value": "AB"
+        },
+        {
+            "key": "身高",
+            "value": "159cm"
+        },
+        {
+            "key": "体重",
+            "value": "53kg"
+        }
+    ],
+    "stat": {
+        "comments": 5,
+        "collects": 11
+    },
+    "id": 14027,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        11132
+    ]
+}

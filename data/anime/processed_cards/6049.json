@@ -1,0 +1,211 @@
+{
+    "id": 6049,
+    "name": "新世纪福音战士剧场版 Air/真心为你",
+    "image_path": "data\\images\\anime\\6049.jpg",
+    "points": 8.9,
+    "cost": 6,
+    "rarity": "UR",
+    "description": "　　神秘的EVA零号机驾驶员绫波丽，在与碇元度约定之时，来到了NERV底层中央教条的红色水池边。她的命运似乎就将在此结束。\r\n　　在危急时刻，葛城美里不但要完成加持良治交待的对“第二次浩劫”真相以及“人类补完计划”的探查工作，还要保护碇真嗣与明日香，以及防备SEELE 对初号机与二号机的物理接触。\r\n　　出于对碇元度的憎恨，赤木律子接受了SEELE引爆MAGI的提案，她能否成功？长期与SEELE共事的碇元度、冬月耕造、碇唯，为了防止人类“最终的悲剧”，而酝酿了的“人类补完计划”能否实现？尽在《新世纪福音战士》电影版第2部中解答。",
+    "type": 2,
+    "platform": "剧场版",
+    "episodes_for_hangup": 2,
+    "synergy_tags": [
+        "科幻",
+        "剧场版",
+        "机战",
+        "日本",
+        "原创"
+    ],
+    "date": "1997-07-19",
+    "rating_rank": 7,
+    "rating_score": 8.9,
+    "rating_total": 21547,
+    "main_character_ids": [
+        302,
+        303,
+        304
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e1/af/302_crt_ce4yO.jpg?r=1616247180",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e1/af/302_crt_ce4yO.jpg?r=1616247180",
+                "large": "https://lain.bgm.tv/pic/crt/l/e1/af/302_crt_ce4yO.jpg?r=1616247180",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e1/af/302_crt_ce4yO.jpg?r=1616247180"
+            },
+            "name": "碇シンジ",
+            "summary": "本故事的主角，14岁，操纵EVA初号机的第三适格者（THIRD CHILDREN）。 \r\n\r\nNERV司令碇源堂的独子。母亲死后，他就住在亲戚家中，和碇源堂分居了十年，突然接到父亲的信而来到第三新东京都市。有着极端内向的性格，极其害怕与陌生人接触，不知如何和别人相处而感到害怕，一直只是照着别人的要求而生活，之后慢慢地敞開了心扉。\r\n\r\n作为驾驶员的他与EVA初号机的同步值最高，在歼灭使徒的各次战役中的表现亦最为突出。但其本人性格内向、处事态度消极、遇事总是用“对不起”来逃避现实成为明日香对其最为反感的原因。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/37/ce/4054_prsn_wWwqj.jpg?r=1702781847",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/37/ce/4054_prsn_wWwqj.jpg?r=1702781847",
+                        "large": "https://lain.bgm.tv/pic/crt/l/37/ce/4054_prsn_wWwqj.jpg?r=1702781847",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/37/ce/4054_prsn_wWwqj.jpg?r=1702781847"
+                    },
+                    "name": "緒方恵美",
+                    "short_summary": "绪方惠美是日本东京都出生的女配音兼歌手（当歌手时的艺名为‘em:óu’），B型双子座。桐朋女子中学、高中毕业；东海大学海洋学系肄业。东京声专音乐学校（现在为昭和音乐艺术学院）歌剧科及同研究科毕业。\r\n主要以低沉沙哑的音质，替少年角色配音的她，其他也多半是替美型青年或男性化的女性等中性化角色配音为主。本人也曾经自己承认，或许是因为自己也是男性化的性格，所以也被称为「男八段」（这个绰号是广播节目《绪方惠美的向银河呐喊中》与听众一边交谈，一边所喝的酒的名字）。\r\n代表作有《幽游白书》（藏马／南野秀一）、《美少女战士Sailor Moon S》（天王遥／水手天王星）、《新世纪福音战士》（碇真嗣）等。",
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 4054,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/10/e4/75303_prsn_KVfvL.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/10/e4/75303_prsn_KVfvL.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/10/e4/75303_prsn_KVfvL.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/10/e4/75303_prsn_KVfvL.jpg"
+                    },
+                    "name": "罗伟杰",
+                    "short_summary": "罗伟杰（11月16日－），英文名： Chris，昵称：杰仔。香港自由身配音演员，1993年10月加入亚洲电视配音组。1998年任职自由身配音演员。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 75303,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "",
+                        "grid": "",
+                        "large": "",
+                        "medium": ""
+                    },
+                    "name": "朱憶華",
+                    "short_summary": "台湾女性配音员。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 79150,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 302
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c6/36/303_crt_9USuE.jpg?r=1681232400",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c6/36/303_crt_9USuE.jpg?r=1681232400",
+                "large": "https://lain.bgm.tv/pic/crt/l/c6/36/303_crt_9USuE.jpg?r=1681232400",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c6/36/303_crt_9USuE.jpg?r=1681232400"
+            },
+            "name": "綾波レイ",
+            "summary": "有着蓝色短发与红色眼睛的瘦弱少女，EVA驾驶员第一适格者，驾驶零号机。EVA零号机启动实验事故中负重伤，初次登场时包扎有大量绷带。过去经历全部被抹消，资料显示为14岁，行为举止特别。\r\n\r\n出生日期不明，在CD『エヴァンゲリオン THE BIRTHDAY OF Rei AYANAMI』由声优林原惠提议为2001年3月30日。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/86/ff/3919_prsn_0rRbZ.jpg?r=1681447490",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/86/ff/3919_prsn_0rRbZ.jpg?r=1681447490",
+                        "large": "https://lain.bgm.tv/pic/crt/l/86/ff/3919_prsn_0rRbZ.jpg?r=1681447490",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/86/ff/3919_prsn_0rRbZ.jpg?r=1681447490"
+                    },
+                    "name": "林原めぐみ",
+                    "short_summary": "日本的声优、歌手、DJ、作词家（化名为MEGUMI）、作家。出生于日本东京都北区。\r\n歌迷与动漫迷常以“小惠”（めぐさん）、“惠姐”（めぐ姉）及“阁下”（声优平松晶子命名）等方式称呼她。\r\n林原惠演过多部著名作品的主要女角及担任部分片头、片尾曲演唱，包含《新世纪福音战士》的绫波丽、《乱马1/2》的女乱马、《秀逗魔导士》的莉娜·因巴斯、《口袋妖怪》的武藏、《名侦探柯南》的灰原哀、《通灵王》的恐山安娜等，为日本公认的“声优女王”。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 3919,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/43/c9/35035_prsn_MdW1u.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/43/c9/35035_prsn_MdW1u.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/43/c9/35035_prsn_MdW1u.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/43/c9/35035_prsn_MdW1u.jpg"
+                    },
+                    "name": "Amanda Winn-Lee",
+                    "short_summary": "Amanda Winn-Lee is an American voice actress, writer and ADR director who mainly works on anime dubs. She voiced Heather Mason in the Silent Hill HD Collection and Silent Hill: Book of Memories.\r\n\r\nAmanda Beth Winn-Lee (born Amanda Winn) was born on November 14, 1972 in Houston, Texas. On June 22, 1997 she married Jason Lee. Amanda and Jason's son, Nicholas \"Noodle\" Lee, was born in November 2004. Her son was soon discovered to have infant leukemia, requiring extensive treatment before he was one year old. Amanda and Jason were not involved in any new projects for several years, because they were caring for their son. However, by November 2008, Nicholas has been cancer-free for three years, which is the benchmark for doctors that his odds of cancer recurrence are virtually non-existent.",
+                    "career": [
+                        "writer",
+                        "producer",
+                        "seiyu"
+                    ],
+                    "id": 35035,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a4/6f/79153_prsn_VMa66.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a4/6f/79153_prsn_VMa66.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/a4/6f/79153_prsn_VMa66.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a4/6f/79153_prsn_VMa66.jpg"
+                    },
+                    "name": "馬君珮",
+                    "short_summary": "台湾女性配音员，在投入配音事业前曾担任过空服员。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 79153,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 303
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d5/f7/304_crt_9b9fj.jpg?r=1774181539",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d5/f7/304_crt_9b9fj.jpg?r=1774181539",
+                "large": "https://lain.bgm.tv/pic/crt/l/d5/f7/304_crt_9b9fj.jpg?r=1774181539",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d5/f7/304_crt_9b9fj.jpg?r=1774181539"
+            },
+            "name": "惣流・アスカ・ラングレー",
+            "summary": "简称为明日香，作为第二适格者驾驶EVA贰号机。角色名［明日香］来源于和田慎二的漫画的主角，姓氏［惣流］和［兰格雷 (Langley)］分别来自于第二次世界大战时的日本航空母舰苍龙号（日语同音Sōryū）和美国航空母舰兰利号（Langley）。\r\n   \r\n明日香出生于德国12月4日，14岁，四分之一日本血统和四分之三德国血统的混血儿，美国国籍。设定为金发，实际情况多有变化。相貌端庄秀丽，活泼开朗，好胜，自尊心强，自傲于驾驶EVA的能力，经常把头部界面装置当作发箍配戴。自称「あたし」，称呼他人通常为「あんた」，部分「あなた」。口头禅是「あんたバカぁ?」（你白痴啊？）。\r\n\r\n明日香4岁时即被选为EVA驾驶员第二适格者，接受精英教育，14岁时大学毕业，在监护人加持良治的陪同下，与EVA贰号机前往第3新东京市NERV本部，2015年9月21日，转学至第3新东京市立第一中学2年A组。与贰号机交流语言为德语，日语亦十分流利。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bc/55/3972_prsn_xO855.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/bc/55/3972_prsn_xO855.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/bc/55/3972_prsn_xO855.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bc/55/3972_prsn_xO855.jpg"
+                    },
+                    "name": "宮村優子",
+                    "short_summary": "日本の声優、女優、歌手。兵庫県神戸市出身。JAEプロモーション所属。一部の作品においては闇村悠ノ介とクレジットされることもあった。代表作に『新世紀エヴァンゲリオン 』（惣流・アスカ・ラングレー）、『名探偵コナン』（遠山和葉）などがある。\r\n\r\n中学時代はテニス部に所属していたという。中学3年生になると受験で部活が終わり、その時、図書室で、戯曲集を見つけて、戯曲集のセリフに惹かれて演劇を始める。舞台が好きだったため、高校時代に演劇部に所属し、高校卒業後、桐朋学園短期大学演劇科で演劇を勉強をしていた。卒業後は日本ナレーション演技研究所に入所。ゲーム『拳聖土竜』の春麗役で声優デビュー。\r\n\r\n声優を目指したのは大学の進路指導の講師が、きっかけで、大学の進路指導で、皆が「劇団入る」、「プロダクション入る」と言っており、担当の講師が劇団青年座の関係者だったという。\r\n\r\n劇団の役者だけでは食べていくことができず、劇団青年座は声優として活動している役者が多く、同じ短大の先輩だったかないみか、川上とも子が、舞台役者から声優に転身して活躍していたのを知っていたため、「自分も挑戦してみたいな」と並行して声の仕事を始める。\r\n\r\n入団したかった劇団の入団テストに落選したこともあり、舞台の仕事より声の仕事の割合が徐々に増えていったという。\r\n\r\nアーツビジョン所属を経て、ジャパンアクションエンタープライズ (JAE) の俳優部門「JAEプロモーション」と業務提携。\r\n\r\n1995年に『愛天使伝説ウェディングピーチ』の珠野ひなぎく（エンジェルデイジー）役、『新世紀エヴァンゲリオン』の惣流・アスカ・ラングレー役で有名になる。\r\n\r\n1999年に漫画家のナカタニD.と結婚したが、翌年に離婚。\r\n\r\n2004年に同じJAE所属の男性スタントマン・関隆行と再婚。2007年にオーストラリアへ移住している。\r\n\r\n2006年より大阪北堀江にある放送芸術学院の併設校「大阪アニメーションスクール」でアフレコの授業を担当した。\r\n\r\n2016年に関隆行と離婚。親権は宮村が持つこととなった。\r\n\r\n2018年に日本へ帰国し、再び国内に拠点を戻すとともに同年1月にインターナショナル・メディア学院の講師に就任した。\r\n\r\n『ヱヴァンゲリヲン新劇場版』の式波・アスカ・ラングレー役、『名探偵コナン』の遠山和葉役などで活動を継続している。\r\n\r\n2022年5月、公式ホームページを開設した。",
+                    "career": [
+                        "producer",
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 3972,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "",
+                        "grid": "",
+                        "large": "",
+                        "medium": ""
+                    },
+                    "name": "劉凱寧",
+                    "short_summary": "台湾女性配音员。\r\n\r\n2016年移民至国外，现已退出配音界。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 79271,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 304
+        }
+    ]
+}

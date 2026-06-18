@@ -1,0 +1,65 @@
+{
+    "birth_mon": 6,
+    "gender": "female",
+    "birth_day": 30,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fa/16/57717_crt_d2JR9.jpg?r=1504868707",
+        "grid": "https://lain.bgm.tv/pic/crt/g/fa/16/57717_crt_d2JR9.jpg?r=1504868707",
+        "large": "https://lain.bgm.tv/pic/crt/l/fa/16/57717_crt_d2JR9.jpg?r=1504868707",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fa/16/57717_crt_d2JR9.jpg?r=1504868707"
+    },
+    "summary": "雨露の幼馴染。ひまわりという愛称は本名の漢字表記のアナグラムに由来する。\r\n\r\n『僕』のクラスメイトで幼馴染み。ひまわりの由来は、本名を並び替えると「向日葵」になることから。こう見えても女子テニス部のエースなんだ。つまり運動神経は抜群（でも成績はあまり良くない）。いつでも明るくて、常に元気だから、みんなからすっごく好かれてる人気者なんだ。",
+    "name": "日向葵",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "日向葵"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ひなた あおい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hinata Aoi"
+                },
+                {
+                    "k": "昵称",
+                    "v": "ひまわり、葵花"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "6月30日"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://ore.ski/character/himawari.html"
+        }
+    ],
+    "stat": {
+        "comments": 5,
+        "collects": 31
+    },
+    "id": 57717,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        262943
+    ]
+}

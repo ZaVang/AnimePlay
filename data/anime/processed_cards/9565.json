@@ -1,7 +1,7 @@
 {
     "id": 9565,
     "name": "龙珠",
-    "image_path": "data/images/anime/9565.jpg",
+    "image_path": "data\\images\\anime\\9565.jpg",
     "points": 8.2,
     "cost": 3,
     "rarity": "SR",

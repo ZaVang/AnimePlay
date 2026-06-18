@@ -1,0 +1,53 @@
+{
+    "birth_mon": 7,
+    "gender": "female",
+    "birth_day": 7,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6a/b9/94414_crt_3LLLe.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/6a/b9/94414_crt_3LLLe.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/6a/b9/94414_crt_3LLLe.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6a/b9/94414_crt_3LLLe.jpg"
+    },
+    "summary": "超絶最かわてんしちゃん、通称「超てんちゃん」。\r\n配信や各種コラボなど彼女の活躍は多岐にわたり、幅広い世代から支持されている。\r\n令和のインターネットを救済する天使として、みんなをいつも見守っている。\r\n\r\n网络天使。糖糖开直播时的变装。装作性格乖巧的样子。很轻易就会向宅男们谄媚。\r\nAn “internet angel.” Ame-chan’s alter ego, used while streaming. Pretends to be really nice and sweet. Constantly flirts with otaku types.",
+    "name": "超絶最かわてんしちゃん",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "超天酱"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "超绝最可爱天使酱"
+                },
+                {
+                    "k": "昵称",
+                    "v": "超てんちゃん"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月7日"
+        }
+    ],
+    "stat": {
+        "comments": 5,
+        "collects": 23
+    },
+    "id": 94414,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        606263
+    ]
+}

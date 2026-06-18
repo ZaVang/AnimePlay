@@ -1,7 +1,7 @@
 {
     "id": 1625,
     "name": "海马",
-    "image_path": "data/images/anime/1625.jpg",
+    "image_path": "data\\images\\anime\\1625.jpg",
     "points": 8.0,
     "cost": 3,
     "rarity": "SR",

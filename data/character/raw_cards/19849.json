@@ -1,0 +1,65 @@
+{
+    "birth_mon": 2,
+    "gender": "male",
+    "birth_day": 2,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7b/6c/19849_crt_rdwk5.jpg?r=1525687756",
+        "grid": "https://lain.bgm.tv/pic/crt/g/7b/6c/19849_crt_rdwk5.jpg?r=1525687756",
+        "large": "https://lain.bgm.tv/pic/crt/l/7b/6c/19849_crt_rdwk5.jpg?r=1525687756",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7b/6c/19849_crt_rdwk5.jpg?r=1525687756"
+    },
+    "summary": "鲛柄学园高中二年级生，专攻自由泳（捷泳）以及蝶泳。\r\n遥目前的最大对手。 \r\n曾暂停游泳训练并出国留学，归来后出现毫无预兆的改变。让曾经的队友迷惑不已。",
+    "name": "松岡凛",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "松冈凛"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Rin Matsuoka"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "まつおか りん"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Matsuoka Rin"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "2月2日"
+        },
+        {
+            "key": "身高",
+            "value": "179cm"
+        },
+        {
+            "key": "体重",
+            "value": "68kg"
+        }
+    ],
+    "stat": {
+        "comments": 13,
+        "collects": 85
+    },
+    "id": 19849,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        72109
+    ]
+}

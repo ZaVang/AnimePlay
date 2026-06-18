@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2c/51/31792_crt_yMQAd.jpg?r=1675931624",
+        "grid": "https://lain.bgm.tv/pic/crt/g/2c/51/31792_crt_yMQAd.jpg?r=1675931624",
+        "large": "https://lain.bgm.tv/pic/crt/l/2c/51/31792_crt_yMQAd.jpg?r=1675931624",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2c/51/31792_crt_yMQAd.jpg?r=1675931624"
+    },
+    "summary": "为恋情烦恼的啦啦队优等生。",
+    "name": "仁藤菜月",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "仁藤菜月"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "仁藤 菜月"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "にとう なつき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Nitō Natsuki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://www.kokosake.jp/character/"
+        }
+    ],
+    "stat": {
+        "comments": 25,
+        "collects": 29
+    },
+    "id": 31792,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        119344
+    ]
+}

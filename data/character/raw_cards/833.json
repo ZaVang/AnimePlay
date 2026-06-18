@@ -1,0 +1,58 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4c/60/833_crt_RB66b.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/4c/60/833_crt_RB66b.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/4c/60/833_crt_RB66b.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4c/60/833_crt_RB66b.jpg"
+    },
+    "summary": "纸术士，能够把纸变成纸墙壁等等的多样化武器。\r\n菫川奈奈奈的好朋友。\r\n为前大英图书馆的特工，曾帮助解决伟人事件。\r\n通称：The Paper。",
+    "name": "読子・リードマン",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "读子·列特文"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "読子・リードマン"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yomiko Readman"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "声优",
+            "value": "三浦理惠子"
+        }
+    ],
+    "stat": {
+        "comments": 17,
+        "collects": 60
+    },
+    "id": 833,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        1848,
+        1850
+    ]
+}

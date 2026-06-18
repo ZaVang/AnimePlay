@@ -1,0 +1,89 @@
+{
+    "id": 325808,
+    "name": "地狱乐",
+    "image_path": "data\\images\\anime\\325808.jpg",
+    "points": 6.3,
+    "cost": 1,
+    "rarity": "N",
+    "description": "时值江户时代末期。\r\n作为脱忍被囚禁而死罪的原石隐最强忍者的“画眉丸”，听闻如果从传说中的极乐净土带回长生不老的仙药，便可以无罪释放。\r\n画眉丸为了与最爱的妻子再会，与斩首执行人“山田浅卫门佐切”一起，前往仙药所在的小岛。\r\n画眉丸和佐切在岛上登陆后，同样是寻找仙药的死罪人们拦住了他们。\r\n还有潜藏在岛上的未知生物、人造的令人毛骨悚然的石像、统领小岛的仙人们……\r\n在神秘的岛上，画眉丸果然找到了仙药，他能活着回来吗——!?",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "漫画改",
+        "战斗"
+    ],
+    "date": "2023-04-01",
+    "rating_rank": 6471,
+    "rating_score": 6.3,
+    "rating_total": 5834,
+    "main_character_ids": [
+        86630,
+        121900
+    ],
+    "main_characters": [
+        {
+            "id": 86630,
+            "name": "山田浅ェ門佐切",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ff/ab/86630_crt_p79IX.jpg?r=1681629455",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ff/ab/86630_crt_p79IX.jpg?r=1681629455",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ff/ab/86630_crt_p79IX.jpg?r=1681629455",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ff/ab/86630_crt_p79IX.jpg?r=1681629455"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 10503,
+                    "name": "花守ゆみり",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/0f/09/10503_prsn_J4ENO.jpg?r=1708784297",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0f/09/10503_prsn_J4ENO.jpg?r=1708784297",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0f/09/10503_prsn_J4ENO.jpg?r=1708784297",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/0f/09/10503_prsn_J4ENO.jpg?r=1708784297"
+                    },
+                    "short_summary": "2022年12月末离开m&i事务所，并于2023年1月1日成为个人成立的声优事务所tomorrow jam所属\r\n出生地 日本神奈川县\r\n声优出道时间 2013年\r\n花守 ゆみり（はなもり ゆみり、1997年9月29日 - ）は、日本の女性声優。m&i所属。神奈川県出身。\r\n「第2回ぽにきゃん声たまオーディション」で審査員奨励賞を受賞しデビュー。\r\n\r\nアニメにはまりだしたのは中学2年生の時で、友人からの応援がきっかけで声優に対し興味を持ち始めたという。\r\nデビューのきっかけである「第2回ぽにきゃん声たまオーディション」では「rimyu」という名義を使用していた。\r\n2015年には、『ラジオどっとあい』第62代目パーソナリティを務めた。\r\n2016年公開の『ガラスの花と壊す世界』で劇場アニメ初出演で初主演を務め、2015年10月22日には、東京国際映画祭にて『ガラスの花と壊す世界』チームとして、石浜真史監督、石原良一プロデューサーと共にレッドカーペットを歩いた。\r\nポニーキャニオンアーティスツを経て、2017年3月まではスワロウに所属していたが、2017年4月にm&iに移籍した。\r\n\r\n趣味・特技は読書、歌う事、絵を描く事、テニス。\r\n好きな食べ物は、おつまみ系や炭酸ジュース。そこから村川梨衣にのんべぇと名前をかけて、「はなべぇ」というあだ名を付けてもらった。なお学校ではゆみりんごと呼ばれている。\r\n好きなアニメには『妖怪ウォッチ』、『イナズマイレブン』、『ダンボール戦機』、『PSYCHO-PASS』、『残響のテロル』を挙げている。\r\n仲の良い声優には、小澤亜李がいる。\r\n金田朋子の『金朋声優ラボ2』#7で共演した際に苗字は芸名であり、名前は漢字で表すのが本名であると述べている。 また、同番組において妹がいることにも触れている。\r\n自分の声を聞いた人に大切なものを届けられるような声優を目指しており、竹内順子に憧れている。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 121900,
+            "name": "画眉丸",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/cc/68/121900_crt_b8rB0.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cc/68/121900_crt_b8rB0.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/cc/68/121900_crt_b8rB0.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/cc/68/121900_crt_b8rB0.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 32265,
+                    "name": "小林千晃",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/2a/72/32265_prsn_BtQ9g.jpg?r=1631019139",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2a/72/32265_prsn_BtQ9g.jpg?r=1631019139",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2a/72/32265_prsn_BtQ9g.jpg?r=1631019139",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2a/72/32265_prsn_BtQ9g.jpg?r=1631019139"
+                    },
+                    "short_summary": "小林 千晃（こばやし ちあき、1994年6月4日 - ）は、日本の男性声優。神奈川県出身。大沢事務所所属。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

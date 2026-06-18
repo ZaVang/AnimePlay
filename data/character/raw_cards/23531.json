@@ -1,0 +1,65 @@
+{
+    "birth_mon": 8,
+    "gender": "male",
+    "birth_day": 31,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/dc/75/23531_crt_dfuoG.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/dc/75/23531_crt_dfuoG.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/dc/75/23531_crt_dfuoG.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dc/75/23531_crt_dfuoG.jpg"
+    },
+    "summary": "本作の主人公。私立朱雀高校2年。学校きっての問題児（いわゆる不良）で、教師にも生徒にも嫌われている。\r\n白石を階段で追い抜こうとしたところ足を滑らせ、白石と一緒に階段から転落。それがきっかけで白石と入れ替わってしまい、魔女探しの過程で人間関係に恵まれた高校生活を送るようになる。\r\n当初は「入れ替わりの能力」の持ち主と思われたが、実際は「キスした魔女の能力をコピーする能力」（ドラマ版では通称「魔女うつし」と呼ばれている）の持ち主。保持できる能力は1つだけで、別の能力を使う場合はその能力を持つ魔女とキスして能力を上書きする必要がある。",
+    "name": "山田竜",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "山田龙"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "山田竜"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "やまだ りゅう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yamada ryuu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "8月31日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "星座",
+            "value": "处女座"
+        }
+    ],
+    "stat": {
+        "comments": 3,
+        "collects": 10
+    },
+    "id": 23531,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        118906
+    ]
+}

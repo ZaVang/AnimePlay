@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0b/ed/121302_crt_CAtL8.jpg?r=1677332372",
+        "grid": "https://lain.bgm.tv/pic/crt/g/0b/ed/121302_crt_CAtL8.jpg?r=1677332372",
+        "large": "https://lain.bgm.tv/pic/crt/l/0b/ed/121302_crt_CAtL8.jpg?r=1677332372",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0b/ed/121302_crt_CAtL8.jpg?r=1677332372"
+    },
+    "summary": "在与病魔拔河去世后返老还童转移来到异世界。\r\n从神那里获得了「万能农具」及「健康的肉体」后开始在森林里开垦，打造农地和村子。\r\n\r\n闘病の末に命を落としたが、若返って異世界に転移した。\r\n「万能農具」·「健康な肉体」を神様からもらい、森を開拓して農地と村を作る。",
+    "name": "街尾火楽",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "街尾火乐"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Machio Hiraku"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://nonbiri-nouka.com/character/"
+        },
+        {
+            "key": "种族",
+            "value": "人类"
+        }
+    ],
+    "stat": {
+        "comments": 10,
+        "collects": 4
+    },
+    "id": 121302,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        376137
+    ]
+}

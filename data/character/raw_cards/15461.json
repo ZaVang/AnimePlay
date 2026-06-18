@@ -1,0 +1,49 @@
+{
+    "birth_mon": 5,
+    "gender": "female",
+    "birth_day": 12,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/07/db/15461_crt_ULaSP.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/07/db/15461_crt_ULaSP.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/07/db/15461_crt_ULaSP.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/07/db/15461_crt_ULaSP.jpg"
+    },
+    "summary": "本作で1、2を争うドジっ娘。誰にでも穏やかで優しい性格。天然な発言を多く使う。他人の恋愛模様に感情移入しやすい性格なのか、つみきと伊御の間にラブコメシーンが展開されるたび、ラブで萌えな空気に当てられ鼻血を噴く鼻血キャラ（単行本で一ページに1～2度の割合）。一同の中では押しが弱い方で、頻繁にパニックになる。\r\n主要メンバーの中では最も身体能力や反射神経が低く、先生から用事を押し付けられないために発せられた、伊御の「散れ!」にクラスの中で唯一反応できなかったが、真宵に対して、1回のみだが、ものスゴく早い張り手をくらわせた事がある（場に居合わせた、張り手を喰らった真宵は勿論、高い動体視力と身体能力を持った伊御、つみき、榊も唸ったほど）。\r\n登場する女性メンバーの中で特におしとやかな感じである。",
+    "name": "春野姫",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "春野姬"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "はるの ひめ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "5月12日"
+        }
+    ],
+    "stat": {
+        "comments": 8,
+        "collects": 41
+    },
+    "id": 15461,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        28431
+    ]
+}

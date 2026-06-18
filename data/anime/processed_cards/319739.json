@@ -1,0 +1,123 @@
+{
+    "id": 319739,
+    "name": "因为不是命中注定的同伴而被赶出了勇者的队伍、从此以后过上了悠闲的隐居生活",
+    "image_path": "data\\images\\anime\\319739.jpg",
+    "points": 5.7,
+    "cost": 1,
+    "rarity": "N",
+    "description": "「你不是真正的伙伴——」\r\n已经不能在前线战斗的英雄·雷德，被队伍里的贤者判断不再是战力后逐出了勇者队伍。\r\n「唉——那段日子可真难熬啊」因为雷德离开了队伍，贤者一行人陷入了大混乱中，而当事人却一无所知的在边境开了一家药店，兴致满满地度过每一天。\r\n「我也可以在这家店工作吗？需要包住！」曾经是伙伴的公主突然到来？！\r\n\r\n“悠闲愉快地经营药店”、“和冒失鬼公主的超甜生活”、没有得到回报的英雄上演的美妙第二人生即将开幕！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "TV",
+        "恋爱",
+        "日本",
+        "日常",
+        "小说改"
+    ],
+    "date": "2021-10-06",
+    "rating_rank": 8759,
+    "rating_score": 5.7,
+    "rating_total": 4646,
+    "main_character_ids": [
+        86626,
+        86627,
+        86628
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/54/0b/86626_crt_992YF.jpg?r=1632401622",
+                "grid": "https://lain.bgm.tv/pic/crt/g/54/0b/86626_crt_992YF.jpg?r=1632401622",
+                "large": "https://lain.bgm.tv/pic/crt/l/54/0b/86626_crt_992YF.jpg?r=1632401622",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/54/0b/86626_crt_992YF.jpg?r=1632401622"
+            },
+            "name": "リット",
+            "summary": "辺境の町ゾルタンのBランク冒険者。ギデオンとは旧知の仲。冒険者ギルドで聞いたレッドがギデオンその人ではないかと考え、開店したばかりの薬屋を訪れる。店の仕事を手伝いながら同居生活を送ることに。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fa/39/19355_prsn_cTmMJ.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/fa/39/19355_prsn_cTmMJ.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/fa/39/19355_prsn_cTmMJ.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fa/39/19355_prsn_cTmMJ.jpg"
+                    },
+                    "name": "高尾奏音",
+                    "short_summary": "ピアニスト高尾奏之介の妹であり、自身もミラノ国際ジュニアピアノコンクール1位などの経歴を持つ。\r\n・趣味：バレエ、読書\r\n・特技：ピアノ、歌\r\n・好きなアニメ：けいおん、ヤマノススメ\r\n・将来の夢：歌手、声優、モデル、ピアニスト",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 19355,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 86626
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/03/53/86627_crt_iJ2IU.jpg?r=1639328299",
+                "grid": "https://lain.bgm.tv/pic/crt/g/03/53/86627_crt_iJ2IU.jpg?r=1639328299",
+                "large": "https://lain.bgm.tv/pic/crt/l/03/53/86627_crt_iJ2IU.jpg?r=1639328299",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/03/53/86627_crt_iJ2IU.jpg?r=1639328299"
+            },
+            "name": "ルーティ",
+            "summary": "ギデオンの妹。「勇者」の加護によって、魔王討伐にのみ向かうことを宿命づけられている。ケタ外れの強さを備えている反面、感情表現も含めた人間らしさは、勇者に必要のないものとして加護の力で制限されている。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2b/15/10878_prsn_0F1Km.jpg?r=1542263067",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2b/15/10878_prsn_0F1Km.jpg?r=1542263067",
+                        "large": "https://lain.bgm.tv/pic/crt/l/2b/15/10878_prsn_0F1Km.jpg?r=1542263067",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2b/15/10878_prsn_0F1Km.jpg?r=1542263067"
+                    },
+                    "name": "大空直美",
+                    "short_summary": "日本女性声优。隶属于青二Production，大阪府出身。身高153cm、血型为A型。立命馆大学映像学部毕业。青二塾大阪校第28期毕业。\r\n\r\n小学3年生の頃、『ドラゴンボール』にのめり込み、ヒーローと一緒に世界を冒険するようなアニメの虜になった。\r\n中学・高校時代も友人と作品の批評を楽しみ、「関係する仕事をしたい」と立命館大学映像学部に入学。\r\n3年で映像作品のナレーターを務めた時、場面ごとに声の表情を考える自分と大好きなアニメの声優の姿が重なり、くすぶっていた気持ちに火が付き、家電量販店のアルバイトで授業料50万円を貯め、4年生だった2010年4月、青二プロダクションが運営する養成所・青二塾大阪校に入塾。\r\n大学卒業から1年後、青二プロダクションの所属試験に合格する。\r\n2012年6月、『聖闘士星矢Ω』の子供役で声優デビュー。\r\n2013年7月、『げんしけん二代目』のスザンナ・ホプキンス役で初レギュラーを獲得。\r\n2014年1月、『いなり、こんこん、恋いろは。』の伏見いなり役で初主演を務める。\r\n\r\n英検準2級、日本漢字能力検定3級を所持している。\r\n趣味はイラスト、似顔絵、ピアノ、ケーナで、特技は歌唱、ダンス、美味しいたこ焼きを焼くことである。\r\n好きな言葉は「為せば成る」。\r\n\r\n幼い頃から『ドラゴンボール』や『キン肉マン』などの東映アニメが好きで、エンドロールの『青二プロダクション』のクレジットを見て、「声優と言えばここだ！」と考えていたため、青二プロダクションへの所属を目指し、青二塾大阪校に通うことを決めた。\r\n日本テレビ系『幸せ!ボンビーガール』にて「声優の卵」として出演。100円ショップでアルバイトし、特別な日には高級焼肉店のタレでパンの耳を食べてレッスンに励む姿が紹介されたことがある。\r\n英語を得意としており、初期の仕事では顔出しで英語教室で英語を教わる生徒役で出演していた。\r\n『アイドルマスター シンデレラガールズ』では緒方智絵里役を好演。CDデビューの他、テレビアニメでもメインキャストとして出演している。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 10878,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 86627
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/12/fe/86628_crt_p44Dc.jpg?r=1632401272",
+                "grid": "https://lain.bgm.tv/pic/crt/g/12/fe/86628_crt_p44Dc.jpg?r=1632401272",
+                "large": "https://lain.bgm.tv/pic/crt/l/12/fe/86628_crt_p44Dc.jpg?r=1632401272",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/12/fe/86628_crt_p44Dc.jpg?r=1632401272"
+            },
+            "name": "レッド",
+            "summary": "辺境の町ゾルタンのDランク冒険者。薬草の採取と販売で生計を立てながら、自ら薬屋を営んで穏やかに暮らすことを目指している。勇者の旅立ちを守り導く「導き手」の加護を持ち、元々はパーティーの一員でもあった。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7f/7c/30620_prsn_037Bn.jpg?r=1723962282",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7f/7c/30620_prsn_037Bn.jpg?r=1723962282",
+                        "large": "https://lain.bgm.tv/pic/crt/l/7f/7c/30620_prsn_037Bn.jpg?r=1723962282",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7f/7c/30620_prsn_037Bn.jpg?r=1723962282"
+                    },
+                    "name": "鈴木崚汰",
+                    "short_summary": "日本の男性声優。愛知県出身。日本ナレーション演技研究所出身。ヴィムス所属。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 30620,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 86628
+        }
+    ]
+}

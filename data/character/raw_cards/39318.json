@@ -1,0 +1,65 @@
+{
+    "birth_mon": 3,
+    "gender": "female",
+    "birth_day": 20,
+    "birth_year": null,
+    "blood_type": 4,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ca/79/39318_crt_UxUhU.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ca/79/39318_crt_UxUhU.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/ca/79/39318_crt_UxUhU.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ca/79/39318_crt_UxUhU.jpg"
+    },
+    "summary": "超级有精力，元气十足，但也极端迟钝的女主角。\r\n“对这种小事这么敏感，对自己的事却那么迟钝。”（泷岛语） “总爱管别人的事，可对自己的事却察觉不到。......”（八寻语）\r\n把泷岛当作是最大的竞争对手（因为从小到大从来都没赢过泷岛）成绩是学年的万年第二，心中一直不忘小时候的屈辱，整天为了打倒泷岛而努力。被泷岛彗戏称为“万年第二名”而激起好胜心，在各方面对泷岛奋起直追。但在八寻告诉她要想让彗高兴就吻一下他后，竟真的这样做了，其实喜欢泷岛不过她却意识不到自己的感情。但在生病的时候就会性格180度大转弯变得很黏泷岛，裹成毛虫状也不忘找他，但是病好之后完全没有这段记忆。后来直到泷岛离开S·A转学去了伦敦才发现，他对自己来说是特别的，不仅是作为永远的竞争对手。最后和S·A其他人一起去找彗，并带着彗回到了S·A。",
+    "name": "華園光",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "华园光"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "華園光"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "はなぞの ひかり"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hanazono Hikari"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "3月20日"
+        },
+        {
+            "key": "血型",
+            "value": "O"
+        },
+        {
+            "key": "身高",
+            "value": "155"
+        }
+    ],
+    "stat": {
+        "comments": 0,
+        "collects": 4
+    },
+    "id": 39318,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        1963
+    ]
+}

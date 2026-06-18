@@ -1,0 +1,81 @@
+{
+    "birth_mon": 7,
+    "gender": "female",
+    "birth_day": 3,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7d/de/4833_crt_P0v2f.jpg?r=1739760446",
+        "grid": "https://lain.bgm.tv/pic/crt/g/7d/de/4833_crt_P0v2f.jpg?r=1739760446",
+        "large": "https://lain.bgm.tv/pic/crt/l/7d/de/4833_crt_P0v2f.jpg?r=1739760446",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7d/de/4833_crt_P0v2f.jpg?r=1739760446"
+    },
+    "summary": "今作のメインヒロイン。拓巳がニュージェネ第三の事件（張り付け事件）の現場で出会った謎の少女。屈託ない明るさを持つ行動派で口癖は「ビシィッ!」。",
+    "name": "咲畑梨深",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "咲畑梨深"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "咲畑 梨深"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "さきはた りみ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sakihata Rimi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "????-07-03"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "158cm"
+        },
+        {
+            "key": "体重",
+            "value": "46kg"
+        },
+        {
+            "key": "BWH",
+            "value": "84cm/58cm/86cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "年龄",
+            "value": "17岁"
+        }
+    ],
+    "stat": {
+        "comments": 31,
+        "collects": 127
+    },
+    "id": 4833,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        884
+    ]
+}

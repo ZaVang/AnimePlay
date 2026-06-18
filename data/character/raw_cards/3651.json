@@ -1,0 +1,65 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c2/03/3651_crt_anidb.jpg?r=1364401449",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c2/03/3651_crt_anidb.jpg?r=1364401449",
+        "large": "https://lain.bgm.tv/pic/crt/l/c2/03/3651_crt_anidb.jpg?r=1364401449",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c2/03/3651_crt_anidb.jpg?r=1364401449"
+    },
+    "summary": "",
+    "name": "笠原郁",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "笠原郁"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "堂上郁"
+                },
+                {
+                    "k": "日文名",
+                    "v": "笠原 郁"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "かさはら いく"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kasahara Iku"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "170cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "stat": {
+        "comments": 2,
+        "collects": 16
+    },
+    "id": 3651,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        294
+    ]
+}

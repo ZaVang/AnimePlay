@@ -1,0 +1,65 @@
+{
+    "birth_mon": 3,
+    "gender": "female",
+    "birth_day": 17,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c8/69/3325_crt_u24Ex.jpg?r=1648101184",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c8/69/3325_crt_u24Ex.jpg?r=1648101184",
+        "large": "https://lain.bgm.tv/pic/crt/l/c8/69/3325_crt_u24Ex.jpg?r=1648101184",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c8/69/3325_crt_u24Ex.jpg?r=1648101184"
+    },
+    "summary": "　　《一骑当千》的主角。天真烂漫的好战少女，没有性别之分，经常被人称为笨蛋，体内封印着水龙之力，战斗潜力不可限量，是难得的习武天才，后取代袁术成为南阳君主。在觉醒以后开始散发出领主的霸气，拥有可以打破命运诅咒的力量。作者盐崎雄二说，以孙策为主人公的理由是“谁都没以孙策为主人公过”。\r\n　　原作漫画中为救周瑜跟随张纮学习水龙拳从而觉醒而回归赤壁之战战场逆转命运之力。动画版则在第二季被暴走曹操打飞，之后在张纮的指点下与于吉战斗中觉醒。",
+    "name": "孫策伯符",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "孙策伯符"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "そんさくはくふ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sonsaku Hakufu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "3月17日"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        },
+        {
+            "key": "身高",
+            "value": "162cm"
+        },
+        {
+            "key": "BWH",
+            "value": "B93 W56 H88"
+        }
+    ],
+    "stat": {
+        "comments": 1,
+        "collects": 31
+    },
+    "id": 3325,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        3909
+    ]
+}

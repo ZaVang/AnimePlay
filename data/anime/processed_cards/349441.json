@@ -1,0 +1,123 @@
+{
+    "id": 349441,
+    "name": "机动战士高达 水星的魔女",
+    "image_path": "data\\images\\anime\\349441.jpg",
+    "points": 6.5,
+    "cost": 1,
+    "rarity": "N",
+    "description": "星元122年――\r\n\r\n在众多企业扩展到宇宙并构筑巨大经济圈的时代，\r\n有一名少女自边境地区·水星转来MS产业的最大企业“贝纳里特集团”旗下所经营的“阿斯提卡西亚高等专门学园”。\r\n\r\n她名为苏莱塔·墨丘利。\r\n内心纯真的少女随着胸口鲜红的闪烁亮光逐步迈向新世界。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "百合",
+        "机战",
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "2022-10-02",
+    "rating_rank": 5452,
+    "rating_score": 6.5,
+    "rating_total": 9007,
+    "main_character_ids": [
+        111918,
+        111919,
+        111920
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c4/33/111918_crt_1PK1F.jpg?r=1657925886",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c4/33/111918_crt_1PK1F.jpg?r=1657925886",
+                "large": "https://lain.bgm.tv/pic/crt/l/c4/33/111918_crt_1PK1F.jpg?r=1657925886",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c4/33/111918_crt_1PK1F.jpg?r=1657925886"
+            },
+            "name": "スレッタ・マーキュリー",
+            "summary": "来自水星的转学生，驾驶科2年级生。\r\n性格内向，有些不擅与人沟通。\r\n是水星所开发的MS，GUNDAM AERIAL的驾驶员。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/eb/38/31136_prsn_BfZxJ.jpg?r=1737363637",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/eb/38/31136_prsn_BfZxJ.jpg?r=1737363637",
+                        "large": "https://lain.bgm.tv/pic/crt/l/eb/38/31136_prsn_BfZxJ.jpg?r=1737363637",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/eb/38/31136_prsn_BfZxJ.jpg?r=1737363637"
+                    },
+                    "name": "市ノ瀬加那",
+                    "short_summary": "北海道帯広工業高等学校建築科出身。\r\n札幌スクールオブミュージック&ダンス専門学校出身。2016年4月に事務所に入所。\r\n\r\n2018年1月より放送のTVアニメ『ダーリン・イン・ザ・フランキス』のイチゴ役は市ノ瀬にとって、初のメインキャストとなった。\r\n2018年10月、超!A&G+とAG-ON Premiumで配信している「ラジオどっとあい」第76代目パーソナリティーに選ばれる。\r\n2019年4月7日、Twitterを始める。\r\n\r\n趣味は一人旅、スカイウォッチング、映画鑑賞。小・中学生時代にバスケットボールをやっており、現在も特技としている。\r\n\r\n危険物取扱者丙種、プレゼンテーション作成検定3級、日本語ワープロ検定3級、情報処理技能検定2級、パソコンスピード認定3級の資格を所持している。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 31136,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 111918
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f0/bd/111919_crt_36ee0.jpg?r=1657925907",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f0/bd/111919_crt_36ee0.jpg?r=1657925907",
+                "large": "https://lain.bgm.tv/pic/crt/l/f0/bd/111919_crt_36ee0.jpg?r=1657925907",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f0/bd/111919_crt_36ee0.jpg?r=1657925907"
+            },
+            "name": "ミオリネ・レンブラン",
+            "summary": "容貌美丽，成绩出色的经营战略科2年级生。\r\n是学园理事长，贝纳里特集团总裁德林·伦布兰的独生女。\r\n对自己的父亲怀有强烈的反抗心。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/76/43/15497_prsn_b9qz3.jpg?r=1709906632",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/76/43/15497_prsn_b9qz3.jpg?r=1709906632",
+                        "large": "https://lain.bgm.tv/pic/crt/l/76/43/15497_prsn_b9qz3.jpg?r=1709906632",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/76/43/15497_prsn_b9qz3.jpg?r=1709906632"
+                    },
+                    "name": "Lynn",
+                    "short_summary": "日本的女性声优。アーツビジョン所属。成长于新潟县（出生地为神奈川县）。\r\n兴趣：看电影、照相、乒乓球\r\n由声优事务所ARTSVISION附属的声优养成所日本播音演技研究所，所毕业。\r\n喜欢猫科动物，最喜欢的歌手绚香，最喜欢食物拉面。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 15497,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 111919
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/af/ad/111920_crt_0J8Y0.jpg?r=1657925922",
+                "grid": "https://lain.bgm.tv/pic/crt/g/af/ad/111920_crt_0J8Y0.jpg?r=1657925922",
+                "large": "https://lain.bgm.tv/pic/crt/l/af/ad/111920_crt_0J8Y0.jpg?r=1657925922",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/af/ad/111920_crt_0J8Y0.jpg?r=1657925922"
+            },
+            "name": "グエル・ジェターク",
+            "summary": "集团内三巨头之一的杰特克公司的公子哥，驾驶科3年级生。\r\n脾气粗暴，情绪容易激动。\r\n作为杰特克宿舍的精英驾驶员，对自己的实力有着绝对的自信。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ab/7d/11166_prsn_zPNV2.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ab/7d/11166_prsn_zPNV2.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/ab/7d/11166_prsn_zPNV2.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ab/7d/11166_prsn_zPNV2.jpg"
+                    },
+                    "name": "阿座上洋平",
+                    "short_summary": "阿座上洋平（1991年8月7日－），日本男性声优。出身于群马县。身高180cm。青二Production所属，青二塾东京校第31期毕业。2016年4月至9月播映的电视动画《黑骸》第一次配音主演。\r\n\r\n兴趣是电影鉴赏、打棒球。特长是打篮球。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 11166,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 111920
+        }
+    ]
+}

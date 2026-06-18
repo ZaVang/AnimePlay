@@ -1,7 +1,7 @@
 {
     "id": 18692,
     "name": "哆啦A梦",
-    "image_path": "data/images/anime/18692.jpg",
+    "image_path": "data\\images\\anime\\18692.jpg",
     "points": 8.5,
     "cost": 5,
     "rarity": "HR",

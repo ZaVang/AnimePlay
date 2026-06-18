@@ -1,0 +1,40 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5e/e5/162270_crt_Tzk48.jpg?r=1722518552",
+        "grid": "https://lain.bgm.tv/pic/crt/g/5e/e5/162270_crt_Tzk48.jpg?r=1722518552",
+        "large": "https://lain.bgm.tv/pic/crt/l/5e/e5/162270_crt_Tzk48.jpg?r=1722518552",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5e/e5/162270_crt_Tzk48.jpg?r=1722518552"
+    },
+    "summary": "いかにもおじさんらしい外見の52歳男性。温厚な性格。アニメや特撮ヒーローが好き。妻子と共に平凡な生活を送っていたが、交通事故をきっかけに乙女ゲーム『マジカル学園ラブ＆ビースト』のキャラクター、グレイス・オーヴェルヌに転生。長年社会で培った‟おじさん”スキルを駆使しながら、貴族令嬢として異世界生活を送ることに。",
+    "name": "屯田林憲三郎",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "屯田林宪三郎"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 5,
+        "collects": 16
+    },
+    "id": 162270,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        473497
+    ]
+}

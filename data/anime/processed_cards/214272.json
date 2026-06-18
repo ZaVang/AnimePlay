@@ -1,0 +1,93 @@
+{
+    "id": 214272,
+    "name": "欢迎来到实力至上主义的教室",
+    "image_path": "data\\images\\anime\\214272.jpg",
+    "points": 6.2,
+    "cost": 1,
+    "rarity": "N",
+    "description": "这个社会是否平等呢。真正的“实力”是什么——。\r\n东京都高度育成高等学校。那是宣扬彻底的实力至上主义，以升学率·就业率100%而引以为豪的升学学校。升入那里，被分配到1年D班的绫小路清隆，却发现学校与实力至上主义的招牌相反，学生每个月会得到相当于10万日元、与现金同等价值的分数，在授课和生活态度方面也贯彻放任主义。在梦幻般的高中生活当中，不断地挥金如土、过着自甘堕落日子的同班同学们。但，不久他就得知了学校系统的真面目，并被打入绝望的深渊……！\r\n来自吊车尾聚集的D班的少年少女们所发现的，是世界的矛盾，还是正当的实力社会？",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "校园",
+        "后宫",
+        "TV",
+        "日本",
+        "小说改"
+    ],
+    "date": "2017-07-12",
+    "rating_rank": 7097,
+    "rating_score": 6.2,
+    "rating_total": 15551,
+    "main_character_ids": [
+        53767,
+        53768
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/80/4a/53767_crt_iatMC.jpg?r=1646570423",
+                "grid": "https://lain.bgm.tv/pic/crt/g/80/4a/53767_crt_iatMC.jpg?r=1646570423",
+                "large": "https://lain.bgm.tv/pic/crt/l/80/4a/53767_crt_iatMC.jpg?r=1646570423",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/80/4a/53767_crt_iatMC.jpg?r=1646570423"
+            },
+            "name": "堀北鈴音",
+            "summary": "本作的女主角，D班的领军人物，学习成绩优异，但不愿意与其他人交流，常常表现的很冷漠、毫不留情。为了追赶自己的哥哥堀北学而来到学校。在学校的特殊考试中的出色发挥使她渐渐成为领头人物，在失败中渐渐成长，试图不再依赖绫小路，而是靠自己赢得考试。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a1/78/19339_prsn_R7laF.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a1/78/19339_prsn_R7laF.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/a1/78/19339_prsn_R7laF.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a1/78/19339_prsn_R7laF.jpg"
+                    },
+                    "name": "鬼頭明里",
+                    "short_summary": "鬼頭明里（きとう あかり）は、日本の女性声優である。ラクーンドッグ所属。\r\nあだ名は「あかりん」。\r\n\r\n10月16日生まれ、愛知県出身、血液型B型、153cm。プロ・フィット声優養成所を経て、現事務所に2015年4月から所属。\r\n趣味は絵を描くこと、歌うこと。特技は絵を描くこと、歌うこと、湯切り。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 19339,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 53767
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/56/88/53768_crt_31O7O.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/56/88/53768_crt_31O7O.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/56/88/53768_crt_31O7O.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/56/88/53768_crt_31O7O.jpg"
+            },
+            "name": "綾小路清隆",
+            "summary": "本作的主人公。虽然帅气程度在男生中排第五，但不善与人交流，一直试图交更多的朋友。D班真正的王牌与幕后，以堀北铃音作为掩护隐藏了自己的实力，虽然经常暗中帮助堀北，但也会为了自己的目的让她吃苦头。为了胜利不择手段，会利用可以利用的一切资源，不管是敌方或是友方。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2d/3a/19619_prsn_booOs.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2d/3a/19619_prsn_booOs.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/2d/3a/19619_prsn_booOs.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2d/3a/19619_prsn_booOs.jpg"
+                    },
+                    "name": "千葉翔也",
+                    "short_summary": "千叶翔也（1995年8月29日－）是日本男性声优及演员（前儿童演员），TOY'S FACTORY所属。\r\n\r\n兴趣及专长是吉他、看音乐剧。是宝冢歌剧团的粉丝。\r\n高中时期曾经加入了轻音乐部。\r\n在广播节目“千叶翔也的浪漫千层派”里提到自己崇拜的声优前辈是逢坂良太。",
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 19619,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 53768
+        }
+    ]
+}

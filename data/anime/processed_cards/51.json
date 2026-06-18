@@ -1,7 +1,7 @@
 {
     "id": 51,
     "name": "CLANNAD",
-    "image_path": "data/images/anime/51.jpg",
+    "image_path": "data\\images\\anime\\51.jpg",
     "points": 8.3,
     "cost": 4,
     "rarity": "SSR",

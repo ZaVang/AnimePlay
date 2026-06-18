@@ -1,0 +1,48 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8c/fe/97758_crt_dzdka.jpg?r=1633996752",
+        "grid": "https://lain.bgm.tv/pic/crt/g/8c/fe/97758_crt_dzdka.jpg?r=1633996752",
+        "large": "https://lain.bgm.tv/pic/crt/l/8c/fe/97758_crt_dzdka.jpg?r=1633996752",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8c/fe/97758_crt_dzdka.jpg?r=1633996752"
+    },
+    "summary": "交響曲第5番\r\nハ短調Op.67「運命」\r\n\r\nL.V.ベートーヴェン『交響曲第5番ハ短調Op.67』――『運命』をその身に宿したムジカート。淑やかな外見ながら、表情の変化は少なく、口調も常に敬語。一見可憐だが、口を開けば痛烈な毒舌が飛び出し、とにかく『甘いもの』に目が無いという型破りな性格。パートナーであるコンダクターのタクトとは、浅からぬ過去を持つ。",
+    "name": "運命",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "命运"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Symphony No.5 in c minor Op.67"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Destiny"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 53,
+        "collects": 151
+    },
+    "id": 97758,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        331535
+    ]
+}

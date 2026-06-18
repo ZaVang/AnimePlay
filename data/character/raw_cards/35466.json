@@ -1,0 +1,73 @@
+{
+    "birth_mon": 8,
+    "gender": "female",
+    "birth_day": 24,
+    "birth_year": null,
+    "blood_type": 1,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6f/99/35466_crt_2h66J.jpg?r=1610522956",
+        "grid": "https://lain.bgm.tv/pic/crt/g/6f/99/35466_crt_2h66J.jpg?r=1610522956",
+        "large": "https://lain.bgm.tv/pic/crt/l/6f/99/35466_crt_2h66J.jpg?r=1610522956",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6f/99/35466_crt_2h66J.jpg?r=1610522956"
+    },
+    "summary": "巧の幼なじみで、教会で暮らしている。\r\n幼い頃に「絶対に本当のことは言わない」と誓った狼少女。「二回死ね！」は口癖で、実は繊細な心の裏表？",
+    "name": "芹沢文乃",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "芹泽文乃"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "せりざわ ふみの"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Serizawa Fumino"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "8月24日"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "身高",
+            "value": "158cm"
+        },
+        {
+            "key": "体重",
+            "value": "44kg"
+        },
+        {
+            "key": "BWH",
+            "value": "84/58/84"
+        },
+        {
+            "key": "引用来源",
+            "value": "ja.wikipedia.org/wiki/迷い猫オーバーラン!"
+        }
+    ],
+    "stat": {
+        "comments": 7,
+        "collects": 45
+    },
+    "id": 35466,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        4292
+    ]
+}

@@ -1,0 +1,91 @@
+{
+    "id": 299498,
+    "name": "宇崎学妹想要玩！",
+    "image_path": "data\\images\\anime\\299498.jpg",
+    "points": 6.1,
+    "cost": 1,
+    "rarity": "N",
+    "description": "性格有些孤僻喜爱安静的大学三年级生，樱井真一。总是被小一届，同高中毕业的学妹宇崎花，以各种照顾爱耍孤僻的学长的名义为由，进行各种无厘头的纠缠。虽然一开始觉得有点困扰，但却逐渐习惯起来……",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "恋爱",
+        "日本",
+        "漫画改",
+        "日常"
+    ],
+    "date": "2020-07-10",
+    "rating_rank": 7428,
+    "rating_score": 6.1,
+    "rating_total": 4234,
+    "main_character_ids": [
+        75065,
+        75066
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/fa/2a/75065_crt_Q9U98.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/fa/2a/75065_crt_Q9U98.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/fa/2a/75065_crt_Q9U98.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fa/2a/75065_crt_Q9U98.jpg"
+            },
+            "name": "宇崎花",
+            "summary": "19歳の大学2年生。\r\n桜井の高校時代の部活の後輩。\r\n大学でいつも一人の桜井を不憫に思い、\r\n何かとちょっかいをかけている。\r\nノリとテンションで行動する脳天気なタイプ。\r\n勉強やスボーツは苦手だが、ゲームは得意......！？",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2b/15/10878_prsn_0F1Km.jpg?r=1542263067",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2b/15/10878_prsn_0F1Km.jpg?r=1542263067",
+                        "large": "https://lain.bgm.tv/pic/crt/l/2b/15/10878_prsn_0F1Km.jpg?r=1542263067",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2b/15/10878_prsn_0F1Km.jpg?r=1542263067"
+                    },
+                    "name": "大空直美",
+                    "short_summary": "日本女性声优。隶属于青二Production，大阪府出身。身高153cm、血型为A型。立命馆大学映像学部毕业。青二塾大阪校第28期毕业。\r\n\r\n小学3年生の頃、『ドラゴンボール』にのめり込み、ヒーローと一緒に世界を冒険するようなアニメの虜になった。\r\n中学・高校時代も友人と作品の批評を楽しみ、「関係する仕事をしたい」と立命館大学映像学部に入学。\r\n3年で映像作品のナレーターを務めた時、場面ごとに声の表情を考える自分と大好きなアニメの声優の姿が重なり、くすぶっていた気持ちに火が付き、家電量販店のアルバイトで授業料50万円を貯め、4年生だった2010年4月、青二プロダクションが運営する養成所・青二塾大阪校に入塾。\r\n大学卒業から1年後、青二プロダクションの所属試験に合格する。\r\n2012年6月、『聖闘士星矢Ω』の子供役で声優デビュー。\r\n2013年7月、『げんしけん二代目』のスザンナ・ホプキンス役で初レギュラーを獲得。\r\n2014年1月、『いなり、こんこん、恋いろは。』の伏見いなり役で初主演を務める。\r\n\r\n英検準2級、日本漢字能力検定3級を所持している。\r\n趣味はイラスト、似顔絵、ピアノ、ケーナで、特技は歌唱、ダンス、美味しいたこ焼きを焼くことである。\r\n好きな言葉は「為せば成る」。\r\n\r\n幼い頃から『ドラゴンボール』や『キン肉マン』などの東映アニメが好きで、エンドロールの『青二プロダクション』のクレジットを見て、「声優と言えばここだ！」と考えていたため、青二プロダクションへの所属を目指し、青二塾大阪校に通うことを決めた。\r\n日本テレビ系『幸せ!ボンビーガール』にて「声優の卵」として出演。100円ショップでアルバイトし、特別な日には高級焼肉店のタレでパンの耳を食べてレッスンに励む姿が紹介されたことがある。\r\n英語を得意としており、初期の仕事では顔出しで英語教室で英語を教わる生徒役で出演していた。\r\n『アイドルマスター シンデレラガールズ』では緒方智絵里役を好演。CDデビューの他、テレビアニメでもメインキャストとして出演している。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 10878,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 75065
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/27/47/75066_crt_THTmm.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/27/47/75066_crt_THTmm.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/27/47/75066_crt_THTmm.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/27/47/75066_crt_THTmm.jpg"
+            },
+            "name": "桜井真一",
+            "summary": "20歳の大学3年生。\r\n騒々しい空間が苦手で、一人で静かに\r\n過ごすが好き。宇崎には”ぼっち”扱いされ、\r\n毎日絡まれ続けている。目つきは悪いが\r\n礼儀正しい常識人で、宇崎の突飛な行動に\r\nツッコミを入れることが多い。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f6/aa/5685_prsn_LeGaq.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f6/aa/5685_prsn_LeGaq.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/f6/aa/5685_prsn_LeGaq.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f6/aa/5685_prsn_LeGaq.jpg"
+                    },
+                    "name": "赤羽根健治",
+                    "short_summary": "赤羽根 健治（あかばね けんじ、1984年10月31日 - ）は、日本の声優。青二プロダクション所属。\r\n\r\n千葉県出身。アミューズメントメディア総合学院卒業。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 5685,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 75066
+        }
+    ]
+}

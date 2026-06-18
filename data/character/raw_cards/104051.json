@@ -1,0 +1,61 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/19/08/104051_crt_DJfE4.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/19/08/104051_crt_DJfE4.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/19/08/104051_crt_DJfE4.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/19/08/104051_crt_DJfE4.jpg"
+    },
+    "summary": "Neo (born Thomas A. \"Tom\" Anderson), is the main protagonist of The Matrix franchise.",
+    "name": "Neo",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "尼奥"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "托马斯·安德森"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Thomas A. Anderson"
+                },
+                {
+                    "k": "昵称",
+                    "v": "Tom"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "身高",
+            "value": "186cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://matrix.fandom.com/wiki/Neo"
+        }
+    ],
+    "stat": {
+        "comments": 0,
+        "collects": 0
+    },
+    "id": 104051,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        496
+    ]
+}

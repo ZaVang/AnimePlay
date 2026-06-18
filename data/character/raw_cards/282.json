@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7c/0a/282_crt_KAqX8.jpg?r=1473588829",
+        "grid": "https://lain.bgm.tv/pic/crt/g/7c/0a/282_crt_KAqX8.jpg?r=1473588829",
+        "large": "https://lain.bgm.tv/pic/crt/l/7c/0a/282_crt_KAqX8.jpg?r=1473588829",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7c/0a/282_crt_KAqX8.jpg?r=1473588829"
+    },
+    "summary": "依附在仁雕成的木像上的少女姿态的神，与仁在一个学校读书。除了态度骄傲和第一人称是“妾”以外，完全不像个神，有时也会搞笑。虽然以驱邪作为自己使命，不过因为是分身魂，并不能直接接触到它们。A罩杯。喜欢吃点心，甚至把美味棒揉碎了洒在米饭上或者夹在面包里吃，因此最近得了口腔溃疡。周围的人把她当作仁的同父异母的姐姐。",
+    "name": "ナギ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "薙"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "ナギ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Nagi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "155cm"
+        },
+        {
+            "key": "BWH",
+            "value": "78/57/80"
+        }
+    ],
+    "stat": {
+        "comments": 8,
+        "collects": 139
+    },
+    "id": 282,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        902
+    ]
+}

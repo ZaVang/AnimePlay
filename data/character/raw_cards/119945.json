@@ -1,0 +1,69 @@
+{
+    "birth_mon": 2,
+    "gender": "male",
+    "birth_day": 3,
+    "birth_year": null,
+    "blood_type": 2,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fd/ee/119945_crt_jXG5X.jpg?r=1675669080",
+        "grid": "https://lain.bgm.tv/pic/crt/g/fd/ee/119945_crt_jXG5X.jpg?r=1675669080",
+        "large": "https://lain.bgm.tv/pic/crt/l/fd/ee/119945_crt_jXG5X.jpg?r=1675669080",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fd/ee/119945_crt_jXG5X.jpg?r=1675669080"
+    },
+    "summary": "編入試験1位の実力を持つイケメン。\r\n相当な魔力を持ち、学業成績もトップクラス。",
+    "name": "ランス・クラウン",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "兰斯·库朗"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Lance Crown"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "2月3日"
+        },
+        {
+            "key": "血型",
+            "value": "B"
+        },
+        {
+            "key": "身高",
+            "value": "178cm"
+        },
+        {
+            "key": "体重",
+            "value": "70kg"
+        },
+        {
+            "key": "足のサイズ",
+            "value": "28cm"
+        },
+        {
+            "key": "休日の過ごし方",
+            "value": "部屋の掃除"
+        }
+    ],
+    "stat": {
+        "comments": 1,
+        "collects": 5
+    },
+    "id": 119945,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        389571
+    ]
+}

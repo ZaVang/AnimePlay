@@ -1,0 +1,57 @@
+{
+    "birth_mon": 6,
+    "gender": "female",
+    "birth_day": 24,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f7/8a/21401_crt_W3oqX.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f7/8a/21401_crt_W3oqX.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/f7/8a/21401_crt_W3oqX.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f7/8a/21401_crt_W3oqX.jpg"
+    },
+    "summary": "本作另一主角，是春香的好朋友，花型发饰是她的注册商标。\r\n\r\n很爱撒娇，除了对春香外，也会对琴音等好友撒娇。\r\n\r\n成绩不是很好，常常抄春香的作业，也常被留下来课后辅导。",
+    "name": "園田優",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "园田优"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "園田 優"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "そのだ ゆう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sonoda Yuu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "6月24日"
+        }
+    ],
+    "stat": {
+        "comments": 11,
+        "collects": 63
+    },
+    "id": 21401,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        80838
+    ]
+}

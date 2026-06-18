@@ -1,0 +1,61 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b3/1d/2913_crt_anidb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b3/1d/2913_crt_anidb.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/b3/1d/2913_crt_anidb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b3/1d/2913_crt_anidb.jpg"
+    },
+    "summary": "",
+    "name": "ホシノ・ルリ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "星野琉璃"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Ruri Hoshino"
+                },
+                {
+                    "k": "日文名",
+                    "v": "星野ルリ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hoshino Ruri"
+                },
+                {
+                    "k": "昵称",
+                    "v": "ルリルリ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "stat": {
+        "comments": 41,
+        "collects": 237
+    },
+    "id": 2913,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        516
+    ]
+}

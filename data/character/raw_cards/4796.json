@@ -1,0 +1,68 @@
+{
+    "birth_mon": 7,
+    "gender": "male",
+    "birth_day": 4,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c9/6e/4796_crt_anidb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c9/6e/4796_crt_anidb.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/c9/6e/4796_crt_anidb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c9/6e/4796_crt_anidb.jpg"
+    },
+    "summary": "ガーディアンのＱ（クイーンズ）チェア。\r\n唯世とのことを応援してくれる、あむの親友。\r\nあむを、ガーディアンに誘う際には神出鬼没で、策略家的な面もあった。\r\n料理が得意。",
+    "name": "藤咲なでしこ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "藤咲抚子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "藤咲なでしこ(女装)"
+                },
+                {
+                    "k": "日文名",
+                    "v": "藤咲凪彦(男装)"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ふじさきなでしこ（女装）    ふじさき なぎひこ（男装）"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Fujisaki Nadeshiko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "????-07-04"
+        },
+        {
+            "key": "血型",
+            "value": "ＡＢ型"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "stat": {
+        "comments": 15,
+        "collects": 56
+    },
+    "id": 4796,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        2427
+    ]
+}

@@ -1,0 +1,124 @@
+{
+    "id": 211311,
+    "name": "恶魔人 crybaby",
+    "image_path": "data\\images\\anime\\211311.jpg",
+    "points": 7.8,
+    "cost": 2,
+    "rarity": "R",
+    "description": "随着恶魔觉醒，人类世界陷入混乱。性格温柔的男孩与恶魔合体，在神秘好友飞鸟了的指引下，卷入一场残酷、堕落的对抗邪恶之战。",
+    "type": 2,
+    "platform": "WEB",
+    "episodes_for_hangup": 10,
+    "synergy_tags": [
+        "日本",
+        "漫画改",
+        "战斗",
+        "WEB"
+    ],
+    "date": "2018-01-05",
+    "rating_rank": 424,
+    "rating_score": 7.8,
+    "rating_total": 11872,
+    "main_character_ids": [
+        6824,
+        37475
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/de/58/6824_crt_anidb.jpg?r=1722329185",
+                "grid": "https://lain.bgm.tv/pic/crt/g/de/58/6824_crt_anidb.jpg?r=1722329185",
+                "large": "https://lain.bgm.tv/pic/crt/l/de/58/6824_crt_anidb.jpg?r=1722329185",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/de/58/6824_crt_anidb.jpg?r=1722329185"
+            },
+            "name": "不動明",
+            "summary": "ひ弱で優しい少年だったが、デーモンと合体。 \r\n強大な力を得つつも人間の心を失わないデビルマンとなる。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0f/d1/5768_prsn_35lt8.jpg?r=1637964101",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/0f/d1/5768_prsn_35lt8.jpg?r=1637964101",
+                        "large": "https://lain.bgm.tv/pic/crt/l/0f/d1/5768_prsn_35lt8.jpg?r=1637964101",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0f/d1/5768_prsn_35lt8.jpg?r=1637964101"
+                    },
+                    "name": "内山昂輝",
+                    "short_summary": "内山 昂輝（うちやま こうき、1990年8月16日 - ）は、日本の声優、俳優。劇団ひまわり所属。\r\n早稲田大学卒業。 国際基督教大学高等学校出身。 1993年に劇団ひまわりに入団し、子役としてテレビドラマへの出演や少年役の吹き替えを主に行っていた。舞台経験はない。なお、声優として初めて参加した作品はA.I.である。\r\n2005年に発売された『キングダム ハーツII』のロクサス役で注目を浴び、その後は声優としての活動が多くなっている。内山本人も自身を「明朗快活なタイプではない」と語っているように、主にどこか影のある少年役を演じるが、明るい少年役を演じることも多くなっている。\r\n2011年、第5回声優アワードにて新人男優賞を受賞。2015年、東京アニメアワード2015で発表されたアニメ オブ ザ イヤーで声優賞を受賞。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 5768,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/61/53/31932_prsn_aI8S3.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/61/53/31932_prsn_aI8S3.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/61/53/31932_prsn_aI8S3.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/61/53/31932_prsn_aI8S3.jpg"
+                    },
+                    "name": "山崎智史",
+                    "short_summary": "山崎 智史（やまざき さとし、2007年2月15日 - ）は、日本の子役、声優。\r\n\r\n所属 - 劇団ひまわり",
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 31932,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 6824
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/70/e0/37475_crt_ATvvw.jpg?r=1649331978",
+                "grid": "https://lain.bgm.tv/pic/crt/g/70/e0/37475_crt_ATvvw.jpg?r=1649331978",
+                "large": "https://lain.bgm.tv/pic/crt/l/70/e0/37475_crt_ATvvw.jpg?r=1649331978",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/70/e0/37475_crt_ATvvw.jpg?r=1649331978"
+            },
+            "name": "飛鳥了",
+            "summary": "明の幼なじみで親友。 \r\nデビルマンとなった明とともにデーモンとの戦いに身を投じる。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ee/d9/8253_prsn_5s7m7.jpg?r=1775328732",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ee/d9/8253_prsn_5s7m7.jpg?r=1775328732",
+                        "large": "https://lain.bgm.tv/pic/crt/l/ee/d9/8253_prsn_5s7m7.jpg?r=1775328732",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ee/d9/8253_prsn_5s7m7.jpg?r=1775328732"
+                    },
+                    "name": "村瀬歩",
+                    "short_summary": "日本の男性声優。アメリカ合衆国出身。ヴィムス所属。\r\n\r\nアメリカで生まれた後、高校時代まで愛知県で過ごし、京都府の大学に進学後上京。\r\n芝居を観るのが好きだったことから声優を目指し、日本ナレーション演技研究所へ入所。2012年、『Persona4 the ANIMATION』で声優デビュー。同年、『新世界より』の青沼瞬（14歳）役で初のメインキャラクターを演じた。2014年、『ハイキュー!!』の日向翔陽役で初主演を果たした。\r\n2016年に、第10回声優アワードで新人男優賞を受賞した。\r\n\r\n尊敬する声優は、自身が声優を目指すきっかけとなった大友龍三郎や、年齢が近く共演も多い松岡禎丞。\r\n中性的な音質を生かした役を演じることが多く、女性のガヤに加わったり、『チア男子!!』では佐久間龍造役と姉3名の役も兼ねるなど、女性キャラクターを演じることもある。またラジオなどでも村瀬歩（あゆみ）という女子の設定で話すことがある。一方で、『M3〜ソノ黒キ鋼〜』の伊削ヘイト役のように狂気じみた低音ボイスもこなせるほど声域が非常に広い。\r\n帰国子女のため英会話が堪能で、英語を必要とするモブキャラやガヤもこなし、洋画の吹き替えも増えている。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 8253,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/41/b2/44428_prsn_UCj8a.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/41/b2/44428_prsn_UCj8a.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/41/b2/44428_prsn_UCj8a.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/41/b2/44428_prsn_UCj8a.jpg"
+                    },
+                    "name": "藤村真優",
+                    "short_summary": "",
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 44428,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 37475
+        }
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b4/e2/9313_crt_anidb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b4/e2/9313_crt_anidb.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/b4/e2/9313_crt_anidb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b4/e2/9313_crt_anidb.jpg"
+    },
+    "summary": "",
+    "name": "月島雫",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "月岛雫"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "月島雫"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "つきしま しずく"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Tsukishima Shizuku"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "stat": {
+        "comments": 6,
+        "collects": 57
+    },
+    "id": 9313,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        500
+    ]
+}

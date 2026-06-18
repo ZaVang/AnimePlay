@@ -1,0 +1,61 @@
+{
+    "birth_mon": 8,
+    "gender": "female",
+    "birth_day": 25,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/eb/47/21400_crt_UL46l.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/eb/47/21400_crt_UL46l.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/eb/47/21400_crt_UL46l.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/eb/47/21400_crt_UL46l.jpg"
+    },
+    "summary": "本作主角，美里西高中一年级学生，白色缎带是她的注册商标。\r\n\r\n与优熟识前没有其他好友，因此重度依赖著优，连座位没靠在一起都大受打击。除此之外，连看到优和他同学手挽着手，都会觉得自己的特别座被别人抢走而忌妒不已，甚至还会受不了逃走。\r\n\r\n个性有点天然呆，但成绩不错，能够指导优学习。",
+    "name": "高山春香",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "高山春香"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "高山 春香"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "たかやま はるか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Takayama Haruka"
+                },
+                {
+                    "k": "昵称",
+                    "v": "春ぽっぽ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "8月25日"
+        }
+    ],
+    "stat": {
+        "comments": 23,
+        "collects": 67
+    },
+    "id": 21400,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        80838
+    ]
+}

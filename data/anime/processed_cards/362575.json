@@ -1,0 +1,124 @@
+{
+    "id": 362575,
+    "name": "通往夏天的隧道，再见的出口",
+    "image_path": "data\\images\\anime\\362575.jpg",
+    "points": 6.1,
+    "cost": 1,
+    "rarity": "N",
+    "description": "「你知道浦岛隧道吗？据说只要进入那条隧道，就能得到任何想要的事物；但相对地也会变老——」\r\n高中生塔野薰听说了这样的都市传说，碰巧就在当天夜晚，发现了疑似传言所指的隧道。只要进入这条隧道，或许就能救回五年前过世的妹妹。\r\n放学后，薰开始独自探勘隧道，却被转学生花城杏子发现。两人为了得到彼此想要的东西而携手合作。充满前所未有体验的惊奇夏天，即将开始。",
+    "type": 2,
+    "platform": "剧场版",
+    "episodes_for_hangup": 1,
+    "synergy_tags": [
+        "剧场版",
+        "恋爱",
+        "日本",
+        "奇幻",
+        "小说改"
+    ],
+    "date": "2022-09-09",
+    "rating_rank": 7252,
+    "rating_score": 6.1,
+    "rating_total": 5414,
+    "main_character_ids": [
+        73044,
+        73045
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ee/87/73044_crt_hSa5p.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ee/87/73044_crt_hSa5p.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/ee/87/73044_crt_hSa5p.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ee/87/73044_crt_hSa5p.jpg"
+            },
+            "name": "塔野カオル",
+            "summary": "田舎町の高校二年生。父親と二人暮らし。幼少期のある出来事がきっかけで心に葛藤を抱えている。ひょんなことから願いを叶えるというウラシマトンネルの存在を知る。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8f/a7/45046_prsn_KVM2z.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/8f/a7/45046_prsn_KVM2z.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/8f/a7/45046_prsn_KVM2z.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8f/a7/45046_prsn_KVM2z.jpg"
+                    },
+                    "name": "鈴鹿央士",
+                    "short_summary": "鈴鹿 央士（すずか おうじ、2000年〈平成12年〉1月11日 - ）は、日本の俳優、モデル。岡山県出身。フォスター所属。",
+                    "career": [
+                        "actor"
+                    ],
+                    "id": 45046,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d9/c6/54872_prsn_22JJv.jpg?r=1685279378",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d9/c6/54872_prsn_22JJv.jpg?r=1685279378",
+                        "large": "https://lain.bgm.tv/pic/crt/l/d9/c6/54872_prsn_22JJv.jpg?r=1685279378",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d9/c6/54872_prsn_22JJv.jpg?r=1685279378"
+                    },
+                    "name": "中村悠人",
+                    "short_summary": "出身地：東京都\r\n趣　味：アニメ鑑賞、youtube鑑賞\r\n特　技：イラスト、歌を歌う\r\n\r\nTeam BareboAt メンバー",
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 54872,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 73044
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/9c/86/73045_crt_forU3.jpg?r=1686805788",
+                "grid": "https://lain.bgm.tv/pic/crt/g/9c/86/73045_crt_forU3.jpg?r=1686805788",
+                "large": "https://lain.bgm.tv/pic/crt/l/9c/86/73045_crt_forU3.jpg?r=1686805788",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9c/86/73045_crt_forU3.jpg?r=1686805788"
+            },
+            "name": "花城あんず",
+            "summary": "東京からきた転校生。容姿端麗で頭脳明晰。転校初日にクラスで浮いた存在となるが、ある出来事をきっかけに、カオルと共にウラシマトンネル探索の協力関係を結ぶ。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/df/fe/29963_prsn_0Lvve.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/df/fe/29963_prsn_0Lvve.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/df/fe/29963_prsn_0Lvve.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/df/fe/29963_prsn_0Lvve.jpg"
+                    },
+                    "name": "飯豊まりえ",
+                    "short_summary": "千葉県千葉市出身。2008年7月、alanの「懐かしい未来〜longing future〜」のバック・コーラス、及びPV出演し、デビュー。同年10月12日、「avex kids×ニコ☆プチ公開モデルオーディション」にて応募総数約800人の中からグランプリを受賞。翌年4月号の『ニコ☆プチ』で誌面に初登場。\r\n\r\n2009年6月（8月号）、『ニコ☆プチ』にて初めて表紙を飾る。\r\n\r\n2011年2月、芸名を飯豊まりえに改名。同年6月号の『ニコ☆プチ』にて専属モデルを卒業、『ニコ☆プチ』での表紙回数は当時最多および歴代3位の6回であった。また、『ニコ☆プチ』の姉妹雑誌にあたる『nicola』に6月号から移籍し、専属モデルを勤める。『nicola』7月号で初の海外ロケ参加。同年9月、ベストジーニスト2012一般新人部門の第1回予選に参加。一般投票にて第1位を獲得し、2012年実施予定の決勝戦への切符を掴むが受賞には至らなかった。\r\n\r\n2012年6月（7月号）、『nicola』にて初めて表紙を飾る。同年9月号にて藤麻理亜、田中若葉、中川可菜と新ユニット「ニコラ盛り上げ隊」を結成し、「NEXTニコモユニット総選挙!」にエントリー。11月号にて同企画の人気発表にて1位に選ばれたことを発表し、読者からユニット名を募集し、12月号にてユニット名が「TiFN★」に決定した。\r\n\r\n2013年、『nicola』7月号で2度目の海外ロケ参加。同年は最多9回の表紙を飾り、2014年1月号では珍しい単独での表紙となった。また、特撮番組『獣電戦隊キョウリュウジャー』に2代目キョウリュウバイオレットとして出演。\r\n\r\n2014年5月号を以って『nicola』を卒業。表紙掲載回数は12回（内単独回数1回）であった。7月1日、『Seventeen』8月1日発売の9月号からSeventeenの専属モデルとなると本人公式ブログで発表した。『週刊ヤングジャンプ』12月18日発売号にて初めて水着グラビアを披露した。\r\n\r\n2016年7月、フジテレビ系ドラマ『好きな人がいること』で「月9」枠初出演。\r\n\r\n2017年4月1日公開の映画『暗黒女子』で映画初主演。同年7月期のドラマにおいては、『マジで航海してます。』（主演）と『居酒屋ふじ』（ヒロイン役）に掛け持ちで出演する。",
+                    "career": [
+                        "actor"
+                    ],
+                    "id": 29963,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/59/7d/39813_prsn_JRhrJ.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/59/7d/39813_prsn_JRhrJ.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/59/7d/39813_prsn_JRhrJ.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/59/7d/39813_prsn_JRhrJ.jpg"
+                    },
+                    "name": "詹佳",
+                    "short_summary": "詹佳，中国上海电影译制厂的配音演员、配音导演，国家一级演员，上海电影家协会会员，中国电影华表奖、五个一工程奖获得者。代表作有动画《拳皇命运》不知火舞，游戏《英雄联盟》卡特琳娜、《王者荣耀》小乔，电视剧《爱情公寓3》诺澜等。现居上海。\r\n\r\n6岁开始参加文艺工作。\r\n毕业于上海戏剧学院表演系。2004年7月进入上海电影译制厂任配音演员。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 39813,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 73045
+        }
+    ]
+}

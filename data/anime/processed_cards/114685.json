@@ -1,0 +1,125 @@
+{
+    "id": 114685,
+    "name": "可塑性记忆",
+    "image_path": "data\\images\\anime\\114685.jpg",
+    "points": 7,
+    "cost": 1,
+    "rarity": "N",
+    "description": "故事发生在一个比现在的科学要进步的世界。18岁的水柿司高考失败，多亏父母找关系得以进入世界大企业SAI社工作。SAI社是制造管理拥有感情的人形智能机器人（通称：Giftia）的企业，司在其中被安排到终端服务部门工作。这个部门其实就是回收即将到期的Giftia，是所谓的“窗边部门（不被重视的部门）”。于是司和打杂的Giftia少女“艾拉”组成搭档，一起开始了工作……",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "科幻",
+        "TV",
+        "恋爱",
+        "日本",
+        "原创"
+    ],
+    "date": "2015-04-04",
+    "rating_rank": 2524,
+    "rating_score": 7,
+    "rating_total": 12583,
+    "main_character_ids": [
+        29362,
+        29363,
+        29544
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/62/6d/29362_crt_A4rOr.jpg?r=1423553804",
+                "grid": "https://lain.bgm.tv/pic/crt/g/62/6d/29362_crt_A4rOr.jpg?r=1423553804",
+                "large": "https://lain.bgm.tv/pic/crt/l/62/6d/29362_crt_A4rOr.jpg?r=1423553804",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/62/6d/29362_crt_A4rOr.jpg?r=1423553804"
+            },
+            "name": "アイラ",
+            "summary": "",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a2/62/12568_prsn_jLLz4.jpg?r=1693248727",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a2/62/12568_prsn_jLLz4.jpg?r=1693248727",
+                        "large": "https://lain.bgm.tv/pic/crt/l/a2/62/12568_prsn_jLLz4.jpg?r=1693248727",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a2/62/12568_prsn_jLLz4.jpg?r=1693248727"
+                    },
+                    "name": "雨宮天",
+                    "short_summary": "雨宫天（あまみや そら）是日本的女性声优、歌手，1993年8月28日出生于日本东京都。\r\n\r\n[b]经历[/b]\r\n1993年8月28日出生于日本东京都；因憧憬声优[url=https://bgm.tv/person/4244]泽城美雪[/url]而向往成为一名声优。\r\n在2011年举办的第2回MusicRay'n超级声优试镜中合格，2012年声优活动开始，2014年在TV动画《[url=https://bgm.tv/subject/88493]一周的朋友。[/url]》担任[url=https://bgm.tv/character/23104]藤宫香织[/url]CV,为初主役角色。\r\n2014年12月21日，与同事务所的[url=https://bgm.tv/person/13565]麻仓桃[/url]、[url=https://bgm.tv/person/13581]夏川椎菜[/url]组成声优组合“[url=https://bgm.tv/person/18492]TrySail[/url]”，并于2015年·正式开始活动。\r\n2015年第9回声优奖中获得新人女声优奖。\r\n2015年10月2日，发行自己的第一部写真集《ソライロ～青と旅する～》。\r\n2020年4月17日，开通绘画日记企划期间限定Twitter账号(现已转为永久账号)",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 12568,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 29362
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/5f/0a/29363_crt_WLWr5.jpg?r=1423554630",
+                "grid": "https://lain.bgm.tv/pic/crt/g/5f/0a/29363_crt_WLWr5.jpg?r=1423554630",
+                "large": "https://lain.bgm.tv/pic/crt/l/5f/0a/29363_crt_WLWr5.jpg?r=1423554630",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5f/0a/29363_crt_WLWr5.jpg?r=1423554630"
+            },
+            "name": "水柿ツカサ",
+            "summary": "18岁，大学考试落榜后，在父母利用关系下进入“SAI社”工作。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/51/13/5456_prsn_GIAmL.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/51/13/5456_prsn_GIAmL.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/51/13/5456_prsn_GIAmL.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/51/13/5456_prsn_GIAmL.jpg"
+                    },
+                    "name": "たくみ靖明",
+                    "short_summary": "日本の男性声優、舞台俳優。東京俳優生活協同組合所属。愛知県出身。",
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 5456,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 29363
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d7/67/29544_crt_5bffX.jpg?r=1423554474",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d7/67/29544_crt_5bffX.jpg?r=1423554474",
+                "large": "https://lain.bgm.tv/pic/crt/l/d7/67/29544_crt_5bffX.jpg?r=1423554474",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d7/67/29544_crt_5bffX.jpg?r=1423554474"
+            },
+            "name": "絹島ミチル",
+            "summary": "司的前辈，17岁的女性社员。负责指导司的工作。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/18/51/7297_prsn_9Dfe9.jpg?r=1496038723",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/18/51/7297_prsn_9Dfe9.jpg?r=1496038723",
+                        "large": "https://lain.bgm.tv/pic/crt/l/18/51/7297_prsn_9Dfe9.jpg?r=1496038723",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/18/51/7297_prsn_9Dfe9.jpg?r=1496038723"
+                    },
+                    "name": "赤﨑千夏",
+                    "short_summary": "81プロデュース所属。鹿児島県出身。\r\n\r\n声優を志したのは小学5、6年生頃のこと。中学生時代はバスケットボール部と放送部に所属し、放送部では鹿児島県大会での受賞経歴がある。錦江湾高校在学中は同高校に演劇部がなかったため、地元の市民劇団「劇団いぶき」に所属した。\r\n\r\n家族に2歳上の姉がいる。目標にしている先輩として皆口裕子の名を挙げている。方言は鹿児島弁。趣味・特技は歌。\r\n\r\n東京学芸大学教育学部演劇専修（ゼロ免課程）卒業。大学では第2外国語としてイタリア語を履修。\r\nボイスニュータイプ・サマーオーディション2008で文化放送賞、81プロデュース賞、アルケミスト賞を受賞。81プロデュース賞の受賞特典として2008年10月から、81ACTOR'S STUDIO（81プロデュース付属俳優養成所）に通っていた。2009年10月に養成所を卒業、2010年4月に81プロデュース所属となった。\r\n\r\n2012年にテレビアニメ『キルミーベイベー』で折部やすな役で初めての主役級キャラクターに抜擢。その後の『モーレツ宇宙海賊』『中二病でも恋がしたい!』『恋愛ラボ』等でも主要キャラクターを演じ、2013年に放送された『俺の彼女と幼なじみが修羅場すぎる』では初の（主役ではない）メインヒロインを務めた。\r\n\r\n2018年8月10日、自身のTwitterで結婚を発表した。2020年8月10日、第1子男児の出産を報告。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 7297,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 29544
+        }
+    ]
+}

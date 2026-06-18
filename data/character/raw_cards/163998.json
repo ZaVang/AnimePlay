@@ -1,0 +1,81 @@
+{
+    "birth_mon": 9,
+    "gender": "female",
+    "birth_day": 15,
+    "birth_year": null,
+    "blood_type": 1,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/88/ef/163998_crt_BVfyT.jpg?r=1747034364",
+        "grid": "https://lain.bgm.tv/pic/crt/g/88/ef/163998_crt_BVfyT.jpg?r=1747034364",
+        "large": "https://lain.bgm.tv/pic/crt/l/88/ef/163998_crt_BVfyT.jpg?r=1747034364",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/88/ef/163998_crt_BVfyT.jpg?r=1747034364"
+    },
+    "summary": "ファッションとコスメが好きな女の子。流行への感度も高く、SNSでの情報収集も欠かさない。好き嫌いが激しい性格で、驚くほど口が悪い。魔女修業を達成して願いを叶えることに、誰よりも熱意がある。",
+    "name": "新里アズ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "新里杏珠"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "新里 アズ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "にいさと アズ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Niisato Azu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "9月15日"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "身高",
+            "value": "152.5cm"
+        },
+        {
+            "key": "年龄",
+            "value": "15岁（高校1年生）"
+        },
+        {
+            "key": "喜欢的食物",
+            "value": "シュークリーム"
+        },
+        {
+            "key": "讨厌的食物",
+            "value": "あんこ"
+        },
+        {
+            "key": "兴趣",
+            "value": "美容とファッション全般。デパコス代用コスメ探し"
+        }
+    ],
+    "stat": {
+        "comments": 105,
+        "collects": 59
+    },
+    "id": 163998,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        511207
+    ]
+}

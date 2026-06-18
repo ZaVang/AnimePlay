@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e7/79/77132_crt_z2h4h.jpg?r=1592197608",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e7/79/77132_crt_z2h4h.jpg?r=1592197608",
+        "large": "https://lain.bgm.tv/pic/crt/l/e7/79/77132_crt_z2h4h.jpg?r=1592197608",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e7/79/77132_crt_z2h4h.jpg?r=1592197608"
+    },
+    "summary": "幼いころにガドルに襲われ、父と右腕を無くした少女。「かの力」に入隊し戦士としてガドルと戦うことを夢見ていたが、現実は厳しく、装甲修理人としてカブラギの下で働くことに。明るく元気な猪突猛進タイプ。",
+    "name": "ナツメ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "枣"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Nastume"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://decadence-anime.com/"
+        }
+    ],
+    "stat": {
+        "comments": 30,
+        "collects": 61
+    },
+    "id": 77132,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        285879
+    ]
+}

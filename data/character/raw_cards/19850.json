@@ -1,0 +1,65 @@
+{
+    "birth_mon": 11,
+    "gender": "male",
+    "birth_day": 17,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4b/b5/19850_crt_8PCCJ.jpg?r=1525687753",
+        "grid": "https://lain.bgm.tv/pic/crt/g/4b/b5/19850_crt_8PCCJ.jpg?r=1525687753",
+        "large": "https://lain.bgm.tv/pic/crt/l/4b/b5/19850_crt_8PCCJ.jpg?r=1525687753",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4b/b5/19850_crt_8PCCJ.jpg?r=1525687753"
+    },
+    "summary": "岩鸢高中二年级生，专攻仰泳。 \r\n遥的发小，亲友。 十分理解遥，经常担当其代言人。 \r\n会深切为别人思考，对恐怖的事物没办法。",
+    "name": "橘真琴",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "橘真琴"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Makoto Tachibana"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "たちばな まこと"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Tachibana Makoto"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "11月17日"
+        },
+        {
+            "key": "身高",
+            "value": "168cm→183cm→184cm"
+        },
+        {
+            "key": "体重",
+            "value": "73kg"
+        }
+    ],
+    "stat": {
+        "comments": 33,
+        "collects": 127
+    },
+    "id": 19850,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        72109
+    ]
+}

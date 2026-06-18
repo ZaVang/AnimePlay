@@ -1,0 +1,45 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e2/a6/71239_crt_iwdQg.jpg?r=1565220367",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e2/a6/71239_crt_iwdQg.jpg?r=1565220367",
+        "large": "https://lain.bgm.tv/pic/crt/l/e2/a6/71239_crt_iwdQg.jpg?r=1565220367",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e2/a6/71239_crt_iwdQg.jpg?r=1565220367"
+    },
+    "summary": "17歳で、剣士志望。\r\n騎士の家の出。\r\n実家の父親・兄弟の騎士としての姿に憧れを抱き、自身も立派な騎士になることを目標としている。\r\n美男子とも見て取れるその外見からか、男性と間違われることもしばしば。",
+    "name": "メーヴィス・フォン・オースティン",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "梅维丝·冯·奥斯汀"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Mavis von Austien"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 2,
+        "collects": 11
+    },
+    "id": 71239,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        238962
+    ]
+}

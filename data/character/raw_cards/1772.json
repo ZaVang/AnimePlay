@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bc/f7/1772_crt_0j45E.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/bc/f7/1772_crt_0j45E.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/bc/f7/1772_crt_0j45E.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bc/f7/1772_crt_0j45E.jpg"
+    },
+    "summary": "本編の主人公。「努力と根性でがんばります！」がモットーの、\r\n元気がとりえの感情豊かな少女。\r\n宇宙パイロットを目指し、雪深い山村から家出してきた。\r\n「ノノリリになりたい！」が口癖。",
+    "name": "ノノ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "诺诺"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "ノノリリ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "ノノリリ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 38,
+        "collects": 212
+    },
+    "id": 1772,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        768
+    ]
+}

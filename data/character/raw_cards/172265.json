@@ -1,0 +1,40 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/22/8a/172265_crt_IH2fP.jpg?r=1740928787",
+        "grid": "https://lain.bgm.tv/pic/crt/g/22/8a/172265_crt_IH2fP.jpg?r=1740928787",
+        "large": "https://lain.bgm.tv/pic/crt/l/22/8a/172265_crt_IH2fP.jpg?r=1740928787",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/22/8a/172265_crt_IH2fP.jpg?r=1740928787"
+    },
+    "summary": "大手クラン《夜天の銀兎》の新人【魔術士】で、セルマの妹。\r\nクランに内緒で潜った迷宮で、魔獣に襲われたところをオルンに助けられた。\r\nおっとりとした性格だが、その実力は本物で、期待の新人パーティ「第10班」に所属。後衛アタッカーを担っている。",
+    "name": "ソフィア・クローデル",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "索菲亚·克洛黛尔"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 21,
+        "collects": 58
+    },
+    "id": 172265,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        541336
+    ]
+}

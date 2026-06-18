@@ -1,0 +1,123 @@
+{
+    "id": 3172,
+    "name": "超时空要塞 可曾记得爱",
+    "image_path": "data\\images\\anime\\3172.jpg",
+    "points": 8,
+    "cost": 3,
+    "rarity": "SR",
+    "description": "　　未沙在地球的废墟中找到一块石板上记载着一首歌，这是一首数万年前在星际流传的情歌，在最后之战到来之际，以地球的命运为赌注，拯救了步向灭亡的人类。没错，是普通的情歌，在漫长的战争中，爱逐渐被人们遗忘了，变得只知道杀戮和战争，但是在他们的内心，却保留着对歌声的美好回忆，当这首情歌再度流动在燃烧着的战斗的宇宙中时，一切都变成爱，这就是长100多分钟的电影所描述的。超时空要塞，MACROSS，爱，还记得吗？",
+    "type": 2,
+    "platform": "剧场版",
+    "episodes_for_hangup": 1,
+    "synergy_tags": [
+        "科幻",
+        "剧场版",
+        "日本",
+        "原创"
+    ],
+    "date": "1984-07-21",
+    "rating_rank": 236,
+    "rating_score": 8,
+    "rating_total": 2407,
+    "main_character_ids": [
+        6654,
+        6801,
+        6803
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/0c/83/6654_crt_e9Pxm.jpg?r=1406412826",
+                "grid": "https://lain.bgm.tv/pic/crt/g/0c/83/6654_crt_e9Pxm.jpg?r=1406412826",
+                "large": "https://lain.bgm.tv/pic/crt/l/0c/83/6654_crt_e9Pxm.jpg?r=1406412826",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0c/83/6654_crt_e9Pxm.jpg?r=1406412826"
+            },
+            "name": "リン・ミンメイ",
+            "summary": "名前の漢字表記は「鈴 明美」,中国語圏におけるテレビ放送では姓を林（リン）とした「林明美」表記が見られる。アルファベット表記は「Linn Minmei」（ピン音表記では「Ling Mingmei」）。ポスター、アルバムなどでは「Lynn Minmay」表記が多く見られる。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/db/e1/4005_prsn_phJ87.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/db/e1/4005_prsn_phJ87.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/db/e1/4005_prsn_phJ87.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/db/e1/4005_prsn_phJ87.jpg"
+                    },
+                    "name": "飯島真理",
+                    "short_summary": "日本の歌手・シンガーソングライター・ラジオDJ・音楽プロデューサー・声優・女優。血液型O型。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 4005,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 6654
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/1f/b3/6801_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/1f/b3/6801_crt_anidb.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/1f/b3/6801_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1f/b3/6801_crt_anidb.jpg"
+            },
+            "name": "早瀬未沙",
+            "summary": "",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/21/b5/4008_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/21/b5/4008_seiyu_anidb.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/21/b5/4008_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/21/b5/4008_seiyu_anidb.jpg"
+                    },
+                    "name": "土井美加",
+                    "short_summary": "日本の女優、声優、ナレーター。宮城県仙台市出身。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 4008,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 6801
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/af/55/6803_crt_ivUg4.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/af/55/6803_crt_ivUg4.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/af/55/6803_crt_ivUg4.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/af/55/6803_crt_ivUg4.jpg"
+            },
+            "name": "一条輝",
+            "summary": "",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f8/eb/4004_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f8/eb/4004_seiyu_anidb.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/f8/eb/4004_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f8/eb/4004_seiyu_anidb.jpg"
+                    },
+                    "name": "長谷有洋",
+                    "short_summary": "声優、俳優。シグマクラブ所属で、当初はプロダクション・エムスリーに所属していた。東京都出身。\r\n\r\n俳優、声優であるはせさん治の長男。父の影響で俳優を志し、劇団こまどりに入団。声優オーディションを受け、高校2年生のときに『キャプテン』の小山役、次いで『超時空要塞マクロス』の一条輝役に抜擢された（注：放送は『マクロス』の方が先）。\r\n\r\n一時は不振に陥り、ほとんど声優の仕事がない時期もあった。しかし、1990年代に入ってからは実力も向上し、端役ながら声優・俳優として徐々に仕事を増やしていた。\r\n\r\n1996年7月30日、実家のマンションの7階から転落し死亡しているのを午前4時頃に弟が発見。はせさん治は、『コミック・フィギュア王』のインタビューで自殺だったと語っている。31歳没。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 4004,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 6803
+        }
+    ]
+}

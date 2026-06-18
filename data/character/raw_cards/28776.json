@@ -1,0 +1,69 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/84/7d/28776_crt_cH1gh.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/84/7d/28776_crt_cH1gh.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/84/7d/28776_crt_cH1gh.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/84/7d/28776_crt_cH1gh.jpg"
+    },
+    "summary": "有着金黄色头发、蓝宝石眼瞳的少女。从昊陵学园英国分校转学到日本就读。《焰牙》为“来福枪”，战斗技术高超。性格有点任性，反复无常，令人捉摸不透。",
+    "name": "リーリス・ブリストル",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "莉莉丝·布里斯托"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Lilith Bristol"
+                },
+                {
+                    "k": "日文名",
+                    "v": "リーリス・ブリストル"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "声",
+            "value": "山崎遥"
+        },
+        {
+            "key": "出身",
+            "value": "英国"
+        },
+        {
+            "key": "喜欢的事物",
+            "value": "奶茶"
+        },
+        {
+            "key": "兴趣",
+            "value": "打猎、DNL（デスニューラランド）"
+        },
+        {
+            "key": "焰牙",
+            "value": "来福枪"
+        }
+    ],
+    "stat": {
+        "comments": 8,
+        "collects": 46
+    },
+    "id": 28776,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        108757
+    ]
+}

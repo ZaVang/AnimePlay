@@ -1,0 +1,454 @@
+{
+    "date": "2026-04-04",
+    "platform": "TV",
+    "images": {
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/71/03/576121_sqqIH.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/71/03/576121_sqqIH.jpg",
+        "large": "https://lain.bgm.tv/pic/cover/l/71/03/576121_sqqIH.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/71/03/576121_sqqIH.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/71/03/576121_sqqIH.jpg"
+    },
+    "summary": "仅凭此身，登峰造极—— \r\n樱咲朱音自幼便追随著名为「阿良川志太」的落语家父亲背影，深深着迷于如魔法般的落语表演。然而，在父亲为了晋升「真打」（落语界最高阶级）而挑战的关键决选舞台上，朱音却亲眼目击了令人震惊的事件。\r\n六年过后，当年的女孩已成为高中生。现在的她，正为了登上落语界的顶点「真打」而全力冲刺。\r\n落语家们在语言艺术中激烈交锋。一场正统落语传奇，在此揭幕！\r\n\r\n\r\n\r\n[简介原文]\r\nその身一つで、芸を極めよ――\r\n幼い頃から噺家の父・阿良川志ん太(あらかわしんた)の背中を見てその魔法のような落語に魅せられていた桜咲朱音(おうさきあかね)は父が真打昇進をかけて挑んだ大一番の舞台で、衝撃的な事件を目撃する。\r\n６年後――そこには、落語界の最高位“真打”を目指して突き進む高校生になった朱音の姿があった。\r\n話芸の極致で噺家たちが鎬を削る、本格落語ものがたり――ここに開幕！！",
+    "name": "あかね噺",
+    "name_cn": "落语朱音",
+    "tags": [
+        {
+            "name": "2026年4月",
+            "count": 569,
+            "total_cont": 0
+        },
+        {
+            "name": "漫画改",
+            "count": 470,
+            "total_cont": 0
+        },
+        {
+            "name": "TV",
+            "count": 356,
+            "total_cont": 0
+        },
+        {
+            "name": "热血",
+            "count": 342,
+            "total_cont": 0
+        },
+        {
+            "name": "ZEXCS",
+            "count": 331,
+            "total_cont": 0
+        },
+        {
+            "name": "落语",
+            "count": 315,
+            "total_cont": 0
+        },
+        {
+            "name": "2026",
+            "count": 253,
+            "total_cont": 0
+        },
+        {
+            "name": "日本",
+            "count": 181,
+            "total_cont": 0
+        },
+        {
+            "name": "漫改",
+            "count": 172,
+            "total_cont": 0
+        },
+        {
+            "name": "励志",
+            "count": 167,
+            "total_cont": 0
+        },
+        {
+            "name": "少年向",
+            "count": 160,
+            "total_cont": 0
+        },
+        {
+            "name": "职场",
+            "count": 140,
+            "total_cont": 0
+        },
+        {
+            "name": "渡边步",
+            "count": 114,
+            "total_cont": 0
+        },
+        {
+            "name": "渡辺歩",
+            "count": 42,
+            "total_cont": 0
+        },
+        {
+            "name": "永瀬アンナ",
+            "count": 21,
+            "total_cont": 0
+        },
+        {
+            "name": "竞技",
+            "count": 18,
+            "total_cont": 0
+        },
+        {
+            "name": "JUMP",
+            "count": 16,
+            "total_cont": 0
+        },
+        {
+            "name": "福山润",
+            "count": 16,
+            "total_cont": 0
+        },
+        {
+            "name": "江口拓也",
+            "count": 13,
+            "total_cont": 0
+        },
+        {
+            "name": "永濑安娜",
+            "count": 13,
+            "total_cont": 0
+        },
+        {
+            "name": "山下诚一郎",
+            "count": 13,
+            "total_cont": 0
+        },
+        {
+            "name": "岛崎信长",
+            "count": 13,
+            "total_cont": 0
+        },
+        {
+            "name": "小林千晃",
+            "count": 13,
+            "total_cont": 0
+        },
+        {
+            "name": "大冢明夫",
+            "count": 13,
+            "total_cont": 0
+        },
+        {
+            "name": "高桥李依",
+            "count": 12,
+            "total_cont": 0
+        },
+        {
+            "name": "阿座上洋平",
+            "count": 12,
+            "total_cont": 0
+        },
+        {
+            "name": "都市日常",
+            "count": 10,
+            "total_cont": 0
+        },
+        {
+            "name": "朱音落语",
+            "count": 10,
+            "total_cont": 0
+        },
+        {
+            "name": "2026年",
+            "count": 6,
+            "total_cont": 0
+        },
+        {
+            "name": "土屋理敬",
+            "count": 5,
+            "total_cont": 0
+        }
+    ],
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "落语朱音"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "朱音落语"
+                },
+                {
+                    "v": "Akane-banashi"
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "12"
+        },
+        {
+            "key": "放送开始",
+            "value": "2026年4月4日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期六"
+        },
+        {
+            "key": "官方网站",
+            "value": "https://akane-banashi.com/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "朝日系全国24局ネット“IMAnimation”枠"
+        },
+        {
+            "key": "其他电视台",
+            "value": "BS朝日"
+        },
+        {
+            "key": "导演",
+            "value": "渡辺歩"
+        },
+        {
+            "key": "音乐",
+            "value": "井筒昭雄"
+        },
+        {
+            "key": "Copyright",
+            "value": "©末永裕樹・馬上鷹将／集英社・『あかね噺』製作委員会"
+        },
+        {
+            "key": "原作",
+            "value": "末永裕樹・馬上鷹将（集英社「週刊少年ジャンプ」連載）"
+        },
+        {
+            "key": "副导演",
+            "value": "播摩優"
+        },
+        {
+            "key": "系列构成",
+            "value": "土屋理敬"
+        },
+        {
+            "key": "人物设定",
+            "value": "田中紀衣"
+        },
+        {
+            "key": "副人物设定",
+            "value": "新田靖成"
+        },
+        {
+            "key": "总作画监督",
+            "value": "田中紀衣、新田靖成、香川久"
+        },
+        {
+            "key": "监修",
+            "value": "落语监修：林家木久彦"
+        },
+        {
+            "key": "动画制作",
+            "value": "ZEXCS"
+        },
+        {
+            "key": "脚本",
+            "value": "土屋理敬"
+        },
+        {
+            "key": "分镜",
+            "value": "渡辺歩(1)、播摩優(2)、三室健太(3)、長屋誠志郎(4)、佐々木美和(5)、森田宏幸(6)、中野涼子(7)、金子志津枝(8)、大石美絵(9)、Wang Chihsia(10)、上原秀明(11)、二村寧々(小落语朱音)"
+        },
+        {
+            "key": "演出",
+            "value": "播摩優(1)、山根幹史(2)、三室健太(3)、中釜勇亮(4)、佐々木美和(5)、境隼人(6)、中野涼子(7)、金子志津枝(8)、大石美絵(9)、Wang Chihsia(10)、 藤野空(11)、二村寧々(小落语朱音)"
+        },
+        {
+            "key": "作画监督",
+            "value": "大沢美奈、北川大輔、原田大基、吉田雄一、斎藤梢、佐藤菜穂、三浦春樹、竹上貴雄"
+        },
+        {
+            "key": "客座人物设定",
+            "value": "小落语朱音人设：かもすと[安武航]"
+        },
+        {
+            "key": "製作",
+            "value": "『あかね噺』製作委員会【テレビ朝日（松久智治）、Aniplex（清水博之、三宅将典、柏田真一郎）、集英社（大好誠、土生田高裕）、ZEXCS、ABEMA（角田颯飛）、テレビ朝日ミュージック、BS朝日】；柳井寛史、丹羽将己、林辰朗、水谷圭、松井優子"
+        },
+        {
+            "key": "企画",
+            "value": "小野仁、岩上敦宏、瓶子吉久、新宅潔、古川雄太、出藏寛幸、西村裕明"
+        },
+        {
+            "key": "制片人",
+            "value": "遠藤一樹、若林豪、岡川広樹"
+        },
+        {
+            "key": "副制片人",
+            "value": "中川瑛美、岩﨑あゆみ"
+        },
+        {
+            "key": "助理制片人",
+            "value": "加藤まりや、小池洋海、米丸翔一朗"
+        },
+        {
+            "key": "宣传制片人",
+            "value": "坂田結衣"
+        },
+        {
+            "key": "制作管理",
+            "value": "大町悠貴"
+        },
+        {
+            "key": "设定制作",
+            "value": "楠本大貴、仙保貴滉"
+        },
+        {
+            "key": "制作进行",
+            "value": "田渕悟"
+        },
+        {
+            "key": "特效",
+            "value": "佐藤真美子"
+        },
+        {
+            "key": "色彩指定",
+            "value": "濱岡幸治"
+        },
+        {
+            "key": "色彩检查",
+            "value": "濱岡幸治"
+        },
+        {
+            "key": "美术设计",
+            "value": "多田周平；美术设定辅佐：成田偉保；美术设定协力：佐々木美和"
+        },
+        {
+            "key": "美术板",
+            "value": "纓田拓海"
+        },
+        {
+            "key": "美术制作进行",
+            "value": "平田浩章、竹村美音、前田紗希"
+        },
+        {
+            "key": "2D 设计",
+            "value": "川瀬紗織"
+        },
+        {
+            "key": "摄影",
+            "value": "Assez Finaud Fabric."
+        },
+        {
+            "key": "剪辑",
+            "value": "廣瀬清志；剪辑助手：山田聖実(エディッツ)"
+        },
+        {
+            "key": "在线剪辑",
+            "value": "imagica EMS"
+        },
+        {
+            "key": "音效",
+            "value": "安藤由衣、本郷俊介(Foley)"
+        },
+        {
+            "key": "录音",
+            "value": "村越直"
+        },
+        {
+            "key": "录音助理",
+            "value": "岩本佳大"
+        },
+        {
+            "key": "录音工作室",
+            "value": "STUDIO T&T"
+        },
+        {
+            "key": "音响",
+            "value": "ビットグルーヴプロモーション"
+        },
+        {
+            "key": "音响制作担当",
+            "value": "中村暢、大黒紗季"
+        },
+        {
+            "key": "音乐助理",
+            "value": "音乐制作协力：中路あけ美、関根隆裕"
+        },
+        {
+            "key": "制作协力",
+            "value": "ゼノトゥーン(2,9,10)、シンエイ動画(4,11)、スノードロップ(6)"
+        }
+    ],
+    "rating": {
+        "rank": 2506,
+        "total": 1147,
+        "count": {
+            "1": 4,
+            "2": 2,
+            "3": 1,
+            "4": 14,
+            "5": 40,
+            "6": 191,
+            "7": 580,
+            "8": 274,
+            "9": 25,
+            "10": 16
+        },
+        "score": 7
+    },
+    "total_episodes": 12,
+    "collection": {
+        "on_hold": 130,
+        "dropped": 243,
+        "wish": 970,
+        "collect": 180,
+        "doing": 4143
+    },
+    "id": 576121,
+    "eps": 12,
+    "meta_tags": [
+        "TV",
+        "日本",
+        "漫画改",
+        "少年向",
+        "职场"
+    ],
+    "volumes": 0,
+    "series": false,
+    "locked": false,
+    "nsfw": false,
+    "type": 2,
+    "main_character_ids": [
+        116432
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/fa/2a/116432_crt_JjVd9.jpg?r=1754307091",
+                "grid": "https://lain.bgm.tv/pic/crt/g/fa/2a/116432_crt_JjVd9.jpg?r=1754307091",
+                "large": "https://lain.bgm.tv/pic/crt/l/fa/2a/116432_crt_JjVd9.jpg?r=1754307091",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fa/2a/116432_crt_JjVd9.jpg?r=1754307091"
+            },
+            "name": "桜咲朱音",
+            "summary": "落語家の最高位“真打”を目指す女子高生。負けん気が強く、これと決めたらとことんやり抜くタイプ。\r\n父・志ん太の落語が好きで、幼い頃から父の稽古の様子をこっそり覗いては、見よう見まねで再現していた。\r\n志ん太の真打昇進試験でのとある出来事をきっかけに、本格的に落語の道を志すことに。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ca/8f/41550_prsn_tahHG.jpg?r=1765900231",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ca/8f/41550_prsn_tahHG.jpg?r=1765900231",
+                        "large": "https://lain.bgm.tv/pic/crt/l/ca/8f/41550_prsn_tahHG.jpg?r=1765900231",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ca/8f/41550_prsn_tahHG.jpg?r=1765900231"
+                    },
+                    "name": "永瀬アンナ",
+                    "short_summary": "日本の女性声優。東京都出身。81プロデュース所属\r\n\r\n[b]趣味・特技[/b]\r\n読書、演劇鑑賞、イラスト、漫画制作\r\nクラシックバレエ、ギター、トランペット、ピアノ、ダンス\r\n\r\n[b]受賞歴[/b]\r\n第17回声優アワード　新人声優賞",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 41550,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 116432
+        }
+    ]
+}

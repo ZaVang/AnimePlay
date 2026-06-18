@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ec/8c/220_6abb3e952a85b8551ba726a1227_APcZZ.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ec/8c/220_6abb3e952a85b8551ba726a1227_APcZZ.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/ec/8c/220_6abb3e952a85b8551ba726a1227_APcZZ.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ec/8c/220_6abb3e952a85b8551ba726a1227_APcZZ.jpg"
+    },
+    "summary": "フランス人。快活なパリジェンヌだが、実は一匹狼の仕事人。父親はコルシカ・マフィアの幹部だったが、ミレイユが子供の頃に何者かに惨殺された。幼いミレイユは恩人のもとで修行を積み独立することになるが、その目的は家族の仇を探し当てて復讐することだった。霧香を助け、コンビを組むことになったのは、幼い頃になくした形見のオルゴールを霧香が持っていたからである。当然ながら最初は霧香を厄介モノ扱いするが、しだいに彼女に対して心を開いていく。",
+    "name": "ミレイユ・ブーケ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "米雷优·布克"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Mireille Bouquet"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": [
+                {
+                    "v": "https://www.jvcmusic.co.jp/flyingdog/tv/noir/chara.html"
+                }
+            ]
+        }
+    ],
+    "stat": {
+        "comments": 5,
+        "collects": 27
+    },
+    "id": 220,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        788
+    ]
+}

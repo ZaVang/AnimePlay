@@ -1,0 +1,92 @@
+{
+    "id": 285879,
+    "name": "没落要塞",
+    "image_path": "data\\images\\anime\\285879.jpg",
+    "points": 6.9,
+    "cost": 1,
+    "rarity": "N",
+    "description": "面对突然出现的未知生命体“葛多尔”，人类突然面临灭亡危机，而后经过了漫长的岁月。幸存下来的人们为了摆脱“葛多尔”的威胁和侵害，建造了高度为3000M的巨大移动要塞“DECA-DENCE”，过上了平稳的日子。\r\n住在“DECA-DENCE”里的分为两种人，日夜与“葛多尔”战斗的战士“齿轮（Gear）”以及不具有战斗能力的“油轮（Tanker）”。非常憧憬与“葛多尔”战斗的战士“齿轮”，梦想着自己也能成为“齿轮”的“油轮”少女·夏芽，在某天与态度冷淡的“DECA-DENCE”修理工·镝木相遇。\r\n没有放弃梦想的积极少女与放弃了梦想的现实主义男子。乍看之下性格似乎完全相反的两人之间的相遇，终将对这个世界的未来产生重大影响。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "科幻",
+        "TV",
+        "日本",
+        "原创",
+        "战斗"
+    ],
+    "date": "2020-07-08",
+    "rating_rank": 2952,
+    "rating_score": 6.9,
+    "rating_total": 4527,
+    "main_character_ids": [
+        77131,
+        77132
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/7f/e4/77131_crt_s7HpQ.jpg?r=1592197564",
+                "grid": "https://lain.bgm.tv/pic/crt/g/7f/e4/77131_crt_s7HpQ.jpg?r=1592197564",
+                "large": "https://lain.bgm.tv/pic/crt/l/7f/e4/77131_crt_s7HpQ.jpg?r=1592197564",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7f/e4/77131_crt_s7HpQ.jpg?r=1592197564"
+            },
+            "name": "カブラギ",
+            "summary": "寡黙で無愛想なベテラン装甲修理人。かつてはスゴ腕の戦士として活躍していたが、今は戦いに興味を示さず、無気力な日々を送っている。夢を諦めないナツメとの出会いにより、その心境に変化が生まれる。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d9/dc/3861_prsn_eizt1.jpg?r=1661391127",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d9/dc/3861_prsn_eizt1.jpg?r=1661391127",
+                        "large": "https://lain.bgm.tv/pic/crt/l/d9/dc/3861_prsn_eizt1.jpg?r=1661391127",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d9/dc/3861_prsn_eizt1.jpg?r=1661391127"
+                    },
+                    "name": "小西克幸",
+                    "short_summary": "日本の声優、ナレーター、舞台俳優。和歌山県和歌山市出身。賢プロダクション所属。関智一が座長を務めていることで知られる劇団「ヘロヘロQカムパニー」の副座長も務める。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 3861,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 77131
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e7/79/77132_crt_z2h4h.jpg?r=1592197608",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e7/79/77132_crt_z2h4h.jpg?r=1592197608",
+                "large": "https://lain.bgm.tv/pic/crt/l/e7/79/77132_crt_z2h4h.jpg?r=1592197608",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e7/79/77132_crt_z2h4h.jpg?r=1592197608"
+            },
+            "name": "ナツメ",
+            "summary": "幼いころにガドルに襲われ、父と右腕を無くした少女。「かの力」に入隊し戦士としてガドルと戦うことを夢見ていたが、現実は厳しく、装甲修理人としてカブラギの下で働くことに。明るく元気な猪突猛進タイプ。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b8/95/29965_prsn_iY5Xl.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b8/95/29965_prsn_iY5Xl.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/b8/95/29965_prsn_iY5Xl.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b8/95/29965_prsn_iY5Xl.jpg"
+                    },
+                    "name": "楠木ともり",
+                    "short_summary": "女性声优、歌手，所属经纪公司为Sony Music Artists，唱片公司为SACRA MUSIC。\r\n\r\n楠木灯自初中二年级起喜欢动画，在《小鸠》再播时为花泽香菜演技所动，志向成为声优。她未在声优养成所学习，而是自学。\r\n2016年，于Sony Music Artists主办的试音企画Anistoteles第5回中获特别奖。楠木灯当时是没有经验，觉得声优试音很严酷，以歌手志愿参加的试音。\r\n2017年，借由电视动画《埃罗芒阿老师》女中学生声优出道。次年以《原书·原书使》键村叶月声优的身份首次担任动画主演。\r\n2018年4月15日，SMA voice内成员网站“TOMOROOM”开设。\r\n2018年8月8日在其个人Twitter正式表明自己的中文名为“楠木灯”。\r\n2018年8月24日，以《刀剑神域外传 Gun Gale Online》莲的声优之名义出演Animelo Summer Live 2018 \"OK!\"。\r\n2019年3月9日，获第13回声优奖新人女优奖。\r\n2019年12月29日，在楠木灯 生日演唱会 2019 Kusunoki Tomori coming-of-age『WRAPPED///LIVE廿』中正式出道。\r\n2020年6月12日，宣布了首张正式出道独唱专辑《不适任者》的发售决定。\r\n\r\n楠木灯自3岁起学习钢琴，初中时代加入吹奏乐社，高中时代加入轻音社。对作词作曲感兴趣[，发布有原创CD。喜欢Sayuri、遥与美幸等歌手，以及投入自身感情的歌曲。\r\n她在志向成为声优时，对设计感兴趣，想边读美术学校，边实现成为声优的梦想。但得到动画主演的决定后，觉得无法兼顾工作和学业而选择了工作。成为声优后，有时也有机会设计演唱会商品。她有绘画方面的特长，常常绘制本人出演角色的画像。\r\n她在初中时代做过学生会长，觉得人前和平常的自己如同两人而有乐趣，认为声优职业是“成为自己本无法成为的人”，两者的共同点是工作的乐趣。她对“变身”有强烈的憧憬，喜欢这类题材的魔法少女动画，其中《东京喵喵》是她喜欢动画的契机。她还喜欢物语系列、《盗梦侦探》等作品。\r\n她认为自己“不服弱”。周围人对她也多有“认真”的印象。东方收音机的中田敦彦在初次共同广播谈话时，评价她为多才，是“小岛瑠璃子以来的冲击”。\r\n她表示，她在活动时以“大家的心是明灯”为指针，希望能陪伴在痛苦者的身边。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 29965,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 77132
+        }
+    ]
+}

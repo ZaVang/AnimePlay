@@ -1,0 +1,65 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/75/4c/5642_crt_anidb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/75/4c/5642_crt_anidb.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/75/4c/5642_crt_anidb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/75/4c/5642_crt_anidb.jpg"
+    },
+    "summary": "红邵可和蔷薇公主的女儿，红黎深和红玖琅的姪女。\r\n坚强独立，勤奋节俭，擅于烹饪和拉二胡。酒量非常大，赌运极强。\r\n在蔷薇公主去世后，红家派来的家僕把他们的财产和蔷薇公主的遗物搜刮一空，所以虽然贵为名门红家直系长千金，但是家境却十分贫困。因此，需要经常四处做兼职而赚取生活费。\r\n小时候经历过动乱，眼见百姓生活在水深火热之中，民不聊生，因此立志成为能为百姓带来幸福的官吏。\r\n当得知女性不能参加国试后，便将梦想寄予孩子们，在私塾裡当老师。\r\n后被以「武有蓝茈，文有李红」、「红花驭双玉」所流传于后世的奇女子。\r\n蔷薇公主去世后，秀丽便继承了她身为仙女的血脉成为了第二个红仙。（动画第二季的OP中出现的蔷薇公主是继承她的秀丽。）",
+    "name": "紅秀麗",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "红秀丽"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "紅秀麗"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "こう しゅうれい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kou Shuurei"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": [
+                {
+                    "v": "anidb.net"
+                }
+            ]
+        },
+        {
+            "key": "声优",
+            "value": "桑岛法子／香港：张颂欣／台湾：郭馨雅"
+        }
+    ],
+    "stat": {
+        "comments": 2,
+        "collects": 16
+    },
+    "id": 5642,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        2010
+    ]
+}

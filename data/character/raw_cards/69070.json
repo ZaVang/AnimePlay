@@ -1,0 +1,57 @@
+{
+    "birth_mon": 5,
+    "gender": "female",
+    "birth_day": 9,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ae/9d/69070_crt_4IOki.jpg?r=1563601987",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ae/9d/69070_crt_4IOki.jpg?r=1563601987",
+        "large": "https://lain.bgm.tv/pic/crt/l/ae/9d/69070_crt_4IOki.jpg?r=1563601987",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ae/9d/69070_crt_4IOki.jpg?r=1563601987"
+    },
+    "summary": "ほまれ達と一緒に遭難したA組の生徒。\r\n勉強が得意なメガネっ子。\r\n慎重な性格ながら、BL好きで妄想は大胆。\r\nサバイバル術の飲み込みの早さには、ほまれも一目置いている。",
+    "name": "天谷睦",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "天谷睦"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "あまたに むつ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Amatani Mutsu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "5月9日"
+        },
+        {
+            "key": "身高",
+            "value": "154cm"
+        }
+    ],
+    "stat": {
+        "comments": 6,
+        "collects": 19
+    },
+    "id": 69070,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        276187
+    ]
+}

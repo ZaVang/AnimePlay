@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c0/e1/219_0d8267e36708f955d7ab048990d_w3aNz.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c0/e1/219_0d8267e36708f955d7ab048990d_w3aNz.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/c0/e1/219_0d8267e36708f955d7ab048990d_w3aNz.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c0/e1/219_0d8267e36708f955d7ab048990d_w3aNz.jpg"
+    },
+    "summary": "一見平凡で憂鬱な陰りを持つ少女。過去は謎に包まれている。ある日、突然、それまでの自分の生活がすべて捏造された記憶だったことに気づく。天性の戦士の才を有するが、それがなぜであるかは本人にもわからない。喜び、悲しみ、怒り、愛といった普通の少女が持っているべき感情が欠如している。ミレイユとともに行動することにより、そうした感情をすこしずつ体言していき、友情や愛に目覚めていくが、実はそれ自体が大きな謀略の一過程に組み込まれたプロセスだった・・・。",
+    "name": "夕叢霧香",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "夕丛雾香"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ゆうむら きりか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yuumura Kirika"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://www.jvcmusic.co.jp/flyingdog/tv/noir/chara.html"
+        }
+    ],
+    "stat": {
+        "comments": 8,
+        "collects": 48
+    },
+    "id": 219,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        788
+    ]
+}

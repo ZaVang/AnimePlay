@@ -1,0 +1,91 @@
+{
+    "id": 172498,
+    "name": "埃罗芒阿老师",
+    "image_path": "data\\images\\anime\\172498.jpg",
+    "points": 6.6,
+    "cost": 1,
+    "rarity": "N",
+    "description": "高中生兼小说作家的“和泉正宗”（笔名：和泉征宗）有个家里蹲的妹妹“和泉纱雾”。一年前才成为家人的她，却完全不走出居室，并也用力踩踏地板，要我帮她准备食物。为了这段称不上“兄妹”的关系，正宗得想个办法让她自己走出居室才行，因为两人已是目前仅存能相依为命的“家人”……至于正宗的搭挡插画家“情色漫画老师”，是个能够画出非常棒煽情图的可靠伙伴。虽然双方并没见过面，但我一直很感谢他！只是在某一天，正宗突然发现到一个冲击事实，那就是“情色漫画老师”其实就是纱雾！？",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "后宫",
+        "TV",
+        "恋爱",
+        "日本",
+        "小说改"
+    ],
+    "date": "2017-04-08",
+    "rating_rank": 4778,
+    "rating_score": 6.6,
+    "rating_total": 19072,
+    "main_character_ids": [
+        22519,
+        22520
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/19/87/22519_crt_VjsVF.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/19/87/22519_crt_VjsVF.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/19/87/22519_crt_VjsVF.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/19/87/22519_crt_VjsVF.jpg"
+            },
+            "name": "和泉正宗",
+            "summary": "一边上高中一边从事着小说家的工作。笔名是「和泉マサムネ」。不喜欢在网络上检索自己的作品或笔名之类的信息。有个家里蹲的妹妹。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/91/77/5764_prsn_njsm3.jpg?r=1447773082",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/91/77/5764_prsn_njsm3.jpg?r=1447773082",
+                        "large": "https://lain.bgm.tv/pic/crt/l/91/77/5764_prsn_njsm3.jpg?r=1447773082",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/91/77/5764_prsn_njsm3.jpg?r=1447773082"
+                    },
+                    "name": "松岡禎丞",
+                    "short_summary": "15歳の頃に友人の勧めで見た『新世紀エヴァンゲリオン』の渚カヲルと『テイルズ オブ エターニア』のリッド・ハーシェルの双方を演じた石田彰の演技の違いに驚愕し、声優の仕事の存在を知る。高校三年の秋まで自動車の整備士を志していたが、声優も気にするようになり、道内の声優学校を捜すが、「東京に出ないと厳しい」との助言を受け単身上京。その後、新聞奨学生の仕事をしながら、日本ナレーション演技研究所に通うようになる。2009年、22歳の頃、「今年がダメなら北海道に帰ろう」と思っていた矢先にオーディションの話が入り、これを機にアイムエンタープライズの正所属となった。\r\n\r\n2012年、第6回声優アワード新人男優賞受賞。\r\n\r\n\r\n尊敬する先輩は松風雅也。事務所の先輩でもある間島淳司とは親交が深い[2]。また事務所は違うが島﨑信長と親交がありブログでもちょくちょく語っている。\r\n\r\n女性が大の苦手。\r\n\r\n現場で頑張り過ぎて、腕や肩に痛みを感じたり、叫び過ぎて、鼻血を出したり、服の着方を間違えたりと、お茶目な部分がある。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 5764,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 22519
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/3d/ec/22520_crt_Jz19b.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/3d/ec/22520_crt_Jz19b.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/3d/ec/22520_crt_Jz19b.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3d/ec/22520_crt_Jz19b.jpg"
+            },
+            "name": "和泉紗霧",
+            "summary": "和泉正宗的没有血缘关系的妹妹。因为一些原因过着基本上只有两人的同居生活。重度家里蹲，只要家里有其他人就不会从房间里出来。是以「エロマンガ先生」为笔名的插画家，喜欢画H的画",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a4/de/17981_prsn_gMWIZ.jpg?r=1616944577",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a4/de/17981_prsn_gMWIZ.jpg?r=1616944577",
+                        "large": "https://lain.bgm.tv/pic/crt/l/a4/de/17981_prsn_gMWIZ.jpg?r=1616944577",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a4/de/17981_prsn_gMWIZ.jpg?r=1616944577"
+                    },
+                    "name": "藤田茜",
+                    "short_summary": "藤田 茜（ふじた あかね、1993年1月26日 - ）は、日本の女性声優。賢プロダクション所属。静岡県出身。賢プロダクション全国声優オーディション2011準グランプリ受賞。\r\n趣味は、競技かるた・手芸・カフェ巡り。また、インドア派である。\r\n小学生の頃から本を声に出して読むことが大好きで、高校時代は放送部で朗読をしていた。三年次にはNHK杯全国高校放送コンテストの全国大会に出場した。ラジオから声優を好きになることが多く、田村ゆかりや小野坂昌也の番組を聞いていたという。\r\n学生時代、「あねご」と呼ばれていた。\r\n座右の銘は「何とかなるさ」。2015年5月現在、ひとり暮らしをしている。\r\n賢プロダクションの声優によるユニット『VvoxX』のメンバー。儚さ担当、不思議担当。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 17981,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 22520
+        }
+    ]
+}

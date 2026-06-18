@@ -1,0 +1,65 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ed/e9/9046_crt_PdB4R.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ed/e9/9046_crt_PdB4R.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/ed/e9/9046_crt_PdB4R.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ed/e9/9046_crt_PdB4R.jpg"
+    },
+    "summary": "一个A7M2型机器人，属于「量產試作機」，总共只生产了三台的其中之一。紫色眼眸，绿发。经营由“主人”留给她的Café Alpha。阿尔法个性愉快且善能思考，虽然本性并不特别外向，但喜欢与难得上门的顾客交谈。虽说她身为一个实现量产的机器人系列的原型机，在故事开端的时候却只认识非常少数的几个人，不认识任何机器人。随着剧情发展，她逐渐变得更加自信大方，与外界的接触更加频繁，甚至在外旅行一整年。阿尔法非常珍视友情，即使与友人分隔两地长年不见也不会疏远。她擅弹月琴，喜欢雕刻与鱼有关的工艺品，时常骑乘一辆小绵羊外出巡游，寻访人类文明鼎盛时期留下的痕迹。",
+    "name": "アルファ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "阿尔法"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "初濑野阿尔法"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Alpha Hatsuseno"
+                },
+                {
+                    "k": "日文名",
+                    "v": "初瀬野アルファ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "はつせの アルファ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hatsuseno Arufa"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net|wiki"
+        }
+    ],
+    "stat": {
+        "comments": 22,
+        "collects": 140
+    },
+    "id": 9046,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        9713
+    ]
+}

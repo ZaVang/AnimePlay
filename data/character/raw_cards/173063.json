@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ab/1b/173063_crt_3yhHy.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ab/1b/173063_crt_3yhHy.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/ab/1b/173063_crt_3yhHy.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ab/1b/173063_crt_3yhHy.jpg"
+    },
+    "summary": "本名・来栖真希奈（くるす・まきな）。\r\n23才のサイボーグ。\r\nかなりガサツで少し好戦的な性格。\r\nチハルとは学生時代からの腐れ縁。",
+    "name": "マキナ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "真希奈"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "来栖真希奈"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "くるす まきな"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 10,
+        "collects": 47
+    },
+    "id": 173063,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        545328
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "birth_mon": 10,
+    "gender": "male",
+    "birth_day": 11,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3e/b9/69548_crt_sD27O.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/3e/b9/69548_crt_sD27O.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/3e/b9/69548_crt_sD27O.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3e/b9/69548_crt_sD27O.jpg"
+    },
+    "summary": "男主角，高中二年级，被变态女孩儿们包围的主人公，因为某一天学校里在自己的柜子里发现一封“灰姑娘”留下的告白信之后开始了寻找她的故事。本作吐槽担当。",
+    "name": "桐生慧輝",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "桐生慧辉"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "桐生 慧輝"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "きりゅう けいき"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kiryu Keiki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "10月11日"
+        }
+    ],
+    "stat": {
+        "comments": 7,
+        "collects": 5
+    },
+    "id": 69548,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        275371
+    ]
+}

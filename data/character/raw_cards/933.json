@@ -1,0 +1,76 @@
+{
+    "birth_mon": 7,
+    "gender": "male",
+    "birth_day": 15,
+    "birth_year": 1968,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/10/cd/933_crt_UVM7v.jpg?r=1677396199",
+        "grid": "https://lain.bgm.tv/pic/crt/g/10/cd/933_crt_UVM7v.jpg?r=1677396199",
+        "large": "https://lain.bgm.tv/pic/crt/l/10/cd/933_crt_UVM7v.jpg?r=1677396199",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/10/cd/933_crt_UVM7v.jpg?r=1677396199"
+    },
+    "summary": "留弗夫和前妻，明日梦的儿子。\r\n6年前，和母亲死别的同时，因反感马上就迎来后妻的父亲而搬到了外公外婆家，但是随着外公外婆的相继去世，时隔6年又回到了右代宫家。\r\n在这次亲族会议上，和6年不见的堂兄妹们重温旧情。",
+    "name": "右代宫戦人",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "右代宫战人"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "无能"
+                },
+                {
+                    "k": "日文名",
+                    "v": "右代宮 戦人"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "うしろみや ばとら"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ushiromiya Battler"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "1968-07-15"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "180cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "声优",
+            "value": "小野大辅"
+        }
+    ],
+    "stat": {
+        "comments": 60,
+        "collects": 123
+    },
+    "id": 933,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        1377
+    ]
+}

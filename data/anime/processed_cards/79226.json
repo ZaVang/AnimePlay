@@ -1,0 +1,124 @@
+{
+    "id": 79226,
+    "name": "精灵使的剑舞",
+    "image_path": "data\\images\\anime\\79226.jpg",
+    "points": 5.8,
+    "cost": 1,
+    "rarity": "N",
+    "description": "仅限冰清玉洁少女的特权——精灵契约。艾雷西亚精灵学院，贵族大小姐们汇聚于此，进行着作为精灵使应受的训练，以及精英教育。少年风早神人是世界上第二位能与精灵沟通的男性，被格雷瓦丝叫到精灵学校，在前往的路上不幸遇见了正在洗澡的学院生克蕾儿，结果被要求代替精灵与之缔结契约。就这样，风早神人成为了这个世界本不可能存在的、男性精灵使 。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "后宫",
+        "TV",
+        "日本",
+        "战斗",
+        "小说改"
+    ],
+    "date": "2014-07-14",
+    "rating_rank": 8442,
+    "rating_score": 5.8,
+    "rating_total": 4481,
+    "main_character_ids": [
+        26175,
+        26176,
+        26177
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/7f/f0/26175_crt_vf1yZ.jpg?r=1406819044",
+                "grid": "https://lain.bgm.tv/pic/crt/g/7f/f0/26175_crt_vf1yZ.jpg?r=1406819044",
+                "large": "https://lain.bgm.tv/pic/crt/l/7f/f0/26175_crt_vf1yZ.jpg?r=1406819044",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7f/f0/26175_crt_vf1yZ.jpg?r=1406819044"
+            },
+            "name": "カゼハヤ・カミト",
+            "summary": "男性でありながら、精霊と契約することができる特権を持つ少年。\r\n姫巫女たちの学び舎アレイツア精霊学院に編入し、唯一の男子学生となる。\r\n大陸の東方にある辺境の島国出身。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/15/71/12483_prsn_pXYzu.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/15/71/12483_prsn_pXYzu.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/15/71/12483_prsn_pXYzu.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/15/71/12483_prsn_pXYzu.jpg"
+                    },
+                    "name": "古川慎",
+                    "short_summary": "古川 慎（ふるかわ まこと、1989年9月29日 - ）は、日本の男性声優。トイズファクトリー所属。\r\n熊本県出身。福岡スクールオブミュージック専門学校卒業。\r\n\r\n5歳の時に見た『新機動戦記ガンダムW』のヒイロ・ユイを充てた緑川光の声に憧れたことで声優への興味を持つようになった。その後中学生時代にスカパーのアニメ専門チャンネルを見てアニメ好きになったという。\r\n高校生の時、友達からもらった専門学校のパンフレットに緑川光が特別講師としてくることを見て、挑戦してみようと思い専門学校に通い始めた。\r\n\r\n趣味は雑貨屋めぐり、神社や寺などのパワースポットを巡ること。\r\n一番好きな食べ物はお好み焼き。キュウリとカリフラワーが苦手。\r\n好きなアーティストはL'Arc〜en〜Ciel、Mr.Children、ゴスペラーズ、GRANRODEO、BUMP OF CHICKEN。\r\n\r\n2011年にWebアニメ「武装中学生」吉野サトシ役で声優デビュー。\r\n2012年にアルバイトでPS3専用ソフト「白騎士物語」のモーションアクターを演じた経験を持つ。\r\n2016年、7月より声優の小林裕介と共にパーソナリティを務めるラジオ『なんでもヒーロー！ ゆっけとまーぼー』の放送を開始。\r\n2017年10月に開催された、初バースデーイベント「古川慎　秋の収穫祭2017」にて、2018年アーティスト活動を開始することを発表。\r\n2018年7月、Lantisより歌手デビュー。同年8月31日、6年間所属していたスペースクラフト・エンタテインメントを退所し、フリーでの活動期間を経て同年12月1日、トイズファクトリーに所属。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 12483,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 26175
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ba/8c/26176_crt_zlI2I.jpg?r=1406644277",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ba/8c/26176_crt_zlI2I.jpg?r=1406644277",
+                "large": "https://lain.bgm.tv/pic/crt/l/ba/8c/26176_crt_zlI2I.jpg?r=1406644277",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ba/8c/26176_crt_zlI2I.jpg?r=1406644277"
+            },
+            "name": "クレア・ルージュ",
+            "summary": "",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/20/a9/7734_prsn_A1CgH.jpg?r=1616506490",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/20/a9/7734_prsn_A1CgH.jpg?r=1616506490",
+                        "large": "https://lain.bgm.tv/pic/crt/l/20/a9/7734_prsn_A1CgH.jpg?r=1616506490",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/20/a9/7734_prsn_A1CgH.jpg?r=1616506490"
+                    },
+                    "name": "木戸衣吹",
+                    "short_summary": "声優。Horipro所属。1997年11月14日青森県出身。\r\n2011年，参加过日本知名艺能事务所Horipro与电视台合办的年度大型选秀活动“2011年第36届 Horipro Talent Scout Caravan”。\r\n在日本全国总计1万2745个“声优歌手部门”参赛者之中顺利晋级到最后十强。\r\nHoripro看好她的潜力而签约为旗下艺人。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 7734,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 26176
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b5/a9/26177_crt_1rSOo.jpg?r=1406644404",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b5/a9/26177_crt_1rSOo.jpg?r=1406644404",
+                "large": "https://lain.bgm.tv/pic/crt/l/b5/a9/26177_crt_1rSOo.jpg?r=1406644404",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b5/a9/26177_crt_1rSOo.jpg?r=1406644404"
+            },
+            "name": "フィアナ・レイ・オルデシア",
+            "summary": "",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/67/e3/14320_prsn_NkyKy.jpg?r=1606880325",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/67/e3/14320_prsn_NkyKy.jpg?r=1606880325",
+                        "large": "https://lain.bgm.tv/pic/crt/l/67/e3/14320_prsn_NkyKy.jpg?r=1606880325",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/67/e3/14320_prsn_NkyKy.jpg?r=1606880325"
+                    },
+                    "name": "大西沙織",
+                    "short_summary": "大西 沙織（おおにし さおり、1992年8月6日 - ）は、日本の女性声優。千葉県出身。アイムエンタープライズ所属。\r\n\r\n小学校、中学校では吹奏楽部に所属し、サックスを吹いていた。高校時代は理系クラスで部活に入らず、養成学校に通っていた。\r\n声優を目指したきっかけは、小学4年生の頃テレビを観ていてアニメがおもしろいと思い、そのうち自然と「私は声優になるんだ」と考えるようになった。憧れの声優は坂本真綾と小林沙苗。\r\n事務所入所後の初仕事は2012年発売のドラマCD『ペンギンゑにし 第二譚 少女神隠し』。初めてオーディションで頂いた役は『ストライク・ザ・ブラッド』のラ・フォリア・リハヴァイン。\r\n『ラジオどっとあい』第60代目パーソナリティを2014年10月から同年12月まで務めた。\r\n特技はイラストを描くこと。\r\n趣味はアニメ・ドラマのサントラ鑑賞。\r\n2018年3月3日、第12回声優アワード助演女優賞・パーソナリティ賞受賞。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 14320,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 26177
+        }
+    ]
+}

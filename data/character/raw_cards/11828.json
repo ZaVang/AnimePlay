@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3c/49/11828_crt_K2K2z.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/3c/49/11828_crt_K2K2z.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/3c/49/11828_crt_K2K2z.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3c/49/11828_crt_K2K2z.jpg"
+    },
+    "summary": "与公麿在金融街相遇的美少女，是被称为「Asset」的存在，在金融街进行战斗时与公麿共战的伙伴。",
+    "name": "真朱",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "真朱"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "真朱"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ましゅ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Mashyu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 15,
+        "collects": 86
+    },
+    "id": 11828,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        10844
+    ]
+}

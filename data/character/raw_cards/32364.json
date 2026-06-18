@@ -1,0 +1,77 @@
+{
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 23,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d2/67/32364_crt_77iG7.jpg?r=1441778107",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d2/67/32364_crt_77iG7.jpg?r=1441778107",
+        "large": "https://lain.bgm.tv/pic/crt/l/d2/67/32364_crt_77iG7.jpg?r=1441778107",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d2/67/32364_crt_77iG7.jpg?r=1441778107"
+    },
+    "summary": "女主角之一，星导馆学园高中部1年级生，与绫斗同班，是莱泽塔尼亚王国的第一王女。\r\n以“花”为形象具象自己的能力，开发出包括攻击、防御、移动、陷阱等各种技能多达十多种，在现役的魔女中堪称拥有顶尖的实力。为了救助祖国的孤儿院而来到星导馆赚钱，以称霸星武祭三冠王为目标。\r\n拥有操纵火焰能力的魔女，为星导馆排名第五，称号为“华焰魔女”。",
+    "name": "ユリス＝アレクシア・ フォン・リースフェルト",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "尤莉丝·爱雷克西亚·冯·里斯妃特"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "称号",
+                    "v": "華焔の魔女（グリューエンローゼ）"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Julis-Alexia von Riessfeld"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ユリス＝アレクシア・ フォン・リースフェルト"
+                },
+                {
+                    "k": "昵称",
+                    "v": "华焰魔女"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月23日"
+        },
+        {
+            "key": "身高",
+            "value": "162cm"
+        },
+        {
+            "key": "所属",
+            "value": "星導館学園高等部1年→2年"
+        },
+        {
+            "key": "序列",
+            "value": "星導館学園5位"
+        },
+        {
+            "key": "煌式武装",
+            "value": "アスペラ・スピーナ→ノヴァ・スピーナ"
+        }
+    ],
+    "stat": {
+        "comments": 11,
+        "collects": 58
+    },
+    "id": 32364,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        130250
+    ]
+}

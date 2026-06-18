@@ -1,0 +1,124 @@
+{
+    "id": 306742,
+    "name": "Love Live! Superstar!!",
+    "image_path": "data\\images\\anime\\306742.jpg",
+    "points": 6.5,
+    "cost": 1,
+    "rarity": "N",
+    "description": "私立结丘女子高级中学，这间位于表参道、原宿、青山三个城市交界的的新学校迎来了第一批学生。\r\n没有历史，没有旧生，甚至校名也毫无知名度，在这间什么都没有的新学校里，以涩谷花音为中心的五名少女邂逅了“学园偶像”。\r\n“我果然很喜欢唱歌！我想用歌声……实现心愿！！”\r\n仍然渺小的几颗星星，她们远大的想法此时开始交错。\r\n这就是从零开始，属于拥有无限可能的她们的“大家一起实现的故事”（学园偶像计划）。展翅翱翔吧，我们的Love Live！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "校园",
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "2021-07-11",
+    "rating_rank": 5281,
+    "rating_score": 6.5,
+    "rating_total": 6137,
+    "main_character_ids": [
+        77208,
+        77209,
+        77210
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/85/86/77208_crt_HE08G.jpg?r=1626374131",
+                "grid": "https://lain.bgm.tv/pic/crt/g/85/86/77208_crt_HE08G.jpg?r=1626374131",
+                "large": "https://lain.bgm.tv/pic/crt/l/85/86/77208_crt_HE08G.jpg?r=1626374131",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/85/86/77208_crt_HE08G.jpg?r=1626374131"
+            },
+            "name": "唐可可",
+            "summary": "上海から結ヶ丘女子高等学校に入学した女の子。スクールアイドルが大好きで、かのんを誘ってスクールアイドルを始める。よく笑いよく泣く情熱的な女の子で、好きなものには一直線。可愛いものも大好きなLiella!の太陽のような存在。\r\n\r\nミナサン、初めまして、唐可可デス。クゥクゥと呼んで下さいデス。クゥクゥと寝ている場合じゃないのデス！　起きるのデス！　ウェイクアップデスよ！　クゥクゥはスクールアイドルに憧れて、上海から日本にやって来マシタ！好きなものは、チョコバナナとナポリタン、それからスクーーーーーールアイドルデス！\r\nお母さんの故郷であるこの日本で、スクールアイドルを精一杯頑張るのデス！　ミナサンも、私と一緒にスクールアイドルしてバンガッテクダサイネー！　返事は大きく！　もう一度！　いきますよー！　ハイデス！　その意気デス！",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/03/90/35786_prsn_KX8f4.jpg?r=1750002826",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/03/90/35786_prsn_KX8f4.jpg?r=1750002826",
+                        "large": "https://lain.bgm.tv/pic/crt/l/03/90/35786_prsn_KX8f4.jpg?r=1750002826",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/03/90/35786_prsn_KX8f4.jpg?r=1750002826"
+                    },
+                    "name": "Liyuu",
+                    "short_summary": "中国上海出身の歌手・コスプレイヤー。そのフォトジェニックなビジュアルから中国のみならず世界中のコスプレファンから圧倒的な人気を誇っている。2020年1月22日ランティスレーベルより、TVアニメ「はてな☆イリュージョン」OP主題歌「Magic Words」でアーティストデビュー。\r\n\r\n2022年2月9日にはファーストアルバム「Fo(u)r YuU」をリリース。2022年2月11日には初のソロコンサート「Liyuu First Concert2022「Fo(u)r YuU」」をパシフィコ横浜国立大ホールで開催。Liyuuの地元中国でbilibili生配信を実施し、約7000人が視聴。日本からのアーティストコンサート生配信ランキングで歴代1位を記録。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 35786,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 77208
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ac/6d/77209_crt_vD3eZ.jpg?r=1628487328",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ac/6d/77209_crt_vD3eZ.jpg?r=1628487328",
+                "large": "https://lain.bgm.tv/pic/crt/l/ac/6d/77209_crt_vD3eZ.jpg?r=1628487328",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ac/6d/77209_crt_vD3eZ.jpg?r=1628487328"
+            },
+            "name": "澁谷かのん",
+            "summary": "歌うことが大好きで昔は合唱部に所属していたが、人前で歌うのはちょっと苦手な女の子。シャイだが、純粋に歌を愛する心と、人の気持ちになって考えることが出来る優しさを持ち、Liella!を引っ張っていく存在に成長していく。\r\n\r\n初めまして。私、澁谷かのんといいます。えーと、ごめんなさい、あんまりこういうの得意じゃなくて。えーと、自己紹介だよね、自己紹介。名前はかのん、誕生日は５月１日。家の喫茶店を手伝ったりしながら家族と一緒に暮らしている、ごく普通の高校生です。特に得意なものはなくて……えっ？　歌？　ダメダメダメダメ！…緊張するけど、本当は大好きな歌で、みんなを元気にさせたいな。将来の夢も特にないし、得意な教科もあまりなくて……ああっ、特徴なさすぎ！\r\nでもね、こんな普通な私だけど、ううん、こんな普通な私だからこそ出来ることがあるんじゃないかと思って、スクールアイドル、始めることにしました。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d2/af/40416_prsn_iRn7z.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d2/af/40416_prsn_iRn7z.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/d2/af/40416_prsn_iRn7z.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d2/af/40416_prsn_iRn7z.jpg"
+                    },
+                    "name": "伊達さゆり",
+                    "short_summary": "",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 40416,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 77209
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b0/70/77210_crt_9OcZo.jpg?r=1630428906",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b0/70/77210_crt_9OcZo.jpg?r=1630428906",
+                "large": "https://lain.bgm.tv/pic/crt/l/b0/70/77210_crt_9OcZo.jpg?r=1630428906",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b0/70/77210_crt_9OcZo.jpg?r=1630428906"
+            },
+            "name": "嵐千砂都",
+            "summary": "かのんの幼なじみで大親友。昔からダンスを習っており大会でも多くの結果を残してきた。努力家で献身的な性格は誰からも好かれており、ダンス担当として、Liella!のレベルアップに貢献していく。丸いものが大好き。\r\n\r\n初めまして。ういっすういっすういっすー！　嵐千砂都です。実は私は、ダンスをしたくてこの学校に入ったんだけど、ひょんなことからスクールアイドルやることになっちゃったんだ。本当に自分がやっていいの？ なんて思ったこともあったけど、今は得意なダンスでみんなと一緒に楽しんでいけたらいいなって思ってます。そうだ、良かったら、今度一緒に踊ってみない!?\r\n性格は明るくて、人懐っこい方、怒ると怖いって言われたりもするけど、気のせいだと思うよ。みんなと買い物いったり、友達とお話したりするのも大好き。あ、料理も結構得意だったりするんだよ。\r\n普段は表参道裏のたこ焼き屋でバイトしているから、時間あったら遊びにきて。\r\nはい。たこ焼き丼一つ、おまちどうさま！",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/56/d5/40417_prsn_cL62C.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/56/d5/40417_prsn_cL62C.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/56/d5/40417_prsn_cL62C.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/56/d5/40417_prsn_cL62C.jpg"
+                    },
+                    "name": "岬なこ",
+                    "short_summary": "",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 40417,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 77210
+        }
+    ]
+}

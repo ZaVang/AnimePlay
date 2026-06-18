@@ -1,0 +1,64 @@
+{
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ba/8c/26176_crt_zlI2I.jpg?r=1406644277",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ba/8c/26176_crt_zlI2I.jpg?r=1406644277",
+        "large": "https://lain.bgm.tv/pic/crt/l/ba/8c/26176_crt_zlI2I.jpg?r=1406644277",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ba/8c/26176_crt_zlI2I.jpg?r=1406644277"
+    },
+    "summary": "",
+    "name": "クレア・ルージュ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "克蕾儿·露裘"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "クレア・エルステイン"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "克蕾儿·艾尔斯坦因"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Claire Rouge"
+                },
+                {
+                    "k": "日文名",
+                    "v": "クレア・ルージュ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "♀"
+        },
+        {
+            "key": "契約精霊",
+            "value": "スカーレット（オルトリンデ）"
+        },
+        {
+            "key": "精霊魔装",
+            "value": "炎の鞭（フレイムタン）"
+        }
+    ],
+    "stat": {
+        "comments": 9,
+        "collects": 64
+    },
+    "id": 26176,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        79226
+    ]
+}

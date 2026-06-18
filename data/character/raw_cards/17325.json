@@ -1,0 +1,45 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/74/4e/17325_crt_DK231.jpg?r=1370786004",
+        "grid": "https://lain.bgm.tv/pic/crt/g/74/4e/17325_crt_DK231.jpg?r=1370786004",
+        "large": "https://lain.bgm.tv/pic/crt/l/74/4e/17325_crt_DK231.jpg?r=1370786004",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/74/4e/17325_crt_DK231.jpg?r=1370786004"
+    },
+    "summary": "",
+    "name": "坂本竜太",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "坂本龙太"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "さかもとりゅうた"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 12,
+        "collects": 13
+    },
+    "id": 17325,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        41529
+    ]
+}

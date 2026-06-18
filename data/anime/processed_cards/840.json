@@ -1,0 +1,126 @@
+{
+    "id": 840,
+    "name": "千年女优",
+    "image_path": "data\\images\\anime\\840.jpg",
+    "points": 8.7,
+    "cost": 6,
+    "rarity": "UR",
+    "description": "风靡日本的女明星藤原千代子，三十年前当红之际，突然从银幕消声匿迹。\r\n三十年后，千代子的影迷费尽千辛万苦，终于在人烟稀少的寂静山庄中，找到了隐居数十年的她，并献上了一把千代子当年不慎遗失的神秘钥匙。\r\n神秘钥匙宛若开启了记忆之门，引领千代子划入回忆的大海，挖掘出一段她从不为人知的爱情故事。那故事像是从千代子辉煌年代的河流溢出，一路流向她无数的电影与映像汇集而成的海洋；也像从遥远的战国时代奔驰而来，再闯进无边无际的时空未来。\r\n而倾听入神的影迷，则随着千代子在记忆的逆流波谷间摆荡，体验她那令人怜惜的悲欢爱情；更在波涛汹涌的时空浪潮中，猛然惊觉到那股横亘千年的浓绵相思，神秘钥匙开启被千代子封锁隐藏了的记忆，解开了她的重要秘密。那正是在无情的时间洪流里，当记忆与爱情最灿烂交会时，所浮现出最真实且永恒的一代巨星千代子。",
+    "type": 2,
+    "platform": "剧场版",
+    "episodes_for_hangup": 1,
+    "synergy_tags": [
+        "剧场版",
+        "日本",
+        "原创"
+    ],
+    "date": "2002-09-14",
+    "rating_rank": 18,
+    "rating_score": 8.7,
+    "rating_total": 12740,
+    "main_character_ids": [
+        6447
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/88/cc/6447_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/88/cc/6447_crt_anidb.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/88/cc/6447_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/88/cc/6447_crt_anidb.jpg"
+            },
+            "name": "藤原千代子",
+            "summary": "",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b9/7a/4042_prsn_rDhDy.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b9/7a/4042_prsn_rDhDy.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/b9/7a/4042_prsn_rDhDy.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b9/7a/4042_prsn_rDhDy.jpg"
+                    },
+                    "name": "折笠富美子",
+                    "short_summary": "名字“富美子”的意思是，她的母亲希望她成为一个内心丰“富”“美”丽的人。\r\n    自幼在东京台东区浅草长大，高中毕业后不读大学为了不增加母亲的负担，因为出身于单亲家庭，家庭成员有母亲及一个姐姐，中学及高中时期因受姐姐影响都就读女校。\r\n    从小便学习电子琴，因此中学及高中时期皆为轻音乐社的社员，高中时期还担任学生会副会长的职位。\r\n    高二时期参与了日本的知名剧团“Super Eccentric Theater”的招募活动，自幼开始便不擅长在人群前表演，所以在决定参加SET剧团招募活动时家人感到惊讶但支持她去尝试，于最后面谈唱了迪士尼的“星に愿いを”令人留下印象之后通过测验，高三时期便成为剧团之第三期研究生培训，研究生毕业公演担当主角后成为正式成员剧团的一员。\r\n    演技广泛，不论是活泼少女、坚强女性，甚至是阴郁内向的女生，她都能完美地诠释。\r\n    1996年，曾参加“辉く日本の星!---平成的原节子”的比赛，在比赛中最后获得第二名。\r\n    得知自己被选为动画版GTO女主角时高兴地说“我快成了松岛菜菜子了”。\r\n    在2006年12月9日和嘉数由美、丰口惠共同组成演剧团体“R*L（ラフラフ）”(R＝Rough，L＝Laugh)。\r\n    1999年，加入东京俳优生活协同组合（俳协），俳协主页上把麾下声优按照声型逐个分为高、中、低不同的声部，她被划分为女高音。\r\n    2007年3月1日离开俳协，并在2007年2月28日加入新的声优事务所“Atomic Monkey”。\r\n    目前正在学习手语，已取得NPO手语检定2级及全国手语检定3级的资格。\r\n    在家中饲养了一只名叫SERORI的猫咪。\r\n    曾自言不擅长杂志采访和出席广播谈话节目。\r\n    喜欢搜集簪子及手帕。\r\n    似乎是个灵感很强的人，常可以感应到一些东西，但本人对于此不是很在意，而且可以若无其事的说出鬼故事。\r\n    在业界中跟嘉数由美是很好的朋友，嘉数低调结婚到生子的时候，都去为她祝贺，且时不时在一起相聚喝茶。\r\n    是“和服社”的一员（嘉数由美是目前的社长）；不论公私活动，出外都穿着和服；和服部其他的成员还有：大原沙耶香、菊池志穗、丰口惠、浅野真由美等。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 4042,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/59/be/4159_prsn_S2dx7.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/59/be/4159_prsn_S2dx7.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/59/be/4159_prsn_S2dx7.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/59/be/4159_prsn_S2dx7.jpg"
+                    },
+                    "name": "小山茉美",
+                    "short_summary": "テレビアニメだけでなく、洋画吹き替えにも積極的に参加。専任の俳優はいないものの、シャロン・ストーン、キム・ベイシンガー、ミシェル・ファイファー、ダイアン・レイン、メグ・ライアン、ルーシー・リューなどのクールでスレンダーな美女役が多い。\r\n\r\n近年ではNHKの教養番組や学校放送、テレビ朝日の『報道ステーション』、TBSの『報道特集』といった報道番組などのナレーションを務めることも多い。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 4159,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2b/19/19664_prsn_9b0XO.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2b/19/19664_prsn_9b0XO.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/2b/19/19664_prsn_9b0XO.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2b/19/19664_prsn_9b0XO.jpg"
+                    },
+                    "name": "荘司美代子",
+                    "short_summary": "日本の女優、声優。東京都出身。\r\n劇団俳優座養成所7期卒業。Jac in production（2011年11月 -）所属。以前は劇団新人会、東京演劇アンサンブル、同人舎プロダクション（-2011年9月）に所属していた。",
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 19664,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/de/72/48638_prsn_3nd08.jpg?r=1718788483",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/de/72/48638_prsn_3nd08.jpg?r=1718788483",
+                        "large": "https://lain.bgm.tv/pic/crt/l/de/72/48638_prsn_3nd08.jpg?r=1718788483",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/de/72/48638_prsn_3nd08.jpg?r=1718788483"
+                    },
+                    "name": "Erin Yvette",
+                    "short_summary": "美国演员 / 配音。",
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 48638,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/52/ee/48639_prsn_Y0KHr.jpg?r=1665776900",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/52/ee/48639_prsn_Y0KHr.jpg?r=1665776900",
+                        "large": "https://lain.bgm.tv/pic/crt/l/52/ee/48639_prsn_Y0KHr.jpg?r=1665776900",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/52/ee/48639_prsn_Y0KHr.jpg?r=1665776900"
+                    },
+                    "name": "Cindy Robinson",
+                    "short_summary": "美国配音演员。",
+                    "career": [
+                        "producer",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 48639,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 6447
+        }
+    ]
+}

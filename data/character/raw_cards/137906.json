@@ -1,0 +1,40 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1c/84/137906_crt_aZoFD.jpg?r=1731674266",
+        "grid": "https://lain.bgm.tv/pic/crt/g/1c/84/137906_crt_aZoFD.jpg?r=1731674266",
+        "large": "https://lain.bgm.tv/pic/crt/l/1c/84/137906_crt_aZoFD.jpg?r=1731674266",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1c/84/137906_crt_aZoFD.jpg?r=1731674266"
+    },
+    "summary": "かつての魔王の臣下・六魔侯の一人で、炎に関する魔法を得意とする。\r\n魔王・ベルトールに対して忠誠を強く誓っており、ベルトールからも絶大な信頼を置かれている。\r\nベルトールから《転輪の法（メテノエル）》の発動条件を聞かされており、統合暦2099年の新宿市で、魔王再臨の究極儀式を遂行した。",
+    "name": "マキナ＝ソレージュ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "玛琪娜·索雷兹"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 124,
+        "collects": 297
+    },
+    "id": 137906,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        425991
+    ]
+}

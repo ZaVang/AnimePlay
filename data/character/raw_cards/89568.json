@@ -1,0 +1,85 @@
+{
+    "birth_mon": 3,
+    "gender": "female",
+    "birth_day": 10,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f5/f4/89568_crt_Cj56X.jpg?r=1719295543",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f5/f4/89568_crt_Cj56X.jpg?r=1719295543",
+        "large": "https://lain.bgm.tv/pic/crt/l/f5/f4/89568_crt_Cj56X.jpg?r=1719295543",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f5/f4/89568_crt_Cj56X.jpg?r=1719295543"
+    },
+    "summary": "动画S2：\r\n明朗快活で元気いっぱいな女の子。\r\n無邪気でどんなことにも積極的にチャレンジ\r\nする行動力も魅力のひとつ。\r\nトウカイテイオーに憧れの感情を抱いている。\r\nサトノダイヤモンドとは幼馴染ともいえる仲。\r\n\r\n手游：\r\nお祭り大好き！元気で明るい人情派ウマ娘。\r\n困っている人を見れば助け、悩んでいる人には話を聞き……\r\nたくさんの人に慕われる優しい子だが、たまにべらんめぇ口調が飛び出す。\r\nそんな彼女は夢をいまだ知らない。\r\nだからまっさらなまま笑顔で走る。\r\n眩い光に溢れる未来に向かって！\r\n***\r\n北部玄驹（2012年3月10日~）枣色\r\n公马\r\n出生地：日本（北海道沙流郡日高町）",
+    "name": "キタサンブラック",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "北部玄驹"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Kitasan Black"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "3月10日"
+        },
+        {
+            "key": "身高",
+            "value": "162cm;140cm(S2)"
+        },
+        {
+            "key": "体重",
+            "value": "もりもり成長中！"
+        },
+        {
+            "key": "BWH",
+            "value": "B85・W56・H88"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://anime-umamusume.jp/character/"
+        },
+        {
+            "key": "毛色",
+            "value": "鹿毛"
+        },
+        {
+            "key": "现实马主",
+            "value": "有限会社大野商事"
+        },
+        {
+            "key": "成績(勝率):",
+            "value": "21戦12勝（57.1%）"
+        },
+        {
+            "key": "獲得賞金",
+            "value": "18億7,684万円(中央)"
+        },
+        {
+            "key": "固有二つ名",
+            "value": "お祭り娘"
+        }
+    ],
+    "stat": {
+        "comments": 53,
+        "collects": 142
+    },
+    "id": 89568,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        407332
+    ]
+}

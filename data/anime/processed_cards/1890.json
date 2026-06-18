@@ -1,0 +1,144 @@
+{
+    "id": 1890,
+    "name": "最终幻想7：降临之子",
+    "image_path": "data\\images\\anime\\1890.jpg",
+    "points": 7.6,
+    "cost": 1,
+    "rarity": "N",
+    "description": "　　故事从97年《最终幻想VII》结局两年之后开始，当人们以为世界已经和平之时，所谓的“星痕症候群”的病却开始四处蔓延，世界再度面临危机。同时曾经为拯救世界而战的英雄克劳德却与世隔绝孤独的生活着…… \r\n　　剧情叙述主角们打倒赛菲罗斯（Sephiroth），拯救星球免于巨大陨石的侵袭后两年，神秘的怪病「星痕症候群」在各地陆续传出病例。而主角克劳德（Cloud）在与爱莉斯（Aerith）死别后，便郁郁寡欢。某日突然出现了与赛菲罗斯有未知关联的神秘3人组，除了直接对克劳德造成威胁之外，还进行着一连串秘密的计划，将已回归各自生活的主角群们，再次的卷入风波中……",
+    "type": 2,
+    "platform": "OVA",
+    "episodes_for_hangup": 1,
+    "synergy_tags": [
+        "科幻",
+        "日本",
+        "OVA",
+        "游戏改"
+    ],
+    "date": "2005-09-14",
+    "rating_rank": 645,
+    "rating_score": 7.6,
+    "rating_total": 3676,
+    "main_character_ids": [
+        2419,
+        2420,
+        44622
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d9/d6/2419_crt_gcC5g.jpg?r=1606084098",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d9/d6/2419_crt_gcC5g.jpg?r=1606084098",
+                "large": "https://lain.bgm.tv/pic/crt/l/d9/d6/2419_crt_gcC5g.jpg?r=1606084098",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d9/d6/2419_crt_gcC5g.jpg?r=1606084098"
+            },
+            "name": "クラウド・ストライフ",
+            "summary": "",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/06/29/4015_prsn_4TZox.jpg?r=1638448222",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/06/29/4015_prsn_4TZox.jpg?r=1638448222",
+                        "large": "https://lain.bgm.tv/pic/crt/l/06/29/4015_prsn_4TZox.jpg?r=1638448222",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/06/29/4015_prsn_4TZox.jpg?r=1638448222"
+                    },
+                    "name": "櫻井孝宏",
+                    "short_summary": "爱知县冈崎市老家的本业是米店，店名为“樱井米谷店”，在当地小有名气。\r\n初中时的一个冬天，怕冷的他擅自把酒精灯里的液体倒在理科实验室的桌子上，点起火取暖，引响了火灾报警器，被赶来的老师狠狠教训了一顿。于是在老师的国语课上捣乱报复，夸张地朗读课文，实在听不过去的老师求他：“拜托，别念得跟声优似的好不好！”——这话对那时的樱井冲击很大，给他留下了声优不过是连小孩子都做得来的简单工作的印象。所以高中毕业后，乐得找轻松的樱井选择进入东京的声优专科学校。待迈入这一行，他才吐血地发现，且不说成为佼佼者，就是普通从业者也得掌握高超的专业技巧。\r\n2005年8月《最终幻想VII：降临之子》于第62届威尼斯影展参展。樱井以担任主角配音的身份，成为继山寺宏一后第2位踏上星光大道的日本籍声优。\r\n虽然戴着眼镜，可是樱井二眼视力皆为2.0，植田佳奈笑称那是“骗人眼镜”。那付眼镜的意义是“梦想与希望与对声迷们的爱”。\r\n最初的错误是BL DRAMA制作社Inter communications（inter桑）的一张drama的BK上打成了樱井考宏，之后《无法逃离的背叛》某个活动的官方网站上亦把樱井孝宏的名字写成“樱井考宏”，所以有昵称考哥，而并非是他的名字中的“孝”字与“考”字很像才有此外号。\r\n桜井(sakurai)，桜井さん（sakurai san），sakura i san，樱13",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 4015,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 2419
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e6/37/2420_crt_IQN42.jpg?r=1725459671",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e6/37/2420_crt_IQN42.jpg?r=1725459671",
+                "large": "https://lain.bgm.tv/pic/crt/l/e6/37/2420_crt_IQN42.jpg?r=1725459671",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e6/37/2420_crt_IQN42.jpg?r=1725459671"
+            },
+            "name": "ティファ・ロックハート",
+            "summary": "蒂法·洛克哈特，《最终幻想》中的女主角，反神罗组织“雪崩”的成员，在米德加7号街经营着一家名为“第七天堂”的酒吧。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b8/81/4723_prsn_nIj0z.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b8/81/4723_prsn_nIj0z.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/b8/81/4723_prsn_nIj0z.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b8/81/4723_prsn_nIj0z.jpg"
+                    },
+                    "name": "伊藤歩",
+                    "short_summary": "日本の女優。\r\n東京都練馬区出身。セブンス・アヴェニュー所属。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 4723,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/65/3a/46747_prsn_NHuhf.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/65/3a/46747_prsn_NHuhf.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/65/3a/46747_prsn_NHuhf.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/65/3a/46747_prsn_NHuhf.jpg"
+                    },
+                    "name": "Rachael Leigh Cook",
+                    "short_summary": "美国演员 / 配音 / 制片人 / 编剧。生于明尼苏达州 / 明尼阿波利斯。",
+                    "career": [
+                        "producer",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 46747,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 2420
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/40/ea/44622_crt_aksec.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/40/ea/44622_crt_aksec.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/40/ea/44622_crt_aksec.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/40/ea/44622_crt_aksec.jpg"
+            },
+            "name": "カダージュ",
+            "summary": "《降临之子》登场，萨菲罗斯思念体的首领，留着半长发，刘海盖快住一半的容貌，表征塞菲罗斯对母亲的思念，个体当克劳德为哥哥、家人，并视之为的家族的叛徒，擅长用双股刀（两片刀锋叠合成一把的武士刀），性格愤世嫉俗，渴望着被妈妈杰诺娃所重视。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/21/ba/4166_prsn_pi1o3.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/21/ba/4166_prsn_pi1o3.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/21/ba/4166_prsn_pi1o3.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/21/ba/4166_prsn_pi1o3.jpg"
+                    },
+                    "name": "森久保祥太郎",
+                    "short_summary": "日本的男性声优、演员、歌手。东京都八王子市出生，血型B型，现隶属于VIMS。\r\n带一点鼻音听起来有点“洋腔”的语调使他的声音辨识度极高，轻浮慢悠的口气很有贵族气息，也常接到一些外表看似花花公子实则非常专情的角色。\r\n在音乐方面十分活跃。与声优的石川英郎共组了乐团AN's ALL STARS。也常为友人的剧团担任音乐创作。\r\n演戏剧团“おにぎりスキッパーズ”的成员。\r\n与鸟海浩辅关系不错，两人在2008～2009的跨年夜曾整整两天都待在一起。\r\n2007年2月22日与浅川悠结婚。\r\n2009年1月14日离婚。\r\n2014年7月4日发表再婚消息，对方为一般女性。\r\n\r\n1992年、日本大学第三高等学校卒業、多摩美術大学中退。本格的に声優を始める前はタレント事務所に所属し、小学生の頃在籍したラボ・パーティの先輩達と立ち上げた劇団『おにぎりスキッパーズ』の公演を見た声優業界関係者のスカウトでオーディションを受け、『爆走兄弟レッツ&ゴー!!』のミニ四ファイターで1996年に声優デビュー。1年で最終話を迎えるはずが想像を遥かに超える人気作品に。よってシリーズが長引いてしまい、役者時代世話になった事務所から新たな声優事務所に移籍。以後、アニメ、ゲーム、ラジオパーソナリティ、音楽活動、舞台等様々な分野で活躍している。\r\nシグマ・セブンに在籍の後、現在のアーツビジョン系列事務所『ヴィムス』に移籍。\r\n1998年、声優の石川英郎と共に『あんず』(森久保が唯一食べられた果物)というユニット名で音楽活動を始める。\r\n1999年、バンドメンバーを加えバンド『AN's ALL STARS』結成。同年8月、バンド『Mosquito Milk』結成。\r\n2001年、カプコン セルピュータレーベルよりソロデビュー。\r\n2008年、Lantisより再デビュー。毎年末に開催される「Original Entertainment Paradise“おれパラ”」ではホストの一人としてライブを披露している。\r\n2010年、ソロプロジェクトとして『Buzzy→Bee（バジービー）』結成。\r\n2015年1月、bayfm長寿番組『KEIYOGINKO POWER COUNTDOWN JAPAN HOT 30』の2代目DJとして就任。(初代はバッキー木場。25年で引退。)\r\n2016年、第10回声優アワードで富山敬賞を受賞。",
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 4166,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 44622
+        }
+    ]
+}

@@ -1,0 +1,68 @@
+{
+    "birth_mon": 7,
+    "gender": "female",
+    "birth_day": 30,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/90/3b/1744_crt_3k4tP.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/90/3b/1744_crt_3k4tP.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/90/3b/1744_crt_3k4tP.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/90/3b/1744_crt_3k4tP.jpg"
+    },
+    "summary": "生日：7月30日。身高160cm，三围：81/58/83，兴趣是人间界的新闻剪报，喜欢禀的膝枕、掏禀的耳朵、料理，讨厌测验、孤独。人物设定是西又葵。\r\n　　昵称希亚（シア），神族的公主。神王的独生女。为了能再见到禀而来到人间界，禀的结婚候选。精力充沛的而热心，平易近人，不论跟谁都能聊得起来、制造愉快气氛的专门家。家事全般、运动神经也不错，但是对读书非常不擅长（课业能力惊人的低），很认真却很喜欢恶作剧，做事十分努力也是优点之一。然而常常对神王进行暴走椅子攻击。\r\n　　其名字的由来是植物的洋桔梗的别名。",
+    "name": "リシアンサス",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "利希安瑟丝"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Sia"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Lisianthus"
+                },
+                {
+                    "k": "昵称",
+                    "v": "シア"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月30日"
+        },
+        {
+            "key": "身高",
+            "value": "160cm"
+        },
+        {
+            "key": "BWH",
+            "value": "B81/W58/H83"
+        },
+        {
+            "key": "声优",
+            "value": "佐佐留美子/青木沙耶香"
+        }
+    ],
+    "stat": {
+        "comments": 6,
+        "collects": 22
+    },
+    "id": 1744,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        2937
+    ]
+}

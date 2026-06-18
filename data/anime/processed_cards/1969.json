@@ -1,7 +1,7 @@
 {
     "id": 1969,
     "name": "奔向地球",
-    "image_path": "data/images/anime/1969.jpg",
+    "image_path": "data\\images\\anime\\1969.jpg",
     "points": 7.5,
     "cost": 1,
     "rarity": "N",

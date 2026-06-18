@@ -1,0 +1,45 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/88/e0/104212_crt_z2T77.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/88/e0/104212_crt_z2T77.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/88/e0/104212_crt_z2T77.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/88/e0/104212_crt_z2T77.jpg"
+    },
+    "summary": "四方田家の一人息子の高校2年生。麿子が自分の孫であることに戸惑いながらも、その瑞々しさに惹かれ、ふしだらな思いを抱き始める。そして祖父と言う立場を利用し、麿子を説き伏せ、二人の愛の逃避行を繰り広げる。",
+    "name": "四方田犬丸",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "四方田犬丸"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "よもた いぬまる"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 2,
+        "collects": 1
+    },
+    "id": 104212,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        4042
+    ]
+}

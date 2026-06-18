@@ -1,0 +1,40 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c3/1b/165933_crt_rZ7jV.jpg?r=1729311949",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c3/1b/165933_crt_rZ7jV.jpg?r=1729311949",
+        "large": "https://lain.bgm.tv/pic/crt/l/c3/1b/165933_crt_rZ7jV.jpg?r=1729311949",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c3/1b/165933_crt_rZ7jV.jpg?r=1729311949"
+    },
+    "summary": "ロシア出身。通称クリス。基本、陽気でフランク、\r\n誰とでも気さくに話す。\r\n男性にも女性にも媚びない姉御肌。\r\n銃のスペシャリストで、あらゆる銃器の扱いにたけている。\r\n酒飲みで楽観的、おおざっぱな性格。",
+    "name": "クリスティン",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "克莉丝"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 15,
+        "collects": 16
+    },
+    "id": 165933,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        446296
+    ]
+}

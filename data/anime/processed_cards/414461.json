@@ -1,0 +1,142 @@
+{
+    "id": 414461,
+    "name": "僵尸百分百～在成为僵尸前要做的100件事～",
+    "image_path": "data\\images\\anime\\414461.jpg",
+    "points": 5.7,
+    "cost": 1,
+    "rarity": "N",
+    "description": "24岁的天道辉进入公司第三年，每天都因为黑心企业的折磨身心俱疲。他虽然对向往的经理凤小姐怀抱情愫，但恋情始终无法有结果，每天都过着充满绝望的日子。某一天，街上突然爆发了僵尸传染病！被大量僵尸追赶的辉在身陷绝境时，脑海中突然闪过了一句「改变人生的话语」。\r\n那就是……\r\n「我从今天开始是不是不用去公司上班了？」\r\n告白、联谊、走遍全日本……！？摆脱黑心企业的束缚、重新复活的辉，现在即将开始着手进行「在成为僵尸前要做的100件事」―――！！\r\n\r\n\r\n[简介原文]\r\n⼊社3年⽬のブラック企業で⾝も⼼もすり減らす天道輝、24歳。憧れの経理・鳳さんへの恋もままならず、絶望的な毎⽇を繰り返す中…ある⽇突然、街でゾンビ・パンデミックが発⽣！⼤量のゾンビに追われるアキラは、絶体絶命の中「⼈⽣を変える⾔葉」を閃く。\r\nそれは……\r\n「今⽇から会社に⾏かなくてもいいんじゃね？」\r\n告⽩、合コン、⽇本⼀周……!?ブラック企業から解放され、復活したアキラの「ゾンビになるまでにしたい100のこと」が、いま始まる―――！！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "漫画改",
+        "冒险"
+    ],
+    "date": "2023-07-09",
+    "rating_rank": 8789,
+    "rating_score": 5.7,
+    "rating_total": 5910,
+    "main_character_ids": [
+        125834,
+        125870,
+        131420
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b6/7e/125834_crt_j8jMO.jpg?r=1676622979",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b6/7e/125834_crt_j8jMO.jpg?r=1676622979",
+                "large": "https://lain.bgm.tv/pic/crt/l/b6/7e/125834_crt_j8jMO.jpg?r=1676622979",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b6/7e/125834_crt_j8jMO.jpg?r=1676622979"
+            },
+            "name": "天道輝",
+            "summary": "声 - 梅田修一朗、大地葉（少年期）\r\n映像制作会社に勤める24歳。ブラック企業で「生きる屍」のように働いていたが、ゾンビ・パンデミックで世界が一変して逆に復活。元々の性格はポジティブ。正義感溢れる一面も。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f0/96/10869_prsn_nWIUY.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f0/96/10869_prsn_nWIUY.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/f0/96/10869_prsn_nWIUY.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f0/96/10869_prsn_nWIUY.jpg"
+                    },
+                    "name": "大地葉",
+                    "short_summary": "日本女性声优，埼玉县出生。日本播音演技研究所出身，隶属于VIMS。名字“大地叶”（たいち よう／Taichi You）是艺名，由来是学生时期的绰号たいちょー（“队长”，日语读音：Taichō）。\r\n\r\n趣味・特技：インド映画鑑賞、ピアノ弾き語り、曲のコピー（譜面をおこせる）\r\n芸歴：日本ナレーション演技研究所",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 10869,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/dd/dc/41073_prsn_ol77n.jpg?r=1633081644",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/dd/dc/41073_prsn_ol77n.jpg?r=1633081644",
+                        "large": "https://lain.bgm.tv/pic/crt/l/dd/dc/41073_prsn_ol77n.jpg?r=1633081644",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dd/dc/41073_prsn_ol77n.jpg?r=1633081644"
+                    },
+                    "name": "梅田修一朗",
+                    "short_summary": "梅田 修一朗（うめだ しゅういちろう、10月11日）は、日本の男性声優。千葉県出身。賢プロダクション所属。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 41073,
+                    "type": 2,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 125834
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/6e/d1/125870_crt_DfFwQ.jpg?r=1690991807",
+                "grid": "https://lain.bgm.tv/pic/crt/g/6e/d1/125870_crt_DfFwQ.jpg?r=1690991807",
+                "large": "https://lain.bgm.tv/pic/crt/l/6e/d1/125870_crt_DfFwQ.jpg?r=1690991807",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6e/d1/125870_crt_DfFwQ.jpg?r=1690991807"
+            },
+            "name": "三日月閑",
+            "summary": "外資系金融に勤める。リスクヘッジを最優先に考え論理的に行動する。「ゾンビにならないためにすべき100のこと」をリスト化し、ゾンビ・パンデミック世界を生き抜こうとする。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b8/95/29965_prsn_iY5Xl.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b8/95/29965_prsn_iY5Xl.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/b8/95/29965_prsn_iY5Xl.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b8/95/29965_prsn_iY5Xl.jpg"
+                    },
+                    "name": "楠木ともり",
+                    "short_summary": "女性声优、歌手，所属经纪公司为Sony Music Artists，唱片公司为SACRA MUSIC。\r\n\r\n楠木灯自初中二年级起喜欢动画，在《小鸠》再播时为花泽香菜演技所动，志向成为声优。她未在声优养成所学习，而是自学。\r\n2016年，于Sony Music Artists主办的试音企画Anistoteles第5回中获特别奖。楠木灯当时是没有经验，觉得声优试音很严酷，以歌手志愿参加的试音。\r\n2017年，借由电视动画《埃罗芒阿老师》女中学生声优出道。次年以《原书·原书使》键村叶月声优的身份首次担任动画主演。\r\n2018年4月15日，SMA voice内成员网站“TOMOROOM”开设。\r\n2018年8月8日在其个人Twitter正式表明自己的中文名为“楠木灯”。\r\n2018年8月24日，以《刀剑神域外传 Gun Gale Online》莲的声优之名义出演Animelo Summer Live 2018 \"OK!\"。\r\n2019年3月9日，获第13回声优奖新人女优奖。\r\n2019年12月29日，在楠木灯 生日演唱会 2019 Kusunoki Tomori coming-of-age『WRAPPED///LIVE廿』中正式出道。\r\n2020年6月12日，宣布了首张正式出道独唱专辑《不适任者》的发售决定。\r\n\r\n楠木灯自3岁起学习钢琴，初中时代加入吹奏乐社，高中时代加入轻音社。对作词作曲感兴趣[，发布有原创CD。喜欢Sayuri、遥与美幸等歌手，以及投入自身感情的歌曲。\r\n她在志向成为声优时，对设计感兴趣，想边读美术学校，边实现成为声优的梦想。但得到动画主演的决定后，觉得无法兼顾工作和学业而选择了工作。成为声优后，有时也有机会设计演唱会商品。她有绘画方面的特长，常常绘制本人出演角色的画像。\r\n她在初中时代做过学生会长，觉得人前和平常的自己如同两人而有乐趣，认为声优职业是“成为自己本无法成为的人”，两者的共同点是工作的乐趣。她对“变身”有强烈的憧憬，喜欢这类题材的魔法少女动画，其中《东京喵喵》是她喜欢动画的契机。她还喜欢物语系列、《盗梦侦探》等作品。\r\n她认为自己“不服弱”。周围人对她也多有“认真”的印象。东方收音机的中田敦彦在初次共同广播谈话时，评价她为多才，是“小岛瑠璃子以来的冲击”。\r\n她表示，她在活动时以“大家的心是明灯”为指针，希望能陪伴在痛苦者的身边。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 29965,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 125870
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/6d/df/131420_crt_iiKcO.jpg?r=1686486054",
+                "grid": "https://lain.bgm.tv/pic/crt/g/6d/df/131420_crt_iiKcO.jpg?r=1686486054",
+                "large": "https://lain.bgm.tv/pic/crt/l/6d/df/131420_crt_iiKcO.jpg?r=1686486054",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6d/df/131420_crt_iiKcO.jpg?r=1686486054"
+            },
+            "name": "竜崎憲一朗",
+            "summary": "大手不動産の営業マン、24歳。\r\nアキラとは同じ大学のラグビー部だった。\r\n持ち前のコミュニケーション能力で順風満帆な\r\n社会人生活を送っていたかのように見えたが……\r\n裸芸が得意。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/15/71/12483_prsn_pXYzu.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/15/71/12483_prsn_pXYzu.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/15/71/12483_prsn_pXYzu.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/15/71/12483_prsn_pXYzu.jpg"
+                    },
+                    "name": "古川慎",
+                    "short_summary": "古川 慎（ふるかわ まこと、1989年9月29日 - ）は、日本の男性声優。トイズファクトリー所属。\r\n熊本県出身。福岡スクールオブミュージック専門学校卒業。\r\n\r\n5歳の時に見た『新機動戦記ガンダムW』のヒイロ・ユイを充てた緑川光の声に憧れたことで声優への興味を持つようになった。その後中学生時代にスカパーのアニメ専門チャンネルを見てアニメ好きになったという。\r\n高校生の時、友達からもらった専門学校のパンフレットに緑川光が特別講師としてくることを見て、挑戦してみようと思い専門学校に通い始めた。\r\n\r\n趣味は雑貨屋めぐり、神社や寺などのパワースポットを巡ること。\r\n一番好きな食べ物はお好み焼き。キュウリとカリフラワーが苦手。\r\n好きなアーティストはL'Arc〜en〜Ciel、Mr.Children、ゴスペラーズ、GRANRODEO、BUMP OF CHICKEN。\r\n\r\n2011年にWebアニメ「武装中学生」吉野サトシ役で声優デビュー。\r\n2012年にアルバイトでPS3専用ソフト「白騎士物語」のモーションアクターを演じた経験を持つ。\r\n2016年、7月より声優の小林裕介と共にパーソナリティを務めるラジオ『なんでもヒーロー！ ゆっけとまーぼー』の放送を開始。\r\n2017年10月に開催された、初バースデーイベント「古川慎　秋の収穫祭2017」にて、2018年アーティスト活動を開始することを発表。\r\n2018年7月、Lantisより歌手デビュー。同年8月31日、6年間所属していたスペースクラフト・エンタテインメントを退所し、フリーでの活動期間を経て同年12月1日、トイズファクトリーに所属。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 12483,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 131420
+        }
+    ]
+}

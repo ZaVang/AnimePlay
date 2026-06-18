@@ -1,0 +1,61 @@
+{
+    "birth_mon": 7,
+    "gender": "female",
+    "birth_day": 7,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/44/5a/14706_crt_Kntk9.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/44/5a/14706_crt_Kntk9.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/44/5a/14706_crt_Kntk9.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/44/5a/14706_crt_Kntk9.jpg"
+    },
+    "summary": "小鳥遊三姉妹の長女で、茶色味がかったセミロングの髪にリボンを結んだ美少女。物語開始当時14歳。中学2年生（1 - 10巻）→3年生（11 - 15巻）→高校1年生（16巻）→2年生（17巻）→3年生（18巻） 。",
+    "name": "小鳥遊空",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小鸟游空"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "婚后名",
+                    "v": "瀬川空（せがわ そら）"
+                },
+                {
+                    "k": "日文名",
+                    "v": "小鳥遊 空"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "たかなし そら"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Takanashi Sora"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月7日"
+        }
+    ],
+    "stat": {
+        "comments": 23,
+        "collects": 98
+    },
+    "id": 14706,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        25444
+    ]
+}

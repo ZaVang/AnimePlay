@@ -1,0 +1,41 @@
+{
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b6/04/16666_crt_4KWg3.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b6/04/16666_crt_4KWg3.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/b6/04/16666_crt_4KWg3.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b6/04/16666_crt_4KWg3.jpg"
+    },
+    "summary": "私家侦探，可变化成各种型态，如汽车导航系统、夜视镜、老鼠、枪支等\r\n\r\n诞生于“乐园”，被伊斯塔称为“宇宙道具”，实际上应该是极其高等的人工生命体。平时形象是金黄色的老鼠，可以变成任何装备（或道具等等），也充当了芭洛特的“翻译”。性格严谨而正直，有原则性。前任搭档是鲍迪克。",
+    "name": "ウフコック・ペンティーノ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "乌夫库克·潘迪诺"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Oeufcoque Penteano"
+                }
+            ]
+        }
+    ],
+    "stat": {
+        "comments": 9,
+        "collects": 32
+    },
+    "id": 16666,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        4274
+    ]
+}

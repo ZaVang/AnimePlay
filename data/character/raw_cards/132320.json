@@ -1,0 +1,45 @@
+{
+    "birth_mon": 4,
+    "gender": null,
+    "birth_day": 10,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3a/96/132320_crt_Re00U.jpg?r=1698678587",
+        "grid": "https://lain.bgm.tv/pic/crt/g/3a/96/132320_crt_Re00U.jpg?r=1698678587",
+        "large": "https://lain.bgm.tv/pic/crt/l/3a/96/132320_crt_Re00U.jpg?r=1698678587",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3a/96/132320_crt_Re00U.jpg?r=1698678587"
+    },
+    "summary": "王国に伝わる、意思を持つ聖剣。長年王家に仕え、歴代の名騎士と共に幾千もの戦場を戦い抜いてきたが、現在は魔王軍の手に落ち姫と共に監禁されている。姫の気高さと精神力を信じようとするものの……今やすっかりツッコミ＆お目付け役に。",
+    "name": "エクス",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "艾克斯"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "生日",
+            "value": "4月10日"
+        },
+        {
+            "key": "喜欢的食物",
+            "value": "なし（物は食べない）"
+        }
+    ],
+    "stat": {
+        "comments": 8,
+        "collects": 14
+    },
+    "id": 132320,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        443112,
+        486763
+    ]
+}

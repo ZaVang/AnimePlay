@@ -1,0 +1,125 @@
+{
+    "id": 4284,
+    "name": "亲吻姐姐",
+    "image_path": "data\\images\\anime\\4284.jpg",
+    "points": 6.7,
+    "cost": 1,
+    "rarity": "N",
+    "description": "住之江圭太是个中学三年级的高中联考应届考生，他与没有血缘的双胞胎姐姐亚香与理香一起生活。尽管圭太一开始不喜欢他的二个姐姐积极诱惑他，后来他渐渐地被他的二个姐姐吸引住。而他们的父母亲亦鼓励圭太与亚香或理香结婚。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "校园",
+        "后宫",
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "2010-04-05",
+    "rating_rank": 4068,
+    "rating_score": 6.7,
+    "rating_total": 5371,
+    "main_character_ids": [
+        3650,
+        14492,
+        14493
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/45/ce/3650_crt_anidb.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/45/ce/3650_crt_anidb.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/45/ce/3650_crt_anidb.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/45/ce/3650_crt_anidb.jpg"
+            },
+            "name": "住之江圭太",
+            "summary": "",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4a/ea/5053_seiyu_anidb.jpg?r=1450269887",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/4a/ea/5053_seiyu_anidb.jpg?r=1450269887",
+                        "large": "https://lain.bgm.tv/pic/crt/l/4a/ea/5053_seiyu_anidb.jpg?r=1450269887",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4a/ea/5053_seiyu_anidb.jpg?r=1450269887"
+                    },
+                    "name": "武内健",
+                    "short_summary": "武内 健（たけうち けん、1978年2月20日 - ）は、日本の男性声優。アーツビジョン所属。日本ナレーション演技研究所出身。東京都出身。血液型はA型。\r\n日本ナレーション演技研究所出身。\r\n家でまったりするのが好き。\r\n夏が苦手である。以前海に行ったときに怖い経験をし、もう行かないと語った。\r\n好きな女性のタイプは癒し系。\r\n男子校出身である。\r\n酒は苦手で、限度はビールで言うとコップ半分。\r\n甘党で喫煙者なのは祖父からの隔世遺伝であると語った。\r\nネギが苦手。子供の頃のトラウマから、ドジョウが食べられない。\r\nしいたけ嫌いと書かれていたのをうけて「別に嫌いではない」と答えている。\r\n愛犬はシベリアンハスキー、以前はビーグルを飼っていた。\r\n2010年春頃から自筆サインを変更。\r\n髪の毛を一度も染めることも無く、ずっと黒髪。学生の頃、色素が薄いため、茶髪に勘違いされた。\r\n兄と年子の姉がいる。3人兄弟の末っ子。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 5053,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 3650
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/27/9e/14492_crt_TtP0T.jpg?r=1720615113",
+                "grid": "https://lain.bgm.tv/pic/crt/g/27/9e/14492_crt_TtP0T.jpg?r=1720615113",
+                "large": "https://lain.bgm.tv/pic/crt/l/27/9e/14492_crt_TtP0T.jpg?r=1720615113",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/27/9e/14492_crt_TtP0T.jpg?r=1720615113"
+            },
+            "name": "住之江あこ",
+            "summary": "雙胞胎的姐姐，就讀高中一年級，學校學生會會长。前面的頭髮用髮夾固定。跟理香不同的是她擅長做菜，擅長喝酒，常代替母親打理家務。外表看起來像是個思念弟弟的性格，其實她的個性極易害羞又好色。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2b/7b/5228_prsn_tIY4W.jpg?r=1718206051",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2b/7b/5228_prsn_tIY4W.jpg?r=1718206051",
+                        "large": "https://lain.bgm.tv/pic/crt/l/2b/7b/5228_prsn_tIY4W.jpg?r=1718206051",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2b/7b/5228_prsn_tIY4W.jpg?r=1718206051"
+                    },
+                    "name": "竹達彩奈",
+                    "short_summary": "日本的女性声优，1989年6月23日出生，埼玉县出身，所属事务所为LINK・PLAN 。身高151cm，血型为O型。代表作品有《轻音少女》中的中野梓、《kiss×sis》中的住之江亚香、《我的妹妹不可能那么可爱》中的高坂桐乃、《只有神知道的世界》中的高原步美、《玉响》中的泽渡枫、《MM一族》中的石动美绪、《迷途猫》中的雾谷希等。\r\n\r\n2019年6月23日，即竹达彩奈生日当天，宣布了与梶裕贵的婚讯。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 5228,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 14492
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/3d/dc/14493_crt_66CIq.jpg?r=1720615295",
+                "grid": "https://lain.bgm.tv/pic/crt/g/3d/dc/14493_crt_66CIq.jpg?r=1720615295",
+                "large": "https://lain.bgm.tv/pic/crt/l/3d/dc/14493_crt_66CIq.jpg?r=1720615295",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3d/dc/14493_crt_66CIq.jpg?r=1720615295"
+            },
+            "name": "住之江りこ",
+            "summary": "雙胞胎的妹妹，就讀高中一年級，學校風紀委員。留著長髮並綁著馬尾，有時又為雙馬尾，左眼下面始終貼著一個创可贴。個性我行我素並且積極，遇事冷靜。不擅長家務也不擅長喝酒，但在誘惑圭太時表現的十分積極而且大膽。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b1/8d/5124_prsn_v86L6.jpg?r=1605823215",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b1/8d/5124_prsn_v86L6.jpg?r=1605823215",
+                        "large": "https://lain.bgm.tv/pic/crt/l/b1/8d/5124_prsn_v86L6.jpg?r=1605823215",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b1/8d/5124_prsn_v86L6.jpg?r=1605823215"
+                    },
+                    "name": "巽悠衣子",
+                    "short_summary": "日本の女性声優。アイムエンタープライズ所属。\r\n大阪府出身。血液型はO型。日本ナレーション演技研究所卒業。\r\n\r\n姉が一人おり、その姉が声優志望だったためその影響で自身も声優を目指したと語っている。\r\n奈良県の中高一貫校に通っていた後、大学入学と同時に養成所に入所し、1年後には入所試験にて本科に合格し、日本ナレーション演技研究所大阪校に入所した。研修科へ進級すると同時にアイムエンタープライズ所属となった。\r\n仕事の度に東京へ通う日々を送っていたが、大学の卒業に必要な単位を全て取得し、2009年春に上京。これに伴い、養成所も東京校へ移籍した。2010年3月に大学、養成所を共に卒業した。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 5124,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 14493
+        }
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/95/7d/18461_crt_i0pjw.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/95/7d/18461_crt_i0pjw.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/95/7d/18461_crt_i0pjw.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/95/7d/18461_crt_i0pjw.jpg"
+    },
+    "summary": "高中二年生，GJ部的部长，天使恵的姐姐。一有不合意的地方就会找京夜的麻烦，不过也有纯真的地方，连带有接吻场面的漫画都不好意思去看。",
+    "name": "天使真央",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "天使真央"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "天使 真央"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あまつか まお"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Amatsuka Mao"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "138cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "wikipedia"
+        }
+    ],
+    "stat": {
+        "comments": 20,
+        "collects": 136
+    },
+    "id": 18461,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        48031
+    ]
+}

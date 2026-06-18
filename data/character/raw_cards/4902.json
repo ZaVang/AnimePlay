@@ -1,0 +1,69 @@
+{
+    "birth_mon": 11,
+    "gender": "female",
+    "birth_day": 15,
+    "birth_year": 1985,
+    "blood_type": 4,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e7/a4/4902_crt_anidb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e7/a4/4902_crt_anidb.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/e7/a4/4902_crt_anidb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e7/a4/4902_crt_anidb.jpg"
+    },
+    "summary": "前原忍，雏田庄201号房房客，多称为“小忍”，1985年11月15日生。住客中年龄最幼小，性格内向。烹饪是其拿手好戏。常常因为“小事化大”而哭泣，若景太郎在旁便会被众房客认为是欺负前原忍的元凶。一直暗恋着景太郎，但最后也祝福他和奈留这对恋人。漫画结束时为东大2年级生。",
+    "name": "前原しのぶ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "前原忍"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "前原しのぶ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "まえはら しのぶ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Maehara Shinobu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1985-11-15"
+        },
+        {
+            "key": "血型",
+            "value": "O"
+        },
+        {
+            "key": "身高",
+            "value": "147cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "stat": {
+        "comments": 4,
+        "collects": 17
+    },
+    "id": 4902,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        2121
+    ]
+}

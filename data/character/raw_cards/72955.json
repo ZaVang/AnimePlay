@@ -1,0 +1,48 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/01/65/72955_crt_aj27J.jpg?r=1624498204",
+        "grid": "https://lain.bgm.tv/pic/crt/g/01/65/72955_crt_aj27J.jpg?r=1624498204",
+        "large": "https://lain.bgm.tv/pic/crt/l/01/65/72955_crt_aj27J.jpg?r=1624498204",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/01/65/72955_crt_aj27J.jpg?r=1624498204"
+    },
+    "summary": "戦闘員六号をサポートするために作られたキサラギ社製の美少女アンドロイド。過度に暴力を振るわれると内臓された動力炉が暴走して大爆発する仕様。口は悪いが頼りになる戦闘員六号の相棒のような存在。オカルト嫌いでグリムの呪いを信じていない。",
+    "name": "キサラギ゠アリス",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "如月爱丽丝"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "キサラギ＝アリス"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Kisaragi Alice"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 73,
+        "collects": 214
+    },
+    "id": 72955,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        302190
+    ]
+}

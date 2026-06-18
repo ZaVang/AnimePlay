@@ -1,0 +1,61 @@
+{
+    "birth_mon": 10,
+    "gender": "female",
+    "birth_day": 22,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a3/3e/115338_crt_00lBq.jpg?r=1754795505",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a3/3e/115338_crt_00lBq.jpg?r=1754795505",
+        "large": "https://lain.bgm.tv/pic/crt/l/a3/3e/115338_crt_00lBq.jpg?r=1754795505",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a3/3e/115338_crt_00lBq.jpg?r=1754795505"
+    },
+    "summary": "比名子的青梅竹马&闺蜜。但其真身却是...",
+    "name": "社美胡",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "社美胡"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "社 美胡"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "やしろ みこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yashiro Miko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "10月22日"
+        },
+        {
+            "key": "身高",
+            "value": "156cm"
+        }
+    ],
+    "stat": {
+        "comments": 83,
+        "collects": 147
+    },
+    "id": 115338,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        520842
+    ]
+}

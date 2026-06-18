@@ -1,0 +1,85 @@
+{
+    "birth_mon": 5,
+    "gender": "female",
+    "birth_day": 3,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f0/e6/861_crt_2Ww58.jpg?r=1421292444",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f0/e6/861_crt_2Ww58.jpg?r=1421292444",
+        "large": "https://lain.bgm.tv/pic/crt/l/f0/e6/861_crt_2Ww58.jpg?r=1421292444",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f0/e6/861_crt_2Ww58.jpg?r=1421292444"
+    },
+    "summary": "在《月姬》故事中突然出现于远野志贵等人身旁的学姐，就读三年级。对志贵周遭的大小事都相当关心，而志贵在遇到问题时也会寻求她的协助。咖哩魔人，每天三餐吃咖哩。\r\n\r\n真正身份是埋葬机关中排名第七位的代行者，手持黑键，负责歼灭吸血鬼，拥有卓越的身体能力、魔术能力、庞大知识，以及毫无感情的冷彻。和其他的代行者完全处不来，通常都是单独行动居多。因为罗亚的缘故成为了不死者，自此不断的追杀罗亚。最大武器为第七圣典，概念能力是否定轮回，基本上是对罗亚专用武器。",
+    "name": "シエル",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "希耶尔"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "艾莉茜娅"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Ciel"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "かんぜんぶそうしえる"
+                },
+                {
+                    "k": "昵称",
+                    "v": "雪儿"
+                },
+                {
+                    "k": "原名？",
+                    "v": "本名？：カリー・ド・マルシェ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "5月3日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "165cm"
+        },
+        {
+            "key": "体重",
+            "value": "52kg"
+        },
+        {
+            "key": "BWH",
+            "value": "B85/W56/H88"
+        },
+        {
+            "key": "声优",
+            "value": "佐久间红美／折笠富美子"
+        }
+    ],
+    "stat": {
+        "comments": 61,
+        "collects": 148
+    },
+    "id": 861,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        1899
+    ]
+}

@@ -1,0 +1,45 @@
+{
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/48/12/27882_crt_1965l.jpg?r=1415644290",
+        "grid": "https://lain.bgm.tv/pic/crt/g/48/12/27882_crt_1965l.jpg?r=1415644290",
+        "large": "https://lain.bgm.tv/pic/crt/l/48/12/27882_crt_1965l.jpg?r=1415644290",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/48/12/27882_crt_1965l.jpg?r=1415644290"
+    },
+    "summary": "堪稱是萊薇他們目前為止遇過最強的恐怖對手，她一向以戴眼鏡的傳統女僕形象現身，但是身上卻攜帶可以毀滅一整座大樓的火力，從手榴彈到穿甲彈不等。她為了追擊對手可以不計任何代價，包含自己的生命在內，只為了緊咬住對方不放。被洛克稱為「來自未來的殺手機器人」，而她超乎常人的運動能力以及耐力似乎也有參考電影「魔鬼終結者2」。\r\n原來是前任哥倫比亞革命軍的恐怖份子「獵犬」，在脫離組織後為洛夫雷斯家族的男主人所救，自此誓死保護這家人的安全。在家族繼承人遭到黑幫綁架後，一路追其下落來到羅阿那普拉，追殺負責送貨的Black Lagoon商會。",
+    "name": "ロベルタ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "罗贝尔特"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "羅貝爾特"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Roberta"
+                }
+            ]
+        }
+    ],
+    "stat": {
+        "comments": 15,
+        "collects": 97
+    },
+    "id": 27882,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        6985
+    ]
+}

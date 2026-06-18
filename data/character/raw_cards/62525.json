@@ -1,0 +1,65 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/21/2b/62525_crt_9VDh5.jpg?r=1562492272",
+        "grid": "https://lain.bgm.tv/pic/crt/g/21/2b/62525_crt_9VDh5.jpg?r=1562492272",
+        "large": "https://lain.bgm.tv/pic/crt/l/21/2b/62525_crt_9VDh5.jpg?r=1562492272",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/21/2b/62525_crt_9VDh5.jpg?r=1562492272"
+    },
+    "summary": "文学を愛する文芸部部長。潔癖気味で「性」に奔放な会話をする同級生に嫌悪感を抱いている。\r\n\r\n愛読書は『十二国記』シリーズ。",
+    "name": "曾根崎り香",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "曾根崎莉香"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "曾根崎 り香"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "そねざき りか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sonezaki Rika"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "170cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "wikipedia"
+        }
+    ],
+    "stat": {
+        "comments": 23,
+        "collects": 19
+    },
+    "id": 62525,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        268070
+    ]
+}

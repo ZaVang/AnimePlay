@@ -1,0 +1,69 @@
+{
+    "birth_mon": 1,
+    "gender": "female",
+    "birth_day": 14,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/26/39/7487_crt_anidb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/26/39/7487_crt_anidb.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/26/39/7487_crt_anidb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/26/39/7487_crt_anidb.jpg"
+    },
+    "summary": "",
+    "name": "東城綾",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "东城绫"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "東城 綾"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "とうじょう あや"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Toujou Aya"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1月14日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "159cm"
+        },
+        {
+            "key": "胸",
+            "value": "E cup（高中）"
+        }
+    ],
+    "stat": {
+        "comments": 23,
+        "collects": 88
+    },
+    "id": 7487,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        1415
+    ]
+}

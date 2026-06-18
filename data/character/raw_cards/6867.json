@@ -1,0 +1,76 @@
+{
+    "birth_mon": 9,
+    "gender": "female",
+    "birth_day": 29,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c2/54/6867_crt_P3VLS.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c2/54/6867_crt_P3VLS.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/c2/54/6867_crt_P3VLS.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c2/54/6867_crt_P3VLS.jpg"
+    },
+    "summary": "神秘的「圣少女」，羽丘芽美，是一位个性活泼开朗、很有主见的女孩，就读圣波利亚学院的二年级。每当芽美听了她的好友——见习修女圣泉叙边那些来教堂祈求上帝帮助的人们的遭遇后，就会在夜晚变为「圣少女」来帮助解救这些人。「圣少女」借着各种千奇百怪的魔法，每一次都顺利的完成任务。",
+    "name": "羽丘芽美 / 怪盗セイント・テール",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "羽丘芽美"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "圣少女"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Saint Tail"
+                },
+                {
+                    "k": "日文名",
+                    "v": "セイント★テール"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "はねおか めいみ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Haneoka Meimi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "9月29日"
+        },
+        {
+            "key": "身高",
+            "value": "152cm"
+        },
+        {
+            "key": "体重",
+            "value": "43kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "stat": {
+        "comments": 14,
+        "collects": 55
+    },
+    "id": 6867,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        11132
+    ]
+}

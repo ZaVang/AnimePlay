@@ -1,0 +1,61 @@
+{
+    "birth_mon": 1,
+    "gender": "female",
+    "birth_day": 22,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a5/b7/125436_crt_3QTqz.jpg?r=1692363654",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a5/b7/125436_crt_3QTqz.jpg?r=1692363654",
+        "large": "https://lain.bgm.tv/pic/crt/l/a5/b7/125436_crt_3QTqz.jpg?r=1692363654",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a5/b7/125436_crt_3QTqz.jpg?r=1692363654"
+    },
+    "summary": "主人公。極度のあがり症で友達ができず、地球以外の星に住む宇宙人相手なら自分の気持ちを伝えられると夢見ている。",
+    "name": "小ノ星海果",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小之星海果"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "このほし うみか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Umika Konohoshi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1月22日"
+        },
+        {
+            "key": "身高",
+            "value": "151cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://hoshitele-anime.com/#Character"
+        }
+    ],
+    "stat": {
+        "comments": 43,
+        "collects": 108
+    },
+    "id": 125436,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        404115
+    ]
+}

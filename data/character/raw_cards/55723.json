@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0d/18/55723_crt_tNFix.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/0d/18/55723_crt_tNFix.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/0d/18/55723_crt_tNFix.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0d/18/55723_crt_tNFix.jpg"
+    },
+    "summary": "色白いの黒髪ショートカット文化系女子、というありがちなカテゴリにまとめるにはもったいないほどの独特で繊細な雰囲気を持った妖精のような存在。よく見なくとも美人だ。うつむきがちで、長いまつげが目立っている。なぜか同級生にも敬語。\r\n\r\n図書室の妖精、あるいは天使。……と友崎に評される少女。\r\nおとなしく引っ込み思案だが、人間観察力に優れる。",
+    "name": "菊池風香",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "菊池风香"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "きくち ふうか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kikuchi Fuuka"
+                },
+                {
+                    "k": "昵称",
+                    "v": "妖精、天使"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "弱キャラ友崎くん Lv.1 (ガガガ文庫)、https://tomozaki-koushiki.com/character/"
+        }
+    ],
+    "stat": {
+        "comments": 26,
+        "collects": 96
+    },
+    "id": 55723,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        292527
+    ]
+}

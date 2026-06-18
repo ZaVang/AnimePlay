@@ -1,0 +1,66 @@
+{
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 1,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f4/e3/6474_crt_anidb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f4/e3/6474_crt_anidb.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/f4/e3/6474_crt_anidb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f4/e3/6474_crt_anidb.jpg"
+    },
+    "summary": "生日是4月1日，在飞王·里度的阴谋下，记忆羽毛飞散到不同次元中的玖楼国公主，和小狼是青梅竹马。在记忆还未完全恢复的状态下，常会昏昏欲睡。小樱踏上穿越不同次元之行，付出的代价是“对小狼的回忆”。\r\n [mask]为本体小狼将时间倒退后飞王·里多利用本体小樱创造出的复制体，最终化为羽毛也回归到了本体小樱体内 。[/mask]",
+    "name": "桜",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小樱"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "小樱（复制体）"
+                },
+                {
+                    "k": "日文名",
+                    "v": "サクラ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Sakura"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "????-04-01"
+        },
+        {
+            "key": "身高",
+            "value": "153"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "stat": {
+        "comments": 5,
+        "collects": 100
+    },
+    "id": 6474,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        2891,
+        2892
+    ]
+}

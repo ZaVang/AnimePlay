@@ -1,0 +1,85 @@
+{
+    "birth_mon": 5,
+    "gender": "female",
+    "birth_day": 7,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ce/96/125976_crt_1G1cu.jpg?r=1718635279",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ce/96/125976_crt_1G1cu.jpg?r=1718635279",
+        "large": "https://lain.bgm.tv/pic/crt/l/ce/96/125976_crt_1G1cu.jpg?r=1718635279",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ce/96/125976_crt_1G1cu.jpg?r=1718635279"
+    },
+    "summary": "走りで最強を目指すと豪語するやんちゃなウマ娘。\r\n元はフリースタイル・レースの世界で荒くれ者たちを束ねるリーダーだったが、フジキセキの走りに衝撃を受け、公式レースの世界に飛び込んできた。\r\nダチの熱い声援を受け、今日も彼女はブッちぎる。",
+    "name": "ジャングルポケット",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "森林宝穴"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Jungle Pocket"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "5月7日"
+        },
+        {
+            "key": "身高",
+            "value": "158cm"
+        },
+        {
+            "key": "体重",
+            "value": "知らねぇ"
+        },
+        {
+            "key": "BWH",
+            "value": "B77・W56・H80"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://umamusume.jp/character/detail/?name=junglepocket"
+        },
+        {
+            "key": "毛色",
+            "value": "鹿毛"
+        },
+        {
+            "key": "现实马主",
+            "value": "吉田勝己"
+        },
+        {
+            "key": "成績(勝率)",
+            "value": "13戦5勝（38.5%）"
+        },
+        {
+            "key": "獲得賞金",
+            "value": "7億425万円 (中央)"
+        },
+        {
+            "key": "固有二つ名",
+            "value": "最強咆哮娘"
+        }
+    ],
+    "stat": {
+        "comments": 15,
+        "collects": 23
+    },
+    "id": 125976,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        472620
+    ]
+}

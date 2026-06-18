@@ -1,0 +1,73 @@
+{
+    "birth_mon": 9,
+    "gender": "female",
+    "birth_day": 4,
+    "birth_year": null,
+    "blood_type": 4,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0e/af/10717_crt_5IXU9.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/0e/af/10717_crt_5IXU9.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/0e/af/10717_crt_5IXU9.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0e/af/10717_crt_5IXU9.jpg"
+    },
+    "summary": "主人公と音夢の幼馴染。また従姉でもあり、隣の家に住んでいた女の子でもある。\r\n６年前の春に海外に引っ越してしまったのだが、最近よく夢に現れては騒いでいなくなる迷惑極まりない存在……夢だけど。\r\n生来から、甘えん坊でお気楽極楽トンボな性格で、 マスコットか珍獣のように可愛がられる。\r\n主人公にベタ惚れしていて、義理の妹となった音夢に対抗して、主人公を「お兄ちゃん」と呼んでは 足や腰にへばりつく癖をもつ。\r\nどのような成長を遂げたにしろ、再び出会う時に 主人公に訪れるのは、すごい迷惑か、ものすごい迷惑かのどちらかであろう……。",
+    "name": "芳乃さくら",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "芳乃樱"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "よしの さくら"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yoshino Sakura"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "9月4日"
+        },
+        {
+            "key": "血型",
+            "value": "O"
+        },
+        {
+            "key": "身高",
+            "value": "140cm"
+        },
+        {
+            "key": "体重",
+            "value": "31kg"
+        },
+        {
+            "key": "BWH",
+            "value": "68/51/72"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://circus-co.jp/product/dcps/kowin_chara/sakura.html"
+        }
+    ],
+    "stat": {
+        "comments": 37,
+        "collects": 141
+    },
+    "id": 10717,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        2063
+    ]
+}

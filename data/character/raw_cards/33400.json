@@ -1,0 +1,44 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/46/4f/33400_crt_r0GoR.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/46/4f/33400_crt_r0GoR.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/46/4f/33400_crt_r0GoR.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/46/4f/33400_crt_r0GoR.jpg"
+    },
+    "summary": "「地上最強の男」を自称する18歳の少年。本作の主人公であり、ストーリー上における探偵役を務める。戦闘の才能に至っては凡人で、まともな戦いでは他の六花の勇者に大きく劣り、本人もそれは自覚している。しかし、剣術と自作の秘密道具を組み合わせた戦技と、類まれなる頭脳と機転で窮地をくぐり抜けていく。その邪道な戦い方からルールのあるピエナ神前武闘会に出場できず、乱入することで運命神に自らの力を示すが、それにより「卑劣戦士」と呼ばれるようになる。幼少の頃、凶魔に村を襲われて友と姉を失ったことから、師匠であるアトロ・スパイカーに弟子入りして、過酷な修行に明け暮れていた。",
+    "name": "アドレット・マイア",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "亚特雷特 麦亚"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "年龄",
+            "value": "18岁"
+        }
+    ],
+    "stat": {
+        "comments": 6,
+        "collects": 18
+    },
+    "id": 33400,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        118067
+    ]
+}

@@ -1,0 +1,93 @@
+{
+    "birth_mon": 7,
+    "gender": "female",
+    "birth_day": 31,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/75/5f/14695_crt_ILuqu.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/75/5f/14695_crt_ILuqu.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/75/5f/14695_crt_ILuqu.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/75/5f/14695_crt_ILuqu.jpg"
+    },
+    "summary": "高中一年级学生，海人的同班同学。\r\n性格开朗活泼，看上去很可爱，在班里隐藏着她的很多粉丝。\r\n她本人很在意自己发育很慢的身体（特别是胸）。\r\n在海人他们的圈子中是领导。\r\n很在意中学时转校来的海人。\r\n独生女。",
+    "name": "谷川柑菜",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "谷川柑菜"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "谷川柑菜"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "たにがわ かんな"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "TANIGAWA KANNA"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月31日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "152cm"
+        },
+        {
+            "key": "体重",
+            "value": "40kg"
+        },
+        {
+            "key": "BWH",
+            "value": "73-54-75"
+        },
+        {
+            "key": "兴趣",
+            "value": "收集小物品、购物"
+        },
+        {
+            "key": "喜欢的东西",
+            "value": "昆布、煎饼、野沢菜"
+        },
+        {
+            "key": "讨厌的东西",
+            "value": "虫子（特别是G）"
+        },
+        {
+            "key": "喜欢的类型",
+            "value": "努力的人"
+        },
+        {
+            "key": "电影职务",
+            "value": "监督助理、记录"
+        }
+    ],
+    "stat": {
+        "comments": 23,
+        "collects": 95
+    },
+    "id": 14695,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        22657
+    ]
+}

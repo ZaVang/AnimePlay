@@ -1,7 +1,7 @@
 {
     "id": 1600,
     "name": "死神",
-    "image_path": "data/images/anime/1600.jpg",
+    "image_path": "data\\images\\anime\\1600.jpg",
     "points": 7.2,
     "cost": 1,
     "rarity": "N",

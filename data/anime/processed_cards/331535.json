@@ -1,0 +1,108 @@
+{
+    "id": 331535,
+    "name": "宿命回响：命运节拍",
+    "image_path": "data\\images\\anime\\331535.jpg",
+    "points": 5.2,
+    "cost": 1,
+    "rarity": "N",
+    "description": "“贯穿苦恼、抵达喜悦。”\r\n――L.V.贝多芬\r\n\r\n音乐是照亮人心的光――\r\n突然之间，那份“光”被世界给夺走，自黑色陨石“黑夜陨铁”从天空中降下的那晚，世界样貌因此改变。黑色陨石当中出现了异形的怪物“D2”，开始将大地与人们蹂躏。D2被人们演奏的歌曲所吸引，最终“音乐”被视作为禁忌。\r\n但是，反抗那些怪物的反抗者挺身而出。\r\n以音乐作为力量的少女们――“奏者”。她们的身上寄宿着人类史上残留的伟大歌剧、歌曲的乐谱，利用这股力量击败D2。然而，指挥并引导她们的便是“指挥家”。\r\n2047年，美国因为与D2之间的抗争而荒废。作为指挥家的“磔人”与奏者“命运”一同向着纽约展开旅途。在失去音乐的世界当中，渴求音乐的“磔人”期望歼灭D2的奏者“命运”，两名的少年与少女创作出的旋律，会是喜悦还是绝望呢――",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "原创",
+        "音乐",
+        "战斗"
+    ],
+    "date": "2021-10-05",
+    "rating_rank": 9606,
+    "rating_score": 5.2,
+    "rating_total": 4448,
+    "main_character_ids": [
+        97757,
+        97758
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b2/8a/97757_crt_XS8Ox.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b2/8a/97757_crt_XS8Ox.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/b2/8a/97757_crt_XS8Ox.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b2/8a/97757_crt_XS8Ox.jpg"
+            },
+            "name": "朝雛タクト",
+            "summary": "本作主人公。\r\nベルリン・シンフォニカの奥で眠り続けていた指揮者（コンダクター）。\r\nムジカート達を指揮し、勝利へと導く存在。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0f/d1/5768_prsn_35lt8.jpg?r=1637964101",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/0f/d1/5768_prsn_35lt8.jpg?r=1637964101",
+                        "large": "https://lain.bgm.tv/pic/crt/l/0f/d1/5768_prsn_35lt8.jpg?r=1637964101",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0f/d1/5768_prsn_35lt8.jpg?r=1637964101"
+                    },
+                    "name": "内山昂輝",
+                    "short_summary": "内山 昂輝（うちやま こうき、1990年8月16日 - ）は、日本の声優、俳優。劇団ひまわり所属。\r\n早稲田大学卒業。 国際基督教大学高等学校出身。 1993年に劇団ひまわりに入団し、子役としてテレビドラマへの出演や少年役の吹き替えを主に行っていた。舞台経験はない。なお、声優として初めて参加した作品はA.I.である。\r\n2005年に発売された『キングダム ハーツII』のロクサス役で注目を浴び、その後は声優としての活動が多くなっている。内山本人も自身を「明朗快活なタイプではない」と語っているように、主にどこか影のある少年役を演じるが、明るい少年役を演じることも多くなっている。\r\n2011年、第5回声優アワードにて新人男優賞を受賞。2015年、東京アニメアワード2015で発表されたアニメ オブ ザ イヤーで声優賞を受賞。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 5768,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f0/fa/19805_prsn_D3T67.jpg?r=1743929129",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f0/fa/19805_prsn_D3T67.jpg?r=1743929129",
+                        "large": "https://lain.bgm.tv/pic/crt/l/f0/fa/19805_prsn_D3T67.jpg?r=1743929129",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f0/fa/19805_prsn_D3T67.jpg?r=1743929129"
+                    },
+                    "name": "藍原ことみ",
+                    "short_summary": "アトミックモンキー／声優・演技研究所　第７期卒業生",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 19805,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 97757
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/8c/fe/97758_crt_dzdka.jpg?r=1633996752",
+                "grid": "https://lain.bgm.tv/pic/crt/g/8c/fe/97758_crt_dzdka.jpg?r=1633996752",
+                "large": "https://lain.bgm.tv/pic/crt/l/8c/fe/97758_crt_dzdka.jpg?r=1633996752",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8c/fe/97758_crt_dzdka.jpg?r=1633996752"
+            },
+            "name": "運命",
+            "summary": "交響曲第5番\r\nハ短調Op.67「運命」\r\n\r\nL.V.ベートーヴェン『交響曲第5番ハ短調Op.67』――『運命』をその身に宿したムジカート。淑やかな外見ながら、表情の変化は少なく、口調も常に敬語。一見可憐だが、口を開けば痛烈な毒舌が飛び出し、とにかく『甘いもの』に目が無いという型破りな性格。パートナーであるコンダクターのタクトとは、浅からぬ過去を持つ。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/87/b9/34866_prsn_3xaEH.jpg?r=1728674708",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/87/b9/34866_prsn_3xaEH.jpg?r=1728674708",
+                        "large": "https://lain.bgm.tv/pic/crt/l/87/b9/34866_prsn_3xaEH.jpg?r=1728674708",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/87/b9/34866_prsn_3xaEH.jpg?r=1728674708"
+                    },
+                    "name": "若山詩音",
+                    "short_summary": "若山 詩音（わかやま しおん、1998年2月10日 - ）は、日本の女性声優、元子役。千葉県出身。劇団ひまわり所属。",
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 34866,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 97758
+        }
+    ]
+}

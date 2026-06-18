@@ -1,0 +1,81 @@
+{
+    "birth_mon": 12,
+    "gender": "female",
+    "birth_day": 12,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4e/6d/103264_crt_a2Tjh.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/4e/6d/103264_crt_a2Tjh.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/4e/6d/103264_crt_a2Tjh.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4e/6d/103264_crt_a2Tjh.jpg"
+    },
+    "summary": "リリサのクラスメイトで、抜群のルックスとスタイルを兼ね備えた人気モデル。ファンからの愛称は「ミカリン」。幼馴染みの奥村のことを10年間一途に想い続けているが、彼が3次元女子に興味がないため、気持ちに気づいてもらえない。\r\n\r\n与莉莉纱同班的高中1年生。爱称是「みかリン」。",
+    "name": "橘美花莉",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "橘美花莉"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "美花玲"
+                },
+                {
+                    "k": "日文名",
+                    "v": "橘 美花莉"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "たちばな みかり"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "MIKARI TACHIBANA"
+                },
+                {
+                    "k": "昵称",
+                    "v": "MIKARIN"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "12月12日"
+        },
+        {
+            "key": "身高",
+            "value": "160cm以上"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://ririsa-official.com/"
+        },
+        {
+            "key": "擅长的科目",
+            "value": "英语"
+        },
+        {
+            "key": "不擅长的科目",
+            "value": "历史"
+        }
+    ],
+    "stat": {
+        "comments": 102,
+        "collects": 200
+    },
+    "id": 103264,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        410346
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a8/fa/168375_crt_l0qlL.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a8/fa/168375_crt_l0qlL.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/a8/fa/168375_crt_l0qlL.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a8/fa/168375_crt_l0qlL.jpg"
+    },
+    "summary": "海辺の街・熱海でクリーニング店「キンメクリーニング」を営む。\r\n明るくて働き者で温泉が大好き。",
+    "name": "金目綿花奈",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "金目绵花奈"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "きんめ わかな"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kinme Wakana"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 55,
+        "collects": 119
+    },
+    "id": 168375,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        562430
+    ]
+}

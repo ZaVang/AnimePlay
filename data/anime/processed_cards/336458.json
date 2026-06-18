@@ -1,0 +1,141 @@
+{
+    "id": 336458,
+    "name": "与成为异世界美少女的大叔一起",
+    "image_path": "data\\images\\anime\\336458.jpg",
+    "points": 6.5,
+    "cost": 1,
+    "rarity": "N",
+    "description": "因自己不受欢迎找不到女朋友，而郁郁寡欢的32岁职场白领橘日向，借由异世界女神之力，和自幼玩伴&现完美精英的同事一起转移到了异世界！竟因女神的粗心，变为了超绝可爱金发美少女――!? 为寻回自己原本的性别与样貌，橘与好友神宫寺一同作为勇者踏上打倒魔王的旅程。转生后的橘更是被女神诅咒赋予了“绝世美貌”的被动技能。而恰恰正是这一技能，使得异世界旅途刚开始不久的两人，不得不遭遇各式哭笑不得的爆笑挑战——",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改",
+        "冒险",
+        "穿越"
+    ],
+    "date": "2022-01-11",
+    "rating_rank": 5353,
+    "rating_score": 6.5,
+    "rating_total": 4855,
+    "main_character_ids": [
+        102007,
+        102008
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/62/ef/102007_crt_tgn6r.jpg?r=1634981418",
+                "grid": "https://lain.bgm.tv/pic/crt/g/62/ef/102007_crt_tgn6r.jpg?r=1634981418",
+                "large": "https://lain.bgm.tv/pic/crt/l/62/ef/102007_crt_tgn6r.jpg?r=1634981418",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/62/ef/102007_crt_tgn6r.jpg?r=1634981418"
+            },
+            "name": "橘日向",
+            "summary": "32歳独身の元おっさん美少女。身長体重すべて平均で、今まで好きになってきた女の子を親友の神宮寺に取られてきた。そんな神宮寺を早く結婚させるべく誘った合コンの帰り、女神によって美少女の姿で異世界に転生させられてしまう。その上周りの男を魅了するスキルのせいで、ゆく先々でトラブルに巻き込まれることに。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b7/93/10887_prsn_q7Vnh.jpg?r=1692450821",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b7/93/10887_prsn_q7Vnh.jpg?r=1692450821",
+                        "large": "https://lain.bgm.tv/pic/crt/l/b7/93/10887_prsn_q7Vnh.jpg?r=1692450821",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b7/93/10887_prsn_q7Vnh.jpg?r=1692450821"
+                    },
+                    "name": "M・A・O",
+                    "short_summary": "出生于日本大阪府，日本女演员、声优，前属大阪堀制作事务所所属女艺人，现为Yellow Cab NEXT旗下的女艺人。\r\n2006年10月，市道真央曾在大阪堀制作的HOP CLUB组合面试之中夺得大奖。2010年中，移居到东京。同年8月，在周刊少年JUMP的读者投稿角落《JUM魂G！》以职员身份登场。2011年2月，她在参演超级战队系列特摄作品《海贼战队豪快者》之中，饰演女主角之一“Luka Millfy／豪快黄”。2012年，以M·A·O的名义在电视动画《料理偶像》出演奇拉奇拉，正式开始声优活动。\r\n\r\n个人生活\r\n特色是关西腔。于2014年因出演《极黑的布伦希尔德》中的和美一角而出名。\r\n小的时候就很喜欢动画和漫画，不过，直接的契机是在特摄剧《海贼战队豪快者》中出演。由于对于这种化装后再配音的工作很感兴趣，所以希望有机会能从事与声音有关的工作。\r\n喜欢看书，但最喜欢的还是漫画，尤其是《周刊少年JUMP》。\r\n憧憬的角色不分身份、性别，只要能够锻炼演技都会广泛出演。希望尝试小男孩一类或者有着古怪变化的角色。\r\n在成为声优前亦有为《海贼战队豪快者》配音，因此拥有一定的基础，声线恬静柔和，无论是幼女还是青年女子都能够出演。",
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 10887,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0c/f4/18755_prsn_Hf3fd.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/0c/f4/18755_prsn_Hf3fd.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/0c/f4/18755_prsn_Hf3fd.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0c/f4/18755_prsn_Hf3fd.jpg"
+                    },
+                    "name": "伊東健人",
+                    "short_summary": "伊東 健人（いとう けんと、1988年10月18日 - ）是日本的男性声优。81produce所属。东京都出身。\r\n大学就读于法学部，大学时代曾以“21世紀P”的名义在Niconico动画发表过VOCALOID作品。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 18755,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/32/89/39393_prsn_L6uIP.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/32/89/39393_prsn_L6uIP.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/32/89/39393_prsn_L6uIP.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/32/89/39393_prsn_L6uIP.jpg"
+                    },
+                    "name": "菊池紗矢香",
+                    "short_summary": "",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 39393,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 102007
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/39/b2/102008_crt_7SkS4.jpg?r=1634981254",
+                "grid": "https://lain.bgm.tv/pic/crt/g/39/b2/102008_crt_7SkS4.jpg?r=1634981254",
+                "large": "https://lain.bgm.tv/pic/crt/l/39/b2/102008_crt_7SkS4.jpg?r=1634981254",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/39/b2/102008_crt_7SkS4.jpg?r=1634981254"
+            },
+            "name": "神宮寺司",
+            "summary": "32歳独身のおっさん。すらっとした高身長に端正な顔立ち、文武両道の才人で常に女性にモテてきた。しかしそれ故に女性の醜い部分が見えてしまいすっかり女性不信に。親友である橘だけが心の拠り所。ある合コンの帰り道に橘を介抱した際、謎の女神により異世界に飛ばされてしまう。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/91/df/4256_prsn_fbfFG.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/91/df/4256_prsn_fbfFG.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/91/df/4256_prsn_fbfFG.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/91/df/4256_prsn_fbfFG.jpg"
+                    },
+                    "name": "日野聡",
+                    "short_summary": "经常带着眼镜的日野聪，不抽烟，喜欢口香糖和FRISK。\r\n美国出生东京长大。5岁之前生活在旧金山，当时使用着英语会话，但因为年幼的关系并没有清楚记得这样的事情。\r\n十几岁开始从属于儿童剧团。\r\n刚出道时主要是以西洋电影及电视系列剧的配音为主，直到灼眼的夏娜（坂井悠二）后，在日本动画方面的配音才多了起来。经常为J.C.STAFF、Geneon Entertainment制作的TV动画献声。其他方面、出演Square Enix的关联作品也很多。\r\n\r\n2015年1月11日，在博客宣布自己与声优·中岛沙树结婚的消息，目前育有一子。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 4256,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/32/6c/23973_prsn_vBjx9.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/32/6c/23973_prsn_vBjx9.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/32/6c/23973_prsn_vBjx9.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/32/6c/23973_prsn_vBjx9.jpg"
+                    },
+                    "name": "高宮彩織",
+                    "short_summary": "日本の女性声優。福岡県出身。アクセルワン所属。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 23973,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 102008
+        }
+    ]
+}

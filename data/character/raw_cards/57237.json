@@ -1,0 +1,91 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5e/31/57237_crt_AAjD1.jpg?r=1585484674",
+        "grid": "https://lain.bgm.tv/pic/crt/g/5e/31/57237_crt_AAjD1.jpg?r=1585484674",
+        "large": "https://lain.bgm.tv/pic/crt/l/5e/31/57237_crt_AAjD1.jpg?r=1585484674",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5e/31/57237_crt_AAjD1.jpg?r=1585484674"
+    },
+    "summary": "元気で勝気で自由ままな魔法少女。魔女を両親の仇として心底憎んでおり、そのため「傭兵」を生業として、神浜の各地で魔女との戦いを繰り広げている。ワイルドな口調はバトル系少年漫画の影響。ただ、心根は優しく動物が大好き。",
+    "name": "深月フェリシア",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "深月菲莉希亚"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "菲莉希亚·深月"
+                },
+                {
+                    "v": "深月菲莉西娅"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "深月菲莉西亚（繁中服）"
+                },
+                {
+                    "k": "日文名",
+                    "v": "深月 フェリシア"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "みつき フェリシア"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Mitsuki Felicia"
+                },
+                {
+                    "k": "昵称",
+                    "v": "大锤"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "151cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "magireco.moe/wiki/深月菲莉希亚"
+        },
+        {
+            "key": "年龄",
+            "value": "13岁（中1）"
+        },
+        {
+            "key": "出身",
+            "value": "神滨市南凪区"
+        },
+        {
+            "key": "学校",
+            "value": "中央学园"
+        },
+        {
+            "key": "人设",
+            "value": "苍树梅"
+        }
+    ],
+    "stat": {
+        "comments": 3,
+        "collects": 30
+    },
+    "id": 57237,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        159690
+    ]
+}

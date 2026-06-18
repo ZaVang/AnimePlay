@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2d/89/18794_crt_qQJ3J.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/2d/89/18794_crt_qQJ3J.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/2d/89/18794_crt_qQJ3J.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2d/89/18794_crt_qQJ3J.jpg"
+    },
+    "summary": "図書特殊部隊・堂上班班長。熱く激しい心を持つが、郁が関わった検閲事件後、冷静な性格になるよう努力している。",
+    "name": "堂上篤",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "堂上笃"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "堂上 篤"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "どうじょう あつし"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Dōjyō Atsushi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "身高",
+            "value": "165cm"
+        }
+    ],
+    "stat": {
+        "comments": 3,
+        "collects": 12
+    },
+    "id": 18794,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        294
+    ]
+}

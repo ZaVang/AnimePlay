@@ -1,0 +1,66 @@
+{
+    "birth_mon": 11,
+    "gender": "male",
+    "birth_day": 25,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/06/ae/70887_crt_XwYI4.jpg?r=1575888485",
+        "grid": "https://lain.bgm.tv/pic/crt/g/06/ae/70887_crt_XwYI4.jpg?r=1575888485",
+        "large": "https://lain.bgm.tv/pic/crt/l/06/ae/70887_crt_XwYI4.jpg?r=1575888485",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/06/ae/70887_crt_XwYI4.jpg?r=1575888485"
+    },
+    "summary": "本作主角，为七大不可思议之七：厕所里的花子君（トイレの花子くん）有着半透明的身体，身穿旧式制服、头戴学生帽，监督学园里的妖怪们，保持人类和怪异的正确关系是他的义务。总是喜欢开一些无伤大雅的玩笑或捉弄宁宁，但也时常露出温柔的一面，并喜欢甜甜圈。武器为一把菜刀，身旁围绕着灵魂称之为白杖代；据源光所述，源光的奶奶曾将\"厕所里的花子同学\"给封印过，似乎有着不为人知的过去......",
+    "name": "花子くん",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "花子君"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "柚木普"
+                },
+                {
+                    "v": "ゆぎ あまね"
+                },
+                {
+                    "v": "Yugi Amane"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "はなこくん"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hanako Kun"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "11月25日"
+        },
+        {
+            "key": "引用来源",
+            "value": "Wikipedia"
+        }
+    ],
+    "stat": {
+        "comments": 14,
+        "collects": 79
+    },
+    "id": 70887,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        277551
+    ]
+}

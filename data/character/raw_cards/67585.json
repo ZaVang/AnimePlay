@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/40/0d/67585_crt_0JvaG.jpg?r=1547428576",
+        "grid": "https://lain.bgm.tv/pic/crt/g/40/0d/67585_crt_0JvaG.jpg?r=1547428576",
+        "large": "https://lain.bgm.tv/pic/crt/l/40/0d/67585_crt_0JvaG.jpg?r=1547428576",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/40/0d/67585_crt_0JvaG.jpg?r=1547428576"
+    },
+    "summary": "柄井高校の1年生で、七々子の同級生。部活動は文芸部。\r\n七々子の隣の中学校の出身。強面のため中学時代はよく喧嘩を申し込まれていたが、ある日、喧嘩相手に言い放ったセリフが偶然五・七・五のリズムだったことをきっかけに川柳を詠むようになる。外見に反して心は優しいが、一方でデリカシーに欠ける一面もある。\r\n父・アキラ、母・一枝、妹・ハナビと4人で暮らしている。妹のことを溺愛しており、また妹からも慕われている。",
+    "name": "毒島エイジ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "毒岛英二"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ぶすじま エイジ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Busujima Eiji"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 0,
+        "collects": 3
+    },
+    "id": 67585,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        268510
+    ]
+}

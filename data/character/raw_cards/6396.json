@@ -1,0 +1,62 @@
+{
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/05/a6/6396_crt_anidb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/05/a6/6396_crt_anidb.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/05/a6/6396_crt_anidb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/05/a6/6396_crt_anidb.jpg"
+    },
+    "summary": "",
+    "name": "モコナ・ソエル・モドキ（白モコナ）",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "摩可拿·索艾尔·摩多基"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "莫哥拿 蒙哥拿"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Mokona・Soel・Modok"
+                },
+                {
+                    "k": "日文名",
+                    "v": "ソエル"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Soel"
+                },
+                {
+                    "k": "昵称",
+                    "v": "白馒头"
+                }
+            ]
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "stat": {
+        "comments": 5,
+        "collects": 21
+    },
+    "id": 6396,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        2891,
+        2894
+    ]
+}

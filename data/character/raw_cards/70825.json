@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2c/19/70825_crt_KDlx9.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/2c/19/70825_crt_KDlx9.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/2c/19/70825_crt_KDlx9.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2c/19/70825_crt_KDlx9.jpg"
+    },
+    "summary": "国立彩玉大学の理工学研究科大学院1年生。23歳。\r\n骨の髄まで理系。成績優秀、天才型。\r\nいかなる時も冷静沈着に振る舞い、氷のように鋭い頭脳を振るう。この世のどんな事象もシステムを理解しないと気が済まない。",
+    "name": "氷室菖蒲",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "冰室菖蒲"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Ayame Himuro"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ひむろ あやめ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Himuro Ayame"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 6,
+        "collects": 60
+    },
+    "id": 70825,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        271145
+    ]
+}

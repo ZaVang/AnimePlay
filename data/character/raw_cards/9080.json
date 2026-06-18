@@ -1,0 +1,65 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0e/c5/9080_crt_dnJYi.jpg?r=1507396554",
+        "grid": "https://lain.bgm.tv/pic/crt/g/0e/c5/9080_crt_dnJYi.jpg?r=1507396554",
+        "large": "https://lain.bgm.tv/pic/crt/l/0e/c5/9080_crt_dnJYi.jpg?r=1507396554",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0e/c5/9080_crt_dnJYi.jpg?r=1507396554"
+    },
+    "summary": "詩遠の再三にわたる出馬要請にも決意を固められずにいたところ静馬に背中を押され、要に挑まれた決闘を制したことで多くの生徒が見守る中、光莉をパートナーにエトワール選出馬を決意。しかし、出馬宣言を直前に控えた乗馬の練習中に落馬事故で記憶障害を起こしてしまい、出馬が危ぶまれる事態に陥ってしまう。その後、光莉の献身的な姿勢に心を打たれて記憶を取り戻し彼女と一夜を過ごし、無事にスピカ代表としてエトワール選出馬。その結果、スピカの悲願であったミアトルからのエトワール奪還を実現する",
+    "name": "鳳天音",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "凤天音"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "鳳天音"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "おおとり あまね"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ootori Amane"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "血型",
+            "value": "B型"
+        },
+        {
+            "key": "身高",
+            "value": "172cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "stat": {
+        "comments": 2,
+        "collects": 7
+    },
+    "id": 9080,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        2813
+    ]
+}

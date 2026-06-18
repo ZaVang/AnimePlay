@@ -1,7 +1,7 @@
 {
     "id": 234,
     "name": "AIR",
-    "image_path": "data/images/anime/234.jpg",
+    "image_path": "data\\images\\anime\\234.jpg",
     "points": 8.0,
     "cost": 2,
     "rarity": "R",

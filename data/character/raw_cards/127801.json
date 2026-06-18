@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/46/cc/127801_crt_eS4Ec.jpg?r=1712588269",
+        "grid": "https://lain.bgm.tv/pic/crt/g/46/cc/127801_crt_eS4Ec.jpg?r=1712588269",
+        "large": "https://lain.bgm.tv/pic/crt/l/46/cc/127801_crt_eS4Ec.jpg?r=1712588269",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/46/cc/127801_crt_eS4Ec.jpg?r=1712588269"
+    },
+    "summary": "演劇部のホープであり、瑛二の後輩。\r\n密かに想いを寄せる先輩のために、色んなキャラを演じ分け、疑似ハーレムを作ってあげている。",
+    "name": "七倉凛",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "七仓凛"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "七倉 凛"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ななくら りん"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "NANAKURA Rin"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 25,
+        "collects": 99
+    },
+    "id": 127801,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        428823
+    ]
+}

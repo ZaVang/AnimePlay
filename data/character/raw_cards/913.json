@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e5/dd/913_crt_WVA6a.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e5/dd/913_crt_WVA6a.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/e5/dd/913_crt_WVA6a.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e5/dd/913_crt_WVA6a.jpg"
+    },
+    "summary": "男主角，17岁的高二学生，也是多田珍藏品的继承人。对已经过世的父亲抱有憎恶的感情，原因是父亲生前完全没有负起照顾家庭的责任。但即使如此，仍然很怀念与父亲相处的快乐时光。由于感染甲型肝炎而在升高三之前的冬天住进若叶医院。",
+    "name": "戎崎裕一",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "戎崎裕一"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "戎崎 裕一"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ezaki Yuuichi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "stat": {
+        "comments": 4,
+        "collects": 9
+    },
+    "id": 913,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        1839
+    ]
+}

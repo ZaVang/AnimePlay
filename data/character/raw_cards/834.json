@@ -1,0 +1,44 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2e/56/834_crt_xJIPQ.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/2e/56/834_crt_xJIPQ.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/2e/56/834_crt_xJIPQ.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2e/56/834_crt_xJIPQ.jpg"
+    },
+    "summary": "为伟人军团中的一员，有穿透物件的能力。\r\nOVA版的伟人事件之后，被大英图书馆特殊工作部消除了部份记忆。\r\n现跟读子一起生活。\r\n通称：Ms. Deep。",
+    "name": "ナンシー・幕張",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "兰西·幕张"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "声优",
+            "value": "根谷美智子"
+        }
+    ],
+    "stat": {
+        "comments": 5,
+        "collects": 26
+    },
+    "id": 834,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        1848
+    ]
+}

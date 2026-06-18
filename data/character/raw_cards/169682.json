@@ -1,0 +1,40 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/95/b6/169682_crt_UF082.jpg?r=1767460005",
+        "grid": "https://lain.bgm.tv/pic/crt/g/95/b6/169682_crt_UF082.jpg?r=1767460005",
+        "large": "https://lain.bgm.tv/pic/crt/l/95/b6/169682_crt_UF082.jpg?r=1767460005",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/95/b6/169682_crt_UF082.jpg?r=1767460005"
+    },
+    "summary": "元聖騎士団長でありながら《女神》殺しの大罪を犯したがために懲罰勇者となった。\r\n優れた戦闘能力と統率力を持ち合わせ、戦闘の最前線で冷静に立ち回る。荒々しく凶暴なところはあるが、人を捨て置けない性格。\r\n\r\n所属\r\n懲罰勇者9004隊\r\n罪状\r\n対神暴行致死 等",
+    "name": "ザイロ・フォルバーツ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "赛罗·佛鲁巴兹"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 26,
+        "collects": 20
+    },
+    "id": 169682,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        445905
+    ]
+}

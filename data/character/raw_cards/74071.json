@@ -1,0 +1,61 @@
+{
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 8,
+    "birth_year": 2003,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b5/4b/74071_crt_53C27.jpg?r=1589818151",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b5/4b/74071_crt_53C27.jpg?r=1589818151",
+        "large": "https://lain.bgm.tv/pic/crt/l/b5/4b/74071_crt_53C27.jpg?r=1589818151",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b5/4b/74071_crt_53C27.jpg?r=1589818151"
+    },
+    "summary": "みちるの親友で、アイドル志望の美少女。\r\nある日突然獣人に変わり、みちるの目の前で何者かに拐われてしまった。",
+    "name": "日渡なずな",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "日渡荠"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "日渡 なずな"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ひわたし なずな"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Nazuna Hiwatashi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2003年4月8日"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://bna-anime.com/character/03.php"
+        }
+    ],
+    "stat": {
+        "comments": 18,
+        "collects": 32
+    },
+    "id": 74071,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        285905
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f9/2e/70824_crt_aOaGU.jpg?r=1562716685",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f9/2e/70824_crt_aOaGU.jpg?r=1562716685",
+        "large": "https://lain.bgm.tv/pic/crt/l/f9/2e/70824_crt_aOaGU.jpg?r=1562716685",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f9/2e/70824_crt_aOaGU.jpg?r=1562716685"
+    },
+    "summary": "国立彩玉大学の理工学研究科大学院1年生。23歳。\r\n骨の髄まで超理系、天才型。\r\n幼い頃から神童と称された頭脳の持ち主。\r\nこの世の事象はシステムを解明しないと気が済まない。",
+    "name": "雪村心夜",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "雪村心夜"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ゆきむら しんや"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yukimura Shinya"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 2,
+        "collects": 10
+    },
+    "id": 70824,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        271145
+    ]
+}

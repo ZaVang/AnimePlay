@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4f/64/9571_crt_anidb.jpg?r=1722845999",
+        "grid": "https://lain.bgm.tv/pic/crt/g/4f/64/9571_crt_anidb.jpg?r=1722845999",
+        "large": "https://lain.bgm.tv/pic/crt/l/4f/64/9571_crt_anidb.jpg?r=1722845999",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4f/64/9571_crt_anidb.jpg?r=1722845999"
+    },
+    "summary": "首都圏治安警察機構警備部特殊機甲大隊第2中隊第3突入小隊の前衛隊員、巡査。セクトの運び屋の少女「赤ずきん」の制圧に失敗し彼女の自爆を許し、その結果部隊を危険にさらしたことから、査問委員会で責を問われた。以後、特機隊員養成学校で再訓練を命じられる。\r\n特機隊の前衛隊員を務めるだけあって体格に恵まれているが、口数も表情の変化も異様に少なく、辺見以外の友人がいる様子はない。首都警の人事評価によると「情緒面に難有り。但し、射撃、格闘技、ストーキングなど、あらゆる戦闘技術に抜群の技量を有する」。",
+    "name": "伏一貴",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "伏一贵"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "伏一貴"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Fuse Kazuki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "stat": {
+        "comments": 8,
+        "collects": 8
+    },
+    "id": 9571,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        844
+    ]
+}

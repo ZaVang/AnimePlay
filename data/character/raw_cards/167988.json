@@ -1,0 +1,69 @@
+{
+    "birth_mon": 6,
+    "gender": "female",
+    "birth_day": 24,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3a/0e/167988_crt_EmMaQ.jpg?r=1733452290",
+        "grid": "https://lain.bgm.tv/pic/crt/g/3a/0e/167988_crt_EmMaQ.jpg?r=1733452290",
+        "large": "https://lain.bgm.tv/pic/crt/l/3a/0e/167988_crt_EmMaQ.jpg?r=1733452290",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3a/0e/167988_crt_EmMaQ.jpg?r=1733452290"
+    },
+    "summary": "13歳の女の子。イギリスから引っ越してきたが、日本語はまだまだ勉強中。\r\nゲームセンターでの遊びに熱中するも、こちらも腕前はまだまだ。",
+    "name": "リリー・ベイカー",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "莉莉·贝克"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Lily Baker"
+                },
+                {
+                    "k": "日文名",
+                    "v": "リリー・ベイカー"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "りりー・べいかー"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Rirī Beikā"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "6月24日"
+        },
+        {
+            "key": "趣味・特技",
+            "value": "漢気コアラグッズあつめ、勉強"
+        },
+        {
+            "key": "苦手なもの",
+            "value": "運動、ゲーム全般（自覚なし）、ピーマン、歯医者"
+        }
+    ],
+    "stat": {
+        "comments": 146,
+        "collects": 339
+    },
+    "id": 167988,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        510256
+    ]
+}

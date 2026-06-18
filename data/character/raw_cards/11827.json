@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/cc/98/11827_crt_zuXg3.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/cc/98/11827_crt_zuXg3.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/cc/98/11827_crt_zuXg3.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cc/98/11827_crt_zuXg3.jpg"
+    },
+    "summary": "经济学部2年级在读，平凡的19岁大学生，经济拮据，没有女朋友。幼时生父失踪，母亲病逝，由母方的叔母养大，现在则靠奖学金独自生活。梦想拥有平凡幸福的家庭，希望成为公务员。",
+    "name": "余賀公麿",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "余贺公磨"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "余賀公麿"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "よが きみまろ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yoga Kimimaro"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "年龄",
+            "value": "19"
+        }
+    ],
+    "stat": {
+        "comments": 1,
+        "collects": 12
+    },
+    "id": 11827,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        10844
+    ]
+}

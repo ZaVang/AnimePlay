@@ -1,0 +1,81 @@
+{
+    "birth_mon": 6,
+    "gender": "male",
+    "birth_day": 21,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/39/91/19944_crt_HGZMM.jpg?r=1739761052",
+        "grid": "https://lain.bgm.tv/pic/crt/g/39/91/19944_crt_HGZMM.jpg?r=1739761052",
+        "large": "https://lain.bgm.tv/pic/crt/l/39/91/19944_crt_HGZMM.jpg?r=1739761052",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/39/91/19944_crt_HGZMM.jpg?r=1739761052"
+    },
+    "summary": "本編の主人公。私立翠明学園2年生。人との直接的なコミュニケーションを嫌い、最低限の外出しかしないネット依存症の少年。ナイトハルトというハンドルネームで1日中ネットゲームをし、学校は出席日数を計算して必要以上に登校しない。人と話せばどもってしまい、それが女の子ならばパニックを起こすほど。周囲からは引きこもりと思われているが、本人はそれを否定する。妄想癖があり思いこみが激しく、しばしばネガティブな方向へ暴走する。また、辛い現実から逃避し、ひたすら自分に都合のいい妄想をしてそれに浸っている。辛い現実に直面するとすぐに逃げ出してしまい、しかもそれを他人に責任転嫁する。いわゆるダメ人間。",
+    "name": "西條拓巳",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "西条拓巳"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "西條 拓巳"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "にしじょう たくみ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Nishijyou Takumi"
+                },
+                {
+                    "k": "昵称",
+                    "v": "タク / 阿拓"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "6月21日"
+        },
+        {
+            "key": "血型",
+            "value": "AB型"
+        },
+        {
+            "key": "身高",
+            "value": "170cm"
+        },
+        {
+            "key": "体重",
+            "value": "54kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://5pb.jp/games/chaoshead/"
+        },
+        {
+            "key": "个人Blog",
+            "value": "http://www.nitroplus.co.jp/pc/chn/takumi/"
+        }
+    ],
+    "stat": {
+        "comments": 68,
+        "collects": 66
+    },
+    "id": 19944,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        884
+    ]
+}

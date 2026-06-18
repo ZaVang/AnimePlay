@@ -1,0 +1,124 @@
+{
+    "id": 377130,
+    "name": "尖帽子的魔法工房",
+    "image_path": "data\\images\\anime\\377130.jpg",
+    "points": 6.7,
+    "cost": 1,
+    "rarity": "N",
+    "description": "众人皆以为魔法是与生俱来的血统，可可却意外撞见了通往魔女之路的另一种可能，这也让她陷入左右世界命运的争斗核心。\r\n\r\n\r\n\r\n[简介原文]\r\n生まれた時から魔法を使えない人は魔法使いになれないし、魔法をかける瞬間を見てはならないのがこの世界の掟。\r\nそれでも小さな村の少女・ココは、昔から魔法使いへの憧れを抱き続けていた。\r\nある日、村を訪れた魔法使い・キーフリーが魔法を使うところを見てしまい、大きな秘密を知る。\r\nそれは、特別な道具で魔法陣を描けば、本当は誰にでも魔法が使えるという、魔法使いたちが隠した「絶対の秘密」だった――。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "漫画改"
+    ],
+    "date": "2026-04-06",
+    "rating_rank": 4173,
+    "rating_score": 6.7,
+    "rating_total": 2223,
+    "main_character_ids": [
+        61334,
+        61335,
+        61336
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/78/cf/61334_crt_kammx.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/78/cf/61334_crt_kammx.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/78/cf/61334_crt_kammx.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/78/cf/61334_crt_kammx.jpg"
+            },
+            "name": "キーフリー",
+            "summary": "魔法使。在造访可可所居住的村庄的时候，因为突发事故而使用了魔法，不小心被可可看到。为了救可可的母亲，并且解开「绘本」的谜团，将可可收为徒弟。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6e/6f/7772_prsn_X9rqz.jpg?r=1538803084",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/6e/6f/7772_prsn_X9rqz.jpg?r=1538803084",
+                        "large": "https://lain.bgm.tv/pic/crt/l/6e/6f/7772_prsn_X9rqz.jpg?r=1538803084",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6e/6f/7772_prsn_X9rqz.jpg?r=1538803084"
+                    },
+                    "name": "花江夏樹",
+                    "short_summary": "花江夏树是日本的男性声优，ACROSS ENTERTAINMENT所属。\r\n「花江」是艺名，「夏樹」为本名。本名姓氏为「武田」。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 7772,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 61334
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a3/91/61335_crt_K9UKK.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a3/91/61335_crt_K9UKK.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/a3/91/61335_crt_K9UKK.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a3/91/61335_crt_K9UKK.jpg"
+            },
+            "name": "ココ",
+            "summary": "一个住在小村庄里，憧憬成为魔法使的女孩。虽然乖巧，但也有活泼淘气的一面。因为不小心临摹了「绘本」里的图案，将母亲和房子化为了石头。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/44/37/67776_prsn_gG7Gp.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/44/37/67776_prsn_gG7Gp.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/44/37/67776_prsn_gG7Gp.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/44/37/67776_prsn_gG7Gp.jpg"
+                    },
+                    "name": "本村玲奈",
+                    "short_summary": "出身大阪府\r\n趣味・特技絵を描くこと、脚本、音楽鑑賞／クラシックバレエ（5年間）、極真空手（3年間）",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 67776,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 61335
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f7/40/61336_crt_Zh566.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f7/40/61336_crt_Zh566.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/f7/40/61336_crt_Zh566.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f7/40/61336_crt_Zh566.jpg"
+            },
+            "name": "アガット",
+            "summary": "奇弗利的弟子之一。勤奋努力，反对可可成为魔法使。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/df/ce/12569_prsn_EVTkz.jpg?r=1687679505",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/df/ce/12569_prsn_EVTkz.jpg?r=1687679505",
+                        "large": "https://lain.bgm.tv/pic/crt/l/df/ce/12569_prsn_EVTkz.jpg?r=1687679505",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/df/ce/12569_prsn_EVTkz.jpg?r=1687679505"
+                    },
+                    "name": "山村響",
+                    "short_summary": "福岡県出身。血液型はO型。声優・キャラクターソング等の名義は山村響、アーティストとしてはhibiku（ひびく）名義で音楽活動をしていたが、2019年3月発売のミニアルバムからは音楽活動も山村響名義に統一する。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 12569,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 61336
+        }
+    ]
+}

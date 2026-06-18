@@ -1,0 +1,73 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": 3,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/54/97/35465_crt_44882.jpg?r=1610523010",
+        "grid": "https://lain.bgm.tv/pic/crt/g/54/97/35465_crt_44882.jpg?r=1610523010",
+        "large": "https://lain.bgm.tv/pic/crt/l/54/97/35465_crt_44882.jpg?r=1610523010",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/54/97/35465_crt_44882.jpg?r=1610523010"
+    },
+    "summary": "「にゃあ」、「にゃ」が口癖。\r\nでもあるいみ一番の常識人か？\r\nだいたいは「謎」。",
+    "name": "霧谷希",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "雾谷希"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "きりや のぞみ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kiriya Nozomi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "不明"
+        },
+        {
+            "key": "血型",
+            "value": "AB"
+        },
+        {
+            "key": "身高",
+            "value": "155cm"
+        },
+        {
+            "key": "体重",
+            "value": "40kg"
+        },
+        {
+            "key": "BWH",
+            "value": "80/59/83"
+        },
+        {
+            "key": "引用来源",
+            "value": "patisserie-straycats.com/character.html"
+        }
+    ],
+    "stat": {
+        "comments": 2,
+        "collects": 32
+    },
+    "id": 35465,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        4292
+    ]
+}

@@ -1,0 +1,44 @@
+{
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b8/8a/119364_crt_4L9mM.jpg?r=1674008590",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b8/8a/119364_crt_4L9mM.jpg?r=1674008590",
+        "large": "https://lain.bgm.tv/pic/crt/l/b8/8a/119364_crt_4L9mM.jpg?r=1674008590",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b8/8a/119364_crt_4L9mM.jpg?r=1674008590"
+    },
+    "summary": "ある日突然、なぜか犬になってしまった男子高校生。\r\n片思いしているクラスメイト・犬飼加恋に拾われ、ペットとして一緒に暮らすことに。\r\n早く人間に戻りたいと願いつつも、犬としての生活の魅力に抗えず日々葛藤している。",
+    "name": "ポチ太",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "波奇太"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "♂"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://inuhiro-anime.com/character/"
+        }
+    ],
+    "stat": {
+        "comments": 12,
+        "collects": 6
+    },
+    "id": 119364,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        374319
+    ]
+}

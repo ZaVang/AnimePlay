@@ -1,7 +1,7 @@
 {
     "id": 8484,
     "name": "机动警察",
-    "image_path": "data/images/anime/8484.jpg",
+    "image_path": "data\\images\\anime\\8484.jpg",
     "points": 7.9,
     "cost": 2,
     "rarity": "R",

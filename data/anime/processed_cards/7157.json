@@ -1,0 +1,139 @@
+{
+    "id": 7157,
+    "name": "缘之空",
+    "image_path": "data\\images\\anime\\7157.jpg",
+    "points": 6.6,
+    "cost": 1,
+    "rarity": "N",
+    "description": "远离都市的乡间、奥木染。春日野悠带着他的妹妹·春日野穹来到了这里。\r\n兄妹俩幼时暑假期间曾来过多次奥木染，这里有着祖父的家，是个令人怀念的地方。\r\n因为意外事故而失去了双亲与去处的兄妹，决定移居至现在没有人居住的祖父家，在此开始新的生活。\r\n\r\n觉得自小以来就没怎么变化的街道与居民、教人怀念的回忆与静谧的环境，让悠倍感舒适。但徐徐地，变化来到了。\r\n阳光日渐变得强烈的初夏天空之下，故事开始了。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "恋爱",
+        "日本",
+        "游戏改"
+    ],
+    "date": "2010-10-04",
+    "rating_rank": 4582,
+    "rating_score": 6.6,
+    "rating_total": 14526,
+    "main_character_ids": [
+        1152,
+        10642,
+        14329
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/2c/78/1152_crt_Unim8.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/2c/78/1152_crt_Unim8.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/2c/78/1152_crt_Unim8.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2c/78/1152_crt_Unim8.jpg"
+            },
+            "name": "春日野穹",
+            "summary": "主人公春日野悠的孪生妹妹。沉默寡言，弱不禁风，深居简出。\r\n家务无能，麻烦的事情完全推给了哥哥悠。\r\n那犹如人偶一般的脸色，十分引人注目。\r\n或许是因为病弱，时常会住进医院，和悠的体格存在鲜明的反差。\r\n喜欢除了泡面之外的全部无营养食品，如果不注意她，可能一会就会全部吃光。\r\n同时，还有着很强的网络依存症。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8c/3a/5020_prsn_tP7Ll.jpg?r=1636505739",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/8c/3a/5020_prsn_tP7Ll.jpg?r=1636505739",
+                        "large": "https://lain.bgm.tv/pic/crt/l/8c/3a/5020_prsn_tP7Ll.jpg?r=1636505739",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8c/3a/5020_prsn_tP7Ll.jpg?r=1636505739"
+                    },
+                    "name": "田口宏子",
+                    "short_summary": "田口 宏子（たぐち ひろこ、1974年3月29日 - ）は、日本の女性声優。東京俳優生活協同組合所属。俳協ボイスアクターズスタジオ第8期生（同期に諏訪部順一）。神奈川県出身。おひつじ座。\r\n\r\n夏野 こおり（なつの こおり）は、日本の女性声優。主にアダルトゲームで活動している。\r\n\r\n芸名の由来は、名字は「夏が好き」、名前は「他の人が付けなさそうなのにしたかった」とのこと。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 5020,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 1152
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/dd/0b/10642_crt_btlPm.jpg?r=1581148391",
+                "grid": "https://lain.bgm.tv/pic/crt/g/dd/0b/10642_crt_btlPm.jpg?r=1581148391",
+                "large": "https://lain.bgm.tv/pic/crt/l/dd/0b/10642_crt_btlPm.jpg?r=1581148391",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dd/0b/10642_crt_btlPm.jpg?r=1581148391"
+            },
+            "name": "春日野悠",
+            "summary": "",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d0/62/4262_prsn_tbC5r.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d0/62/4262_prsn_tbC5r.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/d0/62/4262_prsn_tbC5r.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d0/62/4262_prsn_tbC5r.jpg"
+                    },
+                    "name": "下野紘",
+                    "short_summary": "下野 紘は、日本の男性声優。アイムエンタープライズ所属。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 4262,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bf/56/4515_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/bf/56/4515_seiyu_anidb.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/bf/56/4515_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bf/56/4515_seiyu_anidb.jpg"
+                    },
+                    "name": "松元恵",
+                    "short_summary": "",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 4515,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 10642
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/72/5e/14329_crt_FtF8H.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/72/5e/14329_crt_FtF8H.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/72/5e/14329_crt_FtF8H.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/72/5e/14329_crt_FtF8H.jpg"
+            },
+            "name": "天女目瑛",
+            "summary": "本作女主角之一，当地神社的女巫，悠的同班同学，是个非常开朗活力十足的少女，绝大部分的时间脸上都保持着微笑，也因此有时候让人搞不懂心里在想什么。小时候和悠在神社的山林间玩过，当神主的祖父过世后代替其职位，和渚一叶是关系非常亲昵的朋友，经常当一叶拉中提琴时的听众，但每次都会睡着。有着不输给一般人的力气，运动方面也很擅长。养著一只名为“师匠”的猫。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/36/67/5133_prsn_fAHRy.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/36/67/5133_prsn_fAHRy.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/36/67/5133_prsn_fAHRy.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/36/67/5133_prsn_fAHRy.jpg"
+                    },
+                    "name": "阪田佳代",
+                    "short_summary": "阪田 佳代（さかた かよ、3月23日 - ）は、日本の女性声優。所属事務所はシグマ・セブン。\r\n大阪府出身。身長は147cmで血液型はO型。\r\n\r\n「阪田」は「さかた」と読むが、ごくたまに「はんだ」と読まれることがある。\r\nシグマ・セブンの野球部スコアラーをしている。\r\n身長は147cmだが本人いわく、「せめて150cmはほしい」とのこと。\r\n四万温泉、熱海などいろいろな温泉郷に行きたいと言っていたことがある。\r\n\r\nたこ焼きが好きで、お気に入りは難波の「わなか」のたこ焼き。\r\n週1回ペースでバドミントンをしている。\r\n\r\n母親が大のプーさん好きで、誕生日にはプーさんのぬいぐるみをプレゼントしていた。だが、ぬいぐるみばかりでは限界があったらしく「違うものがいい」と言われた。\r\n子供の頃、吉本興業のテレビ番組に出演したことがある。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 5133,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 14329
+        }
+    ]
+}

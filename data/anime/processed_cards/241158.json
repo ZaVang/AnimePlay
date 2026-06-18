@@ -1,0 +1,124 @@
+{
+    "id": 241158,
+    "name": "邻家的吸血鬼小妹",
+    "image_path": "data\\images\\anime\\241158.jpg",
+    "points": 7,
+    "cost": 1,
+    "rarity": "N",
+    "description": "天野灯偶然得到一位名叫苏菲·托莱特的吸血鬼女孩的帮助，并对她一见钟情。灯不请自来地来到她家，半强迫地开始了同居。苏菲虽是吸血鬼，却从不袭击人类，而是通过订购获得血液以及爱好的动画周边，过着这种现代的平民生活。这是一部与当下的吸血鬼美眉共度的同居喜剧。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "百合",
+        "TV",
+        "日本",
+        "漫画改",
+        "日常"
+    ],
+    "date": "2018-10-05",
+    "rating_rank": 2580,
+    "rating_score": 7,
+    "rating_total": 5049,
+    "main_character_ids": [
+        65377,
+        65378,
+        65379
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/4d/5d/65377_crt_GXZ6c.jpg?r=1539279381",
+                "grid": "https://lain.bgm.tv/pic/crt/g/4d/5d/65377_crt_GXZ6c.jpg?r=1539279381",
+                "large": "https://lain.bgm.tv/pic/crt/l/4d/5d/65377_crt_GXZ6c.jpg?r=1539279381",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4d/5d/65377_crt_GXZ6c.jpg?r=1539279381"
+            },
+            "name": "ソフィー・トワイライト",
+            "summary": "吸血鬼の少女。約360歳。町の洋館で生活している。\r\n必要なものはネットを利用したり、\r\n現代的で庶民的な生活を送っている。\r\nアニメやコミックが好き。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e5/a0/20701_prsn_3sfX0.jpg?r=1562761023",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e5/a0/20701_prsn_3sfX0.jpg?r=1562761023",
+                        "large": "https://lain.bgm.tv/pic/crt/l/e5/a0/20701_prsn_3sfX0.jpg?r=1562761023",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e5/a0/20701_prsn_3sfX0.jpg?r=1562761023"
+                    },
+                    "name": "富田美憂",
+                    "short_summary": "富田 美憂（とみた みゆ、1999年11月15日 - ）は、日本の女性声優。アミューズ所属。埼玉県出身。\r\n\r\n小学生の時にテレビアニメ『ヴァンパイア騎士』を見て、声優業に興味を持った。その際にこの作品に出演していた宮野真守にも憧れを持ったと語っている。\r\n第一回「アニ☆たん!」ではファイナリストとなり6社にスカウトされ、同時期に開催された「2014声優アーティスト育成プログラム・セレクション」でグランプリを獲得した。\r\nデビュー作は2015年のテレビアニメ『干物妹！うまるちゃん』のタイヘイ（幼少期）役である。2016年、『アイカツスターズ！』の虹野ゆめ役で初主演。\r\n2018年、声優ユニットを中心としたメディアミックス企画『Kleissis』の林堂アキラ役に選ばれる。\r\n\r\n高校では漫画研究部に所属していた。好きな教科は英語と美術だと語っている。\r\n趣味・特技はイラストを描くこと、ゲーム、空手。空手では上段回し蹴りが得意であり、ゲームでは、『うたの☆プリンスさまっ♪』『薄桜鬼』などの乙女ゲームが好きである。\r\n歌うこと、踊ること、ディズニーが好きである。\r\n好きな食べ物は、りんご、栗。\r\n狼、犬、ホワイトタイガーなど虫以外の動物全般を好きだと語っており、チャップという名前の犬を飼っている。\r\n「自分を一言で言うと…」の質問に「挙動不審」だと答えている。また、好きな言葉には「考えるよりチャレンジ！」をあげている。\r\n原作のある作品の場合は原作を読み込んで、キャラクターの考え方や行動を理解してからオーディションに臨んでいると語っている。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 20701,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 65377
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/6c/68/65378_crt_61iS2.jpg?r=1539459125",
+                "grid": "https://lain.bgm.tv/pic/crt/g/6c/68/65378_crt_61iS2.jpg?r=1539459125",
+                "large": "https://lain.bgm.tv/pic/crt/l/6c/68/65378_crt_61iS2.jpg?r=1539459125",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6c/68/65378_crt_61iS2.jpg?r=1539459125"
+            },
+            "name": "天野灯",
+            "summary": "人形が好きな少女。\r\n森で迷子になったところをソフィーに助けられたことが縁で、彼女の家に押しかけて、半ば強引に共同生活を行うことになる。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/59/73/33097_prsn_WiF5W.jpg?r=1691249190",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/59/73/33097_prsn_WiF5W.jpg?r=1691249190",
+                        "large": "https://lain.bgm.tv/pic/crt/l/59/73/33097_prsn_WiF5W.jpg?r=1691249190",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/59/73/33097_prsn_WiF5W.jpg?r=1691249190"
+                    },
+                    "name": "篠原侑",
+                    "short_summary": "篠原侑（ささはら ゆう、4月30日 - ）は、日本の女性声優。熊本県出身。アイムエンタープライズ所属。\r\n\r\n小学生の頃に歌手になりたいと思っていたが、両親から「歌手の道は厳しいよ」と言われたという。中学時代に父がプリントアウトしたアニメーション映画の主人公のオーディションを見たことがあり、「声優なら歌も歌えるし、演技もできてテレビにも出られるかもしれないし、いいことがたくさんあるから目指してみたら？」と言われたことがきっかけで声優を目指したという。\r\n\r\n中学時代は吹奏楽部、高校時代は和太鼓部にそれぞれ所属していた。\r\n\r\nインターネットで声優になる方法を調べ、専門学校が良いと思って両親に相談したものの、母から反対された。高校時代、母に同じ話をした際、「大学に通いながらであれば、声優の勉強をしても構わない」と言われたことから、全日制の専門学校に通うことは無理であると考え、ダブルスクールで通うことが可能な日本ナレーション演技研究所（日ナレ）が自身の候補に上がったという。高校3年生の夏の頃に、母と熊本から上京して日ナレの入所審査を受けて覚悟が決まったという。\r\n\r\n日ナレに入所後、3年目の研修科修了後、2016年よりアイムエンタープライズに所属し、声優デビュー。\r\n\r\n『となりの吸血鬼さん』の天野灯役で初のメインキャラクターを務める。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 33097,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 65378
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/51/ad/65379_crt_Wvfwo.jpg?r=1540223413",
+                "grid": "https://lain.bgm.tv/pic/crt/g/51/ad/65379_crt_Wvfwo.jpg?r=1540223413",
+                "large": "https://lain.bgm.tv/pic/crt/l/51/ad/65379_crt_Wvfwo.jpg?r=1540223413",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/51/ad/65379_crt_Wvfwo.jpg?r=1540223413"
+            },
+            "name": "夏木ひなた",
+            "summary": "灯の親友。快活な少女。\r\n灯の親友を自認しているが、灯がソフィーと仲が良いのをみて、嫉妬することもしばしば。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/76/43/15497_prsn_b9qz3.jpg?r=1709906632",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/76/43/15497_prsn_b9qz3.jpg?r=1709906632",
+                        "large": "https://lain.bgm.tv/pic/crt/l/76/43/15497_prsn_b9qz3.jpg?r=1709906632",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/76/43/15497_prsn_b9qz3.jpg?r=1709906632"
+                    },
+                    "name": "Lynn",
+                    "short_summary": "日本的女性声优。アーツビジョン所属。成长于新潟县（出生地为神奈川县）。\r\n兴趣：看电影、照相、乒乓球\r\n由声优事务所ARTSVISION附属的声优养成所日本播音演技研究所，所毕业。\r\n喜欢猫科动物，最喜欢的歌手绚香，最喜欢食物拉面。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 15497,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 65379
+        }
+    ]
+}

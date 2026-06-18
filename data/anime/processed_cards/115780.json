@@ -1,0 +1,121 @@
+{
+    "id": 115780,
+    "name": "没有黄段子存在的无聊世界",
+    "image_path": "data\\images\\anime\\115780.jpg",
+    "points": 6.1,
+    "cost": 1,
+    "rarity": "N",
+    "description": "故事描述日本在16年前成立名为《公序良俗健全育成法》的法规，自此所有与“性”有关的文句都遭到禁止。某日，高中生奥间狸吉终于如愿进入崇拜的学姐安娜担任学生会长的风纪优良名校就读，但刚入学就遭到名为“雪原之青”的下流梗恐怖份子抓住把柄，被迫成为下流梗恐怖组织“SOX”一员。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "校园",
+        "TV",
+        "日本",
+        "小说改"
+    ],
+    "date": "2015-07-04",
+    "rating_rank": 7301,
+    "rating_score": 6.1,
+    "rating_total": 8978,
+    "main_character_ids": [
+        32286,
+        32287,
+        32289
+    ],
+    "main_characters": [
+        {
+            "id": 32286,
+            "name": "アンナ・錦ノ宮",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/1e/b7/32286_crt_CLbcl.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1e/b7/32286_crt_CLbcl.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/1e/b7/32286_crt_CLbcl.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/1e/b7/32286_crt_CLbcl.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4353,
+                    "name": "松来未祐",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/8a/dd/4353_prsn_16sj8.jpg?r=1505927143",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8a/dd/4353_prsn_16sj8.jpg?r=1505927143",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8a/dd/4353_prsn_16sj8.jpg?r=1505927143",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/8a/dd/4353_prsn_16sj8.jpg?r=1505927143"
+                    },
+                    "short_summary": "双亲坚决反对松来未祐为了当声优而去东京学习，但是松来未祐以去东京上大学为条件得到了父母的允许，入学庆应义塾大学环境情报学部。边上大学边到日本演技研究所学习演技。\r\n1998年于PS游戏《御神楽少女探偵団》中声优出道，之后的一段时间内都以本名松木美愛子进行声优活动。之后以本名的笔画数不怎么好为理由将艺名改为松来未祐。\r\n2000年，在KSS的新人选秀“あっぷ² MY GIRL 2000”中合格，结成「あっぷ²（あっぷあっぷ）」团体，进行着各式各样的活动。\r\n2002年，在《七人之奈奈》（七人のナナ）中首次获得正式的动画配音工作。同年6月时从アクセント移籍到81 Produce。同年10月开始在广播节目“樱井工房”及其之后的“Cherry Bell”（樱井工房为Cherry Bell前身）中长期参与节目。\r\n2003到2004年之间陆续取得《D.C. ~Da Capo~》和《Divergence Eve》系列的动画角色，更于2004年1月的动画《超変身コス∞プレイヤー》中第一次担任主角。同年，与共同在收音机节目“RADIOデコピンないと”中担当主持的金田朋子组成声优组合「SD☆Children」，一起发行了cd并举办了各种活动。在不少其他的动画中有着演出，最忙的时候一个星期要参加四个广播节目。\r\n2004年是她演艺事业发展得最快的一年。\r\n2005年，常演出像《こいこい7》的山田五十铃、《键姬物语》的御咲纪纱、《Strawberry Panic》的此花光莉等有百合倾向的女性角色。\r\n2008年广泛的演出性格独特的教师角色。\r\n2010年组成自主活动声优组合「N±」。\r\n2013年3月1日，作为「後ろから這いより隊G」的一员于第七回声優アワード歌唱賞中获奖。\r\n2015年7月14日，“今年以来高烧降不下来，去医院检查了好几次，被确诊为急性肺炎后，知道了这是如果不早点治疗就会变得很糟糕的病。”写下这些之后，为治疗疾病而停止了声优活动。\r\n2015年10月27日，在入院的东京都内某医院中去世，满38岁。葬礼、告别式根据家族的要求由家人与亲属执行。自入院以来到去世，多次更新了与病魔战斗的生活、以及生日状况的博文，表示等病好后想恢复声优的工作，想结婚。松来未祐的讣报发出后，声优朋友们通过推特以及博客传达了哀悼。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 32287,
+            "name": "奥間狸吉",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/85/19/32287_crt_3H1CQ.jpg?r=1430462390",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/85/19/32287_crt_3H1CQ.jpg?r=1430462390",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/85/19/32287_crt_3H1CQ.jpg?r=1430462390",
+                "grid": "https://lain.bgm.tv/pic/crt/g/85/19/32287_crt_3H1CQ.jpg?r=1430462390"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 13825,
+                    "name": "小林裕介",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/c7/74/13825_prsn_93N54.jpg?r=1620821891",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c7/74/13825_prsn_93N54.jpg?r=1620821891",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c7/74/13825_prsn_93N54.jpg?r=1620821891",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c7/74/13825_prsn_93N54.jpg?r=1620821891"
+                    },
+                    "short_summary": "小林 裕介（こばやし ゆうすけ、1985年3月25日 - ）は、日本の男性声優、ナレーターである。ゆーりんプロ所属。\r\n東京都出身。アミューズメントメディア総合学院声優タレント学科卒業。\r\n\r\n趣味はダーツ、特技は腹話術と大学時代に4年間続けた空手。\r\n座右の銘としている言葉は、『失敗しても死にゃしない』。\r\nプラネタリウムのナレーションを担当する事を夢としている。\r\n\r\n5歳から10歳までイギリスに住んでおり、帰国子女である。しかし英語はあまり喋れない。\r\n高校生時代、自転車通学中にアニメのセリフを叫びながら走る癖があり、それを友人に話した所「声優になれば？」と返された事が声優を志望するきっかけになった。\r\n大学卒業後、就職したものの、日々の生活に物足りなさを感じて休日に歌のレッスンを受けるようになり、その講師が声優と縁のある職業であることを知った小林は「声優になりたかった」と語ったところ、講師に「興味があるならやった方がいい」と背中を押され、アミューズメントメディア総合学院に入学する。\r\n2009年に専門学校のワークショップでの『VANGUARD』の吹き替えでデビュー。\r\n2010年にアミューズメントメディア総合学院を卒業後、ゆーりんプロに所属。プロとしての初めての仕事は企業用ナレーション。以降、ナレーションの仕事を中心に活動。\r\n2013年、専門学校のワークショップでテレビアニメ『とある科学の超電磁砲S』の小佐古俊一役で声優デビュー。\r\n2014年には、テレビアニメ『ウィッチクラフトワークス』多華宮仄役で初主演した。\r\n2016年、7月より声優の古川慎と共にパーソナリティを務めるラジオ『なんでもヒーロー！ ゆっけとまーぼー』の放送を開始。\r\n2017年、第11回声優アワードで新人男優賞を受賞。\r\n\r\n2024年12月31日发表与内山夕实结婚",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 32289,
+            "name": "華城綾女",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/c1/ac/32289_crt_3QTeT.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c1/ac/32289_crt_3QTeT.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c1/ac/32289_crt_3QTeT.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c1/ac/32289_crt_3QTeT.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 14414,
+                    "name": "石上静香",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/04/f5/14414_prsn_7nPYh.jpg?r=1735460841",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/04/f5/14414_prsn_7nPYh.jpg?r=1735460841",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/04/f5/14414_prsn_7nPYh.jpg?r=1735460841",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/04/f5/14414_prsn_7nPYh.jpg?r=1735460841"
+                    },
+                    "short_summary": "日本的女性声优，东京都出身，所属大泽事务所。\r\n\r\n東京メディアアカデミーの声優ボーカル科（現：東京声優アカデミーの声優養成科）を卒業。81プロデュース所属後、プロフィット養成所を経て2014年2月よりプロ・フィット所属となる。\r\n名前付きの初めての役は、『凪のあすから』の潮留晃。\r\nオーディションをして初めて受かった役は『健全ロボ ダイミダラー』の喜友名霧子。\r\n2022年1月1日、プロ・フィットが同年3月末で閉鎖することに伴い、大沢事務所へ移籍。\r\n\r\n2025年6月30日发表与[url=https://bgm.tv/person/41419]柳晃平[/url]结婚",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

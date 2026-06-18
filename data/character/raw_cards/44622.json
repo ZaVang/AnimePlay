@@ -1,0 +1,45 @@
+{
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/40/ea/44622_crt_aksec.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/40/ea/44622_crt_aksec.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/40/ea/44622_crt_aksec.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/40/ea/44622_crt_aksec.jpg"
+    },
+    "summary": "《降临之子》登场，萨菲罗斯思念体的首领，留着半长发，刘海盖快住一半的容貌，表征塞菲罗斯对母亲的思念，个体当克劳德为哥哥、家人，并视之为的家族的叛徒，擅长用双股刀（两片刀锋叠合成一把的武士刀），性格愤世嫉俗，渴望着被妈妈杰诺娃所重视。",
+    "name": "カダージュ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "卡达裘"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "卡丹裘"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Kadaj"
+                }
+            ]
+        }
+    ],
+    "stat": {
+        "comments": 0,
+        "collects": 2
+    },
+    "id": 44622,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        1890
+    ]
+}

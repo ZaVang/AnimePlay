@@ -1,0 +1,45 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/75/01/13305_crt_duA6c.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/75/01/13305_crt_duA6c.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/75/01/13305_crt_duA6c.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/75/01/13305_crt_duA6c.jpg"
+    },
+    "summary": "翔（翔，声优：神木隆之介（日本）、张裕东（香港））\r\n男主角，12岁，为了养病搬到东京近郊姨婆（翔的祖母的妹妹）的老房子里居住，偶然发现阿丽埃蒂的踪迹。父母离异，与家人互动不多。",
+    "name": "翔",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "翔"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Shou"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 8,
+        "collects": 13
+    },
+    "id": 13305,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        6819
+    ]
+}

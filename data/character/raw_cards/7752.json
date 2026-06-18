@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/77/c5/7752_crt_yz2u1.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/77/c5/7752_crt_yz2u1.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/77/c5/7752_crt_yz2u1.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/77/c5/7752_crt_yz2u1.jpg"
+    },
+    "summary": "隶属「Fraternity（フラタニティ）」，是最强的「Topless（トップレス）」。\r\n心高气傲，认为 “努力和根性\" 是无用的东西。\r\n不知为何会被诺诺称呼为 “姐姐大人”……\r\nBuster Machine「迪斯帑夫（ディスヌフ）」驾驶员。",
+    "name": "ラルク・メルク・マール",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "拉璐可·梅鲁克·玛尔"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Lal`C Mellk Mal"
+                },
+                {
+                    "k": "日文名",
+                    "v": "ラルク・メルク・マール"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "raruku meruku maaru"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "www.top2.jp"
+        }
+    ],
+    "stat": {
+        "comments": 5,
+        "collects": 39
+    },
+    "id": 7752,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        768
+    ]
+}

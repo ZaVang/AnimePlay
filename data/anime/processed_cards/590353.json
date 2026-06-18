@@ -1,0 +1,109 @@
+{
+    "id": 590353,
+    "name": "婚姻剧毒",
+    "image_path": "data\\images\\anime\\590353.jpg",
+    "points": 6.6,
+    "cost": 1,
+    "rarity": "N",
+    "description": "数百年来有一群人持续磨练着杀人技巧，人称「高手」。\r\n青年下吕光继承了在这群人当中，拥有最强力量与权力的五大名门之一，「用毒人」的血脉。\r\n他投身于黑社会工作，过着与女性完全绝缘的生活。对他而言，「结婚」原本是件极其遥远的事情。\r\n然而，为了不让「用毒人」的血脉断绝，下吕家的现任当家告知他的妹妹，将强迫她生下继承人。\r\n就在这时，下吕遇见了他的任务目标，手法高超的婚姻骗子──城崎芽衣。\r\n为了解决继承人问题并保护妹妹，下吕想到由自己来结婚，便当场向城崎提出请求，委托对方协助自己顺利结婚。\r\n「──我第一次看到这种提案（求婚）方式。」\r\n于是，在手法高超的婚姻骗子──城崎担任顾问之下，一流杀手下吕开始挑战人生首次的超困难任务──「相亲」……！？\r\n目标是最棒的婚姻……\r\n由杀手与婚姻骗子这对最强拍档挺身挑战，世界上最艰辛的相亲战斗动作片，正式揭开序幕！！\r\n\r\n\r\n[简介原文]\r\n数百年にわたり殺しの技術を研ぎ続ける者たち『使い手』。\r\nその中でも最強の力と権力を持つとされる五大名家の『毒使い』。その血筋を受け継ぐ青年・下呂ヒカル。\r\n裏稼業に身を置き、女性と関わることなく生きてきた彼にとって“結婚”とは縁遠いものであった。\r\nしかし、『毒使い』の血を絶えさせないため下呂家の当主は彼の妹に対し、強制的に跡継ぎを産ませることを通告。\r\nそんな時、下呂は仕事のターゲットとなる凄腕の結婚詐欺師・城崎メイと出会う。\r\n後継ぎ問題を解決し妹を守るため、自らが結婚することを思いついた下呂は、その場で城崎に結婚の手伝いを依頼する。\r\n「――そんな提案（プロポーズ）、初めて」\r\nかくして、凄腕結婚詐欺師・城崎をアドバイザーに、一流の殺し屋・下呂は人生初の超難関ミッション『婚活』を始めることとなり…!?\r\n目指すは最高の結婚…\r\n殺し屋×結婚詐欺師の最強バディが挑む、世界一ハードな婚活バトルアクションが幕を開ける!!",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "TV",
+        "恋爱",
+        "日本",
+        "漫画改",
+        "战斗",
+        "少年向"
+    ],
+    "date": "2026-04-07",
+    "rating_rank": 4401,
+    "rating_score": 6.6,
+    "rating_total": 1695,
+    "main_character_ids": [
+        166836,
+        166837
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/78/39/166836_crt_Pbszz.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/78/39/166836_crt_Pbszz.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/78/39/166836_crt_Pbszz.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/78/39/166836_crt_Pbszz.jpg"
+            },
+            "name": "下呂ヒカル",
+            "summary": "殺しのプロ『使い手』の中でも最強格となる五大名家『毒使い』下呂家の跡取り。超一流の殺し屋。\r\n裏稼業に身を置くため恋愛経験は皆無で、女性が苦手。家を継ぐために必要にかられ婚活を始める。趣味は遊具菓子。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fb/a8/2404_prsn_i47IV.jpg?r=1773926038",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/fb/a8/2404_prsn_i47IV.jpg?r=1773926038",
+                        "large": "https://lain.bgm.tv/pic/crt/l/fb/a8/2404_prsn_i47IV.jpg?r=1773926038",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fb/a8/2404_prsn_i47IV.jpg?r=1773926038"
+                    },
+                    "name": "石谷春貴",
+                    "short_summary": "日本的男性声优，宫崎县出身。毕业于Pro-Fit声优养成所，2022年1月1日移籍至大沢事务所。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 2404,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b8/83/61882_prsn_6gZkJ.jpg?r=1709747357",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b8/83/61882_prsn_6gZkJ.jpg?r=1709747357",
+                        "large": "https://lain.bgm.tv/pic/crt/l/b8/83/61882_prsn_6gZkJ.jpg?r=1709747357",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b8/83/61882_prsn_6gZkJ.jpg?r=1709747357"
+                    },
+                    "name": "宇津宮千穂",
+                    "short_summary": "出身地：千葉県\r\n資格・免許：普免\r\n趣味：散歩\r\n特技：似顔絵",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 61882,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 166836
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/68/1c/166837_crt_MjdKd.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/68/1c/166837_crt_MjdKd.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/68/1c/166837_crt_MjdKd.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/68/1c/166837_crt_MjdKd.jpg"
+            },
+            "name": "城崎メイ",
+            "summary": "30秒あれば男女問わずほとんどの相手はオトせると豪語する凄腕結婚詐欺師。\r\n下呂と出逢い、思わぬ流れで婚活を手伝うことに。美味しいものが大好きで、見かけによらずかなりの大食い。\r\n\r\n结婚欺诈师。\r\n会根据目标对象变换女装/男装，通常30秒拿下目标。\r\n目前正在帮助下吕进行结婚活动。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/87/b9/34866_prsn_3xaEH.jpg?r=1728674708",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/87/b9/34866_prsn_3xaEH.jpg?r=1728674708",
+                        "large": "https://lain.bgm.tv/pic/crt/l/87/b9/34866_prsn_3xaEH.jpg?r=1728674708",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/87/b9/34866_prsn_3xaEH.jpg?r=1728674708"
+                    },
+                    "name": "若山詩音",
+                    "short_summary": "若山 詩音（わかやま しおん、1998年2月10日 - ）は、日本の女性声優、元子役。千葉県出身。劇団ひまわり所属。",
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 34866,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 166837
+        }
+    ]
+}

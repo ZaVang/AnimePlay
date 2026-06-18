@@ -1,7 +1,7 @@
 {
     "id": 3128,
     "name": "数码宝贝大冒险",
-    "image_path": "data/images/anime/3128.jpg",
+    "image_path": "data\\images\\anime\\3128.jpg",
     "points": 8.3,
     "cost": 4,
     "rarity": "SSR",

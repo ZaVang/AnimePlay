@@ -1,0 +1,81 @@
+{
+    "birth_mon": 3,
+    "gender": "female",
+    "birth_day": 30,
+    "birth_year": null,
+    "blood_type": 4,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bf/00/163997_crt_eaLT2.jpg?r=1725532020",
+        "grid": "https://lain.bgm.tv/pic/crt/g/bf/00/163997_crt_eaLT2.jpg?r=1725532020",
+        "large": "https://lain.bgm.tv/pic/crt/l/bf/00/163997_crt_eaLT2.jpg?r=1725532020",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bf/00/163997_crt_eaLT2.jpg?r=1725532020"
+    },
+    "summary": "とにかく明るい高校1年生。カメラが好きで、“エモエモ最強マックスな1枚”を撮るのを目標にしている。流行にはとりあえず乗っかるが、全てにわか。フラットな視点で物事を捉えており、魔女修業の中で周囲を無自覚のうちに変えていく。",
+    "name": "赤城ユイナ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "赤城结奈"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "赤城 ユイナ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "あかぎ ユイナ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Akagi Yuina"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "3月30日"
+        },
+        {
+            "key": "血型",
+            "value": "O"
+        },
+        {
+            "key": "身高",
+            "value": "156cm"
+        },
+        {
+            "key": "年龄",
+            "value": "15岁（高校1年生）"
+        },
+        {
+            "key": "喜欢的食物",
+            "value": "おまんじゅう"
+        },
+        {
+            "key": "讨厌的食物",
+            "value": "なんでも食べる"
+        },
+        {
+            "key": "兴趣",
+            "value": "写真撮影、お母さんとカラオケ"
+        }
+    ],
+    "stat": {
+        "comments": 80,
+        "collects": 128
+    },
+    "id": 163997,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        511207
+    ]
+}

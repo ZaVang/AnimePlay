@@ -1,0 +1,65 @@
+{
+    "birth_mon": 6,
+    "gender": "male",
+    "birth_day": 30,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/87/44/19848_crt_W5S4W.jpg?r=1525687751",
+        "grid": "https://lain.bgm.tv/pic/crt/g/87/44/19848_crt_W5S4W.jpg?r=1525687751",
+        "large": "https://lain.bgm.tv/pic/crt/l/87/44/19848_crt_W5S4W.jpg?r=1525687751",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/87/44/19848_crt_W5S4W.jpg?r=1525687751"
+    },
+    "summary": "岩鸢高中高中二年级生，强势直率，做事果断坚决。\r\n专攻自由泳（捷泳）。\r\n喜欢关于游泳的一切，经常于水中独自沉思。\r\n静默中展现强大的能量，个中魅力为不少人所感触。",
+    "name": "七瀬遙",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "七濑遥"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Haruka Nanase"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ななせ はるか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Nanase Haruka"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "6月30日"
+        },
+        {
+            "key": "身高",
+            "value": "155cm→175cm→177cm"
+        },
+        {
+            "key": "体重",
+            "value": "63kg"
+        }
+    ],
+    "stat": {
+        "comments": 13,
+        "collects": 82
+    },
+    "id": 19848,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        72109
+    ]
+}

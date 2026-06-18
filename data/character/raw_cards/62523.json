@@ -1,0 +1,65 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d6/4d/62523_crt_WOY0G.jpg?r=1562492011",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d6/4d/62523_crt_WOY0G.jpg?r=1562492011",
+        "large": "https://lain.bgm.tv/pic/crt/l/d6/4d/62523_crt_WOY0G.jpg?r=1562492011",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d6/4d/62523_crt_WOY0G.jpg?r=1562492011"
+    },
+    "summary": "ザ・普通の妄想女子な文芸部員。新菜の「セックスをしたい」発言により、〝性〟に振り回されることに･･･。近頃、幼なじみの泉のことが気になっている。\r\n\r\n愛読書は『モモ』。",
+    "name": "小野寺和紗",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "小野寺和纱"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "小野寺 和紗"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "おのでら かずさ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Onodera Kazusa"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "156cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "wikipedia"
+        }
+    ],
+    "stat": {
+        "comments": 25,
+        "collects": 30
+    },
+    "id": 62523,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        268070
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9c/d4/1026_crt_M53QV.jpg?r=1376726118",
+        "grid": "https://lain.bgm.tv/pic/crt/g/9c/d4/1026_crt_M53QV.jpg?r=1376726118",
+        "large": "https://lain.bgm.tv/pic/crt/l/9c/d4/1026_crt_M53QV.jpg?r=1376726118",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9c/d4/1026_crt_M53QV.jpg?r=1376726118"
+    },
+    "summary": "犯罪组织“蛇”实质上的BOSS，与伽南是宿敌关系，特征是左腕上的蛇形纹身。身体能力远远凌驾于常人，战术方面的造诣也非常之深，也有经济方面的相关知识，梁琪的主人。（主人这称呼=3=）",
+    "name": "アルファルド",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "阿尔珐尔多"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "サダカ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "声优",
+            "value": "坂本真绫"
+        },
+        {
+            "key": "演员",
+            "value": "Tiger LuLu Williams"
+        }
+    ],
+    "stat": {
+        "comments": 15,
+        "collects": 51
+    },
+    "id": 1026,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        1952
+    ]
+}

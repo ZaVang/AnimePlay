@@ -1,0 +1,141 @@
+{
+    "id": 328313,
+    "name": "世界顶尖的暗杀者转生为异世界贵族",
+    "image_path": "data\\images\\anime\\328313.jpg",
+    "points": 6.1,
+    "cost": 1,
+    "rarity": "N",
+    "description": "世界第一的暗杀者投胎成暗杀世家的长男重生了。作为能够转生到异世界的条件，他接下了女神给下达的唯一一项任务。\r\n那就是“杀了被预言会带给人类灾厄的‘勇者’”。\r\n这是曾经世界上最强暗杀者在新的人生中必须要完成的使命。在现代曾让万般暗杀方式变得可行的广泛知识及经验，还有暗杀者家族被誉为异世界最强的秘术与魔法。一切都相辅相成，使他逐步成为史上无人能及的暗杀者——\r\n“有意思，真没想到转生后还要继续从事暗杀工作啊”\r\n得以转生的“传说中的暗杀者”向更高境界进发！突破极限的冒险幻想谭，现在开幕！！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "后宫",
+        "TV",
+        "日本",
+        "战斗",
+        "小说改"
+    ],
+    "date": "2021-10-06",
+    "rating_rank": 7273,
+    "rating_score": 6.1,
+    "rating_total": 8318,
+    "main_character_ids": [
+        98084,
+        98085,
+        98086
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ec/ab/98084_crt_NpM2c.jpg?r=1628725763",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ec/ab/98084_crt_NpM2c.jpg?r=1628725763",
+                "large": "https://lain.bgm.tv/pic/crt/l/ec/ab/98084_crt_NpM2c.jpg?r=1628725763",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ec/ab/98084_crt_NpM2c.jpg?r=1628725763"
+            },
+            "name": "ルーグ",
+            "summary": "元世界最高の暗殺者。組織の裏切りで自らが暗殺された後、暗殺貴族の長男として異世界に転生する。\r\n転生の条件として女神より「勇者暗殺」の任務を与えられる。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f6/aa/5685_prsn_LeGaq.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f6/aa/5685_prsn_LeGaq.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/f6/aa/5685_prsn_LeGaq.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f6/aa/5685_prsn_LeGaq.jpg"
+                    },
+                    "name": "赤羽根健治",
+                    "short_summary": "赤羽根 健治（あかばね けんじ、1984年10月31日 - ）は、日本の声優。青二プロダクション所属。\r\n\r\n千葉県出身。アミューズメントメディア総合学院卒業。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 5685,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e2/e6/20631_prsn_bTC2c.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e2/e6/20631_prsn_bTC2c.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/e2/e6/20631_prsn_bTC2c.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e2/e6/20631_prsn_bTC2c.jpg"
+                    },
+                    "name": "小市眞琴",
+                    "short_summary": "小市真琴是日本的女性声优、舞台演员、编舞家，东京都出身。隶属于stay luck。",
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 20631,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 98084
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/98/9b/98085_crt_b2Bi1.jpg?r=1648051252",
+                "grid": "https://lain.bgm.tv/pic/crt/g/98/9b/98085_crt_b2Bi1.jpg?r=1648051252",
+                "large": "https://lain.bgm.tv/pic/crt/l/98/9b/98085_crt_b2Bi1.jpg?r=1648051252",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/98/9b/98085_crt_b2Bi1.jpg?r=1648051252"
+            },
+            "name": "ディア",
+            "summary": "隣国の領主・ヴィコーネ家の娘。人類最高レベルの魔術の才能を持つ。\r\n幼馴染のルーグよりも幼く見えるが、実は3歳上で姉のように接したがる。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c5/14/13164_prsn_KWnmW.jpg?r=1752543801",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c5/14/13164_prsn_KWnmW.jpg?r=1752543801",
+                        "large": "https://lain.bgm.tv/pic/crt/l/c5/14/13164_prsn_KWnmW.jpg?r=1752543801",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c5/14/13164_prsn_KWnmW.jpg?r=1752543801"
+                    },
+                    "name": "上田麗奈",
+                    "short_summary": "日本的女性声优，富山县出身，所属事务所为81 Produce。\r\n初中时同属演剧部的女生有声优志向者，尊敬她的上田觉得“声优肯定是很美妙的职业”，又担心“自己的性格很奇怪”，本来以美术大学为志愿的她最终在声优试音报名结束前三天才报名。\r\n2011年，在第5回81 Audition中获得准优秀奖，之后加入81 Produce。\r\n获第九届声优奖新人女声优奖。\r\n是声优组合Anisonia的成员之一。\r\n在电视动画《摸索吧！部活剧》中，一人分饰18角。\r\n绘画力极强，《摸索吧！部活剧》的试音中因为绘画好而被选中，后来也在花舞少女广播中绘画并得到采用，还担任了《骇客娃娃》第五话的Endcard。\r\n不擅长运动。\r\n在各种场合被人说“凡骨”，自己的性格也很天然。\r\n自称只要对她好，就能喜欢上那个人。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 13164,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 98085
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ee/5b/98086_crt_7cX2e.jpg?r=1637172554",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ee/5b/98086_crt_7cX2e.jpg?r=1637172554",
+                "large": "https://lain.bgm.tv/pic/crt/l/ee/5b/98086_crt_7cX2e.jpg?r=1637172554",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ee/5b/98086_crt_7cX2e.jpg?r=1637172554"
+            },
+            "name": "タルト",
+            "summary": "かつて行き倒れかけていたところをルーグに拾われて以来、彼に忠誠を誓い暗殺稼業の助手兼専属メイドとして身の回りの世話を焼く。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/be/36/18087_prsn_87vIV.jpg?r=1632479127",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/be/36/18087_prsn_87vIV.jpg?r=1632479127",
+                        "large": "https://lain.bgm.tv/pic/crt/l/be/36/18087_prsn_87vIV.jpg?r=1632479127",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/be/36/18087_prsn_87vIV.jpg?r=1632479127"
+                    },
+                    "name": "高田憂希",
+                    "short_summary": "日本の女性声優。マウスプロモーション所属。血液型はAB型。福岡県北九州市出身。\r\n\r\n代々木アニメーション学院福岡校、マウスプロモーション付属養成所の第28期生を経て、2015年よりマウスプロモーションの所属となる。\r\n劇場版アニメ『BAYONETTA Bloody Fate』のヴィグリットの人々、乗客、魔界の住人役でアニメデビュー。\r\n2015年7月5日 株式会社オブジェクト主催・企画のイベント『こえずか 〜声優図鑑に出てくれた最高なメンバーをがむしゃらに揃えましたSP〜【夜の部】』にて優勝。\r\n\r\n自身のコラムにて、天然パーマだと語っている。\r\n趣味・特技は、明太子の食べ比べ、歌うこと、靴下集め。\r\n好きな食べ物はカレーライス、苦手な食べ物はいちごである。\r\n『美少女戦士セーラームーン』が好きで、特にセーラーヴィーナスが好きだと語っている。\r\n動物のキリンが好きであるほか、レモン、ひまわりが好きである。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 18087,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 98086
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "birth_mon": 7,
+    "gender": "male",
+    "birth_day": 10,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/44/bd/68206_crt_xYsKr.jpg?r=1562992621",
+        "grid": "https://lain.bgm.tv/pic/crt/g/44/bd/68206_crt_xYsKr.jpg?r=1562992621",
+        "large": "https://lain.bgm.tv/pic/crt/l/44/bd/68206_crt_xYsKr.jpg?r=1562992621",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/44/bd/68206_crt_xYsKr.jpg?r=1562992621"
+    },
+    "summary": "二等消防官 第三世代能力者\r\n自称“骑士王”，不管是平时还是执行任务都不喜欢戴头盔。\r\n使用王者之剑，能从剑柄发出火焰之刃。\r\n他和森罗是训练学校的同学，同时也是第8消防队的新进队员。\r\n森罗说他“想要扮演冷酷无言的角色，但却只是个笨蛋”，据说他很受异性欢迎。",
+    "name": "アーサー・ボイル",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "亚瑟·波义耳"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "7月10日"
+        },
+        {
+            "key": "身高",
+            "value": "174cm"
+        },
+        {
+            "key": "体重",
+            "value": "64kg"
+        }
+    ],
+    "stat": {
+        "comments": 19,
+        "collects": 17
+    },
+    "id": 68206,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        266372
+    ]
+}

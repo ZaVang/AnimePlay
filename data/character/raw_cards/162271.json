@@ -1,0 +1,44 @@
+{
+    "birth_mon": 10,
+    "gender": "female",
+    "birth_day": 10,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b4/67/162271_crt_CpGGP.jpg?r=1722518562",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b4/67/162271_crt_CpGGP.jpg?r=1722518562",
+        "large": "https://lain.bgm.tv/pic/crt/l/b4/67/162271_crt_CpGGP.jpg?r=1722518562",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b4/67/162271_crt_CpGGP.jpg?r=1722518562"
+    },
+    "summary": "乙女ゲーム『マジカル学園ラブ＆ビースト』に登場する悪役令嬢。現在は異世界転生した憲三郎が肉体を主導している。本来はプライドが高くキツい性格だが、グレイス＝憲三郎になってからは一変して優しい性格に。アンナをはじめ周囲の人間に親目線の優しい言葉やアドバイスを送るたびに、期せずして彼女たちからの好感度を上げ続けている。自身の言動を優雅なものに自動変換する能力【優雅変換エレガントチート】が使える。",
+    "name": "グレイス・オーヴェルヌ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "格蕾丝·奥弗涅"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "10月10日"
+        }
+    ],
+    "stat": {
+        "comments": 19,
+        "collects": 33
+    },
+    "id": 162271,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        473497
+    ]
+}

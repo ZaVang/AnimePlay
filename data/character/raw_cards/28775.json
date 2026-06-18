@@ -1,0 +1,61 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b1/9c/28775_crt_a9w01.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b1/9c/28775_crt_a9w01.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/b1/9c/28775_crt_a9w01.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b1/9c/28775_crt_a9w01.jpg"
+    },
+    "summary": "本作主角，为了得到“力量”，替被杀死的妹妹音羽报仇而到昊陵学园就读。《焰牙》为“楯”。因本来只会被具现化成武器的焰牙化为防具，因此有着“异能”的称号。",
+    "name": "九重透流",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "九重透流"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "ここのえ とおる"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "CV",
+            "value": "松冈 祯丞"
+        },
+        {
+            "key": "出身",
+            "value": "日本"
+        },
+        {
+            "key": "最喜欢的食物",
+            "value": "苹果茶"
+        },
+        {
+            "key": "焰牙",
+            "value": "楯"
+        }
+    ],
+    "stat": {
+        "comments": 4,
+        "collects": 3
+    },
+    "id": 28775,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        108757
+    ]
+}

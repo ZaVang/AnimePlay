@@ -1,0 +1,222 @@
+{
+    "id": 2972,
+    "name": "名侦探柯南 贝克街的亡灵",
+    "image_path": "data\\images\\anime\\2972.jpg",
+    "points": 7.8,
+    "cost": 2,
+    "rarity": "R",
+    "description": "有一天众多企业在米花市政大楼，共同进行了一种新的游戏“茧”的成果发表会。玩家可透过这个游戏，进入虚拟世界中，体验实地游玩游戏的快感。\r\n但是在这个同时，汤玛斯辛多拉董事长基于某些动机，杀害了工藤优作的朋友樫村忠彬，后来被揭发罪行。\r\n在另外一边正式启动的“茧”，被泽田弘树所开发的诺亚方舟程式入侵，使整个游戏变成了一场生存游戏。眼看着未出局的人数越来越少，柯南如何挽救50个人的性命呢？......",
+    "type": 2,
+    "platform": "剧场版",
+    "episodes_for_hangup": 1,
+    "synergy_tags": [
+        "科幻",
+        "剧场版",
+        "日本",
+        "原创",
+        "推理"
+    ],
+    "date": "2002-04-20",
+    "rating_rank": 382,
+    "rating_score": 7.8,
+    "rating_total": 8686,
+    "main_character_ids": [
+        3453,
+        3455,
+        3499
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e7/f9/3453_crt_A666k.jpg?r=1741598207",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e7/f9/3453_crt_A666k.jpg?r=1741598207",
+                "large": "https://lain.bgm.tv/pic/crt/l/e7/f9/3453_crt_A666k.jpg?r=1741598207",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e7/f9/3453_crt_A666k.jpg?r=1741598207"
+            },
+            "name": "江戸川コナン",
+            "summary": "柯南（江户川柯南，真名工藤新一），是作品《名侦探柯南》中的主角，被称为“日本警察的救世主”、“平成年代的福尔摩斯”。被黑衣人灌下身体缩小的毒药后，回到发育期的孩童状态。于是新一化名为“江户川柯南”寄住在小兰的家。他自称七岁，并在帝丹小学1年级B班就读。为了隐藏身份，在阿笠博士的安排下，从小学开始读起并寄住在毛利侦探事务所。经常借由阿笠博士所发明的道具，利用小五郎、园子、山村警官等人进行推理，解决许多难题；此外也一直在暗中寻找黑衣人与解药的情报。不擅长的科目是音乐（是个音痴），但拥有绝对音感，善于拉小提琴，最爱的运动是足球，最爱的足球员是雷‧卡提斯，最爱的小说是福尔摩斯探案《四个签名》，最爱的侦探是福尔摩斯，母亲是江户川文代（工藤有希子以柯南的母亲身份出现时使用的化名）。知道其真实身分的人有服部平次(在某事件拿他当推理替身时穿帮)、阿笠博士(因为新一率先向他求救)、苦艾酒、灰原哀(检查使用APTX4869者纪录时推知)、工藤优作、工藤有希子(阿笠博士告知)、本堂瑛祐(用和小兰有关的话题套话得知)、怪盗基德(剧场版中已经发现，TV版则不明)、鲁邦三世(在鲁邦三世vs名侦探柯南里发现)。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/05/b1/3933_prsn_TmBD7.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/05/b1/3933_prsn_TmBD7.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/05/b1/3933_prsn_TmBD7.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/05/b1/3933_prsn_TmBD7.jpg"
+                    },
+                    "name": "高山みなみ",
+                    "short_summary": "中学时代加入向日葵剧团。高中毕业后，曾经是一个普通的OL，22岁时立志成为声优。与日本歌手永野椎菜合组歌唱组合TWO-MIX。\r\n2005年5月5日，与青山刚昌结婚。 \r\n根据日本《朝日新闻》2005年6月2日报道，《名侦探柯南》之父、41岁的青山刚昌当天在接受日本著名杂志《女性名流》的采访中承认，将迎娶在《名侦探柯南》动画片中为柯南配音的日本著名声优、当时41岁的高山南，而两人已于高山南的生日，也就是5月5日，正式办理了登记结婚手续。\r\n2007年12月9日，与青山刚昌离婚。 \r\n自从两人05年5月结婚以来，青山先生在漫画制作的截稿期之前都会在工作场所埋头苦干，而著名声优高山南工作也非常繁忙。在经常擦肩而过的生活持续之下，两人在甚少的沟通和关照之下，感情也渐渐变淡。最后，两人在两年后的12月9日决定离婚，至于青山先生对于传媒的采访态度为“无可奉告”。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 3933,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c2/15/53019_prsn_4F4D9.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c2/15/53019_prsn_4F4D9.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/c2/15/53019_prsn_4F4D9.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c2/15/53019_prsn_4F4D9.jpg"
+                    },
+                    "name": "李世荣",
+                    "short_summary": "配音演员，出生于黑龙江哈尔滨。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 53019,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/13/10/78933_prsn_g7fr8.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/13/10/78933_prsn_g7fr8.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/13/10/78933_prsn_g7fr8.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/13/10/78933_prsn_g7fr8.jpg"
+                    },
+                    "name": "丘梅君",
+                    "short_summary": "台湾女性配音员。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 78933,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 3453
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/2f/ef/3455_crt_77oMO.jpg?r=1741598307",
+                "grid": "https://lain.bgm.tv/pic/crt/g/2f/ef/3455_crt_77oMO.jpg?r=1741598307",
+                "large": "https://lain.bgm.tv/pic/crt/l/2f/ef/3455_crt_77oMO.jpg?r=1741598307",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2f/ef/3455_crt_77oMO.jpg?r=1741598307"
+            },
+            "name": "工藤新一",
+            "summary": "江戸川コナンの本来の姿。以前は迷宮なしの高校生探偵として、新聞に載るほどの活躍を見せた。「東の名探偵」「日本警察の救世主」など、新一を称賛するフレーズは数多い。父は小説家、母は元女優と、両親は有名人。アメリカに拠点を移した親元を離れて日本で一人暮らしをしていたが、組織に飲まされたＡＰＴＸ４８６９のせいで小さくなってしまう。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/46/c8/3900_prsn_9Z9tZ.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/46/c8/3900_prsn_9Z9tZ.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/46/c8/3900_prsn_9Z9tZ.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/46/c8/3900_prsn_9Z9tZ.jpg"
+                    },
+                    "name": "山口勝平",
+                    "short_summary": "日本の声優、劇団21世紀FOX所属舞台俳優、芸能プロダクション悟空代表。\r\n\r\n为人熟悉的代表配音作品有动画《乱马½》主角早乙女乱马〈男生〉、《犬夜叉》主角犬夜叉、《名侦探柯南》工藤新一、《魔术快斗》主角黑羽快斗／怪盗基德、《ONE PIECE》的骗人布、《死亡笔记本》的L、《我们这一家》的藤野等。\r\n兴趣和特长为画插图、弹吉他、杀阵。入读声优学校之前送过报纸。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 3900,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1e/9b/7211_prsn_cC9FA.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/1e/9b/7211_prsn_cC9FA.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/1e/9b/7211_prsn_cC9FA.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1e/9b/7211_prsn_cC9FA.jpg"
+                    },
+                    "name": "阿杰",
+                    "short_summary": "张杰，配音演员，又名ketsu，阿杰。1978年出生，北京人，729声工场（729配音组声创联盟）创始人。他的声音清朗华丽，跨度宽广，可适应多种不同声音年龄及个性。\r\n\r\n2006年，经著名配音演员姜广涛引荐，进入北京配音圈，第一次参与的电视剧作品是《明宫谜案》。2010年加入光合积木配音组，2016年退出光合积木，创办729声工场。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 7211,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c8/e7/7713_prsn_j54Pr.jpg?r=1756567659",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c8/e7/7713_prsn_j54Pr.jpg?r=1756567659",
+                        "large": "https://lain.bgm.tv/pic/crt/l/c8/e7/7713_prsn_j54Pr.jpg?r=1756567659",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c8/e7/7713_prsn_j54Pr.jpg?r=1756567659"
+                    },
+                    "name": "劉傑",
+                    "short_summary": "本名刘鹏杰，台湾男性配音员、广播节目主持人。\r\n\r\n其艺名刘杰是将本名「刘鹏杰」中笔画繁多的「鹏」字省略而成。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 7713,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 3455
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/0b/51/3499_crt_mUGrf.jpg?r=1741598357",
+                "grid": "https://lain.bgm.tv/pic/crt/g/0b/51/3499_crt_mUGrf.jpg?r=1741598357",
+                "large": "https://lain.bgm.tv/pic/crt/l/0b/51/3499_crt_mUGrf.jpg?r=1741598357",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0b/51/3499_crt_mUGrf.jpg?r=1741598357"
+            },
+            "name": "毛利蘭",
+            "summary": "工藤新一の幼なじみで、本作のヒロイン。探偵の父・毛利小五郎と弁護士の母・妃英理が別居中のため、父の元で暮らす蘭が毛利家の家事を担当。料理上手なしっかり者だ。居候のコナンには姉のように接している。帝丹高校では空手部に所属し、大きな大会で優勝するほどの実力者。雷やお化けは苦手。親友の鈴木園子に冷やかされつつも、新一の帰りを待つ。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a5/b9/4559_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a5/b9/4559_seiyu_anidb.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/a5/b9/4559_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a5/b9/4559_seiyu_anidb.jpg"
+                    },
+                    "name": "山崎和佳奈",
+                    "short_summary": "日本の声優、ナレーター、舞台女優。神奈川県横浜市出身、京都府育ち。青二プロダクション所属。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 4559,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6a/10/7280_prsn_8j56I.jpg?r=1491995457",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/6a/10/7280_prsn_8j56I.jpg?r=1491995457",
+                        "large": "https://lain.bgm.tv/pic/crt/l/6a/10/7280_prsn_8j56I.jpg?r=1491995457",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6a/10/7280_prsn_8j56I.jpg?r=1491995457"
+                    },
+                    "name": "季冠霖",
+                    "short_summary": "女性配音演员，代表作有电视剧《神雕侠侣》小龙女、《美人心计》窦漪房，电影《赤壁·下》小乔、《阿凡达》奈蒂莉等。现居北京。\r\n2004年，毕业于天津师范大学播音主持专业。大学期间经常给广告配音，并参与了一些译制片的配音工作。毕业后，经著名配音演员齐克建引荐，进入北京配音圈。第一次参与的国产电视剧是《张大千》。\r\n近年来，季冠霖凭借优质的嗓音和扎实的台词功底塑造了众多广为人知的声音形象，以多变的声线赋予角色鲜明的性格特点，或空灵澄净，如《神雕侠侣》小龙女、《大旗英雄传》水灵光；或清亮甜美，如《风云2》第二梦、《水浒传》潘金莲；或温柔娴静，如《赤壁·下》小乔、《家》李瑞珏；或俊朗干练，如《倚天屠龙记》赵敏、《来不及说我爱你》程谨之……\r\n2009年，担任苏州吴中旅游形象宣传片的解说。\r\n光合积木配音组主要成员之一。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 7280,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/03/71/78912_prsn_Q4Qaz.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/03/71/78912_prsn_Q4Qaz.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/03/71/78912_prsn_Q4Qaz.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/03/71/78912_prsn_Q4Qaz.jpg"
+                    },
+                    "name": "賀世芳",
+                    "short_summary": "台湾女性配音员、演员。",
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 78912,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 3499
+        }
+    ]
+}

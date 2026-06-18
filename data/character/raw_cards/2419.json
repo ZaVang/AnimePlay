@@ -1,0 +1,53 @@
+{
+    "birth_mon": 8,
+    "gender": "male",
+    "birth_day": 11,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d9/d6/2419_crt_gcC5g.jpg?r=1606084098",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d9/d6/2419_crt_gcC5g.jpg?r=1606084098",
+        "large": "https://lain.bgm.tv/pic/crt/l/d9/d6/2419_crt_gcC5g.jpg?r=1606084098",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d9/d6/2419_crt_gcC5g.jpg?r=1606084098"
+    },
+    "summary": "",
+    "name": "クラウド・ストライフ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "克劳德·斯特莱夫"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Cloud Strife"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "8月11日"
+        },
+        {
+            "key": "身高",
+            "value": "173cm"
+        }
+    ],
+    "stat": {
+        "comments": 29,
+        "collects": 133
+    },
+    "id": 2419,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        1890
+    ]
+}

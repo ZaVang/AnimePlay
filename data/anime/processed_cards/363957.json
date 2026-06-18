@@ -1,0 +1,187 @@
+{
+    "id": 363957,
+    "name": "夏日口袋",
+    "image_path": "data\\images\\anime\\363957.jpg",
+    "points": 7.2,
+    "cost": 1,
+    "rarity": "N",
+    "description": "　眩しさだけは、忘れなかった。\r\n\r\n　亡くなった祖母の遺品整理のために夏休みを利用して、\r\n　鳥白島にやってきた主人公の鷹原羽依里。\r\n　祖母の思い出の品の片付けを手伝いながら、\r\n　初めて触れる「島の生活」に戸惑いつつも、順応していく。\r\n　\r\n　海を見つめる少女と出会った。\r\n　不思議な蝶を探す少女と出会った。\r\n　思い出と海賊船を探す少女と出会った。\r\n　静かな灯台で暮らす少女と出会った。\r\n　\r\n　島で新しい仲間が出来た──\r\n　\r\n　この夏休みが終わらなければいいのにと、そう思った。\r\n\r\n[中文简介]\r\n\r\n　唯有那份眩目，未曾忘却。\r\n\r\n　为了整理去世祖母的遗物，主人公鹰原羽依里利用暑假来到了鸟白岛。\r\n　在帮忙收拾祖母的回忆之物的同时，\r\n　他一边对首次接触的“岛上生活”感到困惑，一边逐渐适应。\r\n\r\n　与眺望大海的少女相遇，\r\n　与寻找不可思议蝴蝶的少女相遇，\r\n　与寻找回忆与海盗船的少女相遇，\r\n　与住在宁静灯塔中的少女相遇，\r\n\r\n　在岛上，他结交了新的伙伴──\r\n\r\n　他想，如果这个暑假永远都不要结束就好了。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 26,
+    "synergy_tags": [
+        "TV",
+        "恋爱",
+        "日本",
+        "奇幻",
+        "游戏改"
+    ],
+    "date": "2025-04-07",
+    "rating_rank": 1891,
+    "rating_score": 7.2,
+    "rating_total": 7810,
+    "main_character_ids": [
+        59846,
+        59847,
+        59848,
+        59849,
+        61419
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d6/16/59846_crt_5PYvw.jpg?r=1726452509",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d6/16/59846_crt_5PYvw.jpg?r=1726452509",
+                "large": "https://lain.bgm.tv/pic/crt/l/d6/16/59846_crt_5PYvw.jpg?r=1726452509",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d6/16/59846_crt_5PYvw.jpg?r=1726452509"
+            },
+            "name": "鳴瀬しろは",
+            "summary": "夏休みを忘れた少女\r\n\r\n身長：155cm\r\n体重：39kg\r\n3サイズ：B81 W56 H83\r\n趣味：料理\r\n好物：スイカバー\r\n座右の銘：明日には明日の風を吹く\r\n原画：Na-Ga\r\nCV：小原好美\r\n\r\nクールで、人見知りをする島の少女。\r\n親しいのは肉親である祖父ぐらいで、島では孤立している。\r\n\r\n一人でいる期間が長かったせいで人との付き合い方がわからず、時に人の心を考えないことも言ってしまうこともある。\r\n\r\n島の外れなどで海を眺めている事が多い。\r\n\r\n「私にあまりかまわないほうがいいよ」",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b7/e5/27194_prsn_p1LPy.jpg?r=1719567844",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b7/e5/27194_prsn_p1LPy.jpg?r=1719567844",
+                        "large": "https://lain.bgm.tv/pic/crt/l/b7/e5/27194_prsn_p1LPy.jpg?r=1719567844",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b7/e5/27194_prsn_p1LPy.jpg?r=1719567844"
+                    },
+                    "name": "小原好美",
+                    "short_summary": "日本女性配音员、演员。大泽事务所所属。\r\n\r\n国中时开始喜欢动画，并想要成为声优。高中毕业后进入Human Academy综合学园。2012年开始当了两年的演员，之后加入大泽事务所。\r\n\r\n2017年7月起3个月间在长寿电台节目《Radio Dottoai》就任第71代主持人。\r\n\r\n2017年4月至6月播出的《月色真美》中初次担任主演。同年7月播出《咕噜咕噜魔法阵 (2017年版)》中担演女主角而掀起话题，并与共同主演的石上静香主持同名动画的广播节目。同年11月10日Instagram开设。\r\n\r\n2019年于《Star☆Twinkle 光之美少女》中第一次出演光之美少女系列。同年4月，由文化放送“超！A&G+”制作的广播节目《小原好美のココロおきなく》开播，5月开设节目官方Twitter。2020年3月，该广播节目获得第6届Aniradi Award“BEST COMFORT RADIO 疗愈电台奖”。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 27194,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 59846
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/44/e9/59847_crt_1BrIm.jpg?r=1726452108",
+                "grid": "https://lain.bgm.tv/pic/crt/g/44/e9/59847_crt_1BrIm.jpg?r=1726452108",
+                "large": "https://lain.bgm.tv/pic/crt/l/44/e9/59847_crt_1BrIm.jpg?r=1726452108",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/44/e9/59847_crt_1BrIm.jpg?r=1726452108"
+            },
+            "name": "空門蒼",
+            "summary": "島の伝承を追う少女\r\n\r\n身長：160cm\r\n体重：46kg\r\n3サイズ：B85 W59 H86\r\n趣味：昼寝\r\n好物：かき氷\r\n座右の銘：果報は寝て待つ\r\n原画：和泉つばす\r\nCV：高森奈津美\r\n\r\n男女分け隔て無く友達感覚で接してくる島の少女。\r\n島の駄菓子屋でバイトをしていて、老若男女問わず慕われている。\r\n\r\n野生のキツネ(?)を連れている。\r\n\r\nよく島のいろいろな場所で眠っている姿を見るが、島民には日常茶飯事らしい。\r\n\r\n「とにかく、あたしが寝てても放っておいて」",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/01/4a/7302_prsn_V44Vn.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/01/4a/7302_prsn_V44Vn.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/01/4a/7302_prsn_V44Vn.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/01/4a/7302_prsn_V44Vn.jpg"
+                    },
+                    "name": "高森奈津美",
+                    "short_summary": "高森奈津美（たかもり なつみ、1987年2月14日），日本女声优。出身于山梨县，血型是A型。\r\n\r\nPro Fit声优养成所第10期生出身。2009年10月毕业。\r\n高中时加入羽毛球部，并有参加校际间运动会的经历。\r\n兴趣爱好是逛咖啡馆和插画。\r\n特技是握力“40”以上和随便到哪里都能睡着。\r\n持有全商情报处理检定2级、汉字检定3级别、全经计算器检定3级以及秘书实务检定3级。\r\n因山梨县出身的，使用方言为关东方言的甲州弁，曾出任山梨县富士吉田市“樱织”旅游宣传大使。\r\n稍微下垂的黑色双目是她的典型特征，本人自嘲为“エロ目”。\r\n同事务所的茅野爱衣曾对高森给出“胸部好大”的第一印象。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 7302,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 59847
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/aa/ca/59848_crt_YlLXl.jpg?r=1682925900",
+                "grid": "https://lain.bgm.tv/pic/crt/g/aa/ca/59848_crt_YlLXl.jpg?r=1682925900",
+                "large": "https://lain.bgm.tv/pic/crt/l/aa/ca/59848_crt_YlLXl.jpg?r=1682925900",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/aa/ca/59848_crt_YlLXl.jpg?r=1682925900"
+            },
+            "name": "久島鴎",
+            "summary": "海賊船を探すお嬢様\r\n\r\n身長：158cm\r\n体重：43kg\r\n3サイズ：B86 W56 H85\r\n趣味：ボトルシップ\r\n好物：三角形の秘密を持ったお菓子\r\n座右の銘：心に冒険を\r\n原画：Na-Ga\r\nCV：嶺内ともみ\r\n\r\n島で出会った不思議な少女。\r\nいつでも大きなスーツケースを引いている。\r\n\r\n中に何が入っているのかは絶対教えてくれない。\r\nこの島には主人公と同じくこの夏だけ滞在する。\r\n\r\n何か探しものがある様で、手には古ぼけた地図を持って島をさまよっている。\r\nその地図については「宝の地図なんだよ」と彼女は言う。\r\n\r\n「行くよ。 もう一度、海賊船のある場所まで」",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/21/92/32079_prsn_wP5Pb.jpg?r=1729255536",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/21/92/32079_prsn_wP5Pb.jpg?r=1729255536",
+                        "large": "https://lain.bgm.tv/pic/crt/l/21/92/32079_prsn_wP5Pb.jpg?r=1729255536",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/21/92/32079_prsn_wP5Pb.jpg?r=1729255536"
+                    },
+                    "name": "稗田寧々",
+                    "short_summary": "神奈川県出身の女性声優。81プロデュース所属。\r\n\r\n2012年に行われた第6回81オーディションにて特別賞・小学館賞を受賞している。\r\n2016年に81プロデュースの所属となった。\r\n2018年8月29日、声優による世界初のバスケットボールリーグ「声優Jrバスケ3×3 SJ3.LEAGUE」の発足が決定し、そのチームである「PuaPureParty!」への参加が発表された。\r\n2019年6月24日、田淵智也音楽プロデュースの声優ユニット「DIALOGUE+」の結成が発表、メンバーになることが発表された。2019年10月23日にCDデビュー。\r\n\r\n趣味は映画・音楽鑑賞。特技は歌、ウインク。\r\n得意料理はチーズリゾット。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 32079,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 59848
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c5/5c/59849_crt_OekBv.jpg?r=1726452140",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c5/5c/59849_crt_OekBv.jpg?r=1726452140",
+                "large": "https://lain.bgm.tv/pic/crt/l/c5/5c/59849_crt_OekBv.jpg?r=1726452140",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c5/5c/59849_crt_OekBv.jpg?r=1726452140"
+            },
+            "name": "紬ヴェンダース",
+            "summary": "自分探しの少女\r\n\r\n身長：152cm\r\n体重：38kg\r\n3サイズ：B78 W56 H80\r\n趣味：ぬいぐるみ集め\r\n好物：わたあめ\r\n座右の銘：私は私を探しています\r\n原画：永山ゆうのん\r\nCV：岩井映美里\r\n\r\n島の灯台の近くに現れる少女。\r\n真面目で素直なドイツ系ハーフで、夏休みを利用して『やりたいこと探し』をしている。\r\n\r\n海に流れ着いたゴミなどを掃除しては、まだ使える物を見つけ大事にする。\r\n困ったことや、言葉に困ると「むぎゅ」と呻く。\r\n\r\n異国の古い歌をよく口ずさんでいる。\r\n\r\n「探し物です。 やりたいことを探しています」",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ed/f9/25966_prsn_Ooq0g.jpg?r=1538056253",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ed/f9/25966_prsn_Ooq0g.jpg?r=1538056253",
+                        "large": "https://lain.bgm.tv/pic/crt/l/ed/f9/25966_prsn_Ooq0g.jpg?r=1538056253",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ed/f9/25966_prsn_Ooq0g.jpg?r=1538056253"
+                    },
+                    "name": "岩井映美里",
+                    "short_summary": "岩井 映美里（いわい えみり、9月29日 - ）は、日本の女性声優。群馬県出身。アイムエンタープライズ所属。\r\n\r\n日本ナレーション演技研究所で演技を学ぶ。\r\n2015年にアイムエンタープライズに所属。\r\n2017年3月に上智大学 文学部 ドイツ文学科卒業。\r\n\r\n以前10年間中国に住んでいたことがある帰国子女。\r\n中国語が堪能であり新漢語水平考試6級を有し、2017年夏放送の「生放送アニメ 直感×アルゴリズム♪」Xi（シー）役では中国語でキャラクターを担当する。\r\n趣味は絵を描くこと、音楽を聴くこと、食べること、特技はカラーコディネートである。\r\n中国に住んでいた当時好きになった、日本のアニメや漫画などのコンテンツを発信できる人になりたいという思いから、声優を目指すようになった。幼少期より「美少女戦士セーラームーン」が好きであり、憧れの声優は月野うさぎ役の三石琴乃。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 25966,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 59849
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/8c/96/61419_crt_tHS5A.jpg?r=1726458548",
+                "grid": "https://lain.bgm.tv/pic/crt/g/8c/96/61419_crt_tHS5A.jpg?r=1726458548",
+                "large": "https://lain.bgm.tv/pic/crt/l/8c/96/61419_crt_tHS5A.jpg?r=1726458548",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8c/96/61419_crt_tHS5A.jpg?r=1726458548"
+            },
+            "name": "加藤うみ",
+            "summary": "原画：Na-Ga\r\nCV：田中あいみ",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bf/09/18599_prsn_jKKiZ.jpg?r=1612669206",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/bf/09/18599_prsn_jKKiZ.jpg?r=1612669206",
+                        "large": "https://lain.bgm.tv/pic/crt/l/bf/09/18599_prsn_jKKiZ.jpg?r=1612669206",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bf/09/18599_prsn_jKKiZ.jpg?r=1612669206"
+                    },
+                    "name": "田中あいみ",
+                    "short_summary": "日本の女性声優。81プロデュース所属。東京都出身、神奈川県育ち。\r\n\r\n幼稚園の頃の愛称はあいぴー。理由は不明である。\r\n12年間女子校に通っていた。\r\n小学生のときに『NARUTO -ナルト-』と『鋼の錬金術師』の主人公を女性が演じていると知り声優に興味を持った。\r\n中学時代は音楽部に所属しており、文化祭でアナスタシア等のミュージカル公演を行った。\r\n高校時代は軽音楽部に所属し、バンドを組んでいた。オリジナルではなく、ELLEGARDENやいきものがかり、YUIなどのコピーバンドをしていた。\r\n将来の目標が決まらないなか、本当に自分がやりたいことが見つかるかもしれないと思い養成所に入所した。 従って声優になりたいと強く思ったのは養成所に入ってからであり、母親の友人の勧めと[9]初めてのレッスン担当であった中尾隆聖との出逢いで「この人の仲間になりたい！」と思い声優を志した。\r\n\r\n2013年に、『ラジオどっとあい』第55代目パーソナリティを務めた。\r\n2014年1月から『月刊ガガガチャンネル』第31回放送より先輩である赤﨑千夏に変わりパーソナリティを務めている。\r\n2015年7月に放送された『干物妹!うまるちゃん』にて主人公・土間うまるを担当。また、同作品で影山灯、白石晴香、古川由利奈らと『妹S』というユニットを結成しEDテーマを担当した。\r\n2016年3月、第10回声優アワードで新人女優賞を受賞。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 18599,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 61419
+        }
+    ]
+}

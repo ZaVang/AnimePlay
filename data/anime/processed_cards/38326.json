@@ -1,0 +1,123 @@
+{
+    "id": 38326,
+    "name": "JOJO的奇妙冒险",
+    "image_path": "data\\images\\anime\\38326.jpg",
+    "points": 7.4,
+    "cost": 1,
+    "rarity": "N",
+    "description": "　　荒木飛呂彦原作の人気コミック、その第３部がアニメ化された作品。\r\n　　100年の時を経てディオが、復活した。時を同じくして、スタンドと呼ばれる特殊能力を身につけた主人公・空条丞太郎。しかし、同時に母親もスタンドを発現、危篤状態へと陥ってしまう。母を救うため、丞太郎は仲間とともにディオを倒す旅に出る。\r\n　　その丞太郎たちの前には、ディオの配下である様々な能力を秘めたスタンド使いたちが待ち構えていたのであった。はたして、丞太郎は母の命が潰えるまでに、ディオを打倒することができるのだろうか。",
+    "type": 2,
+    "platform": "OVA",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "日本",
+        "奇幻",
+        "OVA",
+        "漫画改",
+        "战斗",
+        "冒险"
+    ],
+    "date": "1993-11-19",
+    "rating_rank": 1166,
+    "rating_score": 7.4,
+    "rating_total": 2128,
+    "main_character_ids": [
+        878,
+        3106,
+        17601
+    ],
+    "main_characters": [
+        {
+            "id": 878,
+            "name": "空条承太郎",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/15/41/878_crt_1DgJ5.jpg?r=1645975679",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/15/41/878_crt_1DgJ5.jpg?r=1645975679",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/15/41/878_crt_1DgJ5.jpg?r=1645975679",
+                "grid": "https://lain.bgm.tv/pic/crt/g/15/41/878_crt_1DgJ5.jpg?r=1645975679"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4302,
+                    "name": "小杉十郎太",
+                    "type": 1,
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/38/e4/4302_prsn_SO2V2.jpg?r=1544701729",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/38/e4/4302_prsn_SO2V2.jpg?r=1544701729",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/38/e4/4302_prsn_SO2V2.jpg?r=1544701729",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/38/e4/4302_prsn_SO2V2.jpg?r=1544701729"
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 3106,
+            "name": "花京院典明",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/51/bb/3106_crt_DtxLq.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/51/bb/3106_crt_DtxLq.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/51/bb/3106_crt_DtxLq.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/51/bb/3106_crt_DtxLq.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3989,
+                    "name": "鈴置洋孝",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/65/16/3989_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/65/16/3989_seiyu_anidb.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/65/16/3989_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/65/16/3989_seiyu_anidb.jpg"
+                    },
+                    "short_summary": "日本の声優、俳優、ナレーターであり、劇団プロデューサー。\r\n\r\n愛知県名古屋市出身、東京経済大学卒業。身長166 cm、体重59kg。血液型はA型。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 17601,
+            "name": "ディオ・ブランドー",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/42/ae/17601_crt_9eQRN.jpg?r=1387219981",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/42/ae/17601_crt_9eQRN.jpg?r=1387219981",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/42/ae/17601_crt_9eQRN.jpg?r=1387219981",
+                "grid": "https://lain.bgm.tv/pic/crt/g/42/ae/17601_crt_9eQRN.jpg?r=1387219981"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 3852,
+                    "name": "田中信夫",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/31/6c/3852_prsn_FwgFp.jpg?r=1501581317",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/31/6c/3852_prsn_FwgFp.jpg?r=1501581317",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/31/6c/3852_prsn_FwgFp.jpg?r=1501581317",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/31/6c/3852_prsn_FwgFp.jpg?r=1501581317"
+                    },
+                    "short_summary": "田中 信夫（たなか のぶお、1935年8月1日 - 2018年10月17日）は、日本の男性声優、ナレーター。東京都出身。東京俳優生活協同組合に所属していた。血液型はO型。玉川大学卒業。\r\n代表作は、吹き替えでは『コンバット!』のサンダース軍曹、『スパイ大作戦』のバーニー・コリアー、シドニー・ポワチエやバート・レイノルズといった俳優を担当、ナレーションでは水曜スペシャル『川口浩探検隊シリーズ』、『さんまのスーパーからくりテレビ』、『藤岡弘、探検隊シリーズ』、『TVチャンピオン』などがある。\r\n\r\nテレビ草創期から活躍。TBS放送劇団研究生としてキャリアをスタートさせ、後に同劇団6期生になる。当時劇団の先輩には大平透、大木民夫、浦野光らがいた。1968年からは東京俳優生活協同組合に所属し現在に至る。俳優としてのテレビドラマ出演もあるが、声優・ナレーターとしてその声が広く知られる。\r\n声域はバリトン。報道番組やチャレンジ番組、特撮ヒーロー番組などでナレーションを務めることも多い。1980年代に人気となったテレビ朝日系『水曜スペシャル・川口浩探検隊シリーズ』および平成期の『藤岡弘、探検隊シリーズ』や、テレビ東京系『TVチャンピオン』のナレーションなどでも知られる。『轟轟戦隊ボウケンジャー』ではミスター・ボイスの声で、10年ぶりに特撮作品に出演した。\r\n役者としては海外ドラマ・洋画吹き替えへの出演が多く、シドニー・ポワチエやダニー・グローヴァー、グレッグ・モリスなどの黒人俳優の吹き替えの他バート・レイノルズ、ヴィック・モローなどを持ち役としている。\r\n『コンバット!』のサンダース軍曹は本人によると「強くなければならないし怖くなければならない」という設定であり、また「声を担当する私は全くその逆であるわけですから、そのギャップを上手く埋められるかどうか、それが一番心配でしたね」と苦悩を語っている。また、田中は若手時代に声を担当したヴィック・モローと実際に対談したこともある。\r\n2010年に第4回声優アワード功労賞を受賞。\r\n2018年10月17日6時20分、食道がんのため、東京都内の医療機関で死去。83歳没。訃報はメディアより先行して生前『アニメ三銃士』で共演した平野文が公表している。",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

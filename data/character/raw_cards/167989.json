@@ -1,0 +1,65 @@
+{
+    "birth_mon": 7,
+    "gender": "male",
+    "birth_day": 8,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4b/19/167989_crt_g8OAF.jpg?r=1733452288",
+        "grid": "https://lain.bgm.tv/pic/crt/g/4b/19/167989_crt_g8OAF.jpg?r=1733452288",
+        "large": "https://lain.bgm.tv/pic/crt/l/4b/19/167989_crt_g8OAF.jpg?r=1733452288",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4b/19/167989_crt_g8OAF.jpg?r=1733452288"
+    },
+    "summary": "18歳の学生。自宅近くのゲームセンターでアルバイトをしている。\r\nどんなジャンルのゲームでも見事な腕前を披露する。",
+    "name": "草壁蓮司",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "草壁莲司"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "草壁 蓮司"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "くさかべ れんじ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kusakabe Renji"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "7月8日"
+        },
+        {
+            "key": "趣味・特技",
+            "value": "ゲームをやること、ゲーム全般が得意"
+        },
+        {
+            "key": "苦手なもの",
+            "value": "大学のレポート作成"
+        }
+    ],
+    "stat": {
+        "comments": 38,
+        "collects": 4
+    },
+    "id": 167989,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        510256
+    ]
+}

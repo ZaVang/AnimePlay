@@ -1,0 +1,93 @@
+{
+    "id": 8726,
+    "name": "红线",
+    "image_path": "data\\images\\anime\\8726.jpg",
+    "points": 7.9,
+    "cost": 2,
+    "rarity": "R",
+    "description": "　　这是一个关于遥远未来的故事。\r\n　　五年一度的宇宙速度对决“REDLINE”马上就要开幕！\r\n　　表面上看起来很酷，梳着飞机头身穿夹克的JP实际上是一个非常害羞的男性，为了得到初恋女孩索诺西的眷顾，JP参加了“REDLINE”的速度盛宴。“REDLINE”的比赛没有规则，为了取得胜利参赛者可以随身装载武器，这是一场赌上性命的对决。最糟的还不仅于此，这次比赛的举办场地竟然是号称史上最恶的军事国家罗伯瓦尔特（机器人世界），参赛者得知消息后纷纷退出比赛。然而，JP和他心仪的女孩索诺西毅然决定参加比赛。在比赛当天，JP的儿时玩伴天才机械师弗里斯彼为JP准备了最棒的跑车。但是跑车上却被安装了炸弹。弗里斯彼因为某个原因与人合谋了这场比赛。知道真相的JP毅然决然踩下了跑车的油门。这个时候，罗伯瓦尔特下达了阻止“REDLINE”开赛的出击命令。对索诺西的爱恋，与弗里斯彼的纠葛以及罗伯瓦尔特的妨碍，JP要如何打破这纠缠交错的命运！",
+    "type": 2,
+    "platform": "剧场版",
+    "episodes_for_hangup": 1,
+    "synergy_tags": [
+        "科幻",
+        "剧场版",
+        "日本",
+        "原创"
+    ],
+    "date": "2010-10-09",
+    "rating_rank": 315,
+    "rating_score": 7.9,
+    "rating_total": 3551,
+    "main_character_ids": [
+        22144,
+        26621
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ca/64/22144_crt_X6ZOY.jpg?r=1473665892",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ca/64/22144_crt_X6ZOY.jpg?r=1473665892",
+                "large": "https://lain.bgm.tv/pic/crt/l/ca/64/22144_crt_X6ZOY.jpg?r=1473665892",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ca/64/22144_crt_X6ZOY.jpg?r=1473665892"
+            },
+            "name": "ソノシー・マクラーレン",
+            "summary": "",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/82/9e/13102_prsn_zo9UU.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/82/9e/13102_prsn_zo9UU.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/82/9e/13102_prsn_zo9UU.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/82/9e/13102_prsn_zo9UU.jpg"
+                    },
+                    "name": "蒼井優",
+                    "short_summary": "苍井优（1985年8月17日—）、日本女演员，本名夏井优，出身于日本福冈县。\r\n身高160厘米，血型为A型，隶属Itoh Company事务所。",
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 13102,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 22144
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/5e/3a/26621_crt_edF2J.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/5e/3a/26621_crt_edF2J.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/5e/3a/26621_crt_edF2J.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5e/3a/26621_crt_edF2J.jpg"
+            },
+            "name": "JP",
+            "summary": "纯涩闷骚男,驾驶车辆为Trans Am20000改WR。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2b/a1/4505_prsn_znQr7.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2b/a1/4505_prsn_znQr7.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/2b/a1/4505_prsn_znQr7.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2b/a1/4505_prsn_znQr7.jpg"
+                    },
+                    "name": "木村拓哉",
+                    "short_summary": "木村拓哉，1972年11月13日出生于日本东京都，日本男演员、歌手、声优。曾是日本男子组合SMAP的成员。隶属于STARTO ENTERTAINMENT事务所。昵称是“キムタク”。\r\n\r\n1987年11月，加入杰尼斯事务所，担任光GENJI的伴舞成员。1988年4月，与中居正广等5人组成SMAP组合。1991年9月，发行出道单曲《Can't Stop!! -LOVING-》，并于同年底随组合首次登上第42届NHK红白歌会的舞台。1992年，出演电视剧《是谁偷走我的心》，1993年，在电视剧《爱情白皮书》中自然的表演为他赢得了观众的口碑。1994年，凭借首部电影《足球风云》获得第7届日刊体育电影大奖的石原裕次郎新人奖。1996年，主演的电视剧《悠长假期》的最高瞬间收视率为43.8%而创下纪录。2000年，主演的电视剧《美丽人生》的最高单集收视率为41.3%而创下纪录；同年12月，与歌手工藤静香结婚。2001年，主演的电视剧《律政英雄》成为民放日剧史上唯一一部每集收视率均超过30%的电视剧；2006年，其主演的电影《武士的一分》获得第30届日本电影学院奖的13个奖项。截止2008年，木村拓哉连续15年获得《anan》杂志评选的“日本最受欢迎男性”排行榜的冠军。\r\n\r\n2016年12月31日，其所在组合SMAP正式解散，木村成为单飞艺人。2019年9月，宣布将作为歌手展开活动。2020年1月，发行个人首张专辑《Go with the Flow》。2024年1月，主演电影《传奇与蝴蝶》。\r\n\r\n截止2017年，木村拓哉是主演富士电视台黄金档月九剧次数最多的演员，共11次。",
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 4505,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 26621
+        }
+    ]
+}

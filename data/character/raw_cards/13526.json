@@ -1,0 +1,66 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/db/46/13526_crt_Ohor9.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/db/46/13526_crt_Ohor9.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/db/46/13526_crt_Ohor9.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/db/46/13526_crt_Ohor9.jpg"
+    },
+    "summary": "边境综合学校普通科的女学生。\r\n生父是十字先锋的加罗索・罗纳，4岁开始被送到费亚切尔德家抚养长大。\r\n17岁的时候被十字先锋接回，作为精神上的偶像。在战场上见到西布克后转而与其联手对抗父亲加罗索。\r\nUC0128年遭到木星帝国袭击，被认定为死亡，但却于133年再次出现，成为十字先锋的领导人，对抗木星帝国作战。",
+    "name": "セシリー・フェアチャイルド",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "赛西莉·费亚切尔德"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "比拉·羅拿"
+                },
+                {
+                    "v": "茜茜莉·費查特"
+                },
+                {
+                    "v": "Berah Ronah"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "贝拉·罗纳"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Cecily Fairchild"
+                },
+                {
+                    "k": "日文名",
+                    "v": "ベラ・ロナ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Seshiri Feachairudo"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 3,
+        "collects": 25
+    },
+    "id": 13526,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        4482
+    ]
+}

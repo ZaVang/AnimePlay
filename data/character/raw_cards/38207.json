@@ -1,0 +1,40 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ae/89/38207_crt_4hm4h.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ae/89/38207_crt_4hm4h.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/ae/89/38207_crt_4hm4h.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ae/89/38207_crt_4hm4h.jpg"
+    },
+    "summary": "安国寺では一番の後輩。正義感が強く心優しい、聡明な小坊主。",
+    "name": "一休",
+    "infobox": [
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "千菊丸"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 1,
+        "collects": 6
+    },
+    "id": 38207,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        9540
+    ]
+}

@@ -1,0 +1,129 @@
+{
+    "id": 48031,
+    "name": "GJ部",
+    "image_path": "data\\images\\anime\\48031.jpg",
+    "points": 7,
+    "cost": 1,
+    "rarity": "N",
+    "description": "改编自号称“四格小说”的同名轻小说。\r\n故事主要讲述了主人公四之宫京夜与他所属的活动内容不明的GJ部的部员们——有着要强性格的部长天使真央、游戏天才皇紫音、性格我行我素的天使惠、身体丰满的绮罗々・伯恩斯坦以及之后的新入部员的神无月环交织而成的日常小故事。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "喜剧",
+        "校园",
+        "TV",
+        "日本",
+        "日常",
+        "小说改"
+    ],
+    "date": "2013-01-09",
+    "rating_rank": 2741,
+    "rating_score": 7,
+    "rating_total": 4639,
+    "main_character_ids": [
+        18460,
+        18461,
+        18462
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/0d/fa/18460_crt_w6LWY.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/0d/fa/18460_crt_w6LWY.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/0d/fa/18460_crt_w6LWY.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0d/fa/18460_crt_w6LWY.jpg"
+            },
+            "name": "四ノ宮京夜",
+            "summary": "姑且算是主人公，爱称是キョロ（kyoro）的高中一年生。逍遥自在的和平主义者，因为总是说出不合时宜的台词而每天遭到GJ部其他成员的欺负。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d0/62/4262_prsn_tbC5r.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d0/62/4262_prsn_tbC5r.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/d0/62/4262_prsn_tbC5r.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d0/62/4262_prsn_tbC5r.jpg"
+                    },
+                    "name": "下野紘",
+                    "short_summary": "下野 紘は、日本の男性声優。アイムエンタープライズ所属。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 4262,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 18460
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/95/7d/18461_crt_i0pjw.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/95/7d/18461_crt_i0pjw.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/95/7d/18461_crt_i0pjw.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/95/7d/18461_crt_i0pjw.jpg"
+            },
+            "name": "天使真央",
+            "summary": "高中二年生，GJ部的部长，天使恵的姐姐。一有不合意的地方就会找京夜的麻烦，不过也有纯真的地方，连带有接吻场面的漫画都不好意思去看。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4c/23/6724_prsn_DIyje.jpg?r=1738653463",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/4c/23/6724_prsn_DIyje.jpg?r=1738653463",
+                        "large": "https://lain.bgm.tv/pic/crt/l/4c/23/6724_prsn_DIyje.jpg?r=1738653463",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4c/23/6724_prsn_DIyje.jpg?r=1738653463"
+                    },
+                    "name": "内田真礼",
+                    "short_summary": "内田 真礼（うちだ まあや、1989年12月27日 - ）は、日本の声優、歌手、女優、タレント。\r\nアイムエンタープライズ（事務所）、ポニーキャニオン（レコード会社）に所属。愛称は主にまややん、まれいたそ。東京都出身。血液型はA型。本名同じ。声優の内田雄馬は実弟。\r\n\r\n2025年9月30日，宣布与石川界人结婚。",
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 6724,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 18461
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d0/90/18462_crt_8D85g.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d0/90/18462_crt_8D85g.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/d0/90/18462_crt_8D85g.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d0/90/18462_crt_8D85g.jpg"
+            },
+            "name": "皇紫音",
+            "summary": "高中二年生，不论是自己还是别人都公认的天才。有着大人一般的性格，总是在调戏京夜。而与外表不符的是，欠缺致命的常识，偶尔会犯异常的错误。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ed/4c/6707_prsn_ci4Zs.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ed/4c/6707_prsn_ci4Zs.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/ed/4c/6707_prsn_ci4Zs.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ed/4c/6707_prsn_ci4Zs.jpg"
+                    },
+                    "name": "三森すずこ",
+                    "short_summary": "三森铃子（三森 すずこ／みもり すずこ / Mimori Suzuko），本名黑川铃子（黒川 鈴子／くろかわ すずこ / Kurokawa Suzuko），是日本女演员、声优、歌手，目前隶属于“响”；日本企业家黑川文雄是其堂兄。\r\n\r\n日本东京都出身。成为声优之前，以“黑川铃子”本名在音乐剧和舞台剧活动。有次在舞台表演时，被武士道社长木谷先生问到:“要不要试试当声优？”，此后便转向声优界活动。\r\n曾经以少女偶像团体Cutie Pai的团员“スージー”的身份在2009年7月至10月间活动。\r\n因为参加《侦探歌剧 少女福尔摩斯》的配音工作，与另外三位也担任主角的声优德井青空、佐佐木未来、橘田泉共组声优团体“Milky Holmes”。\r\n2012年12月31日宣布以个人名义歌手出道。\r\n2018年1月13日，《东京体育》报道称三森与日本职业摔角运动员冈田和睦交往，此消息获得本人确认。2019年4月12日，二人公布婚讯。\r\n\r\n在《侦探歌剧 少女福尔摩斯》一起共事的新谷良子，是三森主演的东京迪士尼海洋音乐剧《Mickey&#39;s Dream Company（米奇梦想剧团）》的剧迷，因此向三森索求签名。\r\n黑川铃子时期，时任武士道副社长的企业家黑川文雄以堂兄身份大力推荐。\r\n《SEIGURA》杂志上，以“有名插图画家——Okuzushi. M. Romi——オクズシ・ロミ”名义开设专栏，公布读者的来信和自绘插图。“Okuzushi. M. Romi”，其实就是本身艺名罗马拼音“Mimori Suzuko”倒过来念。",
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 6707,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 18462
+        }
+    ]
+}

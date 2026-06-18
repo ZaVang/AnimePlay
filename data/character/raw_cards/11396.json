@@ -1,0 +1,61 @@
+{
+    "birth_mon": 11,
+    "gender": "female",
+    "birth_day": 2,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/92/43/11396_crt_RlU1h.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/92/43/11396_crt_RlU1h.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/92/43/11396_crt_RlU1h.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/92/43/11396_crt_RlU1h.jpg"
+    },
+    "summary": "CLAMP的漫画作品『こばと。』中的女主角，缺乏常识的天然呆女孩。小鸠有一个很想去的地方，在去那里之前，必须治疗受伤的心，把“瓶子”装满受伤的心。总是戴着帽子，似乎隐藏着什么秘密。",
+    "name": "花戸小鳩",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "花户小鸠"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "はなと こばと"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hanato Kobato"
+                },
+                {
+                    "k": "昵称",
+                    "v": "土鸠"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "11月2日"
+        },
+        {
+            "key": "引用来源",
+            "value": "维基百科"
+        }
+    ],
+    "stat": {
+        "comments": 12,
+        "collects": 76
+    },
+    "id": 11396,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        2478
+    ]
+}

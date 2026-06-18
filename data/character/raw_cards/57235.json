@@ -1,0 +1,92 @@
+{
+    "birth_mon": 8,
+    "gender": "female",
+    "birth_day": 22,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1b/e8/57235_crt_JrZ6j.jpg?r=1628997219",
+        "grid": "https://lain.bgm.tv/pic/crt/g/1b/e8/57235_crt_JrZ6j.jpg?r=1628997219",
+        "large": "https://lain.bgm.tv/pic/crt/l/1b/e8/57235_crt_JrZ6j.jpg?r=1628997219",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1b/e8/57235_crt_JrZ6j.jpg?r=1628997219"
+    },
+    "summary": "不思議な夢の真相を探るべく、神浜市にやってきた魔法少女。\r\nお人好しな性格で、気遣いが行き過ぎてしまうことも多々ある。\r\n最新の流行には疎く、スマホの扱いもぎこちない。\r\n日頃は控えめだが、ここ一番では芯の強さを見せる。",
+    "name": "環いろは",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "环伊吕波"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "环彩羽"
+                },
+                {
+                    "k": "日文名",
+                    "v": "環 いろは"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "たまき いろは"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Tamaki Iroha"
+                },
+                {
+                    "k": "昵称",
+                    "v": "小环、环酱、环妈"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "8月22日"
+        },
+        {
+            "key": "身高",
+            "value": "156cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "magireco.moe/wiki/环伊吕波"
+        },
+        {
+            "key": "年龄",
+            "value": "15岁（中3）"
+        },
+        {
+            "key": "出身",
+            "value": "宝崎市"
+        },
+        {
+            "key": "学校",
+            "value": "宝崎市立第一中学校→神滨市立大附属学校"
+        },
+        {
+            "key": "妹妹",
+            "value": "环忧"
+        },
+        {
+            "key": "人设",
+            "value": "苍树梅"
+        }
+    ],
+    "stat": {
+        "comments": 50,
+        "collects": 183
+    },
+    "id": 57235,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        159690
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 7,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/62/90/169760_crt_VT2hV.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/62/90/169760_crt_VT2hV.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/62/90/169760_crt_VT2hV.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/62/90/169760_crt_VT2hV.jpg"
+    },
+    "summary": "重考后考上大学的一年级生。\r\n在宿舍生活中逐渐体会到酒的魅力。\r\n喝醉后讲话会变得很大胆，常常吓到身边的人。\r\n\r\n\r\n浪人して入学した大学1年生。\r\n寮生活のなかでお酒の魅力に目覚めていく。\r\n酔うと発言が大胆になり、周囲をドキッとさせる。",
+    "name": "上伊那ぼたん",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "上伊那牡丹"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "上伊那 ぼたん"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "かみいな ぼたん"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Botan Kamiina"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月7日"
+        }
+    ],
+    "stat": {
+        "comments": 86,
+        "collects": 172
+    },
+    "id": 169760,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        543360
+    ]
+}

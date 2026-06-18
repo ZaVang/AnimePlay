@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b3/c0/6325_crt_ip8Cx.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b3/c0/6325_crt_ip8Cx.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/b3/c0/6325_crt_ip8Cx.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b3/c0/6325_crt_ip8Cx.jpg"
+    },
+    "summary": "　　染著金发不良少年，就读樱雾高中二年十三班。由于小时候环境的影响，他选择扮演不良少年想过著堕落的生活，然而其实他并没有办法真的成为不良少年，故十极度厌恶自己半调子的个性。自幼因为常和有如鬼神般强大的母亲打架，故练成耐打的身体而且有惊人的回复力。虽然个性有点别扭但是实际上却正直又充满正义感。被堕花雨宣示效忠后开始遇上许多奇异的事件。",
+    "name": "柔沢ジュウ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "柔泽十"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "柔沢ジュウ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "じゅうざわジュウ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Juuzawa Juu"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "stat": {
+        "comments": 9,
+        "collects": 12
+    },
+    "id": 6325,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        3424
+    ]
+}

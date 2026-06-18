@@ -1,0 +1,123 @@
+{
+    "id": 173303,
+    "name": "Urara迷路帖",
+    "image_path": "data\\images\\anime\\173303.jpg",
+    "points": 6.8,
+    "cost": 1,
+    "rarity": "N",
+    "description": "这是一个以占卜行业为主轴的小镇，国内憧憬著占卜师的少女们都在身处其中以成为「Urara」为目标而努力著。其中一位来自深山、名为「千矢」的少女也在因缘际会下来到这个小镇，并意外遇见三位同样以「枣屋」为目的地的可爱女孩「绀」、「小梅」和怕生的「信乃」，个性截然不同的4人，将一同在迷路町追踪各自梦想！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "百合",
+        "TV",
+        "日本",
+        "漫画改",
+        "日常"
+    ],
+    "date": "2017-01-05",
+    "rating_rank": 3701,
+    "rating_score": 6.8,
+    "rating_total": 4842,
+    "main_character_ids": [
+        47162,
+        47163,
+        47164
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ce/8d/47162_crt_Sy9aS.jpg?r=1515357927",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ce/8d/47162_crt_Sy9aS.jpg?r=1515357927",
+                "large": "https://lain.bgm.tv/pic/crt/l/ce/8d/47162_crt_Sy9aS.jpg?r=1515357927",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ce/8d/47162_crt_Sy9aS.jpg?r=1515357927"
+            },
+            "name": "千矢",
+            "summary": "乌菈菈见习生。15岁。为了见母亲而来到迷路町的少女，从小在山里长大。常做露出度高的打扮。\r\n有着无形中就会被动物亲近的体质，不清楚学校的事情。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fa/a7/24793_prsn_K0YP1.jpg?r=1706274202",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/fa/a7/24793_prsn_K0YP1.jpg?r=1706274202",
+                        "large": "https://lain.bgm.tv/pic/crt/l/fa/a7/24793_prsn_K0YP1.jpg?r=1706274202",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fa/a7/24793_prsn_K0YP1.jpg?r=1706274202"
+                    },
+                    "name": "原田彩楓",
+                    "short_summary": "原田彩楓（はらだ さやか）は、日本の女性声優。千葉県出身。ヴイ・フォーク所属。\r\n\r\n原田高校生時代、進路決めの際に声優を志し養成所に入所。\r\n\r\n2019年1月1日より準所属だったクレアボイスにて正所属へと昇格。7月31日より、契約満了にて同事務所を退所、フリーランスで活動を開始。\r\n\r\n2020年1月より、ヴイ・フォークに所属となった。同年3月に大学卒業を報告。\r\n\r\n2023年9月中旬より体調不良が続き、同年10月5日、ヴイ・フォークより、医師との相談のもとで一部活動を制限することが発表された。彩楓（はらだ さやか）は、日本の女性声優。千葉県出身。ヴイ・フォーク所属。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 24793,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 47162
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/8e/6e/47163_crt_P1sSN.jpg?r=1515357953",
+                "grid": "https://lain.bgm.tv/pic/crt/g/8e/6e/47163_crt_P1sSN.jpg?r=1515357953",
+                "large": "https://lain.bgm.tv/pic/crt/l/8e/6e/47163_crt_P1sSN.jpg?r=1515357953",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8e/6e/47163_crt_P1sSN.jpg?r=1515357953"
+            },
+            "name": "巽紺",
+            "summary": "乌菈菈见习生。15歳。名门茶屋巽屋的独生女。成绩优秀且个性认真。不喜欢豆皮。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1a/96/19560_prsn_dIRg5.jpg?r=1709906617",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/1a/96/19560_prsn_dIRg5.jpg?r=1709906617",
+                        "large": "https://lain.bgm.tv/pic/crt/l/1a/96/19560_prsn_dIRg5.jpg?r=1709906617",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1a/96/19560_prsn_dIRg5.jpg?r=1709906617"
+                    },
+                    "name": "本渡楓",
+                    "short_summary": "日本的女性声优，爱知县名古屋市出身。I'm Enterprise所属。\r\n高中二年级进入日本播音演技研究所名古屋校就读，2015年4月进入I'm Enterprise。\r\n高中时代加入戏剧社，但因为身高矮小无法演出护士，而改以不会被外貌影响的声优为目标。\r\n交情好的声优有目前在《见习神仙 秘密的心灵》中共同演出的潘惠美、事务所的前辈小泽亚李与长绳麻理亚。\r\n对于演出婴儿的声音很有自信。\r\n2019年，获得第13回声优奖的新人女优赏。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 19560,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 47163
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/66/8d/47164_crt_99030.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/66/8d/47164_crt_99030.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/66/8d/47164_crt_99030.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/66/8d/47164_crt_99030.jpg"
+            },
+            "name": "雪見小梅",
+            "summary": "乌菈菈见习生。雪见财阀的大小姐。喜欢西洋文化。对自己的名字抱持复杂的情绪。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/71/b4/9270_prsn_t0I7L.jpg?r=1731499108",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/71/b4/9270_prsn_t0I7L.jpg?r=1731499108",
+                        "large": "https://lain.bgm.tv/pic/crt/l/71/b4/9270_prsn_t0I7L.jpg?r=1731499108",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/71/b4/9270_prsn_t0I7L.jpg?r=1731499108"
+                    },
+                    "name": "久保ユリカ",
+                    "short_summary": "日本的女性声优、模特儿、歌手、艺人，2015年1月进入Clare Voice。2017年12月31日离开CLARE VOICE。2019年10月1日加入Stay Luck。奈良县出身。\r\n旧艺名包含“楢原ゆりか”、“久保由利香”（亦为本名），2014年9月27日发布的Instagram（https://www.instagram.com/p/tczvgbMPa7）正式以“久保百合花”作为官方中文译名。（我的中文名字是『久保百合花』。在不久的未來，應該會讓所有看到這篇文章的人，看到我以『久保百合花』的身份發佈令人驚豔的發表;) 然後…若也能叫我的綽號SHIKAKO『子鹿』的話，我也會很高興。謝謝大家一直在遙遠的一端支持我！很希望能盡快與大家見面。）",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 9270,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 47164
+        }
+    ]
+}

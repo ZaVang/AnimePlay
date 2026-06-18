@@ -1,0 +1,128 @@
+{
+    "id": 460306,
+    "name": "青之箱",
+    "image_path": "data\\images\\anime\\460306.jpg",
+    "points": 6.8,
+    "cost": 1,
+    "rarity": "N",
+    "description": "每天早上都想见到她——\r\n\r\n荣明高中是初高中一体的体育强校。猪股大喜是就读荣明高中的高一学生，也是男子羽毛球社成员。\r\n大喜喜欢上了每天晨练时见到的高二学姐鹿野千夏。\r\n千夏是女子篮球社的王牌选手，更是校内外憧憬的校花。\r\n兼顾着社团活动、恋爱、和学习，大喜忙碌的高中生活拉开了帷幕，突然有一天——\r\n\r\n\r\n[简介原文]\r\n毎朝一番に会いたい人がいる——\r\n\r\n中高一貫のスポーツ強豪校・栄明高校に入学する、男子バドミントン部の一年生・猪股大喜。\r\n大喜は毎朝、朝練で顔を合わせる一つ上の先輩、鹿野千夏に恋をする。\r\n千夏は女子バスケットボール部のエースで、校内外問わず人気の高嶺の花。\r\n部活に恋に勉強に、大喜にとって忙しい高校生活がはじまる、そんなある日――",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 25,
+    "synergy_tags": [
+        "校园",
+        "TV",
+        "恋爱",
+        "日本",
+        "运动",
+        "漫画改",
+        "少年向"
+    ],
+    "date": "2024-10-03",
+    "rating_rank": 3657,
+    "rating_score": 6.8,
+    "rating_total": 6440,
+    "main_character_ids": [
+        107702,
+        107703,
+        107704
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/21/8f/107702_crt_FfMEf.jpg?r=1700406573",
+                "grid": "https://lain.bgm.tv/pic/crt/g/21/8f/107702_crt_FfMEf.jpg?r=1700406573",
+                "large": "https://lain.bgm.tv/pic/crt/l/21/8f/107702_crt_FfMEf.jpg?r=1700406573",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/21/8f/107702_crt_FfMEf.jpg?r=1700406573"
+            },
+            "name": "猪股大喜",
+            "summary": "本作主角，荣明学园高中1年级生，羽毛球部社员（短篇中是排球部部员）。性格开朗直爽。\r\n对总是能在同一个体育馆见到的鹿野千夏学姐抱有好感，之后因缘际会下与对方同住，并逐渐拉近两人之间的距离。\r\n喜欢羽毛球，原因是喜欢独自一人背负场上局势的紧张感。社团活动上的目标是取得全国高等学校综合体育大会的参赛权。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2d/3a/19619_prsn_booOs.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2d/3a/19619_prsn_booOs.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/2d/3a/19619_prsn_booOs.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2d/3a/19619_prsn_booOs.jpg"
+                    },
+                    "name": "千葉翔也",
+                    "short_summary": "千叶翔也（1995年8月29日－）是日本男性声优及演员（前儿童演员），TOY'S FACTORY所属。\r\n\r\n兴趣及专长是吉他、看音乐剧。是宝冢歌剧团的粉丝。\r\n高中时期曾经加入了轻音乐部。\r\n在广播节目“千叶翔也的浪漫千层派”里提到自己崇拜的声优前辈是逢坂良太。",
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 19619,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 107702
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ed/47/107703_crt_RPYPP.jpg?r=1730807297",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ed/47/107703_crt_RPYPP.jpg?r=1730807297",
+                "large": "https://lain.bgm.tv/pic/crt/l/ed/47/107703_crt_RPYPP.jpg?r=1730807297",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ed/47/107703_crt_RPYPP.jpg?r=1730807297"
+            },
+            "name": "鹿野千夏",
+            "summary": "本作女主角之一，荣明学园高中2年级生，篮球部社员。\r\n是女子篮球的明星选手，兼具实力外貌与良好性格，具有相当的知名度并备受关注。\r\n升上二年级后家人搬到国外居住，但她自己却因为还想要继续打球而留在了日本，并寄住在母亲的熟人猪股家。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c5/14/13164_prsn_KWnmW.jpg?r=1752543801",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c5/14/13164_prsn_KWnmW.jpg?r=1752543801",
+                        "large": "https://lain.bgm.tv/pic/crt/l/c5/14/13164_prsn_KWnmW.jpg?r=1752543801",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c5/14/13164_prsn_KWnmW.jpg?r=1752543801"
+                    },
+                    "name": "上田麗奈",
+                    "short_summary": "日本的女性声优，富山县出身，所属事务所为81 Produce。\r\n初中时同属演剧部的女生有声优志向者，尊敬她的上田觉得“声优肯定是很美妙的职业”，又担心“自己的性格很奇怪”，本来以美术大学为志愿的她最终在声优试音报名结束前三天才报名。\r\n2011年，在第5回81 Audition中获得准优秀奖，之后加入81 Produce。\r\n获第九届声优奖新人女声优奖。\r\n是声优组合Anisonia的成员之一。\r\n在电视动画《摸索吧！部活剧》中，一人分饰18角。\r\n绘画力极强，《摸索吧！部活剧》的试音中因为绘画好而被选中，后来也在花舞少女广播中绘画并得到采用，还担任了《骇客娃娃》第五话的Endcard。\r\n不擅长运动。\r\n在各种场合被人说“凡骨”，自己的性格也很天然。\r\n自称只要对她好，就能喜欢上那个人。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 13164,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 107703
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a0/3b/107704_crt_7BoQI.jpg?r=1702703720",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a0/3b/107704_crt_7BoQI.jpg?r=1702703720",
+                "large": "https://lain.bgm.tv/pic/crt/l/a0/3b/107704_crt_7BoQI.jpg?r=1702703720",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a0/3b/107704_crt_7BoQI.jpg?r=1702703720"
+            },
+            "name": "蝶野雛",
+            "summary": "本作女主角之一，荣明学园高中1年级生，韵律体操部社员。\r\n与大喜、笠原国中三年都同班故彼此熟识，喜欢捉弄大喜、以此取乐。\r\n父亲是前日本体操选手代表，本身也是体操界的明星选手。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a1/78/19339_prsn_R7laF.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a1/78/19339_prsn_R7laF.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/a1/78/19339_prsn_R7laF.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a1/78/19339_prsn_R7laF.jpg"
+                    },
+                    "name": "鬼頭明里",
+                    "short_summary": "鬼頭明里（きとう あかり）は、日本の女性声優である。ラクーンドッグ所属。\r\nあだ名は「あかりん」。\r\n\r\n10月16日生まれ、愛知県出身、血液型B型、153cm。プロ・フィット声優養成所を経て、現事務所に2015年4月から所属。\r\n趣味は絵を描くこと、歌うこと。特技は絵を描くこと、歌うこと、湯切り。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 19339,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 107704
+        }
+    ]
+}

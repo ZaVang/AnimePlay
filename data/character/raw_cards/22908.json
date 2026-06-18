@@ -1,0 +1,57 @@
+{
+    "birth_mon": 1,
+    "gender": "female",
+    "birth_day": 3,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d4/db/22908_crt_LXfs1.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d4/db/22908_crt_LXfs1.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/d4/db/22908_crt_LXfs1.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d4/db/22908_crt_LXfs1.jpg"
+    },
+    "summary": "春香与优的同学，和雫是表姊妹，并寄住在雫的家里。\r\n\r\n个性活泼，喜欢热闹。",
+    "name": "野田コトネ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "野田琴音"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "野田 コトネ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "のだ コトネ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Noda Kotone"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "1月3日"
+        }
+    ],
+    "stat": {
+        "comments": 5,
+        "collects": 21
+    },
+    "id": 22908,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        80838
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/15/9d/70888_crt_JdJlJ.jpg?r=1575888577",
+        "grid": "https://lain.bgm.tv/pic/crt/g/15/9d/70888_crt_JdJlJ.jpg?r=1575888577",
+        "large": "https://lain.bgm.tv/pic/crt/l/15/9d/70888_crt_JdJlJ.jpg?r=1575888577",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/15/9d/70888_crt_JdJlJ.jpg?r=1575888577"
+    },
+    "summary": "本作女主角，海鸥学园高等部一年级生，所属于园艺部，特长是耕地，是个花痴、喜欢帅哥，但却因为萝卜腿的理由而常常失恋。因听闻校园七大不可思议的传说中的花子可以实现愿望，而到厕所寻找花子的少女，之后遇上各种奇妙的事件。",
+    "name": "八尋寧々",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "八寻宁宁"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "やしろ ねね"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Yashiro Nene"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "Wikipedia"
+        }
+    ],
+    "stat": {
+        "comments": 10,
+        "collects": 107
+    },
+    "id": 70888,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        277551
+    ]
+}

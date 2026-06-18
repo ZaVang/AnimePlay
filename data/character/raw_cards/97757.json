@@ -1,0 +1,45 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b2/8a/97757_crt_XS8Ox.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b2/8a/97757_crt_XS8Ox.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/b2/8a/97757_crt_XS8Ox.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b2/8a/97757_crt_XS8Ox.jpg"
+    },
+    "summary": "本作主人公。\r\nベルリン・シンフォニカの奥で眠り続けていた指揮者（コンダクター）。\r\nムジカート達を指揮し、勝利へと導く存在。",
+    "name": "朝雛タクト",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "朝雏磔人"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Asahina Takt"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 14,
+        "collects": 20
+    },
+    "id": 97757,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        331535
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ea/ee/173062_crt_8Vu8V.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ea/ee/173062_crt_8Vu8V.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/ea/ee/173062_crt_8Vu8V.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ea/ee/173062_crt_8Vu8V.jpg"
+    },
+    "summary": "本名・九条千春（くじょう・ちはる）。\r\n23才の強化人間。\r\n性格はお人よしでマイペース。\r\nマキナと一緒に逮捕されたのは今回が初めてではない。",
+    "name": "チハル",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "千春"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "九条千春"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "くじょう ちはる"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 7,
+        "collects": 36
+    },
+    "id": 173062,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        545328
+    ]
+}

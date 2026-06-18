@@ -1,0 +1,61 @@
+{
+    "birth_mon": 3,
+    "gender": "female",
+    "birth_day": 21,
+    "birth_year": null,
+    "blood_type": 3,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/73/1c/1080_ELl51.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/73/1c/1080_ELl51.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/73/1c/1080_ELl51.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/73/1c/1080_ELl51.jpg"
+    },
+    "summary": "瑞穂的同班同学,很端庄的女性.元华族的十条家的独生女.沉稳并且很有神秘感……虽然这么说,但是也有时会出语惊人,吓瑞穂一跳,但是在瑞穂危急的时候,总是会出面帮瑞穂解围性格稳重但意外地喜欢恶作剧，经常和玛利亚一起捉弄瑞穗。因为在上学期生病，而重新读一年，其实还是上一年的“姐姐大人”",
+    "name": "十条紫苑",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "十条紫苑"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "じゅうじょうしおん"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Jyuujyou Shion"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "3月21日"
+        },
+        {
+            "key": "血型",
+            "value": "AB"
+        },
+        {
+            "key": "身高",
+            "value": "173cm"
+        }
+    ],
+    "stat": {
+        "comments": 6,
+        "collects": 34
+    },
+    "id": 1080,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        3828
+    ]
+}

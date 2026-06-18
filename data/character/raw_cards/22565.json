@@ -1,0 +1,75 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/17/18/22565_crt_57Qti.jpg?r=1611900770",
+        "grid": "https://lain.bgm.tv/pic/crt/g/17/18/22565_crt_57Qti.jpg?r=1611900770",
+        "large": "https://lain.bgm.tv/pic/crt/l/17/18/22565_crt_57Qti.jpg?r=1611900770",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/17/18/22565_crt_57Qti.jpg?r=1611900770"
+    },
+    "summary": "等级：B级（由于隐藏自己的能力，实际至少有A级）\r\n识别号：2670\r\n\r\n与宁子一起从研究所中脱逃的“魔法使”，是一个会说德语的混血儿，很在意自己是个贫乳处女。后来使用名字和美·施里恩曹尔（カズミ・シュリーレンツァウアー，Kazumi Schlierenzauet）以来自奥地利国立学院学生的身份转入良太的班级，成为良太的同班同学。\r\n因为父亲是关西人，操著一口关西腔。喜欢良太，并经常跟他开色情玩笑。\r\n在等级判定时，研究所要求让仪器失误杀人，所以故意放水，造成判定为B级。\r\n能够瞬时计算出质因数分解，因此可以破解网络加密，是可以“操作网络”的魔法使。",
+    "name": "カズミ＝シュリーレンツァウアー",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "和美·施里恩曹尔"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "霞·施里恩曹尔"
+                },
+                {
+                    "v": "霞·施里恩曹尔二世"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "一美·施里恩曹尔"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Kazumi Schlierenzauer"
+                },
+                {
+                    "k": "日文名",
+                    "v": "かずみ"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "カズミ·シュリーレンツァウアー"
+                },
+                {
+                    "k": "昵称",
+                    "v": "旗神"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "159cm"
+        },
+        {
+            "key": "BWH",
+            "value": "76（A）-57-81"
+        }
+    ],
+    "stat": {
+        "comments": 56,
+        "collects": 97
+    },
+    "id": 22565,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        89485
+    ]
+}

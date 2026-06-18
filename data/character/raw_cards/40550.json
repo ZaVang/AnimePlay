@@ -1,0 +1,58 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8e/7f/40550_crt_7J89J.jpg?r=1460716982",
+        "grid": "https://lain.bgm.tv/pic/crt/g/8e/7f/40550_crt_7J89J.jpg?r=1460716982",
+        "large": "https://lain.bgm.tv/pic/crt/l/8e/7f/40550_crt_7J89J.jpg?r=1460716982",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8e/7f/40550_crt_7J89J.jpg?r=1460716982"
+    },
+    "summary": "姓名不明。年龄没有表明，猜测是二三十岁。30年前的大战，在荒废的世界里从化作废墟的城市回收贵重资源。靠贩卖这些来生活的青年。\r\n另外，寻求着从未有过的财宝和资源而潜入【封印都市】，从防卫着都市的战斗机械逃进了废墟的天象馆与“梦美”相遇。",
+    "name": "屑屋",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "废墟猎人"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "星の人"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "くずや"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kuzuya"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://planetarian-project.com/character/"
+        }
+    ],
+    "stat": {
+        "comments": 12,
+        "collects": 25
+    },
+    "id": 40550,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        176518,
+        178884
+    ]
+}

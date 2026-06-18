@@ -1,0 +1,106 @@
+{
+    "id": 470045,
+    "name": "噗妮露是可爱史莱姆",
+    "image_path": "data\\images\\anime\\470045.jpg",
+    "points": 7.2,
+    "cost": 1,
+    "rarity": "N",
+    "description": "这是关于噗妮露和初中生小太郎不再是朋友的故事……。\r\n河合井小太郎是一名国中二年级的男生，小学时他创造的史莱姆获得了生命。从那时起，他和名为噗妮露的史莱姆作为「朋友」和睦共处在一起。然而，随着七年的时间过去，噗妮露竟变成了超绝美少女！面对噗妮露可爱的样貌、随心所欲的言行，小太郎每天都感到心跳加速。究竟，噗妮露和小太郎能继续作为「朋友」快乐地相处下去吗！ ？",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改",
+        "日常"
+    ],
+    "date": "2024-10-06",
+    "rating_rank": 1762,
+    "rating_score": 7.2,
+    "rating_total": 4249,
+    "main_character_ids": [
+        161095,
+        161096
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b4/d4/161095_crt_ib33b.jpg?r=1731674352",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b4/d4/161095_crt_ib33b.jpg?r=1731674352",
+                "large": "https://lain.bgm.tv/pic/crt/l/b4/d4/161095_crt_ib33b.jpg?r=1731674352",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b4/d4/161095_crt_ib33b.jpg?r=1731674352"
+            },
+            "name": "ぷにる",
+            "summary": "河合井コタローが幼少期に偶然作ったスライム生命体。\r\n自身を最高にかわいいスライムと思っており、夢は“kawaii”の代名詞になること。最近はコタローにかわいいと言われなくなり、認めてもらうべく日々様々な“かわいい”姿を追い求めている…！？",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/59/73/33097_prsn_WiF5W.jpg?r=1691249190",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/59/73/33097_prsn_WiF5W.jpg?r=1691249190",
+                        "large": "https://lain.bgm.tv/pic/crt/l/59/73/33097_prsn_WiF5W.jpg?r=1691249190",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/59/73/33097_prsn_WiF5W.jpg?r=1691249190"
+                    },
+                    "name": "篠原侑",
+                    "short_summary": "篠原侑（ささはら ゆう、4月30日 - ）は、日本の女性声優。熊本県出身。アイムエンタープライズ所属。\r\n\r\n小学生の頃に歌手になりたいと思っていたが、両親から「歌手の道は厳しいよ」と言われたという。中学時代に父がプリントアウトしたアニメーション映画の主人公のオーディションを見たことがあり、「声優なら歌も歌えるし、演技もできてテレビにも出られるかもしれないし、いいことがたくさんあるから目指してみたら？」と言われたことがきっかけで声優を目指したという。\r\n\r\n中学時代は吹奏楽部、高校時代は和太鼓部にそれぞれ所属していた。\r\n\r\nインターネットで声優になる方法を調べ、専門学校が良いと思って両親に相談したものの、母から反対された。高校時代、母に同じ話をした際、「大学に通いながらであれば、声優の勉強をしても構わない」と言われたことから、全日制の専門学校に通うことは無理であると考え、ダブルスクールで通うことが可能な日本ナレーション演技研究所（日ナレ）が自身の候補に上がったという。高校3年生の夏の頃に、母と熊本から上京して日ナレの入所審査を受けて覚悟が決まったという。\r\n\r\n日ナレに入所後、3年目の研修科修了後、2016年よりアイムエンタープライズに所属し、声優デビュー。\r\n\r\n『となりの吸血鬼さん』の天野灯役で初のメインキャラクターを務める。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 33097,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 161095
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/3a/7e/161096_crt_4XvU7.jpg?r=1721309997",
+                "grid": "https://lain.bgm.tv/pic/crt/g/3a/7e/161096_crt_4XvU7.jpg?r=1721309997",
+                "large": "https://lain.bgm.tv/pic/crt/l/3a/7e/161096_crt_4XvU7.jpg?r=1721309997",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3a/7e/161096_crt_4XvU7.jpg?r=1721309997"
+            },
+            "name": "河合井コタロー",
+            "summary": "私立ライム中学校2年生。幼少期に偶然作ったぷにると7年間一緒に暮らしている。\r\n本当はかわいいものが好きだけど、周りには隠しているひねくれボーイ。\r\nぷにるの自由気ままな言動には振り回され、成長した姿にドキドキすることも…。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/63/c3/35731_prsn_kTtZb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/63/c3/35731_prsn_kTtZb.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/63/c3/35731_prsn_kTtZb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/63/c3/35731_prsn_kTtZb.jpg"
+                    },
+                    "name": "松岡美里",
+                    "short_summary": "趣味・スポーツ\t映画鑑賞\r\n特技\t歌唱　長座体前屈\r\n資格\t話ことば検定3級\r\n芸歴\t日本ナレーション演技研究所",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 35731,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/dd/dc/41073_prsn_ol77n.jpg?r=1633081644",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/dd/dc/41073_prsn_ol77n.jpg?r=1633081644",
+                        "large": "https://lain.bgm.tv/pic/crt/l/dd/dc/41073_prsn_ol77n.jpg?r=1633081644",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dd/dc/41073_prsn_ol77n.jpg?r=1633081644"
+                    },
+                    "name": "梅田修一朗",
+                    "short_summary": "梅田 修一朗（うめだ しゅういちろう、10月11日）は、日本の男性声優。千葉県出身。賢プロダクション所属。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 41073,
+                    "type": 2,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 161096
+        }
+    ]
+}

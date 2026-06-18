@@ -1,0 +1,115 @@
+{
+    "id": 513345,
+    "name": "薰香花朵凛然绽放",
+    "image_path": "data\\images\\anime\\513345.jpg",
+    "points": 6.9,
+    "cost": 1,
+    "rarity": "N",
+    "description": "“窗帘的另一头，是和我永远没有交集的世界”\r\n差生云集的底层男校千鸟高中，一直被历史悠久的贵族女校桔梗女校所鄙视。\r\n尽管两校的校舍相邻，但桔梗女校从来都是将窗帘拉得严严实实，不让千鸟高中的人看到人影。\r\n在千鸟高中上学的䌷凛太郎，因为长相问题，经常被人误以为是一个可怕的人不敢接近，因此也习惯了和他人保持距离。\r\n而在某一天，在给家里的蛋糕店帮忙时，一个名叫薰子的顾客对他说：“我从来不觉得凛太郎很可怕啊？”\r\n薰子对凛太郎没有半点偏见，和她一起度过的时光既让凛太郎感到困惑，也感到惬意。\r\n但他很快就发现，薰子是桔梗女校的学生……\r\n这是一段“近在咫尺却又遥不可及”的二人编织的、为青春染上绚丽色彩的校园故事。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "校园",
+        "校园",
+        "TV",
+        "TV",
+        "恋爱",
+        "恋爱",
+        "日本",
+        "日本",
+        "漫画改",
+        "漫画改",
+        "少年向"
+    ],
+    "date": "2025-07-05",
+    "rating_rank": 2833,
+    "rating_score": 6.9,
+    "rating_total": 5963,
+    "main_character_ids": [
+        157751,
+        157752
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/3e/72/157751_crt_R8Rus.jpg?r=1742622900",
+                "grid": "https://lain.bgm.tv/pic/crt/g/3e/72/157751_crt_R8Rus.jpg?r=1742622900",
+                "large": "https://lain.bgm.tv/pic/crt/l/3e/72/157751_crt_R8Rus.jpg?r=1742622900",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3e/72/157751_crt_R8Rus.jpg?r=1742622900"
+            },
+            "name": "紬凛太郎",
+            "summary": "長身・金髪・強面・物静か。\r\nそんな見た目から周囲に「不良」「怖い人」と言われている。\r\n実家はケーキ屋で、たまに手伝いをしている。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/05/f3/15326_prsn_Qaxaz.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/05/f3/15326_prsn_Qaxaz.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/05/f3/15326_prsn_Qaxaz.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/05/f3/15326_prsn_Qaxaz.jpg"
+                    },
+                    "name": "原涼子",
+                    "short_summary": "子役（童星）出身。声优·演员。\r\n\r\n代表作：「ばらかもん」琴石なる\r\n「アイドルマスター シンデレラガールズ」望月聖",
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 15326,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e4/71/62969_prsn_WXcoa.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e4/71/62969_prsn_WXcoa.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/e4/71/62969_prsn_WXcoa.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e4/71/62969_prsn_WXcoa.jpg"
+                    },
+                    "name": "中山祥徳",
+                    "short_summary": "出身地：愛知県\r\n趣味：カメラ/飼育/動画編集\r\n特技：ドラム\r\n資格：普通自動車免許\r\n経歴：プロ・フィット声優養成所　卒",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 62969,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 157751
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/5f/77/157752_crt_8ThAH.jpg?r=1755412425",
+                "grid": "https://lain.bgm.tv/pic/crt/g/5f/77/157752_crt_8ThAH.jpg?r=1755412425",
+                "large": "https://lain.bgm.tv/pic/crt/l/5f/77/157752_crt_8ThAH.jpg?r=1755412425",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5f/77/157752_crt_8ThAH.jpg?r=1755412425"
+            },
+            "name": "和栗薫子",
+            "summary": "食べることが大好きで、\r\n月に１～2回程度、凛太郎の実家のケーキ屋を利用している。\r\n何事にもまっすぐな性格。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/05/65/24865_prsn_vzDgz.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/05/65/24865_prsn_vzDgz.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/05/65/24865_prsn_vzDgz.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/05/65/24865_prsn_vzDgz.jpg"
+                    },
+                    "name": "井上ほの花",
+                    "short_summary": "井上 ほの花（いのうえ ほのか、1998年2月9日 - ）は、日本の声優、歌手。オフィスアネモネ・ジュニア所属。愛称は、ほったん。神奈川県出身。\r\n\r\n2015年12月9日、オフィスアネモネのジュニアに所属。\r\n2015年、HONOKA名義にて、ゲーム『太鼓の達人』の楽曲「恋幻想（Love Fantasy）」で歌手デビュー。\r\n2016年3月11日より公開された映画『劇場版 しまじろうのわお! しまじろうとえほんのくに』にしろりん2役で出演し、声優デビュー。\r\n2016年12月28日、ミニアルバム『ファースト・フライト』でCDデビューした。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 24865,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 157752
+        }
+    ]
+}

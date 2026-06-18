@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/08/e8/33770_crt_ZmTKg.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/08/e8/33770_crt_ZmTKg.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/08/e8/33770_crt_ZmTKg.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/08/e8/33770_crt_ZmTKg.jpg"
+    },
+    "summary": "生徒会副会長を務めるメガネ男子。会長選挙では羽衣に大差を付けられ落選し、結果副会長となる。父親（声 - 山口和理）が羽衣の両親とは懇意の仲で、彼女の嫁入りを公認している。",
+    "name": "和泉隼斗",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "和泉隼斗"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "いずみ はやと"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Izumi Hayato"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://ja.wikipedia.org/wiki/おくさまが生徒会長!"
+        }
+    ],
+    "stat": {
+        "comments": 2,
+        "collects": 4
+    },
+    "id": 33770,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        119889
+    ]
+}

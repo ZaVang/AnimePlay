@@ -1,0 +1,94 @@
+{
+    "id": 320839,
+    "name": "虚构推理 第二季",
+    "image_path": "data\\images\\anime\\320839.jpg",
+    "points": 6.6,
+    "cost": 1,
+    "rarity": "N",
+    "description": "被称为“鬼怪”的生物，如理所当然般真实存在于世。\r\n少女岩永琴子作为鬼怪们的“智慧之神”，今天也有鬼怪找她排忧解难。琴子身边有一名连鬼怪都畏惧不已的男子，那就是她一见钟情的恋人，名叫樱川九郎。\r\n本片讲述这两个不普通的人齐心协力，使用【虚构】解决鬼怪引起的超常悬疑事件的故事。\r\n他们要如何解决天方夜谭般的新事件，二人的恋情有会有怎样的进展？！\r\n[恋爱×灵异×悬疑] 回归！！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "恋爱",
+        "日本",
+        "推理",
+        "漫画改"
+    ],
+    "date": "2023-01-08",
+    "rating_rank": 4948,
+    "rating_score": 6.6,
+    "rating_total": 4570,
+    "main_character_ids": [
+        66614,
+        68374
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/db/2c/66614_crt_lXPEP.jpg?r=1578439785",
+                "grid": "https://lain.bgm.tv/pic/crt/g/db/2c/66614_crt_lXPEP.jpg?r=1578439785",
+                "large": "https://lain.bgm.tv/pic/crt/l/db/2c/66614_crt_lXPEP.jpg?r=1578439785",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/db/2c/66614_crt_lXPEP.jpg?r=1578439785"
+            },
+            "name": "岩永琴子",
+            "summary": "ステッキとベレー帽がトレードマークの小柄で可愛らしい大学生。\r\n11歳の時に”怪異””妖怪”などと呼ばれる化け物たちに誘拐され、片眼と片脚を失うのと引き換えに、彼らの”知恵の神”となった。\r\nそれ以降、怪異たちから寄せられるトラブルを解決している。\r\n病院で偶然出会った九郎に一目ぼれし、付き合う機会をずっと伺っていた。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a1/78/19339_prsn_R7laF.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a1/78/19339_prsn_R7laF.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/a1/78/19339_prsn_R7laF.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a1/78/19339_prsn_R7laF.jpg"
+                    },
+                    "name": "鬼頭明里",
+                    "short_summary": "鬼頭明里（きとう あかり）は、日本の女性声優である。ラクーンドッグ所属。\r\nあだ名は「あかりん」。\r\n\r\n10月16日生まれ、愛知県出身、血液型B型、153cm。プロ・フィット声優養成所を経て、現事務所に2015年4月から所属。\r\n趣味は絵を描くこと、歌うこと。特技は絵を描くこと、歌うこと、湯切り。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 19339,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 66614
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/81/f0/68374_crt_RSL1T.jpg?r=1547477485",
+                "grid": "https://lain.bgm.tv/pic/crt/g/81/f0/68374_crt_RSL1T.jpg?r=1547477485",
+                "large": "https://lain.bgm.tv/pic/crt/l/81/f0/68374_crt_RSL1T.jpg?r=1547477485",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/81/f0/68374_crt_RSL1T.jpg?r=1547477485"
+            },
+            "name": "桜川九郎",
+            "summary": "岩永琴子の片想いの相手であり、同じ大学に通う大学院生。\r\n平凡でおとなしそうに見えるが、幼いころの奇怪な体験を経て特異体質となり、”怪異”たちから忌み嫌われ恐れられる存在に。付きまとう琴子を敬遠しつつも優しく気遣う面もあり、一緒に”怪異”が絡んだ事件に立ち向かってゆく。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fa/cc/4697_prsn_1t8UM.jpg?r=1730622307",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/fa/cc/4697_prsn_1t8UM.jpg?r=1730622307",
+                        "large": "https://lain.bgm.tv/pic/crt/l/fa/cc/4697_prsn_1t8UM.jpg?r=1730622307",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fa/cc/4697_prsn_1t8UM.jpg?r=1730622307"
+                    },
+                    "name": "宮野真守",
+                    "short_summary": "小学生時代から劇団ひまわりに所属し、主に舞台などで活動した。高校生時代に海外ドラマ『私はケイトリン』の吹替で声優デビューする。PS2用ゲーム『キングダム ハーツ』のリク役で注目を集め、その後は、『機動戦士ガンダム00』や『DEATH NOTE』の主役を務めるなど、数々の人気作品に出演している。\r\n第1回声優アワード主演男優賞および新人賞にノミネートされた（『DEATH NOTE』夜神月役）。 2008年の第2回声優アワード主演男優賞受賞。東京国際アニメフェア2008・第7回東京アニメアワード個人賞（声優部門）受賞（『DEATH NOTE』『機動戦士ガンダム00』）。 2008年12月1日、劇団ひまわりのHPで結婚と子供を授かったことを公表した。結婚相手や子供の性別は非公開。 2011年、ノン子とのび太のアニメスクランブルにて第21回アニメグランプリ最優秀男性声優賞受賞。 2012年、第6回声優アワードにて助演男優賞と歌唱賞（後者はST☆RISHとして）、日刊スポーツ第1回日刊アニメグランプリにてMIP男性声優賞、アニメージュ第34回アニメグランプリ声優部門においてグランプリを受賞。\r\n\r\n2025年6月8日宣布与向日葵剧团合约期满退团，次日宣布加入研音。",
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 4697,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 68374
+        }
+    ]
+}

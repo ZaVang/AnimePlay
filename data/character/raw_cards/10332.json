@@ -1,0 +1,49 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b9/74/10332_crt_anidb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b9/74/10332_crt_anidb.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/b9/74/10332_crt_anidb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b9/74/10332_crt_anidb.jpg"
+    },
+    "summary": "",
+    "name": "ジェームス・レイ・スチム",
+    "infobox": [
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "ジェームス・レイ・スチム"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "James Ray Steam"
+                }
+            ]
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "stat": {
+        "comments": 2,
+        "collects": 3
+    },
+    "id": 10332,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        1938
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/52/d4/1726_crt_2PUI5.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/52/d4/1726_crt_2PUI5.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/52/d4/1726_crt_2PUI5.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/52/d4/1726_crt_2PUI5.jpg"
+    },
+    "summary": "拥有传说生物“摩诃”血脉的少女，其头发可变为金色之剑，拥有很强的战斗力，外形却像一个较弱的小女生。\r\n由于与主人公的奇遇，使她作为信蜂的重要伙伴兼搭档Dingo，与拉格一同行动。\r\n非常讨厌穿内裤。",
+    "name": "ニッチ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "妮琦"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Niche"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": [
+                {
+                    "k": "动画人设页面",
+                    "v": "https://www.tv-tokyo.co.jp/contents/tegamibachi/chara/index.html"
+                }
+            ]
+        }
+    ],
+    "stat": {
+        "comments": 5,
+        "collects": 25
+    },
+    "id": 1726,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        2476
+    ]
+}

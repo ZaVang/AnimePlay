@@ -1,0 +1,89 @@
+{
+    "birth_mon": 3,
+    "gender": "male",
+    "birth_day": 29,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/38/26/14694_crt_7ZLJj.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/38/26/14694_crt_7ZLJj.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/38/26/14694_crt_7ZLJj.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/38/26/14694_crt_7ZLJj.jpg"
+    },
+    "summary": "高中一年级学生。\r\n除了拿着很大的相机和稍微矮一点之外，没有引人注意的地方，非常普通平凡的少年。\r\n父母因事故去世，和姐姐在爷爷家生活。\r\n但爷爷和奶奶也去世了，现在和姐姐两个人生活。 \r\n兴趣是用爷爷用过的8mm照相机摄影。\r\n一天出去摄影的海人被卷进了某个事件中——因此正如命运安排的那样和一夏相遇了。",
+    "name": "霧島海人",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "雾岛海人"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Kaito Kirishima"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "きりしま かいと"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "KIRISHIMA KAITO"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "3月29日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "158cm"
+        },
+        {
+            "key": "体重",
+            "value": "49kg"
+        },
+        {
+            "key": "兴趣",
+            "value": "8mm照相机摄影、电影鉴赏"
+        },
+        {
+            "key": "喜欢的东西",
+            "value": "汉堡包、牛肉火锅、百利滋"
+        },
+        {
+            "key": "讨厌的东西",
+            "value": "鳄梨、地震"
+        },
+        {
+            "key": "喜欢的类型",
+            "value": "温柔漂亮的人"
+        },
+        {
+            "key": "电影职务",
+            "value": "监督、摄影（摄影师）"
+        }
+    ],
+    "stat": {
+        "comments": 5,
+        "collects": 13
+    },
+    "id": 14694,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        22657
+    ]
+}

@@ -1,0 +1,93 @@
+{
+    "id": 525565,
+    "name": "相反的你和我",
+    "image_path": "data\\images\\anime\\525565.jpg",
+    "points": 7.7,
+    "cost": 1,
+    "rarity": "N",
+    "description": "总是充满活力却在意周围目光的女孩 — 铃木，以及沉静但能坚定表达自己意见的男孩 — 谷。\r\n这是一个由两个性格截然不同的人、彼此尊重、慢慢加深理解，并与朋友们一起度过校园生活的爱情喜剧！\r\n\r\n\r\n\r\n[简介原文]\r\nいつも元気いっぱいだけど周りの目を気にしてしまう女子・鈴木と、物静かだけど自分の意見をしっかり言える男子・谷。\r\n正反対な二人が誤解や勘違いをしながらもお互いを尊重し、ゆっくりと理解を深めていく姿と、友人たちとの学校生活を描くラブコメディ。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "校园",
+        "TV",
+        "恋爱",
+        "日本",
+        "漫画改",
+        "少年向"
+    ],
+    "date": "2026-01-11",
+    "rating_rank": 577,
+    "rating_score": 7.7,
+    "rating_total": 7144,
+    "main_character_ids": [
+        166838,
+        166839
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/44/1c/166838_crt_9jj4H.jpg?r=1741015358",
+                "grid": "https://lain.bgm.tv/pic/crt/g/44/1c/166838_crt_9jj4H.jpg?r=1741015358",
+                "large": "https://lain.bgm.tv/pic/crt/l/44/1c/166838_crt_9jj4H.jpg?r=1741015358",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/44/1c/166838_crt_9jj4H.jpg?r=1741015358"
+            },
+            "name": "谷悠介",
+            "summary": "物静かだけど自分の意見をはっきり言える男子。\r\nいつも軽いノリで話しかけてくる鈴木に対して、素っ気なくも思える返答を繰り返していたのだが……。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6d/03/36872_prsn_YKVv4.jpg?r=1739708264",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/6d/03/36872_prsn_YKVv4.jpg?r=1739708264",
+                        "large": "https://lain.bgm.tv/pic/crt/l/6d/03/36872_prsn_YKVv4.jpg?r=1739708264",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6d/03/36872_prsn_YKVv4.jpg?r=1739708264"
+                    },
+                    "name": "坂田将吾",
+                    "short_summary": "坂田 将吾（さかた しょうご、1998年1月23日 - ）は、日本の男性声優。熊本県出身。青二プロダクション所属。\r\n\r\n中学生の頃、ライトノベルを読んでいたことがあり、その主人公になりたいと思ったことから声優になろうと思ったきっかけを持つ。\r\n\r\n高校卒業後にアミューズメントメディア総合学院に入学し、在学中に『人狼ゲーム マッドランド』への映像出演や、『ゴッホ 最期の手紙』にて吹き替えを担当。\r\n\r\n青二プロダクションの同期には草野太一と田口奏弥、三野雄大がいる。\r\n\r\n2019年4月より始動した、サンリオによる架空のお笑い事務所「笑響芸能事務所」に所属する、サンリオ初のお笑い芸人キャラクター「Warahibi!」による『GIFT for SMILE！』でアーティストデビューし、そのコンビである「あさやけレンジャーズ」の小峰純役に選ばれる。\r\n\r\n趣味はゲーム、アニメ鑑賞、読書、カラオケ。カラオケでの定番曲にAKINO from bless4の「創聖のアクエリオン」「君の神話〜アクエリオン第二章」を挙げている。\r\n\r\n憧れている声優は松岡禎丞で、中高生の頃に松岡が主演を努めていた『さくら荘のペットな彼女』や、『冴えない彼女の育て方』を見ていたという。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 36872,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 166838
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e8/0c/166839_crt_2Krz5.jpg?r=1741015359",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e8/0c/166839_crt_2Krz5.jpg?r=1741015359",
+                "large": "https://lain.bgm.tv/pic/crt/l/e8/0c/166839_crt_2Krz5.jpg?r=1741015359",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e8/0c/166839_crt_2Krz5.jpg?r=1741015359"
+            },
+            "name": "鈴木みゆ",
+            "summary": "元気いっぱいだけど周りの目が気になってしまう女子。\r\n自分とは反対に誰に対してもブレない谷に憧れているが、普通に接することが出来ず、いつもダル絡みしてしまう。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8a/42/32687_prsn_GF9g5.jpg?r=1688106625",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/8a/42/32687_prsn_GF9g5.jpg?r=1688106625",
+                        "large": "https://lain.bgm.tv/pic/crt/l/8a/42/32687_prsn_GF9g5.jpg?r=1688106625",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8a/42/32687_prsn_GF9g5.jpg?r=1688106625"
+                    },
+                    "name": "鈴代紗弓",
+                    "short_summary": "",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 32687,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 166839
+        }
+    ]
+}

@@ -1,0 +1,60 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4f/73/13525_crt_uN68C.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/4f/73/13525_crt_uN68C.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/4f/73/13525_crt_uN68C.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4f/73/13525_crt_uN68C.jpg"
+    },
+    "summary": "宇宙殖民卫星“边境四”中综合学校的工科学生。\r\n宇宙世纪0123年3月16日，边境四遭到军事集团“十字先锋”的袭击，西布克与同学为了避难而逃入联邦军的训练舰“宇宙方舟号”，随后驾驶舰上的高达F91与十字先锋作战。\r\n有优秀的新人类（Newtype）能力，初次上阵就击坠3台MS。\r\n击败十字先锋的后台“宇宙巴比伦帝国”之后的UC0128年，西布克与赛西莉遭到木星帝国的袭击，被认定为死亡。然而在0133年，西布克与赛西莉分别化名金海杜和贝拉罗那再次出现，为了对抗木星帝国而复活了十字先锋这个组织。",
+    "name": "シーブック・アノー",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "西布克·阿诺"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "洗扑克"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "金海杜"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Seabook Arno"
+                },
+                {
+                    "k": "日文名",
+                    "v": "キンケドゥ・ナウ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Shibukku Ano"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 8,
+        "collects": 23
+    },
+    "id": 13525,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        4482
+    ]
+}

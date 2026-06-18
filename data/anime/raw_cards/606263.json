@@ -1,0 +1,527 @@
+{
+    "date": "2026-04-04",
+    "platform": "TV",
+    "images": {
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/8d/c7/606263_3fRrj.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/8d/c7/606263_3fRrj.jpg",
+        "large": "https://lain.bgm.tv/pic/cover/l/8d/c7/606263_3fRrj.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/8d/c7/606263_3fRrj.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/8d/c7/606263_3fRrj.jpg"
+    },
+    "summary": "订阅突破1000万人的TOP级主播少女超绝最可爱天使酱——人称「超天酱」，没有一天看不到她活跃的身影。互联网、电视节目、LIVE……她总是活在粉丝们的欢呼声中。\r\n有一个3位少女组成的主播组合将超天酱视为目标，其名为“卡拉马佐夫”。\r\n而在与这群主播们的活动相去甚远之处，有一位与小白脸男友同居、在主题咖啡店工作的少女——卡茜。\r\n星星般闪耀的少女，与追求星星光芒的少女们共同谱写，令世人着迷的“互联网天使”的故事与屏幕另一端的“你”的故事在此拉开帷幕——\r\n\r\n\r\n\r\n[简介原文]\r\n登録者1000万人を記録するトップ配信者の少女、超絶最かわてんしちゃん──通称「超てんちゃん」の活躍を見ない日はない。インターネット、テレビ、ライブを問わず、彼女はファンの歓声の中にいる。\r\nそんな超てんちゃんに追いつこうとしているのは、３人の少女による配信者ユニット・カラマーゾフ。\r\nそして、そんな配信者たちの活動とは遠く離れたところに、ヒモの彼氏と同棲しながらコンセプトカフェで働く少女、かちぇの姿がある。\r\n星のように輝く少女と、輝きに手を伸ばす少女たちが紡ぐ、世界を魅了した“インターネット・エンジェル”の物語と、画面の向こうにいる“あなた”の物語が、ここに幕を開ける――",
+    "name": "NEEDY GIRL OVERDOSE",
+    "name_cn": "主播女孩重度依赖",
+    "tags": [
+        {
+            "name": "游戏改",
+            "count": 825,
+            "total_cont": 0
+        },
+        {
+            "name": "2026年4月",
+            "count": 727,
+            "total_cont": 0
+        },
+        {
+            "name": "YostarPictures",
+            "count": 498,
+            "total_cont": 0
+        },
+        {
+            "name": "TV",
+            "count": 485,
+            "total_cont": 0
+        },
+        {
+            "name": "2026",
+            "count": 333,
+            "total_cont": 0
+        },
+        {
+            "name": "病娇",
+            "count": 295,
+            "total_cont": 0
+        },
+        {
+            "name": "日本",
+            "count": 248,
+            "total_cont": 0
+        },
+        {
+            "name": "GAL改",
+            "count": 239,
+            "total_cont": 0
+        },
+        {
+            "name": "原创",
+            "count": 193,
+            "total_cont": 0
+        },
+        {
+            "name": "意识流",
+            "count": 136,
+            "total_cont": 0
+        },
+        {
+            "name": "中岛政兴",
+            "count": 111,
+            "total_cont": 0
+        },
+        {
+            "name": "无法预测的命运之舞台",
+            "count": 65,
+            "total_cont": 0
+        },
+        {
+            "name": "2026年",
+            "count": 62,
+            "total_cont": 0
+        },
+        {
+            "name": "电波",
+            "count": 42,
+            "total_cont": 0
+        },
+        {
+            "name": "奇幻",
+            "count": 32,
+            "total_cont": 0
+        },
+        {
+            "name": "剧集",
+            "count": 28,
+            "total_cont": 0
+        },
+        {
+            "name": "中島政興",
+            "count": 26,
+            "total_cont": 0
+        },
+        {
+            "name": "TVA",
+            "count": 19,
+            "total_cont": 0
+        },
+        {
+            "name": "偶像",
+            "count": 19,
+            "total_cont": 0
+        },
+        {
+            "name": "音乐",
+            "count": 16,
+            "total_cont": 0
+        },
+        {
+            "name": "川口莉奈",
+            "count": 13,
+            "total_cont": 0
+        },
+        {
+            "name": "椎名樱月",
+            "count": 11,
+            "total_cont": 0
+        },
+        {
+            "name": "永濑安娜",
+            "count": 11,
+            "total_cont": 0
+        },
+        {
+            "name": "主播女孩重度依赖",
+            "count": 6,
+            "total_cont": 0
+        },
+        {
+            "name": "猎奇",
+            "count": 6,
+            "total_cont": 0
+        },
+        {
+            "name": "地雷女",
+            "count": 6,
+            "total_cont": 0
+        },
+        {
+            "name": "未上映",
+            "count": 5,
+            "total_cont": 0
+        },
+        {
+            "name": "地雷系",
+            "count": 5,
+            "total_cont": 0
+        },
+        {
+            "name": "百合",
+            "count": 5,
+            "total_cont": 0
+        },
+        {
+            "name": "网络",
+            "count": 5,
+            "total_cont": 0
+        }
+    ],
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "主播女孩重度依赖"
+        },
+        {
+            "key": "话数",
+            "value": "13"
+        },
+        {
+            "key": "放送开始",
+            "value": "2026年4月4日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期六"
+        },
+        {
+            "key": "官方网站",
+            "value": "https://needygirl-anime.com/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "TOKYO MX"
+        },
+        {
+            "key": "导演",
+            "value": "中島政興"
+        },
+        {
+            "key": "音乐",
+            "value": "Aiobahn +81、原口沙輔、DÉ DÉ MOUSE"
+        },
+        {
+            "key": "Copyright",
+            "value": "©WSS playground / NEEDY GIRL PROJECT"
+        },
+        {
+            "key": "原作",
+            "value": "WSS playground"
+        },
+        {
+            "key": "原案",
+            "value": "にゃるら"
+        },
+        {
+            "key": "监修",
+            "value": "にゃるら"
+        },
+        {
+            "key": "脚本",
+            "value": "にゃるら；各话脚本：本田周、石井風花"
+        },
+        {
+            "key": "分镜",
+            "value": "中島政興、田部伸一、二宮颯"
+        },
+        {
+            "key": "演出",
+            "value": "西村俊亮、田部伸一、二宮颯"
+        },
+        {
+            "key": "人物原案",
+            "value": "お久しぶり"
+        },
+        {
+            "key": "人物设定",
+            "value": "西海賢嗣、武井紅璃、清水海都、中島政興"
+        },
+        {
+            "key": "副人物设定",
+            "value": "中野佑星、簡廷軒、りお(matlity)、アルバクロウ"
+        },
+        {
+            "key": "3DCG",
+            "value": "Yostar Pictures；ライブ・バトルパートCG制作：株式会社CHOTOTU；3DCGアーティスト：丸本薫、酒井夢、片野太輔"
+        },
+        {
+            "key": "CG 制作进行",
+            "value": "常田麻結香(CGマネージャー)"
+        },
+        {
+            "key": "设定",
+            "value": "特技デザイン：テイラーアニメーション"
+        },
+        {
+            "key": "色彩设计",
+            "value": "近藤直登"
+        },
+        {
+            "key": "摄影监督",
+            "value": "呉健弘"
+        },
+        {
+            "key": "音响监督",
+            "value": "郷文裕貴"
+        },
+        {
+            "key": "音效",
+            "value": "上野励"
+        },
+        {
+            "key": "系列构成",
+            "value": "中島政興"
+        },
+        {
+            "key": "美术监督",
+            "value": "林竜太"
+        },
+        {
+            "key": "动画制作",
+            "value": "Yostar Pictures"
+        },
+        {
+            "key": "製作",
+            "value": "NEEDY GIRL PROJECT【Aniplex（三宅将典、清水博之、鳥羽洋典、足立和紀、君島裕喜、岡田武士、谷池侑美、松崎由美子、三輪洋幸、信岡慶子、岡嶋理緒菜）、Yostar（劉雨青、根井悠輔、裴衍杰）、TOKYO MX（買場道雄、神田藍香）、日本BS放送（東真央）、WOWOW（長谷川徳司、二宮崇昌、片桐大輔）】"
+        },
+        {
+            "key": "企画",
+            "value": "岩上敦宏、李衡达、佐藤真紀、羽川寛、遠山宏樹"
+        },
+        {
+            "key": "企画协力",
+            "value": "クオラス（佐藤茂薫、月岡佑紀、佐藤顕、石橋杏果）"
+        },
+        {
+            "key": "制片人",
+            "value": "木村吉隆、紀東輝、照井健、大和田智之、萱場祐介"
+        },
+        {
+            "key": "动画制片人",
+            "value": "林瑛介"
+        },
+        {
+            "key": "制作统括",
+            "value": "稲垣亮祐"
+        },
+        {
+            "key": "制作协力",
+            "value": "石田貴久(OP)、STUDIO MASSKET(2,5,7)、サンブラスアニメーション(2)、MARU ANIMATION(4)、千纸鹤动画(6)、mico.animation(8)、A-1 Pictures/Psyde Kick Studio(10)"
+        },
+        {
+            "key": "助理制片人",
+            "value": "田部井美羽、角田和奏"
+        },
+        {
+            "key": "宣传制片人",
+            "value": "深沢結衣"
+        },
+        {
+            "key": "制作管理",
+            "value": "楊暁羽"
+        },
+        {
+            "key": "设定制作",
+            "value": "常田麻結香、工藤優"
+        },
+        {
+            "key": "设定制作助理",
+            "value": "前屋舗夕"
+        },
+        {
+            "key": "制作进行",
+            "value": "楊暁羽"
+        },
+        {
+            "key": "音乐制作",
+            "value": "Aniplex"
+        },
+        {
+            "key": "音乐制作人",
+            "value": "山内真治"
+        },
+        {
+            "key": "音乐监督",
+            "value": "岡村弦"
+        },
+        {
+            "key": "道具设计",
+            "value": "和田夏樹、稲田琳"
+        },
+        {
+            "key": "音响",
+            "value": "ビットグルーヴプロモーション"
+        },
+        {
+            "key": "音响制作担当",
+            "value": "内村友祐"
+        },
+        {
+            "key": "录音",
+            "value": "平圭介"
+        },
+        {
+            "key": "录音助理",
+            "value": "安居翔貴"
+        },
+        {
+            "key": "录音工作室",
+            "value": "收录工作室：MIT STUDIO"
+        },
+        {
+            "key": "作画监督",
+            "value": "出口敦也、Niii、Lee Joo hyeun(이주현)"
+        },
+        {
+            "key": "作画监督助理",
+            "value": "ウィリアム・シャデン"
+        },
+        {
+            "key": "美术板",
+            "value": "白田真弓、吉田知穂、沈静文、高薄亜実"
+        },
+        {
+            "key": "摄影监督助理",
+            "value": "塩原光貴"
+        },
+        {
+            "key": "特技导演",
+            "value": "鏡洋祐"
+        },
+        {
+            "key": "2D 设计",
+            "value": "osiro、長谷川真結"
+        },
+        {
+            "key": "剪辑",
+            "value": "柳圭介"
+        },
+        {
+            "key": "在线剪辑",
+            "value": "鈴木彩友香、杉山夏菜；在线剪辑工作室：クープ"
+        },
+        {
+            "key": "主题歌演出",
+            "value": "超てんちゃん / キタニタツヤ"
+        },
+        {
+            "key": "主题歌作曲",
+            "value": "Aiobahn +81 / キタニタツヤ"
+        },
+        {
+            "key": "主题歌编曲",
+            "value": "Aiobahn +81 / キタニタツヤ"
+        },
+        {
+            "key": "主题歌作词",
+            "value": "nyalra(にゃるら) / キタニタツヤ"
+        },
+        {
+            "key": "OP・ED 分镜",
+            "value": "[ディレクター・分镜]山口将(Ydot.inc) / Moaang"
+        },
+        {
+            "key": "OP・ED 演出",
+            "value": "[ディレクター]山口将(Ydot.inc) / Moaang"
+        }
+    ],
+    "rating": {
+        "rank": 9735,
+        "total": 1790,
+        "count": {
+            "1": 78,
+            "2": 77,
+            "3": 174,
+            "4": 362,
+            "5": 400,
+            "6": 387,
+            "7": 176,
+            "8": 80,
+            "9": 18,
+            "10": 38
+        },
+        "score": 5
+    },
+    "total_episodes": 13,
+    "collection": {
+        "on_hold": 340,
+        "dropped": 1063,
+        "wish": 1899,
+        "collect": 328,
+        "doing": 5497
+    },
+    "id": 606263,
+    "eps": 13,
+    "meta_tags": [
+        "TV",
+        "日本",
+        "游戏改"
+    ],
+    "volumes": 0,
+    "series": false,
+    "locked": false,
+    "nsfw": false,
+    "type": 2,
+    "main_character_ids": [
+        91297,
+        94414,
+        197931
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/4f/25/91297_crt_8CjVR.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/4f/25/91297_crt_8CjVR.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/4f/25/91297_crt_8CjVR.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4f/25/91297_crt_8CjVR.jpg"
+            },
+            "name": "あめちゃん",
+            "summary": "看上去老实乖巧，但很容易得意忘形任性起来，迫切想要得到认可的女孩。性格恶劣。喜欢的东西是阿P以及精神药物。\r\nWhile she may look somewhat low-key and quiet, she’s actually a ridiculously selfish and vapid girl with a tendency to get carried away and a desperate need for approval. She’s, well… kind of a garbage person. Likes: Her S.O./producer, “P-chan”; psychotropics.\r\n\r\n网络天使。糖糖开直播时的变装。装作性格乖巧的样子。很轻易就会向宅男们谄媚。\r\nAn “internet angel.” Ame-chan’s alter ego, used while streaming. Pretends to be really nice and sweet. Constantly flirts with otaku types.",
+            "relation": "主角",
+            "actors": [],
+            "type": 1,
+            "id": 91297
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/6a/b9/94414_crt_3LLLe.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/6a/b9/94414_crt_3LLLe.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/6a/b9/94414_crt_3LLLe.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6a/b9/94414_crt_3LLLe.jpg"
+            },
+            "name": "超絶最かわてんしちゃん",
+            "summary": "超絶最かわてんしちゃん、通称「超てんちゃん」。\r\n配信や各種コラボなど彼女の活躍は多岐にわたり、幅広い世代から支持されている。\r\n令和のインターネットを救済する天使として、みんなをいつも見守っている。\r\n\r\n网络天使。糖糖开直播时的变装。装作性格乖巧的样子。很轻易就会向宅男们谄媚。\r\nAn “internet angel.” Ame-chan’s alter ego, used while streaming. Pretends to be really nice and sweet. Constantly flirts with otaku types.",
+            "relation": "主角",
+            "actors": [],
+            "type": 1,
+            "id": 94414
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c8/5f/197931_crt_XHp4p.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c8/5f/197931_crt_XHp4p.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/c8/5f/197931_crt_XHp4p.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c8/5f/197931_crt_XHp4p.jpg"
+            },
+            "name": "パープル・ロリポップ",
+            "summary": "カラマーゾフのリーダー。猛毒電波少女。不敵な笑みをたたえる、新たな配信者。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/48/1f/41365_prsn_F0RRZ.jpg?r=1723864344",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/48/1f/41365_prsn_F0RRZ.jpg?r=1723864344",
+                        "large": "https://lain.bgm.tv/pic/crt/l/48/1f/41365_prsn_F0RRZ.jpg?r=1723864344",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/48/1f/41365_prsn_F0RRZ.jpg?r=1723864344"
+                    },
+                    "name": "川口莉奈",
+                    "short_summary": "青二プロダクション 所属\r\n\r\n出身地：埼玉県\r\n趣味：歌唱、イラスト、MMD、ダンス\r\n特技：紅茶を淹れ方、ドラム、口笛・歯笛",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 41365,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 197931
+        }
+    ]
+}

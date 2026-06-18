@@ -1,7 +1,7 @@
 {
     "id": 1976,
     "name": "精灵守护者",
-    "image_path": "data/images/anime/1976.jpg",
+    "image_path": "data\\images\\anime\\1976.jpg",
     "points": 7.9,
     "cost": 2,
     "rarity": "R",

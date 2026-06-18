@@ -1,0 +1,61 @@
+{
+    "birth_mon": 3,
+    "gender": "male",
+    "birth_day": 18,
+    "birth_year": null,
+    "blood_type": 4,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0d/91/35225_crt_nhr1j.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/0d/91/35225_crt_nhr1j.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/0d/91/35225_crt_nhr1j.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0d/91/35225_crt_nhr1j.jpg"
+    },
+    "summary": "本作の語り部。旭川市在住の高校生で、平凡ながらもそれなりに真面目な人生を過ごしていると自負している。ある切っ掛けで櫻子と知人となり、以来彼女に振り回されながらも事件解決に協力するように。母はアパート経営を務めており、父は早くに亡くしている。",
+    "name": "館脇正太郎",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "馆胁正太郎"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "館脇 正太郎"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "たてわき しょうたろう"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Tatewaki Shotaro"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "3月18日"
+        },
+        {
+            "key": "血型",
+            "value": "O"
+        }
+    ],
+    "stat": {
+        "comments": 5,
+        "collects": 9
+    },
+    "id": 35225,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        126461
+    ]
+}

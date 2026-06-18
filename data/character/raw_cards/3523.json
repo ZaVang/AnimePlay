@@ -1,0 +1,45 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/93/93/3523_crt_anidb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/93/93/3523_crt_anidb.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/93/93/3523_crt_anidb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/93/93/3523_crt_anidb.jpg"
+    },
+    "summary": "輝日南高校２年Ａ組。映画研究部に所属。相原一輝・菜々兄妹および水澤摩央とは幼馴染み。内向的で優柔不断な性格だが、自分では認めていないフシがある。小説家志望だが、具体的な勉強をしているわけではない。１年の時から同じクラスの星乃結美が気になっている。フランスから帰ってきた摩央は光一の家に居候することになり、奔放な性格の摩央を意識しつつも、仲の良い姉弟のような関係に居心地の良さを感じている。",
+    "name": "真田光一",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "真田光一"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Sanada Kouichi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 0,
+        "collects": 1
+    },
+    "id": 3523,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        308
+    ]
+}

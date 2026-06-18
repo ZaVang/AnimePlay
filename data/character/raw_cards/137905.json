@@ -1,0 +1,40 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/27/83/137905_crt_uNVuv.jpg?r=1711178102",
+        "grid": "https://lain.bgm.tv/pic/crt/g/27/83/137905_crt_uNVuv.jpg?r=1711178102",
+        "large": "https://lain.bgm.tv/pic/crt/l/27/83/137905_crt_uNVuv.jpg?r=1711178102",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/27/83/137905_crt_uNVuv.jpg?r=1711178102"
+    },
+    "summary": "かつて不死の王国に君臨した伝説の魔王。\r\n勇者に討伐され、滅びを迎えた後、500年の時を経て、統合暦2099年――電子荒廃都市・新宿市に再臨を遂げる。",
+    "name": "ベルトール＝ベルベット・ベールシュバルト",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "贝尔托尔·贝尔维特·贝尔修瓦特"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 21,
+        "collects": 25
+    },
+    "id": 137905,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        425991
+    ]
+}

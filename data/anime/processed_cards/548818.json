@@ -1,0 +1,90 @@
+{
+    "id": 548818,
+    "name": "金牌得主 第二季",
+    "image_path": "data\\images\\anime\\548818.jpg",
+    "points": 7.7,
+    "cost": 2,
+    "rarity": "R",
+    "description": "怀揣着各自对花样滑冰的执念和梦想，结束祈与明浦路司以「选手与教练」的身份相遇。\r\n祈以成为荣耀的「金牌得主」为目标，在名港杯与西日本中小学生大赛中取得名次，通过等级测试后，终于获得了与「天才少女」狼嵜光同级竞技的资格。\r\n接下来的目标，是决定了全日本锦标赛参赛名额的中部区域大赛。\r\n在众多新对手的包围中，祈将证明自己才是最耀眼的花滑选手──！\r\n\r\n\r\n\r\n[简介原文]\r\nそれぞれにフィギュアスケートへの強い夢を抱き、\r\n「選手とコーチ」として巡り会った結束いのりと明浦路司。\r\n\r\n栄光の“メダリスト”を目指すいのりは\r\n名港杯と西日本小中学生大会で実績を積み、バッジテストを経て、\r\nついに「天才少女」狼嵜光と同じランクで競い合う資格を手にする。\r\n\r\n次の目標は、全日本選手権への出場をかけた中部ブロック大会。\r\n\r\n新たなライバルたちの中で、いのりは自らが一番に輝けることを証明する──！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 9,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "运动",
+        "漫画改"
+    ],
+    "date": "2026-01-24",
+    "rating_rank": 480,
+    "rating_score": 7.7,
+    "rating_total": 6085,
+    "main_character_ids": [
+        92177,
+        112477
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ca/5e/92177_crt_5dpC3.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ca/5e/92177_crt_5dpC3.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/ca/5e/92177_crt_5dpC3.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ca/5e/92177_crt_5dpC3.jpg"
+            },
+            "name": "結束いのり",
+            "summary": "五年级。最喜欢花滑。来自Lux东山花滑俱乐部。虽在校园生活中有很多不得意之处，但一到滑冰场上便会脱胎换骨。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/96/eb/19808_prsn_luu17.jpg?r=1738769269",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/96/eb/19808_prsn_luu17.jpg?r=1738769269",
+                        "large": "https://lain.bgm.tv/pic/crt/l/96/eb/19808_prsn_luu17.jpg?r=1738769269",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/96/eb/19808_prsn_luu17.jpg?r=1738769269"
+                    },
+                    "name": "春瀬なつみ",
+                    "short_summary": "趣味・特技 読書・映画鑑賞・音楽鑑賞・フィギュアスケート観戦\r\n\r\n平成26年：プロ・フィット所属\r\n平成27年：フリーランスの期間を経る\r\n平成30年：マウスプロモーション所属",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 19808,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 92177
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/4c/5e/112477_crt_rzbY1.jpg?r=1735227493",
+                "grid": "https://lain.bgm.tv/pic/crt/g/4c/5e/112477_crt_rzbY1.jpg?r=1735227493",
+                "large": "https://lain.bgm.tv/pic/crt/l/4c/5e/112477_crt_rzbY1.jpg?r=1735227493",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4c/5e/112477_crt_rzbY1.jpg?r=1735227493"
+            },
+            "name": "明浦路司",
+            "summary": "26岁。虽曾以参加冰上表演赛为目标，但在遇到祈后决心转行成为教练。有全国赛的冰舞出场经验。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fc/12/32681_prsn_0Sz5C.jpg?r=1734791596",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/fc/12/32681_prsn_0Sz5C.jpg?r=1734791596",
+                        "large": "https://lain.bgm.tv/pic/crt/l/fc/12/32681_prsn_0Sz5C.jpg?r=1734791596",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fc/12/32681_prsn_0Sz5C.jpg?r=1734791596"
+                    },
+                    "name": "大塚剛央",
+                    "short_summary": "大塚 剛央（おおつか たけお、1992年10月19日 - ）は、日本の男性声優。東京都出身。\r\n\r\n日本ナレーション演技研究所を経て、アイムエンタープライズに所属。\r\n2018年8月公開の劇場版アニメ『詩季織々』の「上海恋」にてリモ役でアニメ初主演。\r\n2018年10月放送のテレビアニメ『風が強く吹いている』にて蔵原走役でテレビアニメ初主演を務める。\r\n\r\n交友関係としては、天﨑滉平とプライベートでも仲が良いとWEBラジオ「僕たちもう、フレンドですよね？」のアカウントで公言している。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 32681,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 112477
+        }
+    ]
+}

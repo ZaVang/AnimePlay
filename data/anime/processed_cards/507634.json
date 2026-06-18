@@ -1,0 +1,123 @@
+{
+    "id": 507634,
+    "name": "弹珠汽水瓶里的千岁同学",
+    "image_path": "data\\images\\anime\\507634.jpg",
+    "points": 4.1,
+    "cost": 1,
+    "rarity": "N",
+    "description": "千岁朔就读县内数一数二的升学名校，藤志高中，在学业、运动、人际关系等各方面都很出色，无论好坏，他总是吸引众人的目光，身边也聚集了人人称羨，光彩夺目的伙伴。\r\n迎接新班级的二年级春天，老师拜托朔去帮助一位躲在家里的学生重回校园。\r\n以福井为舞台，编织出一段无比青涩、无比耀眼的感性青春故事！\r\n\r\n\r\n\r\n[简介原文]\r\n県内随一の進学校・藤志高校に通う千歳朔。勉強、運動、コミュ力すべてがハイレベルで、 良くも悪くも注目を集める彼の周りには、 誰もが羨む華やかな仲間たちが集っていた。\r\n新たなクラスで迎えた2年生の春。朔は、ひとりの引きこもり生徒の更生を頼まれることに——。\r\n福井を舞台に紡がれる、どこまでも青く、どこまでも眩しい、エモーショナル青春ストーリー！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "校园",
+        "TV",
+        "恋爱",
+        "日本",
+        "小说改"
+    ],
+    "date": "2025-10-07",
+    "rating_rank": 10031,
+    "rating_score": 4.1,
+    "rating_total": 4301,
+    "main_character_ids": [
+        107082,
+        107083,
+        107084
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/bc/30/107082_crt_32XbZ.jpg?r=1755796776",
+                "grid": "https://lain.bgm.tv/pic/crt/g/bc/30/107082_crt_32XbZ.jpg?r=1755796776",
+                "large": "https://lain.bgm.tv/pic/crt/l/bc/30/107082_crt_32XbZ.jpg?r=1755796776",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bc/30/107082_crt_32XbZ.jpg?r=1755796776"
+            },
+            "name": "柊夕湖",
+            "summary": "「いえーい、またいっしょ～。朔もうれしい？」\r\n天然姫オーラのリア充美少女。バストはE。\r\n朔の正妻を自称し、彼への好意を隠そうとしない。\r\n男子人気は校内で１・２を争うほど。\r\n\r\n藤志高校2年生で朔のクラスメイト。天然姫オーラを放つ華やかな美少女で、周囲からは朔の\"正妻ポジション\"とも目される存在。本人も朔のことが大好きで、常に彼を優しく支えようとしている。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7e/2b/27559_prsn_3lWOx.jpg?r=1726923710",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7e/2b/27559_prsn_3lWOx.jpg?r=1726923710",
+                        "large": "https://lain.bgm.tv/pic/crt/l/7e/2b/27559_prsn_3lWOx.jpg?r=1726923710",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7e/2b/27559_prsn_3lWOx.jpg?r=1726923710"
+                    },
+                    "name": "石見舞菜香",
+                    "short_summary": "日本女性声优。出生于埼玉县。所属事务所为Raccoon Dog（ラクーンドッグ）。\r\n毕业于Pro Fit声优培训学校。\r\n\r\n初中时期观看《我们仍未知道那天所看见的花的名字。》（あの日見た花の名前を僕達はまだ知らない。）时，被茅野爱衣的演技深深打动，萌生了\"想用声音感动人心\"的愿望，从此立志成为声优。而让她初识声优职业的契机是《无头骑士异闻录》（デュラララ!!）。\r\n\r\n因自觉发音不够清晰，石见认为必须比他人更早开始专业训练才能成为职业声优。为此她向父亲立下\"若不同意自己就读声优培训学校就拒绝升学高中\"的宣言，最终成功说服家人。\r\n\r\n2016年，在《未闻花名》编剧冈田麿里首部执导作品《朝花夕誓——于离别之朝束起约定之花》（さよならの朝に約束の花をかざろう）中，石见被选拔担任女主角玛奇亚的配音。该作中更实现了与饰演玛奇亚挚友蕾莉亚的茅野爱衣同台演出。\r\n\r\n兴趣爱好是散步、读书，特长是演奏大号（チューバ）和动耳神功。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 27559,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 107082
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/dc/c3/107083_crt_F9Rgg.jpg?r=1755797148",
+                "grid": "https://lain.bgm.tv/pic/crt/g/dc/c3/107083_crt_F9Rgg.jpg?r=1755797148",
+                "large": "https://lain.bgm.tv/pic/crt/l/dc/c3/107083_crt_F9Rgg.jpg?r=1755797148",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dc/c3/107083_crt_F9Rgg.jpg?r=1755797148"
+            },
+            "name": "内田優空",
+            "summary": "「ほら、朔くんかっこいいしモテるから、やっかんだりする人も多いんだよ」\r\n努力型の後天的リア充。バストはD。\r\n「正妻」を自認する夕湖に対し、朔の「妾（めかけ）」扱いされることもしばしば。\r\n元々は地味なほうだったが、高校１年生の途中から朔たちと行動を共にするように。\r\n\r\n温和で気遣い上手な藤志高校2年生。大和撫子のような落ち着いた雰囲気を持ち、周囲の空気をさりげなく和らげる縁の下の力持ち。家庭的で料理上手な一面もあり、みんなに頼られる存在。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f3/83/40794_prsn_4cu5z.jpg?r=1731846554",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f3/83/40794_prsn_4cu5z.jpg?r=1731846554",
+                        "large": "https://lain.bgm.tv/pic/crt/l/f3/83/40794_prsn_4cu5z.jpg?r=1731846554",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f3/83/40794_prsn_4cu5z.jpg?r=1731846554"
+                    },
+                    "name": "羊宮妃那",
+                    "short_summary": "資格・免許：剣道初段\r\n趣味：描画、読書、映画鑑賞、音楽鑑賞、アコースティックギター弾き語り\r\n特技：ダンス\r\n方言：関西弁",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 40794,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 107083
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ab/fd/107084_crt_6bxxu.jpg?r=1755797434",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ab/fd/107084_crt_6bxxu.jpg?r=1755797434",
+                "large": "https://lain.bgm.tv/pic/crt/l/ab/fd/107084_crt_6bxxu.jpg?r=1755797434",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ab/fd/107084_crt_6bxxu.jpg?r=1755797434"
+            },
+            "name": "青海陽",
+            "summary": "「部活で汗かいたあとに、きっちりネクタイなんて締められますかっての」\r\nバスケ部のエースをつとめるスポーティ少女。バストはB。\r\n小柄で運動神経バツグン。性格は竹を割ったようにまっすぐさっぱりしている。\r\n誰に対しても物怖じせず、コミュ力も高いため、自然とトップカーストに属している。\r\n\r\n藤志高校2年生の体育会系女子。小さな身体にエネルギーを詰め込んだように快活で、クラスをいつも明るく照らすムードメーカー。バスケ部ではエースとしてコートを駆け回り、悠月とのコンビは折り紙付き。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/80/86/6090_prsn_9zFG9.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/80/86/6090_prsn_9zFG9.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/80/86/6090_prsn_9zFG9.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/80/86/6090_prsn_9zFG9.jpg"
+                    },
+                    "name": "大久保瑠美",
+                    "short_summary": "1989年、両親の実家である愛媛県で生まれ、埼玉県で育つ。\r\n2009年、専門学校東京アナウンス学院放送声優科在籍時に「第3回 81オーディション」に参加し、優秀賞を受賞。テレビアニメ『ささめきこと』でデビュー。\r\n2011年1月には、テレビアニメ『フリージング』で初のレギュラーを獲得。4月には『はっぴーカッピ』でテレビアニメ初主演を果たす。\r\n2013年3月1日、第7回声優アワード新人女優賞を受賞。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 6090,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 107084
+        }
+    ]
+}

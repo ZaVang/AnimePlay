@@ -1,0 +1,65 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bc/30/107082_crt_32XbZ.jpg?r=1755796776",
+        "grid": "https://lain.bgm.tv/pic/crt/g/bc/30/107082_crt_32XbZ.jpg?r=1755796776",
+        "large": "https://lain.bgm.tv/pic/crt/l/bc/30/107082_crt_32XbZ.jpg?r=1755796776",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bc/30/107082_crt_32XbZ.jpg?r=1755796776"
+    },
+    "summary": "「いえーい、またいっしょ～。朔もうれしい？」\r\n天然姫オーラのリア充美少女。バストはE。\r\n朔の正妻を自称し、彼への好意を隠そうとしない。\r\n男子人気は校内で１・２を争うほど。\r\n\r\n藤志高校2年生で朔のクラスメイト。天然姫オーラを放つ華やかな美少女で、周囲からは朔の\"正妻ポジション\"とも目される存在。本人も朔のことが大好きで、常に彼を優しく支えようとしている。",
+    "name": "柊夕湖",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "柊夕湖"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "柊 夕湖"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ひいらぎ ゆうこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Hiiragi Yuuko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "157cm"
+        },
+        {
+            "key": "BWH",
+            "value": "E/?/?"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://chiramune.com/chara/02.html"
+        }
+    ],
+    "stat": {
+        "comments": 62,
+        "collects": 94
+    },
+    "id": 107082,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        507634
+    ]
+}

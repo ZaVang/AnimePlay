@@ -1,0 +1,126 @@
+{
+    "id": 425591,
+    "name": "不死少女 杀人笑剧",
+    "image_path": "data\\images\\anime\\425591.jpg",
+    "points": 7.2,
+    "cost": 1,
+    "rarity": "N",
+    "description": "吸血鬼及人造人、怪盗、狼人、开膛手，还有名侦探。异形蠢动的十九世纪末欧洲，人类亲和派的吸血鬼遭到银桩贯穿虐杀死亡。找来解决此案的，是专门处理人类避之唯恐不及的「怪物案件」的专门侦探轮堂鸦夜，以及带着奇怪鸟笼的男人真打津轻。他们从留存的线索和怪物才具备的特性导出推理。充满谜团宛如噩梦的笑剧，在此开幕！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "悬疑",
+        "TV",
+        "日本",
+        "推理",
+        "小说改"
+    ],
+    "date": "2023-07-05",
+    "rating_rank": 1666,
+    "rating_score": 7.2,
+    "rating_total": 6022,
+    "main_character_ids": [
+        126825,
+        126866,
+        126867
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a9/4c/126825_crt_oP1S8.jpg?r=1683436670",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a9/4c/126825_crt_oP1S8.jpg?r=1683436670",
+                "large": "https://lain.bgm.tv/pic/crt/l/a9/4c/126825_crt_oP1S8.jpg?r=1683436670",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a9/4c/126825_crt_oP1S8.jpg?r=1683436670"
+            },
+            "name": "輪堂鴉夜",
+            "summary": "怪物専門の探偵。\r\nこの世に一人しかいないと言われる”不死”で\r\n九百四十七年間生きている。\r\nある日、襲撃を受け、\r\n奪われた体を取り戻すためヨーロッパを旅することに。\r\n一人では動くことが出来ないため、\r\n普段は鳥籠に入って持ち運ばれている。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/dd/f8/9560_prsn_X7Z7F.jpg?r=1688189964",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/dd/f8/9560_prsn_X7Z7F.jpg?r=1688189964",
+                        "large": "https://lain.bgm.tv/pic/crt/l/dd/f8/9560_prsn_X7Z7F.jpg?r=1688189964",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dd/f8/9560_prsn_X7Z7F.jpg?r=1688189964"
+                    },
+                    "name": "黒沢ともよ",
+                    "short_summary": "黒沢 ともよ（くろさわ ともよ、1996年4月10日 - ）は、日本の女性女優、声優、歌手。マウスプロモーション所属。埼玉県秩父市出身。\r\n\r\n3歳頃から演技の勉強を始め、2003年頃から子役としてテレビドラマ、CM、舞台へ出演。\r\n2008年よりSound Horizonのサポートメンバーとして参加。6th Story CD『Moira』のPV「冥王 -Θανατος-」、及びコンサート「Sound Horizon 6th Story Concert Moira 〜其れでも、お征きなさい仔等よ〜」に幼少期アルテミシア役で出演。いずれも発声無しの子役（モーションアクター）としての出演であったが、2010年の7th Story CD『Märchen』ではボーカル・ボイスアクターなども務めている。\r\n2010年、劇場アニメ『宇宙ショーへようこそ』の小山夏紀役にて声優デビュー。その後、テレビアニメ等、活躍の幅を広げている。\r\n東京児童劇団を退団後、2012年よりマウスプロモーションに所属。",
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 9560,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 126825
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d7/15/126866_crt_v2a73.jpg?r=1683436736",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d7/15/126866_crt_v2a73.jpg?r=1683436736",
+                "large": "https://lain.bgm.tv/pic/crt/l/d7/15/126866_crt_v2a73.jpg?r=1683436736",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d7/15/126866_crt_v2a73.jpg?r=1683436736"
+            },
+            "name": "真打津軽",
+            "summary": "半人半鬼の青年で鴉夜の助手。\r\n“鬼殺し”として見世物小屋で働いていた。\r\n飄々とした性格で、鴉夜を師匠と呼び、\r\n時折二人で軽快な会話を繰り広げる。\r\n“鬼”の特性を持っているので戦闘能力が非常に高い。\r\n完全に鬼になってしまわないように、“不死”である鴉夜の唾液を定期的に摂取することで、\r\n進行を食い止めている。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c7/20/19713_prsn_f91Y6.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c7/20/19713_prsn_f91Y6.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/c7/20/19713_prsn_f91Y6.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c7/20/19713_prsn_f91Y6.jpg"
+                    },
+                    "name": "八代拓",
+                    "short_summary": "八代 拓（やしろ たく、1993年1月6日 - ）は日本の男性声優。\r\n岩手県出身。日本ナレーション演技研究所出身。ヴィムス所属。\r\n\r\n趣味・特技は野球観戦、ヨーロッパサッカー観戦、バドミントン、フットサル。\r\n野球は小学生時代に習い、バドミントンは中学・高校時代6年間通してやっていた。\r\n左利き。1日6食食べたことがあるほど、たくさん食べる方。\r\n雷が恐いという一面がある。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 19713,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 126866
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/27/9c/126867_crt_DKdqX.jpg?r=1683436858",
+                "grid": "https://lain.bgm.tv/pic/crt/g/27/9c/126867_crt_DKdqX.jpg?r=1683436858",
+                "large": "https://lain.bgm.tv/pic/crt/l/27/9c/126867_crt_DKdqX.jpg?r=1683436858",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/27/9c/126867_crt_DKdqX.jpg?r=1683436858"
+            },
+            "name": "馳井静句",
+            "summary": "鴉夜に仕えるメイド。一族の家訓として生まれた時から鴉夜に仕えている。\r\n鴉夜に対する忠誠心は高く、\r\n普段はクールで寡黙だが、\r\n津軽のことは邪険に扱っている。\r\n銃と刀を合体させた特殊な武器“絶景”を持ち歩く。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e2/e6/20631_prsn_bTC2c.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/e2/e6/20631_prsn_bTC2c.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/e2/e6/20631_prsn_bTC2c.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e2/e6/20631_prsn_bTC2c.jpg"
+                    },
+                    "name": "小市眞琴",
+                    "short_summary": "小市真琴是日本的女性声优、舞台演员、编舞家，东京都出身。隶属于stay luck。",
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 20631,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 126867
+        }
+    ]
+}

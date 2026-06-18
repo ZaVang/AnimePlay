@@ -1,0 +1,69 @@
+{
+    "birth_mon": 11,
+    "gender": "male",
+    "birth_day": 11,
+    "birth_year": null,
+    "blood_type": 4,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/96/1a/119943_crt_0tHXK.jpg?r=1675669047",
+        "grid": "https://lain.bgm.tv/pic/crt/g/96/1a/119943_crt_0tHXK.jpg?r=1675669047",
+        "large": "https://lain.bgm.tv/pic/crt/l/96/1a/119943_crt_0tHXK.jpg?r=1675669047",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/96/1a/119943_crt_0tHXK.jpg?r=1675669047"
+    },
+    "summary": "魔法を使えないレアな少年。\r\n鍛え上げた筋力で全ての魔法を粉砕するが、\r\n常識に疎く何かとやらかしがち。シュークリームが大好き。",
+    "name": "マッシュ・バーンデッド",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "马修·班迪德"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Mash Burnedead"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "11月11日"
+        },
+        {
+            "key": "血型",
+            "value": "O"
+        },
+        {
+            "key": "身高",
+            "value": "171cm"
+        },
+        {
+            "key": "体重",
+            "value": "66.5kg"
+        },
+        {
+            "key": "足のサイズ",
+            "value": "26.5cm"
+        },
+        {
+            "key": "苦手なこと",
+            "value": "扉の開け閉め"
+        }
+    ],
+    "stat": {
+        "comments": 13,
+        "collects": 12
+    },
+    "id": 119943,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        389571
+    ]
+}

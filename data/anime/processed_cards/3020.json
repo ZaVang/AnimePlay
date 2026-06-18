@@ -1,7 +1,7 @@
 {
     "id": 3020,
     "name": "精灵宝可梦 超世代",
-    "image_path": "data/images/anime/3020.jpg",
+    "image_path": "data\\images\\anime\\3020.jpg",
     "points": 7.5,
     "cost": 1,
     "rarity": "N",

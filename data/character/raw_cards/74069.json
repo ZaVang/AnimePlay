@@ -1,0 +1,73 @@
+{
+    "birth_mon": 5,
+    "gender": "female",
+    "birth_day": 13,
+    "birth_year": 2003,
+    "blood_type": 4,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4b/d1/74069_crt_CyyyC.jpg?r=1576658633",
+        "grid": "https://lain.bgm.tv/pic/crt/g/4b/d1/74069_crt_CyyyC.jpg?r=1576658633",
+        "large": "https://lain.bgm.tv/pic/crt/l/4b/d1/74069_crt_CyyyC.jpg?r=1576658633",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4b/d1/74069_crt_CyyyC.jpg?r=1576658633"
+    },
+    "summary": "とある秘密を抱えてアニマシティへ逃げ込んできた女子高生のタヌキ獣人。\r\nコミュ力が高く、明るく快活な性格。",
+    "name": "影森みちる",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "影森满"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "影森 みちる"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "かげもり みちる"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Michiru Kagemori"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2003年5月13日"
+        },
+        {
+            "key": "血型",
+            "value": "O"
+        },
+        {
+            "key": "身高",
+            "value": "158cm"
+        },
+        {
+            "key": "体重",
+            "value": "48kg"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://bna-anime.com/character/01.php"
+        }
+    ],
+    "stat": {
+        "comments": 28,
+        "collects": 55
+    },
+    "id": 74069,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        285905
+    ]
+}

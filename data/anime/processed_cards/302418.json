@@ -1,0 +1,124 @@
+{
+    "id": 302418,
+    "name": "无能的奈奈",
+    "image_path": "data\\images\\anime\\302418.jpg",
+    "points": 7,
+    "cost": 1,
+    "rarity": "N",
+    "description": "“我能够读懂人心！但是我有点不太会看气氛！请多关照！”\r\n位于孤岛上的奇妙学园。出现在学生中岛七男面前的是转校生柊奈奈。奇妙学园是拥有各种能力的少年少女所聚集的设施。有能够操纵火焰或冰的人、有能在空中自由飞翔的人、有能将空气化为利刃实施攻击的人。学生们为和被称为“人类之敌”的怪物战斗而接受训练。但是，这座岛上却隐藏了很多秘密，可怕的陷阱开始露出獠牙。连续发生了怪异事件。潜藏在学园中的杀人鬼。一个又一个消失的同学们。超出预料的发展。竭尽智力和能力极限的头脑战。以及友情。在激烈戏剧点缀之下，与“人类之敌”的死斗开始！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "校园",
+        "悬疑",
+        "TV",
+        "日本",
+        "漫画改"
+    ],
+    "date": "2020-10-04",
+    "rating_rank": 2737,
+    "rating_score": 7,
+    "rating_total": 6655,
+    "main_character_ids": [
+        68715,
+        68717,
+        68718
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/3f/8f/68715_crt_2w5dd.jpg?r=1610176430",
+                "grid": "https://lain.bgm.tv/pic/crt/g/3f/8f/68715_crt_2w5dd.jpg?r=1610176430",
+                "large": "https://lain.bgm.tv/pic/crt/l/3f/8f/68715_crt_2w5dd.jpg?r=1610176430",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3f/8f/68715_crt_2w5dd.jpg?r=1610176430"
+            },
+            "name": "柊ナナ",
+            "summary": "転校生の少女。自称「人の心が読めますが、空気は読めません！」。\r\n友だち思いで愛情深く、責任感が強くて礼儀正しい美少女。\r\n基本はいつもニコニコ。物腰はお気楽、能天気で、けっこうドジも多い。だが観察力、推理力にすぐれ、「人類の敵」との戦いでは、大いに力を発揮する。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/80/86/6090_prsn_9zFG9.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/80/86/6090_prsn_9zFG9.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/80/86/6090_prsn_9zFG9.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/80/86/6090_prsn_9zFG9.jpg"
+                    },
+                    "name": "大久保瑠美",
+                    "short_summary": "1989年、両親の実家である愛媛県で生まれ、埼玉県で育つ。\r\n2009年、専門学校東京アナウンス学院放送声優科在籍時に「第3回 81オーディション」に参加し、優秀賞を受賞。テレビアニメ『ささめきこと』でデビュー。\r\n2011年1月には、テレビアニメ『フリージング』で初のレギュラーを獲得。4月には『はっぴーカッピ』でテレビアニメ初主演を果たす。\r\n2013年3月1日、第7回声優アワード新人女優賞を受賞。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 6090,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 68715
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c9/1f/68717_crt_7mBZ2.jpg?r=1600500310",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c9/1f/68717_crt_7mBZ2.jpg?r=1600500310",
+                "large": "https://lain.bgm.tv/pic/crt/l/c9/1f/68717_crt_7mBZ2.jpg?r=1600500310",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c9/1f/68717_crt_7mBZ2.jpg?r=1600500310"
+            },
+            "name": "小野寺キョウヤ",
+            "summary": "柊ナナと同じ日に転校してきた能力者の少年。無愛想で無遠慮。自分の能力についても簡単には明かさない、用心深い性格。謎の多い存在。\r\nナナに劣らない観察力、推理力を持ち、また非常な読書家で博識。\r\n学園で頻発するさまざまな事件の調査にたずさわるうち、ナナとは協力者であると同時にライバルのような関係になってゆく。演歌とアイドルソングが好き。友だち募集中。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7a/78/4724_prsn_7TvWV.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7a/78/4724_prsn_7TvWV.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/7a/78/4724_prsn_7TvWV.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7a/78/4724_prsn_7TvWV.jpg"
+                    },
+                    "name": "中村悠一",
+                    "short_summary": "爱称是ゆうきゃん，由铃村健一命名。英文标记法为‘yuu-kyan’\r\n与声优的杉田智和的私交良好，是在声优界著名的好友。\r\n兴趣是玩游戏、看电影等。\r\n不喜欢吃拉面。喜欢的食物是肉、奶酪、甜食。\r\n2020年10月1日，宣布从Sigma Seven移籍至INTENTION。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 4724,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 68717
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/8e/bd/68718_crt_8ZUE9.jpg?r=1609449781",
+                "grid": "https://lain.bgm.tv/pic/crt/g/8e/bd/68718_crt_8ZUE9.jpg?r=1609449781",
+                "large": "https://lain.bgm.tv/pic/crt/l/8e/bd/68718_crt_8ZUE9.jpg?r=1609449781",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8e/bd/68718_crt_8ZUE9.jpg?r=1609449781"
+            },
+            "name": "犬飼ミチル",
+            "summary": "ナナオやナナたちのクラスメート。小柄でふわふわした髪の女の子。ヒーリング能力の持ち主。他人の怪我をなめて、傷をいやすことができる。\r\n素直で心やさしく、おとなしめの性格。\r\nそのためクラスメートから、からかいやいじりの対象にされることも多い。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d0/9c/4145_prsn_66APz.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d0/9c/4145_prsn_66APz.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/d0/9c/4145_prsn_66APz.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d0/9c/4145_prsn_66APz.jpg"
+                    },
+                    "name": "中原麻衣",
+                    "short_summary": "小时候经常搬家，但仍能清楚记得什么时期居住在什么地方。从幼儿直至中学三年级第2学期约10年，都是跟祖母住在爱媛县西宇和郡伊方町。因此在出演‘アイドル大阪環状線’时，表示出自己对爱媛丰富的知识。\r\n受到《[url=https://chii.in/subject/80237]七海的堤可[/url]》的影响，从小学5年级就立志成为配音演员，初中毕业时向父母表示“希望能进入声优训练学校”。后来在父母的劝告下高中毕业，18岁时一人从九州搬至东京，在没有两亲的援助下过著一边从事医疗事务的OL的工作，一边在声优训练学校上课，每天都抑郁着的生活。本人说自己当时非常希望当配音演员。\r\n在日本旁白演技研究所的考试中取得合格。在2000年10月被电台节目‘VOICE CREW’起用。\r\n2001年声演[url=https://chii.in/subject/75188]パラッパラッパー[/url]的路人B，并于2002年以[url=https://chii.in/subject/74906]七人之奈奈[/url]中奈奈一角正式于动画界出道。同年开始声演《[url=https://chii.in/subject/23443]魔法咪路咪路[/url]》的主角[url=https://chii.in/character/187824]南枫[/url]，这长达3年半的长期系列作品成为中原麻衣初期的代表作。其后，2004年的《[url=https://chii.in/subject/1027]舞-HiME[/url]》，2006年的《[url=https://chii.in/subject/289]寒蝉鸣泣之时[/url]》，2007年的《[url=https://chii.in/subject/51]CLANNAD[/url]》等动画作品都担任著主角。\r\n当初成为声优时多于个人电台活动。\r\n从声演‘暮蝉悲鸣时’的[url=https://chii.in/character/5678]龙宫礼奈[/url]，‘舞-HiME’的[url=https://chii.in/character/5678]鸨羽舞衣[/url]中，得到了“擅长狂怒的声音”的评价。声演的多为动画的主角，角色比如傲娇、女王系、病弱等形形色色的角色也声演过。\r\n就读声优训练学校的时期被说“你的声音只能当配角”。但是，除了出道作外声演的角色为主角的都压倒性地多。\r\n唱的多为动画或游戏的角色歌曲。2002年与曾参与七人之奈奈的声优[url=https://chii.in/person/1]水树奈奈[/url]、[url=https://chii.in/person/5569]秋田まどか[/url]、浅木舞、[url=https://chii.in/person/3922]名冢佳织[/url]、[url=https://chii.in/person/4185]福井裕佳梨[/url]和[url=https://chii.in/person/44829]桃森すもも[/url]组成“nanaxnana”的组合，并歌唱此作品的主题曲。又以自己作领导，与[url=https://chii.in/person/4263]植田佳奈[/url]、[url=https://chii.in/person/4249]斎藤千和[/url]、[url=https://chii.in/person/4695]森永理科[/url]结成名为‘みっくすJUICE’的组合，2004年起与[url=https://chii.in/person/4064]清水爱[/url]组成“PoppinS”、“中原麻衣&清水爱”。\r\n2004年起展开个人歌手的活动。直至2008年6月共推出了9枚CD。\r\n2006年到台湾的同人活动出席嘉宾。\r\n2007年出演以广播员训练学校为舞台的电视剧‘女子アナ一直線!’以嘉宾形式出演读原稿，教授演技的配音演员“中原麻衣”。\r\n手脚长的苗条体型，经常被称为模特体型。\r\n非常喜欢狗，爱犬是モカ。\r\n醉酒时会说出“你幸福吗？”、“不想回家”等话。\r\n自“[url=https://chii.in/subject/104176]妄想科学[/url]”和“[url=https://chii.in/subject/1852]星空的邂逅2[/url]”起，中原与清水爱在动画及电台的共演作品就非常的多。2人的关系在公在私亦非常良好，在清水爱的日记也可常看到有关中原的事，亦曾一起推出过声优CD。\r\n同经纪公司的[url=https://chii.in/person/3965]田村由香里[/url]在自己的电台节目表示中原麻衣服装诱人，会使自己变得紧张。田村由香里甚至称赞她“很会打扮而且全都很可爱”。\r\n与植田佳奈的感情非常好。其余的亲交有[url=https://chii.in/person/4412]高桥美佳子[/url]、[url=https://chii.in/person/4305]新谷良子[/url]、[url=https://chii.in/person/4032]渡边明乃[/url]、[url=https://chii.in/person/3936]钉宫理恵[/url]、[url=https://chii.in/person/4394]生天目仁美[/url]、[url=https://chii.in/person/4353]松来未祐[/url]等。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 4145,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 68718
+        }
+    ]
+}

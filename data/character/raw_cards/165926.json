@@ -1,0 +1,40 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ca/9a/165926_crt_MBF2k.jpg?r=1729311945",
+        "grid": "https://lain.bgm.tv/pic/crt/g/ca/9a/165926_crt_MBF2k.jpg?r=1729311945",
+        "large": "https://lain.bgm.tv/pic/crt/l/ca/9a/165926_crt_MBF2k.jpg?r=1729311945",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ca/9a/165926_crt_MBF2k.jpg?r=1729311945"
+    },
+    "summary": "ブラジル出身。得意技はパルクール。\r\n驚異的な身体能力と素早い判断力で、街中をまるで鳥の\r\nように軽々と飛び回る。\r\n刑務所に収容されるが脱獄に脱獄を繰り返し、\r\nもはや刑務所業界の有名人。\r\n危険を愛し、ギリギリのスリルを好む。\r\n表裏がなく、人懐こい性格だが、どこか孤高な雰囲気も\r\n漂わせる。",
+    "name": "アクセル",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "阿克瑟"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 22,
+        "collects": 11
+    },
+    "id": 165926,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        446296
+    ]
+}

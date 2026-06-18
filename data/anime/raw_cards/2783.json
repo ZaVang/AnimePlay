@@ -1,0 +1,653 @@
+{
+    "date": "2009-04-18",
+    "platform": "剧场版",
+    "images": {
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/cc/d4/2783_XBnX0.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/cc/d4/2783_XBnX0.jpg",
+        "large": "https://lain.bgm.tv/pic/cover/l/cc/d4/2783_XBnX0.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/cc/d4/2783_XBnX0.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/cc/d4/2783_XBnX0.jpg"
+    },
+    "summary": "东京、神奈川、静冈、长野等地发生了六宗的杀人事件，由于现场留下了背面刻有字母的麻将牌，因而被认为是由同一案犯制造的广域连续杀人事件。警视厅联合各县警署召开联合搜查会议，毛利小五郎作为特别顾问而加入。\r\n事件中的有着诸如麻将牌的含义、第六名被害者死前遗言“七夕……今……”的含义、被害者的共同点、每名被害者都有一样物品被拿走等等谜团。\r\n会议结束后，柯南得知山村警官听到了某名警察用手机发送邮件时出现了类似《七之子》的按键声（即黑色组织头目的邮件地址），于是连忙追出，发现那名警察乘坐琴酒的车离去。\r\n七夕前一天的7月6日，出现在米花市的一名嫌疑犯在柯南的暗中帮助下被逮捕，贝尔摩特也乔装出现在现场。柯南发现后追问她组织参与本次事件的理由，得知连续杀人事件中的一名被害人是组织的成员，其携带的记录有组织人员名单的记忆卡被犯人拿走了，组织为了要在警察之前从犯人手中拿回记忆卡，派遣了一名代号“爱尔兰”的成员潜入警察内部。而另一方，作为搜查员潜入警方的爱尔兰从警察们的对话中开始怀疑柯南就是工藤新一，于是从柯南和新一的学校中取出两人的指纹，通过利用警察局的电脑进行比对而确信。第二天，柯南得知印有自己指纹的物品从帝丹高中和帝丹小学被盗的，顿时有了强烈的危机感。\r\n不久，出现了第七名受害者。在服部平次的帮助下，柯南终于找到了被害人的共同点，进而判断出还将会有人遇害的地点。\r\n柯南、警察、连续杀人犯以及黑衣人组织，四方都来到了最终目的地——东京塔……",
+    "name": "名探偵コナン 漆黒の追跡者",
+    "name_cn": "名侦探柯南 漆黑的追迹者",
+    "tags": [
+        {
+            "name": "剧场版",
+            "count": 1315,
+            "total_cont": 0
+        },
+        {
+            "name": "名探偵コナン",
+            "count": 549,
+            "total_cont": 0
+        },
+        {
+            "name": "2009",
+            "count": 530,
+            "total_cont": 0
+        },
+        {
+            "name": "名侦探柯南",
+            "count": 474,
+            "total_cont": 0
+        },
+        {
+            "name": "推理",
+            "count": 352,
+            "total_cont": 0
+        },
+        {
+            "name": "柯南",
+            "count": 298,
+            "total_cont": 0
+        },
+        {
+            "name": "漆黒の追跡者",
+            "count": 230,
+            "total_cont": 0
+        },
+        {
+            "name": "TMS",
+            "count": 214,
+            "total_cont": 0
+        },
+        {
+            "name": "原创",
+            "count": 190,
+            "total_cont": 0
+        },
+        {
+            "name": "頭盔打飛機",
+            "count": 124,
+            "total_cont": 0
+        },
+        {
+            "name": "悬疑",
+            "count": 93,
+            "total_cont": 0
+        },
+        {
+            "name": "神躲子彈",
+            "count": 92,
+            "total_cont": 0
+        },
+        {
+            "name": "黑暗组织",
+            "count": 82,
+            "total_cont": 0
+        },
+        {
+            "name": "日本",
+            "count": 74,
+            "total_cont": 0
+        },
+        {
+            "name": "山本泰一郎",
+            "count": 46,
+            "total_cont": 0
+        },
+        {
+            "name": "黑衣人",
+            "count": 44,
+            "total_cont": 0
+        },
+        {
+            "name": "漫画改",
+            "count": 40,
+            "total_cont": 0
+        },
+        {
+            "name": "战斗",
+            "count": 29,
+            "total_cont": 0
+        },
+        {
+            "name": "劇場版",
+            "count": 28,
+            "total_cont": 0
+        },
+        {
+            "name": "坑爹",
+            "count": 27,
+            "total_cont": 0
+        },
+        {
+            "name": "2009年4月",
+            "count": 24,
+            "total_cont": 0
+        },
+        {
+            "name": "漫改",
+            "count": 22,
+            "total_cont": 0
+        },
+        {
+            "name": "2009年",
+            "count": 21,
+            "total_cont": 0
+        },
+        {
+            "name": "电影",
+            "count": 15,
+            "total_cont": 0
+        },
+        {
+            "name": "TMSEntertainment",
+            "count": 15,
+            "total_cont": 0
+        },
+        {
+            "name": "映画",
+            "count": 14,
+            "total_cont": 0
+        },
+        {
+            "name": "古内一成",
+            "count": 11,
+            "total_cont": 0
+        },
+        {
+            "name": "童年",
+            "count": 10,
+            "total_cont": 0
+        },
+        {
+            "name": "动画",
+            "count": 9,
+            "total_cont": 0
+        },
+        {
+            "name": "トムス・エンタテインメント",
+            "count": 9,
+            "total_cont": 0
+        }
+    ],
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "名侦探柯南 漆黑的追迹者"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "名侦探柯南剧场版M13"
+                },
+                {
+                    "v": "Meitantei Conan: Shikkoku no Chaser"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Detective Conan: The Raven Chaser"
+                }
+            ]
+        },
+        {
+            "key": "上映年度",
+            "value": "2009年4月18日"
+        },
+        {
+            "key": "片长",
+            "value": "110分钟"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://www.conan-movie.jp/"
+        },
+        {
+            "key": "Copyright",
+            "value": "青山剛昌 / 名探偵コナン製作委員会"
+        },
+        {
+            "key": "导演",
+            "value": "山本泰一郎"
+        },
+        {
+            "key": "原作",
+            "value": "青山剛昌（小学館「週刊少年サンデー」連載中）"
+        },
+        {
+            "key": "企画",
+            "value": "諏訪道彦"
+        },
+        {
+            "key": "脚本",
+            "value": "古内一成"
+        },
+        {
+            "key": "演出",
+            "value": "山本泰一郎、そえたかずひろ、辻泰永"
+        },
+        {
+            "key": "人物设定",
+            "value": "須藤昌朋"
+        },
+        {
+            "key": "作画监督",
+            "value": "山中純子"
+        },
+        {
+            "key": "机械设定",
+            "value": "堀内博之"
+        },
+        {
+            "key": "音乐",
+            "value": "大野克夫"
+        },
+        {
+            "key": "话数",
+            "value": "1"
+        },
+        {
+            "key": "製作",
+            "value": "「名探偵コナン」製作委員会：株式会社小学館（川原章三、井手靖、矢崎恵里子、伊澤亮一、飯田誠敬、小関顕、薄谷正和）、読売テレビ放送株式会社（西垣慎一郎、大熊保幸、三好順作、乙部恭子、菊池浩志、米倉功人、福田幸蔵、鈴木梓）、日本テレビ放送網株式会社（奥田誠治、藤本鈴子、菅沼直樹、東井文太、東山将之、平方真由美）、株式会社小学館集英社プロダクション（藤田亮、三野裕久、有馬孝真）、東宝株式会社（村田祐一、山中和成、加藤智浩）、株式会社トムス・エンタテインメント（吉田力雄、熊井良助、青野史郎、木田努、光川弘治、千島守）；白井康介、山西敏之、堀越徹、斎藤裕、藤原正道、松元理人"
+        },
+        {
+            "key": "动画制作",
+            "value": "東京ムービー（トムス・エンタテインメント）"
+        },
+        {
+            "key": "制片人",
+            "value": "諏訪道彦、吉岡昌仁"
+        },
+        {
+            "key": "原案",
+            "value": "原案協力：奥山豊彦、都築伸一郎、林正人、近藤秀峰"
+        },
+        {
+            "key": "色彩设计",
+            "value": "西香代子；補佐：加藤里恵"
+        },
+        {
+            "key": "美术监督",
+            "value": "渋谷幸弘；補佐：福島孝喜"
+        },
+        {
+            "key": "3DCG",
+            "value": "Y.A.P.(有)石垣プロダクション 3Dスタジオ、SEBASTIEN PONS、studio A-CAT（斎藤純一、高橋圭祐、本間貴之、河野剛史、片山幸司、作野賢一郎）&A-CAT ALL STAFF"
+        },
+        {
+            "key": "音效",
+            "value": "横山正和・横山亜紀（サウンドエフェクト）"
+        },
+        {
+            "key": "音乐制作人",
+            "value": "近藤貴郎、大野久子"
+        },
+        {
+            "key": "音乐制作",
+            "value": "音楽協力：角田博昭・大島弘子・佐藤祐大（読売テレビエンタープライズ）"
+        },
+        {
+            "key": "取材协力",
+            "value": "TOKYO TOWER、日本空手道 拳成塾"
+        },
+        {
+            "key": "Marketing Director",
+            "value": "山田成彦、伊藤友香"
+        },
+        {
+            "key": "文艺担当",
+            "value": "飯沢洋子"
+        },
+        {
+            "key": "制作管理",
+            "value": "安榮卓也"
+        },
+        {
+            "key": "助理制片人",
+            "value": "北田修一"
+        },
+        {
+            "key": "主题歌作曲",
+            "value": "望月由紀＆平賀貴大"
+        },
+        {
+            "key": "分镜",
+            "value": "山本泰一郎"
+        },
+        {
+            "key": "分镜协力",
+            "value": "西森章、奥脇雅晴"
+        },
+        {
+            "key": "作画监督助理",
+            "value": "野武洋行、牟田清司、清水義治、堀内博之、かわむらあきお（河村明夫）、本橋秀之"
+        },
+        {
+            "key": "构图",
+            "value": "Layout检查：野武洋行、牟田清司、清水義治、堀内博之、かわむらあきお（河村明夫）、本橋秀之"
+        },
+        {
+            "key": "原画",
+            "value": "本橋秀之、牟田清司、山中純子、野武洋行、清水義治、高橋成之、村中博美、川口隆、早川淳一、水野悦明、松坂定俊、大野泰江、とみながまり、小坂知、亀垣一、崔富京（최부경）、増田敏彦、秦野好紹、三浦厚也、小田真弓、松本澄子、内田シンヤ（内田信也）、菅野智之、志村なおみ、関口英樹、細山正樹、越崎竜桜、田中ちゆき、市原圭子、福永智子、古住千秋、南部広海、古川真生、井元愛夕、渡部ゆかり、中弥幸一、柄谷綾子、木元淑恵、森友宏樹、岩井伸之、兵藤恭子、柳孝相、鈴木克、橋本正則、西野大、清水勇磨、山下さとる、吉山隆士、渡辺健一、飯村真一、井畑翔太、阿部尚人、都竹隆治、増田俊介、小野祥子、上本英津子、Lee Hung-Soo、Yoo Yong-Jun、Park Hong-Keun、Jun Jong-Min（전종민）、Lee Sang-Min（李尚敏）、Kim Bomin（金甫旻）"
+        },
+        {
+            "key": "第二原画",
+            "value": "GK Entertainment（Lee Mi-Jin、Kim Kyung-Hee、Lee Eun-Young[이은영]、Cho Jeung-Hwa）、ORANGE（Lee Yong-Gwan、Hong Kyeong-Mi、Kim Yong-Ju、Jang Young-Seon）"
+        },
+        {
+            "key": "补间动画",
+            "value": "スタジオ・ブーメラン（長田秀明、谷口昌彦、伊藤真紀、近藤舞、野崎智津子、三浦智典、吉見京子、山本紀子、井上香、田中康勝）、BIG BANG（池田雅洋、野島美貴、神田尚佳）、スタジオMAT、GK Entertainment、ミゾ企劃、韓鎮ANIMATION、ORANGE、R.I.C、Triple A"
+        },
+        {
+            "key": "数码绘图",
+            "value": "Wish（奥井恵美子、佐藤美由紀、伊藤敦子、中尾総子、伊藤良樹、石川直樹、砂原直子、千葉陽子、三留裕美、天本洋介、江草大樹、塩沢友里、高橋祐、望月順子、古賀真利江、藤原優実、久島早映子、長谷川美枝、山下沙弥香、笹愛美、橋本真由美、大本真希、谷本美幸、山瀬仁美、楢崎光弘、阿部優香、楠本麻耶、曽根菜津紀、生田目夏海、前田千妙、若林洋子、加藤明美、松本由美、岡部真苗、熊谷奈美、山本瑞恵、竹内一美、小林美紀、土岐智子、大鰐奈保子、福田由布子、河合真理子）、GK Entertainment、ミゾ企劃、韓鎮ANIMATION、ORANGE、R.I.C、Triple A"
+        },
+        {
+            "key": "背景美术",
+            "value": "Y.A.P.(有)石垣プロダクション（長谷川弘行、菅野博司、伊藤朱美、小山田有希、宍戸太一、田村文香、間庭奈美、西村健、皆川真紀、飯村亜耶、川畑和代、紫芝香里、浅見由恵、山本将司、源恵子、野村裕樹、大塚伸弘、縫部文江、川名俊英、大橋美奈子、澁谷恭子）、スタジオフォレスト（柴田聡、長江剛、北村由樹子、小林智美、金延連）、スタジオワイエス（笠原由紀、浜口征弥、澤谷健太、小林祐子、長崎斉）、スタヂオ誉（荒井和浩、荒井梨香子、岩下健吾、石井竜生、浜谷友里）"
+        },
+        {
+            "key": "摄影",
+            "value": "トムス・フォト（T.D.F.）（白尾仁志、伊藤敦子、小林学、高橋佑樹、金井弘、小川隆久、西山仁、根本超、佐々木明美、中小原明典、野口龍生、澤見泰治、山本三良、米屋真一、押見綾、竹花祐介、森川良太、井上寛基、小林健一）；協力：トランス・アーツ、BIG BANG（ビッグ・バン）"
+        },
+        {
+            "key": "动画检查",
+            "value": "福井智子、谷口昌彦"
+        },
+        {
+            "key": "色彩指定",
+            "value": "加藤里恵、上村貴子、村上由恵、厚見祐希、梅村利恵子"
+        },
+        {
+            "key": "制作进行",
+            "value": "村石辰也、川田哲也、山田卓"
+        },
+        {
+            "key": "制作协力",
+            "value": "金月淳（GK Entertainment）、BIG BANG（ビッグ・バン）"
+        },
+        {
+            "key": "发行",
+            "value": "東宝"
+        }
+    ],
+    "rating": {
+        "rank": 5177,
+        "total": 3818,
+        "count": {
+            "1": 5,
+            "2": 8,
+            "3": 21,
+            "4": 85,
+            "5": 356,
+            "6": 1369,
+            "7": 1459,
+            "8": 404,
+            "9": 58,
+            "10": 53
+        },
+        "score": 6.5
+    },
+    "total_episodes": 1,
+    "collection": {
+        "on_hold": 27,
+        "dropped": 23,
+        "wish": 122,
+        "collect": 7279,
+        "doing": 23
+    },
+    "id": 2783,
+    "eps": 1,
+    "meta_tags": [
+        "剧场版",
+        "悬疑",
+        "日本",
+        "原创",
+        "推理",
+        "战斗"
+    ],
+    "volumes": 0,
+    "series": false,
+    "locked": false,
+    "nsfw": false,
+    "type": 2,
+    "main_character_ids": [
+        3453,
+        3455,
+        3499
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e7/f9/3453_crt_A666k.jpg?r=1741598207",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e7/f9/3453_crt_A666k.jpg?r=1741598207",
+                "large": "https://lain.bgm.tv/pic/crt/l/e7/f9/3453_crt_A666k.jpg?r=1741598207",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e7/f9/3453_crt_A666k.jpg?r=1741598207"
+            },
+            "name": "江戸川コナン",
+            "summary": "柯南（江户川柯南，真名工藤新一），是作品《名侦探柯南》中的主角，被称为“日本警察的救世主”、“平成年代的福尔摩斯”。被黑衣人灌下身体缩小的毒药后，回到发育期的孩童状态。于是新一化名为“江户川柯南”寄住在小兰的家。他自称七岁，并在帝丹小学1年级B班就读。为了隐藏身份，在阿笠博士的安排下，从小学开始读起并寄住在毛利侦探事务所。经常借由阿笠博士所发明的道具，利用小五郎、园子、山村警官等人进行推理，解决许多难题；此外也一直在暗中寻找黑衣人与解药的情报。不擅长的科目是音乐（是个音痴），但拥有绝对音感，善于拉小提琴，最爱的运动是足球，最爱的足球员是雷‧卡提斯，最爱的小说是福尔摩斯探案《四个签名》，最爱的侦探是福尔摩斯，母亲是江户川文代（工藤有希子以柯南的母亲身份出现时使用的化名）。知道其真实身分的人有服部平次(在某事件拿他当推理替身时穿帮)、阿笠博士(因为新一率先向他求救)、苦艾酒、灰原哀(检查使用APTX4869者纪录时推知)、工藤优作、工藤有希子(阿笠博士告知)、本堂瑛祐(用和小兰有关的话题套话得知)、怪盗基德(剧场版中已经发现，TV版则不明)、鲁邦三世(在鲁邦三世vs名侦探柯南里发现)。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/05/b1/3933_prsn_TmBD7.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/05/b1/3933_prsn_TmBD7.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/05/b1/3933_prsn_TmBD7.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/05/b1/3933_prsn_TmBD7.jpg"
+                    },
+                    "name": "高山みなみ",
+                    "short_summary": "中学时代加入向日葵剧团。高中毕业后，曾经是一个普通的OL，22岁时立志成为声优。与日本歌手永野椎菜合组歌唱组合TWO-MIX。\r\n2005年5月5日，与青山刚昌结婚。 \r\n根据日本《朝日新闻》2005年6月2日报道，《名侦探柯南》之父、41岁的青山刚昌当天在接受日本著名杂志《女性名流》的采访中承认，将迎娶在《名侦探柯南》动画片中为柯南配音的日本著名声优、当时41岁的高山南，而两人已于高山南的生日，也就是5月5日，正式办理了登记结婚手续。\r\n2007年12月9日，与青山刚昌离婚。 \r\n自从两人05年5月结婚以来，青山先生在漫画制作的截稿期之前都会在工作场所埋头苦干，而著名声优高山南工作也非常繁忙。在经常擦肩而过的生活持续之下，两人在甚少的沟通和关照之下，感情也渐渐变淡。最后，两人在两年后的12月9日决定离婚，至于青山先生对于传媒的采访态度为“无可奉告”。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 3933,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/13/03/38390_prsn_N6B8X.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/13/03/38390_prsn_N6B8X.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/13/03/38390_prsn_N6B8X.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/13/03/38390_prsn_N6B8X.jpg"
+                    },
+                    "name": "郝幽玥",
+                    "short_summary": "1997年开始配音工作，小男孩（如哪吒）和中老年妇女。她曾参与录制过译制片、专题片、广告片、动画片，及电视连续剧、电视电影、广播剧、游戏等。代表作有《宫锁心玉》、《童话二分之一》、《民国恩仇录》。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 38390,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c2/15/53019_prsn_4F4D9.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c2/15/53019_prsn_4F4D9.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/c2/15/53019_prsn_4F4D9.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c2/15/53019_prsn_4F4D9.jpg"
+                    },
+                    "name": "李世荣",
+                    "short_summary": "配音演员，出生于黑龙江哈尔滨。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 53019,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/99/41/72262_prsn_aaorY.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/99/41/72262_prsn_aaorY.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/99/41/72262_prsn_aaorY.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/99/41/72262_prsn_aaorY.jpg"
+                    },
+                    "name": "蔣篤慧",
+                    "short_summary": "毕业于台北市私立华冈艺术学校，中国台湾女性配音演员、舞台剧演员。\r\n代表作品《火影忍者》漩涡鸣人、《名侦探柯南》江户川柯南（第三代）、《蜡笔小新》野原新之助（第二代）、《幽游白书》藏马等。\r\n2019年9月16日，蒋笃慧因子宫颈癌去世，终年49岁。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 72262,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 3453
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/2f/ef/3455_crt_77oMO.jpg?r=1741598307",
+                "grid": "https://lain.bgm.tv/pic/crt/g/2f/ef/3455_crt_77oMO.jpg?r=1741598307",
+                "large": "https://lain.bgm.tv/pic/crt/l/2f/ef/3455_crt_77oMO.jpg?r=1741598307",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2f/ef/3455_crt_77oMO.jpg?r=1741598307"
+            },
+            "name": "工藤新一",
+            "summary": "江戸川コナンの本来の姿。以前は迷宮なしの高校生探偵として、新聞に載るほどの活躍を見せた。「東の名探偵」「日本警察の救世主」など、新一を称賛するフレーズは数多い。父は小説家、母は元女優と、両親は有名人。アメリカに拠点を移した親元を離れて日本で一人暮らしをしていたが、組織に飲まされたＡＰＴＸ４８６９のせいで小さくなってしまう。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/46/c8/3900_prsn_9Z9tZ.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/46/c8/3900_prsn_9Z9tZ.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/46/c8/3900_prsn_9Z9tZ.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/46/c8/3900_prsn_9Z9tZ.jpg"
+                    },
+                    "name": "山口勝平",
+                    "short_summary": "日本の声優、劇団21世紀FOX所属舞台俳優、芸能プロダクション悟空代表。\r\n\r\n为人熟悉的代表配音作品有动画《乱马½》主角早乙女乱马〈男生〉、《犬夜叉》主角犬夜叉、《名侦探柯南》工藤新一、《魔术快斗》主角黑羽快斗／怪盗基德、《ONE PIECE》的骗人布、《死亡笔记本》的L、《我们这一家》的藤野等。\r\n兴趣和特长为画插图、弹吉他、杀阵。入读声优学校之前送过报纸。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 3900,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1e/9b/7211_prsn_cC9FA.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/1e/9b/7211_prsn_cC9FA.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/1e/9b/7211_prsn_cC9FA.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1e/9b/7211_prsn_cC9FA.jpg"
+                    },
+                    "name": "阿杰",
+                    "short_summary": "张杰，配音演员，又名ketsu，阿杰。1978年出生，北京人，729声工场（729配音组声创联盟）创始人。他的声音清朗华丽，跨度宽广，可适应多种不同声音年龄及个性。\r\n\r\n2006年，经著名配音演员姜广涛引荐，进入北京配音圈，第一次参与的电视剧作品是《明宫谜案》。2010年加入光合积木配音组，2016年退出光合积木，创办729声工场。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 7211,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c8/e7/7713_prsn_j54Pr.jpg?r=1756567659",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c8/e7/7713_prsn_j54Pr.jpg?r=1756567659",
+                        "large": "https://lain.bgm.tv/pic/crt/l/c8/e7/7713_prsn_j54Pr.jpg?r=1756567659",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c8/e7/7713_prsn_j54Pr.jpg?r=1756567659"
+                    },
+                    "name": "劉傑",
+                    "short_summary": "本名刘鹏杰，台湾男性配音员、广播节目主持人。\r\n\r\n其艺名刘杰是将本名「刘鹏杰」中笔画繁多的「鹏」字省略而成。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 7713,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "",
+                        "grid": "",
+                        "large": "",
+                        "medium": ""
+                    },
+                    "name": "陈光",
+                    "short_summary": "",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 79417,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 3455
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/0b/51/3499_crt_mUGrf.jpg?r=1741598357",
+                "grid": "https://lain.bgm.tv/pic/crt/g/0b/51/3499_crt_mUGrf.jpg?r=1741598357",
+                "large": "https://lain.bgm.tv/pic/crt/l/0b/51/3499_crt_mUGrf.jpg?r=1741598357",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0b/51/3499_crt_mUGrf.jpg?r=1741598357"
+            },
+            "name": "毛利蘭",
+            "summary": "工藤新一の幼なじみで、本作のヒロイン。探偵の父・毛利小五郎と弁護士の母・妃英理が別居中のため、父の元で暮らす蘭が毛利家の家事を担当。料理上手なしっかり者だ。居候のコナンには姉のように接している。帝丹高校では空手部に所属し、大きな大会で優勝するほどの実力者。雷やお化けは苦手。親友の鈴木園子に冷やかされつつも、新一の帰りを待つ。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a5/b9/4559_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a5/b9/4559_seiyu_anidb.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/a5/b9/4559_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a5/b9/4559_seiyu_anidb.jpg"
+                    },
+                    "name": "山崎和佳奈",
+                    "short_summary": "日本の声優、ナレーター、舞台女優。神奈川県横浜市出身、京都府育ち。青二プロダクション所属。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 4559,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6a/10/7280_prsn_8j56I.jpg?r=1491995457",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/6a/10/7280_prsn_8j56I.jpg?r=1491995457",
+                        "large": "https://lain.bgm.tv/pic/crt/l/6a/10/7280_prsn_8j56I.jpg?r=1491995457",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6a/10/7280_prsn_8j56I.jpg?r=1491995457"
+                    },
+                    "name": "季冠霖",
+                    "short_summary": "女性配音演员，代表作有电视剧《神雕侠侣》小龙女、《美人心计》窦漪房，电影《赤壁·下》小乔、《阿凡达》奈蒂莉等。现居北京。\r\n2004年，毕业于天津师范大学播音主持专业。大学期间经常给广告配音，并参与了一些译制片的配音工作。毕业后，经著名配音演员齐克建引荐，进入北京配音圈。第一次参与的国产电视剧是《张大千》。\r\n近年来，季冠霖凭借优质的嗓音和扎实的台词功底塑造了众多广为人知的声音形象，以多变的声线赋予角色鲜明的性格特点，或空灵澄净，如《神雕侠侣》小龙女、《大旗英雄传》水灵光；或清亮甜美，如《风云2》第二梦、《水浒传》潘金莲；或温柔娴静，如《赤壁·下》小乔、《家》李瑞珏；或俊朗干练，如《倚天屠龙记》赵敏、《来不及说我爱你》程谨之……\r\n2009年，担任苏州吴中旅游形象宣传片的解说。\r\n光合积木配音组主要成员之一。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 7280,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/71/31/58220_prsn_ODm5r.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/71/31/58220_prsn_ODm5r.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/71/31/58220_prsn_ODm5r.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/71/31/58220_prsn_ODm5r.jpg"
+                    },
+                    "name": "魏晶琦",
+                    "short_summary": "台灣女性配音員。畢業於天主教輔仁大學社工系。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 58220,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "",
+                        "grid": "",
+                        "large": "",
+                        "medium": ""
+                    },
+                    "name": "梁玮珊",
+                    "short_summary": "配音演员",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 79559,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 3499
+        }
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "birth_mon": 6,
+    "gender": "female",
+    "birth_day": 6,
+    "birth_year": null,
+    "blood_type": 4,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8e/a5/185505_crt_rQdE0.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/8e/a5/185505_crt_rQdE0.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/8e/a5/185505_crt_rQdE0.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8e/a5/185505_crt_rQdE0.jpg"
+    },
+    "summary": "高校１年生。幼なじみの小雪とは対照的に明るい性格でクラスのアイドル的存在。ただ、周りのイメージと、本来のガサツな自分とのギャップに、悩まされている。湊、陽太とは中学時代の塾で知り合った。",
+    "name": "安曇美姫",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "安昙美姫"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Miki Azumi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "6月6日"
+        },
+        {
+            "key": "血型",
+            "value": "O"
+        },
+        {
+            "key": "身高",
+            "value": "163cm"
+        }
+    ],
+    "stat": {
+        "comments": 6,
+        "collects": 11
+    },
+    "id": 185505,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        535669
+    ]
+}

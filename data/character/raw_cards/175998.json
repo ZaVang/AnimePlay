@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fd/75/175998_crt_FfYzi.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/fd/75/175998_crt_FfYzi.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/fd/75/175998_crt_FfYzi.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fd/75/175998_crt_FfYzi.jpg"
+    },
+    "summary": "群馬出身の淡島歌劇学校予科生。ミュージカルスターに憧れて淡島に入学。人懐っこく素直な性格。舞台に立つ日を夢見て、厳しくも充実した学びに全力で向き合っている。",
+    "name": "田畑若菜",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "田畑若菜"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "艺名",
+                    "v": "葉月青 / 叶月青"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "たばた わかな"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Tabata Wakana"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 3,
+        "collects": 6
+    },
+    "id": 175998,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        493724
+    ]
+}

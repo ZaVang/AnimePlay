@@ -1,0 +1,57 @@
+{
+    "birth_mon": 5,
+    "gender": "female",
+    "birth_day": 5,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1b/61/25430_crt_okzAp.jpg?r=1751791580",
+        "grid": "https://lain.bgm.tv/pic/crt/g/1b/61/25430_crt_okzAp.jpg?r=1751791580",
+        "large": "https://lain.bgm.tv/pic/crt/l/1b/61/25430_crt_okzAp.jpg?r=1751791580",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1b/61/25430_crt_okzAp.jpg?r=1751791580"
+    },
+    "summary": "オベリスクブルー所属。 \r\n圧倒的なデュエルの実力と気高さから「オベリスク・ブルーの女王」の異名を持ち、学園でもトップクラスのデュエリストである。 \r\n性格は大変歯に衣を着せずサバサバしているが、兄の天上院吹雪に振り回され気味。 \r\n危険に陥った仲間達の安否を心配したり、己が身代わりになると言い出したり等優しい一面を持つ。 \r\nまた兄の親友である丸藤亮と吹雪の行方不明中、灯台で兄についての情報交換をしていた（灯台部）",
+    "name": "天上院明日香",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "天上院明日香"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "てんじょういんあすか"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "5月5日"
+        },
+        {
+            "key": "身高",
+            "value": "170cm"
+        },
+        {
+            "key": "体重",
+            "value": "53kg"
+        }
+    ],
+    "stat": {
+        "comments": 15,
+        "collects": 40
+    },
+    "id": 25430,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        3711
+    ]
+}

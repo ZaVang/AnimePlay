@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/48/25/33248_crt_q0idO.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/48/25/33248_crt_q0idO.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/48/25/33248_crt_q0idO.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/48/25/33248_crt_q0idO.jpg"
+    },
+    "summary": "学业和体育表现均优秀的美少女。学生会会长。",
+    "name": "若菜羽衣",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "若菜羽衣"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "わかな うい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Wakana Ui"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "zh.wikipedia.org/wiki/我老婆是学生会长！"
+        }
+    ],
+    "stat": {
+        "comments": 12,
+        "collects": 35
+    },
+    "id": 33248,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        119889
+    ]
+}

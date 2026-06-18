@@ -1,0 +1,195 @@
+{
+    "id": 22505,
+    "name": "福音战士新剧场版：Q",
+    "image_path": "data\\images\\anime\\22505.jpg",
+    "points": 7.4,
+    "cost": 1,
+    "rarity": "N",
+    "description": "14年前，初号机疑似神化第一形态的觉醒带来近三冲击，使世界发生前所未有的巨变。在此之后，葛城美里等NERV旧部出走，成立了反抗seele和NERV的Wille。Wille授命明日香和真希波夺回被封印在卫星轨道上的初号机和碇真嗣，但绝对禁止真嗣登上初号机。感受到周遭的敌意，懵懂的真嗣跟随绫波丽登上突然入侵的九号机，返回了千疮百孔的NERV总部。在这里，他意外重逢朝思夜想的绫波，还从父亲那里得知自己将和美少年渚薰共同驾驶十三号机。长达14年的空白，期间的沧桑巨变和情感纠葛让真嗣不知所措。而看似温柔的渚薰为他揭开了种种难以置信的真相……",
+    "type": 2,
+    "platform": "剧场版",
+    "episodes_for_hangup": 1,
+    "synergy_tags": [
+        "科幻",
+        "剧场版",
+        "机战",
+        "日本",
+        "原创",
+        "战斗",
+        "剧情"
+    ],
+    "date": "2012-11-17",
+    "rating_rank": 1098,
+    "rating_score": 7.4,
+    "rating_total": 12400,
+    "main_character_ids": [
+        302,
+        6965,
+        205056
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e1/af/302_crt_ce4yO.jpg?r=1616247180",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e1/af/302_crt_ce4yO.jpg?r=1616247180",
+                "large": "https://lain.bgm.tv/pic/crt/l/e1/af/302_crt_ce4yO.jpg?r=1616247180",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e1/af/302_crt_ce4yO.jpg?r=1616247180"
+            },
+            "name": "碇シンジ",
+            "summary": "本故事的主角，14岁，操纵EVA初号机的第三适格者（THIRD CHILDREN）。 \r\n\r\nNERV司令碇源堂的独子。母亲死后，他就住在亲戚家中，和碇源堂分居了十年，突然接到父亲的信而来到第三新东京都市。有着极端内向的性格，极其害怕与陌生人接触，不知如何和别人相处而感到害怕，一直只是照着别人的要求而生活，之后慢慢地敞開了心扉。\r\n\r\n作为驾驶员的他与EVA初号机的同步值最高，在歼灭使徒的各次战役中的表现亦最为突出。但其本人性格内向、处事态度消极、遇事总是用“对不起”来逃避现实成为明日香对其最为反感的原因。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/37/ce/4054_prsn_wWwqj.jpg?r=1702781847",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/37/ce/4054_prsn_wWwqj.jpg?r=1702781847",
+                        "large": "https://lain.bgm.tv/pic/crt/l/37/ce/4054_prsn_wWwqj.jpg?r=1702781847",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/37/ce/4054_prsn_wWwqj.jpg?r=1702781847"
+                    },
+                    "name": "緒方恵美",
+                    "short_summary": "绪方惠美是日本东京都出生的女配音兼歌手（当歌手时的艺名为‘em:óu’），B型双子座。桐朋女子中学、高中毕业；东海大学海洋学系肄业。东京声专音乐学校（现在为昭和音乐艺术学院）歌剧科及同研究科毕业。\r\n主要以低沉沙哑的音质，替少年角色配音的她，其他也多半是替美型青年或男性化的女性等中性化角色配音为主。本人也曾经自己承认，或许是因为自己也是男性化的性格，所以也被称为「男八段」（这个绰号是广播节目《绪方惠美的向银河呐喊中》与听众一边交谈，一边所喝的酒的名字）。\r\n代表作有《幽游白书》（藏马／南野秀一）、《美少女战士Sailor Moon S》（天王遥／水手天王星）、《新世纪福音战士》（碇真嗣）等。",
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 4054,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ef/81/47194_prsn_111Sm.jpg?r=1699370488",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ef/81/47194_prsn_111Sm.jpg?r=1699370488",
+                        "large": "https://lain.bgm.tv/pic/crt/l/ef/81/47194_prsn_111Sm.jpg?r=1699370488",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ef/81/47194_prsn_111Sm.jpg?r=1699370488"
+                    },
+                    "name": "蔣鐵城",
+                    "short_summary": "",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 47194,
+                    "type": 2,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 302
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/97/60/6965_crt_274Ma.jpg?r=1615255905",
+                "grid": "https://lain.bgm.tv/pic/crt/g/97/60/6965_crt_274Ma.jpg?r=1615255905",
+                "large": "https://lain.bgm.tv/pic/crt/l/97/60/6965_crt_274Ma.jpg?r=1615255905",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/97/60/6965_crt_274Ma.jpg?r=1615255905"
+            },
+            "name": "渚カヲル",
+            "summary": "TV ep.24",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/75/f0/3927_prsn_PPbE7.jpg?r=1632126400",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/75/f0/3927_prsn_PPbE7.jpg?r=1632126400",
+                        "large": "https://lain.bgm.tv/pic/crt/l/75/f0/3927_prsn_PPbE7.jpg?r=1632126400",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/75/f0/3927_prsn_PPbE7.jpg?r=1632126400"
+                    },
+                    "name": "石田彰",
+                    "short_summary": "石田彰，是日本人气一线声优，近几年来在日本各地稳居声优榜前列，在男女老少间都很受欢迎。出道已经近二十年了，声音宜男宜女，是业界少见的可以配女性角色还不易被人察觉的男声优。2009年3月前效力于Mausu Promotion，4月开始是自由身，2012年3月开始他进入了新的事务所ピアレスガーベラ。主要作品：桂小太郎《银魂》、我爱罗《火影忍者》、阿斯兰·萨拉《高达SEED》、渚熏《EVA》、猪八戒《最游记》等。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 3927,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/cd/01/59881_prsn_C2KN2.jpg?r=1718790659",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/cd/01/59881_prsn_C2KN2.jpg?r=1718790659",
+                        "large": "https://lain.bgm.tv/pic/crt/l/cd/01/59881_prsn_C2KN2.jpg?r=1718790659",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cd/01/59881_prsn_C2KN2.jpg?r=1718790659"
+                    },
+                    "name": "Daman Mills",
+                    "short_summary": "美国配音演员。",
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 59881,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c0/34/78948_prsn_UME0y.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c0/34/78948_prsn_UME0y.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/c0/34/78948_prsn_UME0y.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c0/34/78948_prsn_UME0y.jpg"
+                    },
+                    "name": "賈文安",
+                    "short_summary": "台湾男性配音员。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 78948,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 6965
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c1/13/205056_crt_hqVqk.jpg?r=1774182959",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c1/13/205056_crt_hqVqk.jpg?r=1774182959",
+                "large": "https://lain.bgm.tv/pic/crt/l/c1/13/205056_crt_hqVqk.jpg?r=1774182959",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c1/13/205056_crt_hqVqk.jpg?r=1774182959"
+            },
+            "name": "式波・アスカ・ラングレー",
+            "summary": "EVA2号機に乗る「第2の少女」。\r\nドイツ出身で、プラグスーツのイメージカラーはレッド。\r\n勝ち気な性格と気持ちをストレートに反映した言動で周囲を圧倒する",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bc/55/3972_prsn_xO855.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/bc/55/3972_prsn_xO855.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/bc/55/3972_prsn_xO855.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bc/55/3972_prsn_xO855.jpg"
+                    },
+                    "name": "宮村優子",
+                    "short_summary": "日本の声優、女優、歌手。兵庫県神戸市出身。JAEプロモーション所属。一部の作品においては闇村悠ノ介とクレジットされることもあった。代表作に『新世紀エヴァンゲリオン 』（惣流・アスカ・ラングレー）、『名探偵コナン』（遠山和葉）などがある。\r\n\r\n中学時代はテニス部に所属していたという。中学3年生になると受験で部活が終わり、その時、図書室で、戯曲集を見つけて、戯曲集のセリフに惹かれて演劇を始める。舞台が好きだったため、高校時代に演劇部に所属し、高校卒業後、桐朋学園短期大学演劇科で演劇を勉強をしていた。卒業後は日本ナレーション演技研究所に入所。ゲーム『拳聖土竜』の春麗役で声優デビュー。\r\n\r\n声優を目指したのは大学の進路指導の講師が、きっかけで、大学の進路指導で、皆が「劇団入る」、「プロダクション入る」と言っており、担当の講師が劇団青年座の関係者だったという。\r\n\r\n劇団の役者だけでは食べていくことができず、劇団青年座は声優として活動している役者が多く、同じ短大の先輩だったかないみか、川上とも子が、舞台役者から声優に転身して活躍していたのを知っていたため、「自分も挑戦してみたいな」と並行して声の仕事を始める。\r\n\r\n入団したかった劇団の入団テストに落選したこともあり、舞台の仕事より声の仕事の割合が徐々に増えていったという。\r\n\r\nアーツビジョン所属を経て、ジャパンアクションエンタープライズ (JAE) の俳優部門「JAEプロモーション」と業務提携。\r\n\r\n1995年に『愛天使伝説ウェディングピーチ』の珠野ひなぎく（エンジェルデイジー）役、『新世紀エヴァンゲリオン』の惣流・アスカ・ラングレー役で有名になる。\r\n\r\n1999年に漫画家のナカタニD.と結婚したが、翌年に離婚。\r\n\r\n2004年に同じJAE所属の男性スタントマン・関隆行と再婚。2007年にオーストラリアへ移住している。\r\n\r\n2006年より大阪北堀江にある放送芸術学院の併設校「大阪アニメーションスクール」でアフレコの授業を担当した。\r\n\r\n2016年に関隆行と離婚。親権は宮村が持つこととなった。\r\n\r\n2018年に日本へ帰国し、再び国内に拠点を戻すとともに同年1月にインターナショナル・メディア学院の講師に就任した。\r\n\r\n『ヱヴァンゲリヲン新劇場版』の式波・アスカ・ラングレー役、『名探偵コナン』の遠山和葉役などで活動を継続している。\r\n\r\n2022年5月、公式ホームページを開設した。",
+                    "career": [
+                        "producer",
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 3972,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f7/17/79171_prsn_32TLL.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f7/17/79171_prsn_32TLL.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/f7/17/79171_prsn_32TLL.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f7/17/79171_prsn_32TLL.jpg"
+                    },
+                    "name": "李昀晴",
+                    "short_summary": "台湾女性配音员。\r\n\r\n华视配音训练班第66期杰出学员，2013年开始从业。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 79171,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 205056
+        }
+    ]
+}

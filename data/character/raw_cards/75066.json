@@ -1,0 +1,53 @@
+{
+    "birth_mon": 11,
+    "gender": "male",
+    "birth_day": 29,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/27/47/75066_crt_THTmm.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/27/47/75066_crt_THTmm.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/27/47/75066_crt_THTmm.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/27/47/75066_crt_THTmm.jpg"
+    },
+    "summary": "20歳の大学3年生。\r\n騒々しい空間が苦手で、一人で静かに\r\n過ごすが好き。宇崎には”ぼっち”扱いされ、\r\n毎日絡まれ続けている。目つきは悪いが\r\n礼儀正しい常識人で、宇崎の突飛な行動に\r\nツッコミを入れることが多い。",
+    "name": "桜井真一",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "樱井真一"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Sakurai Shinchi"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "11月29日"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://uzakichan.com/#chara"
+        }
+    ],
+    "stat": {
+        "comments": 5,
+        "collects": 6
+    },
+    "id": 75066,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        299498
+    ]
+}

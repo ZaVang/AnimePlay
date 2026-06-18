@@ -1,0 +1,107 @@
+{
+    "id": 90880,
+    "name": "玉子爱情故事",
+    "image_path": "data\\images\\anime\\90880.jpg",
+    "points": 7.9,
+    "cost": 2,
+    "rarity": "R",
+    "description": "时已入春，已经进入高中三年级的北白川玉子仍然总是想着打糕的事情。\r\n春天傍晚的放学路上，玉子好友四人组谈论着关于将来出路的事情。大家虽然对此感到不安，但似乎对将来的事情都有好好地考虑过。玉子也无意中说出自己将来想要继承家业。\r\n同时，住在玉子家的对面、一直和她在一起的饼藏，也下定了某种决心。\r\n周围的各种事物都在逐渐改变着，一点一点地动摇着玉子的心。",
+    "type": 2,
+    "platform": "剧场版",
+    "episodes_for_hangup": 1,
+    "synergy_tags": [
+        "剧场版",
+        "校园",
+        "恋爱",
+        "日本",
+        "原创"
+    ],
+    "date": "2014-04-26",
+    "rating_rank": 287,
+    "rating_score": 7.9,
+    "rating_total": 16004,
+    "main_character_ids": [
+        17960,
+        18269
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ed/08/17960_crt_FQhbh.jpg?r=1462841721",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ed/08/17960_crt_FQhbh.jpg?r=1462841721",
+                "large": "https://lain.bgm.tv/pic/crt/l/ed/08/17960_crt_FQhbh.jpg?r=1462841721",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ed/08/17960_crt_FQhbh.jpg?r=1462841721"
+            },
+            "name": "北白川たまこ",
+            "summary": "主人公。高中一年级生，家里在兔子山商店街经营饼类小吃店“玉屋”。 \r\n个性活泼开朗。隶属于舞棒部。十分喜欢饼类小吃。 \r\n虽然性格有些冒失，但制作点心方面可谓天才。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/37/de/8403_prsn_w98m9.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/37/de/8403_prsn_w98m9.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/37/de/8403_prsn_w98m9.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/37/de/8403_prsn_w98m9.jpg"
+                    },
+                    "name": "洲崎綾",
+                    "short_summary": "洲崎绫，出生于日本石川县，日本女性声优。隶属于I'm Enterprise。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 8403,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 17960
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/07/93/18269_crt_Et4Uq.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/07/93/18269_crt_Et4Uq.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/07/93/18269_crt_Et4Uq.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/07/93/18269_crt_Et4Uq.jpg"
+            },
+            "name": "大路もち蔵",
+            "summary": "玉子的同班同学，也是玉子的青梅竹马。 \r\n玉子家对面的饼类小吃店“大路屋”的少爷。 \r\n电影研究会社员，经常带着照相机。喜欢玉子。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fc/ff/4448_prsn_Io9r3.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/fc/ff/4448_prsn_Io9r3.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/fc/ff/4448_prsn_Io9r3.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fc/ff/4448_prsn_Io9r3.jpg"
+                    },
+                    "name": "升望",
+                    "short_summary": "升 望（ます のぞみ、1980年7月26日 - ）は、日本の女性声優。ラクーンドッグ所属。\r\n埼玉県出身。身長159cm、血液型はO型。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 4448,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8e/3b/7360_prsn_Trrzh.jpg?r=1740728812",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/8e/3b/7360_prsn_Trrzh.jpg?r=1740728812",
+                        "large": "https://lain.bgm.tv/pic/crt/l/8e/3b/7360_prsn_Trrzh.jpg?r=1740728812",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8e/3b/7360_prsn_Trrzh.jpg?r=1740728812"
+                    },
+                    "name": "田丸篤志",
+                    "short_summary": "出生地は北海道だが、生まれてまもなくして埼玉県に移り住む。\r\n高校時代、大学受験の勉強中に息抜きとして聞いていたラジオで偶然声優の番組を聞き、そこで流れていたアニメソングに興味を持ったことが声優を志すきっかけとなる。\r\n大学2年の時に雑誌に掲載されていた広告を見て声優養成所に通い始める。\r\n2007年、第2回シグマ・セブン公開オーディションに大亀あすか、西明日香、渕上舞らと共に合格。\r\n2009年、『クプ〜!!まめゴマ!』佐々木さん役でテレビアニメデビュー。\r\n2015年、4月より声優の内田雄馬と共にパーソナリティを務める超!A&G+『BELOVED MEMORIES』の放送を開始。\r\n2016年10月1日付けで、シグマ・セブンeからシグマ・セブンへ異動。\r\n2020年4月1日付けで、シグマ・セブンからマウスプロモーションへ移籍。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 7360,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 18269
+        }
+    ]
+}

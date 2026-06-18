@@ -1,0 +1,73 @@
+{
+    "birth_mon": 12,
+    "gender": "female",
+    "birth_day": 21,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/26/17/9193_crt_anidb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/26/17/9193_crt_anidb.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/26/17/9193_crt_anidb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/26/17/9193_crt_anidb.jpg"
+    },
+    "summary": "",
+    "name": "野井原緋鞠",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "野井原绯鞠"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "野井原緋鞠"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ひまり"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Noihara Himari"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "12月21日"
+        },
+        {
+            "key": "血型",
+            "value": "ネコ型"
+        },
+        {
+            "key": "身高",
+            "value": "157cm"
+        },
+        {
+            "key": "BWH",
+            "value": "88（F）・56・85"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        }
+    ],
+    "stat": {
+        "comments": 15,
+        "collects": 76
+    },
+    "id": 9193,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        3449
+    ]
+}

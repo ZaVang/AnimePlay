@@ -1,0 +1,92 @@
+{
+    "id": 425991,
+    "name": "魔王2099",
+    "image_path": "data\\images\\anime\\425991.jpg",
+    "points": 6.5,
+    "cost": 1,
+    "rarity": "N",
+    "description": "这里是统合历2099年──新宿市。在被灭亡的500年后，传说中的魔王「贝尔托尔」再次降临于发展达到极致的未来都市。巨大都市国家的辉煌繁荣……以及其背后所隐藏的惨烈「黑暗」，藉由「他」的降临一一揭开。为了统治新世界，魔王将在未来纵横驰骋！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "科幻",
+        "TV",
+        "日本",
+        "奇幻",
+        "小说改"
+    ],
+    "date": "2024-10-12",
+    "rating_rank": 5491,
+    "rating_score": 6.5,
+    "rating_total": 4622,
+    "main_character_ids": [
+        137905,
+        137906
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/27/83/137905_crt_uNVuv.jpg?r=1711178102",
+                "grid": "https://lain.bgm.tv/pic/crt/g/27/83/137905_crt_uNVuv.jpg?r=1711178102",
+                "large": "https://lain.bgm.tv/pic/crt/l/27/83/137905_crt_uNVuv.jpg?r=1711178102",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/27/83/137905_crt_uNVuv.jpg?r=1711178102"
+            },
+            "name": "ベルトール＝ベルベット・ベールシュバルト",
+            "summary": "かつて不死の王国に君臨した伝説の魔王。\r\n勇者に討伐され、滅びを迎えた後、500年の時を経て、統合暦2099年――電子荒廃都市・新宿市に再臨を遂げる。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/91/df/4256_prsn_fbfFG.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/91/df/4256_prsn_fbfFG.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/91/df/4256_prsn_fbfFG.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/91/df/4256_prsn_fbfFG.jpg"
+                    },
+                    "name": "日野聡",
+                    "short_summary": "经常带着眼镜的日野聪，不抽烟，喜欢口香糖和FRISK。\r\n美国出生东京长大。5岁之前生活在旧金山，当时使用着英语会话，但因为年幼的关系并没有清楚记得这样的事情。\r\n十几岁开始从属于儿童剧团。\r\n刚出道时主要是以西洋电影及电视系列剧的配音为主，直到灼眼的夏娜（坂井悠二）后，在日本动画方面的配音才多了起来。经常为J.C.STAFF、Geneon Entertainment制作的TV动画献声。其他方面、出演Square Enix的关联作品也很多。\r\n\r\n2015年1月11日，在博客宣布自己与声优·中岛沙树结婚的消息，目前育有一子。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 4256,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 137905
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/1c/84/137906_crt_aZoFD.jpg?r=1731674266",
+                "grid": "https://lain.bgm.tv/pic/crt/g/1c/84/137906_crt_aZoFD.jpg?r=1731674266",
+                "large": "https://lain.bgm.tv/pic/crt/l/1c/84/137906_crt_aZoFD.jpg?r=1731674266",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1c/84/137906_crt_aZoFD.jpg?r=1731674266"
+            },
+            "name": "マキナ＝ソレージュ",
+            "summary": "かつての魔王の臣下・六魔侯の一人で、炎に関する魔法を得意とする。\r\n魔王・ベルトールに対して忠誠を強く誓っており、ベルトールからも絶大な信頼を置かれている。\r\nベルトールから《転輪の法（メテノエル）》の発動条件を聞かされており、統合暦2099年の新宿市で、魔王再臨の究極儀式を遂行した。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/72/5a/10600_prsn_g9nsO.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/72/5a/10600_prsn_g9nsO.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/72/5a/10600_prsn_g9nsO.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/72/5a/10600_prsn_g9nsO.jpg"
+                    },
+                    "name": "伊藤美来",
+                    "short_summary": "伊藤 美来（いとう みく、1996年10月12日 - ）は、日本の女性声優。スタイルキューブ所属。\r\n東京都出身。\r\n\r\n2012年、第1回スタイルキューブ声優オーディションに合格。研修生として現事務所に所属。\r\n2013年、同じ研修生の豊田萌絵とともにStylipSへの加入が発表された。豊田と同時に研修生から本所属に切り替わった。\r\n\r\n趣味：観劇、仮面ライダー・戦隊ヒーロー鑑賞\r\n特技：けん玉",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 10600,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 137906
+        }
+    ]
+}

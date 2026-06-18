@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/e8/7a/172739_crt_74hpc.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/e8/7a/172739_crt_74hpc.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/e8/7a/172739_crt_74hpc.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e8/7a/172739_crt_74hpc.jpg"
+    },
+    "summary": "就读于与牡丹同一所大学的研究所，硕士一年级生。\r\n对电影与美术相当了解。\r\n很关心伊吹，为了找借口和她一起喝酒，还特地搜集了各种酒。\r\n\r\n\r\nぼたんたちと同じ大学の大学院に通う修士1年生。\r\n映画や美術に詳しい。\r\nいぶきを気にかけていて、一緒に飲む口実にお酒を集めている。",
+    "name": "郡上かなで",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "郡上奏"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "郡上 かなで"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "ぐじょう かなで"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kanade Gujyo"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 95,
+        "collects": 130
+    },
+    "id": 172739,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        543360
+    ]
+}

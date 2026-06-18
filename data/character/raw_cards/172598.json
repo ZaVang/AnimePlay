@@ -1,0 +1,74 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d2/61/172598_crt_M6kbz.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/d2/61/172598_crt_M6kbz.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/d2/61/172598_crt_M6kbz.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d2/61/172598_crt_M6kbz.jpg"
+    },
+    "summary": "库诺的贴身女仆。\r\n\r\n「生真面目な侍女だとクノンと一緒に思い悩み沈んでいってしまいそうだ」という理由で明るい侍女として選ばれた。\r\nクノンに「いつでもユーモアを忘れない紳士たれ」という教えを行っており、彼にとって大事なものとして真っ先に思いつくものの一つとなっている。\r\n\r\nクノンの侍女。「生真面目な侍女だとクノンと一緒に思い悩み沈んでいってしまいそうだ」という理由で明るい侍女として選ばれた。クノンに「いつでもユーモアを忘れない紳士たれ」という教えを言い聞かせており、彼もこの教えを大事にしている。",
+    "name": "イコ・ラウンド",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "伊可·朗德"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "韩语名",
+                    "v": "이코 라운드"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Iko Round"
+                },
+                {
+                    "k": "日文名",
+                    "v": "イコ・ラウンド"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Iko Raundo"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": [
+                {
+                    "k": "动画官网",
+                    "v": "http://kunonanime.jp/"
+                },
+                {
+                    "k": "中文wiki",
+                    "v": "https://zh.wikipedia.org/wiki/%E9%AD%94%E8%A1%93%E5%B8%AB%E5%BA%AB%E8%AB%BE%E7%9C%8B%E5%BE%97%E8%A6%8B%E4%B8%80%E5%88%87#%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9"
+                },
+                {
+                    "k": "日文wiki",
+                    "v": "https://ja.wikipedia.org/wiki/%E9%AD%94%E8%A1%93%E5%B8%AB%E3%82%AF%E3%83%8E%E3%83%B3%E3%81%AF%E8%A6%8B%E3%81%88%E3%81%A6%E3%81%84%E3%82%8B#%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9"
+                }
+            ]
+        }
+    ],
+    "stat": {
+        "comments": 16,
+        "collects": 46
+    },
+    "id": 172598,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        534674
+    ]
+}

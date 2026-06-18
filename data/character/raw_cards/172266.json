@@ -1,0 +1,40 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/65/4f/172266_crt_3QCJI.jpg?r=1740928777",
+        "grid": "https://lain.bgm.tv/pic/crt/g/65/4f/172266_crt_3QCJI.jpg?r=1740928777",
+        "large": "https://lain.bgm.tv/pic/crt/l/65/4f/172266_crt_3QCJI.jpg?r=1740928777",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/65/4f/172266_crt_3QCJI.jpg?r=1740928777"
+    },
+    "summary": "大手クラン《夜天の銀兎》の頂点に君臨するＳランクパーティのリーダーであり、大陸最高の【付与術士】。\r\nオルンのことは「勇者パーティ」の頃から評価しており、新人育成の場である「教導探索」の同行者を任せるほど。\r\n妹のソフィアを心から溺愛している。",
+    "name": "セルマ・クローデル",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "赛尔玛·克洛黛尔"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 15,
+        "collects": 32
+    },
+    "id": 172266,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        541336
+    ]
+}

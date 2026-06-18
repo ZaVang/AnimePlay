@@ -1,0 +1,125 @@
+{
+    "id": 301233,
+    "name": "One Room 第三季",
+    "image_path": "data\\images\\anime\\301233.jpg",
+    "points": 7,
+    "cost": 1,
+    "rarity": "N",
+    "description": "主人公はあなた———『てーきゅう』シリーズ、『ヤマノススメ』シリーズを手がけるスマイラル・アニメーションの“バーチャルアニメ”最新作。あなた（One）の部屋（Room）ではぐくむ女の子たちとの物語。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "恋爱",
+        "日本",
+        "原创",
+        "日常"
+    ],
+    "date": "2020-10-05",
+    "rating_rank": 2543,
+    "rating_score": 7,
+    "rating_total": 4266,
+    "main_character_ids": [
+        48706,
+        48708,
+        63390
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/db/ba/48706_crt_8A38b.jpg?r=1483059127",
+                "grid": "https://lain.bgm.tv/pic/crt/g/db/ba/48706_crt_8A38b.jpg?r=1483059127",
+                "large": "https://lain.bgm.tv/pic/crt/l/db/ba/48706_crt_8A38b.jpg?r=1483059127",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/db/ba/48706_crt_8A38b.jpg?r=1483059127"
+            },
+            "name": "桃原奈月",
+            "summary": "14歳の中学二年生。長野県在住。主人公の妹であり、東京で働く兄の「生活指導」という名目で夏休みを利用して兄の部屋に転がり込む。天真爛漫な性格で幼いイメージだが、案外しっかり者で家事全般も得意。兄想いで優しいが、素直になるのは少し苦手な所謂「ツンデレ」。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/45/2e/9096_prsn_9Qrr3.jpg?r=1740108890",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/45/2e/9096_prsn_9Qrr3.jpg?r=1740108890",
+                        "large": "https://lain.bgm.tv/pic/crt/l/45/2e/9096_prsn_9Qrr3.jpg?r=1740108890",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/45/2e/9096_prsn_9Qrr3.jpg?r=1740108890"
+                    },
+                    "name": "村川梨衣",
+                    "short_summary": "村川 梨衣（むらかわ りえ、6月1日 - ）は、日本の女性声優、ナレーター、ラジオパーソナリティ。東京俳優生活協同組合所属。\r\n\r\n声優を目指したきっかけは、小学校5年生頃にアニメ『HUNTER×HUNTER (1999年のアニメ)』を観た際による。主人公ゴン＝フリークスをとても魅力的に感じ、どうしたらゴンになれるのかを考えた結果、「声優になればいいんだ！」という考えにたどり着いた。その時、声優という職業が頭の中にパッと出てきた事が奇跡的だったと語っている。\r\n\r\nフロンティアワークス主催の「フロンティアチャレンジ2010」にて声優部門優秀賞受賞。 総合学園ヒューマンアカデミーを2011年3月に卒業後、東京俳優生活協同組合に所属。\r\n\r\n愛称の「りえしょん」は、広橋涼が名付けた。「しょん」には「パッション」「リアクション」「ハイテンション」の意が込められているという。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 9096,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 48706
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/95/02/48708_crt_IqIIz.jpg?r=1532410347",
+                "grid": "https://lain.bgm.tv/pic/crt/g/95/02/48708_crt_IqIIz.jpg?r=1532410347",
+                "large": "https://lain.bgm.tv/pic/crt/l/95/02/48708_crt_IqIIz.jpg?r=1532410347",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/95/02/48708_crt_IqIIz.jpg?r=1532410347"
+            },
+            "name": "花坂結衣",
+            "summary": "17歳の高校三年生。北海道で暮らしていたが大学受験に集中するために上京。同じく就職のために上京した姉と二人暮らしを始める。清楚で真面目、何事にも一生懸命な正統派ヒロイン。天然で要領が悪いが、芯が強く思いがけない積極的な行動を取ることも。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b7/93/10887_prsn_q7Vnh.jpg?r=1692450821",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b7/93/10887_prsn_q7Vnh.jpg?r=1692450821",
+                        "large": "https://lain.bgm.tv/pic/crt/l/b7/93/10887_prsn_q7Vnh.jpg?r=1692450821",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b7/93/10887_prsn_q7Vnh.jpg?r=1692450821"
+                    },
+                    "name": "M・A・O",
+                    "short_summary": "出生于日本大阪府，日本女演员、声优，前属大阪堀制作事务所所属女艺人，现为Yellow Cab NEXT旗下的女艺人。\r\n2006年10月，市道真央曾在大阪堀制作的HOP CLUB组合面试之中夺得大奖。2010年中，移居到东京。同年8月，在周刊少年JUMP的读者投稿角落《JUM魂G！》以职员身份登场。2011年2月，她在参演超级战队系列特摄作品《海贼战队豪快者》之中，饰演女主角之一“Luka Millfy／豪快黄”。2012年，以M·A·O的名义在电视动画《料理偶像》出演奇拉奇拉，正式开始声优活动。\r\n\r\n个人生活\r\n特色是关西腔。于2014年因出演《极黑的布伦希尔德》中的和美一角而出名。\r\n小的时候就很喜欢动画和漫画，不过，直接的契机是在特摄剧《海贼战队豪快者》中出演。由于对于这种化装后再配音的工作很感兴趣，所以希望有机会能从事与声音有关的工作。\r\n喜欢看书，但最喜欢的还是漫画，尤其是《周刊少年JUMP》。\r\n憧憬的角色不分身份、性别，只要能够锻炼演技都会广泛出演。希望尝试小男孩一类或者有着古怪变化的角色。\r\n在成为声优前亦有为《海贼战队豪快者》配音，因此拥有一定的基础，声线恬静柔和，无论是幼女还是青年女子都能够出演。",
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 10887,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 48708
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/6c/8c/63390_crt_S1Jsd.jpg?r=1529734841",
+                "grid": "https://lain.bgm.tv/pic/crt/g/6c/8c/63390_crt_S1Jsd.jpg?r=1529734841",
+                "large": "https://lain.bgm.tv/pic/crt/l/6c/8c/63390_crt_S1Jsd.jpg?r=1529734841",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6c/8c/63390_crt_S1Jsd.jpg?r=1529734841"
+            },
+            "name": "七橋御乃梨",
+            "summary": "17歳の高校三年生。祖父が経営する銭湯「七橋湯」が大好きで、毎日のように手伝っている。七橋湯に居候する苦学生の主人公とは兄妹のような関係性。明るく活発的で今どきの女の子という印象だが、歴史ある街並みや文化が好きな古風な一面を持つ。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bd/56/17491_prsn_1PkIP.jpg?r=1642506690",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/bd/56/17491_prsn_1PkIP.jpg?r=1642506690",
+                        "large": "https://lain.bgm.tv/pic/crt/l/bd/56/17491_prsn_1PkIP.jpg?r=1642506690",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bd/56/17491_prsn_1PkIP.jpg?r=1642506690"
+                    },
+                    "name": "高橋李依",
+                    "short_summary": "埼玉县立越谷南高等学校出身。2年级时曾获得动画甲子园2010-2011声音表演部门优秀赏。\r\n\r\n2012年3月，高中毕业的同时加入演员养成所81ACTOR'S STUDIO。研究生时期曾经以新人声优团体“Anisoni∀”的成员身份开始进行活动。\r\n\r\n2013年3月从81ACTOR'S STUDIO毕业，4月起加入81 Produce。\r\n\r\n2016年，获得第10回声优奖的新人女优赏。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 17491,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 63390
+        }
+    ]
+}

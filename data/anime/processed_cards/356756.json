@@ -1,0 +1,109 @@
+{
+    "id": 356756,
+    "name": "派对浪客诸葛孔明",
+    "image_path": "data\\images\\anime\\356756.jpg",
+    "points": 7,
+    "cost": 1,
+    "rarity": "N",
+    "description": "　　五丈原之战中病死的诸葛孔明，以年轻之姿转生到正在举办万圣节游行的现代日本东京都涉谷，并与创作歌手月见英子相遇。于是，为了帮助英子实现她的梦想，孔明发挥他的军事才能，以军师身份在音乐界活跃。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改",
+        "音乐",
+        "穿越"
+    ],
+    "date": "2022-04-05",
+    "rating_rank": 2645,
+    "rating_score": 7,
+    "rating_total": 11301,
+    "main_character_ids": [
+        104598,
+        104599
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ad/5d/104598_crt_MzunK.jpg?r=1649312832",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ad/5d/104598_crt_MzunK.jpg?r=1649312832",
+                "large": "https://lain.bgm.tv/pic/crt/l/ad/5d/104598_crt_MzunK.jpg?r=1649312832",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ad/5d/104598_crt_MzunK.jpg?r=1649312832"
+            },
+            "name": "月見英子",
+            "summary": "渋谷のCLUB「BBラウンジ」でバイトをしながら歌手を目指す。\r\nオーディションに落ち続けLIVEでも誰にも歌を聴いてもらえず歌手の夢を諦めかけていた時、諸葛孔明と出会う。軍師となった孔明に導かれて才能を開花させていく。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2b/90/8817_prsn_ApFcl.jpg?r=1700718194",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2b/90/8817_prsn_ApFcl.jpg?r=1700718194",
+                        "large": "https://lain.bgm.tv/pic/crt/l/2b/90/8817_prsn_ApFcl.jpg?r=1700718194",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2b/90/8817_prsn_ApFcl.jpg?r=1700718194"
+                    },
+                    "name": "96猫",
+                    "short_summary": "ニコニコ動画には歌い手としてデビュー\r\n\r\n◆ 名前の由来・・・\r\n96猫は、主が黒色が好きで、猫が好きで、黒猫が好きだから。\r\nナツメは、母親が名付けた。アニメ『学園アリス』の日向棗（CV.朴璐美）から。日向は、闇の世界では“黒ネコ”と呼ばれている。\r\n愛称は、なっちゃん。\r\n\r\n◆ 歌に於いても、生放送に於いてもフリーダムなのが特徴。\r\n高い声や低い声を様々と使い分けるが、性別は女性である。\r\n元々、歌い手名義「96猫」と生放送主名義「響希ナツメ」と使い分けていたが、2010年7月25日以降、「96猫」に名義を統一した。\r\n2012年6月5日、ニコニコミュニティレベル256達成。カンストは全ニコニコミュニティで初。\r\n同年8月8日、ファーストソロアルバム『memoReal』を発売。オリコンデイリーランキングで初登場6位を達成。\r\n同年10月13日からアニメ「探検ドリランド」の新EDテーマ曲として、WhiteFlame(黒うさP×96猫×一斗まる)の楽曲「流れ星」が",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 8817,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1a/96/19560_prsn_dIRg5.jpg?r=1709906617",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/1a/96/19560_prsn_dIRg5.jpg?r=1709906617",
+                        "large": "https://lain.bgm.tv/pic/crt/l/1a/96/19560_prsn_dIRg5.jpg?r=1709906617",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1a/96/19560_prsn_dIRg5.jpg?r=1709906617"
+                    },
+                    "name": "本渡楓",
+                    "short_summary": "日本的女性声优，爱知县名古屋市出身。I'm Enterprise所属。\r\n高中二年级进入日本播音演技研究所名古屋校就读，2015年4月进入I'm Enterprise。\r\n高中时代加入戏剧社，但因为身高矮小无法演出护士，而改以不会被外貌影响的声优为目标。\r\n交情好的声优有目前在《见习神仙 秘密的心灵》中共同演出的潘惠美、事务所的前辈小泽亚李与长绳麻理亚。\r\n对于演出婴儿的声音很有自信。\r\n2019年，获得第13回声优奖的新人女优赏。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 19560,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 104598
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/29/c4/104599_crt_ss622.jpg?r=1650760434",
+                "grid": "https://lain.bgm.tv/pic/crt/g/29/c4/104599_crt_ss622.jpg?r=1650760434",
+                "large": "https://lain.bgm.tv/pic/crt/l/29/c4/104599_crt_ss622.jpg?r=1650760434",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/29/c4/104599_crt_ss622.jpg?r=1650760434"
+            },
+            "name": "諸葛孔明",
+            "summary": "三国時代、当代きっての天才軍師。\r\n西暦234年、五丈原の戦いで死期を迎えたその瞬間、なぜか渋谷に転生してしまう。\r\n転生した渋谷で歌手を目指す「月見英子」の歌声に心奪われ、英子の軍師となり二度目の人生が幕を明ける。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c5/cf/3976_prsn_4eb60.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/c5/cf/3976_prsn_4eb60.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/c5/cf/3976_prsn_4eb60.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c5/cf/3976_prsn_4eb60.jpg"
+                    },
+                    "name": "置鮎龍太郎",
+                    "short_summary": "日本の男性声優、ナレーターである。青二プロダクション所属。血液型はO型。\r\n\r\n妻は声優の前田愛。置鮎は再婚となる。前妻は声優の永澤菜教。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 3976,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 104599
+        }
+    ]
+}

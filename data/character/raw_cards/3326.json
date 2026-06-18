@@ -1,0 +1,65 @@
+{
+    "birth_mon": 9,
+    "gender": "female",
+    "birth_day": 3,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/37/18/3326_crt_B45zd.jpg?r=1648101364",
+        "grid": "https://lain.bgm.tv/pic/crt/g/37/18/3326_crt_B45zd.jpg?r=1648101364",
+        "large": "https://lain.bgm.tv/pic/crt/l/37/18/3326_crt_B45zd.jpg?r=1648101364",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/37/18/3326_crt_B45zd.jpg?r=1648101364"
+    },
+    "summary": "　日本人气热血格斗动漫《一骑当千》中的人物，继承了三国武将吕蒙之魂的B级斗士。初期登场的时候表现狂傲，但相处下来其实是很可爱的女生，性格正经，平时举止拘谨，容易害羞，浅野真澄说“这是一个傲娇角色”。\r\n　　南阳四天王之一，关节技绝顶高手，以手铐为武器配合，投入战斗时和平日判若两人，左眼因为多年前刘备暴走时被龙之力所伤而寄宿了龙之力。单恋着王允子师，除了南阳众人以外，与吕布奉先也有一段短暂却深刻的友谊。",
+    "name": "呂蒙子明",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "吕蒙子明"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "りょもう しめい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Ryomou Shimei"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "9月3日"
+        },
+        {
+            "key": "血型",
+            "value": "A型"
+        },
+        {
+            "key": "身高",
+            "value": "160cm"
+        },
+        {
+            "key": "BWH",
+            "value": "B85 W58 H86"
+        }
+    ],
+    "stat": {
+        "comments": 10,
+        "collects": 44
+    },
+    "id": 3326,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        3909
+    ]
+}

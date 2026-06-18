@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/3f/b0/3481_crt_anidb.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/3f/b0/3481_crt_anidb.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/3f/b0/3481_crt_anidb.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3f/b0/3481_crt_anidb.jpg"
+    },
+    "summary": "長野県の某県立高校に通っている少年。\t\r\n年齢は１８歳。\r\n自ら「停滞」と呼んでいる病にかかり、１５～１７歳まで入院、医師のカウンセリングにより回復する。しかし、病気の間、桂の成長は止まってしまい、見た目は１５歳ぐらいにしか見えない。\r\nクラスメイトには、自分の本当の年齢を隠している。\t\r\n桂の両親は仕事で海外に出張中。現在は、医師である、親戚の江田島夫妻の家に居候している。\r\n江田島家は、よくある田舎の診療所で、住まいも兼ねている。\r\n性格は、いたって普通だが、優柔不断な面がある。",
+    "name": "草薙桂",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "草薙桂"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "草薙桂"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "くさなぎ けい"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kusanagi Kei"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net; please-please.jp"
+        }
+    ],
+    "stat": {
+        "comments": 0,
+        "collects": 1
+    },
+    "id": 3481,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        297
+    ]
+}

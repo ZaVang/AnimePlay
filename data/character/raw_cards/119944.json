@@ -1,0 +1,69 @@
+{
+    "birth_mon": 1,
+    "gender": "male",
+    "birth_day": 23,
+    "birth_year": null,
+    "blood_type": 1,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b0/dd/119944_crt_5C4x8.jpg?r=1675669062",
+        "grid": "https://lain.bgm.tv/pic/crt/g/b0/dd/119944_crt_5C4x8.jpg?r=1675669062",
+        "large": "https://lain.bgm.tv/pic/crt/l/b0/dd/119944_crt_5C4x8.jpg?r=1675669062",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b0/dd/119944_crt_5C4x8.jpg?r=1675669062"
+    },
+    "summary": "マッシュとは寮で相部屋の少年。\r\nツッコミ兼マッシュの初めての友達。",
+    "name": "フィン・エイムズ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "芬·埃姆斯"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Finn Ames"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "生日",
+            "value": "1月23日"
+        },
+        {
+            "key": "血型",
+            "value": "A"
+        },
+        {
+            "key": "身高",
+            "value": "170cm"
+        },
+        {
+            "key": "体重",
+            "value": "52kg"
+        },
+        {
+            "key": "足のサイズ",
+            "value": "26cm"
+        },
+        {
+            "key": "好きな言葉",
+            "value": "安寧秩序"
+        }
+    ],
+    "stat": {
+        "comments": 8,
+        "collects": 3
+    },
+    "id": 119944,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        389571
+    ]
+}

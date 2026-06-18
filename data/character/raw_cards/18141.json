@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/93/aa/18141_crt_66rdY.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/93/aa/18141_crt_66rdY.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/93/aa/18141_crt_66rdY.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/93/aa/18141_crt_66rdY.jpg"
+    },
+    "summary": "ガルガンティアでメッセンジャーをしている少女。好奇心旺盛で行動的、いつも元気な笑顔を絶やさない。人工冬眠から目覚めたレドと思わぬ出会いをはたしたのち、積極的に興味を持ち、ガルガンティアの案内役を買って出る。弟ベベルを大切に思っている。15才",
+    "name": "エイミー",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "艾米"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Amy"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "身高",
+            "value": "156cm"
+        },
+        {
+            "key": "体重",
+            "value": "B84 W56 H79"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://www.gargantia.jp/#character_1"
+        }
+    ],
+    "stat": {
+        "comments": 4,
+        "collects": 35
+    },
+    "id": 18141,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        56091
+    ]
+}

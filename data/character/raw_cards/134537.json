@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f1/b7/134537_crt_iUw6m.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/f1/b7/134537_crt_iUw6m.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/f1/b7/134537_crt_iUw6m.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f1/b7/134537_crt_iUw6m.jpg"
+    },
+    "summary": "明るく感情表現が豊かな女子高校生。スタイルが良く男子生徒から人気が高いが言動で残念がられている。異世界に召喚された直後、絶対絶命の場面を夜霧に助けられ、以降は元の世界への帰還を目指し、彼と共に行動することに。《ギフト》は使えないが、身体能力が非常に高く、さらに壇ノ浦家に代々伝わる総合格闘術・壇ノ浦流弓術を習得している。",
+    "name": "壇ノ浦知千佳",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "坛之浦知千佳"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "壇ノ浦 知千佳"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "TOMOCHIKA DANNOURA"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://sokushicheat-pr.com/"
+        }
+    ],
+    "stat": {
+        "comments": 42,
+        "collects": 70
+    },
+    "id": 134537,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        409441
+    ]
+}

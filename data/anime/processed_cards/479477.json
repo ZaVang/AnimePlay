@@ -1,0 +1,138 @@
+{
+    "id": 479477,
+    "name": "杖与剑的魔剑谭",
+    "image_path": "data\\images\\anime\\479477.jpg",
+    "points": 6.2,
+    "cost": 1,
+    "rarity": "N",
+    "description": "里加甸魔法学院六年级生──威尔・赛尔福特，被称为「只擅长学科的书呆子」。\r\n\r\n威尔连初阶魔法都无法使用，被大家藐视为学院的吊车尾。 \r\n\r\n为了遵守与儿时玩伴──艾尔法莉亚的约定，威尔作为魔导士，以最强称号「至高五杖」为目标，但这条路却遥不可及。\r\n\r\n某日，威尔一如往常在地下城击败魔物赚取学分，却撞见了蔑视自己的同学──锡安等人，\r\n正被本来不该出现在低楼层的强敌袭击……",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "漫画改",
+        "战斗"
+    ],
+    "date": "2024-07-07",
+    "rating_rank": 7114,
+    "rating_score": 6.2,
+    "rating_total": 5812,
+    "main_character_ids": [
+        152266,
+        152267,
+        152841
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c7/c5/152266_crt_ONzbM.jpg?r=1773141378",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c7/c5/152266_crt_ONzbM.jpg?r=1773141378",
+                "large": "https://lain.bgm.tv/pic/crt/l/c7/c5/152266_crt_ONzbM.jpg?r=1773141378",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c7/c5/152266_crt_ONzbM.jpg?r=1773141378"
+            },
+            "name": "ウィル・セルフォルト",
+            "summary": "リガーデン魔法学院6年生。魔法が使えない“無能者”として入学した異端な学生。そのせいで同級生たちから蔑まれているが、実は誰よりも強い力と卓越した剣技を持つ“戦士”。魔法の実技では単位が習得できないため、筆記と実習で単位を稼いでいる。エルファリアと幼い頃に交わした約束を守るため、“至高の五杖”を目指している。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d1/99/7605_prsn_mUHC1.jpg?r=1723389647",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d1/99/7605_prsn_mUHC1.jpg?r=1723389647",
+                        "large": "https://lain.bgm.tv/pic/crt/l/d1/99/7605_prsn_mUHC1.jpg?r=1723389647",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d1/99/7605_prsn_mUHC1.jpg?r=1723389647"
+                    },
+                    "name": "天﨑滉平",
+                    "short_summary": "日本の男性声優。大阪府摂津市出身。\r\n日本ナレーション演技研究所を経て、2013年4月にアイムエンタープライズに所属。\r\n\r\n2018年10月より放送のTVアニメ『DOUBLE DECKER! ダグ&キリル』にてキリル・ヴルーベリ役でアニメ初主演を務める。\r\n2018年7月から放送開始のTVアニメ『ハイスコアガール』に主人公の矢口春雄役で出演、放送順としてはこちらが先の主演作品となった。\r\nゲームでは『テイルズ オブ クレストリア』にてカナタ・ヒューガ役で主演を務める。\r\n\r\n趣味は写真撮影で、雑誌のコラムや出演した番組などで披露している。\r\n甘いものが好きで、スイーツを出すカフェでバイト経験がある。\r\n事務所の同期に、内田雄馬、小澤亜李、長縄まりあがいる。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 7605,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/00/1e/42142_prsn_dmbdn.jpg?r=1733931384",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/00/1e/42142_prsn_dmbdn.jpg?r=1733931384",
+                        "large": "https://lain.bgm.tv/pic/crt/l/00/1e/42142_prsn_dmbdn.jpg?r=1733931384",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/00/1e/42142_prsn_dmbdn.jpg?r=1733931384"
+                    },
+                    "name": "日向未南",
+                    "short_summary": "特技·趣味：\r\n歌唱，読書・ゲーム・イラストを描く(水彩とデジタル)\r\n所属事務所：アクセルワン",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 42142,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 152266
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/df/37/152267_crt_G4A2S.jpg?r=1773141545",
+                "grid": "https://lain.bgm.tv/pic/crt/g/df/37/152267_crt_G4A2S.jpg?r=1773141545",
+                "large": "https://lain.bgm.tv/pic/crt/l/df/37/152267_crt_G4A2S.jpg?r=1773141545",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/df/37/152267_crt_G4A2S.jpg?r=1773141545"
+            },
+            "name": "エルファリア・アルヴィス・セルフォルト",
+            "summary": "至高の五杖のひとり、別名 “深窓の氷姫”。ウィルとは共に孤児院で育った幼なじみ。類稀なる魔法の才能を持っていたことから、最年少で至高の五杖となった。ほぼすべての水、氷属性の魔法を操る天才。至高の五杖となった今も、塔の窓からいつもウィルを見守っている。聖女として崇められているが、実は……？",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/dd/87/17172_prsn_tG8Jd.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/dd/87/17172_prsn_tG8Jd.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/dd/87/17172_prsn_tG8Jd.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dd/87/17172_prsn_tG8Jd.jpg"
+                    },
+                    "name": "関根明良",
+                    "short_summary": "関根 明良（せきね あきら、12月16日 - ）は、日本の女性声優。アプトプロ所属。東京都出身。\r\n\r\n日本工学院専門学校 声優・演劇科35期生。アプトプロ付属養成所3期生。\r\n最初に出演したアニメ作品は『ニセコイ』。\r\n\r\n父親が名前を付ける時に候補として「みやび」があったが、「明るくしていれば良いことがある」という意味を込めて「明良」になった。名前を見てよく男性と間違えられる。\r\n現場で呼ばれるあだ名が無かったが、『プリンセス・プリンシパル』の共演者と共に「あきらりん」「あきらん」というあだ名を決めた。\r\n特技・趣味は戦国時代の武将や城、寺を巡り知識を得ることや、オーボエ演奏。楽器は4種類吹ける。\r\n着物、刀や鎧、抹茶など和風のものが好きで京都に行くことも多い。\r\nTwitterではたまたま当日の天気についてつぶやいた際、フォロワーから反応があったことがきっかけで天気予報を毎日している。\r\nセキセイインコを飼っており、川上千尋とは『アイカツ!』で共演したことを機にインコを通じての交流が深い。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 17172,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 152267
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a4/c4/152841_crt_EE35e.jpg?r=1773141120",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a4/c4/152841_crt_EE35e.jpg?r=1773141120",
+                "large": "https://lain.bgm.tv/pic/crt/l/a4/c4/152841_crt_EE35e.jpg?r=1773141120",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a4/c4/152841_crt_EE35e.jpg?r=1773141120"
+            },
+            "name": "コレット・ロワール",
+            "summary": "リガーデン魔法学院6年生。没落した貴族ロワール家の一人娘で、土魔法を得意とする優秀な魔導士の卵。ウィルを見下す者が多い魔法学院の中で、ウィルの唯一の友人であり味方。ウィルの努力が報われるためなら大胆な行動も厭わない。ウィルに想いを寄せており、素直に言葉を発するウィルに翻弄され赤面することもしばしば。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b2/a5/33935_prsn_ExZpp.jpg?r=1708700516",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b2/a5/33935_prsn_ExZpp.jpg?r=1708700516",
+                        "large": "https://lain.bgm.tv/pic/crt/l/b2/a5/33935_prsn_ExZpp.jpg?r=1708700516",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b2/a5/33935_prsn_ExZpp.jpg?r=1708700516"
+                    },
+                    "name": "天野聡美",
+                    "short_summary": "VIMS所属\r\n\r\n出身地：神奈川県\r\n趣味・特技：コスメ収集、茶道、バルーンアート、りんごの皮むき\r\n芸歴：日本ナレーション演技研究所",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 33935,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 152841
+        }
+    ]
+}

@@ -1,0 +1,89 @@
+{
+    "id": 545328,
+    "name": "银河特急 银河☆地铁",
+    "image_path": "data\\images\\anime\\545328.jpg",
+    "points": 7.5,
+    "cost": 1,
+    "rarity": "N",
+    "description": "銀河道路交通法違反で逮捕されてしまった強化人間のチハルとサイボーグのマキナ。二人に課せられたのは惑星間走行列車・通称ミルキー☆サブウェイの清掃作業。簡単な任務のはずだったが、やがて二人は大きな事件に巻き込まれていってしまう！意図なし！主義なし！主張なし！ノリで乗り切る前代未聞のスペーストレインスペクタクル!",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "原创"
+    ],
+    "date": "2025-07-03",
+    "rating_rank": 824,
+    "rating_score": 7.5,
+    "rating_total": 4223,
+    "main_character_ids": [
+        173062,
+        173063
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ea/ee/173062_crt_8Vu8V.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ea/ee/173062_crt_8Vu8V.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/ea/ee/173062_crt_8Vu8V.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ea/ee/173062_crt_8Vu8V.jpg"
+            },
+            "name": "チハル",
+            "summary": "本名・九条千春（くじょう・ちはる）。\r\n23才の強化人間。\r\n性格はお人よしでマイペース。\r\nマキナと一緒に逮捕されたのは今回が初めてではない。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/36/fb/49576_prsn_4i4Mm.jpg?r=1728675202",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/36/fb/49576_prsn_4i4Mm.jpg?r=1728675202",
+                        "large": "https://lain.bgm.tv/pic/crt/l/36/fb/49576_prsn_4i4Mm.jpg?r=1728675202",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/36/fb/49576_prsn_4i4Mm.jpg?r=1728675202"
+                    },
+                    "name": "寺澤百花",
+                    "short_summary": "出身地：千葉県\r\n資格：漢字検定3級／英語検定3級／ヤマハグレード6級\r\n趣味：動画鑑賞／ディズニーリゾートのトリビア探し\r\n特技：赤ちゃんの声マネ",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 49576,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 173062
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ab/1b/173063_crt_3yhHy.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ab/1b/173063_crt_3yhHy.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/ab/1b/173063_crt_3yhHy.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ab/1b/173063_crt_3yhHy.jpg"
+            },
+            "name": "マキナ",
+            "summary": "本名・来栖真希奈（くるす・まきな）。\r\n23才のサイボーグ。\r\nかなりガサツで少し好戦的な性格。\r\nチハルとは学生時代からの腐れ縁。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ca/8f/41550_prsn_tahHG.jpg?r=1765900231",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ca/8f/41550_prsn_tahHG.jpg?r=1765900231",
+                        "large": "https://lain.bgm.tv/pic/crt/l/ca/8f/41550_prsn_tahHG.jpg?r=1765900231",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ca/8f/41550_prsn_tahHG.jpg?r=1765900231"
+                    },
+                    "name": "永瀬アンナ",
+                    "short_summary": "日本の女性声優。東京都出身。81プロデュース所属\r\n\r\n[b]趣味・特技[/b]\r\n読書、演劇鑑賞、イラスト、漫画制作\r\nクラシックバレエ、ギター、トランペット、ピアノ、ダンス\r\n\r\n[b]受賞歴[/b]\r\n第17回声優アワード　新人声優賞",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 41550,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 173063
+        }
+    ]
+}

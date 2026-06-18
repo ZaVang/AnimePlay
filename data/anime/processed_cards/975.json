@@ -1,7 +1,7 @@
 {
     "id": 975,
     "name": "航海王",
-    "image_path": "data/images/anime/975.jpg",
+    "image_path": "data\\images\\anime\\975.jpg",
     "points": 8.3,
     "cost": 4,
     "rarity": "SSR",

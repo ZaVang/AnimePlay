@@ -1,0 +1,59 @@
+{
+    "id": 424663,
+    "name": "梦想成为魔法少女",
+    "image_path": "data\\images\\anime\\424663.jpg",
+    "points": 7,
+    "cost": 1,
+    "rarity": "N",
+    "description": "柊舞缇娜是非常喜欢魔法少女的普通女孩。有一天，一个奇怪的吉祥物给了她变身的能力，于是她学会了神奇的魔法，如此一来她就能成为魔法少女了。\r\n“咦，这到底是什么装扮？”\r\n“邪恶组织的女干部又是什么意思！？接下来我会变得怎么样啊！！？”\r\n心地善良且腼腆的魔法少女粉变成虐待狂，正义与邪恶的激烈SM Play就此开始。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 13,
+    "synergy_tags": [
+        "百合",
+        "TV",
+        "日本",
+        "漫画改",
+        "战斗"
+    ],
+    "date": "2024-01-03",
+    "rating_rank": 2443,
+    "rating_score": 7,
+    "rating_total": 12996,
+    "main_character_ids": [
+        101553
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ff/92/101553_crt_45u3s.jpg?r=1692190989",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ff/92/101553_crt_45u3s.jpg?r=1692190989",
+                "large": "https://lain.bgm.tv/pic/crt/l/ff/92/101553_crt_45u3s.jpg?r=1692190989",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ff/92/101553_crt_45u3s.jpg?r=1692190989"
+            },
+            "name": "柊うてな/悪の女幹部",
+            "summary": "魔法少女にあこがれる平凡な女の子。\r\n突然現れた謎のマスコット・ヴェナリータに悪の\r\n組織「エノルミータ」の女幹部にさせられてしまう。\r\n変身後は内に秘めたS心を解放して世界征服に謹む!?",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/69/67/36705_prsn_1hYyt.jpg?r=1707234187",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/69/67/36705_prsn_1hYyt.jpg?r=1707234187",
+                        "large": "https://lain.bgm.tv/pic/crt/l/69/67/36705_prsn_1hYyt.jpg?r=1707234187",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/69/67/36705_prsn_1hYyt.jpg?r=1707234187"
+                    },
+                    "name": "和泉風花",
+                    "short_summary": "日本の女性声優。愛知県出身。アミューズ所属。\r\n\r\n1月11日生まれ、愛知県出身。\r\n主な出演作として「けものフレンズ3」ドール役、「魔法少女にあこがれて」柊うてな / マジアベーゼ役、「HIGHSPEED Étoile」輪堂凛役、「魔導具師ダリヤはうつむかない」ルチア・ファーノ役、「しかのこのこのここしたんたん」馬車芽めめ、「花は咲く、修羅の如く」夏江杏役など。\r\n2022年のスーパー戦隊シリーズ「暴太郎戦隊ドンブラザーズ」では吉良きらら役として実写出演するなど、声優のみならず幅広い活躍が期待される。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 36705,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 101553
+        }
+    ]
+}

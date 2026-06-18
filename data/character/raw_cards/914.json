@@ -1,0 +1,49 @@
+{
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 23,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0c/24/914_crt_aPdTN.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/0c/24/914_crt_aPdTN.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/0c/24/914_crt_aPdTN.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0c/24/914_crt_aPdTN.jpg"
+    },
+    "summary": "17岁的女主角，兴趣是读书，喜欢的食物是橘子。因为从小时候就一直住院的关系，从来没有上过学，虽然长得可爱，但个性却超级任性并且自我中心，让周遭的人难以与其相处。曾经多次将负责照顾她的医师和护士欺负到哭，算是一个让人头疼的麻烦病患。",
+    "name": "秋庭里香",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "秋庭里香"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "秋庭 里香"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "4月23日"
+        }
+    ],
+    "stat": {
+        "comments": 17,
+        "collects": 141
+    },
+    "id": 914,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        1839
+    ]
+}

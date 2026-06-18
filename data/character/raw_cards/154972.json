@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/88/32/154972_crt_tBAxO.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/88/32/154972_crt_tBAxO.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/88/32/154972_crt_tBAxO.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/88/32/154972_crt_tBAxO.jpg"
+    },
+    "summary": "本作の主人公。高校2年生。中学時代に配信者の「アポロ」のラジオを聴いていた。\r\n\r\n楓林高校２年生。山吹財閥の御曹司。\r\n勉強や運動だけでなく、腸内環境をはじめありとあらゆる面で完璧であることを大事にしている。\r\nアポロとの交流をきっかけに、声に関する仕事に詳しくなる。\r\n好きな食べ物はモモ。",
+    "name": "山吹有栖",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "山吹有栖"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "山吹有栖"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "やまぶき ありす"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Arisu Yamabuki"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://mayochu-anime.com/#character"
+        }
+    ],
+    "stat": {
+        "comments": 70,
+        "collects": 33
+    },
+    "id": 154972,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        544109
+    ]
+}

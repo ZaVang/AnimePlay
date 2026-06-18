@@ -1,0 +1,124 @@
+{
+    "id": 55113,
+    "name": "玉子市场",
+    "image_path": "data\\images\\anime\\55113.jpg",
+    "points": 7.3,
+    "cost": 1,
+    "rarity": "N",
+    "description": "　　座落某个小镇的兔子商店街上，有一间日式饼店，住着一位十分喜欢饼类小吃的高中一年级女生——玉子。除了偶尔在店铺协助父亲，以及钻研新口味的饼类小吃外，她亦有跟学校的朋友参与羽毛球部活动。而饼店对面是同行的竞争对手，两边的父亲经常都因生意问题而喧哗。不过对方儿子——饼藏却自小跟玉子建立青梅竹马的关系，近日更不断隐约地表达心思，只是玉子没有特别注意，更常常被旁观的朋友拿出来扰攘一番。总而言之，玉子就是在商店街众人的护荫下，如此热闹地渡过每一天，生活可谓过得相当快乐。\r\n　　除夕，也就是玉子的生日，处于商店街年末最繁忙的时刻。庆祝仪式已经成为了商店街上下的惯例，唯独今年的饼藏没有准时来到。直到他带着礼物来到之时……一只光辉灿烂的鸟出现在众人面前。偶然变得越来越热闹的兔子商店街，亦正式开始其稍微不同的新一年。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "恋爱",
+        "日本",
+        "原创"
+    ],
+    "date": "2013-01-09",
+    "rating_rank": 1526,
+    "rating_score": 7.3,
+    "rating_total": 15074,
+    "main_character_ids": [
+        17960,
+        18057,
+        18058
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ed/08/17960_crt_FQhbh.jpg?r=1462841721",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ed/08/17960_crt_FQhbh.jpg?r=1462841721",
+                "large": "https://lain.bgm.tv/pic/crt/l/ed/08/17960_crt_FQhbh.jpg?r=1462841721",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ed/08/17960_crt_FQhbh.jpg?r=1462841721"
+            },
+            "name": "北白川たまこ",
+            "summary": "主人公。高中一年级生，家里在兔子山商店街经营饼类小吃店“玉屋”。 \r\n个性活泼开朗。隶属于舞棒部。十分喜欢饼类小吃。 \r\n虽然性格有些冒失，但制作点心方面可谓天才。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/37/de/8403_prsn_w98m9.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/37/de/8403_prsn_w98m9.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/37/de/8403_prsn_w98m9.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/37/de/8403_prsn_w98m9.jpg"
+                    },
+                    "name": "洲崎綾",
+                    "short_summary": "洲崎绫，出生于日本石川县，日本女性声优。隶属于I'm Enterprise。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 8403,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 17960
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/a4/e0/18057_crt_638RR.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/a4/e0/18057_crt_638RR.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/a4/e0/18057_crt_638RR.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a4/e0/18057_crt_638RR.jpg"
+            },
+            "name": "常盤みどり",
+            "summary": "玉子的好友，留著一頭短金髮及一個常盤色髮夾。舞棒部成員。第9話以後擔任部長。\r\n自小學四年級時起一直與玉子同班，直到高中二年級分入B班為止。\r\n祖父母在兔子山商店街經營玩具店「常盤堂」，但長大後對爺爺時常提及她的童年感到難為情。喜歡的東西是熊娃娃。\r\n做事很值得依賴，自小學起就是個受歡迎的人物，但她自己卻不以為然。\r\n各方面都很關心玉子，時常對玉子給予包含著關懷的吐槽，同時為了讓戀愛遲鈍的玉子不受傷害，對喜歡玉子的餅藏有所干涉。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d7/ae/8494_prsn_6iRk9.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d7/ae/8494_prsn_6iRk9.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/d7/ae/8494_prsn_6iRk9.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d7/ae/8494_prsn_6iRk9.jpg"
+                    },
+                    "name": "金子有希",
+                    "short_summary": "日本の声優、舞台女優。青二プロダクション所属。\r\n青二塾大阪校25期生。ゲームクリエーターの増田順一は親戚。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 8494,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 18057
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/21/6b/18058_crt_bNFT5.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/21/6b/18058_crt_bNFT5.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/21/6b/18058_crt_bNFT5.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/21/6b/18058_crt_bNFT5.jpg"
+            },
+            "name": "牧野かんな",
+            "summary": "玉子的同学。隶属于接力部。 \r\n家里从事被兔子山商店街的店铺所依赖的木匠工作。 \r\n十分在意建筑物的垂直测量。性格我行我素。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7d/01/8493_prsn_D9Mij.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7d/01/8493_prsn_D9Mij.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/7d/01/8493_prsn_D9Mij.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7d/01/8493_prsn_D9Mij.jpg"
+                    },
+                    "name": "長妻樹里",
+                    "short_summary": "日本の女性声優、歌手。プロ・フィット所属。\r\n北海道出身。身長161cm、血液型はO型。プロ・フィット声優養成所卒（第11期生）。\r\n\r\n3人姉妹の次女として生まれた。\r\n絵を描くのが好きで少女漫画家を目指していたが、中学生の時に書いた漫画が酷評だった為漫画家を諦めた。しかし、アニメや漫画が好きだったので高校時代から声優になりたいと思っていたが両親に反対され、看護学校へ進学。その後、看護師の仕事をしながらプロ・フィット声優養成所へ通い、1年後に事務所へ所属。\r\n2013年、初レギュラー作品である『たまこまーけっと』の牧野かんな役で注目を浴びる。2014年8月27日、シングル「言えないアイスクリーム」でアーティストデビュー。\r\n准看護師の資格を持つ。\r\n愛称は、多くの場合「樹里ちゃん」と呼ばれている。\r\n2014年10月1日、プロフィットの正所属となった。\r\n高校生時代に第1回ミュージックレイン スーパー声優オーディションに参加しており、同じオーディションを受験していた森千早都とはその時からの友人関係である[4]。",
+                    "career": [
+                        "mangaka",
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 8493,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 18058
+        }
+    ]
+}

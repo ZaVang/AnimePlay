@@ -1,0 +1,92 @@
+{
+    "id": 377607,
+    "name": "无神世界的神明活动",
+    "image_path": "data\\images\\anime\\377607.jpg",
+    "points": 6.8,
+    "cost": 1,
+    "rarity": "N",
+    "description": "卜部征人的父亲是一个怪异团体的教祖，他在父亲安排的严酷修行中不幸丧命，竟然转生到了异世界！这个没有“神”也没有“宗教”概念的异世界，对征人而言堪称理想世界！然而……为了保护在这里一起生活的居民，征人却不得不在这个没有神的异世界建立“宗教”？！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "漫画改",
+        "穿越"
+    ],
+    "date": "2023-04-05",
+    "rating_rank": 3366,
+    "rating_score": 6.8,
+    "rating_total": 8775,
+    "main_character_ids": [
+        125064,
+        125065
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/9b/97/125064_crt_3xiZs.jpg?r=1676270209",
+                "grid": "https://lain.bgm.tv/pic/crt/g/9b/97/125064_crt_3xiZs.jpg?r=1676270209",
+                "large": "https://lain.bgm.tv/pic/crt/l/9b/97/125064_crt_3xiZs.jpg?r=1676270209",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9b/97/125064_crt_3xiZs.jpg?r=1676270209"
+            },
+            "name": "卜部征人",
+            "summary": "「神地崇教」の教祖・卜部聡一朗の息子。教団の無茶な修行で命を落とし、異世界へ転生した。「神」や「宗教」はこりごりだと思っていたが、成り行きで「ミタマ」の信者集めを始めることに!?",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d0/70/16353_prsn_Tk4x9.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d0/70/16353_prsn_Tk4x9.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/d0/70/16353_prsn_Tk4x9.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d0/70/16353_prsn_Tk4x9.jpg"
+                    },
+                    "name": "榎木淳弥",
+                    "short_summary": "大学時代に周囲の影響でアニメを見始めるようになり、『天元突破グレンラガン』に感動したことがきっかけで声優を目指す。アトミックモンキー 声優・演技研究所に3期生として入所、卒業後に事務所所属となる。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 16353,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 125064
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/69/f8/125065_crt_HHzQ4.jpg?r=1676270237",
+                "grid": "https://lain.bgm.tv/pic/crt/g/69/f8/125065_crt_HHzQ4.jpg?r=1676270237",
+                "large": "https://lain.bgm.tv/pic/crt/l/69/f8/125065_crt_HHzQ4.jpg?r=1676270237",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/69/f8/125065_crt_HHzQ4.jpg?r=1676270237"
+            },
+            "name": "ミタマ",
+            "summary": "前世での征人の教団の神様。異世界転生する際に征人が唯一持ってくることができた勾玉から出現した。見た目は幼いが、れっきとした神様……らしい？",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a1/78/19339_prsn_R7laF.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a1/78/19339_prsn_R7laF.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/a1/78/19339_prsn_R7laF.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a1/78/19339_prsn_R7laF.jpg"
+                    },
+                    "name": "鬼頭明里",
+                    "short_summary": "鬼頭明里（きとう あかり）は、日本の女性声優である。ラクーンドッグ所属。\r\nあだ名は「あかりん」。\r\n\r\n10月16日生まれ、愛知県出身、血液型B型、153cm。プロ・フィット声優養成所を経て、現事務所に2015年4月から所属。\r\n趣味は絵を描くこと、歌うこと。特技は絵を描くこと、歌うこと、湯切り。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 19339,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 125065
+        }
+    ]
+}

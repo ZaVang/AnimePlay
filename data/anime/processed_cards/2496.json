@@ -1,7 +1,7 @@
 {
     "id": 2496,
     "name": "物怪",
-    "image_path": "data/images/anime/2496.jpg",
+    "image_path": "data\\images\\anime\\2496.jpg",
     "points": 8.2,
     "cost": 3,
     "rarity": "SR",

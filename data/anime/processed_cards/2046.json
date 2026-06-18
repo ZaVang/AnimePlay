@@ -1,0 +1,122 @@
+{
+    "id": 2046,
+    "name": "王立宇宙军 欧尼亚米斯之翼",
+    "image_path": "data\\images\\anime\\2046.jpg",
+    "points": 7.8,
+    "cost": 2,
+    "rarity": "R",
+    "description": "在奥内米斯王国里，有一支本应担任宇宙探险飞行的军队——王立宇宙军。但由于种种因素，他们始终只是一支无所作为的军队，甚至被其他军队视为废物。原本安于现状，只是在军队中混日子的年轻士官希洛兹，与美丽的少女莉库妮邂逅，被她的单纯与虔诚所吸引，逐渐开始改变自己的人生态度——成为第一个探索宇宙的人，让“王立宇宙军”成为名副其实的宇宙探索者。\r\n但现实是残酷的，奥内米斯王国内部的腐败使他们的信念一次次受挫，似乎人们都更关注于地面上丑陋的斗争，虽然王立宇宙军最后得到了飞行的机会，但那确是帝国内部的阴谋，企图牺牲希洛兹搭乘的火箭，以作为和邻国开战的借口。即便这样，希洛兹还是坐上了火箭，他能否看到太空中的日出呢……",
+    "type": 2,
+    "platform": "剧场版",
+    "episodes_for_hangup": 1,
+    "synergy_tags": [
+        "科幻",
+        "剧场版",
+        "日本",
+        "原创",
+        "冒险"
+    ],
+    "date": "1987-03-14",
+    "rating_rank": 468,
+    "rating_score": 7.8,
+    "rating_total": 2165,
+    "main_character_ids": [
+        94117,
+        94119,
+        94121
+    ],
+    "main_characters": [
+        {
+            "id": 94117,
+            "name": "シロツグ・ラーダット",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/c2/cf/94117_crt_0hxIQ.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c2/cf/94117_crt_0hxIQ.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c2/cf/94117_crt_0hxIQ.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c2/cf/94117_crt_0hxIQ.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 4836,
+                    "name": "森本レオ",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/0b/74/4836_prsn_3Gd9D.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0b/74/4836_prsn_3Gd9D.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0b/74/4836_prsn_3Gd9D.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/0b/74/4836_prsn_3Gd9D.jpg"
+                    },
+                    "short_summary": "森本 レオ（もりもと レオ、1943年2月13日- ）は、日本の俳優、ナレーター、タレント、声優である。本名は森本 治行（もりもと はるゆき）。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 94119,
+            "name": "リイクニ・ノンデライコ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/78/af/94119_crt_bDRB6.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/78/af/94119_crt_bDRB6.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/78/af/94119_crt_bDRB6.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/78/af/94119_crt_bDRB6.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 18517,
+                    "name": "弥生みつき",
+                    "type": 1,
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "images": {
+                        "large": "https://lain.bgm.tv/pic/crt/l/f5/f6/18517_prsn_QM01J.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f5/f6/18517_prsn_QM01J.jpg",
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f5/f6/18517_prsn_QM01J.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f5/f6/18517_prsn_QM01J.jpg"
+                    },
+                    "short_summary": "弥生 みつき（やよい みつき、本名：井上 弥生〈いのうえ やよい〉、1963年3月15日 - ）は、日本の女優、声優。東京都出身。",
+                    "locked": false
+                }
+            ]
+        },
+        {
+            "id": 94121,
+            "name": "マナ",
+            "type": 1,
+            "images": {
+                "large": "https://lain.bgm.tv/pic/crt/l/ee/31/94121_crt_f2IUz.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ee/31/94121_crt_f2IUz.jpg",
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/ee/31/94121_crt_f2IUz.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/ee/31/94121_crt_f2IUz.jpg"
+            },
+            "relation": "主角",
+            "actors": [
+                {
+                    "id": 41441,
+                    "name": "村田彩",
+                    "type": 1,
+                    "career": [
+                        "seiyu"
+                    ],
+                    "images": {
+                        "large": "",
+                        "medium": "",
+                        "small": "",
+                        "grid": ""
+                    },
+                    "short_summary": "",
+                    "locked": false
+                }
+            ]
+        }
+    ]
+}

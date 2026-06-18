@@ -1,0 +1,93 @@
+{
+    "id": 495562,
+    "name": "DDDD 恶魔的破坏",
+    "image_path": "data\\images\\anime\\495562.jpg",
+    "points": 7.6,
+    "cost": 1,
+    "rarity": "N",
+    "description": "3年前の8月31日、巨大な宇宙船「母艦」が突如として東京に襲来し、世界は終わりを迎えるかに見えた。その後、絶望的な状況は次第に日常に溶け込み、上空に母艦が浮遊する異様な光景が当たり前となっていた。そんな中、女子高生の小山門出と「おんたん」こと中川凰蘭は、担任教師の渡良瀬や仲の良い友人たちとともに何気ない学生生活を送っていたが……。",
+    "type": 2,
+    "platform": "WEB",
+    "episodes_for_hangup": 18,
+    "synergy_tags": [
+        "科幻",
+        "日本",
+        "漫画改",
+        "日常",
+        "剧情",
+        "WEB"
+    ],
+    "date": "2024-05-24",
+    "rating_rank": 726,
+    "rating_score": 7.6,
+    "rating_total": 3393,
+    "main_character_ids": [
+        143745,
+        143746
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f5/ac/143745_crt_ajkAi.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f5/ac/143745_crt_ajkAi.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/f5/ac/143745_crt_ajkAi.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f5/ac/143745_crt_ajkAi.jpg"
+            },
+            "name": "小山門出",
+            "summary": "国民的まんがキャラクター“インベやん”を溺愛\r\n担任の渡良瀬に片思い中",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/00/98/40689_prsn_E5P0n.jpg?r=1702786774",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/00/98/40689_prsn_E5P0n.jpg?r=1702786774",
+                        "large": "https://lain.bgm.tv/pic/crt/l/00/98/40689_prsn_E5P0n.jpg?r=1702786774",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/00/98/40689_prsn_E5P0n.jpg?r=1702786774"
+                    },
+                    "name": "幾田りら",
+                    "short_summary": "家族の影響で幼い頃から音楽に触れ、次第にシンガーソングライターへの道を志す。\r\n小学6年生からギター弾き語りで作詞作曲を始め、2016年より本格的に活動をスタートする。\r\n2017年7月より、ソロ活動に並行しアコースティックカバーセッションユニット「ぷらそにか」のメンバーとしても活動を開始。\r\n2019年7月東京海上日動あんしん生命CMでスキマスイッチ「全力少年」の歌唱に抜擢。\r\n2019年12月にはカメラアプリSNOWのCMにて歌唱。\r\n2019年11月より、小説を音楽にするユニット「YOASOBI」を結成。ボーカルikuraとしての顔も持つ。\r\n2018年4月、1st mini album「Rerise」リリースレコ発企画ライブを開催。\r\n2019年11月、2nd mini album「Jukebox」をリリースレコ発ワンマンライブを開催。\r\n2020年3月11日より「Jukebox」は全国のタワーレコードを皮切りに、各CDショップでの取り扱いがスタート。同時に「Jukebox」に収録されている楽曲「ロマンスの約束」のMVが公開された。",
+                    "career": [
+                        "artist"
+                    ],
+                    "id": 40689,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 143745
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/27/be/143746_crt_Ey17E.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/27/be/143746_crt_Ey17E.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/27/be/143746_crt_Ey17E.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/27/be/143746_crt_Ey17E.jpg"
+            },
+            "name": "中川凰蘭",
+            "summary": "通称おんたん\r\n門出とは小学生からの親友\r\n戦争ゲームオタク",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/5b/ea/56720_prsn_237t6.jpg?r=1741880680",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/5b/ea/56720_prsn_237t6.jpg?r=1741880680",
+                        "large": "https://lain.bgm.tv/pic/crt/l/5b/ea/56720_prsn_237t6.jpg?r=1741880680",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5b/ea/56720_prsn_237t6.jpg?r=1741880680"
+                    },
+                    "name": "あの",
+                    "short_summary": "日本歌手、模特儿、演员、电视艺人。 从2013年到2019是女性偶像团体You'll Melt More!的成员。从2020年开始以“ano”（此以罗马字拼写）的名义展开个人音乐活动，2021年起成为摇滚乐队I's的成员。\r\n\r\n代表作有曲目《ちゅ、多様性。》和《スマイルあげない》。",
+                    "career": [
+                        "artist",
+                        "actor"
+                    ],
+                    "id": 56720,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 143746
+        }
+    ]
+}

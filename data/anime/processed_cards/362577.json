@@ -1,0 +1,174 @@
+{
+    "id": 362577,
+    "name": "铃芽之旅",
+    "image_path": "data\\images\\anime\\362577.jpg",
+    "points": 6.6,
+    "cost": 1,
+    "rarity": "N",
+    "description": "生活在日本九州田舍的17岁少女・铃芽遇见了为了寻找“门”而踏上旅途的青年。\r\n追随着青年的脚步，铃芽来到了山上一片废墟之地，在这里静静伫立着一扇古老的门，仿佛是坍塌中存留的唯一遗迹。\r\n铃芽仿佛被什么吸引了一般，将手伸向了那扇门……\r\n不久之后，日本各地的门开始一扇一扇地打开。\r\n据说，开着的门必须关上，否则灾祸将会从门的那一边降临于现世。\r\n星星，夕阳，拂晓，误入之境的天空，仿佛溶解了一切的时间。\r\n在神秘之门的引导下，铃芽踏上了关门的旅途。",
+    "type": 2,
+    "platform": "剧场版",
+    "episodes_for_hangup": 1,
+    "synergy_tags": [
+        "剧场版",
+        "恋爱",
+        "日本",
+        "奇幻",
+        "原创"
+    ],
+    "date": "2022-11-11",
+    "rating_rank": 4890,
+    "rating_score": 6.6,
+    "rating_total": 15067,
+    "main_character_ids": [
+        112783,
+        115922
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/1f/99/112783_crt_5IZpT.jpg?r=1680168434",
+                "grid": "https://lain.bgm.tv/pic/crt/g/1f/99/112783_crt_5IZpT.jpg?r=1680168434",
+                "large": "https://lain.bgm.tv/pic/crt/l/1f/99/112783_crt_5IZpT.jpg?r=1680168434",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1f/99/112783_crt_5IZpT.jpg?r=1680168434"
+            },
+            "name": "岩戸鈴芽",
+            "summary": "九州の静かな町で、叔母と二人で暮らす17歳の女子高校生。\r\n広大な廃墟の中、幼い自分が草原をさまよい歩く不思議な夢をよく見る。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/14/72/46848_prsn_Ecm0D.jpg?r=1695022233",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/14/72/46848_prsn_Ecm0D.jpg?r=1695022233",
+                        "large": "https://lain.bgm.tv/pic/crt/l/14/72/46848_prsn_Ecm0D.jpg?r=1695022233",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/14/72/46848_prsn_Ecm0D.jpg?r=1695022233"
+                    },
+                    "name": "原菜乃華",
+                    "short_summary": "原 菜乃華（はら なのか、2003年8月26日 - ）は、日本の女優、元子役。東京都出身。トライストーン・エンタテイメント所属。",
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 46848,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/4b/10/50161_prsn_8WB58.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/4b/10/50161_prsn_8WB58.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/4b/10/50161_prsn_8WB58.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4b/10/50161_prsn_8WB58.jpg"
+                    },
+                    "name": "黑特",
+                    "short_summary": "原所属北斗企鹅工作室，现藤韵文化成员。\r\n新人配音演员，喜马拉雅主播。现居北京。\r\n声线多面，情感真挚。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 50161,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/30/06/52775_prsn_z9eqr.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/30/06/52775_prsn_z9eqr.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/30/06/52775_prsn_z9eqr.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/30/06/52775_prsn_z9eqr.jpg"
+                    },
+                    "name": "三浦あかり",
+                    "short_summary": "",
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 52775,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bf/cc/79105_prsn_t8mjv.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/bf/cc/79105_prsn_t8mjv.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/bf/cc/79105_prsn_t8mjv.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bf/cc/79105_prsn_t8mjv.jpg"
+                    },
+                    "name": "鄭可欣",
+                    "short_summary": "台湾女性配音员，旧名郑雅之。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 79105,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 112783
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/45/88/115922_crt_TbE69.jpg?r=1662426158",
+                "grid": "https://lain.bgm.tv/pic/crt/g/45/88/115922_crt_TbE69.jpg?r=1662426158",
+                "large": "https://lain.bgm.tv/pic/crt/l/45/88/115922_crt_TbE69.jpg?r=1662426158",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/45/88/115922_crt_TbE69.jpg?r=1662426158"
+            },
+            "name": "宗像草太",
+            "summary": "“災い”をもたらす扉を閉める「閉じ師」として、日本各地に現れる扉を探し 旅をしている青年。\r\n扉のある廃墟に向かう途中ですずめと出会う。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/cd/91/31931_prsn_ffFyk.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/cd/91/31931_prsn_ffFyk.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/cd/91/31931_prsn_ffFyk.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cd/91/31931_prsn_ffFyk.jpg"
+                    },
+                    "name": "马正阳",
+                    "short_summary": "月声网络配音社社长，2010年开始参加配音工作。代表作有动画《凹凸世界》雷德、《少年锦衣卫》袁小棠等。现居北京。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 31931,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ad/80/47870_prsn_oQwJ2.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ad/80/47870_prsn_oQwJ2.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/ad/80/47870_prsn_oQwJ2.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ad/80/47870_prsn_oQwJ2.jpg"
+                    },
+                    "name": "松村北斗",
+                    "short_summary": "松村 北斗（まつむら ほくと 、1995年6月18日 - ）は、日本のアイドル、俳優であり、男性アイドルグループ・ SixTONESのメンバーである 。",
+                    "career": [
+                        "artist",
+                        "actor"
+                    ],
+                    "id": 47870,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/38/52/79107_prsn_8YX76.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/38/52/79107_prsn_8YX76.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/38/52/79107_prsn_8YX76.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/38/52/79107_prsn_8YX76.jpg"
+                    },
+                    "name": "莊汶錡",
+                    "short_summary": "台湾男性配音员。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 79107,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 115922
+        }
+    ]
+}

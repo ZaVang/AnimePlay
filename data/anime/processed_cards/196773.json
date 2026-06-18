@@ -1,0 +1,91 @@
+{
+    "id": 196773,
+    "name": "Fate/Grand Order -First Order-",
+    "image_path": "data\\images\\anime\\196773.jpg",
+    "points": 5.9,
+    "cost": 1,
+    "rarity": "N",
+    "description": "2015年。示巴所观测到的未来领域毫无前兆地消失。根据计算，发现——不，是证明了人类将于2017年灭绝。人理延续保障机构·迦勒底将“无法观测的领域”假定为人类灭绝的原因，决定执行尚处于试验阶段的第六实验。那就是回到过去的时间旅行。将术者灵子化送往过去，通过介入事象，寻找出时空奇点，究明真相或予以破坏的禁断的仪式。其名为圣杯探索——冠位指定（Grand Order）。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 1,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "战斗",
+        "游戏改"
+    ],
+    "date": "2016-12-31",
+    "rating_rank": 8226,
+    "rating_score": 5.9,
+    "rating_total": 4540,
+    "main_character_ids": [
+        29048,
+        47912
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/21/ac/29048_crt_ZM4FW.jpg?r=1498989510",
+                "grid": "https://lain.bgm.tv/pic/crt/g/21/ac/29048_crt_ZM4FW.jpg?r=1498989510",
+                "large": "https://lain.bgm.tv/pic/crt/l/21/ac/29048_crt_ZM4FW.jpg?r=1498989510",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/21/ac/29048_crt_ZM4FW.jpg?r=1498989510"
+            },
+            "name": "マシュ・キリエライト",
+            "summary": "登场于Fate/Grand Order, 源于Fate/stay night最初设定的, 持有巨大盾牌的迷之少女。\r\n\r\nChaldea局的成员，玛修·基列莱特与Servant凭依融合的姿态。被称作Demi Servant。Demi Servant持有的特殊技能。能将凭依的英灵持有的技能仅仅一个继承下来，并升华为自我的流派。玛修的场合是“魔力防御”。与魔力放出同类型的技能，将魔力直接变换为防御力。如果是持有庞大魔力的英灵的话，那将会是连一个国家都能守护的神圣壁垒吧。玛修得知了凭依于自身的英灵的真名。那个骑士的名字叫加拉哈德。存在于亚瑟王传说中的圆桌骑士的一人。唯一一个入手了圣杯，随后返回了天堂的圣者。Chaldea能够用独自的方法成功完成英灵召唤，作为其基础的是作为加拉哈德召唤的触媒的“英雄们集结的场所”——也就是玛修所持有的，利用圆桌制成的盾牌。\r\n\r\n宝具简介『如今仍是遥远的理想之城』\r\n等级:B+++  种类:对恶宝具\r\nLord・Camelot\r\n英灵・加拉哈德持有的宝具。白亚之城卡美洛的中心，使用圆桌骑士们的圆桌为盾的究极的守护。强度根据使用者的精神程度，内心绝不屈服的话城壁绝对不会崩溃。 将之冠以Chaldea之名向来是由存在于玛修心底的祈愿，“守望人类的未来”而来吧。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bd/56/17491_prsn_1PkIP.jpg?r=1642506690",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/bd/56/17491_prsn_1PkIP.jpg?r=1642506690",
+                        "large": "https://lain.bgm.tv/pic/crt/l/bd/56/17491_prsn_1PkIP.jpg?r=1642506690",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bd/56/17491_prsn_1PkIP.jpg?r=1642506690"
+                    },
+                    "name": "高橋李依",
+                    "short_summary": "埼玉县立越谷南高等学校出身。2年级时曾获得动画甲子园2010-2011声音表演部门优秀赏。\r\n\r\n2012年3月，高中毕业的同时加入演员养成所81ACTOR'S STUDIO。研究生时期曾经以新人声优团体“Anisoni∀”的成员身份开始进行活动。\r\n\r\n2013年3月从81ACTOR'S STUDIO毕业，4月起加入81 Produce。\r\n\r\n2016年，获得第10回声优奖的新人女优赏。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 17491,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 29048
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/9a/59/47912_crt_645i4.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/9a/59/47912_crt_645i4.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/9a/59/47912_crt_645i4.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9a/59/47912_crt_645i4.jpg"
+            },
+            "name": "藤丸立香",
+            "summary": "人理継続保障機関(カルデア)のマスター候補の1人だが、数合わせとして呼ばれた「素人」。人類史を正すため、英霊召喚システム「フェイト」を使ってサーヴァントを召喚し、7つの聖杯探索(グランドオーダー)を巡ることになる。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/65/0b/7392_prsn_85bDV.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/65/0b/7392_prsn_85bDV.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/65/0b/7392_prsn_85bDV.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/65/0b/7392_prsn_85bDV.jpg"
+                    },
+                    "name": "島﨑信長",
+                    "short_summary": "岛﨑信长（1988年12月6日－），日本男性配音演员。隶属于青二Production。出身于宫城县。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 7392,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 47912
+        }
+    ]
+}

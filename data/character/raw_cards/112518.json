@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/90/8c/112518_crt_q9M3c.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/90/8c/112518_crt_q9M3c.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/90/8c/112518_crt_q9M3c.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/90/8c/112518_crt_q9M3c.jpg"
+    },
+    "summary": "アランのもとにいたドワーフ族の少女。小さな見た目とは裏腹に力持ち。才能のあるドワーフであれば、探索者レベル10で鍛冶師になることができると言われているが、彼女は鍛冶師になることができず……。",
+    "name": "セリー",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "赛璃"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Sherry"
+                },
+                {
+                    "k": "第二中文名",
+                    "v": "賽璃"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "年龄",
+            "value": "16"
+        }
+    ],
+    "stat": {
+        "comments": 12,
+        "collects": 29
+    },
+    "id": 112518,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        322130
+    ]
+}

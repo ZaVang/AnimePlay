@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c1/fa/114581_crt_44W3Y.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c1/fa/114581_crt_44W3Y.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/c1/fa/114581_crt_44W3Y.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c1/fa/114581_crt_44W3Y.jpg"
+    },
+    "summary": "28才女性、コーディネイター。\r\nDSSDの技術開発センター「GSX-401FWスターゲイザー計画」開発技術陣の一人。\r\n一度決めた目標はなんとしても達成しなければ気が済まず、またそのためならば努力は惜しまず、目的のためには手段を選ばない。その手段のために批判されることも恐れない意志の強い女性。その分、一つのことに夢中になると周囲が見えなくなり、自己中心的だと批判されることもあるが、意に介さない。宇宙事故で両親を亡くしてからは、その性格がさらに強まった傾向がある。\r\n言い寄る男もいないではないが、目下の恋人は火星軌道圏以遠の天体である。",
+    "name": "セレーネ・マクグリフ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "赛蕾妮·马克格蕾夫"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "赛雷妮·马克古里夫"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Selene McGriff"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://www.seed-stargazer.net/character/index.html"
+        }
+    ],
+    "stat": {
+        "comments": 0,
+        "collects": 5
+    },
+    "id": 114581,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        21065
+    ]
+}

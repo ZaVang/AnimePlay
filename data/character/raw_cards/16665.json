@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/66/10/16665_crt_eytEE.jpg?r=1391522723",
+        "grid": "https://lain.bgm.tv/pic/crt/g/66/10/16665_crt_eytEE.jpg?r=1391522723",
+        "large": "https://lain.bgm.tv/pic/crt/l/66/10/16665_crt_eytEE.jpg?r=1391522723",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/66/10/16665_crt_eytEE.jpg?r=1391522723"
+    },
+    "summary": "女主角，曾是雏妓\r\n\r\n本作的主人公，马杜克市的未成年妓女。小时候长期受到父亲的性虐待，后来家庭变故，做了妓女，警察发现后被拘禁，此后内心一直封闭着。榭尔主动接近她并给了她一切，然而因“破坏规则”（榭尔所言，实际上是知道了不该知道的事），榭尔起了杀心，欲将其杀死，性命本来应该毁于那刻。之后潜意识接受O9，被伊斯塔博士和乌夫库克所救，并与乌夫库克组成搭档，答应其一起找寻榭尔犯罪的证据，同时寻找着自己的生存意义，封闭的内心也渐渐打开。再生后获得了干扰电子设备的能力，但是没有恢复发声的能力。喜欢乌夫库克。",
+    "name": "ルーン・バロット",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "露恩·芭洛特"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Rune Balot"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "anidb.net"
+        },
+        {
+            "key": "年龄",
+            "value": "15"
+        }
+    ],
+    "stat": {
+        "comments": 25,
+        "collects": 119
+    },
+    "id": 16665,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        4274
+    ]
+}

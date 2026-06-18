@@ -1,0 +1,78 @@
+{
+    "birth_mon": 9,
+    "gender": "female",
+    "birth_day": 4,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c8/05/87821_crt_pvyF2.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c8/05/87821_crt_pvyF2.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/c8/05/87821_crt_pvyF2.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c8/05/87821_crt_pvyF2.jpg"
+    },
+    "summary": "魔防隊七番組 組長。醜鬼に故郷を滅ぼされた過去を持ち、醜鬼の殲滅を目標に掲げる。能力「無窮の鎖」（スレイブ）で優希を使役する。",
+    "name": "羽前京香",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "羽前京香"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "羽前 京香"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "うぜん きょうか"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kyoka Uzen"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "9月4日"
+        },
+        {
+            "key": "血型",
+            "value": "O型"
+        },
+        {
+            "key": "身高",
+            "value": "167cm"
+        },
+        {
+            "key": "BWH",
+            "value": "B:85（E）"
+        },
+        {
+            "key": "引用来源",
+            "value": "https://mabotai.jp/character/#/kyoka"
+        },
+        {
+            "key": "能力",
+            "value": "无穷之锁（Slave）"
+        }
+    ],
+    "stat": {
+        "comments": 54,
+        "collects": 160
+    },
+    "id": 87821,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        357962,
+        486054
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/dd/97/31790_crt_lQ8tR.jpg?r=1675931640",
+        "grid": "https://lain.bgm.tv/pic/crt/g/dd/97/31790_crt_lQ8tR.jpg?r=1675931640",
+        "large": "https://lain.bgm.tv/pic/crt/l/dd/97/31790_crt_lQ8tR.jpg?r=1675931640",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dd/97/31790_crt_lQ8tR.jpg?r=1675931640"
+    },
+    "summary": "被封印了语言的少女。",
+    "name": "成瀬順",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "成濑顺"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "成瀬 順"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "なるせ じゅん"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Naruse Jun"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://www.kokosake.jp/character/"
+        }
+    ],
+    "stat": {
+        "comments": 32,
+        "collects": 123
+    },
+    "id": 31790,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        119344
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a4/43/179971_crt_KBRvl.jpg?r=1752907750",
+        "grid": "https://lain.bgm.tv/pic/crt/g/a4/43/179971_crt_KBRvl.jpg?r=1752907750",
+        "large": "https://lain.bgm.tv/pic/crt/l/a4/43/179971_crt_KBRvl.jpg?r=1752907750",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a4/43/179971_crt_KBRvl.jpg?r=1752907750"
+    },
+    "summary": "天真爛漫な性格の少女。アレンの幼馴染みで、身分は農奴。持って生まれた才能は「剣聖」。剣に関しては、5歳にして大人顔負けの実力を持つ。一方で頭を使うことが苦手。戦うことが大好きでアレンとよく騎士ごっこをして遊んでいる。",
+    "name": "クレナ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "格蕾娜"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "第二中文名",
+                    "v": "克蕾娜"
+                },
+                {
+                    "k": "韩语名",
+                    "v": "쿠레나"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Krena"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "クレナ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Kurena"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 3,
+        "collects": 5
+    },
+    "id": 179971,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        526979
+    ]
+}

@@ -1,0 +1,589 @@
+{
+    "date": "2009-11-21",
+    "platform": "剧场版",
+    "images": {
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/78/84/2504_88jGQ.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/78/84/2504_88jGQ.jpg",
+        "large": "https://lain.bgm.tv/pic/cover/l/78/84/2504_88jGQ.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/78/84/2504_88jGQ.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/78/84/2504_88jGQ.jpg"
+    },
+    "summary": "西元2059年，玻璃防护笼罩下的日常，载有数千万人的第25号巨型移民团——「马克罗斯拓荒船队」，正朝着银河中心前进，寻找人类新天地。处于演艺生涯巅峰的银河最强歌姬雪露·诺姆，来到此船团举办巡回演唱会。憧憬雪露，怀抱歌手梦的女孩兰花·李，以及梦想在真实天空翱翔，有着公主般美貌的少年早乙女有人，三人因命运的牵系在演唱会现场相遇。但未知的威胁却在此时袭击演唱会，临危受命的少年，为爱而唱的少女，将在璀璨星河的光芒中，交织出震撼银河的传说。\r\n\r\n\r\n\r\n[简介原文]\r\n変わらない日常、閉じ込められたガラス張りの移民船団。\r\n西暦2059年、新天地を目指す銀河移民船団「マクロス・フロンティア」で、パイロットを目指す少年「早乙女アルト」は閉塞感を覚えていた。そんな時、銀河頂点の歌姫「シェリル・ノーム」のコンサートツアーが船団へやってくる。シェリルに憧れる少女「ランカ・リー」とともに、アルトはコンサート会場にいた。突如、重機甲生命体「バジュラ」の襲撃を受け燃え上がる船団。少女たちを護るため、アルトは最新型可変戦闘機VF-25に乗り込む。\r\n炎を切り裂き飛びゆく先には、宇宙を揺るがす伝説の“歌”と、少女たちにまつわる新たな『謎』が……！",
+    "name": "劇場版 マクロスF 虚空歌姫〜イツワリノウタヒメ〜",
+    "name_cn": "剧场版 超时空要塞F 虚空歌姬",
+    "tags": [
+        {
+            "name": "剧场版",
+            "count": 432,
+            "total_cont": 0
+        },
+        {
+            "name": "Macross",
+            "count": 367,
+            "total_cont": 0
+        },
+        {
+            "name": "超时空要塞",
+            "count": 291,
+            "total_cont": 0
+        },
+        {
+            "name": "河森正治",
+            "count": 243,
+            "total_cont": 0
+        },
+        {
+            "name": "菅野洋子",
+            "count": 231,
+            "total_cont": 0
+        },
+        {
+            "name": "2009",
+            "count": 172,
+            "total_cont": 0
+        },
+        {
+            "name": "Satelight",
+            "count": 110,
+            "total_cont": 0
+        },
+        {
+            "name": "原创",
+            "count": 90,
+            "total_cont": 0
+        },
+        {
+            "name": "女王大人",
+            "count": 82,
+            "total_cont": 0
+        },
+        {
+            "name": "萝卜",
+            "count": 81,
+            "total_cont": 0
+        },
+        {
+            "name": "绿毛必须死",
+            "count": 62,
+            "total_cont": 0
+        },
+        {
+            "name": "歌曲大放送",
+            "count": 52,
+            "total_cont": 0
+        },
+        {
+            "name": "机战",
+            "count": 50,
+            "total_cont": 0
+        },
+        {
+            "name": "科幻",
+            "count": 48,
+            "total_cont": 0
+        },
+        {
+            "name": "劇場版マクロスF",
+            "count": 43,
+            "total_cont": 0
+        },
+        {
+            "name": "恋爱",
+            "count": 36,
+            "total_cont": 0
+        },
+        {
+            "name": "音乐",
+            "count": 28,
+            "total_cont": 0
+        },
+        {
+            "name": "女王",
+            "count": 26,
+            "total_cont": 0
+        },
+        {
+            "name": "MF",
+            "count": 18,
+            "total_cont": 0
+        },
+        {
+            "name": "中村悠一",
+            "count": 14,
+            "total_cont": 0
+        },
+        {
+            "name": "サテライト",
+            "count": 12,
+            "total_cont": 0
+        },
+        {
+            "name": "日本",
+            "count": 12,
+            "total_cont": 0
+        },
+        {
+            "name": "吉野弘幸",
+            "count": 11,
+            "total_cont": 0
+        },
+        {
+            "name": "马哭螺死",
+            "count": 11,
+            "total_cont": 0
+        },
+        {
+            "name": "偶像",
+            "count": 10,
+            "total_cont": 0
+        },
+        {
+            "name": "菅野よう子",
+            "count": 9,
+            "total_cont": 0
+        },
+        {
+            "name": "2009年",
+            "count": 9,
+            "total_cont": 0
+        },
+        {
+            "name": "8bit",
+            "count": 8,
+            "total_cont": 0
+        },
+        {
+            "name": "党争",
+            "count": 6,
+            "total_cont": 0
+        },
+        {
+            "name": "战斗",
+            "count": 6,
+            "total_cont": 0
+        }
+    ],
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "剧场版 超时空要塞F 虚空歌姬"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Macross Frontier 虚空歌姬"
+                },
+                {
+                    "v": "超时空要塞Frontier 虚空歌姬"
+                },
+                {
+                    "v": "劇場版マクロスF 〜イツワリノウタヒメ〜"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Macross Frontier: The False Songstress"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Gekijouban Macross F: Itsuwari no Utahime"
+                }
+            ]
+        },
+        {
+            "key": "上映年度",
+            "value": "2009年11月21日"
+        },
+        {
+            "key": "片长",
+            "value": "119分钟"
+        },
+        {
+            "key": "官方网站",
+            "value": "https://macross.jp/pages/series?title=macrossf-movie"
+        },
+        {
+            "key": "链接",
+            "value": [
+                {
+                    "k": "旧官网（已失效）",
+                    "v": "www.macrossf.com"
+                }
+            ]
+        },
+        {
+            "key": "Copyright",
+            "value": "©2009 ビックウエスト／劇場版マクロスF製作委員会"
+        },
+        {
+            "key": "导演",
+            "value": "河森正治"
+        },
+        {
+            "key": "原作",
+            "value": "河森正治、スタジオぬえ"
+        },
+        {
+            "key": "脚本",
+            "value": "吉野弘幸、河森正治"
+        },
+        {
+            "key": "演出",
+            "value": "菊地康仁"
+        },
+        {
+            "key": "人物设定",
+            "value": "江端里沙、高橋裕一"
+        },
+        {
+            "key": "机械设定",
+            "value": "石垣純哉、高倉武史；女武神设定：河森正治；机械美术：天神英貴；辅：池田幸雄"
+        },
+        {
+            "key": "音乐",
+            "value": "菅野よう子"
+        },
+        {
+            "key": "话数",
+            "value": "1"
+        },
+        {
+            "key": "製作",
+            "value": "ビック・ウエスト、劇場版マクロスF製作委員会（バンダイビジュアル）、サテライト；製作进行：向峠和喜；製作進行補佐：大友寿也、杉田萌、藏本泰裕、河井久和"
+        },
+        {
+            "key": "制片人",
+            "value": "平井伸一、国崎久徳"
+        },
+        {
+            "key": "执行制片人",
+            "value": "大西加紋、鵜之澤伸、佐藤道明"
+        },
+        {
+            "key": "分镜",
+            "value": "河森正治、菊地康仁、阿保孝雄、松田清、田中孝行"
+        },
+        {
+            "key": "Monitor Graphics",
+            "value": "笹倉逸郎"
+        },
+        {
+            "key": "演出助理",
+            "value": "阿保孝雄、松田清"
+        },
+        {
+            "key": "作画监督",
+            "value": "高橋裕一、丸藤広貴、入江篤、藤川太、大籠之仁"
+        },
+        {
+            "key": "CG 导演",
+            "value": "总导演：八木下浩史；高橋将人、井野元英二"
+        },
+        {
+            "key": "CG 协力",
+            "value": "佐藤直樹、原田丈"
+        },
+        {
+            "key": "CG 制作人",
+            "value": "橋本トミサブロウ"
+        },
+        {
+            "key": "美术监督",
+            "value": "吉原俊一郎（美峰）"
+        },
+        {
+            "key": "动画检查",
+            "value": "田中保美"
+        },
+        {
+            "key": "色彩设计",
+            "value": "中山久美子"
+        },
+        {
+            "key": "色彩指定",
+            "value": "村上智美、坂上康治"
+        },
+        {
+            "key": "上色检查",
+            "value": "長谷川美穂"
+        },
+        {
+            "key": "摄影监督",
+            "value": "笹倉逸郎"
+        },
+        {
+            "key": "摄影管理",
+            "value": "山本健太郎、高橋麻樹"
+        },
+        {
+            "key": "剪辑",
+            "value": "定松剛；剪辑工作室：キュー・テック"
+        },
+        {
+            "key": "音乐制作人",
+            "value": "佐々木史朗、太田敏明"
+        },
+        {
+            "key": "音乐导演",
+            "value": "井上裕香子"
+        },
+        {
+            "key": "音响监督",
+            "value": "三間雅文；辅佐：中嶋聡彦"
+        },
+        {
+            "key": "音效",
+            "value": "倉橋静男（サウンドボックス）；助手：山谷尚人（サウンドボックス）"
+        },
+        {
+            "key": "录音",
+            "value": "录音调整：内田誠"
+        },
+        {
+            "key": "录音助理",
+            "value": "上の未来、田上祐二（アオイスタジオ） 、山口博美（トライアルスタッフ）"
+        },
+        {
+            "key": "音响",
+            "value": "テクノサウンド（嶌村京子、奥崎早紀子）"
+        },
+        {
+            "key": "动画制作",
+            "value": "サテライト、エイトビット"
+        },
+        {
+            "key": "设定制作",
+            "value": "風間亮"
+        },
+        {
+            "key": "摄影",
+            "value": "エイトビット（斉藤めぐみ、佐藤洋、高橋なおみ）、MADBOX（石塚惠子、伊藤亮太、川下裕樹、武原健二、棚田耕平）、T2 Studio（田沢二郎、若林優、影山慈郎、刀根有史）、サテライト（石川寛貢、植田真樹、山根裕二郎、守田なつ子）；摄影制作：角田祐司"
+        },
+        {
+            "key": "协力",
+            "value": "アァミリーマート、アァミマ・ドット・コム（畠中雄一）、バンダイ（石橋加奈子、髙雄千草）、バンダイナムコゲームス[现:バンダイナムコエンターテインメント]（尾石尚則、後藤能孝、広野啓）、バンダイチャンネル（松本健、宮崎薰）、BANPRESTO（平田滋、富田聡一郎、藤山太郎）、メガハウス（戸村桂子）、毎日放送（竹田靑滋、丸山博雄、前田俊博）、JOYSOUND（髙木貴、筧剛、伊藤伸治）、ムービック（堂下律明、杉本拓朗、長谷川嘉範）、 手塚プロダクション（新見秀和）、シャッフル（内藤啓二）"
+        },
+        {
+            "key": "联合制片人",
+            "value": "里吉純"
+        },
+        {
+            "key": "助理制片人",
+            "value": "渋谷俊子、高橋なおみ"
+        },
+        {
+            "key": "发行",
+            "value": "クロックワークス（根上哲、武智恒雄、宮崎聡、沼田知己）"
+        },
+        {
+            "key": "插入歌演出",
+            "value": "May'n"
+        },
+        {
+            "key": "插入歌作词",
+            "value": "HaL、しほり、PA-NON、Gabriela Robin（菅野よう子）、阿佐茜、一倉宏、黒河影次（河森正治）、真名杏樹"
+        },
+        {
+            "key": "插入歌作曲",
+            "value": "菅野よう子、羽田健太郎"
+        },
+        {
+            "key": "插入歌编曲",
+            "value": "菅野よう子、保刈久明"
+        },
+        {
+            "key": "原画",
+            "value": "江畑諒真、石田可奈、朴性厚、丸加奈子、井上邦彦、森田岳士、山本佐和子、松田宗一郎、新号靖、斉藤和也、小谷杏子、小竹歩、塚田ひろし、沓名健一、吉岡毅、川崎愛香、丸藤広貴、奥野浩行、大籠之仁、垪和等、豆塚隆、和田卓也、宝谷幸稔、柳隆太、小林幸洋、松尾祐輔、伊藤大翼、岩崎光洋、小峰正頼、芝久保（毛利和昭）、鳥山冬美、宮本幸子、若山政志、甲斐泰之、小美野雅彦、吉田隆彦、酒井和雄（酒井和男）、諸貫哲朗、佐藤良隆、結城信輝、杉浦幸次、大久保宏、岡辰也、立石聖、花井宏和、嘉手苅睦、高倉武史、関口雅浩、奥田佳子、猪狩崇（いがりたかし）、住本悦子、大塚八愛、阿保孝雄、もといぎひろあき、藤川太、小倉典子、古賀美由紀、吉岡彩、土屋友次、大久保恭子、江端里沙、菊地康仁、高橋裕一"
+        },
+        {
+            "key": "第二原画",
+            "value": "作画协力：I&Sファクトリー；荒川理恵、稲見栄則、大嶋博之、大原大、岡野慎吾、奥山鈴奈、小澤和則、川村智美、北山修一、久保田彩、髙阪雅基、外山あすか、高橋亮、谷口元浩、中村誠、野崎あつこ、前田義宏、皆川一徳、米澤優、Jo Jung Soon、Man Mi Sun、Lim Hyun Ju、Im Hong Sub、An Yong Ju、ウォンバット、へバラキ、C-Station"
+        },
+        {
+            "key": "3DCG",
+            "value": "サテライト（畑秀明、池田幸雄、石川寛貴、後藤浩幸、北橋啓、森野浩典、竹内誠、佐々木達郎）、オレンジ（都田崇之、越田祐史、比嘉芳明、茂木光、鈴木正史、シン ゼフン）、Studio BACU（尾谷真弥、小岩寛満、まつくらひろき、斎藤裕允、田熊健）、ワオワールド（桂直也、井澤真一、竹中千織、奥西紀彰、西山佐智夫、露本祐治、後藤有）、unknownCASE（加島裕幸、崎山敦嗣、中村俊一、山口雄也）"
+        },
+        {
+            "key": "背景美术",
+            "value": "美峰（三田慎也、玉城健二、松本つばさ、辻秀一、保木いづみ、鈴木路恵、釘貫彩、加藤恵、知本祐太、高梨皓太、齋藤友子、藤巻秀明、今野慎一、清水紗織、三戸康史、岡部順、串田達也）、T.SUPATIDA、P.SEUPSIN、D.MANIT、K.RUNGRAT、M.KITTITAM、K.KARAWUT、P.SUKANYA、C.CHARAT、K.PISAN、P.PARINYA、P.MAYSAYA、L.CHANCHAI、S.SUPATTRA、R.JUTIMA、L.SATIMA"
+        },
+        {
+            "key": "补间动画",
+            "value": "NARA ANIMATION（Hwang Ji Na、Park Young Hee、Lee Seon Mi、Park Eun Joo、Sung Ji Young、An Mi Kyoung、Yonn Eun Ju、Min Kyoung Ae、Choi Hee Eun、Kong Jin、Choi Do Young、Jung Ji Young、Han Seung Jin、Yi So Young、Song Ji Young、Yi Bo Ruem）、AIM ENTERTAINMENT、J.C.STAFF、ワオワールド、diomedéa、スタジオディーン、AIC、SILVER LINK.、玉沢動画舎、ライジングフォース、スタジオライン、Hoods Entertainment、アクタス、中村プロダクション、旭プロダクション、フロントライン、Triple A、ムークアニメーション、ワォンバット、オクトバス、山崎千絵、羽田智織、佐藤可奈子、斉藤茉利"
+        },
+        {
+            "key": "上色",
+            "value": "緋和（のぼりはるこ）、NARA ANIMATION（Choi Sung Suk、Jeong Ji Hyun、Lee Ji Eun、Yoo Young Hye、Choi Hyun Ok、Kim Hyun Suk、Kim Mi Jung、Kim Young Hee、Han Myung Sun、Park Eun Young）、AIM ENTERTAINMENT、スタジオエル（林大樹、黒目綾子、角美智子、黒木舞、藤田和実、武井規晋、相田晃一、スネーク大田、西條春香、田中照佳、大久保雄介、宮脇弘史）、ライジングフォース、Brain's Base、フロントライン、Triple A、ムークアニメーション、アルテミス、AVALON MEDIA SUPPLY、坂上康治"
+        },
+        {
+            "key": "音乐制作",
+            "value": "フライングドッグ、ボーダーライン"
+        },
+        {
+            "key": "宣传",
+            "value": "プロモージョン：ビック・ウエストフロンティア（三宅達也）、フライングドッグ（伊藤将生、鈴木裕介）、バンダイナムコゲームス[现:バンダイナムコエンターテインメント]（黒澤豪、向山里映）、クロックワークス（小島則子、上阪優）、笹川健二"
+        },
+        {
+            "key": "特别鸣谢",
+            "value": "美樹本晴彦、角川プロダクション、All The Staff of Macross"
+        }
+    ],
+    "rating": {
+        "rank": 1706,
+        "total": 1727,
+        "count": {
+            "1": 6,
+            "2": 5,
+            "3": 3,
+            "4": 15,
+            "5": 47,
+            "6": 255,
+            "7": 713,
+            "8": 541,
+            "9": 108,
+            "10": 34
+        },
+        "score": 7.2
+    },
+    "total_episodes": 1,
+    "collection": {
+        "on_hold": 57,
+        "dropped": 32,
+        "wish": 481,
+        "collect": 2653,
+        "doing": 43
+    },
+    "id": 2504,
+    "eps": 1,
+    "meta_tags": [
+        "科幻",
+        "剧场版",
+        "机战",
+        "恋爱",
+        "日本",
+        "原创",
+        "音乐"
+    ],
+    "volumes": 0,
+    "series": false,
+    "locked": false,
+    "nsfw": false,
+    "type": 2,
+    "main_character_ids": [
+        54,
+        100,
+        103
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c7/34/54_crt_PTt1P.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c7/34/54_crt_PTt1P.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/c7/34/54_crt_PTt1P.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c7/34/54_crt_PTt1P.jpg"
+            },
+            "name": "ランカ・リー",
+            "summary": "身材娇小充满活力，性格明朗天真的少女。S.M.S的王牌机师，オズマ・リー的妹妹，为迎合哥哥的希望在大小姐学园圣マリア女学园就读。后转入美星学院高校，平时在中华料理店「娘々（にゃんにゃん）」打工。从小时候就非常喜欢唱歌，模糊地有了成为歌手的梦想。在第十话以自己的努力和机遇实现了自己歌手的梦想，成就了超时空灰姑娘的传说。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/6c/3e/4953_prsn_7p2Va.jpg?r=1571039881",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/6c/3e/4953_prsn_7p2Va.jpg?r=1571039881",
+                        "large": "https://lain.bgm.tv/pic/crt/l/6c/3e/4953_prsn_7p2Va.jpg?r=1571039881",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6c/3e/4953_prsn_7p2Va.jpg?r=1571039881"
+                    },
+                    "name": "中島愛",
+                    "short_summary": "中岛爱（1989年6月5日 - ），日本茨城县出身的女性声优、歌手。\r\ne-stone music所属，血型A型，出道作品为Macross Frontier的女主角兰花·李。\r\n日菲混血，父亲是日本人，母亲是菲律宾人。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 4953,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 54
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c9/34/100_crt_RRAjr.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c9/34/100_crt_RRAjr.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/c9/34/100_crt_RRAjr.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c9/34/100_crt_RRAjr.jpg"
+            },
+            "name": "シェリル・ノーム",
+            "summary": "Macross Galaxy(マクロス·ギャラクシー)移民船团在住之现役偶像歌手。为Galaxy Network排行榜前位的常客。被称为“银河の妖精”。在可爱的外表之下，有着高傲和直言不讳的坦率性格。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/d7/68/4893_prsn_i9tBS.jpg?r=1778938350",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/d7/68/4893_prsn_i9tBS.jpg?r=1778938350",
+                        "large": "https://lain.bgm.tv/pic/crt/l/d7/68/4893_prsn_i9tBS.jpg?r=1778938350",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d7/68/4893_prsn_i9tBS.jpg?r=1778938350"
+                    },
+                    "name": "遠藤綾",
+                    "short_summary": "遠藤 綾（えんどう あや、1980年2月17日 - ）は、日本の女性声優、ナレーター。オフィスPAC所属。\r\n山形県出身。身長160cm、血液型はO型。\r\n\r\n高校卒業後に声優を目指し上京。野沢那智が主宰する現事務所の養成所パフォーミング・アート・センターに入学し、留年を経て卒業。養成所を決めた理由は、親が野沢のことを知っていたため安心だと思ったからと語っている。\r\n初期の出演作としては2002年の『ワンだー・エディ』（第28話）、『魔王ダンテ』（第4話以降）などがある。2005年の『おくさまは女子高生』の堀口かすみ役が最初のレギュラー役出演、2007年の『らき☆すた』の高良みゆき役で知名度を上げて以来、2008年には『マクロスF』のシェリル・ノーム役、『ネオ アンジェリーク』のアンジェリーク役やOVA『舞-乙HiME 0〜S.ifr〜』のレナ・セイヤーズ役などを担当した。\r\nインターネットラジオ番組『Plume物語』内では、水野愛日、河原木志穂と共に声優ユニット・Plume（プリュム）を結成していたが、現在は活動休止中である。\r\nテレビアニメ『らき☆すた』オープニングテーマ『もってけ!セーラーふく』が第12回アニメーション神戸で主題歌賞（ラジオ関西賞）を受賞、2008年、第2回声優アワードにて平野綾、加藤英美里、福原香織と共に歌唱賞を受賞、2009年、第3回声優アワードにて助演女優賞を受賞。\r\n2013年8月8日、自身のブログで結婚を報告した。\r\n養成所時代の頃は演劇が苦手であり、師匠的存在の野沢那智によれば「演劇が嫌だ」と言っていたこともあるという。本人は「芝居はやりたいが、ラブシーンを演じるのが嫌」で、それが原因で卒業させてもらえなかったという逸話もある。野沢はそれに関して「よしじゃあ、ラブシーンのない芝居を作ろう」と語ったこともある。また、本人は元々声優がやりたかったので「声優の前に俳優であれ」という校長の言葉に周囲が重くなり、クラスの中と学校で「声優になりたい人」と言われたときに遠藤だけが手を上げていたという。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 4893,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/08/3b/6086_prsn_ZkC9L.jpg?r=1707471179",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/08/3b/6086_prsn_ZkC9L.jpg?r=1707471179",
+                        "large": "https://lain.bgm.tv/pic/crt/l/08/3b/6086_prsn_ZkC9L.jpg?r=1707471179",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/08/3b/6086_prsn_ZkC9L.jpg?r=1707471179"
+                    },
+                    "name": "May'n",
+                    "short_summary": "　　本名/旧艺名中林芽依。名古屋出身的日本女歌手。在2003年由Horipro举办的第28回新人选拔赛中，从3万5千人中脱颖而出的实力派歌手。2008年1月宣布将艺名变更为May'n（メイン）。血液O型。\r\n　　在电视动画超时空要塞 Frontier中，担任片中角色，银河歌姫雪露·诺姆的幕后歌曲代唱工作。",
+                    "career": [
+                        "artist"
+                    ],
+                    "id": 6086,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 100
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/69/74/103_e5ac660610b44d9b9fed0ff9548_HvIs2.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/69/74/103_e5ac660610b44d9b9fed0ff9548_HvIs2.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/69/74/103_e5ac660610b44d9b9fed0ff9548_HvIs2.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/69/74/103_e5ac660610b44d9b9fed0ff9548_HvIs2.jpg"
+            },
+            "name": "早乙女アルト",
+            "summary": "美星学园高校飞行员养成生。美丽的容貌以及长发使他经常被误认为女子。拥有着无比蹭得累的性格。歌舞伎名门出身，因对天空的憧憬，所以背离了父亲的期望，踏上成为飞行员的道路。抱着对Frontier的感情与守护的希望，他加入了SMS小队，乘坐着最新的VF-25与Vajra战斗着。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7a/78/4724_prsn_7TvWV.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7a/78/4724_prsn_7TvWV.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/7a/78/4724_prsn_7TvWV.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7a/78/4724_prsn_7TvWV.jpg"
+                    },
+                    "name": "中村悠一",
+                    "short_summary": "爱称是ゆうきゃん，由铃村健一命名。英文标记法为‘yuu-kyan’\r\n与声优的杉田智和的私交良好，是在声优界著名的好友。\r\n兴趣是玩游戏、看电影等。\r\n不喜欢吃拉面。喜欢的食物是肉、奶酪、甜食。\r\n2020年10月1日，宣布从Sigma Seven移籍至INTENTION。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 4724,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 103
+        }
+    ]
+}

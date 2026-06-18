@@ -1,0 +1,57 @@
+{
+    "birth_mon": 2,
+    "gender": "female",
+    "birth_day": 2,
+    "birth_year": null,
+    "blood_type": 3,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/45/ad/185504_crt_6p93Q.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/45/ad/185504_crt_6p93Q.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/45/ad/185504_crt_6p93Q.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/45/ad/185504_crt_6p93Q.jpg"
+    },
+    "summary": "高校１年生。感情をあまり表に出さず、必要以上に人と関わらないため、周囲からは「女王」と呼ばれている。冷静でクールな印象だが、実は繊細な一面も持ち合わせている。同じ団地に住む美姫とは幼なじみで、彼女にだけは素の自分を見せることができる。",
+    "name": "氷川小雪",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "冰川小雪"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "Koyuki Hikawa"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2月2日"
+        },
+        {
+            "key": "血型",
+            "value": "AB"
+        },
+        {
+            "key": "身高",
+            "value": "152cm"
+        }
+    ],
+    "stat": {
+        "comments": 14,
+        "collects": 44
+    },
+    "id": 185504,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        535669
+    ]
+}

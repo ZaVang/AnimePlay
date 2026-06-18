@@ -1,0 +1,486 @@
+{
+    "date": "2026-04-02",
+    "platform": "TV",
+    "images": {
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/93/8f/535669_4zoHG.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/93/8f/535669_4zoHG.jpg",
+        "large": "https://lain.bgm.tv/pic/cover/l/93/8f/535669_4zoHG.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/93/8f/535669_4zoHG.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/93/8f/535669_4zoHG.jpg"
+    },
+    "summary": "不擅长与人交往，在自己与别人之间筑墙的冰川小雪。\r\n除了青梅竹马的安昙美姬外，她从不与他人交往，只是静静地度过每一天。\r\n然而某天，不知为何主动靠近的男生·雨宫凑却闯入她的视野——？\r\n孤僻的女生·小雪、学校的万人迷·美姬、缺乏边界感的男生·凑、温柔体贴的篮球部员·阳太……\r\n笨拙且焦躁，却依然惹人恋爱。\r\n青春错位交织的群像剧，在此刻拉开帷幕。",
+    "name": "氷の城壁",
+    "name_cn": "冰之城墙",
+    "tags": [
+        {
+            "name": "2026年4月",
+            "count": 572,
+            "total_cont": 0
+        },
+        {
+            "name": "恋爱",
+            "count": 571,
+            "total_cont": 0
+        },
+        {
+            "name": "漫画改",
+            "count": 458,
+            "total_cont": 0
+        },
+        {
+            "name": "校园",
+            "count": 391,
+            "total_cont": 0
+        },
+        {
+            "name": "StudioKAI",
+            "count": 362,
+            "total_cont": 0
+        },
+        {
+            "name": "TV",
+            "count": 345,
+            "total_cont": 0
+        },
+        {
+            "name": "2026",
+            "count": 230,
+            "total_cont": 0
+        },
+        {
+            "name": "漫改",
+            "count": 196,
+            "total_cont": 0
+        },
+        {
+            "name": "日本",
+            "count": 192,
+            "total_cont": 0
+        },
+        {
+            "name": "青春",
+            "count": 119,
+            "total_cont": 0
+        },
+        {
+            "name": "まんきゅう",
+            "count": 58,
+            "total_cont": 0
+        },
+        {
+            "name": "万球",
+            "count": 46,
+            "total_cont": 0
+        },
+        {
+            "name": "日本动画",
+            "count": 26,
+            "total_cont": 0
+        },
+        {
+            "name": "永瀬アンナ",
+            "count": 20,
+            "total_cont": 0
+        },
+        {
+            "name": "日常",
+            "count": 19,
+            "total_cont": 0
+        },
+        {
+            "name": "2026年",
+            "count": 15,
+            "total_cont": 0
+        },
+        {
+            "name": "女性向",
+            "count": 14,
+            "total_cont": 0
+        },
+        {
+            "name": "动画",
+            "count": 9,
+            "total_cont": 0
+        },
+        {
+            "name": "2026春",
+            "count": 9,
+            "total_cont": 0
+        },
+        {
+            "name": "中西泰博",
+            "count": 9,
+            "total_cont": 0
+        },
+        {
+            "name": "Netflix",
+            "count": 8,
+            "total_cont": 0
+        },
+        {
+            "name": "千叶翔也",
+            "count": 7,
+            "total_cont": 0
+        },
+        {
+            "name": "和泉风花",
+            "count": 7,
+            "total_cont": 0
+        },
+        {
+            "name": "小林千晃",
+            "count": 7,
+            "total_cont": 0
+        },
+        {
+            "name": "鬼头明里",
+            "count": 6,
+            "total_cont": 0
+        },
+        {
+            "name": "永濑安娜",
+            "count": 6,
+            "total_cont": 0
+        },
+        {
+            "name": "波多野翔",
+            "count": 6,
+            "total_cont": 0
+        },
+        {
+            "name": "扭曲",
+            "count": 3,
+            "total_cont": 0
+        },
+        {
+            "name": "群像",
+            "count": 3,
+            "total_cont": 0
+        },
+        {
+            "name": "スタジオKAI",
+            "count": 3,
+            "total_cont": 0
+        }
+    ],
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "冰之城墙"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "Koori no Jouheki"
+                },
+                {
+                    "v": "The Ramparts of Ice"
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "14"
+        },
+        {
+            "key": "放送开始",
+            "value": "2026年4月2日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期四"
+        },
+        {
+            "key": "官方网站",
+            "value": "https://korinojoheki-pr.com/"
+        },
+        {
+            "key": "播放电视台",
+            "value": "TBS系28局"
+        },
+        {
+            "key": "导演",
+            "value": "まんきゅう"
+        },
+        {
+            "key": "音乐",
+            "value": "佐久間奏、田渕夏海"
+        },
+        {
+            "key": "Copyright",
+            "value": "©阿賀沢紅茶／集英社・TVアニメ「氷の城壁」製作委員会"
+        },
+        {
+            "key": "原作",
+            "value": "阿賀沢紅茶（集英社ジャンプ コミックス刊）"
+        },
+        {
+            "key": "人物设定",
+            "value": "荻野美希"
+        },
+        {
+            "key": "原作协力",
+            "value": "マーガレット編集部"
+        },
+        {
+            "key": "音乐制作人",
+            "value": "久世烈"
+        },
+        {
+            "key": "製作",
+            "value": "TVアニメ「氷の城壁」製作委員会（TBS、ユニバーサルミュージック、ADKエモーションズ）"
+        },
+        {
+            "key": "企画",
+            "value": "赤津一彦、藤倉尚治、和田修治"
+        },
+        {
+            "key": "执行制片人",
+            "value": "畠山渉、垣原伸彦、鶴崎りか"
+        },
+        {
+            "key": "制片人",
+            "value": "白石容子、中澤展也、石原慎也"
+        },
+        {
+            "key": "动画制片人",
+            "value": "伊藤太貴；总动画制片人：柴宏和"
+        },
+        {
+            "key": "制作统括",
+            "value": "麻生一宏"
+        },
+        {
+            "key": "助理制片人",
+            "value": "徳田慶子、岩田拓也"
+        },
+        {
+            "key": "宣传制片人",
+            "value": "前田吉輝"
+        },
+        {
+            "key": "制作管理",
+            "value": "山岡剣也"
+        },
+        {
+            "key": "设定制作",
+            "value": "齋藤琴"
+        },
+        {
+            "key": "设定制作助理",
+            "value": "横山拓海"
+        },
+        {
+            "key": "制作进行",
+            "value": "大場翔太朗"
+        },
+        {
+            "key": "脚本",
+            "value": "中西やすひろ"
+        },
+        {
+            "key": "总作画监督",
+            "value": "荻野美希"
+        },
+        {
+            "key": "色彩设计助理",
+            "value": "宮川真由香"
+        },
+        {
+            "key": "色彩指定",
+            "value": "田中真紀"
+        },
+        {
+            "key": "主题歌演出",
+            "value": "Novelbright / ポルカドットスティングレイ"
+        },
+        {
+            "key": "主题歌作词",
+            "value": "竹中雄大 / 雫"
+        },
+        {
+            "key": "主题歌作曲",
+            "value": "竹中雄大、冲聡次郎 / 雫"
+        },
+        {
+            "key": "主题歌编曲",
+            "value": "Novelbright / ポルカドットスティングレイ"
+        },
+        {
+            "key": "2D 设计",
+            "value": "江頭鈴々、鳴河美佳"
+        },
+        {
+            "key": "音效",
+            "value": "八十正太"
+        },
+        {
+            "key": "录音",
+            "value": "八巻大樹"
+        },
+        {
+            "key": "录音助理",
+            "value": "槇洋介"
+        },
+        {
+            "key": "录音工作室",
+            "value": "Studio2010:"
+        },
+        {
+            "key": "音响",
+            "value": "楽音舎"
+        },
+        {
+            "key": "音响制作担当",
+            "value": "杉山好美"
+        },
+        {
+            "key": "OP・ED 分镜",
+            "value": "罷利透(タムラコータロー) / まんきゅう"
+        },
+        {
+            "key": "OP・ED 演出",
+            "value": "石井輝 / まんきゅう"
+        }
+    ],
+    "rating": {
+        "rank": 2806,
+        "total": 1102,
+        "count": {
+            "1": 8,
+            "2": 7,
+            "3": 6,
+            "4": 14,
+            "5": 50,
+            "6": 196,
+            "7": 514,
+            "8": 253,
+            "9": 32,
+            "10": 22
+        },
+        "score": 6.9
+    },
+    "total_episodes": 14,
+    "collection": {
+        "on_hold": 83,
+        "dropped": 145,
+        "wish": 780,
+        "collect": 209,
+        "doing": 3717
+    },
+    "id": 535669,
+    "eps": 14,
+    "meta_tags": [
+        "TV",
+        "恋爱",
+        "日本",
+        "漫画改"
+    ],
+    "volumes": 0,
+    "series": false,
+    "locked": false,
+    "nsfw": false,
+    "type": 2,
+    "main_character_ids": [
+        185504,
+        185505,
+        185506
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/45/ad/185504_crt_6p93Q.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/45/ad/185504_crt_6p93Q.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/45/ad/185504_crt_6p93Q.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/45/ad/185504_crt_6p93Q.jpg"
+            },
+            "name": "氷川小雪",
+            "summary": "高校１年生。感情をあまり表に出さず、必要以上に人と関わらないため、周囲からは「女王」と呼ばれている。冷静でクールな印象だが、実は繊細な一面も持ち合わせている。同じ団地に住む美姫とは幼なじみで、彼女にだけは素の自分を見せることができる。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ca/8f/41550_prsn_tahHG.jpg?r=1765900231",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ca/8f/41550_prsn_tahHG.jpg?r=1765900231",
+                        "large": "https://lain.bgm.tv/pic/crt/l/ca/8f/41550_prsn_tahHG.jpg?r=1765900231",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ca/8f/41550_prsn_tahHG.jpg?r=1765900231"
+                    },
+                    "name": "永瀬アンナ",
+                    "short_summary": "日本の女性声優。東京都出身。81プロデュース所属\r\n\r\n[b]趣味・特技[/b]\r\n読書、演劇鑑賞、イラスト、漫画制作\r\nクラシックバレエ、ギター、トランペット、ピアノ、ダンス\r\n\r\n[b]受賞歴[/b]\r\n第17回声優アワード　新人声優賞",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 41550,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 185504
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/8e/a5/185505_crt_rQdE0.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/8e/a5/185505_crt_rQdE0.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/8e/a5/185505_crt_rQdE0.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8e/a5/185505_crt_rQdE0.jpg"
+            },
+            "name": "安曇美姫",
+            "summary": "高校１年生。幼なじみの小雪とは対照的に明るい性格でクラスのアイドル的存在。ただ、周りのイメージと、本来のガサツな自分とのギャップに、悩まされている。湊、陽太とは中学時代の塾で知り合った。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/69/67/36705_prsn_1hYyt.jpg?r=1707234187",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/69/67/36705_prsn_1hYyt.jpg?r=1707234187",
+                        "large": "https://lain.bgm.tv/pic/crt/l/69/67/36705_prsn_1hYyt.jpg?r=1707234187",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/69/67/36705_prsn_1hYyt.jpg?r=1707234187"
+                    },
+                    "name": "和泉風花",
+                    "short_summary": "日本の女性声優。愛知県出身。アミューズ所属。\r\n\r\n1月11日生まれ、愛知県出身。\r\n主な出演作として「けものフレンズ3」ドール役、「魔法少女にあこがれて」柊うてな / マジアベーゼ役、「HIGHSPEED Étoile」輪堂凛役、「魔導具師ダリヤはうつむかない」ルチア・ファーノ役、「しかのこのこのここしたんたん」馬車芽めめ、「花は咲く、修羅の如く」夏江杏役など。\r\n2022年のスーパー戦隊シリーズ「暴太郎戦隊ドンブラザーズ」では吉良きらら役として実写出演するなど、声優のみならず幅広い活躍が期待される。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 36705,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 185505
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/bd/61/185506_crt_ng1gt.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/bd/61/185506_crt_ng1gt.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/bd/61/185506_crt_ng1gt.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bd/61/185506_crt_ng1gt.jpg"
+            },
+            "name": "雨宮湊",
+            "summary": "高校１年生。誰に対してもフラットに接し、空気を読むのが得意。孤立しがちな人にも積極的に声をかけ、他人との間に壁をつくらない。異性からはかなりモテており、来るもの拒まずのスタンスだが、別れる時はいつも相手からフラれている。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2d/3a/19619_prsn_booOs.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2d/3a/19619_prsn_booOs.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/2d/3a/19619_prsn_booOs.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2d/3a/19619_prsn_booOs.jpg"
+                    },
+                    "name": "千葉翔也",
+                    "short_summary": "千叶翔也（1995年8月29日－）是日本男性声优及演员（前儿童演员），TOY'S FACTORY所属。\r\n\r\n兴趣及专长是吉他、看音乐剧。是宝冢歌剧团的粉丝。\r\n高中时期曾经加入了轻音乐部。\r\n在广播节目“千叶翔也的浪漫千层派”里提到自己崇拜的声优前辈是逢坂良太。",
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 19619,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 185506
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/54/19/14705_crt_9e4gf.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/54/19/14705_crt_9e4gf.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/54/19/14705_crt_9e4gf.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/54/19/14705_crt_9e4gf.jpg"
+    },
+    "summary": "特別な取り柄もない、普通の大学一年生。友達を作るのも苦手な方。\r\n両親を亡くしており、姉に育てられた。",
+    "name": "瀬川祐太",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "濑川祐太"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "昵称",
+                    "v": "おいたん"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        },
+        {
+            "key": "纯假名",
+            "value": "せがわ ゆうた"
+        },
+        {
+            "key": "罗马字",
+            "value": "Segawa Yuuta"
+        }
+    ],
+    "stat": {
+        "comments": 9,
+        "collects": 4
+    },
+    "id": 14705,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        25444
+    ]
+}

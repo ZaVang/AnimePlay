@@ -1,0 +1,49 @@
+{
+    "birth_mon": 2,
+    "gender": "female",
+    "birth_day": 24,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/49/b7/203610_crt_BkF80.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/49/b7/203610_crt_BkF80.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/49/b7/203610_crt_BkF80.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/49/b7/203610_crt_BkF80.jpg"
+    },
+    "summary": "スーパー S のレジスタッフ。いつも明るい笑顔で丁寧な接客を欠かさない看板店員。田山とは仲がいいらしい。",
+    "name": "山田",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "山田"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "罗马字",
+                    "v": "やまだ"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "2月24日"
+        }
+    ],
+    "stat": {
+        "comments": 3,
+        "collects": 32
+    },
+    "id": 203610,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        571784
+    ]
+}

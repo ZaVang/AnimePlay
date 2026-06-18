@@ -1,0 +1,73 @@
+{
+    "birth_mon": 6,
+    "gender": "female",
+    "birth_day": 10,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c6/e0/32366_crt_jjIBZ.jpg?r=1441778129",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c6/e0/32366_crt_jjIBZ.jpg?r=1441778129",
+        "large": "https://lain.bgm.tv/pic/crt/l/c6/e0/32366_crt_jjIBZ.jpg?r=1441778129",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c6/e0/32366_crt_jjIBZ.jpg?r=1441778129"
+    },
+    "summary": "女主角之一，金发巨乳，星导馆学园高中部1年级生，为星导馆学园的学生会长，喜欢绫斗，在绫斗来到星导馆之前就已经知道其存在。为了实现自己的目的而利用学生会长的职权，强势的选定绫斗作为特待转学生，让其能够在默默无闻的情况下享有特待生的特权而转入星导馆就读。\r\n使用拥有看见未来的能力纯星煌式武装“潘朵拉”。为星导馆排名第二，称号为“千见盟主”。",
+    "name": "クローディア・エンフィールド",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "克劳蒂雅·恩菲尔德"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "二つ名",
+                    "v": "千見の盟主（パルカ・モルタ）"
+                },
+                {
+                    "k": "英文名",
+                    "v": "Claudia Enfield"
+                },
+                {
+                    "k": "昵称",
+                    "v": "千见盟主"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "6月10日"
+        },
+        {
+            "key": "身高",
+            "value": "168cm"
+        },
+        {
+            "key": "所属",
+            "value": "星導館学園高等部1年→2年"
+        },
+        {
+            "key": "序列",
+            "value": "星導館学園2位"
+        },
+        {
+            "key": "煌式武装",
+            "value": "パン＝ドラ"
+        }
+    ],
+    "stat": {
+        "comments": 17,
+        "collects": 62
+    },
+    "id": 32366,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        130250
+    ]
+}

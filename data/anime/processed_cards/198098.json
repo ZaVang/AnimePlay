@@ -1,0 +1,94 @@
+{
+    "id": 198098,
+    "name": "citrus～柑橘味香气～",
+    "image_path": "data\\images\\anime\\198098.jpg",
+    "points": 6.3,
+    "cost": 1,
+    "rarity": "N",
+    "description": "虽是辣妹却未经历初恋的女高中生·柚子，由于父母再婚的原因而进入了女子高中。因无法交到男友而不满爆发的转学第一天，她与黑发的美人学生会长·芽衣以最糟糕的形式相遇了。不仅如此，她与成为义理姐妹的芽衣开始在同一个房间里生活……！？\r\n完全相反的两位女高中生，互相排斥又互相吸引。\r\n姐妹的love affair，就此展开！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "百合",
+        "校园",
+        "TV",
+        "恋爱",
+        "日本",
+        "漫画改",
+        "GL"
+    ],
+    "date": "2018-01-06",
+    "rating_rank": 6592,
+    "rating_score": 6.3,
+    "rating_total": 6804,
+    "main_character_ids": [
+        55068,
+        55069
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/58/c1/55068_crt_pZU01.jpg?r=1515405139",
+                "grid": "https://lain.bgm.tv/pic/crt/g/58/c1/55068_crt_pZU01.jpg?r=1515405139",
+                "large": "https://lain.bgm.tv/pic/crt/l/58/c1/55068_crt_pZU01.jpg?r=1515405139",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/58/c1/55068_crt_pZU01.jpg?r=1515405139"
+            },
+            "name": "藍原柚子",
+            "summary": "亲生父亲在其3岁时去世，因母亲与芽衣的父亲再婚而与芽衣成为姐妹。\r\n栗色头发，爱打扮的女高中生，实际上连恋爱都没有谈过。个性直率，转学第一天就因违反多条校规而与学生会成员对峙\r\n目睹了芽衣被雨宫老师强吻的场景后内心忐忑不安，逐渐对芽衣产生了爱慕之情\r\n在与芽衣交往后成功将戒指送给芽衣，对芽衣一片纯情。通过自己不懈的努力以及父母朋友的支持，在看到芽衣胸口那个象征与芽衣在一起的戒指，明白了芽衣爱自己的心意。终于修成正果，和芽衣结婚了，百年好合。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/2b/7b/5228_prsn_tIY4W.jpg?r=1718206051",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/2b/7b/5228_prsn_tIY4W.jpg?r=1718206051",
+                        "large": "https://lain.bgm.tv/pic/crt/l/2b/7b/5228_prsn_tIY4W.jpg?r=1718206051",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2b/7b/5228_prsn_tIY4W.jpg?r=1718206051"
+                    },
+                    "name": "竹達彩奈",
+                    "short_summary": "日本的女性声优，1989年6月23日出生，埼玉县出身，所属事务所为LINK・PLAN 。身高151cm，血型为O型。代表作品有《轻音少女》中的中野梓、《kiss×sis》中的住之江亚香、《我的妹妹不可能那么可爱》中的高坂桐乃、《只有神知道的世界》中的高原步美、《玉响》中的泽渡枫、《MM一族》中的石动美绪、《迷途猫》中的雾谷希等。\r\n\r\n2019年6月23日，即竹达彩奈生日当天，宣布了与梶裕贵的婚讯。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 5228,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 55068
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/1c/70/55069_crt_JfbA3.jpg?r=1674966450",
+                "grid": "https://lain.bgm.tv/pic/crt/g/1c/70/55069_crt_JfbA3.jpg?r=1674966450",
+                "large": "https://lain.bgm.tv/pic/crt/l/1c/70/55069_crt_JfbA3.jpg?r=1674966450",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1c/70/55069_crt_JfbA3.jpg?r=1674966450"
+            },
+            "name": "藍原芽衣",
+            "summary": "学生会长兼蓝原学园的继承人，黑色长发，面容秀丽，成绩优秀。严于律己和律人，因父亲再婚的关系与柚子成为义妹并开始同居生活。\r\n在漫画17话中与柚子正式交往成为恋人。\r\n接受了柚子的戒指，内心深爱着柚子，历经坎坷……终于明白了与柚子互相喜欢着对方，与柚子互表心意后结婚。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/b8/b0/5736_prsn_6MaTt.jpg?r=1705471478",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/b8/b0/5736_prsn_6MaTt.jpg?r=1705471478",
+                        "large": "https://lain.bgm.tv/pic/crt/l/b8/b0/5736_prsn_6MaTt.jpg?r=1705471478",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b8/b0/5736_prsn_6MaTt.jpg?r=1705471478"
+                    },
+                    "name": "津田美波",
+                    "short_summary": "津田美波是1989年出生于日本神奈川县，是一位日本的女性声优，所属于青二プロダクション。从2009年开始出道， 声线从幼女到青少年的少女。近来则出演过随和系，小大人系，娇蛮系，腹黑少女，纯情派等多种多样的配角色。在2011年的新番Fractale中首次主役。歌唱的不错在平时也很喜欢听歌\r\n\r\n2024年6月8日，宣布与橘龍丸结婚",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 5736,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 55069
+        }
+    ]
+}

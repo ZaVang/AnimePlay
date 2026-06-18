@@ -1,0 +1,61 @@
+{
+    "birth_mon": 11,
+    "gender": "female",
+    "birth_day": 3,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/20/b3/36560_crt_faeQF.jpg?r=1461771740",
+        "grid": "https://lain.bgm.tv/pic/crt/g/20/b3/36560_crt_faeQF.jpg?r=1461771740",
+        "large": "https://lain.bgm.tv/pic/crt/l/20/b3/36560_crt_faeQF.jpg?r=1461771740",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/20/b3/36560_crt_faeQF.jpg?r=1461771740"
+    },
+    "summary": "银河边境的乡下出身的温塔米亚族少女。14歳，憧憬著战术音乐组合“Walküre”。天真烂漫的性格和说话帯有奇怪的方言。特征是头上像发饰的心形Lun，会随兴奋而伸长发光。\r\n在故乡的村里天天游手好闲而被村长强迫要和苹果农园的少爷结婚，因为不想结婚所以离家出走，为了参加\r\n“Walküre”的新成员选拔而成为偷渡者。\r\n登场时因误上往阿尔・沙哈尔惑星的货船，意外与疾风相遇。",
+    "name": "フレイア・ヴィオン",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "芙蕾雅·薇恩"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "英文名",
+                    "v": "Freyja Wion"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Fureia Wion"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "11月3日"
+        },
+        {
+            "key": "身高",
+            "value": "154cm"
+        },
+        {
+            "key": "引用来源",
+            "value": "wiki"
+        }
+    ],
+    "stat": {
+        "comments": 90,
+        "collects": 206
+    },
+    "id": 36560,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        100858
+    ]
+}

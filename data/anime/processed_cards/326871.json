@@ -1,0 +1,92 @@
+{
+    "id": 326871,
+    "name": "处刑少女的生存之道",
+    "image_path": "data\\images\\anime\\326871.jpg",
+    "points": 6.1,
+    "cost": 1,
+    "rarity": "N",
+    "description": "曾从日本来访，给世界带来巨大灾害的“迷途之人”。\r\n因为他们过去带来了毁灭世界的灾难，所以被视为“禁忌指定”，有必要暗中处刑。\r\n以处刑“迷途之人”为业的“处刑人”梅诺，有一天遇到了日本少女灯里。\r\n梅诺像往常一样打算完成任务，但因为灯里的“某种能力”而以失败告终。\r\n为了确实地处刑灯里，梅诺带着她，向着能够消灭任何异世界人的仪式场地的大教堂进发。\r\n看着对这场自己即将被杀的旅行一无所知，而单纯地享受着的灯里的样子，梅诺心中有什么地方开始改变了。\r\n——这是，她为了杀她的故事。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "百合",
+        "TV",
+        "日本",
+        "战斗",
+        "小说改"
+    ],
+    "date": "2022-04-01",
+    "rating_rank": 7465,
+    "rating_score": 6.1,
+    "rating_total": 3938,
+    "main_character_ids": [
+        73830,
+        73831
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/24/c0/73830_crt_wk0Bm.jpg?r=1649770583",
+                "grid": "https://lain.bgm.tv/pic/crt/g/24/c0/73830_crt_wk0Bm.jpg?r=1649770583",
+                "large": "https://lain.bgm.tv/pic/crt/l/24/c0/73830_crt_wk0Bm.jpg?r=1649770583",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/24/c0/73830_crt_wk0Bm.jpg?r=1649770583"
+            },
+            "name": "アカリ",
+            "summary": "「ふむふむ。メノウちゃんはあれなんだね。エージェントだね！」\r\n\r\n日本から来た迷い人。自覚は無いものの、とある能力により実質不死身。彼女を殺しきる方法を探すメノウに丸め込まれて共に旅をすることになるが、のほほんと楽しんでいる。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bd/89/41551_prsn_7fbIF.jpg?r=1706188505",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/bd/89/41551_prsn_7fbIF.jpg?r=1706188505",
+                        "large": "https://lain.bgm.tv/pic/crt/l/bd/89/41551_prsn_7fbIF.jpg?r=1706188505",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bd/89/41551_prsn_7fbIF.jpg?r=1706188505"
+                    },
+                    "name": "佳原萌枝",
+                    "short_summary": "岸本 萌佳（きしもと もえか、2000年12月18日 - ）は、日本の女性声優。大阪府出身。ゆーりんプロ所属。\r\n\r\n2021年7月1日宣布艺名更改为 佳原萌枝\r\n\r\n誕生日：12月18日\r\n出身地：大阪府\r\n特　技：ダンス、歌、細かい作業\r\n趣　味：読書、ゲーム、作詞作曲、絵",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 41551,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 73830
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/d8/3b/73831_crt_IK56b.jpg?r=1649770553",
+                "grid": "https://lain.bgm.tv/pic/crt/g/d8/3b/73831_crt_IK56b.jpg?r=1649770553",
+                "large": "https://lain.bgm.tv/pic/crt/l/d8/3b/73831_crt_IK56b.jpg?r=1649770553",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d8/3b/73831_crt_IK56b.jpg?r=1649770553"
+            },
+            "name": "メノウ",
+            "summary": "「異世界人は、私たち処刑人が根絶すべき『禁忌指定』よ」\r\n\r\n主人公。迷い込んだ日本人を処理する処刑人。迷い人に近付き能力を把握してから確実に殺害するのが基本スタンス。そのため、普段はわりとクールだが、外面を取り繕う演技に長ける。武器は教典と短剣。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/83/11/32628_prsn_16cwD.jpg?r=1740731560",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/83/11/32628_prsn_16cwD.jpg?r=1740731560",
+                        "large": "https://lain.bgm.tv/pic/crt/l/83/11/32628_prsn_16cwD.jpg?r=1740731560",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/83/11/32628_prsn_16cwD.jpg?r=1740731560"
+                    },
+                    "name": "佐伯伊織",
+                    "short_summary": "佐伯 伊織（さえき いおり、1994年7月22日 - ）は、日本の女性声優、歌手。スワロウ準所属。神奈川県出身。身長153cm、血液型はA型。\r\n声優デビュー以前から、NU-KO（ぬーこ）名義にて歌手活動を行っている。\r\n\r\n特技は、歌を楽しんで歌えること。\r\n温泉むすめで、下呂美月役の遠藤ゆりかの引退に伴い、同キャラクターの後任になることが5月19日の「温泉むすめ 3rdライブ」の会場で発表された。また、アプリゲーム『八月のシンデレラナイン』の倉敷舞子役も遠藤から引き継いでいる。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 32628,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 73831
+        }
+    ]
+}

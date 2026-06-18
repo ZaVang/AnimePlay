@@ -1,0 +1,91 @@
+{
+    "id": 302766,
+    "name": "因为太怕痛就全点防御力了。2",
+    "image_path": "data\\images\\anime\\302766.jpg",
+    "points": 5.8,
+    "cost": 1,
+    "rarity": "N",
+    "description": "梅普露沉迷于VRMMO『NewWorld Online』。防御力拉满，刚开始玩的时候想成为耐力型游戏玩家。她取得了多个凶恶的技能，并经历了一次又一次的蹂躏！因为异常的战斗状态，被人们视为“幕后黑手”级别的有名玩家。\r\n和好朋友莎莉一起创建的公会【枫树】也吸引了很多个性独特的可靠的同伴，他们的联系进一步加强。然后—游戏里添了新的楼层，和曾经的对手联手，增加新的伙伴，还有新的活动开办！？\r\n在这里果然也会看到梅普露他们的大显身手……？\r\n世界很宽广，冒险将越来越有趣！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "百合",
+        "TV",
+        "日本",
+        "战斗",
+        "小说改"
+    ],
+    "date": "2023-01-11",
+    "rating_rank": 8477,
+    "rating_score": 5.8,
+    "rating_total": 4189,
+    "main_character_ids": [
+        73503,
+        73505
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/25/66/73503_crt_vVCFG.jpg?r=1675515158",
+                "grid": "https://lain.bgm.tv/pic/crt/g/25/66/73503_crt_vVCFG.jpg?r=1675515158",
+                "large": "https://lain.bgm.tv/pic/crt/l/25/66/73503_crt_vVCFG.jpg?r=1675515158",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/25/66/73503_crt_vVCFG.jpg?r=1675515158"
+            },
+            "name": "メイプル / 本条楓",
+            "summary": "虽然是游戏新手，却因为全点防御力而成了几乎能无伤抵挡所有攻击的最硬塔盾玩家。个性纯真，能从任何角落找出乐趣，经常因为思想太跳跃而吓傻身边的人。战斗时不仅能使各种攻击形同无物，还会打出各式各样强力无比的反击。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/1a/96/19560_prsn_dIRg5.jpg?r=1709906617",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/1a/96/19560_prsn_dIRg5.jpg?r=1709906617",
+                        "large": "https://lain.bgm.tv/pic/crt/l/1a/96/19560_prsn_dIRg5.jpg?r=1709906617",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1a/96/19560_prsn_dIRg5.jpg?r=1709906617"
+                    },
+                    "name": "本渡楓",
+                    "short_summary": "日本的女性声优，爱知县名古屋市出身。I'm Enterprise所属。\r\n高中二年级进入日本播音演技研究所名古屋校就读，2015年4月进入I'm Enterprise。\r\n高中时代加入戏剧社，但因为身高矮小无法演出护士，而改以不会被外貌影响的声优为目标。\r\n交情好的声优有目前在《见习神仙 秘密的心灵》中共同演出的潘惠美、事务所的前辈小泽亚李与长绳麻理亚。\r\n对于演出婴儿的声音很有自信。\r\n2019年，获得第13回声优奖的新人女优赏。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 19560,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 73503
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/41/a6/73505_crt_AiPjj.jpg?r=1675515175",
+                "grid": "https://lain.bgm.tv/pic/crt/g/41/a6/73505_crt_AiPjj.jpg?r=1675515175",
+                "large": "https://lain.bgm.tv/pic/crt/l/41/a6/73505_crt_AiPjj.jpg?r=1675515175",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/41/a6/73505_crt_AiPjj.jpg?r=1675515175"
+            },
+            "name": "サリー / 白峯理沙",
+            "summary": "梅普露的死党兼伙伴，做事实事求是。很照顾朋友，不忘和梅普露一起享受游戏。采取轻装陪双匕首的战斗风格，凭借惊人专注力与个人技术闪躲各种攻击。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/80/83/25115_prsn_gTJZf.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/80/83/25115_prsn_gTJZf.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/80/83/25115_prsn_gTJZf.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/80/83/25115_prsn_gTJZf.jpg"
+                    },
+                    "name": "野口瑠璃子",
+                    "short_summary": "野口 瑠璃子（のぐち るりこ、1995年7月6日 - ）は、日本の女性声優。福岡県出身。所属事務所はアーツビジョン。日本ナレーション演技研究所出身。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 25115,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 73505
+        }
+    ]
+}

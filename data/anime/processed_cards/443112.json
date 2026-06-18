@@ -1,0 +1,94 @@
+{
+    "id": 443112,
+    "name": "公主大人“拷问”的时间到了",
+    "image_path": "data\\images\\anime\\443112.jpg",
+    "points": 6.8,
+    "cost": 1,
+    "rarity": "N",
+    "description": "国王军与魔王军展开冲突已有数载。既是王女也是国王军第三骑士团「骑士团长」的公主，如今成为了魔王军的阶下囚！魔王军为了得到国王军的机密而「拷问」被囚禁于魔王军的国王军公主。虽然公主在许多战争下都活了下来，但等待公主的却是超乎想象，却又充满恶劣、毁灭人性、毫无道德的各种恐怖拷问——！？史上最残酷的拷问时间正式拉开了序幕！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "奇幻",
+        "漫画改",
+        "日常",
+        "美食"
+    ],
+    "date": "2024-01-08",
+    "rating_rank": 3711,
+    "rating_score": 6.8,
+    "rating_total": 4480,
+    "main_character_ids": [
+        132319,
+        132320
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/60/81/132319_crt_OLd5I.jpg?r=1698678494",
+                "grid": "https://lain.bgm.tv/pic/crt/g/60/81/132319_crt_OLd5I.jpg?r=1698678494",
+                "large": "https://lain.bgm.tv/pic/crt/l/60/81/132319_crt_OLd5I.jpg?r=1698678494",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/60/81/132319_crt_OLd5I.jpg?r=1698678494"
+            },
+            "name": "姫",
+            "summary": "王女にして、国王軍第三騎士団の騎士団長。数々の戦場を生き抜き、多くの武勲をあげてきた。現在は魔王軍に囚われの身となり、“拷問”を受ける日々を送っている。厳しい教育と鍛錬を重ねた誇り高い孤高の騎士に見えるが……？",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a9/6f/18600_prsn_LGgtC.jpg?r=1585323843",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a9/6f/18600_prsn_LGgtC.jpg?r=1585323843",
+                        "large": "https://lain.bgm.tv/pic/crt/l/a9/6f/18600_prsn_LGgtC.jpg?r=1585323843",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a9/6f/18600_prsn_LGgtC.jpg?r=1585323843"
+                    },
+                    "name": "白石晴香",
+                    "short_summary": "日本の女優、声優。\r\n特长：爵士舞、芭蕾、花道、书法、舞蹈、足球。\r\n\r\n2007年より女優として活動し、舞台などに出演。2011年に『コクリコ坂から』の松崎空役で声優デビュー。\r\n2019年12月31日，退出ヒラタオフィス事务所\r\n2020年1月1日开始作为自由声优活动并开设了新的Twitter帐号（shiraharu48）。\r\n2020年6月1日开始进入TOY'S FACTORY(トイズファクトリー)事务所。",
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 18600,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 132319
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/3a/96/132320_crt_Re00U.jpg?r=1698678587",
+                "grid": "https://lain.bgm.tv/pic/crt/g/3a/96/132320_crt_Re00U.jpg?r=1698678587",
+                "large": "https://lain.bgm.tv/pic/crt/l/3a/96/132320_crt_Re00U.jpg?r=1698678587",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3a/96/132320_crt_Re00U.jpg?r=1698678587"
+            },
+            "name": "エクス",
+            "summary": "王国に伝わる、意思を持つ聖剣。長年王家に仕え、歴代の名騎士と共に幾千もの戦場を戦い抜いてきたが、現在は魔王軍の手に落ち姫と共に監禁されている。姫の気高さと精神力を信じようとするものの……今やすっかりツッコミ＆お目付け役に。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/25/7b/31823_prsn_00ZN3.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/25/7b/31823_prsn_00ZN3.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/25/7b/31823_prsn_00ZN3.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/25/7b/31823_prsn_00ZN3.jpg"
+                    },
+                    "name": "小林親弘",
+                    "short_summary": "",
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 31823,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 132320
+        }
+    ]
+}

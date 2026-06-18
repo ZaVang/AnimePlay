@@ -1,0 +1,479 @@
+{
+    "date": "2016-07-02",
+    "platform": "TV",
+    "images": {
+        "small": "https://lain.bgm.tv/r/200/pic/cover/l/d3/37/165553_5f88z.jpg",
+        "grid": "https://lain.bgm.tv/r/100/pic/cover/l/d3/37/165553_5f88z.jpg",
+        "large": "https://lain.bgm.tv/pic/cover/l/d3/37/165553_5f88z.jpg",
+        "medium": "https://lain.bgm.tv/r/800/pic/cover/l/d3/37/165553_5f88z.jpg",
+        "common": "https://lain.bgm.tv/r/400/pic/cover/l/d3/37/165553_5f88z.jpg"
+    },
+    "summary": "位于静冈县沼津市海边小镇·内浦的私立浦之星女学院。\r\n在骏河湾一角的这所小小高中，\r\n以二年级高海千歌为中心的9名少女，怀抱着远大的梦想挺身而出。\r\n那就是，成为闪闪发亮的“学园偶像”！\r\n不放弃的话，一定能实现梦想——。\r\n现在只需朝着闪耀的目标，拼命地向前奔跑吧！\r\n她们的“大家实现的故事”（School Idol Project）由此开始了！",
+    "name": "ラブライブ! サンシャイン!!",
+    "name_cn": "LoveLive! Sunshine!!",
+    "tags": [
+        {
+            "name": "偶像",
+            "count": 927,
+            "total_cont": 0
+        },
+        {
+            "name": "SUNRISE",
+            "count": 745,
+            "total_cont": 0
+        },
+        {
+            "name": "原创",
+            "count": 607,
+            "total_cont": 0
+        },
+        {
+            "name": "2016年7月",
+            "count": 582,
+            "total_cont": 0
+        },
+        {
+            "name": "LoveLive",
+            "count": 522,
+            "total_cont": 0
+        },
+        {
+            "name": "TV",
+            "count": 482,
+            "total_cont": 0
+        },
+        {
+            "name": "音乐",
+            "count": 437,
+            "total_cont": 0
+        },
+        {
+            "name": "校园",
+            "count": 400,
+            "total_cont": 0
+        },
+        {
+            "name": "百合",
+            "count": 394,
+            "total_cont": 0
+        },
+        {
+            "name": "Aqours",
+            "count": 258,
+            "total_cont": 0
+        },
+        {
+            "name": "花田十辉",
+            "count": 255,
+            "total_cont": 0
+        },
+        {
+            "name": "2016",
+            "count": 242,
+            "total_cont": 0
+        },
+        {
+            "name": "Live！Sunshine!!",
+            "count": 115,
+            "total_cont": 0
+        },
+        {
+            "name": "酒井和男",
+            "count": 81,
+            "total_cont": 0
+        },
+        {
+            "name": "LoveLive！",
+            "count": 51,
+            "total_cont": 0
+        },
+        {
+            "name": "日本",
+            "count": 33,
+            "total_cont": 0
+        },
+        {
+            "name": "轻百合",
+            "count": 20,
+            "total_cont": 0
+        },
+        {
+            "name": "花田十輝",
+            "count": 19,
+            "total_cont": 0
+        },
+        {
+            "name": "青春",
+            "count": 17,
+            "total_cont": 0
+        },
+        {
+            "name": "2016年",
+            "count": 16,
+            "total_cont": 0
+        },
+        {
+            "name": "LoveLive!",
+            "count": 15,
+            "total_cont": 0
+        },
+        {
+            "name": "日常",
+            "count": 10,
+            "total_cont": 0
+        },
+        {
+            "name": "室田雄平",
+            "count": 8,
+            "total_cont": 0
+        },
+        {
+            "name": "サンライズ",
+            "count": 8,
+            "total_cont": 0
+        },
+        {
+            "name": "日本动画",
+            "count": 7,
+            "total_cont": 0
+        },
+        {
+            "name": "TVA",
+            "count": 6,
+            "total_cont": 0
+        },
+        {
+            "name": "动画",
+            "count": 6,
+            "total_cont": 0
+        },
+        {
+            "name": "季番",
+            "count": 5,
+            "total_cont": 0
+        },
+        {
+            "name": "日升",
+            "count": 5,
+            "total_cont": 0
+        },
+        {
+            "name": "励志",
+            "count": 5,
+            "total_cont": 0
+        }
+    ],
+    "infobox": [
+        {
+            "key": "中文名",
+            "value": "LoveLive! Sunshine!!"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "v": "学园偶像 阳光!!"
+                },
+                {
+                    "v": "爱与演唱会!阳光!!"
+                },
+                {
+                    "v": "llss"
+                },
+                {
+                    "v": "Love Live! Sunshine!!"
+                }
+            ]
+        },
+        {
+            "key": "话数",
+            "value": "13"
+        },
+        {
+            "key": "放送开始",
+            "value": "2016年7月2日"
+        },
+        {
+            "key": "放送星期",
+            "value": "星期六"
+        },
+        {
+            "key": "官方网站",
+            "value": "http://www.lovelive-anime.jp/uranohoshi"
+        },
+        {
+            "key": "播放电视台",
+            "value": "TOKYO MX"
+        },
+        {
+            "key": "其他电视台",
+            "value": "サンテレビ / KBS京都 / BS11 / テレビ愛知 / 静岡放送 / テレビ北海道 / TVQ九州放送"
+        },
+        {
+            "key": "播放结束",
+            "value": "2016年9月24日"
+        },
+        {
+            "key": "导演",
+            "value": "酒井和男"
+        },
+        {
+            "key": "Copyright",
+            "value": "© プロジェクトラブライブ! サンシャイン!!"
+        },
+        {
+            "key": "原作",
+            "value": "矢立肇"
+        },
+        {
+            "key": "人物设定",
+            "value": "室田雄平"
+        },
+        {
+            "key": "製作",
+            "value": "2016プロジェクトラブライブ！サンシャイン!!（サンライズ、バンダイビジュアル、ランティス、ブシロード、KADOKAWA、アスキー・メディアワークス）"
+        },
+        {
+            "key": "动画制作",
+            "value": "サンライズ第8スタジオ"
+        },
+        {
+            "key": "设定",
+            "value": "高橋武之（服装设计）、河毛雅妃（设计工作）"
+        },
+        {
+            "key": "CG 导演",
+            "value": "黒﨑豪"
+        },
+        {
+            "key": "摄影监督",
+            "value": "杉山大樹"
+        },
+        {
+            "key": "主题歌作词",
+            "value": "畑亜貴"
+        },
+        {
+            "key": "主题歌作曲",
+            "value": "伊藤賢(NAGI☆)、光増ハジメ / 山口朗彦"
+        },
+        {
+            "key": "主题歌编曲",
+            "value": "EFFY / 山口朗彦"
+        },
+        {
+            "key": "主动画师",
+            "value": "藤井智之、平山円"
+        },
+        {
+            "key": "原画",
+            "value": "木村都彦、平田彰子、渡邊敬介、納武史、小田裕康、阿部望、鈴木勘太、中村真由美、南部広海、水野辰哉、井村学"
+        },
+        {
+            "key": "企画",
+            "value": "佐々木新、上山公一、井上俊次、広瀬和彦、鈴木一智"
+        },
+        {
+            "key": "企划制作人",
+            "value": "田中紀明、櫻井優香、高野希義"
+        },
+        {
+            "key": "音乐制作人",
+            "value": "伊藤善之、大久保隆一"
+        },
+        {
+            "key": "音乐制作",
+            "value": "ランティス、サンライズ音楽出版（サンライズミュージック）"
+        },
+        {
+            "key": "制片人",
+            "value": "平山理志、槙本裕紀"
+        },
+        {
+            "key": "协力",
+            "value": "星野朗広、山本貴、伊藤達哉、赤松陽介、渡部竜平、相模悠生、小林大介（クオラス）、吉岡昌信（バンダイナムコライツマーケティング）"
+        },
+        {
+            "key": "分镜",
+            "value": "酒井和男(1-2,6,9,13)、遠藤広隆(3,7,12)、古田丈司(4,10)、南川達馬(5)、浅野勝也(8)、渡邊哲哉(11)"
+        },
+        {
+            "key": "演出",
+            "value": "酒井和男(1,13)、河野亜矢子(2)、飛田剛(2)、遠藤広隆(3,7,12)、古田丈司(4)、南川達馬(5,10)、大久保朋(6)、浅野勝也(8)、外山草(9)、安藤尚也(11)"
+        },
+        {
+            "key": "Live 分镜演出",
+            "value": "舞蹈部分分镜：酒井和男(8,11)；舞蹈部分演出：浅野勝也(6,9)"
+        },
+        {
+            "key": "OP・ED 分镜",
+            "value": "酒井和男 / 山﨑みつえ"
+        },
+        {
+            "key": "OP・ED 演出",
+            "value": "安藤良 / 山﨑みつえ"
+        },
+        {
+            "key": "主题歌演出",
+            "value": "Aqours (高海千歌（伊波杏樹）、桜内梨子（逢田梨香子）、松浦果南（諏訪ななか）、黒澤ダイヤ（小宮有紗）、渡辺曜（斉藤朱夏）、津島善子（小林愛香）、国木田花丸（高槻かなこ）、小原鞠莉（鈴木愛奈）、黒澤ルビィ（降幡愛）)"
+        },
+        {
+            "key": "插入歌演出",
+            "value": "Aqours (高海千歌（伊波杏樹）、桜内梨子（逢田梨香子）、松浦果南（諏訪ななか）、黒澤ダイヤ（小宮有紗）、渡辺曜（斉藤朱夏）、津島善子（小林愛香）、国木田花丸（高槻かなこ）、小原鞠莉（鈴木愛奈）、黒澤ルビィ（降幡愛）)、Saint Snow (鹿角聖良（田野アサミ）、鹿角理亞（佐藤日向）)"
+        },
+        {
+            "key": "插入歌作词",
+            "value": "畑亜貴"
+        },
+        {
+            "key": "插入歌作曲",
+            "value": "渡辺拓也、高田暁、光増ハジメ、渡辺和紀、佐伯高志"
+        },
+        {
+            "key": "插入歌编曲",
+            "value": "渡辺拓也、高田暁、EFFY、渡辺和紀、佐伯高志"
+        }
+    ],
+    "rating": {
+        "rank": 5091,
+        "total": 3518,
+        "count": {
+            "1": 23,
+            "2": 10,
+            "3": 27,
+            "4": 81,
+            "5": 375,
+            "6": 1165,
+            "7": 1263,
+            "8": 401,
+            "9": 86,
+            "10": 87
+        },
+        "score": 6.5
+    },
+    "total_episodes": 14,
+    "collection": {
+        "on_hold": 351,
+        "dropped": 351,
+        "wish": 773,
+        "collect": 5818,
+        "doing": 340
+    },
+    "id": 165553,
+    "eps": 13,
+    "meta_tags": [
+        "TV",
+        "日本",
+        "原创",
+        "音乐"
+    ],
+    "volumes": 0,
+    "series": false,
+    "locked": false,
+    "nsfw": false,
+    "type": 2,
+    "main_character_ids": [
+        33605,
+        37802,
+        37803
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/48/46/33605_crt_3ZKkp.jpg?r=1703249554",
+                "grid": "https://lain.bgm.tv/pic/crt/g/48/46/33605_crt_3ZKkp.jpg?r=1703249554",
+                "large": "https://lain.bgm.tv/pic/crt/l/48/46/33605_crt_3ZKkp.jpg?r=1703249554",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/48/46/33605_crt_3ZKkp.jpg?r=1703249554"
+            },
+            "name": "高海千歌",
+            "summary": "浦之星女子学院的学园偶像团体Aqours成员。高中2年级生。为分队“CYaRon！”的队长。\r\n\r\n家中经营着有海景房的露天温泉旅馆，是家中三姐妹里面的幺女。\r\n和果南是很好的朋友，经常一起玩，一起吃饭。\r\n觉得耳朵旁编着的麻花辫子是自己很有魅力的地方，于是就算早上睡过头时也要把它编好。对自己的笑容很有自信。\r\n\r\n「初めまして！　私はここ静岡県は駿河湾のかたすみにある内浦の───浦の星女学院に通う高校2年生、高海千歌です！\r\n最初はアイドルになるなんて、こんな田舎に住んでる私たちなんかにはどうせありえない遠い世界だって、やる前から諦めてたけど。でも───\r\n諦めなければ夢は叶うってことを─── あの憧れのスクールアイドルμ'sが教えてくれたから。みんなは笑うけど、私は本当に真剣なの。あんな風にキラキラ光ってる大好きなμ'sにほんの少しでもいいから近づきたい。完璧に無謀な挑戦だっていうのはもちろんわかってるけど、でも───ダメでもともとだもん☆　　やってみなくちゃ何も始まらないって穂乃果ちゃんも言ってたから─私たち、思い切って今最初の一歩を踏み出します」",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/fe/45/16386_prsn_Pdn6R.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/fe/45/16386_prsn_Pdn6R.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/fe/45/16386_prsn_Pdn6R.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fe/45/16386_prsn_Pdn6R.jpg"
+                    },
+                    "name": "伊波杏樹",
+                    "short_summary": "2012年ソニー･ミュージックアーティスツ主催のアニメオーディション「第2回アニストテレス」準グランプリを受賞。\r\n2013年短編アニメ映画「陽なたのアオシグレ」（ヒナタ役）にて主役デビュー。\r\n以後、舞台「NARUTO-ナルト-」（山中いの役）、舞台「FAIRY TAIL」（エンジェル役）、舞台「ダンガンロンパ2 THE STAGE」(澪田伊吹役)、TVアニメ「ラブライブ！サンシャイン!!」にて主役（高海千歌役）を演じるなど声優・女優・歌手として活躍中。",
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 16386,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 33605
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/11/ef/37802_crt_laCpQ.jpg?r=1703253460",
+                "grid": "https://lain.bgm.tv/pic/crt/g/11/ef/37802_crt_laCpQ.jpg?r=1703253460",
+                "large": "https://lain.bgm.tv/pic/crt/l/11/ef/37802_crt_laCpQ.jpg?r=1703253460",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/11/ef/37802_crt_laCpQ.jpg?r=1703253460"
+            },
+            "name": "桜内梨子",
+            "summary": "浦之星女子学院的学园偶像团体Aqours成员。高中2年级生。为分队“Guilty Kiss”的队员。\r\n\r\n1年级就读音乃木坂学园，2年级时转入浦之星女子学院，擅长美术与乐器演奏。\r\n一开始对内浦感到不安，但是现在已经爱上了这个小镇。对自己很没自信，之后被千歌拉进了Aqours开始做学园偶像。\r\n最喜欢的一句话是《小王子》中的：“只有用心才能看得清。实质性的东西用眼睛是看不见的。”\r\n\r\n「浦の星女学院2年、桜内梨子です。私は、ただ都会から来たっていうだけで─ 本当に性格も地味なごくごく普通の女子高生。そう何度も言ったのに───全然信じてくれない強引なチカちゃんに引っ張られて、いつの間にかスクールアイドルすることになっちゃいました。だからアイドルとしてやっていける自信は全然ないけど───こんな私でも頼ってくれるみんなのために、今は少しでも力になれたらいいなって思ってます。初めてこのみかん山の真ん中にある学校にきた時は、驚きの連続だったけど、でも今ではとっても大好きな場所になったの。私にそんな特別な場所をくれた───みんなの夢を叶えるのが私の夢。そんなやり方もあるってこと、私、ここにきて生まれて初めて知った気がします───」",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a6/ce/20950_prsn_202tf.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a6/ce/20950_prsn_202tf.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/a6/ce/20950_prsn_202tf.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a6/ce/20950_prsn_202tf.jpg"
+                    },
+                    "name": "逢田梨香子",
+                    "short_summary": "日本の女優、声優。賢プロダクション所属。東京都出身。血液型はO型。旧芸名：伊藤 梨花子（いとう りかこ）。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 20950,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 37802
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/7c/1a/37803_crt_9faIF.jpg?r=1703253071",
+                "grid": "https://lain.bgm.tv/pic/crt/g/7c/1a/37803_crt_9faIF.jpg?r=1703253071",
+                "large": "https://lain.bgm.tv/pic/crt/l/7c/1a/37803_crt_9faIF.jpg?r=1703253071",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7c/1a/37803_crt_9faIF.jpg?r=1703253071"
+            },
+            "name": "松浦果南",
+            "summary": "浦之星女子学院的学园偶像团体Aqours成员。高中3年级生。分队“AZALEA”的队员。\r\n\r\n自幼与千歌熟识。擅长潜水与驾驶动力小船。\r\n经常担心千歌。因为为想帮助千歌而成为了学园偶像。\r\n住在岛上，和爷爷相依为命。\r\n\r\n「私、松浦果南はここ内海の海で家業のダイビングショップを手伝っている高校3年生。内海の自慢は、緑の山に青い海、広い空には眩しい太陽とぽっかり浮かぶ白い雲───\r\nそんなきれいな景色を見ているだけで、私は毎日十分幸せ。あっ、でもそこに加えて長年の仲良しの気心の知れた幼なじみの存在───っていうのも入れておかないと　　チカが怒るかな？　くすくす。私の幼なじみのチカは、少し心配性で幼くて、でもすごく元気でいつも突飛な発想力だけは際立ってて─── 最近、また何か変なことを思いついたらしい。でも、青い波に揺られながら、何も考えずにまっすぐ泳いでいると、なんだか頭が空っぽになってきて。とりあえずかわいい幼なじみの計画を手伝ってやらなくちゃっていう気分になるから不思議だね」",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ea/4f/20951_prsn_xQSyH.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ea/4f/20951_prsn_xQSyH.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/ea/4f/20951_prsn_xQSyH.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ea/4f/20951_prsn_xQSyH.jpg"
+                    },
+                    "name": "諏訪ななか",
+                    "short_summary": "日本の女性声優。ステイラック所属。埼玉県出身。\r\n\r\n趣味：英語、ピアノ、書道、散歩、一人旅\r\n\r\n文化放送 超!A&G+で販売ユニットとして結成されている「うるめいつ」の妹分「うるめいつジュニア」に所属していた。\r\n2015年、『ラブライブ!サンシャイン!!』にて松浦果南を演じることが決定した。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 20951,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 37803
+        }
+    ]
+}

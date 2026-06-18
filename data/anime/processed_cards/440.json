@@ -1,7 +1,7 @@
 {
     "id": 440,
     "name": "校园迷糊大王",
-    "image_path": "data/images/anime/440.jpg",
+    "image_path": "data\\images\\anime\\440.jpg",
     "points": 8.0,
     "cost": 2,
     "rarity": "R",

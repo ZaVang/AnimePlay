@@ -1,0 +1,40 @@
+{
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9a/46/26567_crt_gNeAd.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/9a/46/26567_crt_gNeAd.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/9a/46/26567_crt_gNeAd.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9a/46/26567_crt_gNeAd.jpg"
+    },
+    "summary": "居住在宝町。喜欢从袭击对象夺取手表。拥有身体能力“飞”。",
+    "name": "シロ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "白"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "男"
+        }
+    ],
+    "stat": {
+        "comments": 0,
+        "collects": 1
+    },
+    "id": 26567,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        6437
+    ]
+}

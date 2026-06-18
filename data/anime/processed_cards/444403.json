@@ -1,0 +1,92 @@
+{
+    "id": 444403,
+    "name": "怪人的沙拉碗",
+    "image_path": "data\\images\\anime\\444403.jpg",
+    "points": 7.1,
+    "cost": 1,
+    "rarity": "N",
+    "description": "贫苦的侦探镝矢惣助，遇到了操纵魔法的异世界皇女莎拉。惣助逐渐开始了与莎拉的同居生活，莎拉很快就习惯了现代日本。另一方面，跟着莎拉转移来到日本的女骑士莉薇亚，在流浪的同时，意外地度过了快乐生活。积极坚强生活的两个异世界人，不仅影响了惣助，也影响了鬼畜律师、分手工作员、宗教人士与住在这区的怪人们。",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "TV",
+        "日本",
+        "穿越",
+        "日常",
+        "小说改"
+    ],
+    "date": "2024-04-04",
+    "rating_rank": 2225,
+    "rating_score": 7.1,
+    "rating_total": 6323,
+    "main_character_ids": [
+        149128,
+        149129
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e6/2a/149128_crt_3aB4F.jpg?r=1703419984",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e6/2a/149128_crt_3aB4F.jpg?r=1703419984",
+                "large": "https://lain.bgm.tv/pic/crt/l/e6/2a/149128_crt_3aB4F.jpg?r=1703419984",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e6/2a/149128_crt_3aB4F.jpg?r=1703419984"
+            },
+            "name": "鏑矢惣助",
+            "summary": "29歳、独身。岐阜県岐阜市で貧乏探偵事務所を営んでいる地味な男。あるとき異世界から転移してきたサラと出会い、なりゆきで彼女の面倒をみることになる。探偵としてのスキルは確かで、かつては大手探偵事務所のエースとして活躍していた。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/15/71/12483_prsn_pXYzu.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/15/71/12483_prsn_pXYzu.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/15/71/12483_prsn_pXYzu.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/15/71/12483_prsn_pXYzu.jpg"
+                    },
+                    "name": "古川慎",
+                    "short_summary": "古川 慎（ふるかわ まこと、1989年9月29日 - ）は、日本の男性声優。トイズファクトリー所属。\r\n熊本県出身。福岡スクールオブミュージック専門学校卒業。\r\n\r\n5歳の時に見た『新機動戦記ガンダムW』のヒイロ・ユイを充てた緑川光の声に憧れたことで声優への興味を持つようになった。その後中学生時代にスカパーのアニメ専門チャンネルを見てアニメ好きになったという。\r\n高校生の時、友達からもらった専門学校のパンフレットに緑川光が特別講師としてくることを見て、挑戦してみようと思い専門学校に通い始めた。\r\n\r\n趣味は雑貨屋めぐり、神社や寺などのパワースポットを巡ること。\r\n一番好きな食べ物はお好み焼き。キュウリとカリフラワーが苦手。\r\n好きなアーティストはL'Arc〜en〜Ciel、Mr.Children、ゴスペラーズ、GRANRODEO、BUMP OF CHICKEN。\r\n\r\n2011年にWebアニメ「武装中学生」吉野サトシ役で声優デビュー。\r\n2012年にアルバイトでPS3専用ソフト「白騎士物語」のモーションアクターを演じた経験を持つ。\r\n2016年、7月より声優の小林裕介と共にパーソナリティを務めるラジオ『なんでもヒーロー！ ゆっけとまーぼー』の放送を開始。\r\n2017年10月に開催された、初バースデーイベント「古川慎　秋の収穫祭2017」にて、2018年アーティスト活動を開始することを発表。\r\n2018年7月、Lantisより歌手デビュー。同年8月31日、6年間所属していたスペースクラフト・エンタテインメントを退所し、フリーでの活動期間を経て同年12月1日、トイズファクトリーに所属。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 12483,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 149128
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/da/8c/149129_crt_OSd1Z.jpg?r=1703420066",
+                "grid": "https://lain.bgm.tv/pic/crt/g/da/8c/149129_crt_OSd1Z.jpg?r=1703420066",
+                "large": "https://lain.bgm.tv/pic/crt/l/da/8c/149129_crt_OSd1Z.jpg?r=1703420066",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/da/8c/149129_crt_OSd1Z.jpg?r=1703420066"
+            },
+            "name": "サラ・ダ・オディン",
+            "summary": "13歳。魔術を得意とする異世界の皇女。反乱によって祖国が滅ぼされ、《門》をくぐって現代日本に逃れてきた。探偵の鏑矢惣助に拾われ、あっという間にこちらの世界に順応して楽しい日々を送る。漫画の影響で正義の名探偵に憧れを抱く。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/44/96/38883_prsn_Lx6i4.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/44/96/38883_prsn_Lx6i4.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/44/96/38883_prsn_Lx6i4.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/44/96/38883_prsn_Lx6i4.jpg"
+                    },
+                    "name": "矢野妃菜喜",
+                    "short_summary": "日本の声優、歌手、女優。兵庫県出身。ソニー・ミュージックアーティスツ所属。DUSTY FRUITS CLUBのボーカリスト。うたたねこ歌劇団、私立恵比寿中学、momonaki、pieceesの元メンバー。\r\n\r\nかつてはスターダストプロモーションに所属し、2008年から「piecees」、2009年から「momonaki」のメンバーとして活動していた。\r\n\r\n2010年2月14日、アイドルグループ「私立恵比寿中学」に加入。2011年4月17日、私立恵比寿中学を転校（脱退）。当初の転校予定日は2011年3月20日であったが、東日本大震災の影響でライブが中止になったため、4月17日に延期となった。\r\n2013年、WARAHATAに移籍し、映画『INORIGAMI』『ブラックリスター ゼロ』で主演を務める。\r\nその後、ソニーミュージックアーティスツに移籍。月影妃菜喜として、陽光真理愛とのユニット「うたたねこ歌劇団」の活動を開始。2014年4月3日、OVA『12歳。』の主題歌「恋の12歳」を担当。同年5月13日、新曲「パンパカパン」のミュージックビデオを公開。\r\n2016年、アニメコラボカフェ・SHIROBACOのキャストとして活動開始。2018年10月20日、SHIROBACOを卒業。\r\n2017年、バンド「DUSTY FRUITS CLUB」のボーカリストとして活動開始。\r\n\r\n趣味はゲーム、アニメ鑑賞、美少女の写真集め。特技はダンス。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 38883,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 149129
+        }
+    ]
+}

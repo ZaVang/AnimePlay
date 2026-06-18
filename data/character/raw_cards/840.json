@@ -1,0 +1,40 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8b/17/840_crt_trg63.jpg",
+        "grid": "https://lain.bgm.tv/pic/crt/g/8b/17/840_crt_trg63.jpg",
+        "large": "https://lain.bgm.tv/pic/crt/l/8b/17/840_crt_trg63.jpg",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8b/17/840_crt_trg63.jpg"
+    },
+    "summary": "香港人，纸术士，三姊妹侦探社成员之一，黑色头发。\r\n能够把纸变成纸傀儡。三姊妹中排行第二，年龄不详，\r\n为人较沉默寡言。身材十分高大，但郤喜欢阴暗，狭小的地方。\r\n在堇川老师的家中就选了楼梯底下的小储物室作房间。\r\n由于可以把纸变成不同用途的纸傀儡，\r\n在执行任务时常负责输送，掩护等辅助工作。",
+    "name": "マギー・ムイ",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "玛姬·梅"
+        },
+        {
+            "key": "别名",
+            "value": []
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 2,
+        "collects": 13
+    },
+    "id": 840,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        1850
+    ]
+}

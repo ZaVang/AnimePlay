@@ -1,0 +1,189 @@
+{
+    "id": 927,
+    "name": "秒速5厘米",
+    "image_path": "data\\images\\anime\\927.jpg",
+    "points": 7.9,
+    "cost": 2,
+    "rarity": "R",
+    "description": "时间是1990年代的日本，远野贵树与筱原明里原本是同班同学的好朋友，自从小学毕业之后，两人都没有再见一次面。分隔两地的两个人，靠着书信往来保持联络，直到贵树知道即将跟随家人搬到鹿儿岛，距离明里更远的地方，于是两人约定了再见面的时间。计划好的行程，却遇上了暴风雪……。",
+    "type": 2,
+    "platform": "剧场版",
+    "episodes_for_hangup": 3,
+    "synergy_tags": [
+        "剧场版",
+        "恋爱",
+        "日本",
+        "原创"
+    ],
+    "date": "2007-03-03",
+    "rating_rank": 297,
+    "rating_score": 7.9,
+    "rating_total": 24894,
+    "main_character_ids": [
+        305,
+        306,
+        307
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/49/6e/305_qM2Rs.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/49/6e/305_qM2Rs.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/49/6e/305_qM2Rs.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/49/6e/305_qM2Rs.jpg"
+            },
+            "name": "遠野貴樹",
+            "summary": "",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/9c/9d/4823_prsn_H42u2.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/9c/9d/4823_prsn_H42u2.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/9c/9d/4823_prsn_H42u2.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9c/9d/4823_prsn_H42u2.jpg"
+                    },
+                    "name": "水橋研二",
+                    "short_summary": "",
+                    "career": [
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 4823,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/82/14/78977_prsn_9ZQc0.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/82/14/78977_prsn_9ZQc0.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/82/14/78977_prsn_9ZQc0.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/82/14/78977_prsn_9ZQc0.jpg"
+                    },
+                    "name": "江志倫",
+                    "short_summary": "台湾男性配音员。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 78977,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 305
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/b2/eb/306_89izW.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/b2/eb/306_89izW.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/b2/eb/306_89izW.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b2/eb/306_89izW.jpg"
+            },
+            "name": "篠原明里",
+            "summary": "由于父亲工作的原因，常常转学。后来搬家到东京。\r\n\r\n由于以往经常转学，几乎没有朋友。变得比较孤僻，喜欢在图书馆看书。\r\n\r\n在这里，遇到了远野贵树。由于相似的经历、彼此的深度理解，二人逐渐变得亲密。\r\n\r\n但因父亲工作的关系，父母打算搬回栃木。未能和贵树上同样的初中，两人从此分离。\r\n\r\n从初一开始与贵树保持书信联系，在贵树转学到鹿儿岛之前，二人约定相见告别。\r\n\r\n之后，两人失去了联系。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/54/8a/7085_prsn_kLi1d.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/54/8a/7085_prsn_kLi1d.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/54/8a/7085_prsn_kLi1d.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/54/8a/7085_prsn_kLi1d.jpg"
+                    },
+                    "name": "近藤好美",
+                    "short_summary": "",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 7085,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bc/4d/7086_prsn_lmlB0.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/bc/4d/7086_prsn_lmlB0.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/bc/4d/7086_prsn_lmlB0.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bc/4d/7086_prsn_lmlB0.jpg"
+                    },
+                    "name": "尾上綾華",
+                    "short_summary": "",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 7086,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/f7/17/79171_prsn_32TLL.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/f7/17/79171_prsn_32TLL.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/f7/17/79171_prsn_32TLL.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f7/17/79171_prsn_32TLL.jpg"
+                    },
+                    "name": "李昀晴",
+                    "short_summary": "台湾女性配音员。\r\n\r\n华视配音训练班第66期杰出学员，2013年开始从业。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 79171,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 306
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/8e/98/307_LV6Zr.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/8e/98/307_LV6Zr.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/8e/98/307_LV6Zr.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8e/98/307_LV6Zr.jpg"
+            },
+            "name": "澄田花苗",
+            "summary": "",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/77/2b/4479_prsn_yyghc.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/77/2b/4479_prsn_yyghc.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/77/2b/4479_prsn_yyghc.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/77/2b/4479_prsn_yyghc.jpg"
+                    },
+                    "name": "花村怜美",
+                    "short_summary": "日本の女優、声優。ATプロダクション所属。東京都出身。\r\n\r\n特技は、タップダンス、ピアノ。趣味は、読書、写真撮影（主に空）。苦手な食べ物はレバー。\r\n2000年に映画『バトル・ロワイアル』に16番・中川有香役で出演した。\r\n声優としては、2002年のOVA『Happy World!』エル役で初主演を果たす。その後、『東京マグニチュード8.0』の小野沢未来やゲーム『ギャラクシーエンジェルII』のアニス・アジート、『秒速5センチメートル』「コスモナウト」の澄田花苗などを演じる。\r\n稲村優奈とともに、2011年まで声優ユニット「sorachoco」（そらちょこ）を結成し音楽活動を行っていた。",
+                    "career": [
+                        "artist",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 4479,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a0/94/79401_prsn_jP755.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a0/94/79401_prsn_jP755.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/a0/94/79401_prsn_jP755.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a0/94/79401_prsn_jP755.jpg"
+                    },
+                    "name": "張茜雯",
+                    "short_summary": "台湾女性配音员。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 79401,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 307
+        }
+    ]
+}

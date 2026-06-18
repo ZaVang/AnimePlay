@@ -1,0 +1,73 @@
+{
+    "birth_mon": 11,
+    "gender": "female",
+    "birth_day": 4,
+    "birth_year": null,
+    "blood_type": 2,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/8a/3d/48197_crt_n3jFX.jpg?r=1495560461",
+        "grid": "https://lain.bgm.tv/pic/crt/g/8a/3d/48197_crt_n3jFX.jpg?r=1495560461",
+        "large": "https://lain.bgm.tv/pic/crt/l/8a/3d/48197_crt_n3jFX.jpg?r=1495560461",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8a/3d/48197_crt_n3jFX.jpg?r=1495560461"
+    },
+    "summary": "中等部3-G組在籍。14歳。舞衣のルームメイト。いつも腹を空かせている大食漢で、舞衣の作る料理が大好物。特にラーメンがお気に入りの様子。野生児と言ってもよい少女で、舞衣にはまるでペットのように懐いている。\r\nHiMEの祭事を司る家に生まれ、その血を引く者として召使いの「ジイ」によって山奥で育てられる。生き別れの兄を探しに風華学園に来たが、それがどのような人物であったのか、記憶があいまいになっている。チャイルドをほとんど使わずにHiMEを屠ることが可能なほどの凄まじい戦闘力を誇る。",
+    "name": "美袋命",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "美袋命"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "纯假名",
+                    "v": "みなぎ みこと"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Minagi Mikoto"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "11月4日"
+        },
+        {
+            "key": "血型",
+            "value": "B"
+        },
+        {
+            "key": "身高",
+            "value": "147cm"
+        },
+        {
+            "key": "体重",
+            "value": "37kg"
+        },
+        {
+            "key": "BWH",
+            "value": "68/54/74"
+        },
+        {
+            "key": "引用来源",
+            "value": "http://www.sunrise-inc.co.jp/my-hime/web/character/chara/mikoto.html"
+        }
+    ],
+    "stat": {
+        "comments": 1,
+        "collects": 7
+    },
+    "id": 48197,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        1027
+    ]
+}

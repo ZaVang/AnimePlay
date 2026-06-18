@@ -1,7 +1,7 @@
 {
     "id": 605,
     "name": "棋魂",
-    "image_path": "data/images/anime/605.jpg",
+    "image_path": "data\\images\\anime\\605.jpg",
     "points": 8.3,
     "cost": 4,
     "rarity": "SSR",

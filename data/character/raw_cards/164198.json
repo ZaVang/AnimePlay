@@ -1,0 +1,86 @@
+{
+    "birth_mon": 7,
+    "gender": "female",
+    "birth_day": 21,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/c2/2d/164198_crt_nygqw.jpg?r=1726054956",
+        "grid": "https://lain.bgm.tv/pic/crt/g/c2/2d/164198_crt_nygqw.jpg?r=1726054956",
+        "large": "https://lain.bgm.tv/pic/crt/l/c2/2d/164198_crt_nygqw.jpg?r=1726054956",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c2/2d/164198_crt_nygqw.jpg?r=1726054956"
+    },
+    "summary": "李之丘高中一年级生。国中时代从朗读部门转到播报部门，曾经参加过全国大赛。个性不服输，自我要求高，勤于练习。\r\n\r\n[简介原文]\r\nすももが丘高校一年生。\r\n中学時代に朗読からアナウンス部門へ変更し、全国大会も経験している。\r\n負けず嫌いで、ストイックに練習に励む",
+    "name": "夏江杏",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "夏江杏"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "夏江 杏"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "なつえ あん"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Natsue An"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        },
+        {
+            "key": "生日",
+            "value": "7月21日"
+        },
+        {
+            "key": "身高",
+            "value": "161cm"
+        },
+        {
+            "key": "引用来源",
+            "value": [
+                {
+                    "k": "公式サイト",
+                    "v": "https://hanashura-anime.com/character/detail.html#character03"
+                }
+            ]
+        },
+        {
+            "key": "出身",
+            "value": "美芭蕉市"
+        },
+        {
+            "key": "就读学校",
+            "value": "第二中学/すももが丘高校"
+        },
+        {
+            "key": "喜欢的东西",
+            "value": "勝利、オシャレ"
+        },
+        {
+            "key": "讨厌的东西",
+            "value": "敗北、ダサいもの"
+        }
+    ],
+    "stat": {
+        "comments": 25,
+        "collects": 53
+    },
+    "id": 164198,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        498934
+    ]
+}

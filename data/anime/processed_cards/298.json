@@ -1,0 +1,206 @@
+{
+    "id": 298,
+    "name": "天空之城",
+    "image_path": "data\\images\\anime\\298.jpg",
+    "points": 8.5,
+    "cost": 5,
+    "rarity": "HR",
+    "description": "　　在过去的历史之中，传说着曾有人类以高科技创造了可飞行于天空的城市——拉普达。虽多数认为这是虚构幻想出来的事物，但仍有相信飞行城市存在而试图寻找出的人们。\r\n　　某一日晚上，搭载众多旅客的飞行客船突遭到空中海盗团的袭击和入侵，空中海盗的目标是搭乘飞行船的一位名叫希达的少女身上所携带与飞行城市传说相关的物品“飞行石”。\r\n　　巴斯与希达为了抢回飞行石并阻止罗穆斯卡的企图，于是搭上了朵拉一族的飞行船一同前往拉普达——传说的天空之城。",
+    "type": 2,
+    "platform": "剧场版",
+    "episodes_for_hangup": 1,
+    "synergy_tags": [
+        "剧场版",
+        "日本",
+        "奇幻",
+        "原创",
+        "冒险"
+    ],
+    "date": "1986-08-02",
+    "rating_rank": 46,
+    "rating_score": 8.5,
+    "rating_total": 15295,
+    "main_character_ids": [
+        10364,
+        35246
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/60/e7/10364_crt_FB7W2.jpg?r=1723551097",
+                "grid": "https://lain.bgm.tv/pic/crt/g/60/e7/10364_crt_FB7W2.jpg?r=1723551097",
+                "large": "https://lain.bgm.tv/pic/crt/l/60/e7/10364_crt_FB7W2.jpg?r=1723551097",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/60/e7/10364_crt_FB7W2.jpg?r=1723551097"
+            },
+            "name": "シータ",
+            "summary": "ヒロインの10代の少女。\r\nゴンドアの谷に住んでいたが、ラピュタの力を狙うムスカらに飛行石と共に拉致される。\r\nその正体は、ラピュタの王族の末裔。\r\n継承名は「リュシータ・トエル・ウル・ラピュタ」。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/cf/bc/4536_seiyu_anidb.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/cf/bc/4536_seiyu_anidb.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/cf/bc/4536_seiyu_anidb.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cf/bc/4536_seiyu_anidb.jpg"
+                    },
+                    "name": "よこざわけい子",
+                    "short_summary": "新潟県立新潟高等学校卒業。日本大学藝術学部放送学科中退。声優の勝田久の勧めで俳協付属養成所に入り、養成所在籍中の1975年に『タイムボカン』で声優デビュー。\r\n\r\n1980年代には、ドラミやシータを筆頭に数多くの作品で主役・ヒロイン役を担当した。1988年にゆーりんプロを設立。\r\n\r\n2005年3月にテレビ朝日版『ドラえもん』の声優陣が一新され、大山のぶ代らと共に勇退。以後は声優としての第一線からは離れ、自身が経営する声優・ナレータースクールにて後進の指導にあたっている。ただし2009年に放送された「あつまれ!キッズソング50〜スプー・ワンワン　宇宙の旅〜」では久々にぴっころの声を担当した。2011年にはアニメ『日常』の第25話ナレーション（「ナレーション よこざわけいこ」）を担当した。\r\n\r\n『ドラえもん』、『エスパー魔美』、『オバケのQ太郎』、『プロゴルファー猿(スペシャル版のみ)』にはレギュラーキャラで出演、また『パーマン』『忍者ハットリくん』などにも脇役で出演するなど藤子不二雄作品への登場が多いことで知られ、コロコロコミックにて「藤子作品には欠かせない声優」と紹介された[要出典]こともある。肝付兼太とは何かと共演の機会が多い。\r\n\r\n『ドラえもん』の声優陣は大抵TVへの顔出し出演をしているが、よこざわは「キャラクターのイメージを壊す」という理由で顔出し出演をあまりしたことがない。例に『大胆MAP』では『オバケのQ太郎』のO次郎として紹介されたが、交渉では電話のみの会話となり、そこで顔出しをしたくないことを語っている。しかし、雑誌等の紹介やインタビューなどで顔出しを拒むことはほとんどない。\r\n\r\n「ゆーりんプロ」の名前は、娘のために作った絵本「雪ん子ゆーりん」に由来している。「ゆーりんプロ」所属の俳優、養成所研究生らによって行われる演劇の公演の脚本、演出も手がける。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 4536,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a4/7a/46276_prsn_iCS5T.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a4/7a/46276_prsn_iCS5T.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/a4/7a/46276_prsn_iCS5T.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a4/7a/46276_prsn_iCS5T.jpg"
+                    },
+                    "name": "张雨濛",
+                    "short_summary": "毕业于云南师范大学。\r\n2018年，加入边江工作室成为专业配音演员。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 46276,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/06/d0/50449_prsn_yBh6D.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/06/d0/50449_prsn_yBh6D.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/06/d0/50449_prsn_yBh6D.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/06/d0/50449_prsn_yBh6D.jpg"
+                    },
+                    "name": "Anna Paquin",
+                    "short_summary": "加拿大演员 / 配音 / 编剧 / 导演 / 制片人。生于马尼托巴省，温尼伯市。",
+                    "career": [
+                        "producer",
+                        "seiyu",
+                        "actor"
+                    ],
+                    "id": 50449,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ad/50/58222_prsn_Xs64d.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ad/50/58222_prsn_Xs64d.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/ad/50/58222_prsn_Xs64d.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ad/50/58222_prsn_Xs64d.jpg"
+                    },
+                    "name": "林美秀",
+                    "short_summary": "台湾女性配音员。\r\n\r\n与同时也曾参与过一些配音作品的知名艺人暨演员林美秀同名同姓。\r\n\r\n华视配音训练班出身，与詹雅菁是同期的配音班同学。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 58222,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/bf/78/78920_prsn_6ylEy.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/bf/78/78920_prsn_6ylEy.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/bf/78/78920_prsn_6ylEy.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bf/78/78920_prsn_6ylEy.jpg"
+                    },
+                    "name": "許淑嬪",
+                    "short_summary": "台湾女性配音员。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 78920,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 10364
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/f1/d4/35246_crt_OCo9f.jpg?r=1723551108",
+                "grid": "https://lain.bgm.tv/pic/crt/g/f1/d4/35246_crt_OCo9f.jpg?r=1723551108",
+                "large": "https://lain.bgm.tv/pic/crt/l/f1/d4/35246_crt_OCo9f.jpg?r=1723551108",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f1/d4/35246_crt_OCo9f.jpg?r=1723551108"
+            },
+            "name": "パズー",
+            "summary": "是一位住在有矿坑的小型城镇附近的少年，本作品的男主角，于矿山中担任实习的机械工人一职。\r\n父母双亡，父亲先前是飞行冒险家，在一次使用飞行船进行飞行冒险时，不慎被低气压卷入，但却成功突入到内部并意外发现到天空之城拉普达且成功拍摄到一幅照片，因而坚称天空之城拉普达确实存在，但当时众人对他的说法存疑，导致死前都一直被当成骗子。\r\n巴斯个人深信父亲对于拉普达的所言不假并决心承继父亲的遗志，愿望是自己制造一架小型飞机来寻找传说中的天空之城拉普达，作品中有一幕有带到这一架已经完成一部分的航空器。\r\n本身个性直接且豪爽，因从事矿工的因素而身强体壮；且具有超出一般同年龄小孩的运动细胞，亦有着优秀的眼力。每天早上起床后的例行公事则为放出自家楼顶饲养的鸽子及吹奏小喇叭。\r\n在本作品的最后，和希达一同前往希达的北方故乡肯德亚山谷。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/0b/54/3830_prsn_npPoO.jpg?r=1671507509",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/0b/54/3830_prsn_npPoO.jpg?r=1671507509",
+                        "large": "https://lain.bgm.tv/pic/crt/l/0b/54/3830_prsn_npPoO.jpg?r=1671507509",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0b/54/3830_prsn_npPoO.jpg?r=1671507509"
+                    },
+                    "name": "田中真弓",
+                    "short_summary": "日本の声優、女優、ナレーターである。本名、阿部 真弓（あべ まゆみ）。東京都出身。青二プロダクション所属。日本芸術専門学校特別講師。\r\n\r\n青山学院女子短期大学卒業。幼少期から目立ちたがりで、学生時代からは演劇にも打ち込み、学芸祭のクラス公演などで演劇をしていたのをきっかけとして、舞台女優として身を立てる決意を固める。\r\n\r\n女優としての活動の場を求めて、文学座、青年座などに応募するも全て不採用だった。その中で「あなたは背が低いし、小顔で、全てが小作りで舞台栄えしない。妖精や子供など、役柄が限られてしまうから」と言われ、田中は非常に落ち込んだとのこと。フジテレビのアナウンサー試験にも応募し、最後の5人まで残ったものの内定には至らなかった。作曲家の鈴木邦彦の下で歌の勉強をしていたこともあった。ある日、東京・渋谷のあるバーの前で歌手募集の広告を見つけ、そのバーで歌うことになる。たまたまその店に来たテアトル・エコーの音響に「うちの劇団なんか合っているんじゃないかな、チビばっかりですよ」と勧められ、その付属養成所の試験を受けて合格、短大卒業後はテアトル・エコーに所属することとなった。\r\n\r\n声優として駆け出しの頃だった1978年には、田宮二郎の遺作となった『白い巨塔』の第2回に、財前五郎の講義を受ける医学生役と里見医院の看護婦役で出演している。\r\n\r\n以前はNPSテアトル、アーツビジョン、大橋巨泉事務所（現：オーケープロダクション）に所属していた。\r\n\r\n1978年に『激走!ルーベンカイザー』（高木涼子）で声優デビュー。同年には人気刑事ドラマ『Gメン'75』の「香港ロケ編」で、事件解決に協力する香港の難民少年役をアテレコで演じた。\r\n\r\n1980年代には、島津冴子とラジオ番組『アニメトピア』に2代目パーソナリティーとして出演、少し後に『さすがの猿飛』に揃って出演した。1983年から長期にわたり、『うる星やつら』で女性でありながら格好も言葉遣いも少年の姿の藤波竜之介役を演じたことで大きく知名度を上げた。\r\n\r\n2006年には、CD企画『外道女王』（原作伊豆一彦・脚本伊藤良徳）にて主役を担当した。\r\n\r\n2011年に第5回声優アワード「高橋和枝賞」を受賞。\r\n\r\n2012年に伊倉一恵、竹田えり、高乃麗と共に演劇ユニット「コーネンキーズ」を結成。\r\n\r\n2013年に第7回声優アワード「キッズ・ファミリー賞」を受賞。\r\n\r\n2017年1月9日、テレビ朝日にて放映された『人気声優200人が本気で選んだ!声優総選挙!3時間SP』で第6位に入選。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 3830,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/12/16/67949_prsn_ZEGwG.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/12/16/67949_prsn_ZEGwG.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/12/16/67949_prsn_ZEGwG.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/12/16/67949_prsn_ZEGwG.jpg"
+                    },
+                    "name": "馮友薇",
+                    "short_summary": "冯友薇，1969年3月23日出生于台湾，毕业于华视配音训练班，台湾女性配音演员。\r\n1989年结训之后开始跟班；声线属于高音类型，配过许多角色。\r\n代表作为《秀逗魔导士》第一部（莉娜·因巴斯）《鬼神童子》（役小明）《樱桃小丸子》（樱桃子（第一代））《蜡笔小新》（野原新之助（第一代））等。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 67949,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/7f/c2/70205_prsn_w3gXx.jpg?r=1733234851",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/7f/c2/70205_prsn_w3gXx.jpg?r=1733234851",
+                        "large": "https://lain.bgm.tv/pic/crt/l/7f/c2/70205_prsn_w3gXx.jpg?r=1733234851",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7f/c2/70205_prsn_w3gXx.jpg?r=1733234851"
+                    },
+                    "name": "万舒心",
+                    "short_summary": "毕业于南昌航空大学科技学院播音主持专业。\r\n2021年，参加第十七届中国国际动漫节声优大赛个人赛北部赛区。\r\n2022年5月，正式加入边江工作室。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 70205,
+                    "type": 1,
+                    "locked": false
+                },
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/32/d8/78967_prsn_3fvYL.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/32/d8/78967_prsn_3fvYL.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/32/d8/78967_prsn_3fvYL.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/32/d8/78967_prsn_3fvYL.jpg"
+                    },
+                    "name": "劉小芸",
+                    "short_summary": "台湾女性配音员。",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 78967,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 35246
+        }
+    ]
+}

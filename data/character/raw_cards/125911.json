@@ -1,0 +1,53 @@
+{
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+        "small": "https://lain.bgm.tv/r/100/pic/crt/l/47/24/125911_crt_Dh4GW.jpg?r=1676805383",
+        "grid": "https://lain.bgm.tv/pic/crt/g/47/24/125911_crt_Dh4GW.jpg?r=1676805383",
+        "large": "https://lain.bgm.tv/pic/crt/l/47/24/125911_crt_Dh4GW.jpg?r=1676805383",
+        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/47/24/125911_crt_Dh4GW.jpg?r=1676805383"
+    },
+    "summary": "芙蓉看護学院2回生。19歳。高沢喜十郎をボランティアで看護している。芯が強く行動力がある。モニターにされてしまった喜十郎を常に気遣うなど、心優しい性格。最初に行ったボランティアの時に喜十郎の世話をしたこともあり非常に気にかけ、寺田の「Z-001号機」による介護のやり方に異議を唱える。\r\n芙蓉看护学院的二年级学生，19岁。是照看高泽喜十郎的志愿者。她内心强大，有行动力。对于被监控的喜十郎特别关照，为人性格善良。最初进行志愿者活动时就特别上心照顾喜十郎，对寺田经由「Z-001号机」实施看护的做法持有异议。",
+    "name": "三橋晴子",
+    "infobox": [
+        {
+            "key": "简体中文名",
+            "value": "三桥晴子"
+        },
+        {
+            "key": "别名",
+            "value": [
+                {
+                    "k": "日文名",
+                    "v": "三橋 晴子"
+                },
+                {
+                    "k": "纯假名",
+                    "v": "みつはし はるこ"
+                },
+                {
+                    "k": "罗马字",
+                    "v": "Mitsuhashi Haruko"
+                }
+            ]
+        },
+        {
+            "key": "性别",
+            "value": "女"
+        }
+    ],
+    "stat": {
+        "comments": 3,
+        "collects": 2
+    },
+    "id": 125911,
+    "locked": false,
+    "type": 1,
+    "nsfw": false,
+    "anime_ids": [
+        369
+    ]
+}

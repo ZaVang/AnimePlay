@@ -1,0 +1,125 @@
+{
+    "id": 486054,
+    "name": "魔都精兵的奴隶 第二季",
+    "image_path": "data\\images\\anime\\486054.jpg",
+    "points": 6.5,
+    "cost": 1,
+    "rarity": "N",
+    "description": "最强战力──组长全员集结。\r\n寻求着能大显身手的舞台的男高中生・和仓优希，因为魔防队第七组组长・羽前京香的能力，使他身为「奴隶」的力量觉醒，并成功讨伐了京香故乡的仇敌・一根角，实现了复仇的宿愿。然而在台面下，全新的威胁《八雷神》已经开始在魔都展开行动。于是优希和京香前往参加全体组长齐聚一堂的「组长会议」。\r\n魔防队透过联合训练累积起了实力，而优希也开始展现出崭新的可能性及显著的成长。另一方面，八雷神的其中一人在现世现身了──。\r\n一场「被饲养的少年」所展开的奇幻战斗故事，第2章在此展开！\r\n\r\n\r\n[简介原文]\r\n最高戦力 全組長、集結。\r\n活躍できる場所を求めていた男子高校生・和倉優希は、魔防隊七番組組長・羽前京香の能力により“奴隷（スレイブ）”としての力を開花させ、京香は故郷の敵である一本角を討ち果たし宿願の復讐を遂げた。\r\nしかしその陰で、魔都では新たな脅威《八雷神》が動き始める。優希と京香は、全組長が集結する“組長会議”へと向かうことに。\r\n合同訓練を通じて力を蓄える魔防隊。その中で優希もまた、新たな可能性と著しい成長を見せ始める。一方で、八雷神の一柱が現世に現れて――。\r\n“飼われる少年”のバトルファンタジー、第2章。ここに開幕！",
+    "type": 2,
+    "platform": "TV",
+    "episodes_for_hangup": 12,
+    "synergy_tags": [
+        "后宫",
+        "TV",
+        "日本",
+        "奇幻",
+        "漫画改",
+        "战斗"
+    ],
+    "date": "2026-01-08",
+    "rating_rank": 5106,
+    "rating_score": 6.5,
+    "rating_total": 2676,
+    "main_character_ids": [
+        87821,
+        87822,
+        87823
+    ],
+    "main_characters": [
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/c8/05/87821_crt_pvyF2.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/c8/05/87821_crt_pvyF2.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/c8/05/87821_crt_pvyF2.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c8/05/87821_crt_pvyF2.jpg"
+            },
+            "name": "羽前京香",
+            "summary": "魔防隊七番組 組長。醜鬼に故郷を滅ぼされた過去を持ち、醜鬼の殲滅を目標に掲げる。能力「無窮の鎖」（スレイブ）で優希を使役する。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/a1/78/19339_prsn_R7laF.jpg",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/a1/78/19339_prsn_R7laF.jpg",
+                        "large": "https://lain.bgm.tv/pic/crt/l/a1/78/19339_prsn_R7laF.jpg",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a1/78/19339_prsn_R7laF.jpg"
+                    },
+                    "name": "鬼頭明里",
+                    "short_summary": "鬼頭明里（きとう あかり）は、日本の女性声優である。ラクーンドッグ所属。\r\nあだ名は「あかりん」。\r\n\r\n10月16日生まれ、愛知県出身、血液型B型、153cm。プロ・フィット声優養成所を経て、現事務所に2015年4月から所属。\r\n趣味は絵を描くこと、歌うこと。特技は絵を描くこと、歌うこと、湯切り。",
+                    "career": [
+                        "artist",
+                        "seiyu"
+                    ],
+                    "id": 19339,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 87821
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/e0/87/87822_crt_2W1Om.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/e0/87/87822_crt_2W1Om.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/e0/87/87822_crt_2W1Om.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e0/87/87822_crt_2W1Om.jpg"
+            },
+            "name": "駿河朱々",
+            "summary": "七番組隊員。好奇心旺盛な性格で優希にも興味津々。身体の大きさを変化させる「玉体革命」（パラダイムシフト）で醜鬼を圧倒する。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/ac/1e/16068_prsn_tUzzW.jpg?r=1704783709",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/ac/1e/16068_prsn_tUzzW.jpg?r=1704783709",
+                        "large": "https://lain.bgm.tv/pic/crt/l/ac/1e/16068_prsn_tUzzW.jpg?r=1704783709",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ac/1e/16068_prsn_tUzzW.jpg?r=1704783709"
+                    },
+                    "name": "日野まり",
+                    "short_summary": "日本の女性声優、ナレーター。シグマ・セブンe所属。\r\n\r\n趣味：乾燥機の中をながめること・カラオケ\r\n資格：英検準２級\r\n特技：ピアノ\r\n経歴：シグマ・セブン声優養成所\r\n        【（株）Doa The・声優塾 】",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 16068,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 87822
+        },
+        {
+            "images": {
+                "small": "https://lain.bgm.tv/r/100/pic/crt/l/0e/c2/87823_crt_y3z8W.jpg",
+                "grid": "https://lain.bgm.tv/pic/crt/g/0e/c2/87823_crt_y3z8W.jpg",
+                "large": "https://lain.bgm.tv/pic/crt/l/0e/c2/87823_crt_y3z8W.jpg",
+                "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0e/c2/87823_crt_y3z8W.jpg"
+            },
+            "name": "大川村寧",
+            "summary": "七番組隊員。組の最年少・11歳ながら、先に入隊した上司として優希を気にかける。千里眼のような力で隊を補佐。",
+            "relation": "主角",
+            "actors": [
+                {
+                    "images": {
+                        "small": "https://lain.bgm.tv/r/100/pic/crt/l/49/ab/34404_prsn_l4dCp.jpg?r=1564558147",
+                        "grid": "https://lain.bgm.tv/pic/crt/g/49/ab/34404_prsn_l4dCp.jpg?r=1564558147",
+                        "large": "https://lain.bgm.tv/pic/crt/l/49/ab/34404_prsn_l4dCp.jpg?r=1564558147",
+                        "medium": "https://lain.bgm.tv/r/400/pic/crt/l/49/ab/34404_prsn_l4dCp.jpg?r=1564558147"
+                    },
+                    "name": "立花日菜",
+                    "short_summary": "Arts Vision所属\r\n\r\n出身地：宮城県\r\n芸歴：日本ナレーション演技研究所\r\n趣味・特技：エレキギター、歌うこと",
+                    "career": [
+                        "seiyu"
+                    ],
+                    "id": 34404,
+                    "type": 1,
+                    "locked": false
+                }
+            ],
+            "type": 1,
+            "id": 87823
+        }
+    ]
+}
