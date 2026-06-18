@@ -150,27 +150,8 @@ export const useUserStore = defineStore('user', () => {
   }
 
   // --- 商店编排 ---
-
-  function purchaseFromShop(item: { Id: number; cost: number }, itemType: CardDomain) {
-    if (!profile.isLoggedIn) {
-      alert('请先登录！');
-      return;
-    }
-    const card = itemType === 'anime'
-      ? useGameDataStore().getAnimeCardById(item.Id)
-      : useGameDataStore().getCharacterCardById(item.Id);
-    if (!card) {
-      profile.addLog('购买失败，物品不存在。', 'warning');
-      return;
-    }
-    if (!profile.spend('knowledgePoints', item.cost)) {
-      profile.addLog('知识点不足，无法购买！', 'warning');
-      return;
-    }
-    collection.addCard(item.Id, itemType);
-    profile.addLog(`成功购买 [${card.rarity}] ${card.name}！`, 'success');
-    saveToServer();
-  }
+  // 注：知识点→卡牌的购买路径已删除，统一收口到「图鉴定向解锁」（unlockCodexCard）。
+  // 商店只售非卡牌道具（券/药水/知识点包）。
 
   function purchaseShopItem(item: ShopItem) {
     if (!profile.isLoggedIn) {
@@ -449,7 +430,6 @@ export const useUserStore = defineStore('user', () => {
     },
 
     // shop（S6 限购）
-    purchaseFromShop,
     purchaseShopItem,
     shopRemainingToday: (itemId: string, dailyLimit?: number) => useShopStore().remainingToday(itemId, dailyLimit),
 

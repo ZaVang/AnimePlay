@@ -16,8 +16,8 @@ afterEach(() => {
 describe('每日限购计数', () => {
   it('无限购商品恒可购（剩余 Infinity）', () => {
     const shop = useShopStore();
-    expect(shop.remainingToday('up_ur_326')).toBe(Infinity);
-    expect(shop.canPurchase('up_ur_326', undefined)).toBe(true);
+    expect(shop.remainingToday('unlimited_item')).toBe(Infinity);
+    expect(shop.canPurchase('unlimited_item', undefined)).toBe(true);
   });
 
   it('计数到上限后不可再购', () => {
