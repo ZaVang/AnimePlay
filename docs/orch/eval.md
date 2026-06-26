@@ -1,86 +1,106 @@
-# Evaluator Report — Iteration 5 (evolution R1/5：小游戏 Hub + 高低牌)
+# Evaluator Report — Iteration 5 (final debt round)
 
-> QA Evaluator 独立验收，2026-06-17。不信任 Generator 自报，亲自重跑三命令 + 抽查代码。
-> 工作根目录 D:\work\AnimePlay，分支 restructure（本轮交付在工作区未提交，git status 已确认）。
+> QA Evaluator 独立验证（不信任自报，亲跑全部验收命令 + 亲自 git diff/Grep/Read 取证）。
+> 只读不改源码。本轮 = 5 轮收尾债轮；tier1 on → DECISION 信息性，但给最严谨最终质量判断。
+> 验证时间 2026-06-24；HEAD = 73b9add（前 5 轮全在工作树未提交）。
 
-## 1. SPRINT 硬性交付 Checkbox 核对
+## Checkbox 状态（docs/SPRINT.md L355-384）
+- [x] I5-T1 硬色 138 连根拔 — 已勾，已核实
+- [x] I5-T2 confirm/alert 18 统一弹窗 — 已勾，已核实
+- [x] I5-T3 onboarding 点名品味 — 已勾，已核实
+- [x] I5-T4 /homestead 完整冻结 — 已勾，已核实
+- [x] I5-T5 收尾杂项三连 — 已勾，已核实
 
-| 硬交付项 | SPRINT 标记 | 实测结论 |
-|---|---|---|
-| 统一小游戏中心 | `[x]` | ✅ 达成：`/minigames` 路由 + `MiniGamesView.vue`（选择器 Hub）+ 导航「🎮 小游戏」取代「🎭 猜角色」+ `/guess` redirect + 猜角色原样迁入 |
-| 新小游戏 #1（高低牌） | `[x]` | ✅ 达成：`stores/minigames/higherLower.ts` 纯逻辑 + `HigherLowerGame.vue` + 经济（profile.earn 封顶）+ 存档 v8 持久化 |
-| 新小游戏 #2 | `[ ]` | 未做（本轮范围只到 #1，#2 留第 6 轮）——与 SPRINT/plan 一致，非缩水 |
+## 验收命令重跑结果（真实输出，非复制自报）
+| # | 命令 | 实际结果 | 判定 |
+|---|------|---------|------|
+| 1 | `npm run type-check`（vue-tsc --build） | 无输出，退出 0 | ✅ 0 错 |
+| 2 | `npm run test`（vitest run） | **Test Files 45 passed / Tests 512 passed**，8.89s | ✅ ≥489 |
+| 3 | `npm run build` | **built in 10.60s**；dist/assets 无 HomesteadView chunk | ✅ 成功 |
+| 4 | `./.venv/Scripts/python.exe backend/test_security.py` | **RESULT: PASS — all security checks passed**，exit=0（鉴权/原子写/saveVersion 409/邀请码全 PASS） | ✅ |
+| 5 | `grep -rn "debug=True" backend/server.py api/index.py` | 零命中，exit=1 | ✅ |
 
-本轮契约范围 = Hub + 猜角色迁入 + 游戏 #1。两个本轮 checkbox 名副其实。
+环境记录：`.venv/Scripts/python.exe` 存在并使用（系统 python 无 Flask 依赖，按 pitfalls 约定）。
 
-## 2. 验收命令重跑（Evaluator 亲跑，frontend-vue/ 下）
+## Generator 报告 vs 实际对比（512 是否属实）
+- **test 512 属实**：亲跑 = 45 文件 / 512 通过，与自报逐字一致。
+- **type-check / build / 后端 / debug**：四项自报均属实，亲跑复现。
+- **唯一细微出入（不影响判定）**：自报称 `nurtureColors.test.ts` 11 个用例，实测 `it/test` 块 = **8 个**（onboardingSteps 5 / useDialog 5 / useUnlockConfirm 5，4 文件合计 **23** 新用例与自报 23 总数吻合）。文件存在且覆盖阈值/语义类/无 text-white，总数 512 验证为准——属自报分项笔误，非缺测。
 
-| 命令 | 自报 | 实测 | 结论 |
-|---|---|---|---|
-| `npm run type-check` | 0 错 | **0 错**（vue-tsc --build 静默通过） | ✅ 一致 |
-| `npm run test` | 33 files / 383 passed | **Test Files 33 passed / Tests 383 passed**（Duration 1.28s） | ✅ 一致，≥372 基线达标 |
-| `npm run build` | ✓ 306 modules / 2.82s | **✓ built in 2.65s**，`MiniGamesView-*.js 14.88kB` chunk 存在 | ✅ 成功 |
+## 关键独立核查结果（逐条 + file:line 证据）
 
-三命令全绿。自报无夸大（test 数 383 精确吻合，build 时间小幅波动正常）。
+### 🔴 重点一：硬色连根拔真彻底（债轮成败分水岭）—— 通过
+- **共享映射是纯函数**：`config/nurtureColors.ts` 纯常量/纯函数，零 Vue/Pinia/DOM/IO（L9 自述并经 Read 核实）；`bondTier`(L32)/`moodTier`(L53)/`moodColor`(L62)/`ATTRIBUTE_TEXT_COLOR`(L70)/`ATTRIBUTE_BAR_COLOR`(L80)/`SEMANTIC_CARD_CLASSES`(L91)/`SEMANTIC_BTN_CLASSES`(L103) 全输出语义令牌，实心按钮用 `text-on-accent` 非 `text-white`(L104-106)。
+- **重复表已消除**：
+  - bondLevel：CharacterProfile L21-23 `computed→bondTier`；CharacterSelector L59 `getBondLevel→bondTier`（同一份，第二份硬色表已删）。
+  - moodStatus：CharacterProfile L57 `moodTier`；InteractionPanel L703 `moodColor`（第二份硬色表已删）。
+  - INTERACTION/ACTIVITY named 映射：InteractionPanel L19 `=SEMANTIC_CARD_CLASSES`；NurtureActions L210-214 指共享映射。
+- **残留硬色 Grep（养成 5 文件 + SquadBattleView）**：
+  - SquadBattleView：**零命中**（全迁）。
+  - DialogueSystem / InteractionPanel / CharacterSelector(模板色) / NurtureActions：**零命中**。
+  - CharacterProfile：10 命中 = **稀有度渐变 L215-219(5) + 稀有度徽章 L230-234(5)**，皆契约明文合法例外。
+  - CharacterSelector：稀有度 shadow L173-177（5，合法例外）。
+- **text-white/bg-black 例外审计**：CharacterProfile L225/L230-235 稀有度徽章压图、`bg-black/75~80` modal backdrop、SquadBattleView L719 图片压片位置徽章 + L815/874 阵亡遮罩——全为铁律明文固定例外。
+- **无 partial-migration**：bondLevel/moodStatus 两 computed 均整函数走共享映射，未见「同一函数半语义半硬色」。
 
-## 3. 自报 vs 实测对比
+### 🔴 重点二：confirm/alert 清零 —— 通过
+- 全仓 `\b(confirm|alert)\s*\(` Grep：仅剩
+  - 2 个声明的同名局部函数：`battle/CardSelectionModal.vue:142`、`battle/TypeSelectionModal.vue:116`（`function confirm()`，非原生调用）✅ 与契约一致。
+  - 其余全走主题化 `useDialog`：CollectionsView:74、BattleView:116、TierListGame:159、TasteProfileGame:128、CardDetailModal:69/213、DeckEditor(5)、DeckList:23、GachaShop:29 — 均 `await confirm`/`void alert`，危险操作带 `danger:true`。
+  - 解锁门面内 `useUnlockConfirm.ts` 用主题化 confirm/alert（非原生）。
+- **useDialog/AppDialog**：`useDialog.ts` confirm→Promise<boolean>、alert→Promise<void>，模块级单例队列（旧弹窗以 false 结算防悬挂 L37-41）；`AppDialog.vue` 挂 App.vue:223，全语义令牌（`bg-elevated/text-ink/text-ink-2/border-line/btn-primary/btn-danger/btn-ghost`，无 text-white）、Teleport+backdrop+role=dialog、Esc/Enter/autofocus。✅
+- **useUnlockConfirm 带 domain 不绕过守卫**：`unlock(card, domain: CardDomain)`（L40，非写死 anime）；4 处接入正确——GenreSets/RecommendationStrip/NicheGems `unlock(card,'anime')`、CodexPanel `unlock(card, codexDomain.value)` 双域；以 `userStore.unlockCodexCard` 返回 `{ok,error}` 为准（L62-66），UI 不重复守卫。✅
+- **store 层 4 处降级 toast**：userStore.ts:103/108、collection.ts:113、battleSetup.ts:41、persistence.ts:173 → `profile.addLog(..., 'warning')` 非阻塞，无原生 alert。✅（契约提 userStore:158 实际落 160，同一意图）
 
-gen_status.md 自报 PASSED / test 383 — **完全属实**。socket 掉线后 orchestrator 接管续做的声明也与工作区一致（schema/migrations 已改 + 新文件齐全）。无夸大、无缩水谎报。
+### onboarding —— 通过
+- `config/onboardingSteps.ts`：5 步。第 1 步 value-first（L23「这里会照出你的番剧人格」，无「打卡」开场）；第 5 步点名品味（L49-53，route `/collections`，cta「去标记看过」）。**引导内无 toggleTasteWatched 调用**（只导航不写状态）。
+- `OnboardingGuide.vue`：import `ONBOARDING_STEPS`(L11)，`isLast=stepIndex===steps.length-1`(L21)，进度点/按钮 length 派生（L81/L102）——4→5 零逻辑改。完成标志仍 localStorage。✅
 
-## 4. 代码抽查（逐项亲自 Read）
+### /homestead 冻结 —— 通过
+- `router/index.ts:45-46`：`path:'/homestead'` + `redirect:'/'`，component import 已删。
+- HomesteadView 全 src grep：仅 router 注释引用，**无别处 import**。
+- `npm run build` dist/assets：**无 HomesteadView chunk**（`ls dist/assets|grep -i homestead` 零命中）——已移出构建产物。
+- App.vue：homestead 导航注释块已删（grep 零命中）。HomesteadView.vue 文件保留（冻结不删）。✅
 
-### 4.1 维度分桶铁律 ✅ 严格合规
-`stores/minigames/higherLower.ts:57-71` `cardValue`：
-- `charPopularity` → 只读 `(card as CharacterCard).popularity_score`
-- `animeRatingTotal` → 只读 `(card as AnimeCard).rating_total`
-- `animeYear` → 只读 `(card as AnimeCard).date` 取年份
-- **三维度互不混用，全程不碰 `rating_score`**（grep 确认 minigames 目录零 `rating_score`）。
-- 与 Scout 实测铁律一致（角色无 rating_rank/date、番剧无 popularity_score）。
-- 特征测试 `higherLower.test.ts:20-27` 显式断言「角色卡读 animeRatingTotal → null」「番剧坏 date → null」——分桶有测试锁。
-- `pickRound`（`:89-99`）：right 卡用 `excludeValue = cardValue(left)` 排除，**保证两值不等 → 无平局**。`judge`（`:102-104`）严格 `>`/`<`。
+### 计时器修复 —— 通过
+- `NurtureActions.vue`：`schedule()`+`pendingTimers` Set(L34-40)，两处 setTimeout 走 schedule（L47 3s 动画、L286 训练播报）；`onUnmounted`(L441) 清 interval + `pendingTimers.forEach(clearTimeout)`(L446)。无裸 setTimeout 漏网。✅
 
-### 4.2 经济安全 ✅ 真生效，无刷分漏洞
-- **唯一货币入口**：发奖只走 `userStore.settleHigherLower`（`userStore.ts:312-323`）→ `profile.earn('knowledgePoints', kpToAward)`。kpToAward 在 store 内已封顶，userStore 不二次计算。
-- **每日封顶真生效**：`HL_DAILY_KP_CAP=120`；`cappedAward`（`:112-114`）= `max(0, min(reward, cap-awardedToday))`；`settle`（`:200-219`）跨天比对 `todayKey()` 归零 `awardedToday` 后累加。测试 `higherLower.test.ts:110-137` 三连局断言：首局 streak10→发30；同日 streak50（应得150）→只发 90（剩余额度 120-30）；第三局→发 0。**「一局连对刷爆知识点」漏洞确认关闭**：streak 即便 50 也被裁到日剩余额度。
-- **streak 里程碑发奖**：`streakReward`（`:107-109`）= `floor(streak/5)*15`，streak<5 → 0。测试 `:36-43` 锁定。
-- 唯一生产调用点 = `HigherLowerGame.vue:44`（grep 全仓确认），每局 game-over 触发一次（busy 锁 + revealRight 守卫防重入），无双发路径。
-- 轻微瑕疵（非漏洞）：`settle()` 文档注释自称「幂等保护：仅 isGameOver 且尚未结算」，但代码无 isGameOver 守卫/已结算标志。实际单一调用点 + UI 守卫使其单次执行；即便假想双调用，`cappedAward` 仍把当日总产出钉在 120，**不构成经济漏洞**，仅注释略夸。建议后续补 isGameOver 守卫使注释名副其实。
+### 文档同步 + MAX_PINS + 死代码 —— 通过
+- pitfalls.md L11：「存档协议当前 **v12**」全沿革 + 「权威值在 schema.ts:30，文档只指向不复述」；无残留 stale「v6」。CLAUDE.md L47 同 v12。
+- SquadBattleView：「每日最多挑战10次」整行已删，仅剩 L638「无次数限制」（矛盾消除）。
+- CardDetailModal:69：用导出常量 `MAX_PINS`（L6 import），非 `pinnedIds.length`。✅
 
-### 4.3 engine 纯净 ✅
-- 高低牌纯逻辑全在 `stores/minigames/`，grep `engine/` 零命中 `higherLower|minigame|popularity_score|rating_total|cardValue|streakReward` —— 无 minigame 逻辑混入 engine。
-- 纯函数注入 RNG：`pickCard`/`pickRound` 收 `rng: RNG` 参数，调 `rng.pick`；store 编排层喂 `defaultRng`（`engine/rng.ts:81`，生产真随机）。minigames 目录唯一 `Math.random` 字样是注释「不在内部调用 Math.random」——纯函数体内零 Math.random。
-- RNG 接口确认：`engine/rng.ts` 导出 `RNG`/`createRng`/`createSeededRng`/`defaultRng`，`pick` 方法存在（`:31`）。
+### engine 纯净 —— 通过
+- `src/engine/` grep nurtureColors/useDialog/useUnlockConfirm/onboardingSteps/AppDialog：零命中。本轮逻辑未渗入 engine。✅
 
-### 4.4 schema v8 三处同改 ✅，不动 guess 域，测试只追加未弱化
-- **schema.ts**：`SAVE_VERSION=8`（`:26`）+ `MiniGamesSave`/`HigherLowerSave` 接口（`:59-78`）+ `createDefaultMiniGames`（`:166-172`）+ v8 注释（`:13`）+ `SavePayload.minigames`（`:132`）。`GuessGameSave`（`:54-56`）原样未动。
-- **migrations.ts**：`migrateMiniGames`（`:97-110`，字段级缺省）+ migrate() 注册（`:148`）。guess 迁移行（`:137` `guess.highScore`）原样未动。
-- **persistence.ts**：buildPayload（`:66`）+ applyPayload（`:102`）+ resetAllDomains（`:121`）+ import（`:21`）四处装配齐全。
-- **不动 v7 guess 域**：`git diff` 确认 schema/migrations 对 guess 零改动；`migrations.test.ts:77,126` 的 `guess.highScore` 往返断言（缺省 0 / 原样保留 85）原样保留。
-- **测试只追加未弱化**：`git diff` 两测试文件——migrations.test 仅 +1 用例（v8 minigames 缺省补默认）；persistence.test 仅 +seed 6 行 +往返断言 5 行 + payload key 列表加 `'minigames'`。**v1~v7 既有断言一行未删未改**。
+### 测试真增不弱化 —— 通过
+- 既有测试文件 diff：tasteProfile.test.ts +155/-1（-1=import 行改写，非删断言）、buildWrappedStats.test.ts +25/-0。无既有用例删除/弱化。
+- 8 个新 test 文件（含 nurtureColors/useDialog/useUnlockConfirm/onboardingSteps + 前轮遗留 useWatchedAnime/watchingPins/contentIndex/genreSets）。
+- test 数 512 ≥ 基线 489。✅
 
-### 4.5 Hub / 路由 ✅
-- `/minigames` 路由存在（`router/index.ts:42-46`）；`/guess` 改 `redirect: '/minigames'`（`:47-51`，原 component 已删）。
-- `App.vue` 导航：`git diff` 确认 `🎭 猜角色`→`/guess` 改为 `🎮 小游戏`→`/minigames`。
-- `views/GuessView.vue` 已删（git status `D`）。
-- `GuessCharacter.vue` 内部未动：`git diff --stat` 空（零改动），Hub 内 `<GuessCharacter />` 原样渲染。
+### 🔒 零存档铁律 —— 通过
+- `git diff HEAD` schema.ts / migrations.ts / codexUnlock.ts：**zero diff**。
+- persistence.ts：3 行变更（+2/-1），亲读 = **仅 loadFromServer catch 块 alert→addLog toast**（L173），未碰 buildPayload/applyPayload/saveVersion；`schema.ts:30 SAVE_VERSION = 12` 未动。
+- 结论：协议结构三处零改动，SAVE_VERSION 仍 12，铁律恪守。✅
 
-### 4.6 颜色铁律 ✅
-- 新文件 `MiniGamesView.vue` / `HigherLowerGame.vue`：grep `text-white` / `bg-${` / 动态色类拼接 —— **零命中**。
-- 全程语义类：`text-ink`/`text-ink-soft`/`.btn-primary`/`.btn-secondary`/`.btn-ghost` + `rgb(var(--c-*))`。卡图用 `/data/images/{type}/{id}.jpg`（图片例外，合规）。
+## pitfalls 合规检查
+- 颜色铁律：语义类/令牌，无 text-white 压浅底、无动态拼色、无未定义令牌。✅
+- 共享色映射须抽（C3）：已抽 config/nurtureColors.ts 整函数重写，无逐处残留。✅
+- 统一弹窗须新建（C5）：已新建 useDialog+AppDialog。✅
+- 解锁门面收 domain（C2）：已收，双域正确，以 store error 为准。✅
+- setTimeout 登记清除（C4）：已仿 SquadBattleView schedule() 收口。✅
+- 零存档铁律 / 测试纪律（不跑 lint --fix）：恪守。✅
 
-## 5. pitfalls 合规
-- engine 纯净 ✅ / RNG 可注入 ✅ / 依赖只向下（store→engine，未反向）✅。
-- 存档三处同改 + 迁移测试 + 不破坏往返保真 ✅。
-- 设备级偏好（上次选的游戏）用 localStorage 不进存档（`MiniGamesView.vue:14-37`）✅。
-- 组件多步 setTimeout 登记并卸载清除（`HigherLowerGame.vue:15-20` timers + onUnmounted）✅。
-- 未跑 `npm run lint --fix`（按铁律）。
+## 结构漂移检查
+- 项目无 `docs/project_structure.md` → **跳过**（注明）。新增文件（nurtureColors/onboardingSteps/useDialog/useUnlockConfirm/AppDialog）符合既有 config/composables/components 分层，依赖只向下。
 
-## 6. 结构漂移
-项目无 `docs/project_structure.md`，**跳过**结构漂移核对（与 Generator 自报一致）。
+## 失败原因分析
+- 无失败项。五条验收命令全绿，五个独立核查重点全部取证通过。
 
-## 7. 决策
-本轮硬交付（统一小游戏中心 + 新小游戏 #1）全部达成；三验收命令亲跑全绿（type-check 0 错 / test 383 全绿 / build 成功）；维度分桶严格分桶无混用、经济每日封顶真生效无刷分漏洞、engine 纯净、schema v8 三处同改且 v1~v7 测试未弱化、guess 域未动、颜色铁律不破。唯一发现是 `settle()` 注释「幂等保护」略夸（代码无显式 isGameOver 守卫），但单调用点 + 日封顶使其无经济风险——记为后续清洁项，不阻断本轮。
+## 新陷阱待追加
+- 无新增技术陷阱。自报 3 条（JSDoc 内 `bg-*/20` 的 `*/` 提前闭合注释、零存档铁律精确边界=装配器文件非协议 UI 行可改、本环境无组件测试基建故 onboarding 抽纯数据模块单测）均已沉淀于 gen_status.md，可酌情并入 pitfalls，非阻塞。
 
-**质量门：PASS。** tier1 on 跑满 5 轮，本轮不强制停循环；本轮无需返工。
+## 决策（tier1 on → 信息性）
+**COMPLETE**
 
-DECISION: COMPLETE
+5 轮收尾最终质量判断：第 5 轮债轮 I5-T1~T5 五任务**真修真做、零返工债**。债轮成败两大分水岭——硬色连根拔（养成 5 文件 + SquadBattleView 残留可迁硬色 = 0，仅稀有度/图片压片合法例外；两份 bondLevel + 两份 moodStatus 重复表经整函数重写消除，无 partial-migration）与 confirm/alert 清零（全仓原生弹窗归零，仅剩 2 个声明的同名局部函数；解锁四件套收敛进收 domain 的共享门面、以 store error 为准不双重守卫）——**双双彻底达成**。onboarding value-first 改写 + 第 5 步点名品味（只导航不写状态）、/homestead 完整冻结（redirect+移出构建产物，dist 无 chunk）、计时器登记清除、文档 v12 同步、MAX_PINS/死代码修——逐条取证通过。零存档铁律恪守（schema/migrations/codex zero diff，persistence 仅 UI 行改，SAVE_VERSION 仍 12）。engine 纯净、依赖只向下、颜色铁律不破。test 512（>489 基线）、type-check 0 错、build 成功、后端 PASS、debug 零命中——五命令亲跑全绿。**5 轮 product-loop 迭代以干净状态收尾，无遗留返工债。**

@@ -44,7 +44,7 @@ Vue 3 + TypeScript + Pinia + TailwindCSS, built with Vite.
 - `gameDataStore` — master anime/character/skill data (fetched at startup)
 - 领域 store：`profile`（会话/等级/货币 spend·earn/日志）、`collection`、`deck`、`viewing`、`nurture`、`pve`（小队+塔）、`gachaStore`（保底+历史）、`shop`、`daily`（每日/周任务+连签）、`codex`（图鉴里程碑）、`achievements`（成就）、`minigames/higherLower`（小游戏战绩+共享封顶，含高低牌/Quiz/每日挑战）
 - `userStore` — **300 行兼容门面**：维持旧调用面 + 跨域编排（抽卡/商店/会话/小游戏结算）+ 统一触发存档。新代码直接用领域 store；**货币只准走 `spend()/earn()`**。
-- 持久化：`infra/persistence`（schema **v11** + migrate + IO）+ `stores/persistence.ts`（装配器，保存串行合并）。版本沿革：v3=商店限购+猜角色 / v4=皮肤 / v5=saveVersion 乐观并发 / v6=每日任务+图鉴里程碑+成就 / v7=周任务+连签 / v8=高低牌 / v9=Quiz / v10=每日挑战 / v11=每日挑战 streak。**新增存档字段三处同改：schema / migrations / 装配器**。
+- 持久化：`infra/persistence`（schema **v12** + migrate + IO）+ `stores/persistence.ts`（装配器，保存串行合并）。版本沿革：v3=商店限购+猜角色 / v4=皮肤 / v5=saveVersion 乐观并发 / v6=每日任务+图鉴里程碑+成就 / v7=周任务+连签 / v8=高低牌 / v9=Quiz / v10=每日挑战 / v11=每日挑战 streak / v12=tasteProfile 持久化。**权威值在 `infra/persistence/schema.ts:30 SAVE_VERSION`**（文档只指向不复述，避免版本号再漂）。**新增存档字段三处同改：schema / migrations / 装配器**。
 - `battle.ts` (gameStore+playerStore+historyStore) / `theme.ts`（S7 皮肤系统：5 套，data-skin 切换，随账号漫游）/ `settings.ts` / `guess.ts` / `onboarding.ts`+`achievementsRead.ts`（设备级 localStorage，不进存档）
 
 **分层（S2-S4 重构后，依赖只向下，lint 闸强制）**：
