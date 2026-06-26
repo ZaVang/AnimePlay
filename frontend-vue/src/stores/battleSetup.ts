@@ -5,6 +5,7 @@
  */
 import { useGameStore, usePlayerStore, useHistoryStore } from '@/stores/battle';
 import { useGameDataStore } from '@/stores/gameDataStore';
+import { useProfileStore } from '@/stores/profile';
 import { useUserStore, type Deck } from '@/stores/userStore';
 import { getAIProfileById, pickDefaultAIProfile, type AIProfile } from '@/config/aiProfiles';
 import { urCharacterSkillMap } from '@/data/urCharacterSkills';
@@ -36,7 +37,8 @@ function ensureDataLoaded(): boolean {
   const gameDataStore = useGameDataStore();
   if (!gameDataStore.allAnimeCards.length || !gameDataStore.allCharacterCards.length) {
     console.error('游戏数据未加载，无法开始游戏。');
-    alert('游戏数据未加载完成，请刷新页面重试。');
+    // 脱离组件上下文：降级为非阻塞 toast（复用 addLog 通知通道），不弹原生 alert。
+    useProfileStore().addLog('游戏数据未加载完成，请刷新页面重试。', 'warning');
     return false;
   }
   return true;

@@ -5,6 +5,7 @@ import { useGameDataStore } from '@/stores/gameDataStore';
 import VirtualGrid from '@/components/VirtualGrid.vue';
 import type { CharacterCard } from '@/types/card';
 import type { CharacterNurtureData } from '@/types/nurture';
+import { bondTier } from '@/config/nurtureColors';
 
 const props = defineProps<{
   selectedCharacterId: number | null;
@@ -53,15 +54,10 @@ const currentCharacter = computed(() => {
   return availableCharacters.value.find(c => c.id === props.selectedCharacterId) || null;
 });
 
-// 获取角色的羁绊等级
+// 获取角色的羁绊等级（共享语义色映射，随皮肤切换；与 CharacterProfile 同一份 bondTier）
 function getBondLevel(affection: number) {
-  if (affection >= 1000) return { level: '永恒羁绊', color: 'text-pink-400', icon: '⭐' };
-  if (affection >= 800) return { level: '深度羁绊', color: 'text-red-400', icon: '🌟' };
-  if (affection >= 600) return { level: '信任伙伴', color: 'text-purple-400', icon: '💜' };
-  if (affection >= 400) return { level: '亲密战友', color: 'text-blue-400', icon: '💙' };
-  if (affection >= 200) return { level: '熟悉伙伴', color: 'text-accent', icon: '💚' };
-  if (affection >= 100) return { level: '初步羁绊', color: 'text-yellow-400', icon: '💛' };
-  return { level: '初次相遇', color: 'text-ink-2', icon: '🤝' };
+  const tier = bondTier(affection);
+  return { level: tier.level, color: tier.color, icon: tier.icon };
 }
 
 function handleSelect(characterId: number) {
@@ -72,9 +68,9 @@ function handleSelect(characterId: number) {
 
 <template>
   <!-- 选择角色按钮 -->
-  <button 
+  <button
     @click="isModalOpen = true"
-    class="flex items-center px-4 py-2 bg-pink-600 hover:bg-pink-700 text-white rounded-lg transition-colors duration-300"
+    class="flex items-center px-4 py-2 bg-accent hover:bg-accent-strong text-on-accent rounded-lg transition-colors duration-300"
   >
     <div v-if="currentCharacter" class="flex items-center">
       <div class="w-8 h-8 rounded-full overflow-hidden mr-3">
@@ -103,7 +99,7 @@ function handleSelect(characterId: number) {
     <div class="bg-elevated p-6 rounded-lg shadow-xl max-w-4xl w-full border border-line-2">
       <div class="flex justify-between items-center mb-4">
         <h2 class="text-2xl font-bold text-ink flex items-center">
-          <svg class="w-6 h-6 mr-2 text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg class="w-6 h-6 mr-2 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
           </svg>
           选择养成角色
@@ -139,7 +135,7 @@ function handleSelect(characterId: number) {
             <template #default="{ item }">
             <template v-for="character in [item as typeof availableCharacters[number]]" :key="character.id">
             <div
-              class="relative group h-full nurture-card bg-surface-2 rounded-lg p-3 border-2 transition-all duration-300 hover:border-pink-400 hover:bg-surface-2"
+              class="relative group h-full nurture-card bg-surface-2 rounded-lg p-3 border-2 transition-all duration-300 hover:border-accent hover:bg-surface-2"
             >
               <!-- 角色头像 -->
               <div class="aspect-[2/3] rounded-md overflow-hidden mb-2">
@@ -156,7 +152,7 @@ function handleSelect(characterId: number) {
 
               <!-- 等级和羁绊等级 -->
               <div class="space-y-1">
-                <div class="text-xs text-yellow-400 font-bold">
+                <div class="text-xs text-highlight font-bold">
                   Lv.{{ character.nurtureData.level }}
                 </div>
                 <div class="flex items-center justify-between text-xs">
@@ -185,9 +181,9 @@ function handleSelect(characterId: number) {
               <!-- 当前选中指示器 -->
               <div
                 v-if="selectedCharacterId === character.id"
-                class="absolute -top-2 -right-2 w-6 h-6 bg-pink-400 rounded-full flex items-center justify-center shadow-lg"
+                class="absolute -top-2 -right-2 w-6 h-6 bg-accent rounded-full flex items-center justify-center shadow-lg"
               >
-                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <svg class="w-4 h-4 text-on-accent" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
               </div>

@@ -19,6 +19,7 @@ import BattleLog from '@/components/battle/ui/BattleLog.vue';
 import InteractionManager from '@/components/battle/InteractionManager.vue';
 import BattleDialogueManager from '@/components/battle/BattleDialogueManager.vue';
 import BattleRulesModal from '@/components/battle/ui/BattleRulesModal.vue';
+import { useDialog } from '@/composables/useDialog';
 
 
 type BattlePhase = 'deckSelection' | 'battle';
@@ -26,6 +27,7 @@ type BattlePhase = 'deckSelection' | 'battle';
 const router = useRouter();
 const gameStore = useGameStore();
 const playerStore = usePlayerStore();
+const { confirm } = useDialog();
 const battlePhase = ref<BattlePhase>('deckSelection');
 const interactionManager = ref<InstanceType<typeof InteractionManager> | null>(null);
 
@@ -108,18 +110,18 @@ function handleSkipTurn() {
   BattleFlow.skipTurn();
 }
 
-function handleExitBattle() {
+async function handleExitBattle() {
   try {
-    // 确认退出对话框
-    if (confirm('确定要退出当前战斗吗？进度将不会保存。')) {
-      
+    // 确认退出对话框（主题化弹窗）
+    if (await confirm('确定要退出当前战斗吗？进度将不会保存。', { confirmText: '退出', danger: true })) {
+
       // 清理战斗状态
       gameStore.resetGame();
       playerStore.clearPlayers();
-      
+
       // 清理持久化效果系统
       clearBattleSkillState();
-      
+
       // 返回卡组选择界面
       battlePhase.value = 'deckSelection';
     }

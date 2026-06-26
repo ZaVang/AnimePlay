@@ -15,12 +15,14 @@ import CodexPanel from '@/components/CodexPanel.vue';
 import AchievementsPanel from '@/components/AchievementsPanel.vue';
 import AnimeTimeline from '@/components/AnimeTimeline.vue';
 import ShareCard from '@/components/ShareCard.vue';
+import { useDialog } from '@/composables/useDialog';
 
 const userStore = useUserStore();
 const gameDataStore = useGameDataStore();
 const achievementsStore = useAchievementsStore();
 const achievementsReadStore = useAchievementsReadStore();
 const router = useRouter();
+const { confirm } = useDialog();
 
 // --- STATE for UI ---
 const activeTab = ref<'anime' | 'character' | 'decks' | 'codex' | 'achievements' | 'timeline'>('anime');
@@ -67,9 +69,9 @@ function closeDetail() {
     selectedCard.value = null;
 }
 
-function handleDismantleAll(type: 'anime' | 'character') {
+async function handleDismantleAll(type: 'anime' | 'character') {
     const typeText = type === 'anime' ? '动画' : '角色';
-    if (confirm(`确定要分解所有重复的${typeText}卡吗？`)) {
+    if (await confirm(`确定要分解所有重复的${typeText}卡吗？`, { confirmText: '分解', danger: true })) {
         userStore.dismantleAllDuplicates(type);
     }
 }

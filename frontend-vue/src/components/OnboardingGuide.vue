@@ -8,47 +8,13 @@
 import { ref, computed } from 'vue';
 import { useRouter } from 'vue-router';
 import { useOnboardingStore } from '@/stores/onboarding';
+import { ONBOARDING_STEPS } from '@/config/onboardingSteps';
 
 const onboarding = useOnboardingStore();
 const router = useRouter();
 
-interface Step {
-  icon: string;
-  title: string;
-  body: string;
-  /** 「带我去」目标路由；最后一步可为对战入口。 */
-  route?: string;
-  cta?: string;
-}
-
-const steps: Step[] = [
-  {
-    icon: '📅',
-    title: '每天来打个卡',
-    body: '主页有「今日任务」面板：抽卡、赢对战、收观看都会自动累计进度，做满就能领奖。每天首次登录还有一份登录奖励，别忘了回来。',
-  },
-  {
-    icon: '🎴',
-    title: '抽卡攒你的番剧库',
-    body: '用动画券/角色券在抽卡系统里开卡。这里的每张卡都是真实番剧与角色，稀有度越高越难得——首抽我们给你留了点惊喜。',
-    route: '/gacha',
-    cta: '去抽卡',
-  },
-  {
-    icon: '📚',
-    title: '收藏与图鉴是你的成果墙',
-    body: '抽到的卡进「卡牌收藏」，图鉴会统计你的完成度（动画/角色各稀有度 X/总数）并发里程碑奖励。攒满一档稀有度很有成就感。',
-    route: '/collections',
-    cta: '看收藏',
-  },
-  {
-    icon: '⚔️',
-    title: '打第一场对战',
-    body: '「宅理论战」是卡牌辩论：双方亮出番剧卡对撞，比的是卡角上的 ⚔ 强度——高者占上风。三种赢法：把对方声望打到 0、把议题偏向条推到自己一侧、或撑满 12 回合后声望领先。出牌时「友好安利」稳、「辛辣点评」更狠但多花 TP。也可去「小队战斗」爬挑战塔。（首次进对战会自动弹一份规则详解）',
-    route: '/battle',
-    cta: '去对战',
-  },
-];
+// 步数据抽到 config/onboardingSteps.ts（纯数据，便于单测）；isLast/进度点/按钮全是 length 派生。
+const steps = ONBOARDING_STEPS;
 
 const stepIndex = ref(0);
 const current = computed(() => steps[stepIndex.value]);

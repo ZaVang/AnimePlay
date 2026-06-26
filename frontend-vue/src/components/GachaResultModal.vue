@@ -1,8 +1,13 @@
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue';
 import type { DrawnCard } from '@/stores/gachaStore';
+import type { AnimeCard as AnimeCardType } from '@/types/card';
+import { useGameDataStore } from '@/stores/gameDataStore';
+import { useCollectionStore } from '@/stores/collection';
+import { useWatchedAnime } from '@/composables/useWatchedAnime';
 import AnimeCard from './AnimeCard.vue';
 import CharacterCard from './CharacterCard.vue';
+import RecommendationStrip from './RecommendationStrip.vue';
 
 const props = withDefaults(
   defineProps<{
@@ -16,6 +21,37 @@ const props = withDefaults(
 );
 
 const emit = defineEmits(['close']);
+
+const gameData = useGameDataStore();
+const collection = useCollectionStore();
+const { watchedIds } = useWatchedAnime();
+
+/**
+ * I2-T1：抽卡结果推荐也排除「已拥有 ∪ 已看」全集，
+ * 不把玩家已经有/看过的番当「你可能还想看」。本次抽到的番作为种子已天然排除。
+ */
+const recommendExcludeIds = computed<Set<number>>(() => {
+  const ex = new Set<number>(collection.animeCollection.keys());
+  for (const id of watchedIds.value) ex.add(id);
+  return ex;
+});
+
+/**
+ * I1-T3 抽卡结果出口：用本次抽到的番作种子推荐相似作品（anime gacha 才有意义）。
+ * 用本次抽到的 id 映射到库内 canonical 番卡（确保带 synergy_tags），去重。
+ */
+const recommendSeeds = computed<AnimeCardType[]>(() => {
+  if (props.gachaType !== 'anime') return [];
+  const seen = new Set<number>();
+  const out: AnimeCardType[] = [];
+  for (const c of props.cards) {
+    if (seen.has(c.id)) continue;
+    seen.add(c.id);
+    const full = gameData.getAnimeCardById(c.id);
+    if (full) out.push(full);
+  }
+  return out;
+});
 
 /** S7 仪式感：逐张翻面揭示；点击遮罩先跳过动画，全部亮出后再点才关闭。 */
 const REVEAL_STEP_MS = 120;
@@ -137,6 +173,17 @@ const CONFETTI = Array.from({ length: 24 }, (_, i) => ({
             />
           </div>
         </div>
+
+        <!-- I1-T3：抽卡结果推荐（anime gacha + 揭示完毕后出现，不打断翻牌仪式） -->
+        <RecommendationStrip
+          v-if="gachaType === 'anime' && fullyRevealed && recommendSeeds.length"
+          class="mt-6 border-t border-line pt-4"
+          title="🍿 抽到这些？你可能还想看"
+          :seeds="recommendSeeds"
+          :limit="6"
+          :exclude-ids="recommendExcludeIds"
+          @click.stop
+        />
       </div>
       <div class="text-center mt-6">
         <button @click.stop="emit('close')" class="btn-primary font-bold px-6">

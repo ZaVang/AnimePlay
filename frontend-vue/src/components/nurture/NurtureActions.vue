@@ -4,6 +4,12 @@ import { useUserStore } from '@/stores/userStore';
 import type { CharacterCard } from '@/types/card';
 import type { CharacterNurtureData } from '@/stores/userStore';
 import {
+  SEMANTIC_CARD_CLASSES,
+  SEMANTIC_BTN_CLASSES,
+  ATTRIBUTE_BAR_COLOR,
+  moodColor,
+} from '@/config/nurtureColors';
+import {
   generateBattleStats,
   simulateBattle,
   generateTrainingOpponent as engineGenerateTrainingOpponent,
@@ -23,11 +29,22 @@ const userStore = useUserStore();
 // 训练动画状态
 const trainingAnimations = ref<Record<string, boolean>>({});
 
+// 计时器铁律（T5）：本组件所有 setTimeout 必须走 schedule() 登记，卸载时统一清除。
+// 仿 SquadBattleView 的 schedule()——既有 onUnmounted 只清 setInterval，两个 setTimeout 此前漏网。
+const pendingTimers = new Set<number>();
+function schedule(fn: () => void, delay: number) {
+  const id = window.setTimeout(() => {
+    pendingTimers.delete(id);
+    fn();
+  }, delay);
+  pendingTimers.add(id);
+}
+
 // 启动训练动画
 function startTrainingAnimation(programId: string) {
   trainingAnimations.value[programId] = true;
-  // 3秒后停止动画
-  setTimeout(() => {
+  // 3秒后停止动画（经登记定时器：卸载即清，防游离回调）
+  schedule(() => {
     trainingAnimations.value[programId] = false;
   }, 3000);
 }
@@ -187,17 +204,14 @@ const battleTrainingPrograms = computed(() => [
   }
 ]);
 
-// Tailwind JIT 需要完整字面类名，禁止模板字符串拼接颜色类
+// 特殊活动卡片/按钮 → 共享语义皮肤色（随 data-skin 切换；Tailwind JIT 需完整字面类名）。
+// 卡片底用 SEMANTIC_CARD_CLASSES 的对应档（green/purple/yellow → success/highlight/warning）。
 const ACTIVITY_CARD_CLASSES: Record<string, string> = {
-  green:  'bg-green-600/10 hover:bg-green-600/20 border-green-600/30',
-  purple: 'bg-purple-600/10 hover:bg-purple-600/20 border-purple-600/30',
-  yellow: 'bg-yellow-600/10 hover:bg-yellow-600/20 border-yellow-600/30',
+  green:  SEMANTIC_CARD_CLASSES.green,
+  purple: SEMANTIC_CARD_CLASSES.purple,
+  yellow: SEMANTIC_CARD_CLASSES.yellow,
 };
-const ACTIVITY_BTN_CLASSES: Record<string, string> = {
-  green:  'bg-green-600 hover:bg-green-700 text-white',
-  purple: 'bg-purple-600 hover:bg-purple-700 text-white',
-  yellow: 'bg-yellow-600 hover:bg-yellow-700 text-white',
-};
+const ACTIVITY_BTN_CLASSES = SEMANTIC_BTN_CLASSES;
 
 // 特殊活动
 const specialActivities = computed(() => [
@@ -266,8 +280,10 @@ function startTraining(programId: string) {
   
   userStore.addLog(`${props.character.name} 开始了${program.name}，将在${program.duration}分钟后完成！`, 'success');
   
-  // 训练完成后的通知 (实际项目中可能需要后台定时任务)
-  setTimeout(() => {
+  // 训练完成后的通知 (实际项目中可能需要后台定时任务)。
+  // 经登记定时器：离开养成页卸载即清——最长 60min 的完成播报是体验性日志（非状态变更），
+  // 卸载后不再 fire 可接受（属性提升/冷却已在上面即时落账，不依赖此回调）。
+  schedule(() => {
     userStore.addLog(`${props.character.name} 完成了${program.name}！`, 'success');
   }, program.duration * 60 * 1000);
 }
@@ -426,6 +442,9 @@ onUnmounted(() => {
   if (cooldownUpdateInterval !== null) {
     clearInterval(cooldownUpdateInterval);
   }
+  // 计时器铁律（T5）：清除全部待执行的登记 setTimeout（3s 动画 + 最长 60min 训练播报）。
+  pendingTimers.forEach(id => clearTimeout(id));
+  pendingTimers.clear();
 });
 </script>
 
@@ -437,17 +456,13 @@ onUnmounted(() => {
       <div class="flex items-center justify-between text-sm">
         <div class="flex items-center">
           <span class="text-ink-2">可用知识点:</span>
-          <span class="ml-2 font-bold text-blue-400">{{ userStore.playerState.knowledgePoints }}</span>
+          <span class="ml-2 font-bold text-info">{{ userStore.playerState.knowledgePoints }}</span>
         </div>
         <div class="flex items-center">
           <span class="text-ink-2">心情值:</span>
-          <span 
+          <span
             class="ml-2 font-bold"
-            :class="{
-              'text-accent': character.nurtureData.attributes.mood >= 70,
-              'text-yellow-400': character.nurtureData.attributes.mood >= 40,
-              'text-red-400': character.nurtureData.attributes.mood < 40
-            }"
+            :class="moodColor(character.nurtureData.attributes.mood)"
           >
             {{ character.nurtureData.attributes.mood }}
           </span>
@@ -471,13 +486,13 @@ onUnmounted(() => {
               program.available
                 ? 'bg-surface-2/50 hover:bg-surface-2/70 border-line hover:border-line'
                 : 'bg-surface-2/50 border-line-2 opacity-60',
-              trainingAnimations[program.id] && 'animate-pulse border-blue-400'
+              trainingAnimations[program.id] && 'animate-pulse border-info'
             ]"
           >
             <!-- 训练进行中的光效 -->
-            <div 
-              v-if="trainingAnimations[program.id]" 
-              class="absolute inset-0 bg-gradient-to-r from-blue-400/20 via-transparent to-blue-400/20 animate-shimmer"
+            <div
+              v-if="trainingAnimations[program.id]"
+              class="absolute inset-0 bg-gradient-to-r from-info/20 via-transparent to-info/20 animate-shimmer"
             ></div>
             
             <!-- 头部信息 -->
@@ -499,20 +514,16 @@ onUnmounted(() => {
                 <span>{{ character.nurtureData.attributes[program.attribute] }}/100</span>
               </div>
               <div class="w-full bg-surface-2 rounded-full h-2">
-                <div 
+                <div
                   class="h-2 rounded-full transition-all duration-500"
-                  :class="{
-                    'bg-pink-400': program.attribute === 'charm',
-                    'bg-blue-400': program.attribute === 'intelligence',
-                    'bg-accent': program.attribute === 'strength'
-                  }"
+                  :class="ATTRIBUTE_BAR_COLOR[program.attribute] ?? 'bg-accent'"
                   :style="{ width: `${getAttributeProgress(character.nurtureData.attributes[program.attribute])}%` }"
                 ></div>
               </div>
             </div>
 
             <!-- 冷却时间显示 -->
-            <div v-if="isTrainingOnCooldown(program.id)" class="mb-2 text-xs text-orange-400 text-center">
+            <div v-if="isTrainingOnCooldown(program.id)" class="mb-2 text-xs text-warning text-center">
               冷却中: {{ formatCooldownTime(getTrainingCooldownRemaining(program.id)) }}
             </div>
 
@@ -522,7 +533,7 @@ onUnmounted(() => {
               :disabled="!program.available || userStore.playerState.knowledgePoints < program.cost || isTrainingOnCooldown(program.id)"
               class="w-full py-2 px-3 rounded-lg font-medium text-sm transition-all duration-300"
               :class="program.available && userStore.playerState.knowledgePoints >= program.cost && !isTrainingOnCooldown(program.id)
-                ? 'bg-blue-600 hover:bg-blue-700 text-white'
+                ? 'bg-info hover:opacity-90 text-on-accent'
                 : 'bg-surface-2 text-ink-3 cursor-not-allowed'"
             >
               <span v-if="isTrainingOnCooldown(program.id)">训练中</span>
@@ -539,7 +550,7 @@ onUnmounted(() => {
     <!-- 战斗属性训练区域 -->
     <div class="mb-6">
       <h3 class="text-lg font-medium text-ink-2 mb-4 flex items-center">
-        <svg class="w-5 h-5 mr-2 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg class="w-5 h-5 mr-2 text-danger" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.031 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
         </svg>
         战斗属性强化
@@ -554,16 +565,16 @@ onUnmounted(() => {
           <div 
             class="p-4 rounded-lg border transition-all duration-300 relative overflow-hidden h-full"
             :class="[
-              program.available 
-                ? 'bg-red-600/10 hover:bg-red-600/20 border-red-600/30 hover:border-red-600/50'
+              program.available
+                ? 'bg-danger/10 hover:bg-danger/20 border-danger/30 hover:border-danger/50'
                 : 'bg-surface-2/50 border-line-2 opacity-60',
-              trainingAnimations[program.id] && 'animate-pulse border-red-400'
+              trainingAnimations[program.id] && 'animate-pulse border-danger'
             ]"
           >
             <!-- 战斗训练光效 -->
-            <div 
-              v-if="trainingAnimations[program.id]" 
-              class="absolute inset-0 bg-gradient-to-r from-red-400/20 via-transparent to-red-400/20 animate-shimmer"
+            <div
+              v-if="trainingAnimations[program.id]"
+              class="absolute inset-0 bg-gradient-to-r from-danger/20 via-transparent to-danger/20 animate-shimmer"
             ></div>
             
             <!-- 头部信息 -->
@@ -573,7 +584,7 @@ onUnmounted(() => {
               <p class="text-xs text-ink-2 mb-2">{{ program.description }}</p>
               
               <div class="flex justify-between items-center text-xs">
-                <span class="text-red-400 font-medium">+{{ program.gain }}%</span>
+                <span class="text-danger font-medium">+{{ program.gain }}%</span>
                 <span class="text-ink-2">💎 {{ program.cost }}</span>
               </div>
             </div>
@@ -585,8 +596,8 @@ onUnmounted(() => {
                 <span>{{ character.nurtureData.battleEnhancements?.[program.stat] || 0 }}%</span>
               </div>
               <div class="w-full bg-surface-2 rounded-full h-2">
-                <div 
-                  class="h-2 rounded-full bg-gradient-to-r from-red-500 to-orange-500 transition-all duration-500"
+                <div
+                  class="h-2 rounded-full bg-danger transition-all duration-500"
                   :style="{ width: `${Math.min(100, character.nurtureData.battleEnhancements?.[program.stat] || 0)}%` }"
                 ></div>
               </div>
@@ -602,7 +613,7 @@ onUnmounted(() => {
             </div>
 
             <!-- 冷却时间显示 -->
-            <div v-if="isTrainingOnCooldown(program.id)" class="mb-2 text-xs text-orange-400 text-center">
+            <div v-if="isTrainingOnCooldown(program.id)" class="mb-2 text-xs text-warning text-center">
               {{ formatCooldownTime(getTrainingCooldownRemaining(program.id)) }}
             </div>
 
@@ -612,7 +623,7 @@ onUnmounted(() => {
               :disabled="!program.available || userStore.playerState.knowledgePoints < program.cost || isTrainingOnCooldown(program.id)"
               class="w-full py-2 px-3 rounded-lg font-medium text-sm transition-all duration-300"
               :class="program.available && userStore.playerState.knowledgePoints >= program.cost && !isTrainingOnCooldown(program.id)
-                ? 'bg-red-600 hover:bg-red-700 text-white'
+                ? 'bg-danger hover:opacity-90 text-on-accent'
                 : 'bg-surface-2 text-ink-3 cursor-not-allowed'"
             >
               <span v-if="isTrainingOnCooldown(program.id)">强化中</span>

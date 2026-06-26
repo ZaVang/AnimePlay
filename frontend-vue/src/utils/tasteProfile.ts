@@ -273,6 +273,175 @@ export function buildTasteReport(watched: readonly AnimeCard[], allAnime: readon
   return { ...base, persona: pickPersona(base) };
 }
 
+/** 「看过」段位静态阈值表（纯派生展示用，不发奖、不进存档）。按 count 升序。 */
+export const WATCHED_TIERS = [
+  { threshold: 0, emoji: '🌱', title: '观影萌新' },
+  { threshold: 10, emoji: '📺', title: '入坑观众' },
+  { threshold: 30, emoji: '🎬', title: '资深影迷' },
+  { threshold: 60, emoji: '🍿', title: '阅片无数' },
+  { threshold: 120, emoji: '🏆', title: '番剧大师' },
+] as const;
+
+export interface WatchedMilestone {
+  /** 已看番剧数。 */
+  count: number;
+  /** 当前段位的 emoji。 */
+  emoji: string;
+  /** 当前段位标题。 */
+  title: string;
+  /** 下一段位阈值（已到顶则 null）。 */
+  nextThreshold: number | null;
+  /** 距下一段位还差几部（已到顶则 0）。 */
+  toNext: number;
+  /** 当前段位区间内的进度百分比 0-100（已到顶则 100）。 */
+  progressPct: number;
+}
+
+/**
+ * 由「看过」数量纯派生当前段位 + 距下一段位进度。
+ * 纯展示——不发奖、不持久化（与 codex 里程碑的「领取制」区分开）。
+ */
+export function watchedMilestone(count: number): WatchedMilestone {
+  const n = Math.max(0, Math.floor(count));
+  let idx = 0;
+  for (let i = WATCHED_TIERS.length - 1; i >= 0; i--) {
+    if (n >= WATCHED_TIERS[i].threshold) { idx = i; break; }
+  }
+  const cur = WATCHED_TIERS[idx];
+  const next = idx < WATCHED_TIERS.length - 1 ? WATCHED_TIERS[idx + 1] : null;
+  const nextThreshold = next ? next.threshold : null;
+  const toNext = next ? Math.max(0, next.threshold - n) : 0;
+  const span = next ? next.threshold - cur.threshold : 0;
+  const progressPct = next && span > 0 ? Math.min(100, Math.round(((n - cur.threshold) / span) * 100)) : 100;
+  return { count: n, emoji: cur.emoji, title: cur.title, nextThreshold, toNext, progressPct };
+}
+
+/** 小众佳作单项（I3-T3）：高分 ∧ 低人气 ∧ 玩家未拥有未看。 */
+export interface NicheGem {
+  anime: AnimeCard;
+  /** 排序分 = rating_score × (1 − 人气百分位)。越高 = 越「高分且冷门」。 */
+  score: number;
+  /** 该番在全库评价人数分布里的人气百分位（0–1，越小越冷门）。 */
+  popularityPct: number;
+}
+
+/** pickNicheGems 的可调参数（评价人数下限防极冷门无效样本；可注入便于测试）。 */
+export interface NicheGemsOptions {
+  /** 评价人数下限——低于此视为无效样本（数据噪声 / 极冷门未成型），剔除。 */
+  minRatingTotal: number;
+  /** 评分下限——低于此不算「佳作」（避免冷门烂番混入）。 */
+  minRatingScore: number;
+  /** 人气百分位上限——高于此视为大众番，不算「小众」。 */
+  maxPopularityPct: number;
+  /** 返回条数上限。 */
+  limit: number;
+}
+
+/** pickNicheGems 的默认参数。 */
+export const NICHE_GEMS_DEFAULTS: NicheGemsOptions = {
+  minRatingTotal: 50,
+  minRatingScore: 7,
+  maxPopularityPct: 0.6,
+  limit: 12,
+};
+
+/**
+ * 小众佳作排序（I3-T3，纯派生）：从全库选「评分高 ∧ 人气低 ∧ 玩家未拥有未看」的番，
+ * 按 `rating_score × (1 − 人气百分位)` 降序。人气百分位抄 buildTasteReport 的二分查百分位逻辑。
+ *
+ *  - 排除 `excludeIds`（玩家已拥有 ∪ 已看的全集）。
+ *  - 剔除 `rating_total < minRatingTotal`（无效样本）。
+ *  - 剔除 `rating_score < minRatingScore`（非佳作）。
+ *  - 剔除人气百分位 > `maxPopularityPct`（大众番）。
+ *
+ * 纯函数：无 DOM / 无 store / 无随机；调用方在组件层 computed 记忆化（对全库排序不每帧重算）。
+ */
+export function pickNicheGems(
+  allAnime: readonly AnimeCard[],
+  excludeIds: ReadonlySet<number>,
+  opts: Partial<NicheGemsOptions> = {},
+): NicheGem[] {
+  const { minRatingTotal, minRatingScore, maxPopularityPct, limit } = { ...NICHE_GEMS_DEFAULTS, ...opts };
+
+  // 全库评价人数升序，用于人气百分位的二分查询。
+  const allTotalsSorted = allAnime
+    .map(ratingTotalOf)
+    .filter((v): v is number => v !== null)
+    .sort((a, b) => a - b);
+  if (allTotalsSorted.length === 0) return [];
+
+  function popularityPercentile(total: number): number {
+    // 有多少部 <= total（含自身）→ 人气百分位（越小越冷门）。
+    let lo = 0, hi = allTotalsSorted.length;
+    while (lo < hi) {
+      const mid = (lo + hi) >> 1;
+      if (allTotalsSorted[mid] <= total) lo = mid + 1; else hi = mid;
+    }
+    return lo / allTotalsSorted.length;
+  }
+
+  const gems: NicheGem[] = [];
+  for (const a of allAnime) {
+    if (excludeIds.has(a.id)) continue;
+    const score = ratingScoreOf(a);
+    const total = ratingTotalOf(a);
+    if (score === null || total === null) continue;
+    if (total < minRatingTotal) continue;       // 无效样本
+    if (score < minRatingScore) continue;        // 非佳作
+    const pct = popularityPercentile(total);
+    if (pct > maxPopularityPct) continue;        // 大众番
+    gems.push({ anime: a, score: score * (1 - pct), popularityPct: pct });
+  }
+  gems.sort((a, b) => b.score - a.score
+    || (ratingScoreOf(b.anime) ?? 0) - (ratingScoreOf(a.anime) ?? 0)
+    || a.anime.name.localeCompare(b.anime.name, 'zh-Hans-CN'));
+  return gems.slice(0, limit);
+}
+
+/** 人格雷达单轴（I3-T2）：0–100 归一后的一个维度。 */
+export interface TasteRadarAxis {
+  /** 轴标识（稳定 key，便于测试/复用）。 */
+  key: 'niche' | 'coverage' | 'rating' | 'specialization' | 'diversity';
+  /** 轴中文标签（雷达顶点显示）。 */
+  label: string;
+  /** 归一到 0–100 的轴值（四舍五入整数）。 */
+  value: number;
+}
+
+function clamp0to100(n: number): number {
+  if (!isFinite(n)) return 0;
+  return Math.min(100, Math.max(0, Math.round(n)));
+}
+
+/**
+ * 把品味报告里 5 个已算好的信号各折成 0–100 的人格轴（I3-T2，纯派生）。
+ *  - 小众度       = nicheScore（已 0–100，直用）
+ *  - 阅片广度     = coverage（已 0–100，直用）
+ *  - 高分偏好     = clamp((ratingDelta+2)/4*100)；ratingDelta 为 null（无评分样本）时取 50（中性）
+ *  - 题材专精     = topTags[0].pct（首位题材集中度，已 0–100；空集取 0）
+ *  - 来源/年代多样性 = (sourceMix 非空桶数/4 + eras 非空桶数/4) / 2 × 100（两类多样性平均）
+ *
+ * 轴顺序固定，保证雷达多边形稳定、便于未来 affinity 对比复用同一编码。
+ */
+export function buildTasteRadar(report: TasteReport): TasteRadarAxis[] {
+  const ratingValue = report.ratingDelta === null
+    ? 50
+    : clamp0to100(((report.ratingDelta + 2) / 4) * 100);
+  const specialization = report.topTags.length > 0 ? clamp0to100(report.topTags[0].pct) : 0;
+  // 来源(4 桶上限) 与 年代(ERA_ORDER=4 桶) 各自的非空桶占比，取平均。
+  const sourceDiversity = report.sourceMix.length / SOURCE_TAGS.length;
+  const eraDiversity = report.eras.length / ERA_ORDER.length;
+  const diversity = clamp0to100(((sourceDiversity + eraDiversity) / 2) * 100);
+
+  return [
+    { key: 'niche', label: '小众度', value: clamp0to100(report.nicheScore) },
+    { key: 'coverage', label: '阅片广度', value: clamp0to100(report.coverage) },
+    { key: 'rating', label: '高分偏好', value: ratingValue },
+    { key: 'specialization', label: '题材专精', value: specialization },
+    { key: 'diversity', label: '来源/年代', value: diversity },
+  ];
+}
+
 export interface AnimeRecommendation {
   anime: AnimeCard;
   /** 排序分（题材契合度为主，评分次之）。 */

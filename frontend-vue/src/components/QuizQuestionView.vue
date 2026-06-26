@@ -65,15 +65,15 @@ function optionClass(i: number): string {
   height: 150px;
   object-fit: contain;
   margin: 0 auto 0.75rem;
-  border-radius: var(--sk-radius, 0.75rem);
+  border-radius: var(--sk-radius-control);
   background: rgb(var(--c-surface-2, var(--c-surface)) / 0.6);
-  border: 1px solid rgb(var(--c-border-line));
+  border: 1px solid rgb(var(--c-line));
 }
 .qq-prompt { font-size: 1.1rem; font-weight: 700; color: rgb(var(--c-ink)); margin-bottom: 1rem; }
 .qq-options { display: grid; gap: 0.65rem; }
 .qq-opt {
   display: flex; align-items: center; gap: 0.6rem;
-  padding: 0.65rem 1rem; border: 1.5px solid rgb(var(--c-border-line)); border-radius: var(--sk-radius, 0.6rem);
+  padding: 0.65rem 1rem; border: 1.5px solid rgb(var(--c-line)); border-radius: var(--sk-radius-control);
   background: rgb(var(--c-surface)); color: rgb(var(--c-ink)); font-weight: 600; cursor: pointer;
   transition: border-color .12s, background .12s; text-align: left;
 }
@@ -90,8 +90,8 @@ function optionClass(i: number): string {
 .qq-opt-wrong { border-color: rgb(var(--c-danger)); background: rgb(var(--c-danger) / 0.12); }
 .qq-opt-dim { opacity: 0.55; }
 .qq-explain {
-  margin-top: 0.85rem; padding: 0.55rem 0.85rem; border-radius: var(--sk-radius, 0.5rem);
-  background: rgb(var(--c-surface-2, var(--c-surface)) / 0.55); color: rgb(var(--c-ink-soft));
+  margin-top: 0.85rem; padding: 0.55rem 0.85rem; border-radius: var(--sk-radius-control);
+  background: rgb(var(--c-surface-2, var(--c-surface)) / 0.55); color: rgb(var(--c-ink-2));
   font-size: 0.85rem; line-height: 1.4;
 }
 </style>

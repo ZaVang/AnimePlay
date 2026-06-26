@@ -63,7 +63,7 @@ watchEffect(() => {
 .mg-play-title { font-size: 1.4rem; font-weight: 800; color: rgb(var(--c-ink)); }
 .mg-play-spacer { flex: 1; }
 .mg-play-stage {
-  border: 1px solid rgb(var(--c-line)); border-radius: var(--sk-radius, 0.75rem);
+  border: 1px solid rgb(var(--c-line)); border-radius: var(--sk-radius-panel);
   background: rgb(var(--c-surface) / 0.4); padding: 1.5rem; min-height: 60vh;
 }
 </style>

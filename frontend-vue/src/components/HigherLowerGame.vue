@@ -60,7 +60,7 @@ function backToMenu() {
     <!-- 维度选择（未开始） -->
     <div v-if="!store.isPlaying && !store.isGameOver" class="hl-menu">
       <h3 class="text-xl font-bold text-ink mb-1">🔼 高低牌</h3>
-      <p class="text-sm text-ink-soft mb-4">看左边的数值，猜右边是更高还是更低。连对越多分越高！</p>
+      <p class="text-sm text-ink-2 mb-4">看左边的数值，猜右边是更高还是更低。连对越多分越高！</p>
       <div class="hl-cat-grid">
         <button
           v-for="c in HL_CATEGORIES"
@@ -69,7 +69,7 @@ function backToMenu() {
           @click="start(c.id)"
         >
           <span class="text-lg font-bold text-ink">{{ c.label }}</span>
-          <span class="text-xs text-ink-soft mt-1">{{ c.hint }}</span>
+          <span class="text-xs text-ink-2 mt-1">{{ c.hint }}</span>
           <span class="text-xs accent-text mt-2">比 {{ c.metricLabel }}</span>
         </button>
       </div>
@@ -84,8 +84,8 @@ function backToMenu() {
     <div v-else class="hl-play">
       <div class="hl-topbar">
         <span class="hl-streak">🔥 连胜 <b>{{ store.streak }}</b></span>
-        <span class="text-xs text-ink-soft">{{ cat.label }} · 比{{ cat.metricLabel }}</span>
-        <span class="text-xs text-ink-soft">最佳 {{ store.bestStreak }}</span>
+        <span class="text-xs text-ink-2">{{ cat.label }} · 比{{ cat.metricLabel }}</span>
+        <span class="text-xs text-ink-2">最佳 {{ store.bestStreak }}</span>
       </div>
 
       <div class="hl-arena">
@@ -113,7 +113,7 @@ function backToMenu() {
 
       <!-- 猜测按钮 / 结算 -->
       <div v-if="!store.isGameOver" class="hl-actions">
-        <p class="text-sm text-ink-soft mb-2">右边的「{{ cat.metricLabel }}」比左边……</p>
+        <p class="text-sm text-ink-2 mb-2">右边的「{{ cat.metricLabel }}」比左边……</p>
         <div class="hl-btn-row">
           <button class="btn-primary hl-btn" :disabled="busy" @click="onGuess('higher')">⬆️ 更高</button>
           <button class="btn-secondary hl-btn" :disabled="busy" @click="onGuess('lower')">⬇️ 更低</button>
@@ -124,7 +124,7 @@ function backToMenu() {
         <p v-if="store.lastCorrect === false" class="hl-over-title">猜错了！</p>
         <p class="hl-over-streak">本局连胜 <b>{{ store.streak }}</b> · 得分 <b>{{ finalScore }}</b></p>
         <p v-if="store.lastAward > 0" class="hl-over-award">🎉 兑换 {{ store.lastAward }} 知识点</p>
-        <p v-else class="text-xs text-ink-soft">（今日小游戏奖励已达上限或未达 5 连，下次再来~）</p>
+        <p v-else class="text-xs text-ink-2">（今日小游戏奖励已达上限或未达 5 连，下次再来~）</p>
         <div class="hl-btn-row mt-3">
           <button class="btn-primary hl-btn" @click="playAgain">再来一局</button>
           <button class="btn-ghost hl-btn" @click="backToMenu">换玩法</button>
@@ -141,12 +141,12 @@ function backToMenu() {
 .hl-cat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; margin-bottom: 1.25rem; }
 .hl-cat-card {
   display: flex; flex-direction: column; align-items: center; text-align: center;
-  padding: 1rem 0.75rem; border: 1px solid rgb(var(--c-border-line));
-  border-radius: var(--sk-radius, 0.75rem); background: rgb(var(--c-surface));
+  padding: 1rem 0.75rem; border: 1px solid rgb(var(--c-line));
+  border-radius: var(--sk-radius-panel); background: rgb(var(--c-surface));
   cursor: pointer; transition: transform .12s, border-color .12s;
 }
 .hl-cat-card:hover { transform: translateY(-2px); border-color: rgb(var(--c-accent)); }
-.hl-stats { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; font-size: 0.8rem; color: rgb(var(--c-ink-soft)); }
+.hl-stats { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; font-size: 0.8rem; color: rgb(var(--c-ink-2)); }
 
 .hl-topbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; }
 .hl-streak { font-size: 1.1rem; color: rgb(var(--c-ink)); }
@@ -154,7 +154,7 @@ function backToMenu() {
 
 .hl-arena { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 0.75rem; }
 .hl-card {
-  border: 2px solid rgb(var(--c-border-line)); border-radius: var(--sk-radius, 0.75rem);
+  border: 2px solid rgb(var(--c-line)); border-radius: var(--sk-radius-panel);
   background: rgb(var(--c-surface)); padding: 0.75rem; text-align: center; transition: border-color .2s;
 }
 .hl-card.hl-correct { border-color: rgb(var(--c-success, 34 197 94)); }
@@ -162,9 +162,9 @@ function backToMenu() {
 /* 等比缩放进固定 3:4 矩形，不裁剪（contain），留白居中——角色/番剧图尺寸不一也整齐 */
 .hl-img { width: 100%; aspect-ratio: 3/4; object-fit: contain; border-radius: 0.5rem; background: rgb(var(--c-surface-2, var(--c-surface)) / 0.6); }
 .hl-name { font-weight: 700; color: rgb(var(--c-ink)); margin-top: 0.5rem; font-size: 0.95rem; min-height: 1.4em; }
-.hl-metric { font-size: 0.72rem; color: rgb(var(--c-ink-soft)); margin-top: 0.25rem; }
+.hl-metric { font-size: 0.72rem; color: rgb(var(--c-ink-3)); margin-top: 0.25rem; }
 .hl-value { font-size: 1.5rem; font-weight: 800; color: rgb(var(--c-accent)); min-height: 1.5em; }
-.hl-vs { font-weight: 800; color: rgb(var(--c-ink-soft)); }
+.hl-vs { font-weight: 800; color: rgb(var(--c-ink-2)); }
 
 .hl-actions { text-align: center; margin-top: 1.25rem; }
 .hl-btn-row { display: flex; gap: 0.75rem; justify-content: center; }

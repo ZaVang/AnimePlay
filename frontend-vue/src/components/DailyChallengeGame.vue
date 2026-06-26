@@ -38,10 +38,10 @@ function choose(i: number) {
     <!-- 未开始 -->
     <div v-if="!store.dcActive && !store.dcDone" class="dc-intro">
       <h3 class="text-xl font-bold text-ink mb-1">🗓️ 每日挑战</h3>
-      <p class="text-sm text-ink-soft mb-1">今日 5 题，<b>全员同题</b>，每天仅一次。答对越多，奖励越高。</p>
+      <p class="text-sm text-ink-2 mb-1">今日 5 题，<b>全员同题</b>，每天仅一次。答对越多，奖励越高。</p>
       <p v-if="store.dcStreakDays > 0" class="dc-streak">🔥 连续挑战 {{ store.dcStreakDays }} 天（最长 {{ store.dcBestStreakDays }} 天）</p>
       <p v-if="store.dcCompletedToday" class="dc-doneflag">✅ 今日已完成 · 得分 {{ store.dcLastScore }} / 5</p>
-      <p class="text-xs text-ink-soft mb-4">历史最佳 {{ store.dcBestScore }} / 5</p>
+      <p class="text-xs text-ink-2 mb-4">历史最佳 {{ store.dcBestScore }} / 5</p>
       <button class="btn-primary" @click="start">
         {{ store.dcCompletedToday ? '回看今日题目（无奖励）' : '开始今日挑战' }}
       </button>
@@ -51,7 +51,7 @@ function choose(i: number) {
     <div v-else-if="store.dcActive" class="dc-play">
       <div class="dc-topbar">
         <span class="dc-progress">第 {{ progress }} 题</span>
-        <span class="text-xs text-ink-soft">答对 {{ store.dcScore }}</span>
+        <span class="text-xs text-ink-2">答对 {{ store.dcScore }}</span>
       </div>
       <QuizQuestionView
         v-if="store.dcCurrentQuestion"
@@ -67,9 +67,9 @@ function choose(i: number) {
       <p class="dc-result-title">🎉 今日挑战完成！</p>
       <p class="dc-result-score">得分 <b>{{ store.dcLastScore }}</b> / 5</p>
       <p v-if="store.dcLastAward > 0" class="dc-result-award">兑换 {{ store.dcLastAward }} 知识点</p>
-      <p v-else class="text-xs text-ink-soft">（今日已领过奖励，明天再来~）</p>
+      <p v-else class="text-xs text-ink-2">（今日已领过奖励，明天再来~）</p>
       <p class="dc-streak mt-1">🔥 连续挑战 {{ store.dcStreakDays }} 天（最长 {{ store.dcBestStreakDays }} 天）</p>
-      <p class="text-xs text-ink-soft mt-1">历史最佳 {{ store.dcBestScore }} / 5 · 明天换新题</p>
+      <p class="text-xs text-ink-2 mt-1">历史最佳 {{ store.dcBestScore }} / 5 · 明天换新题</p>
     </div>
   </div>
 </template>

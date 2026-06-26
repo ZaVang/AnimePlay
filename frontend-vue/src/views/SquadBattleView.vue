@@ -632,7 +632,7 @@ onBeforeUnmount(() => {
             <!-- 层数状态 -->
             <div class="text-center">
               <h3 class="text-lg font-bold text-ink mb-2">层数状态</h3>
-              <div class="text-2xl font-bold text-blue-400 mb-2">
+              <div class="text-2xl font-bold text-info mb-2">
                 {{ userStore.hasCompletedFloor(currentTowerFloor) ? '已通过' : '未挑战' }}
               </div>
               <div class="text-sm text-ink-2">每层只能挑战一次，无次数限制</div>
@@ -642,33 +642,33 @@ onBeforeUnmount(() => {
             <div class="text-center">
               <h3 class="text-lg font-bold text-ink mb-2">当前层敌人</h3>
               <div v-if="!towerEnemyData" class="space-y-2">
-                <button 
+                <button
                   @click="refreshTowerEnemies"
-                  class="px-4 py-2 bg-orange-600 hover:bg-orange-700 text-white rounded-lg transition-colors"
+                  class="px-4 py-2 bg-warning hover:opacity-90 text-on-accent rounded-lg transition-colors"
                 >
                   刷新敌人
                 </button>
               </div>
               <div v-else class="space-y-2">
-                <div class="font-bold text-red-400">{{ towerEnemyData.name }}</div>
+                <div class="font-bold text-danger">{{ towerEnemyData.name }}</div>
                 <div class="text-sm text-ink-2">{{ towerEnemyData.description }}</div>
-                <div class="text-lg font-bold text-yellow-400">
+                <div class="text-lg font-bold text-highlight">
                   战力: {{ towerEnemyData.floorPower }}
                 </div>
                 <div class="text-sm mb-2">
                   <span class="px-2 py-1 rounded text-xs font-bold"
                         :class="{
-                          'bg-accent text-on-accent': towerEnemyData.difficulty === '简单',
-                          'bg-yellow-500 text-black': towerEnemyData.difficulty === '中等',
-                          'bg-red-500 text-white': towerEnemyData.difficulty === '困难',
-                          'bg-purple-500 text-white': towerEnemyData.difficulty === '极难'
+                          'bg-success text-on-accent': towerEnemyData.difficulty === '简单',
+                          'bg-warning text-on-accent': towerEnemyData.difficulty === '中等',
+                          'bg-danger text-on-accent': towerEnemyData.difficulty === '困难',
+                          'bg-highlight text-on-accent': towerEnemyData.difficulty === '极难'
                         }">
                     {{ towerEnemyData.difficulty }}
                   </span>
                 </div>
-                <button 
+                <button
                   @click="refreshTowerEnemies"
-                  class="px-3 py-1 bg-orange-600 hover:bg-orange-700 text-white text-sm rounded transition-colors"
+                  class="px-3 py-1 bg-warning hover:opacity-90 text-on-accent text-sm rounded transition-colors"
                 >
                   重新刷新
                 </button>
@@ -704,8 +704,8 @@ onBeforeUnmount(() => {
                   v-for="position in 4" 
                   :key="position"
                   @click="openCharacterSelect(squad.id, position - 1)"
-                  class="relative bg-surface-2 rounded border-2 cursor-pointer hover:border-blue-500 transition-colors overflow-hidden"
-                  :class="squad.members[position - 1] ? 'border-green-500' : 'border-line border-dashed'"
+                  class="relative bg-surface-2 rounded border-2 cursor-pointer hover:border-info transition-colors overflow-hidden"
+                  :class="squad.members[position - 1] ? 'border-success' : 'border-line border-dashed'"
                   style="aspect-ratio: 2/3; width: 50px; height: 75px;"
                 >
                   <div v-if="squad.members[position - 1]" class="absolute inset-0">
@@ -730,7 +730,7 @@ onBeforeUnmount(() => {
               <!-- 小队战力 -->
               <div class="mb-3 text-sm">
                 <span class="text-ink-2">战力:</span>
-                <span class="text-yellow-400 font-bold ml-1">{{ getSquadPower(squad.id) }}</span>
+                <span class="text-highlight font-bold ml-1">{{ getSquadPower(squad.id) }}</span>
               </div>
               
               <!-- 挑战按钮 -->
@@ -750,15 +750,14 @@ onBeforeUnmount(() => {
         </div>
 
         <!-- 爬塔说明 -->
-        <div class="bg-blue-900/20 border border-blue-500 rounded-lg p-4">
+        <div class="bg-info/10 border border-info rounded-lg p-4">
           <div class="flex items-start space-x-3">
-            <div class="text-blue-400 text-xl">🏗️</div>
+            <div class="text-info text-xl">🏗️</div>
             <div>
-              <h3 class="text-blue-400 font-bold mb-2">爬塔规则</h3>
+              <h3 class="text-info font-bold mb-2">爬塔规则</h3>
               <ul class="text-sm text-ink-2 space-y-1">
                 <li>• 每层敌人战力和稀有度都会递增</li>
                 <li>• 胜利可获得大量经验和知识点奖励</li>
-                <li>• 每日最多挑战10次</li>
                 <li>• 通过当前层后解锁下一层</li>
                 <li>• 每5层难度显著提升</li>
               </ul>
@@ -774,7 +773,7 @@ onBeforeUnmount(() => {
         <div class="bg-surface rounded-lg p-6 border border-line">
           <div class="flex justify-between items-center mb-6">
             <h2 class="text-xl font-bold text-ink">第 {{ currentTurn + 1 }} 回合</h2>
-            <div class="text-lg font-bold" :class="isPlayerTurn ? 'text-blue-400' : 'text-red-400'">
+            <div class="text-lg font-bold" :class="isPlayerTurn ? 'text-info' : 'text-danger'">
               {{ isPlayerTurn ? '你的回合' : '敌方回合' }}
             </div>
           </div>
@@ -784,14 +783,14 @@ onBeforeUnmount(() => {
             
             <!-- 玩家小队 (左侧) -->
             <div>
-              <h3 class="text-lg font-bold text-blue-400 mb-4">你的小队</h3>
+              <h3 class="text-lg font-bold text-info mb-4">你的小队</h3>
               <div class="space-y-3">
-                <div 
+                <div
                   v-for="(member, index) in playerSquad"
                   :key="member.character.id"
                   class="flex items-center space-x-4 p-3 rounded-lg"
                   :class="{
-                    'bg-blue-900/20 border border-blue-500': index === 0 && !member.isDefeated,
+                    'bg-info/10 border border-info': index === 0 && !member.isDefeated,
                     'bg-surface-2/50': member.isDefeated,
                     'bg-surface': index > 0 && !member.isDefeated
                   }"
@@ -799,7 +798,7 @@ onBeforeUnmount(() => {
                   <!-- 角色头像 -->
                   <div class="relative">
                     <div class="w-16 h-16 rounded-full overflow-hidden border-2"
-                         :class="member.isDefeated ? 'border-line' : 'border-blue-400'">
+                         :class="member.isDefeated ? 'border-line' : 'border-info'">
                       <img loading="lazy" decoding="async" 
                         :src="member.character.image_path"
                         :alt="member.character.name"
@@ -809,29 +808,29 @@ onBeforeUnmount(() => {
                       >
                     </div>
                     <!-- 位置编号 -->
-                    <div class="absolute -top-1 -right-1 w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center border-2 border-white">
-                      <span class="text-white font-bold text-xs">{{ index + 1 }}</span>
+                    <div class="absolute -top-1 -right-1 w-6 h-6 bg-info rounded-full flex items-center justify-center border-2 border-elevated">
+                      <span class="text-on-accent font-bold text-xs">{{ index + 1 }}</span>
                     </div>
                     <!-- 击败标记 -->
                     <div v-if="member.isDefeated" class="absolute inset-0 bg-black/60 rounded-full flex items-center justify-center">
-                      <span class="text-red-400 text-xl">💀</span>
+                      <span class="text-danger text-xl">💀</span>
                     </div>
                   </div>
-                  
+
                   <div class="flex-1">
                     <div class="font-medium" :class="member.isDefeated ? 'text-ink-2' : 'text-ink'">
                       {{ member.character.name }}
                     </div>
-                    
+
                     <!-- 血条 -->
                     <div class="w-full bg-surface-2 rounded-full h-2 mt-1">
-                      <div 
+                      <div
                         class="h-full rounded-full transition-all duration-500"
-                        :class="member.isDefeated ? 'bg-red-600' : 'bg-accent'"
+                        :class="member.isDefeated ? 'bg-danger' : 'bg-accent'"
                         :style="{ width: `${getHPPercentage(member)}%` }"
                       ></div>
                     </div>
-                    
+
                     <div class="text-xs" :class="member.isDefeated ? 'text-ink-2' : 'text-ink-2'">
                       {{ member.currentHP }}/{{ member.maxHP }} HP
                     </div>
@@ -839,17 +838,17 @@ onBeforeUnmount(() => {
                 </div>
               </div>
             </div>
-            
+
             <!-- 敌方小队 (右侧) -->
             <div>
-              <h3 class="text-lg font-bold text-red-400 mb-4">敌方小队</h3>
+              <h3 class="text-lg font-bold text-danger mb-4">敌方小队</h3>
               <div class="space-y-3">
-                <div 
+                <div
                   v-for="(member, index) in enemySquad"
                   :key="member.character.id"
                   class="flex items-center space-x-4 p-3 rounded-lg"
                   :class="{
-                    'bg-red-900/20 border border-red-500': index === 0 && !member.isDefeated,
+                    'bg-danger/10 border border-danger': index === 0 && !member.isDefeated,
                     'bg-surface-2/50': member.isDefeated,
                     'bg-surface': index > 0 && !member.isDefeated
                   }"
@@ -857,7 +856,7 @@ onBeforeUnmount(() => {
                   <!-- 敌人角色头像 -->
                   <div class="relative">
                     <div class="w-16 h-16 rounded-full overflow-hidden border-2"
-                         :class="member.isDefeated ? 'border-line' : 'border-red-400'">
+                         :class="member.isDefeated ? 'border-line' : 'border-danger'">
                       <!-- 显示真实角色头像 -->
                       <img loading="lazy" decoding="async" 
                         :src="member.character.image_path"
@@ -868,25 +867,25 @@ onBeforeUnmount(() => {
                       >
                     </div>
                     <!-- 位置编号 -->
-                    <div class="absolute -top-1 -right-1 w-6 h-6 bg-red-500 rounded-full flex items-center justify-center border-2 border-white">
-                      <span class="text-white font-bold text-xs">{{ index + 1 }}</span>
+                    <div class="absolute -top-1 -right-1 w-6 h-6 bg-danger rounded-full flex items-center justify-center border-2 border-elevated">
+                      <span class="text-on-accent font-bold text-xs">{{ index + 1 }}</span>
                     </div>
                     <!-- 击败标记 -->
                     <div v-if="member.isDefeated" class="absolute inset-0 bg-black/60 rounded-full flex items-center justify-center">
-                      <span class="text-red-400 text-xl">💀</span>
+                      <span class="text-danger text-xl">💀</span>
                     </div>
                   </div>
-                  
+
                   <div class="flex-1">
                     <div class="font-medium" :class="member.isDefeated ? 'text-ink-2' : 'text-ink'">
                       {{ member.character.name }}
                     </div>
-                    
+
                     <!-- 血条 -->
                     <div class="w-full bg-surface-2 rounded-full h-2 mt-1">
-                      <div 
+                      <div
                         class="h-full rounded-full transition-all duration-500"
-                        :class="member.isDefeated ? 'bg-red-600' : 'bg-accent'"
+                        :class="member.isDefeated ? 'bg-danger' : 'bg-accent'"
                         :style="{ width: `${getHPPercentage(member)}%` }"
                       ></div>
                     </div>
@@ -902,15 +901,15 @@ onBeforeUnmount(() => {
           
           <!-- 行动按钮 -->
           <div class="text-center mt-6 space-x-4">
-            <button 
+            <button
               @click="executeRound"
-              class="px-8 py-3 bg-orange-600 hover:bg-orange-700 text-white font-bold rounded-lg transition-colors"
+              class="px-8 py-3 bg-warning hover:opacity-90 text-on-accent font-bold rounded-lg transition-colors"
             >
               执行回合
             </button>
-            <button 
+            <button
               @click="autoFinishBattle"
-              class="px-8 py-3 bg-purple-600 hover:bg-purple-700 text-white font-bold rounded-lg transition-colors"
+              class="px-8 py-3 bg-highlight hover:opacity-90 text-on-accent font-bold rounded-lg transition-colors"
             >
               一键结算
             </button>
@@ -939,7 +938,7 @@ onBeforeUnmount(() => {
             {{ battleResult === 'victory' ? '🎉' : '💔' }}
           </div>
           
-          <h2 class="text-3xl font-bold mb-4" :class="battleResult === 'victory' ? 'text-accent' : 'text-red-400'">
+          <h2 class="text-3xl font-bold mb-4" :class="battleResult === 'victory' ? 'text-accent' : 'text-danger'">
             {{ battleResult === 'victory' ? '胜利！' : '失败...' }}
           </h2>
           
@@ -954,9 +953,9 @@ onBeforeUnmount(() => {
           </div>
           
           <div class="flex gap-4 justify-center">
-            <button 
+            <button
               @click="restart"
-              class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg transition-colors"
+              class="px-6 py-3 bg-info hover:opacity-90 text-on-accent font-bold rounded-lg transition-colors"
             >
               {{ battleResult === 'victory' ? '继续挑战' : '返回爬塔' }}
             </button>

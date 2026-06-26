@@ -7,6 +7,7 @@ import { animeEffectsMap } from '@/data/animeEffectsMap';
 import { animeDefaultEffects } from '@/data/animeDefaultEffects';
 import { characterDefaultSkills } from '@/data/characterDefaultSkills';
 import { characterSkillsMap } from '@/data/characterSkillsMap';
+import { buildContentIndex } from '@/utils/contentIndex';
 
 export const useGameDataStore = defineStore('gameData', () => {
   // --- STATE ---
@@ -35,6 +36,12 @@ export const useGameDataStore = defineStore('gameData', () => {
     const map = new Map(allSkills.value.map(skill => [skill.id, skill]));
     return (id: string) => map.get(id);
   });
+
+  /**
+   * I1-T4：内容关联索引（标签→番剧 / 番剧→题材标签），随全量番剧库记忆化重建。
+   * 发现引擎/详情「相似作品」等下游复用同一份，避免每次渲染对全库重扫。
+   */
+  const contentIndex = computed(() => buildContentIndex(allAnimeCards.value));
 
   // --- ACTIONS ---
   async function fetchGameData() {
@@ -114,6 +121,7 @@ export const useGameDataStore = defineStore('gameData', () => {
     getAnimeCardById,
     getCharacterCardById,
     getSkillById, // Expose the new getter
+    contentIndex, // I1-T4：内容关联索引（记忆化）
     // Actions
     fetchGameData,
   };

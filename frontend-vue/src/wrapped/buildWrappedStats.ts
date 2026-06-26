@@ -20,6 +20,19 @@ export interface HistoryEntry {
   timestamp: number;
 }
 
+/** 品味画像派生身份（I2-T4）：来自 tasteProfile 报告，注入成绩卡显形。可缺省。 */
+export interface TasteIdentityInput {
+  /** 人格 emoji + 标题（如「🔍 小众考古学家」）。 */
+  personaEmoji: string;
+  personaTitle: string;
+  /** 代表题材标签（已剔噪，最多取前几个用于成绩卡）。 */
+  topTags: string[];
+  /** 小众指数 0-100。 */
+  nicheScore: number;
+  /** 已看番剧数（并集口径）。 */
+  watchedCount: number;
+}
+
 /** 聚合输入：从 store 读出的原始快照。 */
 export interface WrappedInput {
   username: string;
@@ -40,6 +53,8 @@ export interface WrappedInput {
   history: HistoryEntry[];
   /** 「本月」基准时间戳（默认 Date.now()，测试可注入）。 */
   now?: number;
+  /** 品味身份（I2-T4，缺省/无看过数据时不注入）。 */
+  taste?: TasteIdentityInput | null;
 }
 
 /** 成绩卡视图模型：成绩卡 UI / Canvas 直接读这里。 */
@@ -68,6 +83,11 @@ export interface WrappedStats {
   urThisMonth: number;
   /** 高稀有率：UR+HR+SSR 占总抽数百分比（0-100 整数；无历史为 0）。 */
   luckyPercent: number;
+  /**
+   * 品味身份（I2-T4）：有看过数据时注入，成绩卡据此显形人格 / 题材标签 / 小众度；
+   * 无数据（未看过任何番 / 未传入）时为 null，UI 守卫不显示。
+   */
+  taste: TasteIdentityInput | null;
 }
 
 function safePercent(part: number, total: number): number {
@@ -117,5 +137,7 @@ export function buildWrappedStats(input: WrappedInput): WrappedStats {
     urPulls,
     urThisMonth,
     luckyPercent: safePercent(highRarity, totalPulls),
+    // 缺数据（无看过番）时不注入身份，由 UI 守卫不显示。
+    taste: input.taste && input.taste.watchedCount > 0 ? input.taste : null,
   };
 }

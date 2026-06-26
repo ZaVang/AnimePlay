@@ -7,15 +7,52 @@ import { useCodexStore } from '@/stores/codex';
 import { useProfileStore } from '@/stores/profile';
 import { CODEX_MILESTONES } from '@/config/codexMilestones';
 import { getCodexUnlockPrice } from '@/config/codexUnlock';
+import { useUnlockConfirm } from '@/composables/useUnlockConfirm';
+import { watchedMilestone } from '@/utils/tasteProfile';
 import type { AnimeCard as AnimeCardType, CharacterCard as CharacterCardType, Rarity } from '@/types/card';
 import VirtualGrid from '@/components/VirtualGrid.vue';
+import RecommendationStrip from '@/components/RecommendationStrip.vue';
+import NicheGems from '@/components/NicheGems.vue';
+import GenreSets from '@/components/GenreSets.vue';
 import { thumbImageSrc, onThumbError } from '@/utils/cardImage';
+import { useWatchedAnime } from '@/composables/useWatchedAnime';
 
 const userStore = useUserStore();
 const gameDataStore = useGameDataStore();
 const collection = useCollectionStore();
 const codex = useCodexStore();
 const profile = useProfileStore();
+const { unlock } = useUnlockConfirm();
+
+// I2-T3：「看过」派生合集——读侧统一消费「队列看完 ∪ 手动勾选」并集（写侧不动、零存档）。
+const { watchedIds, watchedCount, isWatched } = useWatchedAnime();
+/** 「看过」段位 + 距下一段位进度（纯派生，不发奖、不进存档）。 */
+const watchedTier = computed(() => watchedMilestone(watchedCount.value));
+
+/**
+ * I1-T3 推荐种子（输入源降级）：优先用「看过」的番（更强口味信号，合并两套来源），
+ * 否则退回「已拥有的番」当代理输入——保证已有收藏的老号立即有推荐。
+ * 纯派生（映射 id→canonical 番卡）。
+ */
+const recommendSeeds = computed<AnimeCardType[]>(() => {
+  const all = gameDataStore.allAnimeCards;
+  const watched = watchedIds.value;
+  if (watched.size > 0) {
+    return all.filter(a => watched.has(a.id));
+  }
+  const owned = collection.animeCollection;
+  return all.filter(a => owned.has(a.id));
+});
+
+/**
+ * I2-T1 修复破契约：图鉴「猜你想看」候选必须排除「已拥有 ∪ 已看」全集，
+ * 否则种子（=已拥有/已看的子集）会把其它已拥有/已看的番当推荐推回来。
+ */
+const recommendExcludeIds = computed<Set<number>>(() => {
+  const ex = new Set<number>(collection.animeCollection.keys());
+  for (const id of watchedIds.value) ex.add(id);
+  return ex;
+});
 
 // 图鉴内部子 tab：动画 / 角色
 const codexDomain = ref<'anime' | 'character'>('character');
@@ -181,18 +218,10 @@ function canAfford(card: { rarity: Rarity }): boolean {
   return knowledgePoints.value >= unlockPrice(card);
 }
 
-/** 点击灰位卡 → 确认（显示价格）→ 调门面解锁。已拥有的卡不触发。 */
+/** 点击灰位卡 → 共享解锁门面（确认/守卫/错误提示内建）。已拥有的卡不触发；双域走当前子 tab。 */
 function handleUnlock(card: CodexGridCard) {
   if (card.owned) return;
-  const price = unlockPrice(card);
-  if (!canAfford(card)) {
-    alert(`知识点不足，解锁 [${card.rarity}] ${card.name} 需 ${price} 知识点（你当前有 ${knowledgePoints.value}）。`);
-    return;
-  }
-  if (!confirm(`花费 ${price} 知识点定向解锁 [${card.rarity}] ${card.name}？\n你当前有 ${knowledgePoints.value} 知识点。`)) {
-    return;
-  }
-  userStore.unlockCodexCard(card.id, codexDomain.value);
+  void unlock(card, codexDomain.value);
 }
 </script>
 
@@ -274,6 +303,45 @@ function handleUnlock(card: CodexGridCard) {
             </div>
           </div>
         </div>
+      </div>
+
+      <!-- I1-T2：「看过」进度（动画域，纯派生：不发奖、不进存档） -->
+      <div v-if="codexDomain === 'anime'" class="bg-surface rounded-lg p-5 border border-line">
+        <div class="flex flex-wrap justify-between items-end gap-2 mb-2">
+          <span class="font-bold text-ink text-lg">{{ watchedTier.emoji }} 观看进度 · {{ watchedTier.title }}</span>
+          <span class="text-sm text-ink-2">已看 {{ watchedCount }} 部</span>
+        </div>
+        <div class="w-full bg-surface-2 rounded-full h-3 border border-line overflow-hidden">
+          <div class="bg-accent h-full rounded-full transition-all duration-500" :style="{ width: watchedTier.progressPct + '%' }"></div>
+        </div>
+        <p class="text-sm text-ink-2 mt-2">
+          <template v-if="watchedTier.nextThreshold !== null">
+            再看 <span class="font-bold text-accent">{{ watchedTier.toNext }}</span> 部，进阶下一段位（{{ watchedTier.nextThreshold }} 部）。
+          </template>
+          <template v-else>已达最高段位，番剧大师当之无愧。</template>
+          看完观看队列的番、或在卡片详情 / 「🎮 小游戏 → 番剧品味画像」标记看过，都会计入这里。
+        </p>
+      </div>
+
+      <!-- I1-T3：动画图鉴「为你推荐」（种子=看过的番 ?? 已拥有的番；纯派生 + 记忆化索引） -->
+      <div v-if="codexDomain === 'anime'" class="bg-surface rounded-lg p-5 border border-line">
+        <RecommendationStrip
+          title="🍿 猜你想看"
+          :seeds="recommendSeeds"
+          :limit="6"
+          :exclude-ids="recommendExcludeIds"
+          empty-hint="先拥有或在卡片详情 / 「🎮 小游戏 → 番剧品味画像」标记一些看过的番，这里会按你的口味推荐相似作品。"
+        />
+      </div>
+
+      <!-- I3-T3：小众佳作雷达（高分低人气未拥有番；纯派生 + 记忆化，弥合 rarity 价值观裂缝） -->
+      <div v-if="codexDomain === 'anime'" class="bg-surface rounded-lg p-5 border border-line">
+        <NicheGems :limit="12" />
+      </div>
+
+      <!-- I4-T1：题材集册 Genre Sets（长线中目标墙，纯展示零存档 + I4-T2 缺口就地收下） -->
+      <div v-if="codexDomain === 'anime'" class="bg-surface rounded-lg p-5 border border-line">
+        <GenreSets />
       </div>
 
       <!-- Full grid with gray-out for unowned (VirtualGrid) -->
@@ -358,6 +426,11 @@ function handleUnlock(card: CodexGridCard) {
               <div class="absolute top-1 right-1 px-2 py-0.5 text-xs font-bold text-white bg-black/60 rounded">
                 {{ item.rarity }}
               </div>
+              <div
+                v-if="codexDomain === 'anime' && isWatched(item.id)"
+                class="absolute top-1 left-1 px-1.5 py-0.5 text-xs font-bold rounded bg-accent text-on-accent"
+                title="你标记过「看过」"
+              >👁 看过</div>
               <div
                 v-if="!(item as CodexGridCard).owned"
                 class="absolute inset-0 flex flex-col items-center justify-center gap-1"

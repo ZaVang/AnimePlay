@@ -45,7 +45,7 @@ function backToMenu() { store.quitQuiz(); }
     <!-- 未开始 -->
     <div v-if="!store.quizPlaying && !store.quizOver" class="quiz-menu">
       <h3 class="text-xl font-bold text-ink mb-1">❓ 番剧问答</h3>
-      <p class="text-sm text-ink-soft mb-4">关于番剧/角色的 4 选 1 知识问答，答对越多分越高！</p>
+      <p class="text-sm text-ink-2 mb-4">关于番剧/角色的 4 选 1 知识问答，答对越多分越高！</p>
       <button class="btn-primary" @click="start">开始答题</button>
       <div class="quiz-stats">
         <span>最佳连答：<b class="text-ink">{{ store.quizBestStreak }}</b></span>
@@ -58,7 +58,7 @@ function backToMenu() { store.quitQuiz(); }
     <div v-else class="quiz-play">
       <div class="quiz-topbar">
         <span class="quiz-streak">🔥 连答 <b>{{ store.quizStreak }}</b></span>
-        <span class="text-xs text-ink-soft">最佳 {{ store.quizBestStreak }}</span>
+        <span class="text-xs text-ink-2">最佳 {{ store.quizBestStreak }}</span>
       </div>
 
       <QuizQuestionView
@@ -73,7 +73,7 @@ function backToMenu() { store.quitQuiz(); }
         <p class="quiz-over-title">答错了！</p>
         <p class="quiz-over-streak">本局连答 <b>{{ store.quizStreak }}</b> 题 · 得分 <b>{{ finalScore }}</b></p>
         <p v-if="store.quizLastAward > 0" class="quiz-over-award">🎉 兑换 {{ store.quizLastAward }} 知识点</p>
-        <p v-else class="text-xs text-ink-soft">（今日小游戏奖励已达上限或未达 5 连，下次再来~）</p>
+        <p v-else class="text-xs text-ink-2">（今日小游戏奖励已达上限或未达 5 连，下次再来~）</p>
         <div class="quiz-btn-row mt-3">
           <button class="btn-primary" @click="playAgain">再来一局</button>
           <button class="btn-ghost" @click="backToMenu">换玩法</button>
@@ -85,7 +85,7 @@ function backToMenu() { store.quitQuiz(); }
 
 <style scoped>
 .quiz-game { width: 100%; max-width: 600px; margin: 0 auto; text-align: center; }
-.quiz-stats { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; font-size: 0.8rem; color: rgb(var(--c-ink-soft)); margin-top: 1.25rem; }
+.quiz-stats { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; font-size: 0.8rem; color: rgb(var(--c-ink-2)); margin-top: 1.25rem; }
 .quiz-topbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
 .quiz-streak { font-size: 1.1rem; color: rgb(var(--c-ink)); }
 .quiz-streak b { color: rgb(var(--c-accent)); }

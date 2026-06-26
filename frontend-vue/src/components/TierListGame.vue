@@ -12,10 +12,12 @@ import { useCollectionStore } from '@/stores/collection';
 import { thumbImageSrc, onThumbError } from '@/utils/cardImage';
 import type { AnimeCard, CharacterCard, Card } from '@/types/card';
 import CardDetailModal from '@/components/CardDetailModal.vue';
+import { useDialog } from '@/composables/useDialog';
 
 const gameData = useGameDataStore();
 const minigames = useMiniGamesStore();
 const collection = useCollectionStore();
+const { confirm } = useDialog();
 
 // 档位：从夯到拉完了；颜色是 tier 表识别色（固定色，不随皮肤——同稀有度色例外）。
 const TIERS = [
@@ -152,9 +154,9 @@ function removeFromBoard(id: number) {
     if (i >= 0) board.value[k].splice(i, 1);
   }
 }
-function clearBoard() {
+async function clearBoard() {
   if (onBoardIds.value.size === 0) return;
-  if (confirm('清空当前锐评棋盘？')) boards[domain.value] = emptyBoard();
+  if (await confirm('清空当前锐评棋盘？', { confirmText: '清空', danger: true })) boards[domain.value] = emptyBoard();
 }
 
 // --- 拖放 ---

@@ -170,7 +170,8 @@ export async function loadFromServer(): Promise<void> {
     }
   } catch (error) {
     console.error('Failed to load user data:', error);
-    alert('加载存档失败，将使用初始设置。');
+    // 脱离组件上下文：降级为非阻塞 toast（复用 addLog 通知通道），不弹原生 alert。
+    profile.addLog('加载存档失败，将使用初始设置。', 'warning');
     resetAllDomains();
     currentSaveVersion = 0;
   }

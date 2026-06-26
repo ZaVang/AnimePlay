@@ -11,14 +11,22 @@ import { useMiniGamesStore } from '@/stores/minigames/higherLower';
 import { useCollectionStore } from '@/stores/collection';
 import { buildTasteReport, recommendFromTaste } from '@/utils/tasteProfile';
 import { thumbImageSrc, onThumbError } from '@/utils/cardImage';
+import { canvasToPngBlob, shareOrDownloadImage, canShareImage } from '@/utils/shareImage';
 import type { AnimeCard } from '@/types/card';
 import VirtualGrid from '@/components/VirtualGrid.vue';
 import CardDetailModal from '@/components/CardDetailModal.vue';
+import TasteRadar from '@/components/TasteRadar.vue';
+import { useWatchedAnime } from '@/composables/useWatchedAnime';
+import { useDialog } from '@/composables/useDialog';
 
 const userStore = useUserStore();
 const gameData = useGameDataStore();
 const minigames = useMiniGamesStore();
 const collection = useCollectionStore();
+const { confirm } = useDialog();
+
+// I2-T3：人格 / 推荐读「看过」并集（队列看完 ∪ 手动勾选）；勾选格子仍只反映手动集（写侧）。
+const { isWatched: isWatchedUnion } = useWatchedAnime();
 
 // 右键查看详情（复用图鉴/对战的卡详情弹窗）
 const detailCard = ref<AnimeCard | null>(null);
@@ -104,7 +112,10 @@ function clearPickFilters() {
   onlyWatched.value = false;
 }
 
-const watchedAnime = computed<AnimeCard[]>(() => allAnime.value.filter(a => isWatched(a.id)));
+// 人格 / 推荐基于并集——队列看完的番也计入画像（I2-T3）。
+const watchedAnime = computed<AnimeCard[]>(() => allAnime.value.filter(a => isWatchedUnion(a.id)));
+/** 并集口径的可生成画像数（含队列看完）——决定能否进报告，避免只队列看番的用户被锁。 */
+const reportCount = computed(() => watchedAnime.value.length);
 const report = computed(() => buildTasteReport(watchedAnime.value, allAnime.value));
 const recommendations = computed(() => recommendFromTaste(watchedAnime.value, allAnime.value, 8));
 
@@ -112,15 +123,15 @@ function toggle(item: AnimeCard) {
   userStore.toggleTasteWatched(item.id);
 }
 
-function clearAll() {
+async function clearAll() {
   if (watchedCount.value === 0) return;
-  if (confirm(`确定清空全部 ${watchedCount.value} 条观看记录？`)) {
+  if (await confirm(`确定清空全部 ${watchedCount.value} 条观看记录？`, { confirmText: '清空', danger: true })) {
     userStore.clearTasteWatched();
   }
 }
 
 function showReport() {
-  if (watchedCount.value > 0) view.value = 'report';
+  if (reportCount.value > 0) view.value = 'report';
 }
 
 function imageSrc(id: number): string {
@@ -263,10 +274,12 @@ async function exportReport() {
       ctx.textBaseline = 'top';
     });
 
-    const a = document.createElement('a');
-    a.href = canvas.toDataURL('image/png');
-    a.download = `番剧品味-${r.persona.title}-${Date.now()}.png`;
-    a.click();
+    // I2-T4：一键分享（支持的环境调起系统面板，否则回落下载）。同源缩略图自绘不 taint。
+    const blob = await canvasToPngBlob(canvas);
+    await shareOrDownloadImage(blob, `番剧品味-${r.persona.title}-${Date.now()}.png`, {
+      title: `我的番剧品味：${r.persona.title}`,
+      text: '来《动画宅的自我修养》生成你的番剧品味画像！',
+    });
   } catch (e) {
     console.error('[taste export]', e);
     exportError.value = '导出失败，请重试。';
@@ -284,6 +297,9 @@ const ratingDeltaText = computed(() => {
   if (d < 0) return `低于大盘 ${d.toFixed(1)}`;
   return '与大盘持平';
 });
+
+/** 当前环境是否支持系统级分享（决定导出按钮文案）。 */
+const shareSupported = canShareImage();
 </script>
 
 <template>
@@ -335,8 +351,8 @@ const ratingDeltaText = computed(() => {
         <button v-if="watchedCount > 0" class="btn-ghost text-sm px-3 py-2" @click="clearAll">清空已选</button>
         <button
           class="btn-primary text-sm px-4 py-2"
-          :class="{ 'opacity-45 cursor-not-allowed': watchedCount === 0 }"
-          :disabled="watchedCount === 0"
+          :class="{ 'opacity-45 cursor-not-allowed': reportCount === 0 }"
+          :disabled="reportCount === 0"
           @click="showReport"
         >生成画像 →</button>
       </div>
@@ -375,7 +391,7 @@ const ratingDeltaText = computed(() => {
             <option value="newest">导出按年份</option>
           </select>
           <button class="btn-primary text-sm px-3 py-1.5" :disabled="exporting" @click="exportReport">
-            {{ exporting ? '导出中…' : '📷 导出图片' }}
+            {{ exporting ? '导出中…' : (shareSupported ? '📤 分享 / 保存' : '📷 导出图片') }}
           </button>
         </div>
       </div>
@@ -405,6 +421,10 @@ const ratingDeltaText = computed(() => {
           <div class="stat-label">小众指数 / 100</div>
         </div>
       </div>
+
+      <!-- I3-T2：多轴人格雷达（仅屏幕渲染区，不进分享卡出图）。样本不足时给引导态。 -->
+      <TasteRadar v-if="report.count >= 3" :report="report" />
+      <p v-else class="radar-hint">再多勾几部「看过」的番（≥3 部），这里会生成你的多轴人格雷达。</p>
 
       <!-- 题材偏好 -->
       <section v-if="report.topTags.length" class="block">
@@ -539,6 +559,14 @@ const ratingDeltaText = computed(() => {
 }
 .stat-num { font-size: 1.5rem; font-weight: 800; color: rgb(var(--c-accent)); }
 .stat-label { font-size: 0.72rem; color: rgb(var(--c-ink-2)); margin-top: 0.15rem; }
+
+/* 雷达样本不足引导态 */
+.radar-hint {
+  font-size: 0.8rem; color: rgb(var(--c-ink-2)); text-align: center;
+  padding: 0.85rem 1rem; margin-bottom: 1.1rem;
+  border: 1px dashed rgb(var(--c-line)); border-radius: var(--sk-radius-panel);
+  background: rgb(var(--c-surface-2) / 0.5);
+}
 
 /* 区块 + 条形图 */
 .block { margin-bottom: 1.1rem; }

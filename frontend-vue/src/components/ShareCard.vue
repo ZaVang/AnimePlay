@@ -12,8 +12,12 @@ import { useAchievementsStore } from '@/stores/achievements';
 import { usePveStore } from '@/stores/pve';
 import { useCollectionStore } from '@/stores/collection';
 import { useGachaStore } from '@/stores/gachaStore';
+import { useGameDataStore } from '@/stores/gameDataStore';
 import { ACHIEVEMENTS } from '@/config/achievements';
-import { buildWrappedStats, type WrappedInput } from '@/wrapped/buildWrappedStats';
+import { buildWrappedStats, type WrappedInput, type TasteIdentityInput } from '@/wrapped/buildWrappedStats';
+import { buildTasteReport } from '@/utils/tasteProfile';
+import { useWatchedAnime } from '@/composables/useWatchedAnime';
+import { shareOrDownloadImage, canShareImage, canvasToPngBlob } from '@/utils/shareImage';
 
 const emit = defineEmits(['close']);
 
@@ -23,9 +27,27 @@ const achievements = useAchievementsStore();
 const pve = usePveStore();
 const collection = useCollectionStore();
 const gacha = useGachaStore();
+const gameData = useGameDataStore();
+const { watchedIds, watchedCount } = useWatchedAnime();
 
 const downloading = ref(false);
 const downloadError = ref('');
+const shareStatus = ref('');
+
+/** I2-T4：品味身份（注入成绩卡）——并集口径的看过番喂 buildTasteReport，缺数据返回 null。 */
+const tasteIdentity = computed<TasteIdentityInput | null>(() => {
+  if (watchedCount.value === 0) return null;
+  const watched = gameData.allAnimeCards.filter(a => watchedIds.value.has(a.id));
+  if (watched.length === 0) return null;
+  const r = buildTasteReport(watched, gameData.allAnimeCards);
+  return {
+    personaEmoji: r.persona.emoji,
+    personaTitle: r.persona.title,
+    topTags: r.topTags.slice(0, 3).map(t => t.tag),
+    nicheScore: r.nicheScore,
+    watchedCount: r.count,
+  };
+});
 
 /** 聚合 live store → 成绩卡视图模型。 */
 const stats = computed(() => {
@@ -41,9 +63,12 @@ const stats = computed(() => {
     towerMaxFloor: pve.towerProgress.maxFloor,
     uniqueCardsOwned: collection.animeCollection.size + collection.characterCollection.size,
     history: [...gacha.animeHistory, ...gacha.characterHistory],
+    taste: tasteIdentity.value,
   };
   return buildWrappedStats(input);
 });
+
+const shareSupported = canShareImage();
 
 // ===== 成绩卡品牌固定色（导出图压片，脱离皮肤独立成图） =====
 const CARD_W = 600;
@@ -164,6 +189,27 @@ function drawCard(canvas: HTMLCanvasElement) {
     ctx.fillText(cell.label, px + pw / 2, cy + 78);
   });
 
+  // 品味身份带（I2-T4，有看过数据才画；缺数据守卫不显示）
+  if (s.taste) {
+    const t = s.taste;
+    const bandY = 624;
+    const bandH = 86;
+    ctx.fillStyle = COL.panel;
+    roundRect(ctx, 40, bandY, CARD_W - 80, bandH, 14);
+    ctx.fill();
+    ctx.textAlign = 'left';
+    ctx.fillStyle = COL.purple;
+    ctx.font = '700 15px "PingFang SC", "Microsoft YaHei", sans-serif';
+    ctx.fillText('我的番剧品味', 60, bandY + 26);
+    ctx.fillStyle = COL.ink;
+    ctx.font = '800 24px "PingFang SC", "Microsoft YaHei", sans-serif';
+    ctx.fillText(`${t.personaEmoji} ${t.personaTitle}`, 60, bandY + 54);
+    ctx.fillStyle = COL.inkSoft;
+    ctx.font = '500 15px "PingFang SC", "Microsoft YaHei", sans-serif';
+    const tagLine = t.topTags.length ? t.topTags.join(' · ') : '题材偏好待揭晓';
+    ctx.fillText(`偏好 ${tagLine}　|　看过 ${t.watchedCount} 部　|　小众度 ${t.nicheScore}`, 60, bandY + 76);
+  }
+
   // 欧气小结
   ctx.textAlign = 'center';
   ctx.fillStyle = COL.ink;
@@ -191,30 +237,31 @@ onMounted(() => {
   nextTick(renderPreview);
 });
 
-function download() {
+/**
+ * 一键分享（I2-T4）：支持的环境调起系统分享面板，否则回落下载（既有行为）。
+ * 必须在用户手势栈内尽早走到 navigator.share——先同步出图成 Blob 再 await 分享。
+ */
+async function shareOrDownload() {
   if (downloading.value) return;
   downloading.value = true;
   downloadError.value = '';
+  shareStatus.value = '';
   try {
     // 用一个离屏 canvas 出图，避免预览 canvas 被 DPR 缩放干扰
     const canvas = document.createElement('canvas');
     drawCard(canvas);
-    canvas.toBlob(blob => {
-      if (!blob) {
-        downloadError.value = '生成图片失败，请重试。';
-        downloading.value = false;
-        return;
-      }
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = `animeplay-wrapped-${stats.value.username}.png`;
-      a.click();
-      URL.revokeObjectURL(url); // S9 性能轮清过泄漏，用完即释放
-      downloading.value = false;
-    }, 'image/png');
+    const blob = await canvasToPngBlob(canvas);
+    const filename = `animeplay-wrapped-${stats.value.username}.png`;
+    const result = await shareOrDownloadImage(blob, filename, {
+      title: '我的番剧宅修养成绩卡',
+      text: '一起来玩《动画宅的自我修养》！',
+    });
+    if (result === 'shared') shareStatus.value = '已调起分享面板';
+    else if (result === 'downloaded') shareStatus.value = '已下载到本地';
+    // cancelled：用户取消，不提示、不报错
   } catch (e) {
     downloadError.value = e instanceof Error ? e.message : '生成图片失败。';
+  } finally {
     downloading.value = false;
   }
 }
@@ -244,11 +291,12 @@ function download() {
       </div>
 
       <p v-if="downloadError" class="text-danger text-sm mt-2">{{ downloadError }}</p>
+      <p v-else-if="shareStatus" class="text-ink-2 text-sm mt-2">{{ shareStatus }}</p>
 
       <div class="flex gap-2 mt-4">
         <button class="btn-secondary flex-1" @click="renderPreview">刷新预览</button>
-        <button class="btn-primary flex-1" :disabled="downloading" @click="download">
-          {{ downloading ? '生成中…' : '下载 PNG' }}
+        <button class="btn-primary flex-1" :disabled="downloading" @click="shareOrDownload">
+          {{ downloading ? '生成中…' : (shareSupported ? '📤 分享 / 保存' : '下载 PNG') }}
         </button>
       </div>
     </div>

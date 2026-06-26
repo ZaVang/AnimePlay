@@ -57,7 +57,7 @@ const bestById = computed<Record<MiniGameId, string>>(() => ({
 }
 .mg-card {
   display: flex; flex-direction: column; align-items: center; text-align: center; gap: 0.3rem;
-  padding: 1.25rem 1rem; border: 2px solid rgb(var(--c-line)); border-radius: var(--sk-radius, 0.75rem);
+  padding: 1.25rem 1rem; border: 2px solid rgb(var(--c-line)); border-radius: var(--sk-radius-panel);
   background: rgb(var(--c-surface)); cursor: pointer;
   transition: transform .12s, border-color .12s, box-shadow .12s;
 }

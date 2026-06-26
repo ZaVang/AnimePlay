@@ -109,8 +109,8 @@ export const useCollectionStore = defineStore('collection', () => {
       return true;
     }
     if (favorites.size >= 10) {
-      profile.addLog(`喜爱${typeName}列表已满（最多10张），无法添加。`, 'warning');
-      alert(`您的喜爱${typeName}列表已满（最多10张），请先移除一些再添加。`);
+      // 脱离组件上下文：非阻塞 toast 已足够提示，去掉原生 alert（避免浏览器灰框）。
+      profile.addLog(`喜爱${typeName}列表已满（最多10张），请先移除一些再添加。`, 'warning');
       return false;
     }
     favorites.add(cardId);

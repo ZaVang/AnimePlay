@@ -1,24 +1,39 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 import { useUserStore } from '@/stores/userStore';
+import { useGameDataStore } from '@/stores/gameDataStore';
+import { useWatchedAnime } from '@/composables/useWatchedAnime';
+import { buildTasteReport } from '@/utils/tasteProfile';
 
 const userStore = useUserStore();
+const gameData = useGameDataStore();
+
+// I2-T3：首页「已观看动画」计数改读「队列看完 ∪ 手动勾选」并集（与图鉴段位口径一致）。
+const { watchedIds, watchedCount } = useWatchedAnime();
 
 const stats = computed(() => userStore.playerState.viewingStats);
 const totalWatchedHours = computed(() => Math.floor(stats.value.totalWatchTime / 60));
 const totalWatchedMinutes = computed(() => stats.value.totalWatchTime % 60);
 
-const topGenres = computed(() => {
-  return Object.entries(stats.value.genreProgress)
-    .sort(([,a], [,b]) => b - a)
-    .slice(0, 5);
+// I4-T4：题材进度显示源换成更准、已剔噪的品味报告题材源（消费端换显示数据源）。
+// **存档字段 genreProgress 本身保留**（进存档持久字段，删=升档，本轮禁止）——只改显示读取源。
+// 题材源用「看过」并集番卡 → buildTasteReport().topTags（已剔噪格式/地区/来源噪声、按集中度降序）。
+const topGenres = computed<[string, number][]>(() => {
+  const set = watchedIds.value;
+  if (set.size === 0) return [];
+  const watched = gameData.allAnimeCards.filter(a => set.has(a.id));
+  if (watched.length === 0) return [];
+  return buildTasteReport(watched, gameData.allAnimeCards).topTags
+    .slice(0, 5)
+    .map(t => [t.tag, t.count] as [string, number]);
 });
 
+// I3-T5：等级色迁皮肤语义令牌（不再硬编码 text-blue/purple/yellow-400）。
 const progressLevel = computed(() => {
-  if (stats.value.consecutiveDays >= 30) return { level: '大师', color: 'text-purple-400', icon: '👑' };
-  if (stats.value.consecutiveDays >= 14) return { level: '专家', color: 'text-blue-400', icon: '🎖️' };
+  if (stats.value.consecutiveDays >= 30) return { level: '大师', color: 'text-accent', icon: '👑' };
+  if (stats.value.consecutiveDays >= 14) return { level: '专家', color: 'text-info', icon: '🎖️' };
   if (stats.value.consecutiveDays >= 7) return { level: '爱好者', color: 'text-accent', icon: '⭐' };
-  if (stats.value.consecutiveDays >= 3) return { level: '初级', color: 'text-yellow-400', icon: '🌟' };
+  if (stats.value.consecutiveDays >= 3) return { level: '初级', color: 'text-warning', icon: '🌟' };
   return { level: '新手', color: 'text-ink-2', icon: '🌱' };
 });
 </script>
@@ -26,7 +41,7 @@ const progressLevel = computed(() => {
 <template>
   <div class="bg-surface p-6 rounded-lg shadow-lg border border-line">
     <h2 class="text-xl font-bold text-ink mb-4 flex items-center">
-      <svg class="w-6 h-6 mr-2 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg class="w-6 h-6 mr-2 text-info" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
       </svg>
       观看统计
@@ -44,7 +59,7 @@ const progressLevel = computed(() => {
       <div class="grid grid-cols-2 gap-4">
         <!-- 总观看时间 -->
         <div class="bg-surface-2/30 p-4 rounded-lg text-center">
-          <div class="text-2xl font-bold text-blue-400">
+          <div class="text-2xl font-bold text-info">
             {{ totalWatchedHours }}h {{ totalWatchedMinutes }}m
           </div>
           <div class="text-xs text-ink-2 mt-1">总观看时间</div>
@@ -52,7 +67,7 @@ const progressLevel = computed(() => {
 
         <!-- 已观看动画数 -->
         <div class="bg-surface-2/30 p-4 rounded-lg text-center">
-          <div class="text-2xl font-bold text-accent">{{ userStore.playerState.watchedAnime.size }}</div>
+          <div class="text-2xl font-bold text-accent">{{ watchedCount }}</div>
           <div class="text-xs text-ink-2 mt-1">已观看动画</div>
         </div>
       </div>
@@ -65,8 +80,8 @@ const progressLevel = computed(() => {
             <span class="text-sm text-ink-2">{{ genre }}</span>
             <div class="flex items-center">
               <div class="w-12 bg-surface-2 rounded-full h-2 mr-2">
-                <div 
-                  class="bg-blue-400 h-2 rounded-full transition-all duration-300"
+                <div
+                  class="bg-accent h-2 rounded-full transition-all duration-300"
                   :style="{ width: `${Math.min(100, (count / Math.max(...topGenres.map(([,c]) => c))) * 100)}%` }"
                 ></div>
               </div>

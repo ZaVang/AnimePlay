@@ -113,6 +113,31 @@ describe('欧气：UR 总数 / 近月数 / 高稀有率', () => {
   });
 });
 
+describe('品味身份注入（I2-T4）', () => {
+  const taste = {
+    personaEmoji: '🔍',
+    personaTitle: '小众考古学家',
+    topTags: ['百合', '校园', '治愈'],
+    nicheScore: 82,
+    watchedCount: 24,
+  };
+
+  it('有看过数据时原样注入 taste', () => {
+    const s = buildWrappedStats(baseInput({ taste }));
+    expect(s.taste).toEqual(taste);
+  });
+
+  it('未传 taste 时为 null（缺数据守卫不显示）', () => {
+    const s = buildWrappedStats(baseInput());
+    expect(s.taste).toBeNull();
+  });
+
+  it('watchedCount 为 0 时不注入（视为缺数据）', () => {
+    const s = buildWrappedStats(baseInput({ taste: { ...taste, watchedCount: 0 } }));
+    expect(s.taste).toBeNull();
+  });
+});
+
 describe('透传字段', () => {
   it('等级/知识点/成就/里程碑/塔/卡种原样透传', () => {
     const s = buildWrappedStats(

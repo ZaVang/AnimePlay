@@ -8,6 +8,7 @@ import CharacterCard from '@/components/CharacterCard.vue';
 import CardDetailModal from '@/components/CardDetailModal.vue';
 import VirtualGrid from '@/components/VirtualGrid.vue';
 import { GAME_CONFIG } from '@/config/gameConfig';
+import { useDialog } from '@/composables/useDialog';
 
 const props = defineProps<{
   deckName: string | null;
@@ -17,6 +18,7 @@ const emit = defineEmits(['back']);
 
 const userStore = useUserStore();
 const gameDataStore = useGameDataStore();
+const { confirm, alert } = useDialog();
 
 function generateNewDeckName(): string {
   let defaultName = '新卡组';
@@ -164,7 +166,7 @@ function addToDeck(card: Card, type: 'anime' | 'character') {
   const maxSize = type === 'anime' ? GAME_CONFIG.deckBuilding.AnimeMaxNum : GAME_CONFIG.deckBuilding.CharacterMaxNum;
   if (deckCards.includes(card.id)) return;
   if (deckCards.length >= maxSize) {
-    alert(`${type === 'anime' ? '动画' : '角色'}卡已达上限！`);
+    void alert(`${type === 'anime' ? '动画' : '角色'}卡已达上限！`);
     return;
   }
   deckCards.push(card.id);
@@ -213,7 +215,7 @@ function handleImageError(event: Event) {
 
 async function handleSaveDeck() {
   if (!newDeckName.value.trim()) {
-    alert('请输入卡组名称！');
+    await alert('请输入卡组名称！');
     return;
   }
   
@@ -232,20 +234,20 @@ async function handleSaveDeck() {
   
   // Prevent overwriting a different deck if the user renames this one to an existing name
   if ((isNewDeck || isRenaming) && userStore.savedDecks[deckToSave.name]) {
-      if (!confirm(`名为 "${deckToSave.name}" 的卡组已存在。要覆盖它吗？`)) {
+      if (!await confirm(`名为 "${deckToSave.name}" 的卡组已存在。要覆盖它吗？`, { confirmText: '覆盖' })) {
           // If the user cancelled the overwrite of an existing deck during a rename,
           // we might need to restore the old deck if we deleted it.
           // For simplicity, we'll just stop here. A better implementation would handle this more gracefully.
           if(isRenaming) {
             // This is tricky, for now we just alert user.
-            alert("请选择一个新的卡组名。");
+            await alert("请选择一个新的卡组名。");
           }
           return;
       }
   }
 
   await userStore.saveDeck(deckToSave);
-  alert('卡组已保存！');
+  await alert('卡组已保存！');
   emit('back');
 }
 </script>

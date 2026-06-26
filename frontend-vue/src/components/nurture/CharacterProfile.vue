@@ -4,6 +4,7 @@ import { useUserStore } from '@/stores/userStore';
 import type { CharacterCard } from '@/types/card';
 import type { CharacterNurtureData } from '@/stores/userStore';
 import { generateBattleStats, calculateBattlePower } from '@/engine';
+import { bondTier, moodTier } from '@/config/nurtureColors';
 
 const props = defineProps<{
   character: CharacterCard & { nurtureData: CharacterNurtureData };
@@ -16,65 +17,23 @@ const levelProgress = computed(() => {
   return userStore.getLevelProgress(props.character.nurtureData);
 });
 
-// 计算羁绊等级
+// 计算羁绊等级（共享语义色映射，整函数走 config/nurtureColors.bondTier，随皮肤切换）
 const bondLevel = computed(() => {
   const affection = props.character.nurtureData.affection;
-  if (affection >= 1000) return { 
-    level: '永恒羁绊', 
-    color: 'text-pink-400', 
-    bgColor: 'bg-pink-500/20', 
-    icon: '⭐',
-    progress: 100, // 最高级后不再显示进度，但数值可以继续增加
-    maxReached: true
-  };
-  if (affection >= 800) return { 
-    level: '命定之人', 
-    color: 'text-red-400', 
-    bgColor: 'bg-red-500/20', 
-    icon: '🌟',
-    progress: ((affection - 800) / 200) * 100,
-    maxReached: false
-  };
-  if (affection >= 600) return { 
-    level: '肝胆相照', 
-    color: 'text-purple-400', 
-    bgColor: 'bg-purple-500/20', 
-    icon: '💜',
-    progress: ((affection - 600) / 200) * 100,
-    maxReached: false
-  };
-  if (affection >= 400) return { 
-    level: '心照不宣', 
-    color: 'text-blue-400', 
-    bgColor: 'bg-blue-500/20', 
-    icon: '💙',
-    progress: ((affection - 400) / 200) * 100,
-    maxReached: false
-  };
-  if (affection >= 200) return { 
-    level: '志同道合', 
-    color: 'text-accent', 
-    bgColor: 'bg-accent/20',
-    icon: '💚',
-    progress: ((affection - 200) / 200) * 100,
-    maxReached: false
-  };
-  if (affection >= 100) return { 
-    level: '萍水相逢', 
-    color: 'text-yellow-400', 
-    bgColor: 'bg-yellow-500/20', 
-    icon: '💛',
-    progress: ((affection - 100) / 100) * 100,
-    maxReached: false
-  };
-  return { 
-    level: '初次相遇', 
-    color: 'text-ink-2', 
-    bgColor: 'bg-ink-3/20',
-    icon: '🤝',
-    progress: (affection / 100) * 100,
-    maxReached: false
-  };
+  const tier = bondTier(affection);
+  // 进度 / maxReached 是本卡视图态（共享映射只管色与称号），在此按阈值派生。
+  let progress: number;
+  let maxReached = false;
+  if (affection >= 1000) {
+    progress = 100; // 最高级后不再显示进度，但数值可以继续增加
+    maxReached = true;
+  } else if (affection >= 800) progress = ((affection - 800) / 200) * 100;
+  else if (affection >= 600) progress = ((affection - 600) / 200) * 100;
+  else if (affection >= 400) progress = ((affection - 400) / 200) * 100;
+  else if (affection >= 200) progress = ((affection - 200) / 200) * 100;
+  else if (affection >= 100) progress = ((affection - 100) / 100) * 100;
+  else progress = (affection / 100) * 100;
+  return { ...tier, progress, maxReached };
 });
 
 // 计算最后互动时间
@@ -94,15 +53,8 @@ const lastInteractionText = computed(() => {
   return '刚刚';
 });
 
-// 计算心情状态
-const moodStatus = computed(() => {
-  const mood = props.character.nurtureData.attributes.mood;
-  if (mood >= 90) return { text: '非常开心', color: 'text-pink-400', icon: '😊' };
-  if (mood >= 70) return { text: '愉快', color: 'text-accent', icon: '😌' };
-  if (mood >= 50) return { text: '平常', color: 'text-yellow-400', icon: '😐' };
-  if (mood >= 30) return { text: '有些烦躁', color: 'text-orange-400', icon: '😔' };
-  return { text: '心情不好', color: 'text-red-400', icon: '😞' };
-});
+// 计算心情状态（共享语义色映射，随皮肤切换）
+const moodStatus = computed(() => moodTier(props.character.nurtureData.attributes.mood));
 
 // 获取事件图标
 function getEventIcon(event: string): string {
@@ -323,7 +275,7 @@ const battlePower = computed(() => {
             <div class="flex justify-between text-xs text-ink-2">
               <span>{{ character.nurtureData.affection }}</span>
               <span v-if="!bondLevel.maxReached">{{ getBondLevelThreshold() }}</span>
-              <span v-else class="text-pink-400">MAX</span>
+              <span v-else class="text-accent">MAX</span>
             </div>
           </div>
 
@@ -334,22 +286,22 @@ const battlePower = computed(() => {
                 <span class="text-lg mr-2">⚡</span>
                 角色等级
               </h4>
-              <span class="text-yellow-400 font-bold text-sm">
+              <span class="text-highlight font-bold text-sm">
                 Lv.{{ character.nurtureData.level || 1 }}
               </span>
             </div>
-            
+
             <!-- 经验值进度条 -->
             <div class="w-full bg-surface-2 rounded-full h-2 overflow-hidden mb-1">
-              <div 
-                class="h-full rounded-full bg-gradient-to-r from-yellow-400 to-orange-500 transition-all duration-500"
+              <div
+                class="h-full rounded-full bg-highlight transition-all duration-500"
                 :style="{ width: `${levelProgress.percentage}%` }"
               ></div>
             </div>
-            
+
             <div class="flex justify-between text-xs text-ink-2">
               <span>{{ levelProgress.current || 0 }}/{{ levelProgress.required || 1000 }}</span>
-              <span class="text-yellow-400">下一级</span>
+              <span class="text-highlight">下一级</span>
             </div>
           </div>
         </div>
@@ -361,9 +313,9 @@ const battlePower = computed(() => {
             <div>
               <div class="text-xl mb-1">✨</div>
               <div class="text-xs text-ink-2 mb-1">魅力</div>
-              <div class="text-sm font-bold text-pink-400">
+              <div class="text-sm font-bold text-accent">
                 {{ character.nurtureData.attributes.charm }}
-                <span v-if="(character.nurtureData.levelBonusAttributes?.charm || 0) > 0" class="text-xs text-pink-300">
+                <span v-if="(character.nurtureData.levelBonusAttributes?.charm || 0) > 0" class="text-xs text-accent/70">
                   (+{{ character.nurtureData.levelBonusAttributes.charm }})
                 </span>
               </div>
@@ -371,9 +323,9 @@ const battlePower = computed(() => {
             <div>
               <div class="text-xl mb-1">🧠</div>
               <div class="text-xs text-ink-2 mb-1">智力</div>
-              <div class="text-sm font-bold text-blue-400">
+              <div class="text-sm font-bold text-info">
                 {{ character.nurtureData.attributes.intelligence }}
-                <span v-if="(character.nurtureData.levelBonusAttributes?.intelligence || 0) > 0" class="text-xs text-blue-300">
+                <span v-if="(character.nurtureData.levelBonusAttributes?.intelligence || 0) > 0" class="text-xs text-info/70">
                   (+{{ character.nurtureData.levelBonusAttributes.intelligence }})
                 </span>
               </div>
@@ -381,9 +333,9 @@ const battlePower = computed(() => {
             <div>
               <div class="text-xl mb-1">💪</div>
               <div class="text-xs text-ink-2 mb-1">体力</div>
-              <div class="text-sm font-bold text-accent">
+              <div class="text-sm font-bold text-success">
                 {{ character.nurtureData.attributes.strength }}
-                <span v-if="(character.nurtureData.levelBonusAttributes?.strength || 0) > 0" class="text-xs text-green-300">
+                <span v-if="(character.nurtureData.levelBonusAttributes?.strength || 0) > 0" class="text-xs text-success/70">
                   (+{{ character.nurtureData.levelBonusAttributes.strength }})
                 </span>
               </div>
@@ -404,19 +356,19 @@ const battlePower = computed(() => {
             <div class="space-y-2">
               <div class="flex justify-between text-xs">
                 <span class="text-ink-2">HP</span>
-                <span class="text-red-400 font-medium">{{ actualBattleStats.hp }}</span>
+                <span class="text-danger font-medium">{{ actualBattleStats.hp }}</span>
               </div>
               <div class="flex justify-between text-xs">
                 <span class="text-ink-2">ATK</span>
-                <span class="text-orange-400 font-medium">{{ actualBattleStats.atk }}</span>
+                <span class="text-warning font-medium">{{ actualBattleStats.atk }}</span>
               </div>
               <div class="flex justify-between text-xs">
                 <span class="text-ink-2">DEF</span>
-                <span class="text-blue-400 font-medium">{{ actualBattleStats.def }}</span>
+                <span class="text-info font-medium">{{ actualBattleStats.def }}</span>
               </div>
               <div class="flex justify-between text-xs">
                 <span class="text-ink-2">SP</span>
-                <span class="text-purple-400 font-medium">{{ actualBattleStats.sp }}</span>
+                <span class="text-highlight font-medium">{{ actualBattleStats.sp }}</span>
               </div>
               <div class="flex justify-between text-xs">
                 <span class="text-ink-2">SPD</span>
@@ -426,32 +378,32 @@ const battlePower = computed(() => {
           </div>
 
           <!-- 战斗力评分 -->
-          <div class="bg-gradient-to-r from-pink-500/10 to-purple-500/10 rounded-lg p-4 border border-pink-500/20">
-            <div class="text-xs text-pink-400 mb-3 text-center">战斗力</div>
-            
+          <div class="bg-accent/10 rounded-lg p-4 border border-accent/20">
+            <div class="text-xs text-accent mb-3 text-center">战斗力</div>
+
             <!-- 总战斗力 -->
             <div class="text-center mb-3">
-              <div class="text-2xl font-bold text-yellow-400">{{ battlePower }}</div>
+              <div class="text-2xl font-bold text-highlight">{{ battlePower }}</div>
               <div class="text-xs text-ink-2">综合评分</div>
             </div>
-            
+
             <!-- 加成详情 -->
             <div class="space-y-1">
               <div class="flex justify-between text-xs">
                 <span class="text-ink-2">HP</span>
-                <span class="text-red-400 font-medium">+{{ character.nurtureData.battleEnhancements?.hp || 0 }}%</span>
+                <span class="text-danger font-medium">+{{ character.nurtureData.battleEnhancements?.hp || 0 }}%</span>
               </div>
               <div class="flex justify-between text-xs">
                 <span class="text-ink-2">ATK</span>
-                <span class="text-orange-400 font-medium">+{{ character.nurtureData.battleEnhancements?.atk || 0 }}%</span>
+                <span class="text-warning font-medium">+{{ character.nurtureData.battleEnhancements?.atk || 0 }}%</span>
               </div>
               <div class="flex justify-between text-xs">
                 <span class="text-ink-2">DEF</span>
-                <span class="text-blue-400 font-medium">+{{ character.nurtureData.battleEnhancements?.def || 0 }}%</span>
+                <span class="text-info font-medium">+{{ character.nurtureData.battleEnhancements?.def || 0 }}%</span>
               </div>
               <div class="flex justify-between text-xs">
                 <span class="text-ink-2">SP</span>
-                <span class="text-purple-400 font-medium">+{{ character.nurtureData.battleEnhancements?.sp || 0 }}%</span>
+                <span class="text-highlight font-medium">+{{ character.nurtureData.battleEnhancements?.sp || 0 }}%</span>
               </div>
               <div class="flex justify-between text-xs">
                 <span class="text-ink-2">SPD</span>
@@ -465,7 +417,7 @@ const battlePower = computed(() => {
         <div class="grid grid-cols-3 gap-4">
           <!-- 互动统计 -->
           <div class="bg-surface-2/30 rounded-lg p-4 text-center">
-            <div class="text-lg font-bold text-yellow-400 mb-1">{{ character.nurtureData.totalInteractions }}</div>
+            <div class="text-lg font-bold text-highlight mb-1">{{ character.nurtureData.totalInteractions }}</div>
             <div class="text-xs text-ink-2">总互动</div>
           </div>
           

@@ -155,7 +155,7 @@ onUnmounted(() => cancelAnimationFrame(raf));
 
 .scene {
   position: relative; width: 100%; height: min(64vh, 540px); overflow: hidden;
-  border-radius: var(--sk-radius, 0.75rem); border: 1px solid rgb(var(--c-line));
+  border-radius: var(--sk-radius-panel); border: 1px solid rgb(var(--c-line));
 }
 /* 场景为插画内容，用固定像素风配色（不随皮肤），类比卡面美术的固定色例外 */
 .sky { position: absolute; inset: 0; background: linear-gradient(#8ecae6 0%, #bde0fe 55%, #e8f5ff 100%); }

@@ -11,6 +11,7 @@ import { useAchievementsStore } from './stores/achievements';
 import { useAchievementsReadStore } from './stores/achievementsRead';
 import { DAILY_TASKS, WEEKLY_TASKS } from './config/dailyTasks';
 import OnboardingGuide from './components/OnboardingGuide.vue';
+import AppDialog from './components/AppDialog.vue';
 
 const userStore = useUserStore();
 const gameDataStore = useGameDataStore();
@@ -192,9 +193,6 @@ onMounted(() => {
                 <li><RouterLink to="/battle" class="nav-link">宅理论战</RouterLink></li>
                 <li><RouterLink to="/squad-battle" class="nav-link">小队战斗</RouterLink></li>
                 <li><RouterLink to="/nurture" class="nav-link">角色养成</RouterLink></li>
-                <!-- 家园页暂不在导航展示（代码与路由保留；SD 像素素材就绪后取消注释即可恢复）
-                <li><RouterLink to="/homestead" class="nav-link">🏠 家园</RouterLink></li>
-                -->
                 <li><RouterLink to="/minigames" class="nav-link">🎮 小游戏</RouterLink></li>
                 <li><RouterLink to="/settings" class="nav-link">设置</RouterLink></li>
             </ul>
@@ -220,6 +218,9 @@ onMounted(() => {
 
     <!-- E3-T1：首登引导遮罩（z-index 高于 header；内部 Teleport 到 body） -->
     <OnboardingGuide />
+
+    <!-- I5-T2：全站统一主题化弹窗（替代原生 confirm/alert；内部 Teleport 到 body） -->
+    <AppDialog />
 
   </div>
 </template>

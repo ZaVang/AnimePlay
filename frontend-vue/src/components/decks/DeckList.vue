@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import { useUserStore } from '@/stores/userStore';
 import { useGameDataStore } from '@/stores/gameDataStore';
+import { useDialog } from '@/composables/useDialog';
 
 const userStore = useUserStore();
 const gameDataStore = useGameDataStore();
+const { confirm } = useDialog();
 
 const getCoverImage = (deck: any) => {
   if (!deck.cover) {
@@ -17,8 +19,8 @@ const getCoverImage = (deck: any) => {
 
 const emit = defineEmits(['editDeck', 'newDeck']);
 
-const handleDeleteDeck = (deckName: string) => {
-  if (confirm(`确定要删除卡组 "${deckName}" 吗？此操作不可撤销。`)) {
+const handleDeleteDeck = async (deckName: string) => {
+  if (await confirm(`确定要删除卡组 "${deckName}" 吗？此操作不可撤销。`, { confirmText: '删除', danger: true })) {
     userStore.deleteDeck(deckName);
   }
 };

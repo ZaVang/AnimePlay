@@ -40,9 +40,10 @@ const router = createRouter({
       component: () => import('../views/SettingsView.vue')
     },
     {
+      // I5-T4：家园页完整冻结——导航已藏 + 路由 redirect 到首页，手敲 /homestead 不再渲染半成品。
+      // component import 已删（HomesteadView 移出构建产物）；view 文件保留（冻结不删除，SD 素材就绪可恢复）。
       path: '/homestead',
-      name: 'homestead',
-      component: () => import('../views/HomesteadView.vue')
+      redirect: '/'
     },
     {
       path: '/minigames',

@@ -1,5 +1,12 @@
 import { describe, it, expect } from 'vitest';
-import { buildTasteReport, recommendFromTaste } from './tasteProfile';
+import {
+  buildTasteReport,
+  buildTasteRadar,
+  recommendFromTaste,
+  watchedMilestone,
+  WATCHED_TIERS,
+  pickNicheGems,
+} from './tasteProfile';
 import type { AnimeCard, Rarity } from '@/types/card';
 
 function anime(
@@ -121,6 +128,110 @@ describe('buildTasteReport', () => {
   });
 });
 
+describe('buildTasteRadar', () => {
+  it('5 条轴，全部 0–100 整数，key/顺序稳定', () => {
+    const r = buildTasteReport(
+      [anime(1, { rating_score: 8, rating_total: 100, synergy_tags: ['百合', '校园'], date: '2015-01-01' })],
+      ALL,
+    );
+    const axes = buildTasteRadar(r);
+    expect(axes.map(a => a.key)).toEqual(['niche', 'coverage', 'rating', 'specialization', 'diversity']);
+    for (const a of axes) {
+      expect(a.value).toBeGreaterThanOrEqual(0);
+      expect(a.value).toBeLessThanOrEqual(100);
+      expect(Number.isInteger(a.value)).toBe(true);
+    }
+  });
+
+  it('小众/广度轴直接取 nicheScore/coverage', () => {
+    const r = buildTasteReport([anime(1, { rating_total: 100 }), anime(2, { rating_total: 200 })], ALL);
+    const axes = buildTasteRadar(r);
+    expect(axes.find(a => a.key === 'niche')!.value).toBe(r.nicheScore);
+    expect(axes.find(a => a.key === 'coverage')!.value).toBe(r.coverage);
+  });
+
+  it('ratingDelta 为 null（无评分样本）→ 高分偏好轴取中性 50', () => {
+    // 已看番无 rating_score → avgRating=null → ratingDelta=null
+    const r = buildTasteReport([anime(2001, { synergy_tags: ['奇幻'] })], ALL);
+    expect(r.ratingDelta).toBeNull();
+    const axes = buildTasteRadar(r);
+    expect(axes.find(a => a.key === 'rating')!.value).toBe(50);
+  });
+
+  it('题材专精轴取首位题材占比，空集取 0', () => {
+    const empty = buildTasteReport([], ALL);
+    expect(buildTasteRadar(empty).find(a => a.key === 'specialization')!.value).toBe(0);
+    const r = buildTasteReport(
+      [anime(1, { synergy_tags: ['战斗'] }), anime(2, { synergy_tags: ['战斗'] })],
+      ALL,
+    );
+    expect(buildTasteRadar(r).find(a => a.key === 'specialization')!.value).toBe(r.topTags[0].pct);
+  });
+
+  it('空报告所有轴不报错且在 0–100', () => {
+    const axes = buildTasteRadar(buildTasteReport([], ALL));
+    expect(axes).toHaveLength(5);
+    for (const a of axes) {
+      expect(a.value).toBeGreaterThanOrEqual(0);
+      expect(a.value).toBeLessThanOrEqual(100);
+    }
+  });
+});
+
+describe('pickNicheGems', () => {
+  // 全库：评分 6~9.5，评价人数 10~2000（覆盖无效样本 / 冷门佳作 / 大众番）
+  // 全库评价人数（含字段者）升序：[30,55,65,70,90,1500,1800,2000]，length=8。
+  // 人气百分位 = (≤total 的部数)/8；maxPopularityPct 默认 0.6 → 百分位 > 0.6（即 ≥5/8）剔除为大众。
+  const POOL: AnimeCard[] = [
+    anime(1, { rating_score: 9.0, rating_total: 30 }),   // 高分但评价人数 < 50 → 剔除（无效样本）
+    anime(2, { rating_score: 9.2, rating_total: 55 }),   // 高分 + 最冷门(pct=2/8) → 应入选
+    anime(3, { rating_score: 8.5, rating_total: 65 }),   // 高分 + 冷门(pct=3/8) → 应入选
+    anime(4, { rating_score: 6.5, rating_total: 70 }),   // 低分 → 剔除（非佳作）
+    anime(5, { rating_score: 9.4, rating_total: 1800 }), // 高分但大众(pct=7/8) → 剔除
+    anime(6, { rating_score: 8.0, rating_total: 90 }),   // 中高分 + 偏冷门(pct=5/8=0.625>0.6) → 剔除（大众边界）
+    anime(7, { rating_score: 8.8, rating_total: 1500 }), // 高分但大众(pct=6/8) → 剔除
+    anime(8, { rating_score: 7.5, rating_total: 2000 }), // 高分但最大众(pct=8/8) → 剔除
+  ];
+
+  it('排除已拥有/已看，剔除无效样本/烂番/大众番', () => {
+    const gems = pickNicheGems(POOL, new Set<number>());
+    const ids = gems.map(g => g.anime.id);
+    expect(ids).not.toContain(1); // 评价人数不足
+    expect(ids).not.toContain(4); // 低分
+    expect(ids).not.toContain(5); // 大众
+    expect(ids).not.toContain(7); // 大众
+    expect(ids).toContain(2);
+    expect(ids).toContain(3);
+  });
+
+  it('excludeIds（已拥有∪已看）里的番不出现', () => {
+    const gems = pickNicheGems(POOL, new Set<number>([2, 3]));
+    const ids = gems.map(g => g.anime.id);
+    expect(ids).not.toContain(2);
+    expect(ids).not.toContain(3);
+  });
+
+  it('按 rating_score × (1 − 人气百分位) 降序', () => {
+    const gems = pickNicheGems(POOL, new Set<number>());
+    for (let i = 1; i < gems.length; i++) {
+      expect(gems[i - 1].score).toBeGreaterThanOrEqual(gems[i].score);
+    }
+    // 最冷门高分的 2 号应排在大众化的前面
+    expect(gems[0].anime.id).toBe(2);
+  });
+
+  it('limit 截断、空库不报错', () => {
+    expect(pickNicheGems(POOL, new Set<number>(), { limit: 2 })).toHaveLength(2);
+    expect(pickNicheGems([], new Set<number>())).toEqual([]);
+  });
+
+  it('缺评分/评价人数字段的番被跳过', () => {
+    const withMissing = [...POOL, anime(99, { synergy_tags: ['x'] })]; // 无 rating_score/total
+    const gems = pickNicheGems(withMissing, new Set<number>());
+    expect(gems.map(g => g.anime.id)).not.toContain(99);
+  });
+});
+
 describe('recommendFromTaste', () => {
   it('空已看集 → 无推荐', () => {
     expect(recommendFromTaste([], ALL)).toEqual([]);
@@ -160,5 +271,47 @@ describe('recommendFromTaste', () => {
     const watched = [anime(901, { synergy_tags: ['奇幻'] })];
     const pool = [watched[0], ...Array.from({ length: 10 }, (_, i) => anime(1000 + i, { synergy_tags: ['奇幻'], rating_score: 7 + i * 0.1 }))];
     expect(recommendFromTaste(watched, pool, 3)).toHaveLength(3);
+  });
+});
+
+describe('watchedMilestone', () => {
+  it('0 部 → 萌新段位，下一段位为第二档阈值', () => {
+    const m = watchedMilestone(0);
+    expect(m.count).toBe(0);
+    expect(m.title).toBe(WATCHED_TIERS[0].title);
+    expect(m.nextThreshold).toBe(WATCHED_TIERS[1].threshold);
+    expect(m.toNext).toBe(WATCHED_TIERS[1].threshold);
+    expect(m.progressPct).toBe(0);
+  });
+
+  it('正好到某档阈值 → 进阶该档，区间进度归零', () => {
+    const t2 = WATCHED_TIERS[2]; // 30
+    const m = watchedMilestone(t2.threshold);
+    expect(m.title).toBe(t2.title);
+    expect(m.nextThreshold).toBe(WATCHED_TIERS[3].threshold);
+    expect(m.progressPct).toBe(0);
+  });
+
+  it('段位区间内进度百分比正确', () => {
+    // 入坑(10) → 资深(30) 区间，看了 20 部 = 50%
+    const m = watchedMilestone(20);
+    expect(m.title).toBe(WATCHED_TIERS[1].title);
+    expect(m.toNext).toBe(10);
+    expect(m.progressPct).toBe(50);
+  });
+
+  it('到顶段位 → nextThreshold null、进度 100、toNext 0', () => {
+    const top = WATCHED_TIERS[WATCHED_TIERS.length - 1];
+    const m = watchedMilestone(top.threshold + 50);
+    expect(m.title).toBe(top.title);
+    expect(m.nextThreshold).toBeNull();
+    expect(m.toNext).toBe(0);
+    expect(m.progressPct).toBe(100);
+  });
+
+  it('负数/小数防御：归一为非负整数', () => {
+    expect(watchedMilestone(-5).count).toBe(0);
+    expect(watchedMilestone(12.9).count).toBe(12);
+    expect(watchedMilestone(12.9).title).toBe(WATCHED_TIERS[1].title);
   });
 });

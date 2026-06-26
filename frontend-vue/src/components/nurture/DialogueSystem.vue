@@ -398,7 +398,7 @@ function getInitialGreeting() {
           <!-- 用户消息 -->
           <div v-if="message.speaker === 'user'" class="flex justify-end">
             <div class="max-w-xs lg:max-w-md">
-              <div class="bg-blue-600 text-white p-3 rounded-2xl rounded-br-md">
+              <div class="bg-info text-on-accent p-3 rounded-2xl rounded-br-md">
                 {{ message.text }}
               </div>
               <div class="text-xs text-ink-2 mt-1 text-right">{{ formatTime(message.timestamp) }}</div>
@@ -465,12 +465,12 @@ function getInitialGreeting() {
             @keyup.enter="sendFreeMessage"
             :disabled="isTyping"
             placeholder="输入你想说的话..."
-            class="flex-1 px-4 py-2 bg-surface-2 text-ink rounded-lg border border-line focus:border-blue-500 focus:outline-none disabled:opacity-50"
+            class="flex-1 px-4 py-2 bg-surface-2 text-ink rounded-lg border border-line focus:border-accent focus:outline-none disabled:opacity-50"
           >
           <button
             @click="sendFreeMessage"
             :disabled="!userInput.trim() || isTyping"
-            class="px-6 py-2 bg-blue-600 hover:bg-blue-700 disabled:opacity-45 text-white rounded-lg transition-colors disabled:cursor-not-allowed"
+            class="px-6 py-2 bg-info hover:opacity-90 disabled:opacity-45 text-on-accent rounded-lg transition-colors disabled:cursor-not-allowed"
           >
             发送
           </button>

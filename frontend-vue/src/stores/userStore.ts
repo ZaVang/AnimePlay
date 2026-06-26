@@ -99,12 +99,13 @@ export const useUserStore = defineStore('user', () => {
 
   async function drawCards(gachaType: 'anime' | 'character', count: number): Promise<DrawnCard[] | null> {
     if (!profile.isLoggedIn) {
-      alert('请先登录！');
+      // 脱离组件上下文：降级为非阻塞 toast（复用 addLog 通知通道），不弹原生 alert。
+      profile.addLog('请先登录！', 'warning');
       return null;
     }
     const ticketType: CurrencyKey = gachaType === 'anime' ? 'animeGachaTickets' : 'characterGachaTickets';
     if (profile.core[ticketType] < count) {
-      alert(`${gachaType === 'anime' ? '动画券' : '角色券'}不足！`);
+      profile.addLog(`${gachaType === 'anime' ? '动画券' : '角色券'}不足！`, 'warning');
       return null;
     }
 
@@ -155,7 +156,8 @@ export const useUserStore = defineStore('user', () => {
 
   function purchaseShopItem(item: ShopItem) {
     if (!profile.isLoggedIn) {
-      alert('请先登录！');
+      // 脱离组件上下文：降级为非阻塞 toast。
+      profile.addLog('请先登录！', 'warning');
       return Promise.reject(new Error('未登录'));
     }
     // S6: 每日限购真实计数

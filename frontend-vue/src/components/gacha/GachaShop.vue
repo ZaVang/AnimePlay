@@ -2,12 +2,14 @@
 import { computed, ref } from 'vue';
 import { useUserStore } from '@/stores/userStore';
 import { getRegularShopItems, type ShopItem } from '@/utils/gachaRotation';
+import { useDialog } from '@/composables/useDialog';
 
 const props = defineProps<{
   gachaType: 'anime' | 'character';
 }>();
 
 const userStore = useUserStore();
+const { confirm } = useDialog();
 
 // 商店物品（非卡牌：抽卡券 / 经验药水 / 知识点包）。
 // 知识点→卡牌已统一收口到「图鉴定向解锁」，商店不再直购卡牌。
@@ -24,7 +26,7 @@ async function handlePurchase(item: ShopItem) {
     if (item.description) {
         confirmMessage += `\n${item.description}`;
     }
-    if (!confirm(confirmMessage)) return;
+    if (!await confirm(confirmMessage, { confirmText: '购买' })) return;
 
     // 检查知识点是否足够
     if (userStore.playerState.knowledgePoints < item.cost) {
