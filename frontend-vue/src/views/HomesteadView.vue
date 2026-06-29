@@ -1,14 +1,14 @@
 <script setup lang="ts">
 /**
- * 家园（evolution-12）：抽到的 UR/HR 角色像素小人在地面上左右自动走动（桌宠风）。
- * 像素 sprite 由 backend/pixelize_characters.py 预生成在 data/images/character/pixel/。
- * 走动用单个 rAF 循环驱动（卸载时取消）；每只到边界折返、按朝向镜像、独立相位 bob。
+ * 家园（evolution-12 / S13-A）：抽到的 UR/HR 角色在地面上左右自动走动（桌宠风）。
+ * 桌宠图优先用 Q版 chibi（data/images/character/chibi/<id>.png，增量填充），
+ * 缺失自动回退原立绘 → 连原立绘都缺才隐藏；走动用单个 rAF 循环驱动（卸载时取消）。
  */
 import { ref, computed, watch, onMounted, onUnmounted } from 'vue';
 import { useUserStore } from '@/stores/userStore';
 import { useGameDataStore } from '@/stores/gameDataStore';
 import { useCollectionStore } from '@/stores/collection';
-import { assetUrl } from '@/utils/assetUrl';
+import { chibiImageSrc, fullImageSrc } from '@/utils/cardImage';
 import type { CharacterCard } from '@/types/card';
 import CardDetailModal from '@/components/CardDetailModal.vue';
 
@@ -26,12 +26,12 @@ interface Pet {
   speed: number;   // %/秒
   delay: string;   // bob 动画相位错开
   pause: number;   // 剩余停顿秒数（偶尔站住）
-  hidden: boolean; // sprite 缺失则隐藏
+  hidden: boolean; // chibi + 原立绘都缺才隐藏（终极兜底）
 }
 
 const pets = ref<Pet[]>([]);
 
-/** 已拥有且有像素 sprite（UR/HR）的角色，随机取若干只入园。 */
+/** 已拥有的 UR/HR 角色，随机取若干只入园。 */
 function buildPets() {
   if (!userStore.isLoggedIn) { pets.value = []; return; }
   const owned = gameData.allCharacterCards.filter(
@@ -56,11 +56,15 @@ function buildPets() {
 
 const visibleCount = computed(() => pets.value.filter(p => !p.hidden).length);
 
-function pixelSrc(id: number): string {
-  return assetUrl(`/data/images/character/pixel/${id}.png`);
-}
-function onSpriteError(pet: Pet) {
-  pet.hidden = true;
+/** 桌宠图三级兜底：Q版 chibi（缺）→ 原立绘（缺）→ 隐藏这只。带 guard 防 onerror 死循环。 */
+function onPetImgError(e: Event, pet: Pet) {
+  const img = e.target as HTMLImageElement;
+  if (!img.dataset.fullFallback) {
+    img.dataset.fullFallback = '1';            // chibi 缺失 → 回退原立绘
+    img.src = fullImageSrc('character', pet.id);
+  } else {
+    pet.hidden = true;                         // 原立绘也缺失 → 隐藏
+  }
 }
 
 // --- 行走循环 ---
@@ -135,7 +139,7 @@ onUnmounted(() => cancelAnimationFrame(raf));
         <span class="pet-name">{{ pet.name }}</span>
         <div class="facer" :style="{ transform: `scaleX(${pet.dir})` }">
           <div class="bob" :style="{ animationDelay: pet.delay }">
-            <img :src="pixelSrc(pet.id)" alt="" @error="onSpriteError(pet)" />
+            <img :src="chibiImageSrc(pet.id)" alt="" @error="onPetImgError($event, pet)" />
           </div>
         </div>
         <div class="pet-shadow"></div>
@@ -180,7 +184,8 @@ onUnmounted(() => cancelAnimationFrame(raf));
 }
 .facer { transform-origin: bottom center; }
 .bob { animation: petbob .28s steps(1) infinite alternate; }
-.bob img { height: 92px; width: auto; display: block; image-rendering: pixelated; filter: drop-shadow(0 0 0 transparent); }
+/* chibi/原立绘都是平滑图（非像素美术），不用 image-rendering: pixelated */
+.bob img { height: 92px; width: auto; display: block; }
 .pet-shadow {
   position: absolute; bottom: -6px; left: 50%; width: 38px; height: 10px; margin-left: -19px;
   border-radius: 50%; background: rgb(0 0 0 / .18);

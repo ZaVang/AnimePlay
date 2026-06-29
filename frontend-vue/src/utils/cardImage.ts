@@ -16,6 +16,16 @@ export function thumbImageSrc(type: CardDomain, id: number): string {
   return assetUrl(`/data/images/${type}/thumb/${id}.jpg`);
 }
 
+/**
+ * 角色 Q版 chibi 头像（家园桌宠用）。约定路径 `data/images/character/chibi/<id>.png`
+ * ——`thumb/` 的兄弟目录，Flask `/data/<path>` 路由直接服务、无需后端改动；增量填充
+ * （codex 手工生成少量高稀有度先丢进去）。该目录 gitignore（同 data/images），随部署/OSS 走。
+ * 缺图时调用方用原立绘 `fullImageSrc('character', id)` 作 @error 兜底（见 HomesteadView）。
+ */
+export function chibiImageSrc(id: number): string {
+  return assetUrl(`/data/images/character/chibi/${id}.png`);
+}
+
 /** <img @error> 处理：缩略图缺失（如新加但未生成）时回退到原图，带 guard 防循环。 */
 export function onThumbError(e: Event): void {
   const img = e.target as HTMLImageElement;

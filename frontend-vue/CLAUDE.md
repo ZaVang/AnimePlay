@@ -25,7 +25,7 @@ Vue 3 + TypeScript + Pinia + TailwindCSS, built with Vite.
 
 **Startup（S9 起非阻塞）**: `main.ts` 立即挂载；主数据由 `App.onMounted` 触发 `gameDataStore.fetchGameData()`（幂等 + 30s 超时），App 在 `isReady` 前渲染加载态/错误重试，就绪才渲染路由——视图可以继续假定主数据已在。后端服务时剥离 `main_characters` 并开 gzip（首屏 API ~317KB）；图片/哈希产物长缓存；千级大列表（角色 ~1.4k）走 `VirtualGrid`（列数 ≥1 钳制 + ResizeObserver）；主数据一次性拉全（`gameDataStore` 请求 `?limit=100000`，后端默认仅切 50）；**小网格缩略图**：源图 500–1536px，小格子（图鉴/品味/锐评 ~72–150px）改用 `data/images/<type>/thumb/<id>.jpg`（~300px，`backend/generate_thumbnails.py` 预生成，缺失 onerror 回退原图；helper 在 `utils/cardImage.ts`）——避免 8–21× 缩放混叠（发"锐"）+ 省带宽。**新增图片后重跑 generate_thumbnails.py**（幂等）；组件内多步 setTimeout 必须登记并在卸载时清除（参照 SquadBattleView 的 `schedule()`）。
 
-**8 feature modules** (routes in `router/index.ts`, all lazy-loaded except Home):
+**9 feature modules** (routes in `router/index.ts`, all lazy-loaded except Home):
 
 | Route | View | Module | Doc |
 |---|---|---|---|
@@ -35,6 +35,7 @@ Vue 3 + TypeScript + Pinia + TailwindCSS, built with Vite.
 | `/battle` | BattleView | 宅理论战（卡牌辩论） | `docs/战斗系统.md` |
 | `/squad-battle` | SquadBattleView | 挑战塔（小队数值战） | `docs/挑战塔系统.md` |
 | `/nurture` | NurtureView | 角色养成 | `docs/角色养成系统.md` |
+| `/homestead` | HomesteadView | 家园（桌宠；S13 起做基地养成 hub） | `docs/FUTURE.md` S13 |
 | `/minigames` | MiniGamesView | 小游戏中心（猜角色/高低牌/番剧问答/每日挑战） | `docs/小游戏系统.md` |
 | `/settings` | SettingsView | 设置/主题 | `docs/主题系统.md` |
 
