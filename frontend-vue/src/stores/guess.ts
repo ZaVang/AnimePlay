@@ -2,6 +2,7 @@
 import { defineStore } from 'pinia';
 import { ref, computed } from 'vue';
 import { useGameDataStore } from './gameDataStore';
+import { assetUrl } from '@/utils/assetUrl';
 import type { CharacterCard, Rarity } from '@/types/card';
 
 // 游戏阶段配置
@@ -109,7 +110,7 @@ export const useGuessStore = defineStore('guess', () => {
   function getCharacterImageUrl(): string {
     if (!currentCharacter.value) return '';
     // 使用本地图片路径（.jpg 格式）
-    return `/data/images/character/${currentCharacter.value.id}.jpg`;
+    return assetUrl(`/data/images/character/${currentCharacter.value.id}.jpg`);
   }
 
   // 根据稀有度随机选择角色

@@ -10,6 +10,7 @@ import { useGameDataStore } from '@/stores/gameDataStore';
 import { useMiniGamesStore } from '@/stores/minigames/higherLower';
 import { useCollectionStore } from '@/stores/collection';
 import { thumbImageSrc, onThumbError } from '@/utils/cardImage';
+import { assetUrl } from '@/utils/assetUrl';
 import type { AnimeCard, CharacterCard, Card } from '@/types/card';
 import CardDetailModal from '@/components/CardDetailModal.vue';
 import { useDialog } from '@/composables/useDialog';
@@ -77,7 +78,7 @@ function openDetail(id: number) {
   if (c) detailCard.value = c;
 }
 function imageSrc(id: number): string {
-  return `/data/images/${domain.value}/${id}.jpg`; // 原图：导出用
+  return assetUrl(`/data/images/${domain.value}/${id}.jpg`); // 原图：导出用
 }
 function thumbSrc(id: number): string {
   return thumbImageSrc(domain.value, id); // 缩略图：网格显示用

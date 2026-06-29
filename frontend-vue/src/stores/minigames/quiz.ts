@@ -5,6 +5,7 @@
  */
 import type { RNG } from '@/engine';
 import type { AnimeCard, CharacterCard } from '@/types/card';
+import { assetUrl } from '@/utils/assetUrl';
 
 export type QuizType = 'characterAnime' | 'animeYear' | 'highestRated' | 'mostPopularChar';
 
@@ -65,7 +66,7 @@ function genCharacterAnime(pools: QuizPools, rng: RNG): QuizQuestion | null {
     prompt: `「${subject.name}」出自下面哪部作品？`,
     options,
     correctIndex: options.indexOf(correct),
-    subjectImage: `/data/images/character/${subject.id}.jpg`,
+    subjectImage: assetUrl(`/data/images/character/${subject.id}.jpg`),
     explanation: `「${subject.name}」出自《${correct}》。`,
   };
 }
@@ -90,7 +91,7 @@ function genAnimeYear(pools: QuizPools, rng: RNG): QuizQuestion | null {
     prompt: `《${subject.name}》是哪一年放送的？`,
     options,
     correctIndex: options.indexOf(String(correct)),
-    subjectImage: `/data/images/anime/${subject.id}.jpg`,
+    subjectImage: assetUrl(`/data/images/anime/${subject.id}.jpg`),
     explanation: `《${subject.name}》于 ${correct} 年放送。`,
   };
 }
@@ -107,7 +108,7 @@ function genHighestRated(pools: QuizPools, rng: RNG): QuizQuestion | null {
     prompt: '下列哪部番剧的 Bangumi 评分最高？',
     options,
     correctIndex: options.indexOf(best.name),
-    optionImages: four.map(a => `/data/images/anime/${a.id}.jpg`),
+    optionImages: four.map(a => assetUrl(`/data/images/anime/${a.id}.jpg`)),
     explanation: `《${best.name}》评分最高（${best.rating_score}）。`,
   };
 }
@@ -124,7 +125,7 @@ function genMostPopularChar(pools: QuizPools, rng: RNG): QuizQuestion | null {
     prompt: '下列哪个角色的人气最高？',
     options,
     correctIndex: options.indexOf(best.name),
-    optionImages: four.map(c => `/data/images/character/${c.id}.jpg`),
+    optionImages: four.map(c => assetUrl(`/data/images/character/${c.id}.jpg`)),
     explanation: `${best.name} 人气最高（人气值 ${best.popularity_score}）。`,
   };
 }

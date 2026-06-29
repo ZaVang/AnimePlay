@@ -7,6 +7,7 @@
 import { ref, computed, onUnmounted } from 'vue';
 import { useMiniGamesStore, HL_CATEGORIES, getCategory, streakReward, type HLCategoryId, type HLGuess } from '@/stores/minigames/higherLower';
 import { useUserStore } from '@/stores/userStore';
+import { assetUrl } from '@/utils/assetUrl';
 
 const store = useMiniGamesStore();
 const userStore = useUserStore();
@@ -24,7 +25,7 @@ const finalScore = computed(() => streakReward(store.streak));
 
 function imgUrl(card: { id: number } | null): string {
   if (!card) return '';
-  return `/data/images/${cat.value.cardType}/${card.id}.jpg`;
+  return assetUrl(`/data/images/${cat.value.cardType}/${card.id}.jpg`);
 }
 
 function start(id: HLCategoryId) {

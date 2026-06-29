@@ -13,6 +13,7 @@ import {
   type BattleStats,
 } from '@/engine';
 import { CHARACTER_IMAGE_POOL } from '@/utils/imageUtils';
+import { assetUrl } from '@/utils/assetUrl';
 import CharacterSelectModal from '@/components/battle/CharacterSelectModal.vue';
 import type { CharacterCard } from '@/types/card';
 
@@ -713,7 +714,7 @@ onBeforeUnmount(() => {
                       :src="gameDataStore.getCharacterCardById(squad.members[position - 1]!)?.image_path"
                       :alt="gameDataStore.getCharacterCardById(squad.members[position - 1]!)?.name"
                       class="w-full h-full object-cover object-top"
-                      @error="($event.target as HTMLImageElement).src = '/data/images/character/77.jpg'"
+                      @error="($event.target as HTMLImageElement).src = assetUrl('/data/images/character/77.jpg')"
                     >
                     <!-- 位置编号 -->
                     <div class="absolute top-0 left-0 w-4 h-4 bg-black/70 rounded-br text-white text-xs flex items-center justify-center">
@@ -804,7 +805,7 @@ onBeforeUnmount(() => {
                         :alt="member.character.name"
                         class="w-full h-full object-cover object-top"
                         :class="member.isDefeated ? 'grayscale' : ''"
-                        @error="($event.target as HTMLImageElement).src = '/data/images/character/77.jpg'"
+                        @error="($event.target as HTMLImageElement).src = assetUrl('/data/images/character/77.jpg')"
                       >
                     </div>
                     <!-- 位置编号 -->
@@ -863,7 +864,7 @@ onBeforeUnmount(() => {
                         :alt="member.character.name"
                         class="w-full h-full object-cover object-top"
                         :class="member.isDefeated ? 'grayscale' : ''"
-                        @error="($event.target as HTMLImageElement).src = '/data/images/character/77.jpg'"
+                        @error="($event.target as HTMLImageElement).src = assetUrl('/data/images/character/77.jpg')"
                       >
                     </div>
                     <!-- 位置编号 -->

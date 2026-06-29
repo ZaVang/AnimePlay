@@ -4,14 +4,16 @@
  * 缺失时 onerror 回退原图。原图（详情/大卡/导出）仍用 fullImageSrc。
  * 缩略图由 `backend/generate_thumbnails.py` 预生成在 `data/images/<type>/thumb/`。
  */
+import { assetUrl } from './assetUrl';
+
 export type CardDomain = 'anime' | 'character';
 
 export function fullImageSrc(type: CardDomain, id: number): string {
-  return `/data/images/${type}/${id}.jpg`;
+  return assetUrl(`/data/images/${type}/${id}.jpg`);
 }
 
 export function thumbImageSrc(type: CardDomain, id: number): string {
-  return `/data/images/${type}/thumb/${id}.jpg`;
+  return assetUrl(`/data/images/${type}/thumb/${id}.jpg`);
 }
 
 /** <img @error> 处理：缩略图缺失（如新加但未生成）时回退到原图，带 guard 防循环。 */

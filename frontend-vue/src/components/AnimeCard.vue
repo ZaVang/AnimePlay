@@ -2,6 +2,7 @@
 import { computed, ref } from 'vue';
 import { GAME_CONFIG } from '@/config/gameConfig';
 import { useUserStore } from '@/stores/userStore';
+import { assetUrl } from '@/utils/assetUrl';
 import type { AnimeCard } from '@/types/card';
 
 const props = defineProps<{
@@ -27,7 +28,7 @@ const imageSrc = computed(() => {
   if (imageError.value) {
     return props.anime.image_path;
   }
-  return `/data/images/anime/${props.anime.id}.jpg`;
+  return assetUrl(`/data/images/anime/${props.anime.id}.jpg`);
 });
 
 function onImageError(event: Event) {

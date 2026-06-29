@@ -1,6 +1,7 @@
 /**
  * 图片相关工具函数
  */
+import { assetUrl } from './assetUrl';
 
 // 可用的角色图片ID列表（从实际文件系统获取）
 const AVAILABLE_CHARACTER_IMAGES = [
@@ -11,7 +12,7 @@ const AVAILABLE_CHARACTER_IMAGES = [
 
 /** AI 生成角色可用的头像路径池（传给 engine/squad 的生成函数）。 */
 export const CHARACTER_IMAGE_POOL: readonly string[] = AVAILABLE_CHARACTER_IMAGES.map(
-  id => `/data/images/character/${id}.jpg`,
+  id => assetUrl(`/data/images/character/${id}.jpg`),
 );
 
 /**

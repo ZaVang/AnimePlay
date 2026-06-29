@@ -8,6 +8,7 @@ import { ref, computed, watch, onMounted, onUnmounted } from 'vue';
 import { useUserStore } from '@/stores/userStore';
 import { useGameDataStore } from '@/stores/gameDataStore';
 import { useCollectionStore } from '@/stores/collection';
+import { assetUrl } from '@/utils/assetUrl';
 import type { CharacterCard } from '@/types/card';
 import CardDetailModal from '@/components/CardDetailModal.vue';
 
@@ -56,7 +57,7 @@ function buildPets() {
 const visibleCount = computed(() => pets.value.filter(p => !p.hidden).length);
 
 function pixelSrc(id: number): string {
-  return `/data/images/character/pixel/${id}.png`;
+  return assetUrl(`/data/images/character/pixel/${id}.png`);
 }
 function onSpriteError(pet: Pet) {
   pet.hidden = true;

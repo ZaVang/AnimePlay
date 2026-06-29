@@ -8,6 +8,7 @@ import { animeDefaultEffects } from '@/data/animeDefaultEffects';
 import { characterDefaultSkills } from '@/data/characterDefaultSkills';
 import { characterSkillsMap } from '@/data/characterSkillsMap';
 import { buildContentIndex } from '@/utils/contentIndex';
+import { assetUrl } from '@/utils/assetUrl';
 
 export const useGameDataStore = defineStore('gameData', () => {
   // --- STATE ---
@@ -67,7 +68,7 @@ export const useGameDataStore = defineStore('gameData', () => {
       const characterData: { characters?: CharacterCard[] } = await characterResponse.json();
 
       const processCardImagePath = <T extends AnimeCard | CharacterCard>(card: T, type: 'anime' | 'character'): T => {
-        const imagePath = `/data/images/${type}/${card.id}.jpg`;
+        const imagePath = assetUrl(`/data/images/${type}/${card.id}.jpg`);
         return {
             ...card,
             image_path: imagePath,

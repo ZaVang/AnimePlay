@@ -2,6 +2,7 @@
 import { ref, computed } from 'vue';
 import { useUserStore } from '@/stores/userStore';
 import { useGameDataStore } from '@/stores/gameDataStore';
+import { assetUrl } from '@/utils/assetUrl';
 import VirtualGrid from '@/components/VirtualGrid.vue';
 import type { CharacterCard } from '@/types/card';
 
@@ -136,7 +137,7 @@ function handleBackdropClick(event: MouseEvent) {
                   :src="gameDataStore.getCharacterCardById(currentCharacterId)?.image_path"
                   :alt="gameDataStore.getCharacterCardById(currentCharacterId)?.name"
                   class="w-full h-full object-cover object-top"
-                  @error="($event.target as HTMLImageElement).src = '/data/images/character/77.jpg'"
+                  @error="($event.target as HTMLImageElement).src = assetUrl('/data/images/character/77.jpg')"
                 >
               </div>
               <div>
@@ -199,7 +200,7 @@ function handleBackdropClick(event: MouseEvent) {
                 :src="character.image_path"
                 :alt="character.name"
                 class="w-full h-full object-cover object-top"
-                @error="($event.target as HTMLImageElement).src = '/data/images/character/77.jpg'"
+                @error="($event.target as HTMLImageElement).src = assetUrl('/data/images/character/77.jpg')"
               >
               
               <!-- 稀有度背景 -->

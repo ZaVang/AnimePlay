@@ -2,6 +2,7 @@
 import { computed, ref } from 'vue';
 import { GAME_CONFIG } from '@/config/gameConfig';
 import { useUserStore } from '@/stores/userStore';
+import { assetUrl } from '@/utils/assetUrl';
 
 const props = defineProps<{
   character: {
@@ -32,7 +33,7 @@ const imageSrc = computed(() => {
     return props.character.image_path;
   }
   // 优先尝试本地图片
-  return `/data/images/character/${props.character.id}.jpg`;
+  return assetUrl(`/data/images/character/${props.character.id}.jpg`);
 });
 
 function onImageError(event: Event) {
