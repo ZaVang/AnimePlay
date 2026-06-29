@@ -26,6 +26,17 @@ export function chibiImageSrc(id: number): string {
   return assetUrl(`/data/images/character/chibi/${id}.png`);
 }
 
+/**
+ * 角色四向行走表（家园俯视广场用）。约定 `data/images/character/sprite/<id>.png`：
+ * 3 列(行走帧) × 4 行(朝向：下/上/左/右)，单格 48×64、透明底（RPG-Maker 模板）。
+ * 与 chibi 同为 `thumb/` 的兄弟目录，Flask `/data/<path>` 直接服务、随 data/images 一起 gitignore，
+ * 随部署/OSS（assetUrl offload）走。增量填充——缺表的角色由调用方回退 chibi→原立绘静态图
+ * （见 HomesteadView 的 sprite 探测 + 三级兜底）。
+ */
+export function spriteSheetSrc(id: number): string {
+  return assetUrl(`/data/images/character/sprite/${id}.png`);
+}
+
 /** <img @error> 处理：缩略图缺失（如新加但未生成）时回退到原图，带 guard 防循环。 */
 export function onThumbError(e: Event): void {
   const img = e.target as HTMLImageElement;

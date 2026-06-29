@@ -28,7 +28,7 @@
 |---|---|---|---|
 | S0–S10 | 重构主线（文档/测试/engine 抽取/拆 store/功能闭环/视觉/技能/性能/安全） | ✅ | 已完成 → 详见 [HISTORY.md](HISTORY.md) |
 | — | 产品进化层 Evo-1..Evo-9 + 战斗可读性还债 + 2026-06-24 产品循环 | ✅ | 已完成 → 详见 [HISTORY.md](HISTORY.md) |
-| S13 | 家园综合系统（基地养成 + 挑战塔闭环 + 养成重构） | 🔄 | A/B/C1 已落地；C2 装备全栈进行中；A2 视觉搁置待样本图 |
+| S13 | 家园综合系统（基地养成 + 挑战塔闭环 + 养成重构） | 🔄 | A/B/C1/C2 已落地并合并；A2 视觉（俯视广场 + 四向 sprite）已落地（2026-06-29） |
 | S11 | React 视图迁移 | ☐ | 演进 |
 | S12 | 权威后端 & 多人/PvP/排行榜 | ☐ | 终点 |
 
@@ -60,10 +60,10 @@
 - [x] 解冻：`router/index.ts` 恢复 `/homestead` lazy 路由、`App.vue` 恢复导航、补回 `frontend-vue/CLAUDE.md` 模块表那行。
 - **Exit**：`/homestead` 可访问；拥有的 UR/HR 角色用立绘在场景走动 + 点击看详情；chibi PNG 丢进目录即自动替换。type-check/test/build 通过。
 
-### A2 · 家园 2.5D 视觉升级（平面俯视 + 四向序列帧，表现层）— ⏸ 搁置中
-> 纯表现层、零存档、与 B/C 玩法正交，可任意时机独立推进。**当前搁置**：等一张角色生成样本图来校准精灵图规格（下方数字按样本定）后，再写 `docs/家园精灵图规格.md` 落地。
+### A2 · 家园 2.5D 视觉升级（平面俯视 + 四向序列帧，表现层）— ✅ 已落地（2026-06-29）
+> 纯表现层、零存档、与 B/C 玩法正交。**已落地**：codex 产出 4 角色（id 3/304/706/12393）四向行走表后，`HomesteadView` 从侧视散步重写为俯视广场（下方契约全部按规格实现）。唯一偏差：素材为**平滑日系 chibi**（非像素美术）→ 故 **不**用 `image-rendering: pixelated`（会发糙），其余契约照实现。新角色丢 `sprite/<id>.png` 即自动启用（`new Image()` 探测，缺表回退 chibi→原立绘）。
 > 设计已定（2026-06-29 `/think`）：星露谷式**平面俯视**（无透视/等距，2.5D 靠 ¾ 角美术 + y-sort，引擎只做平 2D）。精灵图契约**暂定**：单格 **48×64 px** · **3 列(帧) × 4 行(下/上/左/右)** · 锚点=脚底底部中心 · 透明 PNG · `data/images/character/sprite/<id>.png`（与 chibi/、thumb/ 平级，gitignore）；列序 0左脚/1中立/2右脚、走路 0→1→2→1 ping-pong、待机=列1+CSS 呼吸；左右可由画师镜像省工但 sheet 存 4 显式行（运行时不翻转）。**三级回退** `sprite→chibi→原立绘`（`new Image()` 预加载检测，动画的与静态的同场景混摆）。Web 留 DOM/CSS（div-background + 现有 rAF 步进，不引 PixiJS）；像素 sprite 用 `image-rendering: pixelated`。拆 **A2a 平面俯视引擎（零素材即可上线：x,y 游走 + y-sort + 近大远小 + CSS 俯视地板）** + **A2b 序列帧动画层（需旗舰少量素材）**。契约与生成工具无关；Godot `AnimatedSprite2D` + `SpriteFrames`「从网格切帧」(uniform 3×4) 直接复用。
-> - [ ] A2a · 平面俯视引擎（无新素材）　- [ ] A2b · 序列帧动画层 + 三级回退（需旗舰素材）　- [ ] 落 `docs/家园精灵图规格.md`（样本图到位后）
+> - [x] A2a · 平面俯视引擎（x,y 游走 + 移动矢量选行 + y-sort + 近大远小 + CSS 俯视广场/树/花）　- [x] A2b · 序列帧动画层（3 帧 0→1→2→1 行走、静止显列1 + 四向选行）+ 三级回退（sprite→chibi→原立绘）　- [x] 契约内联本节 + 落地于 `utils/cardImage.ts` `spriteSheetSrc` / `views/HomesteadView.vue`（独立 `docs/家园精灵图规格.md` 可选、未单写）
 
 ### B · 挂机养成（存档 v13，~8-10 文件，独立可上线）
 - [x] 新 `config/homestead.ts`（常量 + `computeIdleYield` 纯计算）；新 `stores/homestead.ts`（`placedCharacterIds`/`lastSettleAt` + place/unplace + serialize/deserialize/reset，自身不触发保存）。
