@@ -76,8 +76,8 @@ export const useUserStore = defineStore('user', () => {
       setAuthToken(token); // token 先挂上，后续 loadFromServer 才能带鉴权头
       profile.currentUser = username;
       await loadFromServer();
-      // 家园离线结算（S13-B）：登录拉档后结算一次挂机收益（首次只建基线、不补发）
-      settleHomestead();
+      // 家园挂机收益按 lastSettleAt 虚拟累积，结算时机在「进家园」（HomesteadView onMounted，
+      // 带离线收益弹窗）——登录不静默结算，免得把收益悄悄收了、进家园弹窗显示 0。
       // 每日登录奖励（evolution-1）：跨天首次登录发放一次，发了就落盘
       if (useDailyStore().claimLoginReward()) {
         saveToServer();
@@ -397,6 +397,27 @@ export const useUserStore = defineStore('user', () => {
     return result;
   }
 
+  /**
+   * 入住一个角色：先结清现有入住者收益（lastSettleAt 推到现在，新角色不吃历史时间，
+   * 杜绝"放角色前先攒时间"刷收益）→ place → 存档。返回是否成功（满/重复/未登录 = false）。
+   */
+  function placeInHomestead(characterId: number): boolean {
+    if (!profile.isLoggedIn) return false;
+    settleHomestead();
+    const ok = useHomesteadStore().place(characterId);
+    if (ok) saveToServer();
+    return ok;
+  }
+
+  /** 移出一个角色：先结清收益 → unplace → 存档。 */
+  function unplaceFromHomestead(characterId: number): boolean {
+    if (!profile.isLoggedIn) return false;
+    settleHomestead();
+    const ok = useHomesteadStore().unplace(characterId);
+    if (ok) saveToServer();
+    return ok;
+  }
+
   // --- 各领域委托（动作完成后统一触发存档） ---
 
   const withSave = <A extends unknown[]>(fn: (...args: A) => unknown) => (...args: A) => {
@@ -501,8 +522,10 @@ export const useUserStore = defineStore('user', () => {
     toggleTasteWatched,
     clearTasteWatched,
 
-    // homestead（S13-B）：家园离线结算（登录时自动调；UI 进家园也会调，见 slice 3）
+    // homestead（S13-B）：家园离线结算（登录时自动调；UI 进家园也会调）+ 入住/移出（含结算+存档）
     settleHomestead,
+    placeInHomestead,
+    unplaceFromHomestead,
 
     // daily（evolution-1）：领取每日任务奖励（领域 store 自己不存档）
     claimDailyTask: (taskId: string) => {

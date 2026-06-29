@@ -28,7 +28,7 @@
 |---|---|---|---|
 | S0–S10 | 重构主线（文档/测试/engine 抽取/拆 store/功能闭环/视觉/技能/性能/安全） | ✅ | 已完成 → 详见 [HISTORY.md](HISTORY.md) |
 | — | 产品进化层 Evo-1..Evo-9 + 战斗可读性还债 + 2026-06-24 产品循环 | ✅ | 已完成 → 详见 [HISTORY.md](HISTORY.md) |
-| S13 | 家园综合系统（基地养成 + 挑战塔闭环） | ☐ | 近期主线（已 `/think` 定稿） |
+| S13 | 家园综合系统（基地养成 + 挑战塔闭环） | 🔄 | 近期主线（A/B 已落地；A2 搁置待样本图、C 待塔/养成调整后做） |
 | S11 | React 视图迁移 | ☐ | 演进 |
 | S12 | 权威后端 & 多人/PvP/排行榜 | ☐ | 终点 |
 
@@ -56,8 +56,8 @@
 > **与「挑战塔/养成将调整」的解耦（重要）**：本设计建在**稳定接口**上而非内部实现——A/B 阶段**完全不碰挑战塔**（C 阶段也只在「入口 + 奖励调平」层，不动塔内部玩法）；挂机成长**写穿现有养成 store action**（`addCharacterExp`/`increaseAffection`），养成的活动/对话/训练「细节·数值」调整不影响家园结算（养成怎么改，挂机自动一致）。**仅当养成数据模型本身被推翻**（删/改 affection·exp·level·attributes 等核心字段）才需回头改 B/C。**排期建议**：A/B 先做（与塔/养成解耦），**C 放在塔/养成调整落地之后**，让 C 对着最终数值调平，不做无用功。
 
 ### A · 地基（无存档改动，~5 文件，独立可上线）
-- [ ] `utils/cardImage.ts` 加 `chibiImageSrc(id)` + 原图 `@error` 兜底；HomesteadView `pixelSrc`→chibi 源（空目录→显示原立绘，不再空场景）；建 `data/images/character/chibi/` 约定。
-- [ ] 解冻：`router/index.ts` 恢复 `/homestead` lazy 路由、`App.vue` 恢复导航、补回 `frontend-vue/CLAUDE.md` 模块表那行。
+- [x] `utils/cardImage.ts` 加 `chibiImageSrc(id)` + 原图 `@error` 兜底；HomesteadView `pixelSrc`→chibi 源（空目录→显示原立绘，不再空场景）；建 `data/images/character/chibi/` 约定。
+- [x] 解冻：`router/index.ts` 恢复 `/homestead` lazy 路由、`App.vue` 恢复导航、补回 `frontend-vue/CLAUDE.md` 模块表那行。
 - **Exit**：`/homestead` 可访问；拥有的 UR/HR 角色用立绘在场景走动 + 点击看详情；chibi PNG 丢进目录即自动替换。type-check/test/build 通过。
 
 ### A2 · 家园 2.5D 视觉升级（平面俯视 + 四向序列帧，表现层）— ⏸ 搁置中
@@ -66,10 +66,10 @@
 > - [ ] A2a · 平面俯视引擎（无新素材）　- [ ] A2b · 序列帧动画层 + 三级回退（需旗舰素材）　- [ ] 落 `docs/家园精灵图规格.md`（样本图到位后）
 
 ### B · 挂机养成（存档 v13，~8-10 文件，独立可上线）
-- [ ] 新 `config/homestead.ts`（上表常量）；新 `stores/homestead.ts`（`placedCharacterIds`/`lastSettleAt` + serialize/deserialize/reset，自身不触发保存）。
-- [ ] 存档三处同改：`infra/persistence/schema.ts` 升 v13 + `HomesteadSave` + `createDefaultHomestead`；`migrations.ts` 字段级缺省；`stores/persistence.ts` 装配器三联；+ `migrations.test.ts` 用例。
-- [ ] `userStore.settleHomestead()` 门面：算 elapsed(封顶12h) → 按入住角色发经验/好感(写 nurture) + 知识点(`profile.earn`) → 重置 `lastSettleAt` → 存档。登录(`loadFromServer`)与进家园各结算一次。
-- [ ] HomesteadView 加：入住管理（选 ≤6 角色）+ 回归「离线收益」结算弹窗。
+- [x] 新 `config/homestead.ts`（常量 + `computeIdleYield` 纯计算）；新 `stores/homestead.ts`（`placedCharacterIds`/`lastSettleAt` + place/unplace + serialize/deserialize/reset，自身不触发保存）。
+- [x] 存档三处同改：`infra/persistence/schema.ts` 升 v13 + `HomesteadSave` + `createDefaultHomestead`；`migrations.ts` 字段级缺省；`stores/persistence.ts` 装配器三联；+ `migrations.test.ts`/`homestead.test.ts` 用例。
+- [x] `userStore.settleHomestead()` 门面：算 elapsed(封顶12h) → 按入住角色发经验(addCharacterExp)/好感(addIdleAffection) + 知识点(`profile.earn`) → 推进 `lastSettleAt` → 存档。**结算时机=进家园(onMounted)+入住/移出前**（带离线收益弹窗）；登录不静默结算（免弹窗显 0）；`placeInHomestead/unplaceFromHomestead` 先结算再增删防刷。
+- [x] HomesteadView 重写（桌宠=入住角色）+ `HomesteadManageModal`（选 ≤6 角色，稀有度降序）+「离线收益」弹窗。
 - **Exit**：入住角色离线回来领到经验/好感/知识点；封顶生效；v13 跨重开保真；经济走 `earn`；结算公式特征测试（0时长/封顶/多角色/未登录）。`npm run type-check`(0错)/`npm run test`(全绿+新增)/`npm run build` 通过 + 回归基线 `python backend/test_security.py`(全 PASS)/`grep -rn "debug=True" backend/server.py api/index.py`(零命中)。
 
 ### C · 闭环收紧（~4-6 文件，独立可上线；建议在塔/养成调整后做）

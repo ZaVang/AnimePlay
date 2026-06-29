@@ -1,22 +1,26 @@
 <script setup lang="ts">
 /**
- * 家园（evolution-12 / S13-A）：抽到的 UR/HR 角色在地面上左右自动走动（桌宠风）。
- * 桌宠图优先用 Q版 chibi（data/images/character/chibi/<id>.png，增量填充），
- * 缺失自动回退原立绘 → 连原立绘都缺才隐藏；走动用单个 rAF 循环驱动（卸载时取消）。
+ * 家园（evolution-12 / S13）：入住的角色在地面上左右自动走动（桌宠风），并随时间挂机成长。
+ * - 入住者 = homestead.placedCharacterIds（「管理入住」里选，≤HOMESTEAD_SLOTS）。
+ * - 进家园（onMounted）结算一次离线收益（settleHomestead，按 lastSettleAt 虚拟累积），有产出弹窗展示。
+ * - 桌宠图优先 Q版 chibi（data/images/character/chibi/<id>.png，增量填充），缺失回退原立绘 → 都缺才隐藏。
+ * 走动用单个 rAF 循环驱动（卸载时取消）。
  */
 import { ref, computed, watch, onMounted, onUnmounted } from 'vue';
 import { useUserStore } from '@/stores/userStore';
 import { useGameDataStore } from '@/stores/gameDataStore';
+import { useHomesteadStore } from '@/stores/homestead';
 import { useCollectionStore } from '@/stores/collection';
 import { chibiImageSrc, fullImageSrc } from '@/utils/cardImage';
+import type { IdleYield } from '@/config/homestead';
 import type { CharacterCard } from '@/types/card';
 import CardDetailModal from '@/components/CardDetailModal.vue';
+import HomesteadManageModal from '@/components/homestead/HomesteadManageModal.vue';
 
 const userStore = useUserStore();
 const gameData = useGameDataStore();
+const homestead = useHomesteadStore();
 const collection = useCollectionStore();
-
-const MAX_PETS = 24;
 
 interface Pet {
   id: number;
@@ -31,27 +35,25 @@ interface Pet {
 
 const pets = ref<Pet[]>([]);
 
-/** 已拥有的 UR/HR 角色，随机取若干只入园。 */
+/** 入住的角色化作桌宠（按 placedCharacterIds 解析；保留随机初始位置/速度）。 */
 function buildPets() {
   if (!userStore.isLoggedIn) { pets.value = []; return; }
-  const owned = gameData.allCharacterCards.filter(
-    c => (c.rarity === 'UR' || c.rarity === 'HR') && collection.getCharacterCardCount(c.id) > 0,
-  );
-  // 洗牌（无 Math.random 限制——这是组件层，可用）
-  for (let i = owned.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [owned[i], owned[j]] = [owned[j], owned[i]];
-  }
-  pets.value = owned.slice(0, MAX_PETS).map(c => ({
-    id: c.id,
-    name: c.name,
-    x: 4 + Math.random() * 88,
-    dir: Math.random() < 0.5 ? 1 : -1,
-    speed: 2.5 + Math.random() * 4,
-    delay: `-${(Math.random() * 0.3).toFixed(2)}s`,
-    pause: 0,
-    hidden: false,
-  }));
+  pets.value = homestead.placedCharacterIds
+    .map((id): Pet | null => {
+      const card = gameData.getCharacterCardById(id);
+      if (!card) return null;
+      return {
+        id,
+        name: card.name,
+        x: 4 + Math.random() * 88,
+        dir: Math.random() < 0.5 ? 1 : -1,
+        speed: 2.5 + Math.random() * 4,
+        delay: `-${(Math.random() * 0.3).toFixed(2)}s`,
+        pause: 0,
+        hidden: false,
+      };
+    })
+    .filter((p): p is Pet => p !== null);
 }
 
 const visibleCount = computed(() => pets.value.filter(p => !p.hidden).length);
@@ -94,10 +96,22 @@ function openDetail(pet: Pet) {
   if (card) detailCard.value = card;
 }
 
-// 登录态变化（如重载后再登录）时重建入园角色
+// --- 入住管理 + 离线收益结算 ---
+const showManage = ref(false);
+const settleResult = ref<IdleYield | null>(null);
+
+function runSettle() {
+  const y = userStore.settleHomestead();
+  if (y.expEach > 0 || y.affectionEach > 0 || y.knowledge > 0) settleResult.value = y;
+}
+
+// 入住名单变化（管理弹窗里增删）时重建桌宠
+watch(() => homestead.placedCharacterIds.slice(), () => buildPets(), { deep: true });
+// 登录态变化（重载后再登录）重建
 watch(() => userStore.isLoggedIn, () => buildPets());
 
 onMounted(() => {
+  runSettle();   // 进家园结算一次离线收益（按 lastSettleAt 虚拟累积）
   buildPets();
   raf = requestAnimationFrame(tick);
 });
@@ -109,12 +123,12 @@ onUnmounted(() => cancelAnimationFrame(raf));
     <header class="hs-header">
       <div>
         <h1 class="text-2xl font-bold text-ink">🏠 家园</h1>
-        <p class="text-sm text-ink-2">抽到的 UR / HR 角色会在这里散步。点一下看详情。</p>
+        <p class="text-sm text-ink-2">入住的角色会在这里散步并随时间挂机成长。点角色看详情。</p>
       </div>
-      <button v-if="userStore.isLoggedIn && visibleCount > 0" class="btn-ghost text-sm px-3 py-2" @click="buildPets">换一批</button>
+      <button v-if="userStore.isLoggedIn" class="btn-primary text-sm px-3 py-2" @click="showManage = true">管理入住</button>
     </header>
 
-    <div v-if="!userStore.isLoggedIn" class="hs-empty">请先登录，抽到的角色就会来这儿安家。</div>
+    <div v-if="!userStore.isLoggedIn" class="hs-empty">请先登录，把角色放进家园挂机成长。</div>
 
     <div v-else class="scene">
       <!-- 背景场景（自绘像素风：天空 + 远山 + 云 + 地面）-->
@@ -146,9 +160,26 @@ onUnmounted(() => cancelAnimationFrame(raf));
       </div>
 
       <div v-if="visibleCount === 0" class="hs-empty hs-empty-scene">
-        还没有 UR / HR 角色入住——去抽卡转出稀有角色吧，他们会自动来散步。
+        还没有角色入住——点「管理入住」把角色放进来挂机吧。
       </div>
     </div>
+
+    <!-- 离线收益弹窗 -->
+    <div v-if="settleResult" class="settle-pop" @click.self="settleResult = null">
+      <div class="settle-card">
+        <h3 class="text-lg font-bold text-ink mb-1">🏠 离线收益</h3>
+        <p class="text-sm text-ink-2 mb-3">挂机 {{ settleResult.hours.toFixed(1) }} 小时 · {{ settleResult.characterCount }} 位角色</p>
+        <ul class="settle-list">
+          <li><span>全员经验</span><b>+{{ settleResult.expEach }}</b></li>
+          <li><span>全员好感</span><b>+{{ settleResult.affectionEach }}</b></li>
+          <li><span>知识点</span><b>+{{ settleResult.knowledge }}</b></li>
+        </ul>
+        <button class="btn-primary w-full mt-4" @click="settleResult = null">收下</button>
+      </div>
+    </div>
+
+    <HomesteadManageModal :is-open="showManage" @close="showManage = false" />
+    <CardDetailModal v-if="detailCard" :card="detailCard" card-type="character" :count="detailCount" @close="detailCard = null" />
   </div>
 </template>
 
@@ -198,4 +229,11 @@ onUnmounted(() => cancelAnimationFrame(raf));
 }
 .pet:hover .pet-name { opacity: 1; }
 @keyframes petbob { from { transform: translateY(0); } to { transform: translateY(-3px); } }
+
+/* 离线收益弹窗 */
+.settle-pop { position: fixed; inset: 0; z-index: 50; display: flex; align-items: center; justify-content: center; background: rgb(0 0 0 / .5); padding: 1rem; }
+.settle-card { background: rgb(var(--c-surface)); border: 1px solid rgb(var(--c-line)); border-radius: var(--sk-radius-panel); padding: 1.25rem 1.5rem; width: 100%; max-width: 320px; box-shadow: 0 10px 40px rgb(0 0 0 / .25); }
+.settle-list { display: flex; flex-direction: column; gap: .5rem; }
+.settle-list li { display: flex; align-items: center; justify-content: space-between; font-size: .9rem; color: rgb(var(--c-ink-2)); }
+.settle-list li b { color: rgb(var(--c-accent)); font-size: 1rem; }
 </style>
