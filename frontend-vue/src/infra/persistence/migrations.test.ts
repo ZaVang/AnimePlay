@@ -4,7 +4,7 @@
  */
 import { describe, it, expect } from 'vitest';
 import { migrate } from './migrations';
-import { SAVE_VERSION, createDefaultDaily, createDefaultMiniGames, createDefaultPresetSquads, createDefaultTowerProgress } from './schema';
+import { SAVE_VERSION, createDefaultDaily, createDefaultHomestead, createDefaultMiniGames, createDefaultPresetSquads, createDefaultTowerProgress } from './schema';
 
 /** 模拟 S5 之前服务器上的真实 v1 存档形态。 */
 function buildV1Payload() {
@@ -113,6 +113,10 @@ describe('v1 → v2 迁移', () => {
   it('v12 新键：minigames.tasteProfile 缺失补默认（品味画像已看番空集）', () => {
     expect(v2.minigames.tasteProfile).toEqual({ watchedAnimeIds: [] });
   });
+
+  it('v13 新键：homestead 缺失补默认（空入住 + 结算基线 0）', () => {
+    expect(v2.homestead).toEqual(createDefaultHomestead());
+  });
 });
 
 describe('v12 minigames.tasteProfile 迁移', () => {
@@ -125,6 +129,23 @@ describe('v12 minigames.tasteProfile 迁移', () => {
     const out = migrate({ minigames: { higherLower: { highScore: 5, bestStreak: 3, playCount: 9 } } } as unknown);
     expect(out.minigames.tasteProfile).toEqual({ watchedAnimeIds: [] });
     expect(out.minigames.higherLower).toEqual({ highScore: 5, bestStreak: 3, playCount: 9 });
+  });
+});
+
+describe('v13 homestead 迁移', () => {
+  it('保留旧档已入住角色 + 结算基线（只收数字 id）', () => {
+    const out = migrate({ version: 13, homestead: { placedCharacterIds: [12393, 77, 'bad', null], lastSettleAt: 1700000000000 } } as unknown);
+    expect(out.homestead).toEqual({ placedCharacterIds: [12393, 77], lastSettleAt: 1700000000000 });
+  });
+
+  it('v12 旧档（无 homestead 键）→ 默认空态', () => {
+    const out = migrate({ version: 12 } as unknown);
+    expect(out.homestead).toEqual(createDefaultHomestead());
+  });
+
+  it('homestead 局部损坏按字段补默认', () => {
+    const out = migrate({ version: 13, homestead: { placedCharacterIds: 'oops', lastSettleAt: 'x' } } as unknown);
+    expect(out.homestead).toEqual({ placedCharacterIds: [], lastSettleAt: 0 });
   });
 });
 

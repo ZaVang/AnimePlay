@@ -9,10 +9,12 @@ import {
   SAVE_VERSION,
   createDefaultAppearance,
   createDefaultDaily,
+  createDefaultHomestead,
   createDefaultMiniGames,
   createDefaultPresetSquads,
   createDefaultTowerProgress,
   type DailySave,
+  type HomesteadSave,
   type MiniGamesSave,
   type SavePayload,
   type SerializedPlayerState,
@@ -128,6 +130,21 @@ function migrateMiniGames(raw: any): MiniGamesSave {
   };
 }
 
+/**
+ * v13：家园挂机域，字段级缺省兜底（旧档无 homestead 键 → createDefaultHomestead()）。
+ * placedCharacterIds 只收数字 id；lastSettleAt 非数字回落 0。
+ */
+function migrateHomestead(raw: any): HomesteadSave {
+  const defaults = createDefaultHomestead();
+  if (!raw || typeof raw !== 'object') return defaults;
+  return {
+    placedCharacterIds: Array.isArray(raw.placedCharacterIds)
+      ? raw.placedCharacterIds.filter((x: unknown): x is number => typeof x === 'number')
+      : defaults.placedCharacterIds,
+    lastSettleAt: typeof raw.lastSettleAt === 'number' ? raw.lastSettleAt : defaults.lastSettleAt,
+  };
+}
+
 /** 任意原始存档 → 当前版本 payload。历史版本之外的形态按"尽力恢复 + 默认兜底"处理。 */
 export function migrate(raw: unknown): SavePayload {
   const payload = (raw ?? {}) as any;
@@ -165,5 +182,7 @@ export function migrate(raw: unknown): SavePayload {
     achievements: Array.isArray(payload.achievements) ? payload.achievements : [],
     // v7 → v8：小游戏域（旧档无此键 → 默认空态）
     minigames: migrateMiniGames(payload.minigames),
+    // v12 → v13：家园挂机域（旧档无此键 → 默认空态）
+    homestead: migrateHomestead(payload.homestead),
   };
 }

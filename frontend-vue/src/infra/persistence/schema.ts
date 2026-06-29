@@ -15,6 +15,8 @@
  * v10（evolution-8）：minigames 域加 dailyChallenge（每日挑战，固定种子全员同题，每日一次）。
  * v11（evolution-9）：dailyChallenge 加 streakDays/bestStreakDays（连续挑战天数，断签归 1）。
  * v12（evolution-10）：minigames 域加 tasteProfile（番剧品味画像——用户勾选「看过」的番剧 id 集，持久化）。
+ * v13（S13-B）：新增 homestead 域——家园挂机（placedCharacterIds 入住角色 + lastSettleAt 离线结算基线时间戳）。
+ *   挂机产出的成长（经验/好感）写进既有 characterNurtureData，故 homestead 域本身极小。
  */
 import type { PityState } from '@/engine/gacha/draw';
 import type { CharacterNurtureData } from '@/types/nurture';
@@ -27,7 +29,7 @@ import type {
   TowerProgress,
 } from '@/types/player';
 
-export const SAVE_VERSION = 12 as const;
+export const SAVE_VERSION = 13 as const;
 
 /** 商店单品的当日购买记录（跨天读取时自动视为 0）。 */
 export interface ShopPurchaseRecord {
@@ -116,6 +118,17 @@ export interface AppearanceSave {
   skinId: string;
 }
 
+/**
+ * 家园挂机域（v13 / S13-B）。本域只存"谁入住 + 上次结算到什么时候"；
+ * 角色的实际成长（经验/好感）由结算逻辑写进既有 characterNurtureData，不在这里重复。
+ */
+export interface HomesteadSave {
+  /** 入住家园（挂机产出）的角色 id；上限见 config/homestead.ts HOMESTEAD_SLOTS。 */
+  placedCharacterIds: number[];
+  /** 上次离线结算的墙钟时间戳(ms)；0 = 尚未建立基线（首次进家园即以"现在"为准，不补发历史）。 */
+  lastSettleAt: number;
+}
+
 /** playerState 的序列化形态（watchedAnime Set → 数组）。 */
 export interface SerializedPlayerState {
   level: number;
@@ -164,6 +177,8 @@ export interface SavePayload {
   achievements: string[];
   /** v8 新增：小游戏域（高低牌战绩 + 每日发奖封顶）。 */
   minigames: MiniGamesSave;
+  /** v13 新增：家园挂机域（入住角色 + 离线结算基线）。 */
+  homestead: HomesteadSave;
 }
 
 /** 兼容别名（S5 时代命名）。 */
@@ -205,6 +220,14 @@ export function createDefaultMiniGames(): MiniGamesSave {
     tasteProfile: { watchedAnimeIds: [] },
     awardDate: '',
     awardedToday: 0,
+  };
+}
+
+/** v13：家园挂机域默认空态（新档/旧档迁移补默认）。 */
+export function createDefaultHomestead(): HomesteadSave {
+  return {
+    placedCharacterIds: [],
+    lastSettleAt: 0,
   };
 }
 

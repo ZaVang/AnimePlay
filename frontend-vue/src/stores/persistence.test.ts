@@ -28,6 +28,7 @@ import { useGachaStore } from './gachaStore';
 import { useShopStore } from './shop';
 import { useGuessStore } from './guess';
 import { useMiniGamesStore } from './minigames/higherLower';
+import { useHomesteadStore } from './homestead';
 import { useThemeStore } from './theme';
 import { useDailyStore } from './daily';
 import { useCodexStore } from './codex';
@@ -111,6 +112,11 @@ function populateAllDomains() {
   mg.dcBestStreakDays = 9;
   mg.awardDate = TODAY_KEY;
   mg.awardedToday = 30;
+
+  // S13-B：家园挂机域（入住 + 结算基线）
+  const homestead = useHomesteadStore();
+  homestead.place(12393);
+  homestead.setLastSettleAt(1700000000000);
 }
 
 /** 与 daily store 同款本地日期键（YYYY-M-D）。 */
@@ -207,6 +213,11 @@ describe('buildPayload ⇄ applyPayload 往返', () => {
     expect(mg.dcBestStreakDays).toBe(9);
     expect(mg.dcCompletedToday).toBe(true);
     expect(mg.remainingDailyKp).toBe(120 - 30);
+
+    // S13-B 新增域：家园挂机（入住角色 + 结算基线）经一轮往返保真
+    const homestead = useHomesteadStore();
+    expect(homestead.placedCharacterIds).toEqual([12393]);
+    expect(homestead.lastSettleAt).toBe(1700000000000);
   });
 
   it('payload 带版本号与全部 schema 键', () => {
@@ -219,7 +230,7 @@ describe('buildPayload ⇄ applyPayload 往返', () => {
       'animeHistory', 'characterHistory', 'favoriteAnime', 'favoriteCharacters',
       'characterNurtureData', 'presetSquads', 'towerProgress',
       'shopPurchases', 'guess', 'appearance',
-      'daily', 'codexMilestones', 'achievements', 'minigames',
+      'daily', 'codexMilestones', 'achievements', 'minigames', 'homestead',
     ]) {
       expect(payload).toHaveProperty(key);
     }
@@ -239,6 +250,7 @@ describe('resetAllDomains', () => {
     expect(useNurtureStore().characterNurtureData.size).toBe(0);
     expect(usePveStore().towerProgress.currentFloor).toBe(1);
     expect(usePveStore().presetSquads[0].members).toEqual([null, null, null, null]);
+    expect(useHomesteadStore().placedCharacterIds).toEqual([]);
   });
 });
 
