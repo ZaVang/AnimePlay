@@ -111,13 +111,8 @@ export function calculateBattlePower(stats: BattleStats): number {
   return Math.floor((attackPower + defensePower * 0.5) * speedBonus);
 }
 
-export interface NurtureAttributes {
-  charm: number;
-  intelligence: number;
-  strength: number;
-}
-
-export interface BattleEnhancements {
+/** 五维加成（升级加点 / 装备加成共用此形状）。 */
+export interface StatBonus {
   hp: number;
   atk: number;
   def: number;
@@ -125,25 +120,20 @@ export interface BattleEnhancements {
   spd: number;
 }
 
-/** 最终战斗属性 = 基础 ×(1+强化%) + 养成属性换算加成。 */
+/**
+ * 最终战斗属性 = base围 + statPoints围 + equipBonus围（纯加法，S13-C1）。
+ * 无乘算、无 charm/int/str、无 battleEnhancements%。装备加成 C1 阶段恒 0（空占位）。
+ */
 export function generateBattleStats(
   baseStats: BattleStats,
-  nurtureAttributes: NurtureAttributes,
-  battleEnhancements: BattleEnhancements,
+  statPoints: StatBonus,
+  equipBonus: StatBonus,
 ): BattleStats {
-  const attributeBonus = {
-    atk: Math.floor(nurtureAttributes.strength * 0.5), // 体力影响攻击
-    def: Math.floor(nurtureAttributes.strength * 0.3), // 体力影响防御
-    sp: Math.floor(nurtureAttributes.intelligence * 0.4), // 智力影响技能
-    spd: Math.floor(nurtureAttributes.charm * 0.3), // 魅力影响速度
-    hp: Math.floor((nurtureAttributes.strength + nurtureAttributes.charm) * 0.2),
-  };
-
   return {
-    hp: Math.floor(baseStats.hp * (1 + battleEnhancements.hp / 100) + attributeBonus.hp),
-    atk: Math.floor(baseStats.atk * (1 + battleEnhancements.atk / 100) + attributeBonus.atk),
-    def: Math.floor(baseStats.def * (1 + battleEnhancements.def / 100) + attributeBonus.def),
-    sp: Math.floor(baseStats.sp * (1 + battleEnhancements.sp / 100) + attributeBonus.sp),
-    spd: Math.floor(baseStats.spd * (1 + battleEnhancements.spd / 100) + attributeBonus.spd),
+    hp: baseStats.hp + statPoints.hp + equipBonus.hp,
+    atk: baseStats.atk + statPoints.atk + equipBonus.atk,
+    def: baseStats.def + statPoints.def + equipBonus.def,
+    sp: baseStats.sp + statPoints.sp + equipBonus.sp,
+    spd: baseStats.spd + statPoints.spd + equipBonus.spd,
   };
 }

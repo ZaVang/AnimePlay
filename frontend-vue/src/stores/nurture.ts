@@ -1,6 +1,6 @@
 /**
- * nurture 领域 store（S5 自 userStore 拆出）：
- * 角色养成数据（好感/互动/属性/角色等级）。数值规则全在 engine/nurture。
+ * nurture 领域 store（S5 自 userStore 拆出；S13-C1 瘦身为加点制两轴）。
+ * 角色养成数据（好感 + 等级/加点）。数值规则全在 engine/nurture。
  * 不触发存档（由门面统一控制）。
  */
 import { defineStore } from 'pinia';
@@ -13,54 +13,36 @@ import {
   getRequiredExpForLevel,
   getLevelFromExp,
   getLevelProgress as engineGetLevelProgress,
-  levelUpAttributePoints,
-  distributeRandomAttributes,
+  rollLevelUpStatPoints,
   createDefaultNurtureData,
-  applyBattleEnhancements,
+  createEmptyStatPoints,
   MAX_CHARACTER_LEVEL,
-  ATTRIBUTE_CAP,
-  ENHANCEMENT_CAP,
-  EXP_PER_AFFECTION,
-  EXP_PER_ATTRIBUTE,
-  EXP_PER_BATTLE_STAT,
 } from '@/engine';
+import {
+  TUTORING_KP_COST,
+  TUTORING_EXP_GAIN,
+  BATTLE_AFFECTION_GAIN,
+  BOND_MILESTONES,
+  isMilestoneClaimable,
+} from '@/config/nurture';
+
+/** 互动经验：每点好感度 ×5（好感增加联动经验）。 */
+const EXP_PER_AFFECTION = 5;
 
 export const useNurtureStore = defineStore('nurture', () => {
   const characterNurtureData = ref<Map<number, CharacterNurtureData>>(new Map());
 
   // 获取角色养成数据，如果不存在则创建默认数据（兼容旧数据的补丁逻辑保留）
   function getNurtureData(characterId: number): CharacterNurtureData {
-    const profile = useProfileStore();
     if (!characterNurtureData.value.has(characterId)) {
       characterNurtureData.value.set(characterId, createDefaultNurtureData());
     }
 
     const data = characterNurtureData.value.get(characterId)!;
 
-    if (!data.levelBonusAttributes) {
-      data.levelBonusAttributes = { charm: 0, intelligence: 0, strength: 0 };
-    }
-
-    // 确保等级与总经验值同步（修复旧数据）
-    if (data.totalExperience !== undefined) {
-      const correctLevel = Math.min(getLevelFromExp(data.totalExperience), MAX_CHARACTER_LEVEL);
-      if ((data.level || 1) !== correctLevel) {
-        const oldLevel = data.level || 1;
-        data.level = correctLevel;
-
-        if (correctLevel > oldLevel && correctLevel <= MAX_CHARACTER_LEVEL) {
-          for (let level = oldLevel + 1; level <= correctLevel; level++) {
-            const randomBonus = distributeRandomAttributes(levelUpAttributePoints(level), defaultRng);
-            data.levelBonusAttributes.charm += randomBonus.charm;
-            data.levelBonusAttributes.intelligence += randomBonus.intelligence;
-            data.levelBonusAttributes.strength += randomBonus.strength;
-          }
-          if (correctLevel > oldLevel + 1) {
-            profile.addLog(`角色等级自动同步：Lv.${oldLevel} → Lv.${correctLevel}，获得随机属性加成！`, 'success');
-          }
-        }
-      }
-    }
+    // 防御性补全（迁移已归一，但运行时新建/手改兜底）
+    if (!data.statPoints) data.statPoints = createEmptyStatPoints();
+    if (!data.claimedBondMilestones) data.claimedBondMilestones = [];
 
     return data;
   }
@@ -72,7 +54,6 @@ export const useNurtureStore = defineStore('nurture', () => {
     const nurtureData = getNurtureData(characterId);
     nurtureData.affection = nurtureData.affection + amount; // 无上限
     nurtureData.lastInteraction = new Date().toISOString();
-    nurtureData.totalInteractions++;
 
     addCharacterExp(characterId, amount * EXP_PER_AFFECTION);
 
@@ -94,112 +75,22 @@ export const useNurtureStore = defineStore('nurture', () => {
     nurtureData.lastInteraction = new Date().toISOString();
   }
 
-  function interactWithCharacter(characterId: number, dialogueId: string) {
-    const profile = useProfileStore();
-    if (!profile.isLoggedIn) return;
-
+  /**
+   * 带塔参战涨好感（S13-C1）：塔战斗结算后给参战角色静默涨好感（与挂机好感同字段）。
+   * 不联动经验（经验由塔结算另发），不逐角色播报。
+   */
+  function addBattleAffection(characterId: number, amount = BATTLE_AFFECTION_GAIN) {
+    if (amount <= 0) return;
     const nurtureData = getNurtureData(characterId);
-    nurtureData.dialogueHistory.push(dialogueId);
+    nurtureData.affection += amount;
     nurtureData.lastInteraction = new Date().toISOString();
-    nurtureData.totalInteractions++;
-  }
-
-  function giveGift(characterId: number, giftId: string) {
-    const profile = useProfileStore();
-    if (!profile.isLoggedIn) return;
-
-    getNurtureData(characterId).gifts.push(giftId);
-
-    const character = useGameDataStore().getCharacterCardById(characterId);
-    if (character) {
-      profile.addLog(`向 ${character.name} 送出了礼物！`, 'success');
-    }
-  }
-
-  function enhanceAttribute(
-    characterId: number,
-    attribute: keyof CharacterNurtureData['attributes'],
-    amount: number,
-  ) {
-    const profile = useProfileStore();
-    if (!profile.isLoggedIn) return;
-
-    const nurtureData = getNurtureData(characterId);
-    const oldValue = nurtureData.attributes[attribute];
-    nurtureData.attributes[attribute] = Math.min(ATTRIBUTE_CAP, oldValue + amount);
-
-    addCharacterExp(characterId, amount * EXP_PER_ATTRIBUTE);
-
-    const character = useGameDataStore().getCharacterCardById(characterId);
-    if (character) {
-      const attrName =
-        { charm: '魅力', intelligence: '智力', strength: '体力', mood: '心情' }[attribute] || attribute;
-      profile.addLog(`${character.name} 的${attrName}提升了 ${amount} 点！`, 'success');
-    }
-  }
-
-  function enhanceBattleStat(
-    characterId: number,
-    stat: keyof CharacterNurtureData['battleEnhancements'],
-    amount: number,
-  ) {
-    const profile = useProfileStore();
-    if (!profile.isLoggedIn) return;
-
-    const nurtureData = getNurtureData(characterId);
-    if (!nurtureData.battleEnhancements) {
-      nurtureData.battleEnhancements = { hp: 0, atk: 0, def: 0, sp: 0, spd: 0 };
-    }
-    const oldValue = nurtureData.battleEnhancements[stat] || 0;
-    nurtureData.battleEnhancements[stat] = Math.min(ENHANCEMENT_CAP, oldValue + amount);
-
-    addCharacterExp(characterId, amount * EXP_PER_BATTLE_STAT);
-
-    const character = useGameDataStore().getCharacterCardById(characterId);
-    if (character) {
-      const statName = { hp: '生命值', atk: '攻击力', def: '防御力', sp: 'SP值', spd: '速度' }[stat] || stat;
-      profile.addLog(`${character.name} 的${statName}加成提升了 ${amount}%！`, 'success');
-    }
-  }
-
-  // --- 训练冷却（S6 起持久化在 CharacterNurtureData.trainingCooldowns） ---
-
-  /** 设置训练冷却（分钟）。 */
-  function setTrainingCooldown(characterId: number, programId: string, durationMinutes: number) {
-    const data = getNurtureData(characterId);
-    if (!data.trainingCooldowns) data.trainingCooldowns = {};
-    data.trainingCooldowns[programId] = Date.now() + durationMinutes * 60 * 1000;
-  }
-
-  /** 剩余冷却秒数（无冷却/已过期为 0；过期项顺手清掉）。 */
-  function getTrainingCooldownRemaining(characterId: number, programId: string): number {
-    const data = getNurtureData(characterId);
-    const endTs = data.trainingCooldowns?.[programId];
-    if (!endTs) return 0;
-    const remaining = Math.ceil((endTs - Date.now()) / 1000);
-    if (remaining <= 0) {
-      delete data.trainingCooldowns![programId];
-      return 0;
-    }
-    return remaining;
-  }
-
-  function isTrainingOnCooldown(characterId: number, programId: string): boolean {
-    return getTrainingCooldownRemaining(characterId, programId) > 0;
-  }
-
-  /** 最终战斗属性 = 原始属性 × (1 + 强化%)。 */
-  function getEnhancedBattleStats(characterId: number) {
-    const character = useGameDataStore().getCharacterCardById(characterId);
-    if (!character?.battle_stats) return null;
-    return applyBattleEnhancements(character.battle_stats, getNurtureData(characterId).battleEnhancements);
   }
 
   function getLevelProgress(nurtureData: CharacterNurtureData) {
     return engineGetLevelProgress(nurtureData.level || 1, nurtureData.totalExperience || 0);
   }
 
-  /** 角色经验与升级（升级随机属性经 engine 分配）。 */
+  /** 角色经验与升级（升级随机加点经 engine 分配到 5 战斗维）。 */
   function addCharacterExp(characterId: number, expAmount: number) {
     const profile = useProfileStore();
     if (!profile.isLoggedIn || expAmount <= 0) return;
@@ -215,24 +106,21 @@ export const useNurtureStore = defineStore('nurture', () => {
     if (newLevel > oldLevel && newLevel <= MAX_CHARACTER_LEVEL) {
       nurtureData.level = newLevel;
 
+      const gain = rollLevelUpStatPoints(oldLevel, newLevel, defaultRng);
+      nurtureData.statPoints.hp += gain.hp;
+      nurtureData.statPoints.atk += gain.atk;
+      nurtureData.statPoints.def += gain.def;
+      nurtureData.statPoints.sp += gain.sp;
+      nurtureData.statPoints.spd += gain.spd;
+
       const character = useGameDataStore().getCharacterCardById(characterId);
       if (character) {
-        let totalCharmGain = 0;
-        let totalIntGain = 0;
-        let totalStrGain = 0;
-
-        for (let level = oldLevel + 1; level <= newLevel; level++) {
-          const randomBonus = distributeRandomAttributes(levelUpAttributePoints(level), defaultRng);
-          nurtureData.levelBonusAttributes.charm += randomBonus.charm;
-          nurtureData.levelBonusAttributes.intelligence += randomBonus.intelligence;
-          nurtureData.levelBonusAttributes.strength += randomBonus.strength;
-          totalCharmGain += randomBonus.charm;
-          totalIntGain += randomBonus.intelligence;
-          totalStrGain += randomBonus.strength;
-        }
-
+        const total = gain.hp + gain.atk + gain.def + gain.sp + gain.spd;
         profile.addLog(`🎉 ${character.name} 等级提升！Lv.${oldLevel} → Lv.${newLevel}`, 'success');
-        profile.addLog(`随机属性分配：魅力+${totalCharmGain}, 智力+${totalIntGain}, 体力+${totalStrGain}`, 'info');
+        profile.addLog(
+          `随机加点 +${total}：HP+${gain.hp} ATK+${gain.atk} DEF+${gain.def} SP+${gain.sp} SPD+${gain.spd}`,
+          'info',
+        );
         if (newLevel >= MAX_CHARACTER_LEVEL) {
           profile.addLog(`🏆 ${character.name} 已达到满级！(Lv.${MAX_CHARACTER_LEVEL})`, 'success');
         }
@@ -241,6 +129,58 @@ export const useNurtureStore = defineStore('nurture', () => {
 
     // 重置当前等级的经验值显示
     nurtureData.experience = getLevelProgress(nurtureData).current;
+  }
+
+  /**
+   * 补习（S13-C1）：花知识点换角色经验（新 KP sink，走唯一货币出口 profile.spend）。
+   * 余额不足 / 未登录 / 已满级返回 false 不变更。
+   */
+  function tutorCharacter(characterId: number): boolean {
+    const profile = useProfileStore();
+    if (!profile.isLoggedIn) return false;
+
+    const nurtureData = getNurtureData(characterId);
+    if (nurtureData.level >= MAX_CHARACTER_LEVEL) {
+      profile.addLog('该角色已满级，无需补习。', 'warning');
+      return false;
+    }
+    if (!profile.spend('knowledgePoints', TUTORING_KP_COST)) {
+      profile.addLog(`补习需要 ${TUTORING_KP_COST} 知识点，余额不足。`, 'warning');
+      return false;
+    }
+
+    addCharacterExp(characterId, TUTORING_EXP_GAIN);
+    const character = useGameDataStore().getCharacterCardById(characterId);
+    if (character) {
+      profile.addLog(`为 ${character.name} 补习，消耗 ${TUTORING_KP_COST} 知识点 → +${TUTORING_EXP_GAIN} 经验。`, 'success');
+    }
+    return true;
+  }
+
+  /**
+   * 领取好感里程碑奖励（S13-C1）：达阈值且未领过 → 一次性 KP 经 profile.earn 发放，记录已领。
+   * 返回是否成功（未登录 / 未达阈值 / 已领 / 未知 id = false）。
+   */
+  function claimBondMilestone(characterId: number, milestoneId: string): boolean {
+    const profile = useProfileStore();
+    if (!profile.isLoggedIn) return false;
+
+    const milestone = BOND_MILESTONES.find(m => m.id === milestoneId);
+    if (!milestone) return false;
+
+    const nurtureData = getNurtureData(characterId);
+    if (!isMilestoneClaimable(nurtureData.affection, nurtureData.claimedBondMilestones, milestone)) {
+      return false;
+    }
+
+    nurtureData.claimedBondMilestones.push(milestone.id);
+    profile.earn('knowledgePoints', milestone.reward);
+
+    const character = useGameDataStore().getCharacterCardById(characterId);
+    if (character) {
+      profile.addLog(`「${milestone.title}」里程碑达成（${character.name}）：+${milestone.reward} 知识点！`, 'success');
+    }
+    return true;
   }
 
   // --- 持久化装配 ---
@@ -262,18 +202,13 @@ export const useNurtureStore = defineStore('nurture', () => {
     getNurtureData,
     increaseAffection,
     addIdleAffection,
-    interactWithCharacter,
-    giveGift,
-    enhanceAttribute,
-    enhanceBattleStat,
-    setTrainingCooldown,
-    getTrainingCooldownRemaining,
-    isTrainingOnCooldown,
-    getEnhancedBattleStats,
+    addBattleAffection,
     getRequiredExpForLevel,
     getLevelFromExp,
     getLevelProgress,
     addCharacterExp,
+    tutorCharacter,
+    claimBondMilestone,
     serialize,
     deserialize,
     reset,

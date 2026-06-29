@@ -6,7 +6,7 @@
  * 满挂机一次（6 角色混合 ≈18 KP/h × 12h 封顶）≈216 KP，约等于一趟塔的零头。
  *
  * 产出去向：经验/好感写进既有 nurtureData（经 store action）；知识点走 profile.earn。
- * 等级路径（经验→升级→levelBonusAttributes）与主动训练的属性/战斗强化路径互不蚕食。
+ * 经验→升级→随机加点（statPoints，S13-C1 加点制），好感→关系仪表/里程碑，两轴互不蚕食。
  */
 import type { Rarity } from '@/types/card';
 

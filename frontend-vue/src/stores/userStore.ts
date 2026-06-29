@@ -550,23 +550,33 @@ export const useUserStore = defineStore('user', () => {
     // appearance（S7 皮肤随账号走；未登录时设置页直接用 theme store）
     setSkin: (skinId: string) => { useThemeStore().setSkin(skinId); saveToServer(); },
 
-    // nurture
+    // nurture（S13-C1：瘦身为加点制两轴）
     characterNurtureData: computed(() => nurture.characterNurtureData),
     getNurtureData: nurture.getNurtureData,
     increaseAffection: withNurtureProgress(nurture.increaseAffection),
-    interactWithCharacter: withNurtureProgress(nurture.interactWithCharacter),
-    giveGift: withNurtureProgress(nurture.giveGift),
-    enhanceAttribute: withSave(nurture.enhanceAttribute),
-    enhanceBattleStat: withSave(nurture.enhanceBattleStat),
-    getEnhancedBattleStats: nurture.getEnhancedBattleStats,
     getRequiredExpForLevel: nurture.getRequiredExpForLevel,
     getLevelFromExp: nurture.getLevelFromExp,
     getLevelProgress: nurture.getLevelProgress,
     addCharacterExp: withSave(nurture.addCharacterExp),
-    // 训练冷却（S6 持久化）
-    setTrainingCooldown: withSave(nurture.setTrainingCooldown),
-    getTrainingCooldownRemaining: nurture.getTrainingCooldownRemaining,
-    isTrainingOnCooldown: nurture.isTrainingOnCooldown,
+    addBattleAffection: withSave(nurture.addBattleAffection),
+    // 补习（KP → 经验）/ 好感里程碑领取（成功才存档）
+    tutorCharacter: (characterId: number) => {
+      if (nurture.tutorCharacter(characterId)) {
+        useDailyStore().markProgress('nurture', 1);
+        const isMaxLevel = (nurture.getNurtureData(characterId)?.level ?? 0) >= MAX_CHARACTER_LEVEL;
+        useAchievementsStore().check('nurture', { characterMaxLevel: isMaxLevel });
+        saveToServer();
+        return true;
+      }
+      return false;
+    },
+    claimBondMilestone: (characterId: number, milestoneId: string) => {
+      if (nurture.claimBondMilestone(characterId, milestoneId)) {
+        saveToServer();
+        return true;
+      }
+      return false;
+    },
 
     // pve ★ S5 起入存档：小队/塔进度的每次变更都会保存
     presetSquads: computed(() => pve.presetSquads),

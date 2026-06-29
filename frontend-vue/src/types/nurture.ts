@@ -1,43 +1,27 @@
 /**
- * 角色养成数据结构（S4 自 stores/userStore 上移到类型层；userStore 转发导出以兼容旧路径）。
+ * 角色养成数据结构。
+ * S13-C1 瘦身为「等级（固定初始五维 + 每级随机加点）+ 好感（关系仪表/里程碑，不接战力）」两轴。
+ * 删除训练/心情/对话/礼物/属性(charm/int/str)/levelBonusAttributes/battleEnhancements/intimacy/preferences/trainingCooldowns。
  */
+
+/** 五战斗维加点（升级时 roll 固定点数随机分配，累加至此；纯加法注入战力）。 */
+export interface StatPoints {
+  hp: number;
+  atk: number;
+  def: number;
+  sp: number;
+  spd: number;
+}
+
 export interface CharacterNurtureData {
-  affection: number; // 好感度 (0-1000+, 可以超过1000)
-  intimacy: number; // 亲密度 (0-100)
-  lastInteraction: string; // 最后互动时间
-  totalInteractions: number; // 总互动次数
-  dialogueHistory: string[]; // 对话历史ID
-  gifts: string[]; // 收到的礼物ID列表 (简化数据结构)
-  specialEvents: string[]; // 已解锁的特殊事件
+  affection: number; // 好感度 (0+，无上限；关系仪表/里程碑，不接战力)
+  lastInteraction: string; // 最后互动时间 (ISO)
   // 角色等级系统
   level: number; // 角色等级 (1-100)
   experience: number; // 当前等级内经验值
   totalExperience: number; // 总经验值 (用于计算等级)
-  attributes: {
-    charm: number; // 魅力值
-    intelligence: number; // 智力值
-    strength: number; // 体力值
-    mood: number; // 心情值 (0-100)
-  };
-  // 升级获得的随机属性加成
-  levelBonusAttributes: {
-    charm: number;
-    intelligence: number;
-    strength: number;
-  };
-  // 战斗属性增强 (基于原始 battle_stats 的百分比加成, 0-100%)
-  battleEnhancements: {
-    hp: number;
-    atk: number;
-    def: number;
-    sp: number;
-    spd: number;
-  };
-  preferences: {
-    favoriteTopics: string[];
-    dislikedTopics: string[];
-    favoriteGifts: string[];
-  };
-  /** 训练冷却（S6 起持久化）：key = 训练项目 id，value = 冷却结束时间戳（毫秒）。旧档缺省。 */
-  trainingCooldowns?: Record<string, number>;
+  /** 升级随机加点累加（每级 roll POINTS_PER_LEVEL 点分配到 5 战斗维）。 */
+  statPoints: StatPoints;
+  /** 已领取的好感里程碑 id（config/nurture.ts BOND_MILESTONES）。一次性领取，持久化。 */
+  claimedBondMilestones: string[];
 }

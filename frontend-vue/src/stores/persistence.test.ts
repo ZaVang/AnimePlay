@@ -29,6 +29,7 @@ import { useShopStore } from './shop';
 import { useGuessStore } from './guess';
 import { useMiniGamesStore } from './minigames/higherLower';
 import { useHomesteadStore } from './homestead';
+import { useEquipmentStore } from './equipment';
 import { useThemeStore } from './theme';
 import { useDailyStore } from './daily';
 import { useCodexStore } from './codex';
@@ -80,7 +81,8 @@ function populateAllDomains() {
 
   useShopStore().recordPurchase('anime_ticket_1');
   useGuessStore().highScore = 85;
-  data.trainingCooldowns = { charm_training: 1893456000000 };
+  data.statPoints = { hp: 30, atk: 10, def: 5, sp: 7, spd: 3 };
+  data.claimedBondMilestones = ['bond_1'];
   useThemeStore().setSkin('neon'); // S7：皮肤随账号入档
 
   // evolution-1：每日任务 / 图鉴里程碑 / 成就
@@ -117,6 +119,11 @@ function populateAllDomains() {
   const homestead = useHomesteadStore();
   homestead.place(12393);
   homestead.setLastSettleAt(1700000000000);
+
+  // S13-C1：装备域（C1 空占位，但塞值验证往返保真）
+  const equipment = useEquipmentStore();
+  equipment.inventory = [{ uid: 'eq-1', defId: 'longinus_spear' }];
+  equipment.equipped = { 12393: { weapon: 'eq-1', armor: null, supporter: null } };
 }
 
 /** 与 daily store 同款本地日期键（YYYY-M-D）。 */
@@ -177,10 +184,12 @@ describe('buildPayload ⇄ applyPayload 往返', () => {
     expect(pve.presetSquads[0].members).toEqual([12393, null, null, null]);
     expect(pve.towerProgress).toMatchObject({ currentFloor: 8, maxFloor: 7 });
 
-    // S6 新增域：商店限购 / 猜角色最高分 / 训练冷却（随养成数据）
+    // S6 新增域：商店限购 / 猜角色最高分
     expect(useShopStore().purchasedToday('anime_ticket_1')).toBe(1);
     expect(useGuessStore().highScore).toBe(85);
-    expect(useNurtureStore().characterNurtureData.get(12393)?.trainingCooldowns).toEqual({ charm_training: 1893456000000 });
+    // S13-C1 瘦身养成：加点 / 已领里程碑随养成数据往返保真
+    expect(useNurtureStore().characterNurtureData.get(12393)?.statPoints).toEqual({ hp: 30, atk: 10, def: 5, sp: 7, spd: 3 });
+    expect(useNurtureStore().characterNurtureData.get(12393)?.claimedBondMilestones).toEqual(['bond_1']);
 
     // S7 新增域：皮肤装扮（中途手动切回默认，验证 applyPayload 恢复账号皮肤）
     expect(useThemeStore().currentSkinId).toBe('neon');
@@ -218,6 +227,11 @@ describe('buildPayload ⇄ applyPayload 往返', () => {
     const homestead = useHomesteadStore();
     expect(homestead.placedCharacterIds).toEqual([12393]);
     expect(homestead.lastSettleAt).toBe(1700000000000);
+
+    // S13-C1 新增域：装备（背包 + 配装）经一轮往返保真
+    const equipment = useEquipmentStore();
+    expect(equipment.inventory).toEqual([{ uid: 'eq-1', defId: 'longinus_spear' }]);
+    expect(equipment.equipped).toEqual({ 12393: { weapon: 'eq-1', armor: null, supporter: null } });
   });
 
   it('payload 带版本号与全部 schema 键', () => {
@@ -230,7 +244,7 @@ describe('buildPayload ⇄ applyPayload 往返', () => {
       'animeHistory', 'characterHistory', 'favoriteAnime', 'favoriteCharacters',
       'characterNurtureData', 'presetSquads', 'towerProgress',
       'shopPurchases', 'guess', 'appearance',
-      'daily', 'codexMilestones', 'achievements', 'minigames', 'homestead',
+      'daily', 'codexMilestones', 'achievements', 'minigames', 'homestead', 'equipment',
     ]) {
       expect(payload).toHaveProperty(key);
     }
@@ -251,6 +265,8 @@ describe('resetAllDomains', () => {
     expect(usePveStore().towerProgress.currentFloor).toBe(1);
     expect(usePveStore().presetSquads[0].members).toEqual([null, null, null, null]);
     expect(useHomesteadStore().placedCharacterIds).toEqual([]);
+    expect(useEquipmentStore().inventory).toEqual([]);
+    expect(useEquipmentStore().equipped).toEqual({});
   });
 });
 

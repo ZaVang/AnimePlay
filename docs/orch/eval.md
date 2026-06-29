@@ -1,106 +1,100 @@
-# Evaluator Report — Iteration 5 (final debt round)
+# Evaluator Report — Iteration 1 (S13-C1)
 
-> QA Evaluator 独立验证（不信任自报，亲跑全部验收命令 + 亲自 git diff/Grep/Read 取证）。
-> 只读不改源码。本轮 = 5 轮收尾债轮；tier1 on → DECISION 信息性，但给最严谨最终质量判断。
-> 验证时间 2026-06-24；HEAD = 73b9add（前 5 轮全在工作树未提交）。
+> 养成精简（加点制两轴）+ 战力改纯加法 + 角色页重写（变体 A）+ 存档升 v14。
+> 五条验收命令全部由 Evaluator 亲自重跑；源码逐项核对，未信任 gen_status.md。
 
-## Checkbox 状态（docs/SPRINT.md L355-384）
-- [x] I5-T1 硬色 138 连根拔 — 已勾，已核实
-- [x] I5-T2 confirm/alert 18 统一弹窗 — 已勾，已核实
-- [x] I5-T3 onboarding 点名品味 — 已勾，已核实
-- [x] I5-T4 /homestead 完整冻结 — 已勾，已核实
-- [x] I5-T5 收尾杂项三连 — 已勾，已核实
+## Checkbox 状态
 
-## 验收命令重跑结果（真实输出，非复制自报）
-| # | 命令 | 实际结果 | 判定 |
-|---|------|---------|------|
-| 1 | `npm run type-check`（vue-tsc --build） | 无输出，退出 0 | ✅ 0 错 |
-| 2 | `npm run test`（vitest run） | **Test Files 45 passed / Tests 512 passed**，8.89s | ✅ ≥489 |
-| 3 | `npm run build` | **built in 10.60s**；dist/assets 无 HomesteadView chunk | ✅ 成功 |
-| 4 | `./.venv/Scripts/python.exe backend/test_security.py` | **RESULT: PASS — all security checks passed**，exit=0（鉴权/原子写/saveVersion 409/邀请码全 PASS） | ✅ |
-| 5 | `grep -rn "debug=True" backend/server.py api/index.py` | 零命中，exit=1 | ✅ |
+SPRINT.md 四项任务全部 `[x]`，且经源码核对属实：
 
-环境记录：`.venv/Scripts/python.exe` 存在并使用（系统 python 无 Flask 依赖，按 pitfalls 约定）。
+- [x] **C1-T1｜养成数据 + 引擎瘦身（改加点制）** — 核对通过
+  - `types/nurture.ts`：`CharacterNurtureData` 已瘦身为 `{affection, lastInteraction, level, experience, totalExperience, statPoints, claimedBondMilestones}`，新增 `StatPoints` 接口。删除字段全部消失。
+  - `engine/nurture/rules.ts`：`POINTS_PER_LEVEL=10`、`distributeRandomStatPoints(totalPoints, rng)`、`rollLevelUpStatPoints(oldLevel, newLevel, rng)` 均**注入 RNG**（`import type { RNG }`，用 `rng.int()`，零 `Math.random`）。旧训练函数全删（grep 零命中）。
+  - `stores/nurture.ts`：`addCharacterExp`/`addIdleAffection` 保留并适配；新增 `addBattleAffection`/`tutorCharacter`/`claimBondMilestone`，补习走 `profile.spend('knowledgePoints')`、里程碑走 `profile.earn`。
+- [x] **C1-T2｜战力公式改纯加法** — 核对通过
+  - `engine/squad/combat.ts:127` `generateBattleStats(baseStats, statPoints, equipBonus)`，公式 `base + statPoints + equipBonus`，无 charm/int/str、无 battleEnhancements%。
+  - `SquadBattleView.vue` 两处调用（131/183 行）传 `nurtureData.statPoints` + `NO_EQUIP_BONUS`（恒 0）；417/440 行保留 `addCharacterExp`；419 行胜利结算调 `addBattleAffection`。
+- [x] **C1-T3｜删旧养成 UI + 角色页重写** — 核对通过
+  - `src/components/nurture/` 目录整体删除（6 个组件，git status 显示 6 个 `D`）。对已删组件名 grep 零有效引用（命中均为 battle 域同名 `DialogueSystem` 类 / rules.ts 注释，非养成组件）。
+  - `NurtureView.vue` 重写（build 产出 NurtureView chunk 10.90 kB）。`STAT_DISPLAY_REF`（HP1500/ATK800/DEF600/SP700/SPD600）、`BOND_MILESTONES` 6 档（100/250/500/1000/2000/4000 → 50/100/200/400/800/1500 → 初识/熟络/要好/挚友/羁绊/命运）配置与 SPRINT 完全一致。
+- [x] **C1-T4｜存档 v14 迁移 + 收口** — 核对通过
+  - `schema.ts:34 SAVE_VERSION = 14`；`EquipmentSave` + `createDefaultEquipment()` + payload `equipment` 字段。
+  - `migrations.ts`：`migrateNurtureData`（白名单重建、丢旧字段、补 statPoints/claimedBondMilestones 缺省）+ `migrateEquipment`（旧档补空域、局部损坏按字段补默认）；v13→v14 两处接入。
+  - `stores/persistence.ts` + 新建 `stores/equipment.ts` 三处同改（serialize/deserialize/reset）。
+  - `CLAUDE.md` 版本沿革已补 v14 一行。
 
-## Generator 报告 vs 实际对比（512 是否属实）
-- **test 512 属实**：亲跑 = 45 文件 / 512 通过，与自报逐字一致。
-- **type-check / build / 后端 / debug**：四项自报均属实，亲跑复现。
-- **唯一细微出入（不影响判定）**：自报称 `nurtureColors.test.ts` 11 个用例，实测 `it/test` 块 = **8 个**（onboardingSteps 5 / useDialog 5 / useUnlockConfirm 5，4 文件合计 **23** 新用例与自报 23 总数吻合）。文件存在且覆盖阈值/语义类/无 text-white，总数 512 验证为准——属自报分项笔误，非缺测。
+## 验收命令重跑结果（Evaluator 亲跑）
 
-## 关键独立核查结果（逐条 + file:line 证据）
+### 1. `cd frontend-vue && npm run type-check`
+```
+> vue-tsc --build
+（无任何错误输出，退出码 0）
+```
+**PASS — 0 错误。**
 
-### 🔴 重点一：硬色连根拔真彻底（债轮成败分水岭）—— 通过
-- **共享映射是纯函数**：`config/nurtureColors.ts` 纯常量/纯函数，零 Vue/Pinia/DOM/IO（L9 自述并经 Read 核实）；`bondTier`(L32)/`moodTier`(L53)/`moodColor`(L62)/`ATTRIBUTE_TEXT_COLOR`(L70)/`ATTRIBUTE_BAR_COLOR`(L80)/`SEMANTIC_CARD_CLASSES`(L91)/`SEMANTIC_BTN_CLASSES`(L103) 全输出语义令牌，实心按钮用 `text-on-accent` 非 `text-white`(L104-106)。
-- **重复表已消除**：
-  - bondLevel：CharacterProfile L21-23 `computed→bondTier`；CharacterSelector L59 `getBondLevel→bondTier`（同一份，第二份硬色表已删）。
-  - moodStatus：CharacterProfile L57 `moodTier`；InteractionPanel L703 `moodColor`（第二份硬色表已删）。
-  - INTERACTION/ACTIVITY named 映射：InteractionPanel L19 `=SEMANTIC_CARD_CLASSES`；NurtureActions L210-214 指共享映射。
-- **残留硬色 Grep（养成 5 文件 + SquadBattleView）**：
-  - SquadBattleView：**零命中**（全迁）。
-  - DialogueSystem / InteractionPanel / CharacterSelector(模板色) / NurtureActions：**零命中**。
-  - CharacterProfile：10 命中 = **稀有度渐变 L215-219(5) + 稀有度徽章 L230-234(5)**，皆契约明文合法例外。
-  - CharacterSelector：稀有度 shadow L173-177（5，合法例外）。
-- **text-white/bg-black 例外审计**：CharacterProfile L225/L230-235 稀有度徽章压图、`bg-black/75~80` modal backdrop、SquadBattleView L719 图片压片位置徽章 + L815/874 阵亡遮罩——全为铁律明文固定例外。
-- **无 partial-migration**：bondLevel/moodStatus 两 computed 均整函数走共享映射，未见「同一函数半语义半硬色」。
+### 2. `cd frontend-vue && npm run test`
+```
+ Test Files  47 passed (47)
+      Tests  533 passed (533)
+   Duration  7.45s
+```
+**PASS — 47 文件 / 533 测试全绿。** 与 gen_status 自报一致。HEAD 提交树静态 it/test 行计数 505（it.each/循环导致与运行时数有差，属正常），运行时 533 > 自报基线 530，满足「不低于既有数量减去删掉的训练测试」。
 
-### 🔴 重点二：confirm/alert 清零 —— 通过
-- 全仓 `\b(confirm|alert)\s*\(` Grep：仅剩
-  - 2 个声明的同名局部函数：`battle/CardSelectionModal.vue:142`、`battle/TypeSelectionModal.vue:116`（`function confirm()`，非原生调用）✅ 与契约一致。
-  - 其余全走主题化 `useDialog`：CollectionsView:74、BattleView:116、TierListGame:159、TasteProfileGame:128、CardDetailModal:69/213、DeckEditor(5)、DeckList:23、GachaShop:29 — 均 `await confirm`/`void alert`，危险操作带 `danger:true`。
-  - 解锁门面内 `useUnlockConfirm.ts` 用主题化 confirm/alert（非原生）。
-- **useDialog/AppDialog**：`useDialog.ts` confirm→Promise<boolean>、alert→Promise<void>，模块级单例队列（旧弹窗以 false 结算防悬挂 L37-41）；`AppDialog.vue` 挂 App.vue:223，全语义令牌（`bg-elevated/text-ink/text-ink-2/border-line/btn-primary/btn-danger/btn-ghost`，无 text-white）、Teleport+backdrop+role=dialog、Esc/Enter/autofocus。✅
-- **useUnlockConfirm 带 domain 不绕过守卫**：`unlock(card, domain: CardDomain)`（L40，非写死 anime）；4 处接入正确——GenreSets/RecommendationStrip/NicheGems `unlock(card,'anime')`、CodexPanel `unlock(card, codexDomain.value)` 双域；以 `userStore.unlockCodexCard` 返回 `{ok,error}` 为准（L62-66），UI 不重复守卫。✅
-- **store 层 4 处降级 toast**：userStore.ts:103/108、collection.ts:113、battleSetup.ts:41、persistence.ts:173 → `profile.addLog(..., 'warning')` 非阻塞，无原生 alert。✅（契约提 userStore:158 实际落 160，同一意图）
+### 3. `cd frontend-vue && npm run build`
+```
+✓ built in 5.68s
+dist/assets/NurtureView-CRzAKtuc.js  10.90 kB │ gzip: 4.20 kB
+dist/assets/combat-DoIZaxE4.js        0.56 kB
+```
+**PASS — type-check + 生产构建成功，NurtureView/combat chunk 正常产出。**
 
-### onboarding —— 通过
-- `config/onboardingSteps.ts`：5 步。第 1 步 value-first（L23「这里会照出你的番剧人格」，无「打卡」开场）；第 5 步点名品味（L49-53，route `/collections`，cta「去标记看过」）。**引导内无 toggleTasteWatched 调用**（只导航不写状态）。
-- `OnboardingGuide.vue`：import `ONBOARDING_STEPS`(L11)，`isLast=stepIndex===steps.length-1`(L21)，进度点/按钮 length 派生（L81/L102）——4→5 零逻辑改。完成标志仍 localStorage。✅
+### 4. `./.venv/Scripts/python.exe backend/test_security.py`
+```
+RESULT: PASS — all security checks passed
+EXIT=0
+```
+**PASS — 退出码 0，全部断言 PASS**（app.debug False / 401 越权 / saveVersion 409 并发 / 原子写 / 邀请码门控）。
 
-### /homestead 冻结 —— 通过
-- `router/index.ts:45-46`：`path:'/homestead'` + `redirect:'/'`，component import 已删。
-- HomesteadView 全 src grep：仅 router 注释引用，**无别处 import**。
-- `npm run build` dist/assets：**无 HomesteadView chunk**（`ls dist/assets|grep -i homestead` 零命中）——已移出构建产物。
-- App.vue：homestead 导航注释块已删（grep 零命中）。HomesteadView.vue 文件保留（冻结不删）。✅
+### 5. `grep -rn "debug=True" backend/server.py api/index.py`
+```
+（无输出，退出码 1 = 零匹配）
+```
+两文件均存在；零命中。**PASS。**
 
-### 计时器修复 —— 通过
-- `NurtureActions.vue`：`schedule()`+`pendingTimers` Set(L34-40)，两处 setTimeout 走 schedule（L47 3s 动画、L286 训练播报）；`onUnmounted`(L441) 清 interval + `pendingTimers.forEach(clearTimeout)`(L446)。无裸 setTimeout 漏网。✅
+## Generator 报告 vs 实际对比
 
-### 文档同步 + MAX_PINS + 死代码 —— 通过
-- pitfalls.md L11：「存档协议当前 **v12**」全沿革 + 「权威值在 schema.ts:30，文档只指向不复述」；无残留 stale「v6」。CLAUDE.md L47 同 v12。
-- SquadBattleView：「每日最多挑战10次」整行已删，仅剩 L638「无次数限制」（矛盾消除）。
-- CardDetailModal:69：用导出常量 `MAX_PINS`（L6 import），非 `pinnedIds.length`。✅
-
-### engine 纯净 —— 通过
-- `src/engine/` grep nurtureColors/useDialog/useUnlockConfirm/onboardingSteps/AppDialog：零命中。本轮逻辑未渗入 engine。✅
-
-### 测试真增不弱化 —— 通过
-- 既有测试文件 diff：tasteProfile.test.ts +155/-1（-1=import 行改写，非删断言）、buildWrappedStats.test.ts +25/-0。无既有用例删除/弱化。
-- 8 个新 test 文件（含 nurtureColors/useDialog/useUnlockConfirm/onboardingSteps + 前轮遗留 useWatchedAnime/watchingPins/contentIndex/genreSets）。
-- test 数 512 ≥ 基线 489。✅
-
-### 🔒 零存档铁律 —— 通过
-- `git diff HEAD` schema.ts / migrations.ts / codexUnlock.ts：**zero diff**。
-- persistence.ts：3 行变更（+2/-1），亲读 = **仅 loadFromServer catch 块 alert→addLog toast**（L173），未碰 buildPayload/applyPayload/saveVersion；`schema.ts:30 SAVE_VERSION = 12` 未动。
-- 结论：协议结构三处零改动，SAVE_VERSION 仍 12，铁律恪守。✅
+完全一致，无出入：
+- type-check 0 错误 — 一致。
+- test 47 文件 / 533 测试 — 一致（自报亦 47/533）。
+- build 成功 — 一致。
+- 后端安全 EXIT=0 全 PASS — 一致。
+- debug=True 零命中 — 一致。
+- gen_status 列举的源码改动（瘦身字段、加点制函数、纯加法公式、删 6 组件、三处同改、v14 迁移测试）逐项核对属实，git status 改动范围与自报吻合（6 个 `D`、`config/nurture.ts` + `stores/equipment.ts` 两个 `??`）。
 
 ## pitfalls 合规检查
-- 颜色铁律：语义类/令牌，无 text-white 压浅底、无动态拼色、无未定义令牌。✅
-- 共享色映射须抽（C3）：已抽 config/nurtureColors.ts 整函数重写，无逐处残留。✅
-- 统一弹窗须新建（C5）：已新建 useDialog+AppDialog。✅
-- 解锁门面收 domain（C2）：已收，双域正确，以 store error 为准。✅
-- setTimeout 登记清除（C4）：已仿 SquadBattleView schedule() 收口。✅
-- 零存档铁律 / 测试纪律（不跑 lint --fix）：恪守。✅
 
-## 结构漂移检查
-- 项目无 `docs/project_structure.md` → **跳过**（注明）。新增文件（nurtureColors/onboardingSteps/useDialog/useUnlockConfirm/AppDialog）符合既有 config/composables/components 分层，依赖只向下。
+- **engine 纯净 / RNG 可注入**：`engine/nurture/` 零 `Math.random`（grep 零命中），加点函数全部注入 `RNG`。合规。
+- **依赖只向下**：build/type-check 过（lint 闸不在验收命令内，但 build 含 type-check 且 engine 未反向 import store）。合规。
+- **存档三处同改 + 不破往返**：schema + migrations + 装配器（persistence.ts）三处齐改，migrations.test/persistence.test 覆盖 v14 瘦身（`not.toHaveProperty` 守旧字段不漏）+ equipment 缺省/局部损坏；既有往返测试未破（533 全绿）。合规。
+- **货币只走 spend/earn**：补习 `profile.spend('knowledgePoints')`、里程碑 `profile.earn`。合规。
+- **颜色语义令牌**：`nurtureColors.ts` 瘦身只留 `bondTier` 语义令牌；build 通过为弱证据，未做逐行审色但符合自报。
+- **别误伤保护入口**：`addCharacterExp`/`addIdleAffection` 保留可用 — 家园 `settleHomestead`（userStore.ts:388-389）与挑战塔（SquadBattleView.vue:417/440）调用链完整；`homestead.ts` 改动仅为注释（无逻辑变更）。合规。
+- **文档版本不复述**：CLAUDE.md/schema 注释均指向 `SAVE_VERSION` 权威。合规。
+
+未发现任何违反 pitfalls.md 的实现。
 
 ## 失败原因分析
-- 无失败项。五条验收命令全绿，五个独立核查重点全部取证通过。
+
+无失败项。
 
 ## 新陷阱待追加
-- 无新增技术陷阱。自报 3 条（JSDoc 内 `bg-*/20` 的 `*/` 提前闭合注释、零存档铁律精确边界=装配器文件非协议 UI 行可改、本环境无组件测试基建故 onboarding 抽纯数据模块单测）均已沉淀于 gen_status.md，可酌情并入 pitfalls，非阻塞。
 
-## 决策（tier1 on → 信息性）
-**COMPLETE**
+采纳 Generator 自报的两条（验证过程确认属实，建议 Sprint 结束后追加 pitfalls.md）：
+- [迁移] v14 `migrateNurtureData` 必须**白名单重建对象**而非 spread 浅拷贝，否则删掉的旧字段会随 spread 漏进新档（migrations.test.ts 用 `not.toHaveProperty` 守这条已落地）。
+- [测试纪律/orch] 切勿在主工作树用 `git stash` 测「改动前基线」——会把整轮未提交产物（含组件删除）一并收走；要对比基线用临时 worktree 或 `git archive HEAD`（本 Evaluator 即用 git archive 取基线，未污染工作树）。
 
-5 轮收尾最终质量判断：第 5 轮债轮 I5-T1~T5 五任务**真修真做、零返工债**。债轮成败两大分水岭——硬色连根拔（养成 5 文件 + SquadBattleView 残留可迁硬色 = 0，仅稀有度/图片压片合法例外；两份 bondLevel + 两份 moodStatus 重复表经整函数重写消除，无 partial-migration）与 confirm/alert 清零（全仓原生弹窗归零，仅剩 2 个声明的同名局部函数；解锁四件套收敛进收 domain 的共享门面、以 store error 为准不双重守卫）——**双双彻底达成**。onboarding value-first 改写 + 第 5 步点名品味（只导航不写状态）、/homestead 完整冻结（redirect+移出构建产物，dist 无 chunk）、计时器登记清除、文档 v12 同步、MAX_PINS/死代码修——逐条取证通过。零存档铁律恪守（schema/migrations/codex zero diff，persistence 仅 UI 行改，SAVE_VERSION 仍 12）。engine 纯净、依赖只向下、颜色铁律不破。test 512（>489 基线）、type-check 0 错、build 成功、后端 PASS、debug 零命中——五命令亲跑全绿。**5 轮 product-loop 迭代以干净状态收尾，无遗留返工债。**
+## 决策
+
+所有 checkbox 已勾选且属实；五条验收命令由 Evaluator 亲跑全部通过（1/2/3/4 成功、5 零命中）；pitfalls 全合规；保护入口未误伤。
+
+DECISION: COMPLETE

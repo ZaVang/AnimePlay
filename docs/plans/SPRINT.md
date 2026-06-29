@@ -15,19 +15,19 @@ engine 纯净（零 Vue/Pinia/DOM/IO）/ 依赖只向下（views→components→
 
 ## 任务清单（S13-C1）
 
-- [ ] **C1-T1｜养成数据 + 引擎瘦身（改加点制）**
+- [x] **C1-T1｜养成数据 + 引擎瘦身（改加点制）**
   - `types/nurture.ts`：`CharacterNurtureData` 瘦身为 `{ affection, level, experience, totalExperience, lastInteraction, statPoints: {hp,atk,def,sp,spd} }`。删除 `intimacy / totalInteractions / dialogueHistory / gifts / specialEvents / attributes / levelBonusAttributes / battleEnhancements / preferences / trainingCooldowns`（含其中的 mood）。
   - `engine/nurture/rules.ts`：删训练相关（`generateTrainingOpponent / trainingOutcome / applyBattleEnhancements / enhanceAttribute / enhanceBattleStat / ATTRIBUTE_CAP / ENHANCEMENT_CAP / distributeRandomAttributes(旧的属性版)`）；新增「每升一级 roll `POINTS_PER_LEVEL`(起 10，放 config 或 rules 常量，可调) 点**随机分配到 5 战斗维**（hp/atk/def/sp/spd），累加进 `statPoints`」的纯函数（**注入 RNG**，可复现）；保留等级曲线 `getRequiredExpForLevel / getLevelFromExp / getLevelProgress / MAX_CHARACTER_LEVEL` 与瘦身版 `createDefaultNurtureData`。
   - `stores/nurture.ts`：删训练/强化/冷却 action；保留并适配 `addCharacterExp`（升级时 roll 加点写入 statPoints）/`addIdleAffection`；新增「带塔参战涨好感」与「补习(花知识点 → 加经验)」入口（补习经 `profile.spend('knowledgePoints', …)`）。
   - 验收：type-check 0；`engine/nurture/*.test.ts` 改为覆盖加点制（升级把固定点数随机分配到 5 维，注入 RNG 可复现）。
 
-- [ ] **C1-T2｜战力公式改纯加法**
+- [x] **C1-T2｜战力公式改纯加法**
   - `engine/squad/combat.ts`：`generateBattleStats` 改签名为 `(baseStats, statPoints, equipBonus)`，公式 `最终某围 = base + statPoints[围] + equipBonus[围]`（删除 charm/int/str 的 attributeBonus 与 battleEnhancements% 乘算）。
   - `views/SquadBattleView.vue`：两处战力计算调用（约 131 / 183 行）改为传 `nurtureData.statPoints` + `equipBonus`（本阶段恒 `{hp:0,atk:0,def:0,sp:0,spd:0}`）；保留 ~414 行的 `addCharacterExp`；并在塔战斗结算后给参战角色涨好感。
   - 更新 `engine/squad/combat.test.ts` 覆盖新公式。
   - 验收：type-check 0；combat.test 绿。
 
-- [ ] **C1-T3｜删旧养成 UI + 角色页重写（变体 A + 软上限条）**
+- [x] **C1-T3｜删旧养成 UI + 角色页重写（变体 A + 软上限条）**
   - 删除 `components/nurture/NurtureActions.vue`、`InteractionPanel.vue`、`DialogueSystem.vue` 及其测试与引用。
   - `views/NurtureView.vue` 重写为**变体 A 游戏化角色详情面板**：角色列表 + 选中角色（立绘 + 等级/经验进度条 + 好感进度条&里程碑称号 + **五维数值面板**[每围显示 base/加点两段、软上限参考条] + **3 个装备槽位**[空占位，C2 接配装] + **补习**按钮）。
   - 五维进度条用**软上限参考** `STAT_DISPLAY_REF`（生命 1500 / 攻击 800 / 防御 600 / 技力 700 / 速度 600，放 `config/`，可调；`条填充 = min(100%, 该围值 / 参考)`，超出满条 + MAX 标记）。
@@ -35,7 +35,7 @@ engine 纯净（零 Vue/Pinia/DOM/IO）/ 依赖只向下（views→components→
   - 颜色走皮肤语义令牌。
   - 验收：type-check 0；build 通过；养成页不再引用任何已删组件/字段。
 
-- [ ] **C1-T4｜存档 v14 迁移 + 收口**
+- [x] **C1-T4｜存档 v14 迁移 + 收口**
   - `infra/persistence/schema.ts`：`SAVE_VERSION` 13 → 14；`CharacterNurtureData` 瘦身入 schema；新增**空** equipment 域 `EquipmentSave = { inventory: {uid,defId}[], equipped: Record<number,{weapon,armor,supporter: string|null}> }` + `createDefaultEquipment()`（C2 用，本阶段占位）。
   - `migrations.ts` v13→v14：`migrateNurtureData` 丢弃删掉的字段、保留两轴、补 `statPoints` 缺省（旧档无 → `{hp:0,atk:0,def:0,sp:0,spd:0}`，与瘦身后字段一致）；`migrateEquipment` 旧档补空域。
   - 装配器 `stores/persistence.ts` + 新建 `stores/equipment.ts`（空域 serialize/deserialize/reset）接入 buildPayload/applyPayload/resetAllDomains。

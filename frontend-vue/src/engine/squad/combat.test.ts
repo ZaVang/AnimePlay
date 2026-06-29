@@ -97,27 +97,35 @@ describe('战力评分 calculateBattlePower', () => {
   });
 });
 
-describe('养成联动 generateBattleStats', () => {
-  it('零养成零强化时返回基础属性', () => {
+describe('养成联动 generateBattleStats（S13-C1 纯加法：base + statPoints + equipBonus）', () => {
+  const zero = { hp: 0, atk: 0, def: 0, sp: 0, spd: 0 };
+
+  it('零加点零装备时返回基础属性', () => {
     const base = stats({ hp: 100, atk: 50, def: 30, sp: 40, spd: 60 });
-    const r = generateBattleStats(base, { charm: 0, intelligence: 0, strength: 0 }, { hp: 0, atk: 0, def: 0, sp: 0, spd: 0 });
-    expect(r).toEqual(base);
+    expect(generateBattleStats(base, zero, zero)).toEqual(base);
   });
 
-  it('养成属性按系数注入：体力→攻/防、智力→SP、魅力→速、(体+魅)→HP', () => {
+  it('纯加法逐围相加：base + statPoints + equipBonus', () => {
     const base = stats({ hp: 100, atk: 50, def: 30, sp: 40, spd: 60 });
     const r = generateBattleStats(
       base,
-      { charm: 80, intelligence: 70, strength: 90 },
-      { hp: 50, atk: 50, def: 50, sp: 50, spd: 50 }, // ×1.5（二进制精确，避免浮点边界）
+      { hp: 200, atk: 40, def: 20, sp: 15, spd: 10 }, // 升级加点
+      { hp: 50, atk: 30, def: 10, sp: 5, spd: 8 },    // 装备加成（C1 阶段恒 0，这里验证公式）
     );
     expect(r).toEqual({
-      hp: Math.floor(100 * 1.5 + Math.floor((90 + 80) * 0.2)), // 150+34=184
-      atk: Math.floor(50 * 1.5 + Math.floor(90 * 0.5)),        // 75+45=120
-      def: Math.floor(30 * 1.5 + Math.floor(90 * 0.3)),        // 45+27=72
-      sp: Math.floor(40 * 1.5 + Math.floor(70 * 0.4)),         // 60+28=88
-      spd: Math.floor(60 * 1.5 + Math.floor(80 * 0.3)),        // 90+24=114
+      hp: 100 + 200 + 50, // 350
+      atk: 50 + 40 + 30,  // 120
+      def: 30 + 20 + 10,  // 60
+      sp: 40 + 15 + 5,    // 60
+      spd: 60 + 10 + 8,   // 78
     });
-    expect(r).toEqual({ hp: 184, atk: 120, def: 72, sp: 88, spd: 114 });
+  });
+
+  it('C1 阶段装备恒 0：等价于 base + statPoints', () => {
+    const base = stats({ hp: 100, atk: 50, def: 30, sp: 40, spd: 60 });
+    const sp = { hp: 30, atk: 10, def: 5, sp: 7, spd: 3 };
+    expect(generateBattleStats(base, sp, zero)).toEqual({
+      hp: 130, atk: 60, def: 35, sp: 47, spd: 63,
+    });
   });
 });

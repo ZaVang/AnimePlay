@@ -1,17 +1,16 @@
 /**
- * 养成规则特征测试（S4）。
+ * 养成规则特征测试（S4 建立；S13-C1 改为加点制）。
  */
 import { describe, it, expect } from 'vitest';
 import {
   getRequiredExpForLevel,
   getLevelFromExp,
   getLevelProgress,
-  levelUpAttributePoints,
-  distributeRandomAttributes,
+  createEmptyStatPoints,
+  distributeRandomStatPoints,
+  rollLevelUpStatPoints,
   createDefaultNurtureData,
-  applyBattleEnhancements,
-  generateTrainingOpponent,
-  trainingOutcome,
+  POINTS_PER_LEVEL,
   MAX_CHARACTER_LEVEL,
 } from './rules';
 import { createSeededRng } from '../rng';
@@ -40,68 +39,58 @@ describe('等级曲线 (level-1)² × 1000', () => {
     expect(getLevelProgress(1, 0)).toEqual({ current: 0, required: 1000, percentage: 0 });
   });
 
-  it('升级属性点 = 等级 × 10；满级 100', () => {
-    expect(levelUpAttributePoints(2)).toBe(20);
-    expect(levelUpAttributePoints(50)).toBe(500);
+  it('满级常量与每级加点常量', () => {
     expect(MAX_CHARACTER_LEVEL).toBe(100);
+    expect(POINTS_PER_LEVEL).toBeGreaterThan(0);
   });
 });
 
-describe('distributeRandomAttributes', () => {
+describe('distributeRandomStatPoints（升级随机加点 → 5 战斗维）', () => {
   it('分配总和恒等于输入点数，且各项非负', () => {
     for (let seed = 1; seed <= 20; seed++) {
-      const d = distributeRandomAttributes(100, createSeededRng(seed));
-      expect(d.charm + d.intelligence + d.strength).toBe(100);
-      expect(d.charm).toBeGreaterThanOrEqual(0);
-      expect(d.intelligence).toBeGreaterThanOrEqual(0);
-      expect(d.strength).toBeGreaterThanOrEqual(0);
+      const d = distributeRandomStatPoints(POINTS_PER_LEVEL, createSeededRng(seed));
+      expect(d.hp + d.atk + d.def + d.sp + d.spd).toBe(POINTS_PER_LEVEL);
+      for (const v of [d.hp, d.atk, d.def, d.sp, d.spd]) expect(v).toBeGreaterThanOrEqual(0);
     }
   });
 
-  it('同种子可复现', () => {
-    const a = distributeRandomAttributes(50, createSeededRng(7));
-    const b = distributeRandomAttributes(50, createSeededRng(7));
+  it('注入 RNG 可复现（同种子同结果）', () => {
+    const a = distributeRandomStatPoints(50, createSeededRng(7));
+    const b = distributeRandomStatPoints(50, createSeededRng(7));
     expect(a).toEqual(b);
   });
+
+  it('零点 / 负数点 → 空加点', () => {
+    expect(distributeRandomStatPoints(0, createSeededRng(1))).toEqual(createEmptyStatPoints());
+    expect(distributeRandomStatPoints(-5, createSeededRng(1))).toEqual(createEmptyStatPoints());
+  });
 });
 
-describe('createDefaultNurtureData', () => {
-  it('默认值与原 userStore 工厂一致', () => {
+describe('rollLevelUpStatPoints（多级跳跃一次结算）', () => {
+  it('升 N 级总点数 = N × POINTS_PER_LEVEL', () => {
+    const gain = rollLevelUpStatPoints(1, 4, createSeededRng(3)); // 升 3 级
+    expect(gain.hp + gain.atk + gain.def + gain.sp + gain.spd).toBe(3 * POINTS_PER_LEVEL);
+  });
+
+  it('同种子可复现；oldLevel == newLevel 不加点', () => {
+    expect(rollLevelUpStatPoints(5, 8, createSeededRng(9))).toEqual(rollLevelUpStatPoints(5, 8, createSeededRng(9)));
+    expect(rollLevelUpStatPoints(5, 5, createSeededRng(9))).toEqual(createEmptyStatPoints());
+  });
+});
+
+describe('createDefaultNurtureData（瘦身两轴）', () => {
+  it('默认值：等级 1 / 好感 0 / 空加点 / 空里程碑，且不含已删字段', () => {
     const d = createDefaultNurtureData();
     expect(d.level).toBe(1);
-    expect(d.attributes).toEqual({ charm: 50, intelligence: 50, strength: 50, mood: 80 });
-    expect(d.battleEnhancements).toEqual({ hp: 0, atk: 0, def: 0, sp: 0, spd: 0 });
     expect(d.affection).toBe(0);
-  });
-});
-
-describe('applyBattleEnhancements', () => {
-  it('原始 × (1 + 强化%/100) 向下取整', () => {
-    const base = { hp: 100, atk: 60, def: 40, sp: 50, spd: 70 };
-    expect(applyBattleEnhancements(base, { hp: 50, atk: 0, def: 25, sp: 10, spd: 100 })).toEqual({
-      hp: 150,
-      atk: 60,
-      def: 50,
-      sp: 55,
-      spd: 140,
-    });
-  });
-});
-
-describe('训练', () => {
-  const player = { hp: 100, atk: 100, def: 100, sp: 100, spd: 100 };
-
-  it('对手基底打折（hp/def/sp ×0.8，atk/spd ×0.9），训练项给克制强化', () => {
-    // 练攻击 → 防御型对手：def = 100×0.8×1.2 = 96
-    expect(generateTrainingOpponent('atk', player)).toEqual({ hp: 80, atk: 90, def: 96, sp: 80, spd: 90 });
-    // 练生命 → 耐久对手：hp = 100×0.8×1.4 = 112
-    expect(generateTrainingOpponent('hp', player)).toEqual({ hp: 112, atk: 90, def: 80, sp: 80, spd: 90 });
-    expect(generateTrainingOpponent('sp', player).sp).toBe(104); // 80×1.3
-  });
-
-  it('结算表：胜 100%/25 经验，负 40% 向上取整/10，平 70%/18', () => {
-    expect(trainingOutcome('attacker', 3)).toEqual({ gain: 3, exp: 25 });
-    expect(trainingOutcome('defender', 3)).toEqual({ gain: 2, exp: 10 }); // ceil(1.2)
-    expect(trainingOutcome(null, 3)).toEqual({ gain: 3, exp: 18 }); // ceil(2.1)
+    expect(d.experience).toBe(0);
+    expect(d.totalExperience).toBe(0);
+    expect(d.statPoints).toEqual({ hp: 0, atk: 0, def: 0, sp: 0, spd: 0 });
+    expect(d.claimedBondMilestones).toEqual([]);
+    // 瘦身：删掉的旧字段不应出现
+    expect(d).not.toHaveProperty('attributes');
+    expect(d).not.toHaveProperty('battleEnhancements');
+    expect(d).not.toHaveProperty('intimacy');
+    expect(d).not.toHaveProperty('gifts');
   });
 });

@@ -17,6 +17,8 @@
  * v12（evolution-10）：minigames 域加 tasteProfile（番剧品味画像——用户勾选「看过」的番剧 id 集，持久化）。
  * v13（S13-B）：新增 homestead 域——家园挂机（placedCharacterIds 入住角色 + lastSettleAt 离线结算基线时间戳）。
  *   挂机产出的成长（经验/好感）写进既有 characterNurtureData，故 homestead 域本身极小。
+ * v14（S13-C1）：养成精简——characterNurtureData 瘦身为两轴（affection + 等级/加点；删训练/属性/强化/对话/礼物等字段，
+ *   迁移丢弃旧字段、补 statPoints 缺省）+ 新增**空** equipment 域占位（inventory + equipped per character，C2 接配装）。
  */
 import type { PityState } from '@/engine/gacha/draw';
 import type { CharacterNurtureData } from '@/types/nurture';
@@ -29,7 +31,7 @@ import type {
   TowerProgress,
 } from '@/types/player';
 
-export const SAVE_VERSION = 13 as const;
+export const SAVE_VERSION = 14 as const;
 
 /** 商店单品的当日购买记录（跨天读取时自动视为 0）。 */
 export interface ShopPurchaseRecord {
@@ -129,6 +131,37 @@ export interface HomesteadSave {
   lastSettleAt: number;
 }
 
+/**
+ * 装备域（v14 / S13-C1 占位，C2 接配装）。本阶段恒为空：
+ *  - inventory：背包里的装备实例（uid 用 crypto.randomUUID()，defId 指向 config/equipment.ts 目录）。
+ *  - equipped：每个角色 id → 3 槽（weapon/armor/supporter）各放一个 inventory uid 或 null。
+ * C1 不产出/不消费装备，只保证存档三处同改 + 往返保真，C2 直接长出内容。
+ */
+export interface EquipmentItemSave {
+  uid: string;
+  defId: string;
+}
+
+export interface EquippedSlots {
+  weapon: string | null;
+  armor: string | null;
+  supporter: string | null;
+}
+
+export interface EquipmentSave {
+  inventory: EquipmentItemSave[];
+  /** charId → 三槽装备（值为 inventory uid 或 null）。 */
+  equipped: Record<number, EquippedSlots>;
+}
+
+/** v14：装备域默认空态（新档/旧档迁移补默认）。 */
+export function createDefaultEquipment(): EquipmentSave {
+  return {
+    inventory: [],
+    equipped: {},
+  };
+}
+
 /** playerState 的序列化形态（watchedAnime Set → 数组）。 */
 export interface SerializedPlayerState {
   level: number;
@@ -179,6 +212,8 @@ export interface SavePayload {
   minigames: MiniGamesSave;
   /** v13 新增：家园挂机域（入住角色 + 离线结算基线）。 */
   homestead: HomesteadSave;
+  /** v14 新增：装备域（C1 空占位，C2 接配装）。 */
+  equipment: EquipmentSave;
 }
 
 /** 兼容别名（S5 时代命名）。 */

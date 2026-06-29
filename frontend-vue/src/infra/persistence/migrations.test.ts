@@ -4,7 +4,7 @@
  */
 import { describe, it, expect } from 'vitest';
 import { migrate } from './migrations';
-import { SAVE_VERSION, createDefaultDaily, createDefaultHomestead, createDefaultMiniGames, createDefaultPresetSquads, createDefaultTowerProgress } from './schema';
+import { SAVE_VERSION, createDefaultDaily, createDefaultEquipment, createDefaultHomestead, createDefaultMiniGames, createDefaultPresetSquads, createDefaultTowerProgress } from './schema';
 
 /** 模拟 S5 之前服务器上的真实 v1 存档形态。 */
 function buildV1Payload() {
@@ -60,11 +60,17 @@ describe('v1 → v2 迁移', () => {
     expect(v2.characterCollection).toEqual([[12393, { count: 1 }]]);
   });
 
-  it('保底/历史/喜爱/养成原样保留', () => {
+  it('保底/历史/喜爱原样保留；养成两轴保留 + 补缺省（瘦身）', () => {
     expect(v2.animePity).toEqual({ totalPulls: 88, pullsSinceLastHR: 12 });
     expect(v2.animeHistory).toHaveLength(1);
     expect(v2.favoriteAnime).toEqual([326]);
     expect(v2.characterNurtureData).toHaveLength(1);
+    // v14：旧档 { affection, level } 保留两轴 + 补 statPoints/里程碑缺省
+    const [, slim] = v2.characterNurtureData[0];
+    expect(slim.affection).toBe(10);
+    expect(slim.level).toBe(2);
+    expect(slim.statPoints).toEqual({ hp: 0, atk: 0, def: 0, sp: 0, spd: 0 });
+    expect(slim.claimedBondMilestones).toEqual([]);
   });
 
   it('★ 缺失的 presetSquads / towerProgress 补默认值（修复刷新丢进度的根基）', () => {
@@ -116,6 +122,101 @@ describe('v1 → v2 迁移', () => {
 
   it('v13 新键：homestead 缺失补默认（空入住 + 结算基线 0）', () => {
     expect(v2.homestead).toEqual(createDefaultHomestead());
+  });
+
+  it('v14 新键：equipment 缺失补默认（空背包 + 空配装）', () => {
+    expect(v2.equipment).toEqual(createDefaultEquipment());
+  });
+});
+
+describe('v14 养成瘦身迁移（丢旧训练字段、保留两轴、补 statPoints/里程碑缺省）', () => {
+  it('旧 v13 养成数据（含训练/属性/强化等已删字段）→ 只剩两轴 + 加点 + 里程碑', () => {
+    const out = migrate({
+      version: 13,
+      characterNurtureData: [
+        [
+          12393,
+          {
+            affection: 1200,
+            level: 5,
+            experience: 300,
+            totalExperience: 16300,
+            lastInteraction: '2026-06-10',
+            // —— 以下全是 v14 删掉的旧字段，迁移后应被丢弃 ——
+            intimacy: 80,
+            totalInteractions: 42,
+            dialogueHistory: ['d1', 'd2'],
+            gifts: ['flower', 'book'],
+            specialEvents: ['campus_walk_1'],
+            attributes: { charm: 70, intelligence: 60, strength: 90, mood: 88 },
+            levelBonusAttributes: { charm: 12, intelligence: 8, strength: 20 },
+            battleEnhancements: { hp: 30, atk: 10, def: 5, sp: 0, spd: 15 },
+            preferences: { favoriteTopics: ['x'], dislikedTopics: [], favoriteGifts: [] },
+            trainingCooldowns: { charm_training: 1893456000000 },
+          },
+        ],
+      ],
+    } as unknown);
+
+    const [id, slim] = out.characterNurtureData[0];
+    expect(id).toBe(12393);
+    // 两轴 + 等级/经验保留
+    expect(slim.affection).toBe(1200);
+    expect(slim.level).toBe(5);
+    expect(slim.experience).toBe(300);
+    expect(slim.totalExperience).toBe(16300);
+    expect(slim.lastInteraction).toBe('2026-06-10');
+    // 旧投入不退：statPoints 补全 0
+    expect(slim.statPoints).toEqual({ hp: 0, atk: 0, def: 0, sp: 0, spd: 0 });
+    expect(slim.claimedBondMilestones).toEqual([]);
+    // 已删字段被丢弃
+    expect(slim).not.toHaveProperty('intimacy');
+    expect(slim).not.toHaveProperty('attributes');
+    expect(slim).not.toHaveProperty('battleEnhancements');
+    expect(slim).not.toHaveProperty('levelBonusAttributes');
+    expect(slim).not.toHaveProperty('gifts');
+    expect(slim).not.toHaveProperty('dialogueHistory');
+    expect(slim).not.toHaveProperty('trainingCooldowns');
+    expect(slim).not.toHaveProperty('preferences');
+  });
+
+  it('已有 statPoints / claimedBondMilestones 原样保留（往返保真）', () => {
+    const out = migrate({
+      version: 14,
+      characterNurtureData: [
+        [77, { affection: 500, level: 3, experience: 0, totalExperience: 4000, lastInteraction: '', statPoints: { hp: 12, atk: 8, def: 5, sp: 3, spd: 2 }, claimedBondMilestones: ['bond_1', 'bond_2'] }],
+      ],
+    } as unknown);
+    const [, slim] = out.characterNurtureData[0];
+    expect(slim.statPoints).toEqual({ hp: 12, atk: 8, def: 5, sp: 3, spd: 2 });
+    expect(slim.claimedBondMilestones).toEqual(['bond_1', 'bond_2']);
+  });
+
+  it('characterNurtureData 非数组 → 空', () => {
+    expect(migrate({ version: 13, characterNurtureData: 'oops' } as unknown).characterNurtureData).toEqual([]);
+  });
+});
+
+describe('v14 装备域迁移', () => {
+  it('v13 旧档（无 equipment 键）→ 默认空域', () => {
+    expect(migrate({ version: 13 } as unknown).equipment).toEqual(createDefaultEquipment());
+  });
+
+  it('保留已有背包与配装（只收合法形态）', () => {
+    const out = migrate({
+      version: 14,
+      equipment: {
+        inventory: [{ uid: 'a', defId: 'spear' }, { uid: 'bad' }, 'oops'],
+        equipped: { 12393: { weapon: 'a', armor: null, supporter: null }, bad: { weapon: 'x' } },
+      },
+    } as unknown);
+    expect(out.equipment.inventory).toEqual([{ uid: 'a', defId: 'spear' }]);
+    expect(out.equipment.equipped[12393]).toEqual({ weapon: 'a', armor: null, supporter: null });
+  });
+
+  it('equipment 局部损坏按字段补默认', () => {
+    const out = migrate({ version: 14, equipment: { inventory: 'oops', equipped: 'nope' } } as unknown);
+    expect(out.equipment).toEqual({ inventory: [], equipped: {} });
   });
 });
 

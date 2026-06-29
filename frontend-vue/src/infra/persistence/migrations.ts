@@ -9,16 +9,20 @@ import {
   SAVE_VERSION,
   createDefaultAppearance,
   createDefaultDaily,
+  createDefaultEquipment,
   createDefaultHomestead,
   createDefaultMiniGames,
   createDefaultPresetSquads,
   createDefaultTowerProgress,
   type DailySave,
+  type EquipmentSave,
+  type EquippedSlots,
   type HomesteadSave,
   type MiniGamesSave,
   type SavePayload,
   type SerializedPlayerState,
 } from './schema';
+import type { CharacterNurtureData } from '@/types/nurture';
 import { createPityState } from '@/engine/gacha/draw';
 
 /* eslint-disable @typescript-eslint/no-explicit-any -- 迁移层的输入天然是未知形态 JSON */
@@ -145,6 +149,70 @@ function migrateHomestead(raw: any): HomesteadSave {
   };
 }
 
+/**
+ * v14（S13-C1）：养成数据瘦身。保留两轴（affection + 等级/经验），补 statPoints 缺省
+ * （旧档无 → 全 0，与瘦身后字段一致——旧投入不退，见 FUTURE.md S13-C），补空 claimedBondMilestones；
+ * 丢弃删掉的旧字段（intimacy/attributes/battleEnhancements/levelBonusAttributes/gifts/dialogueHistory/
+ * specialEvents/preferences/totalInteractions/trainingCooldowns）。
+ */
+function migrateNurtureData(entries: any): [number, CharacterNurtureData][] {
+  if (!Array.isArray(entries)) return [];
+  return entries
+    .filter((e: any) => Array.isArray(e) && e.length === 2)
+    .map(([id, raw]: [number, any]) => {
+      const data = raw && typeof raw === 'object' ? raw : {};
+      const sp = data.statPoints && typeof data.statPoints === 'object' ? data.statPoints : {};
+      const slim: CharacterNurtureData = {
+        affection: typeof data.affection === 'number' ? data.affection : 0,
+        lastInteraction: typeof data.lastInteraction === 'string' ? data.lastInteraction : '',
+        level: typeof data.level === 'number' ? data.level : 1,
+        experience: typeof data.experience === 'number' ? data.experience : 0,
+        totalExperience: typeof data.totalExperience === 'number' ? data.totalExperience : 0,
+        statPoints: {
+          hp: typeof sp.hp === 'number' ? sp.hp : 0,
+          atk: typeof sp.atk === 'number' ? sp.atk : 0,
+          def: typeof sp.def === 'number' ? sp.def : 0,
+          sp: typeof sp.sp === 'number' ? sp.sp : 0,
+          spd: typeof sp.spd === 'number' ? sp.spd : 0,
+        },
+        claimedBondMilestones: Array.isArray(data.claimedBondMilestones)
+          ? data.claimedBondMilestones.filter((x: unknown): x is string => typeof x === 'string')
+          : [],
+      };
+      return [id, slim] as [number, CharacterNurtureData];
+    });
+}
+
+/**
+ * v14（S13-C1）：装备域（C1 空占位）。旧档无此键 → 默认空域；
+ * 局部损坏按字段补默认。inventory 只收 {uid,defId} 形态；equipped 逐角色补三槽缺省。
+ */
+function migrateEquipment(raw: any): EquipmentSave {
+  const defaults = createDefaultEquipment();
+  if (!raw || typeof raw !== 'object') return defaults;
+
+  const inventory = Array.isArray(raw.inventory)
+    ? raw.inventory
+        .filter((it: any) => it && typeof it.uid === 'string' && typeof it.defId === 'string')
+        .map((it: any) => ({ uid: it.uid, defId: it.defId }))
+    : defaults.inventory;
+
+  const equipped: Record<number, EquippedSlots> = {};
+  if (raw.equipped && typeof raw.equipped === 'object') {
+    for (const [key, val] of Object.entries(raw.equipped as Record<string, any>)) {
+      const charId = Number(key);
+      if (!Number.isFinite(charId) || !val || typeof val !== 'object') continue;
+      equipped[charId] = {
+        weapon: typeof val.weapon === 'string' ? val.weapon : null,
+        armor: typeof val.armor === 'string' ? val.armor : null,
+        supporter: typeof val.supporter === 'string' ? val.supporter : null,
+      };
+    }
+  }
+
+  return { inventory, equipped };
+}
+
 /** 任意原始存档 → 当前版本 payload。历史版本之外的形态按"尽力恢复 + 默认兜底"处理。 */
 export function migrate(raw: unknown): SavePayload {
   const payload = (raw ?? {}) as any;
@@ -162,7 +230,8 @@ export function migrate(raw: unknown): SavePayload {
     characterHistory: Array.isArray(payload.characterHistory) ? payload.characterHistory : [],
     favoriteAnime: Array.isArray(payload.favoriteAnime) ? payload.favoriteAnime : [],
     favoriteCharacters: Array.isArray(payload.favoriteCharacters) ? payload.favoriteCharacters : [],
-    characterNurtureData: Array.isArray(payload.characterNurtureData) ? payload.characterNurtureData : [],
+    // v13 → v14：养成数据瘦身（丢旧训练字段、保留两轴、补 statPoints/里程碑缺省）
+    characterNurtureData: migrateNurtureData(payload.characterNurtureData),
     // ★ v1 → v2：此前根本不在存档里的两块，缺失即默认
     presetSquads: Array.isArray(payload.presetSquads) && payload.presetSquads.length > 0
       ? payload.presetSquads
@@ -184,5 +253,7 @@ export function migrate(raw: unknown): SavePayload {
     minigames: migrateMiniGames(payload.minigames),
     // v12 → v13：家园挂机域（旧档无此键 → 默认空态）
     homestead: migrateHomestead(payload.homestead),
+    // v13 → v14：装备域（C1 空占位；旧档无此键 → 默认空域）
+    equipment: migrateEquipment(payload.equipment),
   };
 }

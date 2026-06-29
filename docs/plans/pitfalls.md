@@ -62,3 +62,8 @@
 - [设备级轻意图层] 「正在追」Pin 用设备级 localStorage（`stores/watchingPins.ts`，仿 onboarding try/catch，MAX_PINS 上限），不进存档——规避重 wishlist 升 v13 的成本，拿 80% 留存价值。
 - [JSDoc 别写 Tailwind opacity] `bg-*/20` 这类含 `*/` 的字面量写进 `/** */` 块注释会提前闭合注释。
 - [orch 提交边界] product-loop 多轮在分支上层层叠加未提交改动（orchestrator 不每轮 commit）——后一轮 Generator 会看到前轮未提交产物，属正常累积非脏树。提交/合并由 orchestrator 收尾或用户决定。
+
+## S13-C1 沉淀（2026-06-29，养成精简→加点制 + 装备占位 + 存档 v14）
+- [迁移] 删字段的瘦身迁移（如 v14 `migrateNurtureData` 把养成砍成两轴）必须**白名单重建对象**返回，**不能 spread 浅拷贝旧档**——否则删掉的旧字段（attributes/battleEnhancements/trainingCooldowns…）会随 spread 漏进新档。用 `migrations.test.ts` 的 `not.toHaveProperty` 守这条。
+- [测试纪律/orch] **别在主工作树用 `git stash` 测「改动前基线」**——会把整轮未提交产物（含组件删除）一并收走，subagent 掉线忘 pop 会显得"工作全没了"。要对比基线用临时 worktree 或 `git archive HEAD`（不污染工作树）。
+- [养成重构] 养成已砍成**两轴**：等级（经验自动升，升级 roll `POINTS_PER_LEVEL=10` 随机加点到 5 战斗维 `statPoints`，engine 注入 RNG）+ 好感（关系仪表 / 6 档里程碑，**不接战力**）。战力 = **纯加法** `base + statPoints + equipBonus`（`combat.generateBattleStats(base, statPoints, equipBonus)`）。装备(C2)未做时 equipBonus 传恒 0。训练/活动/对话/礼物/心情及 `components/nurture/` 全删——别再引用。`STAT_DISPLAY_REF`/`BOND_MILESTONES`/补习成本在 `config/nurture.ts`；SAVE_VERSION 升 v14（权威仍在 `schema.ts:30`）。

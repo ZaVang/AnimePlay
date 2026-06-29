@@ -20,6 +20,9 @@ import type { CharacterCard } from '@/types/card';
 const userStore = useUserStore();
 const gameDataStore = useGameDataStore();
 
+// C1 阶段装备加成恒 0（空占位，C2 接配装）。纯加法战力：base + statPoints + 装备(=0)。
+const NO_EQUIP_BONUS: BattleStats = { hp: 0, atk: 0, def: 0, sp: 0, spd: 0 };
+
 // 战斗状态 - 直接使用爬塔模式
 type BattlePhase = 'towerMode' | 'battle' | 'result';
 const currentPhase = ref<BattlePhase>('towerMode');
@@ -127,8 +130,8 @@ function getSquadPower(squadId: number): number {
     const nurtureData = userStore.getNurtureData(character.id);
     const battleStats = generateBattleStats(
       character.battle_stats || { hp: 100, atk: 50, def: 30, sp: 40, spd: 60 },
-      nurtureData.attributes,
-      nurtureData.battleEnhancements || { hp: 0, atk: 0, def: 0, sp: 0, spd: 0 }
+      nurtureData.statPoints,
+      NO_EQUIP_BONUS // C1 阶段装备恒 0（空占位，C2 接配装）
     );
     return total + calculateBattlePower(battleStats);
   }, 0);
@@ -179,10 +182,10 @@ function createSquadMember(character: CharacterCard, position: number): SquadMem
   const nurtureData = userStore.getNurtureData(character.id);
   const battleStats = generateBattleStats(
     character.battle_stats || { hp: 100, atk: 50, def: 30, sp: 40, spd: 60 },
-    nurtureData.attributes,
-    nurtureData.battleEnhancements || { hp: 0, atk: 0, def: 0, sp: 0, spd: 0 }
+    nurtureData.statPoints,
+    NO_EQUIP_BONUS // C1 阶段装备恒 0（空占位，C2 接配装）
   );
-  
+
   return {
     character,
     battleStats,
@@ -412,8 +415,10 @@ function endBattle() {
       }
       
       userStore.addCharacterExp(member.character.id, individualExp);
+      // 带塔参战涨好感（S13-C1）：并肩作战增进羁绊（与挂机好感同一字段）
+      userStore.addBattleAffection(member.character.id);
     });
-    
+
     userStore.addLog(`战斗胜利！获得 ${totalExp} 经验和 ${knowledgeReward} 知识点！`, 'success');
     userStore.addLog(`参战角色获得 ${characterExp}~${characterExp + 20 + (currentBattleMode.value === 'tower' ? currentTowerFloor.value * 5 : 0)} 角色经验！`, 'info');
     
