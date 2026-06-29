@@ -8,9 +8,11 @@ import { defineStore } from 'pinia';
 import { computed, reactive } from 'vue';
 import { GAME_CONFIG } from '@/config/gameConfig';
 import { getCodexUnlockPrice } from '@/config/codexUnlock';
+import { computeIdleYield, type IdleYield } from '@/config/homestead';
 import { MAX_CHARACTER_LEVEL } from '@/engine';
 import { type ShopItem } from '@/utils/gachaRotation';
 import type { CurrencyKey, Deck } from '@/types/player';
+import type { Rarity } from '@/types/card';
 import { useGachaStore, type DrawnCard } from './gachaStore';
 import { useGameDataStore } from './gameDataStore';
 import { useProfileStore } from './profile';
@@ -22,6 +24,7 @@ import { usePveStore } from './pve';
 import { useShopStore } from './shop';
 import { useGuessStore } from './guess';
 import { useMiniGamesStore } from './minigames/higherLower';
+import { useHomesteadStore } from './homestead';
 import { useThemeStore } from './theme';
 import { useDailyStore } from './daily';
 import { useCodexStore } from './codex';
@@ -73,6 +76,8 @@ export const useUserStore = defineStore('user', () => {
       setAuthToken(token); // token 先挂上，后续 loadFromServer 才能带鉴权头
       profile.currentUser = username;
       await loadFromServer();
+      // 家园离线结算（S13-B）：登录拉档后结算一次挂机收益（首次只建基线、不补发）
+      settleHomestead();
       // 每日登录奖励（evolution-1）：跨天首次登录发放一次，发了就落盘
       if (useDailyStore().claimLoginReward()) {
         saveToServer();
@@ -350,6 +355,48 @@ export const useUserStore = defineStore('user', () => {
     saveToServer();
   }
 
+  // --- 家园挂机离线结算（S13-B）：跨域编排（homestead 入住 + gameData 稀有度 + nurture 成长 + profile 货币） ---
+
+  /**
+   * 把上次结算到现在的挂机收益落地，返回收益摘要供 UI（离线收益弹窗）。
+   * 经验走 nurture.addCharacterExp（含升级播报）、好感走静默 nurture.addIdleAffection、
+   * 知识点经唯一货币入口 profile.earn。首次（lastSettleAt=0）只建立基线、不补发历史；
+   * 未登录直接返回零。无论是否有产出都推进 lastSettleAt，避免已结算时间被重复计入。
+   */
+  function settleHomestead(): IdleYield {
+    const homestead = useHomesteadStore();
+    const placed = homestead.placedCharacterIds;
+    const empty: IdleYield = { hours: 0, expEach: 0, affectionEach: 0, knowledge: 0, characterCount: placed.length };
+    if (!profile.isLoggedIn) return empty;
+
+    const now = Date.now();
+    if (homestead.lastSettleAt === 0) {
+      homestead.setLastSettleAt(now); // 首次建立基线，不补发
+      return empty;
+    }
+
+    const gameData = useGameDataStore();
+    const rarities = placed
+      .map(id => gameData.getCharacterCardById(id)?.rarity)
+      .filter((r): r is Rarity => !!r);
+    const result = computeIdleYield(rarities, now - homestead.lastSettleAt);
+    homestead.setLastSettleAt(now);
+
+    if (result.expEach <= 0 && result.affectionEach <= 0 && result.knowledge <= 0) return result;
+
+    for (const id of placed) {
+      if (result.expEach > 0) nurture.addCharacterExp(id, result.expEach);
+      if (result.affectionEach > 0) nurture.addIdleAffection(id, result.affectionEach);
+    }
+    if (result.knowledge > 0) profile.earn('knowledgePoints', result.knowledge);
+    profile.addLog(
+      `家园挂机 ${result.hours.toFixed(1)}h：全员 +${result.expEach} 经验 / +${result.affectionEach} 好感，合计 +${result.knowledge} 知识点`,
+      'success',
+    );
+    saveToServer();
+    return result;
+  }
+
   // --- 各领域委托（动作完成后统一触发存档） ---
 
   const withSave = <A extends unknown[]>(fn: (...args: A) => unknown) => (...args: A) => {
@@ -453,6 +500,9 @@ export const useUserStore = defineStore('user', () => {
     settleDailyChallenge,
     toggleTasteWatched,
     clearTasteWatched,
+
+    // homestead（S13-B）：家园离线结算（登录时自动调；UI 进家园也会调，见 slice 3）
+    settleHomestead,
 
     // daily（evolution-1）：领取每日任务奖励（领域 store 自己不存档）
     claimDailyTask: (taskId: string) => {

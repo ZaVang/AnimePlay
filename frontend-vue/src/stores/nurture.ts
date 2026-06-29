@@ -82,6 +82,18 @@ export const useNurtureStore = defineStore('nurture', () => {
     }
   }
 
+  /**
+   * 家园挂机离线结算专用：静默加好感。
+   * 不走 increaseAffection 的「经验耦合(amount×5) + 每次 addLog」——挂机经验由结算方按速率另算、
+   * 一次性汇总播报，避免逐角色刷屏与经验重复计入。
+   */
+  function addIdleAffection(characterId: number, amount: number) {
+    if (amount <= 0) return;
+    const nurtureData = getNurtureData(characterId);
+    nurtureData.affection += amount; // 无上限，同 increaseAffection
+    nurtureData.lastInteraction = new Date().toISOString();
+  }
+
   function interactWithCharacter(characterId: number, dialogueId: string) {
     const profile = useProfileStore();
     if (!profile.isLoggedIn) return;
@@ -249,6 +261,7 @@ export const useNurtureStore = defineStore('nurture', () => {
     characterNurtureData,
     getNurtureData,
     increaseAffection,
+    addIdleAffection,
     interactWithCharacter,
     giveGift,
     enhanceAttribute,

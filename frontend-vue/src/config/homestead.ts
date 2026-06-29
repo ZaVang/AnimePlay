@@ -39,3 +39,36 @@ export function cappedIdleHours(elapsedMs: number): number {
   const capped = Math.min(elapsedMs, OFFLINE_CAP_HOURS * MS_PER_HOUR);
   return capped / MS_PER_HOUR;
 }
+
+/** 一次离线结算的收益（纯计算结果，未落地）。 */
+export interface IdleYield {
+  /** 有效小时数（已封顶）。 */
+  hours: number;
+  /** 每个入住角色获得的经验（同值，flat 速率）。 */
+  expEach: number;
+  /** 每个入住角色获得的好感（同值，flat 速率）。 */
+  affectionEach: number;
+  /** 全员合计知识点（按各自稀有度加权后取整）。 */
+  knowledge: number;
+  /** 参与结算的入住角色数。 */
+  characterCount: number;
+}
+
+/**
+ * 纯计算：给定入住角色的稀有度列表 + 离线毫秒数 → 挂机收益（不落地）。
+ * 经验/好感对每个角色是同一 flat 速率；知识点按各自稀有度系数加权求和。
+ * 便于特征测试，且将来若上权威服务端可复用同一口径。
+ */
+export function computeIdleYield(placedRarities: readonly Rarity[], elapsedMs: number): IdleYield {
+  const hours = cappedIdleHours(elapsedMs);
+  const count = placedRarities.length;
+  if (hours <= 0 || count === 0) {
+    return { hours: 0, expEach: 0, affectionEach: 0, knowledge: 0, characterCount: count };
+  }
+  const expEach = Math.floor(IDLE_EXP_PER_HOUR * hours);
+  const affectionEach = Math.floor(IDLE_AFFECTION_PER_HOUR * hours);
+  const knowledge = Math.floor(
+    placedRarities.reduce((sum, r) => sum + IDLE_KP_PER_HOUR_BASE * (IDLE_KP_RARITY_MULT[r] ?? 1) * hours, 0),
+  );
+  return { hours, expEach, affectionEach, knowledge, characterCount: count };
+}
