@@ -1,7 +1,11 @@
 /**
- * 装备域 store（S13-C1 占位；C2 接配装）。
- * C1 阶段只持有空背包 + 空配装，保证存档三处同改 + 往返保真；C2 在此长出
- * inventory 增删 / equip / unequip / 逐角色 equipBonus 解析。本 store 自己不触发保存——保存由门面统一调。
+ * 装备域 store（S13-C1 占位 → C2 接配装）。
+ * 持有背包 inventory + 逐角色三槽配装 equipped，长出：
+ *  - addItem(defId)：建实例（uid = crypto.randomUUID()）入背包，返回 uid。
+ *  - equip(charId, slot, uid) / unequip(charId, slot)：含同槽校验，换下旧件留背包（不丢失）。
+ *  - resolveEquipBonus(charId)：取三槽 uid → 查 inventory 得 defId → 查 config 得 bonus →
+ *    委托 engine 纯函数 sumStatBonus 逐围求和（查表留 store，求和留 engine，engine 不 import config）。
+ * 本 store 自己不触发保存——保存由门面 userStore 统一调。serialize/deserialize/reset 沿用 C1。
  */
 import { defineStore } from 'pinia';
 import { ref } from 'vue';
@@ -11,12 +15,109 @@ import {
   type EquipmentSave,
   type EquippedSlots,
 } from '@/infra/persistence/schema';
+import {
+  getEquipmentDef,
+  type EquipmentSlot,
+} from '@/config/equipment';
+import { sumStatBonus, type StatBonus } from '@/engine';
+
+/** 空三槽（新角色首次配装时建）。 */
+function emptySlots(): EquippedSlots {
+  return { weapon: null, armor: null, supporter: null };
+}
 
 export const useEquipmentStore = defineStore('equipment', () => {
   /** 背包里的装备实例。 */
   const inventory = ref<EquipmentItemSave[]>([]);
   /** charId → 三槽装备（值为 inventory uid 或 null）。 */
   const equipped = ref<Record<number, EquippedSlots>>({});
+
+  // --- 查询 ---
+
+  /** 背包全部实例（只读视图，UI 遍历用）。 */
+  function list(): EquipmentItemSave[] {
+    return inventory.value;
+  }
+
+  /** 取某角色三槽配装（无记录返回空三槽副本，不写入）。 */
+  function getEquipped(charId: number): EquippedSlots {
+    return equipped.value[charId] ?? emptySlots();
+  }
+
+  /** 按 uid 取实例（找不到 undefined）。 */
+  function getItem(uid: string): EquipmentItemSave | undefined {
+    return inventory.value.find(it => it.uid === uid);
+  }
+
+  /** 该 uid 当前是否被任意角色任意槽装备中；命中返回 { charId, slot }，否则 null。 */
+  function findEquippedBy(uid: string): { charId: number; slot: EquipmentSlot } | null {
+    for (const [id, slots] of Object.entries(equipped.value)) {
+      for (const slot of ['weapon', 'armor', 'supporter'] as EquipmentSlot[]) {
+        if (slots[slot] === uid) return { charId: Number(id), slot };
+      }
+    }
+    return null;
+  }
+
+  // --- 增删 ---
+
+  /** 获得一件装备：建实例入背包，返回 uid（uid 在 store 层用 crypto.randomUUID 生成）。 */
+  function addItem(defId: string): string {
+    const uid = crypto.randomUUID();
+    inventory.value.push({ uid, defId });
+    return uid;
+  }
+
+  // --- 配装 ---
+
+  /**
+   * 装备：把 inventory 中 uid 的实例装到 charId 的 slot。
+   * 同槽校验：实例 def.slot 必须 == 目标 slot，否则拒绝（返回 false）。
+   * 换下旧件：旧 uid 仅从槽里移除、仍留背包（不删 inventory）。
+   * 同一实例若已戴在别处（同角色其它槽 / 别的角色），先从原位卸下（一件只能戴一处）。
+   */
+  function equip(charId: number, slot: EquipmentSlot, uid: string): boolean {
+    const item = getItem(uid);
+    if (!item) return false;
+    const def = getEquipmentDef(item.defId);
+    if (!def || def.slot !== slot) return false; // 异槽装备被拒
+
+    // 一件只能戴一处：若已装在别处，先摘下
+    const where = findEquippedBy(uid);
+    if (where && equipped.value[where.charId]) {
+      equipped.value[where.charId][where.slot] = null;
+    }
+
+    if (!equipped.value[charId]) equipped.value[charId] = emptySlots();
+    // 旧件自动回背包（只清槽引用，inventory 不动）
+    equipped.value[charId][slot] = uid;
+    return true;
+  }
+
+  /** 卸下某角色某槽（旧件留背包）。返回是否原本有装备。 */
+  function unequip(charId: number, slot: EquipmentSlot): boolean {
+    const slots = equipped.value[charId];
+    if (!slots || slots[slot] == null) return false;
+    slots[slot] = null;
+    return true;
+  }
+
+  /**
+   * 解析某角色三槽装备的合并五维加成（缺省维 0）。
+   * store 查表（uid→defId→def→bonus），委托 engine sumStatBonus 求和。
+   */
+  function resolveEquipBonus(charId: number): StatBonus {
+    const slots = equipped.value[charId];
+    if (!slots) return sumStatBonus([]);
+    const bonuses = (['weapon', 'armor', 'supporter'] as EquipmentSlot[])
+      .map(slot => slots[slot])
+      .filter((uid): uid is string => uid != null)
+      .map(uid => getItem(uid))
+      .filter((it): it is EquipmentItemSave => it != null)
+      .map(it => getEquipmentDef(it.defId)?.bonus)
+      .filter((b): b is NonNullable<typeof b> => b != null);
+    return sumStatBonus(bonuses);
+  }
 
   // --- 持久化装配 ---
   function serialize(): EquipmentSave {
@@ -45,6 +146,14 @@ export const useEquipmentStore = defineStore('equipment', () => {
   return {
     inventory,
     equipped,
+    list,
+    getEquipped,
+    getItem,
+    findEquippedBy,
+    addItem,
+    equip,
+    unequip,
+    resolveEquipBonus,
     serialize,
     deserialize,
     reset,

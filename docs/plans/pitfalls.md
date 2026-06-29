@@ -67,3 +67,9 @@
 - [迁移] 删字段的瘦身迁移（如 v14 `migrateNurtureData` 把养成砍成两轴）必须**白名单重建对象**返回，**不能 spread 浅拷贝旧档**——否则删掉的旧字段（attributes/battleEnhancements/trainingCooldowns…）会随 spread 漏进新档。用 `migrations.test.ts` 的 `not.toHaveProperty` 守这条。
 - [测试纪律/orch] **别在主工作树用 `git stash` 测「改动前基线」**——会把整轮未提交产物（含组件删除）一并收走，subagent 掉线忘 pop 会显得"工作全没了"。要对比基线用临时 worktree 或 `git archive HEAD`（不污染工作树）。
 - [养成重构] 养成已砍成**两轴**：等级（经验自动升，升级 roll `POINTS_PER_LEVEL=10` 随机加点到 5 战斗维 `statPoints`，engine 注入 RNG）+ 好感（关系仪表 / 6 档里程碑，**不接战力**）。战力 = **纯加法** `base + statPoints + equipBonus`（`combat.generateBattleStats(base, statPoints, equipBonus)`）。装备(C2)未做时 equipBonus 传恒 0。训练/活动/对话/礼物/心情及 `components/nurture/` 全删——别再引用。`STAT_DISPLAY_REF`/`BOND_MILESTONES`/补习成本在 `config/nurture.ts`；SAVE_VERSION 升 v14（权威仍在 `schema.ts:30`）。
+
+## S13-C2 沉淀（2026-06-29，装备系统全栈，product-loop --tier1 off 1 轮 COMPLETE）
+- [vue 模板 prop 禁用裸名 `slot`] 组件 prop 起名 `slot` → 模板 `:slot=` 被 `vue/no-deprecated-slot-attribute` 误判为废弃 slot 语法（eslint error）。装备/槽位组件 prop 用 `equipSlot`（模板 `:equip-slot=`）等非裸名。
+- [engine 不 import config] 装备相关 engine 纯函数靠**注入**、不反向依赖 config：掉落 `rollTowerDrop(floor, rng, rarityForFloor)` 把「层段→稀有度映射」作参数；`sumStatBonus(bonuses[])` 收已解析的 bonus 数组。查表/边界留 config/store，engine 零 `@/config` import。
+- [Tailwind 透明度用 / 别用 \\] `bg-accent/15` 才对，`bg-accent\\15`（反斜杠）是无效类、JIT 静默不生成不报错（「未定义令牌静默坏色」家族，同 C1 barColor）。审色顺手 grep 反斜杠+数字。
+- [装备系统] 装备目录在 `config/equipment.ts`（3 槽 weapon/armor/supporter × R..UR，名值可调）；实例 `{uid(crypto.randomUUID), defId}` 入 v14 equipment 域（C2 不升档）；战力 equipBonus 在 SquadBattleView 与 NurtureView/配装弹窗**必须同源 `resolveEquipBonus`**（否则 delta 预览与实战不符）；塔掉落挂 `pve.completeFloor` 的 `true` 返回（非当前层返回 false，天然防刷低层）；KP 兑换走 `profile.spend`；背包内嵌 NurtureView（未加路由）。

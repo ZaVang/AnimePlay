@@ -9,7 +9,13 @@ import { computed, reactive } from 'vue';
 import { GAME_CONFIG } from '@/config/gameConfig';
 import { getCodexUnlockPrice } from '@/config/codexUnlock';
 import { computeIdleYield, type IdleYield } from '@/config/homestead';
-import { MAX_CHARACTER_LEVEL } from '@/engine';
+import {
+  dropRarityForFloor,
+  getEquipmentDef,
+  getEquipmentDefBySlotRarity,
+  getEquipmentPrice,
+} from '@/config/equipment';
+import { MAX_CHARACTER_LEVEL, rollTowerDrop, defaultRng } from '@/engine';
 import { type ShopItem } from '@/utils/gachaRotation';
 import type { CurrencyKey, Deck } from '@/types/player';
 import type { Rarity } from '@/types/card';
@@ -25,6 +31,7 @@ import { useShopStore } from './shop';
 import { useGuessStore } from './guess';
 import { useMiniGamesStore } from './minigames/higherLower';
 import { useHomesteadStore } from './homestead';
+import { useEquipmentStore } from './equipment';
 import { useThemeStore } from './theme';
 import { useDailyStore } from './daily';
 import { useCodexStore } from './codex';
@@ -226,6 +233,50 @@ export const useUserStore = defineStore('user', () => {
 
     saveToServer();
     return Promise.resolve();
+  }
+
+  // --- 装备来源（S13-C2）：塔通层掉落 + 知识点定向兑换 ---
+
+  /**
+   * 塔通层掉落（在 completeFloor 推进进度为真的分支内调用，天然防刷低层）。
+   * 掉落判定走 engine 纯函数 rollTowerDrop（RNG 可注入，默认真随机）；命中则 store 入库 + 通知。
+   * 不自身存档——由 completeFloor 统一在同一事务里 saveToServer。
+   */
+  function rollFloorDrop(floor: number, rng = defaultRng) {
+    const drop = rollTowerDrop(floor, rng, dropRarityForFloor);
+    if (!drop) return;
+    const def = getEquipmentDefBySlotRarity(drop.slot, drop.rarity);
+    if (!def) return; // 该槽位无此稀有度（防御，起始目录全覆盖故正常不触发）
+    useEquipmentStore().addItem(def.id);
+    profile.addLog(`🎁 通层掉落：[${def.rarity}] ${def.name}！`, 'success');
+  }
+
+  /**
+   * 知识点定向兑换一件装备（背包商店点购发起）。照图鉴解锁范式：
+   * 登录校验 → spend('knowledgePoints', 价) 失败不发货 → 成功 addItem + 日志 + saveToServer。
+   * 返回 { ok, error? } 供 UI/测试断言（不在此弹 alert）。
+   */
+  function purchaseEquipment(defId: string): { ok: boolean; error?: string } {
+    if (!profile.isLoggedIn) {
+      return { ok: false, error: '请先登录！' };
+    }
+    const def = getEquipmentDef(defId);
+    if (!def) {
+      profile.addLog('兑换失败，装备不存在。', 'warning');
+      return { ok: false, error: '装备不存在。' };
+    }
+    const price = getEquipmentPrice(def.rarity);
+    if (price <= 0) {
+      return { ok: false, error: '该装备不可兑换。' };
+    }
+    if (!profile.spend('knowledgePoints', price)) {
+      profile.addLog(`知识点不足，兑换 [${def.rarity}] ${def.name} 需 ${price} 知识点。`, 'warning');
+      return { ok: false, error: '知识点不足。' };
+    }
+    useEquipmentStore().addItem(defId);
+    profile.addLog(`花费 ${price} 知识点，兑换 [${def.rarity}] ${def.name}！`, 'success');
+    saveToServer();
+    return { ok: true };
   }
 
   // --- 图鉴定向解锁编排（evolution-2 / E2-T1）：花知识点直接入库一张心仪卡 ---
@@ -537,6 +588,21 @@ export const useUserStore = defineStore('user', () => {
       if (useDailyStore().claimWeekly(taskId)) saveToServer();
     },
 
+    // equipment（S13-C2）：知识点定向兑换装备（成功才入库 + 存档）
+    purchaseEquipment,
+    // equipment（S13-C2）：配装/卸下（成功才存档；查询直通 store）
+    equipItem: (charId: number, slot: 'weapon' | 'armor' | 'supporter', uid: string) => {
+      if (!profile.isLoggedIn) return false;
+      const ok = useEquipmentStore().equip(charId, slot, uid);
+      if (ok) saveToServer();
+      return ok;
+    },
+    unequipItem: (charId: number, slot: 'weapon' | 'armor' | 'supporter') => {
+      if (!profile.isLoggedIn) return false;
+      const ok = useEquipmentStore().unequip(charId, slot);
+      if (ok) saveToServer();
+      return ok;
+    },
     // codex（evolution-2）：图鉴定向解锁（花知识点入库一张心仪卡）
     unlockCodexCard,
     // codex（evolution-1）：领取图鉴里程碑奖励 + 联动「收藏家」成就
@@ -585,10 +651,14 @@ export const useUserStore = defineStore('user', () => {
     updateSquadName: withSave(pve.updateSquadName),
     getSquadMembers: pve.getSquadMembers,
     getCurrentChallengeFloor: pve.getCurrentChallengeFloor,
-    completeFloor: (floor: number) => {
+    completeFloor: (floor: number, rng = defaultRng) => {
+      // pve.completeFloor 仅在「推进到新层」时返回 true（重复挑战已过低层返回 false），
+      // 故掉落挂在此分支天然防刷——不另加冗余去重守卫，也不忽略返回直接掉落（经济安全）。
       if (pve.completeFloor(floor)) {
         // 留存埋点（evolution-1）：爬塔通层成就（用返回值守卫，floor 不匹配不记）
         useAchievementsStore().check('tower', { floor });
+        // S13-C2：通层装备掉落（50% + 层段稀有度 + 随机槽，命中入库）
+        rollFloorDrop(floor, rng);
         saveToServer();
       }
     },

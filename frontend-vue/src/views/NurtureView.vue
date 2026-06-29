@@ -2,10 +2,21 @@
 import { ref, computed } from 'vue';
 import { useUserStore } from '@/stores/userStore';
 import { useGameDataStore } from '@/stores/gameDataStore';
+import { useEquipmentStore } from '@/stores/equipment';
 import type { CharacterCard } from '@/types/card';
 import type { CharacterNurtureData } from '@/types/nurture';
 import { generateBattleStats, calculateBattlePower, type BattleStats } from '@/engine';
 import { bondTier } from '@/config/nurtureColors';
+import { rarityStyle } from '@/config/equipmentColors';
+import {
+  getEquipmentDef,
+  SLOT_META,
+  SLOT_ORDER,
+  type EquipmentSlot,
+  type EquipmentDef,
+} from '@/config/equipment';
+import InventoryPanel from '@/components/nurture/InventoryPanel.vue';
+import EquipPickerModal from '@/components/nurture/EquipPickerModal.vue';
 import {
   STAT_DISPLAY_REF,
   STAT_META,
@@ -18,9 +29,7 @@ import {
 
 const userStore = useUserStore();
 const gameDataStore = useGameDataStore();
-
-// C1 阶段装备加成恒 0（空占位，C2 接配装）
-const NO_EQUIP_BONUS: BattleStats = { hp: 0, atk: 0, def: 0, sp: 0, spd: 0 };
+const equipmentStore = useEquipmentStore();
 
 const selectedCharacterId = ref<number | null>(null);
 
@@ -61,9 +70,18 @@ const baseStats = computed<BattleStats>(
   () => selectedCharacter.value?.battle_stats || { hp: 100, atk: 50, def: 30, sp: 40, spd: 60 },
 );
 
+// 装备加成：与小队/进战斗同源 resolveEquipBonus（口径全站一致，避免数字打架）。
+// 依赖 equipmentStore.equipped 使配装后实时重算。
+const equipBonus = computed<BattleStats>(() => {
+  const c = selectedCharacter.value;
+  if (!c) return { hp: 0, atk: 0, def: 0, sp: 0, spd: 0 };
+  void equipmentStore.equipped; // 触发依赖收集
+  return equipmentStore.resolveEquipBonus(c.id);
+});
+
 const finalStats = computed<BattleStats>(() => {
   if (!selectedCharacter.value) return { hp: 0, atk: 0, def: 0, sp: 0, spd: 0 };
-  return generateBattleStats(baseStats.value, selectedCharacter.value.nurtureData.statPoints, NO_EQUIP_BONUS);
+  return generateBattleStats(baseStats.value, selectedCharacter.value.nurtureData.statPoints, equipBonus.value);
 });
 
 const battlePower = computed(() => calculateBattlePower(finalStats.value));
@@ -72,10 +90,11 @@ const battlePower = computed(() => calculateBattlePower(finalStats.value));
 const statRows = computed(() => {
   const c = selectedCharacter.value;
   if (!c) return [];
+  const eb = equipBonus.value;
   return STAT_META.map(meta => {
     const base = baseStats.value[meta.key];
     const point = c.nurtureData.statPoints[meta.key];
-    const equip = NO_EQUIP_BONUS[meta.key];
+    const equip = eb[meta.key];
     const total = base + point + equip;
     const ref = STAT_DISPLAY_REF[meta.key];
     const fillPct = Math.min(100, (total / ref) * 100);
@@ -127,12 +146,32 @@ function claimMilestone(milestoneId: string) {
   if (selectedCharacter.value) userStore.claimBondMilestone(selectedCharacter.value.id, milestoneId);
 }
 
-// 3 个装备槽位（C1 空占位，C2 接配装）
-const equipSlots = [
-  { key: 'weapon', label: '武器', icon: '⚔️' },
-  { key: 'armor', label: '防具', icon: '🛡️' },
-  { key: 'supporter', label: '支援', icon: '🎴' },
-];
+// 3 个装备槽位（C2 接配装：点击开 picker 弹窗）
+const equipSlots = SLOT_ORDER.map(key => ({ key, ...SLOT_META[key] }));
+
+// 当前角色三槽已装定义（展示槽里穿了什么）
+const equippedDefs = computed(() => {
+  const c = selectedCharacter.value;
+  if (!c) return {} as Record<EquipmentSlot, EquipmentDef | undefined>;
+  void equipmentStore.equipped; // 触发依赖收集
+  const slots = equipmentStore.getEquipped(c.id);
+  const out = {} as Record<EquipmentSlot, EquipmentDef | undefined>;
+  for (const s of SLOT_ORDER) {
+    const uid = slots[s];
+    out[s] = uid ? getEquipmentDef(equipmentStore.getItem(uid)?.defId ?? '') : undefined;
+  }
+  return out;
+});
+
+// 配装弹窗状态
+const pickerOpen = ref(false);
+const pickerSlot = ref<EquipmentSlot>('weapon');
+
+function openPicker(slot: EquipmentSlot) {
+  if (!selectedCharacter.value) return;
+  pickerSlot.value = slot;
+  pickerOpen.value = true;
+}
 </script>
 
 <template>
@@ -293,7 +332,7 @@ const equipSlots = [
                   <span class="flex items-center gap-2">
                     <span class="text-ink font-bold">{{ row.total }}</span>
                     <span class="text-xs text-ink-3">
-                      ({{ row.base }} <span class="text-success" v-if="row.point > 0">+{{ row.point }}</span>)
+                      ({{ row.base }}<span class="text-success" v-if="row.point > 0"> +{{ row.point }}</span><span class="text-highlight" v-if="row.equip > 0"> +{{ row.equip }}装</span>)
                     </span>
                     <span v-if="row.isMax" class="text-xs font-bold text-accent">MAX</span>
                   </span>
@@ -312,22 +351,42 @@ const equipSlots = [
             </p>
           </div>
 
-          <!-- 装备槽位（C1 空占位，C2 接配装） -->
+          <!-- 装备槽位（C2 接配装：点击开 picker） -->
           <div class="bg-surface rounded-xl border border-line p-5">
             <h4 class="text-sm font-semibold text-ink mb-4">装备槽位</h4>
             <div class="grid grid-cols-3 gap-3">
-              <div
+              <button
                 v-for="slot in equipSlots"
                 :key="slot.key"
-                class="flex flex-col items-center justify-center aspect-square rounded-lg border-2 border-dashed border-line bg-surface-2 text-center p-2"
+                type="button"
+                class="flex flex-col items-center justify-center aspect-square rounded-lg border-2 text-center p-2 transition-colors"
+                :class="equippedDefs[slot.key]
+                  ? 'border-accent/60 bg-surface-2 hover:border-accent'
+                  : 'border-dashed border-line bg-surface-2 hover:border-accent/60'"
+                @click="openPicker(slot.key)"
               >
-                <div class="text-2xl opacity-40 mb-1">{{ slot.icon }}</div>
-                <div class="text-xs text-ink-2">{{ slot.label }}</div>
-                <div class="text-[10px] text-ink-3 mt-0.5">未解锁</div>
-              </div>
+                <template v-if="equippedDefs[slot.key]">
+                  <span
+                    class="px-1.5 py-0.5 rounded text-[10px] font-bold text-white bg-gradient-to-r mb-1"
+                    :class="rarityStyle(equippedDefs[slot.key]!.rarity).gradient"
+                  >
+                    {{ equippedDefs[slot.key]!.rarity }}
+                  </span>
+                  <div class="text-xs font-medium text-ink leading-tight line-clamp-2">{{ equippedDefs[slot.key]!.name }}</div>
+                  <div class="text-[10px] text-ink-3 mt-0.5">{{ slot.label }}</div>
+                </template>
+                <template v-else>
+                  <div class="text-2xl opacity-40 mb-1">{{ slot.icon }}</div>
+                  <div class="text-xs text-ink-2">{{ slot.label }}</div>
+                  <div class="text-[10px] text-ink-3 mt-0.5">点击装备</div>
+                </template>
+              </button>
             </div>
-            <p class="text-xs text-ink-3 mt-3">装备系统开发中，敬请期待。</p>
+            <p class="text-xs text-ink-3 mt-3">点击槽位选择装备，装上即时反映到五维与战力。</p>
           </div>
+
+          <!-- 背包 -->
+          <InventoryPanel />
 
           <!-- 好感里程碑 -->
           <div class="bg-surface rounded-xl border border-line p-5">
@@ -370,5 +429,16 @@ const equipSlots = [
         </section>
       </div>
     </div>
+
+    <!-- 配装弹窗（变体 A picker） -->
+    <EquipPickerModal
+      v-if="selectedCharacter"
+      :is-open="pickerOpen"
+      :char-id="selectedCharacter.id"
+      :equip-slot="pickerSlot"
+      :base-stats="baseStats"
+      :stat-points="selectedCharacter.nurtureData.statPoints"
+      @close="pickerOpen = false"
+    />
   </div>
 </template>

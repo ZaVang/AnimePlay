@@ -121,6 +121,23 @@ export interface StatBonus {
 }
 
 /**
+ * 逐围求和若干部分加成 → 完整 StatBonus（缺省维记 0）。纯函数。
+ * 装备 equipBonus 解析的最后一步走这里：store 负责把「已装道具的 bonus 数组」喂进来，
+ * 查表（uid→defId→def→bonus）留在 store/config 侧，engine 只收纯数据、不反向 import config。
+ */
+export function sumStatBonus(bonuses: readonly Partial<StatBonus>[]): StatBonus {
+  const total: StatBonus = { hp: 0, atk: 0, def: 0, sp: 0, spd: 0 };
+  for (const b of bonuses) {
+    total.hp += b.hp ?? 0;
+    total.atk += b.atk ?? 0;
+    total.def += b.def ?? 0;
+    total.sp += b.sp ?? 0;
+    total.spd += b.spd ?? 0;
+  }
+  return total;
+}
+
+/**
  * 最终战斗属性 = base围 + statPoints围 + equipBonus围（纯加法，S13-C1）。
  * 无乘算、无 charm/int/str、无 battleEnhancements%。装备加成 C1 阶段恒 0（空占位）。
  */

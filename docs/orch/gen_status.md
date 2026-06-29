@@ -1,80 +1,64 @@
-# Generator Status — Iteration 1 (S13-C1)
-
-> S13-C1：养成精简（加点制两轴）+ 战力改纯加法 + 角色页重写（变体 A）+ 存档升 v14。
-> 五条验收命令亲跑全绿。
+# Generator Status — Iteration 1 (S13-C2 装备系统全栈)
 
 ## 完成的任务
-
-- [x] **C1-T1：养成数据 + 引擎瘦身（改加点制）**
-  - `types/nurture.ts`：`CharacterNurtureData` 瘦身为 `{affection, lastInteraction, level, experience, totalExperience, statPoints:{hp,atk,def,sp,spd}, claimedBondMilestones}`，删除 intimacy/totalInteractions/dialogueHistory/gifts/specialEvents/attributes/levelBonusAttributes/battleEnhancements/preferences/trainingCooldowns（含 mood）。新增 `StatPoints` 接口。
-  - `engine/nurture/rules.ts`：删训练相关全部函数（generateTrainingOpponent/trainingOutcome/applyBattleEnhancements/ATTRIBUTE_CAP/ENHANCEMENT_CAP/EXP_PER_*/旧 distributeRandomAttributes/levelUpAttributePoints）；新增 `POINTS_PER_LEVEL=10`、`createEmptyStatPoints`、`distributeRandomStatPoints(totalPoints, rng)`（注入 RNG、逐点随机投到 5 战斗维、总和守恒、可复现）、`rollLevelUpStatPoints(oldLevel,newLevel,rng)`（多级跳跃一次结算）；保留等级曲线 + 瘦身版 `createDefaultNurtureData`。
-  - `stores/nurture.ts`：删训练/强化/冷却/互动/送礼 action；保留并适配 `addCharacterExp`（升级 roll 加点写入 statPoints）/`addIdleAffection`；新增 `addBattleAffection`（带塔参战涨好感）、`tutorCharacter`（补习走 `profile.spend('knowledgePoints')` → 加经验）、`claimBondMilestone`（里程碑奖励走 `profile.earn`）。
-  - 新增 `config/nurture.ts`：补习定价、带塔好感量、`STAT_DISPLAY_REF` 软上限参考、`STAT_META`、`BOND_MILESTONES` 6 档（阈值 100/250/500/1000/2000/4000 → KP 50/100/200/400/800/1500 + 称号 初识/熟络/要好/挚友/羁绊/命运）。
-
-- [x] **C1-T2：战力公式改纯加法**
-  - `engine/squad/combat.ts`：`generateBattleStats(baseStats, statPoints, equipBonus)` 改为纯加法 `最终某围 = base + statPoints + equipBonus`，删 charm/int/str 换算与 battleEnhancements% 乘算；旧 `NurtureAttributes`/`BattleEnhancements` 类型替换为单一 `StatBonus`。
-  - `views/SquadBattleView.vue`：两处战力计算（getSquadPower / createSquadMember）改传 `nurtureData.statPoints` + 恒 0 `NO_EQUIP_BONUS`；保留 ~414 行 `addCharacterExp`；胜利结算后对参战角色调 `addBattleAffection`。
-
-- [x] **C1-T3：删旧养成 UI + 角色页重写（变体 A + 软上限条）**
-  - 删除 `components/nurture/` 全部 6 个组件（NurtureActions/InteractionPanel/DialogueSystem/CharacterProfile/CharacterSelector/CollapsiblePanel）。
-  - `views/NurtureView.vue` 重写为变体 A 双栏游戏化角色面板：左角色列表（立绘缩图 + Lv + 好感 icon）+ 右详情（立绘、等级/经验进度条、好感进度条 + 称号、五维数值面板[base/加点两段 + 软上限参考条 + MAX 标记]、3 个装备空槽占位、补习按钮、好感里程碑领取列表）。
-  - `config/nurtureColors.ts` 瘦身：删 mood/attribute/interaction 硬色簇，只保留 `bondTier`（语义令牌，档位对齐 BOND_MILESTONES）。颜色全走皮肤语义令牌，按钮用 `.btn-primary`，无 text-white 压浅底、无动态拼色、无未定义令牌。
-
-- [x] **C1-T4：存档 v14 迁移 + 收口**
-  - `infra/persistence/schema.ts`：`SAVE_VERSION` 13→14；CharacterNurtureData 瘦身入 schema（经 types）；新增空 `EquipmentSave = {inventory:{uid,defId}[], equipped:Record<charId,{weapon,armor,supporter:string|null}>}` + `createDefaultEquipment()`。
-  - `migrations.ts`：新增 `migrateNurtureData`（丢旧训练字段、保留两轴、补 statPoints/claimedBondMilestones 缺省）+ `migrateEquipment`（旧档补空域、局部损坏按字段补默认）。
-  - 装配器 `stores/persistence.ts` 接入新建 `stores/equipment.ts`（serialize/deserialize/reset）于 buildPayload/applyPayload/resetAllDomains，三处同改。
-  - 迁移/往返测试更新（migrations.test.ts 覆盖 v14 瘦身 + equipment；persistence.test.ts 往返加 statPoints/里程碑/equipment）。
-  - `frontend-vue/CLAUDE.md` 版本沿革补 v14 一行。
+- [x] **C2-T1 装备目录 config** — 新建 `src/config/equipment.ts`：物品定义类型 `EquipmentDef`（id/name/slot/rarity/bonus）+ 3 槽 × R..UR 起始目录（每槽每稀有度 1 件，共 15 件，名值贴近预算 R~18/SR~35/SSR~60/HR~95/UR~140，hp 按 ~2.5× 折算）+ 兑换价表 `EQUIPMENT_PRICES`（R400/SR1200/SSR4000/HR10000/UR24000，高于图鉴解锁 UR12000）+ 掉落层段纯函数 `dropRarityForFloor`（1-5R/6-15SR/16-30SSR/31-50HR/51+UR）+ 槽位元数据 `SLOT_META`/`SLOT_ORDER` + 查表 helper（`getEquipmentDef`/`getEquipmentDefBySlotRarity`/`getEquipmentDefsForSlot`/`getEquipmentPrice`）。零 Vue/IO。
+- [x] **C2-T2 equipment store 行为** — `src/stores/equipment.ts` 填行为：`addItem`（uid=`crypto.randomUUID()` 入库）/ `equip`（含同槽校验，异槽拒绝；换下旧件留背包；一件只能戴一处，换角色自动从原位卸下）/ `unequip` / `resolveEquipBonus`（store 查表 uid→defId→def→bonus，委托 engine 纯函数求和）/ `getEquipped`/`getItem`/`findEquippedBy`/`list`。求和纯函数 `sumStatBonus` 加进 `engine/squad/combat.ts`（engine 不 import config）。serialize/deserialize/reset 保留。单测 `equipment.test.ts`（11 例）。
+- [x] **C2-T3 战力接 equipBonus** — 三处调用点同源 `equipmentStore.resolveEquipBonus(charId)`：`SquadBattleView.getSquadPower`、`SquadBattleView.createSquadMember`、`NurtureView.finalStats`/`statRows`（删除两文件的 `NO_EQUIP_BONUS` 恒 0 占位）。NurtureView 抽 `equipBonus` computed 供 finalStats + statRows 共用（避免双源），statRows 加「+N装」分段显示。engine 公式签名不动（combat.test.ts 锁定，未改其断言）。
+- [x] **C2-T4 来源：塔掉落 + KP 兑换** — engine 纯函数 `engine/squad/drops.ts` `rollTowerDrop(floor, rng, rarityForFloor, dropChance=0.5)`（稀有度映射注入，engine 不 import config）；挂在 `userStore.completeFloor` 的 `pve.completeFloor()` 返回 true 分支（天然防刷低层，无冗余守卫），命中走 `equipment.addItem` + `profile.addLog` + 同事务 saveToServer，RNG 可注入（默认 `defaultRng`）。KP 兑换 `userStore.purchaseEquipment(defId)` 照图鉴解锁范式：登录校验 → `profile.spend('knowledgePoints', 价)` 失败不发货 → 成功 addItem + 日志 + saveToServer，返回 `{ok,error?}`。单测 `drops.test.ts`（13 例，层段/概率/槽/复现边界）+ `equipmentSource.test.ts`（8 例，掉落防刷/兑换三分支）。
+- [x] **C2-T5 UI：背包 + 配装** — 内嵌 NurtureView（不新增路由）。新建 `components/nurture/InventoryPanel.vue`（变体 1 网格：稀有度徽章/槽位图标/名梗/数值/「装备中·角色」标签 + 按槽与稀有度筛选 + 折叠兑换商店）+ `components/nurture/EquipPickerModal.vue`（变体 A picker：同槽候选含「卸下」+ 五维「当前→新值(+Δ)」+ 战力「当前→新值」预览，delta 复用同一 resolveEquipBonus 口径）。NurtureView 3 槽占位改为可点击槽（显示已装件 + 开 picker）。稀有度色走完整字面映射 `config/equipmentColors.ts`（复用 gameConfig.rarityConfig 的 `color`/`c`，禁运行时拼类）；界面色走语义令牌；徽章白字属稀有度识别固定例外。弹窗无计时器（用 watch，无需 onUnmounted 清理）。
 
 ## 未完成的任务
-
-无。C1-T1..C1-T4 全部完成、SPRINT.md 四项全 [x]。
+无。C2-T1..T5 全部完成。
 
 ## 验收命令输出
 
-### 1. `cd frontend-vue && npm run type-check`
+### 1. `cd frontend-vue && npm run type-check`（期望 0 错误）
 ```
 > vue-tsc --build
-（0 错误）
+（无输出，退出码 0）
 ```
+PASS — 0 错误。
 
-### 2. `cd frontend-vue && npm run test`
+### 2. `cd frontend-vue && npm run test`（期望全绿）
 ```
- Test Files  47 passed (47)
-      Tests  533 passed (533)
+ Test Files  50 passed (50)
+      Tests  563 passed (563)
+   Duration  8.31s
 ```
-注：基线（改动前 HEAD）为 530 tests；删掉训练测试后仍净增 3（新增 statPoints 加点制 / 纯加法 combat / v14 nurture 瘦身迁移 + equipment 迁移 + 往返测试覆盖充分），不低于「既有数量减去删掉的训练测试」。
+PASS — 563 全绿（含新增 equipment store 11 + drops 13 + equipmentSource 8 = 32 例；总数较 C1 增加，未倒退）。
 
-### 3. `cd frontend-vue && npm run build`
+### 3. `cd frontend-vue && npm run build`（期望成功）
 ```
-✓ built in 10.30s
-（type-check + 生产构建均成功；NurtureView chunk 正常产出）
+✓ built in 8.68s
+（NurtureView 产物 23.17 kB，含背包/配装组件）
 ```
+PASS。
 
-### 4. `python backend/test_security.py`（用 ./.venv/Scripts/python.exe）
+### 4. `./.venv/Scripts/python.exe backend/test_security.py`（期望退出码 0、全 PASS）
 ```
 RESULT: PASS — all security checks passed
 EXIT=0
 ```
-（全部断言 PASS：login/token/越权/saveVersion 并发/原子写/邀请码门控）
+PASS — 全 PASS，退出码 0（C2 未碰后端）。
 
-### 5. `grep -rn "debug=True" backend/server.py api/index.py`
+### 5. `grep -rn "debug=True" backend/server.py api/index.py`（期望零命中）
 ```
-No matches found
-（零命中）
+EXIT=1
 ```
+PASS — 零命中（grep 无匹配，exit 1）。
+
+### 附：新/改文件 ESLint（`npx eslint <path>`，单文件审色）
+新建/改的 7 个 C2 文件零错误。`SquadBattleView.vue` 报 6 条 **pre-existing** 错误（unused `computed`/`RouterLink`/`clearState`/`startBattle`/`returnToTowerMode`、`ref<any>`），经 `git diff HEAD` 核实均在本轮 diff 之外（本轮只改两处 generateBattleStats 调用 + import 行，净 -1 行），非 C2 引入，按 pitfalls「不跑全仓 lint --fix」未处理。
 
 ## 新发现的陷阱
+- **[vue 模板 prop 名禁用 `slot`]** 配装弹窗 prop 起名 `slot` → 模板绑定 `:slot=` 被 `vue/no-deprecated-slot-attribute` 误判为废弃的 slot 语法（eslint error）。改名 `equipSlot`（模板 `:equip-slot=`）规避。装备/槽位相关组件 prop 勿用 `slot` 裸名。
+- **[engine 不 import config 的落地姿势]** 掉落纯函数把「层段→稀有度映射」作参数注入（`rollTowerDrop(floor, rng, rarityForFloor)`），equipBonus 求和把「已解析 bonus 数组」喂给 `sumStatBonus(bonuses)`——两处都让 engine 只收纯数据，查表/边界留 config/store，engine 零 `@/config` import（验证通过）。
 
-- [测试纪律/orch] 切勿用 `git stash` 来测「改动前基线」——它会把整轮未提交产物（含组件删除）一并收走，subagent socket 掉线时若遗忘 pop 会显得「工作全没了」。本轮已安全 `git stash pop` 还原并复跑全绿。要对比基线，更稳的是临时 worktree 或 `git show`，别在主工作树 stash。
-- [迁移] v14 `migrateNurtureData` 必须**白名单重建对象**而非 spread 浅拷贝，否则删掉的旧字段（attributes/battleEnhancements/trainingCooldowns…）会随 spread 漏进新档。测试用 `not.toHaveProperty` 守这条。
+## 文件结构变更（防漂移自报）
+- 新增文件：`src/config/equipment.ts`、`src/config/equipmentColors.ts`、`src/engine/squad/drops.ts`、`src/components/nurture/InventoryPanel.vue`、`src/components/nurture/EquipPickerModal.vue` + 3 个测试（`stores/equipment.test.ts`、`engine/squad/drops.test.ts`、`stores/equipmentSource.test.ts`）。
+- 改模块职责：`stores/equipment.ts`（空域→长出行为）、`engine/squad/combat.ts`（+sumStatBonus）、`engine/squad/index.ts`（+export drops）、`stores/userStore.ts`（+塔掉落/KP兑换/配装编排）、`views/NurtureView.vue`+`views/SquadBattleView.vue`（接 equipBonus + UI）。
+- 不升存档：schema/migrations/persistence 装配器三处未动（v14 已含空 equipment 域）。
+- `docs/project_structure.md`：项目无此文件，跳过。
 
 ## 状态
 PASSED
-
-## 注意事项
-- 已知入口保护核实：家园挂机 `settleHomestead` 用的 `addCharacterExp`/`addIdleAffection` 与挑战塔结算用的 `addCharacterExp` 均保留可用、签名未变；新增 `addBattleAffection` 不影响既有入口。
-- 货币只走出口：补习走 `profile.spend('knowledgePoints')`，里程碑奖励走 `profile.earn('knowledgePoints')`，未绕过货币门面。
-- 存档三处同改 + 不破往返：v14 的 nurture 瘦身 + equipment 空域均 schema/migrations/装配器三处同改，并补迁移与往返测试，既有往返保真测试未破。
-- 装备域为 C2 占位：C1 不产出/不消费装备，equipment store 仅空背包/空配装 + 序列化往返；角色页 3 槽为静态空占位。

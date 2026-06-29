@@ -15,13 +15,12 @@ import {
 import { CHARACTER_IMAGE_POOL } from '@/utils/imageUtils';
 import { assetUrl } from '@/utils/assetUrl';
 import CharacterSelectModal from '@/components/battle/CharacterSelectModal.vue';
+import { useEquipmentStore } from '@/stores/equipment';
 import type { CharacterCard } from '@/types/card';
 
 const userStore = useUserStore();
 const gameDataStore = useGameDataStore();
-
-// C1 阶段装备加成恒 0（空占位，C2 接配装）。纯加法战力：base + statPoints + 装备(=0)。
-const NO_EQUIP_BONUS: BattleStats = { hp: 0, atk: 0, def: 0, sp: 0, spd: 0 };
+const equipmentStore = useEquipmentStore();
 
 // 战斗状态 - 直接使用爬塔模式
 type BattlePhase = 'towerMode' | 'battle' | 'result';
@@ -131,7 +130,7 @@ function getSquadPower(squadId: number): number {
     const battleStats = generateBattleStats(
       character.battle_stats || { hp: 100, atk: 50, def: 30, sp: 40, spd: 60 },
       nurtureData.statPoints,
-      NO_EQUIP_BONUS // C1 阶段装备恒 0（空占位，C2 接配装）
+      equipmentStore.resolveEquipBonus(character.id) // C2：真实装备加成（与养成/进战斗同源）
     );
     return total + calculateBattlePower(battleStats);
   }, 0);
@@ -183,7 +182,7 @@ function createSquadMember(character: CharacterCard, position: number): SquadMem
   const battleStats = generateBattleStats(
     character.battle_stats || { hp: 100, atk: 50, def: 30, sp: 40, spd: 60 },
     nurtureData.statPoints,
-    NO_EQUIP_BONUS // C1 阶段装备恒 0（空占位，C2 接配装）
+    equipmentStore.resolveEquipBonus(character.id) // C2：真实装备加成（与养成/小队战力同源）
   );
 
   return {

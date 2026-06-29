@@ -36,14 +36,14 @@ engine 纯净（零 Vue/Pinia/DOM/IO/`Math.random`，掉落/equipBonus 纯函数
 
 ## 任务清单（S13-C2）
 
-- [ ] **C2-T1｜装备目录 config**：`config/equipment.ts` —— 物品定义类型 + 3 槽 × R..UR 起始目录（按预算，名值可后调）+ 掉落层段表 + 兑换价表 + 槽位元数据（名/图标键）。纯数据/纯常量，零 Vue/IO。
-- [ ] **C2-T2｜equipment store 行为**：`stores/equipment.ts` 填行为 —— addItem(defId)→建实例入 inventory、equip(charId,slot,uid)/unequip(charId,slot)（同槽校验、换下旧件留背包）、resolveEquipBonus(charId)→逐围求和（或抽 engine 纯函数）、getEquipped/list。保留 serialize/deserialize/reset。uid 用 crypto.randomUUID()。
+- [x] **C2-T1｜装备目录 config**：`config/equipment.ts` —— 物品定义类型 + 3 槽 × R..UR 起始目录（按预算，名值可后调）+ 掉落层段表 + 兑换价表 + 槽位元数据（名/图标键）。纯数据/纯常量，零 Vue/IO。
+- [x] **C2-T2｜equipment store 行为**：`stores/equipment.ts` 填行为 —— addItem(defId)→建实例入 inventory、equip(charId,slot,uid)/unequip(charId,slot)（同槽校验、换下旧件留背包）、resolveEquipBonus(charId)→逐围求和（或抽 engine 纯函数）、getEquipped/list。保留 serialize/deserialize/reset。uid 用 crypto.randomUUID()。
   - 验收：单测覆盖 equip/unequip/换装/同槽校验/resolveEquipBonus 求和。
-- [ ] **C2-T3｜战力接 equipBonus**：`SquadBattleView` 战力计算把恒 0 的 equipBonus 换成 `resolveEquipBonus(charId)`（两处战力调用 + 角色页战力展示口径一致）；equipBonus 解析为纯函数。更新/补 combat 相关测试。
+- [x] **C2-T3｜战力接 equipBonus**：`SquadBattleView` 战力计算把恒 0 的 equipBonus 换成 `resolveEquipBonus(charId)`（两处战力调用 + 角色页战力展示口径一致）；equipBonus 解析为纯函数。更新/补 combat 相关测试。
   - 验收：装上道具后角色战力/五维按 base+加点+装备正确变化；engine 纯净不破。
-- [ ] **C2-T4｜来源：塔掉落 + KP 兑换**：engine 纯函数 `rollTowerDrop(floor, rng)`（50% + 层段稀有度 + 随机槽）；塔通层结算调它、命中则 store addItem + 通知。知识点兑换商店：买指定道具 → `profile.spend` 成功 → addItem。RNG 注入。
+- [x] **C2-T4｜来源：塔掉落 + KP 兑换**：engine 纯函数 `rollTowerDrop(floor, rng)`（50% + 层段稀有度 + 随机槽）；塔通层结算调它、命中则 store addItem + 通知。知识点兑换商店：买指定道具 → `profile.spend` 成功 → addItem。RNG 注入。
   - 验收：掉落纯函数特征测试（层段→稀有度、概率边界、注入 RNG 可复现）；兑换走 spend、余额不足不发货。
-- [ ] **C2-T5｜UI：背包 + 配装**：背包视图（变体 1 网格 + 筛选）；角色页 3 槽接配装弹窗（变体 A：候选 + 五维/战力 delta 预览 + 装备/卸下）。颜色语义令牌、稀有度色用完整字面映射（勿运行时拼类）。
+- [x] **C2-T5｜UI：背包 + 配装**：背包视图（变体 1 网格 + 筛选）；角色页 3 槽接配装弹窗（变体 A：候选 + 五维/战力 delta 预览 + 装备/卸下）。颜色语义令牌、稀有度色用完整字面映射（勿运行时拼类）。
   - 验收：type-check 0 / build 通过；能在 UI 里查背包、给角色配装/卸下、看到 delta、战力随之变。
 
 ## 验收命令（Evaluator 必须亲自重跑，记录实际输出）

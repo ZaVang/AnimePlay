@@ -4,3 +4,4 @@
  */
 export * from './combat';
 export * from './tower';
+export * from './drops';
