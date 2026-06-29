@@ -47,7 +47,7 @@ const inventoryCards = computed(() => {
       return {
         uid: c.item.uid,
         def: c.def,
-        equippedLabel: where ? `装备中·${ownerName || '角色'}` : '',
+        equippedLabel: where ? `装备中·${ownerName || '角色'}·${SLOT_META[where.slot].label}` : '',
       };
     })
     .sort((a, b) => (rarityOrder[b.def.rarity] || 0) - (rarityOrder[a.def.rarity] || 0));

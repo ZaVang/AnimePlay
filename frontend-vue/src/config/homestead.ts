@@ -21,6 +21,10 @@ export const IDLE_EXP_PER_HOUR = 200;
 export const IDLE_AFFECTION_PER_HOUR = 5;
 export const IDLE_KP_PER_HOUR_BASE = 2;
 
+/** 离线收益弹窗的最小展示门槛（小时）：低于此的零碎收益静默入账（只发日志），
+ *  不打断频繁进出（约 13 分钟即得 +1 经验，避免切页几分钟回来就被全屏弹窗拦）。 */
+export const IDLE_SETTLE_MODAL_MIN_HOURS = 0.5;
+
 /** 知识点产出的稀有度系数：越稀有产得越多（奖励把好角色放进家园）。 */
 export const IDLE_KP_RARITY_MULT: Record<Rarity, number> = {
   N: 0.5,

@@ -125,9 +125,25 @@ function confirm() {
     return;
   }
   if (selectedUid.value == null) {
-    userStore.unequipItem(props.charId, props.equipSlot);
+    if (!userStore.unequipItem(props.charId, props.equipSlot)) {
+      userStore.addLog('卸下失败，请确认已登录', 'warning');
+      return; // 失败保持弹窗打开，给玩家反馈，别静默关窗
+    }
   } else {
-    userStore.equipItem(props.charId, props.equipSlot, selectedUid.value);
+    // 抢戴：若该件正戴在别角色身上，先记下来源，equip 成功后播报（否则对方被静默削弱、玩家无感）
+    const where = equipmentStore.findEquippedBy(selectedUid.value);
+    const fromName = where && where.charId !== props.charId
+      ? gameDataStore.getCharacterCardById(where.charId)?.name
+      : '';
+    const movedItem = equipmentStore.getItem(selectedUid.value);
+    const movedDef = movedItem ? getEquipmentDef(movedItem.defId) : undefined;
+    if (!userStore.equipItem(props.charId, props.equipSlot, selectedUid.value)) {
+      userStore.addLog('装备失败，请确认已登录', 'warning');
+      return;
+    }
+    if (fromName && movedDef) {
+      userStore.addLog(`已从「${fromName}」处取下 [${movedDef.rarity}] ${movedDef.name} 装到本角色`, 'info');
+    }
   }
   emit('close');
 }
@@ -247,8 +263,13 @@ function deltaClass(d: number): string {
         <!-- 底部操作 -->
         <div class="p-4 border-t border-line flex items-center justify-end gap-3">
           <button type="button" class="btn-ghost text-sm px-4 py-2" @click="close">取消</button>
-          <button type="button" class="btn-primary text-sm px-5 py-2" @click="confirm">
-            {{ selectedUid === null ? '卸下' : '装备' }}
+          <button
+            type="button"
+            class="btn-primary text-sm px-5 py-2 disabled:opacity-50 disabled:cursor-not-allowed"
+            :disabled="selectedUid === equippedUid"
+            @click="confirm"
+          >
+            {{ selectedUid === equippedUid ? '已是当前' : (selectedUid === null ? '卸下' : '装备') }}
           </button>
         </div>
       </div>

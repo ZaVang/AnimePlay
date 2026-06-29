@@ -321,7 +321,7 @@ function executeRound() {
     enemyFront.currentHP = Math.max(0, enemyFront.currentHP - damage.damage);
     
     battleLog.value.push(
-      `🗡️ ${playerFront.character.name} 对 ${enemyFront.character.name} 造成 ${damage.damage} 伤害${damage.isCriticalHit ? ' (连击!)' : ''}`
+      `🗡️ ${playerFront.character.name} 对 ${enemyFront.character.name} 造成 ${damage.damage} 伤害${damage.isCriticalHit ? ' (暴击!)' : ''}`
     );
     
     if (enemyFront.currentHP <= 0) {
@@ -334,7 +334,7 @@ function executeRound() {
     playerFront.currentHP = Math.max(0, playerFront.currentHP - damage.damage);
     
     battleLog.value.push(
-      `⚔️ ${enemyFront.character.name} 对 ${playerFront.character.name} 造成 ${damage.damage} 伤害${damage.isCriticalHit ? ' (连击!)' : ''}`
+      `⚔️ ${enemyFront.character.name} 对 ${playerFront.character.name} 造成 ${damage.damage} 伤害${damage.isCriticalHit ? ' (暴击!)' : ''}`
     );
     
     if (playerFront.currentHP <= 0) {
@@ -387,9 +387,10 @@ function endBattle() {
       baseReward += currentTowerFloor.value * 10; // 层数奖励
       knowledgeReward += currentTowerFloor.value * 5;
       
-      // 通过当前层并进入下一层
-      userStore.completeFloor(currentTowerFloor.value);
+      // 通过当前层并进入下一层（completeFloor 回传本层掉落，供结算面板展示）
+      const drop = userStore.completeFloor(currentTowerFloor.value);
       battleLog.value.push(`🏆 通过第${currentTowerFloor.value}层！`);
+      battleLog.value.push(drop ? `🎁 通层掉落：[${drop.rarity}] ${drop.name}！` : '🎁 本层未掉落装备');
       
       // 自动进入下一层
       currentTowerFloor.value = currentTowerFloor.value + 1;
@@ -406,6 +407,8 @@ function endBattle() {
     // 玩家获得经验和知识点
     userStore.addExp(totalExp);
     userStore.earn('knowledgePoints', knowledgeReward);
+    // 结算面板可见的本场收获（与全局日志解耦）
+    battleLog.value.push(`📈 +${totalExp} 经验 · 💡 +${knowledgeReward} 知识点 · 存活 ${playerSquad.value.filter(m => !m.isDefeated).length}/${playerSquad.value.length}`);
     
     // 给参与战斗的角色分配经验值
     const characterExp = Math.floor(totalExp / 2); // 角色获得玩家经验的一半
@@ -441,7 +444,13 @@ function endBattle() {
     }
     
     userStore.addExp(consolationExp);
-    
+    // 结算面板可见：失败的收获 + 战力差距参考
+    battleLog.value.push(`📈 +${consolationExp} 经验`);
+    if (currentBattleMode.value === 'tower' && towerEnemyData.value) {
+      const myPower = playerSquad.value.reduce((s, m) => s + calculateBattlePower(m.battleStats), 0);
+      battleLog.value.push(`📊 我方战力 ${myPower} vs 敌方战力 ${towerEnemyData.value.floorPower}`);
+    }
+
     // 给参与战斗的角色分配失败经验
     const characterFailExp = Math.floor(consolationExp / 3); // 失败时角色获得更少经验
     playerSquad.value.forEach(member => {
@@ -467,7 +476,7 @@ function restart() {
   isPlayerTurn.value = true;
   battleResult.value = null;
   selectedSquadForBattle.value = null;
-  // 保持敌人数据
+  ensureTowerEnemies(); // 通层后回到塔界面自动生成下一层敌人，免去每层手点「刷新敌人」
 }
 
 // 返回爬塔模式
@@ -483,6 +492,7 @@ function returnToTowerMode() {
   selectedSquadForBattle.value = null;
   // 保持towerEnemyData和currentTowerFloor，避免状态丢失
   saveState(); // 保存状态
+  ensureTowerEnemies();
 }
 
 // 获取生命值百分比
@@ -523,7 +533,7 @@ function autoFinishBattle() {
       enemyFront.currentHP = Math.max(0, enemyFront.currentHP - damage.damage);
       
       battleLog.value.push(
-        `🗡️ ${playerFront.character.name} 对 ${enemyFront.character.name} 造成 ${damage.damage} 伤害${damage.isCriticalHit ? ' (连击!)' : ''}`
+        `🗡️ ${playerFront.character.name} 对 ${enemyFront.character.name} 造成 ${damage.damage} 伤害${damage.isCriticalHit ? ' (暴击!)' : ''}`
       );
       
       if (enemyFront.currentHP <= 0) {
@@ -536,7 +546,7 @@ function autoFinishBattle() {
       playerFront.currentHP = Math.max(0, playerFront.currentHP - damage.damage);
       
       battleLog.value.push(
-        `⚔️ ${enemyFront.character.name} 对 ${playerFront.character.name} 造成 ${damage.damage} 伤害${damage.isCriticalHit ? ' (连击!)' : ''}`
+        `⚔️ ${enemyFront.character.name} 对 ${playerFront.character.name} 造成 ${damage.damage} 伤害${damage.isCriticalHit ? ' (暴击!)' : ''}`
       );
       
       if (playerFront.currentHP <= 0) {
@@ -579,6 +589,18 @@ function refreshTowerEnemies() {
   saveState(); // 保存新的敌人数据
 }
 
+// 进入塔界面但当前层还没敌人时自动生成一次（通层后免手点「刷新敌人」；缺主数据/未登录则跳过）
+function ensureTowerEnemies() {
+  if (
+    currentPhase.value === 'towerMode' &&
+    !towerEnemyData.value &&
+    userStore.isLoggedIn &&
+    gameDataStore.allCharacterCards.length > 0
+  ) {
+    refreshTowerEnemies();
+  }
+}
+
 // S9：定时器登记——本组件所有 setTimeout 必须走这里，卸载时统一清除
 const pendingTimers = new Set<number>();
 function schedule(fn: () => void, delay: number) {
@@ -592,6 +614,7 @@ function schedule(fn: () => void, delay: number) {
 // 组件挂载时恢复状态
 onMounted(() => {
   loadState();
+  ensureTowerEnemies();
 });
 
 // 存档进度晚于组件挂载到位时（如：刷新塔页面后才登录），跟随服务器进度前进。
@@ -785,11 +808,27 @@ onBeforeUnmount(() => {
         
         <!-- 战斗场地 -->
         <div class="bg-surface rounded-lg p-6 border border-line">
-          <div class="flex justify-between items-center mb-6">
+          <div class="flex justify-between items-center mb-2">
             <h2 class="text-xl font-bold text-ink">第 {{ currentTurn + 1 }} 回合</h2>
             <div class="text-lg font-bold" :class="isPlayerTurn ? 'text-info' : 'text-danger'">
               {{ isPlayerTurn ? '你的回合' : '敌方回合' }}
             </div>
+          </div>
+          <!-- 战斗中保留层数/敌名/难度坐标（进战斗前塔界面展示过，进战斗后别断档） -->
+          <div v-if="towerEnemyData" class="flex flex-wrap items-center gap-2 mb-6 text-sm">
+            <span class="font-semibold text-accent">第 {{ currentTowerFloor }} 层</span>
+            <span class="text-ink-3">·</span>
+            <span class="text-danger font-medium">{{ towerEnemyData.name }}</span>
+            <span class="px-2 py-0.5 rounded text-xs font-bold"
+                  :class="{
+                    'bg-success text-on-accent': towerEnemyData.difficulty === '简单',
+                    'bg-warning text-on-accent': towerEnemyData.difficulty === '中等',
+                    'bg-danger text-on-accent': towerEnemyData.difficulty === '困难',
+                    'bg-highlight text-on-accent': towerEnemyData.difficulty === '极难'
+                  }">
+              {{ towerEnemyData.difficulty }}
+            </span>
+            <span class="ml-auto text-ink-2">敌方战力 <span class="text-highlight font-bold">{{ towerEnemyData.floorPower }}</span></span>
           </div>
           
           <!-- 战斗场地布局 -->

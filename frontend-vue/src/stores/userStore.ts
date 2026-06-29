@@ -14,6 +14,7 @@ import {
   getEquipmentDef,
   getEquipmentDefBySlotRarity,
   getEquipmentPrice,
+  type EquipmentDef,
 } from '@/config/equipment';
 import { MAX_CHARACTER_LEVEL, rollTowerDrop, defaultRng } from '@/engine';
 import { type ShopItem } from '@/utils/gachaRotation';
@@ -242,13 +243,14 @@ export const useUserStore = defineStore('user', () => {
    * 掉落判定走 engine 纯函数 rollTowerDrop（RNG 可注入，默认真随机）；命中则 store 入库 + 通知。
    * 不自身存档——由 completeFloor 统一在同一事务里 saveToServer。
    */
-  function rollFloorDrop(floor: number, rng = defaultRng) {
+  function rollFloorDrop(floor: number, rng = defaultRng): EquipmentDef | null {
     const drop = rollTowerDrop(floor, rng, dropRarityForFloor);
-    if (!drop) return;
+    if (!drop) return null;
     const def = getEquipmentDefBySlotRarity(drop.slot, drop.rarity);
-    if (!def) return; // 该槽位无此稀有度（防御，起始目录全覆盖故正常不触发）
+    if (!def) return null; // 该槽位无此稀有度（防御，起始目录全覆盖故正常不触发）
     useEquipmentStore().addItem(def.id);
     profile.addLog(`🎁 通层掉落：[${def.rarity}] ${def.name}！`, 'success');
+    return def; // 回传给结算面板展示（见 SquadBattleView endBattle）
   }
 
   /**
@@ -651,16 +653,18 @@ export const useUserStore = defineStore('user', () => {
     updateSquadName: withSave(pve.updateSquadName),
     getSquadMembers: pve.getSquadMembers,
     getCurrentChallengeFloor: pve.getCurrentChallengeFloor,
-    completeFloor: (floor: number, rng = defaultRng) => {
+    completeFloor: (floor: number, rng = defaultRng): EquipmentDef | null => {
       // pve.completeFloor 仅在「推进到新层」时返回 true（重复挑战已过低层返回 false），
       // 故掉落挂在此分支天然防刷——不另加冗余去重守卫，也不忽略返回直接掉落（经济安全）。
       if (pve.completeFloor(floor)) {
         // 留存埋点（evolution-1）：爬塔通层成就（用返回值守卫，floor 不匹配不记）
         useAchievementsStore().check('tower', { floor });
-        // S13-C2：通层装备掉落（50% + 层段稀有度 + 随机槽，命中入库）
-        rollFloorDrop(floor, rng);
+        // S13-C2：通层装备掉落（50% + 层段稀有度 + 随机槽，命中入库），回传掉落件供结算面板展示
+        const drop = rollFloorDrop(floor, rng);
         saveToServer();
+        return drop;
       }
+      return null;
     },
     hasCompletedFloor: pve.hasCompletedFloor,
     canAttemptToday: pve.canAttemptToday,

@@ -16,7 +16,7 @@ import { useGameDataStore } from '@/stores/gameDataStore';
 import { useHomesteadStore } from '@/stores/homestead';
 import { useCollectionStore } from '@/stores/collection';
 import { chibiImageSrc, fullImageSrc, spriteSheetSrc } from '@/utils/cardImage';
-import type { IdleYield } from '@/config/homestead';
+import { IDLE_SETTLE_MODAL_MIN_HOURS, type IdleYield } from '@/config/homestead';
 import type { CharacterCard } from '@/types/card';
 import CardDetailModal from '@/components/CardDetailModal.vue';
 import HomesteadManageModal from '@/components/homestead/HomesteadManageModal.vue';
@@ -192,6 +192,9 @@ const detailCount = computed(() => (detailCard.value ? collection.getCharacterCa
 function openDetail(pet: Pet) {
   const card = gameData.getCharacterCardById(pet.id);
   if (card) detailCard.value = card;
+  // 被点到就驻足一下回应（点击反馈，避免「点的人跑了才弹窗」的割裂感）
+  pet.moving = false;
+  pet.stateT = Math.max(pet.stateT, 0.8);
 }
 
 // --- 入住管理 + 离线收益结算 ---
@@ -200,7 +203,14 @@ const settleResult = ref<IdleYield | null>(null);
 
 function runSettle() {
   const y = userStore.settleHomestead();
-  if (y.expEach > 0 || y.affectionEach > 0 || y.knowledge > 0) settleResult.value = y;
+  const has = y.expEach > 0 || y.affectionEach > 0 || y.knowledge > 0;
+  if (!has) return;
+  // 高价值回归才隆重弹窗；零碎收益静默入账 + 一行日志，免打断频繁进出
+  if (y.hours >= IDLE_SETTLE_MODAL_MIN_HOURS) {
+    settleResult.value = y;
+  } else {
+    userStore.addLog(`🏠 挂机已结算：经验+${y.expEach} · 好感+${y.affectionEach} · 知识点+${y.knowledge}`, 'info');
+  }
 }
 
 // 入住名单变化（管理弹窗里增删）时重建漫步者
@@ -246,6 +256,7 @@ onUnmounted(() => cancelAnimationFrame(raf));
         v-show="!pet.hidden"
         :key="pet.id"
         class="pet"
+        :class="{ 'is-idle': !pet.moving }"
         :style="petStyle(pet)"
         :title="pet.name"
         @click="openDetail(pet)"
@@ -267,8 +278,11 @@ onUnmounted(() => cancelAnimationFrame(raf));
         </div>
       </div>
 
-      <div v-if="visibleCount === 0" class="hs-empty hs-empty-scene">
-        还没有角色入住——点「管理入住」把角色放进来挂机吧。
+      <div v-if="visibleCount === 0" class="hs-empty-scene">
+        <div class="hs-empty-card">
+          <p>还没有角色入住——把角色放进来一起挂机吧。</p>
+          <button class="btn-primary text-sm px-4 py-2" @click="showManage = true">管理入住</button>
+        </div>
       </div>
     </div>
 
@@ -295,7 +309,8 @@ onUnmounted(() => cancelAnimationFrame(raf));
 .homestead { width: 100%; }
 .hs-header { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 1rem; }
 .hs-empty { text-align: center; padding: 3rem 1rem; color: rgb(var(--c-ink-2)); }
-.hs-empty-scene { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: #fff; text-shadow: 0 1px 3px rgb(0 0 0 / .5); z-index: 9999; }
+.hs-empty-scene { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; z-index: 9999; }
+.hs-empty-card { display: flex; flex-direction: column; align-items: center; gap: .75rem; max-width: 80%; padding: 1rem 1.5rem; border-radius: 12px; background: rgb(0 0 0 / .45); color: #fff; text-align: center; font-size: .9rem; }
 
 .scene {
   position: relative; width: 100%; height: min(64vh, 540px); overflow: hidden;
@@ -345,8 +360,9 @@ onUnmounted(() => cancelAnimationFrame(raf));
 /* 漫步者：脚点锚定在 (x,y) */
 .pet {
   position: absolute; transform: translate(-50%, -100%);
-  cursor: pointer; will-change: left, top;
+  cursor: pointer; will-change: left, top; transition: transform .09s ease;
 }
+.pet:active { transform: translate(-50%, -100%) scale(.94); }
 .pet-inner { position: relative; transform-origin: bottom center; }
 .bob { animation: petbob .28s steps(1) infinite alternate; }
 /* sprite / chibi / 原立绘均为平滑图（非像素美术），不用 image-rendering: pixelated */
@@ -356,6 +372,9 @@ onUnmounted(() => cancelAnimationFrame(raf));
   background-size: 198px 352px;            /* 整表 144×256 × 1.375 = 3×4 格 */
   background-repeat: no-repeat;
 }
+/* 待机呼吸：站住时极轻纵向起伏（行走时关闭、只跑帧），从脚底起伏 */
+.pet.is-idle .sprite { animation: petbreath 2.6s ease-in-out infinite; transform-origin: bottom center; }
+@keyframes petbreath { from { transform: scaleY(1); } to { transform: scaleY(1.018); } }
 .pet-shadow {
   position: absolute; bottom: -5px; left: 50%; width: 40px; height: 11px; margin-left: -20px;
   border-radius: 50%; background: rgb(0 0 0 / .2); filter: blur(.5px);
@@ -363,10 +382,10 @@ onUnmounted(() => cancelAnimationFrame(raf));
 .pet-name {
   position: absolute; bottom: 100%; left: 50%; transform: translateX(-50%);
   margin-bottom: 4px; padding: 1px 6px; border-radius: 6px; white-space: nowrap;
-  font-size: 12px; color: #fff; background: rgb(0 0 0 / .6);
-  opacity: 0; transition: opacity .15s; pointer-events: none; z-index: 2;
+  font-size: 11px; color: #fff; background: rgb(0 0 0 / .42);
+  opacity: .62; transition: opacity .15s, background .15s; pointer-events: none; z-index: 2;
 }
-.pet:hover .pet-name { opacity: 1; }
+.pet:hover .pet-name { opacity: 1; background: rgb(0 0 0 / .62); }
 @keyframes petbob { from { transform: translateY(0); } to { transform: translateY(-3px); } }
 
 /* 离线收益弹窗 */

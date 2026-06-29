@@ -5,11 +5,12 @@ import { useGameDataStore } from '@/stores/gameDataStore';
 import { useEquipmentStore } from '@/stores/equipment';
 import type { CharacterCard } from '@/types/card';
 import type { CharacterNurtureData } from '@/types/nurture';
-import { generateBattleStats, calculateBattlePower, type BattleStats } from '@/engine';
+import { generateBattleStats, calculateBattlePower, MAX_CHARACTER_LEVEL, type BattleStats } from '@/engine';
 import { bondTier } from '@/config/nurtureColors';
 import { rarityStyle } from '@/config/equipmentColors';
 import {
   getEquipmentDef,
+  formatBonus,
   SLOT_META,
   SLOT_ORDER,
   type EquipmentSlot,
@@ -66,6 +67,8 @@ const levelProgress = computed(() =>
   selectedCharacter.value ? userStore.getLevelProgress(selectedCharacter.value.nurtureData) : null,
 );
 
+const isLevelMax = computed(() => (selectedCharacter.value?.nurtureData.level ?? 0) >= MAX_CHARACTER_LEVEL);
+
 const baseStats = computed<BattleStats>(
   () => selectedCharacter.value?.battle_stats || { hp: 100, atk: 50, def: 30, sp: 40, spd: 60 },
 );
@@ -112,11 +115,11 @@ const bond = computed(() => {
 const bondProgress = computed(() => {
   const aff = selectedCharacter.value?.nurtureData.affection || 0;
   const next = BOND_MILESTONES.find(m => aff < m.threshold);
-  if (!next) return { pct: 100, current: aff, target: BOND_MILESTONES[BOND_MILESTONES.length - 1].threshold, maxed: true };
+  if (!next) return { pct: 100, current: aff, target: BOND_MILESTONES[BOND_MILESTONES.length - 1].threshold, targetTitle: '', maxed: true };
   const prevThreshold = BOND_MILESTONES.filter(m => aff >= m.threshold).pop()?.threshold ?? 0;
   const span = next.threshold - prevThreshold;
   const pct = span > 0 ? ((aff - prevThreshold) / span) * 100 : 0;
-  return { pct: Math.min(100, Math.max(0, pct)), current: aff, target: next.threshold, maxed: false };
+  return { pct: Math.min(100, Math.max(0, pct)), current: aff, target: next.threshold, targetTitle: next.title, maxed: false };
 });
 
 // 里程碑列表（达成 / 可领 / 已领）
@@ -131,6 +134,15 @@ const milestones = computed(() => {
     claimable: c ? isMilestoneClaimable(aff, claimed, m) : false,
   }));
 });
+
+// 可领里程碑计数（标题徽章 + 左侧列表红点用）
+const claimableCount = computed(() => milestones.value.filter(m => m.claimable).length);
+
+function charClaimableCount(nd: CharacterNurtureData): number {
+  const aff = nd.affection || 0;
+  const claimed = nd.claimedBondMilestones || [];
+  return BOND_MILESTONES.filter(m => isMilestoneClaimable(aff, claimed, m)).length;
+}
 
 const canTutor = computed(() => {
   const c = selectedCharacter.value;
@@ -171,6 +183,10 @@ function openPicker(slot: EquipmentSlot) {
   if (!selectedCharacter.value) return;
   pickerSlot.value = slot;
   pickerOpen.value = true;
+}
+
+function quickUnequip(slot: EquipmentSlot) {
+  if (selectedCharacter.value) userStore.unequipItem(selectedCharacter.value.id, slot);
 }
 </script>
 
@@ -233,6 +249,11 @@ function openPicker(slot: EquipmentSlot) {
                   <span :class="bondTier(character.nurtureData.affection).color">
                     {{ bondTier(character.nurtureData.affection).icon }}
                   </span>
+                  <span
+                    v-if="charClaimableCount(character.nurtureData) > 0"
+                    class="ml-auto w-2 h-2 rounded-full bg-accent flex-shrink-0"
+                    title="有可领取的好感里程碑"
+                  ></span>
                 </div>
               </div>
             </button>
@@ -276,14 +297,16 @@ function openPicker(slot: EquipmentSlot) {
                 <div>
                   <div class="flex items-center justify-between mb-1 text-sm">
                     <span class="font-semibold text-ink">⚡ 等级 Lv.{{ selectedCharacter.nurtureData.level }}</span>
-                    <span class="text-xs text-ink-2" v-if="levelProgress">
-                      {{ levelProgress.current }}/{{ levelProgress.required }}
+                    <span class="text-xs" v-if="levelProgress">
+                      <span v-if="isLevelMax" class="text-accent font-bold">MAX</span>
+                      <span v-else class="text-ink-2">{{ levelProgress.current }}/{{ levelProgress.required }}</span>
                     </span>
                   </div>
                   <div class="w-full bg-surface-2 rounded-full h-2 overflow-hidden">
                     <div
-                      class="h-full rounded-full bg-highlight transition-all duration-500"
-                      :style="{ width: `${levelProgress?.percentage || 0}%` }"
+                      class="h-full rounded-full transition-all duration-500"
+                      :class="isLevelMax ? 'bg-accent' : 'bg-highlight'"
+                      :style="{ width: `${isLevelMax ? 100 : (levelProgress?.percentage || 0)}%` }"
                     ></div>
                   </div>
                 </div>
@@ -294,7 +317,7 @@ function openPicker(slot: EquipmentSlot) {
                     <span class="font-semibold text-ink">❤️ 好感 {{ bond.affection }}</span>
                     <span class="text-xs">
                       <span v-if="bondProgress.maxed" class="text-accent">已圆满</span>
-                      <span v-else class="text-ink-2">下一档 {{ bondProgress.target }}</span>
+                      <span v-else class="text-ink-2">下一档 · {{ bondProgress.targetTitle }} ({{ bondProgress.target }})</span>
                     </span>
                   </div>
                   <div class="w-full bg-surface-2 rounded-full h-2 overflow-hidden">
@@ -316,7 +339,8 @@ function openPicker(slot: EquipmentSlot) {
                   >
                     📚 补习 (-{{ TUTORING_KP_COST }} KP → +{{ TUTORING_EXP_GAIN }} 经验)
                   </button>
-                  <span v-if="selectedCharacter.nurtureData.level >= 100" class="text-xs text-accent">已满级</span>
+                  <span v-if="isLevelMax" class="text-xs text-accent">已满级</span>
+                  <span v-else-if="!canTutor" class="text-xs text-warning">知识点不足</span>
                 </div>
               </div>
             </div>
@@ -355,32 +379,39 @@ function openPicker(slot: EquipmentSlot) {
           <div class="bg-surface rounded-xl border border-line p-5">
             <h4 class="text-sm font-semibold text-ink mb-4">装备槽位</h4>
             <div class="grid grid-cols-3 gap-3">
-              <button
-                v-for="slot in equipSlots"
-                :key="slot.key"
-                type="button"
-                class="flex flex-col items-center justify-center aspect-square rounded-lg border-2 text-center p-2 transition-colors"
-                :class="equippedDefs[slot.key]
-                  ? 'border-accent/60 bg-surface-2 hover:border-accent'
-                  : 'border-dashed border-line bg-surface-2 hover:border-accent/60'"
-                @click="openPicker(slot.key)"
-              >
-                <template v-if="equippedDefs[slot.key]">
-                  <span
-                    class="px-1.5 py-0.5 rounded text-[10px] font-bold text-white bg-gradient-to-r mb-1"
-                    :class="rarityStyle(equippedDefs[slot.key]!.rarity).gradient"
-                  >
-                    {{ equippedDefs[slot.key]!.rarity }}
-                  </span>
-                  <div class="text-xs font-medium text-ink leading-tight line-clamp-2">{{ equippedDefs[slot.key]!.name }}</div>
-                  <div class="text-[10px] text-ink-3 mt-0.5">{{ slot.label }}</div>
-                </template>
-                <template v-else>
-                  <div class="text-2xl opacity-40 mb-1">{{ slot.icon }}</div>
-                  <div class="text-xs text-ink-2">{{ slot.label }}</div>
-                  <div class="text-[10px] text-ink-3 mt-0.5">点击装备</div>
-                </template>
-              </button>
+              <div v-for="slot in equipSlots" :key="slot.key" class="relative">
+                <button
+                  type="button"
+                  class="w-full flex flex-col items-center justify-center aspect-square rounded-lg border-2 text-center p-2 transition-colors"
+                  :class="equippedDefs[slot.key]
+                    ? 'border-accent/60 bg-surface-2 hover:border-accent'
+                    : 'border-dashed border-line bg-surface-2 hover:border-accent/60'"
+                  @click="openPicker(slot.key)"
+                >
+                  <template v-if="equippedDefs[slot.key]">
+                    <span
+                      class="px-1.5 py-0.5 rounded text-[10px] font-bold text-white bg-gradient-to-r mb-1"
+                      :class="rarityStyle(equippedDefs[slot.key]!.rarity).gradient"
+                    >
+                      {{ equippedDefs[slot.key]!.rarity }}
+                    </span>
+                    <div class="text-xs font-medium text-ink leading-tight line-clamp-2">{{ equippedDefs[slot.key]!.name }}</div>
+                    <div class="text-[9px] text-ink-3 mt-0.5 leading-tight">{{ formatBonus(equippedDefs[slot.key]!.bonus) }}</div>
+                  </template>
+                  <template v-else>
+                    <div class="text-2xl opacity-40 mb-1">{{ slot.icon }}</div>
+                    <div class="text-xs text-ink-2">{{ slot.label }}</div>
+                    <div class="text-[10px] text-ink-3 mt-0.5">点击装备</div>
+                  </template>
+                </button>
+                <button
+                  v-if="equippedDefs[slot.key]"
+                  type="button"
+                  class="absolute -top-1.5 -right-1.5 w-5 h-5 rounded-full bg-surface-2 border border-line text-ink-2 hover:text-danger text-[11px] leading-none flex items-center justify-center shadow-sm"
+                  title="卸下"
+                  @click.stop="quickUnequip(slot.key)"
+                >✕</button>
+              </div>
             </div>
             <p class="text-xs text-ink-3 mt-3">点击槽位选择装备，装上即时反映到五维与战力。</p>
           </div>
@@ -390,7 +421,10 @@ function openPicker(slot: EquipmentSlot) {
 
           <!-- 好感里程碑 -->
           <div class="bg-surface rounded-xl border border-line p-5">
-            <h4 class="text-sm font-semibold text-ink mb-4">好感里程碑</h4>
+            <h4 class="text-sm font-semibold text-ink mb-4 flex items-center gap-2">
+              好感里程碑
+              <span v-if="claimableCount > 0" class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-accent text-white">{{ claimableCount }} 可领</span>
+            </h4>
             <div class="space-y-2">
               <div
                 v-for="m in milestones"
