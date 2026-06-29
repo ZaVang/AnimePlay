@@ -86,6 +86,8 @@
 - **经验/好感获取**：经验 = 挂机 + 塔战斗 + 「补习」(角色页花 KP 换经验，新 KP sink)；好感 = 挂机 + 带它打塔（并肩作战涨好感）。
 - **存档 v14**：nurtureData 瘦身为 `{affection, level, experience, totalExperience, lastInteraction, statPoints:{hp,atk,def,sp,spd}}`；新增独立 equipment 域 `{inventory:{uid,defId}[], equipped:Record<charId,{weapon,armor,supporter:uid|null}>}`（uid 用 `crypto.randomUUID()`）；迁移丢弃旧训练字段、**旧投入不退**。
 
+- **UI/数值显示口径**（mock 定稿）：角色详情页用**变体 A（立绘前置双栏）**；五维进度条用**软上限参考** `STAT_DISPLAY_REF`（起始 生命1500/攻击800/防御600/技力700/速度600，可调；`条填充 = min(100%, 该围值/参考)`，超出满条 + `MAX` 标记），跨角色可比、避免用绝对理论最大值导致条永远空。**数值本身无硬上限**（等级点池 `POINTS_PER_LEVEL×99` + 3 装备槽天然封顶）。`STAT_DISPLAY_REF` 放 `config/`、不进存档、不影响战斗结算。
+
 #### ☐ C1 · 养成精简 + 战力改加点制（存档 v14，~12 文件含删除，独立可上线）
 - [ ] `types/nurture.ts` + `engine/nurture/rules.ts`：nurtureData 瘦身；删训练相关函数；`distributeRandomAttributes`/升级加点改到 5 战斗维（`statPoints`）；留等级曲线。
 - [ ] `engine/squad/combat.ts` → `generateBattleStats(base, statPoints, equipBonus)`（纯加法，equipBonus 暂传 0）；`SquadBattleView` 改 2 处调用 + 保留 414 `addCharacterExp` + 加「塔后涨好感」。
@@ -97,7 +99,7 @@
 - [ ] `config/equipment.ts`：名梗道具目录（3 槽 × R..UR）+ 塔掉落表 + 知识点兑换价。
 - [ ] equipment store（inventory + equip/unequip per character，serialize/deserialize/reset）+ 装配器接入。
 - [ ] `combat`/`SquadBattleView` 接 equipBonus（解析 equipped → 逐围加成）；塔掉落（通层 roll 道具入背包）；知识点兑换 shop。
-- [ ] **装备背包视图**（展示已拥有装备，按槽/稀有度分类，可看每件数值）+ 角色详情面板 3 槽位的**配装/卸下**交互（点槽 → 背包 picker 选同槽道具）；测试（equipment store / combat 带装备 / 掉落与兑换）。
+- [ ] **装备背包视图**（**卡片网格布局，mock 变体 1**：稀有度徽章 + 槽位图标 + 名梗名 + 数值加成 + 装备中标签；顶部按槽/稀有度筛选）+ 角色详情面板 3 槽位的**配装/卸下**交互（点槽 → 背包 picker 选同槽道具）；测试（equipment store / combat 带装备 / 掉落与兑换）。
 - **Exit**：塔掉落 + KP 兑换能拿装备；配装改变战力；UI 可配可卸；type-check/test/build + 基线。**独立可上线**（C1 之上加装备层）。
 
 **Exit（整体）**：合并后家园闭环 = 「入住挂机长级/好感 → 带去打塔(涨经验/好感 + 掉装备) → 配装提战力 → 打更高塔」，且 A/B/C1/C2 每步曾独立可玩。
