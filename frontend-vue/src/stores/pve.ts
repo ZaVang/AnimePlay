@@ -44,6 +44,7 @@ export const usePveStore = defineStore('pve', () => {
   /** 通过某层。返回是否推进了进度（决定调用方是否存档）。 */
   function completeFloor(floor: number): boolean {
     if (floor !== towerProgress.value.currentFloor) return false;
+    if (floor >= 999) return false; // 已达封顶层，不再推进（防顶层重复结算/掉落）
     towerProgress.value.currentFloor = Math.min(floor + 1, 999); // 最高999层
     towerProgress.value.maxFloor = Math.max(towerProgress.value.maxFloor, floor);
     useProfileStore().addLog(`成功通过第${floor}层！`, 'success');

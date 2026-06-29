@@ -79,6 +79,20 @@ describe('塔通层掉落（completeFloor 注入 RNG）', () => {
     userStore.completeFloor(60, createSequenceRng([0.0, 0.0]));
     expect(getEquipmentDef(eq.list()[0].defId)?.rarity).toBe('UR');
   });
+
+  it('封顶层 999：completeFloor 返回 false → 不推进、不重复掉落', () => {
+    const profile = useProfileStore();
+    profile.currentUser = 'tester';
+    const pve = usePveStore();
+    pve.towerProgress.currentFloor = 999;
+    const eq = useEquipmentStore();
+    const userStore = useUserStore();
+
+    // 即便 RNG 必中（0.0）也不掉：封顶层不推进进度
+    userStore.completeFloor(999, createSequenceRng([0.0, 0.0]));
+    expect(pve.getCurrentChallengeFloor()).toBe(999);
+    expect(eq.list()).toHaveLength(0);
+  });
 });
 
 describe('知识点兑换 purchaseEquipment', () => {

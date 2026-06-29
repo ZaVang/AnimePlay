@@ -13,6 +13,7 @@ import { useUserStore } from '@/stores/userStore';
 import { useGameDataStore } from '@/stores/gameDataStore';
 import {
   getEquipmentDef,
+  formatBonus,
   SLOT_META,
   type EquipmentSlot,
   type EquipmentDef,
@@ -118,6 +119,11 @@ watch(
 );
 
 function confirm() {
+  // 选择未变更：直接关闭，不触发任何写入/存档
+  if (selectedUid.value === equippedUid.value) {
+    emit('close');
+    return;
+  }
   if (selectedUid.value == null) {
     userStore.unequipItem(props.charId, props.equipSlot);
   } else {
@@ -193,9 +199,7 @@ function deltaClass(d: number): string {
               </span>
               <div class="min-w-0 flex-1">
                 <div class="text-sm font-medium text-ink truncate">{{ c.def.name }}</div>
-                <div class="text-[11px] text-ink-3 truncate">
-                  <span v-for="(v, k) in c.def.bonus" :key="k">{{ k }}+{{ v }} </span>
-                </div>
+                <div class="text-[11px] text-ink-3 truncate">{{ formatBonus(c.def.bonus) }}</div>
               </div>
               <span v-if="c.isCurrent" class="text-[10px] font-bold text-accent flex-shrink-0">装备中</span>
               <span v-else-if="c.onOtherLabel" class="text-[10px] text-ink-3 flex-shrink-0">{{ c.onOtherLabel }}</span>

@@ -116,3 +116,23 @@ export function dropRarityForFloor(floor: number): 'R' | 'SR' | 'SSR' | 'HR' | '
 
 /** 通层掉落概率（50%）。RNG 在 engine 掉落纯函数里注入。 */
 export const DROP_CHANCE = 0.5;
+
+/** 五维显示名（固定顺序，UI 文案统一口径用）。 */
+const STAT_LABEL: Record<keyof StatBonus, string> = {
+  hp: 'HP',
+  atk: 'ATK',
+  def: 'DEF',
+  sp: 'SP',
+  spd: 'SPD',
+};
+
+/**
+ * 五维加成 → 展示文案（如 'ATK+13 · SP+5'）。背包卡 / 兑换商店 / 配装弹窗共用，
+ * 避免各处自拼大小写与分隔符不一致。按 hp→atk→def→sp→spd 固定顺序，仅显示非 0 维。
+ */
+export function formatBonus(bonus: Partial<StatBonus>): string {
+  return (Object.keys(STAT_LABEL) as (keyof StatBonus)[])
+    .filter(k => bonus[k])
+    .map(k => `${STAT_LABEL[k]}+${bonus[k]}`)
+    .join(' · ');
+}

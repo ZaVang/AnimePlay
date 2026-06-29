@@ -16,6 +16,7 @@ import {
   SLOT_META,
   SLOT_ORDER,
   getEquipmentPrice,
+  formatBonus,
   type EquipmentSlot,
 } from '@/config/equipment';
 import { rarityStyle } from '@/config/equipmentColors';
@@ -66,12 +67,6 @@ const shopItems = computed(() =>
 );
 
 const kp = computed(() => userStore.playerState.knowledgePoints);
-
-function bonusText(bonus: Record<string, number | undefined>): string {
-  return Object.entries(bonus)
-    .map(([k, v]) => `${k.toUpperCase()}+${v}`)
-    .join(' · ');
-}
 
 function buy(defId: string) {
   userStore.purchaseEquipment(defId);
@@ -159,7 +154,7 @@ function buy(defId: string) {
           </span>
           <div class="min-w-0 flex-1">
             <div class="text-xs font-medium text-ink truncate">{{ SLOT_META[entry.def.slot].icon }} {{ entry.def.name }}</div>
-            <div class="text-[10px] text-ink-3 truncate">{{ bonusText(entry.def.bonus) }}</div>
+            <div class="text-[10px] text-ink-3 truncate">{{ formatBonus(entry.def.bonus) }}</div>
           </div>
           <button
             type="button"
@@ -190,7 +185,7 @@ function buy(defId: string) {
           <span class="text-lg" :title="SLOT_META[card.def.slot].label">{{ SLOT_META[card.def.slot].icon }}</span>
         </div>
         <div class="text-sm font-semibold text-ink truncate">{{ card.def.name }}</div>
-        <div class="text-[11px] text-ink-2 leading-snug">{{ bonusText(card.def.bonus) }}</div>
+        <div class="text-[11px] text-ink-2 leading-snug">{{ formatBonus(card.def.bonus) }}</div>
         <div v-if="card.equippedLabel" class="mt-auto pt-1">
           <span class="inline-block text-[10px] px-1.5 py-0.5 rounded bg-accent/15 text-accent font-medium">
             {{ card.equippedLabel }}

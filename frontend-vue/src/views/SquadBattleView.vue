@@ -176,14 +176,23 @@ function updateSquadName(squadId: number, newName: string) {
   userStore.updateSquadName(squadId, newName);
 }
 
-// 创建小队成员
-function createSquadMember(character: CharacterCard, position: number): SquadMember {
-  const nurtureData = userStore.getNurtureData(character.id);
-  const battleStats = generateBattleStats(
-    character.battle_stats || { hp: 100, atk: 50, def: 30, sp: 40, spd: 60 },
-    nurtureData.statPoints,
-    equipmentStore.resolveEquipBonus(character.id) // C2：真实装备加成（与养成/小队战力同源）
-  );
+// 五维零加成（敌人不继承玩家的加点/装备）
+const EMPTY_STAT_BONUS: BattleStats = { hp: 0, atk: 0, def: 0, sp: 0, spd: 0 };
+
+// 创建小队成员。isEnemy=true 时不读取玩家的加点/装备——敌人（塔/AI）复用真实角色 ID，
+// 否则 resolveEquipBonus(id)/getNurtureData(id) 会把玩家本人的装备与加点泄漏到敌方身上。
+function createSquadMember(character: CharacterCard, position: number, isEnemy = false): SquadMember {
+  const battleStats = isEnemy
+    ? generateBattleStats(
+        character.battle_stats || { hp: 100, atk: 50, def: 30, sp: 40, spd: 60 },
+        EMPTY_STAT_BONUS,
+        EMPTY_STAT_BONUS,
+      )
+    : generateBattleStats(
+        character.battle_stats || { hp: 100, atk: 50, def: 30, sp: 40, spd: 60 },
+        userStore.getNurtureData(character.id).statPoints,
+        equipmentStore.resolveEquipBonus(character.id), // C2：真实装备加成（与养成/小队战力同源）
+      );
 
   return {
     character,
@@ -278,8 +287,8 @@ function startBattle(squadId: number) {
 
 // 通用战斗开始逻辑
 function startBattleCommon(squadId: number, enemyMembers: CharacterCard[], enemyName: string) {
-  enemySquad.value = enemyMembers.map((character, index) => 
-    createSquadMember(character, index)
+  enemySquad.value = enemyMembers.map((character, index) =>
+    createSquadMember(character, index, true)
   );
   
   selectedSquadForBattle.value = squadId;

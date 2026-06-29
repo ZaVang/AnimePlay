@@ -214,6 +214,18 @@ describe('v14 装备域迁移', () => {
     expect(out.equipment.equipped[12393]).toEqual({ weapon: 'a', armor: null, supporter: null });
   });
 
+  it('清洗孤儿 uid：equipped 指向已不在背包的实例 → 该槽归 null', () => {
+    const out = migrate({
+      version: 14,
+      equipment: {
+        inventory: [{ uid: 'a', defId: 'spear' }],
+        // weapon 'a' 合法保留；armor 'ghost' 不在背包 → 清成 null
+        equipped: { 12393: { weapon: 'a', armor: 'ghost', supporter: null } },
+      },
+    } as unknown);
+    expect(out.equipment.equipped[12393]).toEqual({ weapon: 'a', armor: null, supporter: null });
+  });
+
   it('equipment 局部损坏按字段补默认', () => {
     const out = migrate({ version: 14, equipment: { inventory: 'oops', equipped: 'nope' } } as unknown);
     expect(out.equipment).toEqual({ inventory: [], equipped: {} });

@@ -197,15 +197,20 @@ function migrateEquipment(raw: any): EquipmentSave {
         .map((it: any) => ({ uid: it.uid, defId: it.defId }))
     : defaults.inventory;
 
+  // 只认仍在 inventory 中的 uid，清洗孤儿引用（指向已不存在实例的 equipped 槽）。
+  const validUids = new Set<string>(inventory.map((it: { uid: string }) => it.uid));
+  const keepUid = (v: any): string | null =>
+    typeof v === 'string' && validUids.has(v) ? v : null;
+
   const equipped: Record<number, EquippedSlots> = {};
   if (raw.equipped && typeof raw.equipped === 'object') {
     for (const [key, val] of Object.entries(raw.equipped as Record<string, any>)) {
       const charId = Number(key);
       if (!Number.isFinite(charId) || !val || typeof val !== 'object') continue;
       equipped[charId] = {
-        weapon: typeof val.weapon === 'string' ? val.weapon : null,
-        armor: typeof val.armor === 'string' ? val.armor : null,
-        supporter: typeof val.supporter === 'string' ? val.supporter : null,
+        weapon: keepUid(val.weapon),
+        armor: keepUid(val.armor),
+        supporter: keepUid(val.supporter),
       };
     }
   }
