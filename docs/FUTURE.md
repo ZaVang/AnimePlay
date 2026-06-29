@@ -28,7 +28,7 @@
 |---|---|---|---|
 | S0–S10 | 重构主线（文档/测试/engine 抽取/拆 store/功能闭环/视觉/技能/性能/安全） | ✅ | 已完成 → 详见 [HISTORY.md](HISTORY.md) |
 | — | 产品进化层 Evo-1..Evo-9 + 战斗可读性还债 + 2026-06-24 产品循环 | ✅ | 已完成 → 详见 [HISTORY.md](HISTORY.md) |
-| S13 | 家园综合系统（基地养成 + 挑战塔闭环） | 🔄 | 近期主线（A/B 已落地；A2 搁置待样本图、C 待塔/养成调整后做） |
+| S13 | 家园综合系统（基地养成 + 挑战塔闭环 + 养成重构） | 🔄 | 近期主线（A/B 已落地；C=养成精简+装备 C1/C2 已 `/think` 定稿待做；A2 视觉搁置待样本图） |
 | S11 | React 视图迁移 | ☐ | 演进 |
 | S12 | 权威后端 & 多人/PvP/排行榜 | ☐ | 终点 |
 
@@ -72,13 +72,37 @@
 - [x] HomesteadView 重写（桌宠=入住角色）+ `HomesteadManageModal`（选 ≤6 角色，稀有度降序）+「离线收益」弹窗。
 - **Exit**：入住角色离线回来领到经验/好感/知识点；封顶生效；v13 跨重开保真；经济走 `earn`；结算公式特征测试（0时长/封顶/多角色/未登录）。`npm run type-check`(0错)/`npm run test`(全绿+新增)/`npm run build` 通过 + 回归基线 `python backend/test_security.py`(全 PASS)/`grep -rn "debug=True" backend/server.py api/index.py`(零命中)。
 
-### C · 闭环收紧（~4-6 文件，独立可上线；建议在塔/养成调整后做）
-- [ ] `engine/squad/combat.ts` attributeBonus 读 `attributes + levelBonusAttributes`（+ 更新 `combat.test.ts`）→ 升级进战力。
-- [ ] HomesteadView 显示每角色战力 + 「去挑战塔」入口（跳现有 `SquadBattleView`）；按需微调塔奖励曲线。
-- [ ] 养成页内容按需交叉链接/迁入（点家园角色 → 养成面板）。
-- **Exit**：升级可见提升战力；家园看战力 + 一键进塔；塔奖励回流闭环成立。type-check/test/build 通过。
+### C · 养成重构（替换原「闭环收紧」，2026-06-29 `/think` 定稿）
 
-**Exit（整体）**：三阶段合并后家园是「入住 → 挂机成长 → 进塔验证 → 回流」的完整闭环，且每阶段曾独立可玩。
+> 原 C（combat 补 levelBonus + 去塔入口）已废弃，替换为「养成精简两轴 + 装备系统」——把又多又乱的养成砍成标准二游结构。家园挂机(B)原样兼容（它产出的正是新养成两轴）。
+
+**新养成模型**：
+- **养成 = 等级 + 好感** 两轴。删掉 训练/心情/活动/对话/礼物 + `attributes(charm/int/str)`/`levelBonusAttributes`/`battleEnhancements`/`intimacy`/`preferences` 等。
+- **等级 = 固定初始五维 + 每级随机加点**：角色初始 5 维 = 卡牌 `battle_stats`；每升一级 roll `POINTS_PER_LEVEL`(起 10，可调) 点随机分配到 5 维，累加进 `statPoints`（注入 RNG，升级时 roll 一次并存档；复用 `distributeRandomAttributes` 改到战斗维）。
+- **好感 = 关系仪表 + 里程碑**，**不接战力**。6 档 `100/250/500/1000/2000/4000` → 一次性小额 KP(`50/100/200/400/800/1500`) + 羁绊称号（初识/熟络/要好/挚友/羁绊/命运）。
+- **新战力公式（纯加法）**：`最终某围 = base围 + statPoints围 + 装备该围加成`。`combat.ts` → `generateBattleStats(base, statPoints, equipBonus)`。无乘算、无 charm/int/str、无 battleEnh%。
+- **装备 = 武器/防具/supporter 3 槽 + 名梗道具**：数值**由物品自定义**（`bonus: Partial<{hp,atk,def,sp,spd}>`，非槽位固定）；稀有度 R/SR/SSR/HR/UR（按稀有度预算 R~15/SR~30/SSR~55/HR~90/UR~140 总点指导配数值）；命名用动漫名梗（朗基努斯之枪/AT力场/死亡笔记/后藤的吉他…），目录在 `config/equipment.ts`（内容，可扩）；任意角色可戴任意装备（暂无稀有度硬限制）。
+- **装备来源**：塔通层 50% 掉随机道具（稀有度按层段 1-5→R…56+→UR，可调）+ 知识点商店买**指定**名梗道具（R400/SR1200/SSR4000/HR10000/UR24000，可调）。
+- **经验/好感获取**：经验 = 挂机 + 塔战斗 + 「补习」(角色页花 KP 换经验，新 KP sink)；好感 = 挂机 + 带它打塔（并肩作战涨好感）。
+- **存档 v14**：nurtureData 瘦身为 `{affection, level, experience, totalExperience, lastInteraction, statPoints:{hp,atk,def,sp,spd}}`；新增独立 equipment 域 `{inventory:{uid,defId}[], equipped:Record<charId,{weapon,armor,supporter:uid|null}>}`（uid 用 `crypto.randomUUID()`）；迁移丢弃旧训练字段、**旧投入不退**。
+
+#### ☐ C1 · 养成精简 + 战力改加点制（存档 v14，~12 文件含删除，独立可上线）
+- [ ] `types/nurture.ts` + `engine/nurture/rules.ts`：nurtureData 瘦身；删训练相关函数；`distributeRandomAttributes`/升级加点改到 5 战斗维（`statPoints`）；留等级曲线。
+- [ ] `engine/squad/combat.ts` → `generateBattleStats(base, statPoints, equipBonus)`（纯加法，equipBonus 暂传 0）；`SquadBattleView` 改 2 处调用 + 保留 414 `addCharacterExp` + 加「塔后涨好感」。
+- [ ] 删 `NurtureActions.vue/InteractionPanel.vue/DialogueSystem.vue` + 相关测试；`NurtureView` 重写为**游戏化角色详情面板**：角色列表 + 选中角色详情（头像 / 等级进度 / 好感+里程碑 / **5 维数值面板(base + statPoints 分解)** / **3 个装备槽位展示**[C1 空槽占位，C2 接配装] / 补习 KP→exp 入口）。整体观感往"真游戏角色页"靠。
+- [ ] 好感里程碑 config + 领取；存档三处同改升 v14（瘦身 nurtureData + 建**空** equipment 域占位）+ 迁移/往返测试。
+- **Exit**：养成只剩等级(加点)+好感(里程碑)；战力=base+statPoints；训练/活动/对话/礼物及测试删除；v14 迁移丢旧字段；`npm run type-check`(0)/`test`(全绿)/`build` + `python backend/test_security.py`(PASS)。**独立可玩**（靠等级变强，装备槽空着）。
+
+#### ☐ C2 · 装备系统全栈（用 C1 已建的 v14 equipment 域，不再升档，~10 文件，独立可上线）
+- [ ] `config/equipment.ts`：名梗道具目录（3 槽 × R..UR）+ 塔掉落表 + 知识点兑换价。
+- [ ] equipment store（inventory + equip/unequip per character，serialize/deserialize/reset）+ 装配器接入。
+- [ ] `combat`/`SquadBattleView` 接 equipBonus（解析 equipped → 逐围加成）；塔掉落（通层 roll 道具入背包）；知识点兑换 shop。
+- [ ] **装备背包视图**（展示已拥有装备，按槽/稀有度分类，可看每件数值）+ 角色详情面板 3 槽位的**配装/卸下**交互（点槽 → 背包 picker 选同槽道具）；测试（equipment store / combat 带装备 / 掉落与兑换）。
+- **Exit**：塔掉落 + KP 兑换能拿装备；配装改变战力；UI 可配可卸；type-check/test/build + 基线。**独立可上线**（C1 之上加装备层）。
+
+**Exit（整体）**：合并后家园闭环 = 「入住挂机长级/好感 → 带去打塔(涨经验/好感 + 掉装备) → 配装提战力 → 打更高塔」，且 A/B/C1/C2 每步曾独立可玩。
+
+> **最脆弱假设**：去掉 attributes/battleEnhancements、战力改"初始五维+加点+装备"后，塔不过易/过难。变形求生：塔按层自适应难度，旧投入已丢、玩家重新练级，单机无 PvP/排行榜，`POINTS_PER_LEVEL` 可调到让满级战力对齐旧区间。回滚：v14 删字段不可逆，但删的是已决定丢弃的训练数据；v13 代码读 v14 档会把旧字段补默认空值、角色照常工作，回滚成本低。背包膨胀留 backlog（后续加"分解装备换 KP"）。
 
 > **最脆弱假设**：单机/无体力/本地存档下玩家会被挂机吸引。变形求生：挂机不发明 FOMO，喂给已有的内在目标（塔进度 + 图鉴/好感收集）；即使玩家不在意，功能零阻塞、低危害、可低成本回滚（v13 增量，停读家园域即可，已写入 nurture 的成长留存）。**显式延后**：槽位扩展是否做成 KP sink / chibi 美术出多少张 / C 阶段养成页是「交叉链接」还是「真迁入」——到时按体验定。
 
@@ -127,4 +151,4 @@
   > 注：此项在历史上以两处不同措辞出现（Evolution 尾注的「按声优收集维度」与 2026-06-24 循环 round 1 的「声优维度」），是**同一个**跨栈/需后端项，此处已合并为一条，勿再拆。
 
 ---
-*本文只列「还剩什么」。完成史在 [HISTORY.md](HISTORY.md)；日常产品迭代需求源在 [SPRINT.md](SPRINT.md)。每完成一项请同步勾选；每完成一个 Sprint 请更新「进度总览」状态。最后整理 2026-06-29（新增 S13 家园综合系统）。*
+*本文只列「还剩什么」。完成史在 [HISTORY.md](HISTORY.md)；日常产品迭代需求源在 [SPRINT.md](SPRINT.md)。每完成一项请同步勾选；每完成一个 Sprint 请更新「进度总览」状态。最后整理 2026-06-29（S13 家园 A/B 落地 + C 重构为养成精简+装备 C1/C2）。*
