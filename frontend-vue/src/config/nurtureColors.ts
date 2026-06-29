@@ -12,8 +12,8 @@
 export interface BondTier {
   /** 文字语义类（text-*）。 */
   color: string;
-  /** 软底语义类（如 bg-accent/20）；进度条取实底时去掉 /20 修饰。 */
-  bgColor: string;
+  /** 进度条实底语义类（完整字面，JIT 直接提取）。**勿运行时拼接 class**——拼出的类无静态字面、JIT 不生成、渲染缺色。 */
+  barColor: string;
   /** 区分用 emoji。 */
   icon: string;
 }
@@ -23,11 +23,11 @@ export interface BondTier {
  * 语义映射：≥4000 accent / ≥2000 danger / ≥1000 highlight / ≥500 info / ≥250 success / ≥100 warning / else ink-2。
  */
 export function bondTier(affection: number): BondTier {
-  if (affection >= 4000) return { color: 'text-accent', bgColor: 'bg-accent/20', icon: '⭐' };
-  if (affection >= 2000) return { color: 'text-danger', bgColor: 'bg-danger/20', icon: '🌟' };
-  if (affection >= 1000) return { color: 'text-highlight', bgColor: 'bg-highlight/20', icon: '💜' };
-  if (affection >= 500) return { color: 'text-info', bgColor: 'bg-info/20', icon: '💙' };
-  if (affection >= 250) return { color: 'text-success', bgColor: 'bg-success/20', icon: '💚' };
-  if (affection >= 100) return { color: 'text-warning', bgColor: 'bg-warning/20', icon: '💛' };
-  return { color: 'text-ink-2', bgColor: 'bg-ink-3/20', icon: '🤝' };
+  if (affection >= 4000) return { color: 'text-accent', barColor: 'bg-accent', icon: '⭐' };
+  if (affection >= 2000) return { color: 'text-danger', barColor: 'bg-danger', icon: '🌟' };
+  if (affection >= 1000) return { color: 'text-highlight', barColor: 'bg-highlight', icon: '💜' };
+  if (affection >= 500) return { color: 'text-info', barColor: 'bg-info', icon: '💙' };
+  if (affection >= 250) return { color: 'text-success', barColor: 'bg-success', icon: '💚' };
+  if (affection >= 100) return { color: 'text-warning', barColor: 'bg-warning', icon: '💛' };
+  return { color: 'text-ink-2', barColor: 'bg-ink-2', icon: '🤝' };
 }

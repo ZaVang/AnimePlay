@@ -22,12 +22,16 @@ describe('bondTier 好感档（共享语义色）', () => {
     expect(bondTier(0).icon).toBe('🤝');
   });
 
-  it('每档 color/bgColor 都是语义类，无硬编码硬色', () => {
+  it('每档 color/barColor 都是语义类、无硬编码硬色、且为完整实底字面（不含 / 软底修饰）', () => {
+    // 实底白名单：必须是有静态字面、JIT 必生成的完整类——杜绝运行时拼类(如 .replace('/20',''))后 Tailwind 不生成、渲染缺色。
+    const SOLID_BAR = new Set(['bg-accent', 'bg-danger', 'bg-highlight', 'bg-info', 'bg-success', 'bg-warning', 'bg-ink-2']);
     for (const aff of [4000, 2000, 1000, 500, 250, 100, 0]) {
       const t = bondTier(aff);
       expect(t.color).toMatch(/^text-/);
       expect(t.color).not.toMatch(HARDCODED);
-      expect(t.bgColor).not.toMatch(HARDCODED);
+      expect(t.barColor).not.toMatch(HARDCODED);
+      expect(t.barColor).not.toContain('/'); // 实底非软底，避免运行时去 /20 拼类
+      expect(SOLID_BAR.has(t.barColor)).toBe(true);
       expect(t.icon.length).toBeGreaterThan(0);
     }
   });

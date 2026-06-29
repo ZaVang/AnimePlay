@@ -261,7 +261,7 @@ const equipSlots = [
                   <div class="w-full bg-surface-2 rounded-full h-2 overflow-hidden">
                     <div
                       class="h-full rounded-full transition-all duration-500"
-                      :class="bond.bgColor.replace('/20', '')"
+                      :class="bond.barColor"
                       :style="{ width: `${bondProgress.pct}%` }"
                     ></div>
                   </div>
