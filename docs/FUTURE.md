@@ -28,7 +28,7 @@
 |---|---|---|---|
 | S0–S10 | 重构主线（文档/测试/engine 抽取/拆 store/功能闭环/视觉/技能/性能/安全） | ✅ | 已完成 → 详见 [HISTORY.md](HISTORY.md) |
 | — | 产品进化层 Evo-1..Evo-9 + 战斗可读性还债 + 2026-06-24 产品循环 | ✅ | 已完成 → 详见 [HISTORY.md](HISTORY.md) |
-| S13 | 家园综合系统（基地养成 + 挑战塔闭环 + 养成重构） | 🔄 | 近期主线（A/B 已落地；C=养成精简+装备 C1/C2 已 `/think` 定稿待做；A2 视觉搁置待样本图） |
+| S13 | 家园综合系统（基地养成 + 挑战塔闭环 + 养成重构） | 🔄 | A/B/C1 已落地；C2 装备全栈进行中；A2 视觉搁置待样本图 |
 | S11 | React 视图迁移 | ☐ | 演进 |
 | S12 | 权威后端 & 多人/PvP/排行榜 | ☐ | 终点 |
 
@@ -88,7 +88,7 @@
 
 - **UI/数值显示口径**（mock 定稿）：角色详情页用**变体 A（立绘前置双栏）**；五维进度条用**软上限参考** `STAT_DISPLAY_REF`（起始 生命1500/攻击800/防御600/技力700/速度600，可调；`条填充 = min(100%, 该围值/参考)`，超出满条 + `MAX` 标记），跨角色可比、避免用绝对理论最大值导致条永远空。**数值本身无硬上限**（等级点池 `POINTS_PER_LEVEL×99` + 3 装备槽天然封顶）。`STAT_DISPLAY_REF` 放 `config/`、不进存档、不影响战斗结算。
 
-#### ☐ C1 · 养成精简 + 战力改加点制（存档 v14，~12 文件含删除，独立可上线）
+#### ✅ C1 · 养成精简 + 战力改加点制（存档 v14）— 已完成并合并（c940632 + review 修复 6db9a35；multi-ralph 1 轮 + /check Deep）
 - [ ] `types/nurture.ts` + `engine/nurture/rules.ts`：nurtureData 瘦身；删训练相关函数；`distributeRandomAttributes`/升级加点改到 5 战斗维（`statPoints`）；留等级曲线。
 - [ ] `engine/squad/combat.ts` → `generateBattleStats(base, statPoints, equipBonus)`（纯加法，equipBonus 暂传 0）；`SquadBattleView` 改 2 处调用 + 保留 414 `addCharacterExp` + 加「塔后涨好感」。
 - [ ] 删 `NurtureActions.vue/InteractionPanel.vue/DialogueSystem.vue` + 相关测试；`NurtureView` 重写为**游戏化角色详情面板**：角色列表 + 选中角色详情（头像 / 等级进度 / 好感+里程碑 / **5 维数值面板(base + statPoints 分解)** / **3 个装备槽位展示**[C1 空槽占位，C2 接配装] / 补习 KP→exp 入口）。整体观感往"真游戏角色页"靠。

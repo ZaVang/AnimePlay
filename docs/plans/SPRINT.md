@@ -1,61 +1,64 @@
-# AnimePlay — SPRINT 合同（S13-C1：养成精简 + 战力改加点制 + 存档 v14）
+# AnimePlay — SPRINT 合同（S13-C2：装备系统全栈）
 
-> 本文件是 multi-ralph 执行合同。**完整设计基线在 `docs/FUTURE.md` 的「## ☐ S13 → ### C · 养成重构」段（尤其 C1 部分），以那里为准**：statPoints 加点制 / 纯加法战力 / 软上限参考 / 变体 A 角色页 / v14 / 删除清单。本文件只列 C1 的可执行任务 + 验收命令。
->
-> **实现前必读**：`frontend-vue/CLAUDE.md`（架构铁律、存档三处同改、颜色令牌、startup）、`docs/plans/pitfalls.md`、`docs/FUTURE.md` 的 S13-C 全段。
+> multi-ralph / product-loop 执行合同（本轮 `--tier1 off`：本文件 `[ ]` 任务即需求源，目标驱动停）。
+> **设计基线在 `docs/FUTURE.md` 的 S13 → C 段（C2 部分）**；C1（养成精简+加点制+v14）已完成并合并。
+> **实现前必读**：`frontend-vue/CLAUDE.md`、`docs/plans/pitfalls.md`（尤其「养成重构」「barColor 拼类教训」「白名单重建迁移」三条）、`docs/FUTURE.md` S13-C。
 
 ## 产品背景
-- AnimePlay：基于 Bangumi 数据的抽卡 + 收集 + 多玩法网页游戏。前端 Vue 3 + TS + Pinia + Tailwind（Vite），后端 Flask。
-- 启动：前端 `cd frontend-vue && npm run dev`；后端 `python start_server.py`（端口 5001）。
-- 本 sprint = **S13-C1**：把养成系统砍成「**等级**（固定初始五维 + 每级随机加点）+ **好感**（关系仪表 / 里程碑，不接战力）」；战力改**纯加法**（`base + 加点 + 装备`，本阶段装备恒 0）；存档升 **v14**；养成页重写为**变体 A 游戏化角色详情面板**。**装备系统是 C2，本阶段只留空槽占位 + 空 equipment 存档域。**
+- AnimePlay：Bangumi 数据的抽卡+收集+多玩法网页游戏。前端 Vue3+TS+Pinia+Tailwind(Vite)，后端 Flask。
+- 启动：前端 `cd frontend-vue && npm run dev`；后端 `python start_server.py`（:5001）。
+- 本 sprint = **S13-C2 装备系统全栈**：填上 C1 留的空 equipment 存档域 + 战力 equipBonus 口，做出「获得装备 → 配装 → 提战力」闭环 + 背包/配装 UI。**不再升存档（v14 已含空 equipment 域）。**
+
+## 已锁定设计（不要重新发明，名值都进 `config/equipment.ts`、后调）
+
+**装备模型**
+- 3 固定槽：`weapon` 武器 / `armor` 防具 / `supporter`。物品**数值自定义**（`bonus: Partial<{hp,atk,def,sp,spd}>`），稀有度 R/SR/SSR/HR/UR。**任意角色可戴任意装备**（无稀有度硬限制）。物品定义（id/name/slot/rarity/bonus）静态目录放 `config/equipment.ts`。
+- **数值预算**（每件总加成，hp 按 ~2.5× 折算，可调）：R~18 / SR~35 / SSR~60 / HR~95 / UR~140。
+- **起始目录**（Generator 按预算建在 config，名值可后调；示例）：武器=木刀R/斩月SR/后藤的吉他SSR/死亡笔记HR/朗基努斯之枪UR；防具=校服R/绝对领域SR/纳米装甲SSR/须佐能乎HR/AT力场UR；supporter=应援棒R/竹蜻蜓SR/写轮眼SSR/草帽HR/四次元口袋UR。每槽 ≥1 件/稀有度，覆盖 R..UR。
+
+**实例 / 背包 / 装备槽**（存档域 C1 已建，v14 不再升）
+- equipment 域：`{ inventory: {uid,defId}[], equipped: Record<charId,{weapon,armor,supporter: uid|null}> }`。一件实例（uid，`crypto.randomUUID()`，store 层生成）只能戴在一个角色一个槽。
+- 装备/卸下/获得入库的行为在 `stores/equipment.ts`（C1 只建了 serialize/deserialize/reset，本轮填行为）；跨域编排（结算+存档）走门面 userStore。
+
+**战力接入**（C1 已留口）
+- `engine/squad/combat.ts` 的 `generateBattleStats(base, statPoints, equipBonus)` 已就位。C2 把每角色 `equipped` 解析成 `equipBonus`（三件已装道具 bonus 逐围求和）传入；`SquadBattleView` 现传的恒 0 改为真实 equipBonus。equipBonus 解析是**纯函数**（engine 或 config，便于测试）。
+
+**来源**
+- **塔掉落**：通层后 **50% 掉 1 件**，稀有度按层段（1-5→R / 6-15→SR / 16-30→SSR / 31-50→HR / 51+→UR），槽随机。**RNG 必须注入**（engine 纯函数定掉落，便于测试），store 层执行入库。
+- **知识点兑换**：商店买**指定**道具，价 R400/SR1200/SSR4000/HR10000/UR24000，**走 `profile.spend('knowledgePoints')`**，成功才入库。
+
+**UI（mock 已定稿）**
+- **背包视图 = 变体 1 卡片网格**：稀有度徽章 + 槽位图标 + 名梗名 + 数值加成 + 「装备中·角色」标签；顶部按槽/稀有度筛选。
+- **角色页（C1 变体 A）3 个装备槽**接上**配装交互 = 变体 A 弹窗 picker**：点槽 → 弹窗，左列同槽候选（含「卸下/不装备」）+ 右侧**「装上后五维 当前→新值(+Δ)」预览 + 战力 当前→新值**，确认「装备」/「卸下」。
 
 ## 架构铁律（不可违反）
-engine 纯净（零 Vue/Pinia/DOM/IO）/ 依赖只向下（views→components→stores→engine）/ engine 内 RNG 可注入 / 货币只走 `profile.spend·earn` / 颜色走皮肤语义令牌（禁 text-white 压浅底、禁动态拼色；立绘/稀有度识别色是固定色例外）/ 新存档字段**三处同改**（schema + migrations + 装配器 stores/persistence.ts）+ 迁移/往返测试。
-**⚠️ 别误伤**：家园挂机用的 `addCharacterExp`/`addIdleAffection` 与挑战塔结算用的 `addCharacterExp` 必须保留可用。
+engine 纯净（零 Vue/Pinia/DOM/IO/`Math.random`，掉落/equipBonus 纯函数 + 注入 RNG）/ 依赖只向下 / 货币只走 `profile.spend·earn` / 颜色走皮肤语义令牌（**禁 text-white 压浅底、禁拼接动态色类**——见 C1 barColor 教训：稀有度色用完整字面映射）/ 组件 setTimeout/rAF 登记并卸载清除。**别动 C1 已成的养成两轴与家园挂机/塔的加经验·好感入口。**
 
-## 任务清单（S13-C1）
+## 任务清单（S13-C2）
 
-- [x] **C1-T1｜养成数据 + 引擎瘦身（改加点制）**
-  - `types/nurture.ts`：`CharacterNurtureData` 瘦身为 `{ affection, level, experience, totalExperience, lastInteraction, statPoints: {hp,atk,def,sp,spd} }`。删除 `intimacy / totalInteractions / dialogueHistory / gifts / specialEvents / attributes / levelBonusAttributes / battleEnhancements / preferences / trainingCooldowns`（含其中的 mood）。
-  - `engine/nurture/rules.ts`：删训练相关（`generateTrainingOpponent / trainingOutcome / applyBattleEnhancements / enhanceAttribute / enhanceBattleStat / ATTRIBUTE_CAP / ENHANCEMENT_CAP / distributeRandomAttributes(旧的属性版)`）；新增「每升一级 roll `POINTS_PER_LEVEL`(起 10，放 config 或 rules 常量，可调) 点**随机分配到 5 战斗维**（hp/atk/def/sp/spd），累加进 `statPoints`」的纯函数（**注入 RNG**，可复现）；保留等级曲线 `getRequiredExpForLevel / getLevelFromExp / getLevelProgress / MAX_CHARACTER_LEVEL` 与瘦身版 `createDefaultNurtureData`。
-  - `stores/nurture.ts`：删训练/强化/冷却 action；保留并适配 `addCharacterExp`（升级时 roll 加点写入 statPoints）/`addIdleAffection`；新增「带塔参战涨好感」与「补习(花知识点 → 加经验)」入口（补习经 `profile.spend('knowledgePoints', …)`）。
-  - 验收：type-check 0；`engine/nurture/*.test.ts` 改为覆盖加点制（升级把固定点数随机分配到 5 维，注入 RNG 可复现）。
-
-- [x] **C1-T2｜战力公式改纯加法**
-  - `engine/squad/combat.ts`：`generateBattleStats` 改签名为 `(baseStats, statPoints, equipBonus)`，公式 `最终某围 = base + statPoints[围] + equipBonus[围]`（删除 charm/int/str 的 attributeBonus 与 battleEnhancements% 乘算）。
-  - `views/SquadBattleView.vue`：两处战力计算调用（约 131 / 183 行）改为传 `nurtureData.statPoints` + `equipBonus`（本阶段恒 `{hp:0,atk:0,def:0,sp:0,spd:0}`）；保留 ~414 行的 `addCharacterExp`；并在塔战斗结算后给参战角色涨好感。
-  - 更新 `engine/squad/combat.test.ts` 覆盖新公式。
-  - 验收：type-check 0；combat.test 绿。
-
-- [x] **C1-T3｜删旧养成 UI + 角色页重写（变体 A + 软上限条）**
-  - 删除 `components/nurture/NurtureActions.vue`、`InteractionPanel.vue`、`DialogueSystem.vue` 及其测试与引用。
-  - `views/NurtureView.vue` 重写为**变体 A 游戏化角色详情面板**：角色列表 + 选中角色（立绘 + 等级/经验进度条 + 好感进度条&里程碑称号 + **五维数值面板**[每围显示 base/加点两段、软上限参考条] + **3 个装备槽位**[空占位，C2 接配装] + **补习**按钮）。
-  - 五维进度条用**软上限参考** `STAT_DISPLAY_REF`（生命 1500 / 攻击 800 / 防御 600 / 技力 700 / 速度 600，放 `config/`，可调；`条填充 = min(100%, 该围值 / 参考)`，超出满条 + MAX 标记）。
-  - **好感里程碑** 6 档（阈值 100/250/500/1000/2000/4000 → 一次性 KP 50/100/200/400/800/1500 + 称号 初识/熟络/要好/挚友/羁绊/命运）配置 + 领取（KP 经 `profile.earn`，已领状态需持久化——若需存档字段则并入 nurtureData 或单独记，按你判断但要走三处同改）。
-  - 颜色走皮肤语义令牌。
-  - 验收：type-check 0；build 通过；养成页不再引用任何已删组件/字段。
-
-- [x] **C1-T4｜存档 v14 迁移 + 收口**
-  - `infra/persistence/schema.ts`：`SAVE_VERSION` 13 → 14；`CharacterNurtureData` 瘦身入 schema；新增**空** equipment 域 `EquipmentSave = { inventory: {uid,defId}[], equipped: Record<number,{weapon,armor,supporter: string|null}> }` + `createDefaultEquipment()`（C2 用，本阶段占位）。
-  - `migrations.ts` v13→v14：`migrateNurtureData` 丢弃删掉的字段、保留两轴、补 `statPoints` 缺省（旧档无 → `{hp:0,atk:0,def:0,sp:0,spd:0}`，与瘦身后字段一致）；`migrateEquipment` 旧档补空域。
-  - 装配器 `stores/persistence.ts` + 新建 `stores/equipment.ts`（空域 serialize/deserialize/reset）接入 buildPayload/applyPayload/resetAllDomains。
-  - 迁移/往返测试更新（`migrations.test.ts` + `persistence.test.ts` 覆盖 v14：旧字段被丢、两轴保留、statPoints/equipment 缺省补全）。
-  - 文档版本号同步：`frontend-vue/CLAUDE.md` 版本沿革 v13 → 补 v14 一行。
-  - 验收：type-check 0；test 全绿（含 v14 迁移/往返）；build 通过。
+- [ ] **C2-T1｜装备目录 config**：`config/equipment.ts` —— 物品定义类型 + 3 槽 × R..UR 起始目录（按预算，名值可后调）+ 掉落层段表 + 兑换价表 + 槽位元数据（名/图标键）。纯数据/纯常量，零 Vue/IO。
+- [ ] **C2-T2｜equipment store 行为**：`stores/equipment.ts` 填行为 —— addItem(defId)→建实例入 inventory、equip(charId,slot,uid)/unequip(charId,slot)（同槽校验、换下旧件留背包）、resolveEquipBonus(charId)→逐围求和（或抽 engine 纯函数）、getEquipped/list。保留 serialize/deserialize/reset。uid 用 crypto.randomUUID()。
+  - 验收：单测覆盖 equip/unequip/换装/同槽校验/resolveEquipBonus 求和。
+- [ ] **C2-T3｜战力接 equipBonus**：`SquadBattleView` 战力计算把恒 0 的 equipBonus 换成 `resolveEquipBonus(charId)`（两处战力调用 + 角色页战力展示口径一致）；equipBonus 解析为纯函数。更新/补 combat 相关测试。
+  - 验收：装上道具后角色战力/五维按 base+加点+装备正确变化；engine 纯净不破。
+- [ ] **C2-T4｜来源：塔掉落 + KP 兑换**：engine 纯函数 `rollTowerDrop(floor, rng)`（50% + 层段稀有度 + 随机槽）；塔通层结算调它、命中则 store addItem + 通知。知识点兑换商店：买指定道具 → `profile.spend` 成功 → addItem。RNG 注入。
+  - 验收：掉落纯函数特征测试（层段→稀有度、概率边界、注入 RNG 可复现）；兑换走 spend、余额不足不发货。
+- [ ] **C2-T5｜UI：背包 + 配装**：背包视图（变体 1 网格 + 筛选）；角色页 3 槽接配装弹窗（变体 A：候选 + 五维/战力 delta 预览 + 装备/卸下）。颜色语义令牌、稀有度色用完整字面映射（勿运行时拼类）。
+  - 验收：type-check 0 / build 通过；能在 UI 里查背包、给角色配装/卸下、看到 delta、战力随之变。
 
 ## 验收命令（Evaluator 必须亲自重跑，记录实际输出）
 
 ```bash
 # 1. 前端类型检查（期望 0 错误）
 cd frontend-vue && npm run type-check
-# 2. 前端测试（期望全绿，含新增 statPoints/combat/v14 迁移测试；不得低于既有数量减去删掉的训练测试）
+# 2. 前端测试（期望全绿，含新增 equipment store / 掉落 / equipBonus / combat 测试）
 cd frontend-vue && npm run test
 # 3. 前端生产构建（期望成功）
 cd frontend-vue && npm run build
-# 4. 后端安全基线（C1 不碰后端，期望退出码 0、全 PASS）
+# 4. 后端安全基线（C2 不碰后端，期望退出码 0、全 PASS）
 python backend/test_security.py
 # 5. debug 关闭核验（期望零命中）
 grep -rn "debug=True" backend/server.py api/index.py
 ```
 
-**通过标准**：命令 1/2/3/4 成功（4 退出码 0、全 PASS），命令 5 零命中，且 C1-T1..C1-T4 全部 `[x]`。
+**通过标准**：命令 1/2/3/4 成功（4 退出码 0、全 PASS），命令 5 零命中，且 C2-T1..C2-T5 全部 `[x]`。
