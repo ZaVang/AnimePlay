@@ -9,6 +9,7 @@
  * 经验→升级→随机加点（statPoints，S13-C1 加点制），好感→关系仪表/里程碑，两轴互不蚕食。
  */
 import type { Rarity } from '@/types/card';
+import type { EquipmentHomeEffect } from './equipment';
 
 /** 入住槽位上限（>小队的 4，可放下主力阵容）。只有入住角色挂机成长。 */
 export const HOMESTEAD_SLOTS = 6;
@@ -56,6 +57,21 @@ export const IDLE_KP_RARITY_MULT: Record<Rarity, number> = {
 
 const MS_PER_HOUR = 3600_000;
 
+/**
+ * 装备对家园挂机收益的倍率上限。装备效果要让玩家有选择，但挂机仍是回归补充，
+ * 不能盖过挑战塔/小游戏/看番等主动玩法。
+ */
+export const HOMESTEAD_EFFECT_CAP: Required<Pick<EquipmentHomeEffect, 'expPct' | 'affectionPct' | 'knowledgePct'>> = {
+  expPct: 0.6,
+  affectionPct: 0.6,
+  knowledgePct: 0.6,
+};
+
+function cappedPct(value: number | undefined, cap: number): number {
+  if (!(value && value > 0)) return 0;
+  return Math.min(value, cap);
+}
+
 /** 把一段离线毫秒数钳到封顶，换算成"有效小时数"（结算用）。 */
 export function cappedIdleHours(elapsedMs: number): number {
   if (!(elapsedMs > 0)) return 0;
@@ -75,6 +91,8 @@ export interface IdleYield {
   knowledge: number;
   /** 参与结算的入住角色数。 */
   characterCount: number;
+  /** 入住角色已装备道具贡献的家园舒适度。 */
+  comfort: number;
 }
 
 /**
@@ -82,16 +100,26 @@ export interface IdleYield {
  * 经验/好感对每个角色是同一 flat 速率；知识点按各自稀有度系数加权求和。
  * 便于特征测试，且将来若上权威服务端可复用同一口径。
  */
-export function computeIdleYield(placedRarities: readonly Rarity[], elapsedMs: number): IdleYield {
+export function computeIdleYield(
+  placedRarities: readonly Rarity[],
+  elapsedMs: number,
+  effect: EquipmentHomeEffect = {},
+): IdleYield {
   const hours = cappedIdleHours(elapsedMs);
   const count = placedRarities.length;
+  const comfort = Math.max(0, Math.floor(effect.comfort ?? 0));
   if (hours <= 0 || count === 0) {
-    return { hours: 0, expEach: 0, affectionEach: 0, knowledge: 0, characterCount: count };
+    return { hours: 0, expEach: 0, affectionEach: 0, knowledge: 0, characterCount: count, comfort };
   }
-  const expEach = Math.floor(IDLE_EXP_PER_HOUR * hours);
-  const affectionEach = Math.floor(IDLE_AFFECTION_PER_HOUR * hours);
-  const knowledge = Math.floor(
-    placedRarities.reduce((sum, r) => sum + IDLE_KP_PER_HOUR_BASE * (IDLE_KP_RARITY_MULT[r] ?? 1) * hours, 0),
+  const expMult = 1 + cappedPct(effect.expPct, HOMESTEAD_EFFECT_CAP.expPct);
+  const affectionMult = 1 + cappedPct(effect.affectionPct, HOMESTEAD_EFFECT_CAP.affectionPct);
+  const knowledgeMult = 1 + cappedPct(effect.knowledgePct, HOMESTEAD_EFFECT_CAP.knowledgePct);
+  const expEach = Math.floor(IDLE_EXP_PER_HOUR * hours * expMult);
+  const affectionEach = Math.floor(IDLE_AFFECTION_PER_HOUR * hours * affectionMult);
+  const baseKnowledge = placedRarities.reduce(
+    (sum, r) => sum + IDLE_KP_PER_HOUR_BASE * (IDLE_KP_RARITY_MULT[r] ?? 1) * hours,
+    0,
   );
-  return { hours, expEach, affectionEach, knowledge, characterCount: count };
+  const knowledge = Math.floor(baseKnowledge * knowledgeMult);
+  return { hours, expEach, affectionEach, knowledge, characterCount: count, comfort };
 }

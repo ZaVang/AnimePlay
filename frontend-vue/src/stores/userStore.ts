@@ -12,7 +12,8 @@ import { computeIdleYield, type IdleYield } from '@/config/homestead';
 import {
   dropRarityForFloor,
   getEquipmentDef,
-  getEquipmentDefBySlotRarity,
+  getEquipmentDefsBySlotRarity,
+  sumHomeEffects,
   getEquipmentPrice,
   type EquipmentDef,
 } from '@/config/equipment';
@@ -246,7 +247,8 @@ export const useUserStore = defineStore('user', () => {
   function rollFloorDrop(floor: number, rng = defaultRng): EquipmentDef | null {
     const drop = rollTowerDrop(floor, rng, dropRarityForFloor);
     if (!drop) return null;
-    const def = getEquipmentDefBySlotRarity(drop.slot, drop.rarity);
+    const candidates = getEquipmentDefsBySlotRarity(drop.slot, drop.rarity);
+    const def = rng.pick(candidates);
     if (!def) return null; // 该槽位无此稀有度（防御，起始目录全覆盖故正常不触发）
     useEquipmentStore().addItem(def.id);
     profile.addLog(`🎁 通层掉落：[${def.rarity}] ${def.name}！`, 'success');
@@ -419,7 +421,7 @@ export const useUserStore = defineStore('user', () => {
   function settleHomestead(): IdleYield {
     const homestead = useHomesteadStore();
     const placed = homestead.placedCharacterIds;
-    const empty: IdleYield = { hours: 0, expEach: 0, affectionEach: 0, knowledge: 0, characterCount: placed.length };
+    const empty: IdleYield = { hours: 0, expEach: 0, affectionEach: 0, knowledge: 0, characterCount: placed.length, comfort: 0 };
     if (!profile.isLoggedIn) return empty;
 
     const now = Date.now();
@@ -432,7 +434,9 @@ export const useUserStore = defineStore('user', () => {
     const rarities = placed
       .map(id => gameData.getCharacterCardById(id)?.rarity)
       .filter((r): r is Rarity => !!r);
-    const result = computeIdleYield(rarities, now - homestead.lastSettleAt);
+    const equipment = useEquipmentStore();
+    const homeEffect = sumHomeEffects(placed.map(id => equipment.resolveHomeEffect(id)));
+    const result = computeIdleYield(rarities, now - homestead.lastSettleAt, homeEffect);
     homestead.setLastSettleAt(now);
 
     if (result.expEach <= 0 && result.affectionEach <= 0 && result.knowledge <= 0) return result;

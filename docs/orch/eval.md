@@ -1,67 +1,47 @@
-# Evaluator Report — Iteration 1 (S13-C2 装备系统全栈)
-
-> `--tier1 off`：本报告决策直接控制循环。所有验收命令由 Evaluator 亲自重跑，不信任 Generator 自报。
+# Evaluator Report — Iteration 1
 
 ## Checkbox 状态
-SPRINT.md 任务清单 C2-T1..T5 全部 `[x]`：
-- [x] C2-T1 装备目录 config
-- [x] C2-T2 equipment store 行为
-- [x] C2-T3 战力接 equipBonus
-- [x] C2-T4 来源：塔掉落 + KP 兑换
-- [x] C2-T5 UI：背包 + 配装
 
-5/5 已勾选。
+- [x] C2-T1..C2-T5：原装备系统全栈任务保持完成。
+- [x] PL1-T1：装备目录扩容与效果模型。
+- [x] PL1-T2：家园收益接入装备效果。
+- [x] PL1-T3：家园页基地运营层。
+- [x] PL1-T4：装备背包与配装弹窗展示效果。
 
-## 验收命令重跑结果（Evaluator 亲自跑的实际输出）
+## 验收命令重跑结果
 
-| # | 命令 | 期望 | 实际 | 结论 |
-|---|---|---|---|---|
-| 1 | `npm run type-check` (`vue-tsc --build`) | 0 错误 | 无输出，退出码 0 | PASS |
-| 2 | `npm run test` (vitest run) | 全绿 | Test Files 50 passed (50) / Tests **563 passed (563)** / 退出码 0 | PASS |
-| 3 | `npm run build` | 成功 | `✓ built in 8.67s`，退出码 0（NurtureView 产物 23.23 kB） | PASS |
-| 4 | `./.venv/Scripts/python.exe backend/test_security.py` | 退出码 0、全 PASS | `RESULT: PASS — all security checks passed`，退出码 0（含 debug False / token 越权 401 / 乐观并发 409 / 原子写 / 邀请码门控，全 PASS） | PASS |
-| 5 | `grep -rn "debug=True" backend/server.py api/index.py` | 零命中 | 无输出，退出码 1（零命中） | PASS |
-
-补充验证（非验收 5 条，加固信心）：单独重跑 3 个新测试文件 `equipment.test.ts` + `drops.test.ts` + `equipmentSource.test.ts` → **30 passed (30)**，退出码 0。逐例核对覆盖到位：
-- drops（11）：层段边界 R..SR..SSR..HR..UR、概率 0.5 边界（>=0.5 不掉/<0.5 命中）、随机槽、高层 UR、同序列复现、自定义 dropChance。
-- equipment store（11）：addItem 唯一 uid、装备成功、异槽拒绝、未知 uid 拒绝、卸下后实例留背包、同槽换装旧件回背包、一件只能戴一处（换角色自动卸原位）、resolveEquipBonus 全零/满装求和/单件一致、serialize⇄deserialize 往返。
-- equipmentSource（8）：塔掉落命中入库（稀有度按层段）/未命中不掉/**重复挑战已过低层不推进→不掉落(防刷)**/高层 UR；兑换成功精确扣费入库/余额不足不扣不入库/未登录拒/未知装备拒。
+- `cd frontend-vue && npm run type-check`：exit 0。
+- `cd frontend-vue && npm run test`：exit 0，51 files / 585 tests passed。
+- `cd frontend-vue && npm run build`：exit 0，type-check + vite build passed；仅 Browserslist stale-data warning。
+- `python backend/test_security.py`：system Python exit 1，缺少 `werkzeug`；激活项目 `.venv` 后同一命令 exit 0，all security checks passed。
+- `grep -rn "debug=True" backend/server.py api/index.py`：PowerShell 环境无 `grep`；`rg -n "debug=True" backend\server.py api\index.py` exit 1 且无输出，等价核验为零命中。
+- `git diff --check`：exit 0，仅 markdown 行尾转换 warning。
+- Browser smoke：`http://127.0.0.1:5173/homestead` 未登录空态渲染正常；本地测试账号登录并跳过引导后，家园页出现「基地舒适度 / 训练区 / 休息区 / 资料室 / 还没有入住角色 / 还没有角色入住」，无 console error。
 
 ## Generator 报告 vs 实际对比
-- 命令 1/3/4/5 与自报一致（type-check 0、build 成功、backend PASS exit 0、grep 零命中）。
-- 命令 2：自报「563 passed / 50 文件」与实际**完全一致**。
-- **唯一出入（非失败）**：Generator 自报新增测试「11+13+8=32 例」，实测三文件合计 **30 例**（equipment 11 + drops **11**（非自报 13）+ equipmentSource 8 = 30）。属自报计数小误差；全绿、覆盖面齐全、总数 563 较 C1（533）增 30 未倒退，不影响验收。
+
+- 与实际一致。环境 caveat 属本机命令环境：系统 Python 未安装后端依赖、PowerShell 无 grep。项目 `.venv` 与 `rg` 等价核验均通过。
 
 ## pitfalls 合规检查
-- **engine 不 import config**：`grep @/config` 在 `src/engine/` 仅命中 `drops.test.ts`（测试文件引 `dropRarityForFloor` 做特征测试，允许）+ README/注释。`drops.ts` 本体零 config import，层段→稀有度映射靠参数 `rarityForFloor` 注入。PASS。
-- **RNG 注入 / 禁 Math.random**：`grep Math.random` 在 engine 仅命中 `rng.ts`（唯一许可处 `defaultRng = createRng(() => Math.random())`）+ 注释。`rollTowerDrop(floor, rng, ...)` 收注入 RNG。PASS。
-- **颜色禁拼类**：`config/equipmentColors.ts` 用完整字面映射（`text-red-600` / `from-amber-400 to-red-500` 取自 gameConfig.rarityConfig 的完整字面），组件 `:class="rarityStyle(x).gradient/.text"` 绑定整串字面；两 UI 组件 grep `bg-${` / 反引号拼类零命中。徽章 `text-white` 仅压稀有度实底渐变（文档明列固定例外）。PASS。
-- **货币走 spend·earn**：`purchaseEquipment` 走 `profile.spend('knowledgePoints', price)`，失败 return 不发货；成功才 `addItem`+`saveToServer`。PASS。
-- **掉落防刷**：门面 `completeFloor`（userStore L657）仅在 `pve.completeFloor(floor)` 返回 true（`floor === currentFloor` 新层推进）分支内调 `rollFloorDrop`；重复挑战已过低层 `completeFloor` 返回 false → 不掉落。无冗余守卫、不忽略返回。`equipmentSource.test.ts` 有「重复低层 → 不掉落(防刷)」断言。PASS。
-- **别动养成两轴与家园挂机入口**：NurtureView 只新增 `equipBonus` computed + 槽位 picker，养成两轴（statPoints 加点 + 好感）与 `getNurtureData` 口径未改；homestead 域 git diff 无触及。PASS。
 
-## 源码抽查
-- **equipBonus 同源**：SquadBattleView `getSquadPower`(L133) + `createSquadMember`(L185) + NurtureView `equipBonus` computed(L79) + EquipPickerModal `currentStats`(L77) 全部走 `equipmentStore.resolveEquipBonus(charId)`；delta 预览复用同一 `sumStatBonus`+`generateBattleStats`+`calculateBattlePower` 管线。两文件原 `NO_EQUIP_BONUS` 恒 0 已删（grep 零命中）。delta 与实战口径一致。PASS。
-- **掉落真挂 completeFloor true 返回**：见上，`if (pve.completeFloor(floor)) { ... rollFloorDrop(floor, rng); saveToServer(); }`。PASS。
-- **KP 兑换走 profile.spend**：`purchaseEquipment` L272 `if (!profile.spend('knowledgePoints', price)) return {ok:false,...}`，余额不足不发货。PASS。
-- **engine 纯净**：`drops.ts` / `combat.ts`（`sumStatBonus`/`generateBattleStats` 纯加法）零 config import、RNG 注入。PASS。
-- **未升档**：`schema.ts:34 SAVE_VERSION = 14`（未变）；`git diff --stat HEAD -- src/infra/persistence/` **空**（schema/migrations/装配器三处零改动）。PASS。
-- **颜色无拼类**：见 pitfalls 合规。PASS。
+- engine 纯净：未向 engine 引入 config/store/Vue；塔掉落仍由注入 RNG 决定。
+- 不升存档：复用现有 v14 equipment/homestead 域；装备效果由静态目录派生。
+- 货币入口：未新增绕过 `profile.spend/earn` 的路径。
+- 颜色规则：新增 UI 使用语义 token/CSS，不拼接动态 Tailwind 类。
 
 ## 结构漂移检查
-`docs/project_structure.md` 不存在 → N/A（项目无此文件）。git 新增/改动文件与 gen_status 自报一致：新增 `config/equipment.ts`、`config/equipmentColors.ts`、`engine/squad/drops.ts`、`components/nurture/`（InventoryPanel + EquipPickerModal）、3 测试文件；改动 `engine/squad/{combat,index}.ts`、`stores/{equipment,userStore}.ts`、`views/{NurtureView,SquadBattleView}.vue`。无未声明的源码漂移。
+
+- 项目无 `docs/project_structure.md`。
+- 新增测试文件与模块职责变化已在 Generator Status 自报。
 
 ## 失败原因分析
-无失败项。三处非阻塞级瑕疵（不据此判失败）：
-1. Generator 自报新测试例数 32（11+13+8）vs 实测 30（11+11+8，drops 实 11 例）——自报计数小误差，全绿不影响验收。
-2. `InventoryPanel.vue` L133 稀有度筛选选中态写 `bg-accent\15`（反斜杠应为 `bg-accent/15`），该类名无效、JIT 不生成 → 选中态背景高亮略弱。纯 cosmetic，不在 5 条验收命令内、type-check/build/test 均通过。
-3. `SquadBattleView.vue` 有 6 条 pre-existing ESLint 残留（unused import / `ref<any>`），经确认在本轮 diff 之外（本轮仅改 2 处 generateBattleStats 调用 + import）。ESLint 不在验收命令内，按合同不据此判失败。
+
+- 无代码失败。仅验收命令环境差异：系统 Python 缺依赖、PowerShell 无 grep。
 
 ## 新陷阱待追加
-- **[vue prop 禁用裸名 `slot`]**（Generator 已记）：配装弹窗 prop 名 `slot` 会被 `vue/no-deprecated-slot-attribute` 误判为废弃 slot 语法（eslint error）；应改 `equipSlot`（模板 `:equip-slot=`）。值得入 pitfalls。
-- **[Tailwind 透明度斜杠别写反斜杠]**：`bg-accent\15` 是无效类（应 `bg-accent/15`），JIT 静默不生成、不报错——属「未定义令牌静默坏色」家族。审色时可一并 grep `\\\d+"`（反斜杠+数字）。建议追加。
+
+- [装备扩容] 当每槽每稀有度不止一件时，塔掉落必须从候选池随机，不能继续取第一件。
 
 ## 决策
-五条验收命令 Evaluator 亲自重跑全部通过（type-check 0 / test 563 全绿 / build 成功 / backend exit 0 全 PASS / grep 零命中），C2-T1..T5 全 `[x]`，pitfalls 全合规，源码抽查（equipBonus 四点同源 / 掉落真挂 completeFloor true 分支防刷 / 兑换走 spend / engine 纯净 / 未升档 SAVE_VERSION=14 / 颜色完整字面映射）全部成立。两处瑕疵均为非验收范围的 cosmetic / pre-existing lint，不构成失败。
 
-DECISION: COMPLETE
+COMPLETE_WITH_ENV_NOTES

@@ -117,6 +117,29 @@ describe('resolveEquipBonus 逐围求和', () => {
   });
 });
 
+describe('resolveHomeEffect 逐项求和', () => {
+  it('无装备时效果全零', () => {
+    const eq = useEquipmentStore();
+    expect(eq.resolveHomeEffect(1)).toEqual({ expPct: 0, affectionPct: 0, knowledgePct: 0, comfort: 0 });
+  });
+
+  it('只汇总已装备道具的家园效果', () => {
+    const eq = useEquipmentStore();
+    const w = eq.addItem('wpn_sr_training_bokken');
+    const a = eq.addItem('arm_sr_cozy_cardigan');
+    eq.addItem('sup_sr_broadcast_mic');
+    eq.equip(1, 'weapon', w);
+    eq.equip(1, 'armor', a);
+
+    expect(eq.resolveHomeEffect(1)).toEqual({
+      expPct: 0.06,
+      affectionPct: 0.06,
+      knowledgePct: 0,
+      comfort: 6,
+    });
+  });
+});
+
 describe('serialize ⇄ deserialize 往返 + reset', () => {
   it('往返保真', () => {
     const eq = useEquipmentStore();

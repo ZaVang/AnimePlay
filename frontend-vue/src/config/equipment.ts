@@ -17,6 +17,18 @@ import type { StatBonus } from '@/engine';
 /** 装备的 3 个固定槽位。 */
 export type EquipmentSlot = 'weapon' | 'armor' | 'supporter';
 
+/** 装备对家园挂机的派生效果；不进存档，由已装备目录项实时解析。 */
+export interface EquipmentHomeEffect {
+  /** 经验收益倍率加成，如 0.08 = +8%。 */
+  expPct?: number;
+  /** 好感收益倍率加成，如 0.06 = +6%。 */
+  affectionPct?: number;
+  /** 知识点收益倍率加成，如 0.12 = +12%。 */
+  knowledgePct?: number;
+  /** 家园舒适度展示分；只影响 UI/评价，不直接进存档。 */
+  comfort?: number;
+}
+
 /** 静态装备定义（目录项）。bonus 为五维加成（缺省维记 0）。 */
 export interface EquipmentDef {
   id: string;
@@ -25,6 +37,8 @@ export interface EquipmentDef {
   rarity: Rarity;
   /** 五维加成（部分维）。求和时缺省维按 0 处理。 */
   bonus: Partial<StatBonus>;
+  /** 家园挂机效果（可选；不影响挑战塔战斗公式）。 */
+  homeEffect?: EquipmentHomeEffect;
 }
 
 /** 槽位元数据（名 + emoji 图标键，UI 用）。 */
@@ -58,25 +72,55 @@ export function getEquipmentPrice(rarity: Rarity): number {
  */
 export const EQUIPMENT_CATALOG: readonly EquipmentDef[] = [
   // --- 武器 weapon（偏 atk / sp，输出向）---
-  { id: 'wpn_r_woodsword', name: '木刀', slot: 'weapon', rarity: 'R', bonus: { atk: 13, sp: 5 } },
-  { id: 'wpn_sr_zangetsu', name: '斩月', slot: 'weapon', rarity: 'SR', bonus: { atk: 25, sp: 10 } },
-  { id: 'wpn_ssr_gotoh_guitar', name: '后藤的吉他', slot: 'weapon', rarity: 'SSR', bonus: { atk: 42, sp: 18 } },
-  { id: 'wpn_hr_deathnote', name: '死亡笔记', slot: 'weapon', rarity: 'HR', bonus: { atk: 66, sp: 29 } },
-  { id: 'wpn_ur_longinus', name: '朗基努斯之枪', slot: 'weapon', rarity: 'UR', bonus: { atk: 98, sp: 42 } },
+  { id: 'wpn_r_woodsword', name: '木刀', slot: 'weapon', rarity: 'R', bonus: { atk: 13, sp: 5 }, homeEffect: { expPct: 0.03, comfort: 1 } },
+  { id: 'wpn_r_training_stick', name: '修行竹刀', slot: 'weapon', rarity: 'R', bonus: { atk: 10, spd: 5 }, homeEffect: { expPct: 0.04 } },
+  { id: 'wpn_r_stage_mic', name: '练习麦克风', slot: 'weapon', rarity: 'R', bonus: { atk: 8, sp: 7 }, homeEffect: { affectionPct: 0.03, comfort: 1 } },
+  { id: 'wpn_sr_zangetsu', name: '斩月', slot: 'weapon', rarity: 'SR', bonus: { atk: 25, sp: 10 }, homeEffect: { expPct: 0.05, comfort: 2 } },
+  { id: 'wpn_sr_training_bokken', name: '部活木刀', slot: 'weapon', rarity: 'SR', bonus: { atk: 22, spd: 13 }, homeEffect: { expPct: 0.06, comfort: 2 } },
+  { id: 'wpn_sr_blue_rose', name: '蓝蔷薇长剑', slot: 'weapon', rarity: 'SR', bonus: { atk: 20, sp: 15 }, homeEffect: { affectionPct: 0.05, comfort: 2 } },
+  { id: 'wpn_ssr_gotoh_guitar', name: '后藤的吉他', slot: 'weapon', rarity: 'SSR', bonus: { atk: 42, sp: 18 }, homeEffect: { affectionPct: 0.08, comfort: 4 } },
+  { id: 'wpn_ssr_nichirin', name: '日轮刀', slot: 'weapon', rarity: 'SSR', bonus: { atk: 46, spd: 14 }, homeEffect: { expPct: 0.08, comfort: 3 } },
+  { id: 'wpn_ssr_star_wand', name: '星之杖', slot: 'weapon', rarity: 'SSR', bonus: { atk: 34, sp: 26 }, homeEffect: { knowledgePct: 0.08, comfort: 3 } },
+  { id: 'wpn_hr_deathnote', name: '死亡笔记', slot: 'weapon', rarity: 'HR', bonus: { atk: 66, sp: 29 }, homeEffect: { knowledgePct: 0.12, comfort: 5 } },
+  { id: 'wpn_hr_railgun', name: '超电磁炮', slot: 'weapon', rarity: 'HR', bonus: { atk: 72, spd: 23 }, homeEffect: { expPct: 0.12, comfort: 4 } },
+  { id: 'wpn_hr_spirit_gun', name: '灵丸', slot: 'weapon', rarity: 'HR', bonus: { atk: 60, sp: 35 }, homeEffect: { affectionPct: 0.1, comfort: 5 } },
+  { id: 'wpn_ur_longinus', name: '朗基努斯之枪', slot: 'weapon', rarity: 'UR', bonus: { atk: 98, sp: 42 }, homeEffect: { expPct: 0.16, comfort: 7 } },
+  { id: 'wpn_ur_excalibur', name: '誓约胜利之剑', slot: 'weapon', rarity: 'UR', bonus: { atk: 108, sp: 32 }, homeEffect: { affectionPct: 0.16, comfort: 7 } },
+  { id: 'wpn_ur_gungnir', name: '冈格尼尔', slot: 'weapon', rarity: 'UR', bonus: { atk: 92, spd: 48 }, homeEffect: { knowledgePct: 0.16, comfort: 7 } },
 
   // --- 防具 armor（偏 hp / def，坦度向；hp 折算 ~2.5× 故数值偏大）---
-  { id: 'arm_r_uniform', name: '校服', slot: 'armor', rarity: 'R', bonus: { hp: 30, def: 6 } },
-  { id: 'arm_sr_zettai', name: '绝对领域', slot: 'armor', rarity: 'SR', bonus: { hp: 58, def: 12 } },
-  { id: 'arm_ssr_nanosuit', name: '纳米装甲', slot: 'armor', rarity: 'SSR', bonus: { hp: 100, def: 20 } },
-  { id: 'arm_hr_susanoo', name: '须佐能乎', slot: 'armor', rarity: 'HR', bonus: { hp: 158, def: 32 } },
-  { id: 'arm_ur_atfield', name: 'AT力场', slot: 'armor', rarity: 'UR', bonus: { hp: 232, def: 48 } },
+  { id: 'arm_r_uniform', name: '校服', slot: 'armor', rarity: 'R', bonus: { hp: 30, def: 6 }, homeEffect: { affectionPct: 0.03, comfort: 2 } },
+  { id: 'arm_r_track_jacket', name: '运动外套', slot: 'armor', rarity: 'R', bonus: { hp: 24, def: 8 }, homeEffect: { expPct: 0.03, comfort: 1 } },
+  { id: 'arm_r_raincoat', name: '雨天披风', slot: 'armor', rarity: 'R', bonus: { hp: 34, def: 4 }, homeEffect: { knowledgePct: 0.03, comfort: 1 } },
+  { id: 'arm_sr_zettai', name: '绝对领域', slot: 'armor', rarity: 'SR', bonus: { hp: 58, def: 12 }, homeEffect: { affectionPct: 0.05, comfort: 4 } },
+  { id: 'arm_sr_cozy_cardigan', name: '咖啡厅开衫', slot: 'armor', rarity: 'SR', bonus: { hp: 64, def: 9 }, homeEffect: { affectionPct: 0.06, comfort: 4 } },
+  { id: 'arm_sr_sailor_cloak', name: '水手披肩', slot: 'armor', rarity: 'SR', bonus: { hp: 50, def: 15 }, homeEffect: { expPct: 0.05, comfort: 3 } },
+  { id: 'arm_ssr_nanosuit', name: '纳米装甲', slot: 'armor', rarity: 'SSR', bonus: { hp: 100, def: 20 }, homeEffect: { expPct: 0.08, comfort: 5 } },
+  { id: 'arm_ssr_magical_robe', name: '魔法少女战袍', slot: 'armor', rarity: 'SSR', bonus: { hp: 84, def: 26 }, homeEffect: { affectionPct: 0.08, comfort: 5 } },
+  { id: 'arm_ssr_shadow_coat', name: '影之长风衣', slot: 'armor', rarity: 'SSR', bonus: { hp: 92, def: 23 }, homeEffect: { knowledgePct: 0.08, comfort: 4 } },
+  { id: 'arm_hr_susanoo', name: '须佐能乎', slot: 'armor', rarity: 'HR', bonus: { hp: 158, def: 32 }, homeEffect: { expPct: 0.11, comfort: 7 } },
+  { id: 'arm_hr_saint_cloth', name: '黄金圣衣残片', slot: 'armor', rarity: 'HR', bonus: { hp: 140, def: 39 }, homeEffect: { affectionPct: 0.11, comfort: 8 } },
+  { id: 'arm_hr_anti_magic', name: '对魔力外套', slot: 'armor', rarity: 'HR', bonus: { hp: 170, def: 27 }, homeEffect: { knowledgePct: 0.11, comfort: 6 } },
+  { id: 'arm_ur_atfield', name: 'AT力场', slot: 'armor', rarity: 'UR', bonus: { hp: 232, def: 48 }, homeEffect: { affectionPct: 0.16, comfort: 10 } },
+  { id: 'arm_ur_plug_suit', name: '同步率插入栓服', slot: 'armor', rarity: 'UR', bonus: { hp: 210, def: 56 }, homeEffect: { expPct: 0.16, comfort: 9 } },
+  { id: 'arm_ur_world_barrier', name: '世界结界', slot: 'armor', rarity: 'UR', bonus: { hp: 250, def: 40 }, homeEffect: { knowledgePct: 0.16, comfort: 9 } },
 
   // --- 支援 supporter（偏 spd / sp，节奏向）---
-  { id: 'sup_r_glowstick', name: '应援棒', slot: 'supporter', rarity: 'R', bonus: { spd: 12, sp: 6 } },
-  { id: 'sup_sr_bamboocopter', name: '竹蜻蜓', slot: 'supporter', rarity: 'SR', bonus: { spd: 23, sp: 12 } },
-  { id: 'sup_ssr_sharingan', name: '写轮眼', slot: 'supporter', rarity: 'SSR', bonus: { spd: 40, sp: 20 } },
-  { id: 'sup_hr_strawhat', name: '草帽', slot: 'supporter', rarity: 'HR', bonus: { spd: 62, sp: 33 } },
-  { id: 'sup_ur_4dpocket', name: '四次元口袋', slot: 'supporter', rarity: 'UR', bonus: { spd: 92, sp: 48 } },
+  { id: 'sup_r_glowstick', name: '应援棒', slot: 'supporter', rarity: 'R', bonus: { spd: 12, sp: 6 }, homeEffect: { affectionPct: 0.04, comfort: 1 } },
+  { id: 'sup_r_notebook', name: '追番笔记', slot: 'supporter', rarity: 'R', bonus: { spd: 9, sp: 9 }, homeEffect: { knowledgePct: 0.04 } },
+  { id: 'sup_r_lucky_charm', name: '御守', slot: 'supporter', rarity: 'R', bonus: { hp: 18, spd: 10 }, homeEffect: { comfort: 2 } },
+  { id: 'sup_sr_bamboocopter', name: '竹蜻蜓', slot: 'supporter', rarity: 'SR', bonus: { spd: 23, sp: 12 }, homeEffect: { expPct: 0.05, comfort: 2 } },
+  { id: 'sup_sr_broadcast_mic', name: '放送部麦克风', slot: 'supporter', rarity: 'SR', bonus: { spd: 18, sp: 17 }, homeEffect: { knowledgePct: 0.06, comfort: 2 } },
+  { id: 'sup_sr_cat_headset', name: '猫耳耳机', slot: 'supporter', rarity: 'SR', bonus: { spd: 20, sp: 15 }, homeEffect: { affectionPct: 0.06, comfort: 3 } },
+  { id: 'sup_ssr_sharingan', name: '写轮眼', slot: 'supporter', rarity: 'SSR', bonus: { spd: 40, sp: 20 }, homeEffect: { knowledgePct: 0.08, comfort: 4 } },
+  { id: 'sup_ssr_lucky_star', name: '幸运星挂件', slot: 'supporter', rarity: 'SSR', bonus: { spd: 36, sp: 24 }, homeEffect: { affectionPct: 0.08, comfort: 5 } },
+  { id: 'sup_ssr_tiny_robot', name: '迷你辅助机器人', slot: 'supporter', rarity: 'SSR', bonus: { spd: 44, sp: 16 }, homeEffect: { expPct: 0.08, comfort: 4 } },
+  { id: 'sup_hr_strawhat', name: '草帽', slot: 'supporter', rarity: 'HR', bonus: { spd: 62, sp: 33 }, homeEffect: { affectionPct: 0.12, comfort: 6 } },
+  { id: 'sup_hr_senzu_bag', name: '仙豆袋', slot: 'supporter', rarity: 'HR', bonus: { hp: 70, spd: 45, sp: 22 }, homeEffect: { expPct: 0.12, comfort: 5 } },
+  { id: 'sup_hr_archive_key', name: '资料库钥匙', slot: 'supporter', rarity: 'HR', bonus: { spd: 52, sp: 43 }, homeEffect: { knowledgePct: 0.13, comfort: 5 } },
+  { id: 'sup_ur_4dpocket', name: '四次元口袋', slot: 'supporter', rarity: 'UR', bonus: { spd: 92, sp: 48 }, homeEffect: { knowledgePct: 0.18, comfort: 8 } },
+  { id: 'sup_ur_dragon_radar', name: '龙珠雷达', slot: 'supporter', rarity: 'UR', bonus: { spd: 104, sp: 36 }, homeEffect: { expPct: 0.16, comfort: 8 } },
+  { id: 'sup_ur_holy_grail', name: '小圣杯', slot: 'supporter', rarity: 'UR', bonus: { hp: 110, spd: 70, sp: 26 }, homeEffect: { affectionPct: 0.16, knowledgePct: 0.08, comfort: 9 } },
 ];
 
 /** id → 定义 索引（O(1) 查表，构建一次）。 */
@@ -94,12 +138,17 @@ export function getEquipmentDefsForSlot(slot: EquipmentSlot): EquipmentDef[] {
   return EQUIPMENT_CATALOG.filter(def => def.slot === slot);
 }
 
+/** 按 槽位 + 稀有度 取候选池（塔掉落 / 目录测试 / 将来筛选共用）。 */
+export function getEquipmentDefsBySlotRarity(slot: string, rarity: string): EquipmentDef[] {
+  return EQUIPMENT_CATALOG.filter(def => def.slot === slot && def.rarity === rarity);
+}
+
 /**
  * 按 槽位 + 稀有度 取定义（塔掉落 {slot,rarity} → 具体 defId 用）。
- * 起始目录每槽每稀有度恰 1 件，故唯一确定；找不到（如该稀有度无此槽）返回 undefined。
+ * 兼容旧调用：多候选时返回目录中的第一件；随机选择请用 getEquipmentDefsBySlotRarity + rng.pick。
  */
 export function getEquipmentDefBySlotRarity(slot: string, rarity: string): EquipmentDef | undefined {
-  return EQUIPMENT_CATALOG.find(def => def.slot === slot && def.rarity === rarity);
+  return getEquipmentDefsBySlotRarity(slot, rarity)[0];
 }
 
 /**
@@ -135,6 +184,40 @@ export function formatBonus(bonus: Partial<StatBonus>): string {
     .filter(k => bonus[k])
     .map(k => `${STAT_LABEL[k]}+${bonus[k]}`)
     .join(' · ');
+}
+
+const EMPTY_HOME_EFFECT: Required<EquipmentHomeEffect> = {
+  expPct: 0,
+  affectionPct: 0,
+  knowledgePct: 0,
+  comfort: 0,
+};
+
+/** 多件装备的家园效果逐项求和（缺省维按 0 处理）。 */
+export function sumHomeEffects(effects: readonly EquipmentHomeEffect[]): Required<EquipmentHomeEffect> {
+  return effects.reduce<Required<EquipmentHomeEffect>>(
+    (total, effect) => ({
+      expPct: total.expPct + (effect.expPct ?? 0),
+      affectionPct: total.affectionPct + (effect.affectionPct ?? 0),
+      knowledgePct: total.knowledgePct + (effect.knowledgePct ?? 0),
+      comfort: total.comfort + (effect.comfort ?? 0),
+    }),
+    { ...EMPTY_HOME_EFFECT },
+  );
+}
+
+function formatPct(v: number): string {
+  return `${Math.round(v * 100)}%`;
+}
+
+/** 家园效果展示文案，稳定顺序：舒适 → 经验 → 好感 → 知识。 */
+export function formatHomeEffect(effect: EquipmentHomeEffect): string {
+  const parts: string[] = [];
+  if (effect.comfort) parts.push(`家园舒适+${effect.comfort}`);
+  if (effect.expPct) parts.push(`经验+${formatPct(effect.expPct)}`);
+  if (effect.affectionPct) parts.push(`好感+${formatPct(effect.affectionPct)}`);
+  if (effect.knowledgePct) parts.push(`知识+${formatPct(effect.knowledgePct)}`);
+  return parts.join(' · ');
 }
 
 /** 单角色三槽（与存档 EquippedSlots 同形；config 不反向 import infra 类型，故就地声明结构）。 */

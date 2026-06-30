@@ -73,3 +73,4 @@
 - [engine 不 import config] 装备相关 engine 纯函数靠**注入**、不反向依赖 config：掉落 `rollTowerDrop(floor, rng, rarityForFloor)` 把「层段→稀有度映射」作参数；`sumStatBonus(bonuses[])` 收已解析的 bonus 数组。查表/边界留 config/store，engine 零 `@/config` import。
 - [Tailwind 透明度用 / 别用 \\] `bg-accent/15` 才对，`bg-accent\\15`（反斜杠）是无效类、JIT 静默不生成不报错（「未定义令牌静默坏色」家族，同 C1 barColor）。审色顺手 grep 反斜杠+数字。
 - [装备系统] 装备目录在 `config/equipment.ts`（3 槽 weapon/armor/supporter × R..UR，名值可调）；实例 `{uid(crypto.randomUUID), defId}` 入 v14 equipment 域（C2 不升档）；战力 equipBonus 在 SquadBattleView 与 NurtureView/配装弹窗**必须同源 `resolveEquipBonus`**（否则 delta 预览与实战不符）；塔掉落挂 `pve.completeFloor` 的 `true` 返回（非当前层返回 false，天然防刷低层）；KP 兑换走 `profile.spend`；背包内嵌 NurtureView（未加路由）。
+- [装备扩容候选池] 当每槽每稀有度不止一件时，塔掉落不能继续 `find` 第一件，否则扩容只服务商店、不服务掉落；命中后用 `getEquipmentDefsBySlotRarity(slot, rarity)` 候选池 + 注入 RNG `pick` 选择具体装备，并补序列 RNG 测试锁住第三个随机值。

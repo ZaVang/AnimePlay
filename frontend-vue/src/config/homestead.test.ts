@@ -6,6 +6,7 @@ import {
   computeIdleYield,
   cappedIdleHours,
   canonicalizePlacedIds,
+  HOMESTEAD_EFFECT_CAP,
   HOMESTEAD_SLOTS,
   OFFLINE_CAP_HOURS,
   IDLE_EXP_PER_HOUR,
@@ -30,13 +31,13 @@ describe('cappedIdleHours', () => {
 describe('computeIdleYield', () => {
   it('空入住 → 全零', () => {
     expect(computeIdleYield([], 5 * H)).toEqual({
-      hours: 0, expEach: 0, affectionEach: 0, knowledge: 0, characterCount: 0,
+      hours: 0, expEach: 0, affectionEach: 0, knowledge: 0, characterCount: 0, comfort: 0,
     });
   });
 
   it('0 时长 → 全零（但保留 characterCount）', () => {
     expect(computeIdleYield(['UR', 'SR'], 0)).toEqual({
-      hours: 0, expEach: 0, affectionEach: 0, knowledge: 0, characterCount: 2,
+      hours: 0, expEach: 0, affectionEach: 0, knowledge: 0, characterCount: 2, comfort: 0,
     });
   });
 
@@ -59,6 +60,32 @@ describe('computeIdleYield', () => {
   it('未知稀有度的系数回落 1（不抛错）', () => {
     const y = computeIdleYield(['???' as unknown as 'UR'], 1 * H);
     expect(y.knowledge).toBe(2 * 1 * 1); // base2 ×fallback1 ×1h
+  });
+
+  it('装备家园效果会提高经验/好感/知识点，并报告舒适度', () => {
+    const y = computeIdleYield(['UR', 'SR'], 2 * H, {
+      expPct: 0.1,
+      affectionPct: 0.2,
+      knowledgePct: 0.25,
+      comfort: 7,
+    });
+    expect(y.expEach).toBe(Math.floor(IDLE_EXP_PER_HOUR * 2 * 1.1));
+    expect(y.affectionEach).toBe(Math.floor(IDLE_AFFECTION_PER_HOUR * 2 * 1.2));
+    expect(y.knowledge).toBe(Math.floor(16 * 1.25));
+    expect(y.comfort).toBe(7);
+  });
+
+  it('装备家园收益倍率受上限保护，避免挂机盖过主动玩法', () => {
+    const y = computeIdleYield(['UR'], 1 * H, {
+      expPct: 9,
+      affectionPct: 9,
+      knowledgePct: 9,
+      comfort: 99,
+    });
+    expect(y.expEach).toBe(Math.floor(IDLE_EXP_PER_HOUR * (1 + HOMESTEAD_EFFECT_CAP.expPct)));
+    expect(y.affectionEach).toBe(Math.floor(IDLE_AFFECTION_PER_HOUR * (1 + HOMESTEAD_EFFECT_CAP.affectionPct)));
+    expect(y.knowledge).toBe(Math.floor(6 * (1 + HOMESTEAD_EFFECT_CAP.knowledgePct)));
+    expect(y.comfort).toBe(99);
   });
 });
 

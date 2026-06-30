@@ -43,6 +43,21 @@ describe('塔通层掉落（completeFloor 注入 RNG）', () => {
     expect(getEquipmentDef(eq.list()[0].defId)?.slot).toBe('weapon');
   });
 
+  it('同槽同稀有度有多个候选时，第三个 RNG 值决定具体掉落件', () => {
+    const profile = useProfileStore();
+    profile.currentUser = 'tester';
+    const eq = useEquipmentStore();
+    const userStore = useUserStore();
+
+    // chance=0 命中，slot=0 → weapon，candidate pick=0.99 → 第 3 件 R 武器
+    const r = userStore.completeFloor(1, createSequenceRng([0.0, 0.0, 0.99]));
+
+    expect(r.completed).toBe(true);
+    expect(r.drop?.id).toBe('wpn_r_stage_mic');
+    expect(eq.list()[0].defId).toBe('wpn_r_stage_mic');
+  });
+
+
   it('未命中（chance>=0.5）：通层但不掉落', () => {
     const profile = useProfileStore();
     profile.currentUser = 'tester';

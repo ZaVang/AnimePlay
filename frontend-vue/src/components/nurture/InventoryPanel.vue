@@ -17,6 +17,7 @@ import {
   SLOT_ORDER,
   getEquipmentPrice,
   formatBonus,
+  formatHomeEffect,
   type EquipmentSlot,
   type EquipmentDef,
 } from '@/config/equipment';
@@ -39,6 +40,7 @@ interface InventoryCard {
   def: EquipmentDef;
   count: number;
   equippedLabel: string;
+  homeText: string;
 }
 
 // 背包卡：已装备的逐件展示（带归属·槽位）；未装备的同 defId 合并为一张卡 + ×N
@@ -61,11 +63,18 @@ const inventoryCards = computed<InventoryCard[]>(() => {
         def: c.def,
         count: 1,
         equippedLabel: `装备中·${ownerName || '角色'}·${SLOT_META[where.slot].label}`,
+        homeText: formatHomeEffect(c.def.homeEffect ?? {}),
       });
     } else {
       const g = freeByDef.get(c.def.id);
       if (g) g.count++;
-      else freeByDef.set(c.def.id, { key: `free-${c.def.id}`, def: c.def, count: 1, equippedLabel: '' });
+      else freeByDef.set(c.def.id, {
+        key: `free-${c.def.id}`,
+        def: c.def,
+        count: 1,
+        equippedLabel: '',
+        homeText: formatHomeEffect(c.def.homeEffect ?? {}),
+      });
     }
   }
   return [...equipped, ...freeByDef.values()].sort(
@@ -83,7 +92,8 @@ const shopItems = computed(() =>
       if (r !== 0) return r;
       return SLOT_ORDER.indexOf(a.slot) - SLOT_ORDER.indexOf(b.slot);
     })
-    .map(def => ({ def, price: getEquipmentPrice(def.rarity) })),
+    .map(def => ({ def, price: getEquipmentPrice(def.rarity) }))
+    .map(entry => ({ ...entry, homeText: formatHomeEffect(entry.def.homeEffect ?? {}) })),
 );
 
 const kp = computed(() => userStore.playerState.knowledgePoints);
@@ -175,6 +185,7 @@ function buy(defId: string) {
           <div class="min-w-0 flex-1">
             <div class="text-xs font-medium text-ink truncate">{{ SLOT_META[entry.def.slot].icon }} {{ entry.def.name }}</div>
             <div class="text-[10px] text-ink-3 truncate">{{ formatBonus(entry.def.bonus) }}</div>
+            <div v-if="entry.homeText" class="text-[10px] text-accent truncate">{{ entry.homeText }}</div>
           </div>
           <button
             type="button"
@@ -209,6 +220,7 @@ function buy(defId: string) {
         </div>
         <div class="text-sm font-semibold text-ink truncate">{{ card.def.name }}</div>
         <div class="text-[11px] text-ink-2 leading-snug">{{ formatBonus(card.def.bonus) }}</div>
+        <div v-if="card.homeText" class="text-[11px] text-accent leading-snug">{{ card.homeText }}</div>
         <div v-if="card.equippedLabel" class="mt-auto pt-1">
           <span class="inline-block text-[10px] px-1.5 py-0.5 rounded bg-accent/15 text-accent font-medium">
             {{ card.equippedLabel }}

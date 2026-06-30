@@ -18,6 +18,8 @@ import {
 import {
   getEquipmentDef,
   sanitizeEquipped,
+  sumHomeEffects,
+  type EquipmentHomeEffect,
   type EquipmentSlot,
 } from '@/config/equipment';
 import { sumStatBonus, type StatBonus } from '@/engine';
@@ -120,6 +122,20 @@ export const useEquipmentStore = defineStore('equipment', () => {
     return sumStatBonus(bonuses);
   }
 
+  /** 解析某角色三槽装备的家园效果（经验/好感/KP 倍率 + 舒适度）。 */
+  function resolveHomeEffect(charId: number): Required<EquipmentHomeEffect> {
+    const slots = equipped.value[charId];
+    if (!slots) return sumHomeEffects([]);
+    const effects = (['weapon', 'armor', 'supporter'] as EquipmentSlot[])
+      .map(slot => slots[slot])
+      .filter((uid): uid is string => uid != null)
+      .map(uid => getItem(uid))
+      .filter((it): it is EquipmentItemSave => it != null)
+      .map(it => getEquipmentDef(it.defId)?.homeEffect)
+      .filter((effect): effect is EquipmentHomeEffect => effect != null);
+    return sumHomeEffects(effects);
+  }
+
   // --- 持久化装配 ---
   function serialize(): EquipmentSave {
     return {
@@ -153,6 +169,7 @@ export const useEquipmentStore = defineStore('equipment', () => {
     equip,
     unequip,
     resolveEquipBonus,
+    resolveHomeEffect,
     serialize,
     deserialize,
     reset,

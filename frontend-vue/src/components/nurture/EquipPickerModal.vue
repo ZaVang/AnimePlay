@@ -14,6 +14,7 @@ import { useGameDataStore } from '@/stores/gameDataStore';
 import {
   getEquipmentDef,
   formatBonus,
+  formatHomeEffect,
   SLOT_META,
   type EquipmentSlot,
   type EquipmentDef,
@@ -57,6 +58,7 @@ interface Candidate {
   count: number;
   isCurrent: boolean;
   onOtherLabel: string;
+  homeText: string;
 }
 
 // 同槽候选：当前已装件 + 装在别角色的件逐件列；空闲的同 defId 合并为一条 + ×N（装时取组内任一空闲 uid）
@@ -71,10 +73,26 @@ const candidates = computed<Candidate[]>(() => {
   for (const c of sameSlot) {
     const where = equipmentStore.findEquippedBy(c.item.uid);
     if (c.item.uid === equippedUid.value) {
-      rows.push({ key: c.item.uid, uid: c.item.uid, def: c.def, count: 1, isCurrent: true, onOtherLabel: '' });
+      rows.push({
+        key: c.item.uid,
+        uid: c.item.uid,
+        def: c.def,
+        count: 1,
+        isCurrent: true,
+        onOtherLabel: '',
+        homeText: formatHomeEffect(c.def.homeEffect ?? {}),
+      });
     } else if (where && where.charId !== props.charId) {
       const ownerName = gameDataStore.getCharacterCardById(where.charId)?.name;
-      rows.push({ key: c.item.uid, uid: c.item.uid, def: c.def, count: 1, isCurrent: false, onOtherLabel: `装备中·${ownerName || '其他角色'}` });
+      rows.push({
+        key: c.item.uid,
+        uid: c.item.uid,
+        def: c.def,
+        count: 1,
+        isCurrent: false,
+        onOtherLabel: `装备中·${ownerName || '其他角色'}`,
+        homeText: formatHomeEffect(c.def.homeEffect ?? {}),
+      });
     } else if (!where) {
       const g = freeByDef.get(c.def.id);
       if (g) g.uids.push(c.item.uid);
@@ -82,7 +100,15 @@ const candidates = computed<Candidate[]>(() => {
     }
   }
   for (const g of freeByDef.values()) {
-    rows.push({ key: `free-${g.def.id}`, uid: g.uids[0], def: g.def, count: g.uids.length, isCurrent: false, onOtherLabel: '' });
+    rows.push({
+      key: `free-${g.def.id}`,
+      uid: g.uids[0],
+      def: g.def,
+      count: g.uids.length,
+      isCurrent: false,
+      onOtherLabel: '',
+      homeText: formatHomeEffect(g.def.homeEffect ?? {}),
+    });
   }
   const order: Record<string, number> = { UR: 6, HR: 5, SSR: 4, SR: 3, R: 2, N: 1 };
   return rows.sort((a, b) => (order[b.def.rarity] || 0) - (order[a.def.rarity] || 0));
@@ -231,6 +257,7 @@ function deltaClass(d: number): string {
               <div class="min-w-0 flex-1">
                 <div class="text-sm font-medium text-ink truncate">{{ c.def.name }}<span v-if="c.count > 1" class="text-ink-3 font-normal"> ×{{ c.count }}</span></div>
                 <div class="text-[11px] text-ink-3 truncate">{{ formatBonus(c.def.bonus) }}</div>
+                <div v-if="c.homeText" class="text-[11px] text-accent truncate">{{ c.homeText }}</div>
               </div>
               <span v-if="c.isCurrent" class="text-[10px] font-bold text-accent flex-shrink-0">装备中</span>
               <span v-else-if="c.onOtherLabel" class="text-[10px] text-ink-3 flex-shrink-0">{{ c.onOtherLabel }}</span>
