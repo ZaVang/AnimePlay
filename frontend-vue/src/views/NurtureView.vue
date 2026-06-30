@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue';
+import { ref, computed, onUnmounted } from 'vue';
 import { useUserStore } from '@/stores/userStore';
 import { useGameDataStore } from '@/stores/gameDataStore';
 import { useEquipmentStore } from '@/stores/equipment';
@@ -150,9 +150,31 @@ const canTutor = computed(() => {
   return c.nurtureData.level < 100 && userStore.playerState.knowledgePoints >= TUTORING_KP_COST;
 });
 
+// 本次补习的随机加点增量（飘字提示用，仅展示）
+const lastGain = ref<Record<string, number> | null>(null);
+let gainClearTimer = 0;
+
 function tutor() {
-  if (selectedCharacter.value) userStore.tutorCharacter(selectedCharacter.value.id);
+  const c = selectedCharacter.value;
+  if (!c) return;
+  const before: Record<string, number> = { ...c.nurtureData.statPoints };
+  userStore.tutorCharacter(c.id);
+  const after = c.nurtureData.statPoints;
+  // 升级才会随机加点：算每维净增量，对应维做一次「+N」飘字（数值由 store 改，这里只读差值）
+  const gain: Record<string, number> = {};
+  let any = false;
+  for (const meta of STAT_META) {
+    const d = (after[meta.key] ?? 0) - (before[meta.key] ?? 0);
+    if (d > 0) { gain[meta.key] = d; any = true; }
+  }
+  if (any) {
+    lastGain.value = gain;
+    clearTimeout(gainClearTimer);
+    gainClearTimer = window.setTimeout(() => { lastGain.value = null; }, 1800);
+  }
 }
+
+onUnmounted(() => clearTimeout(gainClearTimer));
 
 function claimMilestone(milestoneId: string) {
   if (selectedCharacter.value) userStore.claimBondMilestone(selectedCharacter.value.id, milestoneId);
@@ -359,6 +381,7 @@ function quickUnequip(slot: EquipmentSlot) {
                       ({{ row.base }}<span class="text-success" v-if="row.point > 0"> +{{ row.point }}</span><span class="text-highlight" v-if="row.equip > 0"> +{{ row.equip }}装</span>)
                     </span>
                     <span v-if="row.isMax" class="text-xs font-bold text-accent">MAX</span>
+                    <span v-if="lastGain && lastGain[row.key]" class="stat-gain-pop text-xs font-bold text-success">+{{ lastGain[row.key] }}</span>
                   </span>
                 </div>
                 <div class="w-full bg-surface-2 rounded-full h-2.5 overflow-hidden">
@@ -476,3 +499,14 @@ function quickUnequip(slot: EquipmentSlot) {
     />
   </div>
 </template>
+
+<style scoped>
+/* 升级随机加点的「+N」飘字：浮现 → 上升淡出，与 lastGain 的 1.8s 清除同步 */
+@keyframes statGainPop {
+  0% { opacity: 0; transform: translateY(4px); }
+  25% { opacity: 1; transform: translateY(0); }
+  75% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-6px); }
+}
+.stat-gain-pop { display: inline-block; animation: statGainPop 1.8s ease-out forwards; }
+</style>

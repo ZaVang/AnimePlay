@@ -18,6 +18,7 @@ import {
   getEquipmentPrice,
   formatBonus,
   type EquipmentSlot,
+  type EquipmentDef,
 } from '@/config/equipment';
 import { rarityStyle } from '@/config/equipmentColors';
 import type { Rarity } from '@/types/card';
@@ -33,24 +34,43 @@ const slotFilter = ref<EquipmentSlot | 'all'>('all');
 const rarityFilter = ref<Rarity | 'all'>('all');
 const showShop = ref(false);
 
-// 背包装备卡（含定义 + 装备中归属）
-const inventoryCards = computed(() => {
-  return equipmentStore
+interface InventoryCard {
+  key: string;
+  def: EquipmentDef;
+  count: number;
+  equippedLabel: string;
+}
+
+// 背包卡：已装备的逐件展示（带归属·槽位）；未装备的同 defId 合并为一张卡 + ×N
+const inventoryCards = computed<InventoryCard[]>(() => {
+  const base = equipmentStore
     .list()
     .map(item => ({ item, def: getEquipmentDef(item.defId) }))
     .filter((c): c is { item: typeof c.item; def: NonNullable<typeof c.def> } => !!c.def)
     .filter(c => slotFilter.value === 'all' || c.def.slot === slotFilter.value)
-    .filter(c => rarityFilter.value === 'all' || c.def.rarity === rarityFilter.value)
-    .map(c => {
-      const where = equipmentStore.findEquippedBy(c.item.uid);
-      const ownerName = where ? gameDataStore.getCharacterCardById(where.charId)?.name : '';
-      return {
-        uid: c.item.uid,
+    .filter(c => rarityFilter.value === 'all' || c.def.rarity === rarityFilter.value);
+
+  const equipped: InventoryCard[] = [];
+  const freeByDef = new Map<string, InventoryCard>();
+  for (const c of base) {
+    const where = equipmentStore.findEquippedBy(c.item.uid);
+    if (where) {
+      const ownerName = gameDataStore.getCharacterCardById(where.charId)?.name;
+      equipped.push({
+        key: c.item.uid,
         def: c.def,
-        equippedLabel: where ? `装备中·${ownerName || '角色'}·${SLOT_META[where.slot].label}` : '',
-      };
-    })
-    .sort((a, b) => (rarityOrder[b.def.rarity] || 0) - (rarityOrder[a.def.rarity] || 0));
+        count: 1,
+        equippedLabel: `装备中·${ownerName || '角色'}·${SLOT_META[where.slot].label}`,
+      });
+    } else {
+      const g = freeByDef.get(c.def.id);
+      if (g) g.count++;
+      else freeByDef.set(c.def.id, { key: `free-${c.def.id}`, def: c.def, count: 1, equippedLabel: '' });
+    }
+  }
+  return [...equipped, ...freeByDef.values()].sort(
+    (a, b) => (rarityOrder[b.def.rarity] || 0) - (rarityOrder[a.def.rarity] || 0),
+  );
 });
 
 // 兑换商店目录（按槽 + 稀有度排序）
@@ -172,7 +192,7 @@ function buy(defId: string) {
     <div v-if="inventoryCards.length > 0" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
       <div
         v-for="card in inventoryCards"
-        :key="card.uid"
+        :key="card.key"
         class="rounded-lg border border-line bg-surface-2 p-3 flex flex-col gap-1.5"
       >
         <div class="flex items-center justify-between">
@@ -182,7 +202,10 @@ function buy(defId: string) {
           >
             {{ card.def.rarity }}
           </span>
-          <span class="text-lg" :title="SLOT_META[card.def.slot].label">{{ SLOT_META[card.def.slot].icon }}</span>
+          <div class="flex items-center gap-1.5">
+            <span v-if="card.count > 1" class="text-xs font-bold text-ink-2">×{{ card.count }}</span>
+            <span class="text-lg" :title="SLOT_META[card.def.slot].label">{{ SLOT_META[card.def.slot].icon }}</span>
+          </div>
         </div>
         <div class="text-sm font-semibold text-ink truncate">{{ card.def.name }}</div>
         <div class="text-[11px] text-ink-2 leading-snug">{{ formatBonus(card.def.bonus) }}</div>

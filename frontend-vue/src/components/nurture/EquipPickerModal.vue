@@ -50,27 +50,42 @@ const slotMeta = computed(() => SLOT_META[props.equipSlot]);
 // 当前该槽已装 uid
 const equippedUid = computed(() => equipmentStore.getEquipped(props.charId)[props.equipSlot]);
 
-// 同槽候选：背包里 def.slot == 当前槽的实例
-const candidates = computed(() => {
-  return equipmentStore
+interface Candidate {
+  key: string;
+  uid: string;        // 代表 uid（自由组取组内任一空闲件）
+  def: EquipmentDef;
+  count: number;
+  isCurrent: boolean;
+  onOtherLabel: string;
+}
+
+// 同槽候选：当前已装件 + 装在别角色的件逐件列；空闲的同 defId 合并为一条 + ×N（装时取组内任一空闲 uid）
+const candidates = computed<Candidate[]>(() => {
+  const sameSlot = equipmentStore
     .list()
     .map(item => ({ item, def: getEquipmentDef(item.defId) }))
-    .filter((c): c is { item: typeof c.item; def: NonNullable<typeof c.def> } => !!c.def && c.def.slot === props.equipSlot)
-    .map(c => {
-      const where = equipmentStore.findEquippedBy(c.item.uid);
-      const onOther = where && where.charId !== props.charId;
-      const ownerName = onOther ? gameDataStore.getCharacterCardById(where!.charId)?.name : '';
-      return {
-        uid: c.item.uid,
-        def: c.def,
-        isCurrent: c.item.uid === equippedUid.value,
-        onOtherLabel: onOther ? `装备中·${ownerName || '其他角色'}` : '',
-      };
-    })
-    .sort((a, b) => {
-      const order: Record<string, number> = { UR: 6, HR: 5, SSR: 4, SR: 3, R: 2, N: 1 };
-      return (order[b.def.rarity] || 0) - (order[a.def.rarity] || 0);
-    });
+    .filter((c): c is { item: typeof c.item; def: NonNullable<typeof c.def> } => !!c.def && c.def.slot === props.equipSlot);
+
+  const rows: Candidate[] = [];
+  const freeByDef = new Map<string, { def: EquipmentDef; uids: string[] }>();
+  for (const c of sameSlot) {
+    const where = equipmentStore.findEquippedBy(c.item.uid);
+    if (c.item.uid === equippedUid.value) {
+      rows.push({ key: c.item.uid, uid: c.item.uid, def: c.def, count: 1, isCurrent: true, onOtherLabel: '' });
+    } else if (where && where.charId !== props.charId) {
+      const ownerName = gameDataStore.getCharacterCardById(where.charId)?.name;
+      rows.push({ key: c.item.uid, uid: c.item.uid, def: c.def, count: 1, isCurrent: false, onOtherLabel: `装备中·${ownerName || '其他角色'}` });
+    } else if (!where) {
+      const g = freeByDef.get(c.def.id);
+      if (g) g.uids.push(c.item.uid);
+      else freeByDef.set(c.def.id, { def: c.def, uids: [c.item.uid] });
+    }
+  }
+  for (const g of freeByDef.values()) {
+    rows.push({ key: `free-${g.def.id}`, uid: g.uids[0], def: g.def, count: g.uids.length, isCurrent: false, onOtherLabel: '' });
+  }
+  const order: Record<string, number> = { UR: 6, HR: 5, SSR: 4, SR: 3, R: 2, N: 1 };
+  return rows.sort((a, b) => (order[b.def.rarity] || 0) - (order[a.def.rarity] || 0));
 });
 
 // 当前最终五维/战力（用 store 真实解析）
@@ -201,7 +216,7 @@ function deltaClass(d: number): string {
 
             <button
               v-for="c in candidates"
-              :key="c.uid"
+              :key="c.key"
               type="button"
               class="w-full flex items-center gap-3 p-3 rounded-lg border transition-colors text-left"
               :class="selectedUid === c.uid ? 'bg-accent/15 border-accent' : 'bg-surface-2 border-line hover:border-accent/60'"
@@ -214,7 +229,7 @@ function deltaClass(d: number): string {
                 {{ c.def.rarity }}
               </span>
               <div class="min-w-0 flex-1">
-                <div class="text-sm font-medium text-ink truncate">{{ c.def.name }}</div>
+                <div class="text-sm font-medium text-ink truncate">{{ c.def.name }}<span v-if="c.count > 1" class="text-ink-3 font-normal"> ×{{ c.count }}</span></div>
                 <div class="text-[11px] text-ink-3 truncate">{{ formatBonus(c.def.bonus) }}</div>
               </div>
               <span v-if="c.isCurrent" class="text-[10px] font-bold text-accent flex-shrink-0">装备中</span>
