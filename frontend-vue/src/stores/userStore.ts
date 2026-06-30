@@ -456,6 +456,9 @@ export const useUserStore = defineStore('user', () => {
    */
   function placeInHomestead(characterId: number): boolean {
     if (!profile.isLoggedIn) return false;
+    // 校验角色存在且已拥有（UI 只列已拥有，门面自洽：杜绝脏调用入住不存在/未拥有角色）
+    if (!useGameDataStore().getCharacterCardById(characterId)) return false;
+    if (collection.getCharacterCardCount(characterId) <= 0) return false;
     settleHomestead();
     const ok = useHomesteadStore().place(characterId);
     if (ok) saveToServer();
@@ -653,18 +656,19 @@ export const useUserStore = defineStore('user', () => {
     updateSquadName: withSave(pve.updateSquadName),
     getSquadMembers: pve.getSquadMembers,
     getCurrentChallengeFloor: pve.getCurrentChallengeFloor,
-    completeFloor: (floor: number, rng = defaultRng): EquipmentDef | null => {
-      // pve.completeFloor 仅在「推进到新层」时返回 true（重复挑战已过低层返回 false），
-      // 故掉落挂在此分支天然防刷——不另加冗余去重守卫，也不忽略返回直接掉落（经济安全）。
+    completeFloor: (floor: number, rng = defaultRng): { completed: boolean; drop: EquipmentDef | null } => {
+      // pve.completeFloor 仅在「推进到新层」时返回 true（重复挑战已过低层 / 已达 999 顶层返回 false）。
+      // 返回 { completed, drop }：区分「没通层」与「通了层但没掉落」——调用方据 completed 决定是否发奖励/推进，
+      // 避免把两种语义都压成 null 后无条件发奖（顶层/篡改场景的刷取来源）。
       if (pve.completeFloor(floor)) {
         // 留存埋点（evolution-1）：爬塔通层成就（用返回值守卫，floor 不匹配不记）
         useAchievementsStore().check('tower', { floor });
         // S13-C2：通层装备掉落（50% + 层段稀有度 + 随机槽，命中入库），回传掉落件供结算面板展示
         const drop = rollFloorDrop(floor, rng);
         saveToServer();
-        return drop;
+        return { completed: true, drop };
       }
-      return null;
+      return { completed: false, drop: null };
     },
     hasCompletedFloor: pve.hasCompletedFloor,
     canAttemptToday: pve.canAttemptToday,

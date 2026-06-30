@@ -34,8 +34,10 @@ describe('塔通层掉落（completeFloor 注入 RNG）', () => {
     const userStore = useUserStore();
 
     // 当前层 1（默认）。chance=0.0 命中、pick=0.0 → weapon；floor 1 → R
-    userStore.completeFloor(1, createSequenceRng([0.0, 0.0]));
+    const r = userStore.completeFloor(1, createSequenceRng([0.0, 0.0]));
 
+    expect(r.completed).toBe(true);
+    expect(r.drop).not.toBeNull();
     expect(eq.list()).toHaveLength(1);
     expect(getEquipmentDef(eq.list()[0].defId)?.rarity).toBe('R');
     expect(getEquipmentDef(eq.list()[0].defId)?.slot).toBe('weapon');
@@ -80,7 +82,7 @@ describe('塔通层掉落（completeFloor 注入 RNG）', () => {
     expect(getEquipmentDef(eq.list()[0].defId)?.rarity).toBe('UR');
   });
 
-  it('封顶层 999：completeFloor 返回 false → 不推进、不重复掉落', () => {
+  it('封顶层 999：completeFloor → completed:false（不推进、不掉落，调用方据此不发奖）', () => {
     const profile = useProfileStore();
     profile.currentUser = 'tester';
     const pve = usePveStore();
@@ -89,9 +91,23 @@ describe('塔通层掉落（completeFloor 注入 RNG）', () => {
     const userStore = useUserStore();
 
     // 即便 RNG 必中（0.0）也不掉：封顶层不推进进度
-    userStore.completeFloor(999, createSequenceRng([0.0, 0.0]));
+    const r = userStore.completeFloor(999, createSequenceRng([0.0, 0.0]));
+    expect(r.completed).toBe(false);
+    expect(r.drop).toBeNull();
     expect(pve.getCurrentChallengeFloor()).toBe(999);
     expect(eq.list()).toHaveLength(0);
+  });
+
+  it('重复挑战已过低层：completed:false（不发奖来源）', () => {
+    const profile = useProfileStore();
+    profile.currentUser = 'tester';
+    const pve = usePveStore();
+    const userStore = useUserStore();
+    userStore.completeFloor(1, createSequenceRng([0.9])); // 推进到第 2 层
+    expect(pve.getCurrentChallengeFloor()).toBe(2);
+    const r = userStore.completeFloor(1, createSequenceRng([0.0, 0.0])); // 再「通过」已过的第 1 层
+    expect(r.completed).toBe(false);
+    expect(r.drop).toBeNull();
   });
 });
 

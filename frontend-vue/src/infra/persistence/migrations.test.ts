@@ -260,6 +260,15 @@ describe('v13 homestead 迁移', () => {
     const out = migrate({ version: 13, homestead: { placedCharacterIds: 'oops', lastSettleAt: 'x' } } as unknown);
     expect(out.homestead).toEqual({ placedCharacterIds: [], lastSettleAt: 0 });
   });
+
+  it('脏档入住名单：去重 + 截断到槽位上限（防放大挂机收益）', () => {
+    const out = migrate({
+      version: 13,
+      homestead: { placedCharacterIds: [5, 5, 1, 2, 3, 4, 6, 7, 8], lastSettleAt: 0 },
+    } as unknown);
+    // 去重后 [5,1,2,3,4,6,7,8] 截断到前 6 个
+    expect(out.homestead.placedCharacterIds).toEqual([5, 1, 2, 3, 4, 6]);
+  });
 });
 
 describe('v2 存档过迁移层', () => {

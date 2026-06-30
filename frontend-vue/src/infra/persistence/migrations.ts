@@ -24,6 +24,7 @@ import {
 } from './schema';
 import type { CharacterNurtureData } from '@/types/nurture';
 import { createPityState } from '@/engine/gacha/draw';
+import { canonicalizePlacedIds } from '@/config/homestead';
 
 /* eslint-disable @typescript-eslint/no-explicit-any -- 迁移层的输入天然是未知形态 JSON */
 
@@ -142,9 +143,8 @@ function migrateHomestead(raw: any): HomesteadSave {
   const defaults = createDefaultHomestead();
   if (!raw || typeof raw !== 'object') return defaults;
   return {
-    placedCharacterIds: Array.isArray(raw.placedCharacterIds)
-      ? raw.placedCharacterIds.filter((x: unknown): x is number => typeof x === 'number')
-      : defaults.placedCharacterIds,
+    // 数字 + 去重 + 截断到槽位上限（脏档防放大收益，见 canonicalizePlacedIds）
+    placedCharacterIds: canonicalizePlacedIds(raw.placedCharacterIds),
     lastSettleAt: typeof raw.lastSettleAt === 'number' ? raw.lastSettleAt : defaults.lastSettleAt,
   };
 }

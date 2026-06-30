@@ -5,6 +5,8 @@ import { describe, it, expect } from 'vitest';
 import {
   computeIdleYield,
   cappedIdleHours,
+  canonicalizePlacedIds,
+  HOMESTEAD_SLOTS,
   OFFLINE_CAP_HOURS,
   IDLE_EXP_PER_HOUR,
   IDLE_AFFECTION_PER_HOUR,
@@ -57,5 +59,22 @@ describe('computeIdleYield', () => {
   it('未知稀有度的系数回落 1（不抛错）', () => {
     const y = computeIdleYield(['???' as unknown as 'UR'], 1 * H);
     expect(y.knowledge).toBe(2 * 1 * 1); // base2 ×fallback1 ×1h
+  });
+});
+
+describe('canonicalizePlacedIds（存档边界规整入住名单）', () => {
+  it('非数组 → 空', () => {
+    expect(canonicalizePlacedIds(null)).toEqual([]);
+    expect(canonicalizePlacedIds('x' as unknown)).toEqual([]);
+    expect(canonicalizePlacedIds(undefined)).toEqual([]);
+  });
+  it('去重 + 只收有限数字（滤掉重复/字符串/NaN）', () => {
+    expect(canonicalizePlacedIds([3, 3, 5, '7' as unknown, NaN, 5, 9])).toEqual([3, 5, 9]);
+  });
+  it('截断到 HOMESTEAD_SLOTS（脏档超额不放大收益）', () => {
+    const many = Array.from({ length: HOMESTEAD_SLOTS + 4 }, (_, i) => i + 1);
+    const out = canonicalizePlacedIds(many);
+    expect(out).toHaveLength(HOMESTEAD_SLOTS);
+    expect(out).toEqual(many.slice(0, HOMESTEAD_SLOTS));
   });
 });

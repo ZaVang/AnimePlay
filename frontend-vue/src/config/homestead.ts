@@ -13,6 +13,25 @@ import type { Rarity } from '@/types/card';
 /** 入住槽位上限（>小队的 4，可放下主力阵容）。只有入住角色挂机成长。 */
 export const HOMESTEAD_SLOTS = 6;
 
+/**
+ * 规整入住名单：只收有限数字、去重、截断到 HOMESTEAD_SLOTS。
+ * 存档边界（迁移 + 反序列化）与运行期共用——杜绝脏档/篡改放入重复或超额角色，
+ * 否则 settleHomestead 会按出现次数重复加经验/好感、按重复稀有度放大知识点。
+ */
+export function canonicalizePlacedIds(raw: unknown): number[] {
+  if (!Array.isArray(raw)) return [];
+  const seen = new Set<number>();
+  const out: number[] = [];
+  for (const x of raw) {
+    if (typeof x === 'number' && Number.isFinite(x) && !seen.has(x)) {
+      seen.add(x);
+      out.push(x);
+      if (out.length >= HOMESTEAD_SLOTS) break;
+    }
+  }
+  return out;
+}
+
 /** 离线产出封顶时长（小时）：超过这个时长的离线不再累积，即软节流。 */
 export const OFFLINE_CAP_HOURS = 12;
 

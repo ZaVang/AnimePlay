@@ -90,9 +90,10 @@ function loadState() {
       if (state.currentPhase === 'towerMode') {
         currentPhase.value = state.currentPhase;
         const sessionFloor = state.currentTowerFloor || 1;
-        // 存档进度更靠前时（如旧 session 残留），跟随存档并废弃过期的敌人数据
-        currentTowerFloor.value = Math.max(sessionFloor, progressFloor);
-        towerEnemyData.value = sessionFloor === currentTowerFloor.value ? state.towerEnemyData : null;
+        // 楼层以服务端塔进度为权威，不信任高于服务端的 session 楼层（防篡改刷取/假进度）；
+        // session 仅在与服务端同层时用于保留过场敌人数据
+        currentTowerFloor.value = progressFloor;
+        towerEnemyData.value = sessionFloor === progressFloor ? state.towerEnemyData : null;
       } else {
         currentPhase.value = 'towerMode';
       }
@@ -384,19 +385,23 @@ function endBattle() {
     
     // 爬塔模式特殊奖励
     if (currentBattleMode.value === 'tower') {
+      // completeFloor 只在「真正推进了进度」时 completed=true（已达 999 顶层 / 本地楼层高于真实进度时为 false）。
+      // 仅 completed 才发通层奖励 + 推进本地层，杜绝顶层/篡改场景下的奖励刷取与假进度。
+      const { completed, drop } = userStore.completeFloor(currentTowerFloor.value);
+      if (!completed) {
+        battleLog.value.push('⚠️ 本层无法推进（已达顶层或进度不符），未发放奖励。');
+        return;
+      }
       baseReward += currentTowerFloor.value * 10; // 层数奖励
       knowledgeReward += currentTowerFloor.value * 5;
-      
-      // 通过当前层并进入下一层（completeFloor 回传本层掉落，供结算面板展示）
-      const drop = userStore.completeFloor(currentTowerFloor.value);
       battleLog.value.push(`🏆 通过第${currentTowerFloor.value}层！`);
       battleLog.value.push(drop ? `🎁 通层掉落：[${drop.rarity}] ${drop.name}！` : '🎁 本层未掉落装备');
-      
+
       // 自动进入下一层
       currentTowerFloor.value = currentTowerFloor.value + 1;
       towerEnemyData.value = null; // 清除当前层敌人数据，需要重新生成
       battleLog.value.push(`⬆️ 自动进入第${currentTowerFloor.value}层！`);
-      
+
       // 保存新状态
       saveState();
     }

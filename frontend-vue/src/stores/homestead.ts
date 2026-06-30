@@ -5,7 +5,7 @@
  */
 import { defineStore } from 'pinia';
 import { ref } from 'vue';
-import { HOMESTEAD_SLOTS } from '@/config/homestead';
+import { HOMESTEAD_SLOTS, canonicalizePlacedIds } from '@/config/homestead';
 import type { HomesteadSave } from '@/infra/persistence/schema';
 
 export const useHomesteadStore = defineStore('homestead', () => {
@@ -49,8 +49,8 @@ export const useHomesteadStore = defineStore('homestead', () => {
     };
   }
   function deserialize(data: HomesteadSave): void {
-    // 输入已由 migrate() 归一，这里信任其形态（与 nurture 等域一致）。
-    placedCharacterIds.value = [...data.placedCharacterIds];
+    // 二次兜底规整：去重 + 截断到槽位上限（迁移已归一，反序列化再保险一道，杜绝脏档放大挂机收益）。
+    placedCharacterIds.value = canonicalizePlacedIds(data.placedCharacterIds);
     lastSettleAt.value = data.lastSettleAt;
   }
   function reset(): void {
