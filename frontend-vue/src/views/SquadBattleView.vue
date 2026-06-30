@@ -370,8 +370,12 @@ function checkBattleEnd() {
 
 // 结束战斗
 function endBattle() {
+  // 再入守卫：一场战斗只结算一次。pending checkBattleEnd 计时器 + 急躁双击「执行回合」会让 endBattle
+  // 触发多次；不挡的话第二次仍与同步前移的权威楼层匹配 → 重复推进楼层 + 重复发奖/掉落。
+  // startBattleCommon 每场把 phase 置回 'battle'，故守卫每场自动重置。
+  if (currentPhase.value === 'result') return;
   currentPhase.value = 'result';
-  
+
   const playerAlive = playerSquad.value.some(member => !member.isDefeated);
   const enemyAlive = enemySquad.value.some(member => !member.isDefeated);
   

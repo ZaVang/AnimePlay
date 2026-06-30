@@ -197,10 +197,15 @@ function migrateEquipment(raw: any): EquipmentSave {
         .map((it: any) => ({ uid: it.uid, defId: it.defId }))
     : defaults.inventory;
 
-  // 只认仍在 inventory 中的 uid，清洗孤儿引用（指向已不存在实例的 equipped 槽）。
+  // 只认仍在 inventory 中的 uid（清洗孤儿引用），并强制「一件只能戴一处」：同一 uid 首次出现的槽保留、
+  // 其后任何角色/槽再引用一律置 null——杜绝脏档把单件装备戴满全队、resolveEquipBonus 按引用次数放大战力。
   const validUids = new Set<string>(inventory.map((it: { uid: string }) => it.uid));
-  const keepUid = (v: any): string | null =>
-    typeof v === 'string' && validUids.has(v) ? v : null;
+  const usedUids = new Set<string>();
+  const keepUid = (v: any): string | null => {
+    if (typeof v !== 'string' || !validUids.has(v) || usedUids.has(v)) return null;
+    usedUids.add(v);
+    return v;
+  };
 
   const equipped: Record<number, EquippedSlots> = {};
   if (raw.equipped && typeof raw.equipped === 'object') {

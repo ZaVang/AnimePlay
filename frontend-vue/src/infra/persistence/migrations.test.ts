@@ -214,6 +214,24 @@ describe('v14 装备域迁移', () => {
     expect(out.equipment.equipped[12393]).toEqual({ weapon: 'a', armor: null, supporter: null });
   });
 
+  it('单件单戴：同一 uid 被多角色/多槽引用 → 仅首处保留，其余归 null（防战力放大）', () => {
+    const out = migrate({
+      version: 14,
+      equipment: {
+        inventory: [{ uid: 'X', defId: 'wpn_ur_longinus' }],
+        equipped: {
+          1: { weapon: 'X', armor: null, supporter: null },
+          2: { weapon: 'X', armor: null, supporter: null },
+          3: { weapon: 'X', armor: null, supporter: null },
+        },
+      },
+    } as unknown);
+    // 数字键按升序遍历 → 最小 charId(1) 保留，其余清空
+    expect(out.equipment.equipped[1].weapon).toBe('X');
+    expect(out.equipment.equipped[2].weapon).toBeNull();
+    expect(out.equipment.equipped[3].weapon).toBeNull();
+  });
+
   it('清洗孤儿 uid：equipped 指向已不在背包的实例 → 该槽归 null', () => {
     const out = migrate({
       version: 14,
