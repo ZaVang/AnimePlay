@@ -65,10 +65,11 @@ const BATTLE_STATE_KEY = 'squadBattleState';
 
 // 保存状态到sessionStorage
 function saveState() {
+  // 只持久化 UI 过场态（phase / 楼层显示）。敌人对象不入 session——客户端缓存的敌人不可信，
+  // 重载由 ensureTowerEnemies() 按服务端楼层重新生成（防篡改注入空/弱敌后秒杀刷奖）。
   const state = {
     currentPhase: currentPhase.value,
     currentTowerFloor: currentTowerFloor.value,
-    towerEnemyData: towerEnemyData.value
   };
   try {
     sessionStorage.setItem(BATTLE_STATE_KEY, JSON.stringify(state));
@@ -89,11 +90,10 @@ function loadState() {
       // 只恢复塔模式状态
       if (state.currentPhase === 'towerMode') {
         currentPhase.value = state.currentPhase;
-        const sessionFloor = state.currentTowerFloor || 1;
-        // 楼层以服务端塔进度为权威，不信任高于服务端的 session 楼层（防篡改刷取/假进度）；
-        // session 仅在与服务端同层时用于保留过场敌人数据
+        // 楼层以服务端塔进度为权威；敌人对象一律不从 session 恢复（防篡改注入空/弱敌后秒杀刷奖），
+        // 由 onMounted 的 ensureTowerEnemies() 按真实楼层重新生成。
         currentTowerFloor.value = progressFloor;
-        towerEnemyData.value = sessionFloor === progressFloor ? state.towerEnemyData : null;
+        towerEnemyData.value = null;
       } else {
         currentPhase.value = 'towerMode';
       }
