@@ -136,3 +136,40 @@ export function formatBonus(bonus: Partial<StatBonus>): string {
     .map(k => `${STAT_LABEL[k]}+${bonus[k]}`)
     .join(' · ');
 }
+
+/** 单角色三槽（与存档 EquippedSlots 同形；config 不反向 import infra 类型，故就地声明结构）。 */
+type EquippedTriple = { weapon: string | null; armor: string | null; supporter: string | null };
+
+/**
+ * 规整逐角色三槽配装（存档迁移 + 反序列化共用）。每个 uid 必须同时满足：
+ *  ① 在 inventory 中有对应实例 ② 未被别的角色/槽占用（一件只能戴一处）
+ *  ③ 其 def.slot 与所在槽匹配（武器只能进 weapon…）——任一不满足该槽置 null。
+ * 把运行期 equip() 的不变式收口到载入边界，杜绝脏档绕过校验（孤儿 / 重复戴 / 异槽戴）放大战力。
+ */
+export function sanitizeEquipped(
+  inventory: readonly { uid: string; defId: string }[],
+  rawEquipped: unknown,
+): Record<number, EquippedTriple> {
+  const out: Record<number, EquippedTriple> = {};
+  if (!rawEquipped || typeof rawEquipped !== 'object') return out;
+  // uid → 该实例的固有槽位（未知 defId / 不在背包 → undefined，永不匹配任何槽）
+  const slotByUid = new Map<string, EquipmentSlot | undefined>(
+    inventory.map(it => [it.uid, getEquipmentDef(it.defId)?.slot]),
+  );
+  const used = new Set<string>();
+  const keep = (slot: EquipmentSlot, v: unknown): string | null => {
+    if (typeof v !== 'string' || used.has(v) || slotByUid.get(v) !== slot) return null;
+    used.add(v);
+    return v;
+  };
+  for (const [key, val] of Object.entries(rawEquipped as Record<string, Record<string, unknown>>)) {
+    const charId = Number(key);
+    if (!Number.isFinite(charId) || !val || typeof val !== 'object') continue;
+    out[charId] = {
+      weapon: keep('weapon', val.weapon),
+      armor: keep('armor', val.armor),
+      supporter: keep('supporter', val.supporter),
+    };
+  }
+  return out;
+}

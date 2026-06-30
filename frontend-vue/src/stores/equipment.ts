@@ -17,6 +17,7 @@ import {
 } from '@/infra/persistence/schema';
 import {
   getEquipmentDef,
+  sanitizeEquipped,
   type EquipmentSlot,
 } from '@/config/equipment';
 import { sumStatBonus, type StatBonus } from '@/engine';
@@ -130,11 +131,9 @@ export const useEquipmentStore = defineStore('equipment', () => {
   }
 
   function deserialize(data: EquipmentSave): void {
-    // 输入已由 migrate() 归一，这里信任其形态（与 nurture/homestead 等域一致）。
+    // 二次兜底：把运行期 equip() 的不变式（在库 + 单件单戴 + 同槽）收口到载入边界，对齐迁移层与家园 canonicalize。
     inventory.value = data.inventory.map(it => ({ ...it }));
-    equipped.value = Object.fromEntries(
-      Object.entries(data.equipped).map(([id, slots]) => [Number(id), { ...slots }]),
-    );
+    equipped.value = sanitizeEquipped(inventory.value, data.equipped);
   }
 
   function reset(): void {

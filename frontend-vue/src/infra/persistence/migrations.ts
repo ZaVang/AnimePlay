@@ -16,7 +16,6 @@ import {
   createDefaultTowerProgress,
   type DailySave,
   type EquipmentSave,
-  type EquippedSlots,
   type HomesteadSave,
   type MiniGamesSave,
   type SavePayload,
@@ -25,6 +24,7 @@ import {
 import type { CharacterNurtureData } from '@/types/nurture';
 import { createPityState } from '@/engine/gacha/draw';
 import { canonicalizePlacedIds } from '@/config/homestead';
+import { sanitizeEquipped } from '@/config/equipment';
 
 /* eslint-disable @typescript-eslint/no-explicit-any -- 迁移层的输入天然是未知形态 JSON */
 
@@ -197,28 +197,8 @@ function migrateEquipment(raw: any): EquipmentSave {
         .map((it: any) => ({ uid: it.uid, defId: it.defId }))
     : defaults.inventory;
 
-  // 只认仍在 inventory 中的 uid（清洗孤儿引用），并强制「一件只能戴一处」：同一 uid 首次出现的槽保留、
-  // 其后任何角色/槽再引用一律置 null——杜绝脏档把单件装备戴满全队、resolveEquipBonus 按引用次数放大战力。
-  const validUids = new Set<string>(inventory.map((it: { uid: string }) => it.uid));
-  const usedUids = new Set<string>();
-  const keepUid = (v: any): string | null => {
-    if (typeof v !== 'string' || !validUids.has(v) || usedUids.has(v)) return null;
-    usedUids.add(v);
-    return v;
-  };
-
-  const equipped: Record<number, EquippedSlots> = {};
-  if (raw.equipped && typeof raw.equipped === 'object') {
-    for (const [key, val] of Object.entries(raw.equipped as Record<string, any>)) {
-      const charId = Number(key);
-      if (!Number.isFinite(charId) || !val || typeof val !== 'object') continue;
-      equipped[charId] = {
-        weapon: keepUid(val.weapon),
-        armor: keepUid(val.armor),
-        supporter: keepUid(val.supporter),
-      };
-    }
-  }
+  // 三槽配装收口运行期 equip() 的不变式（在库 + 单件单戴 + 同槽），迁移与反序列化共用 sanitizeEquipped。
+  const equipped = sanitizeEquipped(inventory, raw.equipped);
 
   return { inventory, equipped };
 }
