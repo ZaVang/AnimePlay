@@ -153,9 +153,12 @@ export function sanitizeEquipped(
   const out: Record<number, EquippedTriple> = {};
   if (!rawEquipped || typeof rawEquipped !== 'object') return out;
   // uid → 该实例的固有槽位（未知 defId / 不在背包 → undefined，永不匹配任何槽）
-  const slotByUid = new Map<string, EquipmentSlot | undefined>(
-    inventory.map(it => [it.uid, getEquipmentDef(it.defId)?.slot]),
-  );
+  // 首条优先（与运行期 getItem = inventory.find 取首条一致）：同 uid 双 defId 时，定槽与算 bonus 解释同一条，
+  // 杜绝「校验按后一条 def.slot 通过、战斗加成按前一条 def.bonus 生效」的错位绕过。
+  const slotByUid = new Map<string, EquipmentSlot | undefined>();
+  for (const it of inventory) {
+    if (!slotByUid.has(it.uid)) slotByUid.set(it.uid, getEquipmentDef(it.defId)?.slot);
+  }
   const used = new Set<string>();
   const keep = (slot: EquipmentSlot, v: unknown): string | null => {
     if (typeof v !== 'string' || used.has(v) || slotByUid.get(v) !== slot) return null;

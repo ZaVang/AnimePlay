@@ -193,10 +193,17 @@ function migrateEquipment(raw: any): EquipmentSave {
   const defaults = createDefaultEquipment();
   if (!raw || typeof raw !== 'object') return defaults;
 
+  const seenUid = new Set<string>();
   const inventory = Array.isArray(raw.inventory)
     ? raw.inventory
         .filter((it: any) => it && typeof it.uid === 'string' && typeof it.defId === 'string')
-        .map((it: any) => ({ uid: it.uid, defId: it.defId }))
+        .map((it: any) => ({ uid: it.uid as string, defId: it.defId as string }))
+        // uid 去重保留首条（与运行期 getItem = inventory.find 取首条一致；同 uid 双 defId 不再解释错位）
+        .filter((it: { uid: string }) => {
+          if (seenUid.has(it.uid)) return false;
+          seenUid.add(it.uid);
+          return true;
+        })
     : defaults.inventory;
 
   // 三槽配装收口运行期 equip() 的不变式（在库 + 单件单戴 + 同槽），迁移与反序列化共用 sanitizeEquipped。

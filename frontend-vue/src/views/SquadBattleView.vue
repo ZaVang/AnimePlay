@@ -219,7 +219,7 @@ function startTowerBattle(squadId: number) {
   const members = userStore.getSquadMembers(squadId);
   // 已拥有校验纵深：只放进真正拥有的角色（脏档塞未拥有 id 会被剔除；配队 UI 本就只列已拥有）
   const characters = members.map((id: number | null) =>
-    id && userStore.characterCollection.has(id) ? gameDataStore.getCharacterCardById(id) : null,
+    id && userStore.getCharacterCardCount(id) > 0 ? gameDataStore.getCharacterCardById(id) : null,
   );
   const validCharacters = characters.filter(Boolean) as CharacterCard[];
   
@@ -265,7 +265,7 @@ function startBattle(squadId: number) {
   const members = userStore.getSquadMembers(squadId);
   // 已拥有校验纵深：只放进真正拥有的角色（脏档塞未拥有 id 会被剔除；配队 UI 本就只列已拥有）
   const characters = members.map((id: number | null) =>
-    id && userStore.characterCollection.has(id) ? gameDataStore.getCharacterCardById(id) : null,
+    id && userStore.getCharacterCardCount(id) > 0 ? gameDataStore.getCharacterCardById(id) : null,
   );
   const validCharacters = characters.filter(Boolean) as CharacterCard[];
   
@@ -392,7 +392,8 @@ function endBattle() {
     // 胜利奖励
     let baseReward = 50;
     let knowledgeReward = 25;
-    
+    let clearedFloor = 0; // 本场通过的层（快照；自增后用它算角色层数经验，避免偏到 N+1 层倍率）
+
     // 爬塔模式特殊奖励
     if (currentBattleMode.value === 'tower') {
       // completeFloor 只在「真正推进了进度」时 completed=true（已达 999 顶层 / 本地楼层高于真实进度时为 false）。
@@ -402,13 +403,14 @@ function endBattle() {
         battleLog.value.push('⚠️ 本层无法推进（已达顶层或进度不符），未发放奖励。');
         return;
       }
-      baseReward += currentTowerFloor.value * 10; // 层数奖励
-      knowledgeReward += currentTowerFloor.value * 5;
-      battleLog.value.push(`🏆 通过第${currentTowerFloor.value}层！`);
+      clearedFloor = currentTowerFloor.value;
+      baseReward += clearedFloor * 10; // 层数奖励
+      knowledgeReward += clearedFloor * 5;
+      battleLog.value.push(`🏆 通过第${clearedFloor}层！`);
       battleLog.value.push(drop ? `🎁 通层掉落：[${drop.rarity}] ${drop.name}！` : '🎁 本层未掉落装备');
 
       // 自动进入下一层
-      currentTowerFloor.value = currentTowerFloor.value + 1;
+      currentTowerFloor.value = clearedFloor + 1;
       towerEnemyData.value = null; // 清除当前层敌人数据，需要重新生成
       battleLog.value.push(`⬆️ 自动进入第${currentTowerFloor.value}层！`);
 
@@ -435,9 +437,9 @@ function endBattle() {
         individualExp += 20; // 存活奖励
       }
       
-      // 爬塔层数奖励
+      // 爬塔层数奖励（按本场通过的层，而非自增后的下一层）
       if (currentBattleMode.value === 'tower') {
-        individualExp += currentTowerFloor.value * 5; // 每层额外5经验
+        individualExp += clearedFloor * 5; // 每层额外5经验
       }
       
       userStore.addCharacterExp(member.character.id, individualExp);
@@ -446,7 +448,7 @@ function endBattle() {
     });
 
     userStore.addLog(`战斗胜利！获得 ${totalExp} 经验和 ${knowledgeReward} 知识点！`, 'success');
-    userStore.addLog(`参战角色获得 ${characterExp}~${characterExp + 20 + (currentBattleMode.value === 'tower' ? currentTowerFloor.value * 5 : 0)} 角色经验！`, 'info');
+    userStore.addLog(`参战角色获得 ${characterExp}~${characterExp + 20 + (currentBattleMode.value === 'tower' ? clearedFloor * 5 : 0)} 角色经验！`, 'info');
     
   } else if (!playerAlive && enemyAlive) {
     battleResult.value = 'defeat';

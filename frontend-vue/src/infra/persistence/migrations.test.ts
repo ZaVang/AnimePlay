@@ -252,6 +252,21 @@ describe('v14 装备域迁移', () => {
     expect(out.equipment.equipped[1]).toEqual({ weapon: null, armor: null, supporter: null });
   });
 
+  it('重复 uid 取首条解释：同 uid 双 defId → 背包去重留首条，定槽与算 bonus 同源（堵错位绕过）', () => {
+    const out = migrate({
+      version: 14,
+      equipment: {
+        // 同 uid 两条：首条武器、次条防具
+        inventory: [{ uid: 'X', defId: 'wpn_ur_longinus' }, { uid: 'X', defId: 'arm_r_uniform' }],
+        equipped: { 1: { weapon: null, armor: 'X', supporter: null } },
+      },
+    } as unknown);
+    // 背包去重留首条（武器）
+    expect(out.equipment.inventory).toEqual([{ uid: 'X', defId: 'wpn_ur_longinus' }]);
+    // 'X' 实为武器（首条）→ 放进 armor 槽按首条 def.slot 校验被拒，不再让校验按防具过、加成按武器生效
+    expect(out.equipment.equipped[1].armor).toBeNull();
+  });
+
   it('清洗孤儿 uid：equipped 指向已不在背包的实例 → 该槽归 null', () => {
     const out = migrate({
       version: 14,
