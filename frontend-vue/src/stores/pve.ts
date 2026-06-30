@@ -6,7 +6,7 @@
 import { defineStore } from 'pinia';
 import { ref } from 'vue';
 import type { PresetSquad, TowerProgress } from '@/types/player';
-import { createDefaultPresetSquads, createDefaultTowerProgress } from '@/infra/persistence';
+import { createDefaultPresetSquads, createDefaultTowerProgress, canonicalizeSquadMembers } from '@/infra/persistence';
 import { useProfileStore } from './profile';
 
 export const usePveStore = defineStore('pve', () => {
@@ -74,7 +74,8 @@ export const usePveStore = defineStore('pve', () => {
   }
 
   function deserialize(data: { presetSquads: PresetSquad[]; towerProgress: TowerProgress }) {
-    presetSquads.value = data.presetSquads;
+    // 二次兜底：每队成员去重 + 4 槽（对齐运行期配队不变式，杜绝克隆放大），与家园/装备双层范式一致。
+    presetSquads.value = data.presetSquads.map(sq => ({ ...sq, members: canonicalizeSquadMembers(sq.members) }));
     towerProgress.value = data.towerProgress;
   }
 

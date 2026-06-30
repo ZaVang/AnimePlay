@@ -227,6 +227,25 @@ export function createDefaultPresetSquads(): PresetSquad[] {
   ];
 }
 
+/**
+ * 规整一支预设小队的 4 槽成员：恰 4 槽、按位去重（同 id 仅首次保留、其余置 null）、非有限数字置 null。
+ * 把配队 UI 的「同队不重复 + 4 槽」不变式收口到载入边界，杜绝脏档把单角色克隆满全队放大战力
+ * （与 canonicalizePlacedIds / sanitizeEquipped 同型）。已拥有校验留给战斗入口作纵深。
+ */
+export function canonicalizeSquadMembers(raw: unknown): (number | null)[] {
+  const out: (number | null)[] = [null, null, null, null];
+  if (!Array.isArray(raw)) return out;
+  const seen = new Set<number>();
+  for (let i = 0; i < 4; i++) {
+    const v = raw[i];
+    if (typeof v === 'number' && Number.isFinite(v) && !seen.has(v)) {
+      seen.add(v);
+      out[i] = v;
+    }
+  }
+  return out;
+}
+
 /** 默认皮肤 id 与 config/skins.ts 的 DEFAULT_SKIN_ID 一致；未知 id 由 theme store 回落，故这里不依赖 config。 */
 export function createDefaultAppearance(): AppearanceSave {
   return { skinId: 'warm' };

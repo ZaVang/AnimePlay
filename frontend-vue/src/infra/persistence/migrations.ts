@@ -22,9 +22,11 @@ import {
   type SerializedPlayerState,
 } from './schema';
 import type { CharacterNurtureData } from '@/types/nurture';
+import type { PresetSquad } from '@/types/player';
 import { createPityState } from '@/engine/gacha/draw';
 import { canonicalizePlacedIds } from '@/config/homestead';
 import { sanitizeEquipped } from '@/config/equipment';
+import { canonicalizeSquadMembers } from './schema';
 
 /* eslint-disable @typescript-eslint/no-explicit-any -- 迁移层的输入天然是未知形态 JSON */
 
@@ -203,6 +205,25 @@ function migrateEquipment(raw: any): EquipmentSave {
   return { inventory, equipped };
 }
 
+/**
+ * v1→v2：预设小队。每队成员走 canonicalizeSquadMembers（4 槽 + 同队去重），保留 id/name/lastUsed。
+ * 把配队 UI 的不变式收口到载入边界，杜绝脏档把单角色克隆满全队放大战力。
+ */
+function migratePresetSquads(raw: any): PresetSquad[] {
+  const defaults = createDefaultPresetSquads();
+  if (!Array.isArray(raw) || raw.length === 0) return defaults;
+  return raw.map((sq: any, i: number): PresetSquad => {
+    const fb = defaults[i] ?? defaults[0];
+    const out: PresetSquad = {
+      id: typeof sq?.id === 'number' ? sq.id : fb.id,
+      name: typeof sq?.name === 'string' ? sq.name : fb.name,
+      members: canonicalizeSquadMembers(sq?.members),
+    };
+    if (typeof sq?.lastUsed === 'string') out.lastUsed = sq.lastUsed;
+    return out;
+  });
+}
+
 /** 任意原始存档 → 当前版本 payload。历史版本之外的形态按"尽力恢复 + 默认兜底"处理。 */
 export function migrate(raw: unknown): SavePayload {
   const payload = (raw ?? {}) as any;
@@ -223,9 +244,7 @@ export function migrate(raw: unknown): SavePayload {
     // v13 → v14：养成数据瘦身（丢旧训练字段、保留两轴、补 statPoints/里程碑缺省）
     characterNurtureData: migrateNurtureData(payload.characterNurtureData),
     // ★ v1 → v2：此前根本不在存档里的两块，缺失即默认
-    presetSquads: Array.isArray(payload.presetSquads) && payload.presetSquads.length > 0
-      ? payload.presetSquads
-      : createDefaultPresetSquads(),
+    presetSquads: migratePresetSquads(payload.presetSquads),
     towerProgress: migrateTowerProgress(payload.towerProgress),
     // v2 → v3：商店限购计数 + 猜角色最高分
     shopPurchases: payload.shopPurchases && typeof payload.shopPurchases === 'object' ? payload.shopPurchases : {},

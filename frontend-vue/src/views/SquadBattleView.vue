@@ -217,7 +217,10 @@ function startTowerBattle(squadId: number) {
   // 移除每日挑战次数限制
 
   const members = userStore.getSquadMembers(squadId);
-  const characters = members.map((id: number | null) => id ? gameDataStore.getCharacterCardById(id) : null);
+  // 已拥有校验纵深：只放进真正拥有的角色（脏档塞未拥有 id 会被剔除；配队 UI 本就只列已拥有）
+  const characters = members.map((id: number | null) =>
+    id && userStore.characterCollection.has(id) ? gameDataStore.getCharacterCardById(id) : null,
+  );
   const validCharacters = characters.filter(Boolean) as CharacterCard[];
   
   if (validCharacters.length === 0) {
@@ -260,7 +263,10 @@ function startBattle(squadId: number) {
   }
 
   const members = userStore.getSquadMembers(squadId);
-  const characters = members.map((id: number | null) => id ? gameDataStore.getCharacterCardById(id) : null);
+  // 已拥有校验纵深：只放进真正拥有的角色（脏档塞未拥有 id 会被剔除；配队 UI 本就只列已拥有）
+  const characters = members.map((id: number | null) =>
+    id && userStore.characterCollection.has(id) ? gameDataStore.getCharacterCardById(id) : null,
+  );
   const validCharacters = characters.filter(Boolean) as CharacterCard[];
   
   if (validCharacters.length === 0) {
