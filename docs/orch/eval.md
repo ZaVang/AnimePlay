@@ -1,49 +1,43 @@
-# Evaluator — S14-B 第 3/3 轮（收尾轮，指派切片 = SB-T2）
+# Eval — S14-C 第 3/3 轮（最终轮，product-loop --tier1 on --mode all）
 
-## 决策：COMPLETE
+> 指派切片 = **SC-T3 + SC-T4 + SC-T6**。tier1 on → 决策仅信息性（引擎跑满 3 轮）；但仍须核对合同全 `[x]` 且真实现。
 
-指派切片 SB-T2（手动大招选目标 + 前缀冻结平滑推进）**真实现落地**（非空跑）；5 条验收命令全部亲自重跑通过；SB-T1..SB-T5 主清单全 `[x]` 且与实现一致；未破坏前几轮与 S14-A。
+## Checkbox 状态（SPRINT.md）
+- 主清单 SC-T1..SC-T6 全 `[x]`；第 3 轮追加子项 SC-T3/T4/T6 均 `[x]`。
+- 本轮三项经代码抽查确认**真落地**（非空跑）。S14-C 六任务齐备。
 
----
+## 验收命令重跑实际输出（Evaluator 亲自复跑）
+1. `npm run type-check` → **PASS**（vue-tsc --build，0 错误，无输出）。
+2. `npm run test` → **PASS**：`Test Files 60 passed (60) / Tests 714 passed (714)`（与自报一致）。
+3. `npm run build` → **PASS**：`✓ built in 8.36s`。
+4. `.venv/Scripts/python.exe backend/test_security.py` → **PASS**：`RESULT: PASS — all security checks passed`，`EXIT=0`（全断言 PASS）。
+5. `grep debug=True backend/server.py api/index.py` → **零命中**（两文件均 No matches）。
+- 附：`SAVE_VERSION=16`（schema.ts:40 确认，本 sprint 唯一 bump，v15→v16）。
+- 附：engine 纯净 grep（`Math.random|@/stores|from 'pinia'`）→ 仅注释/README/rng.ts 注入点命中，**零新增违规**。
 
-## 1. SPRINT 指派切片 checkbox 核对
-- 主清单 SB-T1..SB-T5 全部 `[x]`（SPRINT.md:26/29/32/35/38）。
-- 第 3 轮追加清单本轮-7/8/9 全部 `[x]`（SPRINT.md:147/151/155）。
-- 收尾轮硬指标满足：合同全部 `[x]` 且与实现一致（非「跑满轮次≠达成」）。
+## 自报 vs 实际对比
+- 完全一致：type-check/test(714)/build/security(EXIT=0)/debug 零命中；SAVE_VERSION=16。
+- 自报的三处战力同源、collection 扣卡、迁移三改、UI 均经抽查证实无夸大。
 
-## 2. 验收命令实测（Evaluator 亲自重跑）
-| 命令 | 实际输出 | 结论 |
-|---|---|---|
-| `npm run type-check` | vue-tsc --build，无输出，EXIT=0 | PASS |
-| `npm run test` | Test Files 58 passed / Tests **670 passed (670)** | PASS |
-| `npm run build` | ✓ built in 8.80s，EXIT=0 | PASS |
-| `python backend/test_security.py`（./.venv/Scripts/python.exe） | RESULT: PASS — all security checks passed，EXIT=0 | PASS |
-| `grep debug=True server.py / api/index.py` | No matches（两处均零命中） | PASS |
+## pitfalls 合规
+- engine 纯净：✅（突破/好感 engine 纯函数无 RNG、无 config import，pct 由调用方注入）。
+- 存档三处同改 + 往返测试：✅ schema(SAVE_VERSION=16) + migrations(白名单显式加 breakthrough/lastBondInteractionDate，**非 spread**，clamp+类型守卫) + 装配器义务落在 persistence.test.ts 往返断言。migrations.test.ts 有 `not.toHaveProperty` 旧字段家族守卫（防 spread 回潮）。
+- 一次 sprint 只升一次：✅ SC-T3/T4 共用 v16，未升 17。
+- 禁动态色类/text-white 压浅底：NurtureView/hub 突破 UI 走语义令牌（text-warning/bg-accent/15 等），未见违规。
+- 未破坏 S14-A/B 11 项 + C1 养成两轴：突破/好感永久加成折进既有 statPoints 走 generateBattleStats 纯加法，不动 MAX_CHARACTER_LEVEL/addCharacterExp 钳制点。
 
-## 3. 自报 vs 实际对比
-- Generator 自报 670/670、type-check 0 错、build 成功、security PASS、debug 零命中 —— **逐条一致**（自报 build 11.86s / 本机 8.80s，仅耗时差异，非结果差异）。
-- 自报文件结构变更（rng.ts StatefulRng / effects.ts canOverrideTarget+resolveSkillTargets / timedBattle.ts resumeTimedBattle+checkpoint / types.ts targetId / View+Battlefield 接线）—— 逐一 Read 核实属实。
+## 真实性抽查结论
+- **SC-T3（星级/突破 v16）真实现**：engine `breakthroughCost`(阶梯 star+1，满星 Infinity)/`breakthroughStatBonus`(base×star×4%，5★=+20%≤25%)/`canBreakthrough`/`resolveNurturedStatPoints` 纯函数齐备；collection `consumeCharacterCards` 保留本体 1 张(spare=count-1)、无 KP 副作用、禁直改 Map；store `breakthroughCharacter` 判上限/卡量→扣卡→breakthrough++。存档 v16 三改 + 全套测试（migrations 缺省/往返/脏档 clamp/not.toHaveProperty + persistence 往返）。战力 **3 处同源**（HomesteadHubView memberPower、SquadBattleView buildCharacterStats 玩家侧、NurtureView finalStats）经**单一 helper `resolveMemberBattleStats`** 收口，敌方侧仍 EMPTY_STAT_BONUS 不注入。UI 突破入口+进度+cost+满星置灰齐备。
+- **SC-T4（好感等级化，共用 v16）真实现**：BOND_MILESTONES 每档 statBonusPct，累计 0.02×3+0.03×3=**+15% ≤ 突破 20%**（守 C1）；`bondPermanentBonusPct` 从已领里程碑集**纯派生**（不新增字段），经同一 helper 注入同 3 处战力 seam；`dailyBondInteraction` 跨天读 `lastBondInteractionDate` vs `todayKey()` 正确重置（测试锁）；`bondOverflowExchange` 仅过 bond_6/4000 后整份兑 KP、余数保留、走 profile.earn。UI 每日互动/溢出兑换/里程碑 % 齐备。
+- **SC-T6（NurtureView 拆无壳，纯 UI）真实现**：NurtureView 去 min-h-screen/页级 h1/独立未登录空态（仅留紧凑无角色兜底）；hub characters 面板**单一标题（角色面板）+ 单一空态**（登录/无角色由 hub 壳统一 gate）内嵌无壳 NurtureView；SC-T3/T4 UI 随壳平移进无壳组件。`/nurture`、`/squad-battle` 重定向 router 原样保留（→ ?tab=characters / ?tab=explore）。
+- 前轮切片 SC-T1（resolveRole/EXPLICIT_ARCHETYPE）/SC-T5（thresholds.ts assessSquadReadiness 用于两视图）仍在位，S14-C 六任务完整。
 
-## 4. pitfalls 合规
-- engine 纯净：`grep -rn "Math.random|@/stores|from 'pinia'" src/engine/` 唯一 Math.random 命中 = rng.ts:118 已授权 `defaultRng`（eslint-disable），其余全是注释/文档；resumeTimedBattle RNG 走注入 StatefulSeededRng，零违规。
-- 零存档触点：SAVE_VERSION 仍 15；`git diff --stat HEAD -- infra/persistence/` 空 —— schema/migrations/装配器均未动（targetId/orders 为战斗内瞬态）。
-- 未扩 `TimedBattleWinner`（坑 C-1 规避，SB-T1 用 BattleEndReason 扩值区分三态）。
-- 禁动态色类 / text-white 压浅底：SB-T2 UI（选目标提示条 + 高亮环）无新增违规（build 通过、复用语义令牌范式）。
-
-## 5. 真实性抽查（Read/Grep，不改码）
-- **前缀冻结平滑推进（本轮-7，拍板 1/2）真落地**：`resumeTimedBattle` = ①跑基线采 checkpoint（atMs+RNG快照+单位深拷贝+前缀事件长度+orderIndex）②取 atMs≤resumeFromMs 最后 checkpoint 作分叉、slice 复用冻结前缀 ③restore RNG 状态 + 恢复单位 + 命令游标只重算后缀。`StatefulRng.snapshot/restore`（mulberry32 单 uint32 累加器）真实现。**红线守住**：非方案 B「整场重算+截后缀」伪平滑——测试 `prefix freeze` 断言前缀逐条相同 + 时间戳单调不倒流 + 后缀确因新命令改变（proves 非伪平滑）。
-- **选目标（本轮-8，拍板 3/5）真落地**：`canOverrideTarget` = 单体敌方 selector 白名单（frontEnemy/lowestHpEnemy/highestAtkEnemy/backEnemy）；`resolveSkillTargets` 单体覆盖命中存活敌方、AOE/self/己方忽略、死目标回退默认 selector。测试覆盖：单体命中所选(非默认front) / AOE 忽略仍全体 / 死目标回退不空放且扣能量 / 超时 pending order(atMs>maxTimeMs)不改裁决(elapsedMs=90000, timeoutDraw, 无 ultimate action)。
-- **UI 同口径（防 P1-4 反向 affordance）真落地**：View `ultimateAllowsTargeting` 复用 engine `canOverrideTarget`；SquadBattlefield 有 targetingCasterId/Name props + selectTarget/cancelTargeting emits + 提示条 + 敌方可点选高亮环；单体才进选目标态、AOE 点一下即放 —— UI 亮起条件 == engine 覆盖生效条件（同一函数）。
-- **无硬编码时限**：View import `DEFAULT_MAX_TIME_MS` 传 :max-time-ms 与 resume/regenerate maxTimeMs 同源。
-- **手动路径已切换**：View 两 handler + toggle 走 resumeBattleSimulation（前缀冻结），regenerate 仅用于从 0 初始模拟。
-- **前几轮护栏未破**：SB-T1 三态裁决（timeoutWin/Loss/Draw）、SB-T3 base crit 0.05、SB-T4 站位单体减伤 front×1、SB-T5 累加设上限 断言全在 670 内通过；auto/manual ultimate 护栏(:262)在。
-
-## 6. 失败原因
+## 失败原因
 无。
 
-## 7. 新坑待追加
-- [SB-T2 resume 两遍模拟成本] resumeTimedBattle 先跑基线采 checkpoint 再续跑 ≈1.x 场模拟；当前 5v5/90s（≤5000 事件）无感，未来扩规模可把 checkpoint 并入首次 simulate 缓存（backlog，非本轮阻断）。
-- [UI 选目标仅单体敌方] 与 engine canOverrideTarget 同口径（有意）；未来加「单体己方增益选目标」须两处同改 SINGLE_ENEMY_SELECTORS + UI 亮起（防 P1-4）。
+## 新坑待追加
+- [战力单一口径] 突破/好感永久加成折成 statPoints 增量走既有 `generateBattleStats`（不加第 4 参），SC-T5 门槛口径自动含突破收益、SC-T4 顺同一函数——避免口径碎裂。全站玩家侧 generateBattleStats 应统一改调 `resolveMemberBattleStats`（utils/battleStats.ts），敌方侧仍直调。
+- [SC-T6 拆壳连带死代码] hub 拆壳须连带删原 summary 镜像 computed + 清死 import（tsconfig 无 noUnusedLocals，type-check 不报）。已连根删。
 
-## 8. S14-B 收尾结论
-SB-T1..SB-T5 五任务全部真实现且与实现一致，5 条验收命令实测全绿，engine 纯净、零存档、未破坏 S14-A 已成 6 项。**S14-B 整体 COMPLETE。**
+## 决策
+**COMPLETE**（tier1 on 已跑满 3 轮；本最终轮指派 SC-T3+SC-T4+SC-T6 三项均真实现，S14-C SC-T1..T6 全 `[x]` 且与实现一致，5 条验收命令亲自复跑全绿）。

@@ -1,123 +1,163 @@
-# AnimePlay 进化审计报告 — S14-B 第 3/3 轮（切片 = SB-T2 手动大招选目标 + 平滑推进）
+# 进化审计报告 — S14-C 角色差异化与养成长线（第 2 轮 / product-loop --tier1 on --mode all）
 
-> Reviewer 模式：evolution（进化策略，兼竞品研究）。范围：product-loop S14-B 第 3 轮，指派切片 **SB-T2**（P2-5）。
-> 本轮双职责：① 复审已落地的 SB-T1/T3/T4/T5（有无回归/新体验坑）；② 聚焦 SB-T2 给 refine（做多深才够、怎样防退化、验收卡什么）。
-> 已读：SPRINT.md（S14-B 全清单 + 第 3 轮 SB-T2 排期 L45-46）、homestead-hub-audit-report.md（P2-5 证据源 L143-146）、第 1/2 轮 eval.md·negotiation.md·scout.md·plan.md·gen_status.md、research-audit-report.md（第 3 轮 SB-T2 深研）、pitfalls.md（L83 三 tab 短路 / L84 别把 Sprint 内任务误判新范围）。
-> 基线实测：`npm run test` = **663 passed (58 files)** 全绿（含 SB-T1/T3/T4/T5 特征测试），working tree 已含四项落地改动。
-> 单机向定位：对标 PCR/蔚蓝档案/明日方舟战斗手感取「时机博弈 + 可复现」精神，**不追付费竞技/微操**。
+> 视角：Product Evolution Reviewer（进化策略师）。本轮 = S14-C 第 2/3 轮。
+> 本轮指派切片（按 SPRINT.md 排期建议第 2 轮）：**SC-T3（养成长线：星级/突破，消化重复角色卡，SAVE_VERSION→16）**——本 Sprint 唯一的存档重任务，单独一轮做透「schema+migrations+装配器三改 + 往返测试」。
+> 定位守则：单机向二次元收集网页游戏，对标 PCR / 蔚蓝档案仅为照见缺口，**补差异化与循环是底线，追付费深度与随机刷取则不做**。
+> 方法：读 SC-T3 全部相关源码（types/nurture、config/nurture、engine/nurture/rules、stores/collection、combat.generateBattleStats、persistence schema/migrations、SquadBattleView buildCharacterStats）+ 竞品研究（PCR Ascension / 蔚蓝档案 Potential）+ 复审第 1 轮 SC-T1/T2/T5 落地改动。收敛到 SC-T3 + 回归复审。
 
 ---
 
 ## Executive Summary
 
-**产品进化成熟度：6.0 / 10**（战斗子系统维度；较 S14-A 审计时的 3/10「战斗方法」显著抬升）。
+**进化成熟度评分：6.3 / 10（早期产品，脊柱已立，长线待接）。**
 
-当前阶段 = **从「能跑的战斗 demo」迈入「有手感的早期战斗产品」的临门一脚**。S14-B 前四项（第 1 轮 SB-T3 暴击活起来 + SB-T5 buff 按来源累加、第 2 轮 SB-T1 超时三态裁决 + 倒计时 UI + SB-T4 站位单体减伤）已把审计报告 P2-1/2/3/4/6 的五处「死机制/粗暴裁决」逐一接通，且全走 engine 纯层 + 特征测试护栏，零存档触点、663 测试全绿。**四镜头判断：核心完整性已补到「战斗循环闭环、裁决合理、站位/暴击/协同皆真生效」；最大的剩余进化机会集中在「差异化」维度的最后一块拼图——SB-T2 让「手动大招」从『只能改时机』升级为『能选目标 + 演出不跳变』，把玩家从『看胶片的观众』变成『能在关键帧改写结局的指挥官』。**
+第 1 轮（SC-T1/T2/T5）已把「定位单一真相源 + HR 有名 + 塔软门槛」三条脊柱与门槛立正（Evaluator 亲跑 5 命令全绿、687 测试通过、零存档改动、SAVE_VERSION 仍=15，见 `eval.md`）。**养成循环现在有了「对爬塔产生因果」的门槛（SC-T5），但循环本身在「达到上限之后」仍然断裂**：Lv.100 到顶后没有更高目标，重复抽到的同一角色卡（`collection.getCharacterCardCount`）除计数外零用途，好感领完即废。这正是 SC-T3 要补的收集向命脉——**「重复不浪费」**。
 
-SB-T2 是 S14-B 收官项，也是**整个「胶片架构」第一次被真正撞墙**：手动大招插一刀会让「重算出的过去 ≠ 已放给玩家看的过去」，这不是回放对齐 bug，而是「一次性预演算 + 共享单 RNG 流」的结构性冲突。本轮最关键判断——**不要为了『强无跳变』在收官轮引入续算引擎/RNG 子流（高回归面、易超期空跑，重蹈 S14-A SA-T6 覆辙）；采纳研究报告『替代 A 严谨版』的最小可用形态：`ManualUltimateOrder` 加 `targetId`（可扩展 union）+ 单体 selector 才亮选目标 UI + engine 只对单体覆盖 + 补齐所有静默失败事件，并在验收/注释明写『弱无跳变，强无跳变（子流）标 backlog』——绝不让 UI 暗示『完全平滑』而代码做不到（防描述≠行为，CLAUDE.md 红线）。**
+本轮 SC-T3 是本 Sprint 唯一触存档的重任务，四镜头核心判断：
+
+- **核心完整性**：养成到顶=没事做的断裂，SC-T3 是主修复面。地基已就绪——`generateBattleStats` 是纯加法五维汇聚点（base+statPoints+equipBonus），突破永久小加成天然可作为第四个加数注入，engine 无需重构；`collection.dismantleCard` 已有「count>1 才可消费、保留 ≥1 张」的成熟防呆范式可直接复用。
+- **竞争差距**：PCR「重复→记忆碎片→星级突破（%属性 + 5★/6★升技能，最高星门槛=角色需先满级/戴专武）」、蔚蓝档案「重复→elephs→星级 + 独立 Potential 系统（Lv.0-25 微幅 HP/ATK/治疗，门槛=5★+Lv90）」是同类标配。**两家共同点：突破门槛后置于等级上限、永久加成克制有封顶**——为 SC-T3 的数值克制与门槛设计提供强背书。
+- **功能深度**：SC-T3 是把养成从「两薄轴（等级+好感）」加到「三轴」的第一条**有决策的长线**——决策点在「有限的重复卡该突破谁」。做浅了（只加数值）是纯膨胀；做对了（突破抬升等级上限 + 解锁短期目标）才是长线。
+- **差异化**：SC-T3 的「零操作摩擦地消化重复卡」直接命中收集游戏最大挫败源（歪了/重复无用），是留存与口碑双赢点。项目独有的 Bangumi 数据可让突破里程碑解锁「角色档案/名台词」而非纯数值（backlog，喂后续）。
+
+**本轮切片最关键一条建议**：**SC-T3 的突破必须「消化重复卡（碎片）→ 抬升等级上限 + 给克制的永久小加成」三件一体，且加成必须真进战力（经 `generateBattleStats` 纯加法注入，与 statPoints/equipBonus 同源同口径）**——只加「更高等级上限」而不给即时永久加成，玩家在触到旧上限前无动机突破（回报太远）；只给永久加成而不抬升等级上限，突破就退化成「一次性买断的属性包」失去长线感。两家竞品都是「星级同时管住上限 + 给%属性」，本产品应对齐这条「上限与加成绑定」的复合结构，才让突破成为真正的长线闸门而非又一个一次性目录。
 
 ---
 
 ## Phase 1: 核心完整性
 
-### 当前战斗核心循环（S14-B 四项落地后）
-组队 → 进战（`SquadBattleView` 消费 `simulateTimedBattle`）→ 半自动演出（180ms/条回放）→ **可切自动/手动大招 + 手动开大**（`handleManualUltimate`）→ 90s 内 KO 或超时裁决 → 结算发奖 → 推进楼层。**循环已闭环**：不再有「磨血占优却判负」（SB-T1 三态裁决）、「站位纯装饰」（SB-T4 后排单体减伤 front/middle/back = 1/0.95/0.85）、「暴击死代码」（SB-T3 base critRate 0.05 + critRateUp 加成轴）、「双辅助被压平」（SB-T5 按来源累加设上限）。
+### 当前核心循环分析（SC-T3 视角）
+养成循环现状（第 1 轮后）：抽卡 → 收集 → 升级（确定加点，SA-T3）→ 好感里程碑（一次性 KP）→ 编队 → 爬塔（**现在有 SC-T5 软战力门槛，养成第一次对爬塔产生因果**）。**闭环仍在「达到上限」处断裂**：
+- 等级到 Lv.100（`rules.ts:10 MAX_CHARACTER_LEVEL`）后无更高目标；
+- 重复抽到的同一角色卡（`collection.ts:21 getCharacterCardCount`）除计数外无任何用途（P2-10）——这是 SC-T3 要接的出口；
+- 好感到 4000 后无用（P2-11，SC-T4 第 3 轮补）。
 
-### SB-T2 缺失环节（本轮补的核心完整性洞）
-现状 `handleManualUltimate`（View L490-498）已能手动开大，但存在三处「浅尝辄止」缺口：
-1. **改不了目标**：`ManualUltimateOrder = { atMs, unitId }`（types L174-177）无 `targetId`；大招目标恒由 skill 的 `target` selector 写死（如 `frontEnemy`/`lowestHpEnemy`）。玩家开大 = 只能选时机，选不了「打谁」——手动大招的杠杆只兑现了一半。
-2. **每次开大整场重算致回放跳变**：`handleManualUltimate` L496 调 `regenerateBattleSimulation(battleElapsedMs)` 从 seed 全量重跑，游标复位。因共享单 RNG 流，注入点之后**全部** RNG 消费序改变 → 玩家「已看过的过去」被换成「重算出的另一套过去」，观感 = 战局突然换一套走法。
-3. **静默吞命令（现存缺陷）**：`processManualUltimates`（timedBattle L287-310）对「注入点 ≥ maxTimeMs（超窗）」无任何 `manualUltimateFailed` 事件 → 临界超时开大命令被悄悄吞掉；「选中目标在生效前已死」也需回落 + 提示，绝不放空。
+**SC-T3 是把这个断裂补上的主修复面**：它给「达到上限」之后一条继续变强的路，同时把「重复角色卡」这块死资产转成突破燃料。做对之后，收集游戏的核心动机链（抽到 → 抽重了也不浪费 → 突破变强）才第一次闭合。
 
-### 边界/空状态覆盖（SB-T2 必须显形，别做黑箱）
-- 目标已死 → 回落 skill 原 selector（研究报告 Phase 3-2）+ 发事件让 UI 提示。
-- AOE/治疗大招 → **UI 层就不亮「选目标」态**（单体 selector 才亮），engine 侧 `order.targetId` 只对单体覆盖、AOE 忽略——否则「点了 A 却全体命中」= P1-4 式 affordance 欺骗反向重演（研究报告 Phase 4-2 红线）。
+### 地基就绪度盘点（SC-T3 落点已勘明，降低实现风险）
+- **永久加成注入点**：`combat.ts:144 generateBattleStats(base, statPoints, equipBonus)` 是纯加法五维汇聚点（`hp = base + statPoints + equipBonus`）。突破永久小加成是天然的**第四个加数**——engine 只需把签名扩成收一个额外 `StatBonus`（或让调用方在 store 侧把突破 bonus 并进 statPoints/equipBonus 之一）。`SquadBattleView.vue:265 buildCharacterStats` 是唯一玩家侧调用点，改一处即全链路（战斗 + `calculateBattlePower` 战力 + SC-T5 门槛）同步生效。**口径自洽**：突破加成走同一 `generateBattleStats`→`calculateBattlePower`，SC-T5 的战力门槛会自动把突破算进我方战力，形成「突破→战力涨→过更高层」的正反馈，无需额外接线。
+- **重复卡消费范式**：`collection.ts:43 dismantleCard` 已有成熟的「`count <= 1` 拒绝、`count--` 消费」逻辑；`dismantleAllDuplicates:78 count > 1` 判定。**SC-T3 直接复用这条「保留 ≥1 张」防呆**——突破消耗 `getCharacterCardCount(id) - 1` 的可用碎片，绝不吃掉最后一张出战卡。这是 SPRINT 明示的防呆口径，代码已有先例，零新范式。
+- **存档三改落点已勘明**：`schema.ts:16 CharacterNurtureData`（加突破字段）+ `schema.ts:197 characterNurtureData: [number, CharacterNurtureData][]`（序列化形态自动带上）+ `migrations.ts:255 migrateNurtureData`（v15→v16 补突破缺省）+ `rules.ts:166 createDefaultNurtureData`（新档默认）。SAVE_VERSION 现=15（`schema.ts:37`），本轮升 16（本 Sprint 唯一一次 bump，SC-T4 若触存档共用此次）。
 
-### 复审：SB-T1/T3/T4/T5 已落地项无回归/新体验坑
-- **SB-T1（超时三态裁决 + 倒计时 UI）**：`resolveTimeout`（timedBattle L117-134）先比存活数、相等再比 `sideHpRatio`、差<ε 真平局；winner 未扩、三态经 `BattleEndReason` 显形；`DEFAULT_MAX_TIME_MS` 经 engine 导出、UI/regenerate 同源；`SquadBattlefield` 倒计时（剩余秒 + 进度条 + ≤10s 转 `bg-danger`）语义令牌合规、无裸计时器。**无回归。**
-- **SB-T4（站位单体减伤）**：`applyPositionDamageTaken`（effects L388）单体乘系数、AOE 原样、front=1 短路守既有断言；复用已解析 `resolvedSelector` 判 AOE，未碰 targeting/未改 formulas 签名。**无回归。**
-- **SB-T3/SB-T5**：base critRate 0.05 注入运行时单位（DEFAULT 保持 0）；buff 按来源累加设上限。第 1/2 轮 eval 已核实，本轮 663 测试全绿复证。**无回归。**
+### 缺失的关键环节 / 边界情况覆盖（SC-T3 必须处理）
+- **等级上限与突破的耦合**：`MAX_CHARACTER_LEVEL=100` 是硬常量。SC-T3 若「突破抬升上限」，`getLevelFromExp`（`rules.ts:31`，`while getRequiredExpForLevel(level+1) <= totalExp`）不设上限地由经验反推等级——**必须让上限判定读取「基础上限 + 突破增量」而非硬 100**，否则突破抬了上限但等级仍被别处钳到 100。这是 SC-T3 最易漏的接线点，验收必须卡「突破后可练过 Lv.100」。
+- **突破门槛（前置条件）**：竞品普遍把突破门槛后置于「当前上限满级」（PCR 6★需先满级戴专武，蔚蓝 Potential 需 5★+Lv90）。SC-T3 应对齐：**每一档突破要求角色达到当前等级上限**（防止 Lv.1 生角色直接突破空转），把突破钉在「练满了才值得投碎片」的正确节奏上。
+- **碎片不足 / 已满突破的空态**：突破入口在碎片不足时应显示「还差 N 张（当前可用 X / 需 Y）」而非灰按钮无解释（对齐 SC-T5 已确立的「显示差多少形成短期目标」范式）；突破到顶（最高档）后入口显示「已突破至最高」不再可点。
+- **往返保真边界**：旧档（v15，无突破字段）迁移必须补默认「0 星 / 0 突破」且不炸；突破进度字段类型损坏时按 0 兜底（仿 `migrateNurtureData` 已有的逐字段 `typeof` 兜底范式）。
 
 ---
 
 ## Phase 2: 竞争差距
 
-| 产品 | 手动大招/操作杠杆 | 选目标 | 演出架构 | 对 SB-T2 的启示 |
-|---|---|---|---|---|
-| **PCR（公主连结）** | UB 时机是唯一操作杠杆，半自动 | **不给选目标**（技能写死） | 实时引擎 | SB-T2 的「选目标」实际比 PCR 还激进——保留「时机为主」重心，选目标定位为锦上添花（限单体、默认自动、首战引导手动）。别为「比 PCR 多一点」引入 PCR 刻意规避的微操复杂度。 |
-| **蔚蓝档案** | EX 技能（大招）手动点放 + 部分技能手动选放置/目标 | 部分技能可选落点 | 实时引擎 | 「大招手动 + 有限选目标」正是玩家已被教育的桌上赌注；SB-T2 单体选目标与之同频，方向正确。 |
-| **明日方舟** | 干员部署/技能开时机、朝向 | 放置位即战术 | 实时引擎 | 「站位 + 时机」双杠杆 = 战术深度来源；SB-T4（站位）+ SB-T2（时机+目标）合起来才凑齐这条轴。 |
+### 同类产品「重复角色出口 + 突破长线」对比
 
-**桌上赌注差距**：三家竞品都是**实时引擎**，天然无「预演算跳变」问题——它们没这困境是因为**根本没有胶片隐喻**。AnimePlay 的「半自动预演算 + 回放」是单机向的主动取舍（低算力、可复现、易分享），不必仓促推翻。**本产品缺的不是「实时引擎」，而是「手动大招选目标」这一被蔚蓝档案/方舟教育过的标配**——SB-T2 正是补这一格。
+| 维度 | PCR（公主连结） | 蔚蓝档案 | AnimePlay 现状 → SC-T3 目标 |
+|---|---|---|---|
+| 重复角色出口 | 重复抽 → 记忆碎片 → 星级突破 | 重复 → elephs（碎片）→ 星级 | **无出口**（重复卡纯计数，P2-10）→ SC-T3：重复卡当碎片，保留 ≥1 张 |
+| 突破给什么 | %属性（HP/ATK/DEF 百分比缩放）+ 5★升 EX 技 / 6★升 UB | 星级给基础属性 + 独立 Potential 给微幅 HP/ATK/治疗 | 无 → SC-T3：克制的永久小加成（真进战力，有封顶）+ 抬等级上限 |
+| 突破门槛 | 最高星需先满级 + 戴专武 | Potential 需 5★ + Lv.90 | 无 → SC-T3：要求达当前等级上限方可突破 |
+| 操作摩擦 | 碎片够即一键升星 | eleph 够即升 | — → SC-T3：零操作摩擦，一键突破，防呆保留出战卡 |
 
-**竞品体验中本产品可差异化的机会**：预演算架构一旦把大招建模为命令流（`seed + units + commands`），一场战斗 = 一串短命令 → **战斗分享码/翻盘复现**是三家实时竞品几乎零边际成本做不到、而本产品天然可得的差异化出口（见 Phase 4）。
+### 本产品缺少的标配功能（SC-T3 相关）
+- **「重复不浪费」是收集游戏的标配底线**：两家竞品都把重复角色转成突破燃料，PCR 玩家反复称赞「歪了也不心疼」。本产品当前重复卡是纯死资产（`addItem` 只 count++、`dismantleCard` 只能换 KP 而非喂养该角色成长）——SC-T3 补的正是这块。
+- **突破=后置于满级的长线闸门，而非又一个买断目录**：竞品的突破门槛都后置于等级上限（满级/Lv.90），这保证突破是「练透一个角色的终局奖励」而非早期就能空转的浅目标。本产品若不设「达上限方可突破」门槛，会重蹈 P2-11「好感一次性买断」的覆辙。
+- **突破加成克制有封顶**：蔚蓝 Potential 明确「minor bonuses」、最高 Lv.25 封顶。这为 SC-T3 数值克制提供强背书——**永久加成要小且分档递增有顶**，避免突破变成数值失控的膨胀源（守 pitfalls 的养成克制精神）。
+
+### 竞品用户反馈中的机会点（SC-T3 落地要点）
+- **零操作摩擦是 PCR 突破被称赞的关键**：碎片够即一键升星，无繁琐确认。**SC-T3 应保证一键突破**（复用 `getCharacterCardCount` 重复张数自动结算），二次确认仅在「消耗较多碎片」时给，避免每次点两下。
+- **突破进度要显形**：蔚蓝/PCR 都清晰显示「当前星级 / 下一档需多少碎片 / 差多少」。SC-T3 的 NurtureView 突破入口应显示「当前突破档 → 下一档进度条 + 需碎片 X / 当前可用 Y」，对齐 SC-T5 已确立的「显示差多少」范式，让突破成为短期目标。
 
 ---
 
 ## Phase 3: 功能深度
 
-### 现有手动大招的深度评估：浅（只改时机）→ SB-T2 补到中（时机 + 目标）
-- **当前深度**：`autoUltimates` 开关 + 点大招按钮（SquadUnitBar L107 `@cast`）→ 只塞 `{unitId, atMs}`。玩家决策空间 = 「何时开」，无「打谁」。
-- **SB-T2 后深度**：单体大招可选目标（收割残血/点杀治疗/破盾指定），把「时机博弈」扩成「时机 + 目标博弈」，与 SB-T4 站位机制协同（后排点杀 vs 前排顶伤成为可操作的战术选择）。
+### 现有功能的深度评估（SC-T3 视角）
+- **养成从「两薄轴」到「三轴有决策长线」**：当前养成=等级（确定加点，无决策——SA-T3 有意去随机）+好感（一次性里程碑，无决策）。**SC-T3 是第一条引入真决策的养成轴**——决策点不在「怎么突破」（应零摩擦）而在「有限的重复卡，优先突破谁」（碎片是稀缺资源，玩家要选主力）。这是把养成从「纯灌资源」升级为「资源分配博弈」的关键一步，正对根因 B「养成无玩家决策」。
+- **突破的深度边界（防做浅/做过）**：
+  - **做浅的风险**：只给「更高等级上限」而无即时永久加成 → 回报太远（要先把角色从旧上限练到新上限才见收益），玩家无动机突破。**必须突破即给克制的永久小加成**，让每次突破有即时正反馈。
+  - **做过的风险**：给复杂的「星级 × 每星多档 × 每档随机属性」→ 违背单机向克制、膨胀失控。**应做成确定性分档**（第 N 突破 = 固定 +X% base 或固定小额五维），无随机 roll（对齐单机向定位，避免把刷取误挂进来）。
 
-### 可扩展形状（低成本向前兼容，本轮顺手做）
-- **命令类型写成可扩展 discriminated union**：落 `targetId` 时把 `ManualUltimateOrder` 写成 `{ kind:'ultimate', atMs, unitId, targetId? }` 形状，为未来「换目标策略/手动技能/暂停」预留（研究报告 Prioritized 🔴 + Phase 4）。零额外成本，避免二次重构。
+### 可能的 power-user 路径（SC-T3 相关）
+- **突破投资规划**：显示「突破到下一档需 X 碎片 / 当前 Y / 每层敌方战力」让硬核玩家精确规划「先突破哪个角色能过 SC-T5 卡住的那层」——SC-T3 与 SC-T5 天然联动（突破涨战力 → SC-T5 门槛变绿），把两个任务串成「卡关 → 看差多少 → 突破补战力」的完整决策链。engine 侧给突破加成的确定值，UI 展示对战力的预估增量。
 
-### 集成/协作/自定义可能性（backlog，非本轮）
-- **per-unit 自动大招策略**（每单位「攒满即放/见血才放」）→ backlog（超 SB-T2）。
-- **PlayerCommand 泛化**（换目标/手动技能/暂停统一命令流）→ backlog。
-- **实时步进 / fixed-timestep 引擎**（渲染逻辑解耦，为真实时铺路）→ 远期 backlog。
+### 集成、协作、自定义的可能性（SC-T3 相关）
+- **突破进度是「可 CI 校验的存档字段」**：SC-T3 的存档往返测试（SPRINT 明示）就是防退化守卫——突破档位/碎片消耗的纯函数应可单测（给定当前档 + 可用碎片 → 返回可否突破 + 消耗量 + 新上限 + 新加成），engine 纯层注入而非依赖 store，守住架构铁律。
 
 ---
 
 ## Phase 4: 差异化与 Wow Factor
 
-### 「如果能 XXX 就太酷了」（≥3，不受本轮 Sprint 限制）
-1. **💡「命运预告」而非「无跳变」**：与其耗力让重算不跳变，不如**拥抱预演算**——开大瞬间用已算好的 events 直接渲染一条战术预告（大招命中 X、预计削 Y HP、战局走向缩略），把「胶片已定」从缺点变成卖点（玩家看到自己这一下如何改写结局）。**零续算/零子流成本**——只需 diff 新旧 events 高亮变化。对单机休闲定位可能比「工业级无跳变」更对味。（backlog，但强烈建议作为 SB-T2 跳变问题的**产品化解法候选**记入 FUTURE。）
-2. **💡 战斗分享码**：大招建模为命令流后，一场战斗 = `seed + units + commands` 短字符串 → 玩家一键复现翻盘战。收集向单机罕见的、几乎零边际成本的社交/炫耀出口，三家实时竞品做不到。（backlog）
-3. **💡 大招技能名横幅 + 伤害飘字**：手动开大时全屏技能名横幅 + 命中飘字，把「关键帧改写结局」的操作感演出出来（体验官报告 Nice-to-have）。（backlog，UI 打击感层）
+### 「如果能 XXX 就太酷了」（≥3 个功能提议，标 backlog）
+1. **💡 突破里程碑解锁「角色档案/名台词」而非纯数值（backlog，喂 SC-T3/SC-T4）**：项目坐拥 Bangumi 角色简介/番剧数据。突破到关键档（如满突破）时解锁角色 mini 档案或名台词卡——低成本、高情感回报、单机向友好，对标蔚蓝 MomoTalk 的口碑点。本轮 SC-T3 只做数值突破，此为后续增值口，留口即可（突破档位数据结构预留「解锁内容」字段的可能性，但本轮不实现）。
+2. **💡 SC-T3 ↔ SC-T4 互锁：突破抬升好感等级上限（backlog，喂第 3 轮）**：对标蔚蓝档案「星级突破抬升好感上限」。若第 3 轮 SC-T4 做好感等级化，让 SC-T3 的突破档同时抬升好感上限，两个孤立任务串成「突破 → 更高好感上限 → 更多永久加成」的复合长线。**本轮 SC-T3 不实现，但字段设计上让「突破档」保持可被 SC-T4 读取的清晰形态**（第 3 轮 Planner 决策）。
+3. **💡 突破消耗「跨角色碎片池 / 通用突破石」（backlog，远期）**：竞品有「用其它角色碎片/通用道具替代」的宽松路径（PCR 记忆碎片可换、蔚蓝 eligma 买 eleph）。本产品远期可加「通用突破石」让冷门角色也能突破，但**本轮严格走「自身重复卡」单一路径**（最内聚、零新存档域），跨角色池是超范围创新。
 
-### 口碑传播点
-- **战斗分享码**（上 #2）= 最强口碑点：翻盘战一键复现可直接发社群，天然裂变。
-- **命运预告**（上 #1）= 独有战术反馈，「我这一下大招如何改写结局」的确定性未来展示，是实时引擎给不了的预演算专属体验。
+### 口碑传播点分析（用户会因为什么推荐给朋友？）
+- **「重复卡不浪费」是留存与口碑双赢点**：玩家最痛恨「歪了/抽重复无用」，PCR 自动转碎片被反复称赞。SC-T3 做好 = 消除一个核心挫败源，是收集游戏留存的直接杠杆。
+- **突破+SC-T5 联动的「卡关有解」体验**：卡在某塔层时，SC-T5 告诉你「差多少战力」，SC-T3 给你「突破主力补战力」的明确解法——「卡住有事做、有目标」正是根因 C「卡关即断更」的反面，是玩家愿意回归的理由。
 
-### 值得删掉或简化的东西（≥1）
-- **`SquadBattleView.vue:126` 恒等三元噪声**：`currentPhase: currentPhase.value === 'towerMode' ? 'towerMode' : 'towerMode'` 永远返回 'towerMode'（scout 坑 C-5 已记）——死代码噪声。**建议简化为直接 'towerMode'**（本轮 SB-T2 若碰到 View saveState 顺手清；否则标 backlog，别为它单开范围）。
+### 值得删掉或简化的东西（≥1 个）
+- **警惕过度设计 SC-T3 的星级层数**：**不要做成「1★→6★ 六档 × 每档多级」的复杂矩阵**。单机向定位下，3-5 档突破、每档确定加成足矣。删繁就简：突破档位是**确定性小整数序列**（如 0→1→2→3），每档需碎片数递增、给固定小加成、抬固定上限增量。避免引入随机属性 roll、避免多维度交叉矩阵。
+- **不要为 SC-T3 新开独立存档域**：突破进度天然属于 `CharacterNurtureData`（per-character 养成数据），应作为该结构的新字段（如 `breakthroughLevel: number`），**复用既有 `characterNurtureData` 序列化/迁移管线**，而非新建平行的 `breakthroughData` 域。最内聚、迁移最省事、往返测试复用 `migrateNurtureData` 范式。
 
 ---
 
 ## Technical Health（附带）
 
-- **架构扩展性风险（SB-T2 正撞墙）**：「一次性预演算（`simulateTimedBattle` 跑到底黑箱）+ 共享单 RNG 流」是所有 SB-T2 难题的总根。research 报告论证：真正无跳变的最小充分条件 = 「注入点之前的战斗状态可精确重建为续算初值」，而这被「一次性预演算」挡住。**长期正解 = 把引擎升级为可从 `TimedBattleState` 快照续跑的 `simulateFrom(state, orders)`（原函数退化为其调用者以零破坏现有测试）+ splittable/按 unitId 派生 RNG 子流**——一次投资根治前缀跳变 + 铺路暂停/步进/分享码。**但这是架构级改动、回归面大，收官轮不做**（否则易超期空跑）。本轮走替代 A 最小可用 + 明确标债。
-- **性能瓶颈**：预演算一次算完、180ms 定速回放，无 N+1/大列表风险；`index.js` 287KB gzip 99KB，健康。SB-T2 加 `targetId` 不增算力。
-- **测试覆盖**：58 文件 663 测试，engine/squad 特征测试护栏密（SB-T1/T3/T4/T5 各有断言）。**SB-T2 必须补**：targetId 单体覆盖命中所选、AOE 忽略 targetId、目标已死回落、超窗/未就绪/被控三类 `manualUltimateFailed` 事件、「前缀相等」测试（若做前缀冻结）。**若未来做 `simulateFrom`，必立「续跑逐事件 == 跑到底」等价性护栏**，否则重构即引入不可见回归。
-- **安全/隐私**：SB-T2 纯前端战斗规则/UI，零后端/存档触点，无新增攻击面。
+- **架构扩展性风险（SC-T3）**：
+  - **engine 纯净**：突破的「可否突破 / 消耗碎片 / 新上限 / 新加成」逻辑必须落 `engine/nurture/rules.ts`（已是纯层，零 Vue/Pinia/IO/Math.random）的纯函数，store 只负责「读碎片数 → 调纯函数 → 写存档字段 + 扣 collection count」的薄编排。突破加成走 `generateBattleStats` 纯加法注入，不引入乘算失控。
+  - **存档三改协议**：SPRINT 明示 schema + migrations + 装配器三处同改 + 往返测试。落点已勘明（见 Phase 1）。SAVE_VERSION 15→16，本 Sprint 唯一一次 bump。**风险点：突破字段若同时改「等级上限判定」，务必让 `getLevelFromExp` / 加点结算读「base 上限 + 突破增量」的单一函数，避免上限常量散落多处不一致**（当前 `MAX_CHARACTER_LEVEL` 是硬常量，需收敛成「有效上限 = 基础 + 突破」的单一入口）。
+- **性能瓶颈**：突破加成是 per-character 静态存档值，O(1) 读取，无新瓶颈。`buildCharacterStats` 每次重建（无 memo）是既有现状，SC-T3 不加剧。
+- **测试与质量保障状态**：第 1 轮后 687 测试全绿（`eval.md`）。SC-T3 的测试卡点：
+  - **engine 纯函数测试**（`rules.test.ts` 或新 nurture 突破测试）：给定当前突破档 + 可用碎片 → 断言「可否突破 / 消耗量 / 新上限 / 新加成」确定正确；边界（碎片不足拒绝、已满突破拒绝、达上限方可突破的门槛判定）。
+  - **迁移往返测试**（`migrations.test.ts` 或 persistence 往返）：v15 旧档（无突破字段）迁移补默认 0 且不炸；突破字段类型损坏兜底 0；序列化→反序列化→再序列化保真（含突破进度）。**这是 SPRINT 的硬验收，必须有。**
+  - **不破坏 C1 养成两轴**：断言现有 statPoints/好感路径不受突破字段引入影响；`generateBattleStats` 若扩签名，现有 combat 测试（`combat.test.ts:100`）需同步更新且旧行为（突破=0 时）与原结果逐字节一致。
+- **数据隐私/安全**：SC-T3 零后端（存档走既有鉴权管线），无新增攻击面。**注意单机向存档可改**——突破碎片消耗是客户端逻辑，脏档可绕过，但与既有 collection count 同风险级别（P2-28 已定性单机向危害有限），本轮不引入新防线。
+
+### 回归复审（第 1 轮 SC-T1/T2/T5 落地改动）
+逐条 Read/Grep 核对第 1 轮成果，**未发现回归**，确认三项落地属实且干净：
+1. **[确认无回归] SC-T1**：`squadSkillKits.ts:125 EXPLICIT_ARCHETYPE`（10 UR 种子 + 已知误判纠偏）+ `:152 resolveArchetype` 单一入口（显式优先 → 正则回落）+ `:697 getArchetypeForCharacter` 对外单入口 + `:703 hasExplicitArchetype` CI 守卫钩子，与 eval 描述一致。注释 `:122` 明示 `EXPLICIT_ARCHETYPE[id] === SIGNATURE_KIT_OVERRIDES[id].role` 断言守卫已在。**提醒 SC-T3 Planner**：若突破加成要按角色定位倾斜（可选），应消费单一入口 `getArchetypeForCharacter`，勿再拼正则（对齐 eval.md 第 7 节提醒）。
+2. **[确认无回归] SC-T2**：`squadSkillKits.ts:622 HR_SKILL_NAME_OVERRIDES`（26 项，只改名）+ `:683 hasHrSkillNameOverride` + `:725` 名回落链，与 eval 一致。
+3. **[确认无回归] SC-T5**：`engine/squad/thresholds.ts` 纯函数（`recommendedPowerForFloor` + `assessSquadReadiness`，三档 0.9/0.7，floorPower≤0 视 ready，delta/系数/阈值参数注入），零 config import、零 RNG，与 eval 一致。**SC-T3 与 SC-T5 的口径联动是本轮红利**：突破加成经 `generateBattleStats`→`calculateBattlePower` 注入我方战力后，SC-T5 门槛会自动把突破算进去，无需改 thresholds.ts。
+4. **[风险·SC-T3 会碰] 存档 bump 唯一性**：`schema.ts:37 SAVE_VERSION=15` 本轮升 16。**验收必须卡：本 Sprint 只此一次 bump**——第 1 轮已确认零存档改动、v16 留给本轮，SC-T4（第 3 轮）若触存档共用此次 v16，不得再升 17。
 
 ---
 
 ## Prioritized Recommendations
 
-### 🔴 Critical（本轮 SB-T2 必须真实现，严禁降级为回归确认——S14-A SA-T6 教训 / pitfalls L84）
-- **[SB-T2] `ManualUltimateOrder` 加 `targetId`（写成可扩展 union）+ engine 单体大招 `executeEffect` 对单体 selector 优先用 `order.targetId` 命中存活单位、AOE/治疗忽略**。接入点：`effects.ts:367 resolvedSelector`（复用已解析表达式判单体/AOE，坑 C-3 同口径，别重复解析）。
-- **[SB-T2] 单体 selector 才亮「选目标」UI（SquadUnitBar/Battlefield 层判定），engine 覆盖规则与 UI 亮起条件同一口径**——防 P1-4 式「UI 承诺、代码不给」反向重演（研究报告红线 2）。
-- **[SB-T2] 补齐所有静默失败事件**：现存「超窗吞单」（`processManualUltimates` 未处理 `atMs ≥ maxTimeMs`）补 `manualUltimateFailed reason:'expired'`；「目标已死」回落原 selector + 发事件提示。所有「命令没生效」分支都要发事件，不留悄悄吞单（研究报告红线 3）。
+### 🔴 Critical（本轮必做的指派切片，缺失则养成长线不成立）
 
-### 🟡 Important（本轮采纳的最小可用路线 + 防退化验收）
-- **[SB-T2] 采纳「替代 A 严谨版」= 前缀事件冻结 + 后缀重算 + targetId 覆盖，达成『弱无跳变』**（已放画面不回退），**并在验收/注释明写「后缀仍重算、强无跳变待 splittable 子流」**——绝不让 UI/文案暗示「完全平滑」（研究报告红线 1，CLAUDE.md 描述≠行为红线）。若「完整 runtime 重建」成本过高，Planner 可收窄为「无跳变体验最小形态 + 选目标」并在计划说明（SPRINT L46 已授权收窄，但不得整项跳过）。
-- **[SB-T2] 回放插值补间（HP 条平滑滑动）**：与「无跳变」正交、不碰 engine 的「平滑」另一半，体感收益大风险低——是最划算的「平滑」子项，本轮可顺手（复用 SquadBattlefield 现有 `transition-[width]` 范式，别新建裸计时器）。
-- **[收尾] 确认 SB-T1..SB-T5 全 `[x]` 且与实现一致**：本轮是 S14-B 收官轮，Evaluator 须核对合同全绿而非只看末轮决策（pitfalls L84：tier1-on 跑满 ≠ 目标达成）。
+- **SC-T3｜星级/突破三件一体：消化重复卡 → 抬等级上限 → 克制永久小加成**：
+  - **消化重复卡**：突破消耗 `getCharacterCardCount(id) - 1` 的可用碎片，复用 `dismantleCard` 的「保留 ≥1 张」防呆（`collection.ts:48` 范式）。零操作摩擦，一键突破。
+  - **抬等级上限**：突破档抬升有效等级上限，`getLevelFromExp`/加点结算读「基础上限 + 突破增量」单一入口，避免 `MAX_CHARACTER_LEVEL` 硬常量散落。验收卡「突破后可练过 Lv.100」。
+  - **永久小加成真进战力**：突破给克制的确定性小加成，经 `generateBattleStats` 纯加法注入（第四个加数或并进 statPoints），与 SC-T5 门槛口径自洽。突破=0 时与现有战力逐字节一致。
+  - **门槛**：突破要求角色达当前等级上限（对齐 PCR/蔚蓝「满级方可突破」），防 Lv.1 空转。
+  - **存档三改 + 往返测试**：字段挂 `CharacterNurtureData`（如 `breakthroughLevel`），schema + `migrateNurtureData` + `createDefaultNurtureData` 三改，SAVE_VERSION 15→16（本 Sprint 唯一 bump）。engine 纯函数测试 + 迁移往返测试（SPRINT 硬验收）。
+  - **UI**：NurtureView 角色详情加突破入口 + 进度（当前档 → 下一档需碎片 X / 可用 Y + 差多少，对齐 SC-T5 显形范式）；碎片不足显示差额而非无解释灰按钮；到顶显示「已突破至最高」。
 
-### 🟢 Nice-to-have（体验优化，本轮可缓）
-- **[SB-T4 backlog] 站位语义 tooltip**（后排减伤% 标注）——机制已立（第 2 轮），说明层补齐让「摆后排更耐打」可解释（negotiation 已标本轮不做 / backlog）。
-- **[SB-T1 backlog] TIME UP 全屏横幅 / 顿帧**——超时裁决已立，横幅是额外演出层（第 2 轮 negotiation 已标 backlog）。
-- **[清理] `SquadBattleView.vue:126` 恒等三元死代码**简化为 'towerMode'（碰到 saveState 顺手，否则 backlog）。
+### 🟡 Important（显著提升完整度，但属第 3 轮 / 需守克制）
 
-### 💡 Feature Idea（差异化创新，入 backlog）
-- **「命运预告」**：拥抱预演算把开大后确定性未来渲染成战术预告，化胶片为卖点（零续算/零子流，是 SB-T2 跳变的产品化解法候选）。
-- **战斗分享码**：`seed+units+commands` 一键复现翻盘战，把架构投资变现为社交内容（差异化口碑点，三家实时竞品做不到）。
-- **架构投资 `simulateFrom` 可续跑引擎 + splittable RNG 子流**：达「强无跳变」+ 铺路暂停/步进/分享码的唯一一次性投资；收官轮不做，建议正式排入紧邻的战斗深度轮，别无限顺延成永久债。
-- **per-unit 自动大招策略 / PlayerCommand 泛化 / fixed-timestep 步进**：远期战斗深度演化，超 S14-B。
+- **SC-T4（第 3 轮）｜好感等级化给永久小加成 + 每日互动**：对标蔚蓝档案 Potential，永久加成小且封顶（守 C1「好感不接战力」克制），每日互动复用 daily 跨天判定。若触存档共用本轮 v16 bump，**不得再升 17**。
+- **SC-T6（第 3 轮）｜NurtureView 拆无壳可内嵌组件**：纯 UI 重构，消除 hub characters 面板双标题/双空态/长滚。SC-T3 本轮往 NurtureView 加突破入口时，**应把突破 UI 写成可被 SC-T6 内嵌的形态**（不依赖页级标题/独立空态），减少第 3 轮返工。
+
+### 🟢 Nice-to-have（power-user / 打磨，本轮可顺手）
+
+- SC-T3 深度：突破入口显示「突破到下一档对战力的预估增量」，与 SC-T5 联动形成「卡关 → 突破补战力过层」的短期目标链（power-user 规划）。
+- SC-T3 可维护性：突破档位/加成表做成集中可调的 config 常量（仿 `config/nurture.ts BOND_MILESTONES` 范式），便于调平，engine 纯函数消费注入的配置而非硬编码。
+
+### 💡 Feature Idea（差异化创新，不进本 Sprint，backlog）
+
+- **backlog｜突破里程碑解锁「角色档案/名台词」**（喂 SC-T3/SC-T4）：用 Bangumi 角色简介做情感回报，对标蔚蓝 MomoTalk 口碑点，单机向友好。本轮 SC-T3 只做数值突破。
+- **backlog｜SC-T3↔SC-T4 互锁**：突破档抬升好感等级上限（对标蔚蓝档案），把两个任务串成复合长线。第 3 轮 Planner 决策；本轮字段设计保持突破档可被 SC-T4 读取的清晰形态。
+- **backlog｜通用突破石 / 跨角色碎片池**：让冷门角色也能突破。远期，本轮严格走「自身重复卡」单一路径。
+- **backlog｜Bangumi 真实数据驱动定位回落**（承接 SC-T1）：正则回落层未来可用真实番剧类型/评分加权替代——竞品无此数据，独有差异化。
 
 ---
 
-**一句话收尾**：S14-B 前四项已把战斗从「死机制半成品」补成「有裁决、有站位、有暴击、有协同的早期产品」（成熟度 3→6）；SB-T2 是收官的最后一格——**本轮把「手动大招选目标 + 弱无跳变（明确标债）+ 静默失败清零」做实即达标，切忌为『强无跳变』在收官轮引入续算引擎/RNG 子流而超期空跑；『命运预告』与『战斗分享码』是预演算架构专属、竞品给不了的差异化 Wow，值得入 backlog。**
+**一句话收尾**：第 1 轮立正了脊柱（定位/HR/门槛），本轮 SC-T3 要接上收集向游戏最痛的那条命脉——**「重复不浪费 + 养成有终局目标」**。关键是「消化重复卡 → 抬等级上限 → 克制永久小加成」三件一体、加成真进战力且与 SC-T5 口径自洽，门槛后置于满级（对齐 PCR/蔚蓝）、数值克制有封顶（守单机向）、存档三改往返保真（SPRINT 硬验收）。地基已就绪（`generateBattleStats` 纯加法注入点 + `dismantleCard` 保留 ≥1 张防呆 + `migrateNurtureData` 迁移范式），SC-T3 是「在既有管线上接线 + 一次干净的 v16 bump」，不是重构。守住两条红线：**突破加成克制有封顶（不做膨胀源）、SAVE_VERSION 本 Sprint 只 bump 一次**。
+
+Sources:
+- [Ascension | Princess Connect Re:Dive Wiki](https://princess-connect.fandom.com/wiki/Ascension)
+- [Memory Shard | Princess Connect Re:Dive Wiki](https://princess-connect.fandom.com/wiki/Memory_Shard)
+- [Potential - Blue Archive Wiki](https://bluearchive.wiki/wiki/Potential)
+- [Ability Release | Blue Archive Wiki](https://bluearchive.fandom.com/wiki/Ability_Release)

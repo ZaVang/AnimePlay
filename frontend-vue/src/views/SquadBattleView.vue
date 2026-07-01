@@ -7,6 +7,7 @@ import {
   DEFAULT_MAX_TIME_MS,
   SQUAD_MEMBER_COUNT,
   TOWER_SQUAD_ALLOWED_RARITIES,
+  assessSquadReadiness,
   calculateBattlePower,
   calculateTowerBattleRewards,
   canOverrideTarget,
@@ -30,6 +31,7 @@ import {
 } from '@/engine';
 import { CHARACTER_IMAGE_POOL } from '@/utils/imageUtils';
 import { assetUrl } from '@/utils/assetUrl';
+import { resolveMemberBattleStats } from '@/utils/battleStats';
 import CharacterSelectModal from '@/components/battle/CharacterSelectModal.vue';
 import SquadBattlefield from '@/components/battle/squad/SquadBattlefield.vue';
 import SquadBattleLog from '@/components/battle/squad/SquadBattleLog.vue';
@@ -205,6 +207,30 @@ function getSquadMemberCount(squadId: number): number {
   return getTowerSquadValidation(squadId).slots.filter(slot => slot.ok).length;
 }
 
+/**
+ * SC-T5：某小队对当前层的软战力门槛评估（我方 getSquadPower vs 敌方 floorPower 同口径，不硬拦）。
+ * 敌人未载入时返回 null（不显示提示）。
+ */
+function squadReadinessFor(squadId: number) {
+  const floorPower = towerEnemyData.value?.floorPower;
+  if (floorPower == null) return null;
+  return assessSquadReadiness(getSquadPower(squadId), floorPower);
+}
+
+/** SC-T5：软提示文案（人话化，含推荐战力 + delta）。 */
+function readinessHintFor(squadId: number): string {
+  const r = squadReadinessFor(squadId);
+  if (!r) return '';
+  const gap = Math.abs(r.delta);
+  if (r.level === 'ready') return `建议 ~${r.recommendedPower} · 达标`;
+  if (r.level === 'risky') return `建议 ~${r.recommendedPower} · 略吃紧（差 ${gap}）`;
+  return `建议 ~${r.recommendedPower} · 差距较大（差 ${gap}），先养成或扫荡`;
+}
+
+const battleReadiness = computed(() =>
+  selectedSquadForBattle.value == null ? null : squadReadinessFor(selectedSquadForBattle.value),
+);
+
 function getUsedCharacterIds(squadId: number, excludePosition: number): number[] {
   return userStore.getSquadMembers(squadId)
     .map((id: number | null, index: number) => index !== excludePosition ? id : null)
@@ -241,7 +267,8 @@ function buildCharacterStats(character: CharacterCard, isEnemy: boolean): Battle
   const base = character.battle_stats || { hp: 100, atk: 50, def: 30, sp: 40, spd: 60 };
   return isEnemy
     ? generateBattleStats(base, EMPTY_STAT_BONUS, EMPTY_STAT_BONUS)
-    : generateBattleStats(base, userStore.getNurtureData(character.id).statPoints, equipmentStore.resolveEquipBonus(character.id));
+    // 玩家侧走单一养成战力口径（等级加点 + 突破 + 好感永久 + 装备），与详情/explore 同源。
+    : resolveMemberBattleStats(base, userStore.getNurtureData(character.id), equipmentStore.resolveEquipBonus(character.id));
 }
 
 function createSquadMember(character: CharacterCard, position: number, side: 'player' | 'enemy'): SquadMember {
@@ -902,6 +929,16 @@ onBeforeUnmount(() => {
               <div class="mb-3 text-sm">
                 <span class="text-ink-2">战力:</span>
                 <span class="ml-1 font-bold text-highlight">{{ getSquadPower(squad.id) }}</span>
+                <!-- SC-T5：软战力门槛（满编时对当前层给推荐 + delta + 三档，不硬拦）。 -->
+                <span
+                  v-if="getSquadMemberCount(squad.id) === SQUAD_MEMBER_COUNT && squadReadinessFor(squad.id)"
+                  class="ml-2 font-semibold"
+                  :class="{
+                    'text-success': squadReadinessFor(squad.id)!.level === 'ready',
+                    'text-warning': squadReadinessFor(squad.id)!.level === 'risky',
+                    'text-danger': squadReadinessFor(squad.id)!.level === 'underpowered',
+                  }"
+                >{{ readinessHintFor(squad.id) }}</span>
               </div>
 
               <button
@@ -942,6 +979,18 @@ onBeforeUnmount(() => {
           <span class="font-semibold text-accent">第 {{ currentTowerFloor }} 层</span>
           <span class="text-ink-3">·</span>
           <span class="font-medium text-danger">{{ towerEnemyData.name }}</span>
+          <!-- SC-T5：我方战力 + 软战力门槛提示（推荐 + delta + 三档，不硬拦）。 -->
+          <span v-if="battleReadiness" class="text-ink-2">
+            我方战力 <span class="font-bold text-highlight">{{ battleReadiness.playerPower }}</span>
+            <span
+              class="ml-1 font-semibold"
+              :class="{
+                'text-success': battleReadiness.level === 'ready',
+                'text-warning': battleReadiness.level === 'risky',
+                'text-danger': battleReadiness.level === 'underpowered',
+              }"
+            >· {{ readinessHintFor(selectedSquadForBattle!) }}</span>
+          </span>
           <span class="ml-auto text-ink-2">敌方战力 <span class="font-bold text-highlight">{{ towerEnemyData.floorPower }}</span></span>
         </div>
 

@@ -83,6 +83,9 @@ function populateAllDomains() {
   useGuessStore().highScore = 85;
   data.statPoints = { hp: 30, atk: 10, def: 5, sp: 7, spd: 3 };
   data.claimedBondMilestones = ['bond_1'];
+  // v16（SC-T3/SC-T4）：星级/突破 + 每日互动日期键往返
+  data.breakthrough = 3;
+  data.lastBondInteractionDate = TODAY_KEY;
   useThemeStore().setSkin('neon'); // S7：皮肤随账号入档
 
   // evolution-1：每日任务 / 图鉴里程碑 / 成就
@@ -190,6 +193,9 @@ describe('buildPayload ⇄ applyPayload 往返', () => {
     // S13-C1 瘦身养成：加点 / 已领里程碑随养成数据往返保真
     expect(useNurtureStore().characterNurtureData.get(12393)?.statPoints).toEqual({ hp: 30, atk: 10, def: 5, sp: 7, spd: 3 });
     expect(useNurtureStore().characterNurtureData.get(12393)?.claimedBondMilestones).toEqual(['bond_1']);
+    // v16（SC-T3/SC-T4）：星级/突破 + 每日互动日期键往返保真（nurture 域全量 Map 序列化天然覆盖新字段）
+    expect(useNurtureStore().characterNurtureData.get(12393)?.breakthrough).toBe(3);
+    expect(useNurtureStore().characterNurtureData.get(12393)?.lastBondInteractionDate).toBe(TODAY_KEY);
 
     // S7 新增域：皮肤装扮（中途手动切回默认，验证 applyPayload 恢复账号皮肤）
     expect(useThemeStore().currentSkinId).toBe('neon');

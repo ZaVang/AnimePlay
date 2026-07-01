@@ -1,11 +1,19 @@
 <script setup lang="ts">
-import { ref, computed, onUnmounted } from 'vue';
+import { ref, computed, onUnmounted, watch } from 'vue';
 import { useUserStore } from '@/stores/userStore';
 import { useGameDataStore } from '@/stores/gameDataStore';
 import { useEquipmentStore } from '@/stores/equipment';
 import type { CharacterCard } from '@/types/card';
 import type { CharacterNurtureData } from '@/types/nurture';
-import { generateBattleStats, calculateBattlePower, MAX_CHARACTER_LEVEL, type BattleStats } from '@/engine';
+import {
+  calculateBattlePower,
+  MAX_CHARACTER_LEVEL,
+  MAX_BREAKTHROUGH,
+  breakthroughCost,
+  breakthroughStatBonus,
+  type BattleStats,
+} from '@/engine';
+import { resolveMemberBattleStats, resolveNurturedStatPointsFor } from '@/utils/battleStats';
 import { bondTier } from '@/config/nurtureColors';
 import { rarityStyle } from '@/config/equipmentColors';
 import {
@@ -24,6 +32,9 @@ import {
   BOND_MILESTONES,
   bondTitleFor,
   isMilestoneClaimable,
+  bondOverflowExchange,
+  DAILY_BOND_INTERACTION_AFFECTION,
+  DAILY_BOND_INTERACTION_EXP,
   TUTORING_KP_COST,
   TUTORING_EXP_GAIN,
 } from '@/config/nurture';
@@ -52,6 +63,11 @@ const ownedCharacters = computed(() => {
     }) as (CharacterCard & { nurtureData: CharacterNurtureData })[];
 });
 
+// 首个角色自动选中（无壳内嵌，进面板即有内容）
+watch(ownedCharacters, list => {
+  if (selectedCharacterId.value == null && list.length > 0) selectedCharacterId.value = list[0].id;
+}, { immediate: true });
+
 const selectedCharacter = computed(() => {
   if (selectedCharacterId.value == null) return null;
   return ownedCharacters.value.find(c => c.id === selectedCharacterId.value) || null;
@@ -74,7 +90,6 @@ const baseStats = computed<BattleStats>(
 );
 
 // 装备加成：与小队/进战斗同源 resolveEquipBonus（口径全站一致，避免数字打架）。
-// 依赖 equipmentStore.equipped 使配装后实时重算。
 const equipBonus = computed<BattleStats>(() => {
   const c = selectedCharacter.value;
   if (!c) return { hp: 0, atk: 0, def: 0, sp: 0, spd: 0 };
@@ -82,21 +97,29 @@ const equipBonus = computed<BattleStats>(() => {
   return equipmentStore.resolveEquipBonus(c.id);
 });
 
+// 养成合成加点（等级加点 + 突破 + 好感永久）——全站单一战力口径。
+const nurturedStatPoints = computed<BattleStats>(() => {
+  const c = selectedCharacter.value;
+  if (!c) return { hp: 0, atk: 0, def: 0, sp: 0, spd: 0 };
+  return resolveNurturedStatPointsFor(c.nurtureData, baseStats.value);
+});
+
 const finalStats = computed<BattleStats>(() => {
   if (!selectedCharacter.value) return { hp: 0, atk: 0, def: 0, sp: 0, spd: 0 };
-  return generateBattleStats(baseStats.value, selectedCharacter.value.nurtureData.statPoints, equipBonus.value);
+  return resolveMemberBattleStats(baseStats.value, selectedCharacter.value.nurtureData, equipBonus.value);
 });
 
 const battlePower = computed(() => calculateBattlePower(finalStats.value));
 
-// 五维显示行：base / 加点 / 装备 / 合计 + 软上限条填充
+// 五维显示行：base / 加点（含突破+好感永久） / 装备 / 合计 + 软上限条填充
 const statRows = computed(() => {
   const c = selectedCharacter.value;
   if (!c) return [];
   const eb = equipBonus.value;
+  const np = nurturedStatPoints.value;
   return STAT_META.map(meta => {
     const base = baseStats.value[meta.key];
-    const point = c.nurtureData.statPoints[meta.key];
+    const point = np[meta.key];
     const equip = eb[meta.key];
     const total = base + point + equip;
     const ref = STAT_DISPLAY_REF[meta.key];
@@ -104,6 +127,38 @@ const statRows = computed(() => {
     return { ...meta, base, point, equip, total, ref, fillPct, isMax: total >= ref };
   });
 });
+
+// --- SC-T3 星级/突破 ---
+const breakthroughStar = computed(() => selectedCharacter.value?.nurtureData.breakthrough ?? 0);
+const isBreakthroughMax = computed(() => breakthroughStar.value >= MAX_BREAKTHROUGH);
+// 可消耗重复卡（保留本体 1 张）
+const spareCards = computed(() => {
+  const c = selectedCharacter.value;
+  if (!c) return 0;
+  return Math.max(0, userStore.getCharacterCardCount(c.id) - 1);
+});
+const nextBreakthroughCost = computed(() => (isBreakthroughMax.value ? 0 : breakthroughCost(breakthroughStar.value)));
+const canBreakthroughNow = computed(
+  () => !isBreakthroughMax.value && spareCards.value >= nextBreakthroughCost.value,
+);
+// 突破一星的五维增量预览（下一星 vs 当前星）
+const breakthroughPreview = computed(() => {
+  const c = selectedCharacter.value;
+  if (!c || isBreakthroughMax.value) return null;
+  const cur = breakthroughStatBonus(breakthroughStar.value, baseStats.value);
+  const next = breakthroughStatBonus(breakthroughStar.value + 1, baseStats.value);
+  return STAT_META.map(meta => ({ key: meta.key, short: meta.short, delta: next[meta.key] - cur[meta.key] }))
+    .filter(r => r.delta > 0);
+});
+const breakthroughStars = computed(() =>
+  Array.from({ length: MAX_BREAKTHROUGH }, (_, i) => i < breakthroughStar.value),
+);
+
+function doBreakthrough() {
+  const c = selectedCharacter.value;
+  if (!c) return;
+  userStore.breakthroughCharacter(c.id);
+}
 
 // 好感档（语义色 + 称号）
 const bond = computed(() => {
@@ -122,7 +177,7 @@ const bondProgress = computed(() => {
   return { pct: Math.min(100, Math.max(0, pct)), current: aff, target: next.threshold, targetTitle: next.title, maxed: false };
 });
 
-// 里程碑列表（达成 / 可领 / 已领）
+// 里程碑列表（达成 / 可领 / 已领 + 永久加成 %）
 const milestones = computed(() => {
   const c = selectedCharacter.value;
   const aff = c?.nurtureData.affection || 0;
@@ -132,6 +187,7 @@ const milestones = computed(() => {
     reached: aff >= m.threshold,
     claimed: claimed.includes(m.id),
     claimable: c ? isMilestoneClaimable(aff, claimed, m) : false,
+    bonusPctText: `+${Math.round(m.statBonusPct * 100)}% 五维`,
   }));
 });
 
@@ -142,6 +198,25 @@ function charClaimableCount(nd: CharacterNurtureData): number {
   const aff = nd.affection || 0;
   const claimed = nd.claimedBondMilestones || [];
   return BOND_MILESTONES.filter(m => isMilestoneClaimable(aff, claimed, m)).length;
+}
+
+// --- SC-T4 每日互动 + 好感溢出转 KP ---
+const canDailyInteract = computed(() => {
+  const c = selectedCharacter.value;
+  return !!c && userStore.canDailyBondInteract(c.id);
+});
+const bondOverflow = computed(() => {
+  const aff = selectedCharacter.value?.nurtureData.affection || 0;
+  return bondOverflowExchange(aff);
+});
+
+function doDailyInteract() {
+  const c = selectedCharacter.value;
+  if (c) userStore.dailyBondInteraction(c.id);
+}
+function doClaimOverflow() {
+  const c = selectedCharacter.value;
+  if (c) userStore.claimBondOverflow(c.id);
 }
 
 const canTutor = computed(() => {
@@ -160,7 +235,6 @@ function tutor() {
   const before: Record<string, number> = { ...c.nurtureData.statPoints };
   userStore.tutorCharacter(c.id);
   const after = c.nurtureData.statPoints;
-  // 升级才会随机加点：算每维净增量，对应维做一次「+N」飘字（数值由 store 改，这里只读差值）
   const gain: Record<string, number> = {};
   let any = false;
   for (const meta of STAT_META) {
@@ -213,288 +287,329 @@ function quickUnequip(slot: EquipmentSlot) {
 </script>
 
 <template>
-  <div class="min-h-screen py-8">
-    <div class="container mx-auto px-4">
-      <!-- 页面标题 -->
-      <div class="text-center mb-8">
-        <h1 class="text-4xl font-bold text-ink mb-2">角色养成</h1>
-        <p class="text-ink-2">提升等级解锁随机加点，培养好感解锁里程碑</p>
-      </div>
+  <!-- SC-T6：无壳可内嵌组件（去 min-h-screen / 页级 h1 / 独立未登录空态；仅保留紧凑无角色兜底）。 -->
+  <div class="nurture-embed">
+    <!-- 无角色紧凑兜底（未登录/无角色由 hub 壳统一处理；此处仅防独立渲染空白） -->
+    <div v-if="ownedCharacters.length === 0" class="text-center py-10">
+      <div class="text-4xl mb-3">🎴</div>
+      <p class="text-ink-2">暂无可养成角色，去抽卡获得角色后即可在此培养。</p>
+    </div>
 
-      <!-- 未登录状态 -->
-      <div v-if="!userStore.isLoggedIn" class="text-center py-20">
-        <svg class="w-24 h-24 mx-auto mb-6 text-ink-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
-        </svg>
-        <h2 class="text-2xl font-bold text-ink-2 mb-4">请先登录</h2>
-        <p class="text-ink-2">登录后即可开始与角色们的养成之旅</p>
-      </div>
+    <!-- 主体：双栏（左角色列表 + 右详情面板） -->
+    <div v-else class="grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-6">
+      <!-- 左：角色列表 -->
+      <aside class="bg-surface rounded-xl p-4 border border-line h-fit">
+        <h2 class="text-sm font-semibold text-ink-2 mb-3 px-1">
+          我的角色 · {{ ownedCharacters.length }}
+        </h2>
+        <div class="space-y-2 max-h-[70vh] overflow-y-auto pr-1">
+          <button
+            v-for="character in ownedCharacters"
+            :key="character.id"
+            type="button"
+            class="w-full flex items-center gap-3 p-2 rounded-lg border transition-colors text-left"
+            :class="selectedCharacterId === character.id
+              ? 'bg-accent/15 border-accent'
+              : 'bg-surface-2 border-line hover:border-accent/60'"
+            @click="selectCharacter(character.id)"
+          >
+            <div class="w-12 h-12 rounded-lg overflow-hidden flex-shrink-0 bg-surface-2">
+              <img
+                :src="character.image_path"
+                :alt="character.name"
+                class="w-full h-full object-cover object-top"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
+            <div class="min-w-0 flex-1">
+              <div class="text-sm font-medium text-ink truncate">{{ character.name }}</div>
+              <div class="flex items-center gap-2 text-xs text-ink-2">
+                <span class="text-highlight font-bold">Lv.{{ character.nurtureData.level }}</span>
+                <span v-if="character.nurtureData.breakthrough > 0" class="text-warning font-bold">★{{ character.nurtureData.breakthrough }}</span>
+                <span :class="bondTier(character.nurtureData.affection).color">
+                  {{ bondTier(character.nurtureData.affection).icon }}
+                </span>
+                <span
+                  v-if="charClaimableCount(character.nurtureData) > 0"
+                  class="ml-auto w-2 h-2 rounded-full bg-accent flex-shrink-0"
+                  title="有可领取的好感里程碑"
+                ></span>
+              </div>
+            </div>
+          </button>
+        </div>
+      </aside>
 
-      <!-- 无角色 -->
-      <div v-else-if="ownedCharacters.length === 0" class="text-center py-20">
-        <div class="text-5xl mb-4">🎴</div>
-        <h2 class="text-2xl font-bold text-ink-2 mb-2">暂无可养成角色</h2>
-        <p class="text-ink-2">去抽卡获得角色后即可在此培养。</p>
-      </div>
-
-      <!-- 主体：变体 A 双栏（左角色列表 + 右详情面板） -->
-      <div v-else class="grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-6">
-        <!-- 左：角色列表 -->
-        <aside class="bg-surface rounded-xl p-4 border border-line h-fit">
-          <h2 class="text-sm font-semibold text-ink-2 mb-3 px-1">
-            我的角色 · {{ ownedCharacters.length }}
-          </h2>
-          <div class="space-y-2 max-h-[70vh] overflow-y-auto pr-1">
-            <button
-              v-for="character in ownedCharacters"
-              :key="character.id"
-              type="button"
-              class="w-full flex items-center gap-3 p-2 rounded-lg border transition-colors text-left"
-              :class="selectedCharacterId === character.id
-                ? 'bg-accent/15 border-accent'
-                : 'bg-surface-2 border-line hover:border-accent/60'"
-              @click="selectCharacter(character.id)"
-            >
-              <div class="w-12 h-12 rounded-lg overflow-hidden flex-shrink-0 bg-surface-2">
+      <!-- 右：选中角色详情 -->
+      <section v-if="selectedCharacter" class="space-y-6">
+        <!-- 顶部：立绘 + 核心进度 -->
+        <div class="bg-surface rounded-xl border border-line overflow-hidden">
+          <div class="flex flex-col sm:flex-row">
+            <!-- 立绘 -->
+            <div class="relative w-full sm:w-56 flex-shrink-0">
+              <div class="aspect-[2/3] sm:h-full overflow-hidden">
                 <img
-                  :src="character.image_path"
-                  :alt="character.name"
+                  :src="selectedCharacter.image_path"
+                  :alt="selectedCharacter.name"
                   class="w-full h-full object-cover object-top"
                   loading="lazy"
                   decoding="async"
                 >
               </div>
-              <div class="min-w-0 flex-1">
-                <div class="text-sm font-medium text-ink truncate">{{ character.name }}</div>
-                <div class="flex items-center gap-2 text-xs text-ink-2">
-                  <span class="text-highlight font-bold">Lv.{{ character.nurtureData.level }}</span>
-                  <span :class="bondTier(character.nurtureData.affection).color">
-                    {{ bondTier(character.nurtureData.affection).icon }}
-                  </span>
-                  <span
-                    v-if="charClaimableCount(character.nurtureData) > 0"
-                    class="ml-auto w-2 h-2 rounded-full bg-accent flex-shrink-0"
-                    title="有可领取的好感里程碑"
-                  ></span>
-                </div>
-              </div>
-            </button>
-          </div>
-        </aside>
-
-        <!-- 右：选中角色详情 -->
-        <section v-if="selectedCharacter" class="space-y-6">
-          <!-- 顶部：立绘 + 核心进度 -->
-          <div class="bg-surface rounded-xl border border-line overflow-hidden">
-            <div class="flex flex-col sm:flex-row">
-              <!-- 立绘 -->
-              <div class="relative w-full sm:w-56 flex-shrink-0">
-                <div class="aspect-[2/3] sm:h-full overflow-hidden">
-                  <img
-                    :src="selectedCharacter.image_path"
-                    :alt="selectedCharacter.name"
-                    class="w-full h-full object-cover object-top"
-                    loading="lazy"
-                    decoding="async"
-                  >
-                </div>
-                <div class="absolute top-3 left-3">
-                  <span class="px-2 py-1 rounded-md text-xs font-bold bg-surface/80 text-ink border border-line">
-                    {{ selectedCharacter.rarity }}
-                  </span>
-                </div>
-              </div>
-
-              <!-- 等级 / 好感 -->
-              <div class="flex-1 p-5 space-y-5">
-                <div>
-                  <h3 class="text-2xl font-bold text-ink">{{ selectedCharacter.name }}</h3>
-                  <div class="flex items-center gap-2 mt-1">
-                    <span :class="bond.color" class="text-sm font-semibold">{{ bond.icon }} {{ bond.title }}</span>
-                    <span class="text-xs text-ink-3">综合战力 <span class="text-highlight font-bold">{{ battlePower }}</span></span>
-                  </div>
-                </div>
-
-                <!-- 等级 / 经验 -->
-                <div>
-                  <div class="flex items-center justify-between mb-1 text-sm">
-                    <span class="font-semibold text-ink">⚡ 等级 Lv.{{ selectedCharacter.nurtureData.level }}</span>
-                    <span class="text-xs" v-if="levelProgress">
-                      <span v-if="isLevelMax" class="text-accent font-bold">MAX</span>
-                      <span v-else class="text-ink-2">{{ levelProgress.current }}/{{ levelProgress.required }}</span>
-                    </span>
-                  </div>
-                  <div class="w-full bg-surface-2 rounded-full h-2 overflow-hidden">
-                    <div
-                      class="h-full rounded-full transition-all duration-500"
-                      :class="isLevelMax ? 'bg-accent' : 'bg-highlight'"
-                      :style="{ width: `${isLevelMax ? 100 : (levelProgress?.percentage || 0)}%` }"
-                    ></div>
-                  </div>
-                </div>
-
-                <!-- 好感 -->
-                <div>
-                  <div class="flex items-center justify-between mb-1 text-sm">
-                    <span class="font-semibold text-ink">❤️ 好感 {{ bond.affection }}</span>
-                    <span class="text-xs">
-                      <span v-if="bondProgress.maxed" class="text-accent">已圆满</span>
-                      <span v-else class="text-ink-2">下一档 · {{ bondProgress.targetTitle }} ({{ bondProgress.target }})</span>
-                    </span>
-                  </div>
-                  <div class="w-full bg-surface-2 rounded-full h-2 overflow-hidden">
-                    <div
-                      class="h-full rounded-full transition-all duration-500"
-                      :class="bond.barColor"
-                      :style="{ width: `${bondProgress.pct}%` }"
-                    ></div>
-                  </div>
-                </div>
-
-                <!-- 补习 -->
-                <div class="flex items-center gap-3 pt-1">
-                  <button
-                    type="button"
-                    class="btn-primary text-sm px-4 py-2 disabled:opacity-50 disabled:cursor-not-allowed"
-                    :disabled="!canTutor"
-                    @click="tutor"
-                  >
-                    📚 补习 (-{{ TUTORING_KP_COST }} KP → +{{ TUTORING_EXP_GAIN }} 经验)
-                  </button>
-                  <span v-if="isLevelMax" class="text-xs text-accent">已满级</span>
-                  <span v-else-if="!canTutor" class="text-xs text-warning">知识点不足</span>
-                </div>
+              <div class="absolute top-3 left-3">
+                <span class="px-2 py-1 rounded-md text-xs font-bold bg-surface/80 text-ink border border-line">
+                  {{ selectedCharacter.rarity }}
+                </span>
               </div>
             </div>
-          </div>
 
-          <!-- 五维数值面板（base + 加点两段 + 软上限参考条） -->
-          <div class="bg-surface rounded-xl border border-line p-5">
-            <h4 class="text-sm font-semibold text-ink mb-4">战斗五维 · 软上限参考</h4>
-            <div class="space-y-4">
-              <div v-for="row in statRows" :key="row.key">
-                <div class="flex items-center justify-between text-sm mb-1">
-                  <span class="text-ink-2 w-16">{{ row.label }}</span>
-                  <span class="flex items-center gap-2">
-                    <span class="text-ink font-bold">{{ row.total }}</span>
-                    <span class="text-xs text-ink-3">
-                      ({{ row.base }}<span class="text-success" v-if="row.point > 0"> +{{ row.point }}</span><span class="text-highlight" v-if="row.equip > 0"> +{{ row.equip }}装</span>)
-                    </span>
-                    <span v-if="row.isMax" class="text-xs font-bold text-accent">MAX</span>
-                    <span v-if="lastGain && lastGain[row.key]" class="stat-gain-pop text-xs font-bold text-success">+{{ lastGain[row.key] }}</span>
+            <!-- 等级 / 好感 -->
+            <div class="flex-1 p-5 space-y-5">
+              <div>
+                <h3 class="text-2xl font-bold text-ink">{{ selectedCharacter.name }}</h3>
+                <div class="flex items-center gap-2 mt-1 flex-wrap">
+                  <span :class="bond.color" class="text-sm font-semibold">{{ bond.icon }} {{ bond.title }}</span>
+                  <span v-if="breakthroughStar > 0" class="text-sm font-semibold text-warning">★{{ breakthroughStar }} 突破</span>
+                  <span class="text-xs text-ink-3">综合战力 <span class="text-highlight font-bold">{{ battlePower }}</span></span>
+                </div>
+              </div>
+
+              <!-- 等级 / 经验 -->
+              <div>
+                <div class="flex items-center justify-between mb-1 text-sm">
+                  <span class="font-semibold text-ink">⚡ 等级 Lv.{{ selectedCharacter.nurtureData.level }}</span>
+                  <span class="text-xs" v-if="levelProgress">
+                    <span v-if="isLevelMax" class="text-accent font-bold">MAX</span>
+                    <span v-else class="text-ink-2">{{ levelProgress.current }}/{{ levelProgress.required }}</span>
                   </span>
                 </div>
-                <div class="w-full bg-surface-2 rounded-full h-2.5 overflow-hidden">
+                <div class="w-full bg-surface-2 rounded-full h-2 overflow-hidden">
                   <div
                     class="h-full rounded-full transition-all duration-500"
-                    :class="row.isMax ? 'bg-accent' : 'bg-highlight'"
-                    :style="{ width: `${row.fillPct}%` }"
+                    :class="isLevelMax ? 'bg-accent' : 'bg-highlight'"
+                    :style="{ width: `${isLevelMax ? 100 : (levelProgress?.percentage || 0)}%` }"
                   ></div>
                 </div>
               </div>
-            </div>
-            <p class="text-xs text-ink-3 mt-4">
-              升级随机加点累加至五维；条按「值 / 参考值」填充，跨角色可比，达参考值标记 MAX。
-            </p>
-          </div>
 
-          <!-- 装备槽位（C2 接配装：点击开 picker） -->
-          <div class="bg-surface rounded-xl border border-line p-5">
-            <h4 class="text-sm font-semibold text-ink mb-4">装备槽位</h4>
-            <div class="grid grid-cols-3 gap-3">
-              <div v-for="slot in equipSlots" :key="slot.key" class="relative">
-                <button
-                  type="button"
-                  class="w-full flex flex-col items-center justify-center aspect-square rounded-lg border-2 text-center p-2 transition-colors"
-                  :class="equippedDefs[slot.key]
-                    ? 'border-accent/60 bg-surface-2 hover:border-accent'
-                    : 'border-dashed border-line bg-surface-2 hover:border-accent/60'"
-                  @click="openPicker(slot.key)"
-                >
-                  <template v-if="equippedDefs[slot.key]">
-                    <span
-                      class="px-1.5 py-0.5 rounded text-[10px] font-bold text-white bg-gradient-to-r mb-1"
-                      :class="rarityStyle(equippedDefs[slot.key]!.rarity).gradient"
-                    >
-                      {{ equippedDefs[slot.key]!.rarity }}
-                    </span>
-                    <div class="text-xs font-medium text-ink leading-tight line-clamp-2">{{ equippedDefs[slot.key]!.name }}</div>
-                    <div class="text-[9px] text-ink-3 mt-0.5 leading-tight">{{ formatBonus(equippedDefs[slot.key]!.bonus) }}</div>
-                  </template>
-                  <template v-else>
-                    <div class="text-2xl opacity-40 mb-1">{{ slot.icon }}</div>
-                    <div class="text-xs text-ink-2">{{ slot.label }}</div>
-                    <div class="text-[10px] text-ink-3 mt-0.5">点击装备</div>
-                  </template>
-                </button>
-                <button
-                  v-if="equippedDefs[slot.key]"
-                  type="button"
-                  class="absolute -top-1.5 -right-1.5 w-5 h-5 rounded-full bg-surface-2 border border-line text-ink-2 hover:text-danger text-[11px] leading-none flex items-center justify-center shadow-sm"
-                  title="卸下"
-                  @click.stop="quickUnequip(slot.key)"
-                >✕</button>
-              </div>
-            </div>
-            <p class="text-xs text-ink-3 mt-3">点击槽位选择装备，装上即时反映到五维与战力。</p>
-          </div>
-
-          <!-- 背包 -->
-          <InventoryPanel />
-
-          <!-- 好感里程碑 -->
-          <div class="bg-surface rounded-xl border border-line p-5">
-            <h4 class="text-sm font-semibold text-ink mb-4 flex items-center gap-2">
-              好感里程碑
-              <span v-if="claimableCount > 0" class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-accent text-white">{{ claimableCount }} 可领</span>
-            </h4>
-            <div class="space-y-2">
-              <div
-                v-for="m in milestones"
-                :key="m.id"
-                class="flex items-center justify-between p-3 rounded-lg border"
-                :class="m.reached ? 'bg-surface-2 border-line' : 'bg-surface-2/40 border-line/50 opacity-60'"
-              >
-                <div class="flex items-center gap-3">
-                  <span class="text-lg">{{ m.reached ? '🏅' : '🔒' }}</span>
-                  <div>
-                    <div class="text-sm font-medium text-ink">{{ m.title }}</div>
-                    <div class="text-xs text-ink-2">好感 {{ m.threshold }} · 奖励 {{ m.reward }} KP</div>
-                  </div>
+              <!-- 好感 -->
+              <div>
+                <div class="flex items-center justify-between mb-1 text-sm">
+                  <span class="font-semibold text-ink">❤️ 好感 {{ bond.affection }}</span>
+                  <span class="text-xs">
+                    <span v-if="bondProgress.maxed" class="text-accent">已圆满</span>
+                    <span v-else class="text-ink-2">下一档 · {{ bondProgress.targetTitle }} ({{ bondProgress.target }})</span>
+                  </span>
                 </div>
+                <div class="w-full bg-surface-2 rounded-full h-2 overflow-hidden">
+                  <div
+                    class="h-full rounded-full transition-all duration-500"
+                    :class="bond.barColor"
+                    :style="{ width: `${bondProgress.pct}%` }"
+                  ></div>
+                </div>
+              </div>
+
+              <!-- 补习 + 每日互动 -->
+              <div class="flex items-center gap-3 pt-1 flex-wrap">
                 <button
-                  v-if="m.claimable"
                   type="button"
-                  class="btn-primary text-xs px-3 py-1.5"
-                  @click="claimMilestone(m.id)"
+                  class="btn-primary text-sm px-4 py-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                  :disabled="!canTutor"
+                  @click="tutor"
                 >
-                  领取
+                  📚 补习 (-{{ TUTORING_KP_COST }} KP → +{{ TUTORING_EXP_GAIN }} 经验)
                 </button>
-                <span v-else-if="m.claimed" class="text-xs text-success font-medium">已领取</span>
-                <span v-else-if="!m.reached" class="text-xs text-ink-3">未达成</span>
+                <button
+                  type="button"
+                  class="btn-secondary text-sm px-4 py-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                  :disabled="!canDailyInteract"
+                  @click="doDailyInteract"
+                >
+                  🎁 每日互动 (+{{ DAILY_BOND_INTERACTION_AFFECTION }} 好感 / +{{ DAILY_BOND_INTERACTION_EXP }} 经验)
+                </button>
+                <span v-if="isLevelMax" class="text-xs text-accent">已满级</span>
+                <span v-else-if="!canTutor" class="text-xs text-warning">知识点不足</span>
+                <span v-if="!canDailyInteract" class="text-xs text-ink-3">今日已互动</span>
+              </div>
+
+              <!-- 好感溢出转 KP（领完最高档后可用） -->
+              <div v-if="bondOverflow.kp > 0" class="flex items-center gap-3">
+                <button type="button" class="btn-ghost text-xs px-3 py-1.5" @click="doClaimOverflow">
+                  ♻️ 好感溢出兑换 (-{{ bondOverflow.spendAffection }} 好感 → +{{ bondOverflow.kp }} KP)
+                </button>
               </div>
             </div>
           </div>
-        </section>
+        </div>
 
-        <!-- 未选中提示 -->
-        <section v-else class="bg-surface rounded-xl border border-line flex items-center justify-center py-24">
-          <div class="text-center">
-            <div class="text-4xl mb-3 opacity-50">👈</div>
-            <p class="text-ink-2">从左侧选择一个角色开始养成</p>
+        <!-- SC-T3：星级 / 突破 -->
+        <div class="bg-surface rounded-xl border border-line p-5">
+          <h4 class="text-sm font-semibold text-ink mb-3 flex items-center gap-2">
+            星级突破
+            <span class="text-xs text-ink-3">消化重复角色卡换永久五维加成</span>
+          </h4>
+          <div class="flex items-center gap-1.5 mb-3">
+            <span
+              v-for="(filled, i) in breakthroughStars"
+              :key="i"
+              class="text-xl"
+              :class="filled ? 'text-warning' : 'text-ink-3 opacity-40'"
+            >★</span>
+            <span class="ml-2 text-xs text-ink-2">{{ breakthroughStar }} / {{ MAX_BREAKTHROUGH }}</span>
           </div>
-        </section>
-      </div>
+
+          <div class="flex items-center gap-3 flex-wrap">
+            <button
+              type="button"
+              class="btn-primary text-sm px-4 py-2 disabled:opacity-50 disabled:cursor-not-allowed"
+              :disabled="!canBreakthroughNow"
+              @click="doBreakthrough"
+            >
+              <span v-if="isBreakthroughMax">已达最高突破</span>
+              <span v-else>✨ 突破 (消耗 {{ nextBreakthroughCost }} 张重复卡)</span>
+            </button>
+            <span v-if="!isBreakthroughMax" class="text-xs text-ink-2">
+              可用重复卡 <span :class="canBreakthroughNow ? 'text-success font-bold' : 'text-warning font-bold'">{{ spareCards }}</span> / 需 {{ nextBreakthroughCost }}
+            </span>
+            <span
+              v-if="breakthroughPreview && breakthroughPreview.length > 0"
+              class="text-xs text-ink-3"
+            >
+              下一星：<span class="text-success">{{ breakthroughPreview.map(r => `${r.short}+${r.delta}`).join(' ') }}</span>
+            </span>
+          </div>
+          <p class="text-xs text-ink-3 mt-3">突破保留本体 1 张卡不被消耗；加成永久生效并计入综合战力。</p>
+        </div>
+
+        <!-- 五维数值面板（base + 加点两段 + 软上限参考条） -->
+        <div class="bg-surface rounded-xl border border-line p-5">
+          <h4 class="text-sm font-semibold text-ink mb-4">战斗五维 · 软上限参考</h4>
+          <div class="space-y-4">
+            <div v-for="row in statRows" :key="row.key">
+              <div class="flex items-center justify-between text-sm mb-1">
+                <span class="text-ink-2 w-16">{{ row.label }}</span>
+                <span class="flex items-center gap-2">
+                  <span class="text-ink font-bold">{{ row.total }}</span>
+                  <span class="text-xs text-ink-3">
+                    ({{ row.base }}<span class="text-success" v-if="row.point > 0"> +{{ row.point }}</span><span class="text-highlight" v-if="row.equip > 0"> +{{ row.equip }}装</span>)
+                  </span>
+                  <span v-if="row.isMax" class="text-xs font-bold text-accent">MAX</span>
+                  <span v-if="lastGain && lastGain[row.key]" class="stat-gain-pop text-xs font-bold text-success">+{{ lastGain[row.key] }}</span>
+                </span>
+              </div>
+              <div class="w-full bg-surface-2 rounded-full h-2.5 overflow-hidden">
+                <div
+                  class="h-full rounded-full transition-all duration-500"
+                  :class="row.isMax ? 'bg-accent' : 'bg-highlight'"
+                  :style="{ width: `${row.fillPct}%` }"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <p class="text-xs text-ink-3 mt-4">
+            「加点」段含升级加点 + 突破 + 好感永久加成，与实战战力同源；条按「值 / 参考值」填充。
+          </p>
+        </div>
+
+        <!-- 装备槽位（C2 接配装：点击开 picker） -->
+        <div class="bg-surface rounded-xl border border-line p-5">
+          <h4 class="text-sm font-semibold text-ink mb-4">装备槽位</h4>
+          <div class="grid grid-cols-3 gap-3">
+            <div v-for="slot in equipSlots" :key="slot.key" class="relative">
+              <button
+                type="button"
+                class="w-full flex flex-col items-center justify-center aspect-square rounded-lg border-2 text-center p-2 transition-colors"
+                :class="equippedDefs[slot.key]
+                  ? 'border-accent/60 bg-surface-2 hover:border-accent'
+                  : 'border-dashed border-line bg-surface-2 hover:border-accent/60'"
+                @click="openPicker(slot.key)"
+              >
+                <template v-if="equippedDefs[slot.key]">
+                  <span
+                    class="px-1.5 py-0.5 rounded text-[10px] font-bold text-white bg-gradient-to-r mb-1"
+                    :class="rarityStyle(equippedDefs[slot.key]!.rarity).gradient"
+                  >
+                    {{ equippedDefs[slot.key]!.rarity }}
+                  </span>
+                  <div class="text-xs font-medium text-ink leading-tight line-clamp-2">{{ equippedDefs[slot.key]!.name }}</div>
+                  <div class="text-[9px] text-ink-3 mt-0.5 leading-tight">{{ formatBonus(equippedDefs[slot.key]!.bonus) }}</div>
+                </template>
+                <template v-else>
+                  <div class="text-2xl opacity-40 mb-1">{{ slot.icon }}</div>
+                  <div class="text-xs text-ink-2">{{ slot.label }}</div>
+                  <div class="text-[10px] text-ink-3 mt-0.5">点击装备</div>
+                </template>
+              </button>
+              <button
+                v-if="equippedDefs[slot.key]"
+                type="button"
+                class="absolute -top-1.5 -right-1.5 w-5 h-5 rounded-full bg-surface-2 border border-line text-ink-2 hover:text-danger text-[11px] leading-none flex items-center justify-center shadow-sm"
+                title="卸下"
+                @click.stop="quickUnequip(slot.key)"
+              >✕</button>
+            </div>
+          </div>
+          <p class="text-xs text-ink-3 mt-3">点击槽位选择装备，装上即时反映到五维与战力。</p>
+        </div>
+
+        <!-- 背包 -->
+        <InventoryPanel />
+
+        <!-- 好感里程碑 -->
+        <div class="bg-surface rounded-xl border border-line p-5">
+          <h4 class="text-sm font-semibold text-ink mb-4 flex items-center gap-2">
+            好感里程碑
+            <span v-if="claimableCount > 0" class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-accent text-white">{{ claimableCount }} 可领</span>
+          </h4>
+          <div class="space-y-2">
+            <div
+              v-for="m in milestones"
+              :key="m.id"
+              class="flex items-center justify-between p-3 rounded-lg border"
+              :class="m.reached ? 'bg-surface-2 border-line' : 'bg-surface-2/40 border-line/50 opacity-60'"
+            >
+              <div class="flex items-center gap-3">
+                <span class="text-lg">{{ m.reached ? '🏅' : '🔒' }}</span>
+                <div>
+                  <div class="text-sm font-medium text-ink">{{ m.title }}</div>
+                  <div class="text-xs text-ink-2">好感 {{ m.threshold }} · 奖励 {{ m.reward }} KP · <span class="text-success">{{ m.bonusPctText }}</span></div>
+                </div>
+              </div>
+              <button
+                v-if="m.claimable"
+                type="button"
+                class="btn-primary text-xs px-3 py-1.5"
+                @click="claimMilestone(m.id)"
+              >
+                领取
+              </button>
+              <span v-else-if="m.claimed" class="text-xs text-success font-medium">已领取</span>
+              <span v-else-if="!m.reached" class="text-xs text-ink-3">未达成</span>
+            </div>
+          </div>
+          <p class="text-xs text-ink-3 mt-3">领取里程碑除一次性 KP 外，永久提升五维（累计封顶 +15%）。</p>
+        </div>
+      </section>
+
+      <!-- 未选中提示 -->
+      <section v-else class="bg-surface rounded-xl border border-line flex items-center justify-center py-24">
+        <div class="text-center">
+          <div class="text-4xl mb-3 opacity-50">👈</div>
+          <p class="text-ink-2">从左侧选择一个角色开始养成</p>
+        </div>
+      </section>
     </div>
 
-    <!-- 配装弹窗（变体 A picker） -->
+    <!-- 配装弹窗（picker，传养成合成加点保证预览战力口径一致） -->
     <EquipPickerModal
       v-if="selectedCharacter"
       :is-open="pickerOpen"
       :char-id="selectedCharacter.id"
       :equip-slot="pickerSlot"
       :base-stats="baseStats"
-      :stat-points="selectedCharacter.nurtureData.statPoints"
+      :stat-points="nurturedStatPoints"
       @close="pickerOpen = false"
     />
   </div>

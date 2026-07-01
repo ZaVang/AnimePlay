@@ -29,7 +29,7 @@
 | S0–S10 | 重构主线（文档/测试/engine 抽取/拆 store/功能闭环/视觉/技能/性能/安全） | ✅ | 已完成 → 详见 [HISTORY.md](HISTORY.md) |
 | — | 产品进化层 Evo-1..Evo-9 + 战斗可读性还债 + 2026-06-24 产品循环 | ✅ | 已完成 → 详见 [HISTORY.md](HISTORY.md) |
 | S13 | 家园综合系统（基地养成 + 小队战斗重构 + 挑战塔闭环） | ✅ | A/A2/B/C1/C2/D1–D5 全部落地合并 → 完成史见 [HISTORY.md](HISTORY.md) |
-| **S14** | **家园 hub 深化（差异化 + 决策 + 循环，audit-driven）** | 🔄 | **S14-A ✅ · S14-B ✅ 已完成**（2026-07-01 product-loop）；S14-C~F 待做。源：[审计报告](orch/homestead-hub-audit-report.md) |
+| **S14** | **家园 hub 深化（差异化 + 决策 + 循环，audit-driven）** | 🔄 | **S14-A ✅ · S14-B ✅ · S14-C ✅ 已完成**（2026-07-01 product-loop）；S14-D~F 待做。源：[审计报告](orch/homestead-hub-audit-report.md) |
 | S11 | React 视图迁移 | ☐ | 演进 |
 | S12 | 权威后端 & 多人/PvP/排行榜 | ☐ | 终点 |
 
@@ -73,15 +73,17 @@
 - [x] **同类可叠加 buff 改按来源累加设上限**（P2-3）：`effects.ts` `maxRuntimeStatusValue` 现同 kind 取 Math.max → 双辅助价值被压平。可叠加类（atkUp/defDown/spUp/critRateUp）改累加设上限，控制类（stun/silence）保持不叠加。
 - **Exit（达成）**：战斗有倒计时与 HP% 超时裁决；手动大招可选目标且无回放跳变（有意义的操作杠杆）；暴击活起来且玩家可感知、站位减伤、团队增益按来源累加——三条策略轴均成立；引擎特征测试覆盖新规则。
 
-### ☐ S14-C · 角色差异化与养成长线（P2）
+### ✅ S14-C · 角色差异化与养成长线（P2）— 已完成 2026-07-01
 
-- [ ] **废弃正则 inferArchetype，改显式 archetype 字段**（P2-7）：当前靠拼接文本跑 6 条正则 first-match-wins，误判频发（阿尔托莉雅被 `圣剑|Fate` 判成魔法师、含「音乐」角色一律先命中 support…）。在角色数据显式声明 archetype（生成脚本一次性人工校对 66 UR），过渡期至少按「专属技能名 > description > name > tags」加权。
-- [ ] **HR 角色补个人技能绑定**（P2-8）：`urCharacterSkillMap` 只登记 UR，HR 名与效果 100% 走原型模板，而塔允许 HR 出战。为 HR 补个人技能名映射，长期给至少 1 条差异化被动。
-- [ ] **补一条有决策的养成长线**（P2-10）：养成仅等级 + 好感两薄轴。建议加星级 / 突破（达上限后靠重复角色碎片突破解锁更高上限），把重复抽到的角色转化为突破资源。
-- [ ] **好感等级化，给永久意义 + 回归钩子**（P2-11 / P2-23）：里程碑现只给一次性 KP、好感无战力 / 永久意义、领完后完全无用。除 KP 外给永久小幅五维% / 被动；高好感解锁剧情 / 语音 / 皮肤；加每日好感互动（送礼 / 对话）；好感溢出可转 KP。
-- [ ] **挑战塔加战力 / 等级门槛**（P2-12）：`eligibility.ts` 只校验稀有度 / 技能包，Lv.1 生角色可直接进塔。给塔层加战力门槛（或推荐战力提示 + 低于阈值明显劣势），把养成重新钉进探索循环。
-- [ ] **NurtureView 拆成无壳可内嵌组件**（P2-18）：角色 tab 把整页 NurtureView 原样内嵌导致双标题 / 双空态 / 长滚。去掉 min-h-screen / 页标题 / 独立空态，或删 hub 内精简摘要只留 NurtureView。
-- **Exit**：角色定位判定稳定可预期；HR/UR 都有差异化技能；养成有一条长期目标线；好感不再是一次性榨干；塔要求玩家养成。
+> ✅ **S14-C 全部 6 项已完成**（product-loop `--tier1 on --mode all`，2 轮即达成——第 2 轮 Planner 把 SC-T4/SC-T6 与 SC-T3 的 v16 bump 合批、省一次迁移；714 测试全绿、engine 纯净、SAVE_VERSION 15→16）。落地实况（以实现为准）：SC-T1 = `resolveRole` **单一定位真相源**（种子 `SIGNATURE_KIT_OVERRIDES.role` → 显式 `id→archetype` 表 → 正则兜底），`override.role` 终于生效、纠正 Fate/音乐/爆裂系误判、补上 SA-T4 缺的 CI 守卫；SC-T2 = 26 个 HR **个人技名**（只改名、`describeSquadSkill` 自动派生描述、守死「描述≠行为」+「名不暗示冲突机制」双红线；差异化被动留 backlog 待突破解锁）；SC-T3 = **星级/突破**（`breakthroughCharacter` 经 `collection.consumeCharacterCards` 消耗重复卡保本体、`breakthrough` 标量存档 v16、永久五维加成派生）；SC-T4 = 好感里程碑给**永久小幅加成**（封顶 +15%，纯派生）+ 每日好感互动（跨天重置）+ 好感溢出转 KP；SC-T5 = `assessSquadReadiness` 纯函数塔层**软战力门槛**（ready/risky/underpowered，不改 eligibility、我方=敌方同口径顺带收敛 P3-6）；SC-T6 = NurtureView 拆无壳可内嵌、hub characters 单标题单空态、/nurture 重定向保留。**关键架构**：突破 + 好感永久加成均经**单一 seam** `resolveNurturedBattleStats`/`resolveMemberBattleStats`（statPoints + 突破 + 好感% 纯加法）进战力，squadPower 消费端统一 → 永不新增第 4 条战力通路，且突破/好感真进 squadPower → 联动 SC-T5 门槛。产物见 `docs/orch/`。**下一步 = S14-D（家园机制闭环 + 经济闭环）。**
+
+- [x] **废弃正则 inferArchetype，改显式 archetype 字段**（P2-7）：当前靠拼接文本跑 6 条正则 first-match-wins，误判频发（阿尔托莉雅被 `圣剑|Fate` 判成魔法师、含「音乐」角色一律先命中 support…）。在角色数据显式声明 archetype（生成脚本一次性人工校对 66 UR），过渡期至少按「专属技能名 > description > name > tags」加权。
+- [x] **HR 角色补个人技能绑定**（P2-8）：`urCharacterSkillMap` 只登记 UR，HR 名与效果 100% 走原型模板，而塔允许 HR 出战。为 HR 补个人技能名映射，长期给至少 1 条差异化被动。
+- [x] **补一条有决策的养成长线**（P2-10）：养成仅等级 + 好感两薄轴。建议加星级 / 突破（达上限后靠重复角色碎片突破解锁更高上限），把重复抽到的角色转化为突破资源。
+- [x] **好感等级化，给永久意义 + 回归钩子**（P2-11 / P2-23）：里程碑现只给一次性 KP、好感无战力 / 永久意义、领完后完全无用。除 KP 外给永久小幅五维% / 被动；高好感解锁剧情 / 语音 / 皮肤；加每日好感互动（送礼 / 对话）；好感溢出可转 KP。
+- [x] **挑战塔加战力 / 等级门槛**（P2-12）：`eligibility.ts` 只校验稀有度 / 技能包，Lv.1 生角色可直接进塔。给塔层加战力门槛（或推荐战力提示 + 低于阈值明显劣势），把养成重新钉进探索循环。
+- [x] **NurtureView 拆成无壳可内嵌组件**（P2-18）：角色 tab 把整页 NurtureView 原样内嵌导致双标题 / 双空态 / 长滚。去掉 min-h-screen / 页标题 / 独立空态，或删 hub 内精简摘要只留 NurtureView。
+- **Exit（达成）**：角色定位判定稳定可预期（resolveRole 单源）；HR/UR 都有差异化技能名；养成有星级/突破长期目标线；好感有永久意义 + 每日回归钩子；塔有推荐战力软门槛要求养成。
 
 ### ☐ S14-D · 家园机制闭环 + 经济闭环（P2 深度，把家园立成「经营系统」）
 
@@ -166,4 +168,4 @@
   > 注：此项在历史上以两处不同措辞出现（Evolution 尾注的「按声优收集维度」与 2026-06-24 循环 round 1 的「声优维度」），是**同一个**跨栈/需后端项，此处已合并为一条，勿再拆。
 
 ---
-*本文只列「还剩什么」。完成史在 [HISTORY.md](HISTORY.md)；日常产品迭代需求源在 [SPRINT.md](SPRINT.md)。每完成一项请同步勾选；每完成一个 Sprint 请更新「进度总览」状态。最后整理 2026-07-01（S13 归档 HISTORY；S14 家园 hub 深化 A/B 已完成——S14-A 六项 P1 急救 + S14-B 五项战斗手感与深度，均 product-loop `--tier1 on --mode all` 落地；S14-C~F 待做；源自对抗性审计 [orch/homestead-hub-audit-report.md](orch/homestead-hub-audit-report.md)）。*
+*本文只列「还剩什么」。完成史在 [HISTORY.md](HISTORY.md)；日常产品迭代需求源在 [SPRINT.md](SPRINT.md)。每完成一项请同步勾选；每完成一个 Sprint 请更新「进度总览」状态。最后整理 2026-07-01（S13 归档 HISTORY；S14 家园 hub 深化 A/B/C 已完成——A 六项 P1 急救 + B 五项战斗手感 + C 六项角色差异化与养成长线(星级突破 SAVE_VERSION→16)，均 product-loop `--tier1 on --mode all` 落地；S14-D~F 待做；源自对抗性审计 [orch/homestead-hub-audit-report.md](orch/homestead-hub-audit-report.md)）。*

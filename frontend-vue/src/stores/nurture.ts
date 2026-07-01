@@ -17,14 +17,27 @@ import {
   createDefaultNurtureData,
   createEmptyStatPoints,
   MAX_CHARACTER_LEVEL,
+  MAX_BREAKTHROUGH,
+  breakthroughCost,
+  canBreakthrough,
 } from '@/engine';
+import { useCollectionStore } from './collection';
 import {
   TUTORING_KP_COST,
   TUTORING_EXP_GAIN,
   BATTLE_AFFECTION_GAIN,
   BOND_MILESTONES,
   isMilestoneClaimable,
+  DAILY_BOND_INTERACTION_AFFECTION,
+  DAILY_BOND_INTERACTION_EXP,
+  bondOverflowExchange,
 } from '@/config/nurture';
+
+/** 与 daily/shop 同款本地日期键（YYYY-M-D）。跨天判定用（每日互动跨天重置）。 */
+function todayKey(): string {
+  const d = new Date();
+  return `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`;
+}
 
 /** 互动经验：每点好感度 ×5（好感增加联动经验）。 */
 const EXP_PER_AFFECTION = 5;
@@ -51,6 +64,8 @@ export const useNurtureStore = defineStore('nurture', () => {
     // 防御性补全（迁移已归一，但运行时新建/手改兜底）
     if (!data.statPoints) data.statPoints = createEmptyStatPoints();
     if (!data.claimedBondMilestones) data.claimedBondMilestones = [];
+    if (data.breakthrough == null) data.breakthrough = 0;
+    if (data.lastBondInteractionDate == null) data.lastBondInteractionDate = '';
 
     return data;
   }
@@ -193,6 +208,100 @@ export const useNurtureStore = defineStore('nurture', () => {
     return true;
   }
 
+  /**
+   * ★ SC-T3 突破：读重复卡数、判上限/卡量、扣卡（经 collection.consumeCharacterCards 保留本体）、breakthrough++。
+   * 返回是否成功（未登录 / 已满星 / 重复卡不足 = false 不变更）。副作用（扣卡）收口 collection，engine 只出判定。
+   */
+  function breakthroughCharacter(characterId: number): boolean {
+    const profile = useProfileStore();
+    if (!profile.isLoggedIn) return false;
+
+    const nurtureData = getNurtureData(characterId);
+    if (nurtureData.breakthrough >= MAX_BREAKTHROUGH) {
+      profile.addLog('该角色已达最高突破星级。', 'warning');
+      return false;
+    }
+
+    const collection = useCollectionStore();
+    const spare = collection.getCharacterCardCount(characterId) - 1; // 保留本体 1 张
+    if (!canBreakthrough(nurtureData.breakthrough, spare)) {
+      const cost = breakthroughCost(nurtureData.breakthrough);
+      profile.addLog(`突破需要 ${cost} 张重复角色卡（当前可用 ${Math.max(0, spare)} 张）。`, 'warning');
+      return false;
+    }
+
+    const cost = breakthroughCost(nurtureData.breakthrough);
+    if (!collection.consumeCharacterCards(characterId, cost)) return false; // 扣卡收口（防呆双保险）
+
+    nurtureData.breakthrough += 1;
+    const character = useGameDataStore().getCharacterCardById(characterId);
+    if (character) {
+      profile.addLog(
+        `✨ ${character.name} 突破至 ${nurtureData.breakthrough} 星！消耗 ${cost} 张重复卡，五维永久提升。`,
+        'success',
+      );
+    }
+    return true;
+  }
+
+  /**
+   * ★ SC-T4 每日好感互动（送礼/对话）：每日一次跨天重置，给固定好感 + 少量经验。
+   * 跨天判定读 lastBondInteractionDate（扁平字段，复用 daily todayKey 范式，无定时器）。
+   * 返回是否成功（未登录 / 今日已互动 = false）。
+   */
+  function dailyBondInteraction(characterId: number): boolean {
+    const profile = useProfileStore();
+    if (!profile.isLoggedIn) return false;
+
+    const nurtureData = getNurtureData(characterId);
+    const today = todayKey();
+    if (nurtureData.lastBondInteractionDate === today) {
+      profile.addLog('今日已与该角色互动过，明日再来吧。', 'info');
+      return false;
+    }
+
+    nurtureData.lastBondInteractionDate = today;
+    nurtureData.affection += DAILY_BOND_INTERACTION_AFFECTION;
+    nurtureData.lastInteraction = new Date().toISOString();
+    addCharacterExp(characterId, DAILY_BOND_INTERACTION_EXP);
+
+    const character = useGameDataStore().getCharacterCardById(characterId);
+    if (character) {
+      profile.addLog(
+        `与 ${character.name} 互动：好感 +${DAILY_BOND_INTERACTION_AFFECTION}，经验 +${DAILY_BOND_INTERACTION_EXP}。`,
+        'success',
+      );
+    }
+    return true;
+  }
+
+  /** 今日是否可与该角色互动（UI 门控用）。 */
+  function canDailyBondInteract(characterId: number): boolean {
+    const nurtureData = getNurtureData(characterId);
+    return nurtureData.lastBondInteractionDate !== todayKey();
+  }
+
+  /**
+   * ★ SC-T4 好感溢出转 KP：领完最高档后超出部分整份兑 KP（经 profile.earn），扣对应好感。
+   * 返回兑得 KP（0 = 未过最高档 / 溢出不足一份，不变更）。
+   */
+  function claimBondOverflow(characterId: number): number {
+    const profile = useProfileStore();
+    if (!profile.isLoggedIn) return 0;
+
+    const nurtureData = getNurtureData(characterId);
+    const { kp, spendAffection } = bondOverflowExchange(nurtureData.affection);
+    if (kp <= 0) return 0;
+
+    nurtureData.affection -= spendAffection;
+    profile.earn('knowledgePoints', kp);
+    const character = useGameDataStore().getCharacterCardById(characterId);
+    if (character) {
+      profile.addLog(`${character.name} 好感溢出兑换：-${spendAffection} 好感 → +${kp} 知识点。`, 'success');
+    }
+    return kp;
+  }
+
   // --- 持久化装配 ---
 
   function serialize(): [number, CharacterNurtureData][] {
@@ -219,6 +328,10 @@ export const useNurtureStore = defineStore('nurture', () => {
     addCharacterExp,
     tutorCharacter,
     claimBondMilestone,
+    breakthroughCharacter,
+    dailyBondInteraction,
+    canDailyBondInteract,
+    claimBondOverflow,
     serialize,
     deserialize,
     reset,

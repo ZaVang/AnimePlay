@@ -11,22 +11,22 @@ import SquadBattleView from './SquadBattleView.vue';
 import {
   SQUAD_MEMBER_COUNT,
   TOWER_SQUAD_ALLOWED_RARITIES,
+  assessSquadReadiness,
   calculateBattlePower,
   calculateSweepReward,
   calculateTowerBattleRewards,
   createSeededRng,
-  generateBattleStats,
   generateTowerFloorEnemies,
   isTowerSquadRarity,
   towerFloorEnemySeed,
   validateTowerSquadMembers,
   type BattleStats,
+  type SquadReadinessAssessment,
 } from '@/engine';
 import { CHARACTER_IMAGE_POOL } from '@/utils/imageUtils';
 import CharacterSelectModal from '@/components/battle/CharacterSelectModal.vue';
 import { getSquadSkillKitForCharacter, isSquadSkillKitReady } from '@/data/squadSkillKits';
-import { getEquipmentDef, SLOT_META, SLOT_ORDER, formatBonus, type EquipmentSlot } from '@/config/equipment';
-import { STAT_META, bondTitleFor } from '@/config/nurture';
+import { resolveMemberBattleStats } from '@/utils/battleStats';
 import type { CharacterCard } from '@/types/card';
 
 type HubTab = 'home' | 'characters' | 'squad' | 'explore' | 'battle';
@@ -51,7 +51,6 @@ const userStore = useUserStore();
 const gameDataStore = useGameDataStore();
 const equipmentStore = useEquipmentStore();
 
-const selectedCharacterId = ref<number | null>(null);
 const selectedSquadId = ref<number | null>(null);
 
 // SA-T6（Plan A）：explore 「开始挑战」直达进战——记录本次进战的小队 id，供 battle tab 的
@@ -85,80 +84,8 @@ const ownedCharacters = computed(() =>
     .sort((a, b) => rarityWeight(b.rarity) - rarityWeight(a.rarity)),
 );
 
-watch(ownedCharacters, characters => {
-  if (selectedCharacterId.value == null && characters.length > 0) {
-    selectedCharacterId.value = characters[0].id;
-  }
-}, { immediate: true });
-
-const selectedCharacter = computed(() => {
-  if (selectedCharacterId.value == null) return ownedCharacters.value[0] ?? null;
-  return ownedCharacters.value.find(card => card.id === selectedCharacterId.value) ?? ownedCharacters.value[0] ?? null;
-});
-
-const selectedNurture = computed(() => selectedCharacter.value ? userStore.getNurtureData(selectedCharacter.value.id) : null);
-
-const selectedEquipBonus = computed<BattleStats>(() => {
-  const character = selectedCharacter.value;
-  if (!character) return emptyStats();
-  void equipmentStore.equipped;
-  return equipmentStore.resolveEquipBonus(character.id);
-});
-
-const selectedFinalStats = computed<BattleStats>(() => {
-  const character = selectedCharacter.value;
-  const nurture = selectedNurture.value;
-  if (!character || !nurture) return emptyStats();
-  return generateBattleStats(baseStatsOf(character), nurture.statPoints, selectedEquipBonus.value);
-});
-
-const selectedStatRows = computed(() => {
-  const character = selectedCharacter.value;
-  const nurture = selectedNurture.value;
-  if (!character || !nurture) return [];
-  const base = baseStatsOf(character);
-  const equip = selectedEquipBonus.value;
-  return STAT_META.map(meta => ({
-    key: meta.key,
-    label: meta.label,
-    base: base[meta.key],
-    point: nurture.statPoints[meta.key],
-    equip: equip[meta.key],
-    total: selectedFinalStats.value[meta.key],
-  }));
-});
-
-const selectedSkillRows = computed(() => {
-  const kit = getSquadSkillKitForCharacter(selectedCharacter.value);
-  if (!kit) return [];
-  return [
-    kit.normalAttack,
-    kit.skill1,
-    kit.skill2,
-    kit.passive,
-    kit.ultimate,
-  ].map(skill => ({ name: skill.name, desc: skill.description }));
-});
-
-const selectedEquipRows = computed(() => {
-  const character = selectedCharacter.value;
-  if (!character) return [];
-  void equipmentStore.equipped;
-  const equipped = equipmentStore.getEquipped(character.id);
-  return SLOT_ORDER.map(slot => {
-    const uid = equipped[slot];
-    const item = uid ? equipmentStore.getItem(uid) : null;
-    const def = item ? getEquipmentDef(item.defId) : undefined;
-    return {
-      slot,
-      label: SLOT_META[slot].label,
-      icon: SLOT_META[slot].icon,
-      name: def?.name ?? '未装备',
-      bonus: def ? formatBonus(def.bonus) : '无加成',
-      rarity: def?.rarity ?? '',
-    };
-  });
-});
+// SC-T6：角色面板改交无壳 NurtureView（自持角色选择/五维/装备/技能/突破/好感/每日互动），
+// 原 hub 内嵌 summary（角色选择 + 五维/装备/技能镜像）随之删除，消除双标题/双内容/长滚。
 
 watch(() => userStore.presetSquads, squads => {
   if (selectedSquadId.value == null && squads.length > 0) selectedSquadId.value = squads[0].id;
@@ -178,9 +105,9 @@ function squadValidation(squadId: number) {
 }
 
 function memberPower(character: CharacterCard): number {
-  const stats = generateBattleStats(
+  const stats = resolveMemberBattleStats(
     baseStatsOf(character),
-    userStore.getNurtureData(character.id).statPoints,
+    userStore.getNurtureData(character.id),
     equipmentStore.resolveEquipBonus(character.id),
   );
   return calculateBattlePower(stats);
@@ -298,6 +225,27 @@ const canStartBattle = computed(() =>
   && (exploreSquadValidation.value?.ok ?? false),
 );
 
+/**
+ * SC-T5：软战力门槛——我方 squadPower vs 敌方 floorPower 同口径评估（三档提示，不硬拦）。
+ * 无选中小队 / 无敌人预览时为 null（不显示提示）。
+ */
+const squadReadiness = computed<SquadReadinessAssessment | null>(() => {
+  const squad = selectedSquad.value;
+  const preview = enemyPreview.value;
+  if (!squad || !preview) return null;
+  return assessSquadReadiness(squadPower(squad.id), preview.floorPower);
+});
+
+/** SC-T5：软提示文案（人话化，含推荐战力 + delta），随三档变化。 */
+const readinessHint = computed<string>(() => {
+  const r = squadReadiness.value;
+  if (!r) return '';
+  const gap = Math.abs(r.delta);
+  if (r.level === 'ready') return `战力 ${r.playerPower} / 建议 ~${r.recommendedPower} · 达标，放心开打`;
+  if (r.level === 'risky') return `战力 ${r.playerPower} / 建议 ~${r.recommendedPower} · 略微吃紧（差 ${gap}），谨慎应战`;
+  return `战力 ${r.playerPower} / 建议 ~${r.recommendedPower} · 差距较大（差 ${gap}），建议先养成或扫荡`;
+});
+
 /** 开战被拦时给出的原因（留在 explore 显示，不进战）。 */
 const startBattleIssue = computed<string>(() => {
   if (!userStore.isLoggedIn) return '请先登录后进入挑战塔。';
@@ -368,10 +316,6 @@ function handleSweep() {
   }
 }
 
-function emptyStats(): BattleStats {
-  return { hp: 0, atk: 0, def: 0, sp: 0, spd: 0 };
-}
-
 function baseStatsOf(character: CharacterCard): BattleStats {
   return character.battle_stats || { hp: 100, atk: 50, def: 30, sp: 40, spd: 60 };
 }
@@ -384,9 +328,6 @@ function positionLabel(index: number): string {
   return ['前排', '前排', '中排', '中排', '后排'][index] ?? '后排';
 }
 
-function slotTone(slot: EquipmentSlot): string {
-  return slot === 'weapon' ? '进攻' : slot === 'armor' ? '防护' : '支援';
-}
 </script>
 
 <template>
@@ -428,66 +369,14 @@ function slotTone(slot: EquipmentSlot): string {
       <div class="panel-heading">
         <div>
           <h2>角色面板</h2>
-          <p>五维、装备、等级好感与小队战技能一并查看；下方保留原养成页的完整操作。</p>
+          <p>五维、装备、等级好感、星级突破与每日互动一并查看与操作。</p>
         </div>
       </div>
 
+      <!-- SC-T6：单一空态由 hub 壳统一处理；养成/突破/好感全交无壳 NurtureView（消除双标题/双空态/长滚）。 -->
       <div v-if="!userStore.isLoggedIn" class="hub-empty">请先登录后查看角色养成。</div>
       <div v-else-if="ownedCharacters.length === 0" class="hub-empty">暂无角色，先去抽卡获得可养成角色。</div>
-      <div v-else class="character-grid">
-        <aside class="character-list">
-          <button
-            v-for="character in ownedCharacters.slice(0, 18)"
-            :key="character.id"
-            type="button"
-            class="character-chip"
-            :class="{ active: selectedCharacter?.id === character.id }"
-            @click="selectedCharacterId = character.id"
-          >
-            <img :src="character.image_path" :alt="character.name" loading="lazy" decoding="async">
-            <span>{{ character.name }}</span>
-            <small>{{ character.rarity }} · Lv.{{ userStore.getNurtureData(character.id).level }}</small>
-          </button>
-        </aside>
-
-        <article v-if="selectedCharacter && selectedNurture" class="character-summary">
-          <div class="summary-top">
-            <img :src="selectedCharacter.image_path" :alt="selectedCharacter.name" loading="lazy" decoding="async">
-            <div>
-              <span class="summary-kicker">{{ selectedCharacter.rarity }} · {{ bondTitleFor(selectedNurture.affection) }}</span>
-              <h3>{{ selectedCharacter.name }}</h3>
-              <p>Lv.{{ selectedNurture.level }} · 好感 {{ selectedNurture.affection }} · 战力 {{ calculateBattlePower(selectedFinalStats) }}</p>
-            </div>
-          </div>
-
-          <div class="stat-mini-grid">
-            <div v-for="row in selectedStatRows" :key="row.key" class="stat-mini">
-              <span>{{ row.label }}</span>
-              <strong>{{ row.total }}</strong>
-              <small>基础 {{ row.base }} / 加点 {{ row.point }} / 装备 {{ row.equip }}</small>
-            </div>
-          </div>
-
-          <div class="equip-mini-grid">
-            <div v-for="row in selectedEquipRows" :key="row.slot" class="equip-mini">
-              <span>{{ row.icon }} {{ row.label }} · {{ slotTone(row.slot) }}</span>
-              <strong>{{ row.name }}</strong>
-              <small>{{ row.rarity ? `${row.rarity} · ` : '' }}{{ row.bonus }}</small>
-            </div>
-          </div>
-
-          <div class="skill-list">
-            <h4>小队战技能</h4>
-            <div v-if="selectedSkillRows.length === 0" class="skill-empty">该角色暂不可进入挑战塔。</div>
-            <div v-for="skill in selectedSkillRows" :key="skill.name" class="skill-row">
-              <strong>{{ skill.name }}</strong>
-              <span>{{ skill.desc }}</span>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <div class="embedded-view">
+      <div v-else class="embedded-view">
         <NurtureView />
       </div>
     </section>
@@ -626,6 +515,14 @@ function slotTone(slot: EquipmentSlot): string {
           </div>
           <p v-if="!canStartBattle" class="start-hint">{{ startBattleIssue }}</p>
           <p v-else class="start-hint ready">小队已就绪，点击开始挑战第 {{ currentFloor }} 层。</p>
+          <!-- SC-T5：软战力门槛提示（推荐战力 + delta + 三档，不硬拦）。 -->
+          <p
+            v-if="squadReadiness"
+            class="readiness-hint"
+            :class="`readiness-${squadReadiness.level}`"
+          >
+            {{ readinessHint }}
+          </p>
           <div class="start-actions">
             <button
               class="btn-primary"
@@ -817,6 +714,10 @@ function slotTone(slot: EquipmentSlot): string {
 .start-power small { color: rgb(var(--c-ink-2)); font-size: .78rem; }
 .start-hint { color: rgb(var(--c-ink-2)); font-size: .85rem; }
 .start-hint.ready { color: rgb(var(--c-success)); font-weight: 700; }
+.readiness-hint { margin-top: .35rem; font-size: .8rem; font-weight: 600; }
+.readiness-ready { color: rgb(var(--c-success)); }
+.readiness-risky { color: rgb(var(--c-warning)); }
+.readiness-underpowered { color: rgb(var(--c-danger)); }
 .start-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem; }
 /* SA-T5 扫荡卡（语义令牌，无 text-white / 无动态色类） */
 .sweep-card {

@@ -652,6 +652,29 @@ export const useUserStore = defineStore('user', () => {
       }
       return false;
     },
+    // SC-T3 星级/突破（消化重复角色卡）：成功才存档
+    breakthroughCharacter: (characterId: number) => {
+      if (nurture.breakthroughCharacter(characterId)) {
+        saveToServer();
+        return true;
+      }
+      return false;
+    },
+    // SC-T4 每日好感互动 / 好感溢出转 KP：成功才存档
+    dailyBondInteraction: (characterId: number) => {
+      if (nurture.dailyBondInteraction(characterId)) {
+        useDailyStore().markProgress('nurture', 1);
+        saveToServer();
+        return true;
+      }
+      return false;
+    },
+    canDailyBondInteract: nurture.canDailyBondInteract,
+    claimBondOverflow: (characterId: number) => {
+      const kp = nurture.claimBondOverflow(characterId);
+      if (kp > 0) saveToServer();
+      return kp;
+    },
 
     // pve ★ S5 起入存档：小队/塔进度的每次变更都会保存
     presetSquads: computed(() => pve.presetSquads),
