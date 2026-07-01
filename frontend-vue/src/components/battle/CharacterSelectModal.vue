@@ -4,13 +4,15 @@ import { useUserStore } from '@/stores/userStore';
 import { useGameDataStore } from '@/stores/gameDataStore';
 import { assetUrl } from '@/utils/assetUrl';
 import VirtualGrid from '@/components/VirtualGrid.vue';
-import type { CharacterCard } from '@/types/card';
+import type { CharacterCard, Rarity } from '@/types/card';
 
 const props = defineProps<{
   isOpen: boolean;
-  position: number; // 0-3，选择的位置
+  position: number; // 0-based，选择的位置
   currentCharacterId?: number; // 当前位置已选中的角色ID
   usedCharacterIds?: number[]; // 已被其他位置使用的角色ID列表
+  allowedRarities?: readonly Rarity[]; // 为空时允许全部稀有度；挑战塔传 HR/UR
+  isCharacterSelectable?: (character: CharacterCard) => boolean;
 }>();
 
 const emit = defineEmits<{
@@ -46,6 +48,14 @@ const availableCharacters = computed(() => {
         const matchesSearch = character.name.toLowerCase().includes(searchKeyword.value.toLowerCase());
         if (!matchesSearch) return false;
       }
+
+      if (props.allowedRarities?.length && !props.allowedRarities.includes(character.rarity)) {
+        return false;
+      }
+
+      if (props.isCharacterSelectable && !props.isCharacterSelectable(character)) {
+        return false;
+      }
       
       // 过滤已被其他位置使用的角色（但保留当前位置的角色）
       if (props.usedCharacterIds && props.usedCharacterIds.length > 0) {
@@ -63,6 +73,10 @@ const availableCharacters = computed(() => {
 
 // 选择角色
 function selectCharacter(character: CharacterCard) {
+  if (props.isCharacterSelectable && !props.isCharacterSelectable(character)) {
+    return;
+  }
+
   // 检查是否是已被其他位置使用的角色
   if (props.usedCharacterIds && 
       props.usedCharacterIds.includes(character.id) && 
@@ -161,7 +175,7 @@ function handleBackdropClick(event: MouseEvent) {
       <div class="p-6 overflow-y-auto max-h-96">
         <div v-if="availableCharacters.length === 0" class="text-center py-8">
           <div class="text-ink-2 mb-4">
-            {{ searchKeyword ? '未找到匹配的角色' : '你还没有收藏任何角色' }}
+            {{ searchKeyword ? '未找到匹配的角色' : (allowedRarities?.length ? '你还没有可加入挑战塔的 HR/UR 角色' : '你还没有收藏任何角色') }}
           </div>
           <router-link
             v-if="!searchKeyword"

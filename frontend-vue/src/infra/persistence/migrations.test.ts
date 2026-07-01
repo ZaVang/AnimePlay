@@ -78,13 +78,21 @@ describe('v1 → v2 迁移', () => {
     expect(v2.towerProgress).toEqual(createDefaultTowerProgress());
   });
 
-  it('预设小队脏档：成员按位去重 + 截到 4 槽（防单角色克隆满全队放大战力）', () => {
+  it('预设小队脏档：成员按位去重 + 截到 5 槽（防单角色克隆满全队放大战力）', () => {
     const out = migrate({
       version: 14,
       presetSquads: [{ id: 1, name: 'X', members: [7, 7, 7, 7, 7] }],
     } as unknown);
-    // 同 id 仅首槽保留，其余置 null；恰 4 槽
-    expect(out.presetSquads[0].members).toEqual([7, null, null, null]);
+    // 同 id 仅首槽保留，其余置 null；恰 5 槽
+    expect(out.presetSquads[0].members).toEqual([7, null, null, null, null]);
+  });
+
+  it('旧 4 槽预设小队迁移：前 4 位保留，第 5 位补 null', () => {
+    const out = migrate({
+      version: 14,
+      presetSquads: [{ id: 1, name: '旧队', members: [101, 102, 103, 104] }],
+    } as unknown);
+    expect(out.presetSquads[0].members).toEqual([101, 102, 103, 104, null]);
   });
 
   it('v3 新键：shopPurchases / guess 缺失补默认', () => {
@@ -334,6 +342,7 @@ describe('v2 存档过迁移层', () => {
     };
     const out = migrate(v2in);
     expect(out.presetSquads[0].name).toBe('我的队');
+    expect(out.presetSquads[0].members).toEqual([101, 102, null, null, null]);
     expect(out.towerProgress.currentFloor).toBe(13);
   });
 

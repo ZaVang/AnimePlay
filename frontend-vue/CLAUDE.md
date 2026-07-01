@@ -33,9 +33,9 @@ Vue 3 + TypeScript + Pinia + TailwindCSS, built with Vite.
 | `/gacha` | GachaView | 抽卡 | `docs/抽卡系统.md` |
 | `/collections` | CollectionsView | 收藏/卡组 | — |
 | `/battle` | BattleView | 宅理论战（卡牌辩论） | `docs/战斗系统.md` |
-| `/squad-battle` | SquadBattleView | 挑战塔（小队数值战） | `docs/挑战塔系统.md` |
-| `/nurture` | NurtureView | 角色养成 | `docs/角色养成系统.md` |
-| `/homestead` | HomesteadView | 家园（桌宠；S13 起做基地养成 hub） | `docs/FUTURE.md` S13 |
+| `/homestead` | HomesteadHubView | 基地 hub（家园/角色/编队/探索/战斗统一入口） | `docs/FUTURE.md` S13, `docs/挑战塔系统.md`, `docs/角色养成系统.md` |
+| `/squad-battle` | redirect | 旧挑战塔入口，重定向到 `/homestead?tab=explore` | `docs/挑战塔系统.md` |
+| `/nurture` | redirect | 旧角色养成入口，重定向到 `/homestead?tab=characters` | `docs/角色养成系统.md` |
 | `/minigames` | MiniGamesView | 小游戏中心（猜角色/高低牌/番剧问答/每日挑战） | `docs/小游戏系统.md` |
 | `/settings` | SettingsView | 设置/主题 | `docs/主题系统.md` |
 
@@ -47,6 +47,8 @@ Vue 3 + TypeScript + Pinia + TailwindCSS, built with Vite.
 - `userStore` — **300 行兼容门面**：维持旧调用面 + 跨域编排（抽卡/商店/会话/小游戏结算）+ 统一触发存档。新代码直接用领域 store；**货币只准走 `spend()/earn()`**。
 - 持久化：`infra/persistence`（schema + migrate + IO）+ `stores/persistence.ts`（装配器，保存串行合并）。版本沿革：v3=商店限购+猜角色 / v4=皮肤 / v5=saveVersion 乐观并发 / v6=每日任务+图鉴里程碑+成就 / v7=周任务+连签 / v8=高低牌 / v9=Quiz / v10=每日挑战 / v11=每日挑战 streak / v12=tasteProfile 持久化 / v13=家园挂机域 homestead（入住角色+离线结算基线，S13-B）/ v14=养成精简（characterNurtureData 瘦身为等级加点+好感两轴）+ 空 equipment 域占位（S13-C1）。**权威值在 `infra/persistence/schema.ts` SAVE_VERSION**（文档只指向不复述，避免版本号再漂）。**新增存档字段三处同改：schema / migrations / 装配器**。
 - `battle.ts` (gameStore+playerStore+historyStore) / `theme.ts`（S7 皮肤系统：5 套，data-skin 切换，随账号漫游）/ `settings.ts` / `guess.ts` / `onboarding.ts`+`achievementsRead.ts`（设备级 localStorage，不进存档）
+
+**S13 base hub（D5）**: `/homestead` 是家园综合系统主入口，使用路由 query `tab=home|characters|squad|explore|battle` 切换同一大类下的五个面板。`HomesteadView` 仍只负责家园漫步与离线收益；`NurtureView` 仍负责完整养成/配装操作；`SquadBattleView` 负责 D4 横板半自动战斗与结算。`/squad-battle`、`/nurture` 是兼容重定向，不能删除到 404。D5 不新增存档字段，轻状态优先用 query 或局部 state。
 
 **分层（S2-S4 重构后，依赖只向下，lint 闸强制）**：
 - `engine/` — 纯游戏规则（battle/gacha/squad/skills/nurture/ai + 注入式 RNG）。零 Vue/Pinia/DOM/IO，将来与 Node 服务端共享。

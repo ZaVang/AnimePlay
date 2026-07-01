@@ -213,8 +213,8 @@ function migrateEquipment(raw: any): EquipmentSave {
 }
 
 /**
- * v1→v2：预设小队。每队成员走 canonicalizeSquadMembers（4 槽 + 同队去重），保留 id/name/lastUsed。
- * 把配队 UI 的不变式收口到载入边界，杜绝脏档把单角色克隆满全队放大战力。
+ * v1→v2：预设小队。每队成员走 canonicalizeSquadMembers（5 槽 + 同队去重），保留 id/name/lastUsed。
+ * 把配队 UI 的不变式收口到载入边界；旧 4 槽档迁移时前 4 位保留，第 5 位补 null。
  */
 function migratePresetSquads(raw: any): PresetSquad[] {
   const defaults = createDefaultPresetSquads();

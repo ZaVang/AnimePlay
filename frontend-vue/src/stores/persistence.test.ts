@@ -181,7 +181,7 @@ describe('buildPayload ⇄ applyPayload 往返', () => {
     // ★ S5 修复目标：小队与塔进度经存档往返不丢
     const pve = usePveStore();
     expect(pve.presetSquads[0].name).toBe('推塔队');
-    expect(pve.presetSquads[0].members).toEqual([12393, null, null, null]);
+    expect(pve.presetSquads[0].members).toEqual([12393, null, null, null, null]);
     expect(pve.towerProgress).toMatchObject({ currentFloor: 8, maxFloor: 7 });
 
     // S6 新增域：商店限购 / 猜角色最高分
@@ -263,7 +263,7 @@ describe('resetAllDomains', () => {
     expect(useGachaStore().animePity.totalPulls).toBe(0);
     expect(useNurtureStore().characterNurtureData.size).toBe(0);
     expect(usePveStore().towerProgress.currentFloor).toBe(1);
-    expect(usePveStore().presetSquads[0].members).toEqual([null, null, null, null]);
+    expect(usePveStore().presetSquads[0].members).toEqual([null, null, null, null, null]);
     expect(useHomesteadStore().placedCharacterIds).toEqual([]);
     expect(useEquipmentStore().inventory).toEqual([]);
     expect(useEquipmentStore().equipped).toEqual({});
@@ -271,14 +271,14 @@ describe('resetAllDomains', () => {
 });
 
 describe('saveToServer 串行合并（防后端非原子写被并发截断）', () => {
-  it('同步连发 6 次保存只产生 1 个网络请求，且带上全部最新状态', async () => {
+  it('同步连发 7 次保存只产生 1 个网络请求，且带上全部最新状态', async () => {
     vi.mocked(pushUserSave).mockClear();
     const profile = useProfileStore();
     profile.currentUser = 'tester';
 
     const pve = usePveStore();
     const calls: Promise<void>[] = [];
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < 5; i++) {
       pve.updateSquadMember(1, i, 100 + i);
       calls.push(saveToServer());
     }
@@ -290,9 +290,9 @@ describe('saveToServer 串行合并（防后端非原子写被并发截断）', 
     await Promise.all(calls);
     expect(pushUserSave).toHaveBeenCalledTimes(1);
 
-    // 发送的 payload 含全部 6 次变更
+    // 发送的 payload 含全部 7 次变更
     const sent = vi.mocked(pushUserSave).mock.calls[0][1];
-    expect(sent.presetSquads[0].members).toEqual([100, 101, 102, 103]);
+    expect(sent.presetSquads[0].members).toEqual([100, 101, 102, 103, 104]);
     expect(sent.presetSquads[0].name).toBe('合并测试队');
     expect(sent.towerProgress.currentFloor).toBe(2);
   });

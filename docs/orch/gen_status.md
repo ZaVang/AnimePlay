@@ -1,76 +1,91 @@
-# Generator Status — Iteration 1
+# Generator Status — D5 Iteration 1
 
 ## 完成的任务
+- [x] `/homestead` 改为基地 hub：新增 `HomesteadHubView`，用 `tab=home|characters|squad|explore|battle` 在家园、角色、编队、探索、战斗五个面板间切换。
+- [x] 保留旧入口兼容：`/squad-battle` 重定向到 `/homestead?tab=explore`，`/nurture` 重定向到 `/homestead?tab=characters`。
+- [x] 家园面板复用原 `HomesteadView`，保留角色走动与离线收益；战斗面板复用 D4 `SquadBattleView`，保留横板半自动战斗与结算。
+- [x] 角色面板补五维、装备、养成摘要与小队战技能摘要，并内嵌原养成操作区；编队面板展示 5 人站位、战力、技能摘要；探索面板展示塔层、敌人和奖励预览。
+- [x] 主导航收束为“基地 hub”，避免家园/养成/小队战斗三个入口语义割裂；旧 URL 仍可访问。
+- [x] 更新 `docs/挑战塔系统.md`、`docs/角色养成系统.md`、`frontend-vue/CLAUDE.md`，D5 checkbox 已在 `docs/FUTURE.md` 勾选。
 
-- [x] PL1-T1 装备目录扩容与效果模型 — 装备目录扩展到 3 槽 × 5 稀有度 × 3 件，保留旧 defId，并新增 `homeEffect`、效果求和与展示格式化。
-- [x] PL1-T2 家园收益接入装备效果 — `computeIdleYield` 接收装备家园效果，经验/好感/KP 加成受 60% 上限保护；`userStore.settleHomestead` 从入住角色已装备道具汇总效果。
-- [x] PL1-T3 家园页基地运营层 — `/homestead` 新增舒适度、训练区、休息区、资料室、居民装备状态和离线收益舒适度展示。
-- [x] PL1-T4 装备背包与配装弹窗展示效果 — 背包卡、兑换商店、配装候选展示同源家园效果文案。
-- [x] 塔掉落候选池随机 — 多件同槽同稀有度时，通层掉落用注入 RNG 从候选池选择具体装备。
-
-## 未完成的任务
-
-- 无。
+## 未完成的任务（如有）
+- 无代码侧未完成项。
+- UI 闭环未使用真实账号登录验证，不猜密码、不创建/污染真实账号；改用未登录态路由渲染、旧路由重定向、桌面/移动面板 DOM 与截图生成作为替代检查。战斗结算路径由 `npm run test -- squad` 和全量测试覆盖。
 
 ## 验收命令输出
-
 ```text
-cd frontend-vue && npm run type-check
-exit 0
-vue-tsc --build
+cd frontend-vue; npm run test -- squad
+
+> frontend-vue@0.0.0 test
+> vitest run squad
+
+ RUN  v4.1.8 D:/work/AnimePlay/frontend-vue
+
+ Test Files  10 passed (10)
+      Tests  82 passed (82)
+   Start at  21:32:44
+   Duration  1.33s (transform 1.88s, setup 0ms, import 2.55s, tests 241ms, environment 2ms)
 ```
 
 ```text
-cd frontend-vue && npm run test
-exit 0
-Test Files  51 passed (51)
-Tests       585 passed (585)
+cd frontend-vue; npm run test
+
+> frontend-vue@0.0.0 test
+> vitest run
+
+ RUN  v4.1.8 D:/work/AnimePlay/frontend-vue
+
+ Test Files  58 passed (58)
+      Tests  628 passed (628)
+   Start at  21:32:56
+   Duration  8.67s (transform 22.72s, setup 0ms, import 45.29s, tests 3.13s, environment 12ms)
 ```
 
 ```text
-cd frontend-vue && npm run build
-exit 0
-vue-tsc --build
-vite build
-361 modules transformed
-built in 13.76s
-Note: Browserslist/caniuse-lite stale-data warning only.
+cd frontend-vue; npm run type-check
+
+> frontend-vue@0.0.0 type-check
+> vue-tsc --build
 ```
 
 ```text
-python backend/test_security.py
-exit 1 with system Python: ModuleNotFoundError: No module named 'werkzeug'
+cd frontend-vue; npm run build
 
-. .\.venv\Scripts\Activate.ps1; python backend\test_security.py
-exit 0
-RESULT: PASS — all security checks passed
+> frontend-vue@0.0.0 build
+> run-p type-check "build-only {@}" --
+
+> frontend-vue@0.0.0 type-check
+> vue-tsc --build
+
+> frontend-vue@0.0.0 build-only
+> vite build
+
+vite v7.3.5 building client environment for production...
+381 modules transformed.
+✓ built in 9.28s
+
+Browserslist: browsers data (caniuse-lite) is 6 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
 ```
 
 ```text
-grep -rn "debug=True" backend/server.py api/index.py
-exit 1 in PowerShell: grep is not installed
+PowerShell engine/squad purity scan
 
-rg -n "debug=True" backend\server.py api\index.py
-exit 1 with no output (zero matches)
+engine/squad purity scan passed
 ```
 
-```text
-git diff --check
-exit 0
-Only line-ending warnings for docs/orch and docs/plans markdown files.
-```
+## UI/路由/docs 验收
+- 启动本轮专用 dev server：`npm run dev -- --host 127.0.0.1 --port 5190 --strictPort`。5176/5177 已被其他项目 Vite 占用，未停止它们。
+- Chrome headless 桌面检查 `/homestead`：渲染到 `基地 hub`，可见家园、角色、编队、探索、战斗五个 tab；未登录态展示家园提示。
+- Chrome headless 桌面检查 `/squad-battle`：客户端重定向后渲染基地 hub 的探索面板，可见“探索面板”“进入战斗”“请先登录后进入挑战塔”。
+- Chrome headless 桌面检查 `/nurture`：客户端重定向后渲染基地 hub 的角色面板，可见“角色面板”、五维/装备/技能 tab 文案和原 `角色养成` 未登录态。
+- Chrome headless 移动宽度检查 `/homestead?tab=explore`：渲染探索面板，五个 tab 与未登录提示可见。
+- 本轮启动的 5190 dev server 已停止，端口只剩 `TimeWait`，无 `Listen` 进程。
+- 文档同步：挑战塔文档改为基地 hub + 5v5 横板半自动 + 角色经验/知识点/装备奖励；角色养成文档改为等级/好感两轴 + 五维加点 + 装备联动；`frontend-vue/CLAUDE.md` 路由表与 D5 说明已更新。
 
-## 新发现的陷阱
-
-- [装备扩容] 当每槽每稀有度不止一件时，塔掉落不能继续只取第一件，否则目录扩容只服务商店、不服务掉落；应使用候选池并通过注入 RNG 选择具体装备。
-
-## 文件结构变更（防漂移自报）
-
-- 本轮是否新增/移动/删除文件或改变模块职责：是
-- 新增：`frontend-vue/src/config/equipment.test.ts`
-- 职责变化：`config/equipment.ts` 从纯五维装备目录扩展为「五维 + 家园效果」目录；`config/homestead.ts` 的纯收益函数接收装备家园效果；`stores/equipment.ts` 增加家园效果解析。
-- `docs/project_structure.md`：项目无此文件。
+## 新发现的陷阱（如有）
+- 无。
 
 ## 状态
-
-PASSED_WITH_ENV_NOTES
+PASSED

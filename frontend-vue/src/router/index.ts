@@ -27,12 +27,12 @@ const router = createRouter({
     {
       path: '/squad-battle',
       name: 'squadBattle',
-      component: () => import('../views/SquadBattleView.vue')
+      redirect: { path: '/homestead', query: { tab: 'explore' } }
     },
     {
       path: '/nurture',
       name: 'nurture',
-      component: () => import('../views/NurtureView.vue')
+      redirect: { path: '/homestead', query: { tab: 'characters' } }
     },
     {
       path: '/settings',
@@ -40,10 +40,10 @@ const router = createRouter({
       component: () => import('../views/SettingsView.vue')
     },
     {
-      // S13-A：家园解冻——Q版/原立绘桌宠就绪，恢复 lazy 路由（原 I5-T4 冻结 redirect 已撤）。
+      // S13-D5：基地 hub 统一家园/角色/编队/探索/战斗入口；旧 /squad-battle、/nurture 保持重定向兼容。
       path: '/homestead',
       name: 'homestead',
-      component: () => import('../views/HomesteadView.vue')
+      component: () => import('../views/HomesteadHubView.vue')
     },
     {
       path: '/minigames',

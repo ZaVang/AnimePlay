@@ -1,74 +1,111 @@
 <script setup lang="ts">
-import { ref, computed, watch, onMounted, onBeforeUnmount } from 'vue';
-import { RouterLink } from 'vue-router';
+import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue';
 import { useUserStore } from '@/stores/userStore';
 import { useGameDataStore } from '@/stores/gameDataStore';
+import { useEquipmentStore } from '@/stores/equipment';
 import {
-  generateBattleStats,
+  SQUAD_MEMBER_COUNT,
+  TOWER_SQUAD_ALLOWED_RARITIES,
   calculateBattlePower,
-  calculateAttackDamage,
-  generateMatchedAISquad,
-  generateTowerFloorEnemies,
+  calculateTowerBattleRewards,
+  createSeededRng,
   defaultRng,
+  generateBattleStats,
+  generateTowerFloorEnemies,
+  isTowerSquadRarity,
+  simulateTimedBattle,
+  validateTowerSquadMembers,
   type BattleStats,
+  type ManualUltimateOrder,
+  type SquadPosition,
+  type SquadUnitSetup,
+  type StatusKind,
+  type TimedBattleEvent,
+  type TimedBattleResult,
+  type TimedBattleWinner,
 } from '@/engine';
 import { CHARACTER_IMAGE_POOL } from '@/utils/imageUtils';
 import { assetUrl } from '@/utils/assetUrl';
 import CharacterSelectModal from '@/components/battle/CharacterSelectModal.vue';
-import { useEquipmentStore } from '@/stores/equipment';
+import SquadBattlefield from '@/components/battle/squad/SquadBattlefield.vue';
+import SquadBattleLog from '@/components/battle/squad/SquadBattleLog.vue';
+import SquadBattleResult from '@/components/battle/squad/SquadBattleResult.vue';
+import { getSquadSkillKitForCharacter, isSquadSkillKitReady } from '@/data/squadSkillKits';
 import type { CharacterCard } from '@/types/card';
+import type { SquadBattleRewardView, SquadBattleUnitView } from '@/components/battle/squad/types';
 
 const userStore = useUserStore();
 const gameDataStore = useGameDataStore();
 const equipmentStore = useEquipmentStore();
 
-// 战斗状态 - 直接使用爬塔模式
 type BattlePhase = 'towerMode' | 'battle' | 'result';
-const currentPhase = ref<BattlePhase>('towerMode');
 
-// 战斗模式 - 固定为爬塔模式
-const currentBattleMode = ref<'tower'>('tower');
-
-// 小队数据
 interface SquadMember {
   character: CharacterCard;
   battleStats: BattleStats;
-  currentHP: number;
-  maxHP: number;
-  isDefeated: boolean;
-  position: number; // 0-3 (左到右)
+  position: number;
+  unitId: string;
 }
 
+interface RuntimeStatusView {
+  kind: StatusKind;
+  expiresAt: number;
+  amount?: number;
+}
+
+interface RuntimeUnitView extends SquadBattleUnitView {
+  statuses: RuntimeStatusView[];
+}
+
+const BATTLE_STATE_KEY = 'squadBattleState';
+const EMPTY_STAT_BONUS: BattleStats = { hp: 0, atk: 0, def: 0, sp: 0, spd: 0 };
+const SQUAD_POSITIONS: SquadPosition[] = ['front', 'front', 'middle', 'middle', 'back'];
+const CONTROL_STATUSES: StatusKind[] = ['stun', 'silence', 'taunt'];
+const PLAYBACK_DELAY_MS = 180;
+
+const currentPhase = ref<BattlePhase>('towerMode');
 const playerSquad = ref<SquadMember[]>([]);
 const enemySquad = ref<SquadMember[]>([]);
-
-// 角色选择弹窗状态
+const battleUnits = ref<RuntimeUnitView[]>([]);
+const battleEvents = ref<TimedBattleEvent[]>([]);
+const battleLog = ref<string[]>([]);
+const battleResult = ref<'victory' | 'defeat' | null>(null);
+const battleElapsedMs = ref(0);
+const battleEnded = ref(false);
+const autoUltimates = ref(true);
+const manualUltimateOrders = ref<ManualUltimateOrder[]>([]);
+const battleSeed = ref(0);
+const battleSimulation = ref<TimedBattleResult | null>(null);
+const battleEventCursor = ref(0);
+const selectedSquadForBattle = ref<number | null>(null);
+const currentTowerFloor = ref(1);
+const towerEnemyData = ref<any>(null);
 const showCharacterSelectModal = ref(false);
 const selectedPosition = ref(0);
 const editingSquadId = ref<number | null>(null);
+const battleSettled = ref(false);
+const battleRewards = ref<SquadBattleRewardView>({
+  characterExp: 0,
+  knowledgePoints: 0,
+  equipmentDrop: null,
+});
 
-// 战斗进行状态  
-const currentTurn = ref(0);
-const battleLog = ref<string[]>([]);
-const isPlayerTurn = ref(true);
-const battleResult = ref<'victory' | 'defeat' | null>(null);
+const towerSquadAllowedRarities = TOWER_SQUAD_ALLOWED_RARITIES;
 
-// 选中用于战斗的小队ID
-const selectedSquadForBattle = ref<number | null>(null);
+const playerBattleUnits = computed(() => battleUnits.value.filter(unit => unit.side === 'player'));
+const enemyBattleUnits = computed(() => battleUnits.value.filter(unit => unit.side === 'enemy'));
 
-// 爬塔模式相关状态
-const currentTowerFloor = ref<number>(1);
-const towerEnemyData = ref<any>(null);
+function isCharacterSelectableForTower(character: CharacterCard): boolean {
+  return isTowerSquadRarity(character.rarity) && isSquadSkillKitReady(character);
+}
 
-// 页面状态持久化键
-const BATTLE_STATE_KEY = 'squadBattleState';
+function getTowerEnemyCandidates(): CharacterCard[] {
+  return gameDataStore.allCharacterCards.filter(isSquadSkillKitReady);
+}
 
-// 保存状态到sessionStorage
 function saveState() {
-  // 只持久化 UI 过场态（phase / 楼层显示）。敌人对象不入 session——客户端缓存的敌人不可信，
-  // 重载由 ensureTowerEnemies() 按服务端楼层重新生成（防篡改注入空/弱敌后秒杀刷奖）。
   const state = {
-    currentPhase: currentPhase.value,
+    currentPhase: currentPhase.value === 'towerMode' ? 'towerMode' : 'towerMode',
     currentTowerFloor: currentTowerFloor.value,
   };
   try {
@@ -78,8 +115,6 @@ function saveState() {
   }
 }
 
-// 恢复页面状态：以服务器存档的塔进度为权威，sessionStorage 只补足页面 UI 态。
-// S5 修复：此前只读 sessionStorage，关浏览器后塔层永远回到第 1 层。
 function loadState() {
   const progressFloor = userStore.getCurrentChallengeFloor();
   currentTowerFloor.value = progressFloor;
@@ -87,15 +122,10 @@ function loadState() {
     const savedState = sessionStorage.getItem(BATTLE_STATE_KEY);
     if (savedState) {
       const state = JSON.parse(savedState);
-      // 只恢复塔模式状态
       if (state.currentPhase === 'towerMode') {
-        currentPhase.value = state.currentPhase;
-        // 楼层以服务端塔进度为权威；敌人对象一律不从 session 恢复（防篡改注入空/弱敌后秒杀刷奖），
-        // 由 onMounted 的 ensureTowerEnemies() 按真实楼层重新生成。
+        currentPhase.value = 'towerMode';
         currentTowerFloor.value = progressFloor;
         towerEnemyData.value = null;
-      } else {
-        currentPhase.value = 'towerMode';
       }
     }
   } catch (error) {
@@ -104,522 +134,441 @@ function loadState() {
   }
 }
 
-// 清除状态
-function clearState() {
-  try {
-    sessionStorage.removeItem(BATTLE_STATE_KEY);
-  } catch (error) {
-    console.warn('[DEBUG] Failed to clear state:', error);
-  }
-}
-
-// 获取小队的完整角色信息
-function getSquadCharacters(squadId: number): (CharacterCard | null)[] {
-  const members = userStore.getSquadMembers(squadId);
-  return members.map((id: number | null) => {
-    if (id === null) return null;
-    const character = gameDataStore.getCharacterCardById(id);
-    return character || null;
+function getTowerSquadValidation(squadId: number) {
+  return validateTowerSquadMembers({
+    members: userStore.getSquadMembers(squadId),
+    getCharacter: id => gameDataStore.getCharacterCardById(id),
+    isOwned: id => userStore.getCharacterCardCount(id) > 0,
+    hasCompleteSkillKit: isSquadSkillKitReady,
   });
 }
 
-// 计算小队战力
+function getTowerSquadIssue(squadId: number): string {
+  return getTowerSquadValidation(squadId).message ?? '';
+}
+
+function canStartTowerBattle(squadId: number): boolean {
+  return getTowerSquadValidation(squadId).ok
+    && !userStore.hasCompletedFloor(currentTowerFloor.value)
+    && !!towerEnemyData.value;
+}
+
+function getSquadSlotIssue(squadId: number, position: number): string {
+  const slot = getTowerSquadValidation(squadId).slots[position];
+  return slot && !slot.ok ? (slot.message ?? '') : '';
+}
+
+function isSquadSlotValid(squadId: number, position: number): boolean {
+  return getTowerSquadValidation(squadId).slots[position]?.ok ?? false;
+}
+
 function getSquadPower(squadId: number): number {
-  const characters = getSquadCharacters(squadId).filter(Boolean) as CharacterCard[];
-  return characters.reduce((total, character) => {
-    const nurtureData = userStore.getNurtureData(character.id);
-    const battleStats = generateBattleStats(
-      character.battle_stats || { hp: 100, atk: 50, def: 30, sp: 40, spd: 60 },
-      nurtureData.statPoints,
-      equipmentStore.resolveEquipBonus(character.id) // C2：真实装备加成（与养成/进战斗同源）
-    );
+  const validation = getTowerSquadValidation(squadId);
+  return validation.slots.reduce((total, slot) => {
+    const character = slot.character;
+    if (!slot.ok || !character) return total;
+    const battleStats = buildCharacterStats(character, false);
     return total + calculateBattlePower(battleStats);
   }, 0);
 }
 
-// 获取小队成员数量
 function getSquadMemberCount(squadId: number): number {
-  const members = userStore.getSquadMembers(squadId);
-  return members.filter((id: number | null) => id !== null).length;
+  return getTowerSquadValidation(squadId).slots.filter(slot => slot.ok).length;
 }
 
-// 获取小队中已使用的角色ID（排除当前位置）
 function getUsedCharacterIds(squadId: number, excludePosition: number): number[] {
-  const members = userStore.getSquadMembers(squadId);
-  return members
+  return userStore.getSquadMembers(squadId)
     .map((id: number | null, index: number) => index !== excludePosition ? id : null)
     .filter((id: number | null): id is number => id !== null);
 }
 
-// 打开角色选择弹窗
 function openCharacterSelect(squadId: number, position: number) {
   editingSquadId.value = squadId;
   selectedPosition.value = position;
   showCharacterSelectModal.value = true;
 }
 
-// 处理角色选择
 function handleCharacterSelect(characterId: number, position: number) {
-  if (editingSquadId.value !== null) {
-    userStore.updateSquadMember(editingSquadId.value, position, characterId);
+  if (editingSquadId.value === null) return;
+  const character = gameDataStore.getCharacterCardById(characterId);
+  if (!character || userStore.getCharacterCardCount(characterId) <= 0 || !isCharacterSelectableForTower(character)) {
+    userStore.addLog('挑战塔小队只能选择已拥有且拥有完整小队战技能的 HR/UR 角色。', 'warning');
+    return;
   }
+  userStore.updateSquadMember(editingSquadId.value, position, characterId);
 }
 
-// 处理角色移除
 function handleCharacterRemove(position: number) {
   if (editingSquadId.value !== null) {
     userStore.updateSquadMember(editingSquadId.value, position, null);
   }
 }
 
-// 更新小队名称
 function updateSquadName(squadId: number, newName: string) {
   userStore.updateSquadName(squadId, newName);
 }
 
-// 五维零加成（敌人不继承玩家的加点/装备）
-const EMPTY_STAT_BONUS: BattleStats = { hp: 0, atk: 0, def: 0, sp: 0, spd: 0 };
+function buildCharacterStats(character: CharacterCard, isEnemy: boolean): BattleStats {
+  const base = character.battle_stats || { hp: 100, atk: 50, def: 30, sp: 40, spd: 60 };
+  return isEnemy
+    ? generateBattleStats(base, EMPTY_STAT_BONUS, EMPTY_STAT_BONUS)
+    : generateBattleStats(base, userStore.getNurtureData(character.id).statPoints, equipmentStore.resolveEquipBonus(character.id));
+}
 
-// 创建小队成员。isEnemy=true 时不读取玩家的加点/装备——敌人（塔/AI）复用真实角色 ID，
-// 否则 resolveEquipBonus(id)/getNurtureData(id) 会把玩家本人的装备与加点泄漏到敌方身上。
-function createSquadMember(character: CharacterCard, position: number, isEnemy = false): SquadMember {
-  const battleStats = isEnemy
-    ? generateBattleStats(
-        character.battle_stats || { hp: 100, atk: 50, def: 30, sp: 40, spd: 60 },
-        EMPTY_STAT_BONUS,
-        EMPTY_STAT_BONUS,
-      )
-    : generateBattleStats(
-        character.battle_stats || { hp: 100, atk: 50, def: 30, sp: 40, spd: 60 },
-        userStore.getNurtureData(character.id).statPoints,
-        equipmentStore.resolveEquipBonus(character.id), // C2：真实装备加成（与养成/小队战力同源）
-      );
-
+function createSquadMember(character: CharacterCard, position: number, side: 'player' | 'enemy'): SquadMember {
   return {
     character,
-    battleStats,
-    currentHP: battleStats.hp,
-    maxHP: battleStats.hp,
-    isDefeated: false,
-    position
+    battleStats: buildCharacterStats(character, side === 'enemy'),
+    position,
+    unitId: `${side}-${position}-${character.id}`,
   };
 }
 
-// 已移除模式选择功能，直接使用爬塔模式
-
-// 开始爬塔战斗
 function startTowerBattle(squadId: number) {
   if (!userStore.isLoggedIn) {
     userStore.addLog('请先登录！', 'warning');
     return;
   }
-  
-  // 移除每日挑战次数限制
 
-  const members = userStore.getSquadMembers(squadId);
-  // 已拥有校验纵深：只放进真正拥有的角色（脏档塞未拥有 id 会被剔除；配队 UI 本就只列已拥有）
-  const characters = members.map((id: number | null) =>
-    id && userStore.getCharacterCardCount(id) > 0 ? gameDataStore.getCharacterCardById(id) : null,
-  );
-  const validCharacters = characters.filter(Boolean) as CharacterCard[];
-  
-  if (validCharacters.length === 0) {
-    userStore.addLog('请至少选择一个角色组成小队！', 'warning');
+  const validation = getTowerSquadValidation(squadId);
+  if (!validation.ok) {
+    userStore.addLog(validation.message ?? '挑战塔需要 5 人 HR/UR 满编小队。', 'warning');
     return;
   }
 
-  // 检查是否需要4人满编
-  if (validCharacters.length < 4) {
-    userStore.addLog('爬塔挑战需要4人满编小队！', 'warning');
-    return;
-  }
-  
-  // 移除挑战次数记录
-  
-  // 创建玩家小队
-  playerSquad.value = validCharacters.map((character, index) => 
-    createSquadMember(character, index)
-  );
-  
-  // 生成当前层的敌人
   if (!towerEnemyData.value) {
-    towerEnemyData.value = generateTowerFloorEnemies(
-      gameDataStore.allCharacterCards,
-      currentTowerFloor.value,
-      defaultRng,
-      CHARACTER_IMAGE_POOL,
-    );
+    refreshTowerEnemies();
   }
-  
-  // 开始战斗流程
-  startBattleCommon(squadId, towerEnemyData.value.members, towerEnemyData.value.name);
-}
+  if (!towerEnemyData.value) return;
 
-// 开始预设小队战斗
-function startBattle(squadId: number) {
-  if (!userStore.isLoggedIn) {
-    userStore.addLog('请先登录！', 'warning');
-    return;
-  }
-
-  const members = userStore.getSquadMembers(squadId);
-  // 已拥有校验纵深：只放进真正拥有的角色（脏档塞未拥有 id 会被剔除；配队 UI 本就只列已拥有）
-  const characters = members.map((id: number | null) =>
-    id && userStore.getCharacterCardCount(id) > 0 ? gameDataStore.getCharacterCardById(id) : null,
-  );
-  const validCharacters = characters.filter(Boolean) as CharacterCard[];
-  
-  if (validCharacters.length === 0) {
-    userStore.addLog('请至少选择一个角色组成小队！', 'warning');
-    return;
-  }
-
-  // 检查是否满足4人要求
-  if (validCharacters.length < 4) {
-    userStore.addLog('需要4人满编小队才能开始战斗！', 'warning');
-    return;
-  }
-  
-  // 创建玩家小队（4人满编）
-  playerSquad.value = validCharacters.map((character, index) => 
-    createSquadMember(character, index)
-  );
-  
-  // 生成AI小队
-  const playerPower = playerSquad.value.reduce((sum, member) => sum + calculateBattlePower(member.battleStats), 0);
-  const aiSquadData = generateMatchedAISquad(playerPower, defaultRng, CHARACTER_IMAGE_POOL);
-  
-  startBattleCommon(squadId, aiSquadData.members, aiSquadData.name);
-}
-
-// 通用战斗开始逻辑
-function startBattleCommon(squadId: number, enemyMembers: CharacterCard[], enemyName: string) {
-  enemySquad.value = enemyMembers.map((character, index) =>
-    createSquadMember(character, index, true)
-  );
-  
+  playerSquad.value = validation.characters.map((character, index) => createSquadMember(character, index, 'player'));
+  enemySquad.value = towerEnemyData.value.members.map((character: CharacterCard, index: number) => createSquadMember(character, index, 'enemy'));
   selectedSquadForBattle.value = squadId;
+  battleSeed.value = Date.now() % 2147483647;
+  manualUltimateOrders.value = [];
+  battleRewards.value = { characterExp: 0, knowledgePoints: 0, equipmentDrop: null };
+  battleResult.value = null;
+  battleSettled.value = false;
+  battleEnded.value = false;
   currentPhase.value = 'battle';
-  battleLog.value = [`⚔️ 战斗开始！你的小队 vs ${enemyName}`];
-  currentTurn.value = 0;
-  isPlayerTurn.value = true;
+  regenerateBattleSimulation(0);
+  playNextBattleEvent();
 }
 
-// 获取当前前排角色（最前面还活着的）
-function getFrontMember(squad: SquadMember[]): SquadMember | null {
-  return squad.find(member => !member.isDefeated) || null;
+function unitSetups(): SquadUnitSetup[] {
+  const toSetup = (member: SquadMember, side: 'player' | 'enemy'): SquadUnitSetup => ({
+    id: member.unitId,
+    name: member.character.name,
+    side,
+    position: SQUAD_POSITIONS[member.position] ?? 'back',
+    stats: member.battleStats,
+    skills: getSquadSkillKitForCharacter(member.character),
+  });
+
+  return [
+    ...playerSquad.value.map(member => toSetup(member, 'player')),
+    ...enemySquad.value.map(member => toSetup(member, 'enemy')),
+  ];
 }
 
-// 执行一回合攻击
-function executeRound() {
-  if (currentPhase.value !== 'battle') return;
-  
-  const playerFront = getFrontMember(playerSquad.value);
-  const enemyFront = getFrontMember(enemySquad.value);
-  
-  if (!playerFront || !enemyFront) {
-    endBattle();
+function regenerateBattleSimulation(cursorTime: number) {
+  const result = simulateTimedBattle({
+    units: unitSetups(),
+    rng: createSeededRng(battleSeed.value),
+    autoUltimates: autoUltimates.value,
+    manualUltimateOrders: manualUltimateOrders.value,
+  });
+  battleSimulation.value = result;
+  battleEvents.value = [...result.events];
+  battleEventCursor.value = Math.max(0, battleEvents.value.findIndex(event => event.at > cursorTime));
+  if (battleEventCursor.value < 0) battleEventCursor.value = battleEvents.value.length;
+  rebuildVisibleBattle(battleEventCursor.value);
+}
+
+function baseRuntimeUnits(): RuntimeUnitView[] {
+  const fromMember = (member: SquadMember, side: 'player' | 'enemy'): RuntimeUnitView => {
+    const ultimate = getSquadSkillKitForCharacter(member.character)?.ultimate;
+    return {
+      id: member.unitId,
+      name: member.character.name,
+      imagePath: member.character.image_path || assetUrl('/data/images/character/77.jpg'),
+      side,
+      position: member.position,
+      hp: member.battleStats.hp,
+      maxHp: member.battleStats.hp,
+      energy: 0,
+      statuses: [],
+      defeated: false,
+      ultimateName: ultimate?.name ?? '大招',
+      ultimateReady: false,
+    };
+  };
+
+  return [
+    ...playerSquad.value.map(member => fromMember(member, 'player')),
+    ...enemySquad.value.map(member => fromMember(member, 'enemy')),
+  ];
+}
+
+function rebuildVisibleBattle(cursor: number) {
+  const units = baseRuntimeUnits();
+  const byId = new Map(units.map(unit => [unit.id, unit]));
+  const visibleEvents = battleEvents.value.slice(0, cursor);
+  let now = 0;
+
+  for (const event of visibleEvents) {
+    now = event.at;
+    applyEventToUnits(byId, event);
+  }
+
+  for (const unit of units) {
+    unit.statuses = unit.statuses.filter(status => status.expiresAt > now);
+    unit.ultimateReady = unit.side === 'player' && !unit.defeated && unit.energy >= 1000;
+  }
+
+  battleElapsedMs.value = now;
+  battleUnits.value = units;
+  battleLog.value = buildKeyLogs(visibleEvents);
+}
+
+function applyEventToUnits(byId: Map<string, RuntimeUnitView>, event: TimedBattleEvent) {
+  switch (event.type) {
+    case 'action': {
+      const actor = byId.get(event.actorId);
+      if (actor && event.slot === 'ultimate') {
+        actor.energy = 0;
+      }
+      break;
+    }
+    case 'damage': {
+      const target = byId.get(event.targetId);
+      if (target) target.hp = event.hpAfter;
+      break;
+    }
+    case 'heal':
+    case 'revive': {
+      const target = byId.get(event.targetId);
+      if (target) {
+        target.hp = event.hpAfter;
+        target.defeated = false;
+      }
+      break;
+    }
+    case 'statusTick': {
+      const target = byId.get(event.targetId);
+      if (target) target.hp = event.hpAfter;
+      break;
+    }
+    case 'energy': {
+      const target = byId.get(event.targetId);
+      if (target) target.energy = event.energyAfter;
+      break;
+    }
+    case 'shield': {
+      const target = byId.get(event.targetId);
+      if (target) target.statuses.push({ kind: 'shield', amount: event.amount, expiresAt: event.expiresAt });
+      break;
+    }
+    case 'statusApplied': {
+      const target = byId.get(event.targetId);
+      if (target) {
+        target.statuses = target.statuses.filter(status => status.kind !== event.status);
+        target.statuses.push({ kind: event.status, amount: event.amount, expiresAt: event.expiresAt });
+      }
+      break;
+    }
+    case 'statusExpired': {
+      const target = byId.get(event.targetId);
+      if (target) target.statuses = target.statuses.filter(status => status.kind !== event.status);
+      break;
+    }
+    case 'defeated': {
+      const target = byId.get(event.targetId);
+      if (target) {
+        target.hp = 0;
+        target.defeated = true;
+        target.energy = 0;
+      }
+      break;
+    }
+  }
+}
+
+function buildKeyLogs(events: TimedBattleEvent[]): string[] {
+  const logs: string[] = [];
+  for (const event of events) {
+    switch (event.type) {
+      case 'battleStart':
+        logs.push('战斗开始，双方小队进场。');
+        break;
+      case 'action':
+        if (event.slot === 'ultimate') {
+          logs.push(`${unitName(event.actorId)} 释放大招「${event.skillName}」。`);
+        }
+        break;
+      case 'defeated':
+        logs.push(`${unitName(event.targetId)} 被击败。`);
+        break;
+      case 'statusApplied':
+        if (CONTROL_STATUSES.includes(event.status)) {
+          logs.push(`${unitName(event.targetId)} 受到控制：${statusLabel(event.status)}。`);
+        }
+        break;
+      case 'manualUltimateFailed':
+        logs.push(`${unitName(event.actorId)} 大招未能释放：${manualFailLabel(event.reason)}。`);
+        break;
+      case 'battleEnd':
+        logs.push(event.winner === 'player' ? '战斗胜利。' : '战斗失败。');
+        break;
+    }
+  }
+  return logs.slice(-40);
+}
+
+function unitName(unitId: string): string {
+  return [...playerSquad.value, ...enemySquad.value].find(member => member.unitId === unitId)?.character.name ?? unitId;
+}
+
+function statusLabel(status: StatusKind): string {
+  return ({ stun: '眩晕', silence: '沉默', taunt: '嘲讽' } as Partial<Record<StatusKind, string>>)[status] ?? status;
+}
+
+function manualFailLabel(reason: 'notReady' | 'controlled' | 'missingSkill'): string {
+  if (reason === 'notReady') return '能量不足';
+  if (reason === 'controlled') return '被控制';
+  return '技能缺失';
+}
+
+function playNextBattleEvent() {
+  clearBattleTimers();
+  if (currentPhase.value !== 'battle' || battleEnded.value) return;
+  if (battleEventCursor.value >= battleEvents.value.length) {
+    finishTimedBattle();
     return;
   }
-  
-  if (isPlayerTurn.value) {
-    // 玩家回合：玩家前排攻击敌人前排
-    const damage = calculateRoundDamage(playerFront.battleStats, enemyFront.battleStats);
-    enemyFront.currentHP = Math.max(0, enemyFront.currentHP - damage.damage);
-    
-    battleLog.value.push(
-      `🗡️ ${playerFront.character.name} 对 ${enemyFront.character.name} 造成 ${damage.damage} 伤害${damage.isCriticalHit ? ' (暴击!)' : ''}`
-    );
-    
-    if (enemyFront.currentHP <= 0) {
-      enemyFront.isDefeated = true;
-      battleLog.value.push(`💥 ${enemyFront.character.name} 被击败！`);
-    }
-  } else {
-    // AI回合：敌人前排攻击玩家前排
-    const damage = calculateRoundDamage(enemyFront.battleStats, playerFront.battleStats);
-    playerFront.currentHP = Math.max(0, playerFront.currentHP - damage.damage);
-    
-    battleLog.value.push(
-      `⚔️ ${enemyFront.character.name} 对 ${playerFront.character.name} 造成 ${damage.damage} 伤害${damage.isCriticalHit ? ' (暴击!)' : ''}`
-    );
-    
-    if (playerFront.currentHP <= 0) {
-      playerFront.isDefeated = true;
-      battleLog.value.push(`💔 ${playerFront.character.name} 被击败！`);
-    }
+
+  battleEventCursor.value += 1;
+  rebuildVisibleBattle(battleEventCursor.value);
+
+  const latest = battleEvents.value[battleEventCursor.value - 1];
+  if (latest?.type === 'battleEnd') {
+    finishTimedBattle();
+    return;
   }
-  
-  isPlayerTurn.value = !isPlayerTurn.value;
-  currentTurn.value++;
-
-  // 检查战斗结束（经登记的定时器：卸载即清，防游离回调）
-  schedule(() => {
-    checkBattleEnd();
-  }, 1500);
+  schedule(playNextBattleEvent, PLAYBACK_DELAY_MS);
 }
 
-// 回合伤害直接用 engine 的唯一公式（S3 删除了本组件内的复制版本）
-function calculateRoundDamage(attacker: BattleStats, defender: BattleStats) {
-  return calculateAttackDamage(attacker, defender, defaultRng);
+function handleToggleAutoUltimates() {
+  if (battleEnded.value) return;
+  const cursorTime = battleElapsedMs.value;
+  autoUltimates.value = !autoUltimates.value;
+  regenerateBattleSimulation(cursorTime);
+  playNextBattleEvent();
 }
 
-// 检查战斗结束
-function checkBattleEnd() {
-  const playerAlive = playerSquad.value.some(member => !member.isDefeated);
-  const enemyAlive = enemySquad.value.some(member => !member.isDefeated);
-  
-  if (!playerAlive || !enemyAlive) {
-    endBattle();
-  }
+function handleManualUltimate(unitId: string) {
+  if (battleEnded.value || autoUltimates.value) return;
+  const unit = battleUnits.value.find(candidate => candidate.id === unitId);
+  if (!unit?.ultimateReady) return;
+  const orderAt = battleElapsedMs.value + 1;
+  manualUltimateOrders.value = [...manualUltimateOrders.value, { unitId, atMs: orderAt }];
+  regenerateBattleSimulation(battleElapsedMs.value);
+  playNextBattleEvent();
 }
 
-// 结束战斗
-function endBattle() {
-  // 再入守卫：一场战斗只结算一次。pending checkBattleEnd 计时器 + 急躁双击「执行回合」会让 endBattle
-  // 触发多次；不挡的话第二次仍与同步前移的权威楼层匹配 → 重复推进楼层 + 重复发奖/掉落。
-  // startBattleCommon 每场把 phase 置回 'battle'，故守卫每场自动重置。
-  if (currentPhase.value === 'result') return;
+function finishTimedBattle() {
+  if (battleEnded.value || !battleSimulation.value) return;
+  clearBattleTimers();
+  battleEnded.value = true;
+  battleResult.value = battleSimulation.value.winner === 'player' ? 'victory' : 'defeat';
+  settleTowerBattle(battleSimulation.value.winner);
   currentPhase.value = 'result';
+}
 
-  const playerAlive = playerSquad.value.some(member => !member.isDefeated);
-  const enemyAlive = enemySquad.value.some(member => !member.isDefeated);
-  
-  if (playerAlive && !enemyAlive) {
-    battleResult.value = 'victory';
-    battleLog.value.push('🎉 胜利！');
-    
-    // 胜利奖励
-    let baseReward = 50;
-    let knowledgeReward = 25;
-    let clearedFloor = 0; // 本场通过的层（快照；自增后用它算角色层数经验，避免偏到 N+1 层倍率）
+function settleTowerBattle(winner: TimedBattleWinner) {
+  if (battleSettled.value) return;
+  battleSettled.value = true;
 
-    // 爬塔模式特殊奖励
-    if (currentBattleMode.value === 'tower') {
-      // completeFloor 只在「真正推进了进度」时 completed=true（已达 999 顶层 / 本地楼层高于真实进度时为 false）。
-      // 仅 completed 才发通层奖励 + 推进本地层，杜绝顶层/篡改场景下的奖励刷取与假进度。
-      const { completed, drop } = userStore.completeFloor(currentTowerFloor.value);
-      if (!completed) {
-        battleLog.value.push('⚠️ 本层无法推进（已达顶层或进度不符），未发放奖励。');
-        return;
-      }
-      clearedFloor = currentTowerFloor.value;
-      baseReward += clearedFloor * 10; // 层数奖励
-      knowledgeReward += clearedFloor * 5;
-      battleLog.value.push(`🏆 通过第${clearedFloor}层！`);
-      battleLog.value.push(drop ? `🎁 通层掉落：[${drop.rarity}] ${drop.name}！` : '🎁 本层未掉落装备');
+  if (winner !== 'player') {
+    userStore.addLog('挑战塔失败：未推进楼层，未发放角色经验、知识点或装备。', 'info');
+    return;
+  }
 
-      // 自动进入下一层
-      currentTowerFloor.value = clearedFloor + 1;
-      towerEnemyData.value = null; // 清除当前层敌人数据，需要重新生成
-      battleLog.value.push(`⬆️ 自动进入第${currentTowerFloor.value}层！`);
+  const clearedFloor = currentTowerFloor.value;
+  const { completed, drop } = userStore.completeFloor(clearedFloor, createSeededRng(battleSeed.value + 17));
+  const rewards = calculateTowerBattleRewards({
+    floor: clearedFloor,
+    progressed: completed,
+    outcome: { winner: 'player', reason: 'victory' },
+    equipmentDrop: drop,
+  });
 
-      // 保存新状态
-      saveState();
-    }
-    
-    const survivalBonus = playerSquad.value.filter(m => !m.isDefeated).length * 10;
-    const totalExp = baseReward + survivalBonus;
-    
-    // 玩家获得经验和知识点
-    userStore.addExp(totalExp);
-    userStore.earn('knowledgePoints', knowledgeReward);
-    // 结算面板可见的本场收获（与全局日志解耦）
-    battleLog.value.push(`📈 +${totalExp} 经验 · 💡 +${knowledgeReward} 知识点 · 存活 ${playerSquad.value.filter(m => !m.isDefeated).length}/${playerSquad.value.length}`);
-    
-    // 给参与战斗的角色分配经验值
-    const characterExp = Math.floor(totalExp / 2); // 角色获得玩家经验的一半
-    playerSquad.value.forEach(member => {
-      let individualExp = characterExp;
-      
-      // 存活角色获得额外经验奖励
-      if (!member.isDefeated) {
-        individualExp += 20; // 存活奖励
-      }
-      
-      // 爬塔层数奖励（按本场通过的层，而非自增后的下一层）
-      if (currentBattleMode.value === 'tower') {
-        individualExp += clearedFloor * 5; // 每层额外5经验
-      }
-      
-      userStore.addCharacterExp(member.character.id, individualExp);
-      // 带塔参战涨好感（S13-C1）：并肩作战增进羁绊（与挂机好感同一字段）
-      userStore.addBattleAffection(member.character.id);
-    });
+  if (rewards.knowledgePoints > 0) {
+    userStore.earn('knowledgePoints', rewards.knowledgePoints);
+  }
+  if (rewards.characterExp > 0) {
+    playerSquad.value.forEach(member => userStore.addCharacterExp(member.character.id, rewards.characterExp));
+  }
 
-    userStore.addLog(`战斗胜利！获得 ${totalExp} 经验和 ${knowledgeReward} 知识点！`, 'success');
-    userStore.addLog(`参战角色获得 ${characterExp}~${characterExp + 20 + (currentBattleMode.value === 'tower' ? clearedFloor * 5 : 0)} 角色经验！`, 'info');
-    
-  } else if (!playerAlive && enemyAlive) {
-    battleResult.value = 'defeat';
-    battleLog.value.push('💔 败北...');
-    
-    // 失败仍有少量奖励
-    let consolationExp = 15;
-    if (currentBattleMode.value === 'tower') {
-      consolationExp += Math.floor(currentTowerFloor.value * 2); // 层数安慰奖励
-    }
-    
-    userStore.addExp(consolationExp);
-    // 结算面板可见：失败的收获 + 战力差距参考
-    battleLog.value.push(`📈 +${consolationExp} 经验`);
-    if (currentBattleMode.value === 'tower' && towerEnemyData.value) {
-      const myPower = playerSquad.value.reduce((s, m) => s + calculateBattlePower(m.battleStats), 0);
-      battleLog.value.push(`📊 我方战力 ${myPower} vs 敌方战力 ${towerEnemyData.value.floorPower}`);
-    }
+  battleRewards.value = {
+    characterExp: rewards.characterExp,
+    knowledgePoints: rewards.knowledgePoints,
+    equipmentDrop: rewards.equipmentDrop
+      ? { name: rewards.equipmentDrop.name, rarity: rewards.equipmentDrop.rarity }
+      : null,
+  };
+  battleLog.value = [
+    ...battleLog.value,
+    `奖励：角色经验 +${rewards.characterExp}，知识点 +${rewards.knowledgePoints}。`,
+    rewards.equipmentDrop ? `奖励：装备掉落 [${rewards.equipmentDrop.rarity}] ${rewards.equipmentDrop.name}。` : '奖励：本层未掉落装备。',
+  ];
+  userStore.addLog(`挑战塔胜利！参战角色 +${rewards.characterExp} 经验，获得 ${rewards.knowledgePoints} 知识点。`, 'success');
 
-    // 给参与战斗的角色分配失败经验
-    const characterFailExp = Math.floor(consolationExp / 3); // 失败时角色获得更少经验
-    playerSquad.value.forEach(member => {
-      userStore.addCharacterExp(member.character.id, characterFailExp);
-    });
-    
-    userStore.addLog(`虽然失败了，但从战斗中学到了经验。获得 ${consolationExp} 经验！`, 'info');
-    userStore.addLog(`参战角色获得 ${characterFailExp} 角色经验！`, 'info');
-    
-  } else {
-    battleResult.value = 'victory'; // 平局算胜利
-    battleLog.value.push('⚖️ 平局！');
+  if (completed) {
+    currentTowerFloor.value = clearedFloor + 1;
+    towerEnemyData.value = null;
+    saveState();
   }
 }
 
-// 重新开始
 function restart() {
   currentPhase.value = 'towerMode';
   playerSquad.value = [];
   enemySquad.value = [];
+  battleUnits.value = [];
+  battleEvents.value = [];
   battleLog.value = [];
-  currentTurn.value = 0;
-  isPlayerTurn.value = true;
   battleResult.value = null;
+  battleEnded.value = false;
   selectedSquadForBattle.value = null;
-  ensureTowerEnemies(); // 通层后回到塔界面自动生成下一层敌人，免去每层手点「刷新敌人」
-}
-
-// 返回爬塔模式
-function returnToTowerMode() {
-  currentPhase.value = 'towerMode';
-  // 不要调用restart()，避免清除towerEnemyData
-  playerSquad.value = [];
-  enemySquad.value = [];
-  battleLog.value = [];
-  currentTurn.value = 0;
-  isPlayerTurn.value = true;
-  battleResult.value = null;
-  selectedSquadForBattle.value = null;
-  // 保持towerEnemyData和currentTowerFloor，避免状态丢失
-  saveState(); // 保存状态
+  battleRewards.value = { characterExp: 0, knowledgePoints: 0, equipmentDrop: null };
+  clearBattleTimers();
   ensureTowerEnemies();
 }
 
-// 获取生命值百分比
-function getHPPercentage(member: SquadMember): number {
-  return (member.currentHP / member.maxHP) * 100;
-}
-
-// 一键结算战斗
-function autoFinishBattle() {
-  if (currentPhase.value !== 'battle') return;
-  
-  
-  // 最大回合数限制，避免无限循环
-  const maxRounds = 100;
-  let roundCount = 0;
-  
-  const autoRound = () => {
-    if (currentPhase.value !== 'battle' || roundCount >= maxRounds) {
-      if (roundCount >= maxRounds) {
-        battleLog.value.push('⚠️ 战斗超过最大回合数，强制结束！');
-        endBattle();
-      }
-      return;
-    }
-    
-    const playerFront = getFrontMember(playerSquad.value);
-    const enemyFront = getFrontMember(enemySquad.value);
-    
-    if (!playerFront || !enemyFront) {
-      endBattle();
-      return;
-    }
-    
-    // 执行一回合攻击
-    if (isPlayerTurn.value) {
-      // 玩家回合
-      const damage = calculateRoundDamage(playerFront.battleStats, enemyFront.battleStats);
-      enemyFront.currentHP = Math.max(0, enemyFront.currentHP - damage.damage);
-      
-      battleLog.value.push(
-        `🗡️ ${playerFront.character.name} 对 ${enemyFront.character.name} 造成 ${damage.damage} 伤害${damage.isCriticalHit ? ' (暴击!)' : ''}`
-      );
-      
-      if (enemyFront.currentHP <= 0) {
-        enemyFront.isDefeated = true;
-        battleLog.value.push(`💥 ${enemyFront.character.name} 被击败！`);
-      }
-    } else {
-      // AI回合
-      const damage = calculateRoundDamage(enemyFront.battleStats, playerFront.battleStats);
-      playerFront.currentHP = Math.max(0, playerFront.currentHP - damage.damage);
-      
-      battleLog.value.push(
-        `⚔️ ${enemyFront.character.name} 对 ${playerFront.character.name} 造成 ${damage.damage} 伤害${damage.isCriticalHit ? ' (暴击!)' : ''}`
-      );
-      
-      if (playerFront.currentHP <= 0) {
-        playerFront.isDefeated = true;
-        battleLog.value.push(`💔 ${playerFront.character.name} 被击败！`);
-      }
-    }
-    
-    isPlayerTurn.value = !isPlayerTurn.value;
-    currentTurn.value++;
-    roundCount++;
-    
-    // 检查战斗是否结束
-    const playerAlive = playerSquad.value.some(member => !member.isDefeated);
-    const enemyAlive = enemySquad.value.some(member => !member.isDefeated);
-    
-    if (!playerAlive || !enemyAlive) {
-      endBattle();
-      return;
-    }
-    
-    // 继续下一回合（短延时保持视觉效果；经登记定时器——离开页面链条即断，
-    // 修复审计 S9 指出的「自动战斗 setTimeout 链在卸载后永久跑完整场」泄漏）
-    schedule(autoRound, 50);
-  };
-  
-  // 开始自动战斗
-  battleLog.value.push('⚡ 开始自动结算...');
-  autoRound();
-}
-
-// 刷新爬塔敌人
 function refreshTowerEnemies() {
   towerEnemyData.value = generateTowerFloorEnemies(
-    gameDataStore.allCharacterCards,
+    getTowerEnemyCandidates(),
     currentTowerFloor.value,
     defaultRng,
     CHARACTER_IMAGE_POOL,
   );
-  saveState(); // 保存新的敌人数据
+  saveState();
 }
 
-// 进入塔界面但当前层还没敌人时自动生成一次（通层后免手点「刷新敌人」；缺主数据/未登录则跳过）
 function ensureTowerEnemies() {
   if (
-    currentPhase.value === 'towerMode' &&
-    !towerEnemyData.value &&
-    userStore.isLoggedIn &&
-    gameDataStore.allCharacterCards.length > 0
+    currentPhase.value === 'towerMode'
+    && !towerEnemyData.value
+    && userStore.isLoggedIn
+    && gameDataStore.allCharacterCards.length > 0
   ) {
     refreshTowerEnemies();
   }
 }
 
-// S9：定时器登记——本组件所有 setTimeout 必须走这里，卸载时统一清除
 const pendingTimers = new Set<number>();
+
 function schedule(fn: () => void, delay: number) {
   const id = window.setTimeout(() => {
     pendingTimers.delete(id);
@@ -628,14 +577,16 @@ function schedule(fn: () => void, delay: number) {
   pendingTimers.add(id);
 }
 
-// 组件挂载时恢复状态
+function clearBattleTimers() {
+  pendingTimers.forEach(id => clearTimeout(id));
+  pendingTimers.clear();
+}
+
 onMounted(() => {
   loadState();
   ensureTowerEnemies();
 });
 
-// 存档进度晚于组件挂载到位时（如：刷新塔页面后才登录），跟随服务器进度前进。
-// S5 修复链路的一环：进度只前进不回退，楼层变化时废弃过期的敌人数据。
 watch(
   () => userStore.towerProgress.currentFloor,
   newFloor => {
@@ -646,10 +597,8 @@ watch(
   },
 );
 
-// 组件卸载前：断掉全部待执行定时器（自动战斗链/结算检查），再保存状态
 onBeforeUnmount(() => {
-  pendingTimers.forEach(id => clearTimeout(id));
-  pendingTimers.clear();
+  clearBattleTimers();
   saveState();
 });
 </script>
@@ -657,72 +606,64 @@ onBeforeUnmount(() => {
 <template>
   <div class="min-h-screen py-8">
     <div class="container mx-auto px-4">
-      
-      <!-- 页面标题 -->
-      <div class="text-center mb-8">
-        <h1 class="text-4xl font-bold text-ink mb-2">挑战塔</h1>
+      <div class="mb-8 text-center">
+        <h1 class="mb-2 text-4xl font-bold text-ink">挑战塔</h1>
         <p class="text-ink-2">逐层挑战，难度递增，证明你的实力！</p>
       </div>
-      
-      <!-- 未登录状态 -->
-      <div v-if="!userStore.isLoggedIn" class="text-center py-20">
-        <h2 class="text-2xl font-bold text-ink-2 mb-4">请先登录</h2>
+
+      <div v-if="!userStore.isLoggedIn" class="py-20 text-center">
+        <h2 class="mb-4 text-2xl font-bold text-ink-2">请先登录</h2>
         <p class="text-ink-2">登录后即可参与爬塔挑战</p>
       </div>
 
-      <!-- 爬塔模式界面 -->
       <div v-else-if="currentPhase === 'towerMode'" class="space-y-6">
-
-        <!-- 爬塔信息面板 -->
-        <div class="bg-surface rounded-lg p-6 border border-line">
-          <div class="grid md:grid-cols-3 gap-6">
-            <!-- 当前进度 -->
+        <div class="rounded-lg border border-line bg-surface p-6">
+          <div class="grid gap-6 md:grid-cols-3">
             <div class="text-center">
-              <h3 class="text-lg font-bold text-ink mb-2">当前进度</h3>
-              <div class="text-3xl font-bold text-accent mb-2">第 {{ currentTowerFloor }} 层</div>
+              <h3 class="mb-2 text-lg font-bold text-ink">当前进度</h3>
+              <div class="mb-2 text-3xl font-bold text-accent">第 {{ currentTowerFloor }} 层</div>
               <div class="text-sm text-ink-2">历史最高：{{ userStore.towerProgress.maxFloor }} 层</div>
             </div>
-            
-            <!-- 层数状态 -->
+
             <div class="text-center">
-              <h3 class="text-lg font-bold text-ink mb-2">层数状态</h3>
-              <div class="text-2xl font-bold text-info mb-2">
+              <h3 class="mb-2 text-lg font-bold text-ink">层数状态</h3>
+              <div class="mb-2 text-2xl font-bold text-info">
                 {{ userStore.hasCompletedFloor(currentTowerFloor) ? '已通过' : '未挑战' }}
               </div>
               <div class="text-sm text-ink-2">每层只能挑战一次，无次数限制</div>
             </div>
-            
-            <!-- 当前敌人信息 -->
+
             <div class="text-center">
-              <h3 class="text-lg font-bold text-ink mb-2">当前层敌人</h3>
-              <div v-if="!towerEnemyData" class="space-y-2">
-                <button
-                  @click="refreshTowerEnemies"
-                  class="px-4 py-2 bg-warning hover:opacity-90 text-on-accent rounded-lg transition-colors"
-                >
-                  刷新敌人
-                </button>
-              </div>
+              <h3 class="mb-2 text-lg font-bold text-ink">当前层敌人</h3>
+              <button
+                v-if="!towerEnemyData"
+                type="button"
+                class="rounded-lg bg-warning px-4 py-2 text-on-accent transition hover:opacity-90"
+                @click="refreshTowerEnemies"
+              >
+                刷新敌人
+              </button>
               <div v-else class="space-y-2">
                 <div class="font-bold text-danger">{{ towerEnemyData.name }}</div>
                 <div class="text-sm text-ink-2">{{ towerEnemyData.description }}</div>
-                <div class="text-lg font-bold text-highlight">
-                  战力: {{ towerEnemyData.floorPower }}
-                </div>
-                <div class="text-sm mb-2">
-                  <span class="px-2 py-1 rounded text-xs font-bold"
-                        :class="{
-                          'bg-success text-on-accent': towerEnemyData.difficulty === '简单',
-                          'bg-warning text-on-accent': towerEnemyData.difficulty === '中等',
-                          'bg-danger text-on-accent': towerEnemyData.difficulty === '困难',
-                          'bg-highlight text-on-accent': towerEnemyData.difficulty === '极难'
-                        }">
+                <div class="text-lg font-bold text-highlight">战力: {{ towerEnemyData.floorPower }}</div>
+                <div>
+                  <span
+                    class="rounded px-2 py-1 text-xs font-bold text-on-accent"
+                    :class="{
+                      'bg-success': towerEnemyData.difficulty === '简单',
+                      'bg-warning': towerEnemyData.difficulty === '中等',
+                      'bg-danger': towerEnemyData.difficulty === '困难',
+                      'bg-highlight': towerEnemyData.difficulty === '极难',
+                    }"
+                  >
                     {{ towerEnemyData.difficulty }}
                   </span>
                 </div>
                 <button
+                  type="button"
+                  class="rounded bg-warning px-3 py-1 text-sm text-on-accent transition hover:opacity-90"
                   @click="refreshTowerEnemies"
-                  class="px-3 py-1 bg-warning hover:opacity-90 text-on-accent text-sm rounded transition-colors"
                 >
                   重新刷新
                 </button>
@@ -731,70 +672,78 @@ onBeforeUnmount(() => {
           </div>
         </div>
 
-        <!-- 选择挑战小队 -->
-        <div class="bg-surface rounded-lg p-6 border border-line">
-          <h3 class="text-xl font-bold text-ink mb-4">选择挑战小队</h3>
-          
-          <div class="grid md:grid-cols-3 gap-6">
-            <div 
-              v-for="squad in userStore.presetSquads" 
+        <div class="rounded-lg border border-line bg-surface p-6">
+          <h3 class="mb-4 text-xl font-bold text-ink">选择挑战小队</h3>
+
+          <div class="grid gap-6 md:grid-cols-3">
+            <div
+              v-for="squad in userStore.presetSquads"
               :key="squad.id"
-              class="bg-surface-2 rounded-lg p-4 border border-line"
+              class="rounded-lg border border-line bg-surface-2 p-4"
             >
-              <!-- 小队名称和成员数 -->
-              <div class="flex items-center justify-between mb-3">
-                <input 
+              <div class="mb-3 flex items-center justify-between gap-2">
+                <input
                   :value="squad.name"
-                  @change="updateSquadName(squad.id, ($event.target as HTMLInputElement).value)"
-                  class="font-bold text-ink bg-transparent border border-transparent hover:border-line rounded px-2 py-1 transition-colors"
+                  class="min-w-0 rounded border border-transparent bg-transparent px-2 py-1 font-bold text-ink transition-colors hover:border-line"
                   maxlength="20"
+                  @change="updateSquadName(squad.id, ($event.target as HTMLInputElement).value)"
                 >
-                <div class="text-sm text-ink-2">{{ getSquadMemberCount(squad.id) }}/4</div>
+                <div class="shrink-0 text-sm text-ink-2">{{ getSquadMemberCount(squad.id) }}/{{ SQUAD_MEMBER_COUNT }}</div>
               </div>
-              
-              <!-- 小队成员预览 -->
-              <div class="grid grid-cols-4 gap-2 mb-3">
-                <div 
-                  v-for="position in 4" 
+
+              <div class="mb-3 grid grid-cols-5 gap-2">
+                <div
+                  v-for="position in SQUAD_MEMBER_COUNT"
                   :key="position"
+                  class="relative h-[66px] w-[44px] cursor-pointer overflow-hidden rounded border-2 bg-surface-2 transition-colors hover:border-info"
+                  :class="{
+                    'border-success': isSquadSlotValid(squad.id, position - 1),
+                    'border-danger bg-danger/10': squad.members[position - 1] && !isSquadSlotValid(squad.id, position - 1),
+                    'border-line border-dashed': !squad.members[position - 1],
+                  }"
+                  :title="getSquadSlotIssue(squad.id, position - 1)"
                   @click="openCharacterSelect(squad.id, position - 1)"
-                  class="relative bg-surface-2 rounded border-2 cursor-pointer hover:border-info transition-colors overflow-hidden"
-                  :class="squad.members[position - 1] ? 'border-success' : 'border-line border-dashed'"
-                  style="aspect-ratio: 2/3; width: 50px; height: 75px;"
                 >
                   <div v-if="squad.members[position - 1]" class="absolute inset-0">
-                    <img loading="lazy" decoding="async" 
+                    <img
+                      loading="lazy"
+                      decoding="async"
                       :src="gameDataStore.getCharacterCardById(squad.members[position - 1]!)?.image_path"
                       :alt="gameDataStore.getCharacterCardById(squad.members[position - 1]!)?.name"
-                      class="w-full h-full object-cover object-top"
+                      class="h-full w-full object-cover object-top"
                       @error="($event.target as HTMLImageElement).src = assetUrl('/data/images/character/77.jpg')"
                     >
-                    <!-- 位置编号 -->
-                    <div class="absolute top-0 left-0 w-4 h-4 bg-black/70 rounded-br text-white text-xs flex items-center justify-center">
+                    <div class="absolute left-0 top-0 flex h-4 w-4 items-center justify-center rounded-br bg-elevated/85 text-xs text-ink">
                       {{ position }}
+                    </div>
+                    <div
+                      v-if="!isSquadSlotValid(squad.id, position - 1)"
+                      class="absolute right-0 top-0 flex h-4 w-4 items-center justify-center rounded-bl bg-danger text-xs text-on-accent"
+                    >
+                      !
                     </div>
                   </div>
                   <div v-else class="absolute inset-0 flex flex-col items-center justify-center text-ink-2">
-                    <div class="text-lg mb-1">+</div>
+                    <div class="mb-1 text-lg">+</div>
                     <div class="text-xs">{{ position }}</div>
                   </div>
                 </div>
               </div>
-              
-              <!-- 小队战力 -->
+
               <div class="mb-3 text-sm">
                 <span class="text-ink-2">战力:</span>
-                <span class="text-highlight font-bold ml-1">{{ getSquadPower(squad.id) }}</span>
+                <span class="ml-1 font-bold text-highlight">{{ getSquadPower(squad.id) }}</span>
               </div>
-              
-              <!-- 挑战按钮 -->
-              <button 
+
+              <button
+                type="button"
+                class="min-h-11 w-full rounded-lg bg-accent px-3 py-2 text-sm font-bold leading-tight text-on-accent transition-colors hover:bg-accent-strong disabled:cursor-not-allowed disabled:opacity-45"
+                :disabled="!canStartTowerBattle(squad.id)"
                 @click="startTowerBattle(squad.id)"
-                :disabled="getSquadMemberCount(squad.id) < 4 || userStore.hasCompletedFloor(currentTowerFloor) || !towerEnemyData"
-                class="w-full px-4 py-2 bg-accent hover:bg-accent-strong disabled:opacity-45 disabled:cursor-not-allowed text-on-accent font-bold rounded-lg transition-colors"
               >
-                <span v-if="getSquadMemberCount(squad.id) === 0">需要角色</span>
-                <span v-else-if="getSquadMemberCount(squad.id) < 4">需要4人满编 ({{ getSquadMemberCount(squad.id) }}/4)</span>
+                <span v-if="getSquadMemberCount(squad.id) < SQUAD_MEMBER_COUNT">
+                  {{ getTowerSquadIssue(squad.id) || `需要5人 HR/UR 满编 (${getSquadMemberCount(squad.id)}/${SQUAD_MEMBER_COUNT})` }}
+                </span>
                 <span v-else-if="userStore.hasCompletedFloor(currentTowerFloor)">本层已通过</span>
                 <span v-else-if="!towerEnemyData">刷新敌人信息</span>
                 <span v-else>开始挑战</span>
@@ -803,268 +752,64 @@ onBeforeUnmount(() => {
           </div>
         </div>
 
-        <!-- 爬塔说明 -->
-        <div class="bg-info/10 border border-info rounded-lg p-4">
-          <div class="flex items-start space-x-3">
-            <div class="text-info text-xl">🏗️</div>
+        <div class="rounded-lg border border-info bg-info/10 p-4">
+          <div class="flex items-start gap-3">
+            <div class="text-xl text-info">塔</div>
             <div>
-              <h3 class="text-info font-bold mb-2">爬塔规则</h3>
-              <ul class="text-sm text-ink-2 space-y-1">
-                <li>• 每层敌人战力和稀有度都会递增</li>
-                <li>• 胜利可获得大量经验和知识点奖励</li>
-                <li>• 通过当前层后解锁下一层</li>
-                <li>• 每5层难度显著提升</li>
+              <h3 class="mb-2 font-bold text-info">爬塔规则</h3>
+              <ul class="space-y-1 text-sm text-ink-2">
+                <li>挑战塔需要 5 名已拥有 HR/UR 角色</li>
+                <li>胜利并通过当前层后获得角色经验、知识点和装备掉落机会</li>
+                <li>通过当前层后解锁下一层</li>
+                <li>每 5 层难度显著提升</li>
               </ul>
             </div>
           </div>
         </div>
       </div>
-      
-      <!-- 战斗阶段 -->
+
       <div v-else-if="currentPhase === 'battle'" class="space-y-6">
-        
-        <!-- 战斗场地 -->
-        <div class="bg-surface rounded-lg p-6 border border-line">
-          <div class="flex justify-between items-center mb-2">
-            <h2 class="text-xl font-bold text-ink">第 {{ currentTurn + 1 }} 回合</h2>
-            <div class="text-lg font-bold" :class="isPlayerTurn ? 'text-info' : 'text-danger'">
-              {{ isPlayerTurn ? '你的回合' : '敌方回合' }}
-            </div>
-          </div>
-          <!-- 战斗中保留层数/敌名/难度坐标（进战斗前塔界面展示过，进战斗后别断档） -->
-          <div v-if="towerEnemyData" class="flex flex-wrap items-center gap-2 mb-6 text-sm">
-            <span class="font-semibold text-accent">第 {{ currentTowerFloor }} 层</span>
-            <span class="text-ink-3">·</span>
-            <span class="text-danger font-medium">{{ towerEnemyData.name }}</span>
-            <span class="px-2 py-0.5 rounded text-xs font-bold"
-                  :class="{
-                    'bg-success text-on-accent': towerEnemyData.difficulty === '简单',
-                    'bg-warning text-on-accent': towerEnemyData.difficulty === '中等',
-                    'bg-danger text-on-accent': towerEnemyData.difficulty === '困难',
-                    'bg-highlight text-on-accent': towerEnemyData.difficulty === '极难'
-                  }">
-              {{ towerEnemyData.difficulty }}
-            </span>
-            <span class="ml-auto text-ink-2">敌方战力 <span class="text-highlight font-bold">{{ towerEnemyData.floorPower }}</span></span>
-          </div>
-          
-          <!-- 战斗场地布局 -->
-          <div class="grid grid-cols-2 gap-8">
-            
-            <!-- 玩家小队 (左侧) -->
-            <div>
-              <h3 class="text-lg font-bold text-info mb-4">你的小队</h3>
-              <div class="space-y-3">
-                <div
-                  v-for="(member, index) in playerSquad"
-                  :key="member.character.id"
-                  class="flex items-center space-x-4 p-3 rounded-lg"
-                  :class="{
-                    'bg-info/10 border border-info': index === 0 && !member.isDefeated,
-                    'bg-surface-2/50': member.isDefeated,
-                    'bg-surface': index > 0 && !member.isDefeated
-                  }"
-                >
-                  <!-- 角色头像 -->
-                  <div class="relative">
-                    <div class="w-16 h-16 rounded-full overflow-hidden border-2"
-                         :class="member.isDefeated ? 'border-line' : 'border-info'">
-                      <img loading="lazy" decoding="async" 
-                        :src="member.character.image_path"
-                        :alt="member.character.name"
-                        class="w-full h-full object-cover object-top"
-                        :class="member.isDefeated ? 'grayscale' : ''"
-                        @error="($event.target as HTMLImageElement).src = assetUrl('/data/images/character/77.jpg')"
-                      >
-                    </div>
-                    <!-- 位置编号 -->
-                    <div class="absolute -top-1 -right-1 w-6 h-6 bg-info rounded-full flex items-center justify-center border-2 border-elevated">
-                      <span class="text-on-accent font-bold text-xs">{{ index + 1 }}</span>
-                    </div>
-                    <!-- 击败标记 -->
-                    <div v-if="member.isDefeated" class="absolute inset-0 bg-black/60 rounded-full flex items-center justify-center">
-                      <span class="text-danger text-xl">💀</span>
-                    </div>
-                  </div>
-
-                  <div class="flex-1">
-                    <div class="font-medium" :class="member.isDefeated ? 'text-ink-2' : 'text-ink'">
-                      {{ member.character.name }}
-                    </div>
-
-                    <!-- 血条 -->
-                    <div class="w-full bg-surface-2 rounded-full h-2 mt-1">
-                      <div
-                        class="h-full rounded-full transition-all duration-500"
-                        :class="member.isDefeated ? 'bg-danger' : 'bg-accent'"
-                        :style="{ width: `${getHPPercentage(member)}%` }"
-                      ></div>
-                    </div>
-
-                    <div class="text-xs" :class="member.isDefeated ? 'text-ink-2' : 'text-ink-2'">
-                      {{ member.currentHP }}/{{ member.maxHP }} HP
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- 敌方小队 (右侧) -->
-            <div>
-              <h3 class="text-lg font-bold text-danger mb-4">敌方小队</h3>
-              <div class="space-y-3">
-                <div
-                  v-for="(member, index) in enemySquad"
-                  :key="member.character.id"
-                  class="flex items-center space-x-4 p-3 rounded-lg"
-                  :class="{
-                    'bg-danger/10 border border-danger': index === 0 && !member.isDefeated,
-                    'bg-surface-2/50': member.isDefeated,
-                    'bg-surface': index > 0 && !member.isDefeated
-                  }"
-                >
-                  <!-- 敌人角色头像 -->
-                  <div class="relative">
-                    <div class="w-16 h-16 rounded-full overflow-hidden border-2"
-                         :class="member.isDefeated ? 'border-line' : 'border-danger'">
-                      <!-- 显示真实角色头像 -->
-                      <img loading="lazy" decoding="async" 
-                        :src="member.character.image_path"
-                        :alt="member.character.name"
-                        class="w-full h-full object-cover object-top"
-                        :class="member.isDefeated ? 'grayscale' : ''"
-                        @error="($event.target as HTMLImageElement).src = assetUrl('/data/images/character/77.jpg')"
-                      >
-                    </div>
-                    <!-- 位置编号 -->
-                    <div class="absolute -top-1 -right-1 w-6 h-6 bg-danger rounded-full flex items-center justify-center border-2 border-elevated">
-                      <span class="text-on-accent font-bold text-xs">{{ index + 1 }}</span>
-                    </div>
-                    <!-- 击败标记 -->
-                    <div v-if="member.isDefeated" class="absolute inset-0 bg-black/60 rounded-full flex items-center justify-center">
-                      <span class="text-danger text-xl">💀</span>
-                    </div>
-                  </div>
-
-                  <div class="flex-1">
-                    <div class="font-medium" :class="member.isDefeated ? 'text-ink-2' : 'text-ink'">
-                      {{ member.character.name }}
-                    </div>
-
-                    <!-- 血条 -->
-                    <div class="w-full bg-surface-2 rounded-full h-2 mt-1">
-                      <div
-                        class="h-full rounded-full transition-all duration-500"
-                        :class="member.isDefeated ? 'bg-danger' : 'bg-accent'"
-                        :style="{ width: `${getHPPercentage(member)}%` }"
-                      ></div>
-                    </div>
-                    
-                    <div class="text-xs" :class="member.isDefeated ? 'text-ink-2' : 'text-ink-2'">
-                      {{ member.currentHP }}/{{ member.maxHP }} HP
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <!-- 行动按钮 -->
-          <div class="text-center mt-6 space-x-4">
-            <button
-              @click="executeRound"
-              class="px-8 py-3 bg-warning hover:opacity-90 text-on-accent font-bold rounded-lg transition-colors"
-            >
-              执行回合
-            </button>
-            <button
-              @click="autoFinishBattle"
-              class="px-8 py-3 bg-highlight hover:opacity-90 text-on-accent font-bold rounded-lg transition-colors"
-            >
-              一键结算
-            </button>
-          </div>
+        <div v-if="towerEnemyData" class="flex flex-wrap items-center gap-2 rounded-lg border border-line bg-surface p-4 text-sm">
+          <span class="font-semibold text-accent">第 {{ currentTowerFloor }} 层</span>
+          <span class="text-ink-3">·</span>
+          <span class="font-medium text-danger">{{ towerEnemyData.name }}</span>
+          <span class="ml-auto text-ink-2">敌方战力 <span class="font-bold text-highlight">{{ towerEnemyData.floorPower }}</span></span>
         </div>
-        
-        <!-- 战斗日志 -->
-        <div class="bg-surface rounded-lg p-6 border border-line">
-          <h3 class="text-lg font-bold text-ink mb-4">战斗日志</h3>
-          <div class="max-h-40 overflow-y-auto space-y-1">
-            <div 
-              v-for="(log, index) in battleLog.slice().reverse()"
-              :key="index"
-              class="text-sm text-ink-2 p-2 bg-surface-2/30 rounded"
-            >
-              {{ log }}
-            </div>
-          </div>
-        </div>
+
+        <SquadBattlefield
+          :player-units="playerBattleUnits"
+          :enemy-units="enemyBattleUnits"
+          :auto-ultimates="autoUltimates"
+          :battle-ended="battleEnded"
+          :elapsed-ms="battleElapsedMs"
+          @toggle-auto="handleToggleAutoUltimates"
+          @cast-ultimate="handleManualUltimate"
+        />
+
+        <SquadBattleLog :logs="battleLog" />
       </div>
-      
-      <!-- 结果阶段 -->
-      <div v-else-if="currentPhase === 'result'" class="text-center space-y-6">
-        <div class="bg-surface rounded-lg p-8 border border-line">
-          <div class="text-6xl mb-4">
-            {{ battleResult === 'victory' ? '🎉' : '💔' }}
-          </div>
-          
-          <h2 class="text-3xl font-bold mb-4" :class="battleResult === 'victory' ? 'text-accent' : 'text-danger'">
-            {{ battleResult === 'victory' ? '胜利！' : '失败...' }}
-          </h2>
-          
-          <div class="space-y-2 mb-6">
-            <div 
-              v-for="(log, index) in battleLog.slice(-5)"
-              :key="index"
-              class="text-ink-2"
-            >
-              {{ log }}
-            </div>
-          </div>
-          
-          <div class="flex gap-4 justify-center">
-            <button
-              @click="restart"
-              class="px-6 py-3 bg-info hover:opacity-90 text-on-accent font-bold rounded-lg transition-colors"
-            >
-              {{ battleResult === 'victory' ? '继续挑战' : '返回爬塔' }}
-            </button>
-            
-            <button 
-              v-if="selectedSquadForBattle && battleResult === 'defeat'"
-              @click="startTowerBattle(selectedSquadForBattle)"
-              class="px-6 py-3 bg-accent hover:bg-accent-strong text-on-accent font-bold rounded-lg transition-colors"
-            >
-              再次挑战
-            </button>
-          </div>
-        </div>
+
+      <div v-else-if="currentPhase === 'result'" class="space-y-6">
+        <SquadBattleResult
+          :result="battleResult"
+          :rewards="battleRewards"
+          :can-retry="Boolean(selectedSquadForBattle && battleResult === 'defeat')"
+          @continue="restart"
+          @retry="selectedSquadForBattle && startTowerBattle(selectedSquadForBattle)"
+        />
       </div>
-      
     </div>
-    
-    <!-- 角色选择弹窗 -->
+
     <CharacterSelectModal
       :is-open="showCharacterSelectModal"
       :position="selectedPosition"
       :current-character-id="editingSquadId ? (userStore.getSquadMembers(editingSquadId)[selectedPosition] || undefined) : undefined"
       :used-character-ids="editingSquadId ? getUsedCharacterIds(editingSquadId, selectedPosition) : []"
+      :allowed-rarities="towerSquadAllowedRarities"
+      :is-character-selectable="isCharacterSelectableForTower"
       @close="showCharacterSelectModal = false"
       @select="handleCharacterSelect"
       @remove="handleCharacterRemove"
     />
   </div>
 </template>
-
-<style scoped>
-/* 小队选择卡片动画 */
-.bg-surface:hover {
-  transform: translateY(-2px);
-  transition: transform 0.2s ease;
-}
-
-/* 角色位置方格悬停效果 */
-.cursor-pointer:hover {
-  transform: scale(1.02);
-}
-</style>

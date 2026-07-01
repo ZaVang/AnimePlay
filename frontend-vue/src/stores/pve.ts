@@ -7,6 +7,7 @@ import { defineStore } from 'pinia';
 import { ref } from 'vue';
 import type { PresetSquad, TowerProgress } from '@/types/player';
 import { createDefaultPresetSquads, createDefaultTowerProgress, canonicalizeSquadMembers } from '@/infra/persistence';
+import { SQUAD_MEMBER_COUNT } from '@/engine';
 import { useProfileStore } from './profile';
 
 export const usePveStore = defineStore('pve', () => {
@@ -17,7 +18,7 @@ export const usePveStore = defineStore('pve', () => {
 
   function updateSquadMember(squadId: number, position: number, characterId: number | null) {
     const squad = presetSquads.value.find(s => s.id === squadId);
-    if (squad && position >= 0 && position < 4) {
+    if (squad && position >= 0 && position < SQUAD_MEMBER_COUNT) {
       squad.members[position] = characterId;
       squad.lastUsed = new Date().toISOString();
     }
@@ -32,7 +33,7 @@ export const usePveStore = defineStore('pve', () => {
 
   function getSquadMembers(squadId: number): (number | null)[] {
     const squad = presetSquads.value.find(s => s.id === squadId);
-    return squad ? [...squad.members] : [null, null, null, null];
+    return squad ? [...canonicalizeSquadMembers(squad.members)] : canonicalizeSquadMembers([]);
   }
 
   // --- 挑战塔 ---
@@ -74,7 +75,7 @@ export const usePveStore = defineStore('pve', () => {
   }
 
   function deserialize(data: { presetSquads: PresetSquad[]; towerProgress: TowerProgress }) {
-    // 二次兜底：每队成员去重 + 4 槽（对齐运行期配队不变式，杜绝克隆放大），与家园/装备双层范式一致。
+    // 二次兜底：每队成员去重 + 5 槽（对齐运行期配队不变式，杜绝克隆放大），与家园/装备双层范式一致。
     presetSquads.value = data.presetSquads.map(sq => ({ ...sq, members: canonicalizeSquadMembers(sq.members) }));
     towerProgress.value = data.towerProgress;
   }

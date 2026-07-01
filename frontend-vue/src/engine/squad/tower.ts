@@ -6,6 +6,7 @@
 import type { CharacterCard } from '@/types/card';
 import type { RNG } from '../rng';
 import { calculateBattlePower, type BattleStats } from './combat';
+import { SQUAD_MEMBER_COUNT, type TowerSquadAllowedRarity } from './eligibility';
 
 export type SquadTier = 'weak' | 'balanced' | 'strong';
 
@@ -140,7 +141,7 @@ export function generateMatchedAISquad(
   }
 
   const members: CharacterCard[] = [];
-  for (let i = 0; i < 4; i++) {
+  for (let i = 0; i < SQUAD_MEMBER_COUNT; i++) {
     let character = generateAICharacter(i, selectedTheme.tier, rng, imagePool);
 
     if (selectedTheme.teamBonus && character.battle_stats) {
@@ -181,15 +182,15 @@ export function generateMatchedAISquad(
 // 挑战塔
 // ---------------------------------------------------------------------------
 
-/** 5 层循环的稀有度阵容表（第 5 层 = 4 UR 守关）。 */
-export function getTowerRarityConfig(cyclePosition: number): ('UR' | 'HR' | 'SSR' | 'SR')[] {
+/** 5 层循环的 HR/UR 阵容表（第 5 层 = 5 UR 守关）。 */
+export function getTowerRarityConfig(cyclePosition: number): TowerSquadAllowedRarity[] {
   switch (cyclePosition) {
-    case 1: return ['UR', 'HR', 'SSR', 'SR'];
-    case 2: return ['UR', 'HR', 'SSR', 'SSR'];
-    case 3: return ['UR', 'HR', 'HR', 'SSR'];
-    case 4: return ['UR', 'UR', 'HR', 'SSR'];
-    case 5: return ['UR', 'UR', 'UR', 'UR'];
-    default: return ['UR', 'HR', 'SSR', 'SR'];
+    case 1: return ['HR', 'HR', 'HR', 'HR', 'HR'];
+    case 2: return ['UR', 'HR', 'HR', 'HR', 'HR'];
+    case 3: return ['UR', 'UR', 'HR', 'HR', 'HR'];
+    case 4: return ['UR', 'UR', 'UR', 'HR', 'HR'];
+    case 5: return ['UR', 'UR', 'UR', 'UR', 'UR'];
+    default: return ['HR', 'HR', 'HR', 'HR', 'HR'];
   }
 }
 
@@ -201,15 +202,13 @@ export function towerAttributeBonus(floor: number): number {
 /** 按稀有度配置从真实角色池选人（不重复；不足时跨稀有度兜底）。 */
 export function selectCharactersForTower(
   allCharacters: readonly CharacterCard[],
-  rarityConfig: readonly ('UR' | 'HR' | 'SSR' | 'SR')[],
+  rarityConfig: readonly TowerSquadAllowedRarity[],
   rng: RNG,
 ): CharacterCard[] {
   const selectedCharacters: CharacterCard[] = [];
-  const charactersByRarity: Record<string, CharacterCard[]> = {
+  const charactersByRarity: Record<TowerSquadAllowedRarity, CharacterCard[]> = {
     UR: allCharacters.filter(c => c.rarity === 'UR'),
     HR: allCharacters.filter(c => c.rarity === 'HR'),
-    SSR: allCharacters.filter(c => c.rarity === 'SSR'),
-    SR: allCharacters.filter(c => c.rarity === 'SR'),
   };
 
   const usedCharacterIds = new Set<number>();
@@ -223,15 +222,21 @@ export function selectCharactersForTower(
       selectedCharacters.push(selectedChar);
       usedCharacterIds.add(selectedChar.id);
     } else {
-      const allAvailable = allCharacters.filter(c => !usedCharacterIds.has(c.id));
+      const allAvailable = allCharacters.filter(c =>
+        (c.rarity === 'HR' || c.rarity === 'UR') && !usedCharacterIds.has(c.id),
+      );
       if (allAvailable.length > 0) {
         const fallbackChar = allAvailable[Math.floor(rng.next() * allAvailable.length)];
         selectedCharacters.push(fallbackChar);
         usedCharacterIds.add(fallbackChar.id);
       } else {
         // 角色全部用尽：允许重复但换负 ID
-        const randomChar = allCharacters[Math.floor(rng.next() * allCharacters.length)];
-        selectedCharacters.push({ ...randomChar, id: -(4000 + i) });
+        const reusable = allCharacters.filter(c => c.rarity === 'HR' || c.rarity === 'UR');
+        const source = reusable.length > 0 ? reusable : allCharacters;
+        if (source.length > 0) {
+          const randomChar = source[Math.floor(rng.next() * source.length)];
+          selectedCharacters.push({ ...randomChar, id: -(4000 + i) });
+        }
       }
     }
   }
@@ -266,8 +271,8 @@ const FLOOR_THEMES = [
 ];
 
 /**
- * 爬塔敌人生成：真实角色 + 5 层循环阵容 + 每循环 5% 强化。
- * 角色数据不足 10 人时回退到纯 AI 生成。
+ * 爬塔敌人生成：真实 HR/UR 角色 + 5 层循环阵容 + 每循环 5% 强化。
+ * HR/UR 数据不足 5 人时回退到纯 AI 生成。
  */
 export function generateTowerFloorEnemies(
   allCharacters: readonly CharacterCard[],
@@ -275,7 +280,8 @@ export function generateTowerFloorEnemies(
   rng: RNG,
   imagePool: readonly string[],
 ): TowerFloorSquad {
-  if (allCharacters.length < 10) {
+  const eligibleCharacters = allCharacters.filter(c => c.rarity === 'HR' || c.rarity === 'UR');
+  if (eligibleCharacters.length < SQUAD_MEMBER_COUNT) {
     return generateLegacyTowerEnemies(floor, rng, imagePool);
   }
 
@@ -284,7 +290,7 @@ export function generateTowerFloorEnemies(
   const attributeBonus = towerAttributeBonus(floor);
 
   const rarityConfig = getTowerRarityConfig(cyclePosition);
-  const selectedCharacters = selectCharactersForTower(allCharacters, rarityConfig, rng);
+  const selectedCharacters = selectCharactersForTower(eligibleCharacters, rarityConfig, rng);
   const enhancedCharacters = applyTowerAttributeBonus(selectedCharacters, attributeBonus);
 
   const themeIndex = Math.floor((floor - 1) / 5) % FLOOR_THEMES.length;
@@ -330,7 +336,7 @@ function generateLegacyTowerEnemies(floor: number, rng: RNG, imagePool: readonly
   }
 
   const members: CharacterCard[] = [];
-  for (let i = 0; i < 4; i++) {
+  for (let i = 0; i < SQUAD_MEMBER_COUNT; i++) {
     members.push(generateTowerAICharacter(floor, i, tier, difficultyMultiplier, rng, imagePool));
   }
 
@@ -362,7 +368,7 @@ function generateTowerAICharacter(
     id: -(3000 + floor * 10 + index),
     name,
     image_path: imagePool.length > 0 ? imagePool[Math.floor(rng.next() * imagePool.length)] : '',
-    rarity: 'SR' as const,
+    rarity: 'HR' as const,
     battle_stats: battleStats,
     description: `第${floor}层的AI守护者`,
     synergy_tags: [`floor_${floor}`],

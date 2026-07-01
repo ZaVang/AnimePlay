@@ -43,7 +43,7 @@ export interface GachaHistoryItem {
 export interface PresetSquad {
   id: number;
   name: string;
-  members: (number | null)[]; // 4个位置，null表示空位
+  members: (number | null)[]; // 5个位置，null表示空位
   lastUsed?: string;
 }
 

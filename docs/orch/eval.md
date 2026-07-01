@@ -1,47 +1,84 @@
-# Evaluator Report — Iteration 1
+# Evaluator Report - D5
 
-## Checkbox 状态
+## 结论
 
-- [x] C2-T1..C2-T5：原装备系统全栈任务保持完成。
-- [x] PL1-T1：装备目录扩容与效果模型。
-- [x] PL1-T2：家园收益接入装备效果。
-- [x] PL1-T3：家园页基地运营层。
-- [x] PL1-T4：装备背包与配装弹窗展示效果。
+PASS
 
-## 验收命令重跑结果
+D5 的核心合同已经完成：`/homestead` 成为基地 hub，家园、角色、编队、探索、战斗五个面板在同一入口内切换；旧 `/squad-battle`、`/nurture` 保留兼容重定向；主导航不再把家园、养成、挑战塔拆成多个并列入口。指定验证命令全部通过，`engine/squad` 纯逻辑扫描通过。
 
-- `cd frontend-vue && npm run type-check`：exit 0。
-- `cd frontend-vue && npm run test`：exit 0，51 files / 585 tests passed。
-- `cd frontend-vue && npm run build`：exit 0，type-check + vite build passed；仅 Browserslist stale-data warning。
-- `python backend/test_security.py`：system Python exit 1，缺少 `werkzeug`；激活项目 `.venv` 后同一命令 exit 0，all security checks passed。
-- `grep -rn "debug=True" backend/server.py api/index.py`：PowerShell 环境无 `grep`；`rg -n "debug=True" backend\server.py api\index.py` exit 1 且无输出，等价核验为零命中。
-- `git diff --check`：exit 0，仅 markdown 行尾转换 warning。
-- Browser smoke：`http://127.0.0.1:5173/homestead` 未登录空态渲染正常；本地测试账号登录并跳过引导后，家园页出现「基地舒适度 / 训练区 / 休息区 / 资料室 / 还没有入住角色 / 还没有角色入住」，无 console error。
+## 覆盖清单
 
-## Generator 报告 vs 实际对比
+- [x] 读取 `docs/FUTURE.md`、`docs/orch/plan.md`、`docs/orch/gen_status.md`，确认 D5 合同为基地 hub 整合、旧路由兼容、五面板信息完整、指定文档同步与验证闭环。
+- [x] 路由检查：`frontend-vue/src/router/index.ts` 中 `/homestead` 指向 `HomesteadHubView.vue`；`/squad-battle` 重定向到 `/homestead?tab=explore`；`/nurture` 重定向到 `/homestead?tab=characters`。
+- [x] 顶部入口检查：`frontend-vue/src/App.vue` 侧边导航只保留 `/homestead` 的“基地 hub”入口，没有继续并列暴露 `/nurture` 或 `/squad-battle`。
+- [x] Hub 面板检查：`HomesteadHubView.vue` 定义 `home/characters/squad/explore/battle` 五个 tab，并通过 query `tab` 切换。
+- [x] 家园面板：复用 `HomesteadView`，保留角色走动与离线收益入口。
+- [x] 角色面板：展示选中角色五维基础/加点/装备/最终值，展示装备槽与小队战技能，并内嵌 `NurtureView` 保留养成/配装操作。
+- [x] 编队面板：展示 5 个站位、当前小队战力、可挑战状态与技能摘要，使用 `SQUAD_MEMBER_COUNT = 5`。
+- [x] 探索面板：展示当前塔层、敌方阵容、敌方战力/难度与奖励预览。
+- [x] 战斗面板：复用 D4 `SquadBattleView`，保留横板半自动战斗与结算反馈入口。
+- [x] 指定文档检查：`docs/挑战塔系统.md`、`docs/角色养成系统.md`、`frontend-vue/CLAUDE.md` 已更新为基地 hub、新路由、新机制；旧“前排轮流普攻/执行回合/一键结算”没有被作为现行规则描述。
 
-- 与实际一致。环境 caveat 属本机命令环境：系统 Python 未安装后端依赖、PowerShell 无 grep。项目 `.venv` 与 `rg` 等价核验均通过。
+## 命令结果摘要
 
-## pitfalls 合规检查
+```text
+cd frontend-vue
+npm run test -- squad
 
-- engine 纯净：未向 engine 引入 config/store/Vue；塔掉落仍由注入 RNG 决定。
-- 不升存档：复用现有 v14 equipment/homestead 域；装备效果由静态目录派生。
-- 货币入口：未新增绕过 `profile.spend/earn` 的路径。
-- 颜色规则：新增 UI 使用语义 token/CSS，不拼接动态 Tailwind 类。
+Test Files  10 passed (10)
+Tests       82 passed (82)
+```
 
-## 结构漂移检查
+```text
+cd frontend-vue
+npm run test
 
-- 项目无 `docs/project_structure.md`。
-- 新增测试文件与模块职责变化已在 Generator Status 自报。
+Test Files  58 passed (58)
+Tests       628 passed (628)
+```
 
-## 失败原因分析
+```text
+cd frontend-vue
+npm run type-check
 
-- 无代码失败。仅验收命令环境差异：系统 Python 缺依赖、PowerShell 无 grep。
+vue-tsc --build passed
+```
 
-## 新陷阱待追加
+```text
+cd frontend-vue
+npm run build
 
-- [装备扩容] 当每槽每稀有度不止一件时，塔掉落必须从候选池随机，不能继续取第一件。
+381 modules transformed
+built in 8.40s
+```
 
-## 决策
+构建只出现 Browserslist/caniuse-lite 数据 6 个月未更新提示，不影响本次 D5 验收。
 
-COMPLETE_WITH_ENV_NOTES
+```text
+engine/squad purity scan passed
+```
+
+扫描模式：
+
+```powershell
+Math\.random\(|localStorage|fetch\(|document\.|window\.|@/stores|@/views|@/components
+```
+
+扫描范围：`frontend-vue/src/engine/squad`。
+
+## 发现的问题 / 风险
+
+无阻塞问题。
+
+非阻塞风险：
+
+- 本轮 evaluator 未启动临时前端服务，也未登录真实账号造数据；路由与面板覆盖基于源码静态检查、类型检查、构建和测试验证。若要做发布前体验硬验收，建议补一轮带测试账号/fixture 的 Playwright 路径检查。
+- 主线程 follow-up 已同步 `docs/README.md` 与 `docs/前端界面说明与线框图.md`，移除了旧 4 槽位、训练/对话、执行回合/一键结算等现行误导文案。当前旧规则关键词只保留在 FUTURE 历史/目标语境和“已下线/不再使用”的说明中。
+
+## 建议
+
+- D5 可以作为完成项保留。
+- 下一步若继续打磨 S13 收口，优先补一条登录态/fixture 的浏览器验收脚本，覆盖“基地 hub -> 角色 -> 编队 -> 探索 -> 战斗 -> 结算”的真实闭环。
+- 发布前继续做一次真实登录态视觉巡检，确认嵌入的 `HomesteadView`、`NurtureView`、`SquadBattleView` 在常见数据量下没有布局拥挤。
+
+DECISION: PASS

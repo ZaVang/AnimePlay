@@ -21,6 +21,7 @@
  *   迁移丢弃旧字段、补 statPoints 缺省）+ 新增**空** equipment 域占位（inventory + equipped per character，C2 接配装）。
  */
 import type { PityState } from '@/engine/gacha/draw';
+import { SQUAD_MEMBER_COUNT } from '@/engine/squad/eligibility';
 import type { CharacterNurtureData } from '@/types/nurture';
 import type {
   Deck,
@@ -220,23 +221,24 @@ export interface SavePayload {
 export type SavePayloadV2 = SavePayload;
 
 export function createDefaultPresetSquads(): PresetSquad[] {
+  const emptyMembers = () => Array.from({ length: SQUAD_MEMBER_COUNT }, () => null);
   return [
-    { id: 1, name: '小队 A', members: [null, null, null, null] },
-    { id: 2, name: '小队 B', members: [null, null, null, null] },
-    { id: 3, name: '小队 C', members: [null, null, null, null] },
+    { id: 1, name: '小队 A', members: emptyMembers() },
+    { id: 2, name: '小队 B', members: emptyMembers() },
+    { id: 3, name: '小队 C', members: emptyMembers() },
   ];
 }
 
 /**
- * 规整一支预设小队的 4 槽成员：恰 4 槽、按位去重（同 id 仅首次保留、其余置 null）、非有限数字置 null。
- * 把配队 UI 的「同队不重复 + 4 槽」不变式收口到载入边界，杜绝脏档把单角色克隆满全队放大战力
+ * 规整一支预设小队的 5 槽成员：恰 5 槽、按位去重（同 id 仅首次保留、其余置 null）、非有限数字置 null。
+ * 把配队 UI 的「同队不重复 + 5 槽」不变式收口到载入边界，杜绝脏档把单角色克隆满全队放大战力
  * （与 canonicalizePlacedIds / sanitizeEquipped 同型）。已拥有校验留给战斗入口作纵深。
  */
 export function canonicalizeSquadMembers(raw: unknown): (number | null)[] {
-  const out: (number | null)[] = [null, null, null, null];
+  const out: (number | null)[] = Array.from({ length: SQUAD_MEMBER_COUNT }, () => null);
   if (!Array.isArray(raw)) return out;
   const seen = new Set<number>();
-  for (let i = 0; i < 4; i++) {
+  for (let i = 0; i < SQUAD_MEMBER_COUNT; i++) {
     const v = raw[i];
     if (typeof v === 'number' && Number.isFinite(v) && !seen.has(v)) {
       seen.add(v);

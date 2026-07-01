@@ -9,6 +9,7 @@ import { useWatchedAnime } from '@/composables/useWatchedAnime';
 import { recommendFromSeeds } from '@/utils/contentIndex';
 import { thumbImageSrc, onThumbError } from '@/utils/cardImage';
 import { GAME_CONFIG } from '@/config/gameConfig';
+import { SQUAD_SKILL_REQUIRED_SLOTS, getSquadSkillKitForCharacter } from '@/data/squadSkillKits';
 import type { Card, AnimeCard, CharacterCard } from '@/types/card';
 import type { Skill } from '@/types/skill';
 import { getEffectText, getTriggerText } from '@/skills/effects/descriptions';
@@ -125,6 +126,29 @@ const passiveSkill = computed<Skill | undefined>(() => {
   return undefined;
 });
 // --- END NEW ---
+
+const squadSkillSlotLabels = {
+  normalAttack: '普攻',
+  skill1: '技能一',
+  skill2: '技能二',
+  passive: '被动',
+  ultimate: '大招',
+} as const;
+
+const squadSkillKit = computed(() => {
+  if (props.cardType !== 'character' || !viewCard.value) return undefined;
+  return getSquadSkillKitForCharacter(viewCard.value as CharacterCard);
+});
+
+const squadSkillList = computed(() => {
+  const kit = squadSkillKit.value;
+  if (!kit) return [];
+  return SQUAD_SKILL_REQUIRED_SLOTS.map(slot => ({
+    slot,
+    label: squadSkillSlotLabels[slot],
+    skill: kit[slot],
+  }));
+});
 
 // --- NEW: Anime effects descriptions ---
 const animeEffectsDescriptions = computed(() => {
@@ -325,9 +349,26 @@ async function handleDismantle() {
               </div>
             </div>
 
+            <div v-if="squadSkillList.length" class="mt-4 border-t pt-4">
+              <h3 class="font-bold text-lg mb-2">小队战技能</h3>
+              <div class="space-y-2">
+                <div
+                  v-for="item in squadSkillList"
+                  :key="item.slot"
+                  class="px-3 py-2 rounded-md border border-info/40 bg-info/10"
+                >
+                  <div class="flex items-center gap-2">
+                    <span class="px-2 py-0.5 rounded bg-info text-on-accent text-xs font-bold">{{ item.label }}</span>
+                    <h4 class="font-bold text-info">{{ item.skill.name }}</h4>
+                  </div>
+                  <p class="text-sm text-ink-2 mt-1">{{ item.skill.description }}</p>
+                </div>
+              </div>
+            </div>
+
             <!-- NEW: Battle Information Section -->
             <div class="mt-4 border-t pt-4">
-              <h3 class="font-bold text-lg mb-2">战斗信息</h3>
+              <h3 class="font-bold text-lg mb-2">{{ cardType === 'character' ? '宅理论战卡牌技能' : '宅理论战卡牌信息' }}</h3>
               <!-- Anime Card Battle Info -->
               <div v-if="cardType === 'anime'" class="text-sm space-y-2">
                 <div><strong>TP 消耗:</strong> <span class="font-semibold text-info">{{ (viewCard as AnimeCard).cost }}</span></div>

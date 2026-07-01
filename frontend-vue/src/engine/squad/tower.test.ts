@@ -40,11 +40,11 @@ function buildRoster(): CharacterCard[] {
 
 describe('5 层循环稀有度阵容表', () => {
   it.each([
-    [1, ['UR', 'HR', 'SSR', 'SR']],
-    [2, ['UR', 'HR', 'SSR', 'SSR']],
-    [3, ['UR', 'HR', 'HR', 'SSR']],
-    [4, ['UR', 'UR', 'HR', 'SSR']],
-    [5, ['UR', 'UR', 'UR', 'UR']], // 守关层 4 UR
+    [1, ['HR', 'HR', 'HR', 'HR', 'HR']],
+    [2, ['UR', 'HR', 'HR', 'HR', 'HR']],
+    [3, ['UR', 'UR', 'HR', 'HR', 'HR']],
+    [4, ['UR', 'UR', 'UR', 'HR', 'HR']],
+    [5, ['UR', 'UR', 'UR', 'UR', 'UR']], // 守关层 5 UR
   ])('循环位 %i → %j', (pos, expected) => {
     expect(getTowerRarityConfig(pos as number)).toEqual(expected);
   });
@@ -72,19 +72,19 @@ describe('塔层属性加成（每过 5 层 +5%）', () => {
 });
 
 describe('selectCharactersForTower', () => {
-  it('按稀有度配置选 4 人且不重复', () => {
+  it('按稀有度配置选 5 人且不重复', () => {
     const roster = buildRoster();
-    const picked = selectCharactersForTower(roster, ['UR', 'UR', 'UR', 'UR'], createSeededRng(7));
-    expect(picked).toHaveLength(4);
-    expect(new Set(picked.map(c => c.id)).size).toBe(4);
+    const picked = selectCharactersForTower(roster, ['UR', 'UR', 'UR', 'UR', 'UR'], createSeededRng(7));
+    expect(picked).toHaveLength(5);
+    expect(new Set(picked.map(c => c.id)).size).toBe(5);
     expect(picked.every(c => c.rarity === 'UR')).toBe(true);
   });
 
-  it('该稀有度不足时跨稀有度兜底', () => {
+  it('该稀有度不足时只在 HR/UR 内兜底，不拉低稀有度进小队战', () => {
     const roster = [mkChar(1, 'UR'), mkChar(2, 'SR'), mkChar(3, 'SR'), mkChar(4, 'SR'), mkChar(5, 'SR')];
-    const picked = selectCharactersForTower(roster, ['UR', 'UR', 'UR', 'UR'], createSeededRng(7));
-    expect(picked).toHaveLength(4);
-    expect(picked.filter(c => c.rarity === 'UR')).toHaveLength(1); // 只有 1 个 UR，其余从 SR 兜底
+    const picked = selectCharactersForTower(roster, ['UR', 'UR', 'UR', 'UR', 'UR'], createSeededRng(7));
+    expect(picked).toHaveLength(5);
+    expect(picked.every(c => c.rarity === 'UR')).toBe(true);
   });
 });
 
@@ -96,7 +96,8 @@ describe('generateTowerFloorEnemies', () => {
 
     expect(a.name).toBe('第7层 挑战者小队'); // (7-1)/5=1 → 主题表第 2 个
     expect(a.difficulty).toBe('中等'); // cycleCount 1 → 中等
-    expect(a.members).toHaveLength(4);
+    expect(a.members).toHaveLength(5);
+    expect(a.members.every(m => m.rarity === 'HR' || m.rarity === 'UR')).toBe(true);
     expect(a.members.map(m => m.id)).toEqual(b.members.map(m => m.id)); // 种子可复现
 
     // 第 7 层处于第 2 循环 → +5%；战力 = 成员战力之和
@@ -107,12 +108,13 @@ describe('generateTowerFloorEnemies', () => {
     expect(a.description).toContain('属性提升：5%');
   });
 
-  it('角色数据不足 10 人时回退 AI 生成（4 名负 ID 守护者）', () => {
+  it('HR/UR 数据不足 5 人时回退 AI 生成（5 名负 ID 守护者）', () => {
     const tiny = [mkChar(1, 'UR'), mkChar(2, 'SR')];
     const r = generateTowerFloorEnemies(tiny, 3, createSeededRng(1), IMG);
     expect(r.name).toBe('第3层 AI守护者');
-    expect(r.members).toHaveLength(4);
+    expect(r.members).toHaveLength(5);
     expect(r.members.every(m => m.id < 0)).toBe(true);
+    expect(r.members.every(m => m.rarity === 'HR')).toBe(true);
     expect(r.members.every(m => IMG.includes(m.image_path))).toBe(true);
   });
 
@@ -129,7 +131,7 @@ describe('generateMatchedAISquad（战力分档选主题）', () => {
       const r = generateMatchedAISquad(300, createSeededRng(seed), IMG);
       const theme = SQUAD_THEMES.find(t => t.name === r.name)!;
       expect(['weak', 'balanced']).toContain(theme.tier);
-      expect(r.members).toHaveLength(4);
+      expect(r.members).toHaveLength(5);
     }
   });
 
