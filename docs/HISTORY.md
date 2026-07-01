@@ -345,6 +345,23 @@ S8 把技能「真实现」了，但 2026-06-17 的全量复审（132 技能 × 
 
 ---
 
+## ✅ S13 — 家园综合系统（基地养成 + 小队战斗重构 + 挑战塔闭环，已完成 2026-06-30）
+
+把冻结的家园升级为「基地 hub」：拥有的角色入住 → 离线挂机产出（经验/好感/知识点）→ 升级/配装进战力 → HR/UR 5 人队横板半自动战斗打挑战塔 → 塔奖励（角色经验/装备/知识点）回流。规则全部入纯 `engine/squad`，视图/store 只做编排。
+
+- **A · 地基**：`/homestead` 解冻 + chibi 图片三级兜底（sprite→chibi→原立绘）。
+- **A2 · 家园 2.5D 视觉**：俯视广场 + 四向序列帧行走（`utils/cardImage.ts` spriteSheetSrc / `HomesteadView.vue`）。
+- **B · 挂机养成（存档 v13）**：`config/homestead.ts`（`computeIdleYield` 纯计算）+ `stores/homestead.ts` + `userStore.settleHomestead()`（封顶 12h、进家园结算、离线收益弹窗）。
+- **C1 · 养成精简（存档 v14）**：养成砍为「等级（每级随机加点）+ 好感（6 档里程碑）」两轴；战力改纯加法 `generateBattleStats(base, statPoints, equipBonus)`；删训练/活动/对话/礼物/attributes。
+- **C2 · 装备系统全栈**：`config/equipment.ts`（3 槽 × R..UR 名梗目录 + 塔掉落表 + KP 兑换价）+ equipment store + 配装/背包 UI + 塔掉落 + KP 兑换 + 战力接入（commits `f2d115b`/`46990b4`）。
+- **D1–D5 · 小队战斗重构**：时间轴半自动引擎（`engine/squad/timedBattle.ts`，DEF 减伤/能量/大招/状态效果）；5 人队 + HR/UR 准入；`data/squadSkillKits.ts` 技能数据（6 原型模板）；横板半自动战斗 UI（`SquadBattleView` 拆分组件）；基地 hub 五面板整合（家园/角色/编队/探索/战斗，`HomesteadHubView.vue`）。
+
+**Exit（达成）**：家园闭环「入住挂机 → 配装提战力 → HR/UR 小队打塔 → 回流」跑通；旧路由不 404；type-check/test/build 通过。
+
+**后续**：S13 交付了完整骨架与数值管线，但 2026-07-01 对家园 hub 做的对抗性审计（8 维 × 每条 4 票投票，225 agent；50 确认/3 争议/1 否决）发现「角色差异化 / 养成决策 / 可重复循环」三处深度缺口 → 转为 [FUTURE.md](FUTURE.md) 的 **S14** 打磨路线。审计报告：[orch/homestead-hub-audit-report.md](orch/homestead-hub-audit-report.md)。
+
+---
+
 ## 🔗 附录：审计问题 → Sprint 映射
 
 历史可追溯表：审计各章节 → 处理它的 Sprint。S1–S10 行均已完成（纯回溯）；S11 / S12 行指向仍未开始的未来 Sprint（前瞻，非已完成工作，见 [FUTURE.md](FUTURE.md)）。

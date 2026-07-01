@@ -8,6 +8,7 @@ import {
   selectCharactersForTower,
   applyTowerAttributeBonus,
   generateTowerFloorEnemies,
+  towerFloorEnemySeed,
   generateMatchedAISquad,
   generateStatsForTier,
   SQUAD_THEMES,
@@ -122,6 +123,26 @@ describe('generateTowerFloorEnemies', () => {
     const r = generateTowerFloorEnemies(buildRoster(), 1, createSeededRng(5), IMG);
     expect(r.difficulty).toBe('简单');
     expect(r.description).toContain('属性提升：0%');
+  });
+});
+
+describe('SA-T2：敌人预览与实战同源（towerFloorEnemySeed 单一真相源）', () => {
+  it('同一层「预览敌人 === 进战敌人」——同候选池 + towerFloorEnemySeed(floor) 派生的种子逐值一致', () => {
+    const roster = buildRoster();
+    for (const floor of [1, 3, 7, 12, 26]) {
+      // 探索预览（hub）与实战（SquadBattleView）现都用 createSeededRng(towerFloorEnemySeed(floor))
+      const preview = generateTowerFloorEnemies(roster, floor, createSeededRng(towerFloorEnemySeed(floor)), IMG);
+      const battle = generateTowerFloorEnemies(roster, floor, createSeededRng(towerFloorEnemySeed(floor)), IMG);
+      expect(battle.members.map(m => m.id)).toEqual(preview.members.map(m => m.id));
+      expect(battle.members.map(m => m.battle_stats)).toEqual(preview.members.map(m => m.battle_stats));
+      expect(battle.floorPower).toBe(preview.floorPower);
+      expect(battle.name).toBe(preview.name);
+    }
+  });
+
+  it('种子随层确定：同层同种子、不同层不同种子', () => {
+    expect(towerFloorEnemySeed(5)).toBe(towerFloorEnemySeed(5));
+    expect(towerFloorEnemySeed(5)).not.toBe(towerFloorEnemySeed(6));
   });
 });
 

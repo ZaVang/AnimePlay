@@ -9,9 +9,9 @@ import {
   calculateBattlePower,
   calculateTowerBattleRewards,
   createSeededRng,
-  defaultRng,
   generateBattleStats,
   generateTowerFloorEnemies,
+  towerFloorEnemySeed,
   isTowerSquadRarity,
   simulateTimedBattle,
   validateTowerSquadMembers,
@@ -23,6 +23,7 @@ import {
   type TimedBattleEvent,
   type TimedBattleResult,
   type TimedBattleWinner,
+  type TowerFloorSquad,
 } from '@/engine';
 import { CHARACTER_IMAGE_POOL } from '@/utils/imageUtils';
 import { assetUrl } from '@/utils/assetUrl';
@@ -37,6 +38,23 @@ import type { SquadBattleRewardView, SquadBattleUnitView } from '@/components/ba
 const userStore = useUserStore();
 const gameDataStore = useGameDataStore();
 const equipmentStore = useEquipmentStore();
+
+// SA-T6（Plan A）：hub 以「直达 battle 阶段」的方式驱动本组件。
+// - entrySquadId 合法：挂载即 startTowerBattle(squadId) 跳到 currentPhase='battle'，不渲染 towerMode 编成器。
+// - embedded 且无合法 entrySquadId（刷新/深链 ?tab=battle）：渲染最小占位，引导回探索选队开战，
+//   绝不复活整套 towerMode 编成 UI（那正是 SA-T6 要消除的三重冗余）。
+const props = withDefaults(defineProps<{
+  entrySquadId?: number | null;
+  embedded?: boolean;
+}>(), {
+  entrySquadId: null,
+  embedded: false,
+});
+
+// 通知 hub 切回探索（占位页「去探索选队」/ embedded 下战斗结束「继续」）。
+const emit = defineEmits<{
+  (event: 'exit-to-explore'): void;
+}>();
 
 type BattlePhase = 'towerMode' | 'battle' | 'result';
 
@@ -79,7 +97,7 @@ const battleSimulation = ref<TimedBattleResult | null>(null);
 const battleEventCursor = ref(0);
 const selectedSquadForBattle = ref<number | null>(null);
 const currentTowerFloor = ref(1);
-const towerEnemyData = ref<any>(null);
+const towerEnemyData = ref<TowerFloorSquad | null>(null);
 const showCharacterSelectModal = ref(false);
 const selectedPosition = ref(0);
 const editingSquadId = ref<number | null>(null);
@@ -237,7 +255,7 @@ function startTowerBattle(squadId: number) {
   }
 
   if (!towerEnemyData.value) {
-    refreshTowerEnemies();
+    loadTowerEnemies();
   }
   if (!towerEnemyData.value) return;
 
@@ -544,13 +562,17 @@ function restart() {
   battleRewards.value = { characterExp: 0, knowledgePoints: 0, equipmentDrop: null };
   clearBattleTimers();
   ensureTowerEnemies();
+  // SA-T6：hub 内嵌时结算后不回落 towerMode 编成器（那是被消除的冗余），改由 hub 切回探索。
+  if (props.embedded) emit('exit-to-explore');
 }
 
-function refreshTowerEnemies() {
+// SA-T2：按 towerFloorEnemySeed(floor) 派生确定性种子生成当前层敌人——与家园 hub 探索预览同源。
+// 同一层敌人恒等（预览 === 实战），不再用 Math.random；「刷新敌人」按钮已随之移除（刷新出来仍是同一批）。
+function loadTowerEnemies() {
   towerEnemyData.value = generateTowerFloorEnemies(
     getTowerEnemyCandidates(),
     currentTowerFloor.value,
-    defaultRng,
+    createSeededRng(towerFloorEnemySeed(currentTowerFloor.value)),
     CHARACTER_IMAGE_POOL,
   );
   saveState();
@@ -563,7 +585,7 @@ function ensureTowerEnemies() {
     && userStore.isLoggedIn
     && gameDataStore.allCharacterCards.length > 0
   ) {
-    refreshTowerEnemies();
+    loadTowerEnemies();
   }
 }
 
@@ -582,9 +604,26 @@ function clearBattleTimers() {
   pendingTimers.clear();
 }
 
+/**
+ * SA-T6：尝试用 hub 传入的 entrySquadId 直达 battle 阶段。
+ * 合法则 startTowerBattle 会把 currentPhase 推到 'battle'（跳过 towerMode 编成器）。
+ * 返回是否成功进战——不成功（非法队/非登录/敌人未就绪）时留给占位页兜底。
+ */
+function tryEnterFromEntry(): boolean {
+  const squadId = props.entrySquadId;
+  if (squadId == null) return false;
+  if (!userStore.isLoggedIn) return false;
+  ensureTowerEnemies();
+  if (!getTowerSquadValidation(squadId).ok) return false;
+  startTowerBattle(squadId);
+  return currentPhase.value === 'battle';
+}
+
 onMounted(() => {
   loadState();
   ensureTowerEnemies();
+  // 直达进战红线：带合法 entrySquadId 挂载即进 battle 阶段，不落 towerMode。
+  tryEnterFromEntry();
 });
 
 watch(
@@ -593,6 +632,18 @@ watch(
     if (currentPhase.value === 'towerMode' && newFloor > currentTowerFloor.value) {
       currentTowerFloor.value = newFloor;
       towerEnemyData.value = null;
+    }
+  },
+);
+
+// SA-T2：移除手动「刷新敌人」按钮后，主数据/登录异步就绪时自动补载当前层敌人（确定性种子，同源）。
+// SA-T6：若带 entrySquadId 但挂载时敌人/登录尚未就绪未能进战，就绪后自动补一次直达进战。
+watch(
+  () => [userStore.isLoggedIn, gameDataStore.allCharacterCards.length] as const,
+  () => {
+    ensureTowerEnemies();
+    if (props.embedded && props.entrySquadId != null && currentPhase.value === 'towerMode') {
+      tryEnterFromEntry();
     }
   },
 );
@@ -616,6 +667,19 @@ onBeforeUnmount(() => {
         <p class="text-ink-2">登录后即可参与爬塔挑战</p>
       </div>
 
+      <!--
+        SA-T6（Plan A）：hub 内嵌时，towerMode 编成 UI 已由 squad/explore 两 tab 取代，
+        不再渲染整套编成器（消除三重冗余）。未带合法 entrySquadId 直接进 battle tab（刷新/深链）时
+        落最小占位，引导回探索选队开战。
+      -->
+      <div v-else-if="currentPhase === 'towerMode' && embedded" class="py-16 text-center">
+        <h2 class="mb-3 text-2xl font-bold text-ink">从「探索」选择小队开始挑战</h2>
+        <p class="mx-auto mb-6 max-w-md text-ink-2">
+          在探索面板预览当前塔层、确认小队后点「开始挑战」即可直接进入战斗。
+        </p>
+        <button type="button" class="btn-primary" @click="emit('exit-to-explore')">去探索选队</button>
+      </div>
+
       <div v-else-if="currentPhase === 'towerMode'" class="space-y-6">
         <div class="rounded-lg border border-line bg-surface p-6">
           <div class="grid gap-6 md:grid-cols-3">
@@ -635,14 +699,8 @@ onBeforeUnmount(() => {
 
             <div class="text-center">
               <h3 class="mb-2 text-lg font-bold text-ink">当前层敌人</h3>
-              <button
-                v-if="!towerEnemyData"
-                type="button"
-                class="rounded-lg bg-warning px-4 py-2 text-on-accent transition hover:opacity-90"
-                @click="refreshTowerEnemies"
-              >
-                刷新敌人
-              </button>
+              <!-- SA-T2：敌人由 floor 确定性派生（预览 === 实战），无「刷新」按钮 -->
+              <div v-if="!towerEnemyData" class="text-sm text-ink-2">正在载入本层敌人…</div>
               <div v-else class="space-y-2">
                 <div class="font-bold text-danger">{{ towerEnemyData.name }}</div>
                 <div class="text-sm text-ink-2">{{ towerEnemyData.description }}</div>
@@ -660,13 +718,6 @@ onBeforeUnmount(() => {
                     {{ towerEnemyData.difficulty }}
                   </span>
                 </div>
-                <button
-                  type="button"
-                  class="rounded bg-warning px-3 py-1 text-sm text-on-accent transition hover:opacity-90"
-                  @click="refreshTowerEnemies"
-                >
-                  重新刷新
-                </button>
               </div>
             </div>
           </div>
@@ -745,7 +796,7 @@ onBeforeUnmount(() => {
                   {{ getTowerSquadIssue(squad.id) || `需要5人 HR/UR 满编 (${getSquadMemberCount(squad.id)}/${SQUAD_MEMBER_COUNT})` }}
                 </span>
                 <span v-else-if="userStore.hasCompletedFloor(currentTowerFloor)">本层已通过</span>
-                <span v-else-if="!towerEnemyData">刷新敌人信息</span>
+                <span v-else-if="!towerEnemyData">载入敌人中…</span>
                 <span v-else>开始挑战</span>
               </button>
             </div>

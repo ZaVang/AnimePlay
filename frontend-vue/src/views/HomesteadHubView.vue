@@ -1,7 +1,8 @@
 <script setup lang="ts">
-import { computed, ref, watch } from 'vue';
+import { computed, onUnmounted, ref, watch } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 import { useUserStore } from '@/stores/userStore';
+import { SWEEP_WEEKLY_CAP } from '@/stores/pve';
 import { useGameDataStore } from '@/stores/gameDataStore';
 import { useEquipmentStore } from '@/stores/equipment';
 import HomesteadView from './HomesteadView.vue';
@@ -9,15 +10,20 @@ import NurtureView from './NurtureView.vue';
 import SquadBattleView from './SquadBattleView.vue';
 import {
   SQUAD_MEMBER_COUNT,
+  TOWER_SQUAD_ALLOWED_RARITIES,
   calculateBattlePower,
+  calculateSweepReward,
   calculateTowerBattleRewards,
   createSeededRng,
   generateBattleStats,
   generateTowerFloorEnemies,
+  isTowerSquadRarity,
+  towerFloorEnemySeed,
   validateTowerSquadMembers,
   type BattleStats,
 } from '@/engine';
 import { CHARACTER_IMAGE_POOL } from '@/utils/imageUtils';
+import CharacterSelectModal from '@/components/battle/CharacterSelectModal.vue';
 import { getSquadSkillKitForCharacter, isSquadSkillKitReady } from '@/data/squadSkillKits';
 import { getEquipmentDef, SLOT_META, SLOT_ORDER, formatBonus, type EquipmentSlot } from '@/config/equipment';
 import { STAT_META, bondTitleFor } from '@/config/nurture';
@@ -47,6 +53,17 @@ const equipmentStore = useEquipmentStore();
 
 const selectedCharacterId = ref<number | null>(null);
 const selectedSquadId = ref<number | null>(null);
+
+// SA-T6（Plan A）：explore 「开始挑战」直达进战——记录本次进战的小队 id，供 battle tab 的
+// SquadBattleView 以 entrySquadId 直接跳到 battle 阶段（跳过其 towerMode 编成器）。
+// 深链/刷新直接点 battle tab（无此值）时 SquadBattleView 落最小占位、不复活编成器。
+const battleEntrySquadId = ref<number | null>(null);
+
+// SA-T1：hub squad 面板编队编辑（复用 CharacterSelectModal，与 SquadBattleView 同一套 picker/校验）。
+const showCharacterSelectModal = ref(false);
+const editingSquadId = ref<number | null>(null);
+const editingPosition = ref(0);
+const towerSquadAllowedRarities = TOWER_SQUAD_ALLOWED_RARITIES;
 
 function normalizeTab(value: unknown): HubTab {
   return tabs.some(tab => tab.key === value) ? value as HubTab : 'home';
@@ -194,13 +211,64 @@ const selectedSquadSlots = computed(() => {
   });
 });
 
+// --- SA-T1：编队编辑（换人 / 改名 / 空槽加人；改动经 store action 即时刷新战力/校验）---
+
+/** 挑战塔可选：已拥有 + HR/UR + 拥有完整小队战技能。与 SquadBattleView 校验口径一致。 */
+function isCharacterSelectableForTower(character: CharacterCard): boolean {
+  return isTowerSquadRarity(character.rarity) && isSquadSkillKitReady(character);
+}
+
+/** 该队其他位置已占用的角色（不含正在编辑的位置）——传给 picker 置灰，避免同角色重复上阵。 */
+function getUsedCharacterIds(squadId: number, excludePosition: number): number[] {
+  return userStore.getSquadMembers(squadId)
+    .map((id, index) => (index !== excludePosition ? id : null))
+    .filter((id): id is number => id != null);
+}
+
+/** 当前编辑位置已选中的角色 id（picker 高亮/移除用）。 */
+const editingCurrentCharacterId = computed<number | undefined>(() => {
+  if (editingSquadId.value == null) return undefined;
+  return userStore.getSquadMembers(editingSquadId.value)[editingPosition.value] ?? undefined;
+});
+
+const editingUsedCharacterIds = computed<number[]>(() =>
+  editingSquadId.value == null ? [] : getUsedCharacterIds(editingSquadId.value, editingPosition.value),
+);
+
+function openCharacterSelect(squadId: number, position: number) {
+  editingSquadId.value = squadId;
+  editingPosition.value = position;
+  showCharacterSelectModal.value = true;
+}
+
+function handleCharacterSelect(characterId: number, position: number) {
+  if (editingSquadId.value == null) return;
+  const character = gameDataStore.getCharacterCardById(characterId);
+  if (!character || userStore.getCharacterCardCount(characterId) <= 0 || !isCharacterSelectableForTower(character)) {
+    userStore.addLog('挑战塔小队只能选择已拥有且拥有完整小队战技能的 HR/UR 角色。', 'warning');
+    return;
+  }
+  userStore.updateSquadMember(editingSquadId.value, position, characterId);
+}
+
+function handleCharacterRemove(position: number) {
+  if (editingSquadId.value == null) return;
+  userStore.updateSquadMember(editingSquadId.value, position, null);
+}
+
+function renameSquad(squadId: number, name: string) {
+  const trimmed = name.trim();
+  if (trimmed) userStore.updateSquadName(squadId, trimmed);
+}
+
 const currentFloor = computed(() => userStore.getCurrentChallengeFloor());
 const enemyPreview = computed(() => {
   if (gameDataStore.allCharacterCards.length === 0) return null;
+  // SA-T2：与实战同源——用 towerFloorEnemySeed(floor) 派生的确定性种子，预览敌人 === 进战敌人。
   return generateTowerFloorEnemies(
     gameDataStore.allCharacterCards.filter(isSquadSkillKitReady),
     currentFloor.value,
-    createSeededRng(currentFloor.value * 7919 + 17),
+    createSeededRng(towerFloorEnemySeed(currentFloor.value)),
     CHARACTER_IMAGE_POOL,
   );
 });
@@ -211,6 +279,94 @@ const rewardPreview = computed(() => calculateTowerBattleRewards({
   outcome: { winner: 'player', reason: 'victory' },
   equipmentDrop: null,
 }));
+
+// --- SA-T6：explore 「开始挑战」直达进战（与 SquadBattleView canStartTowerBattle 同口径校验）---
+
+/** 当前层是否已通过（已通过则不再重复进战，与 SquadBattleView 一致，改走扫荡）。 */
+const currentFloorCleared = computed(() => userStore.hasCompletedFloor(currentFloor.value));
+
+/** 本次进战小队的校验结果（selectedSquad 同口径 validateTowerSquadMembers）。 */
+const exploreSquadValidation = computed(() =>
+  selectedSquad.value ? squadValidation(selectedSquad.value.id) : null,
+);
+
+/** 开战前置：已登录 + 选中合法满编小队 + 当前层未通过。 */
+const canStartBattle = computed(() =>
+  userStore.isLoggedIn
+  && !!selectedSquad.value
+  && !currentFloorCleared.value
+  && (exploreSquadValidation.value?.ok ?? false),
+);
+
+/** 开战被拦时给出的原因（留在 explore 显示，不进战）。 */
+const startBattleIssue = computed<string>(() => {
+  if (!userStore.isLoggedIn) return '请先登录后进入挑战塔。';
+  if (!selectedSquad.value) return '请先在「编队」面板配置挑战塔小队。';
+  if (currentFloorCleared.value) return '本层已通过，可在下方扫荡已通层，或等待解锁下一层。';
+  const validation = exploreSquadValidation.value;
+  if (!validation?.ok) return validation?.message ?? '小队未满编，请在「编队」面板补齐 5 名 HR/UR 角色。';
+  return '';
+});
+
+/**
+ * SA-T6 红线：不再只切到 battle tab 让用户重编队。校验通过则带 selectedSquad.id 直接进战——
+ * SquadBattleView 挂载即以 entrySquadId 跳到 battle 阶段。校验不通过则留在 explore 显示 issue。
+ */
+function startBattleFromExplore() {
+  if (!canStartBattle.value || !selectedSquad.value) return;
+  battleEntrySquadId.value = selectedSquad.value.id;
+  switchTab('battle');
+}
+
+// 离开 battle tab（返回探索/切别的 tab）时清空进战 id，避免深链/刷新残留 stale id 误触进战。
+watch(activeTab, tab => {
+  if (tab !== 'battle') battleEntrySquadId.value = null;
+});
+
+/** battle tab 内嵌 SquadBattleView 请求切回探索（占位「去探索」/ 结算后「继续」）。 */
+function handleBattleExit() {
+  battleEntrySquadId.value = null;
+  switchTab('explore');
+}
+
+// --- SA-T5：扫荡已通层（周额度封顶 + 缩水奖励 + 轻量一键结算飘字）---
+
+/** 最高可扫荡层 = 最近通过的一层（currentFloor - 1）；未通过任何层则 0（禁扫荡）。 */
+const sweepFloor = computed(() => Math.max(0, currentFloor.value - 1));
+const sweepWeeklyCap = SWEEP_WEEKLY_CAP;
+const sweepUsed = computed(() => userStore.getSweepUsedThisWeek());
+const sweepRemaining = computed(() => userStore.getSweepRemaining());
+const canSweep = computed(() => userStore.isLoggedIn && sweepFloor.value >= 1 && userStore.canSweep(sweepFloor.value));
+const sweepRewardPreview = computed(() => calculateSweepReward(Math.max(1, sweepFloor.value)));
+
+/** 扫荡用的小队：首个含有效成员的预设小队（与编队面板同源；无则回落小队 A id=1）。 */
+const sweepSquadId = computed(() => {
+  const withMember = userStore.presetSquads.find(sq => userStore.getSquadMembers(sq.id).some(m => m != null));
+  return withMember?.id ?? userStore.presetSquads[0]?.id ?? 1;
+});
+
+const sweepFloat = ref<string | null>(null);
+const timers: ReturnType<typeof setTimeout>[] = [];
+function scheduleClear(fn: () => void, ms: number) {
+  const t = setTimeout(() => {
+    timers.splice(timers.indexOf(t), 1);
+    fn();
+  }, ms);
+  timers.push(t);
+}
+onUnmounted(() => {
+  timers.forEach(clearTimeout);
+  timers.length = 0;
+});
+
+function handleSweep() {
+  if (!canSweep.value) return;
+  const outcome = userStore.sweepFloor(sweepFloor.value, sweepSquadId.value);
+  if (outcome.ok && outcome.reward) {
+    sweepFloat.value = `知识点 +${outcome.reward.sweepKnowledge} · 经验 +${outcome.reward.sweepCharacterExp}`;
+    scheduleClear(() => { sweepFloat.value = null; }, 1800);
+  }
+}
 
 function emptyStats(): BattleStats {
   return { hp: 0, atk: 0, def: 0, sp: 0, spd: 0 };
@@ -348,26 +504,41 @@ function slotTone(slot: EquipmentSlot): string {
       <div v-if="!userStore.isLoggedIn" class="hub-empty">请先登录后配置挑战塔小队。</div>
       <div v-else class="squad-layout">
         <aside class="squad-picker">
-          <button
+          <div
             v-for="squad in userStore.presetSquads"
             :key="squad.id"
-            type="button"
             class="squad-select"
             :class="{ active: selectedSquad?.id === squad.id }"
+            role="button"
+            tabindex="0"
             @click="selectedSquadId = squad.id"
+            @keydown.enter="selectedSquadId = squad.id"
           >
-            <span>{{ squad.name }}</span>
+            <!-- SA-T1：队名可改（回车/失焦提交，点输入框不触发选队） -->
+            <input
+              class="squad-name-input"
+              :value="squad.name"
+              maxlength="20"
+              aria-label="小队名称"
+              @click.stop
+              @keydown.enter.stop="($event.target as HTMLInputElement).blur()"
+              @change="renameSquad(squad.id, ($event.target as HTMLInputElement).value)"
+            >
             <strong>{{ squadPower(squad.id) }}</strong>
             <small>{{ squadValidation(squad.id).characters.length }}/{{ SQUAD_MEMBER_COUNT }} · {{ squadValidation(squad.id).ok ? '可挑战' : '需补齐' }}</small>
-          </button>
+          </div>
         </aside>
 
         <div class="formation-board">
-          <div
+          <!-- SA-T1：站位可点换人 / 空槽可点加人（按钮 = 可点视觉暗示 + 键盘可达） -->
+          <button
             v-for="slot in selectedSquadSlots"
             :key="slot.position"
+            type="button"
             class="formation-slot"
             :class="{ ready: slot.ok }"
+            :title="slot.character ? '点击更换角色' : '点击添加角色'"
+            @click="selectedSquad && openCharacterSelect(selectedSquad.id, slot.position - 1)"
           >
             <span class="slot-index">{{ slot.position }}</span>
             <span class="slot-role">{{ slot.role }}</span>
@@ -382,18 +553,31 @@ function slotTone(slot: EquipmentSlot): string {
               <strong>空位</strong>
               <small>{{ slot.issue }}</small>
             </template>
-          </div>
+          </button>
         </div>
       </div>
+
+      <CharacterSelectModal
+        :is-open="showCharacterSelectModal"
+        :position="editingPosition"
+        :current-character-id="editingCurrentCharacterId"
+        :used-character-ids="editingUsedCharacterIds"
+        :allowed-rarities="towerSquadAllowedRarities"
+        :is-character-selectable="isCharacterSelectableForTower"
+        @close="showCharacterSelectModal = false"
+        @select="handleCharacterSelect"
+        @remove="handleCharacterRemove"
+      />
     </section>
 
     <section v-else-if="activeTab === 'explore'" class="hub-panel">
       <div class="panel-heading">
         <div>
           <h2>探索面板</h2>
-          <p>预览当前挑战塔楼层、敌方阵容和通关奖励；确认后进入横板半自动战斗。</p>
+          <p>预览当前挑战塔楼层、敌方阵容和通关奖励；确认小队后「开始挑战」直接进入战斗。</p>
         </div>
-        <button class="btn-primary" type="button" @click="switchTab('battle')">进入战斗</button>
+        <!-- SA-T6：编队在 squad tab 完成，这里只留跳转编辑入口；开战改为下方直达按钮（不再空切 battle tab 重编队）。 -->
+        <button class="btn-secondary" type="button" @click="switchTab('squad')">去编队</button>
       </div>
 
       <div v-if="!userStore.isLoggedIn" class="hub-empty">请先登录后进入挑战塔。</div>
@@ -427,15 +611,84 @@ function slotTone(slot: EquipmentSlot): string {
             </div>
           </div>
         </article>
+
+        <!-- SA-T6：开战直达——校验选中小队后带 squadId 直接进 battle 阶段（跳过 SquadBattleView 编成器）。 -->
+        <article class="start-card">
+          <div class="start-heading">
+            <div>
+              <span class="summary-kicker">出战小队</span>
+              <h3>{{ selectedSquad ? selectedSquad.name : '尚未配置小队' }}</h3>
+            </div>
+            <div v-if="selectedSquad" class="start-power">
+              <strong>{{ squadPower(selectedSquad.id) }}</strong>
+              <small>{{ exploreSquadValidation?.characters.length ?? 0 }}/{{ SQUAD_MEMBER_COUNT }} 满编</small>
+            </div>
+          </div>
+          <p v-if="!canStartBattle" class="start-hint">{{ startBattleIssue }}</p>
+          <p v-else class="start-hint ready">小队已就绪，点击开始挑战第 {{ currentFloor }} 层。</p>
+          <div class="start-actions">
+            <button
+              class="btn-primary"
+              type="button"
+              :disabled="!canStartBattle"
+              @click="startBattleFromExplore"
+            >
+              {{ canStartBattle ? '开始挑战' : '暂不可开战' }}
+            </button>
+            <button class="btn-ghost" type="button" @click="switchTab('squad')">调整编队</button>
+          </div>
+        </article>
+
+        <!-- SA-T5：扫荡已通层（周额度封顶 + 缩水奖励 + 一键结算飘字，不复用完整战斗演出） -->
+        <article class="sweep-card">
+          <div class="sweep-heading">
+            <div>
+              <span class="summary-kicker">扫荡已通层</span>
+              <h3>卡关也能每周变强一点</h3>
+            </div>
+            <span class="sweep-quota" :class="{ full: sweepRemaining <= 0 }">
+              本周 {{ sweepUsed }}/{{ sweepWeeklyCap }}
+            </span>
+          </div>
+
+          <div class="sweep-bar" role="progressbar" :aria-valuenow="sweepUsed" :aria-valuemax="sweepWeeklyCap">
+            <span :style="{ width: `${Math.min(100, (sweepUsed / sweepWeeklyCap) * 100)}%` }"></span>
+          </div>
+
+          <p v-if="sweepFloor < 1" class="sweep-hint">先通过第 1 层，之后即可扫荡已通层领取缩水奖励。</p>
+          <p v-else class="sweep-hint">
+            扫荡第 {{ sweepFloor }} 层（已通层）：知识点 +{{ sweepRewardPreview.sweepKnowledge }} · 经验 +{{ sweepRewardPreview.sweepCharacterExp }}（缩水补给，不掉装备）。
+          </p>
+
+          <div class="sweep-actions">
+            <button
+              class="btn-secondary"
+              type="button"
+              :disabled="!canSweep"
+              @click="handleSweep"
+            >
+              {{ sweepRemaining <= 0 ? '本周已达上限' : sweepFloor < 1 ? '暂无可扫荡层' : `一键扫荡（剩 ${sweepRemaining} 次）` }}
+            </button>
+            <transition name="sweep-float">
+              <span v-if="sweepFloat" class="sweep-float-text">{{ sweepFloat }}</span>
+            </transition>
+          </div>
+        </article>
       </div>
     </section>
 
     <section v-else class="hub-panel flush-panel battle-panel">
       <div class="battle-return">
-        <button class="btn-secondary" type="button" @click="switchTab('explore')">返回探索预览</button>
+        <button class="btn-secondary" type="button" @click="handleBattleExit">返回探索预览</button>
         <span>战斗结算后，经验、装备和知识点会回流到角色/装备/基地循环。</span>
       </div>
-      <SquadBattleView />
+      <!-- SA-T6：battle tab 仅承载战斗演出——带合法 entrySquadId 时 SquadBattleView 直达 battle 阶段，
+           无 entrySquadId（深链/刷新）时落最小占位（不复活 towerMode 编成器）。 -->
+      <SquadBattleView
+        :entry-squad-id="battleEntrySquadId"
+        :embedded="true"
+        @exit-to-explore="handleBattleExit"
+      />
     </section>
   </div>
 </template>
@@ -507,18 +760,28 @@ function slotTone(slot: EquipmentSlot): string {
 .squad-picker { display: grid; align-content: start; gap: .55rem; }
 .squad-select {
   min-height: 86px; padding: .75rem; border: 1px solid rgb(var(--c-line)); border-radius: 8px;
-  background: rgb(var(--c-surface)); text-align: left;
+  background: rgb(var(--c-surface)); text-align: left; cursor: pointer; transition: border-color .15s;
 }
+.squad-select:hover { border-color: rgb(var(--c-accent)); }
 .squad-select.active { border-color: rgb(var(--c-accent)); box-shadow: inset 0 0 0 1px rgb(var(--c-accent)); }
-.squad-select span, .squad-select strong, .squad-select small { display: block; }
-.squad-select span { color: rgb(var(--c-ink)); font-weight: 800; }
+.squad-select strong, .squad-select small { display: block; }
 .squad-select strong { color: rgb(var(--c-highlight)); font-size: 1.35rem; }
 .squad-select small { color: rgb(var(--c-ink-3)); }
+.squad-name-input {
+  display: block; width: 100%; padding: .1rem .3rem; margin-bottom: .15rem;
+  border: 1px solid transparent; border-radius: 5px; background: transparent;
+  color: rgb(var(--c-ink)); font-weight: 800; font-size: .95rem; cursor: text;
+}
+.squad-name-input:hover { border-color: rgb(var(--c-line)); }
+.squad-name-input:focus { outline: none; border-color: rgb(var(--c-accent)); background: rgb(var(--c-surface-2) / .6); }
 .formation-board { display: grid; grid-template-columns: repeat(5, minmax(130px, 1fr)); gap: .7rem; }
 .formation-slot {
   position: relative; min-height: 270px; padding: .75rem; border: 1px dashed rgb(var(--c-line)); border-radius: 8px;
   background: rgb(var(--c-surface-2) / .72); overflow: hidden;
+  width: 100%; text-align: left; cursor: pointer; transition: border-color .15s, box-shadow .15s, transform .15s;
 }
+.formation-slot:hover { border-color: rgb(var(--c-accent)); transform: translateY(-1px); box-shadow: inset 0 0 0 1px rgb(var(--c-accent)); }
+.formation-slot:hover .empty-slot { border-color: rgb(var(--c-accent)); color: rgb(var(--c-accent)); }
 .formation-slot.ready { border-style: solid; border-color: rgb(var(--c-success)); }
 .slot-index, .slot-role { position: absolute; top: .45rem; z-index: 1; font-size: .7rem; font-weight: 800; }
 .slot-index { left: .45rem; color: rgb(var(--c-accent)); }
@@ -542,6 +805,36 @@ function slotTone(slot: EquipmentSlot): string {
 .enemy-card img { width: 100%; height: 92px; border-radius: 6px; object-fit: cover; object-position: top; }
 .enemy-card span { display: block; margin-top: .35rem; color: rgb(var(--c-ink)); font-weight: 700; font-size: .78rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .enemy-card small { color: rgb(var(--c-ink-3)); }
+/* SA-T6 开战卡（语义令牌，无 text-white / 无动态色类） */
+.start-card {
+  grid-column: 1 / -1; display: flex; flex-direction: column; gap: .6rem;
+  padding: 1rem; border: 1px solid rgb(var(--c-accent)); border-radius: 8px; background: rgb(var(--c-accent-soft) / .55);
+}
+.start-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; }
+.start-heading h3 { color: rgb(var(--c-ink)); font-size: 1.1rem; font-weight: 800; }
+.start-power { text-align: right; }
+.start-power strong { display: block; color: rgb(var(--c-highlight)); font-size: 1.4rem; }
+.start-power small { color: rgb(var(--c-ink-2)); font-size: .78rem; }
+.start-hint { color: rgb(var(--c-ink-2)); font-size: .85rem; }
+.start-hint.ready { color: rgb(var(--c-success)); font-weight: 700; }
+.start-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem; }
+/* SA-T5 扫荡卡（语义令牌，无 text-white / 无动态色类） */
+.sweep-card {
+  grid-column: 1 / -1; display: flex; flex-direction: column; gap: .6rem;
+  padding: 1rem; border: 1px solid rgb(var(--c-line)); border-radius: 8px; background: rgb(var(--c-surface-2));
+}
+.sweep-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; }
+.sweep-heading h3 { color: rgb(var(--c-ink)); font-size: 1.1rem; font-weight: 800; }
+.sweep-quota { color: rgb(var(--c-ink-2)); font-weight: 800; font-size: .85rem; white-space: nowrap; }
+.sweep-quota.full { color: rgb(var(--c-highlight)); }
+.sweep-bar { height: 8px; border-radius: 999px; background: rgb(var(--c-surface)); overflow: hidden; border: 1px solid rgb(var(--c-line)); }
+.sweep-bar span { display: block; height: 100%; background: rgb(var(--c-accent)); transition: width .3s ease; }
+.sweep-hint { color: rgb(var(--c-ink-2)); font-size: .85rem; }
+.sweep-actions { display: flex; align-items: center; gap: .75rem; }
+.sweep-float-text { color: rgb(var(--c-success)); font-weight: 800; font-size: .9rem; }
+.sweep-float-enter-active, .sweep-float-leave-active { transition: opacity .3s ease, transform .3s ease; }
+.sweep-float-enter-from { opacity: 0; transform: translateY(6px); }
+.sweep-float-leave-to { opacity: 0; transform: translateY(-6px); }
 .battle-return {
   display: flex; align-items: center; gap: .75rem; margin-bottom: .75rem; padding: .75rem;
   border: 1px solid rgb(var(--c-line)); border-radius: 8px; background: rgb(var(--c-surface));

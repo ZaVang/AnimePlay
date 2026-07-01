@@ -293,6 +293,45 @@ describe('v14 装备域迁移', () => {
   });
 });
 
+describe('v15 towerProgress 扫荡周额度迁移（SA-T5）', () => {
+  it('v14 旧档（towerProgress 无 sweep 字段）→ 补缺省 sweepWeekKey=""/sweepUsedThisWeek=0', () => {
+    const out = migrate({
+      version: 14,
+      towerProgress: { currentFloor: 8, maxFloor: 7, floorRewards: {}, todayAttempts: 0, lastAttemptDate: '' },
+    } as unknown);
+    expect(out.towerProgress.currentFloor).toBe(8);
+    expect(out.towerProgress.sweepWeekKey).toBe('');
+    expect(out.towerProgress.sweepUsedThisWeek).toBe(0);
+  });
+
+  it('★ 往返保真：已存扫荡周额度 → 迁移后原样保留（存回一致）', () => {
+    const saved = {
+      version: 15,
+      towerProgress: {
+        currentFloor: 20, maxFloor: 19, floorRewards: { 1: true },
+        todayAttempts: 0, lastAttemptDate: '',
+        sweepWeekKey: '2026-W27', sweepUsedThisWeek: 4,
+      },
+    };
+    const out = migrate(saved as unknown);
+    expect(out.towerProgress.sweepWeekKey).toBe('2026-W27');
+    expect(out.towerProgress.sweepUsedThisWeek).toBe(4);
+    // 再过一次迁移（模拟存→读往返）仍一致
+    const roundTrip = migrate(out as unknown);
+    expect(roundTrip.towerProgress.sweepWeekKey).toBe('2026-W27');
+    expect(roundTrip.towerProgress.sweepUsedThisWeek).toBe(4);
+  });
+
+  it('脏档：sweep 字段类型错误 → 回落缺省', () => {
+    const out = migrate({
+      version: 15,
+      towerProgress: { currentFloor: 3, sweepWeekKey: 42, sweepUsedThisWeek: 'oops' },
+    } as unknown);
+    expect(out.towerProgress.sweepWeekKey).toBe('');
+    expect(out.towerProgress.sweepUsedThisWeek).toBe(0);
+  });
+});
+
 describe('v12 minigames.tasteProfile 迁移', () => {
   it('保留旧档已记录的已看番 id（只收数字）', () => {
     const out = migrate({ minigames: { tasteProfile: { watchedAnimeIds: [326, 10380, 'bad', null] } } } as unknown);

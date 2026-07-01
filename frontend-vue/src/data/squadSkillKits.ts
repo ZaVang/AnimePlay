@@ -381,6 +381,180 @@ function archetypeEffects(archetype: SquadArchetype): {
   }
 }
 
+/**
+ * SA-T4：招牌 UR 差异化覆盖层（数据表）。
+ * key = 数字 character.id（仅 UR，且必在 characterSkillsMap 有个人技绑定）；
+ * value = 对 skill1 / ultimate 的**结构化 effect 覆盖** + 一个「名场面/名台词」技能名（借个人技语义、效果自造）。
+ *
+ * 铁律（见 plan.md T4-B/C/D/E）：
+ *  - 只用现有 9 种 squad SkillEffect，绝不搬 /battle effectId、绝不扩 type / 写 handler；
+ *  - 覆盖 kit 仍走 skill() 工厂让 description = describeSquadSkill 自动派生（禁手写 description）；
+ *  - 每条覆盖至少一条**肉眼可辨的机制层差异**（目标 / effect 类型 / 特殊机制 execute·revive·群体 stun/silence·独特 DOT），非纯倍率微调；
+ *  - 覆盖 kit 必过 validateSquadSkillKit，落地前后 filter(isSquadSkillKitReady) 全角色集合不变（守 SA-T2 同源）。
+ */
+interface SignatureSlotOverride {
+  name: string;
+  target: TargetSelector;
+  effects: readonly SkillEffect[];
+  cooldownMs?: number;
+  initialCooldownMs?: number;
+  energyCost?: number;
+}
+
+interface SignatureKitOverride {
+  /** 显式定位（供未来 UI / SA-T3 头部映射消费；本轮不改成长，仅记录人设倾向）。 */
+  role: SquadArchetype;
+  skill1?: SignatureSlotOverride;
+  ultimate?: SignatureSlotOverride;
+}
+
+const SIGNATURE_KIT_OVERRIDES: Record<number, SignatureKitOverride> = {
+  // 御坂美琴 · 超电磁炮：单体高倍炮击 + 电磁干扰（沉默），一发定点秒杀式（striker 原型是斩杀，这里是「点名 + 封技」）。
+  3575: {
+    role: 'striker',
+    skill1: {
+      name: '超电磁炮',
+      target: 'highestAtkEnemy',
+      effects: [
+        { type: 'damage', atkRatio: 2.05, spRatio: 0.3, canCrit: true },
+        { type: 'applyStatus', status: { kind: 'silence', durationMs: 4000 } },
+      ],
+      cooldownMs: 9000,
+      initialCooldownMs: 2000,
+    },
+  },
+  // 晓美焰 · 时间停止：全体敌人 stun（时停群控），controller 原型仅 1.2s 短眩，这里是长时停 + 全体减速。
+  10440: {
+    role: 'controller',
+    ultimate: {
+      name: '时间停止',
+      target: 'allEnemies',
+      effects: [
+        { type: 'applyStatus', status: { kind: 'stun', durationMs: 3000 } },
+        { type: 'applyStatus', status: { kind: 'slow', amount: 0.25, durationMs: 8000 } },
+      ],
+      energyCost: 1000,
+    },
+  },
+  // 惣流·明日香 · 同步率爆发：自身极限自强（攻+暴击+加速三叠），striker 原型 skill1 是伤害，这里改成 self 爆发型 buff。
+  304: {
+    role: 'striker',
+    skill1: {
+      name: '同步率爆发',
+      target: 'self',
+      effects: [
+        { type: 'applyStatus', status: { kind: 'atkUp', amount: 0.45, durationMs: 8000 } },
+        { type: 'applyStatus', status: { kind: 'critRateUp', amount: 0.25, durationMs: 8000 } },
+        { type: 'applyStatus', status: { kind: 'haste', amount: 0.2, durationMs: 8000 } },
+      ],
+      cooldownMs: 11000,
+      initialCooldownMs: 3000,
+    },
+  },
+  // 战场原黑仪 · 毒舌反击：点名最强敌 → 沉默 + 大幅降攻 + 驱散其增益，纯控 debuff（controller 原型 skill1 是伤害+沉默）。
+  706: {
+    role: 'controller',
+    skill1: {
+      name: '毒舌反击',
+      target: 'highestAtkEnemy',
+      effects: [
+        { type: 'dispel' },
+        { type: 'applyStatus', status: { kind: 'atkDown', amount: 0.35, durationMs: 7000 } },
+        { type: 'applyStatus', status: { kind: 'silence', durationMs: 3500 } },
+      ],
+      cooldownMs: 9000,
+      initialCooldownMs: 2000,
+    },
+  },
+  // 鹿目圆 · 圆环之理：全体治疗 + 净化 + 复活倒下队友（希望复活），support 原型 ultimate 已有 revive，这里强化为「群疗 + 复活」双兜底且复活血更高。
+  10439: {
+    role: 'support',
+    ultimate: {
+      name: '圆环之理',
+      target: 'allAllies',
+      effects: [
+        { type: 'heal', spRatio: 1, flatPower: 120 },
+        { type: 'cleanse' },
+        { type: 'revive', target: 'firstDefeatedAlly', hpRatio: 0.6 },
+      ],
+      energyCost: 1000,
+    },
+  },
+  // 长门有希 · 信息操作：全体敌人长沉默（封技流），controller 原型 ultimate 是伤害+短眩，这里是纯封锁全场技能。
+  49: {
+    role: 'controller',
+    ultimate: {
+      name: '信息操作',
+      target: 'allEnemies',
+      effects: [
+        { type: 'applyStatus', status: { kind: 'silence', durationMs: 6000 } },
+        { type: 'applyStatus', status: { kind: 'defDown', amount: 0.2, durationMs: 8000 } },
+      ],
+      energyCost: 1000,
+    },
+  },
+  // 牧濑红莉栖 · 时间理论：全队充能 + 全队加速（抢先手/连发大招），tactical 原型 skill1 是打后排，这里是团队节奏加速。
+  12393: {
+    role: 'tactical',
+    skill1: {
+      name: '时间理论',
+      target: 'allAllies',
+      effects: [
+        { type: 'energyGain', amount: 120 },
+        { type: 'applyStatus', status: { kind: 'haste', amount: 0.18, durationMs: 7000 } },
+      ],
+      cooldownMs: 12000,
+      initialCooldownMs: 3500,
+    },
+  },
+  // 远坂凛 · 宝石魔术：单体巨额 SP 爆发 + 独特高伤 DOT（宝石余烬灼烧），arcane 原型 ultimate 是全体，这里是单体秒杀 + 持续。
+  10596: {
+    role: 'arcane',
+    ultimate: {
+      name: '宝石魔术',
+      target: 'highestAtkEnemy',
+      effects: [
+        { type: 'damage', atkRatio: 0.4, spRatio: 2, canCrit: true },
+        { type: 'applyStatus', status: { kind: 'dot', amount: 90, durationMs: 8000, tickIntervalMs: 2000 } },
+      ],
+      energyCost: 1000,
+    },
+  },
+  // 忍野忍 · 吸血冲击：处决残血敌（高血线斩杀）+ 自身回血（吸血），striker 原型也有 execute 但阈值低，这里阈值更高（更霸道的处决）且自吸血。
+  1211: {
+    role: 'striker',
+    ultimate: {
+      name: '吸血冲击',
+      target: 'lowestHpEnemy',
+      effects: [
+        { type: 'damage', atkRatio: 1.8, spRatio: 0.4, canCrit: true },
+        { type: 'execute', hpRatioThreshold: 0.3 },
+        { type: 'heal', target: 'self', spRatio: 0.6, flatPower: 60 },
+      ],
+      energyCost: 1000,
+    },
+  },
+  // 绫波丽 · AT力场：自身超厚护盾 + 嘲讽拉仇恨（铁壁坦克），guardian 原型 skill1 是奶队友，这里改成自身硬抗承伤。
+  303: {
+    role: 'guardian',
+    skill1: {
+      name: 'AT力场',
+      target: 'self',
+      effects: [
+        { type: 'shield', spRatio: 0.6, defRatio: 1.8, flatPower: 120, durationMs: 8000 },
+        { type: 'applyStatus', status: { kind: 'taunt', durationMs: 6000 } },
+      ],
+      cooldownMs: 9000,
+      initialCooldownMs: 1500,
+    },
+  },
+};
+
+/** SA-T4 留口：该角色是否拥有招牌差异化 kit（供第 2 轮 UI「专属徽章」消费；本轮不做徽章）。 */
+export function isSignatureKit(characterId: number): boolean {
+  return Object.prototype.hasOwnProperty.call(SIGNATURE_KIT_OVERRIDES, characterId);
+}
+
 export function getSquadSkillKitForCharacter(character: CharacterCard | null | undefined): CompleteSquadSkillKit | undefined {
   if (!character || !isSquadRarity(character.rarity) || pendingDesignIds.has(character.id)) return undefined;
 
@@ -393,22 +567,34 @@ export function getSquadSkillKitForCharacter(character: CharacterCard | null | u
   const activeName = activeSkill?.name;
   const passiveName = passiveSkill?.name;
 
+  // SA-T4：招牌 UR 覆盖层——命中则用手写差异化 effect，未命中回落原型模板（覆盖仍走 skill() 工厂，description 自动派生）。
+  const override = SIGNATURE_KIT_OVERRIDES[character.id];
+  const s1 = override?.skill1;
+  const ult = override?.ultimate;
+
   return {
     normalAttack: skill(character, 'normal', `${name}·牵制`, 'frontEnemy', [
       { type: 'damage', atkRatio: 1, canCrit: true },
     ]),
-    skill1: skill(character, 'skill1', activeName ?? `${name}·${labels.skill1}`, effects.skill1.target, effects.skill1.effects, {
-      cooldownMs: 8000,
-      initialCooldownMs: 1500,
-    }),
+    skill1: s1
+      ? skill(character, 'skill1', s1.name, s1.target, s1.effects, {
+          cooldownMs: s1.cooldownMs ?? 8000,
+          initialCooldownMs: s1.initialCooldownMs ?? 1500,
+        })
+      : skill(character, 'skill1', activeName ?? `${name}·${labels.skill1}`, effects.skill1.target, effects.skill1.effects, {
+          cooldownMs: 8000,
+          initialCooldownMs: 1500,
+        }),
     skill2: skill(character, 'skill2', `${name}·${labels.skill2}`, effects.skill2.target, effects.skill2.effects, {
       cooldownMs: 12000,
       initialCooldownMs: 4500,
     }),
     passive: skill(character, 'passive', passiveName ?? `${name}·${labels.passive}`, effects.passive.target, effects.passive.effects),
-    ultimate: skill(character, 'ultimate', activeName ? `${activeName}·终式` : `${name}·${labels.ultimate}`, effects.ultimate.target, effects.ultimate.effects, {
-      energyCost: 1000,
-    }),
+    ultimate: ult
+      ? skill(character, 'ultimate', ult.name, ult.target, ult.effects, { energyCost: ult.energyCost ?? 1000 })
+      : skill(character, 'ultimate', activeName ? `${activeName}·终式` : `${name}·${labels.ultimate}`, effects.ultimate.target, effects.ultimate.effects, {
+          energyCost: 1000,
+        }),
   };
 }
 

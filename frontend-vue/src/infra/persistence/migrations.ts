@@ -75,6 +75,9 @@ function migrateTowerProgress(raw: any) {
     floorRewards: raw.floorRewards ?? defaults.floorRewards,
     todayAttempts: raw.todayAttempts ?? defaults.todayAttempts,
     lastAttemptDate: raw.lastAttemptDate ?? defaults.lastAttemptDate,
+    // v14 → v15：扫荡周额度（旧档无此二字段 → 缺省 ''/0）。类型守卫防脏档。
+    sweepWeekKey: typeof raw.sweepWeekKey === 'string' ? raw.sweepWeekKey : defaults.sweepWeekKey,
+    sweepUsedThisWeek: typeof raw.sweepUsedThisWeek === 'number' ? raw.sweepUsedThisWeek : defaults.sweepUsedThisWeek,
   };
 }
 

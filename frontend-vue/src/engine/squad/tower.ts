@@ -271,6 +271,15 @@ const FLOOR_THEMES = [
 ];
 
 /**
+ * 单一真相源（SA-T2）：由楼层派生「该层敌人」的确定性种子。
+ * 家园 hub 探索预览与挑战塔实战都用它构造 RNG（createSeededRng(towerFloorEnemySeed(floor))），
+ * 同一层敌人恒等——预览看到的即进战面对的。别在任一侧改用 Math.random / 别再各自拼种子。
+ */
+export function towerFloorEnemySeed(floor: number): number {
+  return floor * 7919 + 17;
+}
+
+/**
  * 爬塔敌人生成：真实 HR/UR 角色 + 5 层循环阵容 + 每循环 5% 强化。
  * HR/UR 数据不足 5 人时回退到纯 AI 生成。
  */
