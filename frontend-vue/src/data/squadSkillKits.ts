@@ -107,7 +107,56 @@ function textOf(character: CharacterCard): string {
   ].filter(Boolean).join(' ');
 }
 
-function inferArchetype(character: CharacterCard, activeSkill?: Skill, passiveSkill?: Skill): SquadArchetype {
+/**
+ * SC-T1：显式 archetype 单一真相源（`characterId → SquadArchetype`）。
+ *
+ * 定位解析优先级（见 `resolveArchetype`）：
+ *   显式表（本表，含 SIGNATURE_KIT_OVERRIDES 的 role 种子）→ 正则回落 → battle_stats 兜底 → 稀有度兜底。
+ *
+ * 显式表专治正则「first-match-wins 误判」的头部尾巴：
+ *   - Fate/圣剑系（阿尔托莉雅先被 `骑士` 判 guardian、本质是持圣剑的近战 striker）；
+ *   - 音乐/乐队系（`音乐|轻音…` 抢先判 support，但输出型乐队角色应是 striker/arcane）；
+ *   - 爆裂/术式系（`爆裂` 落在 arcane 规则里其实该是 striker）。
+ * 长尾允许回落正则（archetype 只兜长尾，头部差异化靠本表 per-character）。
+ *
+ * 注意：本表的键值必被 `EXPLICIT_ARCHETYPE[id] === SIGNATURE_KIT_OVERRIDES[id].role` 断言守卫
+ * （见 squadSkillKits.test.ts），故 10 个招牌 UR 的定位与其 override.role 强一致。
+ */
+const EXPLICIT_ARCHETYPE: Record<number, SquadArchetype> = {
+  // === 招牌 UR 种子（与 SIGNATURE_KIT_OVERRIDES[id].role 强一致，测试断言守卫）===
+  3575: 'striker', // 御坂美琴
+  10440: 'controller', // 晓美焰
+  304: 'striker', // 惣流·明日香
+  706: 'controller', // 战场原黑仪
+  10439: 'support', // 鹿目圆
+  49: 'controller', // 长门有希
+  12393: 'tactical', // 牧濑红莉栖
+  10596: 'arcane', // 远坂凛
+  1211: 'striker', // 忍野忍
+  303: 'guardian', // 绫波丽
+  // === 已知误判纠偏（正则 first-match-wins 排序错位）===
+  273: 'striker', // 阿尔托莉雅·潘德拉贡：正则先命中「骑士」→guardian，实为持圣剑近战输出，纠正为 striker
+  86246: 'arcane', // 芙莉莲：大魔法师，正则命中「芙莉莲」→arcane（此处显式固定，防未来正则改动漂移）
+  35608: 'arcane', // 艾米莉娅（Re:Zero 精灵/魔法系）
+  71337: 'striker', // 玛奇玛（链锯人，支配之魔，近战压制型 striker）
+  19546: 'striker', // 利威尔（人类最强兵长，纯近战 striker）
+  18102: 'striker', // 三笠·阿克曼（巨人杀手 striker）
+  57751: 'striker', // 02（DARLING 驾驶员/近战突袭）——正则会落进 tactical(DARLING) 但人设是突袭 striker
+  26003: 'support', // 宫园薰（四月是你的谎言，小提琴演奏 support）
+};
+
+/**
+ * SC-T1：单一定位入口。显式表优先，未命中回落正则，再回落 battle_stats，最后稀有度兜底。
+ * kit 生成 / 塔 / 未来养成都读这一处；`SIGNATURE_KIT_OVERRIDES[id].role` 通过显式表种子在此生效。
+ */
+function resolveArchetype(character: CharacterCard, activeSkill?: Skill, passiveSkill?: Skill): SquadArchetype {
+  const explicit = EXPLICIT_ARCHETYPE[character.id];
+  if (explicit) return explicit;
+  return inferArchetypeByText(character, activeSkill, passiveSkill);
+}
+
+/** 正则 + battle_stats 回落（仅在显式表未命中时使用）。 */
+function inferArchetypeByText(character: CharacterCard, activeSkill?: Skill, passiveSkill?: Skill): SquadArchetype {
   const text = `${textOf(character)} ${activeSkill?.name ?? ''} ${passiveSkill?.name ?? ''}`;
   if (/治疗|治愈|鼓励|演奏|音乐|轻音|吹响|白色相簿|四月|莉兹|孤独摇滚|BanG Dream|MyGO|Ave Mujica|GIRLS BAND/i.test(text)) return 'support';
   if (/守护|骑士|AT力场|天使|CLANNAD|紫罗兰|夏日口袋|摇曳露营|庇护|加护/i.test(text)) return 'guardian';
@@ -550,9 +599,108 @@ const SIGNATURE_KIT_OVERRIDES: Record<number, SignatureKitOverride> = {
   },
 };
 
+/**
+ * SC-T2：未覆盖 HR 的「个人技能名」覆盖表（只改**名**，effect / description 仍回落原型模板并由
+ * describeSquadSkill 自动派生——严禁手写 description，严禁引 /battle effectId）。
+ *
+ * 范围 = scout 核实的 26 个「无个人技绑定、名 100% 走 `${name}·${labels.skillN}` 通名」的 HR
+ * （已在 urCharacterSkillMap 有绑定的 29 个 HR 不动）。UR 走各自个人技名 / SIGNATURE 覆盖，不进本表。
+ *
+ * 双红线（见 plan.md SC-T2）：
+ *  - 红线 1：描述必 describeSquadSkill 派生（本表只提供 name 字符串，不碰 effect）。
+ *  - 红线 2：名偏中性人设 / 名台词 / 名场面，**不得**暗示与原型 effect 冲突的机制
+ *    （如 support/guardian 原型不起「斩杀/处决」类攻击名，striker 不起「结界/庇护」类防御名）。
+ * 缺省的槽位回落原型通名（未提供的键沿用 `${name}·${labels.skillN}`）。
+ */
+interface HrSkillNameOverride {
+  skill1?: string;
+  skill2?: string;
+  passive?: string;
+  ultimate?: string;
+}
+
+const HR_SKILL_NAME_OVERRIDES: Record<number, HrSkillNameOverride> = {
+  // support：白色相簿2 · 冬马和纱（音乐/演奏系鼓舞）
+  13391: { skill1: '寒空的旋律', skill2: '琴音共鸣', passive: '雪夜练习曲', ultimate: '未完成的乐章' },
+  // support：MyGO · 高松灯（迷途歌声）
+  127790: { skill1: '迷途之声', skill2: '春日影', passive: '不想成为一个人', ultimate: '为了不再迷路' },
+  // support：Ave Mujica · 三角初华（假面台上的和声）
+  132479: { skill1: '假面序曲', skill2: '舞台和声', passive: '初华绽放', ultimate: '谢幕安可' },
+  // support：莉兹与青鸟 · 铠冢霙（双簧管的呼吸）
+  40739: { skill1: '青鸟的呼吸', skill2: '双簧共鸣', passive: '第三乐章', ultimate: '莉兹与青鸟' },
+  // support：欢迎加入NHK · 中原岬（温柔的契约）
+  336: { skill1: '救赎契约', skill2: '并肩同行', passive: '不再孤独', ultimate: '走出房间' },
+  // support*：四月是你的谎言 · 宫园薰（小提琴的自由演奏）
+  26003: { skill1: '自由的音色', skill2: '即兴华彩', passive: '琴弦上的春天', ultimate: '你在春天里' },
+
+  // arcane：魔法少女小圆 · 丘比（契约与愿望）
+  10446: { skill1: '契约诱导', skill2: '愿望回收', passive: '情感观测', ultimate: '因果律干涉' },
+  // arcane：魔女之旅 · 伊蕾娜（旅途的魔法）
+  72355: { skill1: '旅人魔术', skill2: '风纹咒式', passive: '灰之魔女', ultimate: '星降之夜' },
+  // arcane：魔法少女伊莉雅 · 伊莉雅斯菲尔（魔术礼装）
+  3218: { skill1: '魔术卡装填', skill2: '英灵借力', passive: '爱因兹贝伦血脉', ultimate: '柯普利亚全解放' },
+  // arcane：Re:Zero · 蕾姆（冰之魔法 / 鬼族）
+  35615: { skill1: '冰华绽放', skill2: '流星锤连击', passive: '鬼族血脉', ultimate: '冰之棺墓' },
+  // arcane：约会大作战 · 时崎狂三（时之精灵刻刻帝）
+  19529: { skill1: '刻刻帝·一之弹', skill2: '影之分身', passive: '时之精灵', ultimate: '刻刻帝·终' },
+
+  // controller：超时空辉夜姬 · 酒寄彩叶（时空干涉）
+  189814: { skill1: '时空错位', skill2: '解析视界', passive: '因果观测', ultimate: '时轴封锁' },
+  // controller：路人女主 · 泽村英梨梨（原画家的锐利笔锋）
+  24093: { skill1: '毒舌吐槽', skill2: '锐利笔锋', passive: '傲娇本色', ultimate: '同人志决战' },
+  // controller：路人女主 · 霞之丘诗羽（毒舌剧作家的布局）
+  24092: { skill1: '剧本布局', skill2: '致命吐槽', passive: '毒舌剧作家', ultimate: '恋爱节拍杀' },
+
+  // guardian：更衣人偶 · 喜多川海梦（在场的元气支撑）
+  102090: { skill1: '同好守护', skill2: '元气应援', passive: '闪耀直率', ultimate: 'cosplay全开' },
+  // guardian：夏洛特 · 友利奈绪（能力隐蔽的护持）
+  29511: { skill1: '隐身护持', skill2: '能力压制', passive: '姐系可靠', ultimate: '守护约定' },
+  // guardian：寒蝉 · 古手梨花（轮回中的坚守）
+  3187: { skill1: '御社神护', skill2: '轮回坚守', passive: '百年之约', ultimate: '命运的抵抗' },
+  // guardian：夏日口袋 · 鸣濑白羽（夏日的守望）
+  59846: { skill1: '夏日守望', skill2: '海风庇护', passive: '温柔坚守', ultimate: '不让你消失' },
+  // guardian：中二病 · 小鸟游六花（邪王真眼的结界）
+  17362: { skill1: '邪王真眼', skill2: '契约结界', passive: '中二结界', ultimate: '暗黑闪光' },
+  // guardian：摇曳百合 · 赤座灯里（治愈系的存在感守护）
+  13004: { skill1: '存在感守护', skill2: '暖心陪伴', passive: '路人光环', ultimate: '大家一起' },
+  // guardian：夏日口袋 · 久岛鸥（守护同伴的少女）
+  59848: { skill1: '并肩守护', skill2: '海边约定', passive: '沉静坚守', ultimate: '守望夏日' },
+  // guardian：未来日记 · 我妻由乃（偏执的守护）
+  671: { skill1: '专属守护', skill2: '日记预知', passive: '病娇执念', ultimate: '为你挡下一切' },
+  // guardian：摇曳露营 · 各务原抚子（野营的温暖庇护）
+  56775: { skill1: '篝火庇护', skill2: '温暖分享', passive: '露营慢活', ultimate: '满天星空' },
+
+  // striker*：DARLING · 02（突击驾驶员）
+  57751: { skill1: '突击冲锋', skill2: '猛兽本能', passive: '亲爱的', ultimate: '螺旋突刺' },
+  // striker：进击的巨人 · 利威尔（人类最强之刃）
+  19546: { skill1: '立体机动斩', skill2: '疾风连刃', passive: '人类最强', ultimate: '必杀回旋斩' },
+  // striker：链锯人 · 玛奇玛（支配之力的压制）
+  71337: { skill1: '支配压制', skill2: '锁链束缚', passive: '支配之魔', ultimate: '万人践踏' },
+};
+
+/** SC-T2：暴露 HR 名覆盖表命中判定（测试用）。 */
+export function hasHrSkillNameOverride(characterId: number): boolean {
+  return Object.prototype.hasOwnProperty.call(HR_SKILL_NAME_OVERRIDES, characterId);
+}
+
 /** SA-T4 留口：该角色是否拥有招牌差异化 kit（供第 2 轮 UI「专属徽章」消费；本轮不做徽章）。 */
 export function isSignatureKit(characterId: number): boolean {
   return Object.prototype.hasOwnProperty.call(SIGNATURE_KIT_OVERRIDES, characterId);
+}
+
+/** SC-T1：招牌覆盖声明的 role（供测试守卫「显式 archetype === override.role」；未覆盖返回 undefined）。 */
+export function signatureRoleOf(characterId: number): SquadArchetype | undefined {
+  return SIGNATURE_KIT_OVERRIDES[characterId]?.role;
+}
+
+/** SC-T1：暴露单一定位入口给测试/未来消费端（显式表优先 → 正则回落 → stats/稀有度兜底）。 */
+export function getArchetypeForCharacter(character: CharacterCard, activeSkill?: Skill, passiveSkill?: Skill): SquadArchetype {
+  return resolveArchetype(character, activeSkill, passiveSkill);
+}
+
+/** SC-T1：显式定位表是否命中该角色（测试用：区分显式命中 vs 正则回落）。 */
+export function hasExplicitArchetype(characterId: number): boolean {
+  return Object.prototype.hasOwnProperty.call(EXPLICIT_ARCHETYPE, characterId);
 }
 
 export function getSquadSkillKitForCharacter(character: CharacterCard | null | undefined): CompleteSquadSkillKit | undefined {
@@ -560,7 +708,7 @@ export function getSquadSkillKitForCharacter(character: CharacterCard | null | u
 
   const activeSkill = resolvePersonalSkill(character, 'active');
   const passiveSkill = resolvePersonalSkill(character, 'passive');
-  const archetype = inferArchetype(character, activeSkill, passiveSkill);
+  const archetype = resolveArchetype(character, activeSkill, passiveSkill);
   const labels = archetypeLabels[archetype];
   const effects = archetypeEffects(archetype);
   const name = character.name;
@@ -572,6 +720,10 @@ export function getSquadSkillKitForCharacter(character: CharacterCard | null | u
   const s1 = override?.skill1;
   const ult = override?.ultimate;
 
+  // SC-T2：未覆盖 HR 名覆盖表——只改**名**（effect 仍走原型模板，description 仍自动派生）。
+  // 优先级：个人技名(activeName/passiveName) > HR 名覆盖 > 原型通名。招牌 UR effect 覆盖仍走 s1/ult，名不受此表影响。
+  const nameOverride = HR_SKILL_NAME_OVERRIDES[character.id];
+
   return {
     normalAttack: skill(character, 'normal', `${name}·牵制`, 'frontEnemy', [
       { type: 'damage', atkRatio: 1, canCrit: true },
@@ -581,18 +733,18 @@ export function getSquadSkillKitForCharacter(character: CharacterCard | null | u
           cooldownMs: s1.cooldownMs ?? 8000,
           initialCooldownMs: s1.initialCooldownMs ?? 1500,
         })
-      : skill(character, 'skill1', activeName ?? `${name}·${labels.skill1}`, effects.skill1.target, effects.skill1.effects, {
+      : skill(character, 'skill1', activeName ?? nameOverride?.skill1 ?? `${name}·${labels.skill1}`, effects.skill1.target, effects.skill1.effects, {
           cooldownMs: 8000,
           initialCooldownMs: 1500,
         }),
-    skill2: skill(character, 'skill2', `${name}·${labels.skill2}`, effects.skill2.target, effects.skill2.effects, {
+    skill2: skill(character, 'skill2', nameOverride?.skill2 ?? `${name}·${labels.skill2}`, effects.skill2.target, effects.skill2.effects, {
       cooldownMs: 12000,
       initialCooldownMs: 4500,
     }),
-    passive: skill(character, 'passive', passiveName ?? `${name}·${labels.passive}`, effects.passive.target, effects.passive.effects),
+    passive: skill(character, 'passive', passiveName ?? nameOverride?.passive ?? `${name}·${labels.passive}`, effects.passive.target, effects.passive.effects),
     ultimate: ult
       ? skill(character, 'ultimate', ult.name, ult.target, ult.effects, { energyCost: ult.energyCost ?? 1000 })
-      : skill(character, 'ultimate', activeName ? `${activeName}·终式` : `${name}·${labels.ultimate}`, effects.ultimate.target, effects.ultimate.effects, {
+      : skill(character, 'ultimate', activeName ? `${activeName}·终式` : nameOverride?.ultimate ?? `${name}·${labels.ultimate}`, effects.ultimate.target, effects.ultimate.effects, {
           energyCost: 1000,
         }),
   };

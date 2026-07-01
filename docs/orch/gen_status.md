@@ -1,96 +1,55 @@
-# Generator 状态报告 — S14-B 收尾①「暴击 UI 显形」（纠偏轮）
+# Gen Status — S14-C 第 3/3 轮（最终轮，product-loop --tier1 on --mode all）
 
-## 任务
-纠偏：S14-B 第 3 轮收尾①「暴击 UI 显形」被漏做——SB-T3 已让暴击在 engine 里真实发生（`damage` 事件带
-`isCritical`），但 `SquadBattleView.applyEventToUnits` 的 `case 'damage'` 只取 `hpAfter`、丢弃了
-`isCritical`，战斗日志也不记伤害 → 暴击对玩家完全不可感知。本任务把已算好的 `isCritical` 接到 UI 最后一寸。
-**纯 view 层改动，engine 零改动。**
+> 指派切片 = **SC-T3 + SC-T4 + SC-T6**，三项全部真落地。S14-C 全部 SC-T1..T6 现全 `[x]`。
 
-## 完成内容（A + B 都做）
+## 完成任务
 
-### A｜浮动伤害数字（打击感）
-- `components/battle/squad/types.ts`：新增 `SquadFloatingDamageView`（`{ id, targetId, amount, isCritical }`）瞬态视图类型。
-- `views/SquadBattleView.vue`：
-  - 新增瞬态状态 `floatingDamages: SquadFloatingDamageView[]` + 自增序号 `floatingDamageSeq`。
-  - 新增 `spawnFloatingDamage(event)`：只在 `playNextBattleEvent`（单条推进）里对**刚回放到的** `damage` 事件生成一条浮动数字，
-    **不放在 `applyEventToUnits`**（后者在 `rebuildVisibleBattle` 里会重放全部历史事件 → 会每帧刷屏）。amount<=0 跳过。
-  - 定时器分池：把原 `pendingTimers` 拆成 `playbackTimers`（回放推进链）+ `floatingTimers`（浮动数字清除，各自 TTL=900ms）。
-    `schedule()` 走 playback 池；新增 `scheduleFloatingClear()` 走 floating 池；新增 `clearPlaybackTimers()` 只掐推进链
-    （`playNextBattleEvent` 顶部改调它，避免掐掉浮动清除定时器致泄漏）；`clearBattleTimers()` 全清两池 + 清空 `floatingDamages`。
-    reset(`restart`)/结算(`finishTimedBattle`)/`onBeforeUnmount` 均走 `clearBattleTimers` → 浮动数字与定时器一并清除。
-  - 模板：`SquadBattlefield` 新增 `:floating-damages="floatingDamages"`。
-- `components/battle/squad/SquadBattlefield.vue`：新增可选 `floatingDamages` prop；`floatingByTarget` 按 `targetId` 归拢；
-  `floatingFor(unitId)` 分发到每个 `SquadUnitBar`（玩家阵 + 敌方阵各自传）。
-- `components/battle/squad/SquadUnitBar.vue`：新增可选 `floatingDamages` prop；根容器加 `relative`；新增 `pointer-events-none`
-  绝对定位浮动数字层（不挡下方选目标点击）。暴击样式 = `text-highlight`(金语义令牌) + 更大字号(text-xl/2xl) + `CRIT` 上标 +
-  `squad-dmg-crit-pop` 冲击缩放/抖动动画；普通 = `text-danger` + text-base/lg。scoped `<style>` 定义 `squad-dmg-rise`
-  上浮淡出 + `squad-dmg-crit-pop` 冲击关键帧，并加 `prefers-reduced-motion` 降级（仅淡入淡出）。
+### SC-T3｜养成第三轴：星级/突破（消化重复角色卡，存档 v16）— DONE
+- **选项 A**：突破只给永久小加成，不动 `MAX_CHARACTER_LEVEL`/`addCharacterExp` 钳制。
+- engine 纯函数（`engine/nurture/rules.ts`，确定成长无 RNG）：
+  - `MAX_BREAKTHROUGH=5`、`BREAKTHROUGH_STAT_BONUS_PER_STAR=0.04`（5 星累计 +20% base ≤25% 硬上限）。
+  - `breakthroughCost(star)`：阶梯 star+1，满星 Infinity，5 星累计 15 张。
+  - `breakthroughStatBonus(star, base)`：base×star×4% 向下取整；`pctStatBonus`、`sumStatPoints`、`canBreakthrough` 纯判定。
+- 扣卡收口 collection：`consumeCharacterCards(id, n)` 无 KP 副作用、保留本体 1 张（可消耗 = count-1），禁直改 Map/禁复用 dismantleCard。
+- store action `nurture.breakthroughCharacter(id)`：读 collection 计数 → engine 判定 → 扣卡 → breakthrough++ → addLog；userStore 门面成功才 saveToServer。
+- 存档 v16 三处同改：`types/nurture.ts` 加 `breakthrough`（+文件头三轴注释）/ `rules.ts createDefaultNurtureData` 补 0 / `migrations.ts migrateNurtureData` 白名单**显式加**（禁 spread，clamp [0,MAX]、类型守卫）+ `getNurtureData` 运行时兜底。nurture 域全量 Map 序列化天然覆盖，第三处义务 = persistence.test.ts 往返断言。`SAVE_VERSION 15→16`（本 sprint 唯一 bump）+ schema 文件头 v16 沿革。
+- UI：NurtureView 详情内容区加「星级突破」内聚小块（星级进度 + 突破按钮 + cost/可用卡 + 下一星 delta 预览 + 满星置灰），语义令牌，无 text-white 压浅底/无动态色类。
 
-### B｜战斗日志记暴击
-- `views/SquadBattleView.vue` `buildKeyLogs`：新增 `case 'damage'`，仅当 `isCritical` 时记「💥 暴击！X 对 Y 造成 N 伤害」，
-  普通伤害不记（契合「只记关键事件」既有设计，不刷屏）。`buildKeyLogs` 对可见前缀幂等重算 → 不会重复累积。
+### SC-T4｜好感等级化：永久意义 + 每日回归钩子（与 SC-T3 共用 v16）— DONE
+- 里程碑永久加成：`BOND_MILESTONES` 每档加 `statBonusPct`（全 6 档累计 +15% ≤ 突破，守 C1）；`bondPermanentBonusPct(claimedIds)` 从**已领里程碑集纯派生**（不新增存档字段，engine 不 import config，pct 注入）。
+- 每日互动：`nurture.dailyBondInteraction(id)`（+20 好感/+200 经验），跨天判定读 `lastBondInteractionDate`（v16 字段，复用 daily todayKey 范式，扁平字段、无定时器）；跨天正确重置（测试锁）。userStore 门面成功 markProgress('nurture') + saveToServer。
+- 好感溢出转 KP：`bondOverflowExchange(aff)`（领完 bond_6/4000 后每 50 好感兑 1 KP，整份兑、余数保留）+ `nurture.claimBondOverflow(id)`。
+- UI：详情区加「每日互动」按钮（今日已互动置灰）+「好感溢出兑换」按钮（有溢出才出）+ 里程碑列表显示每档永久加成 %。
 
-## 架构合规
-- 颜色全走皮肤语义令牌：暴击 `text-highlight`、普通 `text-danger`；无 `text-white` 压浅底、无运行时拼接动态色类。
-- 所有 setTimeout 走登记式 `schedule()`/`scheduleFloatingClear()`，`onBeforeUnmount` → `clearBattleTimers()` 全清；无裸 setTimeout。
-- 浮动数字跟随现有 180ms 逐条回放节奏（在 `playNextBattleEvent` 生成），不打乱 `applyEventToUnits` 主流程；reset 清空浮动数字 + 定时器。
-- **engine 零改动**：本会话仅编辑 `views/SquadBattleView.vue` + `components/battle/squad/{SquadBattlefield,SquadUnitBar,types}.ts`。
-  （`git status` 中 `engine/squad/*`、`engine/rng.ts` 的 dirty 是前序 SB-T2/T3/T5 轮遗留的工作树改动，非本会话所为。）
+### 战力 3+ 处同源（红线）— DONE via 单一 helper
+- 新建 `utils/battleStats.ts`：engine `resolveNurturedStatPoints` 折 statPoints + 突破 + 好感永久成**一个** StatPoints → 走既有 `generateBattleStats(base, folded, equipBonus)`，**不新增 generateBattleStats 第 4 参**（消灭「第 N 条战力通路」，SC-T4 顺同一口径）。
+- 收敛 helper `resolveMemberBattleStats` / `resolveNurturedStatPointsFor` 注入全部消费点：HomesteadHubView `selectedFinalStats`+`memberPower`+`selectedStatRows`、SquadBattleView `buildCharacterStats`（玩家侧，敌方仍 EMPTY）、NurtureView `finalStats`+`statRows`+ EquipPickerModal（传 nurturedStatPoints）。SC-T5 门槛口径自动含突破（经 squadPower）。
 
-## 验收命令实际输出
+### SC-T6｜NurtureView 拆无壳可内嵌组件（纯 UI）— DONE
+- 去 NurtureView 页级壳：删 `min-h-screen`、页级 `<h1>角色养成`、独立未登录空态、独立无角色空态（改紧凑兜底）；组件自持角色列表 + 自动选中首角色。
+- hub characters 面板删除重复的 summary 镜像（角色 chips + stat-mini + equip-mini + skill-list）与相关死 computed（selectedStatRows/EquipRows/SkillRows/FinalStats/Nurture/slotTone/emptyStats）+ 清死 import；只保留**一套**标题 + 一套空态（hub 壳统一 gate 未登录/无角色）+ 内嵌无壳 NurtureView。SC-T3 突破 UI 随壳平移进无壳组件（内聚）。
+- `/nurture`、`/squad-battle` 重定向未动（router/index.ts 原样，仍工作）。养成逻辑/store/engine/存档零改（纯 UI）。
 
-### 1) `cd frontend-vue && npm run type-check`
-```
-> frontend-vue@0.0.0 type-check
-> vue-tsc --build
-```
-（0 error，通过）
+## 每条验收命令实际输出
 
-### 2) `npm run test`
-```
- RUN  v4.1.8 D:/work/AnimePlay/frontend-vue
- Test Files  58 passed (58)
-      Tests  670 passed (670)
-   Duration  9.86s
-```
-全绿。
+1. `npm run type-check` → **PASS**（`vue-tsc --build`，0 错误，无输出）。
+2. `npm run test` → **PASS**：`Test Files 60 passed (60) / Tests 714 passed (714)`（基线 687，+27 新增：engine breakthrough/bonus/resolve/canBreakthrough、migrations v16 缺省/往返/脏档 clamp/not.toHaveProperty、persistence v16 往返、nurture store 突破/每日互动/溢出、collection consumeCharacterCards）。
+3. `npm run build` → **PASS**：`✓ built in 9.80s`（type-check + vite 生产构建成功）。
+4. `.venv/Scripts/python.exe backend/test_security.py` → **PASS**：`RESULT: PASS — all security checks passed`，`EXIT=0`。
+5. `grep -rn "debug=True" backend/server.py api/index.py` → **零命中**（EXIT=1 = no match，符合预期）。
+- 附：`npx eslint`（9 个改动文件单文件）→ EXIT=0 无告警。
 
-### 3) `npm run build`
-```
-vite v7.3.6 building client environment for production...
-✓ 382 modules transformed.
-✓ built in 10.05s
-```
-成功（仅 caniuse-lite 数据 7 个月旧的非致命提示 + sky-island 图 2.6MB 既有大图，均与本改动无关）。
+## 未完成 / 卡点
+无。三项指派切片全部真落地全链（字段 + 迁移 + engine + store action + collection 扣卡 + 3+ 处战力注入 + UI + 全套测试）。
 
-### 4) `python backend/test_security.py`
-系统全局 Python 3.13 无 flask/werkzeug（`ModuleNotFoundError: No module named 'werkzeug'`）——环境缺依赖，与本前端改动无关。
-仓库 `.venv` 有依赖，用 `.venv/Scripts/python.exe backend/test_security.py` 实跑：
-```
-== app.debug 关闭 ==            PASS  server.app.debug is False
-== 未带 token 读存档 → 401 ==   PASS (got 401)
-== 错密码 login → 401 ==        PASS  register→200 / wrong password→401
-== 对密码 login → 拿到 token == PASS
-== 带 token 读写自己存档 ==     PASS  POST/GET own save saveVersion=1
-== 用 A 的 token 写 B 的存档 == PASS  rejected (401)
-== saveVersion 乐观并发 ==      PASS  stale→409 / correct→200 saveVersion=2
-== 原子写 ==                    PASS  original save unchanged & fully readable / no temp leftovers
-== 邀请码门控 ==                PASS  no invite→403 / wrong→403 / correct→200 / 老账号不受影响
-RESULT: PASS — all security checks passed
-```
-全绿。
+## 文件结构变更自报
+- 新增：`frontend-vue/src/utils/battleStats.ts`（战力单一收口 helper）、`frontend-vue/src/stores/nurture.test.ts`（突破/每日互动/溢出/扣卡行为测试）。
+- 改：`types/nurture.ts`、`config/nurture.ts`、`engine/nurture/rules.ts`、`engine/nurture/rules.test.ts`、`stores/collection.ts`、`stores/nurture.ts`、`stores/userStore.ts`、`infra/persistence/schema.ts`、`infra/persistence/migrations.ts`、`infra/persistence/migrations.test.ts`、`stores/persistence.test.ts`、`views/NurtureView.vue`（重写：无壳 + 突破/互动 UI）、`views/HomesteadHubView.vue`（删重复 summary + 战力注入收口）、`views/SquadBattleView.vue`（玩家侧战力注入收口）、`docs/plans/SPRINT.md`（SC-T3/T4/T6 勾 `[x]`，主清单 + 第 3 轮追加子项）。
 
-### 5) `grep -rn "debug=True" backend/server.py api/index.py`
-```
-（无输出，exit=1，无匹配）
-```
-无 `debug=True` 残留。
+## 新坑（沉淀）
+- [战力单一口径优于第 4 参] 把突破/好感永久加成折成 statPoints 增量（`resolveNurturedStatPoints`）传进既有 `generateBattleStats`，**不加第 4 参**——SC-T5 门槛口径零改动自动含突破收益，SC-T4 顺同一函数接入，未来专武/羁绊也走这里。避免了 research-audit 警告的「口径碎裂」。
+- [SC-T6 拆壳连带死代码] hub characters 面板原有一套 summary 镜像（与 NurtureView 重复），拆壳时必须连带删镜像 computed + 清死 import（tsconfig 无 noUnusedLocals，type-check 不报，但留死代码/eslint 风险）。已连根删除并单文件 lint 验证。
+- [nurture 装配器天然覆盖] 再次确认 nurture 域 serialize/deserialize 是全量 Map entries，v16 新字段自动随行，装配器代码零改，第三处义务落在 persistence.test.ts 往返断言（勿硬改装配器凑数）。
 
-## 新坑 / 注意
-- 系统全局 Python（3.13.12）未装 flask/werkzeug；`backend/test_security.py` 必须用仓库 `.venv/Scripts/python.exe` 运行，否则 import 即崩。
-  （非本任务引入，属环境记录，供后续验收统一用 `.venv`。）
-- `.venv` 里 werkzeug 无 `__version__` 属性（新版本），但 flask 正常，安全测试不受影响。
-
-## 状态
-**PASSED** — 暴击 UI 双通道显形（A 浮动伤害数字暴击醒目样式 + B 日志记暴击）；engine 零改动；5 条验收命令全绿
-（type-check 0 error / 670 test 全过 / build 成功 / test_security PASS via .venv / grep 无 debug=True）。
+## 状态：PASSED
+本轮实现了 SC-T3（星级突破 v16）+ SC-T4（好感等级化，共用 v16）+ SC-T6（NurtureView 拆无壳组件），5 条验收命令全绿，S14-C 全部 SC-T1..T6 已 `[x]`。

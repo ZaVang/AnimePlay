@@ -24,6 +24,7 @@ import {
 import type { CharacterNurtureData } from '@/types/nurture';
 import type { PresetSquad } from '@/types/player';
 import { createPityState } from '@/engine/gacha/draw';
+import { MAX_BREAKTHROUGH } from '@/engine/nurture/rules';
 import { canonicalizePlacedIds } from '@/config/homestead';
 import { sanitizeEquipped } from '@/config/equipment';
 import { canonicalizeSquadMembers } from './schema';
@@ -183,6 +184,13 @@ function migrateNurtureData(entries: any): [number, CharacterNurtureData][] {
         claimedBondMilestones: Array.isArray(data.claimedBondMilestones)
           ? data.claimedBondMilestones.filter((x: unknown): x is string => typeof x === 'string')
           : [],
+        // v15 → v16（SC-T3）：星级/突破次数（旧档无 → 0）。clamp 到 [0, MAX_BREAKTHROUGH] 防脏档放大战力。
+        breakthrough:
+          typeof data.breakthrough === 'number'
+            ? Math.min(MAX_BREAKTHROUGH, Math.max(0, Math.floor(data.breakthrough)))
+            : 0,
+        // v15 → v16（SC-T4）：每日好感互动日期键（旧档无 → ''）。
+        lastBondInteractionDate: typeof data.lastBondInteractionDate === 'string' ? data.lastBondInteractionDate : '',
       };
       return [id, slim] as [number, CharacterNurtureData];
     });

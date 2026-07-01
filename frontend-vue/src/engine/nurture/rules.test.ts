@@ -13,6 +13,14 @@ import {
   createDefaultNurtureData,
   POINTS_PER_LEVEL,
   MAX_CHARACTER_LEVEL,
+  MAX_BREAKTHROUGH,
+  BREAKTHROUGH_STAT_BONUS_PER_STAR,
+  breakthroughCost,
+  breakthroughStatBonus,
+  pctStatBonus,
+  sumStatPoints,
+  resolveNurturedStatPoints,
+  canBreakthrough,
 } from './rules';
 import { createSeededRng } from '../rng';
 import type { StatPoints } from '@/types/nurture';
@@ -124,8 +132,8 @@ describe('rollLevelUpStatPoints（SA-T3 确定多级结算：按 base 比例）'
   });
 });
 
-describe('createDefaultNurtureData（瘦身两轴）', () => {
-  it('默认值：等级 1 / 好感 0 / 空加点 / 空里程碑，且不含已删字段', () => {
+describe('createDefaultNurtureData（S14-C 三轴）', () => {
+  it('默认值：等级 1 / 好感 0 / 空加点 / 空里程碑 / 0 星 / 无互动，且不含已删字段', () => {
     const d = createDefaultNurtureData();
     expect(d.level).toBe(1);
     expect(d.affection).toBe(0);
@@ -133,10 +141,95 @@ describe('createDefaultNurtureData（瘦身两轴）', () => {
     expect(d.totalExperience).toBe(0);
     expect(d.statPoints).toEqual({ hp: 0, atk: 0, def: 0, sp: 0, spd: 0 });
     expect(d.claimedBondMilestones).toEqual([]);
+    // SC-T3 / SC-T4 新轴缺省
+    expect(d.breakthrough).toBe(0);
+    expect(d.lastBondInteractionDate).toBe('');
     // 瘦身：删掉的旧字段不应出现
     expect(d).not.toHaveProperty('attributes');
     expect(d).not.toHaveProperty('battleEnhancements');
     expect(d).not.toHaveProperty('intimacy');
     expect(d).not.toHaveProperty('gifts');
+  });
+});
+
+describe('SC-T3 breakthroughCost（阶梯递增，5 星累计 15 张）', () => {
+  it('突破到第 N 星消耗 N 张（currentStar → currentStar+1）', () => {
+    expect(breakthroughCost(0)).toBe(1);
+    expect(breakthroughCost(1)).toBe(2);
+    expect(breakthroughCost(2)).toBe(3);
+    expect(breakthroughCost(3)).toBe(4);
+    expect(breakthroughCost(4)).toBe(5);
+  });
+  it('满星不可再突破 → Infinity；累计 1..5 = 15 张', () => {
+    expect(breakthroughCost(MAX_BREAKTHROUGH)).toBe(Infinity);
+    expect(breakthroughCost(6)).toBe(Infinity);
+    let total = 0;
+    for (let s = 0; s < MAX_BREAKTHROUGH; s++) total += breakthroughCost(s);
+    expect(total).toBe(15);
+  });
+});
+
+describe('SC-T3 breakthroughStatBonus（确定成长，无 RNG，克制封顶）', () => {
+  const base = { hp: 1000, atk: 500, def: 300, sp: 200, spd: 100 };
+  it('0 星 → 全 0（无突破=原战力逐字节一致）', () => {
+    expect(breakthroughStatBonus(0, base)).toEqual({ hp: 0, atk: 0, def: 0, sp: 0, spd: 0 });
+  });
+  it('每星 +4% base（向下取整）；5 星累计 = 20% base', () => {
+    expect(BREAKTHROUGH_STAT_BONUS_PER_STAR).toBeCloseTo(0.04);
+    expect(breakthroughStatBonus(1, base)).toEqual({ hp: 40, atk: 20, def: 12, sp: 8, spd: 4 });
+    expect(breakthroughStatBonus(5, base)).toEqual({ hp: 200, atk: 100, def: 60, sp: 40, spd: 20 });
+  });
+  it('确定可复现；star 超上限被 clamp 到 5 星', () => {
+    expect(breakthroughStatBonus(5, base)).toEqual(breakthroughStatBonus(99, base));
+  });
+  it('5 星累计加成 ≤ 25% base（硬上限守 C1）', () => {
+    const b = breakthroughStatBonus(MAX_BREAKTHROUGH, base);
+    for (const k of ['hp', 'atk', 'def', 'sp', 'spd'] as const) {
+      expect(b[k]).toBeLessThanOrEqual(base[k] * 0.25);
+    }
+  });
+});
+
+describe('SC-T4 pctStatBonus / sumStatPoints', () => {
+  const base = { hp: 1000, atk: 500, def: 300, sp: 200, spd: 100 };
+  it('pctStatBonus 向下取整，pct ≤ 0 → 全 0', () => {
+    expect(pctStatBonus(base, 0.15)).toEqual({ hp: 150, atk: 75, def: 45, sp: 30, spd: 15 });
+    expect(pctStatBonus(base, 0)).toEqual({ hp: 0, atk: 0, def: 0, sp: 0, spd: 0 });
+    expect(pctStatBonus(base, -1)).toEqual({ hp: 0, atk: 0, def: 0, sp: 0, spd: 0 });
+  });
+  it('sumStatPoints 逐围相加', () => {
+    expect(sumStatPoints({ hp: 1, atk: 2, def: 3, sp: 4, spd: 5 }, { hp: 10, atk: 20, def: 30, sp: 40, spd: 50 }))
+      .toEqual({ hp: 11, atk: 22, def: 33, sp: 44, spd: 55 });
+  });
+});
+
+describe('SC-T3/T4 resolveNurturedStatPoints（单一战力口径：statPoints + 突破 + 好感永久）', () => {
+  const base = { hp: 1000, atk: 500, def: 300, sp: 200, spd: 100 };
+  const statPoints = { hp: 50, atk: 30, def: 20, sp: 10, spd: 5 };
+  it('无突破无好感 → 只剩 statPoints（与原口径逐字节一致）', () => {
+    expect(resolveNurturedStatPoints({ statPoints, breakthrough: 0 }, base, 0)).toEqual(statPoints);
+  });
+  it('突破 + 好感永久加成逐围并入 statPoints', () => {
+    // breakthrough=2 → 8% base；bondPct=0.15 → 15% base
+    const r = resolveNurturedStatPoints({ statPoints, breakthrough: 2 }, base, 0.15);
+    expect(r).toEqual({
+      hp: 50 + 80 + 150,
+      atk: 30 + 40 + 75,
+      def: 20 + 24 + 45,
+      sp: 10 + 16 + 30,
+      spd: 5 + 8 + 15,
+    });
+  });
+});
+
+describe('SC-T3 canBreakthrough（判定纯函数，无副作用）', () => {
+  it('可消耗卡 ≥ cost 且未满星 → true', () => {
+    expect(canBreakthrough(0, 1)).toBe(true); // 到 1 星需 1 张
+    expect(canBreakthrough(0, 0)).toBe(false);
+    expect(canBreakthrough(2, 3)).toBe(true); // 到 3 星需 3 张
+    expect(canBreakthrough(2, 2)).toBe(false);
+  });
+  it('满星永远 false（即使卡再多）', () => {
+    expect(canBreakthrough(MAX_BREAKTHROUGH, 999)).toBe(false);
   });
 });

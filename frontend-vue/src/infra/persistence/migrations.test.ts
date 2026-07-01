@@ -186,6 +186,9 @@ describe('v14 养成瘦身迁移（丢旧训练字段、保留两轴、补 statP
     // 旧投入不退：statPoints 补全 0
     expect(slim.statPoints).toEqual({ hp: 0, atk: 0, def: 0, sp: 0, spd: 0 });
     expect(slim.claimedBondMilestones).toEqual([]);
+    // v16：旧档无 breakthrough / lastBondInteractionDate → 缺省
+    expect(slim.breakthrough).toBe(0);
+    expect(slim.lastBondInteractionDate).toBe('');
     // 已删字段被丢弃
     expect(slim).not.toHaveProperty('intimacy');
     expect(slim).not.toHaveProperty('attributes');
@@ -211,6 +214,67 @@ describe('v14 养成瘦身迁移（丢旧训练字段、保留两轴、补 statP
 
   it('characterNurtureData 非数组 → 空', () => {
     expect(migrate({ version: 13, characterNurtureData: 'oops' } as unknown).characterNurtureData).toEqual([]);
+  });
+});
+
+describe('v16 养成星级/突破 + 每日互动迁移（SC-T3/SC-T4）', () => {
+  it('v15 旧档无 breakthrough / lastBondInteractionDate → 缺省 0 / ""', () => {
+    const out = migrate({
+      version: 15,
+      characterNurtureData: [
+        [77, { affection: 500, level: 3, experience: 0, totalExperience: 4000, lastInteraction: '', statPoints: { hp: 12, atk: 8, def: 5, sp: 3, spd: 2 }, claimedBondMilestones: ['bond_1'] }],
+      ],
+    } as unknown);
+    const [, slim] = out.characterNurtureData[0];
+    expect(slim.breakthrough).toBe(0);
+    expect(slim.lastBondInteractionDate).toBe('');
+    // 未破坏两轴既有字段
+    expect(slim.statPoints).toEqual({ hp: 12, atk: 8, def: 5, sp: 3, spd: 2 });
+    expect(slim.claimedBondMilestones).toEqual(['bond_1']);
+  });
+
+  it('已存 breakthrough / lastBondInteractionDate → 往返保留', () => {
+    const out = migrate({
+      version: 16,
+      characterNurtureData: [
+        [88, { affection: 4200, level: 50, experience: 0, totalExperience: 0, lastInteraction: '', statPoints: { hp: 0, atk: 0, def: 0, sp: 0, spd: 0 }, claimedBondMilestones: [], breakthrough: 3, lastBondInteractionDate: '2026-7-1' }],
+      ],
+    } as unknown);
+    const [, slim] = out.characterNurtureData[0];
+    expect(slim.breakthrough).toBe(3);
+    expect(slim.lastBondInteractionDate).toBe('2026-7-1');
+  });
+
+  it('脏档 breakthrough 类型守卫 + clamp 到 [0, MAX_BREAKTHROUGH]', () => {
+    const out = migrate({
+      version: 16,
+      characterNurtureData: [
+        [1, { breakthrough: 'oops', lastBondInteractionDate: 123 }],
+        [2, { breakthrough: 99 }], // 超上限 → clamp 5
+        [3, { breakthrough: -4 }], // 负 → 0
+        [4, { breakthrough: 3.9 }], // 小数 → floor 3
+      ],
+    } as unknown);
+    const byId = new Map(out.characterNurtureData);
+    expect(byId.get(1)!.breakthrough).toBe(0);
+    expect(byId.get(1)!.lastBondInteractionDate).toBe('');
+    expect(byId.get(2)!.breakthrough).toBe(5);
+    expect(byId.get(3)!.breakthrough).toBe(0);
+    expect(byId.get(4)!.breakthrough).toBe(3);
+  });
+
+  it('v16 迁移仍 not.toHaveProperty 旧字段家族（禁 spread 回潮）', () => {
+    const out = migrate({
+      version: 15,
+      characterNurtureData: [
+        [5, { affection: 100, breakthrough: 2, attributes: { charm: 1 }, gifts: ['x'], trainingCooldowns: {} }],
+      ],
+    } as unknown);
+    const [, slim] = out.characterNurtureData[0];
+    expect(slim.breakthrough).toBe(2);
+    expect(slim).not.toHaveProperty('attributes');
+    expect(slim).not.toHaveProperty('gifts');
+    expect(slim).not.toHaveProperty('trainingCooldowns');
   });
 });
 

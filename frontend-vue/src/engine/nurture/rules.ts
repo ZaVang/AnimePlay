@@ -9,6 +9,16 @@ import type { RNG } from '../rng';
 /** 角色等级上限。 */
 export const MAX_CHARACTER_LEVEL = 100;
 
+/** ★ SC-T3 星级/突破上限（0..5）。封顶后不再消耗重复卡。 */
+export const MAX_BREAKTHROUGH = 5;
+
+/**
+ * ★ SC-T3 每突破一星给的 base 五维加成比例（克制小值）。
+ * 5 星累计 = 5 × 0.04 = 0.20（≤ +20% base，守 C1「养成不做战力火箭」；硬上限 ≤25%）。
+ * 确定成长（无 RNG）：加成 = floor(base围 × star × PER_STAR_PCT)。
+ */
+export const BREAKTHROUGH_STAT_BONUS_PER_STAR = 0.04;
+
 /** 每升一级分配的加点总数（可调；起 10）。按角色 base 五维比例确定分配到 5 战斗维。 */
 export const POINTS_PER_LEVEL = 10;
 
@@ -162,7 +172,7 @@ export function rollLevelUpStatPoints(oldLevel: number, newLevel: number, baseSt
   return gain;
 }
 
-/** 新角色的默认养成数据（瘦身两轴 + 空加点）。 */
+/** 新角色的默认养成数据（S14-C 三轴：等级 + 好感 + 星级；空加点、0 星、无互动）。 */
 export function createDefaultNurtureData(): CharacterNurtureData {
   return {
     affection: 0,
@@ -172,5 +182,85 @@ export function createDefaultNurtureData(): CharacterNurtureData {
     totalExperience: 0,
     statPoints: createEmptyStatPoints(),
     claimedBondMilestones: [],
+    breakthrough: 0,
+    lastBondInteractionDate: '',
   };
+}
+
+// ============================================================================
+// ★ SC-T3 星级/突破（确定成长，无 RNG）+ SC-T4 好感永久加成 —— 纯函数
+// ============================================================================
+
+/**
+ * 突破到第 N 星消耗的重复角色卡张数（阶梯递增：突破到 star=1 需 1 张、star=2 需 2 张…）。
+ * currentStar = 当前星级，返回「突破到下一星」所需张数 = currentStar + 1。
+ * 5 星累计 = 1+2+3+4+5 = 15 张。currentStar ≥ MAX_BREAKTHROUGH 返回 Infinity（不可再突破）。
+ */
+export function breakthroughCost(currentStar: number): number {
+  const star = Math.max(0, Math.floor(currentStar));
+  if (star >= MAX_BREAKTHROUGH) return Infinity;
+  return star + 1;
+}
+
+/**
+ * 突破永久加成：确定给 base 五维 × star × PER_STAR_PCT 的加成（向下取整，无 RNG）。
+ * star=0 → 全 0（无突破=无加成，与原战力逐字节一致）。star 钳制到 [0, MAX_BREAKTHROUGH]。
+ */
+export function breakthroughStatBonus(star: number, baseStats: StatPoints): StatPoints {
+  const s = Math.min(MAX_BREAKTHROUGH, Math.max(0, Math.floor(star)));
+  const pct = s * BREAKTHROUGH_STAT_BONUS_PER_STAR;
+  return pctStatBonus(baseStats, pct);
+}
+
+/**
+ * 按比例的 base 五维加成（向下取整，各项非负）。SC-T3 突破 / SC-T4 好感永久加成共用。
+ * 纯函数、无 RNG；pct ≤ 0 → 全 0。engine 不查表，pct 由调用方（config 派生）注入。
+ */
+export function pctStatBonus(baseStats: StatPoints, pct: number): StatPoints {
+  if (!(pct > 0)) return createEmptyStatPoints();
+  return {
+    hp: Math.floor(Math.max(0, baseStats.hp) * pct),
+    atk: Math.floor(Math.max(0, baseStats.atk) * pct),
+    def: Math.floor(Math.max(0, baseStats.def) * pct),
+    sp: Math.floor(Math.max(0, baseStats.sp) * pct),
+    spd: Math.floor(Math.max(0, baseStats.spd) * pct),
+  };
+}
+
+/** 逐围求和多个 StatPoints → 一个 StatPoints（各项非负输入，纯加法）。 */
+export function sumStatPoints(...parts: StatPoints[]): StatPoints {
+  const total = createEmptyStatPoints();
+  for (const p of parts) {
+    total.hp += p.hp;
+    total.atk += p.atk;
+    total.def += p.def;
+    total.sp += p.sp;
+    total.spd += p.spd;
+  }
+  return total;
+}
+
+/**
+ * ★ 养成后的合成加点（单一战力口径 seam）：statPoints（等级加点）+ 突破加成 + 好感永久加成。
+ * 折成一个 StatPoints 作为 generateBattleStats 的 statPoints 参数传入——**不新增 generateBattleStats 第 4 参数**，
+ * 消灭「第 N 条战力通路」（SC-T4 好感永久加成走同一口径）。
+ * bondBonusPct = 已领里程碑累计加成比例（由 config BOND_MILESTONES 在 store/util 侧派生后注入，engine 不查表）。
+ */
+export function resolveNurturedStatPoints(
+  nurtureData: Pick<CharacterNurtureData, 'statPoints' | 'breakthrough'>,
+  baseStats: StatPoints,
+  bondBonusPct: number,
+): StatPoints {
+  return sumStatPoints(
+    nurtureData.statPoints,
+    breakthroughStatBonus(nurtureData.breakthrough, baseStats),
+    pctStatBonus(baseStats, bondBonusPct),
+  );
+}
+
+/** 是否可突破：未达上限 且 可消耗重复卡（spare = getCharacterCardCount-1）≥ cost。纯判定，无副作用。 */
+export function canBreakthrough(currentStar: number, spareCards: number): boolean {
+  const star = Math.max(0, Math.floor(currentStar));
+  if (star >= MAX_BREAKTHROUGH) return false;
+  return spareCards >= breakthroughCost(star);
 }

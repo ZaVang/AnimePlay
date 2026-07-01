@@ -40,6 +40,23 @@ export const useCollectionStore = defineStore('collection', () => {
     return { isNew: true };
   }
 
+  /**
+   * ★ SC-T3：消耗 n 张重复**角色**卡（突破用），永久保留本体 1 张（防扣到 <1 连锁炸编队/塔准入）。
+   * 无 KP 副作用（区别于 dismantleCard）。返回是否成功扣卡（张数不足/参数非法 → false 不变更）。
+   * 资源变更单一入口——nurture store 禁直改 characterCollection 的 Map。
+   */
+  function consumeCharacterCards(cardId: number, n: number): boolean {
+    const amount = Math.floor(n);
+    if (amount <= 0) return false;
+    const cardData = characterCollection.value.get(cardId);
+    if (!cardData) return false;
+    // 拥有口径防呆：可消耗 = count - 1（保留本体 1 张）
+    const spare = cardData.count - 1;
+    if (spare < amount) return false;
+    cardData.count -= amount;
+    return true;
+  }
+
   function dismantleCard(cardId: number, cardType: CardDomain) {
     const profile = useProfileStore();
     const collection = collectionOf(cardType);
@@ -157,6 +174,7 @@ export const useCollectionStore = defineStore('collection', () => {
     getCharacterCardCount,
     isFavorite,
     addCard,
+    consumeCharacterCards,
     dismantleCard,
     dismantleAllDuplicates,
     toggleFavorite,

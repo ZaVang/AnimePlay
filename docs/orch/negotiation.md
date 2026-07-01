@@ -1,84 +1,57 @@
-# Negotiation — S14-B 第 3/3 轮（product-loop --tier1 on --mode all，收尾轮）
+# Negotiation — S14-C 第 3/3 轮（最终轮，对三份审计报告 Prioritized Recommendations 逐条回应）
 
-> 对三份 Tier1 审计报告的 Prioritized Recommendations 逐条回应。本轮指派切片 = **SB-T2（手动大招选目标 + 平滑推进，P2-5）**——S14-B 最后一块。
-> 判定：**接受 / 部分接受 / 拒绝**，附理由 + 本轮行动。超出 SB-T2 的一律标 backlog。
-> 三份报告 = 体验官（product-audit）/ 进化审计（evolution-audit）/ 设计研究（research-audit，本轮主攻 SB-T2）。
-> SB-T1/T3/T4/T5 已在第 1/2 轮落地，本轮不重做；本轮收尾核对其全部 `[x]` 与实现一致。
+> 本轮承诺切片 = **SC-T3 + SC-T4 + SC-T6**。范围纪律：不超出 S14-C；超范围创意标 backlog。
+> **纠偏**：核查基线发现 SC-T3（第 2 轮）未真正落地（`SAVE_VERSION` 仍=15、无 `breakthrough` 字段、无 round-2 eval），按 pitfalls S14-A「合同内未完成任务永远 in-scope」，本最终轮补齐 SC-T3 + 做 SC-T4/SC-T6，凑齐 S14-C 全 `[x]`。
+> 三报告来源：`product-audit-report.md`（体验官）/ `evolution-audit-report.md`（进化）/ `research-audit-report.md`（研究，含设计研究）。第 1 轮已回应 SC-T1/T2/T5 相关条目；本轮聚焦养成长线（SC-T3/T4）与 UI 去壳（SC-T6）相关条目。
 
----
+## 一、体验官报告（product-audit）
 
-## 三报告共识（先记，决定本轮成败）
+| 条目 | 决策 | 理由 / 本轮行动 |
+|---|---|---|
+| 🔴 [SC-T3 / P2-10] 补一条有决策的星级/突破长线，重复角色卡→碎片突破，达上限解锁更高上限/永久成长 | **接受** | 本轮任务 1；采「永久小加成不提上限（选项 A）」以零核心回归单轮做透，重复卡收口 `consumeCharacterCards` 保留本体防呆。 |
+| 🔴 [SC-T4 / P2-11] 好感里程碑除 KP 外给永久小幅五维%/被动，把「不接战力」改为温和成长加成 | **接受** | 本轮任务 2；6 档追加克制永久加成（累计 ≤ ~15% base），经与突破同一 helper 注入 3 处战力 seam。 |
+| 🔴 [SC-T4 / P2-23] 好感线加每日/周期回归钩子（每日好感互动送礼/对话，好感溢出转 KP） | **接受** | 任务 2；每日互动复用 daily todayKey 跨天判定，溢出转 KP 克制汇率。 |
+| 🟡 [SC-T6 / P2-18] NurtureView 拆无壳可内嵌组件，消除双标题/双空态/长滚 | **接受** | 本轮任务 3；纯 UI，hub characters 面板只留一套标题/空态，`/nurture` 重定向仍可用。 |
+| 🟡 [SC-T3 加成克制] 突破加成小且封顶，守「养成不做战力火箭」 | **接受** | 任务 1 硬上限：每星 ~+4% base、5 星累计 ≤25%；engine 确定成长无 RNG。 |
+| 💡 [超范围] 高好感解锁剧情/语音/皮肤；专武；装备强化/精炼；家园设施升级闭环；无底 KP sink | **拒绝（本轮）→ backlog** | 均超 S14-C（属装备深度/家园闭环/经济终局别的 Sprint）；本轮好感只做「战力小加成 + 每日互动 + 溢出转 KP」，不做剧情/语音/皮肤。 |
 
-三份报告在 SB-T2 上高度一致，且 research Phase1-A4 给出最关键的一条新证据：**「现状『从 t=0 整场重算』的不跳变，仅在『不选目标、只改 timing』时碰巧成立；一旦选目标，RNG 序列在插入点后错位（SB-T3 暴击=一次 `rng.chance`），甚至 tick 边界前移污染过去时间戳 → 一定跳变。」** 故本轮的 refine 主线不是「加不加 targetId」（三报告都要求加），而是**「加 targetId 的同时必须把重算模型从『seed 头部重建』改为『冻结已呈现前缀 + RNG 状态承接』，否则就是把碰巧不跳升级成一定跳的半死系统」**。这条被三报告共同定为红线，本轮全盘接受。
+## 二、进化报告（evolution-audit）
 
----
+| 条目 | 决策 | 理由 / 本轮行动 |
+|---|---|---|
+| 🔴 SC-T3 碎片突破零操作摩擦 + 星级显形进度 | **接受** | 任务 1：一键突破（读重复卡计数即可）、NurtureView 详情区显星级进度 + 消耗预览。 |
+| 🔴 SC-T4 好感小加成封顶 + 好感喂养回归 | **接受** | 任务 2：永久加成封顶 ≤ ~15% base、每日互动回归钩子。 |
+| 🟡 SC-T3↔SC-T4 互锁（好感抬突破上限 / 突破抬好感上限 / 双联结晶羁绊） | **部分接受** | 本轮两轴**共用同一战力注入 helper**（结构上互通、加成合并）已达「互相喂养同一战力口径」的克制版；但「好感抬突破上限」「同番双联结晶」= **backlog**（超范围耦合，避免二次存档设计蔓延）。 |
+| 🟡 突破做成 role 定位倾斜（guardian 偏 hp/def） | **部分接受** | 突破 `breakthroughStatBonus` 按角色 **base 五维比例**确定倾斜（base 高 def 者自然偏 def），复用 SA-T3「base 倾斜、无需 role 正则」范式；不引入独立 role 字段（正则误判风险，pitfalls S14-A）。 |
+| 🟢 突破/好感永久加成必须真进战力（3 处 seam 同源，别只改预览） | **接受** | 任务 1/2 红线：`HomesteadHubView selectedFinalStats + memberPower` + `SquadBattleView buildCharacterStats` 三处并进同一 helper，测试守全覆盖。 |
+| 🟢 v16 存档三改 + 往返测试 + 迁移禁 spread | **接受** | 任务 1：schema/types/rules 工厂 + migrations 白名单显式缺省 + persistence/migrations 往返测试；SAVE_VERSION 一次 15→16。 |
+| 💡 好感彻底不接战力只接解锁 / 竞品式随机突破材料池 / 突破随机暴击加成 | **拒绝（本轮）→ backlog** | 与 SPRINT 明示「好感给永久小加成」相悖（好感彻底不接战力）；随机材料/随机加成违 engine 确定成长克制取向。 |
 
-## 一、设计研究报告（research-audit-report.md，本轮主攻 SB-T2）
+## 三、研究报告（research-audit）
 
-### 🔴 High-impact, Low-effort（本轮应直接采纳）
+| 条目 | 决策 | 理由 / 本轮行动 |
+|---|---|---|
+| 🔴 SC-T3/T4 显形进度与预告（突破进度条、下一星消耗/收益预览、好感永久加成显形） | **接受** | 任务 1/2 UI：突破入口显当前星/下一星消耗 + 加成预览；里程碑显永久加成条目。 |
+| 🟡 统一「养成后战力」口径 `resolveNurturedStats` 缝合 SC-T3/T4/T5 | **接受（本轮落地为共享 helper）** | 第 1 轮判「待新永久轴落地再评估」，本轮突破 + 好感永久加成正是新永久轴——**本轮落地共享 helper `resolveMemberBattleStats`** 一次收口 3 处 View 战力组装（收敛既有「战力组装散落 3 View」架构债），SC-T3/SC-T4 加成并入其中。 |
+| 🟡 SC-T3 星级存档 v16 三改 + 往返测试 | **接受** | 任务 1 核心，见进化报告回应。 |
+| 🟢 好感与突破互相喂养 / role 倾斜成长 | **部分接受** | 「共用同一战力口径 helper」= 互相喂养的克制实现；role 倾斜走 base 比例（见进化报告）；「好感抬突破上限」深耦合 = backlog。 |
+| 🟢 SC-T6 无壳组件模式（去页级壳、hub 内嵌只留一套外框） | **接受** | 任务 3 纯 UI 采纳。 |
+| 💡 突破材料多样化（专属碎片/通用材料双轨）/ 好感等级独立于里程碑的连续等级制 / 养成导航（推荐练哪个角色） | **拒绝（本轮）→ backlog** | 超范围（双轨材料需新经济域、连续等级制需重设好感模型、养成导航需诊断层）；本轮好感沿用现有里程碑领取制加永久加成，突破只消耗现有重复角色卡。 |
+| 假设质疑：突破是否应改 `MAX_CHARACTER_LEVEL`（选项 B） | **拒绝（本轮）→ backlog** | 选项 B 碰核心升级钳制路径（addCharacterExp）高回归风险；本轮取选项 A（永久小加成不动上限），单轮零核心回归做透。 |
 
-- **R1｜命令带目标（`ManualUltimateOrder` 加 `targetId?`，单体覆盖、AOE/self/全体忽略）** → **接受（本轮硬指标）**。
-  - 本轮行动：任务 2（本轮-8）。engine 对单体 selector 优先用 `order.targetId` 命中存活单位；复用 SB-T4 已定单体/AOE 二分口径（`effect.target ?? skill.target` 同一已解析表达式，坑 C-3）。UI 只对单体大招亮「选目标」态，engine 覆盖规则与 UI 亮起条件同一口径（拍板 3）。
-- **R2｜无跳变 = 冻结已呈现前缀（方案 A 精神最小实现）+ RNG 从「seed 头部重建」改「承接消费到 elapsedMs 的状态」** → **接受（本轮硬指标，最关键项）**。
-  - 本轮行动：任务 1（本轮-7）。前缀冻结取最小实现（已呈现事件一字不改、游标不回退、只重算当前时刻之后）；RNG 承接 elapsedMs 状态（mulberry32 全部状态即单个数，可导出/导入），使后缀错位不回溯污染前缀（拍板 1/2）。**红线接受**：若采纳过渡形态，注释/实现说明必须写明前缀冻结保证，禁 UI/文案暗示「完全平滑」而代码做不到。
-- **R3｜死目标/超时 order 显式回退** → **接受**。
-  - 本轮行动：任务 2（拍板 5）。死目标 → 回退默认 selector（勿空放扣能量，`spendUltimateEnergy` 在 execute 前），回退后仍无目标才判 `manualUltimateFailed`；超时后 `atMs > maxTimeMs` 的 pending order 不改判（`nextManualAt` 已被 `Math.min(maxTimeMs,…)` 夹住，测试锁死）。
-- **R4｜连点防抖/单次重算** → **接受**。
-  - 本轮行动：任务 2（拍板 5）。同帧多命令入队后单次重算/续跑，避免第二次覆盖第一次 cursor 致双跳/丢单。
+## 四、超范围创意 backlog（不进本轮，留后续 Sprint / 轮次 Planner）
 
-### 🟡 High-impact, High-effort（backlog）
+- 突破提等级上限（选项 B，碰 addCharacterExp 钳制）；SC-T3↔T4 深耦合（好感抬突破上限 / 同番双联结晶羁绊）。
+- 好感高档解锁剧情/语音/皮肤；好感连续等级制（脱离里程碑离散档）；好感彻底不接战力只接解锁/折扣。
+- 突破材料双轨（专属碎片 + 通用材料）；随机突破加成/暴击加成；养成导航诊断层（推荐练哪个角色 / 缺 role）。
+- 独立 role 存档字段 / 定位落数据字段（第 1 轮已 backlog，与突破倾斜无关，仍留）。
+- 装备强化/精炼、家园设施升级闭环、无底 KP sink、专武——属别的 Sprint（装备深度 / 家园闭环 / 经济终局）。
 
-- **R5｜engine `resumeTimedBattle(snapshot, orders)` + RNG 状态 export/import 完整化** → **部分接受**。
-  - 理由：R5 的「RNG 状态 export/import」是 R2 的必要卫生改动，**本轮采纳其最小子集**（承接 elapsedMs 状态）；但**完整 `resumeTimedBattle` 快照架构 + 深拷贝续跑入口 backlog**——那是「强无跳变 + 铺路暂停/步进/道具」的一次性架构投资，收尾轮不宜夹带大改，正式排入紧邻的战斗深度轮。
-- **R6｜`BattleCommand` 泛化命令模型** → **部分接受（留形状不实现）**。
-  - 本轮行动：拍板 4。`ManualUltimateOrder` 写成可扩展形状（`{atMs, unitId, targetId?}`，等价 discriminated union 的 ultimate 分支），零额外成本避免二次重构；**但本轮只实现 ultimate 命令**，其它命令类型 backlog。
+## 五、共识结论
 
-### 🟢 Thought-provoking / 💡 Wild（长期，全部 backlog）
+三审高度一致的本轮三条硬要求，全部采纳并落 plan.md：
+1. **SC-T3 = 星级/突破永久小加成**（选项 A 不提上限、5 星累计 ≤25%、消耗重复卡保留本体、v16 三改 + 往返测试）。
+2. **SC-T4 = 好感等级化**（里程碑追加克制永久加成 ≤ ~15% base、每日互动跨天回归、好感溢出转 KP）。
+3. **SC-T6 = NurtureView 拆无壳组件**（纯 UI 去双标题/双空态/长滚，重定向仍可用）。
 
-- **R7 逐帧 `step(dtMs)` 去预演算 / R8 目标预测高亮 / W1 命令轨迹进事件流可复盘 / W2「意图队列」半手动** → **全部 backlog**。理由：R7 与现有事件流特征测试范式冲突需专门 sprint（方案 C，本轮严禁）；R8/W1/W2 是增强/远期演化，超 SB-T2 合同（选目标 + 无跳变 + 边界完备）。
-
-### 收尾核对提示 → **接受**：本轮只做 SB-T2（R1+R2+R3+R4 合同内），R5-W2 backlog；engine 纯净；`timedBattle.test.ts:261-291` 既有护栏不破 + 新增前缀冻结/选目标/死目标/超时四类断言；收尾核对 SB-T1..T5 全 `[x]`。
-
----
-
-## 二、体验官报告（product-audit-report.md）
-
-### Prioritized Recommendations
-
-1. **【SB-T2】手动大招无跳变推进（至少「已回放前缀冻结、游标不回退」的弱无跳变；工期允许优先 research 方案 B 可续跑引擎）** → **部分接受**。
-   - 接受：弱无跳变 = 前缀冻结（任务 1，拍板 1）。**红线接受**：只做弱无跳变时须在验收/注释明写「后缀仍重算、强无跳变待 splittable 子流」，绝不让 UI/文案暗示「完全平滑」。
-   - **术语澄清**：体验官把「可续跑引擎」记为 research「替代 B」，实为 research 报告的**方案 A（resume 可续跑）**；research 的**方案 B（整场重算 + 截后缀）已被 Phase1-A4 判为选目标后退化跳变的半死系统，本轮明确拒绝作终态**。本轮取「方案 A 精神的最小实现（前缀冻结 + RNG 状态承接）」，full resume 架构 backlog（见 research R5 处置）。
-2. **【SB-T2】手动大招可选目标（限单体 selector，写成可扩展 union；UI 只对单体亮「选目标」态，engine 与 UI 同口径）** → **接受**。本轮行动：任务 2（拍板 3/4）。
-3-9.（体验官其余为 SB-T1/T3/T4/T5 无回归确认 + UI 打磨项）→ **SB-T1..T5 已落地，本轮收尾核对无回归**；伤害飘字/技能名横幅/TIME UP 横幅等 UI 打击感层 → **backlog**（超 SB-T2 engine+最小 UI 范围，上轮已 backlog）。
-10. **splittable / 按 unitId 派生 RNG 子流（强无跳变必要条件）** → **部分接受方向 / backlog**。理由：强无跳变（注入点后未波及单位完全不变）需 per-unit RNG 子流，是 R5 架构投资的一部分；本轮取「单状态 RNG 承接 elapsedMs」的弱无跳变最小实现，**splittable 子流 backlog**，正式记入紧邻深度轮（别无限顺延成永久债）。
-
----
-
-## 三、进化审计报告（evolution-audit-report.md）
-
-### Prioritized Recommendations
-
-- **[SB-T2] `ManualUltimateOrder` 加 `targetId`（可扩展 union）+ engine 单体大招 `executeEffect` 对单体 selector 优先用 `order.targetId`、AOE/治疗忽略；接入点 `effects.ts:367 resolvedSelector` 复用已解析表达式（坑 C-3 别重复解析）** → **接受**。本轮行动：任务 2（拍板 3/6，`resolveSkillTargets` 统一 helper）。
-- **[SB-T2] 单体 selector 才亮「选目标」UI（SquadUnitBar/Battlefield 层判定），engine 覆盖规则与 UI 亮起条件同一口径（防 P1-4 反向 affordance 欺骗）** → **接受**。本轮行动：任务 2（拍板 3）。
-- **命令类型写成可扩展 discriminated union（`{kind:'ultimate', atMs, unitId, targetId?}`），为未来换目标策略/手动技能/暂停预留** → **接受（留形状）**。本轮行动：拍板 4，只实现 ultimate。
-- **架构投资 `simulateFrom` 可续跑引擎 + splittable RNG 子流（强无跳变 + 铺路暂停/步进/分享码的一次性投资，收官轮不做）** → **接受其「收官轮不做」判断 / backlog**。本轮取最小实现，架构级投资正式排入紧邻深度轮。
-
-### 横切提醒 / 顺手清理
-
-- **💡「命运预告」而非「无跳变」（拥抱预演算，开大瞬间渲染战术预告，把胶片已定从缺点变卖点）** → **backlog（产品化解法候选，记入 FUTURE）**。理由：是有价值的产品化方向，但属额外演出层，超 SB-T2 合同（本轮先把「无跳变 + 选目标」机制做对）；且与本轮「前缀冻结」并不冲突，可作后续叠加。
-- **`SquadBattleView.vue:126` 恒等三元噪声（`currentPhase.value === 'towerMode' ? 'towerMode' : 'towerMode'`，scout 坑 C-5）** → **部分接受**：本轮 SB-T2 若改到 View saveState/该行附近顺手清为直接 `'towerMode'`；若未碰到则 **backlog**，不为它单开范围。
-
----
-
-## 四、本轮范围裁定小结
-
-**接受并落地本轮（= 指派切片 SB-T2）**：
-- 任务 1（本轮-7）：手动大招前缀冻结平滑推进 = 已呈现前缀一字不改 + 游标不回退 + 只重算当前时刻之后 + RNG 从「seed 头部重建」升级为「承接消费到 elapsedMs 的状态」。方案 A 精神最小实现，**明确拒绝方案 B 伪平滑作终态**，方案 C 逐帧 backlog。
-- 任务 2（本轮-8）：`ManualUltimateOrder` 加可选 `targetId`（可扩展命令形状）+ 单体 selector 覆盖 / AOE·self·全体忽略 + UI 只对单体亮「选目标」态（engine 与 UI 同口径）+ 死目标回退默认 selector + 超时 pending order 不改判 + 同帧连点单次重算 + `resolveSkillTargets` 统一 helper。
-- 任务 3（本轮-9）：集成回归（选目标后仍无跳变）+ S14-B 收尾核对（SB-T1..T5 全 `[x]` 与实现一致）。
-
-**部分接受（采纳精神、本轮取最小实现）**：前缀冻结取「单状态 RNG 承接」最小实现（full `resumeTimedBattle` 快照架构 + splittable/per-unit RNG 子流强无跳变 → backlog）；命令模型留可扩展形状但只实现 ultimate。
-
-**拒绝本轮 / backlog**：research 方案 B 作终态（半死系统，明确拒绝）；方案 C 逐帧去预演算（R7）；full resume + splittable 子流（R5/product 10/evolution）；`BattleCommand` 泛化实现（R6）；目标预测高亮（R8/W2）；命令轨迹可复盘（W1）；「意图队列」半手动（W2）；命运预告/战术预告（evolution 💡）；autoUltimates 默认关/首战引导（拍板 7）；TIME UP 横幅/伤害飘字/技能名横幅（UI 打击感层，上轮已 backlog）。
-
-**范围纪律确认**：本轮 SB-T2 是**必须真实现的指派任务**，非「回归确认」（S14-A SA-T6 教训，pitfalls L84）。收窄为「前缀冻结 + 选目标」的最小可用形态已获研究报告授权，但**不得整项跳过、不得只做半死系统**。所有超 SB-T2 的建议均标 backlog，不在本轮开新范围。收尾轮硬指标 = SB-T1..SB-T5 全 `[x]` 且与实现一致。
+跨切片一致决策：**SC-T3 与 SC-T4 永久加成经同一共享 helper `resolveMemberBattleStats` 注入同 3 处战力 seam（收敛架构债、防漏气）**；**本轮唯一一次 `SAVE_VERSION` 15→16（两任务共用）**；一切「提等级上限 / 深耦合互锁 / 剧情语音皮肤 / 双轨材料 / 养成导航 / 装备家园经济别域」均 backlog。

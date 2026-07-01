@@ -21,6 +21,9 @@
  *   迁移丢弃旧字段、补 statPoints 缺省）+ 新增**空** equipment 域占位（inventory + equipped per character，C2 接配装）。
  * v15（S14-A SA-T5）：TowerProgress 新增扫荡周额度两字段——sweepWeekKey（weekKey，跨周读时归零）+ sweepUsedThisWeek（本周已用次数）。
  *   扁平定长（非 Record<floor,count>，随层数不膨胀，仿 DailyChallengeSave 紧凑范式）。旧档迁移补缺省（''/0）。
+ * v16（S14-C SC-T3/SC-T4）：characterNurtureData 加第三/回归轴两字段——breakthrough（星级/突破次数 0..MAX_BREAKTHROUGH，消化重复角色卡换永久小加成）
+ *   + lastBondInteractionDate（每日好感互动日期键，跨天读时可再互动）。存计数不存派生（永久加成由 engine 现算）。
+ *   旧档迁移每条角色补缺省（breakthrough:0 clamp、lastBondInteractionDate:''），nurture 域全量 Map 序列化天然覆盖新字段。
  */
 import type { PityState } from '@/engine/gacha/draw';
 import { SQUAD_MEMBER_COUNT } from '@/engine/squad/eligibility';
@@ -34,7 +37,7 @@ import type {
   TowerProgress,
 } from '@/types/player';
 
-export const SAVE_VERSION = 15 as const;
+export const SAVE_VERSION = 16 as const;
 
 /** 商店单品的当日购买记录（跨天读取时自动视为 0）。 */
 export interface ShopPurchaseRecord {

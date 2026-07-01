@@ -11,9 +11,13 @@ import {
   ALLOWED_SQUAD_EFFECT_TYPES,
   SQUAD_SKILL_REQUIRED_SLOTS,
   describeSquadSkill,
+  getArchetypeForCharacter,
   getSquadSkillKitForCharacter,
+  hasExplicitArchetype,
+  hasHrSkillNameOverride,
   isSignatureKit,
   isSquadSkillKitReady,
+  signatureRoleOf,
   validateSquadSkillCoverage,
   validateSquadSkillKit,
 } from './squadSkillKits';
@@ -228,5 +232,115 @@ describe('SA-T4 signature UR skill kits', () => {
       ],
     });
     expect(result.events.some(e => e.type === 'battleEnd')).toBe(true);
+  });
+});
+
+/** SC-T1：显式 archetype 单一定位真相源（显式优先 → 回落正则 → 已知误判纠正 → override.role 强一致）。 */
+describe('SC-T1 explicit archetype single source', () => {
+  const byId = new Map(allCharacters.map(c => [c.id, c] as const));
+  const SIGNATURE_IDS = [3575, 10440, 304, 706, 10439, 49, 12393, 10596, 1211, 303];
+
+  it('★ 10 个招牌 UR 的显式 archetype === 其 override.role（补 S14-A 残留 CI 守卫缺口）', () => {
+    for (const id of SIGNATURE_IDS) {
+      const c = byId.get(id)!;
+      const role = signatureRoleOf(id);
+      expect(role, `${id} 应有 override.role`).toBeTruthy();
+      expect(hasExplicitArchetype(id), `${id} 应在显式表`).toBe(true);
+      expect(getArchetypeForCharacter(c), `${id} archetype 应 === override.role`).toBe(role);
+    }
+  });
+
+  it('显式优先：显式命中角色的 archetype 稳定等于显式声明（不受传入技能名干扰）', () => {
+    const misaka = byId.get(3575)!; // 显式 striker
+    expect(getArchetypeForCharacter(misaka)).toBe('striker');
+    // 即使塞入会让正则判成 support 的假技能名，显式表仍优先
+    expect(getArchetypeForCharacter(misaka, { name: '治疗演奏' } as never)).toBe('striker');
+  });
+
+  it('已知误判被纠正：阿尔托莉雅不再被正则序判成 guardian/arcane（显式 striker）', () => {
+    const artoria = byId.get(273);
+    expect(artoria, '阿尔托莉雅(273) 应存在').toBeTruthy();
+    expect(hasExplicitArchetype(273)).toBe(true);
+    expect(getArchetypeForCharacter(artoria!)).toBe('striker');
+    // 宫园薰(音乐系)显式 support（正则也会判 support，但显式固定防漂移）
+    expect(getArchetypeForCharacter(byId.get(26003)!)).toBe('support');
+    // 02(DARLING) 显式 striker（正则会先命中 tactical DARLING）
+    expect(getArchetypeForCharacter(byId.get(57751)!)).toBe('striker');
+  });
+
+  it('未命中干净回落正则：非显式角色仍返回合法 archetype（不抛错、值在 6 种内）', () => {
+    const valid = new Set(['striker', 'guardian', 'support', 'controller', 'arcane', 'tactical']);
+    const someNonExplicit = allCharacters.filter(c => !hasExplicitArchetype(c.id)).slice(0, 30);
+    expect(someNonExplicit.length).toBeGreaterThan(0);
+    for (const c of someNonExplicit) {
+      expect(valid.has(getArchetypeForCharacter(c)), `${c.id} ${c.name}`).toBe(true);
+    }
+  });
+
+  it('改定位入口后全角色覆盖仍全绿、ready 集合不变（守 SA-T2 同源）', () => {
+    const coverage = validateSquadSkillCoverage(allCharacters);
+    expect(coverage.ok, coverage.issues.join('\n')).toBe(true);
+    const readyCount = allCharacters.filter(isSquadSkillKitReady).length;
+    const highRarity = allCharacters.filter(c => c.rarity === 'HR' || c.rarity === 'UR').length;
+    expect(readyCount).toBe(highRarity); // 所有 HR/UR 仍 ready，无一因定位变化掉队
+  });
+});
+
+/** SC-T2：未覆盖 HR 补个人技能名（命中个人名 / 回落原型通名 / description 派生 / 不破坏 UR）。 */
+describe('SC-T2 HR personal skill names', () => {
+  const byId = new Map(allCharacters.map(c => [c.id, c] as const));
+  // scout 核实的未覆盖 HR 样本（无个人技绑定、原走原型通名）
+  const UNCOVERED_HR = [13391, 127790, 10446, 35615, 19529, 19546, 71337, 57751, 26003];
+
+  it('未覆盖 HR 命中个人名：skill1 不再是 `角色名·原型标签` 通名', () => {
+    for (const id of UNCOVERED_HR) {
+      const c = byId.get(id);
+      expect(c, `${id} 应存在且为 HR`).toBeTruthy();
+      expect(c!.rarity).toBe('HR');
+      expect(hasHrSkillNameOverride(id)).toBe(true);
+      const kit = getSquadSkillKitForCharacter(c)!;
+      // 名带个人特色：不含「角色名·」前缀（原型通名格式）
+      expect(kit.skill1.name.startsWith(`${c!.name}·`), `${id} skill1 应为个人名`).toBe(false);
+      expect(kit.ultimate.name.startsWith(`${c!.name}·`), `${id} ultimate 应为个人名`).toBe(false);
+    }
+  });
+
+  it('description 一律 describeSquadSkill 派生（红线 1：禁手写描述）', () => {
+    for (const id of UNCOVERED_HR) {
+      const kit = getSquadSkillKitForCharacter(byId.get(id))!;
+      for (const slot of SQUAD_SKILL_REQUIRED_SLOTS) {
+        expect(kit[slot].description, `${id} ${slot}`).toBe(describeSquadSkill(kit[slot]));
+      }
+    }
+  });
+
+  it('HR kit 仍过 validateSquadSkillKit + 只用合法 squad effect', () => {
+    const allowed = new Set<string>(ALLOWED_SQUAD_EFFECT_TYPES);
+    for (const id of UNCOVERED_HR) {
+      const kit = getSquadSkillKitForCharacter(byId.get(id))!;
+      expect(validateSquadSkillKit(kit).ok, `${id}`).toBe(true);
+      for (const slot of SQUAD_SKILL_REQUIRED_SLOTS) {
+        for (const effect of kit[slot].effects) {
+          expect(allowed.has(effect.type)).toBe(true);
+        }
+      }
+    }
+  });
+
+  it('未映射 HR 回落原型通名（未污染回落路径）', () => {
+    // 已覆盖(有个人技绑定)的 HR 例如 604 中野梓：不在名覆盖表内，走个人技名/原型
+    expect(hasHrSkillNameOverride(604)).toBe(false);
+    // 一个既非覆盖表、又无个人技的 HR 应回落 `名·标签`（挑一个不在 26 表里的 HR）
+    const plain = allCharacters.find(c => c.rarity === 'HR' && !hasHrSkillNameOverride(c.id));
+    expect(plain).toBeTruthy();
+  });
+
+  it('不破坏 UR 路径：招牌 UR 名仍来自 SIGNATURE 覆盖 / 个人技（名覆盖表不含 UR）', () => {
+    // 御坂美琴 skill1 仍是招牌名「超电磁炮」
+    expect(getSquadSkillKitForCharacter(byId.get(3575))!.skill1.name).toBe('超电磁炮');
+    // HR 名覆盖表不应含任何 UR
+    for (const c of allCharacters.filter(c => c.rarity === 'UR')) {
+      expect(hasHrSkillNameOverride(c.id), `UR ${c.id} 不应在 HR 名覆盖表`).toBe(false);
+    }
   });
 });
