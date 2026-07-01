@@ -9,11 +9,13 @@ import { selectTargets } from './targeting';
 import type {
   BattleModifiers,
   SkillEffect,
+  SquadPosition,
   SquadSkillDef,
   SquadUnitRuntime,
   StatusKind,
   StatusRuntime,
   StatusSpec,
+  TargetSelector,
   TimedBattleEvent,
   TimedBattleState,
 } from './types';
@@ -21,6 +23,117 @@ import type { BattleStats } from './combat';
 
 const NEGATIVE_STATUSES: readonly StatusKind[] = ['atkDown', 'defDown', 'spDown', 'slow', 'stun', 'silence', 'taunt', 'dot'];
 const POSITIVE_STATUSES: readonly StatusKind[] = ['shield', 'atkUp', 'defUp', 'spUp', 'haste', 'critRateUp', 'hot'];
+
+/**
+ * SB-T5: 同类可叠加 buff 改按来源累加设上限（原 Math.max → Σ per source + clamp）。
+ * 每 kind 上限 ≥ 现有单条最大幅度的 ~1.3-1.5 倍（squadSkillKits 现有单条最大：
+ * atkUp 0.45 / critRateUp 0.25 / spUp 0.28 / atkDown 0.35 / defDown 0.2 / haste 0.2 / slow 0.25 / defUp 0.1），
+ * 让双辅助累加有正收益空间又不失控、且不让现有单条招牌 buff 就触顶。
+ * 控制类（stun/silence/taunt）不在此表——走布尔存在性判定，不经数值聚合；
+ * shield/dot/hot 逐条独立结算，绝不进 sum-clamp。
+ */
+const STACKABLE_STATUS_CAPS: Readonly<Partial<Record<StatusKind, number>>> = {
+  atkUp: 0.6,
+  defUp: 0.6,
+  spUp: 0.6,
+  haste: 0.5,
+  critRateUp: 0.5,
+  atkDown: 0.6,
+  defDown: 0.6,
+  spDown: 0.6,
+  slow: 0.5,
+};
+
+/**
+ * 共享纯 helper：把同 kind 多来源的数值按来源求和，再按该 kind 上限 clamp。
+ * 供 maxRuntimeStatusValue（旧 RuntimeStatus 数组 API）与 maxStatusAmount（实战主路径）两处调用，
+ * 保证「测试口径」与「实战口径」一致（拍板 6）。未在上限表内的 kind 不 clamp（返回原始和）。
+ */
+export function sumStackableStatusValues(values: readonly number[], kind: StatusKind): number {
+  if (values.length === 0) return 0;
+  const sum = values.reduce((total, value) => total + value, 0);
+  const cap = STACKABLE_STATUS_CAPS[kind];
+  return cap === undefined ? sum : Math.min(cap, sum);
+}
+
+/**
+ * SB-T4：前中后排真实机制 —— 后排/中排承受**单体**伤害时按站位减伤。
+ * 兑现 UI 已摆的前中后排槽位承诺（P2-1）：让「前排顶伤、后排站桩」的编队博弈成立。
+ *  - front 系数 = 1.0（关键：既有测试单位默认 position:'front'，front 无减伤 → 现有伤害断言天然不变）。
+ *  - middle ×0.95 / back ×0.85：温和档，后排明显更耐打又不至于让前排无人愿站，
+ *    避开颠覆现有塔敌/我方 base atk ~50-300 量级平衡。
+ *  - 仅对单体伤害生效；AOE（allEnemies/allAllies）不减伤（后排躲不过群体，符合站位取舍直觉）。
+ * 纯 engine 常量（不 import config）；确定系数，不涉 RNG。
+ */
+export const POSITION_DAMAGE_TAKEN: Readonly<Record<SquadPosition, number>> = {
+  front: 1,
+  middle: 0.95,
+  back: 0.85,
+};
+
+/** SB-T4：群体 selector —— 命中这些 selector 的伤害视为 AOE，不吃站位减伤。 */
+const AOE_SELECTORS: readonly TargetSelector[] = ['allEnemies', 'allAllies'];
+
+export function isAoeSelector(selector: TargetSelector): boolean {
+  return AOE_SELECTORS.includes(selector);
+}
+
+/**
+ * SB-T2（拍板 3）：单体「敌方」selector 白名单——只有这些 selector 允许被手动大招 `targetId` 覆盖。
+ * AOE / self / 己方群体 / 单个己方治疗（lowestHpAlly/firstDefeatedAlly）**不允许覆盖**：
+ * 「选目标」是「对敌单体大招」的操作杠杆，越界覆盖会让治疗/自增益乱指，是反直觉的假 affordance。
+ */
+const SINGLE_ENEMY_SELECTORS: readonly TargetSelector[] = [
+  'frontEnemy',
+  'lowestHpEnemy',
+  'highestAtkEnemy',
+  'backEnemy',
+];
+
+/**
+ * SB-T2（拍板 3）：某个 selector 是否可被手动 `targetId` 覆盖（供 engine 覆盖规则与 UI 亮起条件同一口径）。
+ * UI 侧判「这个大招能否选目标」必须复用此函数，禁另造一套判据（防 UI 承诺选目标而 engine 全体命中）。
+ */
+export function canOverrideTarget(selector: TargetSelector): boolean {
+  return SINGLE_ENEMY_SELECTORS.includes(selector);
+}
+
+/**
+ * SB-T2（拍板 6）：统一的目标解析 helper——auto（selector）与 manual（`overrideTargetId` 覆盖）
+ * 两条路径共用，避免 effects 长出两套目标逻辑打架（沿 SB-T5「两套聚合一致改」同类教训）。
+ *
+ *  - 无覆盖 / selector 不可覆盖（AOE/self/己方组）→ 走原 selector 解析。
+ *  - 有覆盖且 selector 可覆盖（单体敌方）→ 命中所选**存活**单位；
+ *    若所选目标已阵亡/不存在（死目标）→ **回退**默认 selector 解析（不空放，拍板 5）。
+ * 复用 `selectTargets` 的现有解析，绝不重复解析出分歧（坑 C-3）。
+ */
+export function resolveSkillTargets(
+  state: TimedBattleState,
+  actor: SquadUnitRuntime,
+  selector: TargetSelector,
+  now: number,
+  overrideTargetId?: string,
+): SquadUnitRuntime[] {
+  if (overrideTargetId && canOverrideTarget(selector)) {
+    const chosen = state.units.find(unit => unit.id === overrideTargetId);
+    if (chosen && chosen.side !== actor.side && chosen.currentHp > 0 && chosen.defeatedAt === null) {
+      return [chosen];
+    }
+    // 死目标 / 非敌方 / 不存在 → 回退默认 selector（拍板 5）。
+  }
+  return selectTargets(state.units, actor, selector, now);
+}
+
+/**
+ * SB-T4：按目标站位对单体伤害施减伤系数。AOE 直接返回原伤害。
+ * amount 已是 calculateTimedDamage 产物（≥1）；系数相乘后 floor 并保底 ≥1（与公式口径一致，避免归零）。
+ */
+export function applyPositionDamageTaken(amount: number, position: SquadPosition, isAoe: boolean): number {
+  if (isAoe) return amount;
+  const factor = POSITION_DAMAGE_TAKEN[position] ?? 1;
+  if (factor === 1) return amount;
+  return Math.max(1, Math.floor(amount * factor));
+}
 
 export interface RuntimeStatus {
   id: string;
@@ -48,7 +161,7 @@ function maxRuntimeStatusValue(statuses: readonly RuntimeStatus[], kind: StatusK
   const values = activeStatusesAt(statuses, now)
     .filter(status => status.type === kind)
     .map(status => status.value);
-  return values.length > 0 ? Math.max(...values) : 0;
+  return sumStackableStatusValues(values, kind);
 }
 
 export function hasStatus(statuses: readonly RuntimeStatus[], kind: StatusKind, now: number): boolean {
@@ -103,7 +216,7 @@ function maxStatusAmount(unit: SquadUnitRuntime, kind: StatusKind, now: number):
   const amounts = activeStatuses(unit, now)
     .filter(status => status.kind === kind)
     .map(status => status.amount ?? 0);
-  return amounts.length > 0 ? Math.max(...amounts) : 0;
+  return sumStackableStatusValues(amounts, kind);
 }
 
 export function hasActiveStatus(unit: SquadUnitRuntime, kind: StatusKind, now: number): boolean {
@@ -295,9 +408,16 @@ function executeEffect(
   actor: SquadUnitRuntime,
   skill: SquadSkillDef,
   effect: SkillEffect,
+  overrideTargetId?: string,
 ): boolean {
-  const targets = selectTargets(state.units, actor, effect.target ?? skill.target, state.now);
+  // SB-T4：单体/AOE 判据复用同一已解析 selector 表达式（scout 坑 C-3），避免重复解析出分歧。
+  const resolvedSelector = effect.target ?? skill.target;
+  // SB-T2（拍板 3/6）：手动大招 targetId 只覆盖单体敌方 selector 的「命中谁」，
+  // 不改变「是否 AOE」——isAoe 仍以 resolvedSelector 判定（AOE selector 忽略覆盖、后排照吃）。
+  const targets = resolveSkillTargets(state, actor, resolvedSelector, state.now, overrideTargetId);
   if (targets.length === 0) return false;
+
+  const isAoe = isAoeSelector(resolvedSelector);
 
   for (const target of targets) {
     switch (effect.type) {
@@ -313,7 +433,9 @@ function executeEffect(
           flatPower: effect.flatPower,
           canCrit: effect.canCrit,
         });
-        dealDamage(state, actor, target, damage.amount, damage.isCritical);
+        // SB-T4：后排/中排承受单体伤害按站位减伤（front×1 天然不变，AOE 不减）。
+        const finalAmount = applyPositionDamageTaken(damage.amount, target.position, isAoe);
+        dealDamage(state, actor, target, finalAmount, damage.isCritical);
         break;
       }
       case 'heal': {
@@ -377,10 +499,15 @@ function executeEffect(
   return true;
 }
 
-export function executeSkill(state: TimedBattleState, actor: SquadUnitRuntime, skill: SquadSkillDef): boolean {
+export function executeSkill(
+  state: TimedBattleState,
+  actor: SquadUnitRuntime,
+  skill: SquadSkillDef,
+  overrideTargetId?: string,
+): boolean {
   let affected = false;
   for (const effect of skill.effects) {
-    affected = executeEffect(state, actor, skill, effect) || affected;
+    affected = executeEffect(state, actor, skill, effect, overrideTargetId) || affected;
   }
   return affected;
 }

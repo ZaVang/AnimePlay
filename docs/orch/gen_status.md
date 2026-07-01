@@ -1,111 +1,96 @@
-# Generator Status — S14-A 第 4 轮（纠偏）：SA-T6 落地
+# Generator 状态报告 — S14-B 收尾①「暴击 UI 显形」（纠偏轮）
 
-> 纠偏缘由：第 3 轮 Planner 把 SA-T6 误判为「新范围」跳过，S14-A 只完成 5/6。
-> 本轮唯一目标 = 实现 SA-T6（Plan A），让 S14-A 全部 6 项完成。SA-T1..T5 已落地功能未动。
+## 任务
+纠偏：S14-B 第 3 轮收尾①「暴击 UI 显形」被漏做——SB-T3 已让暴击在 engine 里真实发生（`damage` 事件带
+`isCritical`），但 `SquadBattleView.applyEventToUnits` 的 `case 'damage'` 只取 `hpAfter`、丢弃了
+`isCritical`，战斗日志也不记伤害 → 暴击对玩家完全不可感知。本任务把已算好的 `isCritical` 接到 UI 最后一寸。
+**纯 view 层改动，engine 零改动。**
 
-## 状态：PASSED
+## 完成内容（A + B 都做）
 
-SA-T6 已实现；直达进战红线满足；5 条验收全绿；S14-A SA-T1..SA-T6 现全 `[x]`。
+### A｜浮动伤害数字（打击感）
+- `components/battle/squad/types.ts`：新增 `SquadFloatingDamageView`（`{ id, targetId, amount, isCritical }`）瞬态视图类型。
+- `views/SquadBattleView.vue`：
+  - 新增瞬态状态 `floatingDamages: SquadFloatingDamageView[]` + 自增序号 `floatingDamageSeq`。
+  - 新增 `spawnFloatingDamage(event)`：只在 `playNextBattleEvent`（单条推进）里对**刚回放到的** `damage` 事件生成一条浮动数字，
+    **不放在 `applyEventToUnits`**（后者在 `rebuildVisibleBattle` 里会重放全部历史事件 → 会每帧刷屏）。amount<=0 跳过。
+  - 定时器分池：把原 `pendingTimers` 拆成 `playbackTimers`（回放推进链）+ `floatingTimers`（浮动数字清除，各自 TTL=900ms）。
+    `schedule()` 走 playback 池；新增 `scheduleFloatingClear()` 走 floating 池；新增 `clearPlaybackTimers()` 只掐推进链
+    （`playNextBattleEvent` 顶部改调它，避免掐掉浮动清除定时器致泄漏）；`clearBattleTimers()` 全清两池 + 清空 `floatingDamages`。
+    reset(`restart`)/结算(`finishTimedBattle`)/`onBeforeUnmount` 均走 `clearBattleTimers` → 浮动数字与定时器一并清除。
+  - 模板：`SquadBattlefield` 新增 `:floating-damages="floatingDamages"`。
+- `components/battle/squad/SquadBattlefield.vue`：新增可选 `floatingDamages` prop；`floatingByTarget` 按 `targetId` 归拢；
+  `floatingFor(unitId)` 分发到每个 `SquadUnitBar`（玩家阵 + 敌方阵各自传）。
+- `components/battle/squad/SquadUnitBar.vue`：新增可选 `floatingDamages` prop；根容器加 `relative`；新增 `pointer-events-none`
+  绝对定位浮动数字层（不挡下方选目标点击）。暴击样式 = `text-highlight`(金语义令牌) + 更大字号(text-xl/2xl) + `CRIT` 上标 +
+  `squad-dmg-crit-pop` 冲击缩放/抖动动画；普通 = `text-danger` + text-base/lg。scoped `<style>` 定义 `squad-dmg-rise`
+  上浮淡出 + `squad-dmg-crit-pop` 冲击关键帧，并加 `prefers-reduced-motion` 降级（仅淡入淡出）。
 
-## 完成任务
+### B｜战斗日志记暴击
+- `views/SquadBattleView.vue` `buildKeyLogs`：新增 `case 'damage'`，仅当 `isCritical` 时记「💥 暴击！X 对 Y 造成 N 伤害」，
+  普通伤害不记（契合「只记关键事件」既有设计，不刷屏）。`buildKeyLogs` 对可见前缀幂等重算 → 不会重复累积。
 
-**SA-T6｜消解三 tab 结构冗余（Plan A）** — 已完成。
+## 架构合规
+- 颜色全走皮肤语义令牌：暴击 `text-highlight`、普通 `text-danger`；无 `text-white` 压浅底、无运行时拼接动态色类。
+- 所有 setTimeout 走登记式 `schedule()`/`scheduleFloatingClear()`，`onBeforeUnmount` → `clearBattleTimers()` 全清；无裸 setTimeout。
+- 浮动数字跟随现有 180ms 逐条回放节奏（在 `playNextBattleEvent` 生成），不打乱 `applyEventToUnits` 主流程；reset 清空浮动数字 + 定时器。
+- **engine 零改动**：本会话仅编辑 `views/SquadBattleView.vue` + `components/battle/squad/{SquadBattlefield,SquadUnitBar,types}.ts`。
+  （`git status` 中 `engine/squad/*`、`engine/rng.ts` 的 dirty 是前序 SB-T2/T3/T5 轮遗留的工作树改动，非本会话所为。）
 
-Plan A 三面落地：
-1. **squad tab = 唯一编队入口**：保持 SA-T1，本轮零改动。
-2. **explore tab = 预览 + 「开始挑战」直达进战**：
-   - `HomesteadHubView.vue` 探索面板新增「出战小队」开战卡（`.start-card`）：展示 `selectedSquad` 名/战力/满编数 + 校验态。
-   - `startBattleFromExplore()` 用 `canStartBattle`（同口径 `validateTowerSquadMembers` + 已登录 + 当前层未通过）拦截：合法则设 `battleEntrySquadId = selectedSquad.id` + `switchTab('battle')`；不合法留 explore 显示 `startBattleIssue`，不进战。
-   - 原「进入战斗」空切按钮 → 「去编队」跳 squad tab（不再空切 battle tab 让用户重编队）。
-3. **battle tab = 仅承载战斗演出**：
-   - `SquadBattleView` 加 props `entrySquadId: number|null`（默认 null）+ `embedded: boolean`（默认 false）+ emit `exit-to-explore`。
-   - battle tab 以 `:entry-squad-id="battleEntrySquadId" :embedded="true" @exit-to-explore="handleBattleExit"` 驱动。
+## 验收命令实际输出
 
-**直达进战红线**（round3 强调，冗余不复活）：
-- `SquadBattleView.onMounted` 调 `tryEnterFromEntry()`：带合法 `entrySquadId` 即调用已有 `startTowerBattle(squadId)` 把 `currentPhase` 推到 `'battle'`，**不渲染 towerMode 编成器**。
-- 挂载时敌人/登录未就绪的兜底：`watch([isLoggedIn, allCharacterCards.length])` 就绪后自动补一次直达。
-- 优雅降级：`embedded && currentPhase==='towerMode'`（无合法 entrySquadId，如深链/刷新 `?tab=battle`）不渲染整套 towerMode 编成器，改为最小占位「从『探索』选择小队开始挑战」+「去探索选队」按钮（emit `exit-to-explore` → hub `handleBattleExit` 切 explore）。
-- 结算：result 演出正常显示；embedded 下「继续」经 `restart()` → `emit('exit-to-explore')` 切回 explore，不落 towerMode。
-- stale id 防护：`watch(activeTab)` 离开 battle tab 即清 `battleEntrySquadId`。
-
-**顺带清理（round1 lint 债）**：`SquadBattleView.vue:82` `ref<any>` → `ref<TowerFloorSquad | null>`（`generateTowerFloorEnemies` 准确返回类型，从 `@/engine` 导入 `TowerFloorSquad`）。无回归。
-
-## 未完成 / 卡点
-
-无。SA-T6 全部落地，5 条验收命令全绿。
-
-## 每条验收命令实际输出
-
-### 1. `cd frontend-vue && npm run type-check` — 通过（EXITCODE=0）
+### 1) `cd frontend-vue && npm run type-check`
 ```
 > frontend-vue@0.0.0 type-check
 > vue-tsc --build
-
-EXITCODE=0
 ```
-（0 错误）
+（0 error，通过）
 
-### 2. `cd frontend-vue && npm run test` — 通过（EXITCODE=0）
+### 2) `npm run test`
 ```
-> frontend-vue@0.0.0 test
-> vitest run
-
  RUN  v4.1.8 D:/work/AnimePlay/frontend-vue
-
  Test Files  58 passed (58)
-      Tests  653 passed (653)
-   Duration  11.16s
-
-EXITCODE=0
+      Tests  670 passed (670)
+   Duration  9.86s
 ```
+全绿。
 
-### 3. `cd frontend-vue && npm run build` — 通过（EXITCODE=0）
+### 3) `npm run build`
 ```
-> frontend-vue@0.0.0 build
-> run-p type-check "build-only {@}" --
-> vite build
-✓ 381 modules transformed.
-dist/assets/HomesteadHubView-CeyQls45.js   101.00 kB │ gzip: 32.80 kB
-dist/assets/index-CbG0_-j1.js              287.44 kB │ gzip: 99.14 kB
-✓ built in 9.13s
-
-EXITCODE=0
+vite v7.3.6 building client environment for production...
+✓ 382 modules transformed.
+✓ built in 10.05s
 ```
-（唯一 stderr 是 Browserslist caniuse-lite 数据 7 个月旧的告警，非错误，不影响构建成功）
+成功（仅 caniuse-lite 数据 7 个月旧的非致命提示 + sky-island 图 2.6MB 既有大图，均与本改动无关）。
 
-### 4. `python backend/test_security.py` — 通过（EXITCODE=0，全 PASS）
+### 4) `python backend/test_security.py`
+系统全局 Python 3.13 无 flask/werkzeug（`ModuleNotFoundError: No module named 'werkzeug'`）——环境缺依赖，与本前端改动无关。
+仓库 `.venv` 有依赖，用 `.venv/Scripts/python.exe backend/test_security.py` 实跑：
 ```
 == app.debug 关闭 ==            PASS  server.app.debug is False
-== 未带 token 读存档 → 401 ==    PASS
-== 错密码 login → 401 ==         PASS (register 200 / wrong pw 401)
-== 对密码 login → 拿到 token ==   PASS
-== 带 token 读写自己存档 → 成功 == PASS (POST/GET 200, saveVersion=1)
-== 用 A 的 token 写 B 的存档 → 被拒 == PASS (401/401)
-== saveVersion 乐观并发 ==        PASS (stale 409 / correct 200 v2)
-== 原子写失败后原存档完整 ==       PASS
-== 邀请码门控 ==                  PASS
-
+== 未带 token 读存档 → 401 ==   PASS (got 401)
+== 错密码 login → 401 ==        PASS  register→200 / wrong password→401
+== 对密码 login → 拿到 token == PASS
+== 带 token 读写自己存档 ==     PASS  POST/GET own save saveVersion=1
+== 用 A 的 token 写 B 的存档 == PASS  rejected (401)
+== saveVersion 乐观并发 ==      PASS  stale→409 / correct→200 saveVersion=2
+== 原子写 ==                    PASS  original save unchanged & fully readable / no temp leftovers
+== 邀请码门控 ==                PASS  no invite→403 / wrong→403 / correct→200 / 老账号不受影响
 RESULT: PASS — all security checks passed
-EXITCODE=0
 ```
-（用 `.venv\Scripts\python.exe` 运行，仿 pitfalls S10）
+全绿。
 
-### 5. `grep -rn "debug=True" backend/server.py api/index.py` — 零命中（EXITCODE=1）
+### 5) `grep -rn "debug=True" backend/server.py api/index.py`
 ```
-（无输出）
-EXITCODE=1
+（无输出，exit=1，无匹配）
 ```
-grep 无匹配返回退出码 1 = 期望的「零命中」。
+无 `debug=True` 残留。
 
-## 新坑
+## 新坑 / 注意
+- 系统全局 Python（3.13.12）未装 flask/werkzeug；`backend/test_security.py` 必须用仓库 `.venv/Scripts/python.exe` 运行，否则 import 即崩。
+  （非本任务引入，属环境记录，供后续验收统一用 `.venv`。）
+- `.venv` 里 werkzeug 无 `__version__` 属性（新版本），但 flask 正常，安全测试不受影响。
 
-- 无新代码坑。engine 未碰（纯视图层），未升 schema，颜色全走语义令牌（`.start-card` 用 `--c-accent/--c-ink/--c-highlight/--c-success` 等，无 text-white / 无动态色类），按钮走全局 `.btn-primary/.btn-secondary/.btn-ghost`。SquadBattleView 未新增 setTimeout（复用既有 `schedule()`/`clearBattleTimers()` 纪律）。
-- 一条实现提醒（非坑）：`SquadBattleView` 加的 props 有默认值（entrySquadId=null / embedded=false），保证「独立进 battle tab / 未来非内嵌引用」优雅降级；当前它仅被 hub 内嵌引用。
-
-## 文件结构变更
-
-无新增/删除文件。改动两处源码 + 两处文档：
-- `frontend-vue/src/views/SquadBattleView.vue`：+props(entrySquadId/embedded) +emit(exit-to-explore) +tryEnterFromEntry() + onMounted 直达 + watch 就绪补进战 + restart embedded 退出 + embedded towerMode 最小占位模板 + `ref<any>`→`ref<TowerFloorSquad|null>` + import TowerFloorSquad。
-- `frontend-vue/src/views/HomesteadHubView.vue`：+battleEntrySquadId ref + explore 开战校验 computed（currentFloorCleared/exploreSquadValidation/canStartBattle/startBattleIssue）+ startBattleFromExplore/handleBattleExit + watch(activeTab) 清 stale id + explore「出战小队」开战卡（.start-card 模板 + 样式）+ 头部按钮改「去编队」+ battle tab 传 props/事件。
-- `docs/plans/SPRINT.md`：SA-T6 `[ ]`→`[x]` + 新增「## 第 4 轮（纠偏）：SA-T6 落地」。
-- `docs/orch/gen_status.md`：本文件（覆盖写）。
+## 状态
+**PASSED** — 暴击 UI 双通道显形（A 浮动伤害数字暴击醒目样式 + B 日志记暴击）；engine 零改动；5 条验收命令全绿
+（type-check 0 error / 670 test 全过 / build 成功 / test_security PASS via .venv / grep 无 debug=True）。

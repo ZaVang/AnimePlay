@@ -1,122 +1,84 @@
-# S14-A 第 3 轮 · Reviewer 建议逐条回应（negotiation.md）· 验收再确认视角
+# Negotiation — S14-B 第 3/3 轮（product-loop --tier1 on --mode all，收尾轮）
 
-> Sprint Planner 对三份审计报告（product / evolution / research）「Prioritized Recommendations」逐条回应。
-> 判定：**接受（已落地维持）/ 部分接受 / 拒绝 / backlog**（含理由 + 本轮行动）。
-> **本轮定位**：切片 = SA-T4 + SA-T5（**与第 2 轮同一切片**），第 2 轮已被 Evaluator 判 **COMPLETE**。tier1 on = 引擎跑满 3 轮，本轮是**验收再确认 + 抓回归**，**不开新范围**。
-> 因此所有第 2 轮已「接受并落地」的建议，本轮判定统一转为 **「接受（已落地维持，本轮回归复跑守住）」**——不重新讨论、不再动实现；只对「本轮是否应新做/加做」给出裁决。Scout 第 3 轮逐文件核实全部拍板已落地、无未落地项、无新坑。
-
----
-
-## A. Product Experience Reviewer（product-audit-report.md）
-
-### 🔴 Critical
-
-| # | 建议 | 本轮判定 | 理由 + 本轮行动 |
-|---|---|---|---|
-| C-1 | SA-T4 每条差异 effect 有「真跑通引擎」特征测试 | **接受（已落地维持）** | 第 2 轮已写端到端 `executeSkill`/`simulateTimedBattle` 断言（stun≥2/execute→defeated/revive），eval 抽查属实。→ 本轮回归锁：复跑 `squadSkillKits.test.ts` 全绿（plan T4-R2）。 |
-| C-2 | SA-T4 description 走工厂派生禁手写 | **接受（已落地维持）** | 覆盖走 `skill()` → `description===describeSquadSkill`，结构性锁死红线、无手写入口。→ 本轮不破此结构（plan T4-R3）。 |
-| C-3 | SA-T5 schema+migrations+装配器三处同改+往返测试 | **接受（已落地维持）** | v15 三处同改齐全、`migrations.test.ts` 往返保真已验；stub 未硬复用（新增扁平字段）。→ 本轮**不再动 schema**（plan T5-R1），只复跑 migrations 往返守回归。 |
-
-### 🟡 Important
-
-| # | 建议 | 本轮判定 | 理由 + 本轮行动 |
-|---|---|---|---|
-| I-1 | SA-T4 头部挑机制辨识度、差异肉眼可辨 | **接受（已落地维持）** | 10 签名 UR 差异皆机制层（御坂单体+silence/晓美焰群 stun+slow/鹿目圆 revive/忍野忍 execute/远坂凛独特 dot），非纯倍率。→ 本轮不退化（plan T4-R2）。 |
-| I-2 | SA-T4 不得改 `isSquadSkillKitReady` 全角色集合 | **接受（已落地维持）** | 第 2 轮专测断言覆盖前后 filter 集合不变，护 SA-T2 同源。→ 本轮**最隐蔽回归面**，复跑「集合不变」用例（plan T4-R5）。 |
-| I-3 | SA-T5 缩水+封顶让扫荡产出 << 推塔产出，测清满配量级 | **接受（已落地维持）** | 测试断言 单次<<首通、满配周产出600<<推20层总量。→ 本轮复跑守回归（plan T5-R4）。 |
-| I-4 | SA-T5 复用 daily 范式 + 回拨视同日不重置 | **接受（已落地维持）** | `ensureThisSweepWeek` 读时归零 + 回拨钳位。→ 本轮不改（plan T5-R5）。 |
-| I-5 | 价值显性化：T4 徽章 / T5「N/M」进度条 + 一键结算 | **部分接受（已落地维持核心，徽章仍 backlog）** | T5 一键结算 + 本周 N/M 进度条已落地（plan T5-R7）。**T4 UI 徽章仍 backlog**：`isSignatureKit` 查询接口已导出留口，UI 徽章是紧随的 UI 轮次子项，**本轮切片是数据/派生层，不做徽章**（不阻断验收）。 |
-
-### 🟢 Nice-to-have
-
-| # | 建议 | 本轮判定 | 理由 |
-|---|---|---|---|
-| N-1 | SA-T4 HR 回落原型名效一致 | **接受（已落地维持）** | HR 只回落原型、不挂签名映射，天然一致。 |
-| N-2 | 清 `SquadBattleView` `towerEnemyData = ref<any>` lint 债 | **部分接受（顺手项）** | 本轮定位零改动，倾向不动；触及才顺手类型化，否则留存不阻断。 |
-
-### 💡 Feature Idea
-
-| # | 建议 | 判定 |
-|---|---|---|
-| F-1 家园设施可升级→KP 无底 sink | **backlog**（根因 D，S14 后续批） |
-| F-2 重复装备/角色回收出口 | **backlog**（P2-21/P2-10） |
-| F-3 成长可视化兑现时刻 | **backlog**（养成 UI 轮次） |
-| F-4 SA-T4 覆盖扩全 66 UR / HR 差异化被动 | **backlog + 本轮明确拒绝扩表**（合同 L94 拒绝 20，本轮零扩表 plan T4-R1） |
+> 对三份 Tier1 审计报告的 Prioritized Recommendations 逐条回应。本轮指派切片 = **SB-T2（手动大招选目标 + 平滑推进，P2-5）**——S14-B 最后一块。
+> 判定：**接受 / 部分接受 / 拒绝**，附理由 + 本轮行动。超出 SB-T2 的一律标 backlog。
+> 三份报告 = 体验官（product-audit）/ 进化审计（evolution-audit）/ 设计研究（research-audit，本轮主攻 SB-T2）。
+> SB-T1/T3/T4/T5 已在第 1/2 轮落地，本轮不重做；本轮收尾核对其全部 `[x]` 与实现一致。
 
 ---
 
-## B. Product Evolution Reviewer（evolution-audit-report.md）
+## 三报告共识（先记，决定本轮成败）
 
-### 🔴 Critical
-
-| # | 建议 | 本轮判定 | 理由 + 本轮行动 |
-|---|---|---|---|
-| SA-T4 机制层差异红线（押 8~12 别冲 20，宁 6 真不同别 12 微调） | **接受（已落地维持）+ 本轮零扩表** | 落地 10 签名 UR、差异机制层。→ 本轮**严禁扩到 20**（plan T4-R1）。 |
-| SA-T4 两纠偏：①纯数据不写 handler ②头部手写+长尾分档 | **部分接受（已落地维持）** | ① 纯数据零 handler、无 /battle effectId 泄漏，已落地维持（plan T4-R4）。② 长尾分档层**维持可选/backlog**——第 2 轮未做（`archetypeEffects` 无 base 锚点分档），Scout 判「本轮零改动最稳」，**本轮不动**（plan T4-R6）。 |
-| SA-T5 数值调平：扫荡=首通 30~50%，封顶≈一趟主线量级 | **接受（已落地维持）** | `calculateSweepReward` 0.35× 首通 + sqrt 边际递减 + 绝对封顶。→ 本轮不改数值（plan T5-R4）。 |
-| SA-T5 schema 三改+往返+复用 daily 日界 | **接受（已落地维持）** | 见 C-3 / I-4。本轮不再动 schema（plan T5-R1）。 |
-
-### 🟡 Important
-
-| # | 建议 | 本轮判定 | 理由 |
-|---|---|---|---|
-| E-13 名场面命名 | **接受（已落地维持）** | 签名技能名已借个人技 `.name` 名场面命名，护城河数据首次露头。 |
-| SA-T5「一键领取」+「今日 N/M」进度条 | **接受（已落地维持）** | plan T5-R7。 |
-| 候选池同源守卫 + `ref<any>` 类型化 | **部分接受** | 同源守卫已落地（集合不变专测，plan T4-R5）；「候选池抽共享纯函数」仍 backlog（超最小承诺，断言守卫已足够）；`ref<any>` 触及才做。 |
-
-### 🟢 Nice-to-have
-
-| # | 建议 | 本轮判定 | 理由 |
-|---|---|---|---|
-| SA-T3 旧档 statPoints 一次性重算（搭 SA-T5 schema 便车） | **拒绝（本轮）→ backlog** | 维持第 1 轮 SA-T3 拍板③「只影响未来升级」。v15 是最高风险动作、已稳定，本轮**明确不再动 schema**，重算迁移搭车即使 v15 已升也纯增往返风险、单机向存量极少不划算（plan T5-R6）。 |
-| S14-C P2-12 推荐战力/胜率提示 | **backlog**（S14-C） |
-| onboarding 首访引导 | **backlog**（先有循环再引导） |
-
-### 💡 Feature Idea
-
-| 同番羁绊 / 家园今日来访 / 品味契合社交 | 全 **backlog**（S14-C/D/F 护城河，范围外） |
+三份报告在 SB-T2 上高度一致，且 research Phase1-A4 给出最关键的一条新证据：**「现状『从 t=0 整场重算』的不跳变，仅在『不选目标、只改 timing』时碰巧成立；一旦选目标，RNG 序列在插入点后错位（SB-T3 暴击=一次 `rng.chance`），甚至 tick 边界前移污染过去时间戳 → 一定跳变。」** 故本轮的 refine 主线不是「加不加 targetId」（三报告都要求加），而是**「加 targetId 的同时必须把重算模型从『seed 头部重建』改为『冻结已呈现前缀 + RNG 状态承接』，否则就是把碰巧不跳升级成一定跳的半死系统」**。这条被三报告共同定为红线，本轮全盘接受。
 
 ---
 
-## C. Product Research Reviewer（research-audit-report.md）
+## 一、设计研究报告（research-audit-report.md，本轮主攻 SB-T2）
 
-### 🔴 High-impact, Low-effort
+### 🔴 High-impact, Low-effort（本轮应直接采纳）
 
-| # | 建议 | 本轮判定 | 理由 |
-|---|---|---|---|
-| R2-1 SA-T4 分档层用绝对锚点不用同原型均值 | **接受（作为分档前置约束）+ 本轮分档不做** | 洞察成立（同原型均值需全体列表→污染单角色纯函数）。第 2 轮未做分档，**本轮维持不做**（plan T4-R6）；若未来做须绝对锚点。 |
-| R2-2 SA-T4 覆盖只提供 effects + 守卫无手写 description/无 handler | **接受（已落地维持）** | plan T4-R3/T4-R4，专测守卫在。 |
-| R2-3 SA-T5 紧凑定长存档 + 复用 daily 日界 + 资格复用 hasCompletedFloor | **接受（已落地维持）** | 扁平定长 `sweepWeekKey`/`sweepUsedThisWeek`、复用 weekKey 范式、资格走 `hasCompletedFloor`（plan T5-R2/R3/R5）。 |
-| R2-4 SA-T5 扫荡产出对 floor 边际递减/封顶 | **接受（已落地维持）** | sqrt 边际递减 + 绝对封顶，测试覆盖 floor=1 与 high。→ 本轮复跑守回归（plan T5-R4）。 |
+- **R1｜命令带目标（`ManualUltimateOrder` 加 `targetId?`，单体覆盖、AOE/self/全体忽略）** → **接受（本轮硬指标）**。
+  - 本轮行动：任务 2（本轮-8）。engine 对单体 selector 优先用 `order.targetId` 命中存活单位；复用 SB-T4 已定单体/AOE 二分口径（`effect.target ?? skill.target` 同一已解析表达式，坑 C-3）。UI 只对单体大招亮「选目标」态，engine 覆盖规则与 UI 亮起条件同一口径（拍板 3）。
+- **R2｜无跳变 = 冻结已呈现前缀（方案 A 精神最小实现）+ RNG 从「seed 头部重建」改「承接消费到 elapsedMs 的状态」** → **接受（本轮硬指标，最关键项）**。
+  - 本轮行动：任务 1（本轮-7）。前缀冻结取最小实现（已呈现事件一字不改、游标不回退、只重算当前时刻之后）；RNG 承接 elapsedMs 状态（mulberry32 全部状态即单个数，可导出/导入），使后缀错位不回溯污染前缀（拍板 1/2）。**红线接受**：若采纳过渡形态，注释/实现说明必须写明前缀冻结保证，禁 UI/文案暗示「完全平滑」而代码做不到。
+- **R3｜死目标/超时 order 显式回退** → **接受**。
+  - 本轮行动：任务 2（拍板 5）。死目标 → 回退默认 selector（勿空放扣能量，`spendUltimateEnergy` 在 execute 前），回退后仍无目标才判 `manualUltimateFailed`；超时后 `atMs > maxTimeMs` 的 pending order 不改判（`nextManualAt` 已被 `Math.min(maxTimeMs,…)` 夹住，测试锁死）。
+- **R4｜连点防抖/单次重算** → **接受**。
+  - 本轮行动：任务 2（拍板 5）。同帧多命令入队后单次重算/续跑，避免第二次覆盖第一次 cursor 致双跳/丢单。
 
-### 🟡 High-impact, High-effort
+### 🟡 High-impact, High-effort（backlog）
 
-| # | 建议 | 本轮判定 | 理由 |
-|---|---|---|---|
-| R2-5 SA-T5 周上限区间扫荡（优于每日 N 次） | **接受（已落地维持）** | 落地周上限=10（明日方舟剿灭范式），存档只记 weekKey。→ 本轮不改（plan T5-R1/R4）。 |
-| R2-6 SA-T4 签名定位与 base 对齐 + 导出 isSignatureKit | **接受（已落地维持）** | `isSignatureKit(characterId)` 已导出留口；签名定位与 base 倾向对齐。→ 本轮不改。 |
+- **R5｜engine `resumeTimedBattle(snapshot, orders)` + RNG 状态 export/import 完整化** → **部分接受**。
+  - 理由：R5 的「RNG 状态 export/import」是 R2 的必要卫生改动，**本轮采纳其最小子集**（承接 elapsedMs 状态）；但**完整 `resumeTimedBattle` 快照架构 + 深拷贝续跑入口 backlog**——那是「强无跳变 + 铺路暂停/步进/道具」的一次性架构投资，收尾轮不宜夹带大改，正式排入紧邻的战斗深度轮。
+- **R6｜`BattleCommand` 泛化命令模型** → **部分接受（留形状不实现）**。
+  - 本轮行动：拍板 4。`ManualUltimateOrder` 写成可扩展形状（`{atMs, unitId, targetId?}`，等价 discriminated union 的 ultimate 分支），零额外成本避免二次重构；**但本轮只实现 ultimate 命令**，其它命令类型 backlog。
 
-### 🟢 Thought-provoking
+### 🟢 Thought-provoking / 💡 Wild（长期，全部 backlog）
 
-| # | 建议 | 本轮判定 |
-|---|---|---|
-| R2-7 archetype 从双职瘦身为单职 | **部分接受（已隐含维持）**——SA-T3 成长走 base 不走 archetype 已隐含，不作独立重构。本轮不动。 |
-| R2-8 SA-T5 扫荡产出道具化 | **部分接受（已落地维持命名口）**——中性/道具化命名留演化口已落地；背包实做仍 backlog。 |
+- **R7 逐帧 `step(dtMs)` 去预演算 / R8 目标预测高亮 / W1 命令轨迹进事件流可复盘 / W2「意图队列」半手动** → **全部 backlog**。理由：R7 与现有事件流特征测试范式冲突需专门 sprint（方案 C，本轮严禁）；R8/W1/W2 是增强/远期演化，超 SB-T2 合同（选目标 + 无跳变 + 边界完备）。
 
-### 💡 Wild idea
-
-| R2-9 描述即行为 DSL / R2-10 同番羁绊编队 buff | 全 **backlog**（远期范式 / S14-D/F 护城河） |
+### 收尾核对提示 → **接受**：本轮只做 SB-T2（R1+R2+R3+R4 合同内），R5-W2 backlog；engine 纯净；`timedBattle.test.ts:261-291` 既有护栏不破 + 新增前缀冻结/选目标/死目标/超时四类断言；收尾核对 SB-T1..T5 全 `[x]`。
 
 ---
 
-## 关键裁决（本轮供 Generator 定心）
+## 二、体验官报告（product-audit-report.md）
 
-1. **本轮 = 零改动确认**：切片两 SA-T 第 2 轮已 COMPLETE、Scout 第 3 轮核实全部拍板落地、无未落地项、无新坑。**若无三审新 refine 指令，Generator 正确动作 = 不动源码、复跑 5 条验收全绿**。切勿为「凑改动」去动稳定实现。
-2. **两条硬拒绝（防越界）**：① **SIGNATURE_KIT 不扩到 20**（合同 L94 已拒绝 FUTURE.md 数字，本轮零扩表）；② **v15 schema 不再动、扫荡存档字段不改**（v15 是本 sprint 唯一升级、最高风险动作、已稳定，再动纯增风险）。
-3. **旧档重算搭便车：继续拒绝**——维持「只影响未来升级」取舍，backlog（plan T5-R6）。
-4. **UI 徽章 / 分档层 / 候选池抽共享纯函数 / ref<any> 类型化**：均非本轮硬承诺；徽章与分档 backlog，后二者「触及才顺手」，本轮零改动定位下倾向不动。
-5. **SA-T6 不在本轮切片**：第 3 轮切片仍 = SA-T4 + SA-T5；SA-T6（依赖 SA-T1，三 tab 去重）本 product-loop 3 轮范围之外，维持 `[ ]`，S14-A 整体完成待后续轮次收口 SA-T6。
+### Prioritized Recommendations
+
+1. **【SB-T2】手动大招无跳变推进（至少「已回放前缀冻结、游标不回退」的弱无跳变；工期允许优先 research 方案 B 可续跑引擎）** → **部分接受**。
+   - 接受：弱无跳变 = 前缀冻结（任务 1，拍板 1）。**红线接受**：只做弱无跳变时须在验收/注释明写「后缀仍重算、强无跳变待 splittable 子流」，绝不让 UI/文案暗示「完全平滑」。
+   - **术语澄清**：体验官把「可续跑引擎」记为 research「替代 B」，实为 research 报告的**方案 A（resume 可续跑）**；research 的**方案 B（整场重算 + 截后缀）已被 Phase1-A4 判为选目标后退化跳变的半死系统，本轮明确拒绝作终态**。本轮取「方案 A 精神的最小实现（前缀冻结 + RNG 状态承接）」，full resume 架构 backlog（见 research R5 处置）。
+2. **【SB-T2】手动大招可选目标（限单体 selector，写成可扩展 union；UI 只对单体亮「选目标」态，engine 与 UI 同口径）** → **接受**。本轮行动：任务 2（拍板 3/4）。
+3-9.（体验官其余为 SB-T1/T3/T4/T5 无回归确认 + UI 打磨项）→ **SB-T1..T5 已落地，本轮收尾核对无回归**；伤害飘字/技能名横幅/TIME UP 横幅等 UI 打击感层 → **backlog**（超 SB-T2 engine+最小 UI 范围，上轮已 backlog）。
+10. **splittable / 按 unitId 派生 RNG 子流（强无跳变必要条件）** → **部分接受方向 / backlog**。理由：强无跳变（注入点后未波及单位完全不变）需 per-unit RNG 子流，是 R5 架构投资的一部分；本轮取「单状态 RNG 承接 elapsedMs」的弱无跳变最小实现，**splittable 子流 backlog**，正式记入紧邻深度轮（别无限顺延成永久债）。
 
 ---
 
-**一句话收尾**：第 3 轮是 tier1-on 引擎跑满的**验收再确认轮**——三审所有落地建议本轮转为「已落地维持、复跑守回归」，两条硬拒绝（不扩签名表到 20、不再动 v15 schema）钉死越界口，超范围创意全归 backlog；Generator 若无新 refine 指令应零改动复跑验收全绿，守住已 COMPLETE 的稳定切片。
+## 三、进化审计报告（evolution-audit-report.md）
+
+### Prioritized Recommendations
+
+- **[SB-T2] `ManualUltimateOrder` 加 `targetId`（可扩展 union）+ engine 单体大招 `executeEffect` 对单体 selector 优先用 `order.targetId`、AOE/治疗忽略；接入点 `effects.ts:367 resolvedSelector` 复用已解析表达式（坑 C-3 别重复解析）** → **接受**。本轮行动：任务 2（拍板 3/6，`resolveSkillTargets` 统一 helper）。
+- **[SB-T2] 单体 selector 才亮「选目标」UI（SquadUnitBar/Battlefield 层判定），engine 覆盖规则与 UI 亮起条件同一口径（防 P1-4 反向 affordance 欺骗）** → **接受**。本轮行动：任务 2（拍板 3）。
+- **命令类型写成可扩展 discriminated union（`{kind:'ultimate', atMs, unitId, targetId?}`），为未来换目标策略/手动技能/暂停预留** → **接受（留形状）**。本轮行动：拍板 4，只实现 ultimate。
+- **架构投资 `simulateFrom` 可续跑引擎 + splittable RNG 子流（强无跳变 + 铺路暂停/步进/分享码的一次性投资，收官轮不做）** → **接受其「收官轮不做」判断 / backlog**。本轮取最小实现，架构级投资正式排入紧邻深度轮。
+
+### 横切提醒 / 顺手清理
+
+- **💡「命运预告」而非「无跳变」（拥抱预演算，开大瞬间渲染战术预告，把胶片已定从缺点变卖点）** → **backlog（产品化解法候选，记入 FUTURE）**。理由：是有价值的产品化方向，但属额外演出层，超 SB-T2 合同（本轮先把「无跳变 + 选目标」机制做对）；且与本轮「前缀冻结」并不冲突，可作后续叠加。
+- **`SquadBattleView.vue:126` 恒等三元噪声（`currentPhase.value === 'towerMode' ? 'towerMode' : 'towerMode'`，scout 坑 C-5）** → **部分接受**：本轮 SB-T2 若改到 View saveState/该行附近顺手清为直接 `'towerMode'`；若未碰到则 **backlog**，不为它单开范围。
+
+---
+
+## 四、本轮范围裁定小结
+
+**接受并落地本轮（= 指派切片 SB-T2）**：
+- 任务 1（本轮-7）：手动大招前缀冻结平滑推进 = 已呈现前缀一字不改 + 游标不回退 + 只重算当前时刻之后 + RNG 从「seed 头部重建」升级为「承接消费到 elapsedMs 的状态」。方案 A 精神最小实现，**明确拒绝方案 B 伪平滑作终态**，方案 C 逐帧 backlog。
+- 任务 2（本轮-8）：`ManualUltimateOrder` 加可选 `targetId`（可扩展命令形状）+ 单体 selector 覆盖 / AOE·self·全体忽略 + UI 只对单体亮「选目标」态（engine 与 UI 同口径）+ 死目标回退默认 selector + 超时 pending order 不改判 + 同帧连点单次重算 + `resolveSkillTargets` 统一 helper。
+- 任务 3（本轮-9）：集成回归（选目标后仍无跳变）+ S14-B 收尾核对（SB-T1..T5 全 `[x]` 与实现一致）。
+
+**部分接受（采纳精神、本轮取最小实现）**：前缀冻结取「单状态 RNG 承接」最小实现（full `resumeTimedBattle` 快照架构 + splittable/per-unit RNG 子流强无跳变 → backlog）；命令模型留可扩展形状但只实现 ultimate。
+
+**拒绝本轮 / backlog**：research 方案 B 作终态（半死系统，明确拒绝）；方案 C 逐帧去预演算（R7）；full resume + splittable 子流（R5/product 10/evolution）；`BattleCommand` 泛化实现（R6）；目标预测高亮（R8/W2）；命令轨迹可复盘（W1）；「意图队列」半手动（W2）；命运预告/战术预告（evolution 💡）；autoUltimates 默认关/首战引导（拍板 7）；TIME UP 横幅/伤害飘字/技能名横幅（UI 打击感层，上轮已 backlog）。
+
+**范围纪律确认**：本轮 SB-T2 是**必须真实现的指派任务**，非「回归确认」（S14-A SA-T6 教训，pitfalls L84）。收窄为「前缀冻结 + 选目标」的最小可用形态已获研究报告授权，但**不得整项跳过、不得只做半死系统**。所有超 SB-T2 的建议均标 backlog，不在本轮开新范围。收尾轮硬指标 = SB-T1..SB-T5 全 `[x]` 且与实现一致。

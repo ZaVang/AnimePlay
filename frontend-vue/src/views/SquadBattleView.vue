@@ -4,16 +4,19 @@ import { useUserStore } from '@/stores/userStore';
 import { useGameDataStore } from '@/stores/gameDataStore';
 import { useEquipmentStore } from '@/stores/equipment';
 import {
+  DEFAULT_MAX_TIME_MS,
   SQUAD_MEMBER_COUNT,
   TOWER_SQUAD_ALLOWED_RARITIES,
   calculateBattlePower,
   calculateTowerBattleRewards,
+  canOverrideTarget,
   createSeededRng,
   generateBattleStats,
   generateTowerFloorEnemies,
   towerFloorEnemySeed,
   isTowerSquadRarity,
   simulateTimedBattle,
+  resumeTimedBattle,
   validateTowerSquadMembers,
   type BattleStats,
   type ManualUltimateOrder,
@@ -33,7 +36,7 @@ import SquadBattleLog from '@/components/battle/squad/SquadBattleLog.vue';
 import SquadBattleResult from '@/components/battle/squad/SquadBattleResult.vue';
 import { getSquadSkillKitForCharacter, isSquadSkillKitReady } from '@/data/squadSkillKits';
 import type { CharacterCard } from '@/types/card';
-import type { SquadBattleRewardView, SquadBattleUnitView } from '@/components/battle/squad/types';
+import type { SquadBattleRewardView, SquadBattleUnitView, SquadFloatingDamageView } from '@/components/battle/squad/types';
 
 const userStore = useUserStore();
 const gameDataStore = useGameDataStore();
@@ -80,6 +83,8 @@ const EMPTY_STAT_BONUS: BattleStats = { hp: 0, atk: 0, def: 0, sp: 0, spd: 0 };
 const SQUAD_POSITIONS: SquadPosition[] = ['front', 'front', 'middle', 'middle', 'back'];
 const CONTROL_STATUSES: StatusKind[] = ['stun', 'silence', 'taunt'];
 const PLAYBACK_DELAY_MS = 180;
+// SB-T3 收尾①：浮动伤害数字的驻留时长（跟随 180ms 逐条回放节奏，略长于一帧让玩家看清）。
+const FLOATING_DAMAGE_TTL_MS = 900;
 
 const currentPhase = ref<BattlePhase>('towerMode');
 const playerSquad = ref<SquadMember[]>([]);
@@ -87,11 +92,17 @@ const enemySquad = ref<SquadMember[]>([]);
 const battleUnits = ref<RuntimeUnitView[]>([]);
 const battleEvents = ref<TimedBattleEvent[]>([]);
 const battleLog = ref<string[]>([]);
+// SB-T3 收尾①：瞬态浮动伤害数字（暴击醒目显形）。仅在「新回放的」damage 事件时生成，
+// 不随 rebuildVisibleBattle 重放全部历史事件而重复生成；每条自带定时器清除，reset/卸载时清空。
+const floatingDamages = ref<SquadFloatingDamageView[]>([]);
+let floatingDamageSeq = 0;
 const battleResult = ref<'victory' | 'defeat' | null>(null);
 const battleElapsedMs = ref(0);
 const battleEnded = ref(false);
 const autoUltimates = ref(true);
 const manualUltimateOrders = ref<ManualUltimateOrder[]>([]);
+// SB-T2：正处于「选目标」态的施法者 unitId（单体敌方大招点击后置位，等待玩家点敌方目标）；null = 无。
+const ultimateTargetingUnitId = ref<string | null>(null);
 const battleSeed = ref(0);
 const battleSimulation = ref<TimedBattleResult | null>(null);
 const battleEventCursor = ref(0);
@@ -264,6 +275,7 @@ function startTowerBattle(squadId: number) {
   selectedSquadForBattle.value = squadId;
   battleSeed.value = Date.now() % 2147483647;
   manualUltimateOrders.value = [];
+  ultimateTargetingUnitId.value = null;
   battleRewards.value = { characterExp: 0, knowledgePoints: 0, equipmentDrop: null };
   battleResult.value = null;
   battleSettled.value = false;
@@ -289,18 +301,42 @@ function unitSetups(): SquadUnitSetup[] {
   ];
 }
 
+function applyBattleSimulation(result: TimedBattleResult, cursorTime: number) {
+  battleSimulation.value = result;
+  battleEvents.value = [...result.events];
+  battleEventCursor.value = Math.max(0, battleEvents.value.findIndex(event => event.at > cursorTime));
+  if (battleEventCursor.value < 0) battleEventCursor.value = battleEvents.value.length;
+  rebuildVisibleBattle(battleEventCursor.value);
+}
+
 function regenerateBattleSimulation(cursorTime: number) {
   const result = simulateTimedBattle({
     units: unitSetups(),
     rng: createSeededRng(battleSeed.value),
     autoUltimates: autoUltimates.value,
     manualUltimateOrders: manualUltimateOrders.value,
+    // SB-T1：显式传 engine 时限常量，保证 UI 倒计时上限 === 实战裁决上限（同源，禁脱钩）。
+    maxTimeMs: DEFAULT_MAX_TIME_MS,
   });
-  battleSimulation.value = result;
-  battleEvents.value = [...result.events];
-  battleEventCursor.value = Math.max(0, battleEvents.value.findIndex(event => event.at > cursorTime));
-  if (battleEventCursor.value < 0) battleEventCursor.value = battleEvents.value.length;
-  rebuildVisibleBattle(battleEventCursor.value);
+  applyBattleSimulation(result, cursorTime);
+}
+
+/**
+ * SB-T2（本轮-7，拍板 1/2）：手动开大 / 切换自动大招后的**前缀冻结平滑续跑**。
+ * 用 resumeTimedBattle 冻结「已回放到 resumeFromMs 的事件前缀」（一字不改、游标不回退、无时间倒流/HP-能量跳变），
+ * 只重算 resumeFromMs 之后的后缀；RNG 承接消费到 resumeFromMs 的状态（非 seed 头部重建），
+ * 使选目标带来的后缀错位不回溯污染前缀随机结果。取代旧的整场 regenerateBattleSimulation（碰巧不跳→选目标后必跳）。
+ */
+function resumeBattleSimulation(resumeFromMs: number) {
+  const result = resumeTimedBattle({
+    seed: battleSeed.value,
+    units: unitSetups(),
+    autoUltimates: autoUltimates.value,
+    manualUltimateOrders: manualUltimateOrders.value,
+    resumeFromMs,
+    maxTimeMs: DEFAULT_MAX_TIME_MS,
+  });
+  applyBattleSimulation(result, resumeFromMs);
 }
 
 function baseRuntimeUnits(): RuntimeUnitView[] {
@@ -424,6 +460,12 @@ function buildKeyLogs(events: TimedBattleEvent[]): string[] {
           logs.push(`${unitName(event.actorId)} 释放大招「${event.skillName}」。`);
         }
         break;
+      // SB-T3 收尾①(B)：暴击作为关键事件记入日志（普通伤害不记，契合「只记关键事件」既有设计）。
+      case 'damage':
+        if (event.isCritical) {
+          logs.push(`💥 暴击！${unitName(event.actorId)} 对 ${unitName(event.targetId)} 造成 ${event.amount} 伤害。`);
+        }
+        break;
       case 'defeated':
         logs.push(`${unitName(event.targetId)} 被击败。`);
         break;
@@ -451,14 +493,30 @@ function statusLabel(status: StatusKind): string {
   return ({ stun: '眩晕', silence: '沉默', taunt: '嘲讽' } as Partial<Record<StatusKind, string>>)[status] ?? status;
 }
 
-function manualFailLabel(reason: 'notReady' | 'controlled' | 'missingSkill'): string {
+function manualFailLabel(reason: 'notReady' | 'controlled' | 'missingSkill' | 'noTarget'): string {
   if (reason === 'notReady') return '能量不足';
   if (reason === 'controlled') return '被控制';
+  if (reason === 'noTarget') return '无可用目标';
   return '技能缺失';
 }
 
+// SB-T3 收尾①(A)：为「刚回放到的」damage 事件生成一条浮动伤害数字，暴击带 isCritical 醒目样式。
+// 放在 playNextBattleEvent（单条推进）而非 applyEventToUnits（后者会重放全部历史事件），避免每帧重复刷屏。
+function spawnFloatingDamage(event: TimedBattleEvent) {
+  if (event.type !== 'damage' || event.amount <= 0) return;
+  const id = ++floatingDamageSeq;
+  floatingDamages.value = [
+    ...floatingDamages.value,
+    { id, targetId: event.targetId, amount: event.amount, isCritical: event.isCritical },
+  ];
+  // 定时清除：走登记式 scheduleFloatingClear()，reset/卸载时随 clearBattleTimers 一并清（无裸 setTimeout）。
+  scheduleFloatingClear(() => {
+    floatingDamages.value = floatingDamages.value.filter(entry => entry.id !== id);
+  }, FLOATING_DAMAGE_TTL_MS);
+}
+
 function playNextBattleEvent() {
-  clearBattleTimers();
+  clearPlaybackTimers();
   if (currentPhase.value !== 'battle' || battleEnded.value) return;
   if (battleEventCursor.value >= battleEvents.value.length) {
     finishTimedBattle();
@@ -469,6 +527,7 @@ function playNextBattleEvent() {
   rebuildVisibleBattle(battleEventCursor.value);
 
   const latest = battleEvents.value[battleEventCursor.value - 1];
+  if (latest) spawnFloatingDamage(latest);
   if (latest?.type === 'battleEnd') {
     finishTimedBattle();
     return;
@@ -479,18 +538,59 @@ function playNextBattleEvent() {
 function handleToggleAutoUltimates() {
   if (battleEnded.value) return;
   const cursorTime = battleElapsedMs.value;
+  ultimateTargetingUnitId.value = null; // 切换自动大招时清空未完成的选目标态。
   autoUltimates.value = !autoUltimates.value;
-  regenerateBattleSimulation(cursorTime);
+  // SB-T2：前缀冻结续跑，切换自动大招不再整场重算致回放跳变。
+  resumeBattleSimulation(cursorTime);
   playNextBattleEvent();
 }
 
+/**
+ * SB-T2（本轮-8，拍板 3）：某单位的大招是否为「可选目标的单体敌方大招」。
+ * 复用 engine `canOverrideTarget`（单一口径），使 UI 亮起条件 == engine 覆盖生效条件——
+ * 单体大招才允许选目标、AOE/self/己方组点一下即放，杜绝「UI 承诺选目标、代码全体命中」的反向 affordance 欺骗。
+ */
+function ultimateAllowsTargeting(unitId: string): boolean {
+  const member = [...playerSquad.value, ...enemySquad.value].find(m => m.unitId === unitId);
+  if (!member) return false;
+  const ultimate = getSquadSkillKitForCharacter(member.character)?.ultimate;
+  return Boolean(ultimate && canOverrideTarget(ultimate.target));
+}
+
+/**
+ * SB-T2：手动开大。
+ *  - 单体敌方大招（ultimateAllowsTargeting）：进入「选目标」态，待玩家点敌方单位后带 targetId 入队。
+ *  - AOE/self/己方组大招：点一下即放（targetId 省略，engine 忽略覆盖）。
+ * 入队后走 resumeBattleSimulation 前缀冻结续跑（无跳变）。同帧连点单次重算（每次入队即重算，
+ * 命令按 atMs 递增排序、engine 内 orderIndex 单调消费，不会双跳丢单）。
+ */
 function handleManualUltimate(unitId: string) {
   if (battleEnded.value || autoUltimates.value) return;
   const unit = battleUnits.value.find(candidate => candidate.id === unitId);
   if (!unit?.ultimateReady) return;
+  if (ultimateAllowsTargeting(unitId)) {
+    // 单体大招：进入选目标态，等待 handleSelectUltimateTarget。
+    ultimateTargetingUnitId.value = ultimateTargetingUnitId.value === unitId ? null : unitId;
+    return;
+  }
+  enqueueManualUltimate(unitId);
+}
+
+/** SB-T2：玩家在「选目标」态点击敌方单位 → 带 targetId 释放单体大招。 */
+function handleSelectUltimateTarget(targetUnitId: string) {
+  const casterId = ultimateTargetingUnitId.value;
+  if (!casterId) return;
+  const target = battleUnits.value.find(u => u.id === targetUnitId);
+  if (!target || target.side !== 'enemy' || target.defeated) return;
+  enqueueManualUltimate(casterId, targetUnitId);
+  ultimateTargetingUnitId.value = null;
+}
+
+function enqueueManualUltimate(unitId: string, targetId?: string) {
   const orderAt = battleElapsedMs.value + 1;
-  manualUltimateOrders.value = [...manualUltimateOrders.value, { unitId, atMs: orderAt }];
-  regenerateBattleSimulation(battleElapsedMs.value);
+  const order: ManualUltimateOrder = targetId ? { unitId, atMs: orderAt, targetId } : { unitId, atMs: orderAt };
+  manualUltimateOrders.value = [...manualUltimateOrders.value, order];
+  resumeBattleSimulation(battleElapsedMs.value);
   playNextBattleEvent();
 }
 
@@ -589,19 +689,37 @@ function ensureTowerEnemies() {
   }
 }
 
-const pendingTimers = new Set<number>();
+// 回放推进定时器（单条，逐条 180ms）+ 浮动伤害清除定时器（多条，各自 TTL）分池管理：
+// clearPlaybackTimers 只掐推进链（避免重复排下一帧），clearBattleTimers 全清（含浮动数字清除定时器）+ 清空浮动数字。
+const playbackTimers = new Set<number>();
+const floatingTimers = new Set<number>();
 
 function schedule(fn: () => void, delay: number) {
   const id = window.setTimeout(() => {
-    pendingTimers.delete(id);
+    playbackTimers.delete(id);
     fn();
   }, delay);
-  pendingTimers.add(id);
+  playbackTimers.add(id);
+}
+
+function scheduleFloatingClear(fn: () => void, delay: number) {
+  const id = window.setTimeout(() => {
+    floatingTimers.delete(id);
+    fn();
+  }, delay);
+  floatingTimers.add(id);
+}
+
+function clearPlaybackTimers() {
+  playbackTimers.forEach(id => clearTimeout(id));
+  playbackTimers.clear();
 }
 
 function clearBattleTimers() {
-  pendingTimers.forEach(id => clearTimeout(id));
-  pendingTimers.clear();
+  clearPlaybackTimers();
+  floatingTimers.forEach(id => clearTimeout(id));
+  floatingTimers.clear();
+  floatingDamages.value = [];
 }
 
 /**
@@ -830,11 +948,17 @@ onBeforeUnmount(() => {
         <SquadBattlefield
           :player-units="playerBattleUnits"
           :enemy-units="enemyBattleUnits"
+          :floating-damages="floatingDamages"
           :auto-ultimates="autoUltimates"
           :battle-ended="battleEnded"
           :elapsed-ms="battleElapsedMs"
+          :max-time-ms="DEFAULT_MAX_TIME_MS"
+          :targeting-caster-id="ultimateTargetingUnitId"
+          :targeting-caster-name="ultimateTargetingUnitId ? unitName(ultimateTargetingUnitId) : ''"
           @toggle-auto="handleToggleAutoUltimates"
           @cast-ultimate="handleManualUltimate"
+          @select-target="handleSelectUltimateTarget"
+          @cancel-targeting="ultimateTargetingUnitId = null"
         />
 
         <SquadBattleLog :logs="battleLog" />

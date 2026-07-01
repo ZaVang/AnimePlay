@@ -2,10 +2,12 @@
 import { computed } from 'vue';
 import { assetUrl } from '@/utils/assetUrl';
 import SquadUltimateButton from './SquadUltimateButton.vue';
-import type { SquadBattleUnitView } from './types';
+import type { SquadBattleUnitView, SquadFloatingDamageView } from './types';
 
 const props = defineProps<{
   unit: SquadBattleUnitView;
+  // SB-T3 收尾①(A)：本单位当前的瞬态浮动伤害数字（暴击醒目样式），由父层 targetId 分发、View 定时清除。
+  floatingDamages?: SquadFloatingDamageView[];
   autoUltimates: boolean;
   battleEnded: boolean;
 }>();
@@ -38,12 +40,27 @@ const statusLabels: Record<string, string> = {
 
 <template>
   <div
-    class="grid min-h-[96px] grid-cols-[56px_minmax(0,1fr)] gap-3 rounded-lg border p-2 sm:grid-cols-[64px_minmax(0,1fr)]"
+    class="relative grid min-h-[96px] grid-cols-[56px_minmax(0,1fr)] gap-3 rounded-lg border p-2 sm:grid-cols-[64px_minmax(0,1fr)]"
     :class="[
       unit.side === 'player' ? 'border-info/40 bg-info/10' : 'border-danger/40 bg-danger/10',
       unit.defeated ? 'opacity-60 grayscale' : '',
     ]"
   >
+    <!-- SB-T3 收尾①(A)：浮动伤害数字层。暴击用 highlight(金) + 更大字号 + CRIT 标记 + 抖动缩放，普通用 danger。
+         pointer-events-none 不挡下方选目标点击；瞬态 by View（定时清除）。 -->
+    <div class="pointer-events-none absolute inset-0 z-10 overflow-visible">
+      <div
+        v-for="hit in (floatingDamages ?? [])"
+        :key="hit.id"
+        class="absolute left-1/2 top-2 -translate-x-1/2 select-none font-black tabular-nums drop-shadow"
+        :class="hit.isCritical
+          ? 'squad-dmg-float squad-dmg-float--crit text-xl text-highlight sm:text-2xl'
+          : 'squad-dmg-float text-base text-danger sm:text-lg'"
+      >
+        <span v-if="hit.isCritical" class="mr-0.5 align-super text-[10px] font-extrabold uppercase tracking-wide">CRIT</span>
+        -{{ hit.amount }}
+      </div>
+    </div>
     <div class="relative h-14 w-14 overflow-hidden rounded-md border border-line bg-surface-2 sm:h-16 sm:w-16">
       <img
         loading="lazy"
@@ -109,3 +126,57 @@ const statusLabels: Record<string, string> = {
     </div>
   </div>
 </template>
+
+<style scoped>
+/* SB-T3 收尾①(A)：浮动伤害数字动画。普通伤害上浮淡出；暴击额外一段冲击缩放 + 轻微抖动，强化打击感。 */
+.squad-dmg-float {
+  animation: squad-dmg-rise 0.9s ease-out forwards;
+}
+
+.squad-dmg-float--crit {
+  animation: squad-dmg-rise 0.9s ease-out forwards, squad-dmg-crit-pop 0.35s ease-out;
+}
+
+@keyframes squad-dmg-rise {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 4px) scale(0.85);
+  }
+  15% {
+    opacity: 1;
+    transform: translate(-50%, 0) scale(1);
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -22px) scale(1);
+  }
+}
+
+@keyframes squad-dmg-crit-pop {
+  0% {
+    transform: translate(-50%, 0) scale(1.6) rotate(-4deg);
+  }
+  45% {
+    transform: translate(-50%, 0) scale(0.92) rotate(3deg);
+  }
+  100% {
+    transform: translate(-50%, 0) scale(1) rotate(0deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .squad-dmg-float,
+  .squad-dmg-float--crit {
+    animation: squad-dmg-fade 0.9s ease-out forwards;
+  }
+  @keyframes squad-dmg-fade {
+    0% { opacity: 0; }
+    15% { opacity: 1; }
+    70% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+}
+</style>

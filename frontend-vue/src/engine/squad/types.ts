@@ -171,9 +171,19 @@ export interface SquadUnitRuntime {
   defeatedAt: number | null;
 }
 
+/**
+ * SB-T2（拍板 3/4）：手动大招命令。写成可扩展命令形状（`{atMs, unitId, targetId?}`，语义等价
+ * discriminated union 的 ultimate 分支），为未来手动技能/换位/撤退留统一命令口，本轮只实现 ultimate。
+ *
+ * `targetId`（可选）：仅对**单体** selector 大招生效——engine 优先用它命中所选存活单位；
+ * AOE（allEnemies/allAllies）/ self / 全体治疗**一律忽略** targetId（复用 SB-T4 单体/AOE 二分口径）。
+ * 死目标（生效前已阵亡）→ 回退到该大招默认 selector（拍板 5）。UI 侧只对单体大招亮「选目标」，
+ * 与 engine 覆盖规则同一口径（防 P1-4 反向 affordance 欺骗）。
+ */
 export interface ManualUltimateOrder {
   atMs: number;
   unitId: string;
+  targetId?: string;
 }
 
 export interface TimedBattleInput {
@@ -186,7 +196,23 @@ export interface TimedBattleInput {
 }
 
 export type TimedBattleWinner = 'player' | 'enemy' | 'timeout';
-export type BattleEndReason = 'victory' | 'defeat' | 'timeout' | 'eventLimit';
+/**
+ * SB-T1：超时不再一刀切判负，改按「存活数 + 剩余 HP%」裁决。winner 不扩（避开 View:501/rewards/多测试波及，
+ * 坑 C-1）——超时占优 winner='player'、劣势 winner='enemy'（复用现有胜负映射与发奖）、真平局 winner='timeout'。
+ * 三态用 reason 显形：
+ *  - timeoutWin：超时占优判胜（winner='player'，走发奖）
+ *  - timeoutLoss：超时劣势判负（winner='enemy'）
+ *  - timeoutDraw：真平局（winner='timeout'，存活数与 HP% 均相等，rewards 全 0，平局不发奖）
+ * 事件上限触发的僵持沿用同口径（reason 复用 timeout* 三态，语义 = 未推进）。
+ */
+export type BattleEndReason =
+  | 'victory'
+  | 'defeat'
+  | 'timeout'
+  | 'eventLimit'
+  | 'timeoutWin'
+  | 'timeoutLoss'
+  | 'timeoutDraw';
 
 export type TimedBattleEvent =
   | { type: 'battleStart'; at: number }
@@ -194,7 +220,7 @@ export type TimedBattleEvent =
   | { type: 'passiveActivated'; at: number; actorId: string; skillId: string; skillName: string }
   | { type: 'actionSkipped'; at: number; actorId: string; reason: 'stun' | 'noTarget' }
   | { type: 'manualUltimateReady'; at: number; actorId: string }
-  | { type: 'manualUltimateFailed'; at: number; actorId: string; reason: 'notReady' | 'controlled' | 'missingSkill' }
+  | { type: 'manualUltimateFailed'; at: number; actorId: string; reason: 'notReady' | 'controlled' | 'missingSkill' | 'noTarget' }
   | { type: 'damage'; at: number; actorId: string; targetId: string; amount: number; hpAfter: number; isCritical: boolean; absorbed: number }
   | { type: 'heal'; at: number; actorId: string; targetId: string; amount: number; hpAfter: number }
   | { type: 'shield'; at: number; actorId: string; targetId: string; amount: number; expiresAt: number }

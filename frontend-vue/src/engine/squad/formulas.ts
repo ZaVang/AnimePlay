@@ -14,6 +14,14 @@ export const DEFAULT_BATTLE_MODIFIERS: BattleModifiers = {
 export const DEFAULT_CRIT_RATE = DEFAULT_BATTLE_MODIFIERS.critRate;
 export const DEFAULT_CRIT_DAMAGE = DEFAULT_BATTLE_MODIFIERS.critDamage;
 
+/**
+ * SB-T3: squad 战斗规则的全体基础暴击率（非引擎默认——DEFAULT_BATTLE_MODIFIERS.critRate 保持 0
+ * 以守住引擎纯净默认语义与既有测试）。由 createRuntimeUnit 注入每个运行时单位的 base critRate，
+ * 使纯引擎战 / 塔战 / 测试三条消费端统一拿到基础暴击。critRateUp 状态通路（getEffectiveModifiers）
+ * 在此基础上叠加，SB-T5 落地后多来源 critRateUp 按来源累加 → 一条完整暴击成长轴。
+ */
+export const BASE_CRIT_RATE = 0.05;
+
 export interface DamageContext {
   critRate?: number;
   critDamage?: number;

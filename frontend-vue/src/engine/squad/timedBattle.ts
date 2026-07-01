@@ -1,4 +1,4 @@
-import { calculateActionIntervalMs, DEFAULT_BATTLE_MODIFIERS } from './formulas';
+import { BASE_CRIT_RATE, calculateActionIntervalMs, DEFAULT_BATTLE_MODIFIERS } from './formulas';
 import {
   activeStatuses,
   executeSkill,
@@ -6,7 +6,9 @@ import {
   getEffectiveStats,
   getSpeedModifier,
   hasActiveStatus,
+  resolveSkillTargets,
 } from './effects';
+import { createStatefulSeededRng, type StatefulRng } from '../rng';
 import { getAliveUnits, isAlive, selectTargets } from './targeting';
 import type {
   BattleEndReason,
@@ -22,8 +24,13 @@ import type {
   TimedBattleWinner,
 } from './types';
 
-const DEFAULT_MAX_TIME_MS = 90_000;
+// SB-T1：时限常量导出（经 engine/index re-export 给 View），供倒计时 UI 与实战裁决同源，
+// 禁 UI 硬编码 90000（坑 C-2）。
+export const DEFAULT_MAX_TIME_MS = 90_000;
 const DEFAULT_MAX_EVENTS = 5_000;
+
+/** SB-T1：平局 HP% 比较容差——两侧 HP 总量比差 < ε 视为相等。 */
+const HP_RATIO_EPSILON = 1e-6;
 const DEFAULT_ULTIMATE_COST = 1000;
 
 const defaultNormalAttack: SquadSkillDef = {
@@ -69,7 +76,9 @@ function createRuntimeUnit(setup: SquadUnitSetup): SquadUnitRuntime {
     maxHp: setup.stats.hp,
     energy: Math.min(1000, Math.max(0, setup.energy ?? 0)),
     skills,
-    modifiers: { ...DEFAULT_BATTLE_MODIFIERS, ...setup.modifiers },
+    // SB-T3: 全体基础暴击 = BASE_CRIT_RATE，落在运行时单位 base critRate（DEFAULT 保持 0）；
+    // setup.modifiers 若显式给了 critRate 则以其为准（覆盖基础值）。
+    modifiers: { ...DEFAULT_BATTLE_MODIFIERS, critRate: BASE_CRIT_RATE, ...setup.modifiers },
     statuses: [],
     cooldownReadyAt: {
       skill1: skills.skill1?.initialCooldownMs ?? defaultInitialCooldown('skill1'),
@@ -87,14 +96,53 @@ function aliveBySide(state: TimedBattleState, side: 'player' | 'enemy'): SquadUn
   return getAliveUnits(state.units, side);
 }
 
+/**
+ * SB-T1：某一侧的剩余 HP 总量比 = Σ currentHp / Σ maxHp（存活单位统计，含未落血者）。
+ * 用于超时裁决在「存活数相等」时作 tie-break（避免「4 残血 vs 1 满血」被纯 HP% 误判）。
+ */
+function sideHpRatio(units: readonly SquadUnitRuntime[]): number {
+  let current = 0;
+  let max = 0;
+  for (const unit of units) {
+    current += Math.max(0, unit.currentHp);
+    max += Math.max(1, unit.maxHp);
+  }
+  return max > 0 ? current / max : 0;
+}
+
+/**
+ * SB-T1：超时/事件上限僵持时按「先比存活数、再比剩余 HP% 总量比」裁决，代替旧的一刀切判负。
+ *  - 存活数占优 → 判胜；相等再比 HP%；HP% 也相等（差 < ε）→ 真平局。
+ *  - 占优 → winner='player'/reason='timeoutWin'（走发奖）；劣势 → winner='enemy'/reason='timeoutLoss'；
+ *    真平局 → winner='timeout'/reason='timeoutDraw'（复用 timeout 映射 + rewards 全 0，平局不发奖）。
+ */
+function resolveTimeout(
+  players: readonly SquadUnitRuntime[],
+  enemies: readonly SquadUnitRuntime[],
+): { winner: TimedBattleWinner; reason: BattleEndReason } {
+  if (players.length !== enemies.length) {
+    return players.length > enemies.length
+      ? { winner: 'player', reason: 'timeoutWin' }
+      : { winner: 'enemy', reason: 'timeoutLoss' };
+  }
+  const playerRatio = sideHpRatio(players);
+  const enemyRatio = sideHpRatio(enemies);
+  if (Math.abs(playerRatio - enemyRatio) < HP_RATIO_EPSILON) {
+    return { winner: 'timeout', reason: 'timeoutDraw' };
+  }
+  return playerRatio > enemyRatio
+    ? { winner: 'player', reason: 'timeoutWin' }
+    : { winner: 'enemy', reason: 'timeoutLoss' };
+}
+
 function battleEnd(state: TimedBattleState, maxTimeMs: number, eventLimitReached: boolean): { winner: TimedBattleWinner; reason: BattleEndReason } | null {
   const players = aliveBySide(state, 'player');
   const enemies = aliveBySide(state, 'enemy');
   if (players.length === 0 && enemies.length === 0) return { winner: 'player', reason: 'victory' };
   if (enemies.length === 0) return { winner: 'player', reason: 'victory' };
   if (players.length === 0) return { winner: 'enemy', reason: 'defeat' };
-  if (eventLimitReached) return { winner: 'timeout', reason: 'eventLimit' };
-  if (state.now >= maxTimeMs) return { winner: 'timeout', reason: 'timeout' };
+  if (eventLimitReached) return resolveTimeout(players, enemies);
+  if (state.now >= maxTimeMs) return resolveTimeout(players, enemies);
   return null;
 }
 
@@ -256,9 +304,19 @@ function processManualUltimates(state: TimedBattleState, orders: readonly Manual
     }
 
     const skill = unit.skills.ultimate;
+    // SB-T2（拍板 3/5）：单体大招优先命中 order.targetId 指定的存活敌方单位；AOE/self/己方组忽略覆盖；
+    // 死目标 → executeSkill 内 resolveSkillTargets 回退默认 selector（不空放）。
+    // 回退后仍无合法目标 → executeSkill 返回 false → 判 manualUltimateFailed（不扣能量，spend 在此前但仅对可释放者）。
+    // 注意：为避免「死目标空放扣能量」，先探测是否有可命中目标，无目标则判 failed 不扣能量。
+    const hasTarget = resolveSkillTargets(state, unit, skill.target, state.now, order.targetId).length > 0
+      || skill.effects.some(effect => resolveSkillTargets(state, unit, effect.target ?? skill.target, state.now, order.targetId).length > 0);
+    if (!hasTarget) {
+      state.events.push({ type: 'manualUltimateFailed', at: state.now, actorId: unit.id, reason: 'noTarget' });
+      continue;
+    }
     state.events.push({ type: 'action', at: state.now, actorId: unit.id, skillId: skill.id, skillName: skill.name, slot: 'ultimate' });
     spendUltimateEnergy(unit, skill);
-    executeSkill(state, unit, skill);
+    executeSkill(state, unit, skill, order.targetId);
     scheduleCooldown(state, unit, skill);
   }
 }
@@ -285,12 +343,59 @@ export function createTimedBattleState(input: TimedBattleInput): TimedBattleStat
   return state;
 }
 
-export function simulateTimedBattle(input: TimedBattleInput): TimedBattleResult {
-  const maxTimeMs = input.maxTimeMs ?? DEFAULT_MAX_TIME_MS;
-  const maxEvents = input.maxEvents ?? DEFAULT_MAX_EVENTS;
-  const state = createTimedBattleState(input);
-  const manualOrders = [...(input.manualUltimateOrders ?? [])].sort((a, b) => a.atMs - b.atMs);
-  const orderIndex = { value: 0 };
+/**
+ * SB-T2（拍板 1/2）：前缀冻结平滑推进的运行时快照。
+ * 记录一次「完整迭代边界」（该 tick 全部处理完）后的战斗状态，使重算/续跑能从此边界续接：
+ *  - atMs：该边界的 state.now（快照代表「≤ atMs 的事件已全部落定」）。
+ *  - rngState：StatefulRng 内部状态（mulberry32 累加器）——续跑承接同一随机流，不从 seed 头部重建。
+ *  - units：深拷贝的运行时单位（skills 定义不可变故浅引用，其余深拷贝）。
+ *  - eventsLength：前缀事件条数（快照点已呈现的事件前缀长度）。
+ *  - orderIndex：手动大招命令消费游标。
+ */
+interface BattleCheckpoint {
+  atMs: number;
+  rngState: number;
+  units: SquadUnitRuntime[];
+  eventsLength: number;
+  orderIndex: number;
+}
+
+/** 深拷贝运行时单位（skills 定义在战斗内不可变，浅引用；其余可变字段深拷贝）。 */
+function cloneUnit(unit: SquadUnitRuntime): SquadUnitRuntime {
+  return {
+    ...unit,
+    baseStats: { ...unit.baseStats },
+    modifiers: { ...unit.modifiers },
+    statuses: unit.statuses.map(status => ({ ...status })),
+    cooldownReadyAt: { ...unit.cooldownReadyAt },
+  };
+}
+
+function cloneUnits(units: readonly SquadUnitRuntime[]): SquadUnitRuntime[] {
+  return units.map(cloneUnit);
+}
+
+interface BattleLoopResult {
+  end: { winner: TimedBattleWinner; reason: BattleEndReason };
+  checkpoints: BattleCheckpoint[];
+}
+
+/**
+ * SB-T2：可续跑的战斗主循环。
+ * 每完成一次迭代（把 state.now 推进到下一事件时刻并处理完），登记一个 checkpoint，
+ * 供 resumeTimedBattle 从「≤ resumeFromMs 的最后一个干净边界」承接（前缀冻结 + RNG 状态承接）。
+ * 修改本循环规则前先看 timedBattle.test.ts:261-291 auto/manual ultimate 护栏（架构铁律）。
+ */
+function runBattleLoop(
+  state: TimedBattleState,
+  rng: StatefulRng,
+  manualOrders: readonly ManualUltimateOrder[],
+  orderIndex: { value: number },
+  maxTimeMs: number,
+  maxEvents: number,
+  collectCheckpoints: boolean,
+): BattleLoopResult {
+  const checkpoints: BattleCheckpoint[] = [];
 
   let end = battleEnd(state, maxTimeMs, false);
   while (!end) {
@@ -313,8 +418,38 @@ export function simulateTimedBattle(input: TimedBattleInput): TimedBattleResult 
     processManualUltimates(state, manualOrders, orderIndex);
     processActions(state);
 
+    if (collectCheckpoints) {
+      checkpoints.push({
+        atMs: state.now,
+        rngState: rng.snapshot(),
+        units: cloneUnits(state.units),
+        eventsLength: state.events.length,
+        orderIndex: orderIndex.value,
+      });
+    }
+
     end = battleEnd(state, maxTimeMs, state.events.length >= maxEvents);
   }
+
+  return { end, checkpoints };
+}
+
+/**
+ * SB-T2：完整（从 t=0）模拟一场战斗。生产/塔战/测试三条消费端主入口。
+ * 若需在演出中手动开大 / 切换自动大招后「无跳变」续跑，改用 resumeTimedBattle（前缀冻结）。
+ */
+export function simulateTimedBattle(input: TimedBattleInput): TimedBattleResult {
+  const maxTimeMs = input.maxTimeMs ?? DEFAULT_MAX_TIME_MS;
+  const maxEvents = input.maxEvents ?? DEFAULT_MAX_EVENTS;
+  const state = createTimedBattleState(input);
+  const manualOrders = [...(input.manualUltimateOrders ?? [])].sort((a, b) => a.atMs - b.atMs);
+  const orderIndex = { value: 0 };
+
+  // 快照续跑要求 StatefulRng；调用方可传任意 RNG，但只有 StatefulRng 能被 resume 承接状态。
+  const rng = state.rng as StatefulRng;
+  const canSnapshot = typeof rng.snapshot === 'function';
+
+  const { end } = runBattleLoop(state, rng, manualOrders, orderIndex, maxTimeMs, maxEvents, canSnapshot);
 
   state.events.push({ type: 'battleEnd', at: state.now, winner: end.winner, reason: end.reason });
   return {
@@ -323,5 +458,138 @@ export function simulateTimedBattle(input: TimedBattleInput): TimedBattleResult 
     elapsedMs: state.now,
     units: state.units,
     events: state.events,
+  };
+}
+
+export interface ResumeTimedBattleInput {
+  /** 战斗种子（重建同一 StatefulRng 随机流）。 */
+  seed: number;
+  units: readonly SquadUnitSetup[];
+  autoUltimates: boolean;
+  /** 新的完整手动大招命令集（含刚插入的那条；engine 内部排序 + 前缀冻结续跑）。 */
+  manualUltimateOrders: readonly ManualUltimateOrder[];
+  /** 已回放到的时刻——`at <= resumeFromMs` 的事件前缀一字不改（拍板 1）。 */
+  resumeFromMs: number;
+  maxTimeMs?: number;
+  maxEvents?: number;
+}
+
+/**
+ * SB-T2（拍板 1/2/6）核心：**前缀冻结 + RNG 状态承接**的平滑续跑。
+ *
+ * 无跳变的充要条件 = 「已呈现（回放到 resumeFromMs）的事件前缀一字不改，重算只影响 resumeFromMs 之后」。
+ * 本函数据此实现：
+ *  1. 先以完整 seed 跑一遍并逐迭代登记 checkpoint（含 RNG 快照 + 单位深拷贝 + 前缀事件长度）；
+ *  2. 取「atMs <= resumeFromMs 的最后一个 checkpoint」作为分叉点，**冻结**其之前的事件前缀（slice 直接复用）；
+ *  3. 从该 checkpoint 恢复单位状态 + RNG 状态 + 命令游标，带**新命令集**只重算 resumeFromMs 之后的后缀。
+ *
+ * 关键卫生（拍板 2）：RNG 承接「消费到分叉点为止的状态」而非从 seed 头部重建 —— 使插入命令后的后缀错位
+ * **不回溯污染**已呈现前缀的随机结果（选目标改变暴击/击杀/能量连锁时，前缀仍字节一致）。
+ * 这让「选目标」与「无跳变」成为同一干净机制的两个结果（research 方案 A），而非「碰巧不跳→一定跳」的半死系统。
+ *
+ * 边界（拍板 5）：新命令若 atMs > maxTimeMs（超时后 pending），因 nextManualAt 被 Math.min(maxTimeMs,…) 夹住
+ * 而永不生效，不改变超时裁决（SB-T1 三态）——由测试锁死。
+ *
+ * engine 纯净：零 Vue/Pinia/DOM/Math.random（RNG 走注入的 StatefulSeededRng），零存档触点。
+ */
+export function resumeTimedBattle(input: ResumeTimedBattleInput): TimedBattleResult {
+  const maxTimeMs = input.maxTimeMs ?? DEFAULT_MAX_TIME_MS;
+  const maxEvents = input.maxEvents ?? DEFAULT_MAX_EVENTS;
+  const manualOrders = [...input.manualUltimateOrders].sort((a, b) => a.atMs - b.atMs);
+
+  // 第一遍：用「无新命令」的原始基线跑满并采集 checkpoint。基线命令 = 只保留 atMs <= resumeFromMs 的旧命令，
+  // 保证「resumeFromMs 之前」的前缀与玩家已经看到的演出一致（新命令一律在 resumeFromMs 之后）。
+  const baselineOrders = manualOrders.filter(order => order.atMs <= input.resumeFromMs);
+  const baseRng = createStatefulSeededRng(input.seed);
+  const baseState: TimedBattleState = {
+    now: 0,
+    units: input.units.map(createRuntimeUnit),
+    events: [{ type: 'battleStart', at: 0 }],
+    rng: baseRng,
+    autoUltimates: input.autoUltimates,
+  };
+  for (const unit of baseState.units) {
+    const passive = unit.skills.passive;
+    if (!passive) continue;
+    if (executeSkill(baseState, unit, passive)) {
+      baseState.events.push({ type: 'passiveActivated', at: 0, actorId: unit.id, skillId: passive.id, skillName: passive.name });
+    }
+  }
+  const baseOrderIndex = { value: 0 };
+  const { checkpoints } = runBattleLoop(
+    baseState,
+    baseRng,
+    baselineOrders,
+    baseOrderIndex,
+    maxTimeMs,
+    maxEvents,
+    true,
+  );
+
+  // 取「atMs <= resumeFromMs 的最后一个 checkpoint」作分叉点；无则从 t=0 重跑（resumeFromMs < 首个事件）。
+  let fork: BattleCheckpoint | null = null;
+  for (const checkpoint of checkpoints) {
+    if (checkpoint.atMs <= input.resumeFromMs) fork = checkpoint;
+    else break;
+  }
+
+  const resumeRng = createStatefulSeededRng(input.seed);
+  let resumeState: TimedBattleState;
+  let resumeOrderIndex: { value: number };
+  let frozenPrefix: TimedBattleEvent[];
+
+  if (fork) {
+    resumeRng.restore(fork.rngState);
+    resumeState = {
+      now: fork.atMs,
+      units: cloneUnits(fork.units),
+      events: [], // 前缀冻结：分叉点之前的事件直接复用基线切片，不重放。
+      rng: resumeRng,
+      autoUltimates: input.autoUltimates,
+    };
+    frozenPrefix = baseState.events.slice(0, fork.eventsLength);
+    // 命令游标：跳过所有 atMs <= 分叉时刻的命令（它们已在冻结前缀里生效），从新命令集重新对齐。
+    resumeOrderIndex = { value: 0 };
+    while (resumeOrderIndex.value < manualOrders.length && manualOrders[resumeOrderIndex.value].atMs <= fork.atMs) {
+      resumeOrderIndex.value++;
+    }
+  } else {
+    // resumeFromMs 落在首个事件之前：无可冻结前缀，从头带新命令跑（等价一次全量重算）。
+    resumeState = {
+      now: 0,
+      units: input.units.map(createRuntimeUnit),
+      events: [{ type: 'battleStart', at: 0 }],
+      rng: resumeRng,
+      autoUltimates: input.autoUltimates,
+    };
+    for (const unit of resumeState.units) {
+      const passive = unit.skills.passive;
+      if (!passive) continue;
+      if (executeSkill(resumeState, unit, passive)) {
+        resumeState.events.push({ type: 'passiveActivated', at: 0, actorId: unit.id, skillId: passive.id, skillName: passive.name });
+      }
+    }
+    frozenPrefix = [];
+    resumeOrderIndex = { value: 0 };
+  }
+
+  const { end } = runBattleLoop(
+    resumeState,
+    resumeRng,
+    manualOrders,
+    resumeOrderIndex,
+    maxTimeMs,
+    maxEvents,
+    false,
+  );
+
+  const events = [...frozenPrefix, ...resumeState.events];
+  events.push({ type: 'battleEnd', at: resumeState.now, winner: end.winner, reason: end.reason });
+  return {
+    winner: end.winner,
+    reason: end.reason,
+    elapsedMs: resumeState.now,
+    units: resumeState.units,
+    events,
   };
 }

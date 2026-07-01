@@ -29,7 +29,7 @@
 | S0–S10 | 重构主线（文档/测试/engine 抽取/拆 store/功能闭环/视觉/技能/性能/安全） | ✅ | 已完成 → 详见 [HISTORY.md](HISTORY.md) |
 | — | 产品进化层 Evo-1..Evo-9 + 战斗可读性还债 + 2026-06-24 产品循环 | ✅ | 已完成 → 详见 [HISTORY.md](HISTORY.md) |
 | S13 | 家园综合系统（基地养成 + 小队战斗重构 + 挑战塔闭环） | ✅ | A/A2/B/C1/C2/D1–D5 全部落地合并 → 完成史见 [HISTORY.md](HISTORY.md) |
-| **S14** | **家园 hub 深化（差异化 + 决策 + 循环，audit-driven）** | 🔄 | **S14-A ✅ 已完成**（2026-07-01 product-loop）；S14-B~F 待做。源：[审计报告](orch/homestead-hub-audit-report.md) |
+| **S14** | **家园 hub 深化（差异化 + 决策 + 循环，audit-driven）** | 🔄 | **S14-A ✅ · S14-B ✅ 已完成**（2026-07-01 product-loop）；S14-C~F 待做。源：[审计报告](orch/homestead-hub-audit-report.md) |
 | S11 | React 视图迁移 | ☐ | 演进 |
 | S12 | 权威后端 & 多人/PvP/排行榜 | ☐ | 终点 |
 
@@ -62,14 +62,16 @@
 - [x] **引入一条可重复日循环**（P1-6）：扫荡 / 重复挑战已通层给缩水 KP + 经验 + 低概率装备，加每日次数封顶防通胀；或塔外单开经验 / 装备副本每日 N 次。解决「卡关即断更」。
 - **Exit**：hub 内可直接换人建队；预览即所战；升级成长可预期、角色有定位；至少头部 UR 在战斗里表现不同；卡关玩家仍有每日主动产出。type-check / test / build 通过。
 
-### ☐ S14-B · 战斗手感与深度（P2，补操作与站位策略）
+### ✅ S14-B · 战斗手感与深度（P2）— 已完成 2026-07-01
 
-- [ ] **90s 超时改按剩余 HP% 判胜 + 加倒计时**（P2-4）：`timedBattle.ts` 超时当前一刀切判负；UI（`SquadBattlefield.vue`）只显 elapsedMs 无倒计时。加醒目倒计时 / 进度条；超时按双方剩余 HP% 裁决。
-- [ ] **手动大招能选目标 + 增量推进**（P2-5）：当前 autoUltimates 默认 true、手动开大会整场 `regenerateBattleSimulation` 重算导致回放跳变，且目标是 skill 写死。让手动大招能选目标；默认设关或首战引导；改增量推进而非整场重算。
-- [ ] **让暴击系统活起来**（P2-2 / P2-6）：`formulas.ts` `critRate` 默认 0、全场唯一暴击源是 striker passive 的 10%，canCrit/critDamage 大量成死代码。给全体基础 critRate（如 0.05）并让装备 / 养成 / buff 能加暴击做成真实成长轴；或彻底删除 crit 字段避免死系统误导。
-- [ ] **给前中后排真实机制或去掉视觉**（P2-1）：position 目前只用于 `targeting.ts` 的 front/backEnemy 排序，`formulas.ts` / `effects.ts` 完全不读 position。给它真实机制（后排近战减伤 / AOE 衰减 / 前排默认仇恨）；若不做就去掉前中后排视觉，别让 UI 承诺机制而代码没实现。
-- [ ] **同类可叠加 buff 改按来源累加设上限**（P2-3）：`effects.ts` `maxRuntimeStatusValue` 现同 kind 取 Math.max → 双辅助价值被压平。可叠加类（atkUp/defDown/spUp/critRateUp）改累加设上限，控制类（stun/silence）保持不叠加。
-- **Exit**：战斗有倒计时与合理超时裁决；手动大招是有意义的操作杠杆；暴击 / 站位 / 团队增益至少有一项构成真实策略；引擎特征测试覆盖新规则。
+> ✅ **S14-B 全部 5 项已完成**（product-loop `--tier1 on --mode all`，3 轮 + 1 纠偏；纯战斗规则/UI，零存档改动 SAVE_VERSION 仍 15，670 测试全绿，engine 纯净）。落地实况（以实现为准）：SB-T1 = 超时按「存活数 + HP%」三态裁决 `resolveTimeout`（`timeoutWin` 发奖 / `timeoutLoss` / `timeoutDraw` 全 0）+ 战场倒计时/进度条 + `DEFAULT_MAX_TIME_MS` 单一时限源；SB-T2 = `resumeTimedBattle` 前缀冻结 + RNG 快照/恢复（**真无跳变**，非「整场重算截后缀」伪平滑）+ `ManualUltimateOrder.targetId` 单体大招选目标（AOE/self 忽略、死目标回退）+ View 复用同一 engine 判据 gate「选目标」UI；SB-T3 = `BASE_CRIT_RATE=0.05` 运行时单位注入（`DEFAULT_BATTLE_MODIFIERS` 保持 0、不删 crit 字段）+ 复用 `critRateUp` 加成轴，**收尾①暴击 UI 显形**（浮动金色 `CRIT` 数字 + 日志记暴击，纯 view）；SB-T4 = `POSITION_DAMAGE_TAKEN` 后/中排单体减伤、前排 =1、AOE 不减伤（engine 纯层）；SB-T5 = `sumStackableStatusValues` 按来源累加 + per-kind 上限 clamp（两处聚合一致改），控制类/shield/dot/hot 不进累加。产物见 `docs/orch/`。**下一步 = S14-C（角色差异化与养成长线）。**
+
+- [x] **90s 超时改按剩余 HP% 判胜 + 加倒计时**（P2-4）：`timedBattle.ts` 超时当前一刀切判负；UI（`SquadBattlefield.vue`）只显 elapsedMs 无倒计时。加醒目倒计时 / 进度条；超时按双方剩余 HP% 裁决。
+- [x] **手动大招能选目标 + 增量推进**（P2-5）：当前 autoUltimates 默认 true、手动开大会整场 `regenerateBattleSimulation` 重算导致回放跳变，且目标是 skill 写死。让手动大招能选目标；默认设关或首战引导；改增量推进而非整场重算。
+- [x] **让暴击系统活起来**（P2-2 / P2-6）：`formulas.ts` `critRate` 默认 0、全场唯一暴击源是 striker passive 的 10%，canCrit/critDamage 大量成死代码。给全体基础 critRate（如 0.05）并让装备 / 养成 / buff 能加暴击做成真实成长轴；或彻底删除 crit 字段避免死系统误导。
+- [x] **给前中后排真实机制或去掉视觉**（P2-1）：position 目前只用于 `targeting.ts` 的 front/backEnemy 排序，`formulas.ts` / `effects.ts` 完全不读 position。给它真实机制（后排近战减伤 / AOE 衰减 / 前排默认仇恨）；若不做就去掉前中后排视觉，别让 UI 承诺机制而代码没实现。
+- [x] **同类可叠加 buff 改按来源累加设上限**（P2-3）：`effects.ts` `maxRuntimeStatusValue` 现同 kind 取 Math.max → 双辅助价值被压平。可叠加类（atkUp/defDown/spUp/critRateUp）改累加设上限，控制类（stun/silence）保持不叠加。
+- **Exit（达成）**：战斗有倒计时与 HP% 超时裁决；手动大招可选目标且无回放跳变（有意义的操作杠杆）；暴击活起来且玩家可感知、站位减伤、团队增益按来源累加——三条策略轴均成立；引擎特征测试覆盖新规则。
 
 ### ☐ S14-C · 角色差异化与养成长线（P2）
 
@@ -164,4 +166,4 @@
   > 注：此项在历史上以两处不同措辞出现（Evolution 尾注的「按声优收集维度」与 2026-06-24 循环 round 1 的「声优维度」），是**同一个**跨栈/需后端项，此处已合并为一条，勿再拆。
 
 ---
-*本文只列「还剩什么」。完成史在 [HISTORY.md](HISTORY.md)；日常产品迭代需求源在 [SPRINT.md](SPRINT.md)。每完成一项请同步勾选；每完成一个 Sprint 请更新「进度总览」状态。最后整理 2026-07-01（S13 全部完成归档 HISTORY；新增 S14 家园 hub 深化，源自对抗性审计 [orch/homestead-hub-audit-report.md](orch/homestead-hub-audit-report.md)）。*
+*本文只列「还剩什么」。完成史在 [HISTORY.md](HISTORY.md)；日常产品迭代需求源在 [SPRINT.md](SPRINT.md)。每完成一项请同步勾选；每完成一个 Sprint 请更新「进度总览」状态。最后整理 2026-07-01（S13 归档 HISTORY；S14 家园 hub 深化 A/B 已完成——S14-A 六项 P1 急救 + S14-B 五项战斗手感与深度，均 product-loop `--tier1 on --mode all` 落地；S14-C~F 待做；源自对抗性审计 [orch/homestead-hub-audit-report.md](orch/homestead-hub-audit-report.md)）。*
