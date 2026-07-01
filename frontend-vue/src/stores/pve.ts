@@ -7,8 +7,35 @@ import { defineStore } from 'pinia';
 import { ref } from 'vue';
 import type { PresetSquad, TowerProgress } from '@/types/player';
 import { createDefaultPresetSquads, createDefaultTowerProgress, canonicalizeSquadMembers } from '@/infra/persistence';
-import { SQUAD_MEMBER_COUNT } from '@/engine';
+import { SQUAD_MEMBER_COUNT, calculateSweepReward, type SweepReward } from '@/engine';
 import { useProfileStore } from './profile';
+
+/**
+ * SA-T5：扫荡周额度封顶（明日方舟剿灭式周上限：随便哪天领满，天然防通胀 + 免点击疲劳）。
+ * 数字小到不破坏塔主线产出主导地位（一周满配总量 ≈ 一趟主线推进量级）。边界留 store，engine 只管缩水纯函数。
+ */
+export const SWEEP_WEEKLY_CAP = 10;
+
+/** 与 daily.ts 同款 ISO 周键（YYYY-Www）。复制而非横向 import，保持领域 store 自包含。 */
+function weekKey(date = new Date()): string {
+  const d = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+  const day = (d.getDay() + 6) % 7;
+  d.setDate(d.getDate() - day + 3);
+  const isoYear = d.getFullYear();
+  const firstThursday = new Date(isoYear, 0, 4);
+  const firstDay = (firstThursday.getDay() + 6) % 7;
+  firstThursday.setDate(firstThursday.getDate() - firstDay + 3);
+  const weekNo = 1 + Math.round((d.getTime() - firstThursday.getTime()) / (7 * 24 * 60 * 60 * 1000));
+  return `${isoYear}-W${String(weekNo).padStart(2, '0')}`;
+}
+
+/** 扫荡一次的结果（供门面/UI 一键结算飘字消费）。 */
+export interface SweepOutcome {
+  ok: boolean;
+  reward: SweepReward | null;
+  remaining: number; // 本周剩余可扫荡次数
+  reason?: 'notCompleted' | 'capReached';
+}
 
 export const usePveStore = defineStore('pve', () => {
   const presetSquads = ref<PresetSquad[]>(createDefaultPresetSquads());
@@ -56,6 +83,56 @@ export const usePveStore = defineStore('pve', () => {
     return floor < towerProgress.value.currentFloor;
   }
 
+  // --- SA-T5：扫荡（已通层重复挑战，独立路径，绝不调 completeFloor）---
+
+  /**
+   * 若已跨周，重置扫荡周额度（读时判定，幂等，不存定时器，仿 daily.ensureThisWeek）。
+   * 墙钟廉价钳位：只比对周键是否相等；跨周（含回拨到别的周键）都视为「新一周」归零一次即可——
+   * 回拨白刷的风险由「周键相等即不重置」天然覆盖（同周内回拨不会凭空多出额度）。
+   */
+  function ensureThisSweepWeek() {
+    const wk = weekKey();
+    if (towerProgress.value.sweepWeekKey !== wk) {
+      towerProgress.value.sweepWeekKey = wk;
+      towerProgress.value.sweepUsedThisWeek = 0;
+    }
+  }
+
+  function getSweepUsedThisWeek(): number {
+    ensureThisSweepWeek();
+    return towerProgress.value.sweepUsedThisWeek;
+  }
+
+  function getSweepRemaining(): number {
+    return Math.max(0, SWEEP_WEEKLY_CAP - getSweepUsedThisWeek());
+  }
+
+  /** 是否可扫荡某层：该层已通过（floor < currentFloor）且本周额度未用尽。 */
+  function canSweep(floor: number): boolean {
+    return hasCompletedFloor(floor) && getSweepRemaining() > 0;
+  }
+
+  /**
+   * 扫荡一次已通层：独立 action——只读 hasCompletedFloor 判资格、记周计数、返回缩水奖励，
+   * **绝不调用 completeFloor**（不推进 currentFloor / 不触发成就 / 不掉装备）。发奖由门面用返回的 reward 落 earn/addCharacterExp。
+   */
+  function sweepFloor(floor: number): SweepOutcome {
+    ensureThisSweepWeek();
+    if (!hasCompletedFloor(floor)) {
+      return { ok: false, reward: null, remaining: getSweepRemaining(), reason: 'notCompleted' };
+    }
+    if (getSweepRemaining() <= 0) {
+      return { ok: false, reward: null, remaining: 0, reason: 'capReached' };
+    }
+    towerProgress.value.sweepUsedThisWeek += 1;
+    const reward = calculateSweepReward(floor);
+    useProfileStore().addLog(
+      `扫荡第 ${floor} 层：知识点 +${reward.sweepKnowledge}、经验 +${reward.sweepCharacterExp}（本周剩余 ${getSweepRemaining()} 次）`,
+      'success',
+    );
+    return { ok: true, reward, remaining: getSweepRemaining() };
+  }
+
   // 每日挑战次数限制已移除，保留接口兼容
   function canAttemptToday(): boolean {
     return true;
@@ -78,6 +155,8 @@ export const usePveStore = defineStore('pve', () => {
     // 二次兜底：每队成员去重 + 5 槽（对齐运行期配队不变式，杜绝克隆放大），与家园/装备双层范式一致。
     presetSquads.value = data.presetSquads.map(sq => ({ ...sq, members: canonicalizeSquadMembers(sq.members) }));
     towerProgress.value = data.towerProgress;
+    // 加载后立即做一次跨周判定：旧周的扫荡额度直接归零（读时一致，仿 daily.deserialize）。
+    ensureThisSweepWeek();
   }
 
   function reset() {
@@ -96,6 +175,10 @@ export const usePveStore = defineStore('pve', () => {
     hasCompletedFloor,
     canAttemptToday,
     recordTowerAttempt,
+    getSweepUsedThisWeek,
+    getSweepRemaining,
+    canSweep,
+    sweepFloor,
     serialize,
     deserialize,
     reset,

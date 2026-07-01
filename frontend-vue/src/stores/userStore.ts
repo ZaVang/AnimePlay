@@ -677,5 +677,21 @@ export const useUserStore = defineStore('user', () => {
     hasCompletedFloor: pve.hasCompletedFloor,
     canAttemptToday: pve.canAttemptToday,
     recordTowerAttempt: pve.recordTowerAttempt,
+    // SA-T5：扫荡已通层——独立路径（不推进 currentFloor / 不触发成就 / 不掉装备），发缩水奖励并存档。
+    getSweepUsedThisWeek: pve.getSweepUsedThisWeek,
+    getSweepRemaining: pve.getSweepRemaining,
+    canSweep: pve.canSweep,
+    sweepFloor: (floor: number, squadId: number) => {
+      const outcome = pve.sweepFloor(floor);
+      if (outcome.ok && outcome.reward) {
+        profile.earn('knowledgePoints', outcome.reward.sweepKnowledge);
+        // 经验发给该小队里的有效成员（去重后的实成员，空位跳过）。
+        for (const memberId of pve.getSquadMembers(squadId)) {
+          if (memberId != null) nurture.addCharacterExp(memberId, outcome.reward.sweepCharacterExp);
+        }
+        saveToServer();
+      }
+      return outcome;
+    },
   };
 });

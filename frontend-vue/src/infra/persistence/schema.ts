@@ -19,6 +19,8 @@
  *   挂机产出的成长（经验/好感）写进既有 characterNurtureData，故 homestead 域本身极小。
  * v14（S13-C1）：养成精简——characterNurtureData 瘦身为两轴（affection + 等级/加点；删训练/属性/强化/对话/礼物等字段，
  *   迁移丢弃旧字段、补 statPoints 缺省）+ 新增**空** equipment 域占位（inventory + equipped per character，C2 接配装）。
+ * v15（S14-A SA-T5）：TowerProgress 新增扫荡周额度两字段——sweepWeekKey（weekKey，跨周读时归零）+ sweepUsedThisWeek（本周已用次数）。
+ *   扁平定长（非 Record<floor,count>，随层数不膨胀，仿 DailyChallengeSave 紧凑范式）。旧档迁移补缺省（''/0）。
  */
 import type { PityState } from '@/engine/gacha/draw';
 import { SQUAD_MEMBER_COUNT } from '@/engine/squad/eligibility';
@@ -32,7 +34,7 @@ import type {
   TowerProgress,
 } from '@/types/player';
 
-export const SAVE_VERSION = 14 as const;
+export const SAVE_VERSION = 15 as const;
 
 /** 商店单品的当日购买记录（跨天读取时自动视为 0）。 */
 export interface ShopPurchaseRecord {
@@ -294,5 +296,8 @@ export function createDefaultTowerProgress(): TowerProgress {
     floorRewards: {},
     todayAttempts: 0,
     lastAttemptDate: '',
+    // v15：扫荡周额度（新档/旧档迁移补缺省）
+    sweepWeekKey: '',
+    sweepUsedThisWeek: 0,
   };
 }

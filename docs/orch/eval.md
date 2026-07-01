@@ -1,84 +1,49 @@
-# Evaluator Report - D5
+# Eval — S14-A 第 3/3 轮（product-loop --tier1 on --mode all）
 
-## 结论
+> 本轮切片 = SA-T4（签名覆盖表回归锁）+ SA-T5（扫荡日循环 + v15 存档回归锁），与第 2 轮同一切片。
+> tier1 on → 引擎跑满 3 轮，本轮定位 = 验收再确认 + 抓回归，决策仅信息性。日期：2026-07-01。
+> Evaluator 亲自重跑全部验收命令 + 独立抽查实现真实性（不改源码）。
 
-PASS
+## Checkbox 状态核对（SPRINT.md）
 
-D5 的核心合同已经完成：`/homestead` 成为基地 hub，家园、角色、编队、探索、战斗五个面板在同一入口内切换；旧 `/squad-battle`、`/nurture` 保留兼容重定向；主导航不再把家园、养成、挑战塔拆成多个并列入口。指定验证命令全部通过，`engine/squad` 纯逻辑扫描通过。
+- SA-T1/T2/T3（第 1 轮切片）：`[x]`，非本轮范围。
+- SA-T4（本轮 + 第 3 轮回归锁）：`[x]` ✓ 与实现一致。
+- SA-T5（本轮 + 第 3 轮回归锁）：`[x]` ✓ 与实现一致。
+- SA-T6：`[]` — 明确排第 3 轮切片之外（依赖 SA-T1），非本轮范围，正确保持未勾。
 
-## 覆盖清单
+## 验收命令重跑实际输出（Evaluator 亲自跑）
 
-- [x] 读取 `docs/FUTURE.md`、`docs/orch/plan.md`、`docs/orch/gen_status.md`，确认 D5 合同为基地 hub 整合、旧路由兼容、五面板信息完整、指定文档同步与验证闭环。
-- [x] 路由检查：`frontend-vue/src/router/index.ts` 中 `/homestead` 指向 `HomesteadHubView.vue`；`/squad-battle` 重定向到 `/homestead?tab=explore`；`/nurture` 重定向到 `/homestead?tab=characters`。
-- [x] 顶部入口检查：`frontend-vue/src/App.vue` 侧边导航只保留 `/homestead` 的“基地 hub”入口，没有继续并列暴露 `/nurture` 或 `/squad-battle`。
-- [x] Hub 面板检查：`HomesteadHubView.vue` 定义 `home/characters/squad/explore/battle` 五个 tab，并通过 query `tab` 切换。
-- [x] 家园面板：复用 `HomesteadView`，保留角色走动与离线收益入口。
-- [x] 角色面板：展示选中角色五维基础/加点/装备/最终值，展示装备槽与小队战技能，并内嵌 `NurtureView` 保留养成/配装操作。
-- [x] 编队面板：展示 5 个站位、当前小队战力、可挑战状态与技能摘要，使用 `SQUAD_MEMBER_COUNT = 5`。
-- [x] 探索面板：展示当前塔层、敌方阵容、敌方战力/难度与奖励预览。
-- [x] 战斗面板：复用 D4 `SquadBattleView`，保留横板半自动战斗与结算反馈入口。
-- [x] 指定文档检查：`docs/挑战塔系统.md`、`docs/角色养成系统.md`、`frontend-vue/CLAUDE.md` 已更新为基地 hub、新路由、新机制；旧“前排轮流普攻/执行回合/一键结算”没有被作为现行规则描述。
+1. `npm run type-check`（vue-tsc --build）→ **PASS**，0 错误、无输出。
+2. `npm run test`（vitest run）→ **PASS**：`Test Files 58 passed (58) / Tests 653 passed (653)`，Duration 16.95s。
+3. `npm run build` → **PASS**：`✓ built in 8.07s`，`dist/assets/HomesteadHubView-BaznqauH.js 98.55 kB / gzip 32.07 kB` 正常产出。
+4. `python backend/test_security.py`（.venv python）→ **PASS**：`RESULT: PASS — all security checks passed`，`EXIT=0`（鉴权/越权 401/乐观并发 409/原子写/邀请码门控全 PASS）。
+5. `grep -rn "debug=True" backend/server.py api/index.py` → **零命中**（两文件均 No matches found）。
 
-## 命令结果摘要
+## 自报 vs 实际对比
 
-```text
-cd frontend-vue
-npm run test -- squad
+完全一致。Gen 自报 type-check PASS / test 653 全绿 / build 8-9s / security PASS EXIT0 / grep 零命中——逐条复跑吻合（test 数一致 653，build 产物哈希一致 HomesteadHubView-BaznqauH.js，security 全 PASS）。本轮自报「零源码改动」，与文档改动一致。
 
-Test Files  10 passed (10)
-Tests       82 passed (82)
-```
+## pitfalls 合规
 
-```text
-cd frontend-vue
-npm run test
+- engine 纯净：`grep -rn "Math.random|@/stores|from 'pinia'" frontend-vue/src/engine/` 仅命中注释/README/`rng.ts:81` 唯一 sanctioned `defaultRng`——**无违规**。
+- SAVE_VERSION=15（schema.ts:37），本轮未再升 schema，符合红线。
+- 扫荡字段扁平定长 `sweepWeekKey`/`sweepUsedThisWeek`（非 Record<floor,count>、未硬复用 stub `todayAttempts/lastAttemptDate`）——符合拍板②。
+- 无动态色类/text-white 新增（本轮零源码改动）。
 
-Test Files  58 passed (58)
-Tests       628 passed (628)
-```
+## 真实性抽查结论（Read/Grep 不改码）
 
-```text
-cd frontend-vue
-npm run type-check
+- **SA-T4 属实**：`SIGNATURE_KIT_OVERRIDES`（squadSkillKits.ts:411-551）确为 **10 个招牌 UR**（3575/10440/304/706/10439/49/12393/10596/1211/303），落 8~12 区间、未扩到 20。差异全在机制层（silence 点名 / allEnemies stun+slow / self 三叠 buff / dispel+atkDown+silence / 群疗+cleanse+revive / 长 silence / energyGain+haste / 单体 dot / execute+吸血 / shield+taunt），非纯倍率。全走结构化 `effects`（无手写 description），只用 9 种 squad SkillEffect，无 /battle effectId 泄漏。`isSignatureKit` 留口存在。
+- **SA-T5 属实**：`sweepFloor`（pve.ts:119-134）独立 action，只读 `hasCompletedFloor` 判资格、记 `sweepUsedThisWeek`、返回缩水 reward，**绝不调 completeFloor**、不推进 currentFloor。跨周 `ensureThisSweepWeek` 读时归零 + 回拨钳位（周键相等即不重置）。三处同改齐备：schema.ts（字段+default ''/0+v15 沿革）/ migrations.ts（类型守卫补缺省）/ pve.ts 装配器。`migrations.test.ts` 覆盖 v14→补缺省 / 计数往返一致 / 脏档回落。`rewards.test.ts` 断言缩水（sweep << 首通）+ 边际递减（high-low<60）+ 周产出 << 十层推塔（防通胀）+ 绝对封顶。
+- engine 纯净复核：无新增违规。
 
-vue-tsc --build passed
-```
+## 失败原因
 
-```text
-cd frontend-vue
-npm run build
+无。
 
-381 modules transformed
-built in 8.40s
-```
+## 新坑待追加
 
-构建只出现 Browserslist/caniuse-lite 数据 6 个月未更新提示，不影响本次 D5 验收。
+无新代码坑。既有维护性提醒（`weekKey` 在 pve.ts 与 daily.ts 双份同源，改算法两处同改）已在 pitfalls 记录，非本轮动手项。
 
-```text
-engine/squad purity scan passed
-```
+## 决策
 
-扫描模式：
-
-```powershell
-Math\.random\(|localStorage|fetch\(|document\.|window\.|@/stores|@/views|@/components
-```
-
-扫描范围：`frontend-vue/src/engine/squad`。
-
-## 发现的问题 / 风险
-
-无阻塞问题。
-
-非阻塞风险：
-
-- 本轮 evaluator 未启动临时前端服务，也未登录真实账号造数据；路由与面板覆盖基于源码静态检查、类型检查、构建和测试验证。若要做发布前体验硬验收，建议补一轮带测试账号/fixture 的 Playwright 路径检查。
-- 主线程 follow-up 已同步 `docs/README.md` 与 `docs/前端界面说明与线框图.md`，移除了旧 4 槽位、训练/对话、执行回合/一键结算等现行误导文案。当前旧规则关键词只保留在 FUTURE 历史/目标语境和“已下线/不再使用”的说明中。
-
-## 建议
-
-- D5 可以作为完成项保留。
-- 下一步若继续打磨 S13 收口，优先补一条登录态/fixture 的浏览器验收脚本，覆盖“基地 hub -> 角色 -> 编队 -> 探索 -> 战斗 -> 结算”的真实闭环。
-- 发布前继续做一次真实登录态视觉巡检，确认嵌入的 `HomesteadView`、`NurtureView`、`SquadBattleView` 在常见数据量下没有布局拥挤。
-
-DECISION: PASS
+**COMPLETE** — 5 条验收命令全部 Evaluator 亲自复跑通过（type-check 0 / test 653 全绿 / build 通过 / security PASS EXIT0 / grep 零命中）；SA-T4 + SA-T5 回归锁本轮零改动确认，两 SA-T 真实性抽查属实、红线全部成立（SAVE_VERSION=15 未再动 / SIGNATURE_KIT=10 未扩 / 扫荡字段扁平定长 / sweepFloor 不调 completeFloor / engine 纯净）。tier1 on 决策为信息性，引擎已跑满 3 轮。

@@ -5,11 +5,11 @@
  */
 import { defineStore } from 'pinia';
 import { ref } from 'vue';
-import type { CharacterNurtureData } from '@/types/nurture';
+import type { CharacterNurtureData, StatPoints } from '@/types/nurture';
+import type { CharacterCard } from '@/types/card';
 import { useGameDataStore } from './gameDataStore';
 import { useProfileStore } from './profile';
 import {
-  defaultRng,
   getRequiredExpForLevel,
   getLevelFromExp,
   getLevelProgress as engineGetLevelProgress,
@@ -28,6 +28,14 @@ import {
 
 /** 互动经验：每点好感度 ×5（好感增加联动经验）。 */
 const EXP_PER_AFFECTION = 5;
+
+/** 缺省 base 五维（角色数据缺 battle_stats 或角色未找到时的兜底，与战力计算 fallback 一致）。 */
+const DEFAULT_BASE_STATS: StatPoints = { hp: 100, atk: 50, def: 30, sp: 40, spd: 60 };
+
+/** 取角色 base 五维（SA-T3 确定成长的分配权重来源）。缺失时退化为均衡兜底。 */
+function baseStatsOf(character: CharacterCard | null | undefined): StatPoints {
+  return (character?.battle_stats as StatPoints | undefined) ?? DEFAULT_BASE_STATS;
+}
 
 export const useNurtureStore = defineStore('nurture', () => {
   const characterNurtureData = ref<Map<number, CharacterNurtureData>>(new Map());
@@ -106,19 +114,21 @@ export const useNurtureStore = defineStore('nurture', () => {
     if (newLevel > oldLevel && newLevel <= MAX_CHARACTER_LEVEL) {
       nurtureData.level = newLevel;
 
-      const gain = rollLevelUpStatPoints(oldLevel, newLevel, defaultRng);
+      const character = useGameDataStore().getCharacterCardById(characterId);
+      // SA-T3：升级加点改确定成长——按角色 base 五维比例分配，去随机。
+      // 旧档已 roll 的 statPoints 不动（已知取舍：只影响未来升级，不做一次性重算迁移，不升 schema）。
+      const gain = rollLevelUpStatPoints(oldLevel, newLevel, baseStatsOf(character));
       nurtureData.statPoints.hp += gain.hp;
       nurtureData.statPoints.atk += gain.atk;
       nurtureData.statPoints.def += gain.def;
       nurtureData.statPoints.sp += gain.sp;
       nurtureData.statPoints.spd += gain.spd;
 
-      const character = useGameDataStore().getCharacterCardById(characterId);
       if (character) {
         const total = gain.hp + gain.atk + gain.def + gain.sp + gain.spd;
         profile.addLog(`🎉 ${character.name} 等级提升！Lv.${oldLevel} → Lv.${newLevel}`, 'success');
         profile.addLog(
-          `随机加点 +${total}：HP+${gain.hp} ATK+${gain.atk} DEF+${gain.def} SP+${gain.sp} SPD+${gain.spd}`,
+          `成长加点 +${total}：HP+${gain.hp} ATK+${gain.atk} DEF+${gain.def} SP+${gain.sp} SPD+${gain.spd}`,
           'info',
         );
         if (newLevel >= MAX_CHARACTER_LEVEL) {
