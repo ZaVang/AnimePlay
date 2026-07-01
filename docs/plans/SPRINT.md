@@ -1,151 +1,162 @@
-# AnimePlay — SPRINT 合同（S14-A：家园 hub 深化 · P1 急救）
+# AnimePlay — SPRINT 合同（S14-B：战斗手感与深度）
 
 > product-loop 执行合同（本轮 `--tier1 on --mode all --max_iter 3`）。
-> **本 Sprint 唯一目标 = 完成 `docs/FUTURE.md` 的 S14-A 全部任务**（下方任务清单即 S14-A 逐条落地）。
-> Tier1 三审（experience/evolution/research）用于 **refine HOW + 抓回归 + 微调**，**不开新范围**；已完成任务保持 `[x]`。
-> **实现前必读**：`frontend-vue/CLAUDE.md`、`docs/plans/pitfalls.md`、`docs/FUTURE.md` S14、`docs/orch/homestead-hub-audit-report.md`（P#-# 证据源）。
+> **本 Sprint 唯一目标 = 完成 `docs/FUTURE.md` 的 S14-B 全部任务（SB-T1..SB-T5）**。
+> Tier1 三审用于 **refine HOW + 抓回归 + 微调**；「不开新范围」= 不超出 S14-B，**绝不表示可以跳过本轮被指派的 SB-T 任务**（S14-A 曾因把指派任务误判为「新范围」而空跑一轮，本轮严禁重演）。
+> **实现前必读**：`frontend-vue/CLAUDE.md`、`docs/plans/pitfalls.md`、`docs/FUTURE.md` S14-B、`docs/orch/homestead-hub-audit-report.md`（P#-# 证据源）。
 
 ## 产品背景
-- AnimePlay：Bangumi 数据的抽卡+收集+多玩法网页游戏。前端 Vue3+TS+Pinia+Tailwind(Vite)，后端 Flask。
+- AnimePlay：Bangumi 数据的抽卡+收集+多玩法二次元网页游戏（单机向，对标 PCR 但不追付费竞技）。前端 Vue3+TS+Pinia+Tailwind(Vite)，后端 Flask。
 - 启动：前端 `cd frontend-vue && npm run dev`（:5173）；后端 `python start_server.py`（:5001）。
-- 家园 hub = 路由 `/homestead` → `HomesteadHubView.vue`，query `tab=home|characters|squad|explore|battle` 切 5 面板。
-- 本 Sprint = **S14-A P1 急救**：把 S13 交付的「能跑但缺选择空间」的家园 hub，补上编队编辑、预览一致性、可预期成长、角色差异化、可重复循环，使其从「半成品」变「完整玩法」。
+- 战斗 = 家园 hub 的 battle 面板：`frontend-vue/src/views/SquadBattleView.vue` 消费纯引擎 `frontend-vue/src/engine/squad/timedBattle.ts`（时间轴半自动 5v5）+ `formulas.ts`/`effects.ts`/`targeting.ts`；UI 组件在 `frontend-vue/src/components/battle/squad/*`。
+- 本 Sprint = **S14-B 战斗手感与深度**：把「能打但无操作、无策略、判负粗暴」的小队战补成有倒计时/合理裁决、暴击活着、站位有意义、团队增益有协同、手动大招是真杠杆的战斗。
 
-## 背景根因（S14-A 逐个拆解，勿偏离）
-1. 角色战斗零差异化：`data/squadSkillKits.ts` 6 原型模板套所有角色，个人技只借 `.name`。
-2. 养成/配装无决策：`engine/nurture/rules.ts` 升级随机加点、不可预期、无 role 定位。
-3. 无可重复循环：`stores/pve.ts`+`engine/squad/rewards.ts` 通过层零收益，卡关即断更。
+## 战斗现状根因（S14-B 逐个拆解）
+1. 暴击死系统：`formulas.ts` critRate 默认 0，全场唯一暴击源是 striker passive 10%，canCrit/critDamage 大量死代码。
+2. 站位是装饰：position 仅用于 `targeting.ts` front/backEnemy 排序，`formulas.ts`/`effects.ts` 不读 position——前中后排怎么排都不影响结果。
+3. buff 无协同：`effects.ts` maxRuntimeStatusValue 同 kind 取 Math.max，双辅助价值被压平。
+4. 判负粗暴：`timedBattle.ts` 90s 超时一刀切判负、无倒计时，磨血占优也被判输。
+5. 手动大招无杠杆：autoUltimates 默认 true、手动开大整场 `regenerateBattleSimulation` 重算致回放跳变、目标写死。
 
 ## 架构铁律（不可违反）
-engine 纯净（零 Vue/Pinia/DOM/IO/`Math.random`；掉落/成长/差异化解析走纯函数 + 注入 RNG）/ 依赖只向下 / 货币只走 `profile.spend·earn` / 颜色走皮肤语义令牌（禁 text-white 压浅底、禁运行时拼接动态色类）/ 组件 setTimeout·rAF 登记并卸载清除 / **存档字段增改必须 schema + migrations + 装配器三处同改 + 往返测试**。**别破坏 C1/C2 已成的养成两轴、装备系统、家园挂机/塔加经验好感入口。**
+engine 纯净（`frontend-vue/src/engine/**` 零 Vue/Pinia/DOM/IO/`Math.random`；暴击/裁决/站位/叠加逻辑全进 `engine/squad` 纯层，随机走注入 RNG `rng.chance` 等）/ 依赖只向下 / 颜色走皮肤语义令牌（禁 text-white 压浅底、禁运行时拼接动态色类）/ 组件 setTimeout·rAF 登记并卸载清除 / 改文件前先 Read / 改战斗规则前先看对应 `*.test.ts`（S1 起特征测试是护栏）。**别破坏 S14-A 已成的 6 项**（编队编辑 / towerFloorEnemySeed 预览同源 / 确定加点 / 10 招牌 UR 差异化覆盖 / 扫荡日循环+存档 v15 / Plan A 三 tab 消冗余）。**本 Sprint 预期不改存档**（纯战斗规则/UI；若确需改存档才 schema+migrations+装配器三处同改+往返测试）。
 
-## 任务清单（S14-A，按优先级/安全度排序；⭐=低成本高收益接线）
+## 任务清单（S14-B = SB-T1..SB-T5）
 
-- [x] **SA-T1｜⭐ 接通编队编辑（P1-3 / P1-4）**
-  - 目标：`HomesteadHubView.vue` 的 squad 面板从只读变可编辑——formation-slot 点击可换人（复用 `CharacterSelectModal` 或等价 picker + `pve.updateSquadMember`）、squad-select 可改名（`pve.updateSquadName`）、空位显示可点「+添加」。仅接线已有 store action，不新增存档字段。
-  - 验收：hub 内可换人/改名，改动即时反映到战力/校验；type-check 0 / test 全绿 / build 通过；无动态色类。
-- [x] **SA-T2｜⭐ 统一敌人预览种子（P2-17，真 bug）**
-  - 目标：`HomesteadHubView` 探索面板 `enemyPreview` 与 `SquadBattleView` 实际敌人来源统一为同一确定性种子（按 floor 派生），或预览读实战将用的持久化 towerEnemyData；消除「预览≠实战」。同步决定「刷新敌人」按钮去留（保留则预览随之更新）。
-  - 验收：同一层预览敌人 = 进战敌人（可加特征测试固定种子断言一致）；type-check/test/build 通过。
-- [x] **SA-T3｜升级加点改确定成长 + role 定位（P1-5 / P2-9）**
-  - 目标：`engine/nurture/rules.ts` 的升级加点从随机改为**确定分配**（按角色 base 五维比例分配 `POINTS_PER_LEVEL`，保持每级总量不变、去随机）；`role` 优先**从 archetype 纯函数派生**（复用 `inferArchetype`/未来显式字段，**不新增存档字段**），成长按定位倾斜（guardian 偏 hp/def、striker 偏 atk/spd…）。旧档已 roll 的 statPoints 不动（只影响未来升级）。
-  - 验收：同角色升级结果可复现且符合定位；`engine/nurture/rules.test.ts` 更新为确定断言；不新增存档字段；type-check/test/build 通过。
-- [x] **SA-T4｜个人技能驱动差异化技能位（P1-1 / P1-2）**
-  - 目标：给 `getSquadSkillKitForCharacter` 加一层**per-character 覆盖机制**——手写差异化 kit 映射（`characterId → 覆盖 skill1/ultimate 的 effects/数值`），命中则用覆盖、未命中回落原型模板。为**头部 8~12 个招牌 UR** 手写差异化技能位（至少覆盖 skill1 或 ultimate 各一条唯一 effect + 与个人技名一致的描述）。**严禁「描述≠行为」**（CLAUDE.md Known Debt 红线）：写了效果就必须真跑通引擎。
-  - 验收：覆盖角色的 kit 与同原型他人**不再逐字节相同**；`data/squadSkillKits.test.ts` 增覆盖用例（命中覆盖 / 回落原型 / 描述与 effect 一致）；type-check/test/build 通过。
-- [x] **SA-T5｜引入可重复日循环（P1-6）**
-  - 目标：加「扫荡/重复挑战已通层」——对 `floor < currentFloor` 的已通层，每日可领缩水奖励（KP+角色经验，装备低概率或不掉），带**每日次数封顶**防通胀。存档记录每日已用次数 + 日期（schema+migrations+装配器三改 + 往返测试）。挑战塔主线推进逻辑不变。
-  - 验收：已通层可重复领缩水奖励且受每日封顶；跨天重置；存档往返保真；`stores/pve` 或 engine 纯函数测试覆盖；type-check/test/build 通过。
-- [x] **SA-T6｜消解三 tab 结构冗余（P1-3，依赖 SA-T1）**
-  - 目标：编队/探索/战斗三 tab 与内嵌爬塔页信息重复。落地二选一（Planner 定）——(A) squad tab 成唯一编队入口、explore 保留预览+「开始挑战」直接触发、battle 只承载演出；(B) 删 squad+explore 只读 tab、towerMode 编成屏作 explore 内容。目标是「一处编辑、不重复」。
-  - 验收：无三重只读重复；从 hub 能顺畅走「编队→探索→战斗」；旧路由/深链不破；type-check/test/build 通过。
+- [x] **SB-T1｜90s 超时改按剩余 HP% 判胜 + 倒计时 UI（P2-4）**
+  - 目标：`timedBattle.ts` 超时不再一刀切判负；改按双方剩余 HP 总量%（或存活数+HP%）裁决胜负，平局定义明确。`SquadBattlefield.vue`（或战场 UI）加醒目倒计时/进度条。
+  - 验收：engine 特征测试覆盖「超时按 HP% 判胜/判负/平局」三态；UI 有倒计时；type-check/test/build 通过。
+- [x] **SB-T2｜手动大招能选目标 + 平滑推进（P2-5）**
+  - 目标：手动开大不再整场重算致回放跳变（改为从当前时刻平滑继续/增量推进，或等价的无跳变体验）；手动大招可由玩家选目标（至少对单体目标类大招）。默认自动大招策略由 Planner 定（可默认关或首战引导）。engine 纯净、RNG 注入不破确定性。
+  - 验收：手动开大后战斗演出不发生「回放跳变/时间倒流」；单体大招可选目标并命中所选；相关 engine/UI 测试；type-check/test/build 通过。
+- [x] **SB-T3｜让暴击系统活起来（P2-2 / P2-6）**
+  - 目标：给全体一个基础 critRate（如 0.05，数值 Planner/Generator 定），并让至少一条既有成长/增益轴（养成 / 装备 modifier / buff）能加暴击，使 canCrit/critDamage 不再是死代码；或若判定不值得则彻底删除 crit 字段（择一，别留半死系统）。保持 rng 注入可复现。
+  - 验收：暴击真实发生且可被加成影响（特征测试断言 critRate>0 时产出 critical event、加成生效）；type-check/test/build 通过。
+- [x] **SB-T4｜前中后排真实机制或去掉视觉（P2-1）**
+  - 目标：给 position 真实战斗意义（如后排受近战/单体伤害减免、AOE 对后排衰减、前排默认承受仇恨其一即可，Planner 定最小可用机制），全部进 `engine/squad` 纯层且有测试；若判定不做，则移除前中后排的视觉承诺以免误导（择一，别让 UI 承诺机制而代码不实现）。
+  - 验收：position 影响战斗结果（特征测试断言不同站位伤害/被选中差异）或视觉承诺已移除；type-check/test/build 通过。
+- [x] **SB-T5｜同类可叠加 buff 改按来源累加设上限（P2-3）**
+  - 目标：`effects.ts` 可叠加类状态（atkUp/defUp/spUp/haste/critRateUp/atkDown/defDown 等）从 Math.max 改为按来源累加并设合理上限；控制类（stun/silence/taunt）保持不叠加（仍取最长/不累加）。双辅助不再被压平。
+  - 验收：engine 特征测试断言「同 kind 多来源累加至上限、控制类不叠加」；不破坏现有 effects 测试；type-check/test/build 通过。
 
-> **排期建议**：SA-T1/T2/T3 为 ⭐ 低成本高收益接线，优先本轮落地；SA-T4/T5 涉及数据/存档，第 2 轮；SA-T6 依赖 SA-T1，第 2~3 轮。每轮务必保持验收命令全绿、每子项独立可合并。
+> **排期建议（每轮必须完成被指派任务，不得空跑）**：
+> - 第 1 轮 = **SB-T3 + SB-T5**（纯 engine formulas/effects，内聚、低 UI 风险、易测）。
+> - 第 2 轮 = **SB-T1 + SB-T4**（engine 裁决/站位 + 少量战场 UI）。
+> - 第 3 轮 = **SB-T2**（手动大招选目标+平滑推进，最复杂）+ 收尾（确保 SB-T1..T5 全 `[x]`、无回归）。
+> 每轮务必保持验收命令全绿、每子项独立可合并。SB-T2 若「平滑增量推进」受现有「一次性预演算+回放」架构限制过大，Planner 可收窄为「无跳变体验 + 选目标」的最小可用形态并在计划中说明，但**不得整项跳过**。
 
 ## 验收命令（Evaluator 必须亲自重跑，记录实际输出）
 
 ```bash
 # 1. 前端类型检查（期望 0 错误）
 cd frontend-vue && npm run type-check
-# 2. 前端测试（期望全绿，含本轮新增/更新的 nurture/squadSkillKits/pve 测试）
+# 2. 前端测试（期望全绿，含本轮新增/更新的 squad 战斗特征测试）
 cd frontend-vue && npm run test
 # 3. 前端生产构建（期望成功）
 cd frontend-vue && npm run build
-# 4. 后端安全基线（S14-A 不碰后端，期望退出码 0、全 PASS）
+# 4. 后端安全基线（S14-B 不碰后端，期望退出码 0、全 PASS）
 python backend/test_security.py
 # 5. debug 关闭核验（期望零命中）
 grep -rn "debug=True" backend/server.py api/index.py
 ```
 
-**通过标准**：命令 1/2/3/4 成功（4 退出码 0、全 PASS），命令 5 零命中，且当轮承诺的 SA-T* 任务全部 `[x]` 并与实现一致。**S14-A 整体完成** = SA-T1..SA-T6 全 `[x]`。
+**通过标准**：命令 1/2/3/4 成功（4 退出码 0、全 PASS），命令 5 零命中，且当轮承诺的 SB-T* 任务全部 `[x]` 并与实现一致。**S14-B 整体完成** = SB-T1..SB-T5 全 `[x]`。
 
 ---
 
-## 第 1 轮追加任务（基于 Reviewer 三审审计）
+## 第 1 轮追加任务（product-loop --tier1 on --mode all，本轮指派 = SB-T3 + SB-T5）
 
-> 本轮切片 = **SA-T1 + SA-T2 + SA-T3**（一个连贯、能独立合并、验收全绿的切片）。
-> SA-T4/SA-T5 排第 2 轮，SA-T6（依赖 SA-T1）排第 2~3 轮——**本轮不做**。
-> 主任务定义见上方 SA-T1..T6 清单，此处只补「本轮承诺 + 采纳的 refine 细化子项」。三审共识决策已拍板写入各子项验收。
+> 本轮承诺落地 **SB-T3（暴击活起来）+ SB-T5（buff 累加设上限）**，两者皆纯 engine（`formulas.ts`/`effects.ts`），内聚、低 UI 风险、易测，且天然协同（见拍板 3）。主清单 SB-T3/SB-T5 条目为准，此处追加的是本轮承诺 + 采纳的 refine 子项 + 关键设计决策拍板。**这两项必须真实现落地，严禁只做回归确认（S14-A SA-T6 教训）。**
 
-- [x] **SA-T1（本轮）｜接通编队编辑 + 顺手补手感**
-  - 采纳 refine（体验官 Critical）：换人/改名后**战力与校验即时刷新**；picker 内已占用角色置灰；空槽显示可点「+」；站位卡给「可点」的视觉暗示（cursor/hover 边框）。
-  - 不做（三审共识「别过度」）：拖拽排序、一键最优编队、为 hub 单造第二套 picker——复用现成组件即可。
-  - 验收：hub squad 面板可换人/改名/点空槽加人；改动即时反映到战力/校验；无动态色类；type-check 0 / test 全绿 / build 通过。
+### 关键设计决策拍板（写进验收）
 
-- [x] **SA-T2（本轮）｜统一敌人预览种子 + 移除刷新按钮**
-  - 拍板决策（四源共识）：预览与实战统一为**同一确定性来源**（按 floor 派生的确定性种子，或预览读实战将用的同一份敌人数据——「single source of truth」，Generator 择优）；**同步移除「刷新敌人 / 重新刷新」按钮**（统一确定性后刷新出来仍是同一批=新困惑，移除是本任务闭合的一部分，非可选）。
-  - 验收：同一层「预览敌人 === 进战敌人」，加特征测试固定种子/同源断言一致；刷新按钮已移除且无残留引用；type-check/test/build 通过。
+- **拍板 1（SB-T3 基础 critRate 注入位置）**：**不改** `DEFAULT_BATTLE_MODIFIERS.critRate`（保持 0 = 引擎纯净默认，守住 `formulas.test.ts` 的 `DEFAULT_CRIT_RATE` 断言与 `timedBattle.test.ts` 的「default 0」断言，避免污染引擎默认语义）。基础暴击是「squad 战斗规则」而非「引擎默认」——落在 squad 运行时单位构造处，作为新常量注入每个运行时单位的 base critRate，使纯引擎战 / 塔战 / 测试三条消费端统一拿到基础暴击（不走 View 注入，View 只服务塔战、纯引擎战拿不到）。
+- **拍板 2（SB-T3 基础 critRate 取值）**：基础 critRate = **0.05**（全体普攻/技能默认可暴）；critDamage 沿用现有 1.5 不动。取值放 engine 常量（engine 不 import config）。
+- **拍板 3（SB-T3 加成来源 = 复用既有 critRateUp 轴，不删字段、不扩装备）**：canCrit/critDamage/isCritical 经核实**全是活代码且已被消费**（`calculateTimedDamage` → `dealDamage` 写 isCritical 事件 → UI 渲染），根问题是「无非零 base critRate 来源」这一根线断开——**按「接一根线」处理，不删 crit 字段**。加成轴复用已存在的 `critRateUp` 状态通路（`getEffectiveModifiers` 已把 critRateUp 叠加到 base critRate）；SB-T5 落地后多条 critRateUp 按来源累加 → 直接兑现合同「让至少一条既有增益轴能加暴击」。**本轮不扩 EquipmentDef 加暴击（属 P2-15 分歧项，超本轮范围，标 backlog）。**
+- **拍板 4（SB-T5 可叠加 vs 不可叠加名单）**：**可叠加（按来源累加 + 上限 clamp）** = `atkUp / defUp / spUp / haste / critRateUp / atkDown / defDown / slow / spDown`（数值型增益/减益，对称处理）。**不可叠加（保持现状）** = 控制类 `stun / silence / taunt`（走布尔存在性判定，不经数值聚合，本轮不碰）；`shield / dot / hot` 保持逐条独立结算（多来源各自生效，绝不塞进 sum-clamp）。
+- **拍板 5（SB-T5 上限哲学）**：每 kind 一张 engine 常量上限表，上限值 **≥ 现有单条最大 buff 幅度的 ~1.3–1.5 倍**，让「双辅助累加」有正收益空间又不失控、且不让现有单条招牌 buff 就触顶。建议档位：`atkUp/defUp/spUp ≤ 0.6`、`haste ≤ 0.5`、`critRateUp ≤ 0.5`，debuff 侧对称。Generator 落地前须核对 `data/squadSkillKits.ts` 各 kind 现有 amount 分布定标（现有单条最大 atkUp 0.45、critRateUp 0.25）。`formulas.ts` 对 critRate 已有 `clamp(0,1)` 二次兜底。
+- **拍板 6（SB-T5 两套聚合函数一致改）**：`maxRuntimeStatusValue`（旧 RuntimeStatus 数组 API，特征测试消费）与 `maxStatusAmount`（实战主路径）**两处都改且语义一致**，抽共享纯 helper 供两处调用，避免「测试口径与实战口径打架」。**不动 `applyBattleStatus` 的 id 去重逻辑**（`id=kind:sourceId:targetId` 正是「按来源」的载体：同来源覆盖、不同来源并存）。
 
-- [x] **SA-T3（本轮）｜升级加点改确定成长（走 base 五维比例，绕开不可靠 role）**
-  - 拍板决策 ①（role 来源）：升级加点主路径**按角色自身 base 五维比例确定分配**——base 高 def 的角色比例分配本就偏 def，**天然实现「按定位倾斜」，无需依赖 `inferArchetype` 正则**（P2-7 已证正则频繁误判，绑上去会把「战斗模板误判」扩散成「成长倾斜误判」）。可采「混合分配」（多数按 base 比例 + 少数保底均分）防极端偏科被无限放大，Generator 定比例。**本轮不新增 role 存档字段**。
-  - 拍板决策 ②（头部显式定位映射，SA-T3/SA-T4 共同前置）：「头部 8~12 招牌 UR 的显式 archetype/role 映射」这件事**归 SA-T4（第 2 轮）承载并首次落地**（SA-T4 手写签名 kit 时顺带定死这些角色定位）；SA-T3 本轮不接入该映射，主路径靠 base 比例已自洽。此项写明是为避免 SA-T3/SA-T4 重复造映射。
-  - 拍板决策 ③（旧档）：**接受「只影响未来升级」为已知取舍**——旧档已 roll 的 statPoints 不动、不做一次性重算迁移（本轮**不升 schema**；单机向存量玩家极少，重算迁移引入 schema-adjacent 风险不划算）。此取舍须在实现说明/文档明确记录。
-  - 不做（三审共识「别过度」）：手动加点池 + 洗点系统（新 UI + 新存档，超「确定成长」最小承诺，单机向必抄最优 build=负担）。
-  - 验收：同角色升级结果**可复现且符合定位**；`engine/nurture/rules.test.ts` 更新为确定断言；**不新增存档字段**；type-check/test/build 通过。
+### 本轮追加清单
 
----
+- [x] **本轮-1｜SB-T3 落地：全体基础暴击 0.05 + 复用 critRateUp 加成轴（拍板 1/2/3）**
+  - 目标：squad 运行时单位在构造时获得基础 critRate=0.05；不改 `DEFAULT_BATTLE_MODIFIERS`；不删 crit 字段；不扩装备。critRateUp 通路（已存在）叠加到 base，SB-T5 落地后多来源 critRateUp 累加提升暴击率。
+  - 验收：新增特征测试断言「base critRate=0.05 时按注入 RNG 序列确定性产出 critical event」+「叠加 critRateUp buff 后暴击率提升（可暴分支被触发）」；**不破坏** `formulas.test.ts` 的 `DEFAULT_CRIT_RATE`/default-0 断言与 `timedBattle.test.ts` crit 断言；type-check/test/build 通过。
 
-## 第 2 轮追加任务（基于 Reviewer 三审 + Scout 侦察）
+- [x] **本轮-2｜SB-T5 落地：可叠加类 buff 改按来源累加设上限，控制类保持不叠加（拍板 4/5/6）**
+  - 目标：`maxRuntimeStatusValue` 与 `maxStatusAmount` 两处从 `Math.max` 改为「按来源求和 + 每 kind 上限 clamp」（抽共享 helper）；可叠加名单见拍板 4；上限表见拍板 5；控制类 / shield / dot / hot 不进累加；不动 `applyBattleStatus` 去重。
+  - 验收：新增特征测试断言「同 kind 多来源累加至上限」（≥3 条同 kind 求和触顶）+「控制类多条仍不叠加（存在性/最长）」+「dot/hot 多来源各自独立结算」；**不破坏** `effects.test.ts`（单条 atkUp 0.5 仍得 atk 150 等）与 `timedBattle.test.ts`（单条各 buff 值不变）现有断言；type-check/test/build 通过。
 
-> 本轮切片 = **SA-T4（个人技驱动差异化技能位）+ SA-T5（可重复日循环 / 扫荡）**。
-> SA-T6（依赖 SA-T1）排第 3 轮——**本轮不做**。主任务定义见上方 SA-T4/SA-T5 清单，此处只补「本轮承诺 + 采纳的 refine 细化子项 + 关键设计决策拍板」。三审 + Scout 共识决策已拍板写入各子项验收。
-
-- [x] **SA-T4（本轮）｜个人技驱动差异化技能位（头部 8~12 UR 手写覆盖）**
-  - 拍板 ①（覆盖形态）：`characterId → 覆盖 skill1/ultimate effects` 结构化数据覆盖表 + 未命中回落原型。头部 **8~12 招牌 UR**（采信合同数字，**拒绝 FUTURE.md 的 20**）。
-  - 拍板 ②（机制层差异，非数值微调）：唯一 effect 必须是**肉眼可辨的机制**（execute 处决 / revive 复活 / 群体 stun/silence / 独特 DOT / 独特 target），**严禁只调倍率**。判据 = 「玩家一眼说得出不一样在哪」。**宁可 6 个真不同，别 12 个微调。**头部按机制辨识度挑，非人气。
-  - 拍板 ③（零引擎改 / 借名不借 effectId）：只用现有 9 种 squad `SkillEffect`，**严禁把 /battle effectId 搬进小队战斗**（无对应 handler、不在白名单）。借个人技 `.name`（语义呼应）+ 自造 squad effect（引擎自洽）。绝不扩 type / 写 handler。
-  - 拍板 ④（description 走工厂派生，禁手写）：覆盖 kit 必走 `skill()` 工厂让 `description = describeSquadSkill` 自动派生，**严禁手写 description 字符串**（结构性锁死「描述≠行为」红线）。
-  - 拍板 ⑤（不改敌人候选池集合）：覆盖 kit 必过 `validateSquadSkillKit`，落地前后 `filter(isSquadSkillKitReady)` 全角色返回集合**完全不变**（否则静默破坏上一轮 SA-T2 同源，种子测试仍绿缺陷不可见）。
-  - 拍板 ⑥（分档层可选，非硬承诺）：长尾 base/rarity 分档为**可选增强**；若做**必须用角色自身 base 的绝对锚点、严禁同原型均值**（否则污染 `getSquadSkillKitForCharacter` 单角色纯函数 + 破 engine 纯净/确定性）；有任何纯净/签名风险则本轮只交头部手写、分档降 backlog。
-  - 采纳 refine：名场面命名（E-13，技能名用番剧名台词/名场面，零成本口碑）；导出 `isSignatureKit(characterId)` 查询留口给第 2 轮 UI 徽章（**本轮不做 UI 徽章**）；签名角色定位与 base 倾向对齐（防「堆奶量却在输出」四不像）。
-  - 不做（三审共识「别过度」）：扩全 66 UR / HR 差异化被动；需读说明书的复杂机制联动；复用 /battle 134 handler。
-  - 验收：覆盖角色 kit 与同原型他人**不再逐字节相同且差异在机制层**；每条差异 effect 有「真跑通引擎」特征测试（`executeSkill`/`simulateTimedBattle` 断言对应 event）；`data/squadSkillKits.test.ts` 增用例（命中覆盖 / 回落原型 / ≠同原型他人 / `description===describeSquadSkill` / 无手写 description / 无 handler 映射 / 覆盖前后 `filter(isSquadSkillKitReady)` 集合不变）；不新增存档字段；HR 回落名效一致；type-check 0 / test 全绿 / build 通过。
-
-- [x] **SA-T5（本轮）｜可重复日循环（扫荡已通层 + 存档 v14→v15）**
-  - 拍板 ①（资格复用 + 独立路径）：扫荡资格 = `pve.hasCompletedFloor(floor)`（`floor < currentFloor`），走**全新独立 action**，**绝不调 `completeFloor`**（否则污染主线推进 / 重复成就 / 绕过缩水）。主线推进逻辑不变。
-  - 拍板 ②（存档扁平定长，**采信 research/evolution 而非 Scout 选项 A**）：扫荡计数字段**扁平定长 3~4 字段**（仿 `DailyChallengeSave`：resetKey/weekKey + 已用额度），**绝不 `Record<floor,count>`**（随层数无限膨胀）。装 TowerProgress 域内新增字段，**不硬复用 stub `todayAttempts/lastAttemptDate`**（语义错配）。产出字段中性/道具化命名（留演化口）。
-  - 拍板 ③（封顶：周上限优先）：**优先周上限**（明日方舟剿灭范式，防通胀 + 免点击疲劳 + 只记 weekKey）；若落地成本过高可回退每日 N 次，但**字段必须为周上限/区间化留口**。
-  - 拍板 ④（缩水 + 边际递减）：奖励 = 缩水 KP + 角色经验（装备低概率或不掉，二选一）；扫荡产出 = 首通 **30~50%**、封顶总量 ≈ 一趟主线量级（扫荡=止损补给非主 farm）；产出对 floor **边际递减/绝对封顶**（防「只扫最高层」Dead Zone）。奖励纯函数化 + 注入 RNG。
-  - 拍板 ⑤（schema 三处同改 + 往返测试）：SAVE_VERSION 14→15；`schema.ts`（字段+default+v15 沿革）+ `migrations.ts`（旧档兜底）+ `stores/pve.ts` 装配器三处同改；`migrations.test.ts` 往返保真（旧档补默认 / 计数存回一致）。本 Sprint 唯一 schema 升级、最高风险动作。
-  - 拍板 ⑥（跨天/周复用 daily 范式 + 墙钟钳位）：日/周界复用 `daily.ts` `todayKey`/`weekKey` 读时归零（不存定时器、幂等、加载即判定），**别造第三套**；回拨视同日/周不重置（廉价钳位，P2-28 建议①）。
-  - 拍板 ⑦（UI 一键结算，不复用完整演出）：扫荡入口 + 「今日/本周 N/M」进度条 + 「已达上限」态，落 explore 面板已通层区；**跳过 180ms 回放**、轻量一键结算飘字（不复用 `SquadBattleResult` 完整演出面）；语义令牌（禁 text-white/动态色类）；飘字动画 setTimeout/rAF 登记 + onUnmounted 清除。
-  - 不做（本轮）：SA-T3 旧档 statPoints 重算搭便车（**拒绝**，维持「只影响未来」取舍，backlog）；批量扫荡 UI 动效；推荐战力提示（S14-C）；道具化背包实做（仅留命名口）；PCR 多循环网络。
-  - 验收：已通层可重复领缩水奖励且受封顶；跨天/周干净重置；存档往返保真；扫荡走独立路径不推进 currentFloor；一条测试断言扫荡总产出 << 推塔总产出 + 产出对 floor 边际递减（覆盖 floor=1 与 floor=high）；字段扁平定长（非 Record<floor,count>）；SAVE_VERSION=15；`migrations.test.ts` 覆盖；type-check 0 / test 全绿 / build 通过。
+- [x] **本轮-3｜SB-T3 与 SB-T5 协同回归**
+  - 目标：确认「base critRate + 多来源 critRateUp 累加」构成一条完整暴击成长轴（同一测试文件覆盖两端）；确认本轮零存档触点、engine 保持纯净（无 Vue/Pinia/DOM/`Math.random`，随机走注入 RNG）。
+  - 验收：全部验收命令（下方 5 条）实测绿；未破坏 S14-A 已成 6 项。
 
 ---
 
-## 第 3 轮追加任务（tier1-on 验收再确认 / 回归锁 · 不开新范围）
+## 第 2 轮追加任务（product-loop --tier1 on --mode all，本轮指派 = SB-T1 + SB-T4）
 
-> 本轮切片 = **SA-T4 + SA-T5（与第 2 轮同一切片）**。
-> 关键前情：本切片第 2 轮已实现且被 Evaluator 判 **COMPLETE**（type-check 0 / test 653 全绿 / build 通过 / security PASS / grep 零命中，两 SA-T 真实性抽查属实，见 `docs/orch/eval.md`）。
-> tier1 on = 引擎跑满 3 轮，本轮为**验收再确认 + 抓回归 + 至多打磨**，**绝不开新范围**（合同 L5/L67）。Scout 第 3 轮逐文件核实三审方案「全部成立且已落地、无未落地拍板、无新代码坑」。
-> **本轮唯一目标 = 零改动复跑验收全绿 + 守住已 COMPLETE 实现不被「凑改动」破坏**；若三审无新 refine 指令，正确动作是不动源码。以下为回归守护条目（非新功能承诺）。
+> 本轮承诺落地 **SB-T1（90s 超时改按 HP% 判胜 + 倒计时 UI）+ SB-T4（前中后排真实机制）**：SB-T1 = engine 裁决改写 + 少量战场 UI；SB-T4 = 纯 engine 伤害层站位机制。两者互不耦合、可并行、可各自独立合并。主清单 SB-T1/SB-T4 条目为准，此处追加的是本轮承诺 + 采纳的 refine 子项 + 关键设计决策拍板。**这两项必须真实现落地，严禁只做回归确认（S14-A SA-T6 教训，pitfalls L84）。SB-T4 明确选「做机制」而非「删视觉」。**
 
-- [x] **SA-T4（第 3 轮）｜签名覆盖表回归锁 · 零扩表**
-  - 目标：确认 SA-T4 稳定实现无回归——覆盖表维持头部 8~12 招牌 UR（**严禁扩到 FUTURE.md 的 20**，合同 L94 已拒绝）；差异仍在机制层（execute/revive/群 stun/silence/独特 dot/独特 target），非纯倍率；覆盖仍走 `skill()` 工厂使 `description===describeSquadSkill`（禁手写 description）；仍只用 9 种 squad effect、无 /battle effectId 泄漏；覆盖前后 `filter(isSquadSkillKitReady)` 全角色集合**完全不变**（守 SA-T2 同源，最隐蔽回归面）。
-  - 拍板（本轮红线）：**若无三审新 refine 指令则零改动**；切勿为凑改动动稳定覆盖表；分档层维持 backlog（Scout 判本轮零改动最稳）。
-  - 验收：`data/squadSkillKits.test.ts` 全绿（含命中覆盖 / 回落原型 / ≠同原型他人 / description 派生 / 无手写 / 无 handler / 集合不变 + 端到端 executeSkill·simulateTimedBattle）；type-check 0 / test 全绿 / build 通过。
+### 关键设计决策拍板（写进验收）
 
-- [x] **SA-T5（第 3 轮）｜扫荡日循环 + v15 存档回归锁 · 零 schema 再动**
-  - 目标：确认 SA-T5 稳定实现无回归——`SAVE_VERSION=15`（本 sprint 唯一升级，**本轮绝不再动 schema**）；扫荡字段维持扁平定长（`sweepWeekKey`/`sweepUsedThisWeek`，**非 `Record<floor,count>`**、**不硬复用 stub `todayAttempts/lastAttemptDate`**）；`sweepFloor` 独立 action、只读 `hasCompletedFloor`、**绝不调 `completeFloor`**、不推进 currentFloor；缩水+封顶+边际递减真生效；跨周读时归零 + 回拨钳位；存档三处同改 + 往返保真。
-  - 拍板（本轮红线）：**拒绝 SA-T3 旧档 statPoints 重算搭便车**（维持「只影响未来」取舍，backlog）；**拒绝任何本轮再升 schema 或改扫荡存档字段**（v15 是最高风险动作、已稳定，再动纯增风险）。
-  - 验收：`migrations.test.ts`（v15 旧档补缺省 / 脏档回落 / 计数往返一致）+ `stores/pve` / `engine/squad/rewards` 测试全绿；扫荡总产出 << 推塔总产出、对 floor 边际递减（floor=1 与 floor=high 两端）；type-check 0 / test 全绿 / build 通过。
+- **拍板 1（SB-T1 平局定义）**：平局 = 超时刻双方存活方剩余 HP% 相等（差 < ε）。判胜口径 = **先比存活单位数，存活数相等再比剩余 HP 总量比（Σ currentHp / Σ maxHp）**——避免「4 个残血 vs 1 个满血」被纯 HP% 误判。存活数与 HP% 都相等 = 真平局。
+- **拍板 2（SB-T1 winner/reason 类型抉择——不扩 winner，只扩 reason，避开三处波及）**：**不给 `TimedBattleWinner` 加 `'draw'`**（会波及 types + `SquadBattleView.vue:501` 二分映射 + `rewards.ts` + 多测试断言，scout 坑 C-1）。改法：超时 HP% 占优 → `winner='player'`、判负 → `winner='enemy'`（直接复用现有胜负映射与发奖分支）；**真平局 → 保持 `winner='timeout'`**（走现有 timeout→defeat 映射与 rewards 全 0，语义等同「未推进」，产品可接受平局不发奖）。用 **`BattleEndReason` 扩值**区分三态（如 `timeoutWin`/`timeoutLoss`/`timeoutDraw`，具体值名 Generator 定），供 UI/日志/测试判读，不改 winner 类型。
+- **拍板 3（SB-T1 超时占优即发奖 = 产品期望）**：超时按 HP% 占优改判 `winner='player'` 后自动走 `rewards.ts` progressed 发奖分支 + View `settleTowerBattle` 的 `completeFloor` 推进——正是「磨血占优不再判输」的产品目标，不额外加闸。Generator 须确认此推进链路符合预期（胜即推进）。
+- **拍板 4（SB-T1 倒计时 UI 数据源——engine 单一真相，禁 UI 硬编码 90000）**：`DEFAULT_MAX_TIME_MS` 从 engine 导出（经 `engine/index.ts` re-export），View import 后同时传给 `SquadBattlefield` 的倒计时 prop **和** `regenerateBattleSimulation` 的 maxTimeMs，保持 UI 显示时限与实战裁决时限同源。倒计时 UI = 剩余秒（max−elapsed）+ 进度条，复用现有 UnitBar 语义令牌条形范式（`bg-accent/bg-highlight`），不新建裸 setTimeout（复用 View 已有 `schedule()`/`clearBattleTimers()`）。
+- **拍板 5（SB-T4 最小可用站位机制 = 后排受单体伤害减免，front 系数=1）**：position 真实机制取 scout 推荐候选 1——**后排/中排承受「单体」伤害时按站位减伤**（建议 back ×0.85 / middle ×0.95 / **front ×1.0**），接入点在 `effects.ts` damage 分支读 `target.position`。**front 系数必须=1**（现有测试单位默认 position:'front'，front 无减伤则既有伤害断言天然不变，scout 坑 C-6）。数值放 engine 常量表（如 `POSITION_DAMAGE_TAKEN`），engine 不 import config。AOE 是否同样衰减由 Generator 定粒度（拍板 6）。
+- **拍板 6（SB-T4 单体 vs AOE 粒度）**：本轮最小可用形态 = **只对单体伤害施站位减伤**（体现「后排站桩安全、前排顶伤」的编队博弈）；AOE（群体 selector `allEnemies`/`allAllies`）**不施站位减伤**（后排躲不过 AOE，符合站位取舍直觉，也避免 AOE 全体缩水冲淡机制感）。判单体/AOE 复用 `executeEffect` 已解析的 `effect.target ?? skill.target` 表达式（scout 坑 C-3），别重复解析出分歧。若 Generator 判定「全部伤害都减伤」更易测且平衡可接受，可收窄为该形态并在实现说明——但必须保 front=1、必须有测试断言不同站位伤害差。
+- **拍板 7（SB-T4 数值温和，不颠覆现有平衡）**：减伤系数取温和档（back ×0.85 / middle ×0.95），避免颠覆现有塔敌/我方 base atk ~50-300 量级平衡。数值放 engine 常量、Generator 可微调，但须保「后排明显比前排耐打、又不至于让前排无人愿站」的正收益空间。
+
+### 本轮追加清单
+
+- [x] **本轮-4｜SB-T1 落地：超时改按存活数+HP% 三态裁决 + 倒计时 UI（拍板 1/2/3/4）**
+  - 目标：`timedBattle.ts battleEnd` 的超时/事件上限分支不再一刀切 `winner='timeout'`；改按「存活数优先、HP% 打破平手」裁决 → 占优判 `winner='player'`、劣势判 `winner='enemy'`、真平局保留 `winner='timeout'`，三态经扩展的 `BattleEndReason` 区分（不扩 winner 类型）。`SquadBattlefield.vue` 加醒目倒计时（剩余秒）+ 进度条，时限值经 engine 导出的 `DEFAULT_MAX_TIME_MS` 传入（禁硬编码）。KO 分支不动。
+  - 验收：新增/更新 engine 特征测试覆盖「超时按 HP% 判胜（winner=player 走发奖）/判负（winner=enemy）/真平局（winner=timeout，elapsedMs=90000）」三态；**同步更新** `timedBattle.test.ts:401-413`「双方满血僵持」断言为平局态（不再期望旧一刀切 timeout→defeat 语义）；**不破坏** KO 双亡分支（:377-399）、default-crit-0（:63-81）、rewards timeout 全 0（:416-441，平局仍走 timeout 值）等既有断言；UI 有倒计时且时限与 engine 同源；type-check/test/build 通过。
+
+- [x] **本轮-5｜SB-T4 落地：后排/中排单体伤害减免，前排系数=1（拍板 5/6/7）**
+  - 目标：给 position 真实战斗机制——在 `effects.ts` damage 分支按 `target.position` 对**单体伤害**施减伤系数（back ×0.85 / middle ×0.95 / front ×1.0），engine 常量表承载、engine 不 import config；AOE 不施减伤（拍板 6）；不碰 `targeting.ts`（避开其护栏）、不改 `formulas.ts calculateTimedDamage` 签名（在 effects 层乘系数）。选「做机制」而非「删视觉」。
+  - 验收：新增 engine 特征测试断言「同攻击对 back/middle 目标伤害 < 对 front 目标（front 系数=1）」+「AOE 对不同站位不因站位衰减」（若采纳拍板 6 的 AOE 不减伤）；测试须显式造 middle/back 单位对比，**不改** `timedBattle.test.ts` 的 `unit()` helper 默认 `position:'front'`（scout 坑 C-6）；**不破坏** 既有单体伤害/能量/击败数断言（front 系数=1 天然守住）、`targeting.test.ts` 全 3 条、SB-T3/T5 断言；type-check/test/build 通过。
+
+- [x] **本轮-6｜SB-T1 与 SB-T4 集成回归**
+  - 目标：确认 SB-T1 裁决改写与 SB-T4 站位机制互不干扰（两者在不同接入点：battleEnd 裁决 vs effects damage 分支）；确认本轮零存档触点、engine 纯净（无 Vue/Pinia/DOM/`Math.random`）；`DEFAULT_MAX_TIME_MS` 导出未破坏 engine 依赖方向；倒计时 UI 复用登记式计时器无泄漏。
+  - 验收：下方 5 条验收命令实测绿；未破坏 S14-A 已成 6 项与第 1 轮 SB-T3/T5。
 
 ---
 
-## 第 4 轮（纠偏）：SA-T6 落地
+## 第 3 轮追加任务（product-loop --tier1 on --mode all，本轮指派 = SB-T2，收尾轮）
 
-> **纠偏缘由**：第 3 轮 Planner 把 SA-T6 误判为「新范围」跳过，导致 S14-A 只完成 5/6。SA-T6 是 S14-A 第 6 个任务、**本 Sprint 范围内、必须实现**。本轮唯一目标 = **实现 SA-T6 并让 S14-A 全部 6 项 `[x]`**。SA-T1..T5 已落地功能保持不动。
-> 采用方案 = **Plan A（三审 + scout 拍板）**：squad tab 唯一编队入口 / explore 预览 + 「开始挑战」直达进战 / battle tab 仅承载战斗演出。
+> 本轮承诺落地 **SB-T2（手动大招选目标 + 平滑推进，P2-5）**——S14-B 最后一块、也是最难一块。主清单 SB-T2 条目为准，此处追加的是本轮承诺 + 采纳的 refine 子项 + 关键设计决策拍板。**这项必须真实现落地，严禁只做回归确认（S14-A SA-T6 教训，pitfalls L84）。收窄可以，整项跳过不可以。** 收尾轮同时确认 SB-T1..SB-T5 全 `[x]` 且与实现一致、无回归。
+>
+> **本轮最关键的一条设计结论（三份报告共识 + research Phase1-A4 深挖）**：现状「手动开大 → 从 t=0 整场重算 → cursor 对齐」之所以「碰巧不跳」，唯一前提是「插入 order 后过去那段 RNG 消费次数/消费点完全不变」。**这个前提在『选目标』落地后必然破**（选不同目标 → 不同暴击/击杀/能量连锁 → RNG 序列在插入点后错位，甚至 tick 边界前移污染过去时间戳）。因此本轮若只加 targetId 不改重算模型，等于把「碰巧不跳」升级成「一定会跳」的半死系统。**「选目标」与「无跳变」不是两个可分别妥协的目标，而是同一个干净机制（冻结已呈现前缀 + 只重算当前时刻之后）的两个自然结果——必须同轮一起做对。**
 
-- [x] **SA-T6（第 4 轮）｜消解三 tab 结构冗余（Plan A）**
-  - **落地内容**：
-    1. **squad tab = 唯一编队入口**：保持 SA-T1 的可换人/改名/加人，本轮零改动。
-    2. **explore tab = 预览 + 「开始挑战」直达进战**：`HomesteadHubView.vue` 探索面板新增「出战小队」开战卡（`.start-card`）——展示 `selectedSquad` 名称/战力/满编数 + 校验状态。开战按钮 `startBattleFromExplore()` 用 `canStartBattle`（同口径 `validateTowerSquadMembers` + 已登录 + 当前层未通过）拦截：合法则设 `battleEntrySquadId = selectedSquad.id` 并 `switchTab('battle')`；不合法留在 explore 显示 `startBattleIssue`，不进战。原「进入战斗」空切按钮改为「去编队」跳转 squad tab（不再让用户空切 battle tab 重编队）。
-    3. **battle tab = 仅承载战斗演出**：`SquadBattleView` 加 props `entrySquadId: number|null` + `embedded: boolean`；battle tab 以 `:entry-squad-id="battleEntrySquadId" :embedded="true"` 驱动。
-  - **直达进战红线满足方式**：`SquadBattleView` 挂载（`onMounted`）时 `tryEnterFromEntry()`——带合法 `entrySquadId` 即调用已有 `startTowerBattle(squadId)` 把 `currentPhase` 推到 `'battle'`，**不渲染 towerMode 编成器**（冗余不复活）。若敌人/登录挂载时未就绪，`watch([isLoggedIn, allCharacterCards.length])` 就绪后自动补一次直达。
-  - **优雅降级**：`embedded && currentPhase==='towerMode'`（无合法 entrySquadId，如深链/刷新 `?tab=battle`）不再渲染整套 towerMode 编成器，改为最小占位「从『探索』选择小队开始挑战」+ 「去探索选队」按钮（`emit('exit-to-explore')` → hub `handleBattleExit` 切 explore）。战斗结束 result 演出正常显示；embedded 下「继续」经 `restart()` 触发 `emit('exit-to-explore')` 切回 explore，不落 towerMode。
-  - **stale id 防护**：`watch(activeTab)` 离开 battle tab 即清空 `battleEntrySquadId`，避免残留 id 误触进战。
-  - **顺带清理**：修 `SquadBattleView.vue:82` 预存 lint 债 `ref<any>` → `ref<TowerFloorSquad | null>`（`generateTowerFloorEnemies` 的准确返回类型）。
-  - **未改存档**：纯视图层，未碰 engine、未升 schema。**兼容性**：`/squad-battle`、`/nurture` 重定向不动；`?tab=xxx` 深链不破；`SquadBattleView` 仅被 hub 内嵌引用，加 props 有默认值（`entrySquadId=null, embedded=false`），独立进 battle tab 优雅降级。
-  - 验收：无三重只读重复；hub 走「编队→探索→开始挑战→战斗演出」顺畅；旧路由/深链不破；type-check 0 / test 653 全绿 / build 通过 / security PASS / grep 零命中。
+### 关键设计决策拍板（写进验收）
+
+- **拍板 1（SB-T2 平滑推进的最小可用形态 = 方案 A「冻结已呈现前缀 + 从当前时刻分叉重算」的精神，取最小实现）**：无跳变的充要条件 = **已呈现（已回放到 `elapsedMs`）的事件前缀一字不改，重算只影响 `elapsedMs` 之后**。据此收窄为「**前缀冻结**」形态：手动开大后，玩家已看过的 HP/能量/站位状态**绝不回退、不重播、不时间倒流**；新命令只改写「当前时刻之后」的演出。**明确不做**方案 C（逐帧 `step(dtMs)` 去预演算，与现有事件流特征测试范式冲突，backlog R7）。**红线：绝不采纳方案 B 那种「整场重算 + 只截后缀」的伪平滑**——research Phase1-A4 已证它在选目标后退化为跳变，是「碰巧不跳→一定跳」的半死系统。若因工期只能做过渡形态，必须在实现说明/注释明写「前缀如何保证冻结、后缀错位为何不回溯污染前缀」，**严禁让 UI/文案暗示『完全平滑』而代码做不到**（描述≠行为红线，CLAUDE.md 明令根除）。
+- **拍板 2（SB-T2 前缀冻结的 RNG 卫生 = 把「seed 头部重建」升级为「消费到 elapsedMs 的 RNG 状态承接」）**：现状每次 `createSeededRng(seed)` 从头重消费，是「过去不变」的**唯一且脆弱**保证。本轮把它从「碰巧对」升级为「结构上对」：重算/续跑侧承接「已消费到 `elapsedMs` 为止的 RNG 状态」（mulberry32 全部内部状态即单个数，可导出/导入），使插入命令后的后缀错位**不再回溯污染已呈现前缀的随机结果**。RNG 仍走注入、engine 零 `Math.random`。**这是「前缀冻结」在随机维度成立的必要卫生改动，属 SB-T2 合同内**（research R2）。
+- **拍板 3（SB-T2 选目标范围 = 只对『己方、单体』大招；命令目标覆盖规则与 UI 亮起条件同一口径）**：`ManualUltimateOrder` 加**可选 `targetId`**；engine 对**单体 selector**（`frontEnemy/lowestHpEnemy/highestAtkEnemy/backEnemy` 及单体控制）优先用 `order.targetId` 命中存活单位，**AOE（`allEnemies/allAllies`）/ self / 治疗全体一律忽略覆盖**（复用 SB-T4 已定的单体/AOE 二分口径，effects `effect.target ?? skill.target` 同一已解析表达式，坑 C-3 别重复解析）。**UI 侧只对单体大招亮起「选目标」态、AOE 大招点一下即放**——engine 覆盖规则与 UI 亮起条件**必须同一口径**，否则 P1-4 式「UI 承诺选目标、代码全体命中」反向 affordance 欺骗重演。
+- **拍板 4（SB-T2 命令类型写成可扩展形状，为未来留形状但本轮只实现 ultimate）**：落 `targetId` 时把 `ManualUltimateOrder` 保持/演进为可扩展命令形状（`{atMs, unitId, targetId?}`，语义等价「discriminated union 的 ultimate 分支」），为未来手动技能/换位/撤退留统一命令口，**零额外成本、避免二次重构**。本轮**只实现 ultimate 命令**，不实现其它命令类型（backlog R6）。
+- **拍板 5（SB-T2 边界完备 = 死目标回退 / 超时 pending order 不改判 / 连点单次重算）**：三个极端场景必须显式处理，否则本轮修复长出隐藏 bug：
+  - **死目标回退**：选定 `targetId` 的单位在命令生效前已阵亡 → **回退到该大招默认 selector 目标**（而非空放已扣能量，`spendUltimateEnergy` 在 execute 前）；若回退后仍无合法目标 → 判 `manualUltimateFailed`。
+  - **超时 pending order 不改判**：超时/事件上限裁决时刻（SB-T1 三态）若有 `atMs > maxTimeMs` 的未生效 order，**不得改变判决**（`nextManualAt` 已被 `Math.min(maxTimeMs, …)` 夹住，须测试断言锁死）。
+  - **同帧连点单次重算**：同一回放帧内连点多个单位大招 → 命令入队后**单次重算/续跑**（或等价防抖），避免第二次重算覆盖第一次 cursor 致双跳/丢单。
+- **拍板 6（SB-T2 目标解析统一 helper，避免 effects 长出两套目标逻辑）**：auto（selector）与 manual（`order.targetId` 覆盖）两条目标解析路径**抽共享纯 helper 统一**（如 `resolveSkillTargets(state, actor, skill, overrideTargetId?)`），避免 effects.ts 长出两套目标逻辑打架（沿 SB-T5 拍板 6「两套聚合一致改」同类教训）。
+- **拍板 7（SB-T2 autoUltimates 默认策略）**：`autoUltimates` **默认保持开**（单机向「配好队看戏」定位，SPRINT 授权 Planner 定）；「选目标 + 无跳变」是「玩家主动关自动后的手动增强」，不强制玩家实时操作。默认关或首战引导 → 本轮不做，backlog（不影响 SB-T2 机制落地）。
+
+### 本轮追加清单
+
+- [x] **本轮-7｜SB-T2 落地：手动大招前缀冻结平滑推进（拍板 1/2/6）**
+  - 目标：手动开大 / 切换 autoUltimates 后，**已回放到 `elapsedMs` 的事件前缀一字不改、游标不回退、无时间倒流/HP-能量跳变**；重算/续跑只影响当前时刻之后；RNG 从「seed 头部重建」升级为「承接消费到 `elapsedMs` 的状态」（拍板 2），使后缀错位不回溯污染前缀随机结果。engine 纯净（零 Vue/Pinia/DOM/`Math.random`，随机走注入 RNG），零存档触点。
+  - 验收：新增 engine 特征测试断言「插入一条手动大招 order 后，`at <= 插入时刻` 的事件前缀与插入前逐条相同（无过去被重写/时间倒流）」；**不破坏** `timedBattle.test.ts:261-291` auto/manual ultimate 既有护栏；若采纳过渡形态须在实现说明写明前缀冻结保证；type-check/test/build 通过。
+
+- [x] **本轮-8｜SB-T2 落地：手动大招可选目标（单体覆盖，AOE 忽略）+ 边界完备（拍板 3/4/5）**
+  - 目标：`ManualUltimateOrder` 加可选 `targetId`（可扩展命令形状，拍板 4）；engine 对单体 selector 优先用 `order.targetId` 命中存活单位、AOE/self/全体忽略（拍板 3，复用单体/AOE 二分口径）；UI 只对单体大招亮「选目标」态、AOE 点一下即放（engine 与 UI 同口径）；死目标回退默认 selector（回退后无目标才判 failed）、超时 pending order 不改判、同帧连点单次重算（拍板 5）。engine 纯净、零存档。
+  - 验收：新增 engine 特征测试断言「单体大招指定 `targetId` → 命中所选存活单位」+「AOE 大招忽略 `targetId`（仍全体命中）」+「死目标 → 回退默认 selector、不空放扣能量」+「超时后 `atMs > maxTimeMs` 的 pending order 不改判决」；UI 亮起条件与 engine 覆盖规则同口径（单体才可选目标）；**不破坏** 既有 manual ultimate 护栏与 SB-T1/T3/T4/T5 断言；type-check/test/build 通过。
+
+- [x] **本轮-9｜SB-T2 集成回归 + S14-B 收尾核对**
+  - 目标：确认前缀冻结（本轮-7）与选目标（本轮-8）协同 = 「选目标后仍无跳变」（research Tradeoff 矩阵方案 A 的核心：选目标与无跳变同一机制两个结果）；确认本轮零存档触点、engine 纯净、engine 依赖方向未破坏；**核对 SB-T1..SB-T5 主清单全部 `[x]` 且与实现一致**（收尾轮硬指标，防 S14-A「跑满轮次≠目标达成」）；确认未破坏 S14-A 已成 6 项与第 1/2 轮 SB-T3/T5/T1/T4。
+  - 验收：下方 5 条验收命令实测绿；SB-T1..SB-T5 全 `[x]` 与实现一致；未破坏既有护栏。
+
+- [x] **收尾①｜暴击 UI 显形（SB-T3 最后一寸，P2-6 打击感）**
+  - 背景：SB-T3 已让暴击在 engine 里真实发生（`damage` 事件带 `isCritical`），但 `SquadBattleView.applyEventToUnits` 的 `case 'damage'` 只取 `hpAfter`、丢弃 `isCritical`，日志也不记伤害 → 暴击对玩家完全不可感知。本项把已算好的 `isCritical` 接到 UI 最后一寸。**纯 view 层，engine 零改动。**
+  - 做法（A+B 都做）：A 浮动伤害数字——新回放到的 `damage` 事件在目标单位上浮现 `-N`，暴击用 `text-highlight`(金) + 更大字号 + `CRIT` 标记 + 冲击缩放/抖动动画区别于普通 `text-danger`；瞬态状态放 View（`floatingDamages`，按 `targetId` 分发到 `SquadUnitBar`），定时清除走登记式 `scheduleFloatingClear()`（与回放推进定时器分池，`clearBattleTimers`/reset/`onBeforeUnmount` 全清 + 清空数组，无裸 setTimeout）。B 战斗日志——`buildKeyLogs` 把暴击作为关键事件记入（「💥 暴击！X 对 Y 造成 N 伤害」），普通伤害不记以免刷屏。浮动数字只在 `playNextBattleEvent` 单条推进时生成（不在会重放全史的 `applyEventToUnits` 里），跟随现有 180ms 回放节奏、不打乱主流程。
+  - 验收：type-check / test / build / test_security / grep 五条全绿；engine 零改动（仅动 `views/SquadBattleView.vue` + `components/battle/squad/{SquadBattlefield,SquadUnitBar,types}`）；未破坏既有 670 测试与护栏。

@@ -1,61 +1,60 @@
-# 设计研究报告 — S14-A 第 3 轮（Product Research Reviewer · --tier1 on --mode all）
+# S14-B 设计研究报告 — 第 3/3 轮（切片 = SB-T2 手动大招选目标 + 平滑推进）
 
-> 角色：设计研究员（非 PM、非审计员）。四镜头（核心假设质疑 / 相邻领域研究 / 逻辑完备性 / 替代设计提案）。
-> 本轮切片：**复审 SA-T4（个人技差异化）+ SA-T5（可重复日循环 / 扫荡）已落地成果的长期腐化风险**，并为紧随的 **SA-T6（消解三 tab 冗余）** 提供设计接地。
-> 前情：第 2 轮 eval = COMPLETE，SA-T4/SA-T5 已 `[x]` 且验证属实（type-check 0 / 653 tests / build 通过）。**本轮不开新范围**——只做 refine + 防退化 + 为 SA-T6 定心。日期：2026-07-01。
+> Reviewer 模式：research（设计研究）。范围：product-loop S14-B 第 3 轮，指派切片 **SB-T2**（P2-5）。收尾轮。
+> 方法：四镜头（核心假设质疑 / 相邻领域研究 / 逻辑完备性 / 替代设计提案）对准 SB-T2，给本质替代 + tradeoff，重点防「半死系统」与长期腐化。
+> 已读并求证：`timedBattle.ts`（一次性预演算 `simulateTimedBattle`）、`SquadBattleView.vue`（`handleManualUltimate`/`regenerateBattleSimulation`/`playNextBattleEvent`/`rebuildVisibleBattle`）、`effects.ts`（`executeEffect` = `effect.target ?? skill.target`）、`targeting.ts`、`rng.ts`（mulberry32 单状态 `a`）、`types.ts`（`ManualUltimateOrder = {atMs,unitId}`）、`timedBattle.test.ts:261-291`（auto/manual ultimate 护栏）、SPRINT.md、homestead-hub-audit-report.md（P2-5）、上一轮 eval.md（SB-T1/T4 CONTINUE）、negotiation.md（SB-T2 已预定「前缀冻结 + order.targetId 覆盖 + splittable RNG」为第 3 轮首选）。
 
 ---
 
 ## Executive Summary
 
-**当前设计基于的 3 个关键假设（本轮切片相关）**：
-1. **差异化 = 手写覆盖表**（`SIGNATURE_KIT_OVERRIDES`：10 招牌 UR 手写 skill1/ultimate，其余回落 6 原型）。隐含假设：差异化是「少数招牌驱动，长尾靠原型兜底」。
-2. **循环止损 = 周上限扫荡**（`SWEEP_WEEKLY_CAP=10` + 缩水纯函数 + sqrt 边际递减）。隐含假设：卡关焦虑靠「一周固定补给额度」解决，产出必须 << 主线。
-3. **描述≠行为红线靠结构锁死**（覆盖 kit 强制走 `skill()` 工厂 → `description = describeSquadSkill` 自动派生；只用 9 种白名单 squad effect）。隐含假设：只要描述从 effect 机械派生，红线就永不复发。
+**当前 SB-T2 的核心设计假设（5 条）**：
 
-**最大研究发现落在「逻辑完备性」维度**：SA-T4 的结构锁死是**真正优雅的护栏**（描述从 effect 派生，是本项目最好的一处设计），但它只锁住了「描述≠行为」的一半——**它锁不住「名字≠行为」**。招牌技能名（"超电磁炮"/"时间停止"）是**手写字符串**（`SignatureSlotOverride.name: string`），与 effect 无任何机械绑定。今天靠人写注释保证语义呼应，明天扩到 30 个签名时，"某个技能名和它的机制早就对不上了"会悄悄回潮——这是红线的**换皮复发点**，且当前测试完全测不到。
+1. **「一次性预演算 + 定速回放」是呈现范式**——`simulateTimedBattle` 一口气算完整场（含 battleEnd），View 只做 180ms 逐条 `events` 回放。这是手感问题的架构底座。
+2. **「手动大招 = 追加 order + 整场从 t=0 重算」**——`handleManualUltimate` 塞 `{unitId, atMs}` 后 `regenerateBattleSimulation(cursorTime)` 重跑，再用 `findIndex(event.at > cursorTime)` 把光标跳到「当前时刻之后」。
+3. **「目标由 skill 静态 selector 决定」**——`ManualUltimateOrder` 无 targetId，`executeEffect` 永远走 `effect.target ?? skill.target`，玩家无从干预。
+4. **「同 seed 重建 RNG 足以保证重算不跳变」**——`createSeededRng(battleSeed.value)` 每次重头消费同序列，是「重算后过去不变」的**唯一**确定性保证。
+5. **「跳变靠 cursor 对齐掩盖」**——现实现承认会跳，只想把跳变点对齐到玩家当前时刻之后，属症状缓解而非根因消除。
 
-**一句话最有价值突破方向**：把 SA-T4 已有的「描述从 effect 派生」护栏，**再往上补一格「签名机制的可辨识度断言」**——不是加内容，是加一条 CI 测试守卫，让「12 个微调冒充差异化」「换名不换魂」这种腐化在 CI 里就红，而不是靠人肉 review。这比继续扩签名数量的价值高一个量级。
+**最大研究发现落在「核心假设质疑 + 替代设计提案」镜头**：SPRINT 授权把 SB-T2 收窄为「无跳变体验 + 选目标」，收窄方向对，但**收窄理由被误判了**。障碍不是「不能增量推进」，而是**「整场重算会重写玩家已看过的过去」**。相邻领域（rollback netcode / 确定性 lockstep / 命令插入）一句话点破：**重算只准发生在『当前时刻之后』，过去已呈现的事件必须冻结不可变**。这是 SB-T2 从「半死系统」走向「一次做对」的分水岭。
+
+**关键新证据（比前置规划更进一步）**：假设 4「同 seed 重建」不是「够用但不优雅」，而是**「随 SB-T2 落地会主动失效」**——见 Phase1 深挖。若本轮只加 targetId 不碰重算模型，等于把一个「碰巧不跳」的系统升级成「一定会跳」的系统，正是 SPRINT 反复警告的腐化。
+
+**一句话最有价值的突破方向**：把 SB-T2 实现为 **「命令插入 + 冻结已呈现前缀 + 从当前时刻分叉重算（rollback-forward）」**——`ManualUltimateOrder` 加 `targetId?`，engine 支持「本次调用目标覆盖」，重算侧**保留 `elapsedMs` 之前的事件与 RNG 消费状态、只重算之后**。这样「选目标」与「无跳变」不再是两个妥协，而是同一个干净机制的两个自然结果。
 
 ---
 
 ## Phase 1: 核心假设质疑
 
-### 假设清单（★ = 可质疑 / 本轮重点）
+### 假设清单（★ = 可质疑 / 本轮应正面处理）
 
-| # | 隐含假设 | 出处 | 可质疑度 |
-|---|---|---|---|
-| A1 | 差异化的载体是**技能 effect**（skill1/ultimate 的机制不同=角色不同） | `SIGNATURE_KIT_OVERRIDES` | ★★ |
-| A2 | 招牌技能**名字是自由文本**、只需人写注释保证语义呼应 | `SignatureSlotOverride.name: string` | ★★★ |
-| A3 | 「描述≠行为」红线 = 「description 字符串≠effect」，只要 description 派生即安全 | `skill()` 工厂强制派生 | ★★★ |
-| A4 | 长尾靠 6 原型兜底「够用」——同原型未覆盖角色逐字节相同是可接受代价 | `archetypeEffects` + 回落 | ★★ |
-| A5 | 循环缺口 = 「卡关无产出」，补一条**缩水扫荡**即闭合 | `calculateSweepReward` + 周上限 | ★★ |
-| A6 | 扫荡额度是**全局周上限**（不按层、不按角色），单一 counter 即够 | `sweepUsedThisWeek: number` | ★★ |
-| A7 | 三 tab（编队/探索/战斗）冗余是「UI 结构问题」，SA-T6 是纯前端重组 | 审计 P1-3 | ★★ |
+| # | 隐含假设 | 状态 |
+|---|---|---|
+| A1 | 战斗必须「先算完整场再回放」（预演算范式） | ★ 隐喻锁死「平滑推进」的想象空间 |
+| A2 | 手动大招 = 追加 order 后**整场从 t=0 重算** | ★★ 回放跳变的直接根因 |
+| A3 | 大招目标只能由 skill 静态 selector 决定 | ★★ 本轮硬指标，`ManualUltimateOrder` 缺 targetId |
+| A4 | 「同 seed 重建 RNG」足以保证重算不跳变 | ★★★ **最脆弱假设，随 SB-T2 落地主动失效** |
+| A5 | 跳变靠 cursor 对齐（`event.at > cursorTime`）可接受 | ★ 症状缓解，非根因消除 |
+| A6 | 玩家只对「己方、单体」大招有选目标诉求 | ○ 合理边界，作最小可用范围 |
+| A7 | `autoUltimates` 默认开（玩家默认是观众） | ○ 产品取舍，SPRINT 授权 Planner 定 |
 
 ### 关键假设深挖
 
-**A2/A3 深挖（本轮最重要）——红线锁住了「描述」，没锁住「名字」**
+**深挖 A4（「同 seed 重建 RNG」是脆弱的、且会被 SB-T2 自己打破）——本报告最重要的发现。**
 
-当前护栏链条：`effects` → `describeSquadSkill(def)` → `description`（`squadSkillKits.ts:181-198` 的 `skill()` 工厂强制 `return { ...def, description: describeSquadSkill(def) }`）。这条链**结构性优雅**，是全项目最值得称赞的一处：写了 effect 就必然有匹配描述，手写 description 在类型上无处可插。CLAUDE.md「描述≠行为」的 squad 域复发被真正堵死。
+`regenerateBattleSimulation` 每次都 `createSeededRng(battleSeed.value)` 从头重建 RNG、重跑整场。它「不跳变」的隐含前提是：**插入一条大招 order 后，t=0..cursorTime 这段 RNG 的消费次数与消费点完全不变**，于是同 seed 前缀产出同批过去事件。
 
-**但护栏只覆盖 description，`name` 是逃逸口。** 看 `SignatureSlotOverride.name: string`（L396）——招牌名"超电磁炮""时间停止"是纯手写字符串，与 effects 零绑定。今天 10 个签名，注释写得很勤（每条都有"striker 原型是斩杀，这里是点名+封技"的对照说明，如 L412），人肉能保证名实相符。但假设不成立的那天：
-- 有人调整某签名的 effect（比如把御坂 3575 的 silence 改成 stun），**忘了改注释和名字**——名字还叫"超电磁炮"，机制已变，测试全绿。这就是「名字≠行为」，是红线的同构复发。
-- 扩到 SA-T4 backlog 说的「全 66 UR」时，30+ 个手写名字 × 手写机制，人肉 review 必然漏。
+**这个前提在 SB-T2 落地后必然破**：
+- 大招若「选了不同目标」→ 命中不同单位 → 触发不同暴击判定（SB-T3 已让全体可暴，暴击就是一次 `rng.chance`）→ 不同击杀 → 不同能量/连锁 → **RNG 消费序列在插入点之后立刻错位**。错位本身是对的（未来本就该变）；但当前是**从 t=0 重跑**，`processManualUltimates` 又在 `processActions` 之前执行——插入的大招会**改变同一 tick 内后续单位面对的战场**（目标已死/血量变化），进而改变它们是否行动、是否暴击，**这些扰动可能回溯到 cursorTime 之前的 tick**（因为 `nextAt = Math.min(maxTimeMs, nextManualAt, ...)` 里多了 `nextManualAt` 这一项，取值序列变了 → tick 边界位移 → 过去事件的 `at` 时间戳漂移）。
+- 时间戳一漂，`findIndex(event.at > cursorTime)` 就对齐到错误位置 → 观感跳帧、甚至「已死单位复活演一遍」。
 
-**如果 A2 不成立会怎样**：名字不该是完全自由的文本，而应是**受"这条 effect 集合的机制签名"校验的产物**。这不需要重构——只需一条测试守卫（见 Phase 4 R-1）。
+**结论**：A4 不是「够用但不优雅」，是**「随 SB-T2 落地主动失效」**。本轮若只接 targetId 不改重算模型，会把「碰巧不跳」升级成「一定会跳」——教科书级「半死系统」。**必须同轮处理重算模型。**
 
-**A6 深挖——单 counter 的演化天花板**
-
-`sweepUsedThisWeek: number`（`pve.ts` + schema v15）是扁平定长的正确选择（Planner 上一轮已裁决否掉 `Record<floor,count>`，防膨胀）。它隐含「所有已通层共享同一个池」。在**当前**是最省心的，negotiation 也明确「产出字段中性/道具化命名留演化口」。要质疑的不是字段形态（对的），而是**语义天花板**：一旦 S14-C 想做「不同层扫荡给不同道具」或「区间扫荡」，单一 counter 装不下。本轮**无需改**，只需记录：这是有意识取舍，非遗漏。
-
-**A4 深挖——长尾同质化的「温水」腐化**
-
-10 个签名之外的 56 个 UR + 全部 HR 仍逐字节相同（同原型）。这是 Planner 的明确取舍（克制在头部）。但腐化风险在于：**签名数量会单调增长，原型永远不动**。半年后可能 25 签名、41 原型角色——玩家会形成「有签名=真角色，没签名=杂鱼」的二元认知，反而放大"没抽到签名角色不值得练"的负激励。非本轮解决（backlog），但记录：**分档层（Planner 定为可选增强）才是让长尾不沦为纯背景板的关键，且必须用绝对锚点**（research 上一轮已提，仍成立）。
+**深挖 A2 + A5（跳变的充要条件）**：跳变 ⟺「**已呈现的事件前缀被重写**」。只要保证「`elapsedMs` 之前的事件一字不改、重算只影响之后」，跳变在定义上消失——**无需真做逐帧增量推进**（那是架构大改）。所以 SPRINT 的收窄「无跳变体验」可达，且不必放弃 SB-T2 实质，只要「整场重算」→「冻结前缀 + 分叉重算后缀」。
 
 ### 被隐喻限制的地方
 
-当前隐喻是「**角色 = 原型模板 + 可选覆盖补丁**」（base archetype + override patch），很像 CSS 的 `class + inline style`：省事、可回落，但天然把角色分成两等公民（有补丁 / 无补丁）。相邻领域（Phase 2）的「**每角色是唯一记录，原型只是生成时的骨架**」隐喻能避免二元分层——但那是重构，非本轮范围。本轮只需守住：**补丁模型下，补丁的"可辨识度"必须可验证**，否则补丁会退化成"换名不换魂"，回到审计 P1-1 的原点。
+「预演算 + 回放」把战斗理解成**一盘录像带**：算好不能改，改就得重录整盘。纯自动很省事；一旦「玩家播放途中下命令」，录像带隐喻立刻牵强——你不可能「重录已放过的前半段」。相邻领域用的是**「可回滚的时间线」隐喻**（rollback）：过去只读，命令只作用于「现在」、重算「未来」。换隐喻，实现路径瞬间清晰。
 
 ---
 
@@ -65,154 +64,131 @@
 
 | 领域 | 核心思想 | 可迁移点 |
 |---|---|---|
-| **MOBA / 长线 gacha 技能设计** | 角色差异化随版本单调加复杂度；早期"120% 伤害"→后期条件叠层。**痛点是「机制密度上去了，描述传达不了」** | 印证 SA-T4 拍板②「宁 6 真不同别 12 微调」正确：辨识度 > 数量。也警示别走向"密度膨胀"另一极端 |
-| **明日方舟 · 剿灭（Annihilation）** | 奖励按歼敌数、**周上限**（1200→1700 随进度抬升）、**轮换制**（永久/轮换/模拟三档，模拟档不发硬通货只发经验） | SA-T5 周上限范式来源，已正确采纳。**未采纳的一格**：剿灭上限随进度**抬升**，而本项目 `SWEEP_WEEKLY_CAP=10` 是死数——见 Phase 4 R-5 |
-| **数据库 schema（生成列 / computed column）** | 派生字段不落存储、由源字段计算（`full_name = first + last`），杜绝源与派生不一致 | SA-T4 的 `description = describeSquadSkill(effects)` **正是生成列范式**——本项目做对的地方。缺的是把 `name` 也纳入"半生成/被校验"约束 |
-| **契约式设计 / property-based testing** | 不测具体值，测**不变式**：如"任意签名 kit 的机制指纹必须 ≠ 其原型的机制指纹" | SA-T4 测试目前测了「御坂≠冈部」（点测），没测**全体签名的不变式**。可升级为覆盖全 10 签名的属性断言 |
-| **类型系统（branded type / illegal states unrepresentable）** | 用类型让非法状态不可表达 | `name: string` 允许任意字符串=非法状态可表达。理想是 name 由机制指纹约束——退一步至少加运行时断言 |
+| **Rollback netcode**（格斗/RTS 同步） | 收到迟到输入时回滚到该输入 tick，用修正输入**只重放该 tick 之后**；已确认的过去不动 | ★★★ 手动大招 = 迟到命令，只重算 `atMs` 之后 |
+| **确定性 Lockstep**（AoE 式） | 只传命令 + 固定 tick + 注入 RNG，保证同序列同结果 | ★★ 本项目已具备（注入 RNG + order 队列）；缺的是「命令带参数（目标）」 |
+| **命令插入（command insertion）** | 迟到命令按时间戳插入命令队列，从最早受影响 tick 重算 | ★★★ `manualUltimateOrders` 就是命令队列，只差「从受影响点而非 t=0 重算」 |
+| **事件溯源 / event sourcing** | 事件是 append-only 只读日志；投影由事件流重建 | ★★ `TimedBattleEvent[]`=事件流、`rebuildVisibleBattle`=投影。前缀冻结 = 事件不可变 |
+| **非线性视频剪辑** | in/out 点之后重渲，之前的帧缓存复用 | ★ 「cursorTime 之前缓存、之后重渲」的直觉锚点 |
 
-### 可迁移模式（选 3 个最值得借鉴）
+### 可迁移模式（3 个最值得借鉴）
 
-1. **生成列范式（已用于 description，应扩到 name 的校验）**——数据库世界几十年验证：派生字段绝不手写。SA-T4 已在 description 上做对，是本项目护栏设计的高光。迁移动作：把 name 从"纯手写"升级为"手写但受机制指纹校验"（不必全自动派生，加一条一致性测试即可）。**低成本、高杠杆。**
+1. **Rollback「只重放输入点之后」**（最高杠杆）——engine 侧最小实现：提供 `resumeTimedBattle(snapshot, newOrders)`，或让 `simulateTimedBattle` 接受「resume 快照 = {units 状态, rngState, events 前缀, now}」；从 `now` 继续，**过去事件前缀原样保留拼接**。插入大招在定义上无法触碰过去，跳变根除。
+2. **命令带参数（parameterized command）**——`ManualUltimateOrder` 扩为 `{atMs, unitId, targetId?}`；`processManualUltimates` 把 `targetId` 传进 `executeSkill`，后者对**单体伤害/单体控制**用「显式目标覆盖」替代 `effect.target` 解析，AOE/self/全体忽略覆盖（复用 SB-T4 已定的单体/AOE 二分）。纯 engine、可测「命中所选目标」。
+3. **RNG 状态快照（seekable PRNG）**——mulberry32 全部状态就是一个 `a: number`。让 RNG 可导出/导入内部状态（`snapshot()`/`restore(a)`），resume 时把 RNG 恢复到「消费到 `elapsedMs` 为止」的状态，后缀错位就**不再回溯污染前缀**。这是把 A4 从「碰巧对」升级为「结构上对」的关键卫生改动，且极廉价。
 
-2. **剿灭的「上限随进度抬升」**——本项目 `SWEEP_WEEKLY_CAP=10` 是死常量。方舟 1200→1700 让"推进主线"额外解锁更高扫荡上限，把主线和循环**耦合成正反馈**（推得越高→止损能力越强），符合"卡关玩家最需要补给"的直觉。本项目当前主线推进与扫荡额度**完全解耦**。可迁移的一格深度（Phase 4，标 backlog）。
+### 竞品设计哲学对比（PCR 半自动 vs 本项目）
 
-3. **属性测试 / 不变式断言**——比"御坂≠冈部"点测更抗腐化。一条"∀ 签名角色：其机制指纹 ∉ {6 原型机制指纹}"的断言，能在**未来任何人加签名时**自动兜底"你这个签名其实和原型没区别"。
-
-### 竞品设计哲学对比（非功能对比）
-
-- **PCR**：每角色 4 条完全唯一技能，**无原型回落**。哲学=「每角色都是一等公民」。代价=内容生产成本极高。本项目单机向、一人开发，不可能全 PCR 化——补丁模型是正确的成本取舍。
-- **明日方舟**：干员按「职业+分支」共享框架，个体差异靠**天赋+模组**（少量手写机制点）。哲学=「框架复用 + 关键机制点手写」——**这正是 SA-T4 补丁模型的成熟形态**。方舟证明补丁模型能长期运营，前提是：①机制点必须真差异（非数值微调）②框架分支要够多（本项目 6 原型偏少，长期可能需细分）。
-
-**结论**：SA-T4 的补丁模型选型正确（对标方舟而非 PCR，符合成本约束）。风险不在模型，在**补丁质量的可验证性**——方舟有专职 QA，本项目只能靠测试守卫替代。
+PCR 的哲学是**「自动是默认、手动 UB timing 是唯一但足够的杠杆」**：玩家不选普攻目标、不打断、不换技能，唯一操作是「何时点大招」——但 PCR 大招目标/效果是 **per-character 固定**，所以**不需要选目标**。本项目分歧点：小队战大招目标由通用 selector（`frontEnemy` 等）决定，缺 PCR 那种「角色自带明确目标语义」，于是**「选目标」在本项目比在 PCR 里更必要**（否则玩家点了大招却打在系统选的错位目标上，操作感落空）。**结论：SB-T2 选目标不是抄 PCR，而是补上本项目 selector 抽象带来的「目标不可预期」缺口——合理且必要，不是过度设计。** 自动模式仍应保留（单机向「配好队看戏」定位），选目标是「关掉自动后的手动增强」。
 
 ---
 
 ## Phase 3: 逻辑完备性
 
-### 概念体系评估
+### 概念体系评估（关系与模糊地带）
 
-核心概念关系（本轮切片）：
-```
-CharacterCard ──inferArchetype──▶ archetype(6种) ──archetypeEffects──▶ 原型 kit
-     │                                                                    ▲
-     │  id 命中 SIGNATURE_KIT_OVERRIDES                                    │ 回落
-     └──────────────▶ 覆盖 skill1/ultimate ──skill()工厂──▶ description ──┘
-                              │
-                          name(手写) ◀── 模糊地带①：与 effects 无绑定
-                          role(手写)  ◀── 模糊地带②：声明未被消费（孤儿字段）
-```
-```
-TowerProgress ──currentFloor──▶ hasCompletedFloor ──▶ canSweep
-     │                                                    │
-     └── sweepWeekKey/sweepUsedThisWeek ──ensureThisSweepWeek(读时归零)──▶ getSweepRemaining
-                                                          │
-                                              calculateSweepReward(floor) ──sqrt递减+CAP──▶ SweepReward
-```
+命令链：`manualUltimateOrders`（命令队列）→ `processManualUltimates`（tick 内执行）→ `executeSkill`→`executeEffect`（`effect.target ?? skill.target` 解析）→ `dealDamage`。呈现侧：`simulateTimedBattle`（只读 `events`）→ `regenerateBattleSimulation`（重算+cursor）→ `playNextBattleEvent`（180ms 回放）→ `rebuildVisibleBattle`（投影为 UI）。
 
-**模糊地带（3 处）**：
-1. **name ⟷ effects 无绑定**（上文 A2）——最主要的逻辑裂缝。description 闭环了，name 没有。
-2. **`SignatureKitOverride.role` 是"孤儿字段"**（L405-406）：`role: SquadArchetype` 已写入每条签名（注释说"供未来 UI / SA-T3 头部映射消费"），但**当前无任何消费端**——`getSquadSkillKitForCharacter` 仍走 `inferArchetype` 推断 archetype，不读 `override.role`（L563）。这是**声明了但不生效的字段**，是"描述≠行为"的轻量同构（数据说"御坂是 striker"，运行时仍靠正则猜）。不是 bug（本轮不接入是 Planner 明确取舍），但**应有测试锁定"role 与 inferArchetype 结果一致"**，否则将来接入时会发现两者早已漂移。
-3. **扫荡经验归属 vs 心智模型**：扫荡发经验给"首个含有效成员的预设小队"（`HomesteadHubView.vue:288-294 sweepSquadId`）。玩家若把扫荡想象成"我编的那队去刷"，实际发给"小队 A"，存在轻微心智偏差（非本轮）。
+**模糊地带**：
+- **「命令的目标」与「skill 的目标」概念未分离**——目前只有后者。引入前者必须明确：**命令目标只覆盖单体、只覆盖伤害/单体控制**，AOE/治疗全体/自身不受影响（给「全体 AOE」指定单个目标无意义）。这条边界须写进验收，否则长成「指定了目标但对 AOE 无效、玩家不知为何」的黑箱（SB-T4「UI 承诺、代码不实现」的镜像）。
+- **「重算」与「回放」时间基准未统一**——`regenerate(cursorTime)` 用 `battleElapsedMs`（回放时刻），`handleManualUltimate` 用 `battleElapsedMs + 1` 作 orderAt。若回放时刻与 engine tick 边界不对齐，order 可能落在两 tick 之间被吞/延迟。需定「命令时间戳量化到下一 tick」规则。
 
-### 极端场景检验
+### 极端场景检验（3 个）
 
-| 场景 | 当前行为 | 是否成立 |
-|---|---|---|
-| **currentFloor=1（初始态）** | `sweepFloor = max(0, 1-1) = 0`，UI 显示"先通过第 1 层"，`canSweep=false` | ✅ 边界正确 |
-| **某签名 id 被删/改稀有度** | 测试 `SIGNATURE_IDS` 硬断言"必存在且为 UR"会**红** | ✅ 测试即护栏，数据漂移会被 CI 抓到（好设计） |
-| **玩家一周不玩，第 8 天回来** | `ensureThisSweepWeek` 读时判定跨周→归零，额度满血 | ✅ 成立 |
-| **系统时钟回拨到上一周** | weekKey 变→视同新周→归零一次 | ⚠️ 部分——回拨到**别的周**会白刷一次满额度（10 次）。单机向、危害有限（审计已定性 P3），"周键相等才不重置"钳位对"回拨到不同周"无效。**已知取舍，记录即可** |
-| **未来扩 30 签名，其中 3 个机制其实和原型雷同** | 当前测试测不出（只点测御坂≠冈部） | ❌ **不成立**——腐化真空，Phase 4 R-1 要补 |
+1. **同一 180ms 帧内连点两个单位大招**：现 `handleManualUltimate` 每次都 `regenerate`+`playNext`，两次重算叠加，第二次可能覆盖第一次 cursor → 丢单/双跳。**不成立**，需「命令入队后单次重算」或防抖。
+2. **目标在命令生效前已死亡**（选敌 A，A 在 atMs 前被磨死）：`processManualUltimates` 现只校验施法者 `!isAlive(unit)`，不校验目标；加 targetId 后需处理「目标已死」→ 回退 selector 默认目标 或 判 `manualUltimateFailed`。**需显式定义回退**，否则 `selectTargets` 拿死目标返回空、大招空放却已 `spendUltimateEnergy`（扣能量在 execute 前）。
+3. **超时裁决时刻正好有 pending 大招**（SB-T1 三态 × SB-T2 交叉）：`nextManualAt` 已被 `Math.min(maxTimeMs, ...)` 夹住，atMs > maxTimeMs 的 order 不会触发。**成立**，但需测试断言「超时后 pending order 不改判决」。
 
 ### 操作缺口（玩家想做但做不到）
 
-- 玩家**看不出"这角色有没有签名"**——`isSignatureKit` 查询接口已导出（好，L554），但 UI 徽章 backlog 未做。啊哈时刻（"我抽到的御坂真会放超电磁炮"）无视觉兑现点。SA-T4 价值显性化最后一公里，negotiation 已标 backlog，**记录不催**。
-- 玩家**无法选层扫荡**——UI 固定"最高已通层"（`currentFloor-1`），不能选。**机制与 UI 轻微自相矛盾**：`calculateSweepReward` 做了 sqrt 边际递减（为防"只扫最高层"），但 UI 恰恰强制"只扫最高层"→**边际递减对玩家当前不可感知**，它只是"防未来 Dead Zone 的预埋"，不是已兑现深度。
+- 选目标（本轮补）。
+- 取消/改派已下达未生效的大招 → backlog。
+- 「能量满自动放但让我选目标」半手动 → backlog（见 W2）。
 
 ### 演化瓶颈
 
-- **6 原型偏少**：长期扩签名时未覆盖角色全挤 6 桶，同质化感知随 UR 池增大加剧。细分原型（方舟式分支）是 backlog 级演化。
-- **SAVE_VERSION=15 已用于扫荡**：下次 schema 升级（如道具化背包）走 v16，扫荡中性命名字段已留口，路径通畅。
+未来若加「多段/连锁/引导类（跨多 tick）大招」，当前「命令 = 单点 tick 执行」会卡。本轮不需预支，但只要 resume/快照接口留干净（`resumeTimedBattle(snapshot, orders)`），未来有落脚点。
 
 ---
 
 ## Phase 4: 替代设计提案
 
-### 核心机制替代方案
+### 核心机制替代方案（针对「平滑推进」）
 
-**机制 1：SA-T4 名字↔机制的绑定（当前=手写自由文本）**
+**方案 A（推荐·一次做对）｜冻结前缀 + 分叉重算（rollback-forward）**
+- engine：`resumeTimedBattle(snapshot, newOrders)`——snapshot = `{units 深拷贝, rngState:number, now, eventsPrefix}`；从 `now` 继续跑，**过去事件前缀原样拼接**；RNG 用 mulberry32 状态导入保证后缀确定。
+- View：`handleManualUltimate` 不再从 seed 头重建；取「回放到 `elapsedMs` 的 engine 快照」→ resume →**新事件只追加在 cursor 之后**，已播放的一律不动。
+- 跳变在定义上消失，选目标经 `order.targetId` 落地。
+- Tradeoff：需 engine 暴露 RNG 状态导出/导入 + resume 入口（约 30-50 行 engine + 测试）；换来根因级修复、无长期腐化。
 
-- **替代 A（本轮可落地 · 推荐 → R-1）**：**不改数据结构，加一条"机制指纹"测试守卫**。为每条签名 slot 计算「机制指纹」= 排序后的 `{effect.type + 关键机制标记(execute/revive/stun/silence/dot/taunt/dispel...)}` 集合。断言：①每个签名 slot 的机制指纹 **∉** 其 role 对应原型 slot 的机制指纹（保证"真差异"，防微调冒充）。**tradeoff**：加 ~30 行测试，零运行时成本、零结构改动，把"名实相符/真差异"从人肉 review 升为 CI 守卫。**本轮最高杠杆防腐动作。**
-- **替代 B（重构 · 否决）**：让 name 从机制指纹**半自动派生**。tradeoff：彻底消灭"名字≠行为"，但牺牲名场面命名自由度（E-13 名场面命名是护城河，不该牺牲）。**否决**——与 evolution 名场面命名冲突。
+**方案 B（更省·妥协）｜整场重算但严格冻结「已呈现事件」**
+- 保留 `createSeededRng(seed)` 整场重算，但 View 侧**不用新算的过去**：只截 `at > elapsedMs` 后缀，拼到「已播放旧前缀」。
+- 前提：整场重算前缀**必须**与已播放前缀逐字节相同——Phase1-A4 已证此前提**在选目标后会破**（RNG 序列在插入点后错位甚至 tick 边界前移）。所以方案 B 只在「不选目标、只改 timing」时安全，**一旦选目标就退化为跳变**。
+- Tradeoff：改动更小（纯 View），但**是半死系统**（选目标与无跳变二选一）。**不推荐作终态，仅可作 targetId 尚未接入时的过渡。**
 
-**机制 2：扫荡"只能刷最高层" vs 边际递减机制的自相矛盾**
-
-- **替代 A（可选 · R-4）**：UI 允许"选任一已通层扫荡"，让玩家用低层换稳、高层换多，边际递减才真正被玩家用到。但 negotiation R2-5 已定"区间扫荡本轮不强制、字段留口即可"。**建议维持现状**，只做认知对齐：当前边际递减对玩家不可感知，是预埋非已兑现。
-- **替代 B（现状）**：维持固定刷最高层。sqrt 递减对单层无实际决策意义，但保留作未来选层预埋（成本已付）。**结论：现状正确，认知别说过头。**
-
-**机制 3：扫荡上限（当前=死常量 10）**
-
-- **替代 A（backlog · R-5 · 方舟范式）**：`SWEEP_WEEKLY_CAP` 随 `maxFloor` 阶梯抬升（如每 10 层 +2，封顶 20）。把主线推进与循环额度耦合成正反馈。tradeoff：字段无需改（仍单 counter），只把常量换成 `f(maxFloor)` 纯函数；需数值再调平 + 通胀重测。**backlog（S14-C）。**
+**方案 C（最干净·超范围）｜真·逐帧驱动（去预演算）**
+- engine 暴露 `step(dtMs)`，View 用 rAF 每帧推进，命令直接注入「当前」。彻底消灭预演算/回放二相。
+- Tradeoff：改 engine 核心循环 + 全套测试重写 + 与 SB-T1/T3/T4/T5 已建的「事件流特征测试」范式冲突。**明确 backlog，本轮严禁。**
 
 ### 概念重组方案
 
-**`role` 字段的归宿**：当前 `SignatureKitOverride.role` 是孤儿。三去向：
-1. **删掉**——不接入就别留悬空字段（避免"声明≠行为"）。但 negotiation 明确它是 SA-T3×SA-T4 定位对齐留口，删了要重加。
-2. **保留 + 加一致性测试（推荐 → R-2）**：断言 `∀ 签名：override.role === inferArchetype(该角色)`。role 从"孤儿"变成"inferArchetype 正确性的锚点测试"——顺便给频繁误判的正则加 10 个人工校对金标准样本。**低成本、一箭双雕。**
-3. 立即接入让 `getSquadSkillKitForCharacter` 优先读 `override.role`——超本轮（改回落路径），backlog。
+- **`ManualUltimateOrder` 泛化为 `BattleCommand`**（`{atMs, unitId, kind:'ultimate', targetId?}`），为未来「手动技能/换位/撤退」留统一命令口。本轮只实现 ultimate，但用可扩展形状。
+- **抽 `resolveSkillTargets(state, actor, skill, overrideTargetId?)`** 统一 auto（selector）与 manual（override）两条路径，避免 effects.ts 长出两套目标逻辑打架（SB-T5 拍板 6「两套聚合一致改」同类教训）。
 
 ### Tradeoff 矩阵
 
-| 提案 | 简洁性 | 可理解性 | 抗腐化 | 本轮成本 | 建议 |
-|---|---|---|---|---|---|
-| R-1 机制指纹测试守卫（机制1-A） | 中 | 高 | **极高** | ~30 行测试 | 🔴 本轮做 |
-| R-2 role 一致性锚点测试（重组2） | 高 | 高 | 高 | ~10 行测试 | 🔴 本轮做 |
-| R-3 name↔机制关键词映射断言 | 中 | 高 | 高 | ~20 行 | 🟡 可选增强 |
-| R-4 扫荡选层（机制2-A） | 中 | 中 | 低 | 中（UI） | 🟢 backlog |
-| R-5 扫荡上限随进度抬升（机制3-A） | 高 | 中 | 中 | 中（数值重调平） | 🟢 backlog |
-| R-6 name 半自动派生（机制1-B） | 低 | 中 | 极高 | 高 | 💡 否决(伤名场面命名) |
+| 维度 | 方案A 冻结前缀+resume | 方案B 整场重算+截后缀 | 方案C 逐帧驱动 |
+|---|---|---|---|
+| 无跳变（选目标后仍成立） | ✅ 定义上成立 | ❌ 选目标即破 | ✅ |
+| 选目标 | ✅ | ✅（但会跳） | ✅ |
+| engine 改动量 | 中（resume+RNG快照） | 无（纯View） | 大（核心循环） |
+| 长期腐化风险 | 低（根因修复） | **高（半死系统）** | 低 |
+| 与现有特征测试兼容 | ✅ 增量 | ✅ | ❌ 需重写 |
+| 本轮可落地 | ✅ 推荐 | ⚠ 仅过渡 | ❌ backlog |
 
-### 灵感炸弹
+### 灵感炸弹（≥2）
 
-- 💡 **「机制指纹」升级为角色 DNA 可视化**：既然每角色 kit 能算出机制指纹，可在图鉴/编队界面用一组图标（⚔处决/💀群控/❤复活/☠DOT）展示"这角色会什么"，让玩家编队时就规划机制搭配，把 SA-T4 差异化从"战斗里才发现"提前到"编队时能规划"。喂给纯展示层，**零引擎改**。（S14-C UI 轮）
-- 💡 **描述即行为编译器（承接上轮 R2-9）**：策划写"御坂：点名最强敌，高伤+封技 4s"→ DSL 编译出 effects+name+description 三者一致。SA-T4 `skill()` 工厂的反向扩展。远期范式，backlog。
+- 💡 **W1｜命令进事件流 → 可复盘对局**：把玩家每次大招命令也 append 进 `events`（如 `commandIssued`），回放/复盘能重现「玩家第 X 秒对 Y 下大招」。战斗从「录像」升级为「带操作轨迹的可复盘对局」，为未来「回放分享/教学/PvP 预测-校正」埋线，几乎零成本（命令队列已存在）。
+- 💡 **W2｜目标预测高亮**：即使不选目标，也用当前 selector 预演「这个大招现在会打谁」（engine 已有 `selectTargets`，纯查询无副作用）。把「选目标」从必需降级为「不满意再改」，同时让 selector 抽象不再是黑箱、降低操作负担。
 
 ---
 
 ## Prioritized Research Directions
 
-### 🔴 High-impact, Low-effort（本轮切片内应采纳）
+### 🔴 High-impact, Low-effort（本轮 SB-T2 应直接采纳）
 
-- **R-1｜SA-T4 机制指纹守卫**：加测试断言"每条签名 slot 的机制指纹 ∉ 其原型 slot 的机制指纹"，把"12 个微调冒充差异化"从人肉 review 升级为 CI 红线，补上"名字≠行为"红线在 squad 域的唯一逃逸口。**本轮最有价值一条。**
-- **R-2｜role 孤儿字段锚点测试**：断言 `∀ 签名：override.role === inferArchetype(角色)`，把悬空 `role` 字段变成 inferArchetype 正则的人工校对金标准，消除"声明≠行为"轻量同构。
-- **认知对齐（非代码）**：扫荡边际递减在"固定刷最高层"UI 下**当前对玩家不可感知**，是防未来 Dead Zone 的预埋而非已兑现深度——别在验收/文档里宣称"玩家能体验边际决策"。
+- **R1｜命令带目标**：`ManualUltimateOrder` 加 `targetId?`；`processManualUltimates`/`executeSkill` 支持「单体伤害/单体控制的目标覆盖」，AOE/self/全体忽略。纯 engine + 特征测试「命中所选目标」。**（本轮硬指标）**
+- **R2｜无跳变 = 冻结已呈现前缀**（方案 A 精神，取最小实现）：重算/resume 只影响 `elapsedMs` 之后；已播放事件一字不改。若时间紧，**至少**把 RNG 从「seed 头部重建」改为「导入到 `elapsedMs` 的 RNG 状态」，让后缀错位不回溯污染前缀。**（本轮硬指标：验收断言「手动开大后过去事件不变、无时间倒流」）**
+- **R3｜死目标/超时 order 显式回退**：目标已死 → 回退 selector 或判 `manualUltimateFailed`（勿空放扣能量）；超时后 pending order 不改判决。**（防 Phase3 场景 2/3 变隐藏 bug）**
+- **R4｜连点防抖/单次重算**：同帧多命令入队后单次重算，避免双跳/丢单（Phase3 场景 1）。
 
-### 🟡 High-impact, High-effort（做一部分 / backlog 候选）
+### 🟡 High-impact, High-effort（backlog）
 
-- **R-3｜name↔机制关键词一致性映射**：为 10 招牌名维护"期望机制关键词"小表并断言，比 R-1 更强地锁死名实相符。可选增强；R-1 已足则降 backlog。
-- **SA-T4 UI 徽章 + 机制指纹图标**（`isSignatureKit` 已留口）：兑现"我抽到的招牌角色真不一样"的啊哈时刻。价值显性化最后一公里，S14-C UI 轮。
+- **R5｜engine `resumeTimedBattle(snapshot, orders)` + RNG 状态 export/import**：把 R2 从「过渡」升级为「结构性根因修复」，为一切「战斗途中改状态」的未来需求（换位/撤退/道具）铺路。
+- **R6｜`BattleCommand` 泛化命令模型**：统一 ultimate/技能/换位命令口，防命令概念裂变。
 
-### 🟢 Thought-provoking（有趣不紧急）
+### 🟢 Thought-provoking（长期研究）
 
-- **R-5｜扫荡上限随 maxFloor 阶梯抬升**（方舟剿灭 1200→1700 范式）：主线与循环耦合成正反馈，字段无需改、只把常量换纯函数。需数值重调平，S14-C。
-- **R-4｜扫荡选层**：让边际递减对玩家真正可用（低层换稳/高层换多）。字段已留口，UI 成本中等。
-- **原型细分**（6→更多分支，方舟式）：随 UR 池增大缓解长尾同质化。长期演化。
+- **R7｜方案 C 逐帧 `step(dtMs)` 去预演算**：操作深度天花板最高；与现有事件流测试范式冲突，需专门 sprint。
+- **R8｜目标预测高亮（W2）**：让 selector 抽象对玩家透明，把 SB-T2 从「补救」变「增强」。
 
 ### 💡 Wild idea
 
-- **角色机制 DNA 可视化**：机制指纹 → 编队界面图标组，差异化从"战斗中发现"提前到"编队时规划"，零引擎改纯展示层。
-- **描述即行为编译器 DSL**：策划写意图 → 编译出 effects+name+description 三者一致，SA-T4 `skill()` 工厂的终极反向扩展。远期护城河。
+- **W1｜命令轨迹进事件流 → 可复盘对局**：回放带操作轨迹，为教学/分享/PvP 预测-校正埋线。
+- **W2｜「意图队列」半手动**：为每角色预设「能量满就放，目标优先级 = 最低血敌」，介于全自动与全手动之间——把「UB timing」从实时点击降维成「策略预设」，契合单机向低操作定位又保留深度。
 
 ---
 
-## SA-T6 前瞻（下一切片定心，非本轮实做）
+## 收尾核对提示（给 Planner/Generator/Evaluator）
 
-SA-T6（消解编队/探索/战斗三 tab 冗余）依赖 SA-T1（已完成，编队可编辑）。研究视角提示三点，供下轮 Planner：
-1. **别把 SA-T6 当纯前端重组**——它触及"编辑的唯一真源在哪"这个信息架构决策（假设 A7 可质疑）。选项 A（squad tab 唯一编辑入口 + explore 预览+触发 + battle 只演出）逻辑更闭环，与"single source of truth"一致。
-2. **深链/旧路由不破**是硬约束（`/squad-battle`、`/nurture` 重定向不能 404，CLAUDE.md 明列）——重组时 query 参数迁移要留兼容。
-3. **`SquadBattleView.vue:82 towerEnemyData = ref<any>` lint 债**（negotiation N-2 / 评估已记）：SA-T6 会重触 SquadBattleView，是顺手清理的自然时机。
+- **范围纪律**：本轮只做 SB-T2；R1+R2+R3+R4 属 SB-T2 合同内（选目标 + 无跳变 + 边界完备），R5-W2 一律 backlog，勿开新范围。
+- **别造半死系统**（SPRINT 反复警告）：若采纳方案 B 过渡形态，**必须**在实现说明写明「targetId 接入后前缀冻结如何保证」，否则就是把「碰巧不跳」升级成「一定跳」。首选方案 A 精神（前缀只读 + RNG 状态导入）。
+- **engine 纯净**：命令目标覆盖、resume、RNG 状态导入全进 `engine/squad` 纯层，随机仍走注入 RNG，零 Vue/Pinia/DOM/`Math.random`。
+- **测试护栏**：`timedBattle.test.ts:261-291`「auto/manual ultimate」既有断言必须不破；新增断言覆盖「选目标命中所选」「手动开大后 `elapsedMs` 前事件逐条不变」「死目标回退」「超时 pending order 不改判」。
+- **收尾**：确认 SB-T1..SB-T5 全 `[x]` 且与实现一致，5 条验收命令实测绿，未破坏 S14-A 6 项 + 第 1/2 轮 SB-T3/T5/T1/T4。
 
----
-
-**一句话收尾**：SA-T4 的「description 从 effect 派生」是本项目最优雅的一处护栏，但它只锁住了红线的一半——**名字仍是自由文本、role 字段悬空、机制辨识度无 CI 守卫**。本轮最高价值不是加内容，而是补上"机制指纹守卫 + role 锚点测试"两条零运行时成本的护栏，让「换名不换魂」「微调冒充差异化」的长期腐化在 CI 里就红。扫荡侧设计健康，唯一认知风险是"边际递减在固定刷最高层的 UI 下当前不可感知"——是预埋非已兑现，别在文档里说过头。
+Sources:
+- [Netcode Architectures Part 2: Rollback | SnapNet](https://www.snapnet.dev/blog/netcode-architectures-part-2-rollback/)
+- [Netcode Concepts Part 3: Lockstep and Rollback | Yuan Gao (Meseta)](https://meseta.medium.com/netcode-concepts-part-3-lockstep-and-rollback-f70e9297271)
+- [Netcode Architectures Part 1: Lockstep | SnapNet](https://www.snapnet.dev/blog/netcode-architectures-part-1-lockstep/)
+- [Preparing your game for deterministic netcode | yal.cc](https://yal.cc/preparing-your-game-for-deterministic-netcode/)
+- [Auto battler — Wikipedia](https://en.wikipedia.org/wiki/Auto_battler)

@@ -1,49 +1,49 @@
-# Eval — S14-A 第 3/3 轮（product-loop --tier1 on --mode all）
+# Evaluator — S14-B 第 3/3 轮（收尾轮，指派切片 = SB-T2）
 
-> 本轮切片 = SA-T4（签名覆盖表回归锁）+ SA-T5（扫荡日循环 + v15 存档回归锁），与第 2 轮同一切片。
-> tier1 on → 引擎跑满 3 轮，本轮定位 = 验收再确认 + 抓回归，决策仅信息性。日期：2026-07-01。
-> Evaluator 亲自重跑全部验收命令 + 独立抽查实现真实性（不改源码）。
+## 决策：COMPLETE
 
-## Checkbox 状态核对（SPRINT.md）
+指派切片 SB-T2（手动大招选目标 + 前缀冻结平滑推进）**真实现落地**（非空跑）；5 条验收命令全部亲自重跑通过；SB-T1..SB-T5 主清单全 `[x]` 且与实现一致；未破坏前几轮与 S14-A。
 
-- SA-T1/T2/T3（第 1 轮切片）：`[x]`，非本轮范围。
-- SA-T4（本轮 + 第 3 轮回归锁）：`[x]` ✓ 与实现一致。
-- SA-T5（本轮 + 第 3 轮回归锁）：`[x]` ✓ 与实现一致。
-- SA-T6：`[]` — 明确排第 3 轮切片之外（依赖 SA-T1），非本轮范围，正确保持未勾。
+---
 
-## 验收命令重跑实际输出（Evaluator 亲自跑）
+## 1. SPRINT 指派切片 checkbox 核对
+- 主清单 SB-T1..SB-T5 全部 `[x]`（SPRINT.md:26/29/32/35/38）。
+- 第 3 轮追加清单本轮-7/8/9 全部 `[x]`（SPRINT.md:147/151/155）。
+- 收尾轮硬指标满足：合同全部 `[x]` 且与实现一致（非「跑满轮次≠达成」）。
 
-1. `npm run type-check`（vue-tsc --build）→ **PASS**，0 错误、无输出。
-2. `npm run test`（vitest run）→ **PASS**：`Test Files 58 passed (58) / Tests 653 passed (653)`，Duration 16.95s。
-3. `npm run build` → **PASS**：`✓ built in 8.07s`，`dist/assets/HomesteadHubView-BaznqauH.js 98.55 kB / gzip 32.07 kB` 正常产出。
-4. `python backend/test_security.py`（.venv python）→ **PASS**：`RESULT: PASS — all security checks passed`，`EXIT=0`（鉴权/越权 401/乐观并发 409/原子写/邀请码门控全 PASS）。
-5. `grep -rn "debug=True" backend/server.py api/index.py` → **零命中**（两文件均 No matches found）。
+## 2. 验收命令实测（Evaluator 亲自重跑）
+| 命令 | 实际输出 | 结论 |
+|---|---|---|
+| `npm run type-check` | vue-tsc --build，无输出，EXIT=0 | PASS |
+| `npm run test` | Test Files 58 passed / Tests **670 passed (670)** | PASS |
+| `npm run build` | ✓ built in 8.80s，EXIT=0 | PASS |
+| `python backend/test_security.py`（./.venv/Scripts/python.exe） | RESULT: PASS — all security checks passed，EXIT=0 | PASS |
+| `grep debug=True server.py / api/index.py` | No matches（两处均零命中） | PASS |
 
-## 自报 vs 实际对比
+## 3. 自报 vs 实际对比
+- Generator 自报 670/670、type-check 0 错、build 成功、security PASS、debug 零命中 —— **逐条一致**（自报 build 11.86s / 本机 8.80s，仅耗时差异，非结果差异）。
+- 自报文件结构变更（rng.ts StatefulRng / effects.ts canOverrideTarget+resolveSkillTargets / timedBattle.ts resumeTimedBattle+checkpoint / types.ts targetId / View+Battlefield 接线）—— 逐一 Read 核实属实。
 
-完全一致。Gen 自报 type-check PASS / test 653 全绿 / build 8-9s / security PASS EXIT0 / grep 零命中——逐条复跑吻合（test 数一致 653，build 产物哈希一致 HomesteadHubView-BaznqauH.js，security 全 PASS）。本轮自报「零源码改动」，与文档改动一致。
+## 4. pitfalls 合规
+- engine 纯净：`grep -rn "Math.random|@/stores|from 'pinia'" src/engine/` 唯一 Math.random 命中 = rng.ts:118 已授权 `defaultRng`（eslint-disable），其余全是注释/文档；resumeTimedBattle RNG 走注入 StatefulSeededRng，零违规。
+- 零存档触点：SAVE_VERSION 仍 15；`git diff --stat HEAD -- infra/persistence/` 空 —— schema/migrations/装配器均未动（targetId/orders 为战斗内瞬态）。
+- 未扩 `TimedBattleWinner`（坑 C-1 规避，SB-T1 用 BattleEndReason 扩值区分三态）。
+- 禁动态色类 / text-white 压浅底：SB-T2 UI（选目标提示条 + 高亮环）无新增违规（build 通过、复用语义令牌范式）。
 
-## pitfalls 合规
+## 5. 真实性抽查（Read/Grep，不改码）
+- **前缀冻结平滑推进（本轮-7，拍板 1/2）真落地**：`resumeTimedBattle` = ①跑基线采 checkpoint（atMs+RNG快照+单位深拷贝+前缀事件长度+orderIndex）②取 atMs≤resumeFromMs 最后 checkpoint 作分叉、slice 复用冻结前缀 ③restore RNG 状态 + 恢复单位 + 命令游标只重算后缀。`StatefulRng.snapshot/restore`（mulberry32 单 uint32 累加器）真实现。**红线守住**：非方案 B「整场重算+截后缀」伪平滑——测试 `prefix freeze` 断言前缀逐条相同 + 时间戳单调不倒流 + 后缀确因新命令改变（proves 非伪平滑）。
+- **选目标（本轮-8，拍板 3/5）真落地**：`canOverrideTarget` = 单体敌方 selector 白名单（frontEnemy/lowestHpEnemy/highestAtkEnemy/backEnemy）；`resolveSkillTargets` 单体覆盖命中存活敌方、AOE/self/己方忽略、死目标回退默认 selector。测试覆盖：单体命中所选(非默认front) / AOE 忽略仍全体 / 死目标回退不空放且扣能量 / 超时 pending order(atMs>maxTimeMs)不改裁决(elapsedMs=90000, timeoutDraw, 无 ultimate action)。
+- **UI 同口径（防 P1-4 反向 affordance）真落地**：View `ultimateAllowsTargeting` 复用 engine `canOverrideTarget`；SquadBattlefield 有 targetingCasterId/Name props + selectTarget/cancelTargeting emits + 提示条 + 敌方可点选高亮环；单体才进选目标态、AOE 点一下即放 —— UI 亮起条件 == engine 覆盖生效条件（同一函数）。
+- **无硬编码时限**：View import `DEFAULT_MAX_TIME_MS` 传 :max-time-ms 与 resume/regenerate maxTimeMs 同源。
+- **手动路径已切换**：View 两 handler + toggle 走 resumeBattleSimulation（前缀冻结），regenerate 仅用于从 0 初始模拟。
+- **前几轮护栏未破**：SB-T1 三态裁决（timeoutWin/Loss/Draw）、SB-T3 base crit 0.05、SB-T4 站位单体减伤 front×1、SB-T5 累加设上限 断言全在 670 内通过；auto/manual ultimate 护栏(:262)在。
 
-- engine 纯净：`grep -rn "Math.random|@/stores|from 'pinia'" frontend-vue/src/engine/` 仅命中注释/README/`rng.ts:81` 唯一 sanctioned `defaultRng`——**无违规**。
-- SAVE_VERSION=15（schema.ts:37），本轮未再升 schema，符合红线。
-- 扫荡字段扁平定长 `sweepWeekKey`/`sweepUsedThisWeek`（非 Record<floor,count>、未硬复用 stub `todayAttempts/lastAttemptDate`）——符合拍板②。
-- 无动态色类/text-white 新增（本轮零源码改动）。
-
-## 真实性抽查结论（Read/Grep 不改码）
-
-- **SA-T4 属实**：`SIGNATURE_KIT_OVERRIDES`（squadSkillKits.ts:411-551）确为 **10 个招牌 UR**（3575/10440/304/706/10439/49/12393/10596/1211/303），落 8~12 区间、未扩到 20。差异全在机制层（silence 点名 / allEnemies stun+slow / self 三叠 buff / dispel+atkDown+silence / 群疗+cleanse+revive / 长 silence / energyGain+haste / 单体 dot / execute+吸血 / shield+taunt），非纯倍率。全走结构化 `effects`（无手写 description），只用 9 种 squad SkillEffect，无 /battle effectId 泄漏。`isSignatureKit` 留口存在。
-- **SA-T5 属实**：`sweepFloor`（pve.ts:119-134）独立 action，只读 `hasCompletedFloor` 判资格、记 `sweepUsedThisWeek`、返回缩水 reward，**绝不调 completeFloor**、不推进 currentFloor。跨周 `ensureThisSweepWeek` 读时归零 + 回拨钳位（周键相等即不重置）。三处同改齐备：schema.ts（字段+default ''/0+v15 沿革）/ migrations.ts（类型守卫补缺省）/ pve.ts 装配器。`migrations.test.ts` 覆盖 v14→补缺省 / 计数往返一致 / 脏档回落。`rewards.test.ts` 断言缩水（sweep << 首通）+ 边际递减（high-low<60）+ 周产出 << 十层推塔（防通胀）+ 绝对封顶。
-- engine 纯净复核：无新增违规。
-
-## 失败原因
-
+## 6. 失败原因
 无。
 
-## 新坑待追加
+## 7. 新坑待追加
+- [SB-T2 resume 两遍模拟成本] resumeTimedBattle 先跑基线采 checkpoint 再续跑 ≈1.x 场模拟；当前 5v5/90s（≤5000 事件）无感，未来扩规模可把 checkpoint 并入首次 simulate 缓存（backlog，非本轮阻断）。
+- [UI 选目标仅单体敌方] 与 engine canOverrideTarget 同口径（有意）；未来加「单体己方增益选目标」须两处同改 SINGLE_ENEMY_SELECTORS + UI 亮起（防 P1-4）。
 
-无新代码坑。既有维护性提醒（`weekKey` 在 pve.ts 与 daily.ts 双份同源，改算法两处同改）已在 pitfalls 记录，非本轮动手项。
-
-## 决策
-
-**COMPLETE** — 5 条验收命令全部 Evaluator 亲自复跑通过（type-check 0 / test 653 全绿 / build 通过 / security PASS EXIT0 / grep 零命中）；SA-T4 + SA-T5 回归锁本轮零改动确认，两 SA-T 真实性抽查属实、红线全部成立（SAVE_VERSION=15 未再动 / SIGNATURE_KIT=10 未扩 / 扫荡字段扁平定长 / sweepFloor 不调 completeFloor / engine 纯净）。tier1 on 决策为信息性，引擎已跑满 3 轮。
+## 8. S14-B 收尾结论
+SB-T1..SB-T5 五任务全部真实现且与实现一致，5 条验收命令实测全绿，engine 纯净、零存档、未破坏 S14-A 已成 6 项。**S14-B 整体 COMPLETE。**

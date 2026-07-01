@@ -61,6 +61,39 @@ describe('D1 status effects', () => {
     expect(getCritRateBonus([status({ type: 'critRateUp', value: 0.3 })], 1000)).toBe(0.3);
   });
 
+  it('SB-T5: sums same-kind stackable buffs by source and clamps at the per-kind cap', () => {
+    // 三条 atkUp 分别来自不同来源（id 唯一）→ 按来源累加 0.2+0.25+0.3 = 0.75，触顶 atkUp cap 0.6。
+    const statuses = [
+      status({ id: 'atk-a', type: 'atkUp', value: 0.2 }),
+      status({ id: 'atk-b', type: 'atkUp', value: 0.25 }),
+      status({ id: 'atk-c', type: 'atkUp', value: 0.3 }),
+    ];
+    // 未触顶：0.2+0.15 = 0.35 → atk 135（双辅助不再被 Math.max 压平）。
+    const twoSources = [
+      status({ id: 'atk-a', type: 'atkUp', value: 0.2 }),
+      status({ id: 'atk-b', type: 'atkUp', value: 0.15 }),
+    ];
+
+    expect(calculateEffectiveStats(stats(), twoSources, 1000).atk).toBe(135);
+    // 累加求和触顶 0.6：atk = floor(100 * (1 + 0.6)) = 160（若仍取 Math.max 则会是 130）。
+    expect(calculateEffectiveStats(stats(), statuses, 1000).atk).toBe(160);
+  });
+
+  it('SB-T5: sums multiple critRateUp sources up to the critRateUp cap', () => {
+    // 单来源不变（回归安全）。
+    expect(getCritRateBonus([status({ type: 'critRateUp', value: 0.3 })], 1000)).toBe(0.3);
+    // 多来源累加：0.25 + 0.25 = 0.5 —— 恰好在 critRateUp cap 0.5。
+    expect(getCritRateBonus([
+      status({ id: 'crit-a', type: 'critRateUp', value: 0.25 }),
+      status({ id: 'crit-b', type: 'critRateUp', value: 0.25 }),
+    ], 1000)).toBe(0.5);
+    // 超出 cap 被 clamp：0.4 + 0.4 = 0.8 → 0.5。
+    expect(getCritRateBonus([
+      status({ id: 'crit-a', type: 'critRateUp', value: 0.4 }),
+      status({ id: 'crit-b', type: 'critRateUp', value: 0.4 }),
+    ], 1000)).toBe(0.5);
+  });
+
   it('tracks control statuses and removes expired statuses', () => {
     const statuses = [
       status({ id: 'stun', type: 'stun', value: 1, expiresAtMs: 2000 }),

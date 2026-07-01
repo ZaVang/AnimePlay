@@ -65,6 +65,43 @@ export function createSeededRng(seed: number): RNG {
   return createRng(mulberry32(seed));
 }
 
+/**
+ * SB-T2（拍板 2）：可导出/导入内部状态的种子化 RNG。
+ *
+ * mulberry32 的全部内部状态就是单个 uint32 累加器 `a`，故整个随机流可用一个数完整快照。
+ * 这让「手动大招前缀冻结平滑推进」在随机维度成立：重算后缀时**承接**「已消费到 elapsedMs 的 RNG 状态」
+ * （而非从 seed 头部重建），使插入命令后的后缀错位不再回溯污染已呈现前缀的随机结果。
+ *
+ * `snapshot()` 返回当前累加器；`restore(state)` 把随机流回拨/前推到某个快照点。
+ * 仍是纯确定性、零 Math.random——engine 铁律不破。
+ */
+export interface StatefulRng extends RNG {
+  /** 导出当前内部状态（mulberry32 累加器）——可持久化/传递以续接同一随机流。 */
+  snapshot(): number;
+  /** 恢复到某个快照状态，之后的 next() 序列与原流在该点之后完全一致。 */
+  restore(state: number): void;
+}
+
+export function createStatefulSeededRng(seed: number): StatefulRng {
+  let a = seed >>> 0;
+  const next = (): number => {
+    a = (a + 0x6d2b79f5) | 0;
+    let t = Math.imul(a ^ (a >>> 15), 1 | a);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+  const base = createRng(next);
+  return {
+    ...base,
+    snapshot(): number {
+      return a >>> 0;
+    },
+    restore(state: number): void {
+      a = state >>> 0;
+    },
+  };
+}
+
 /** 固定序列 RNG：测试用，依次返回给定值，耗尽后循环 */
 export function createSequenceRng(values: readonly number[]): RNG {
   if (values.length === 0) throw new Error('createSequenceRng 需要至少一个值');
