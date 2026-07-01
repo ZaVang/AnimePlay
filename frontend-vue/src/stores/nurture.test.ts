@@ -7,8 +7,14 @@ import { setActivePinia, createPinia } from 'pinia';
 import { useNurtureStore } from './nurture';
 import { useCollectionStore } from './collection';
 import { useProfileStore } from './profile';
-import { MAX_BREAKTHROUGH } from '@/engine';
-import { BOND_MAX_THRESHOLD, BOND_OVERFLOW_AFFECTION_PER_KP } from '@/config/nurture';
+import { MAX_BREAKTHROUGH, MAX_CHARACTER_LEVEL, getRequiredExpForLevel } from '@/engine';
+import {
+  BOND_MAX_THRESHOLD,
+  BOND_OVERFLOW_AFFECTION_PER_KP,
+  TUTORING_KP_COST,
+  tutoringExpGain,
+  EXP_OVERFLOW_PER_KP,
+} from '@/config/nurture';
 
 const CHAR = 12393;
 
@@ -111,6 +117,66 @@ describe('SC-T4 好感溢出转 KP', () => {
     data.affection = BOND_MAX_THRESHOLD - 1;
     expect(nurture.claimBondOverflow(CHAR)).toBe(0);
     expect(data.affection).toBe(BOND_MAX_THRESHOLD - 1);
+  });
+});
+
+describe('SD-T4 补习产出随等级递增（tutoringExpGain）', () => {
+  it('高等级补习经验多于低等级（严格递增，量级匹配新曲线）', () => {
+    expect(tutoringExpGain(50)).toBeGreaterThan(tutoringExpGain(1));
+    expect(tutoringExpGain(99)).toBeGreaterThan(tutoringExpGain(50));
+  });
+
+  it('tutorCharacter 按当前等级发放递增经验（走 profile.spend 扣 KP）', () => {
+    const nurture = useNurtureStore();
+    const profile = useProfileStore();
+    profile.earn('knowledgePoints', 10000);
+    const data = nurture.getNurtureData(CHAR);
+    // 拉到一个中间等级再补习：注入足够经验到 Lv.20 附近
+    data.totalExperience = getRequiredExpForLevel(20);
+    data.level = 20;
+    const kpBefore = profile.core.knowledgePoints;
+    const expBefore = data.totalExperience;
+    expect(nurture.tutorCharacter(CHAR)).toBe(true);
+    expect(profile.core.knowledgePoints).toBe(kpBefore - TUTORING_KP_COST);
+    expect(data.totalExperience).toBe(expBefore + tutoringExpGain(20));
+  });
+});
+
+describe('SD-T4 满级经验溢出自动转 KP（addCharacterExp 满级分支）', () => {
+  it('满级角色继续吃经验 → 溢出满一份自动 earn KP（不再净沉没）', () => {
+    const nurture = useNurtureStore();
+    const profile = useProfileStore();
+    const data = nurture.getNurtureData(CHAR);
+    // 推到满级
+    data.totalExperience = getRequiredExpForLevel(MAX_CHARACTER_LEVEL);
+    data.level = MAX_CHARACTER_LEVEL;
+    const kpBefore = profile.core.knowledgePoints;
+    // 灌入正好 2 份溢出的经验
+    nurture.addCharacterExp(CHAR, EXP_OVERFLOW_PER_KP * 2);
+    expect(profile.core.knowledgePoints).toBe(kpBefore + 2);
+    expect(data.level).toBe(MAX_CHARACTER_LEVEL); // 仍满级
+  });
+
+  it('未满一份的溢出结转累加，跨次灌入满一份才兑', () => {
+    const nurture = useNurtureStore();
+    const profile = useProfileStore();
+    const data = nurture.getNurtureData(CHAR);
+    data.totalExperience = getRequiredExpForLevel(MAX_CHARACTER_LEVEL);
+    data.level = MAX_CHARACTER_LEVEL;
+    const kpBefore = profile.core.knowledgePoints;
+    nurture.addCharacterExp(CHAR, EXP_OVERFLOW_PER_KP - 100); // 不足一份
+    expect(profile.core.knowledgePoints).toBe(kpBefore); // 未兑
+    nurture.addCharacterExp(CHAR, 100); // 补满一份
+    expect(profile.core.knowledgePoints).toBe(kpBefore + 1);
+  });
+
+  it('未满级角色不触发溢出（正常升级路径）', () => {
+    const nurture = useNurtureStore();
+    const profile = useProfileStore();
+    const kpBefore = profile.core.knowledgePoints;
+    nurture.addCharacterExp(CHAR, EXP_OVERFLOW_PER_KP * 3); // 大量经验但未满级
+    expect(nurture.getNurtureData(CHAR).level).toBeLessThan(MAX_CHARACTER_LEVEL);
+    expect(profile.core.knowledgePoints).toBe(kpBefore); // 未满级 → 不兑 KP
   });
 });
 

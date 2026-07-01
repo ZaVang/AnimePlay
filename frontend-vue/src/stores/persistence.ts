@@ -21,6 +21,7 @@ import { useAchievementsStore } from './achievements';
 import { useMiniGamesStore } from './minigames/higherLower';
 import { useHomesteadStore } from './homestead';
 import { useEquipmentStore } from './equipment';
+import { useFacilityStore } from './facility';
 
 // 乐观并发基线（S10-T3）：loadFromServer 后设为服务端的 saveVersion（新用户 0），
 // buildPayload 带上它，pushUserSave 成功后更新为后端返回的权威新值。
@@ -68,6 +69,7 @@ export function buildPayload(): SavePayload {
     minigames: useMiniGamesStore().serialize(),
     homestead: useHomesteadStore().serialize(),
     equipment: useEquipmentStore().serialize(),
+    facility: useFacilityStore().serialize(),
   };
 }
 
@@ -106,6 +108,7 @@ export function applyPayload(payload: SavePayload) {
   useMiniGamesStore().deserialize(payload.minigames);
   useHomesteadStore().deserialize(payload.homestead);
   useEquipmentStore().deserialize(payload.equipment);
+  useFacilityStore().deserialize(payload.facility);
   // 皮肤随账号走：账号存档覆盖设备缓存（登出/重置不回滚皮肤，见 resetAllDomains）
   useThemeStore().applyFromSave(payload.appearance.skinId);
 }
@@ -127,6 +130,7 @@ export function resetAllDomains() {
   useMiniGamesStore().reset();
   useHomesteadStore().reset();
   useEquipmentStore().reset();
+  useFacilityStore().reset();
   // 注意：皮肤是设备/账号双层偏好，登出或新建账号不强制回滚到默认皮肤。
 }
 

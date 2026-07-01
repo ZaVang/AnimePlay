@@ -11,6 +11,12 @@ import {
   OFFLINE_CAP_HOURS,
   IDLE_EXP_PER_HOUR,
   IDLE_AFFECTION_PER_HOUR,
+  comfortBonusPct,
+  facilityBonusPct,
+  facilityUpgradeCost,
+  offlineCapHours,
+  FACILITY_MIN_LEVEL,
+  FACILITY_MAX_LEVEL,
 } from './homestead';
 
 const H = 3600_000;
@@ -75,17 +81,107 @@ describe('computeIdleYield', () => {
     expect(y.comfort).toBe(7);
   });
 
-  it('装备家园收益倍率受上限保护，避免挂机盖过主动玩法', () => {
+  it('装备家园收益倍率受上限保护，避免挂机盖过主动玩法（comfort 软加成另计）', () => {
+    // comfort 99 → 软加成 floor(99/10)×1% = 9%（未触 +20% 封顶）；装备 pct 仍受 0.6 cap 保护。
+    const cm = 1 + comfortBonusPct(99); // 1.09
     const y = computeIdleYield(['UR'], 1 * H, {
       expPct: 9,
       affectionPct: 9,
       knowledgePct: 9,
       comfort: 99,
     });
-    expect(y.expEach).toBe(Math.floor(IDLE_EXP_PER_HOUR * (1 + HOMESTEAD_EFFECT_CAP.expPct)));
-    expect(y.affectionEach).toBe(Math.floor(IDLE_AFFECTION_PER_HOUR * (1 + HOMESTEAD_EFFECT_CAP.affectionPct)));
-    expect(y.knowledge).toBe(Math.floor(6 * (1 + HOMESTEAD_EFFECT_CAP.knowledgePct)));
+    expect(y.expEach).toBe(Math.floor(IDLE_EXP_PER_HOUR * (1 + HOMESTEAD_EFFECT_CAP.expPct) * cm));
+    expect(y.affectionEach).toBe(Math.floor(IDLE_AFFECTION_PER_HOUR * (1 + HOMESTEAD_EFFECT_CAP.affectionPct) * cm));
+    expect(y.knowledge).toBe(Math.floor(6 * (1 + HOMESTEAD_EFFECT_CAP.knowledgePct) * cm));
     expect(y.comfort).toBe(99);
+  });
+});
+
+describe('comfortBonusPct（每 10 点 +1%，封顶 +20%）', () => {
+  it('不足 10 点无加成', () => {
+    expect(comfortBonusPct(0)).toBe(0);
+    expect(comfortBonusPct(9)).toBe(0);
+  });
+  it('每满 10 点 +1%（向下取整档）', () => {
+    expect(comfortBonusPct(10)).toBeCloseTo(0.01);
+    expect(comfortBonusPct(25)).toBeCloseTo(0.02);
+    expect(comfortBonusPct(100)).toBeCloseTo(0.1);
+  });
+  it('封顶 +20%（200 点及以上不再增长）', () => {
+    expect(comfortBonusPct(200)).toBeCloseTo(0.2);
+    expect(comfortBonusPct(999)).toBeCloseTo(0.2);
+  });
+  it('负数/脏值回落 0', () => {
+    expect(comfortBonusPct(-5)).toBe(0);
+  });
+});
+
+describe('facilityBonusPct（设施等级→对应产出乘区，Lv.1=+0%）', () => {
+  it('Lv.1 = +0%，逐级 +8% 线性递增', () => {
+    expect(facilityBonusPct(1)).toBe(0);
+    expect(facilityBonusPct(2)).toBeCloseTo(0.08);
+    expect(facilityBonusPct(6)).toBeCloseTo(0.4);
+  });
+  it('随等级严格递增（乘区随级成长）', () => {
+    for (let lv = FACILITY_MIN_LEVEL + 1; lv <= 20; lv++) {
+      expect(facilityBonusPct(lv)).toBeGreaterThan(facilityBonusPct(lv - 1));
+    }
+  });
+  it('脏值 clamp：低于下限当 Lv.1、高于上限当满级', () => {
+    expect(facilityBonusPct(0)).toBe(0);
+    expect(facilityBonusPct(-3)).toBe(0);
+    expect(facilityBonusPct(9999)).toBe(facilityBonusPct(FACILITY_MAX_LEVEL));
+  });
+});
+
+describe('facilityUpgradeCost（无底 KP sink：第 N 级成本 > 第 N-1 级）', () => {
+  it('成本随等级严格递增（指数递增，非定额买断）', () => {
+    for (let lv = FACILITY_MIN_LEVEL; lv < 30; lv++) {
+      expect(facilityUpgradeCost(lv + 1)).toBeGreaterThan(facilityUpgradeCost(lv));
+    }
+  });
+  it('Lv.1→2 = base', () => {
+    expect(facilityUpgradeCost(1)).toBe(120);
+  });
+  it('满级无可升级：返回 Infinity', () => {
+    expect(facilityUpgradeCost(FACILITY_MAX_LEVEL)).toBe(Infinity);
+  });
+});
+
+describe('offlineCapHours / cappedIdleHours（封顶随设施等级抬升，决策-7）', () => {
+  it('不传设施等级 → 基线 12h（向后兼容）', () => {
+    expect(offlineCapHours()).toBe(OFFLINE_CAP_HOURS);
+    expect(cappedIdleHours(99 * H)).toBe(OFFLINE_CAP_HOURS);
+  });
+  it('全 Lv.1（总 3 级）→ 12 + 3×0.5 = 13.5h', () => {
+    expect(offlineCapHours({ exp: 1, bond: 1, knowledge: 1 })).toBeCloseTo(13.5);
+  });
+  it('设施升级抬升封顶：越高级封顶越大', () => {
+    const low = offlineCapHours({ exp: 1, bond: 1, knowledge: 1 });
+    const high = offlineCapHours({ exp: 5, bond: 5, knowledge: 5 });
+    expect(high).toBeGreaterThan(low);
+    // cappedIdleHours 用抬升后的封顶钳制超长离线
+    expect(cappedIdleHours(999 * H, { exp: 5, bond: 5, knowledge: 5 })).toBeCloseTo(high);
+  });
+});
+
+describe('computeIdleYield 设施乘区（独立于装备 0.6 cap，决策-5）', () => {
+  it('设施升级真实提升对应产出（不受 0.6 装备上限钳制）', () => {
+    const base = computeIdleYield(['UR', 'SR'], 2 * H);
+    const upgraded = computeIdleYield(['UR', 'SR'], 2 * H, {}, { exp: 11, bond: 1, knowledge: 1 });
+    // exp 设施 Lv.11 = +80%（远超装备 0.6 cap），经验应约 1.8×基础
+    expect(upgraded.expEach).toBe(Math.floor(IDLE_EXP_PER_HOUR * 2 * (1 + facilityBonusPct(11))));
+    expect(upgraded.expEach).toBeGreaterThan(base.expEach);
+    // bond/knowledge 设施 Lv.1 → 好感/知识点不变
+    expect(upgraded.affectionEach).toBe(base.affectionEach);
+    expect(upgraded.knowledge).toBe(base.knowledge);
+  });
+
+  it('设施乘区与装备 pct、comfort 软加成三者相乘', () => {
+    const y = computeIdleYield(['UR'], 1 * H, { expPct: 0.1, comfort: 30 }, { exp: 3, bond: 1, knowledge: 1 });
+    const cm = 1 + comfortBonusPct(30); // 1.03
+    const fac = 1 + facilityBonusPct(3); // 1.16
+    expect(y.expEach).toBe(Math.floor(IDLE_EXP_PER_HOUR * 1 * (1 + 0.1) * fac * cm));
   });
 });
 

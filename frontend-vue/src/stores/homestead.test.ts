@@ -120,13 +120,14 @@ describe('settleHomestead（门面离线结算）', () => {
 
     const y = useUserStore().settleHomestead();
 
+    // SD-T2 弱化后：training_bokken expPct 0.02、cozy_cardigan affectionPct 0.02；comfort 2+4=6 → +0%（<10）
     expect(y.comfort).toBe(6);
-    expect(y.expEach).toBe(424); // 400 × (1 + 6%)
-    expect(y.affectionEach).toBe(10); // floor(10 × 1.06)
+    expect(y.expEach).toBe(408); // floor(200 ×2h ×(1 + 2%)) = floor(408)
+    expect(y.affectionEach).toBe(10); // floor(10 × 1.02) = 10
     expect(y.knowledge).toBe(16);
     expect(profile.core.knowledgePoints).toBe(16);
     const nurture = useNurtureStore();
-    expect(nurture.getNurtureData(77).totalExperience).toBe(424);
+    expect(nurture.getNurtureData(77).totalExperience).toBe(408);
   });
 
   it('未登录直接返回零', () => {

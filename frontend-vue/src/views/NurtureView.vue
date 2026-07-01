@@ -36,7 +36,7 @@ import {
   DAILY_BOND_INTERACTION_AFFECTION,
   DAILY_BOND_INTERACTION_EXP,
   TUTORING_KP_COST,
-  TUTORING_EXP_GAIN,
+  tutoringExpGain,
 } from '@/config/nurture';
 
 const userStore = useUserStore();
@@ -223,6 +223,12 @@ const canTutor = computed(() => {
   const c = selectedCharacter.value;
   if (!c) return false;
   return c.nurtureData.level < 100 && userStore.playerState.knowledgePoints >= TUTORING_KP_COST;
+});
+
+// ★ SD-T4：补习产出随等级递增，按钮文案动态显示当前等级的实际经验（避免「描述≠行为」）。
+const tutorExpGain = computed(() => {
+  const c = selectedCharacter.value;
+  return c ? tutoringExpGain(c.nurtureData.level) : tutoringExpGain(1);
 });
 
 // 本次补习的随机加点增量（飘字提示用，仅展示）
@@ -419,7 +425,7 @@ function quickUnequip(slot: EquipmentSlot) {
                   :disabled="!canTutor"
                   @click="tutor"
                 >
-                  📚 补习 (-{{ TUTORING_KP_COST }} KP → +{{ TUTORING_EXP_GAIN }} 经验)
+                  📚 补习 (-{{ TUTORING_KP_COST }} KP → +{{ tutorExpGain }} 经验)
                 </button>
                 <button
                   type="button"

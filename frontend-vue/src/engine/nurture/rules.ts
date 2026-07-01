@@ -31,10 +31,22 @@ export const BASE_TILT_EVEN_SHARE = 0.3;
 
 const STAT_KEYS = ['hp', 'atk', 'def', 'sp', 'spd'] as const;
 
-/** 升到 level 级所需总经验 = (level-1)² × 1000。 */
+/**
+ * ★ SD-T4：升到 level 级所需总经验 = round((level-1)^1.6 × 900)。
+ *
+ * 曲线重标定（旧 = (level-1)²×1000 满级需 980 万，与产出严重错配 → 满级遥不可及）：
+ *  - 新曲线满级 Lv.100 总经验 = round(99^1.6 × 900) = 1,403,650（旧曲线 980 万的 ~1/7）。
+ *  - 产出量级：满设施挂机一趟约 2400~数千经验；补习一次数百；塔百层每人千余。
+ *    → 满级约「数百趟挂机 / 长期养成」可达，守 config「养成不做火箭、但满级可达」。
+ * 硬约束：曲线必须**严格单调递增**（getLevelFromExp 靠 while 反推，同值台阶会死循环/错级）；
+ *   (level-1)^1.6 对 level≥2 严格递增，满足。改公式后 rules.test.ts 关键节点断言须同步重算。
+ *
+ * ⚠️ 存量档无需迁移：level = f(totalExperience) 纯派生，压曲线后旧档下次 addCharacterExp
+ *   触发时按新曲线重算 level（可能一次补上多级加点），属预期「存量经验兑现应得等级」。
+ */
 export function getRequiredExpForLevel(level: number): number {
   if (level <= 1) return 0;
-  return (level - 1) * (level - 1) * 1000;
+  return Math.round(Math.pow(level - 1, 1.6) * 900);
 }
 
 /** 由总经验反推等级。 */

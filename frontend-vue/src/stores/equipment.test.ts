@@ -6,7 +6,8 @@
 import { describe, it, expect, beforeEach } from 'vitest';
 import { setActivePinia, createPinia } from 'pinia';
 import { useEquipmentStore } from './equipment';
-import { getEquipmentDef } from '@/config/equipment';
+import { useProfileStore } from './profile';
+import { getEquipmentDef, dismantleValueForRarity } from '@/config/equipment';
 
 beforeEach(() => {
   setActivePinia(createPinia());
@@ -131,12 +132,59 @@ describe('resolveHomeEffect 逐项求和', () => {
     eq.equip(1, 'weapon', w);
     eq.equip(1, 'armor', a);
 
+    // SD-T2 弱化后：training_bokken expPct 0.02、cozy_cardigan affectionPct 0.02；comfort 保留 2+4=6
     expect(eq.resolveHomeEffect(1)).toEqual({
-      expPct: 0.06,
-      affectionPct: 0.06,
+      expPct: 0.02,
+      affectionPct: 0.02,
       knowledgePct: 0,
       comfort: 6,
     });
+  });
+});
+
+describe('SD-T3 dismantleItem（分解游离件为 KP，已装备件保护）', () => {
+  it('分解游离件：移除背包实例 + 按稀有度得 KP（走 profile.earn）', () => {
+    const profile = useProfileStore();
+    profile.currentUser = 'tester';
+    const eq = useEquipmentStore();
+    const uid = eq.addItem(WPN_UR); // UR
+    const kpBefore = profile.core.knowledgePoints;
+    expect(eq.dismantleItem(uid)).toBe(true);
+    expect(eq.getItem(uid)).toBeUndefined(); // 实例移除
+    expect(profile.core.knowledgePoints).toBe(kpBefore + dismantleValueForRarity('UR'));
+  });
+
+  it('已装备件拒绝分解（findEquippedBy 守卫）', () => {
+    const profile = useProfileStore();
+    profile.currentUser = 'tester';
+    const eq = useEquipmentStore();
+    const uid = eq.addItem(WPN_R);
+    eq.equip(1, 'weapon', uid);
+    const kpBefore = profile.core.knowledgePoints;
+    expect(eq.dismantleItem(uid)).toBe(false);
+    expect(eq.getItem(uid)).toBeDefined(); // 实例仍在
+    expect(profile.core.knowledgePoints).toBe(kpBefore); // 未得 KP
+  });
+
+  it('卸下后可分解；只删指定实例、同 defId 其它件不受影响', () => {
+    const profile = useProfileStore();
+    profile.currentUser = 'tester';
+    const eq = useEquipmentStore();
+    const u1 = eq.addItem(WPN_R);
+    const u2 = eq.addItem(WPN_R);
+    eq.equip(1, 'weapon', u1);
+    eq.unequip(1, 'weapon'); // u1 回背包
+    expect(eq.dismantleItem(u1)).toBe(true);
+    expect(eq.getItem(u1)).toBeUndefined();
+    expect(eq.getItem(u2)).toBeDefined(); // 另一件不受影响
+  });
+
+  it('未登录 / 未知 uid → 拒绝', () => {
+    const eq = useEquipmentStore();
+    const uid = eq.addItem(WPN_R);
+    expect(eq.dismantleItem(uid)).toBe(false); // 未登录
+    useProfileStore().currentUser = 'tester';
+    expect(eq.dismantleItem('nope')).toBe(false); // 未知 uid
   });
 });
 

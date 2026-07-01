@@ -16,6 +16,7 @@ import {
   SLOT_META,
   SLOT_ORDER,
   getEquipmentPrice,
+  dismantleValueForRarity,
   formatBonus,
   formatHomeEffect,
   type EquipmentSlot,
@@ -41,6 +42,8 @@ interface InventoryCard {
   count: number;
   equippedLabel: string;
   homeText: string;
+  /** 游离件（未装备）取组内任一 uid 供分解；已装备件为 null（禁分解）。 */
+  freeUid: string | null;
 }
 
 // 背包卡：已装备的逐件展示（带归属·槽位）；未装备的同 defId 合并为一张卡 + ×N
@@ -64,6 +67,7 @@ const inventoryCards = computed<InventoryCard[]>(() => {
         count: 1,
         equippedLabel: `装备中·${ownerName || '角色'}·${SLOT_META[where.slot].label}`,
         homeText: formatHomeEffect(c.def.homeEffect ?? {}),
+        freeUid: null, // 已装备件禁分解
       });
     } else {
       const g = freeByDef.get(c.def.id);
@@ -74,6 +78,7 @@ const inventoryCards = computed<InventoryCard[]>(() => {
         count: 1,
         equippedLabel: '',
         homeText: formatHomeEffect(c.def.homeEffect ?? {}),
+        freeUid: c.item.uid, // 组内代表 uid（分解取一件）
       });
     }
   }
@@ -100,6 +105,11 @@ const kp = computed(() => userStore.playerState.knowledgePoints);
 
 function buy(defId: string) {
   userStore.purchaseEquipment(defId);
+}
+
+// ★ SD-T3：分解游离装备为 KP（门面走 userStore，已装备件 freeUid 为 null 不显示按钮）。
+function dismantle(uid: string) {
+  userStore.dismantleEquipment(uid);
 }
 </script>
 
@@ -225,6 +235,17 @@ function buy(defId: string) {
           <span class="inline-block text-[10px] px-1.5 py-0.5 rounded bg-accent/15 text-accent font-medium">
             {{ card.equippedLabel }}
           </span>
+        </div>
+        <!-- ★ SD-T3 分解出口：仅游离件（未装备）可分解为 KP -->
+        <div v-else-if="card.freeUid" class="mt-auto pt-1">
+          <button
+            type="button"
+            class="btn-ghost text-[10px] px-2 py-1 w-full text-danger hover:bg-danger/10"
+            :title="`分解 1 件回收 ${dismantleValueForRarity(card.def.rarity)} 知识点`"
+            @click="dismantle(card.freeUid)"
+          >
+            🔨 分解 (+{{ dismantleValueForRarity(card.def.rarity) }} KP)
+          </button>
         </div>
       </div>
     </div>

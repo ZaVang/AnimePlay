@@ -10,12 +10,14 @@ import {
   createDefaultAppearance,
   createDefaultDaily,
   createDefaultEquipment,
+  createDefaultFacility,
   createDefaultHomestead,
   createDefaultMiniGames,
   createDefaultPresetSquads,
   createDefaultTowerProgress,
   type DailySave,
   type EquipmentSave,
+  type FacilitySave,
   type HomesteadSave,
   type MiniGamesSave,
   type SavePayload,
@@ -25,7 +27,7 @@ import type { CharacterNurtureData } from '@/types/nurture';
 import type { PresetSquad } from '@/types/player';
 import { createPityState } from '@/engine/gacha/draw';
 import { MAX_BREAKTHROUGH } from '@/engine/nurture/rules';
-import { canonicalizePlacedIds } from '@/config/homestead';
+import { canonicalizePlacedIds, clampFacilityLevel } from '@/config/homestead';
 import { sanitizeEquipped } from '@/config/equipment';
 import { canonicalizeSquadMembers } from './schema';
 
@@ -156,6 +158,21 @@ function migrateHomestead(raw: any): HomesteadSave {
 }
 
 /**
+ * v17（S14-D SD-T1/SD-T5）：设施域。旧档无此键 → 全设施 Lv.1 缺省（决策-3：禁止 Lv.0 归零挂机）。
+ * 白名单重建（禁 spread 浅拷贝，pitfalls S13-C1）：每字段类型守卫 + clampFacilityLevel 到 [1, MAX]
+ * （防脏档把设施等级放大 → 放大挂机产出 / 封顶）。
+ */
+function migrateFacility(raw: any): FacilitySave {
+  const defaults = createDefaultFacility();
+  if (!raw || typeof raw !== 'object') return defaults;
+  return {
+    exp: clampFacilityLevel(raw.exp),
+    bond: clampFacilityLevel(raw.bond),
+    knowledge: clampFacilityLevel(raw.knowledge),
+  };
+}
+
+/**
  * v14（S13-C1）：养成数据瘦身。保留两轴（affection + 等级/经验），补 statPoints 缺省
  * （旧档无 → 全 0，与瘦身后字段一致——旧投入不退，见 FUTURE.md S13-C），补空 claimedBondMilestones；
  * 丢弃删掉的旧字段（intimacy/attributes/battleEnhancements/levelBonusAttributes/gifts/dialogueHistory/
@@ -282,5 +299,7 @@ export function migrate(raw: unknown): SavePayload {
     homestead: migrateHomestead(payload.homestead),
     // v13 → v14：装备域（C1 空占位；旧档无此键 → 默认空域）
     equipment: migrateEquipment(payload.equipment),
+    // v16 → v17：设施域（旧档无此键 → 全 Lv.1 缺省；脏档 clamp 到 [1, MAX]）
+    facility: migrateFacility(payload.facility),
   };
 }

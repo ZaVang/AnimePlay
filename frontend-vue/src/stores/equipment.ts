@@ -19,10 +19,12 @@ import {
   getEquipmentDef,
   sanitizeEquipped,
   sumHomeEffects,
+  dismantleValueForRarity,
   type EquipmentHomeEffect,
   type EquipmentSlot,
 } from '@/config/equipment';
 import { sumStatBonus, type StatBonus } from '@/engine';
+import { useProfileStore } from './profile';
 
 /** 空三槽（新角色首次配装时建）。 */
 function emptySlots(): EquippedSlots {
@@ -69,6 +71,32 @@ export const useEquipmentStore = defineStore('equipment', () => {
     const uid = crypto.randomUUID();
     inventory.value.push({ uid, defId });
     return uid;
+  }
+
+  /**
+   * ★ SD-T3 分解装备：移除背包该实例 + 按稀有度得 KP（走唯一货币出口 profile.earn）。
+   * 防呆双保险（UI 侧另有禁用）：已被任意角色任意槽装备中的实例拒绝分解（findEquippedBy 守卫），
+   * 删的必是游离件——不产生孤儿配装引用。分解产出纯计算在 config（dismantleValueForRarity）。
+   * 返回是否成功（未登录 / 未知 uid / 已装备中 / 未知 def = false 不变更）。
+   */
+  function dismantleItem(uid: string): boolean {
+    const profile = useProfileStore();
+    if (!profile.isLoggedIn) return false;
+
+    const item = getItem(uid);
+    if (!item) return false;
+    if (findEquippedBy(uid)) {
+      profile.addLog('该装备正在使用中，请先卸下再分解。', 'warning');
+      return false;
+    }
+    const def = getEquipmentDef(item.defId);
+    if (!def) return false;
+
+    const value = dismantleValueForRarity(def.rarity);
+    inventory.value = inventory.value.filter(it => it.uid !== uid);
+    profile.earn('knowledgePoints', value);
+    profile.addLog(`分解 [${def.rarity}] ${def.name}，回收 ${value} 知识点。`, 'success');
+    return true;
   }
 
   // --- 配装 ---
@@ -166,6 +194,7 @@ export const useEquipmentStore = defineStore('equipment', () => {
     getItem,
     findEquippedBy,
     addItem,
+    dismantleItem,
     equip,
     unequip,
     resolveEquipBonus,

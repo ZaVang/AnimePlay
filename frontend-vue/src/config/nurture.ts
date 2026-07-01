@@ -10,8 +10,40 @@
 
 /** 补习：一次花费的知识点（可调）。 */
 export const TUTORING_KP_COST = 100;
-/** 补习：一次换得的角色经验（可调）。 */
-export const TUTORING_EXP_GAIN = 500;
+
+/**
+ * ★ SD-T4 补习产出随等级递增（线性缓增，纯函数）：base + level × k。
+ * 低级补习较便宜（性价比高、帮新角色起步）、高级补习经验更多（匹配新曲线各级更大区间），
+ * 但增幅温和（守「补习是 KP sink 不是提款机」，不做刷级捷径）。
+ * base=400 / k=20：Lv.1 → 420、Lv.50 → 1400、Lv.99 → 2380。
+ */
+export const TUTORING_EXP_BASE = 400;
+export const TUTORING_EXP_PER_LEVEL = 20;
+
+/** 补习一次换得的经验（随角色等级递增）。level 钳到 ≥1。 */
+export function tutoringExpGain(level: number): number {
+  const lv = Math.max(1, Math.floor(level));
+  return TUTORING_EXP_BASE + lv * TUTORING_EXP_PER_LEVEL;
+}
+
+/**
+ * ★ SD-T4 满级经验溢出转 KP：满级角色继续吃到的经验每 N 点自动兑 1 KP（走 profile.earn）。
+ * 克制汇率（明显低于分解/主动收入，「溢出是补偿不是新赚钱路」）——满级后挂机/塔灌入的经验
+ * 不再净沉没。范式仿好感溢出 bondOverflowExchange。
+ */
+export const EXP_OVERFLOW_PER_KP = 2000;
+
+/**
+ * 满级角色本次吃到 gainedExp 经验可自动兑换的 KP + 应结转的余数（保留供下次累加）。
+ * carry = 上次未满一份的余数经验（由 store 累存于运行态，不进存档）。
+ * 只兑整份，余数返回 carry 供下次继续累加。gainedExp ≤ 0 时不兑换。
+ */
+export function expOverflowExchange(gainedExp: number, carry: number): { kp: number; carry: number } {
+  const pool = Math.max(0, carry) + Math.max(0, gainedExp);
+  if (pool < EXP_OVERFLOW_PER_KP) return { kp: 0, carry: pool };
+  const kp = Math.floor(pool / EXP_OVERFLOW_PER_KP);
+  return { kp, carry: pool - kp * EXP_OVERFLOW_PER_KP };
+}
 
 /** 带塔参战：塔战斗结算后给每个参战角色涨的好感（可调）。 */
 export const BATTLE_AFFECTION_GAIN = 8;
