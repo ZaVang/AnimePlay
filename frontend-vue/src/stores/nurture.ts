@@ -24,13 +24,14 @@ import {
 import { useCollectionStore } from './collection';
 import {
   TUTORING_KP_COST,
-  TUTORING_EXP_GAIN,
+  tutoringExpGain,
   BATTLE_AFFECTION_GAIN,
   BOND_MILESTONES,
   isMilestoneClaimable,
   DAILY_BOND_INTERACTION_AFFECTION,
   DAILY_BOND_INTERACTION_EXP,
   bondOverflowExchange,
+  expOverflowExchange,
 } from '@/config/nurture';
 
 /** 与 daily/shop 同款本地日期键（YYYY-M-D）。跨天判定用（每日互动跨天重置）。 */
@@ -52,6 +53,13 @@ function baseStatsOf(character: CharacterCard | null | undefined): StatPoints {
 
 export const useNurtureStore = defineStore('nurture', () => {
   const characterNurtureData = ref<Map<number, CharacterNurtureData>>(new Map());
+
+  /**
+   * ★ SD-T4 满级经验溢出余数（运行态，不进存档）：charId → 未满一份 KP 的结转经验。
+   * 满级角色继续吃到的经验累进此池，每满 EXP_OVERFLOW_PER_KP 自动兑 1 KP（走 profile.earn）。
+   * 不持久化——重启后余数归零（溢出是补偿性微收益，丢失极少量结转可接受，避免为它升档）。
+   */
+  const expOverflowCarry = new Map<number, number>();
 
   // 获取角色养成数据，如果不存在则创建默认数据（兼容旧数据的补丁逻辑保留）
   function getNurtureData(characterId: number): CharacterNurtureData {
@@ -121,8 +129,30 @@ export const useNurtureStore = defineStore('nurture', () => {
     const nurtureData = getNurtureData(characterId);
     const oldLevel = nurtureData.level;
 
+    // ★ SD-T4：满级后吃到的经验是「溢出净额」——满级阈值之上的部分自动兑少量 KP，不再净沉没。
+    // 满级阈值 = getRequiredExpForLevel(MAX)。溢出额 = 本次 expAmount 中越过该阈值的部分。
+    const maxLevelThreshold = getRequiredExpForLevel(MAX_CHARACTER_LEVEL);
+    const beforeTotal = nurtureData.totalExperience;
+    const overflowGain =
+      beforeTotal >= maxLevelThreshold
+        ? expAmount // 已满级：整份都是溢出
+        : Math.max(0, beforeTotal + expAmount - maxLevelThreshold); // 本次跨过满级线的部分
+
     nurtureData.experience += expAmount;
     nurtureData.totalExperience += expAmount;
+
+    if (overflowGain > 0) {
+      const carry = expOverflowCarry.get(characterId) ?? 0;
+      const { kp, carry: nextCarry } = expOverflowExchange(overflowGain, carry);
+      expOverflowCarry.set(characterId, nextCarry);
+      if (kp > 0) {
+        profile.earn('knowledgePoints', kp);
+        const character = useGameDataStore().getCharacterCardById(characterId);
+        if (character) {
+          profile.addLog(`${character.name} 满级经验溢出转化：+${kp} 知识点。`, 'info');
+        }
+      }
+    }
 
     const newLevel = Math.min(getLevelFromExp(nurtureData.totalExperience), MAX_CHARACTER_LEVEL);
 
@@ -174,10 +204,12 @@ export const useNurtureStore = defineStore('nurture', () => {
       return false;
     }
 
-    addCharacterExp(characterId, TUTORING_EXP_GAIN);
+    // ★ SD-T4：补习产出随角色等级递增（tutoringExpGain 纯函数，量级匹配新曲线）。
+    const expGain = tutoringExpGain(nurtureData.level);
+    addCharacterExp(characterId, expGain);
     const character = useGameDataStore().getCharacterCardById(characterId);
     if (character) {
-      profile.addLog(`为 ${character.name} 补习，消耗 ${TUTORING_KP_COST} 知识点 → +${TUTORING_EXP_GAIN} 经验。`, 'success');
+      profile.addLog(`为 ${character.name} 补习，消耗 ${TUTORING_KP_COST} 知识点 → +${expGain} 经验。`, 'success');
     }
     return true;
   }

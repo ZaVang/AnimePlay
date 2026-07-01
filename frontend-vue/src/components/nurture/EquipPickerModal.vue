@@ -15,9 +15,11 @@ import {
   getEquipmentDef,
   formatBonus,
   formatHomeEffect,
+  sumHomeEffects,
   SLOT_META,
   type EquipmentSlot,
   type EquipmentDef,
+  type EquipmentHomeEffect,
 } from '@/config/equipment';
 import { rarityStyle } from '@/config/equipmentColors';
 import {
@@ -149,6 +151,48 @@ const previewRows = computed(() =>
 );
 
 const powerDelta = computed(() => previewPower.value - currentPower.value);
+
+// ★ SD-T2：家园挂机 before→after delta（该角色三槽合计 homeEffect，仿战斗 delta 范式）。
+// 三槽求和当前 vs「替换当前槽后」——数据源同 resolveHomeEffect 口径（getEquipped + def.homeEffect 求和），
+// 展示的是「换这件后该角色家园收益的净变化」，不是单件静态文案（决策-13）。
+function sumHomeForSlots(pickCurrentSlot: boolean): Required<EquipmentHomeEffect> {
+  const slots = equipmentStore.getEquipped(props.charId);
+  const effects: EquipmentHomeEffect[] = [];
+  for (const s of ['weapon', 'armor', 'supporter'] as EquipmentSlot[]) {
+    const uid = s === props.equipSlot ? (pickCurrentSlot ? equippedUid.value : selectedUid.value) : slots[s];
+    if (!uid) continue;
+    const item = equipmentStore.getItem(uid);
+    const def = item && getEquipmentDef(item.defId);
+    if (def?.homeEffect) effects.push(def.homeEffect);
+  }
+  return sumHomeEffects(effects);
+}
+
+const currentHome = computed(() => sumHomeForSlots(true));
+const previewHome = computed(() => sumHomeForSlots(false));
+
+// 家园 delta 行（经验/好感/知识 % + 舒适），仅显示有变化或非零的维，避免全 0 刷屏。
+const HOME_ROWS: { key: keyof EquipmentHomeEffect; label: string; pct: boolean }[] = [
+  { key: 'expPct', label: '经验', pct: true },
+  { key: 'affectionPct', label: '好感', pct: true },
+  { key: 'knowledgePct', label: '知识', pct: true },
+  { key: 'comfort', label: '舒适', pct: false },
+];
+const homeRows = computed(() =>
+  HOME_ROWS.map(r => {
+    const cur = currentHome.value[r.key];
+    const next = previewHome.value[r.key];
+    return { ...r, cur, next, delta: next - cur };
+  }).filter(r => r.cur !== 0 || r.next !== 0),
+);
+
+function fmtHome(v: number, pct: boolean): string {
+  return pct ? `${Math.round(v * 100)}%` : `${v}`;
+}
+function fmtHomeDelta(v: number, pct: boolean): string {
+  const sign = v > 0 ? '+' : '';
+  return pct ? `${sign}${Math.round(v * 100)}%` : `${sign}${v}`;
+}
 
 // 打开时把选中态对齐到当前已装件
 watch(
@@ -295,6 +339,22 @@ function deltaClass(d: number): string {
                   <span class="text-highlight font-bold">{{ previewPower }}</span>
                   <span v-if="powerDelta !== 0" :class="deltaClass(powerDelta)" class="text-xs font-semibold">
                     ({{ powerDelta > 0 ? '+' : '' }}{{ powerDelta }})
+                  </span>
+                </span>
+              </div>
+            </div>
+
+            <!-- ★ SD-T2 家园挂机 delta：该角色三槽合计 homeEffect 当前→新值 -->
+            <div v-if="homeRows.length > 0" class="pt-2 mt-2 border-t border-line space-y-1.5">
+              <h3 class="text-xs font-semibold text-ink-2">家园挂机</h3>
+              <div v-for="row in homeRows" :key="row.key" class="flex items-center justify-between text-xs">
+                <span class="text-ink-2">{{ row.label }}</span>
+                <span class="flex items-center gap-1">
+                  <span class="text-ink-3">{{ fmtHome(row.cur, row.pct) }}</span>
+                  <span class="text-ink-3">→</span>
+                  <span class="text-ink font-bold">{{ fmtHome(row.next, row.pct) }}</span>
+                  <span v-if="row.delta !== 0" :class="deltaClass(row.delta)" class="font-semibold">
+                    ({{ fmtHomeDelta(row.delta, row.pct) }})
                   </span>
                 </span>
               </div>

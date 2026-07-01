@@ -8,7 +8,7 @@ import { defineStore } from 'pinia';
 import { computed, reactive } from 'vue';
 import { GAME_CONFIG } from '@/config/gameConfig';
 import { getCodexUnlockPrice } from '@/config/codexUnlock';
-import { computeIdleYield, type IdleYield } from '@/config/homestead';
+import { computeIdleYield, facilityUpgradeCost, type FacilityKey, type IdleYield } from '@/config/homestead';
 import {
   dropRarityForFloor,
   getEquipmentDef,
@@ -34,6 +34,7 @@ import { useGuessStore } from './guess';
 import { useMiniGamesStore } from './minigames/higherLower';
 import { useHomesteadStore } from './homestead';
 import { useEquipmentStore } from './equipment';
+import { useFacilityStore } from './facility';
 import { useThemeStore } from './theme';
 import { useDailyStore } from './daily';
 import { useCodexStore } from './codex';
@@ -436,7 +437,9 @@ export const useUserStore = defineStore('user', () => {
       .filter((r): r is Rarity => !!r);
     const equipment = useEquipmentStore();
     const homeEffect = sumHomeEffects(placed.map(id => equipment.resolveHomeEffect(id)));
-    const result = computeIdleYield(rarities, now - homestead.lastSettleAt, homeEffect);
+    // 口径同源命脉：设施乘区/封顶从 facility store 同一 getter 喂进（与 UI hourlyYield 同源，防「预览≠实战」）。
+    const facilityLevels = useFacilityStore().getLevels();
+    const result = computeIdleYield(rarities, now - homestead.lastSettleAt, homeEffect, facilityLevels);
     homestead.setLastSettleAt(now);
 
     if (result.expEach <= 0 && result.affectionEach <= 0 && result.knowledge <= 0) return result;
@@ -475,6 +478,31 @@ export const useUserStore = defineStore('user', () => {
     settleHomestead();
     const ok = useHomesteadStore().unplace(characterId);
     if (ok) saveToServer();
+    return ok;
+  }
+
+  /**
+   * 升级一个设施（S14-D SD-T1/SD-T5）：先结清现有挂机收益（避免升级瞬间抬升封顶回溯放大已挂时间）
+   * → profile.spend('knowledgePoints', cost) 成功才 facility.levelUp → 存档。
+   * 余额不足 / 已满级 / 未登录 → 返回 false 不变更。货币只走 profile.spend（架构铁律）。
+   */
+  function upgradeFacility(key: FacilityKey): boolean {
+    if (!profile.isLoggedIn) return false;
+    const facility = useFacilityStore();
+    if (facility.isMaxLevel(key)) return false;
+    const cost = facilityUpgradeCost(facility.getLevel(key));
+    if (!Number.isFinite(cost)) return false;
+    // 先结清：把封顶抬升前的挂机时间按旧封顶落地，lastSettleAt 推到现在。
+    settleHomestead();
+    if (!profile.spend('knowledgePoints', cost)) return false;
+    const ok = facility.levelUp(key);
+    if (ok) {
+      profile.addLog(`设施升级成功：花费 ${cost} 知识点，${key} → Lv.${facility.getLevel(key)}`, 'success');
+      saveToServer();
+    } else {
+      // 理论不达（isMaxLevel 已挡），保险回补避免吞 KP。
+      profile.earn('knowledgePoints', cost);
+    }
     return ok;
   }
 
@@ -586,6 +614,8 @@ export const useUserStore = defineStore('user', () => {
     settleHomestead,
     placeInHomestead,
     unplaceFromHomestead,
+    // facility（S14-D SD-T1/SD-T5）：设施升级（扣 KP 成功才提级 + 存档）
+    upgradeFacility,
 
     // daily（evolution-1）：领取每日任务奖励（领域 store 自己不存档）
     claimDailyTask: (taskId: string) => {
@@ -609,6 +639,13 @@ export const useUserStore = defineStore('user', () => {
     unequipItem: (charId: number, slot: 'weapon' | 'armor' | 'supporter') => {
       if (!profile.isLoggedIn) return false;
       const ok = useEquipmentStore().unequip(charId, slot);
+      if (ok) saveToServer();
+      return ok;
+    },
+    // equipment（SD-T3）：分解游离装备为 KP（已装备件被 store 守卫拒绝；成功才存档）
+    dismantleEquipment: (uid: string) => {
+      if (!profile.isLoggedIn) return false;
+      const ok = useEquipmentStore().dismantleItem(uid);
       if (ok) saveToServer();
       return ok;
     },

@@ -17,7 +17,14 @@ import { useHomesteadStore } from '@/stores/homestead';
 import { useCollectionStore } from '@/stores/collection';
 import { useEquipmentStore } from '@/stores/equipment';
 import { chibiImageSrc, fullImageSrc, spriteSheetSrc } from '@/utils/cardImage';
-import { computeIdleYield, IDLE_SETTLE_MODAL_MIN_HOURS, type IdleYield } from '@/config/homestead';
+import {
+  computeIdleYield,
+  comfortBonusPct,
+  IDLE_SETTLE_MODAL_MIN_HOURS,
+  type FacilityKey,
+  type IdleYield,
+} from '@/config/homestead';
+import { useFacilityStore } from '@/stores/facility';
 import { formatHomeEffect, sumHomeEffects, SLOT_ORDER } from '@/config/equipment';
 import type { CharacterCard } from '@/types/card';
 import CardDetailModal from '@/components/CardDetailModal.vue';
@@ -30,6 +37,7 @@ const gameData = useGameDataStore();
 const homestead = useHomesteadStore();
 const collection = useCollectionStore();
 const equipmentStore = useEquipmentStore();
+const facilityStore = useFacilityStore();
 
 // --- sprite 表规格（与 codex 产出一致：3 列行走帧 × 4 行朝向，格 48×64）---
 type Dir = 'down' | 'up' | 'left' | 'right';
@@ -175,17 +183,65 @@ const homeEffect = computed(() => {
   return sumHomeEffects(homestead.placedCharacterIds.map(id => equipmentStore.resolveHomeEffect(id)));
 });
 
+// 设施等级同源：UI 预览与 settleHomestead 结算都喂 facilityStore.getLevels()（口径同源命脉）。
+const facilityLevels = computed(() => {
+  void facilityStore.levels;
+  return facilityStore.getLevels();
+});
+
 const hourlyYield = computed(() =>
-  computeIdleYield(placedCards.value.map(c => c.rarity), 3600_000, homeEffect.value),
+  computeIdleYield(placedCards.value.map(c => c.rarity), 3600_000, homeEffect.value, facilityLevels.value),
 );
 
-const facilityRows = computed(() => [
-  { key: 'exp', label: '训练区', value: `+${hourlyYield.value.expEach}/h`, bonus: homeEffect.value.expPct },
-  { key: 'bond', label: '休息区', value: `+${hourlyYield.value.affectionEach}/h`, bonus: homeEffect.value.affectionPct },
-  { key: 'knowledge', label: '资料室', value: `+${hourlyYield.value.knowledge}/h`, bonus: homeEffect.value.knowledgePct },
-]);
+/** 升级后（该设施 +1 级）的每小时产出预览：与结算同函数、同口径。 */
+function nextHourlyYield(key: FacilityKey) {
+  const lv = { ...facilityLevels.value, [key]: facilityLevels.value[key] + 1 };
+  return computeIdleYield(placedCards.value.map(c => c.rarity), 3600_000, homeEffect.value, lv);
+}
+
+const FACILITY_META: Record<FacilityKey, { label: string; unit: string; field: 'expEach' | 'affectionEach' | 'knowledge' }> = {
+  exp: { label: '训练区', unit: '经验', field: 'expEach' },
+  bond: { label: '休息区', unit: '好感', field: 'affectionEach' },
+  knowledge: { label: '资料室', unit: '知识点', field: 'knowledge' },
+};
+const FACILITY_ORDER: FacilityKey[] = ['exp', 'bond', 'knowledge'];
+
+const facilityRows = computed(() =>
+  FACILITY_ORDER.map(key => {
+    const meta = FACILITY_META[key];
+    const level = facilityLevels.value[key];
+    const maxed = facilityStore.isMaxLevel(key);
+    const cost = facilityStore.upgradeCost(key);
+    const current = hourlyYield.value[meta.field];
+    const next = maxed ? current : nextHourlyYield(key)[meta.field];
+    return {
+      key,
+      label: meta.label,
+      unit: meta.unit,
+      level,
+      value: `+${current}/h`,
+      bonus: facilityStore.bonusPct(key),
+      maxed,
+      cost,
+      nextDelta: next - current,
+      affordable: !maxed && Number.isFinite(cost) && knowledgePoints.value >= cost,
+    };
+  }),
+);
+
+const knowledgePoints = computed(() => userStore.playerState.knowledgePoints);
+
+function onUpgradeFacility(key: FacilityKey) {
+  const ok = userStore.upgradeFacility(key);
+  if (!ok) userStore.addLog('升级失败：知识点不足或已满级。', 'warning');
+}
 
 const effectText = computed(() => formatHomeEffect(homeEffect.value));
+/** comfort 真实软加成（每 10 点 +1%，封顶 +20%）——不再纯展示死数值。 */
+const comfortBonusText = computed(() => {
+  const pct = comfortBonusPct(homeEffect.value.comfort ?? 0);
+  return pct > 0 ? `全产出 +${Math.round(pct * 100)}%` : '满 10 点提升全产出';
+});
 
 const residentRows = computed(() =>
   placedCards.value.map(card => {
@@ -414,14 +470,36 @@ onUnmounted(() => cancelAnimationFrame(raf));
             <strong>{{ homeEffect.comfort }}</strong>
             <span class="resident-count">入住 {{ residentRows.length }}</span>
           </div>
-          <small>{{ effectText || '暂无装备加成' }}</small>
+          <small>{{ comfortBonusText }}<template v-if="effectText"> · {{ effectText }}</template></small>
         </div>
 
-        <div class="facility-grid" aria-label="设施产出">
-          <div v-for="row in facilityRows" :key="row.key" class="ops-card">
-            <span class="ops-kicker">{{ row.label }}</span>
+        <div class="kp-strip">
+          <span class="ops-kicker">可用知识点</span>
+          <strong>{{ knowledgePoints }} KP</strong>
+        </div>
+
+        <div class="facility-grid" aria-label="设施升级">
+          <div v-for="row in facilityRows" :key="row.key" class="ops-card facility-card">
+            <div class="facility-head">
+              <span class="ops-kicker">{{ row.label }}</span>
+              <span class="facility-lv">Lv.{{ row.level }}</span>
+            </div>
             <strong>{{ row.value }}</strong>
-            <small>装备加成 {{ pctText(row.bonus) }}</small>
+            <small>设施加成 {{ pctText(row.bonus) }}</small>
+            <div class="facility-upgrade">
+              <span v-if="row.maxed" class="facility-maxed">已满级</span>
+              <template v-else>
+                <span class="facility-next">下一级 +{{ row.nextDelta }} {{ row.unit }}/h · {{ row.cost }} KP</span>
+                <button
+                  type="button"
+                  class="btn-primary facility-btn"
+                  :disabled="!row.affordable"
+                  @click="onUpgradeFacility(row.key)"
+                >
+                  升级
+                </button>
+              </template>
+            </div>
           </div>
         </div>
 
@@ -488,6 +566,23 @@ onUnmounted(() => cancelAnimationFrame(raf));
 .scene-panel { min-width: 0; }
 .ops-panel { display: flex; flex-direction: column; gap: .75rem; min-width: 0; }
 .facility-grid { display: grid; grid-template-columns: 1fr; gap: .75rem; }
+.kp-strip {
+  display: flex; align-items: baseline; justify-content: space-between; gap: .75rem;
+  padding: .55rem .9rem; border: 1px solid rgb(var(--c-line)); border-radius: 8px;
+  background: rgb(var(--c-elevated) / .6);
+}
+.kp-strip strong { font-size: 1.05rem; font-weight: 800; color: rgb(var(--c-accent)); }
+.facility-card { min-height: auto; gap: .35rem; }
+.facility-head { display: flex; align-items: center; justify-content: space-between; gap: .5rem; }
+.facility-lv {
+  flex: 0 0 auto; padding: .12rem .5rem; border-radius: 6px; font-size: .72rem; font-weight: 800;
+  background: rgb(var(--c-accent-soft) / .8); color: rgb(var(--c-accent)); border: 1px solid rgb(var(--c-line));
+}
+.facility-upgrade { display: flex; align-items: center; justify-content: space-between; gap: .5rem; margin-top: .25rem; }
+.facility-next { font-size: .7rem; line-height: 1.3; color: rgb(var(--c-ink-2)); }
+.facility-btn { flex: 0 0 auto; font-size: .74rem; padding: .3rem .8rem; }
+.facility-btn:disabled { opacity: .5; cursor: not-allowed; }
+.facility-maxed { font-size: .74rem; font-weight: 700; color: rgb(var(--c-ink-3)); }
 .ops-card {
   min-height: 92px; padding: .9rem; border: 1px solid rgb(var(--c-line));
   border-radius: 8px; background: rgb(var(--c-surface) / .94);

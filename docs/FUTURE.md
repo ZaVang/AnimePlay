@@ -29,7 +29,7 @@
 | S0–S10 | 重构主线（文档/测试/engine 抽取/拆 store/功能闭环/视觉/技能/性能/安全） | ✅ | 已完成 → 详见 [HISTORY.md](HISTORY.md) |
 | — | 产品进化层 Evo-1..Evo-9 + 战斗可读性还债 + 2026-06-24 产品循环 | ✅ | 已完成 → 详见 [HISTORY.md](HISTORY.md) |
 | S13 | 家园综合系统（基地养成 + 小队战斗重构 + 挑战塔闭环） | ✅ | A/A2/B/C1/C2/D1–D5 全部落地合并 → 完成史见 [HISTORY.md](HISTORY.md) |
-| **S14** | **家园 hub 深化（差异化 + 决策 + 循环，audit-driven）** | 🔄 | **S14-A ✅ · S14-B ✅ · S14-C ✅ 已完成**（2026-07-01 product-loop）；S14-D~F 待做。源：[审计报告](orch/homestead-hub-audit-report.md) |
+| **S14** | **家园 hub 深化（差异化 + 决策 + 循环，audit-driven）** | 🔄 | **S14-A/B/C/D ✅ 已完成**（2026-07-01 product-loop）；S14-E/F 待做。源：[审计报告](orch/homestead-hub-audit-report.md) |
 | S11 | React 视图迁移 | ☐ | 演进 |
 | S12 | 权威后端 & 多人/PvP/排行榜 | ☐ | 终点 |
 
@@ -85,14 +85,16 @@
 - [x] **NurtureView 拆成无壳可内嵌组件**（P2-18）：角色 tab 把整页 NurtureView 原样内嵌导致双标题 / 双空态 / 长滚。去掉 min-h-screen / 页标题 / 独立空态，或删 hub 内精简摘要只留 NurtureView。
 - **Exit（达成）**：角色定位判定稳定可预期（resolveRole 单源）；HR/UR 都有差异化技能名；养成有星级/突破长期目标线；好感有永久意义 + 每日回归钩子；塔有推荐战力软门槛要求养成。
 
-### ☐ S14-D · 家园机制闭环 + 经济闭环（P2 深度，把家园立成「经营系统」）
+### ✅ S14-D · 家园机制闭环 + 经济闭环（P2 深度）— 已完成 2026-07-01
 
-- [ ] **三设施做成可升级产出乘区**（P2-25 / P2-26 / P2-24，核心动作）：`HomesteadView.vue` 三设施（训练区 / 休息区 / 资料室）现纯展示、comfort 是死数值、挂机产出恒定不随进度成长。新增 facility 存档域（schema/migrations/装配器三改），用 KP 升级每级 +X% 对应产出，comfort 接一档真实软加成，封顶随设施等级抬升 → 形成「挂机产 KP → 升设施 → 挂机更快」自循环与无底 KP sink。
-- [ ] **装备的家园 homeEffect 逐步剥离到设施**（P2-13）：同一件装备既定战斗五维又定家园挂机%，两套目标抢同槽、选装口径打架。把家园加成移到「设施升级」承载，装备回归纯战斗；过渡期先在 `EquipPickerModal` 补挂机 delta 预览（⭐ 低成本子项）。
-- [ ] **给重复装备加回收 / 分解出口**（P2-21）：`drops.ts` 每层 50% 掉一件、`equipment.ts` addItem 只 push 从不去重，齐装后纯堆积垃圾。分解为 KP（复用 codex 分解范式）、或 N 件合成升级材料（一箭双雕做装备强化 sink）、或转碎片计数。
-- [ ] **修经验曲线 / 产出错配**（P2-19）：满级需 980 万经验，而挂机 2400/12h、塔第 100 层每人才 1040，满级后经验全部沉没。把曲线压到与产出匹配（如 level^1.6）或提产出；满级经验给溢出出口（转道具 / 少量 KP）；补习产出随等级递增。
-- [ ] **加无底 KP sink**（P2-20）：KP 唯一硬通货但 sink 全是买断目录（装备 45 件封顶、图鉴、补习），集齐后无处可花必然溢出贬值。装备强化 / 精炼、角色突破 / 星级、每日刷新定向兑换或塔商店限量高价物。
-- **Exit**：家园从「单页面板」变成「可投资的经营系统」；KP 有长期去处；重复装备有出口；经验不再打进黑洞。
+> ✅ **S14-D 全部 5 项已完成**（product-loop `--tier1 on --mode all`，2 轮达成——第 2 轮 Planner 把 SD-T3 与 SD-T2/T4 合批；765 测试全绿、engine 纯净、SAVE_VERSION 16→17，S14-A/B/C 无回归）。审计根因 D/E 收口：家园从「静态面板」变「可投资经营系统」——`facility` 独立存档域 v17（三设施 KP 升级 +8%/级乘区 + comfort 每 10 点 +1% 封顶 20% 真进产出 + 离线封顶随级抬升）；无底 KP sink（设施无硬上限 + 成本指数递增 `120×1.4^(lv-1)`）；装备 homeEffect% ×0.33 弱化、家园产出主体归设施、comfort 独立保留、EquipPicker 补挂机 delta；重复装备 `dismantleItem` 按稀有度回收 KP（`findEquippedBy` 守卫 + 明显低于兑换价防套利，材料/合成留 S14-E）；经验曲线 `(level-1)^1.6×900`（满级 140 万 ≈ 旧 1/7）+ 满级经验每 2000 溢出兑 1 KP + 补习随等级递增。**关键防回归**：SD-T2 弱化装备 homeEffect 时保留了 comfort 轴，未熄灭 SD-T1 的 comfort 软加成（跨轮硬回归风险被规避）。产物见 `docs/orch/`。**下一步 = S14-E（装备深度）。**
+
+- [x] **三设施做成可升级产出乘区**（P2-25 / P2-26 / P2-24，核心动作）：`HomesteadView.vue` 三设施（训练区 / 休息区 / 资料室）现纯展示、comfort 是死数值、挂机产出恒定不随进度成长。新增 facility 存档域（schema/migrations/装配器三改），用 KP 升级每级 +X% 对应产出，comfort 接一档真实软加成，封顶随设施等级抬升 → 形成「挂机产 KP → 升设施 → 挂机更快」自循环与无底 KP sink。 ✅ S14-D 第 1 轮：facility 域 v17（独立 store），每级 +8% 乘区（独立于装备 0.6 cap）、comfort 每 10 点 +1%（封顶 +20%）真进产出、离线封顶 12h+总级数×0.5h，UI 三设施升级入口 + 下一级收益预览同源结算。
+- [x] **装备的家园 homeEffect 逐步剥离到设施**（P2-13）：同一件装备既定战斗五维又定家园挂机%，两套目标抢同槽、选装口径打架。把家园加成移到「设施升级」承载，装备回归纯战斗；过渡期先在 `EquipPickerModal` 补挂机 delta 预览（⭐ 低成本子项）。 ✅ S14-D 收尾轮：`EQUIPMENT_CATALOG` 每件 homeEffect 产出%（exp/affection/knowledge）统一 ×0.33 弱化到「小额佐料」量级（≤6%），家园产出主体归设施乘区（SD-T1）；comfort 全保留（独立软加成轴）；`EquipPickerModal` 新增家园挂机 before→after delta（三槽求和、语义色、同 resolveHomeEffect 口径）。
+- [x] **给重复装备加回收 / 分解出口**（P2-21）：`drops.ts` 每层 50% 掉一件、`equipment.ts` addItem 只 push 从不去重，齐装后纯堆积垃圾。分解为 KP（复用 codex 分解范式）、或 N 件合成升级材料（一箭双雕做装备强化 sink）、或转碎片计数。 ✅ S14-D 收尾轮：`equipment.dismantleItem(uid)` 移除游离件 + 按稀有度回收 KP（`dismantleValueForRarity` 纯函数 R50/SR150/SSR500/HR1200/UR3000，明显低于兑换价防套利）；已装备件 `findEquippedBy` 守卫 + UI 禁用双保险；门面 `userStore.dismantleEquipment` + saveToServer；本轮只做 KP 回收（材料/合成留 S14-E）。
+- [x] **修经验曲线 / 产出错配**（P2-19）：满级需 980 万经验，而挂机 2400/12h、塔第 100 层每人才 1040，满级后经验全部沉没。把曲线压到与产出匹配（如 level^1.6）或提产出；满级经验给溢出出口（转道具 / 少量 KP）；补习产出随等级递增。 ✅ S14-D 收尾轮：`getRequiredExpForLevel` 改 `round((level-1)^1.6×900)`（满级 140 万，旧 980 万的 ~1/7，严格单调递增守卫）；满级经验溢出 `addCharacterExp` 满级分支每 2000 点自动兑 1 KP（`expOverflowExchange` 带 carry 结转，走 profile.earn）；补习 `tutoringExpGain(level)=400+level×20` 随等级递增，NurtureView 按钮文案动态。
+- [x] **加无底 KP sink**（P2-20）：KP 唯一硬通货但 sink 全是买断目录（装备 45 件封顶、图鉴、补习），集齐后无处可花必然溢出贬值。装备强化 / 精炼、角色突破 / 星级、每日刷新定向兑换或塔商店限量高价物。 ✅ S14-D 第 1 轮：设施升级即无底 sink——无硬上限（Lv.99 极高上限）+ 成本指数递增 `120×1.4^(level-1)`（测试锁「第 N 级 > 第 N-1 级」），全走 `profile.spend('knowledgePoints')`，成型账号 KP 有持续去处。
+- **Exit（达成）**：家园从「单页面板」变成「可投资的经营系统」；KP 有长期去处（无底设施 sink）；重复装备有出口（分解回 KP）；经验不再打进黑洞（曲线重标定 + 满级溢出转 KP）。
 
 ### ☐ S14-E · 装备深度（P2，塑造 build 与毕业曲线）
 
@@ -168,4 +170,4 @@
   > 注：此项在历史上以两处不同措辞出现（Evolution 尾注的「按声优收集维度」与 2026-06-24 循环 round 1 的「声优维度」），是**同一个**跨栈/需后端项，此处已合并为一条，勿再拆。
 
 ---
-*本文只列「还剩什么」。完成史在 [HISTORY.md](HISTORY.md)；日常产品迭代需求源在 [SPRINT.md](SPRINT.md)。每完成一项请同步勾选；每完成一个 Sprint 请更新「进度总览」状态。最后整理 2026-07-01（S13 归档 HISTORY；S14 家园 hub 深化 A/B/C 已完成——A 六项 P1 急救 + B 五项战斗手感 + C 六项角色差异化与养成长线(星级突破 SAVE_VERSION→16)，均 product-loop `--tier1 on --mode all` 落地；S14-D~F 待做；源自对抗性审计 [orch/homestead-hub-audit-report.md](orch/homestead-hub-audit-report.md)）。*
+*本文只列「还剩什么」。完成史在 [HISTORY.md](HISTORY.md)；日常产品迭代需求源在 [SPRINT.md](SPRINT.md)。每完成一项请同步勾选；每完成一个 Sprint 请更新「进度总览」状态。最后整理 2026-07-01（S13 归档 HISTORY；S14 家园 hub 深化 A/B/C/D 已完成——A 六项 P1 急救 + B 五项战斗手感 + C 六项角色差异化与养成长线(星级突破 v16) + D 五项家园机制/经济闭环(facility 设施升级 v17)，均 product-loop `--tier1 on --mode all` 落地；S14-E/F 待做；源自对抗性审计 [orch/homestead-hub-audit-report.md](orch/homestead-hub-audit-report.md)）。*

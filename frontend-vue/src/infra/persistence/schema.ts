@@ -24,8 +24,12 @@
  * v16（S14-C SC-T3/SC-T4）：characterNurtureData 加第三/回归轴两字段——breakthrough（星级/突破次数 0..MAX_BREAKTHROUGH，消化重复角色卡换永久小加成）
  *   + lastBondInteractionDate（每日好感互动日期键，跨天读时可再互动）。存计数不存派生（永久加成由 engine 现算）。
  *   旧档迁移每条角色补缺省（breakthrough:0 clamp、lastBondInteractionDate:''），nurture 域全量 Map 序列化天然覆盖新字段。
+ * v17（S14-D SD-T1/SD-T5）：新增 facility 域——三设施等级（exp 训练区 / bond 休息区 / knowledge 资料室）。
+ *   设施用 KP 可升级（profile.spend），每级 +8% 对应产出乘区、封顶随总级数抬升、成本指数递增无硬上限
+ *   （= 无底 KP sink 主体）。独立于 homestead 域（单一职责）。旧档迁移全设施补 Lv.1（+0%），杜绝挂机归零回归。
  */
 import type { PityState } from '@/engine/gacha/draw';
+import { defaultFacilityLevels } from '@/config/homestead';
 import { SQUAD_MEMBER_COUNT } from '@/engine/squad/eligibility';
 import type { CharacterNurtureData } from '@/types/nurture';
 import type {
@@ -37,7 +41,7 @@ import type {
   TowerProgress,
 } from '@/types/player';
 
-export const SAVE_VERSION = 16 as const;
+export const SAVE_VERSION = 17 as const;
 
 /** 商店单品的当日购买记录（跨天读取时自动视为 0）。 */
 export interface ShopPurchaseRecord {
@@ -168,6 +172,25 @@ export function createDefaultEquipment(): EquipmentSave {
   };
 }
 
+/**
+ * 设施域（v17 / S14-D SD-T1/SD-T5）。三设施各一等级（KP 可升级，每级抬升对应产出乘区）。
+ * 独立于 homestead 域（HomesteadSave 只管入住，单一职责）。初始/旧档缺省全 Lv.1（+0% 乘区）。
+ * 设施 key / 等级边界 / 默认值权威在 config/homestead.ts（FacilityKey / defaultFacilityLevels）。
+ */
+export interface FacilitySave {
+  /** 训练区等级（↑经验产出）。 */
+  exp: number;
+  /** 休息区等级（↑好感产出）。 */
+  bond: number;
+  /** 资料室等级（↑知识点产出）。 */
+  knowledge: number;
+}
+
+/** v17：设施域默认态（全 Lv.1 = +0% 乘区；新档/旧档迁移补默认，决策-3）。 */
+export function createDefaultFacility(): FacilitySave {
+  return defaultFacilityLevels();
+}
+
 /** playerState 的序列化形态（watchedAnime Set → 数组）。 */
 export interface SerializedPlayerState {
   level: number;
@@ -220,6 +243,8 @@ export interface SavePayload {
   homestead: HomesteadSave;
   /** v14 新增：装备域（C1 空占位，C2 接配装）。 */
   equipment: EquipmentSave;
+  /** v17 新增：设施域（三设施等级，KP 可升级产出乘区 + 无底 sink）。 */
+  facility: FacilitySave;
 }
 
 /** 兼容别名（S5 时代命名）。 */

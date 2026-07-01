@@ -1,175 +1,178 @@
-# Research Audit — S14-C 第 2/3 轮（product-loop --tier1 on --mode research）
+# S14-D 设计研究报告 — 第 2 轮（SD-T2 装备 homeEffect 剥离到设施 + SD-T4 经验曲线/满级溢出修配）
 
-> 设计研究员视角。本轮指派切片 = **SC-T3｜养成长线：星级/突破（消化重复角色卡，P2-10，SAVE_VERSION→16）**。
-> （第 1 轮 SC-T1+T2+T5 已 COMPLETE，见 eval.md；本报告覆写第 1 轮内容，聚焦第 2 轮切片。slice 参数仍透传损坏，据排期建议 + eval 进度锁定本轮 = SC-T3。）
-> 四镜头（核心假设质疑 / 相邻领域研究 / 逻辑完备性 / 替代设计提案）聚焦 SC-T3 的设计选择，给本质替代 + tradeoff，重点防长期腐化。
-> 不开新范围（超范围创意标 backlog）。证据源：homestead-hub-audit-report.md（P2-10）+ SPRINT.md L34-36 + 已 Read 的 rules.ts / config/nurture.ts / types/nurture.ts / schema.ts / migrations.ts / collection.ts / SquadBattleView.buildCharacterStats。
+> 角色：Product Research Reviewer（设计研究员）。product-loop `--tier1 on --mode all`，S14-D 第 2/3 轮。
+> 本轮指派切片（据 SPRINT 排期建议第 2 轮）：**SD-T2（装备家园 homeEffect 逐步剥离到设施 + EquipPicker 挂机 delta 预览）+ SD-T4（经验曲线/产出错配修正 + 满级经验溢出出口 + 补习递增）**。
+> 范围纪律：只对 SD-T2/SD-T4 的**设计选择**给本质替代 + tradeoff，重点防经济腐化与数值失衡。超范围创意标 backlog。**本报告只 refine HOW，不代替 Generator 落地，也绝不建议跳过指派任务。**
+> 前情：第 1 轮 SD-T1（facility 域 v17 + comfort 软加成 + 封顶随等级抬升）+ SD-T5（无底 KP sink，设施指数成本）已 **COMPLETE**（eval.md，745/745 测试全绿）。**本轮不再 bump 存档版本**（SD-T2/T4 纯计算改配置权重/纯函数，YAGNI，不预留字段）。
+> 证据地基：`config/homestead.ts`（`computeIdleYield` 现 4 参、`HOMESTEAD_EFFECT_CAP=0.6`、设施乘区独立 cap）；`config/equipment.ts`（每件 `homeEffect{expPct/affectionPct/knowledgePct/comfort}` + `bonus`）；`components/nurture/EquipPickerModal.vue`（现只 `formatHomeEffect` 文案，无 delta）；`engine/nurture/rules.ts`（`getRequiredExpForLevel=(L-1)²×1000`、`MAX_CHARACTER_LEVEL=100`）；`stores/nurture.ts`（`addCharacterExp` 满级截断但 `totalExperience` 仍累加 = 沉没、`tutorCharacter` 定额 `TUTORING_EXP_GAIN=500`）；`config/nurture.ts`（`bondOverflowExchange` = 已有「溢出转 KP」范式，SD-T4 可复用）。
 
 ---
 
 ## Executive Summary
 
-**SC-T3 建立在 5 个关键假设上**：(1) 长线养成缺口的解法是「再加一条轴」（星级/突破），而非重构现有两轴；(2) 「消化重复卡」= 突破的燃料应该是重复角色卡（碎片），而非独立道具/货币；(3) 突破产出应「提升上限 + 小幅永久成长」，即它同时是「解锁闸」和「战力增量」两件事；(4) 突破进度必须落存档字段（v16），是持久状态而非派生量；(5) 永久成长要「小」——沿用 C1「养成克制」的基因。
-
-**最大研究发现在「逻辑完备性」维度**：SC-T3 引入的「星级永久加成」是养成系统里**第三种进入战力的通路**（现有两条 = statPoints + equipBonus，见 `SquadBattleView.buildCharacterStats` → `generateBattleStats(base, statPoints, equipBonus)` 三参数），而这条新通路的注入点、量纲、与既有轴的加法/乘法关系，SPRINT 尚未拍死——这正是审计 P3-6「量纲分歧」在养成侧的重演风险。**如果突破加成的注入形态没在本轮定成「与 statPoints 同口径的增量」，SC-T4 好感永久% 落地时会撞上同一堵墙，形成两套并行的『养成后战力』口径。**
-
-**一句话最有价值的突破方向**：**不要把突破做成「星级 → 独立 permanentStatBonus 字段 → 第三条战力通路」，而是做成「突破 → 抬高 MAX_CHARACTER_LEVEL 上限（为主）+ 若给永久成长则折算成等量 statPoints 增量」——让突破的战力收益复用现有确定加点通路（`distributeStatPointsByBase`），存档只需存一个标量 `breakthrough`（突破次数），战力口径永不分裂，SC-T4 好感%也能顺着同一个折算函数接入。** 这是「单一养成后战力口径」的最省事落地（第 1 轮三审已对『单一真相源』达成共识，此处是它在养成侧的自然延伸）。
+- **本轮两任务命中的 3 个核心假设**：
+  1. 「装备一件同时承载战斗 `bonus` 与家园 `homeEffect`」——45 件目录**每件都带 homeEffect**（`equipment.ts:75-123`），战斗与家园两目标钉死在同一件、抢同三槽（P2-13）。这是 SD-T2 要推翻的对象。
+  2. 「经验是单调向上的水池，满级即封口」——`getRequiredExpForLevel=(L-1)²×1000`（满级 ≈980 万），而挂机 2400/12h、塔百层每人 1040；`addCharacterExp` 满级后 `level` 截断但 `experience/totalExperience` **仍在累加**（`nurture.ts:124-127`）→ 满级角色的一切经验注入**直接蒸发**（P2-19）。这是 SD-T4 的靶心。
+  3. 「补习是定额兑换」——`TUTORING_KP_COST=100 → TUTORING_EXP_GAIN=500` 恒定（`nurture.ts:177`），高级角色一次补习换来的「等级进度」随曲线陡增而趋近于零。
+- **最大研究发现在「逻辑完备性」维度**：SD-T2 若把 homeEffect **直接从 45 件目录删除**，会与第 1 轮 SD-T1 的 comfort 软加成产生**跨轮口径断裂**——comfort 的**唯一来源**目前正是装备 `homeEffect.comfort`（`HomesteadView.homeEffect` 求和 → `computeIdleYield.effect.comfort`）。第 1 轮 eval 明确记录「comfort 生效逻辑未写死绑装备来源、为 SD-T2 迁来源留空间」。**若本轮剥离 homeEffect 却不同时给 comfort 一个新来源，comfort 软加成会归零 = 直接回归掉第 1 轮刚做的 SD-T1 子项**。这才是本轮真正的地雷，而非 EquipPicker 的 delta 文案。
+- **一句话最有价值突破方向**：**SD-T2 用「弱化权重 + 口径透明」而非「物理删除」——把 45 件 homeEffect 的 pct 部分统一乘一个 `EQUIP_HOME_EFFECT_WEIGHT`（本轮设 0，或保守 0.25）收敛到「装备≈纯战斗」，但 comfort 来源同步迁到设施派生（如 `comfort = 三设施总级数 × k`），让 comfort 有稳定的新家**；SD-T4 则**照抄本仓已验证的 `bondOverflowExchange` 范式**——把满级经验做成「溢出转 KP（克制汇率）」，而非重标定整条曲线（重标定会冲击存量战力、波及等级/加点/突破链，风险面远大于收益）。
 
 ---
 
-## Phase 1: 核心假设质疑
+## Phase 1 · 核心假设质疑
 
-### 假设清单（★ = 可质疑 / 本轮需拍板）
+### 假设清单（★ = 本轮可质疑 / 需守住）
 
 | # | 假设 | 出处 | 可质疑性 |
 |---|---|---|---|
-| A | 长线缺口靠「加第三轴」补，而非深化等级/好感两轴 | SPRINT L34「加一条有决策的长线」 | 中 |
-| B ★ | 突破燃料 = **重复角色卡**（碎片），从 `getCharacterCardCount` 扣 | SPRINT L35 | 高（经济健康） |
-| C ★ | 突破 = 解锁闸（抬上限）**且** 永久小加成（战力）两件事 | SPRINT L35「解锁更高上限 / 小幅永久成长」 | 高（数值膨胀 + 口径分裂） |
-| D ★ | 突破进度必须落**独立存档字段**（如 `starLevel` + 可能 `permanentStatBonus`） | SPRINT L35「存档记录每角色星级/突破进度」 | 高（存档面积 vs 派生量） |
-| E ★ | 永久加成「要小且有封顶」，守 C1 不接战力基因 | 类比 SC-T4 L38 | 高（这次 SPRINT 明确要它接战力，与 C1 基因张力） |
-| F | 保留至少 1 张卡不被消耗（拥有口径防呆） | SPRINT L35 | 低（正确的防呆，沿用 dismantle count>1 范式） |
-| G | 星级/突破是**逐角色**的，非全局 | 隐含 | 低 |
+| B1 | 装备每件都带 homeEffect（战斗+家园双目标钉死） | `equipment.ts:75-123` | ★★★ SD-T2 要推翻它，但**删还是弱化**是本质分叉 |
+| B2 | comfort 的唯一来源是装备 `homeEffect.comfort` | `HomesteadView.homeEffect` → `computeIdleYield` | ★★★ **本轮最大地雷**：SD-T2 剥离装备后 comfort 会断供，须同步迁来源，否则回归 SD-T1 |
+| B3 | 经验是单调水池，满级即封口（超额经验蒸发） | `nurture.ts:124-127` | ★★★ SD-T4 靶心。已有 `bondOverflowExchange` 现成范式可抄 |
+| B4 | 满级经验曲线 `(L-1)²×1000` 与产出量级匹配 | `rules.ts:35-38` | ★★ 严重错配（980 万 vs 2400/12h），但**重标定会冲击存量战力** |
+| B5 | 补习是定额兑换（100 KP → 500 exp 恒定） | `nurture.ts:177` | ★★ 高级角色补习性价比趋零；可随等级递增，但别造新 sink |
+| B6 | 装备 homeEffect 受 `HOMESTEAD_EFFECT_CAP=0.6` 钳制、与设施乘区独立 | `homestead.ts:130/192-194` | ★★ SD-T2 迁移后 0.6 cap 是否还有意义？装备权重归 0 时 cap 变空转 |
+| B7 | 战力单机无 PvP，曲线重标定「区间可接受」 | SPRINT SD-T4 | ★★ 真无 PvP，但塔软门槛、突破/好感加成基于当前 level 派生，重标定会连锁 |
 
 ### 关键假设深挖
 
-**假设 C（突破既是解锁闸又是战力源）——最危险的双重职责。**
-当前 `buildCharacterStats(character)` = `generateBattleStats(base, statPoints, equipBonus)`，战力恰好三源：角色 base、升级加点、装备。突破若引入第 4 个参数 `permanentStatBonus`，就把 `generateBattleStats` 从 3 参数拓到 4 参数，并在 `calculateBattlePower`、`getSquadPower`（SC-T5 刚统一的口径）、`buildCharacterStats`（View 层）多处同步——**这正是 SC-T5 negotiation 里研究报告提的 `resolveNurturedStats` 大统一口径被推迟的那个坑，SC-T3 把它提前引爆了。** 如果突破改为「抬 level 上限 + 折成 statPoints」，则第 4 参数根本不存在，战力通路始终是 3 源，口径零分裂。
+**深挖 1 — B2（comfort 断供）：SD-T2 最危险的跨轮回归。**
+第 1 轮把 comfort 从「死数值」接成了真软加成（每 10 点 +1%、封顶 +20%，`comfortBonusPct`），但 comfort 的**数值来源没动**——仍是装备 `homeEffect.comfort` 逐件求和喂进 `computeIdleYield` 的 `effect.comfort`。SD-T2 若「装备回归纯战斗、删/清零 homeEffect」，则 `effect.comfort` 归 0 → `comfortMult=1` → 第 1 轮刚点亮的 comfort 软加成**整条熄灭**，且 UI 的 comfort 展示归零。**这不是 SD-T2 的新特性，是 SD-T1 的回归。**
+- **守法（推荐）**：本轮把 comfort **来源迁到设施派生**——如 `facilityComfort(levels) = 三设施总级数 × COMFORT_PER_FACILITY_LEVEL`（或最高级派生），让 comfort 随设施成长而非装备。这样 comfort 软加成有稳定新家，且与「家园=可经营系统」的叙事一致（设施越高越舒适，比「戴了几件装备」更合理）。第 1 轮 eval 已预留这条路（「comfort 生效逻辑未写死绑装备来源」）。
+- **过渡法（更保守）**：本轮**不删** homeEffect.comfort，只弱化/剥离 pct 三项（exp/affection/knowledgePct → ×weight 或归 0），comfort 暂留装备来源。tradeoff：装备仍残留一个家园维度、剥离不彻底，但零回归风险、改动面最小。**SD-T2 措辞是「逐步剥离 / 大幅弱化权重」，本就允许过渡。**
 
-**假设 B/E（重复卡当燃料 + 加成要小）——经济健康的双刃。**
-重复角色卡目前唯一出口是 `dismantleCard`（守 count>1）。突破吃重复卡是给它开第二出口，健康。但两个风险：① 头部 UR 抽不到重复，突破长期锁死（星级成为「非酋惩罚」）；② 若加成不小，突破成了「谁重复卡多谁碾压」，与单机向「收集有意义」冲突。E 说「要小」，但 SPRINT L35 又说突破要「提升上限」——**上限抬升本身就是大战力空间**（等级 100→120 按 `getRequiredExpForLevel` 曲线 (119²-99²)×1000≈436万经验）。所以「小加成」的克制承诺，在「抬上限」面前有内在张力：真正的战力膨胀来自上限（需再投经验兑现，是延迟膨胀），不来自那点永久%。本轮须拍板：**突破是抬上限（大但延迟、被经验曲线节流）还是直给永久%（小但即时）**——两者都做会双重膨胀。
+**深挖 2 — B3/B4（满级沉没 vs 曲线重标定）：SD-T4 的方案分叉，风险差一个数量级。**
+错配是真的（980 万满级需求 vs 2400/12h 挂机），满级经验蒸发也是真的。但**两条修法风险截然不同**：
+- **改曲线（B4）**：把 `getRequiredExpForLevel` 从 `(L-1)²×1000` 压到如 `(L-1)^1.6×C`。**连锁**：`getLevelFromExp` 是 `getRequiredExpForLevel` 的反函数（`rules.ts:41-47`，while 循环反推），改前者**存量角色的 level 会被重新反推**——同样的 `totalExperience` 在新曲线下会**跳到更高等级** → 一次性凭空升级 + 触发一堆加点（`rollLevelUpStatPoints`）→ **存量战力整体膨胀**，且塔软门槛/突破基线全部漂移。这是「重标定冲击存量」的具体机制，风险高。
+- **加溢出出口（B3）**：曲线不动，只在 `addCharacterExp` 满级分支把「本该蒸发的经验」转成 KP（克制汇率），完全**照抄 `bondOverflowExchange` 已验证范式**。零存量冲击、改动面小、直接消灭「沉没」。**这是本轮该优先做的**。
+- **结论**：SD-T4 应以「满级溢出出口」为主体（低风险、直接达成「满级经验不再沉没」验收项），曲线重标定**降级为温和微调或 backlog**——若一定要动曲线，只调**系数**（`×1000 → ×400`）不改**指数**（保持 `(L-1)²` 形状），把重标定幅度和 level 反推漂移压到最小，且必须有「存量档 level 不跳变」的回归测试。
 
-**假设 D（进度必须落独立字段）——存档面积质疑。**
-可质疑：若突破只抬 level 上限，则「突破次数」是唯一需持久化的新状态（一个 `number`），`permanentStatBonus` 是派生的（不需存），上限也是派生的（`100 + breakthrough × STEP`）。**存档新增面积可压到 `CharacterNurtureData` 加一个 `breakthrough: number`**，而非新增 `permanentStatBonus: StatPoints` 子对象。派生量不落存档 = 未来调平突破数值时不写迁移（改常量即全账号重算），这是抗腐化关键。migrations 现有范式（`?? 缺省` 逐字段补、sweepUsedThisWeek 定长补 0）对补单个 `breakthrough:0` 极友好，对补 StatPoints 对象则要多写一段。
+**深挖 3 — B5（补习定额）在陡曲线下的性价比塌缩。**
+`(L-1)²×1000` 下，L2→L3 需 3000 exp（6 次补习），L50→L51 需 ~99000 exp（198 次补习），L99→L100 需 ~980000 exp（1960 次补习）。定额补习在高级段等于「无效点击」。**修法**：补习产出随目标角色等级递增（`TUTORING_EXP_GAIN × f(level)`），或补习花费递增而产出更递增。**红线**：补习是「花 KP 换 exp」的 KP sink，别把它做成「exp 印钞机」反向掏空 SD-T5 的 KP 稀缺——递增产出的同时递增花费，维持「补习性价比 ≤ 挂机」的基线。
 
 ### 被隐喻限制的地方
-
-当前隐喻是「**养成 = 往角色身上叠加数值轴**」（等级轴、好感轴、装备轴、现在再加星级轴）。「叠轴」隐喻导致每条新轴都想要自己的存档字段和自己的战力注入口，轴越多口径越碎。**替代隐喻：「养成 = 解锁角色的成长上限，成长本身走同一套确定加点」**——星级/突破/好感都只是「抬 cap 或 tilt 权重」的旋钮，最终折算成 statPoints 这一个战力载体。换隐喻后，SC-T3/T4/未来专武全部收敛到同一个 `resolveNurturedStatPoints(nurtureData)` 纯函数，不再有「第 N 条战力通路」。
+当前「装备 = 战斗与家园的二相物」隐喻，把「一件东西必须两头都管」当成天经地义，才有了 P2-13 的抢槽。换成「**装备 = 战斗资产，家园 = 独立经营资产**」两条正交轴后，homeEffect 从「装备的附属维度」变成「设施/家园的固有产物」，抢槽问题**从根上消失**——这正是 SD-T1（设施主承载）+ SD-T2（装备退出家园）的合流终局。SD-T2 本轮做的是把这个隐喻切换**落地一半**（装备退场），comfort 迁设施是切换的**另一半**。
 
 ---
 
-## Phase 2: 相邻领域研究
+## Phase 2 · 相邻领域研究
 
-### 领域扫描
-
-| 领域 | 核心思想 | 可迁移点 |
+| 领域 | 核心思想 | 可迁移到 SD-T2/T4 的点 |
 |---|---|---|
-| **手游星级/命座**（PCR rank / 原神命座 / FGO 灵基再临） | 突破 = 用同名重复单位/材料抬「等级上限」这道闸，等级本身仍需再喂经验兑现；命座给「小永久 buff/机制解锁」 | 把「突破抬上限」和「命座给小 buff」分清：SC-T3 应选**灵基再临式（抬上限为主）**，永久%留给 SC-T4 好感，避免两条轴都给永久% |
-| **RPG prestige / 转生**（暗黑 paragon、放置游戏 prestige） | 到顶后「重置换永久乘区」，乘区是从单一计数派生的公式量，不逐项存 | 突破次数 → 派生上限/加成，**只存计数不存派生结果**（假设 D 的解法） |
-| **Git tag / 版本号** | tag 是对某 commit 的轻量命名标记，不复制内容，语义 =「到此为止是一个里程碑」 | 突破进度可以是「里程碑标记」（第 N 次突破）而非「一坨永久属性快照」——存标记，属性现算 |
-| **数据库：派生列 vs 存储列**（computed column） | 能从其他列算出的量不该独立存储，否则要维护一致性 | `permanentStatBonus` 是 `breakthrough` 的派生列，存 `breakthrough` 即可，加成现算（materialize on read） |
-| **认知科学：能力天花板 vs 熟练度** | 上限（潜力）与当前值（熟练）是两个变量；训练抬熟练，突破抬潜力 | level=熟练、breakthrough=潜力上限——两者正交，突破不直接给战力、只解锁继续练的空间（最克制） |
+| **RPG 装备/词条系统（Diablo、原神圣遗物）** | 战斗属性与「生活/采集」加成分属不同装备类别，不塞进同一件 | SD-T2：家园加成本就该由「家园设施」承载，装备专注战斗——正交化是成熟范式，非激进 |
+| **经验溢出/转化（多数放置+养成游戏）** | 满级后 EXP 自动转为通用货币/材料（如「满级经验 → 金币」），杜绝沉没 | SD-T4 满级溢出转 KP，直接对标；本仓 `bondOverflowExchange` 已是同款范式的内部先例 |
+| **等级曲线设计（多项式 vs 指数）** | 多项式（`L^k`）比指数更可控；改曲线必须处理「存量玩家等级重算」的迁移 | SD-T4：若动曲线只动系数不动指数，且必须回归测「存量 level 不跳变」 |
+| **递减边际兑换（补习/训练所）** | 高级段兑换性价比递减是正常设计，但要给「大额一次性」出口避免无效点击疲劳 | SD-T5 的补习递增：产出随等级涨，但花费同步涨，维持性价比曲线单调 |
+| **软迁移 / 特性开关（feature flag / weight）** | 用一个权重常量渐进关掉旧机制，而非硬删——可回滚、可灰度 | SD-T2：`EQUIP_HOME_EFFECT_WEIGHT` 常量（0=全关/0.25=保守），比删 45 件 homeEffect 安全，且第 3 轮/后续可微调 |
 
-### 可迁移模式（最值得借鉴的 3 个）
+### 最值得借鉴的 3 个模式
+1. **权重开关式软剥离（SD-T2 该抄）**：不删 `equipment.ts` 的 45 条 homeEffect（删了要改 45 行 + 波及 catalog 测试 + drops），而是在 `computeIdleYield`/`sumHomeEffects` 消费侧乘一个 `EQUIP_HOME_EFFECT_WEIGHT`（config 常量）。本轮设 0（装备≈纯战斗）或 0.25（保守过渡）。可回滚、改动面小、口径集中一处。
+2. **满级 EXP → 货币溢出（SD-T4 该抄，且有内部先例）**：`bondOverflowExchange` 已证「溢出转 KP、克制汇率、只兑整份、余数保留」范式在本仓跑通。SD-T4 照此加 `expOverflowExchange(totalExp, level)`：满级后超出 L100 阈值的经验每 N 点转 1 KP，纯函数 + rules 测试。
+3. **改曲线只动系数不动指数（SD-T4 若动曲线的护栏）**：保持 `(L-1)²` 形状、只降 `×1000` 系数，能压低满级需求量级又把 level 反推漂移最小化；配「存量 totalExperience → 新 level 不跳变或跳变可控」的回归测试。
 
-1. **灵基再临式「抬上限为主」**（FGO/PCR）：突破主收益是抬 `MAX_CHARACTER_LEVEL`（每突破 +N 级 + 解锁一个星星图标），战力增量由玩家「再投经验练上去」兑现，而非突破瞬间直给。**好处**：突破是「延迟且需继续投入」的膨胀，天然被经验曲线节流，不一突破就战力跳变；重复卡消费与「继续养」形成二段循环。**tradeoff**：即时爽感弱于直给永久%（可靠突破解锁的星图标/称号补爽感，零战力成本）。
-
-2. **存计数不存派生**（DB computed column / prestige）：`CharacterNurtureData.breakthrough: number` 是唯一新存档字段；上限 = `MAX_CHARACTER_LEVEL_BASE + breakthrough × STEP`（config 常量），永久加成（若有）= `f(breakthrough)` 纯函数现算。**好处**：迁移只补一个 `breakthrough: 0` 缺省；未来调平改 config 常量即全账号即时重算，永不写第二次迁移；抗腐化最强。
-
-3. **单一养成后战力口径**（把 statPoints 当唯一战力载体）：突破的永久成长（若本轮决定要给）**折算成等量 statPoints 增量**，复用 `distributeStatPointsByBase`（按 base 倾斜，定位一致），不新增 `generateBattleStats` 参数。**好处**：`buildCharacterStats` / `getSquadPower`（SC-T5 口径）零改动，SC-T4 好感%将来顺同一折算函数接入，彻底消灭「第 N 条战力通路」。
-
-### 竞品设计哲学对比（非功能对比）
-
-- **PCR rank + 星级双轴**：rank（装备阶）管战力大头、星级（重复卡/母猪石）管上限+专武解锁。哲学 =「重复卡专职抬上限/解锁，不直接堆战力」。**AnimePlay 应学这条哲学**：SC-T3 重复卡 → 抬上限 + 解锁（图标/称号/未来 HR 差异化被动），战力交给等级/装备既有轴，避免重复卡直接变战力导致「非酋差异化」。
-- **原神命座**：重复角色 → 6 层命座，每层给 buff/机制，是「直给永久增量」哲学，但原神有付费保底、命座是可选深度。**AnimePlay 单机向不宜照搬**（无保底，重复靠运气，直给增量会放大运气差）。
+### 竞品设计哲学对比
+- **原神/崩铁的「圣遗物 vs 尘歌壶」**：战斗装备与家园系统彻底分家，家园加成（洞天宝钱等）由家园自身产出，装备只管战斗。AnimePlay 现状（装备两头管）比它们更耦合；SD-T2 是向成熟范式收敛，不是标新。**结论：SD-T2 剥离方向正确，且 comfort 迁设施与「家园自产家园加成」哲学一致。**
 
 ---
 
-## Phase 3: 逻辑完备性
+## Phase 3 · 逻辑完备性
 
-### 概念体系评估（关系图，文字）
-
+### 概念体系（本轮改动后的关系）
 ```
-角色战力 = calculateBattlePower(generateBattleStats(base, statPoints, equipBonus))
-            └ base：角色固有（不变）
-            └ statPoints：等级确定加点（distributeStatPointsByBase，随 level 增长） ← 战力通路 1
-            └ equipBonus：装备（resolveEquipBonus）                                 ← 战力通路 2
-好感 affection ──（当前）──> 一次性 KP 里程碑（不接战力，C1 基因）
-                 ──（SC-T4 将来）──> 永久小% ??? ← 通路 3 悬空
-突破 breakthrough ──（SC-T3 本轮）──> ①抬 level 上限（间接经通路 1）？ ②直给永久 stat（通路 4）？ ← 模糊地带
-```
+装备 bonus ────────────────→ 战斗战力（resolveNurturedBattleStats，本轮不碰）
+装备 homeEffect.pct ──×WEIGHT(本轮→0/0.25)──→ computeIdleYield（收敛，SD-T2）
+装备 homeEffect.comfort ──?──┐
+                             ├─(本轮迁来源)──→ comfort → comfortBonusPct → 全产出软加成（守 SD-T1）
+设施 facility.level ─────────┘（推荐 comfort 新来源 = 设施派生）
 
-**模糊地带（本轮必须消除）**：突破加成走「间接抬上限→通路 1」还是「直给→新通路 4」。SPRINT L35「提升上限 / 小幅永久成长」用了「/」——两者都要，但没说加成怎么进战力。**这是整个 SC-T3 设计的唯一真空，也是最高杠杆的拍板点。** 建议：主收益走①（抬上限，间接经通路 1），若给永久成长则折成 statPoints 增量并进通路 1（不开通路 4）。
+经验注入(挂机/塔/补习/互动) → addCharacterExp
+   ├─ level < 100 → 升级 + 加点（不变）
+   └─ level = 100 → 【现状：experience 仍累加但蒸发】→ 【SD-T4：溢出转 KP，抄 bondOverflowExchange】
+补习 100KP→500exp 定额 → 【SD-T4：随 level 递增产出（+同步递增花费，守 KP 稀缺）】
+```
+**模糊地带（必须在实现里澄清）**：
+1. **comfort 剥离到什么程度**：装备 comfort 也迁走（彻底）还是暂留（过渡）？（建议：pct 三项本轮收敛到 0/低权重；comfort 来源迁设施派生，让 SD-T1 软加成不断供——这是本轮唯一必须钉死的口径）。
+2. **溢出转 KP 的触发点**：在 `addCharacterExp` 满级分支即时转（自动入账）还是像好感那样「手动领取」？（建议自动转、一次性汇总播报，与挂机静默入账口径一致，避免又一个「要手动点」的埋没出口）。
+3. **溢出的 `experience/totalExperience` 记账**：转 KP 后 `totalExperience` 是否还累加？（建议：`totalExperience` 保留累加做统计，但满级后把「超出 L100 阈值的整份」计为已兑，避免重复兑——需一个「已兑溢出量」的记账。**注意：若这需要新存档字段，与「本轮不 bump」冲突**——可用「`totalExperience - L100阈值` 的整份差量、每次只兑增量」的无状态算法规避存档字段，见极端场景 3）。
 
 ### 极端场景检验
-
-1. **0 张重复卡的角色（头部 UR 只有 1 张）**：突破入口应显示「需 N 张重复卡（当前 0/N）」灰态，绝不允许扣到 count≤1（沿用 dismantle count>1 防呆）。**成立前提**：突破消费必须 `getCharacterCardCount(id) - 1 >= cost`。若不做此防呆 → 把出战角色的唯一卡吃掉、角色从收藏消失，灾难。
-2. **突破满级（breakthrough 达设计上限，如 5 星）后继续投重复卡**：必须硬封顶，UI 显「已达最高突破」，多余重复卡仍可走 dismantle。**成立前提**：`breakthrough` 有 `MAX_BREAKTHROUGH` clamp（schema 迁移也 clamp 脏档，仿 sweepUsedThisWeek 范式）。
-3. **旧档（v15）迁移**：无 `breakthrough` 字段的角色补 0，上限回落 100，战力不变（无突破=无加成）。**成立前提**：migrations 对 `characterNurtureData` 每条补 `breakthrough: 0`——**这正是「存计数不存派生」方案更省事的证据：只补一个 0，不补一个 StatPoints 对象**。
+1. **全员满级 + 持续挂机**：现状经验全蒸发。SD-T4 后每次结算把满级角色的经验份额转 KP → **反而给 SD-T5 的 KP sink 供了新的 KP 源**。需检查：这条新 KP 源会不会又制造通胀？（克制汇率 + 挂机经验本就是零头量级 → 转出的 KP 也是零头，安全；但要在测试里锁「溢出汇率 ≤ 补习逆汇率」，别让「挂机满级刷经验转 KP」比正经赚 KP 还快）。
+2. **SD-T2 权重设 0 后，`HOMESTEAD_EFFECT_CAP=0.6` 变空转**：装备 pct 全归 0，则 cap 永不触发。**不是 bug 但是死代码信号**——本轮可保留 cap（为 comfort 若仍走装备、或权重设非 0 时兜底），但要在注释标明「装备权重降后 cap 多为空转，SD-T2 过渡期保留」。别删（删了若回滚权重就裸奔）。
+3. **溢出转 KP 的「无状态增量」算法**：为避免新存档字段，用 `expOverflowExchange` 设计成**幂等增量**——记 `settledOverflowKp` 会需要字段；替代：让**每次 addCharacterExp 调用只处理「本次注入落在 L100 之上的那一段 exp」**（本次注入前已满级 → 整份本次注入都是溢出；本次注入跨越满级 → 只有超过阈值的部分是溢出），转 KP 后**这段 exp 不再进 `totalExperience`**（或进但标记）。这样无需「已兑总量」字段。**Generator 须验证幂等性**：同一段 exp 不会被兑两次。**这是 SD-T4 不 bump 存档的关键设计约束**，必须在 rules 纯函数层解决。
 
 ### 操作缺口（Agent/玩家想做但做不到）
-
-- **预览突破收益**：突破前看不到「突破后上限/加成变多少」→ 应给 delta 预览（复用 SC-T5 delta 展示范式，措辞人话化）。
-- **批量突破**：一次点一星、重复卡够多要点很多次 → backlog（本轮单次即可，但设计上把 cost 留成 `cost(fromStar, toStar)` 纯函数便于将来批量）。
-- **突破材料来源单一**：只吃重复角色卡，非酋头部 UR 永远突破不了 → backlog（未来可加「通用突破石」兜底，本轮不做，但别把 cost 写死成「只接受该角色卡」的封闭结构）。
+- SD-T2 后玩家无法一眼看出「这件装备现在对家园还有没有用」——SPRINT 已要求 EquipPicker 补挂机 delta 预览（本轮做，让口径透明）。delta 预览必须与 `computeIdleYield` **同源**（同样的 WEIGHT/facility 口径），否则又是「预览≠实战」。
+- SD-T4 后玩家不知道「满级角色的经验去哪了」——溢出转 KP 必须有播报/UI 提示，否则又变成静默埋没（把「蒸发」换成「静默转账」不算解决体验）。
 
 ### 演化瓶颈
-
-若本轮把突破做成独立 `permanentStatBonus: StatPoints` 字段 + `generateBattleStats` 第 4 参数，则：
-- SC-T4 好感永久%落地时，要么复用这个字段（语义混淆：好感和突破共用一个 bonus 桶，无法分别调平），要么再开第 5 参数（口径彻底碎裂）。
-- SC-T5 刚统一的 `getSquadPower` 口径要跟着改 `buildCharacterStats`。
-- 未来专武、羁绊又各要一个字段/参数。
-**「存计数 + 折成 statPoints」方案则无此瓶颈**：所有养成轴都 `resolveNurturedStatPoints(nurtureData) → StatPoints`，一个函数收口，SC-T4 只是往里加一项。
+- comfort 来源若本轮迁到「设施派生」，则未来家具系统（P3-4 backlog）接入 comfort 时，comfort 已是「可累加软加成池」而非「装备专属」——迁得正是时候。
+- SD-T4 若本轮走「溢出转 KP 无状态增量」而不 bump，则将来若要做「满级经验转专属道具（如天赋点）」，需要新字段——本轮不预留（YAGNI），到时再 bump。
 
 ---
 
-## Phase 4: 替代设计提案
+## Phase 4 · 替代设计提案
 
-### 核心机制替代方案
+### 核心机制替代（SD-T2 = homeEffect 剥离形态）
 
-**机制一：突破加成的战力注入形态**
+**方案 A（推荐·基线）— 权重开关软剥离 + comfort 迁设施派生**
+- `computeIdleYield`/`sumHomeEffects` 消费侧乘 `EQUIP_HOME_EFFECT_WEIGHT`（config 常量，本轮 = 0，装备≈纯战斗）。45 条 homeEffect 数据**不删**（可回滚）。
+- comfort 来源迁到设施派生（`facilityComfort(levels)`），接进 `computeIdleYield` 的 comfort 入参 → 守住 SD-T1 软加成不断供。
+- EquipPicker 补挂机 delta 预览（同源 WEIGHT）。
+- **tradeoff**：改动面最小（不动 45 行目录、不 bump、可回滚）、零 SD-T1 回归、口径集中一处。缺点：装备 homeEffect 数据变「僵尸字段」（权重 0 时不生效但仍在），需注释说明「SD-T2 软剥离、数据留待可能回滚」。
 
-- **方案 α（SPRINT 字面 / 独立永久属性桶）**：新增 `permanentStatBonus: StatPoints`，`generateBattleStats` 加第 4 参数。直观、即时膨胀可控。**代价**：开第 4 条战力通路，口径分裂，SC-T4/专武接踵而至，SC-T5 口径回改。
-- **方案 β（推荐 / 抬上限为主 + 折成 statPoints）**：突破主收益 = 抬 `MAX_CHARACTER_LEVEL`（config 常量派生）；若给即时永久成长，folded 成 statPoints 增量经 `resolveNurturedStatPoints` 进通路 1。存档只加 `breakthrough: number`。**代价**：即时爽感弱（用星图标/称号补），需玩家再投经验兑现上限。**收益**：零新战力通路、迁移最小、SC-T4 顺接、抗腐化最强。
-- **方案 γ（纯解锁，零战力）**：突破**完全不给战力**，只抬上限 + 解锁（未来 HR 差异化被动 / 剧情 / 皮肤 / 称号）。最克制、最守 C1 基因。**代价**：与 SPRINT L35「小幅永久成长」字面不符（需 negotiation 拍板是否降级为纯解锁）；玩家可能觉得「不给力」。
+**方案 B（替代）— 物理删除 45 件 homeEffect，装备类型定义去掉 homeEffect 字段**
+- 直接删 `EquipmentDef.homeEffect`，clean。
+- **tradeoff**：最彻底、无僵尸字段。但改 45 行 + `sumHomeEffects`/`formatHomeEffect`/EquipPicker/catalog 测试全波及，且 comfort 来源必须同轮迁（否则 SD-T1 硬回归），改动面和回归面都大，不可回滚。**列为后续轮/S14-E 的 clean-up backlog，本轮不做**（SD-T2 措辞明确「逐步剥离」，软剥离更贴切）。
 
-**机制二：突破燃料与经济**
+**方案 C（SD-T4 侧替代）— 全面重标定曲线（`(L-1)^1.6` 或降系数）**
+- 把满级需求从 980 万压到与产出匹配。
+- **tradeoff**：治本（曲线本身合理化），但触发存量 level 反推跳变、加点/突破/塔门槛连锁漂移，回归面大。**降级为 backlog 或「只降系数不改指数 + 存量不跳变回归测试」的温和版**，主体让位给溢出出口（方案 A' 见下）。
 
-- **方案 A（重复角色卡直扣，SPRINT 字面）**：`getCharacterCardCount(id)-1 >= cost` 才可突破，扣重复卡。给重复卡开出口，健康。**代价**：头部 UR 非酋锁死。
-- **方案 B（重复卡 → 碎片计数，可跨角色兜底）**：重复卡先转「该角色碎片」计数（存档存碎片而非直接扣 collection），未来可加通用碎片兑换。**代价**：本轮存档面积更大（每角色碎片数），超范围。**本轮取 A**，但 cost 结构留成 `cost(star)` 纯函数，不写死封闭。
+**方案 A'（SD-T4 推荐主体）— 满级溢出转 KP（抄 bondOverflowExchange）+ 补习随等级递增**
+- `addCharacterExp` 满级分支：本次注入落在 L100 之上的 exp 段 → `expOverflowExchange` 克制汇率转 KP（无状态增量，不 bump）。
+- 补习产出 `TUTORING_EXP_GAIN × f(level)`，花费同步递增，维持性价比单调。
+- **tradeoff**：零存量冲击、直接达成「满级经验不沉没 + 补习不定额沉没」两条验收项、有内部范式先例。缺点：不治「曲线本身过陡」的本（但那是低优、高风险，可 backlog）。
 
-### 概念重组方案
+### 概念重组
+- **把 homeEffect 从「装备维度」重组为「家园/设施维度」**：SD-T1 已让设施成为家园产出主体，SD-T2 本轮把 comfort 也迁过去，homeEffect 概念从装备侧**整体退场**——重组后「装备只管战斗、家园只管家园」两轴正交，是本 Sprint 根因 D/E 的收口。
 
-**把「等级上限」从常量提升为派生量**：`MAX_CHARACTER_LEVEL` 现在是 rules.ts 里的 `const 100`。重组为 `maxLevelFor(breakthrough) = 100 + breakthrough × STEP` 纯函数，`getLevelFromExp` / 加点逻辑读它。这样突破天然嵌入现有等级系统，不是「平行的星级轴」而是「等级轴的上限旋钮」——概念更少、闭环更紧（呼应 Phase 1 换隐喻）。
+### Tradeoff 矩阵（vs 现状）
 
-### Tradeoff 矩阵
-
-| 维度 | α 独立属性桶 | β 抬上限+折statPoints（推荐） | γ 纯解锁零战力 |
-|---|---|---|---|
-| 简洁性 | 中（新字段+新参数） | 高（一个 number 字段） | 高（一个 number 字段） |
-| 战力口径 | 分裂（通路4） | 单一（通路1） | 单一（无战力） |
-| 存档/迁移成本 | 高（补 StatPoints 对象+调平写迁移） | 低（补 0 + 改常量即重算） | 低 |
-| SC-T4 顺接 | 差（撞口径） | 好（同折算函数） | 好 |
-| 即时爽感 | 高 | 中（星图标补） | 低（靠解锁补） |
-| 数值膨胀风险 | 中（直给需封顶） | 低（上限需再投经验兑现，天然节流） | 无 |
-| 守 C1 克制基因 | 弱 | 中 | 强 |
+| 维度 | 现状 | SD-T2 方案 A（推荐） | SD-T2 方案 B | SD-T4 方案 A'（推荐） | SD-T4 方案 C |
+|---|---|---|---|---|---|
+| 解决抢槽/两目标 | ✗ | ✓ 权重收敛 | ✓ 彻底 | — | — |
+| 满级沉没修复 | ✗ | — | — | ✓ 溢出转 KP | ✓ 曲线合理化 |
+| 存量冲击 | — | ✓ 零 | △ comfort 须同迁 | ✓ 零 | ✗ level 跳变 |
+| 需 bump 存档 | — | ✓ 否 | ✓ 否 | ✓ 否（无状态增量） | ✓ 否 |
+| SD-T1 回归风险 | — | ✓ 低（comfort 迁设施） | ✗ 高（须同迁） | ✓ 无 | ✓ 无 |
+| 可回滚 | — | ✓（权重常量） | ✗ | ✓ | ✗ |
+| 本轮范围契合 | — | **✓ 契合 SD-T2** | △ 偏重 | **✓ 契合 SD-T4** | ✗ 偏险 |
 
 ### 灵感炸弹 💡
-
-1. **突破 =「毕业照」而非「数值」**：每次突破给角色解锁更高星阶立绘框/称号/一句名台词（零战力、纯收集荣誉），战力全交给「抬上限后再练」。把收集向游戏的突破做成「情感里程碑」而非「战力军备竞赛」——最贴单机向定位，且与 SC-T4「好感解锁剧情」共用一套「情感解锁」框架。（本轮可只做 number+上限+星图标，台词/立绘 backlog）
-2. **突破与好感互锁（SC-T3↔T4）**：突破抬「好感上限档位」、高好感反哺「突破折扣」——两条长线互相喂养而非并列。**本轮不做（backlog，negotiation 已标）**，但 SC-T3 存档字段命名时预留语义空间——建议叫 `breakthrough`（次数）而非 `starLevel`，以免将来和好感星混淆。
+1. **EquipPicker 的挂机 delta 显示「换装后家园净变化」而非绝对值**：既然装备 homeEffect 权重降到 0，delta 会显示「±0」——这本身就是最诚实的 UI：直接告诉玩家「装备已不影响家园，放心按战斗选」，把 SD-T2 的意图**可视化**成教学，比藏起来更好。
+2. **满级溢出转 KP 的汇率挂钩「角色星级/好感」**：满级 + 高星角色溢出汇率略优——给「练满一个角色」一个持续正反馈的尾巴，把「满级即毕业」变成「满级后仍有微收益」。（超范围创意，标 backlog，本轮先做定额克制汇率）。
 
 ---
 
 ## Prioritized Research Directions
 
-### 🔴 High-impact, Low-effort（本轮应采纳）
-- **突破取方案 β（抬 `MAX_CHARACTER_LEVEL` 为主 + 若给永久成长则折成 statPoints 经 `resolveNurturedStatPoints` 进通路 1），存档只加 `breakthrough: number` 一个标量字段，`permanentStatBonus`/上限均为派生量不落存档。** 迁移只补 `breakthrough: 0`，调平改 config 常量。彻底避免第 4 条战力通路。
-- **突破消费严守 `getCharacterCardCount(id) - 1 >= cost` 防呆**（保留至少 1 张，复用 dismantle count>1 范式），`breakthrough` 有 `MAX_BREAKTHROUGH` clamp（schema 迁移也 clamp 脏档，仿 sweepUsedThisWeek）。
-- **cost 写成 `breakthroughCost(fromStar)` engine 纯函数**（零 RNG），为将来批量/通用碎片兜底留口，别写死封闭。
+### 🔴 High-impact, Low-effort（本轮 SD-T2/T4 应直接采纳）
+- **SD-T2 走权重开关软剥离（方案 A）+ comfort 来源迁设施派生**：这是本轮**唯一必须钉死的口径**——剥离 pct 权重的同时给 comfort 一个设施新家，否则硬回归第 1 轮 SD-T1 的 comfort 软加成。改动集中在 config 常量 + comfort 来源一处，可回滚。
+- **SD-T4 主体 = 满级溢出转 KP（方案 A'，抄 `bondOverflowExchange`）+ 无状态增量算法（不 bump 存档）**：直接达成「满级经验不沉没」验收，零存量冲击。**关键约束**：溢出算法必须幂等（同段 exp 不兑两次），用「本次注入超阈段」而非「已兑总量字段」实现。
+- **补习随目标等级递增产出 + 同步递增花费**：解决高级段补习无效点击，同时守 KP 稀缺（性价比 ≤ 挂机，别做成 exp 印钞机）。
+- **EquipPicker 挂机 delta 与 computeIdleYield 同源**：权重 0 时显示「装备不再影响家园」的诚实提示（灵感 1），避免「预览≠实战」。
 
 ### 🟡 High-impact, High-effort（backlog）
-- 抽出 `resolveNurturedStatPoints(nurtureData): StatPoints` 单一养成后战力口径，缝合 statPoints + 突破折算 +（SC-T4）好感折算。本轮突破若走 β 可先只加突破项，SC-T4 再补好感项——但接口本轮就定型最省事。
-- 突破 ↔ 好感互锁（SC-T3↔T4 互相喂养）。
+- **SD-T4 曲线本体重标定（方案 C）**：只在有「存量 level 不跳变」回归测试护航、且只降系数不改指数的前提下做；否则放 backlog（本轮溢出出口已达成核心验收，曲线过陡是低优）。
+- **SD-T2 物理删除 45 件 homeEffect（方案 B）**：clean-up，待 comfort 完全迁设施稳定后，S14-E/后续轮做，本轮软剥离足矣。
 
-### 🟢 Thought-provoking（长期研究）
-- 把「等级上限」从常量重组为 `maxLevelFor(breakthrough)` 派生量，让突破成为「等级轴的上限旋钮」而非平行星级轴（概念收敛）。
-- 通用突破石兜底非酋头部 UR，解耦「突破燃料」与「特定角色重复卡」。
+### 🟢 Thought-provoking（长期）
+- **家具系统接入 comfort 软加成池**（P3-4）：本轮把 comfort 迁成「设施派生的可累加软加成」即为其铺路。
+- **满级角色的「毕业后成长」尾巴**（星级/好感挂钩溢出汇率，灵感 2）：把「满级即终点」变成长尾微收益。
 
 ### 💡 Wild idea
-- 突破做成「情感里程碑/毕业照」（立绘框/称号/名台词，零战力），与 SC-T4 好感解锁剧情共用「情感解锁」框架——把突破从军备竞赛改成收集荣誉，最贴单机向定位。
-- 突破进度用 Git-tag 式「里程碑标记」建模：存标记不存属性快照，属性永远现算——概念上把养成状态分成「里程碑（存）+ 派生属性（算）」两层，根治养成存档膨胀。
+- **EquipPicker「装备已不影响家园」教学化提示**（灵感 1）：把 SD-T2 的机制变更直接讲给玩家，减少「为什么这件装备家园数值没了」的困惑。
+- **满级经验转「专属天赋点」而非 KP**（需新字段，明确 backlog + 未来 bump）：给满级一个比 KP 更有意义的去向，但超本轮范围。
 
 ---
 
-**一句话收尾**：SC-T3 的唯一真空是「突破加成如何进战力」，本轮务必拍死为方案 β（抬上限为主 + 若给成长则折成 statPoints、只存 `breakthrough` 一个标量），否则 SC-T4 好感永久%会撞上第二套『养成后战力』口径——现在多想 30 分钟，省掉一次 v17 迁移和一次 getSquadPower 口径回改。
+**Sources**：内部先例 `config/nurture.ts bondOverflowExchange`（本仓已验证的「溢出转 KP、克制汇率、只兑整份」范式，SD-T4 直接复用）· 第 1 轮 `docs/orch/eval.md`（comfort 生效逻辑未写死绑装备来源、为 SD-T2 迁来源留空间的跨轮提示）· [The Math of Idle Games — Kongregate](https://blog.kongregate.com/the-math-of-idle-games-part-iii/amp/)（曲线/成本边际递减）。

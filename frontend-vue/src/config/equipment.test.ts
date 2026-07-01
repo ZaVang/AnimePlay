@@ -2,9 +2,11 @@ import { describe, expect, it } from 'vitest';
 import {
   EQUIPMENT_CATALOG,
   SLOT_ORDER,
+  EQUIPMENT_PRICES,
   formatHomeEffect,
   getEquipmentDefsBySlotRarity,
   sumHomeEffects,
+  dismantleValueForRarity,
   type EquipmentHomeEffect,
 } from './equipment';
 
@@ -51,5 +53,43 @@ describe('equipment home effects', () => {
 
   it('returns empty text for entries without home effects', () => {
     expect(formatHomeEffect({})).toBe('');
+  });
+});
+
+describe('SD-T2 装备 homeEffect 产出%已弱化到小额佐料量级', () => {
+  it('所有 catalog 件的产出%（exp/affection/knowledge）均 ≤ 0.06（弱化后不再是主承载）', () => {
+    for (const def of EQUIPMENT_CATALOG) {
+      const e = def.homeEffect;
+      if (!e) continue;
+      expect(e.expPct ?? 0, def.id).toBeLessThanOrEqual(0.06);
+      expect(e.affectionPct ?? 0, def.id).toBeLessThanOrEqual(0.06);
+      expect(e.knowledgePct ?? 0, def.id).toBeLessThanOrEqual(0.06);
+    }
+  });
+
+  it('comfort 全部保留（仍有正 comfort 件存在）', () => {
+    const withComfort = EQUIPMENT_CATALOG.filter(d => (d.homeEffect?.comfort ?? 0) > 0);
+    expect(withComfort.length).toBeGreaterThan(0);
+  });
+});
+
+describe('SD-T3 dismantleValueForRarity（回收价明显低于兑换价）', () => {
+  it('每档回收价 > 0 且明显低于兑换价（防套利）', () => {
+    for (const rarity of SELLABLE_RARITIES) {
+      const dv = dismantleValueForRarity(rarity);
+      expect(dv, rarity).toBeGreaterThan(0);
+      expect(dv, rarity).toBeLessThan(EQUIPMENT_PRICES[rarity]);
+    }
+  });
+
+  it('回收价随稀有度递增', () => {
+    expect(dismantleValueForRarity('R')).toBeLessThan(dismantleValueForRarity('SR'));
+    expect(dismantleValueForRarity('SR')).toBeLessThan(dismantleValueForRarity('SSR'));
+    expect(dismantleValueForRarity('SSR')).toBeLessThan(dismantleValueForRarity('HR'));
+    expect(dismantleValueForRarity('HR')).toBeLessThan(dismantleValueForRarity('UR'));
+  });
+
+  it('未知稀有度不可分解（返回 0）', () => {
+    expect(dismantleValueForRarity('N')).toBe(0);
   });
 });

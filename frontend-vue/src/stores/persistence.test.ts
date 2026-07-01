@@ -30,6 +30,7 @@ import { useGuessStore } from './guess';
 import { useMiniGamesStore } from './minigames/higherLower';
 import { useHomesteadStore } from './homestead';
 import { useEquipmentStore } from './equipment';
+import { useFacilityStore } from './facility';
 import { useThemeStore } from './theme';
 import { useDailyStore } from './daily';
 import { useCodexStore } from './codex';
@@ -127,6 +128,10 @@ function populateAllDomains() {
   const equipment = useEquipmentStore();
   equipment.inventory = [{ uid: 'eq-1', defId: 'wpn_ur_longinus' }];
   equipment.equipped = { 12393: { weapon: 'eq-1', armor: null, supporter: null } };
+
+  // S14-D SD-T1/SD-T5：设施域（三设施等级往返）
+  const facility = useFacilityStore();
+  facility.levels = { exp: 4, bond: 2, knowledge: 7 };
 }
 
 /** 与 daily store 同款本地日期键（YYYY-M-D）。 */
@@ -238,6 +243,9 @@ describe('buildPayload ⇄ applyPayload 往返', () => {
     const equipment = useEquipmentStore();
     expect(equipment.inventory).toEqual([{ uid: 'eq-1', defId: 'wpn_ur_longinus' }]);
     expect(equipment.equipped).toEqual({ 12393: { weapon: 'eq-1', armor: null, supporter: null } });
+
+    // S14-D 新增域：设施（三设施等级）经一轮往返保真
+    expect(useFacilityStore().levels).toEqual({ exp: 4, bond: 2, knowledge: 7 });
   });
 
   it('payload 带版本号与全部 schema 键', () => {
@@ -250,7 +258,7 @@ describe('buildPayload ⇄ applyPayload 往返', () => {
       'animeHistory', 'characterHistory', 'favoriteAnime', 'favoriteCharacters',
       'characterNurtureData', 'presetSquads', 'towerProgress',
       'shopPurchases', 'guess', 'appearance',
-      'daily', 'codexMilestones', 'achievements', 'minigames', 'homestead', 'equipment',
+      'daily', 'codexMilestones', 'achievements', 'minigames', 'homestead', 'equipment', 'facility',
     ]) {
       expect(payload).toHaveProperty(key);
     }
@@ -273,6 +281,7 @@ describe('resetAllDomains', () => {
     expect(useHomesteadStore().placedCharacterIds).toEqual([]);
     expect(useEquipmentStore().inventory).toEqual([]);
     expect(useEquipmentStore().equipped).toEqual({});
+    expect(useFacilityStore().levels).toEqual({ exp: 1, bond: 1, knowledge: 1 });
   });
 });
 

@@ -1,94 +1,95 @@
-# Plan — S14-C 第 3/3 轮（最终轮，product-loop --tier1 on --mode all）
+# Plan — S14-D 收尾轮（product-loop --tier1 on --mode all，切片 = SD-T2 + SD-T4 + SD-T3）
 
-> 指派切片 = **SC-T3 + SC-T4 + SC-T6**。三项本轮**必须全部真落地**（禁只做回归确认）。
-> **纠偏**：核查基线发现 **SC-T3（第 2 轮）实际未落地**（`SAVE_VERSION` 仍=15、`types/nurture.ts` 无 `breakthrough`、全仓无相关命中、无 round-2 eval）。按 pitfalls S14-A「合同内未完成任务永远 in-scope，禁当新范围跳过」，本最终轮补齐 SC-T3 + 做 SC-T4/SC-T6，凑齐 S14-C 全部 `[x]`（S14-C 完成 = SC-T1..T6 全 `[x]`）。
-> **本轮唯一一次 `SAVE_VERSION` 15→16**（SC-T3 与 SC-T4 共用，禁升 17）。存档三处同改 + 往返测试。
-> 已 COMPLETE（第 1 轮）：SC-T1（EXPLICIT_ARCHETYPE + resolveArchetype 单源）/ SC-T2（HR_SKILL_NAME_OVERRIDES 26 项）/ SC-T5（thresholds.ts 软门槛）。基线：59 files / 687 tests 全绿。
-
----
-
-## 任务 1（先做，其余依赖其战力注入 seam）· SC-T3 星级/突破（v16）
-
-**目标（WHAT/WHY）**：加养成第三轴——角色靠**重复角色卡（碎片）突破**得永久小加成，把「重复抽到的角色」转成成长资源（P2-10 根因：重复角色卡无处消化 + 养成仅两薄轴）。
-
-**关键设计拍板**：
-- 选项 **A**：突破**只给永久小加成、不提等级上限**（不动 `MAX_CHARACTER_LEVEL`/`addCharacterExp` 钳制）。选项 B backlog。
-- 星级 **0~5**（`MAX_BREAKTHROUGH=5`），封顶不再消耗。
-- 每星加成约 **+4% base 五维**，5 星累计 **≤25%**（硬上限，克制守 C1）；engine 确定成长无 RNG。
-- 消耗曲线 `breakthroughCost(star)`：突破到第 N 星耗 `N` 张重复卡（5 星累计 15 张）。
-- 拥有口径防呆：可消耗 = `getCharacterCardCount(id) - 1`（**永久保留本体 1 张**）；扣卡收口 collection 新增 `consumeCharacterCards(id, n)`（无 KP 副作用、防扣 <1），**禁直改 Map、禁复用 dismantleCard**。
-- **战力 3 处同源**：`HomesteadHubView.vue selectedFinalStats(:114) + memberPower(:183)` + `SquadBattleView.vue buildCharacterStats(:269)` 三处 `generateBattleStats`。engine 出 `breakthroughStatBonus(star, baseStats) → StatBonus`，**强制收敛成一个共享 helper 一次改 3 处**（建议 util `resolveMemberBattleStats(character, nurtureData, equipBonus)` 或 3 处显式并入 + 测试守全覆盖）。敌方不注入。
-
-**存档（v16）三处同改**：
-- `types/nurture.ts`：`CharacterNurtureData` 加 `breakthrough: number`；文件头注释更新为三轴。
-- `engine/nurture/rules.ts`：`createDefaultNurtureData()` 加 `breakthrough: 0`；新增纯函数 `breakthroughCost` / `breakthroughStatBonus` / `MAX_BREAKTHROUGH`（export 经 `engine/index.ts`，3 处 View 已从 `@/engine` import）。
-- `infra/persistence/migrations.ts`：`migrateNurtureData`(:163) 白名单对象**显式加** `breakthrough: typeof data.breakthrough==='number'?data.breakthrough:0`（**禁 spread**，守 `not.toHaveProperty` 旧字段家族，pitfalls S13-C1）。
-- `infra/persistence/schema.ts`：`SAVE_VERSION` 15→16（:37）+ 文件头加 v16 沿革注释。
-- `stores/nurture.ts`：`getNurtureData`(:52) 兜底补 `if (data.breakthrough==null) data.breakthrough=0`；serialize/deserialize 全量 Map entries **天然覆盖新字段、装配器代码无需改**（第三处义务 = persistence.test.ts 往返断言，别硬改装配器凑数）；新增 action `breakthroughCharacter(id): boolean`（读 collection 计数、判 cost/上限、调 `consumeCharacterCards`、`breakthrough++`、addLog）；engine 出消费判定 `canBreakthrough(star, spare)` 纯函数，副作用（扣卡）留 store。
-- `stores/collection.ts`：新增 `consumeCharacterCards(id, n)`。
-- `stores/userStore.ts`：加门面 `breakthroughCharacter(id)`（成功才 saveToServer，仿 claimBondMilestone，别用 withSave 无脑包）。
-- UI：`views/NurtureView.vue` 详情内容区加突破入口 + 星级进度（内聚小块、语义令牌、禁 text-white/禁拼动态色类）。**不动壳**（SC-T6 同轮做壳）。
-
-**依赖**：无（最先做，其 helper 供 SC-T4 复用）。
-**来源**：SPRINT SC-T3 + 第 3 轮追加；scout.md（Iteration 2）A/B 段；负因根 P2-10。
-
-**验收**：突破消费重复卡（保留≥1）、达上限/卡不足拒绝、永久加成真进战力**且 3 处同源**、`breakthrough` 存档往返 + 跨重开保真；engine 测试（cost/bonus/边界 0★5★）+ store action 测试 + migrations v16（缺省/往返/脏档 `not.toHaveProperty`）+ persistence.test.ts 往返断言；`SAVE_VERSION=16`；不破坏 C1 两轴 / S14-A/B 11 项；type-check/test/build 通过。
-
-**相关陷阱**：战力 3 处漏一处 = SA-T6 半做（scout 坑1）；扣卡防扣到 0 张连锁炸编队/塔（坑2/3）；迁移禁 spread（坑4）；SAVE_VERSION 只升一次（坑5）；nurture 装配器天然覆盖别硬改（坑6）；engine 纯净 config 阈值注入或 engine 定常量（坑8）；不动 SC-T6 壳（坑9）；加成克制守 C1（坑10）；必须全链真落地非半截（坑11）。
+> **轮次判定（纠正模板占位符 `第 undefined 轮 / slice=[native code]`）**：以工作树实证为准。**只有 Round 1（SD-T1 + SD-T5）真实落地**（facility 域 v17 + `stores/facility.ts` 齐全）。排期建议里「第 2 轮 SD-T2+SD-T4」**从未落地**（实证见下）。故本轮 = **S14-D 收尾轮，一次补齐全部剩余任务 SD-T2 + SD-T4 + SD-T3**，让 S14-D 整体完成（SD-T1..T5 全 `[x]`）。**严禁只做回归确认而跳过任一任务**（S14-A SA-T6 / S14-B 暴击 UI 教训）。
+>
+> 工作树实证（Round 2 未落地）：
+> - `engine/nurture/rules.ts:35 getRequiredExpForLevel` 仍 `(level-1)²×1000`（曲线未压）。
+> - `components/nurture/EquipPickerModal.vue` 仅静态 `homeText`，无挂机 before→after delta。
+> - `config/nurture.ts` / `stores/nurture.ts` 仅有好感溢出（SC-T4，S14-C 遗产），**无经验溢出**；`TUTORING_EXP_GAIN=500` 仍定额。
+> - `config/equipment.ts EQUIPMENT_CATALOG` homeEffect 仍是「主承载」量级（如 UR expPct 0.16）；`stores/equipment.ts` 无 `dismantle*`。
+>
+> **本轮 SAVE_VERSION 不动（仍 v17，权威在 `infra/persistence/schema.ts:44`）**：三任务均无新存档字段——SD-T2 纯数据、SD-T4 纯计算 + `profile.earn` 溢出、SD-T3 删既有 inventory 元素 + `profile.earn` 得 KP。本 Sprint 唯一一次 bump 已在 Round 1 用掉（v17）。
 
 ---
 
-## 任务 2 · SC-T4 好感等级化（与 SC-T3 共用 v16）
+## 任务（按依赖顺序）
 
-**目标（WHAT/WHY）**：好感里程碑除一次性 KP 外给**永久小加成**、加**每日好感互动**回归钩子、好感溢出转 KP——让好感有永久意义与循环钩子（P2-11/P2-23：好感一次性榨干、无战力/永久意义、无每日钩子）。
+### 任务 A｜SD-T2 装备家园 homeEffect 剥离到设施 + EquipPicker 挂机 delta（依赖 Round 1 已完成的设施乘区）
 
-**关键设计拍板**：
-- 6 档 `BOND_MILESTONES`（config/nurture.ts:55）每档追加克制永久五维加成，**全 6 档累计封顶 ≤ 约 +15% base**（明显小于突破 5 星，守 C1 好感克制）；加成**经与 SC-T3 同一 helper 注入同 3 处战力 seam**（`breakthroughStatBonus` + 好感永久 bonus 合并进同一 `resolveMemberBattleStats`），避免第二套注入路径；永久加成**从已领里程碑集（`claimedBondMilestones`）纯派生**（复用现有领取制，不新增「已领永久加成」字段）。
-- **每日好感互动**：新动作（送礼/对话形式）给固定好感 + 少量经验，**每日一次跨天重置**，复用 `daily` store `todayKey()` 跨天判定范式（扁平字段）。**若需存档字段与 SC-T3 共用 v16**（本轮唯一 bump）；若能用现有 `lastInteraction` 派生跨天判定则零新增字段更优——二选一但**跨天重置必须正确**。
-- **好感溢出转 KP**：领完最高档（`bond_6`/4000）后好感继续涨则**溢出可转少量 KP**（克制汇率，如每 N 点好感 → 1 KP，温和 sink 出口）。
-- 数值克制：永久加成小且封顶，好感主体仍是关系仪表/称号，不做主战力轴。
+- **目标**：把家园挂机加成主承载从「装备 homeEffect」迁到「设施升级（Round 1 设施乘区）」，装备 homeEffect 产出%退成小额佐料；在 `EquipPickerModal` 补挂机 before→after delta 预览让配装口径透明。装备回归以战斗为主、家园为辅，二者不再抢同一杠杆。
+- **依赖**：Round 1 设施乘区（`facilityBonusPct` 独立乘子，已是家园产出主体）——已完成，可直接弱化装备侧。
+- **验收**：
+  - 装备 homeEffect 产出% catalog 数值大幅弱化（决策-11：约 ×0.33，0.01 步进），comfort 全保留。
+  - 家园产出主体由设施驱动、装备选装不再两目标打架。
+  - EquipPickerModal 展示挂机 before→after delta（决策-13，仿战斗五维 delta 范式、三槽求和、语义色）。
+  - `resolveHomeEffect` 唯一口径同源不破（预览==结算）；catalog homeEffect 相关断言测试同步更新全绿；不破坏挂机/装备现有测试。
+  - type-check/test/build 通过。
+- **来源**：SPRINT.md 主清单 SD-T2 + 本轮决策-11/12/13；FUTURE.md S14-D「装备 homeEffect 逐步剥离到设施（P2-13）」；scout.md A 段 SD-T2、C 段坑 3/4。
 
-**依赖**：任务 1（复用其 `resolveMemberBattleStats`/`breakthroughStatBonus` 注入 seam + 若需存档共用 v16 bump）。
-**来源**：SPRINT SC-T4 + 第 3 轮追加；负因根 P2-11 / P2-23。
+### 任务 B｜SD-T4 经验曲线—产出错配修正 + 满级溢出 + 补习递增（纯计算，无依赖）
 
-**验收**：里程碑领取给永久加成且**真进战力（同 3 处 seam）**、每日互动**跨天正确重置**、好感溢出转 KP；engine/store 测试（永久加成派生、跨天 gate、溢出汇率边界）；若触存档**共用 v16 不单独 bump**；不破坏现有里程碑一次性 KP 领取；type-check/test/build 通过。
+- **目标**：压曲线到与产出匹配量级；满级经验给自动溢出出口（转少量 KP）不再沉没；补习产出随等级递增。
+- **依赖**：无（纯计算 / 派生，立即对存量档生效——存量 totalExperience 不变，按新曲线重新派生 level 可能瞬间跳级，属预期，无需迁移）。
+- **验收**：
+  - `getRequiredExpForLevel` = `(level-1)^1.6×900`（决策-14，注释给标定依据）、严格单调递增（守卫测试）。
+  - `rules.test.ts` 全部硬编码断言按新曲线重算 + 递增守卫（决策-15，重标定非降覆盖）。
+  - 满级经验自动转少量 KP：沉没点 `addCharacterExp` 满级分支走 `profile.earn`（决策-16，仿 bondOverflow 范式，用「已满级角色继续吃经验」用例测）。
+  - 补习产出随等级递增 `tutoringExpGain(level)`（决策-17，UI 文案改动态）。
+  - 不破坏等级/加点/突破/好感链；货币只走 `profile.earn/spend`；type-check/test/build 通过。
+- **来源**：SPRINT.md 主清单 SD-T4 + 本轮决策-14/15/16/17；FUTURE.md S14-D「修经验曲线/产出错配（P2-19）」；scout.md A 段 SD-T4、C 段坑 1/2/3、B 段坑 1/2/6。
 
-**相关陷阱**：战力 3 处同源同任务 1（并进同一 helper 而非新第二套）；SAVE_VERSION 只升一次（与 SC-T3 共用 v16）；每日跨天判定复用 daily todayKey 范式勿造新计时器；setTimeout 若用于互动冷却须登记 onUnmounted 清除（pitfalls setTimeout 假安全）；克制守 C1。
+### 任务 C｜SD-T3 重复装备分解出口（分解为 KP，无依赖）
+
+- **目标**：给背包重复/多余装备加分解出口——分解为 KP（走 `profile.earn`），已装备件与保护件不被误分解。为 S14-E 装备强化留经济位（本轮只做 KP 回收，不做材料/合成）。
+- **依赖**：无（equipment 域 v14 已存，inventory 是既有数组，删元素 + earn KP 无需新字段）。
+- **验收**：
+  - `dismantleItem(uid)`：移除背包实例 + 按稀有度得 KP（`dismantleValueForRarity` 纯函数，明显低于兑换价 `EQUIPMENT_PRICES`，决策-18）。
+  - 已装备件不可分解（`findEquippedBy` 守卫 + UI 禁用，双保险，决策-19）。
+  - 门面走 `userStore.dismantleEquipment(uid)` + saveToServer（决策-19）；组件禁直改 inventory/货币。
+  - engine/store/config 分层不破（决策-20，分解纯计算放 config，副作用在 store）。
+  - engine/store 分解测试（已装备拒绝、稀有度产出、count 保护）；type-check/test/build 通过。
+- **来源**：SPRINT.md 主清单 SD-T3 + 本轮决策-18/19/20；FUTURE.md S14-D「重复装备加回收/分解出口（P2-21）」；审计报告 P2-21；参照 codex `collection.dismantleCard` 范式。
 
 ---
 
-## 任务 3（末做，纯 UI）· SC-T6 NurtureView 拆无壳可内嵌组件
+## 采纳的 Reviewer / Scout 改进项（钉进 HOW 边界）
 
-**目标（WHAT/WHY）**：消除 hub characters 面板内嵌整页 NurtureView 的**双标题/双空态/长滚**（P2-18）。
+- **SD-T2 走「弱化」而非「彻底归零」**（scout A 路径 1）：更平滑、观感自然（毕业角色仍有微弱家园收益），不砸档、不动签名。
+- **SD-T2 只改 catalog 数据、禁第二口径**（scout 坑 4）：`resolveHomeEffect` 单一求和口 + 两调用点同源，Round 1 焊死的口径命脉不许破。
+- **SD-T2 comfort 留装备**（scout C 段坑 4）：comfort 是独立软加成轴（Round 1 已接真加成），剥离的是产出%不是 comfort。
+- **SD-T4 主走「压曲线」而非「提产出」**（scout C 段坑 1）：改一处 engine 曲线 vs 改多处产出常量，前者更内聚、副作用可控。`rewards.ts` 有两处 characterExp 常量（`:71 characterExpEach` / `:99 characterExp`），提产出会踩口径混淆，故不走提产出。
+- **SD-T4 溢出自动转、沉没点在 `addCharacterExp`**（scout 坑 2 / A 段建议自动）：避免「攒了不领」死数值；出口必须加在 `addCharacterExp` 满级分支（挂机/塔仍照灌），非已拒收的 `tutorCharacter`。
+- **SD-T3 只做 KP 回收、不做材料/合成、不升档**（YAGNI，S14-E 才做强化）：本 Sprint 唯一 bump 已用掉，本轮不预留任何字段。
+- **SD-T3 已装备件保护 + 门面 saveToServer**（对齐 codex `dismantleCard` count>1 保护范式 + 既有装备门面）。
 
-**关键设计拍板**：
-- 去 NurtureView 页级壳：`min-h-screen`(:216) / 页级 `<h1>角色养成`(:220) / 独立未登录空态(:225) / 独立无角色空态(:234) 中与 hub 重复的份，使成无壳可内嵌组件；hub characters 面板只保留**一套**标题/空态。
-- **纯 UI 重构，绝不改养成逻辑/store/engine/存档**——只动模板与壳级样式；任务 1 的突破 UI 块随之平移进无壳组件（内聚）。
-- `/nurture`、`/squad-battle` 兼容重定向必须仍可用（→ `/homestead?tab=characters` / `?tab=explore`），不删到 404。
+## 相关陷阱（pitfalls.md + scout C 段）
 
-**依赖**：任务 1（突破 UI 块随壳拆平移；末做避免与任务 1/2 的 diff 交叉）。
-**来源**：SPRINT SC-T6 + 第 3 轮追加；负因根 P2-18。
+1. **曲线是「牵一发」**：`rules.test.ts` 5+ 处硬编码曲线值（1000/4000/81000/9801000 + getLevelFromExp 边界 + getLevelProgress 绝对值）全要按新公式重算，不是删。`getLevelFromExp` 靠 `while` 反推 → 新曲线必须严格单调递增（加守卫测试）。
+2. **满级沉没点是 `addCharacterExp`（nurture.ts:117）不是 tutorCharacter**：tutorCharacter 满级已拒（L168），但挂机/塔仍照灌 `addCharacterExp`——溢出出口加在此分支。
+3. **压曲线 = 存量档瞬间跳级**：level 是 `f(totalExperience)` 派生，上线即批量跳级+加点，属预期，注释说明，**不需要 migration**（别误以为要写迁移）。
+4. **SD-T2 装备 homeEffect 消费已同源**：`resolveHomeEffect` 唯一口 + 两调用点，弱化只改 catalog 数据，别在单个消费点打折（否则破 Round 1 口径命脉）。
+5. **EquipPicker 挂机 delta 别用 catalog 静态值冒充「该角色 delta」**：必须算三槽求和差值（仿 `previewEquipBonus`），不是单件文案。
+6. **补习改函数要传 level**：`tutorCharacter` 先取 `nurtureData.level` 再调 `tutoringExpGain(level)`；UI 静态「+500 经验」文案改动态。
+7. **货币只走 profile.spend/earn**：SD-T4 溢出转 KP / SD-T3 分解得 KP = `profile.earn('knowledgePoints')`；补习扣费 `profile.spend`。别直改 core.knowledgePoints。
+8. **engine 纯净**：曲线改动纯计算留 engine；补习递增/溢出汇率/分解产出（含查表/常量）放 config 纯函数，engine 只收 number。
+9. **颜色令牌**：EquipPicker 新增 delta 行用 `text-success`/`text-danger`/`text-ink-3`（复用 `deltaClass`），禁 text-white 压浅底、禁拼接动态色类、禁反斜杠透明度（`bg-accent\15` 静默失效）。
+10. **别开新范围但别跳任务**：本轮必须真落地 SD-T2 + SD-T4 + SD-T3 三个，全部在验收里可勾，不得只做回归确认。
+11. **SD-T2 弱化后某件 homeEffect 若被削到全 0**：`formatHomeEffect` 对空 effect 返回空串（`v-if="c.homeText"` 已守）——弱化保留数值故一般不空，但要确认边界不崩。
+12. **grep catalog homeEffect 断言测试**：弱化前先 `grep -rn "expPct\|homeEffect\|resolveHomeEffect" src/**/*.test.ts` 全量核对同步更新。
 
-**验收**：hub characters 面板**无双标题/双空态、无多余长滚**；`/nurture` 重定向仍工作；养成/突破/好感所有交互不回归（选角/加点/补习/里程碑/突破/每日互动均可用）；type-check/test/build 通过。
-
-**相关陷阱**：只改消费端读源/壳，不删存档字段（pitfalls：存档字段勿删）；重定向不删到 404；养成域 store 逻辑零改动（纯 UI）。
-
----
-
-## 验收命令（Evaluator 必须亲自重跑，记录实际输出，别信自报）
+## 验收命令（Evaluator 必须亲自重跑，记录实际输出）
 
 ```bash
 # 1. 前端类型检查（期望 0 错误）
 cd frontend-vue && npm run type-check
-# 2. 前端测试（期望全绿，含本轮新增 nurture/breakthrough/migrations v16/persistence 往返测试；总数应 ≥ 687）
+# 2. 前端测试（期望全绿，含本轮更新的 rules/nurture/equipment/EquipPicker 测试）
 cd frontend-vue && npm run test
 # 3. 前端生产构建（期望成功）
 cd frontend-vue && npm run build
-# 4. 后端安全基线（S14-C 不碰后端，期望退出码 0、全 PASS）—— 用仓库 .venv
-.venv/Scripts/python.exe backend/test_security.py
+# 4. 后端安全基线（S14-D 不碰后端，期望退出码 0、全 PASS）—— 用仓库 .venv：.venv/Scripts/python.exe backend/test_security.py
+python backend/test_security.py
 # 5. debug 关闭核验（期望零命中）
 grep -rn "debug=True" backend/server.py api/index.py
 ```
 
-**通过标准**：命令 1/2/3/4 成功（4 退出码 0、全 PASS），命令 5 零命中；`SAVE_VERSION=16`（一次 bump）；本轮 SC-T3 + SC-T4 + SC-T6 全 `[x]` 且与实现一致。**S14-C 整体完成 = SC-T1..T6 全 `[x]`**。
-> 注：别跑 `npm run lint --fix`（全仓重排）；单文件 `npx eslint <path>`。
+**通过标准**：命令 1/2/3/4 成功（4 退出码 0、全 PASS），命令 5 零命中，且 **SD-T2/SD-T3/SD-T4 主清单全 `[x]`（至此 SD-T1..T5 全 `[x]` = S14-D 整体完成）**、FUTURE.md S14-D 三条同步勾、SAVE_VERSION 保持 v17。

@@ -4,7 +4,7 @@
  */
 import { describe, it, expect } from 'vitest';
 import { migrate } from './migrations';
-import { SAVE_VERSION, createDefaultDaily, createDefaultEquipment, createDefaultHomestead, createDefaultMiniGames, createDefaultPresetSquads, createDefaultTowerProgress } from './schema';
+import { SAVE_VERSION, createDefaultDaily, createDefaultEquipment, createDefaultFacility, createDefaultHomestead, createDefaultMiniGames, createDefaultPresetSquads, createDefaultTowerProgress } from './schema';
 
 /** 模拟 S5 之前服务器上的真实 v1 存档形态。 */
 function buildV1Payload() {
@@ -143,6 +143,11 @@ describe('v1 → v2 迁移', () => {
 
   it('v14 新键：equipment 缺失补默认（空背包 + 空配装）', () => {
     expect(v2.equipment).toEqual(createDefaultEquipment());
+  });
+
+  it('v17 新键：facility 缺失补默认（全 Lv.1 = +0% 乘区）', () => {
+    expect(v2.facility).toEqual(createDefaultFacility());
+    expect(v2.facility).toEqual({ exp: 1, bond: 1, knowledge: 1 });
   });
 });
 
@@ -432,6 +437,32 @@ describe('v13 homestead 迁移', () => {
     } as unknown);
     // 去重后 [5,1,2,3,4,6,7,8] 截断到前 6 个
     expect(out.homestead.placedCharacterIds).toEqual([5, 1, 2, 3, 4, 6]);
+  });
+});
+
+describe('v17 facility 迁移（SD-T1/SD-T5）', () => {
+  it('v16 旧档（无 facility 键）→ 全 Lv.1 缺省（决策-3：禁止 Lv.0 归零挂机）', () => {
+    const out = migrate({ version: 16 } as unknown);
+    expect(out.facility).toEqual(createDefaultFacility());
+    expect(out.facility).toEqual({ exp: 1, bond: 1, knowledge: 1 });
+  });
+
+  it('已存设施等级往返保真', () => {
+    const out = migrate({ version: 17, facility: { exp: 5, bond: 3, knowledge: 8 } } as unknown);
+    expect(out.facility).toEqual({ exp: 5, bond: 3, knowledge: 8 });
+  });
+
+  it('脏档 clamp：非数字/缺字段补 Lv.1、超上限钳到 99、低于下限抬到 1', () => {
+    const out = migrate({
+      version: 17,
+      facility: { exp: 'oops', bond: 9999, knowledge: 0 },
+    } as unknown);
+    expect(out.facility).toEqual({ exp: 1, bond: 99, knowledge: 1 });
+  });
+
+  it('facility 非对象 → 全 Lv.1 缺省', () => {
+    const out = migrate({ version: 17, facility: 'bad' } as unknown);
+    expect(out.facility).toEqual(createDefaultFacility());
   });
 });
 

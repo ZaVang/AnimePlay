@@ -27,28 +27,34 @@ import type { StatPoints } from '@/types/nurture';
 
 const sum = (s: StatPoints) => s.hp + s.atk + s.def + s.sp + s.spd;
 
-describe('等级曲线 (level-1)² × 1000', () => {
-  it('关键节点', () => {
+describe('等级曲线 round((level-1)^1.6 × 900)（SD-T4 重标定）', () => {
+  it('关键节点（按新曲线重算）', () => {
     expect(getRequiredExpForLevel(1)).toBe(0);
-    expect(getRequiredExpForLevel(2)).toBe(1000);
-    expect(getRequiredExpForLevel(3)).toBe(4000);
-    expect(getRequiredExpForLevel(10)).toBe(81000);
-    expect(getRequiredExpForLevel(100)).toBe(9801000);
+    expect(getRequiredExpForLevel(2)).toBe(900);
+    expect(getRequiredExpForLevel(3)).toBe(2728);
+    expect(getRequiredExpForLevel(10)).toBe(30271);
+    expect(getRequiredExpForLevel(100)).toBe(1403650); // 满级 ~140 万（旧 980 万的 ~1/7）
+  });
+
+  it('曲线严格单调递增（getLevelFromExp while 反推不死循环/错级的守卫）', () => {
+    for (let level = 2; level < 200; level++) {
+      expect(getRequiredExpForLevel(level + 1)).toBeGreaterThan(getRequiredExpForLevel(level));
+    }
   });
 
   it('getLevelFromExp 边界：恰到阈值即升级', () => {
     expect(getLevelFromExp(0)).toBe(1);
-    expect(getLevelFromExp(999)).toBe(1);
-    expect(getLevelFromExp(1000)).toBe(2);
-    expect(getLevelFromExp(4000)).toBe(3);
-    expect(getLevelFromExp(80999)).toBe(9);
-    expect(getLevelFromExp(81000)).toBe(10);
+    expect(getLevelFromExp(899)).toBe(1); // < f(2)=900
+    expect(getLevelFromExp(900)).toBe(2);
+    expect(getLevelFromExp(2728)).toBe(3);
+    expect(getLevelFromExp(30270)).toBe(9); // < f(10)=30271
+    expect(getLevelFromExp(30271)).toBe(10);
   });
 
   it('getLevelProgress：等级内经验与百分比', () => {
-    // Lv2 起点 1000，Lv3 起点 4000 → 区间 3000
-    expect(getLevelProgress(2, 2500)).toEqual({ current: 1500, required: 3000, percentage: 50 });
-    expect(getLevelProgress(1, 0)).toEqual({ current: 0, required: 1000, percentage: 0 });
+    // Lv2 起点 900，Lv3 起点 2728 → 区间 1828；中点 900+914=1814 → 50%
+    expect(getLevelProgress(2, 1814)).toEqual({ current: 914, required: 1828, percentage: 50 });
+    expect(getLevelProgress(1, 0)).toEqual({ current: 0, required: 900, percentage: 0 });
   });
 
   it('满级常量与每级加点常量', () => {
