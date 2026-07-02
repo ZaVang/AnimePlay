@@ -10,6 +10,7 @@
  */
 import type { Rarity } from '@/types/card';
 import type { EquipmentHomeEffect } from './equipment';
+import { computeBondBonus, type BondHit } from '@/engine';
 
 /** 入住槽位上限（>小队的 4，可放下主力阵容）。只有入住角色挂机成长。 */
 export const HOMESTEAD_SLOTS = 6;
@@ -95,6 +96,90 @@ export function comfortBonusPct(comfort: number): number {
   return Math.min(COMFORT_BONUS_CAP, Math.floor(c / 10) * COMFORT_BONUS_PER_10);
 }
 
+// ── 家具 / 布局（S15-T2，存档 v20）：KP → 家具 → 小额 comfort + 看得见的所有权 ──
+// 设计意图（守顶部「回归补充、不盖过主动收入」基线）：
+//  - 家具是继设施之后的**第二条 KP sink**——设施是无底指数 sink（数值更快），家具是有限 buy-out
+//    sink（广度：一次性买断 + 看得见的所有权），两者互补。
+//  - 加成口径 = **只贡献 comfort**，复用既有 comfort 软加成轴（comfortBonusPct，每 10 点 +1% 封顶 +20%）：
+//    摆放的家具 comfort 合计并入传给 computeIdleYield 的 effect.comfort（与装备 comfort 相加），
+//    **零新增口径、零新乘子、不改 computeIdleYield 签名**（拍板-A）。语义：摆家具→基地更舒适→全产出小幅提升。
+//  - 家具与装备共用同一 comfort→+20% 硬顶**是有意的**（守挂机基线，别给家具单开突破口径）。
+
+/** 静态家具定义（目录项，纯数据，名梗风，仿 EQUIPMENT_CATALOG）。 */
+export interface FurnitureDef {
+  /** 目录内唯一 id（存档以此持久化「已拥有 / 已摆放」）。 */
+  id: string;
+  /** 展示名（名梗风）。 */
+  name: string;
+  /** 摆放后贡献的舒适度分（与装备 comfort 同轴，经 comfortBonusPct 消费）。 */
+  comfort: number;
+  /** 知识点兑换价（走 profile.spend；一次性买断）。 */
+  cost: number;
+}
+
+/**
+ * 家具目录（仿 EQUIPMENT_CATALOG 纯数据）。名梗风、comfort/cost 阶梯递增。
+ * comfort 预算温和：全套齐摆约 60 点（floor(60/10)×1% = +6% 全产出），远不足以单独触 +20% 硬顶——
+ * 与装备 comfort 相加共用同一软加成轴才是设计意图（守挂机基线）。cost 从入门到高端拉开梯度（承接 KP sink）。
+ */
+export const FURNITURE_CATALOG: readonly FurnitureDef[] = [
+  { id: 'fn_beanbag', name: '瘫痪懒人沙发', comfort: 3, cost: 300 },
+  { id: 'fn_kotatsu', name: '续命暖桌', comfort: 5, cost: 600 },
+  { id: 'fn_bookshelf', name: '设定集书墙', comfort: 6, cost: 1000 },
+  { id: 'fn_figure_shelf', name: '手办展示柜', comfort: 8, cost: 1800 },
+  { id: 'fn_arcade', name: '街机一号机', comfort: 10, cost: 3000 },
+  { id: 'fn_hotspring', name: '温泉泡澡桶', comfort: 12, cost: 5000 },
+  { id: 'fn_shrine', name: '祈愿绘马神社', comfort: 16, cost: 9000 },
+];
+
+/** 已摆放家具数量上限（防脏档摆放清单无限膨胀放大 comfort）。=目录条数（首版全摆即封顶）。 */
+export const FURNITURE_PLACED_MAX = FURNITURE_CATALOG.length;
+
+/** defId → 定义的查表（懒建，供 store/UI/纯函数共用）。 */
+const FURNITURE_BY_ID: ReadonlyMap<string, FurnitureDef> = new Map(FURNITURE_CATALOG.map(d => [d.id, d]));
+
+/** 取某家具定义（未知 id → undefined）。 */
+export function getFurnitureDef(id: string): FurnitureDef | undefined {
+  return FURNITURE_BY_ID.get(id);
+}
+
+/**
+ * 规整家具 id 清单（拥有 / 摆放共用）：只收目录内已知的字符串 id、去重、截断到 FURNITURE_PLACED_MAX。
+ * 存档边界（迁移 + 反序列化）与运行期共用——杜绝脏档/篡改用未知 id 或重复项放大 comfort
+ * （与 canonicalizePlacedIds 同型）。未知 id 直接丢弃（不进目录不给 comfort）。
+ */
+export function canonicalizeFurnitureIds(raw: unknown): string[] {
+  if (!Array.isArray(raw)) return [];
+  const seen = new Set<string>();
+  const out: string[] = [];
+  for (const x of raw) {
+    if (typeof x === 'string' && FURNITURE_BY_ID.has(x) && !seen.has(x)) {
+      seen.add(x);
+      out.push(x);
+      if (out.length >= FURNITURE_PLACED_MAX) break;
+    }
+  }
+  return out;
+}
+
+/**
+ * 纯函数：摆放家具 id 清单 → comfort 合计（查目录求和；未知 id 计 0）。
+ * **这是「家具加成经既有口径汇入」的关键**——settle/UI 把此合计加进 effect.comfort，
+ * computeIdleYield 内部 comfortBonusPct 天然消费，无须改签名（拍板-A）。
+ */
+export function sumFurnitureComfort(
+  placedFurnitureIds: readonly string[],
+  catalog: readonly FurnitureDef[] = FURNITURE_CATALOG,
+): number {
+  const byId = catalog === FURNITURE_CATALOG ? FURNITURE_BY_ID : new Map(catalog.map(d => [d.id, d]));
+  let total = 0;
+  for (const id of placedFurnitureIds) {
+    const def = byId.get(id);
+    if (def) total += Math.max(0, def.comfort);
+  }
+  return total;
+}
+
 /** 有效离线封顶小时数：基线 12h + 三设施总级数×0.5h（决策-7）。 */
 export function offlineCapHours(levels?: FacilityLevels): number {
   if (!levels) return OFFLINE_CAP_HOURS;
@@ -171,35 +256,52 @@ export interface IdleYield {
   characterCount: number;
   /** 入住角色已装备道具贡献的家园舒适度。 */
   comfort: number;
+  /** ★ S15-T3 入住羁绊命中清单（供 UI 显形；无命中为空数组）。 */
+  bondHits: BondHit[];
+  /** ★ S15-T3 羁绊队伍级加成倍率增量（已封顶，全产出通乘 1+bondBonusPct）。 */
+  bondBonusPct: number;
 }
 
 /**
  * 纯计算：给定入住角色的稀有度列表 + 离线毫秒数 → 挂机收益（不落地）。
  * 经验/好感对每个角色是同一 flat 速率；知识点按各自稀有度系数加权求和。
  * 便于特征测试，且将来若上权威服务端可复用同一口径。
+ *
+ * ★ S15-T3 入住羁绊：`placedAnimeNames`（逐入住角色 anime_names，可缺可空）派生出**队伍级独立乘子**
+ * `1+bondBonusPct`，与 comfort/设施同层通乘全产出（经既有口径汇入，settle 严禁另拼）。
+ * 派生源缺失/0-1 入住 → 不命中不加成、不抛错（容忍）；命中给固定档、整体硬上限（不组合爆炸）。
+ * 不破 `...Each` 单值接口；`bondHits` 仅供 UI 显形（预览=结算同源）。
  */
 export function computeIdleYield(
   placedRarities: readonly Rarity[],
   elapsedMs: number,
   effect: EquipmentHomeEffect = {},
   facilityLevels?: FacilityLevels,
+  placedAnimeNames?: ReadonlyArray<readonly string[] | undefined | null>,
 ): IdleYield {
+  // 羁绊派生（纯函数、免存档、容忍缺失）：即便未挂机也算命中清单供 UI 显形。
+  const bond = computeBondBonus(placedAnimeNames ?? []);
   // 封顶随设施总级数抬升（决策-7）；口径同源命脉：UI 与结算都喂同一 facilityLevels。
   const hours = cappedIdleHours(elapsedMs, facilityLevels);
   const count = placedRarities.length;
   const comfort = Math.max(0, Math.floor(effect.comfort ?? 0));
   if (hours <= 0 || count === 0) {
-    return { hours: 0, expEach: 0, affectionEach: 0, knowledge: 0, characterCount: count, comfort };
+    return {
+      hours: 0, expEach: 0, affectionEach: 0, knowledge: 0, characterCount: count, comfort,
+      bondHits: bond.hits, bondBonusPct: bond.bonusPct,
+    };
   }
   // comfort 软加成（每 10 点 +1%，封顶 +20%）：全产出通乘（决策-6）。
   const comfortMult = 1 + comfortBonusPct(comfort);
+  // 羁绊乘子：队伍级独立乘子，全产出通乘（已在 engine 侧硬上限，守「挂机不盖过主动收入」基线）。
+  const bondMult = 1 + bond.bonusPct;
   // 设施乘区：独立乘子，不受装备 0.6 cap 钳制（决策-5）。Lv.1=×1。
   const facExp = 1 + (facilityLevels ? facilityBonusPct(facilityLevels.exp) : 0);
   const facBond = 1 + (facilityLevels ? facilityBonusPct(facilityLevels.bond) : 0);
   const facKp = 1 + (facilityLevels ? facilityBonusPct(facilityLevels.knowledge) : 0);
-  const expMult = (1 + softCap(effect.expPct, HOMESTEAD_EFFECT_CAP.expPct)) * facExp * comfortMult;
-  const affectionMult = (1 + softCap(effect.affectionPct, HOMESTEAD_EFFECT_CAP.affectionPct)) * facBond * comfortMult;
-  const knowledgeMult = (1 + softCap(effect.knowledgePct, HOMESTEAD_EFFECT_CAP.knowledgePct)) * facKp * comfortMult;
+  const expMult = (1 + softCap(effect.expPct, HOMESTEAD_EFFECT_CAP.expPct)) * facExp * comfortMult * bondMult;
+  const affectionMult = (1 + softCap(effect.affectionPct, HOMESTEAD_EFFECT_CAP.affectionPct)) * facBond * comfortMult * bondMult;
+  const knowledgeMult = (1 + softCap(effect.knowledgePct, HOMESTEAD_EFFECT_CAP.knowledgePct)) * facKp * comfortMult * bondMult;
   const expEach = Math.floor(IDLE_EXP_PER_HOUR * hours * expMult);
   const affectionEach = Math.floor(IDLE_AFFECTION_PER_HOUR * hours * affectionMult);
   const baseKnowledge = placedRarities.reduce(
@@ -207,5 +309,8 @@ export function computeIdleYield(
     0,
   );
   const knowledge = Math.floor(baseKnowledge * knowledgeMult);
-  return { hours, expEach, affectionEach, knowledge, characterCount: count, comfort };
+  return {
+    hours, expEach, affectionEach, knowledge, characterCount: count, comfort,
+    bondHits: bond.hits, bondBonusPct: bond.bonusPct,
+  };
 }

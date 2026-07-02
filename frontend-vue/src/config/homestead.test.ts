@@ -18,6 +18,11 @@ import {
   softCap,
   FACILITY_MIN_LEVEL,
   FACILITY_MAX_LEVEL,
+  sumFurnitureComfort,
+  canonicalizeFurnitureIds,
+  getFurnitureDef,
+  FURNITURE_CATALOG,
+  FURNITURE_PLACED_MAX,
 } from './homestead';
 
 const H = 3600_000;
@@ -39,12 +44,14 @@ describe('computeIdleYield', () => {
   it('空入住 → 全零', () => {
     expect(computeIdleYield([], 5 * H)).toEqual({
       hours: 0, expEach: 0, affectionEach: 0, knowledge: 0, characterCount: 0, comfort: 0,
+      bondHits: [], bondBonusPct: 0,
     });
   });
 
   it('0 时长 → 全零（但保留 characterCount）', () => {
     expect(computeIdleYield(['UR', 'SR'], 0)).toEqual({
       hours: 0, expEach: 0, affectionEach: 0, knowledge: 0, characterCount: 2, comfort: 0,
+      bondHits: [], bondBonusPct: 0,
     });
   });
 
@@ -55,6 +62,31 @@ describe('computeIdleYield', () => {
     expect(y.affectionEach).toBe(IDLE_AFFECTION_PER_HOUR * 2); // 10
     expect(y.knowledge).toBe(16); // base2 ×(UR3 + SR1) ×2h
     expect(y.characterCount).toBe(2);
+  });
+
+  it('★ S15-T3 入住羁绊乘子经口径汇入：同作品 ≥2 人 → 全产出 > 无羁绊（预览=结算同源）', () => {
+    const rarities: Array<'SR'> = ['SR', 'SR'];
+    const base = computeIdleYield(rarities, 12 * H);
+    const bonded = computeIdleYield(rarities, 12 * H, {}, undefined, [['同作品'], ['同作品']]);
+    expect(base.bondHits).toHaveLength(0);
+    expect(base.bondBonusPct).toBe(0);
+    expect(bonded.bondHits).toHaveLength(1);
+    expect(bonded.bondBonusPct).toBeGreaterThan(0);
+    // 加成通乘全产出 → 满封顶 12h 时三轴皆肉眼可辨地更高。
+    expect(bonded.expEach).toBeGreaterThan(base.expEach);
+    expect(bonded.affectionEach).toBeGreaterThan(base.affectionEach);
+    expect(bonded.knowledge).toBeGreaterThan(base.knowledge);
+  });
+
+  it('★ S15-T3 羁绊派生源缺失/不同作品：不命中、口径不变', () => {
+    const rarities: Array<'SR'> = ['SR', 'SR'];
+    const plain = computeIdleYield(rarities, 2 * H);
+    const noBond = computeIdleYield(rarities, 2 * H, {}, undefined, [['A'], ['B']]);
+    const missing = computeIdleYield(rarities, 2 * H, {}, undefined, [undefined, undefined]);
+    expect(noBond.bondBonusPct).toBe(0);
+    expect(missing.bondBonusPct).toBe(0);
+    expect(noBond.expEach).toBe(plain.expEach);
+    expect(missing.expEach).toBe(plain.expEach);
   });
 
   it('超 12h 封顶：24h 当 12h 算', () => {
@@ -97,6 +129,58 @@ describe('computeIdleYield', () => {
     expect(y.affectionEach).toBe(Math.floor(IDLE_AFFECTION_PER_HOUR * (1 + softCap(9, HOMESTEAD_EFFECT_CAP.affectionPct)) * cm));
     expect(y.knowledge).toBe(Math.floor(6 * (1 + softCap(9, HOMESTEAD_EFFECT_CAP.knowledgePct)) * cm));
     expect(y.comfort).toBe(99);
+  });
+});
+
+describe('★ S15-T2 家具目录 / comfort 汇入（家具只贡献 comfort，经既有软加成轴）', () => {
+  const idA = FURNITURE_CATALOG[0].id;
+  const idB = FURNITURE_CATALOG[1].id;
+
+  it('目录非空、id 唯一、comfort/cost 均为正数', () => {
+    expect(FURNITURE_CATALOG.length).toBeGreaterThan(0);
+    const ids = new Set(FURNITURE_CATALOG.map(d => d.id));
+    expect(ids.size).toBe(FURNITURE_CATALOG.length);
+    for (const d of FURNITURE_CATALOG) {
+      expect(d.comfort).toBeGreaterThan(0);
+      expect(d.cost).toBeGreaterThan(0);
+    }
+  });
+
+  it('getFurnitureDef：已知 id 命中、未知 id → undefined', () => {
+    expect(getFurnitureDef(idA)?.id).toBe(idA);
+    expect(getFurnitureDef('fn_nope')).toBeUndefined();
+  });
+
+  it('sumFurnitureComfort：查目录求和，未知 id 计 0', () => {
+    const expected = getFurnitureDef(idA)!.comfort + getFurnitureDef(idB)!.comfort;
+    expect(sumFurnitureComfort([idA, idB])).toBe(expected);
+    expect(sumFurnitureComfort([idA, 'fn_nope'])).toBe(getFurnitureDef(idA)!.comfort);
+    expect(sumFurnitureComfort([])).toBe(0);
+  });
+
+  it('canonicalizeFurnitureIds：只收目录内已知 id、去重、截断到摆放上限', () => {
+    expect(canonicalizeFurnitureIds([idA, idA, 'fn_nope', 42, null, idB])).toEqual([idA, idB]);
+    expect(canonicalizeFurnitureIds('bad' as unknown)).toEqual([]);
+    // 全目录 + 一堆脏项 → 截断到 FURNITURE_PLACED_MAX（= 目录条数）
+    const many = [...FURNITURE_CATALOG.map(d => d.id), 'fn_nope', 'fn_nope2'];
+    expect(canonicalizeFurnitureIds(many).length).toBe(FURNITURE_PLACED_MAX);
+  });
+
+  it('★ 家具 comfort 经既有 comfort 软加成轴汇入 → 全产出更高（满 12h 使 floor 后可辨）', () => {
+    const rarities: Array<'SR'> = ['SR', 'SR'];
+    // 用足够高的家具 comfort 合计（≥10 才越过 comfortBonusPct 的 10 点粒度门槛），满 12h 封顶使 floor 后差异肉眼可辨。
+    const furnitureComfort = sumFurnitureComfort(FURNITURE_CATALOG.map(d => d.id));
+    expect(furnitureComfort).toBeGreaterThanOrEqual(10);
+    const base = computeIdleYield(rarities, 12 * H);
+    // 家具 comfort 并入 effect.comfort（与 settle/UI 同源口径）。
+    const withFurniture = computeIdleYield(rarities, 12 * H, { comfort: furnitureComfort });
+    expect(withFurniture.comfort).toBe(furnitureComfort);
+    expect(withFurniture.expEach).toBeGreaterThan(base.expEach);
+    expect(withFurniture.affectionEach).toBeGreaterThan(base.affectionEach);
+    expect(withFurniture.knowledge).toBeGreaterThan(base.knowledge);
+    // 与装备 comfort 相加共用同一 comfortBonusPct（+20% 硬顶，有意）：家具+装备 comfort 相加口径。
+    const combined = computeIdleYield(rarities, 12 * H, { comfort: furnitureComfort + 30 });
+    expect(combined.expEach).toBeGreaterThanOrEqual(withFurniture.expEach);
   });
 });
 

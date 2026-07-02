@@ -11,6 +11,7 @@ import {
   createDefaultDaily,
   createDefaultEquipment,
   createDefaultFacility,
+  createDefaultFurniture,
   createDefaultHomestead,
   createDefaultMiniGames,
   createDefaultPresetSquads,
@@ -18,6 +19,7 @@ import {
   type DailySave,
   type EquipmentSave,
   type FacilitySave,
+  type FurnitureSave,
   type HomesteadSave,
   type MiniGamesSave,
   type SavePayload,
@@ -27,8 +29,8 @@ import type { CharacterNurtureData } from '@/types/nurture';
 import type { PresetSquad } from '@/types/player';
 import { createPityState } from '@/engine/gacha/draw';
 import { MAX_BREAKTHROUGH } from '@/engine/nurture/rules';
-import { canonicalizePlacedIds, clampFacilityLevel } from '@/config/homestead';
-import { sanitizeEquipped, clampEnhance } from '@/config/equipment';
+import { canonicalizePlacedIds, clampFacilityLevel, canonicalizeFurnitureIds } from '@/config/homestead';
+import { sanitizeEquipped, clampEnhance, clampSlotPity } from '@/config/equipment';
 import { canonicalizeSquadMembers } from './schema';
 
 /* eslint-disable @typescript-eslint/no-explicit-any -- 迁移层的输入天然是未知形态 JSON */
@@ -72,6 +74,8 @@ function migratePity(raw: any) {
 function migrateTowerProgress(raw: any) {
   const defaults = createDefaultTowerProgress();
   if (!raw || typeof raw !== 'object') return defaults;
+  // v19 → v20：槽位保底计数（旧档无此字段 → 补全零；脏档巨值 clamp 到 [0, 阈值]）。白名单重建，禁 spread。
+  const rawPity = raw.slotPity && typeof raw.slotPity === 'object' ? raw.slotPity : {};
   return {
     currentFloor: raw.currentFloor ?? defaults.currentFloor,
     maxFloor: raw.maxFloor ?? defaults.maxFloor,
@@ -81,6 +85,11 @@ function migrateTowerProgress(raw: any) {
     // v14 → v15：扫荡周额度（旧档无此二字段 → 缺省 ''/0）。类型守卫防脏档。
     sweepWeekKey: typeof raw.sweepWeekKey === 'string' ? raw.sweepWeekKey : defaults.sweepWeekKey,
     sweepUsedThisWeek: typeof raw.sweepUsedThisWeek === 'number' ? raw.sweepUsedThisWeek : defaults.sweepUsedThisWeek,
+    slotPity: {
+      weapon: clampSlotPity(rawPity.weapon),
+      armor: clampSlotPity(rawPity.armor),
+      supporter: clampSlotPity(rawPity.supporter),
+    },
   };
 }
 
@@ -179,6 +188,22 @@ function migrateFacility(raw: any): FacilitySave {
     bond: clampFacilityLevel(raw.bond),
     knowledge: clampFacilityLevel(raw.knowledge),
   };
+}
+
+/**
+ * v20（S15-T2）：家具域。旧档无此键 → 空家具（createDefaultFurniture）。
+ * 白名单重建（禁 spread 浅拷贝，pitfalls S13-C1）：
+ *  - ownedIds / placedIds 各经 canonicalizeFurnitureIds（只收目录内已知 id、去重、截断——脏档未知 id/重复直接丢弃，
+ *    防放大 comfort）；
+ *  - placedIds 再收敛为 ownedIds 的子集（未拥有的摆放项丢弃，杜绝「没买却摆着吃 comfort」的脏档/篡改）。
+ */
+function migrateFurniture(raw: any): FurnitureSave {
+  const defaults = createDefaultFurniture();
+  if (!raw || typeof raw !== 'object') return defaults;
+  const ownedIds = canonicalizeFurnitureIds(raw.ownedIds);
+  const ownedSet = new Set(ownedIds);
+  const placedIds = canonicalizeFurnitureIds(raw.placedIds).filter(id => ownedSet.has(id));
+  return { ownedIds, placedIds };
 }
 
 /**
@@ -313,5 +338,7 @@ export function migrate(raw: unknown): SavePayload {
     equipment: migrateEquipment(payload.equipment),
     // v16 → v17：设施域（旧档无此键 → 全 Lv.1 缺省；脏档 clamp 到 [1, MAX]）
     facility: migrateFacility(payload.facility),
+    // v19 → v20：家具域（旧档无此键 → 空家具；脏档未知 id/重复丢弃、placedIds 收敛为 ownedIds 子集）
+    furniture: migrateFurniture(payload.furniture),
   };
 }

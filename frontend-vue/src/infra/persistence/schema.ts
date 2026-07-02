@@ -32,7 +32,14 @@
  *   经既有 resolveEquipBonus 单一 seam 进战力）。旧档实例补 enhance:0、clamp [0,MAX_ENHANCE]（脏档防放大）。
  * v19（S14-F SF-T8）：daily 扩字段——commissionDate/commissionProgress/commissionClaimed（家园日常委托，
  *   与 daily task 平行的 commission 子域，复用 todayKey 跨天读时归零）。commissionClaimed 兼存全清 bonus 特殊 key
- *   （COMMISSION_BONUS_KEY，不单开第 4 字段）。旧档迁移补缺省（''/{}/[]）。本 Sprint 唯一存档变更。
+ *   （COMMISSION_BONUS_KEY，不单开第 4 字段）。旧档迁移补缺省（''/{}/[]）。
+ * v20（S15-T2）：新增 furniture 域——轻量家具 / 布局（家具 id 的「已拥有 ownedIds + 已摆放 placedIds」清单）。
+ *   摆放家具各贡献小额 comfort，合计并入既有 comfort 软加成轴（经 computeIdleYield 的 effect.comfort，无新口径）。
+ *   目录/comfort/cost/归一权威在 config/homestead.ts（FURNITURE_CATALOG / canonicalizeFurnitureIds）。
+ *   独立于 homestead/facility 域（单一职责）。旧档无此键 → 补空家具（ownedIds:[]、placedIds:[]），不影响既有挂机。
+ *   本 Sprint 唯一存档变更（v19→v20 一次性 bump）。
+ *   v20（S15-T4，复用同一 bump，绝不升 v21）：TowerProgress 加 slotPity（槽位定向掉落保底计数，定长 3 键 weapon/armor/supporter）。
+ *   连续 N 次通新层掉落判定未出某槽 → 强制命中该槽（稀有度仍走层段）。旧档无此字段 → 补全零 + clamp [0, 阈值]（脏档防放大获取）。
  */
 import type { PityState } from '@/engine/gacha/draw';
 import { defaultFacilityLevels } from '@/config/homestead';
@@ -47,7 +54,7 @@ import type {
   TowerProgress,
 } from '@/types/player';
 
-export const SAVE_VERSION = 19 as const;
+export const SAVE_VERSION = 20 as const;
 
 /** 商店单品的当日购买记录（跨天读取时自动视为 0）。 */
 export interface ShopPurchaseRecord {
@@ -208,6 +215,32 @@ export function createDefaultFacility(): FacilitySave {
   return defaultFacilityLevels();
 }
 
+/**
+ * 家具域（v20 / S15-T2）。两份家具 id 清单：
+ *  - ownedIds：已拥有（KP 买断入库）的家具 defId（指向 config/homestead.ts FURNITURE_CATALOG）。
+ *  - placedIds：当前摆放中的家具 defId（须是 ownedIds 的子集；摆放的家具各贡献 comfort，合计并入 effect.comfort）。
+ * 家具目录/comfort/cost/归一权威在 config/homestead.ts。独立于 homestead/facility 域（单一职责）。
+ * 初始/旧档缺省全空（ownedIds:[]、placedIds:[]），杜绝对既有挂机产生任何回归。
+ */
+export interface FurnitureSave {
+  /** 已拥有的家具 defId。 */
+  ownedIds: string[];
+  /** 当前摆放中的家具 defId（子集于 ownedIds；只有摆放的给 comfort）。 */
+  placedIds: string[];
+}
+
+/**
+ * v20：家具域默认空态（新档/旧档迁移补默认）。
+ * ★ C-4：直接内联空态，不从 config import——避免 schema→config→engine 循环依赖环
+ * （空态无须目录信息；FURNITURE_CATALOG 只供 store/UI/迁移归一用，schema 默认工厂不依赖它）。
+ */
+export function createDefaultFurniture(): FurnitureSave {
+  return {
+    ownedIds: [],
+    placedIds: [],
+  };
+}
+
 /** playerState 的序列化形态（watchedAnime Set → 数组）。 */
 export interface SerializedPlayerState {
   level: number;
@@ -262,6 +295,8 @@ export interface SavePayload {
   equipment: EquipmentSave;
   /** v17 新增：设施域（三设施等级，KP 可升级产出乘区 + 无底 sink）。 */
   facility: FacilitySave;
+  /** v20 新增：家具域（已拥有/已摆放家具 id；摆放的贡献 comfort，经既有软加成轴汇入）。 */
+  furniture: FurnitureSave;
 }
 
 /** 兼容别名（S5 时代命名）。 */
@@ -348,5 +383,7 @@ export function createDefaultTowerProgress(): TowerProgress {
     // v15：扫荡周额度（新档/旧档迁移补缺省）
     sweepWeekKey: '',
     sweepUsedThisWeek: 0,
+    // v20（S15-T4）：槽位保底计数（新档全零；内联缺省，避免 schema → engine 依赖环）
+    slotPity: { weapon: 0, armor: 0, supporter: 0 },
   };
 }

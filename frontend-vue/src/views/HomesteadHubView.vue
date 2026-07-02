@@ -5,6 +5,7 @@ import { useUserStore } from '@/stores/userStore';
 import { SWEEP_WEEKLY_CAP } from '@/stores/pve';
 import { useGameDataStore } from '@/stores/gameDataStore';
 import { useEquipmentStore } from '@/stores/equipment';
+import { SLOT_META, SLOT_PITY_THRESHOLD } from '@/config/equipment';
 import HomesteadView from './HomesteadView.vue';
 import NurtureView from './NurtureView.vue';
 import SquadBattleView from './SquadBattleView.vue';
@@ -206,6 +207,12 @@ const rewardPreview = computed(() => calculateTowerBattleRewards({
   outcome: { winner: 'player', reason: 'victory' },
   equipmentDrop: null,
 }));
+
+// S15-T4：槽位保底显形——距下次「强制命中最接近的槽」还差 N 次通新层掉落判定（满即高亮「下次必出」）。
+const slotPity = computed(() => {
+  const s = userStore.getSlotPityStatus();
+  return { ...s, label: SLOT_META[s.slot].label, icon: SLOT_META[s.slot].icon, threshold: SLOT_PITY_THRESHOLD };
+});
 
 // --- SA-T6：explore 「开始挑战」直达进战（与 SquadBattleView canStartTowerBattle 同口径校验）---
 
@@ -513,6 +520,15 @@ function positionLabel(index: number): string {
           <span class="summary-kicker">奖励预览</span>
           <strong>经验 +{{ rewardPreview.characterExp }} / KP +{{ rewardPreview.knowledgePoints }}</strong>
           <small>胜利并推进楼层时，参战角色获得经验，并有装备掉落机会。</small>
+          <!-- S15-T4：槽位定向掉落保底显形（拍板-F，非选做而是验收项）。 -->
+          <p class="pity-line" :class="{ ready: slotPity.ready }">
+            <template v-if="slotPity.ready">
+              🎯 下次通新层必出 {{ slotPity.icon }}{{ slotPity.label }}（槽位保底已满）
+            </template>
+            <template v-else>
+              距 {{ slotPity.icon }}{{ slotPity.label }} 保底还差 <strong>{{ slotPity.remaining }}</strong> 次通层掉落判定
+            </template>
+          </p>
         </article>
 
         <article v-if="enemyPreview" class="enemy-preview">
@@ -739,6 +755,16 @@ function positionLabel(index: number): string {
 .explore-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
 .tower-card strong { display: block; margin: .2rem 0; color: rgb(var(--c-ink)); font-size: 1.6rem; }
 .tower-card small { color: rgb(var(--c-ink-2)); }
+/* S15-T4：槽位保底进度显形（accent 语义令牌；满即高亮 accent-soft 背景）。 */
+.pity-line {
+  margin-top: .5rem; padding: .35rem .55rem; border-radius: 6px; font-size: .78rem; line-height: 1.4;
+  color: rgb(var(--c-ink-2)); background: rgb(var(--c-surface-2) / .6); border: 1px solid rgb(var(--c-line));
+}
+.pity-line strong { display: inline; margin: 0; font-size: 1em; color: rgb(var(--c-accent)); }
+.pity-line.ready {
+  color: rgb(var(--c-accent)); font-weight: 700;
+  background: rgb(var(--c-accent-soft) / .7); border-color: rgb(var(--c-accent));
+}
 .enemy-preview { grid-column: 1 / -1; }
 .enemy-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; }
 .enemy-heading h3 { color: rgb(var(--c-ink)); font-size: 1.25rem; font-weight: 800; }

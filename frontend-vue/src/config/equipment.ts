@@ -132,6 +132,15 @@ export function clampEnhance(raw: unknown): number {
 }
 
 /**
+ * ★ S15-T4 槽位保底计数归一（迁移 + store 反序列化共用，仿 clampEnhance）：
+ * 非数字/非有限 → 0；否则 clamp 到 [0, SLOT_PITY_THRESHOLD]（脏档巨值不能放大获取——超阈值最多也只强制一次）。
+ */
+export function clampSlotPity(raw: unknown): number {
+  if (typeof raw !== 'number' || !Number.isFinite(raw)) return 0;
+  return Math.min(SLOT_PITY_THRESHOLD, Math.max(0, Math.floor(raw)));
+}
+
+/**
  * ★ 强化增益折算（唯一纯函数，三处同源消费）：把静态 def.bonus 按强化等级线性抬升。
  * 每级整体 ×(1 + ENHANCE_STEP × enhance)，逐维就近取整（Math.round）。
  * Lv.0 恒等返回原值（无强化即静态值）；enhance 先 clamp 到 [0, MAX_ENHANCE]。
@@ -465,6 +474,14 @@ export function dropRarityForFloor(floor: number): 'R' | 'SR' | 'SSR' | 'HR' | '
 
 /** 通层掉落概率（50%）。RNG 在 engine 掉落纯函数里注入。 */
 export const DROP_CHANCE = 0.5;
+
+/**
+ * ★ S15-T4 槽位保底阈值（拍板-B/C）：连续 N 次「通新层掉落判定」都没出某槽 → 下一次判定强制命中该槽。
+ * 稀有度仍走层段映射（不叠稀有度 pity）。改这里即调平——取中低值（远小于 gacha 70）：
+ * 掉落频率本就低（50% × 每层一次），10 次判定 ≈ 玩家能感知「三武器零支援」的挫败但不破坏惊喜。
+ * 计数状态留 store（TowerProgress 扁平字段），engine 纯函数只按注入的计数决定是否强制。
+ */
+export const SLOT_PITY_THRESHOLD = 10;
 
 /** 五维显示名（固定顺序，UI 文案统一口径用）。 */
 const STAT_LABEL: Record<keyof StatBonus, string> = {

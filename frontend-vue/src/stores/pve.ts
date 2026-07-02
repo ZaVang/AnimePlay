@@ -8,6 +8,7 @@ import { ref } from 'vue';
 import type { PresetSquad, TowerProgress } from '@/types/player';
 import { createDefaultPresetSquads, createDefaultTowerProgress, canonicalizeSquadMembers } from '@/infra/persistence';
 import { SQUAD_MEMBER_COUNT, calculateSweepReward, type SweepReward } from '@/engine';
+import { clampSlotPity, SLOT_PITY_THRESHOLD } from '@/config/equipment';
 import { useProfileStore } from './profile';
 
 /**
@@ -133,6 +134,25 @@ export const usePveStore = defineStore('pve', () => {
     return { ok: true, reward, remaining: getSweepRemaining() };
   }
 
+  /**
+   * ★ S15-T4 UI 显形：距「下次槽位保底触发」还差多少次掉落判定，及最接近的槽位。
+   * remaining = 阈值 - 当前最高计数（就近取整、clamp >=0）；ready 表示已到阈值下次必触发。
+   * 纯读，不改状态；供爬塔/探索面板显形（拍板-F，显形非选做而是验收项）。
+   */
+  function getSlotPityStatus(): { slot: 'weapon' | 'armor' | 'supporter'; count: number; remaining: number; ready: boolean } {
+    const p = towerProgress.value.slotPity;
+    const entries: Array<['weapon' | 'armor' | 'supporter', number]> = [
+      ['weapon', p.weapon],
+      ['armor', p.armor],
+      ['supporter', p.supporter],
+    ];
+    // 取计数最高（最接近保底）的槽；并列取 weapon→armor→supporter 固定序（与 engine 强制命中序一致）。
+    let best = entries[0];
+    for (const e of entries) if (e[1] > best[1]) best = e;
+    const remaining = Math.max(0, SLOT_PITY_THRESHOLD - best[1]);
+    return { slot: best[0], count: best[1], remaining, ready: remaining <= 0 };
+  }
+
   // 每日挑战次数限制已移除，保留接口兼容
   function canAttemptToday(): boolean {
     return true;
@@ -155,6 +175,13 @@ export const usePveStore = defineStore('pve', () => {
     // 二次兜底：每队成员去重 + 5 槽（对齐运行期配队不变式，杜绝克隆放大），与家园/装备双层范式一致。
     presetSquads.value = data.presetSquads.map(sq => ({ ...sq, members: canonicalizeSquadMembers(sq.members) }));
     towerProgress.value = data.towerProgress;
+    // v20（S15-T4）二次兜底：槽位保底计数再 clamp 一遍（迁移已归一，反序列化再保险，杜绝脏档放大，仿装备强化双层）。
+    const p = towerProgress.value.slotPity;
+    towerProgress.value.slotPity = {
+      weapon: clampSlotPity(p?.weapon),
+      armor: clampSlotPity(p?.armor),
+      supporter: clampSlotPity(p?.supporter),
+    };
     // 加载后立即做一次跨周判定：旧周的扫荡额度直接归零（读时一致，仿 daily.deserialize）。
     ensureThisSweepWeek();
   }
@@ -179,6 +206,7 @@ export const usePveStore = defineStore('pve', () => {
     getSweepRemaining,
     canSweep,
     sweepFloor,
+    getSlotPityStatus,
     serialize,
     deserialize,
     reset,

@@ -4,7 +4,8 @@
  */
 import { describe, it, expect } from 'vitest';
 import { migrate } from './migrations';
-import { SAVE_VERSION, createDefaultDaily, createDefaultEquipment, createDefaultFacility, createDefaultHomestead, createDefaultMiniGames, createDefaultPresetSquads, createDefaultTowerProgress } from './schema';
+import { SAVE_VERSION, createDefaultDaily, createDefaultEquipment, createDefaultFacility, createDefaultFurniture, createDefaultHomestead, createDefaultMiniGames, createDefaultPresetSquads, createDefaultTowerProgress } from './schema';
+import { FURNITURE_CATALOG } from '@/config/homestead';
 import { getEquipmentDef, enhancedBonus, MAX_ENHANCE } from '@/config/equipment';
 
 /** 模拟 S5 之前服务器上的真实 v1 存档形态。 */
@@ -149,6 +150,11 @@ describe('v1 → v2 迁移', () => {
   it('v17 新键：facility 缺失补默认（全 Lv.1 = +0% 乘区）', () => {
     expect(v2.facility).toEqual(createDefaultFacility());
     expect(v2.facility).toEqual({ exp: 1, bond: 1, knowledge: 1 });
+  });
+
+  it('v20 新键：furniture 缺失补默认（空拥有 + 空摆放）', () => {
+    expect(v2.furniture).toEqual(createDefaultFurniture());
+    expect(v2.furniture).toEqual({ ownedIds: [], placedIds: [] });
   });
 });
 
@@ -483,6 +489,52 @@ describe('v15 towerProgress 扫荡周额度迁移（SA-T5）', () => {
   });
 });
 
+describe('v20 towerProgress 槽位保底 slotPity 迁移（S15-T4）', () => {
+  it('v19 旧档（towerProgress 无 slotPity 字段）→ 补全零 { weapon:0, armor:0, supporter:0 }', () => {
+    const out = migrate({
+      version: 19,
+      towerProgress: {
+        currentFloor: 8, maxFloor: 7, floorRewards: {}, todayAttempts: 0, lastAttemptDate: '',
+        sweepWeekKey: '', sweepUsedThisWeek: 0,
+      },
+    } as unknown);
+    expect(out.towerProgress.currentFloor).toBe(8);
+    expect(out.towerProgress.slotPity).toEqual({ weapon: 0, armor: 0, supporter: 0 });
+  });
+
+  it('★ 往返保真：已存 slotPity → 迁移后原样保留（存→读一致）', () => {
+    const saved = {
+      version: 20,
+      towerProgress: {
+        currentFloor: 20, maxFloor: 19, floorRewards: {}, todayAttempts: 0, lastAttemptDate: '',
+        sweepWeekKey: '2026-W27', sweepUsedThisWeek: 4,
+        slotPity: { weapon: 2, armor: 0, supporter: 7 },
+      },
+    };
+    const out = migrate(saved as unknown);
+    expect(out.towerProgress.slotPity).toEqual({ weapon: 2, armor: 0, supporter: 7 });
+    const roundTrip = migrate(out as unknown);
+    expect(roundTrip.towerProgress.slotPity).toEqual({ weapon: 2, armor: 0, supporter: 7 });
+  });
+
+  it('脏档：巨值/负数/非数字 → clamp 到 [0, 阈值(10)]、回落 0', () => {
+    const out = migrate({
+      version: 20,
+      towerProgress: { currentFloor: 3, slotPity: { weapon: 9999, armor: -5, supporter: 'oops' } },
+    } as unknown);
+    // 阈值 10：9999 → 10（clamp 上界）、-5 → 0、'oops' → 0
+    expect(out.towerProgress.slotPity).toEqual({ weapon: 10, armor: 0, supporter: 0 });
+  });
+
+  it('脏档：slotPity 整体非对象 → 全零', () => {
+    const out = migrate({
+      version: 20,
+      towerProgress: { currentFloor: 3, slotPity: 'nope' },
+    } as unknown);
+    expect(out.towerProgress.slotPity).toEqual({ weapon: 0, armor: 0, supporter: 0 });
+  });
+});
+
 describe('v12 minigames.tasteProfile 迁移', () => {
   it('保留旧档已记录的已看番 id（只收数字）', () => {
     const out = migrate({ minigames: { tasteProfile: { watchedAnimeIds: [326, 10380, 'bad', null] } } } as unknown);
@@ -545,6 +597,50 @@ describe('v17 facility 迁移（SD-T1/SD-T5）', () => {
   it('facility 非对象 → 全 Lv.1 缺省', () => {
     const out = migrate({ version: 17, facility: 'bad' } as unknown);
     expect(out.facility).toEqual(createDefaultFacility());
+  });
+});
+
+describe('v20 furniture 迁移（S15-T2）', () => {
+  // 取目录前两件真实 id 供测试（避免硬编码——目录随版本可增）。
+  const idA = FURNITURE_CATALOG[0].id;
+  const idB = FURNITURE_CATALOG[1].id;
+
+  it('v19 旧档（无 furniture 键）→ 空家具缺省（不影响既有挂机）', () => {
+    const out = migrate({ version: 19 } as unknown);
+    expect(out.furniture).toEqual(createDefaultFurniture());
+    expect(out.furniture).toEqual({ ownedIds: [], placedIds: [] });
+  });
+
+  it('★ 已存家具往返保真（合法 id 原样保留，摆放是拥有子集）', () => {
+    const saved = { version: 20, furniture: { ownedIds: [idA, idB], placedIds: [idA] } };
+    const out = migrate(saved as unknown);
+    expect(out.furniture).toEqual({ ownedIds: [idA, idB], placedIds: [idA] });
+    // 再过一次迁移（模拟存→读往返）仍一致
+    const roundTrip = migrate(out as unknown);
+    expect(roundTrip.furniture).toEqual(out.furniture);
+  });
+
+  it('脏档：未知 id / 非字符串 / 重复项被归一丢弃（防放大 comfort）', () => {
+    const out = migrate({
+      version: 20,
+      furniture: { ownedIds: [idA, idA, 'fn_unknown', 42, null, idB], placedIds: [idA, idA] },
+    } as unknown);
+    expect(out.furniture.ownedIds).toEqual([idA, idB]);
+    expect(out.furniture.placedIds).toEqual([idA]);
+  });
+
+  it('脏档：placedIds 含未拥有项 → 收敛为 ownedIds 子集（杜绝没买却摆着吃 comfort）', () => {
+    const out = migrate({
+      version: 20,
+      furniture: { ownedIds: [idA], placedIds: [idA, idB] },
+    } as unknown);
+    expect(out.furniture.ownedIds).toEqual([idA]);
+    expect(out.furniture.placedIds).toEqual([idA]);
+  });
+
+  it('furniture 非对象 → 空家具缺省', () => {
+    const out = migrate({ version: 20, furniture: 'bad' } as unknown);
+    expect(out.furniture).toEqual(createDefaultFurniture());
   });
 });
 
@@ -669,8 +765,8 @@ describe('v2 存档过迁移层', () => {
 });
 
 describe('v19 家园委托字段迁移（SF-T8）', () => {
-  it('SAVE_VERSION 已升至 19', () => {
-    expect(SAVE_VERSION).toBe(19);
+  it('SAVE_VERSION 已升至 20（S15-T2 furniture 域）', () => {
+    expect(SAVE_VERSION).toBe(20);
   });
 
   it('v18 旧档 daily（无 commission 三字段）→ 迁移补缺省（保留日/周字段）', () => {

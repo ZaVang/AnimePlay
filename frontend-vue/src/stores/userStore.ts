@@ -8,16 +8,18 @@ import { defineStore } from 'pinia';
 import { computed, reactive } from 'vue';
 import { GAME_CONFIG } from '@/config/gameConfig';
 import { getCodexUnlockPrice } from '@/config/codexUnlock';
-import { computeIdleYield, facilityUpgradeCost, type FacilityKey, type IdleYield } from '@/config/homestead';
+import { computeIdleYield, facilityUpgradeCost, getFurnitureDef, type FacilityKey, type IdleYield } from '@/config/homestead';
 import {
   dropRarityForFloor,
   getEquipmentDef,
   getEquipmentDefsBySlotRarity,
   sumHomeEffects,
   getEquipmentPrice,
+  SLOT_PITY_THRESHOLD,
+  DROP_CHANCE,
   type EquipmentDef,
 } from '@/config/equipment';
-import { MAX_CHARACTER_LEVEL, rollTowerDrop, defaultRng } from '@/engine';
+import { MAX_CHARACTER_LEVEL, rollTowerDropWithPity, defaultRng } from '@/engine';
 import { type ShopItem } from '@/utils/gachaRotation';
 import type { CurrencyKey, Deck } from '@/types/player';
 import type { Rarity } from '@/types/card';
@@ -35,6 +37,7 @@ import { useMiniGamesStore } from './minigames/higherLower';
 import { useHomesteadStore } from './homestead';
 import { useEquipmentStore } from './equipment';
 import { useFacilityStore } from './facility';
+import { useFurnitureStore } from './furniture';
 import { useThemeStore } from './theme';
 import { useDailyStore } from './daily';
 import { useCodexStore } from './codex';
@@ -242,11 +245,23 @@ export const useUserStore = defineStore('user', () => {
 
   /**
    * 塔通层掉落（在 completeFloor 推进进度为真的分支内调用，天然防刷低层）。
-   * 掉落判定走 engine 纯函数 rollTowerDrop（RNG 可注入，默认真随机）；命中则 store 入库 + 通知。
+   * 掉落判定走 engine 纯函数 rollTowerDropWithPity（RNG 注入 + 槽位保底计数注入，engine 纯净、计数留 store）：
+   * 连续 SLOT_PITY_THRESHOLD 次判定未出某槽 → 本次强制命中该槽（稀有度仍走层段）。命中槽计数归零、其余 +1。
+   * 计数写回 pve.towerProgress.slotPity（v20 持久化，随 completeFloor 同事务 saveToServer）；命中则入库 + 通知。
    * 不自身存档——由 completeFloor 统一在同一事务里 saveToServer。
    */
   function rollFloorDrop(floor: number, rng = defaultRng): EquipmentDef | null {
-    const drop = rollTowerDrop(floor, rng, dropRarityForFloor);
+    const current = pve.towerProgress.slotPity;
+    const { drop, pity } = rollTowerDropWithPity(
+      floor,
+      rng,
+      dropRarityForFloor,
+      { weapon: current.weapon, armor: current.armor, supporter: current.supporter },
+      SLOT_PITY_THRESHOLD,
+      DROP_CHANCE,
+    );
+    // 计数无条件写回（含「判定发生但未掉落 → 各槽 +1」的推进），确保保底逼近可持久化。
+    pve.towerProgress.slotPity = pity;
     if (!drop) return null;
     const candidates = getEquipmentDefsBySlotRarity(drop.slot, drop.rarity);
     const def = rng.pick(candidates);
@@ -419,13 +434,16 @@ export const useUserStore = defineStore('user', () => {
    * 知识点经唯一货币入口 profile.earn。首次（lastSettleAt=0）只建立基线、不补发历史；
    * 未登录直接返回零。无论是否有产出都推进 lastSettleAt，避免已结算时间被重复计入。
    */
-  function settleHomestead(): IdleYield {
+  function settleHomestead(nowOverride?: number): IdleYield {
     const homestead = useHomesteadStore();
     const placed = homestead.placedCharacterIds;
-    const empty: IdleYield = { hours: 0, expEach: 0, affectionEach: 0, knowledge: 0, characterCount: placed.length, comfort: 0 };
+    const empty: IdleYield = { hours: 0, expEach: 0, affectionEach: 0, knowledge: 0, characterCount: placed.length, comfort: 0, bondHits: [], bondBonusPct: 0 };
     if (!profile.isLoggedIn) return empty;
 
-    const now = Date.now();
+    // ★ S15-T1 注入时钟接缝：与 engine「RNG 注入」原则对称，把「时钟」降级为可注入依赖。
+    // 测试传固定 now，不碰真时钟、不受邻居文件 fake timers 污染；亦为 S12 权威后端时间预留唯一入口。
+    // 生产默认读 Date.now()（唯一真实时钟读点）。仅接受有限正数覆盖，脏值回退真时钟。
+    const now = typeof nowOverride === 'number' && Number.isFinite(nowOverride) ? nowOverride : Date.now();
     if (homestead.lastSettleAt === 0) {
       homestead.setLastSettleAt(now); // 首次建立基线，不补发
       return empty;
@@ -440,14 +458,23 @@ export const useUserStore = defineStore('user', () => {
     }
 
     const gameData = useGameDataStore();
-    const rarities = placed
-      .map(id => gameData.getCharacterCardById(id)?.rarity)
-      .filter((r): r is Rarity => !!r);
+    // 只保留「卡片存在」的入住角色，稀有度与作品名逐角色对齐（同一顺序喂进 computeIdleYield）。
+    const cards = placed
+      .map(id => gameData.getCharacterCardById(id))
+      .filter((c): c is NonNullable<typeof c> => !!c);
+    const rarities = cards.map(c => c.rarity).filter((r): r is Rarity => !!r);
+    // ★ S15-T3 羁绊派生源：逐角色 anime_names（可缺可空，engine 侧容忍）。稳定键，不派生正则 archetype。
+    const placedAnimeNames = cards.map(c => c.anime_names);
     const equipment = useEquipmentStore();
     const homeEffect = sumHomeEffects(placed.map(id => equipment.resolveHomeEffect(id)));
+    // ★ S15-T2 家具 comfort 并入既有 comfort 软加成轴（拍板-A：零新口径）。
+    // 口径同源命脉：settle 与 UI homeEffect computed 两处必须同源把家具 comfort 加进 effect.comfort，
+    // 否则「预览≠实战」（C-2 半迁移陷阱）。家具与装备 comfort 相加后共用同一 +20% 硬顶（有意，守挂机基线）。
+    homeEffect.comfort += useFurnitureStore().getComfort();
     // 口径同源命脉：设施乘区/封顶从 facility store 同一 getter 喂进（与 UI hourlyYield 同源，防「预览≠实战」）。
     const facilityLevels = useFacilityStore().getLevels();
-    const result = computeIdleYield(rarities, now - homestead.lastSettleAt, homeEffect, facilityLevels);
+    // 羁绊乘子经既有 computeIdleYield 口径汇入（严禁在 settle 里另拼）。
+    const result = computeIdleYield(rarities, now - homestead.lastSettleAt, homeEffect, facilityLevels, placedAnimeNames);
     homestead.setLastSettleAt(now);
 
     if (result.expEach <= 0 && result.affectionEach <= 0 && result.knowledge <= 0) return result;
@@ -457,8 +484,9 @@ export const useUserStore = defineStore('user', () => {
       if (result.affectionEach > 0) nurture.addIdleAffection(id, result.affectionEach);
     }
     if (result.knowledge > 0) profile.earn('knowledgePoints', result.knowledge);
+    const bondNote = result.bondBonusPct > 0 ? `（羁绊 +${Math.round(result.bondBonusPct * 100)}%）` : '';
     profile.addLog(
-      `家园挂机 ${result.hours.toFixed(1)}h：全员 +${result.expEach} 经验 / +${result.affectionEach} 好感，合计 +${result.knowledge} 知识点`,
+      `家园挂机 ${result.hours.toFixed(1)}h：全员 +${result.expEach} 经验 / +${result.affectionEach} 好感，合计 +${result.knowledge} 知识点${bondNote}`,
       'success',
     );
     // SF-T8 委托守卫①：只有真发放收益（越过全 0 早退）才推进 idle 委托——
@@ -514,6 +542,58 @@ export const useUserStore = defineStore('user', () => {
       // 理论不达（isMaxLevel 已挡），保险回补避免吞 KP。
       profile.earn('knowledgePoints', cost);
     }
+    return ok;
+  }
+
+  // --- 家具编排（S15-T2）：KP 买断家具 + 摆放/收纳（家具 comfort → 挂机收益，仿 upgradeFacility） ---
+
+  /**
+   * 用知识点买一件家具（一次性买断，走 profile.spend）。
+   * 编排：登录校验 → 查目录取 cost（Number.isFinite 守卫）→ 已拥有则拒 →
+   * **先 settleHomestead() 结清**（买家具本身不改 comfort，但保持与设施同一「先结清再变更」纪律，
+   * 且 UI 常紧接摆放；防后续摆放瞬间回溯放大已挂时间）→ profile.spend 成功才 furniture.buy → saveToServer。
+   * 失败回补 KP。货币只走 profile.spend（架构铁律）。返回是否成功。
+   */
+  function buyFurniture(defId: string): boolean {
+    if (!profile.isLoggedIn) return false;
+    const def = getFurnitureDef(defId);
+    if (!def) return false;
+    const cost = def.cost;
+    if (!Number.isFinite(cost) || cost < 0) return false;
+    const furniture = useFurnitureStore();
+    if (furniture.owns(defId)) return false;
+    // 先结清：把变更前的挂机时间按旧 comfort 落地，lastSettleAt 推到现在。
+    settleHomestead();
+    if (!profile.spend('knowledgePoints', cost)) {
+      profile.addLog(`知识点不足，购买「${def.name}」需 ${cost} 知识点。`, 'warning');
+      return false;
+    }
+    const ok = furniture.buy(defId);
+    if (ok) {
+      profile.addLog(`花费 ${cost} 知识点，购入家具「${def.name}」（+${def.comfort} 舒适度）！`, 'success');
+      saveToServer();
+    } else {
+      // 理论不达（owns/def 已挡），保险回补避免吞 KP。
+      profile.earn('knowledgePoints', cost);
+    }
+    return ok;
+  }
+
+  /** 摆放一件已拥有家具：先结清收益（家具改 comfort→改产出，防回溯放大）→ place → 存档。 */
+  function placeFurniture(defId: string): boolean {
+    if (!profile.isLoggedIn) return false;
+    settleHomestead();
+    const ok = useFurnitureStore().place(defId);
+    if (ok) saveToServer();
+    return ok;
+  }
+
+  /** 收纳一件已摆放家具：先结清收益 → unplace → 存档。 */
+  function unplaceFurniture(defId: string): boolean {
+    if (!profile.isLoggedIn) return false;
+    settleHomestead();
+    const ok = useFurnitureStore().unplace(defId);
+    if (ok) saveToServer();
     return ok;
   }
 
@@ -627,6 +707,10 @@ export const useUserStore = defineStore('user', () => {
     unplaceFromHomestead,
     // facility（S14-D SD-T1/SD-T5）：设施升级（扣 KP 成功才提级 + 存档）
     upgradeFacility,
+    // furniture（S15-T2）：KP 买断家具 + 摆放/收纳（成功才存档；先结清再变更）
+    buyFurniture,
+    placeFurniture,
+    unplaceFurniture,
 
     // daily（evolution-1）：领取每日任务奖励（领域 store 自己不存档）
     claimDailyTask: (taskId: string) => {
@@ -784,6 +868,8 @@ export const useUserStore = defineStore('user', () => {
     getSweepUsedThisWeek: pve.getSweepUsedThisWeek,
     getSweepRemaining: pve.getSweepRemaining,
     canSweep: pve.canSweep,
+    // S15-T4：槽位保底显形（距下次保底 N 次判定 + 最接近的槽）
+    getSlotPityStatus: pve.getSlotPityStatus,
     sweepFloor: (floor: number, squadId: number) => {
       const outcome = pve.sweepFloor(floor);
       if (outcome.ok && outcome.reward) {

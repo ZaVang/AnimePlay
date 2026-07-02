@@ -21,11 +21,13 @@ import {
   computeIdleYield,
   comfortBonusPct,
   offlineCapHours,
+  FURNITURE_CATALOG,
   IDLE_SETTLE_MODAL_MIN_HOURS,
   type FacilityKey,
   type IdleYield,
 } from '@/config/homestead';
 import { useFacilityStore } from '@/stores/facility';
+import { useFurnitureStore } from '@/stores/furniture';
 import { useDailyStore } from '@/stores/daily';
 import { COMMISSIONS, COMMISSION_BONUS_REWARDS } from '@/config/dailyTasks';
 import { formatHomeEffect, sumHomeEffects, SLOT_ORDER } from '@/config/equipment';
@@ -41,6 +43,7 @@ const homestead = useHomesteadStore();
 const collection = useCollectionStore();
 const equipmentStore = useEquipmentStore();
 const facilityStore = useFacilityStore();
+const furnitureStore = useFurnitureStore();
 const daily = useDailyStore();
 
 // --- sprite 表规格（与 codex 产出一致：3 列行走帧 × 4 行朝向，格 48×64）---
@@ -184,7 +187,12 @@ const placedCards = computed(() =>
 const homeEffect = computed(() => {
   void equipmentStore.equipped;
   void equipmentStore.inventory;
-  return sumHomeEffects(homestead.placedCharacterIds.map(id => equipmentStore.resolveHomeEffect(id)));
+  void furnitureStore.placedIds;
+  const eff = sumHomeEffects(homestead.placedCharacterIds.map(id => equipmentStore.resolveHomeEffect(id)));
+  // ★ S15-T2 家具 comfort 并入 effect.comfort（与 settleHomestead 同源，口径命脉：预览=结算）。
+  // hourlyYield/projectedYield/nextHourlyYield 三处经 computeIdleYield 天然吃到家具 comfort。
+  eff.comfort += furnitureStore.getComfort();
+  return eff;
 });
 
 // 设施等级同源：UI 预览与 settleHomestead 结算都喂 facilityStore.getLevels()（口径同源命脉）。
@@ -193,8 +201,11 @@ const facilityLevels = computed(() => {
   return facilityStore.getLevels();
 });
 
+// ★ S15-T3 羁绊派生源：逐入住角色 anime_names（与结算同源，预览=实战）。
+const placedAnimeNames = computed(() => placedCards.value.map(c => c.anime_names));
+
 const hourlyYield = computed(() =>
-  computeIdleYield(placedCards.value.map(c => c.rarity), 3600_000, homeEffect.value, facilityLevels.value),
+  computeIdleYield(placedCards.value.map(c => c.rarity), 3600_000, homeEffect.value, facilityLevels.value, placedAnimeNames.value),
 );
 
 // ── SF-T3 驻留低频定时结算：60s 刷「自上次结算起预计累积」预览 + 封顶进度条（只刷预览、绝不 settle）──
@@ -212,8 +223,15 @@ const elapsedMs = computed(() => {
  * 只读展示，不落地、不调 settleHomestead。
  */
 const projectedYield = computed<IdleYield>(() =>
-  computeIdleYield(placedCards.value.map(c => c.rarity), elapsedMs.value, homeEffect.value, facilityLevels.value),
+  computeIdleYield(placedCards.value.map(c => c.rarity), elapsedMs.value, homeEffect.value, facilityLevels.value, placedAnimeNames.value),
 );
+
+/**
+ * 当前入住组合命中的羁绊（与结算同源：hourlyYield 已喂同一 placedAnimeNames）。
+ * 命中给作品名 + 同住人数 + 加成 pct 供 UI 显形；空 = 不显。
+ */
+const bondHits = computed(() => hourlyYield.value.bondHits);
+const bondBonusPct = computed(() => hourlyYield.value.bondBonusPct);
 
 /** 有效离线封顶小时数（随设施总级数抬升，与结算同口径）。 */
 const capHours = computed(() => offlineCapHours(facilityLevels.value));
@@ -231,7 +249,7 @@ const capReached = computed(() => homestead.lastSettleAt > 0 && capProgress.valu
 /** 升级后（该设施 +1 级）的每小时产出预览：与结算同函数、同口径。 */
 function nextHourlyYield(key: FacilityKey) {
   const lv = { ...facilityLevels.value, [key]: facilityLevels.value[key] + 1 };
-  return computeIdleYield(placedCards.value.map(c => c.rarity), 3600_000, homeEffect.value, lv);
+  return computeIdleYield(placedCards.value.map(c => c.rarity), 3600_000, homeEffect.value, lv, placedAnimeNames.value);
 }
 
 const FACILITY_META: Record<FacilityKey, { label: string; unit: string; field: 'expEach' | 'affectionEach' | 'knowledge' }> = {
@@ -269,6 +287,52 @@ const knowledgePoints = computed(() => userStore.playerState.knowledgePoints);
 function onUpgradeFacility(key: FacilityKey) {
   const ok = userStore.upgradeFacility(key);
   if (!ok) userStore.addLog('升级失败：知识点不足或已满级。', 'warning');
+}
+
+// ── S15-T2 家具兑换 + 摆放/收纳（KP → 家具 → comfort，经既有软加成轴汇入） ──
+/** 当前已摆放家具 comfort 合计（响应式：placedIds 变即重算）。 */
+const placedFurnitureComfort = computed(() => {
+  void furnitureStore.placedIds;
+  return furnitureStore.getComfort();
+});
+/** comfort → 全产出软加成 pct（家具+装备合计 comfort 经同一 comfortBonusPct）。 */
+function comfortPctText(comfort: number): string {
+  const pct = comfortBonusPct(comfort);
+  return pct > 0 ? `+${Math.round(pct * 100)}%` : '+0%';
+}
+
+const furnitureRows = computed(() => {
+  void furnitureStore.ownedIds;
+  void furnitureStore.placedIds;
+  // 摆放一件后的全产出 delta：以「装备+家具」总 comfort 为基线，看再加该件 comfort 后软加成 pct 的增量。
+  const baseComfort = homeEffect.value.comfort;
+  return FURNITURE_CATALOG.map(def => {
+    const owned = furnitureStore.owns(def.id);
+    const placed = furnitureStore.isPlaced(def.id);
+    // 摆放该件后的产出 delta（未摆放才有意义）：软加成 pct 的边际增量。
+    const deltaPct = placed
+      ? 0
+      : comfortBonusPct(baseComfort + def.comfort) - comfortBonusPct(baseComfort);
+    return {
+      id: def.id,
+      name: def.name,
+      comfort: def.comfort,
+      cost: def.cost,
+      owned,
+      placed,
+      affordable: !owned && knowledgePoints.value >= def.cost,
+      deltaPct,
+    };
+  });
+});
+
+function onBuyFurniture(id: string) {
+  const ok = userStore.buyFurniture(id);
+  if (!ok) userStore.addLog('购买失败：知识点不足或已拥有。', 'warning');
+}
+function onToggleFurniture(id: string) {
+  if (furnitureStore.isPlaced(id)) userStore.unplaceFurniture(id);
+  else userStore.placeFurniture(id);
 }
 
 const effectText = computed(() => formatHomeEffect(homeEffect.value));
@@ -574,6 +638,19 @@ onUnmounted(() => {
             <li><span>好感</span><b>+{{ projectedYield.affectionEach }}</b></li>
             <li><span>知识点</span><b>+{{ projectedYield.knowledge }}</b></li>
           </ul>
+          <!-- ★ S15-T3 入住羁绊显形：命中给 accent 徽章 + 加成 pct（口径同源，预览=结算）。 -->
+          <div class="bond-row" aria-label="入住羁绊">
+            <span class="bond-kicker">入住羁绊</span>
+            <template v-if="bondHits.length > 0">
+              <span class="bond-total">全产出 +{{ Math.round(bondBonusPct * 100) }}%</span>
+              <ul class="bond-hits">
+                <li v-for="hit in bondHits" :key="hit.anime" class="bond-chip" :title="`${hit.anime} · 同住 ${hit.members} 人`">
+                  {{ hit.anime }} ×{{ hit.members }} · +{{ Math.round(hit.pct * 100) }}%
+                </li>
+              </ul>
+            </template>
+            <span v-else class="bond-empty">同作品 ≥2 人同住可触发加成</span>
+          </div>
           <div class="idle-bar" role="progressbar" :aria-valuenow="Math.round(capProgress * 100)" aria-valuemin="0" aria-valuemax="100">
             <div class="idle-bar-fill" :class="capReached ? 'is-full' : 'is-growing'" :style="{ width: `${capProgress * 100}%` }"></div>
           </div>
@@ -648,6 +725,45 @@ onUnmounted(() => {
               </template>
             </div>
           </div>
+        </div>
+
+        <!-- S15-T2 家具兑换 + 摆放/收纳：KP → 家具 → comfort（经既有软加成轴，摆放持久化） -->
+        <div class="ops-card furniture-card" aria-label="家具布置">
+          <div class="furniture-head">
+            <span class="ops-kicker">家具布置</span>
+            <span class="furniture-comfort" :title="`已摆放家具舒适度合计 ${placedFurnitureComfort}`">
+              舒适 +{{ placedFurnitureComfort }} · 全产出 {{ comfortPctText(homeEffect.comfort) }}
+            </span>
+          </div>
+          <ul class="furniture-list">
+            <li v-for="row in furnitureRows" :key="row.id" class="furniture-row" :class="{ 'is-placed': row.placed }">
+              <span class="furniture-body">
+                <span class="furniture-name">{{ row.name }}</span>
+                <span class="furniture-meta">舒适 +{{ row.comfort }}<template v-if="!row.owned"> · {{ row.cost }} KP</template></span>
+              </span>
+              <template v-if="!row.owned">
+                <span v-if="row.deltaPct > 0" class="furniture-delta">摆放后全产出 +{{ Math.round(row.deltaPct * 100) }}%</span>
+                <button
+                  type="button"
+                  class="btn-primary furniture-btn"
+                  :disabled="!row.affordable"
+                  @click="onBuyFurniture(row.id)"
+                >
+                  购买
+                </button>
+              </template>
+              <template v-else>
+                <button
+                  type="button"
+                  class="furniture-btn"
+                  :class="row.placed ? 'btn-secondary' : 'btn-primary'"
+                  @click="onToggleFurniture(row.id)"
+                >
+                  {{ row.placed ? '收纳' : '摆放' }}
+                </button>
+              </template>
+            </li>
+          </ul>
         </div>
 
         <div class="resident-strip">
@@ -733,6 +849,17 @@ onUnmounted(() => {
 .idle-bar-fill.is-full { background: rgb(var(--c-warning)); }
 .idle-cap-note { color: rgb(var(--c-warning)) !important; font-weight: 700; }
 .idle-cap-hint { color: rgb(var(--c-ink-3)); }
+/* ★ S15-T3 入住羁绊显形（语义令牌，命中给 accent，无 text-white / 动态色类） */
+.bond-row { display: flex; flex-direction: column; gap: .3rem; margin-top: .1rem; }
+.bond-kicker { font-size: .68rem; font-weight: 800; letter-spacing: .04em; color: rgb(var(--c-ink-3)); }
+.bond-total { font-size: .8rem; font-weight: 800; color: rgb(var(--c-accent)); }
+.bond-hits { display: flex; flex-wrap: wrap; gap: .32rem; margin: 0; padding: 0; list-style: none; }
+.bond-chip {
+  font-size: .68rem; font-weight: 700; padding: .16rem .44rem; border-radius: 999px;
+  color: rgb(var(--c-accent)); background: rgb(var(--c-accent) / .12); border: 1px solid rgb(var(--c-accent) / .35);
+  max-width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.bond-empty { font-size: .68rem; color: rgb(var(--c-ink-3)); }
 /* SF-T8 家园委托（清单勾选，语义令牌，无 text-white / 动态色类） */
 .commission-card { gap: .55rem; position: relative; }
 .commission-head { display: flex; align-items: center; justify-content: space-between; gap: .5rem; }
@@ -782,6 +909,23 @@ onUnmounted(() => {
 .facility-btn { flex: 0 0 auto; font-size: .74rem; padding: .3rem .8rem; }
 .facility-btn:disabled { opacity: .5; cursor: not-allowed; }
 .facility-maxed { font-size: .74rem; font-weight: 700; color: rgb(var(--c-ink-3)); }
+/* S15-T2 家具布置（语义令牌，无 text-white / 动态色类） */
+.furniture-card { gap: .55rem; }
+.furniture-head { display: flex; align-items: baseline; justify-content: space-between; gap: .5rem; }
+.furniture-comfort { font-size: .72rem; font-weight: 700; color: rgb(var(--c-accent)); }
+.furniture-list { display: flex; flex-direction: column; gap: .4rem; margin: 0; padding: 0; list-style: none; }
+.furniture-row {
+  display: flex; align-items: center; gap: .55rem;
+  padding: .35rem .5rem; border-radius: 8px; border: 1px solid rgb(var(--c-line));
+  background: rgb(var(--c-surface-2) / .5); transition: border-color .15s ease, background .15s ease;
+}
+.furniture-row.is-placed { border-color: rgb(var(--c-accent) / .5); background: rgb(var(--c-accent-soft) / .35); }
+.furniture-body { display: flex; flex-direction: column; gap: .05rem; min-width: 0; flex: 1 1 auto; }
+.furniture-name { font-size: .82rem; font-weight: 700; color: rgb(var(--c-ink)); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.furniture-meta { font-size: .68rem; color: rgb(var(--c-ink-3)); }
+.furniture-delta { flex: 0 0 auto; font-size: .68rem; font-weight: 700; color: rgb(var(--c-success)); text-align: right; line-height: 1.2; }
+.furniture-btn { flex: 0 0 auto; font-size: .72rem; padding: .24rem .7rem; }
+.furniture-btn:disabled { opacity: .5; cursor: not-allowed; }
 .ops-card {
   min-height: 92px; padding: .9rem; border: 1px solid rgb(var(--c-line));
   border-radius: 8px; background: rgb(var(--c-surface) / .94);
