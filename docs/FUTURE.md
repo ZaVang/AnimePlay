@@ -29,15 +29,15 @@
 | S0–S10 | 重构主线（文档/测试/engine 抽取/拆 store/功能闭环/视觉/技能/性能/安全） | ✅ | 已完成 → 详见 [HISTORY.md](HISTORY.md) |
 | — | 产品进化层 Evo-1..Evo-9 + 战斗可读性还债 + 2026-06-24 产品循环 | ✅ | 已完成 → 详见 [HISTORY.md](HISTORY.md) |
 | S13 | 家园综合系统（基地养成 + 小队战斗重构 + 挑战塔闭环） | ✅ | A/A2/B/C1/C2/D1–D5 全部落地合并 → 完成史见 [HISTORY.md](HISTORY.md) |
-| **S14** | **家园 hub 深化（差异化 + 决策 + 循环，audit-driven）** | 🔄 | **S14-A/B/C/D/E ✅ 已完成**（2026-07-01~02 product-loop）；仅剩 S14-F（P3 打磨）。源：[审计报告](orch/homestead-hub-audit-report.md) |
+| **S14** | **家园 hub 深化（差异化 + 决策 + 循环，audit-driven）** | ✅ | **S14-A/B/C/D/E/F ✅ 全部完成**（2026-07-01~02 product-loop）；S14-F P3 打磨（SF-T1..T8）收官。源：[审计报告](orch/homestead-hub-audit-report.md) |
 | S11 | React 视图迁移 | ☐ | 演进 |
 | S12 | 权威后端 & 多人/PvP/排行榜 | ☐ | 终点 |
 
-> S0–S13 全部完成并归档（[HISTORY.md](HISTORY.md)）。**近期主线 = S14 家园 hub 深化**：S13 交付了完整骨架与数值管线，但 2026-07-01 对抗性审计发现家园 hub「能跑不崩、却缺选择空间」——本 Sprint 专补 S13 留下的深度缺口。S11 / S12 仍为远期方向（到达时再 `/think` 细化）。下方「已知债 / Backlog」是穿插其间、需独立决策的散项。
+> S0–S14 全部完成并归档（S0–S13 见 [HISTORY.md](HISTORY.md)；S14 家园 hub 深化 A~F 共 33 项 audit-driven 于 2026-07-01~02 落地，详见下方 S14 节，收官后可整体归档 HISTORY）。**下一主线 = S11 React 视图迁移 / S12 权威后端+多人/PvP/排行榜**（远期方向，到达时再 `/think` 细化）。家园 hub 的中期内容（家具/羁绊/定向掉落，S14-F 已标 S15+）与下方「已知债 / Backlog」是穿插其间、需独立决策的散项。
 
 ---
 
-## 🔄 S14 — 家园 hub 深化（差异化 + 决策 + 循环，近期主线）
+## ✅ S14 — 家园 hub 深化（差异化 + 决策 + 循环）— 全部完成 2026-07-02
 
 **背景**：S13 把家园 hub 的骨架（UI / 数据 / 数值管线）搭完了，能跑、不崩、数字算得对。但 2026-07-01 对抗性审计（8 维 × 每条 4 票投票，225 agent；50 确认 / 3 争议 / 1 否决，报告：[orch/homestead-hub-audit-report.md](orch/homestead-hub-audit-report.md)）判定它是**「五环拼装的半成品」**——在「差异化—决策—闭环」三个决定可玩性的关节上同时断裂。
 
@@ -106,15 +106,16 @@
 - [x] **扩展 EquipmentDef 支持战斗 modifier**（P2-15，增强项）：`formulas.ts` 已内建 critRate/critDamage/damageUp/healUp 等且真实消费，但装备只能改 5 维。可选：给 EquipmentDef 加 modifier 字段，resolveEquipModifiers 注入 BattleModifiers，让装备够到更多战斗旋钮。
 - **Exit（达成）**：装备有可持续消耗（强化到 Lv.5）与搭配空间（3 组套装 + modifier 战斗旋钮）；装备开始塑造角色定位而非纯线性堆数值。
 
-### ☐ S14-F · P3 打磨（一致性与内容缺口，穿插进行）
+### ✅ S14-F · P3 打磨（一致性与内容缺口，穿插进行）
 
-- [ ] ⭐ hero 区「家园→角色→编队→探索→战斗」循环胶囊是不可点静态装饰、与 tab 1:1 重复（P3-1）→ 删掉或做成明显非导航示意图。
-- [ ] ⭐ 补习升级：成本随等级递增 + 批量 / 一键升级 + 分档经验道具（P3-2）。
-- [ ] 家园驻留低频定时结算（60s）刷新预计累积 + 封顶进度条，卸载清除（P3-8）。
-- [ ] 统一敌我战力口径：我方含养成、敌方 floorPower 用原始属性，两数字不同量纲同屏并列（P3-6）→ 统一 `calculateBattlePower` 或直接给推荐战力线 / 胜率。
-- [ ] 家园收益封顶改分层递减：现按全体合计硬顶 0.6，约 4 件同向 UR 即触顶（P3-7）。
-- [ ] 墙钟回拨钳位（P2-28 的廉价卫生改动）：`settleHomestead` 用 `Date.now()`，改系统时间可刷。加 `now < lastSettleAt → 记 0 并把 lastSettleAt 夹到 now`；单机向危害有限，仅作卫生改动。
-- [ ] 中期内容：轻量家具 / 布局系统（P3-4，落 furniture 存档域）、入住羁绊 / 差异化速率（P3-5）、家园日常委托（P3-10，引已有 daily store 入口进家园）、装备定向掉落保底 / 碎片（P3-3）。
+- [x] ⭐ hero 区「家园→角色→编队→探索→战斗」循环胶囊是不可点静态装饰、与 tab 1:1 重复（P3-1）→ 删掉或做成明显非导航示意图。
+- [x] ⭐ 补习升级：成本随等级递增 + 批量 / 一键升级 + 分档经验道具（P3-2）。
+- [x] 家园驻留低频定时结算（60s）刷新预计累积 + 封顶进度条，卸载清除（P3-8）。
+- [x] 统一敌我战力口径：我方含养成、敌方 floorPower 用原始属性，两数字不同量纲同屏并列（P3-6）→ 统一 `calculateBattlePower` 或直接给推荐战力线 / 胜率。
+- [x] 家园收益封顶改分层递减：现按全体合计硬顶 0.6，约 4 件同向 UR 即触顶（P3-7）。
+- [x] 墙钟回拨钳位（P2-28 的廉价卫生改动）：`settleHomestead` 用 `Date.now()`，改系统时间可刷。加 `now < lastSettleAt → 记 0 并把 lastSettleAt 夹到 now`；单机向危害有限，仅作卫生改动。
+- [x] 家园日常委托（P3-10）：daily 域平行 commission 子域（挂机 / 爬塔 / 强化三条本地委托 + 今日全清 bonus，升 v19）。
+- [ ] 中期内容（留 S15+）：轻量家具 / 布局系统（P3-4，落 furniture 存档域）、入住羁绊 / 差异化速率（P3-5）、装备定向掉落保底 / 碎片（P3-3）。
 - **可暂不处理**（经模拟证实当前无可达触发路径，玩家不可感知，留待开放弃卡 / 脏档校验时再补）：inferArchetype 稀有度兜底（P3-9）、结算前复核当前拥有数（P3-11）。
 
 ### 🗳️ 审计争议项（决策参考，不默认排期）
@@ -173,4 +174,4 @@
   > 注：此项在历史上以两处不同措辞出现（Evolution 尾注的「按声优收集维度」与 2026-06-24 循环 round 1 的「声优维度」），是**同一个**跨栈/需后端项，此处已合并为一条，勿再拆。
 
 ---
-*本文只列「还剩什么」。完成史在 [HISTORY.md](HISTORY.md)；日常产品迭代需求源在 [SPRINT.md](SPRINT.md)。每完成一项请同步勾选；每完成一个 Sprint 请更新「进度总览」状态。最后整理 2026-07-02（S13 归档 HISTORY；S14 家园 hub 深化 A/B/C/D/E 已完成——A 六项 P1 急救 + B 五项战斗手感 + C 六项角色差异化与养成长线(星级突破 v16) + D 五项家园机制/经济闭环(facility v17) + E 三项装备深度(强化 v18 + 套装 + modifier)，均 product-loop `--tier1 on --mode all` 落地；仅剩 S14-F P3 打磨；源自对抗性审计 [orch/homestead-hub-audit-report.md](orch/homestead-hub-audit-report.md)）。*
+*本文只列「还剩什么」。完成史在 [HISTORY.md](HISTORY.md)；日常产品迭代需求源在 [SPRINT.md](SPRINT.md)。每完成一项请同步勾选；每完成一个 Sprint 请更新「进度总览」状态。最后整理 2026-07-02（S13 归档 HISTORY；**S14 家园 hub 深化 A~F 全部完成**——A 六项 P1 急救 + B 五项战斗手感 + C 六项角色差异化与养成长线(v16) + D 五项家园机制/经济闭环(facility v17) + E 三项装备深度(强化 v18 + 套装 + modifier) + F 八项 P3 打磨(战力口径/补习/驻留/封顶/回拨钳位/套装chip/家园委托 v19)，共 33 项、均 product-loop `--tier1 on --mode all` 落地、865 测试全绿、存档 v15→v19；源自对抗性审计 [orch/homestead-hub-audit-report.md](orch/homestead-hub-audit-report.md)。**下一主线 = S11 React 迁移 / S12 权威后端+多人**；家园 hub 中期内容(家具/羁绊/定向掉落)与 backlog 见下）。*

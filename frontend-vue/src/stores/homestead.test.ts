@@ -21,7 +21,7 @@ import { useProfileStore } from './profile';
 import { useNurtureStore } from './nurture';
 import { useGameDataStore } from './gameDataStore';
 import { useEquipmentStore } from './equipment';
-import { HOMESTEAD_SLOTS } from '@/config/homestead';
+import { HOMESTEAD_SLOTS, softCap, HOMESTEAD_EFFECT_CAP, IDLE_EXP_PER_HOUR } from '@/config/homestead';
 import type { CharacterCard } from '@/types/card';
 
 const H = 3600_000;
@@ -121,13 +121,15 @@ describe('settleHomestead（门面离线结算）', () => {
     const y = useUserStore().settleHomestead();
 
     // SD-T2 弱化后：training_bokken expPct 0.02、cozy_cardigan affectionPct 0.02；comfort 2+4=6 → +0%（<10）
+    // ★ SF-T5：装备 pct 经 softCap 软化（小 x 近似线性，略低于 2%）。
+    const expEachSoft = Math.floor(IDLE_EXP_PER_HOUR * 2 * (1 + softCap(0.02, HOMESTEAD_EFFECT_CAP.expPct)));
     expect(y.comfort).toBe(6);
-    expect(y.expEach).toBe(408); // floor(200 ×2h ×(1 + 2%)) = floor(408)
-    expect(y.affectionEach).toBe(10); // floor(10 × 1.02) = 10
+    expect(y.expEach).toBe(expEachSoft); // floor(200 ×2h ×(1 + softCap(0.02))) = 407
+    expect(y.affectionEach).toBe(10); // floor(10 × (1 + softCap(0.02))) = 10
     expect(y.knowledge).toBe(16);
     expect(profile.core.knowledgePoints).toBe(16);
     const nurture = useNurtureStore();
-    expect(nurture.getNurtureData(77).totalExperience).toBe(408);
+    expect(nurture.getNurtureData(77).totalExperience).toBe(expEachSoft);
   });
 
   it('未登录直接返回零', () => {

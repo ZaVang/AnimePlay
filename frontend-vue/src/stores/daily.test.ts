@@ -5,7 +5,7 @@ import { describe, it, expect, beforeEach, vi, afterEach } from 'vitest';
 import { setActivePinia, createPinia } from 'pinia';
 import { useDailyStore } from './daily';
 import { useProfileStore } from './profile';
-import { DAILY_LOGIN_REWARDS, loginStreakRewardFor } from '@/config/dailyTasks';
+import { DAILY_LOGIN_REWARDS, loginStreakRewardFor, COMMISSION_BONUS_REWARDS } from '@/config/dailyTasks';
 
 beforeEach(() => {
   setActivePinia(createPinia());
@@ -278,5 +278,124 @@ describe('序列化往返', () => {
     daily.markProgress('minigame', 1);
     expect(daily.isComplete('daily_minigame')).toBe(true);
     expect(daily.weeklyProgressOf('weekly_minigame')).toBe(1);
+  });
+});
+
+describe('家园日常委托（SF-T8 commission 子域）', () => {
+  it('markCommission 推进对应委托、完成判定', () => {
+    freezeDate(2026, 6, 16);
+    const daily = useDailyStore();
+    expect(daily.isCommissionComplete('commission_idle')).toBe(false);
+    daily.markCommission('idle', 1);
+    expect(daily.commissionProgressOf('commission_idle')).toBe(1);
+    expect(daily.isCommissionComplete('commission_idle')).toBe(true);
+    // 不同 kind 互不串扰
+    expect(daily.isCommissionComplete('commission_tower')).toBe(false);
+  });
+
+  it('markCommission 幂等钳到 target（不无限累加）', () => {
+    freezeDate(2026, 6, 16);
+    const daily = useDailyStore();
+    daily.markCommission('tower', 5);
+    expect(daily.commissionProgressOf('commission_tower')).toBe(1); // target=1
+  });
+
+  it('markCommission amount<=0 无操作', () => {
+    freezeDate(2026, 6, 16);
+    const daily = useDailyStore();
+    daily.markCommission('enhance', 0);
+    expect(daily.commissionProgressOf('commission_enhance')).toBe(0);
+  });
+
+  it('完成后可领奖、货币入账、重复领无效', () => {
+    freezeDate(2026, 6, 16);
+    const daily = useDailyStore();
+    const profile = useProfileStore();
+    expect(daily.claimCommission('commission_idle')).toBe(false); // 未完成不可领
+    daily.markCommission('idle', 1);
+    const before = profile.core.knowledgePoints;
+    expect(daily.claimCommission('commission_idle')).toBe(true);
+    expect(profile.core.knowledgePoints).toBe(before + 30); // commission_idle 奖 30 KP
+    expect(daily.isCommissionClaimed('commission_idle')).toBe(true);
+    // 重复领被拒
+    expect(daily.claimCommission('commission_idle')).toBe(false);
+    expect(profile.core.knowledgePoints).toBe(before + 30);
+  });
+
+  it('跨天后委托进度与领取状态归零（含全清 bonus 标记）', () => {
+    freezeDate(2026, 6, 16);
+    const daily = useDailyStore();
+    daily.markCommission('idle', 1);
+    daily.markCommission('tower', 1);
+    daily.markCommission('enhance', 1);
+    daily.claimCommission('commission_idle');
+    expect(daily.claimCommissionBonus()).toBe(true);
+    expect(daily.isCommissionBonusClaimed()).toBe(true);
+
+    // 跨天
+    freezeDate(2026, 6, 17);
+    expect(daily.commissionProgressOf('commission_idle')).toBe(0);
+    expect(daily.isCommissionClaimed('commission_idle')).toBe(false);
+    expect(daily.allCommissionsDone).toBe(false);
+    expect(daily.isCommissionBonusClaimed()).toBe(false); // bonus 标记随委托一并归零
+  });
+
+  it('今日全清 bonus：3 条清完才可领、重复领无效、货币入账', () => {
+    freezeDate(2026, 6, 16);
+    const daily = useDailyStore();
+    const profile = useProfileStore();
+    const bonusKp = COMMISSION_BONUS_REWARDS.filter(r => r.currency === 'knowledgePoints').reduce((s, r) => s + r.amount, 0);
+    // 未全清不可领
+    daily.markCommission('idle', 1);
+    daily.markCommission('tower', 1);
+    expect(daily.allCommissionsDone).toBe(false);
+    expect(daily.claimCommissionBonus()).toBe(false);
+    // 补齐第三条
+    daily.markCommission('enhance', 1);
+    expect(daily.allCommissionsDone).toBe(true);
+    const before = profile.core.knowledgePoints;
+    expect(daily.claimCommissionBonus()).toBe(true);
+    expect(profile.core.knowledgePoints).toBe(before + bonusKp);
+    // 重复领被拒
+    expect(daily.claimCommissionBonus()).toBe(false);
+    expect(profile.core.knowledgePoints).toBe(before + bonusKp);
+  });
+
+  it('保底守卫：idle 委托单独完成即可（有入住结算就有一条天然可完成）', () => {
+    freezeDate(2026, 6, 16);
+    const daily = useDailyStore();
+    daily.markCommission('idle', 1);
+    expect(daily.isCommissionComplete('commission_idle')).toBe(true);
+  });
+
+  it('序列化往返保真（未跨天）', () => {
+    freezeDate(2026, 6, 16);
+    const daily = useDailyStore();
+    daily.markCommission('idle', 1);
+    daily.claimCommission('commission_idle');
+    const snapshot = JSON.parse(JSON.stringify(daily.serialize()));
+
+    const fresh = (() => {
+      setActivePinia(createPinia());
+      useProfileStore().currentUser = 'tester';
+      return useDailyStore();
+    })();
+    fresh.deserialize(snapshot);
+    expect(fresh.commissionProgressOf('commission_idle')).toBe(1);
+    expect(fresh.isCommissionClaimed('commission_idle')).toBe(true);
+  });
+
+  it('deserialize 旧档（无 commission 字段）补缺省、跨天读时归零', () => {
+    freezeDate(2026, 6, 17);
+    const daily = useDailyStore();
+    daily.deserialize({
+      date: '2026-6-16',
+      progress: {},
+      claimed: [],
+      lastLoginDate: '2026-6-16',
+    } as unknown as Parameters<typeof daily.deserialize>[0]);
+    expect(daily.commissionProgressOf('commission_idle')).toBe(0);
+    expect(daily.isCommissionClaimed('commission_idle')).toBe(false);
+    expect(daily.allCommissionsDone).toBe(false);
   });
 });

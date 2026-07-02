@@ -1,97 +1,91 @@
-# Scout Report — Iteration 3 / 3（S14-E 第 3 轮，指派切片 = SE-T2｜确定性套装 / 原型条件加成）
+# Scout Report — Iteration 3 / 3（S14-F 收官轮 · product-loop --tier1 on --mode all）
 
-> product-loop `--tier1 on --mode all`。前两轮 SE-T1（装备强化 v18）+ SE-T3（EquipmentDef 战斗 modifier）均已在工作树落地并经 Evaluator 亲验全绿（见 eval.md：815 测试通过、type-check/build PASS、SAVE_VERSION=18）。本轮做 **SE-T2**，收尾 S14-E。
-> **范围纪律**：SE-T2 是 Sprint 合同内的第 3 个任务、当前 checkbox 仍 `[ ]`（SPRINT.md line 28）——**它是 in-scope，必须真实现，严禁降级为「回归确认」**（前车之鉴 SA-T6 / S14-B 暴击 UI）。tier1-on 跑满轮次 ≠ 目标达成；Orchestrator 收尾须核对 SE-T1..T3 全 `[x]`。
+> 本轮指派切片 = **SF-T8｜家园日常委托（P3-10）** + S14-F 收尾（确认 SF-T1..T8 全落地、S14-A..E 无回归）。
+> SF-T1..T7 + 两条 refine 已在 R1/R2 落地并 COMPLETE（见 `eval.md` R2：851 tests 全绿）。本轮唯一新任务 = SF-T8，其余为收官核对。
+> 三份审计（product/research/evolution）已就 SF-T8 设计**高度一致收敛**：`daily` 域内平行 `commission` 子域 + 3 新埋点 + 逐条小奖 + 今日全清 bonus。本 Scout 已 Read 全部落点，确认可行性与坑。
 
 ---
 
 ## A. 约束与可行性（给 Planner）
 
-### A0. 三审方案在代码里成立性核实（本轮切片 SE-T2）
-SPRINT 拍板（line 28-29）：加**确定性套装（EquipmentDef 加 setId，齐 N 件额外加成）**或**原型条件加成（装备带原型倾向标签，戴匹配 archetype/role 角色给条件加成，复用 SC-T1 resolveRole）**；**随机副词条不做**（单机向定位）；套装/条件加成经既有 seam 进战力；**无存档改动**（派生自 equipped defIds + 角色 role）。核实结论：**两条路都成立，但成立性/成本差异大**——
+**SF-T8 是本轮唯一必做任务，必须真实现（不得降级为收尾核对）。** SA-T6 / S14-B 暴击 UI / S14-E R1 收口三次被漏教训在前——收官轮跑到 R3 ≠ 前轮已把 SF-T8 做了（前轮明令「不顺手做 SF-T8」，见 SPRINT L89 / plan.md L83）。**SF-T8 当前 `[ ]`（FUTURE.md L117 未勾、SPRINT L27 未勾）。**
 
-| 方案 | 依赖面 | 是否需跨 store 依赖 | 与「预览≠实战」坑的距离 | 推荐 |
-|---|---|---|---|---|
-| **A｜确定性套装（setId）** | 仅 equipped 三槽 defIds | 否（纯 config 派生） | 中（需同步 EquipPickerModal 预览，见 C-1） | **首选** |
-| B｜原型条件加成（role） | equipped defIds + 角色 archetype | **是**（equipment store 需 gameDataStore.getCharacterCardById + squadSkillKits.getArchetypeForCharacter） | 高（预览需拿到 char 才能算，seam 更复杂） | 次选/可叠加 |
+### 命名空间拍板（三份审计一致推荐，Scout 确认）
+**走「`daily` 域内平行 `commission` 子域」（研究审计替代 1 方案 B）**，不扩 `DailyTaskType` 枚举：
+- 复用 `daily.ts` 的 `todayKey()`/`ensureToday()` 跨天口径（零新跨天逻辑，绝不自造 `todayKey`——两套跨天判定漂移是回归温床）。
+- 新增独立 `COMMISSIONS` 模板（`config/dailyTasks.ts`）+ 独立 `commissionProgress`/`commissionClaimed` 桶 + 独立 `markCommission(kind)` 埋点 + `commissionKind = 'idle'|'tower'|'enhance'` 类型。
+- 语义干净（家园委托不污染全站留存枚举，守 `daily.ts` L21「保持领域 store 自包含」），UI 天然与 daily task 分区。
 
-**给 Planner 的拍板建议**：**首版只做方案 A（确定性套装）**，与 SPRINT「优先套装」一致、无跨 store 依赖、纯 defIds 派生最干净。方案 B（role 条件加成）若要做，把它当第二条正交加成叠加，但它引入 `equipment store → gameDataStore` 依赖（当前 equipment store 只依赖 profile），且预览 seam 需 char 参数——成本明显更高，建议本轮不做或仅留类型口子。**无论 A/B，核心风险都是「新加成必须在所有 4 个 resolveEquipBonus 消费点同源生效」，见 A2 + C-1。**
+### 存档决策：**升 SAVE_VERSION 18 → 19**（拍板，勿再犹豫）
+研究审计倾向「不升版、`?? {}` 兜底」，但 Scout 判定**应升 v19**，理由：
+- 一旦在 `DailySave` 新增 `commissionDate`/`commissionProgress`/`commissionClaimed`（3 字段），就是**存档结构变更**，SPRINT 存档协议（L16）明令「新增/改存档字段必须 schema + migrations + 装配器三处同改 + 往返测试」——这三处改动无论升不升版本号都要做，升版成本几乎为零（本 sprint 尚未升版，v19 额度就是留给 SF-T8 的，SPRINT L16 白纸黑字）。
+- 升 v19 让 `migrations.test.ts` 的往返/旧档兼容测试有明确版本锚点，比「悄悄改结构不升版」更符合协议、更易审计。**一次 sprint 只升一次**——SF-T8 是唯一候选，正好用掉。
+- 三处同改落点（照抄 v7 加 weekly 字段的范式，`migrateDaily` 已是「字段级缺省兜底」结构，加 3 行即可）：
+  1. `infra/persistence/schema.ts`：`DailySave` interface 加 3 字段（L57-74）+ `createDefaultDaily()` 加缺省（L296-307，空串/`{}`/`[]`）+ `SAVE_VERSION` 18→19（L30，权威）+ 顶部版本注释加 v19 段（L12 附近）。
+  2. `infra/persistence/migrations.ts`：`migrateDaily(raw)`（L91-106）加 3 行 `typeof raw.xxx === ... ? ... : defaults.xxx`（旧档缺 → 缺省，与 weekly 四字段同构）+ 顶部注释加 v19。
+  3. `stores/daily.ts`：`serialize()`（L217-228）/`deserialize()`（L230-242）/`reset()`（L244-253）三处加新字段（deserialize 里 `?? {}`/`?? []` 兜底 + 加载后 `ensureCommissionToday()`）。
+  - **SAVE_VERSION 权威在 `schema.ts:30`**；文档只指向不复述（pitfalls L61）。
 
-### A1. 存档：确认无需升档，SAVE_VERSION 维持 18
-- SE-T2 派生自 `equipped` 三槽 defId（方案 A）或 + 角色 role（方案 B），**均不新增/改存档字段**。SAVE_VERSION 维持 18（schema.ts:48），**本轮不碰 schema / migrations / 装配器**（与 SE-T3 同为「纯静态派生无存档」）。
-- setId 是 `EquipmentDef` 静态字段（同 SE-T3 的 `modifier?`），**不进 `EquipmentItemSave`**（否则触发升档，违反本轮「无存档改动」）。
+### 三个埋点落点（研究/产品审计已核实，Scout 复核确认）
+三类目标对应的 action **全部已在 `userStore` 门面且带 `saveToServer` 事务边界**，新埋点与现有 5 个 `markProgress` 同构同位（`saveToServer()` 前）：
+1. **`markCommission('idle')`｜挂机结算一次** → `userStore.settleHomestead`（L455-464 发放收益后、`saveToServer()` L464 前）。**必须守实际产出**：埋点写在 L453 早退（`if (全0) return result`）**之后**——只有真发放产出才到达该分支，天然守卫。**绝不用 `hours>0`**（首次基线 L429-431 早退 / 回拨钳位 L437-440 早退 / 0 入住空结算都可能 hours 存在但产出 0，反复进出刷委托）。
+2. **`markCommission('tower')`｜打一层塔** → **两处都埋**：`completeFloor` 的 `pve.completeFloor(floor)===true` 分支（L753-760，`saveToServer` L758 前）**+** `sweepFloor` 的 `outcome.ok && outcome.reward` 分支（L772-779，`saveToServer` L778 前）。毕业玩家（塔顶，completeFloor 返回 false）靠扫荡也能完成，否则卡死全清 bonus。**绝不复用 `battleWin`**（那是宅理论战 `battleFlow.endGame` L128 计数，语义污染）。
+3. **`markCommission('enhance')`｜强化一件装备** → `enhanceEquipment` 门面的 `ok===true` 分支（L661-666，`saveToServer` L664 前）。
 
-### A2. 战力单一 seam：套装/条件加成必须经 `resolveEquipBonus` 汇入（不另拼口径）
-- 铁律（SPRINT line 20 + pitfalls S13-C2）：**装备强化/套装/modifier 三者最终都要经既有战力 seam 进战力，别各拼各的口径**。
-- 五维加成（含套装额外五维）的单一 seam = `stores/equipment.ts resolveEquipBonus(charId)`（equipment.ts:241）。**套装的额外五维加成应在此函数内、逐件 `enhancedBonus` 求和之后追加**（作为「装备整体」附加项，不属任一单件、不参与强化放大——套装加成是确定性固定值，**不套 enhancedBonus**，与 SE-T3 modifier 恒定同理，见 C-4）。
-- **若套装额外加成走 modifier 维（如齐套 +critRate）而非五维**，则应改经 `resolveEquipModifiers`（equipment.ts:263）而非 `resolveEquipBonus`。首版建议**套装只给五维加成**（走 resolveEquipBonus，复用 engine `sumStatBonus`），不碰 modifier 维，避免又要动 View 注入 seam。
-- **严禁**新建第 N 套战力汇总函数。`resolveMemberBattleStats`（utils/battleStats.ts:37）是玩家侧唯一战力口径，吃 `resolveEquipBonus(charId)` 产物——套装加成进了 resolveEquipBonus 就自动进全站战力。
+> 埋点全在 store 编排层（userStore 门面），**绝不进 engine**（engine 纯净铁律，evolution-audit L101 已警示）。`markCommission` 幂等钳到 target（仿 `markProgress` L122-139 结构），跨天读时归零（`ensureCommissionToday` 仿 `ensureToday` L65-72）。
 
-### A3. resolveEquipBonus 的 4 个消费点（新加成必须 4 处同时生效）
-1. `views/SquadBattleView.vue:272` — 实战 buildCharacterStats（player 侧）。
-2. `views/NurtureView.vue:97` — 养成详情 finalStats。
-3. `views/HomesteadHubView.vue:111` — explore memberPower/squadPower。
-4. **`components/nurture/EquipPickerModal.vue:151` previewEquipBonus — ⚠️ 不调 resolveEquipBonus，而是内联重算三槽求和**（见 C-1，「预览≠实战」历史复发点）。
+### 委托模板 + 保底 + 全清 bonus（拍板）
+- **3 条固定委托**（target=1）：`commission_idle`（挂机结算一次）/ `commission_tower`（打一层塔，含扫荡）/ `commission_enhance`（强化一件装备）。措辞强调「家园本地小事」（今天在家里做的事，全在 hub 内闭环，不用跳去抽卡/理论战）。
+- **保底可完成**：`commission_idle` 是天然保底（有入住角色即可结算挂机），确保全清 bonus 不因毕业/破产账号变「永远拿不到的空诺」（研究审计 Phase 3 场景 3）。
+- **奖励量级 = 挂机零头级 / KP 为主**：逐条小额（如各 20-30 KP，对齐 daily task 30 KP 量级，守「回归补充不盖过主动收入」基线，config/homestead.ts 顶部自述）。
+- **今日全清 bonus**（原神/崩坏3 范式，委托区别于 daily 的核心）：3 条清完给一份额外 bonus（如 +50 KP 或 +1 券）。实现 = `allCommissionsDone` 派生 + 全清「已领」标记复用 `commissionClaimed` 存一个特殊 key（如 `'__bonus__'`，不新增第 4 字段）+ `claimCommissionBonus()` action。**若 R3 时间紧，全清 bonus 可留 fallback，但逐条委托 + 保底项无论如何必做。**
 
-前 3 处直接调 `resolveEquipBonus(charId)`，套装加成进函数即自动生效。**第 4 处 EquipPickerModal 是唯一需手动同步的地方**——它内联 for-loop 累加 `enhancedBonus(def.bonus, item.enhance)`（equipment.ts 之外重复实现），换装 delta 预览不会自动带上套装加成。
+### UI 落点（拍板）
+- home tab 直接 `<HomesteadView/>`（HomesteadHubView L375-376），委托 UI **挂 `HomesteadView.vue` 的 `ops-panel`（右侧运营列，L505+）**，插在 **SF-T3 驻留卡（L521-537）之下**（同属「家园日常状态」语义簇）。
+- **视觉共存复核（收官轮最该盯）**：SF-T3 驻留卡已带一条进度条（`.idle-bar`）；委托位若再叠进度条容易糊。委托卡建议用「X/N 完成度摘要 + 逐条 checkbox/领取按钮」而非又一条大进度条，与驻留卡视觉区分（product-audit L15/L42 明示）。
+- 颜色走语义令牌（`--c-success`/`--c-warning`/`--c-accent`），禁 text-white 压浅底、禁拼接动态色类。
 
-### A4. 「原型条件加成」（方案 B）复用 SC-T1 的确切 API
-- SC-T1 定位单一入口：`data/squadSkillKits.ts` **`getArchetypeForCharacter(character: CharacterCard, activeSkill?, passiveSkill?): SquadArchetype`**（line 697，已 export）。返回值 `SquadArchetype = 'striker'|'guardian'|'support'|'controller'|'arcane'|'tactical'`（line 30，**该 type 本身未 export**——若 config 侧要标注 role 标签类型，需从 squadSkillKits 补 export，或在 config 就地重声明同一 union）。
-- **注意**：SPRINT 写「复用 SC-T1 resolveRole」，但代码里**没有名为 `resolveRole` 的导出**——实际入口是 `getArchetypeForCharacter`（内部函数叫 `resolveArchetype`，未导出）。Planner/Generator 别去找 `resolveRole`（见 C-2）。
-- 方案 B 依赖代价：`getArchetypeForCharacter` 需完整 `CharacterCard`。equipment store 目前**只 import profile store**；要在 store 层算 role 条件加成，得引入 `gameDataStore.getCharacterCardById(charId)`（HomesteadHubView.vue:105 已有此调用样板）——即 equipment store → gameDataStore 新依赖（见 C-3）。
-
-### A5. engine 纯净 / 颜色 / 组件清理（不可违反）
-- **engine 零改动**：套装/条件加成解析全在 config（纯函数）+ store（查表编排），engine 不参与。别往 engine 写 config import（pitfalls：engine 靠注入不反向依赖 config；`sumStatBonus(bonuses[])` 已是收口）。
-- 若加 UI（套装齐套高亮 / 条件命中标记）：颜色走皮肤语义令牌（accent/highlight/warning…），禁 text-white 压浅底、禁动态色类拼接（`bg-${x}`）。参照 SE-T3 的 `text-highlight` + ⚡ 图标样板（EquipPickerModal / InventoryPanel）。
-- 组件内 setTimeout/setInterval 登记 + onUnmounted 清除（本轮多半纯计算无定时器，但若加动画注意）。
+### 收官核对（本轮必须一并确认）
+- SF-T1..T7 + 两条 refine 全 `[x]` 且真落地（R2 eval + product-audit R3 复审已逐项 Read 确认无回归；Evaluator 仍须亲自复跑 5 条验收命令）。
+- SF-T8 落地后：FUTURE.md L109-118 的 S14-F 全部 `[ ]` → `[x]`、进度总览 S14 → ✅、SPRINT L27 勾选。
 
 ---
 
 ## B. 代码地图与坑（给 Generator）
 
-### B1. `config/equipment.ts`（核心改动地，纯数据 + 纯函数）
-- **EquipmentDef 接口**（line 42-58）：加可选 `setId?: string`（方案 A）或/和 `archetypeAffinity?: SquadArchetype`（方案 B）。**仿 SE-T3 的 `modifier?` 字段样式**（同一处、同样是静态可选字段、同样带「恒定不随强化涨」注释）。
-- **套装目录 + 齐套加成表**：新增 `EQUIPMENT_SETS: Record<setId, { name; pieces: readonly defId[]; bonus: Partial<StatBonus>（齐套额外五维）; requiredCount? }>`。给 **2~3 组套装**（SPRINT line 28）——从 EQUIPMENT_CATALOG（line 236-290）选同主题件挂 setId（如同系 UR 武器+防具+支援凑一套；EVA 系 arm_ur_atfield/arm_ur_plug_suit 之类是现成主题）。
-- **新增纯函数 `resolveSetBonus(equippedDefIds: readonly string[]): Partial<StatBonus>`**（config，store 与测试共用）：统计每套已装件数，齐 N 件 → 累加该套 bonus；返回逐维求和（**不套 enhancedBonus，恒定值**）。仿 `sumEquipModifiers`（line 194）/ `sumHomeEffects`（line 363）的结构与注释风格。
-- **展示文案 helper**：仿 `formatModifier`（line 218）加 `formatSetBonus` 或复用 `formatBonus`（line 348），供 UI 显示「齐套 X 件：ATK+N…」。
-- **测试**：`config/equipment.test.ts` 已有 SE-T1/SE-T3 分节样板（describe 在 line 105/121/163/199/240/253）。SE-T2 补 describe：`resolveSetBonus`（齐套给加成、缺件不给、多套并存、只统计已装 defId）+ 套装目录填充断言（setId 引用的 defId 都存在于 catalog、pieces 数合理）。
+### 落点文件（角色说明）
+- **`frontend-vue/src/config/dailyTasks.ts`**（151 行）——静态模板。加 `CommissionKind = 'idle'|'tower'|'enhance'` 类型 + `CommissionDef` interface（复用 `DailyReward`）+ `COMMISSIONS: CommissionDef[]`（3 条）+ `COMMISSION_BONUS_REWARDS`（全清 bonus）+ `getCommissionById`。**勿动 `DailyTaskType`**（不扩枚举）。
+- **`frontend-vue/src/stores/daily.ts`**（286 行）——委托运行时。加 `commissionDate`/`commissionProgress`/`commissionClaimed` refs + `ensureCommissionToday()`（仿 `ensureToday` L65-72）+ `commissionProgressOf`/`isCommissionComplete`/`isCommissionClaimed`（仿 L84-99）+ `markCommission(kind, amount=1)`（仿 `markProgress` L122-139，**只遍历 COMMISSIONS，不碰 weekly**）+ `claimCommission(id)`（仿 `claim` L142-158，发奖走 `profile.earn`）+ `allCommissionsDone` 派生 + `claimCommissionBonus()` + serialize/deserialize/reset 三处加字段。**导出全部新函数**（return 块 L255-277）。
+- **`frontend-vue/src/infra/persistence/schema.ts`**——`DailySave` +3 字段（L57-74）、`createDefaultDaily` +3 缺省（L296-307）、`SAVE_VERSION` 18→19（L30，权威）、顶部版本注释加 v19 段（L12 附近）。
+- **`frontend-vue/src/infra/persistence/migrations.ts`**——`migrateDaily` +3 行缺省兜底（L91-106，仿 v7 weekly 四字段）、顶部注释加 v19。
+- **`frontend-vue/src/stores/userStore.ts`**——3 埋点：`settleHomestead` L453 之后（idle）/ `completeFloor` L753-760 分支（tower）/ `sweepFloor` L772-779 分支（tower）/ `enhanceEquipment` L661-666 ok 分支（enhance）。委托领取门面 `claimCommission`/`claimCommissionBonus`（仿 `claimDailyTask` L629-631：`if (useDailyStore().claimCommission(id)) saveToServer()`）。
+- **`frontend-vue/src/views/HomesteadView.vue`**（790 行）——委托 UI 挂 `ops-panel`（L505+）驻留卡（L521-537）之下。读 `useDailyStore()` 的委托 getter，领取走 `userStore.claimCommission`。**未登录态守卫**（`userStore.isLoggedIn`，仿 L461）。
 
-### B2. `stores/equipment.ts`（编排，把套装加成汇入单一 seam）
-- **改 `resolveEquipBonus`（line 241-255）**：现在 = 三槽逐件 `enhancedBonus` → `sumStatBonus`。SE-T2 在返回前**追加套装加成**：收集三槽 defId 列表 → 调 config `resolveSetBonus(defIds)` → 并入 `sumStatBonus([...perItemBonuses, setBonus])`。**这一处改完，A3 前 3 个消费点自动生效**（A4 的 EquipPickerModal 需另手动同步，见 C-1）。
-- 若做方案 B（role 条件加成）：在此追加 `resolveConditionalBonus`——需 `gameDataStore.getCharacterCardById(charId)` → `getArchetypeForCharacter(char)` → 匹配 `def.archetypeAffinity` 命中则加条件加成。**引入 gameDataStore 依赖**（本 store 首次依赖它，方向安全：gameDataStore 不反向 import equipment）。
-- **不要动** `resolveEquipModifiers`（line 263，SE-T3 seam，两条独立）、`enhanceItem`/`getEnhanceCost`（SE-T1）、`dismantleItem`（SD-T3，`findEquippedBy` 守卫别破坏）、`sanitizeEquipped`/`serialize`/`deserialize`（存档，本轮不碰）。
-- **测试**：`stores/equipment.test.ts`（有 SE-T1b「强化经 resolveEquipBonus 单一 seam」样板 line 193-224）。SE-T2 补：齐套后 `resolveEquipBonus` 提升、且经 `resolveMemberBattleStats` 真进战力（line 218 样板）；缺件不给；套装加成**不随 enhance 变化**（恒定，仿 SE-T3 恒定断言 line 387-393）。
+### 测试落点
+- **`frontend-vue/src/stores/daily.test.ts`**（已有 markProgress/claim/跨天 范式，L20 `freezeDate` helper）——补 commission 断言：markCommission 推进 + 完成判定 + 跨天归零（freezeDate 换日）+ claim 发奖 + allCommissionsDone/全清 bonus + 幂等钳 target。
+- **`frontend-vue/src/infra/persistence/migrations.test.ts`**——v18→v19 往返：旧档缺 commission 3 字段 → 缺省（`?? {}`/`?? []`）、新档往返保真、`not.toHaveProperty` 无关字段不漏。仿现有 daily v7 迁移测试。
 
-### B3. `components/nurture/EquipPickerModal.vue`（⚠️ 预览必须同源，见 C-1）
-- `previewEquipBonus`（line 151-162）内联重算三槽 `enhancedBonus` 求和——**必须把套装加成也算进去**（用「替换当前槽后的假设 defId 列表」调同一个 config `resolveSetBonus`），否则换装 delta 预览不含套装增量 → 预览≠实战复发。
-- `currentStats`（line 144）走 `resolveEquipBonus(props.charId)`（真实解析，改完自动含套装）；`previewStats`（line 164）走 `previewEquipBonus`（假设值，需手动加套装）。**两者口径必须一致**才能算对 delta。
-- 候选行展示（line 128-136 区域）可加套装归属标记（复用 SE-T3 `formatModifier`/`text-highlight` 样板）。
+### 坑（照抄会踩）
+1. **[C-SF-T8 idle 空结算刷委托]** `settleHomestead` 有 3 条早退（未登录 L426 / 首次基线 L429-431 / 回拨钳位 L437-440）+ 全 0 产出早退（L453）。埋点**必须写在 L453 之后**（只有真发放产出才到达），否则空结算/0 入住反复进出刷委托。
+2. **[C-SF-T8 tower 语义错配]** 塔委托绝不复用 `battleWin`（宅理论战计数，`battleFlow.ts` L128）；必须同埋 `completeFloor`(completed 分支) + `sweepFloor`(ok 分支)，毕业玩家靠扫荡完成。
+3. **[C-SF-T8 跨天口径漂移]** 委托跨天必须复用 `daily.ts` 的 `todayKey()`（L22-25），**绝不自造第二套**（pitfalls：两套跨天判定漂移是回归温床）。`ensureCommissionToday` 仿 `ensureToday` 读时判定归零、幂等。
+4. **[C-SF-T8 瘦身迁移 spread 陷阱]** `migrateDaily` 已是白名单重建对象（非 spread），加字段照抄同结构；**勿改成 spread 旧档**（S13-C1 沉淀 pitfalls L67：删/改字段迁移必须白名单重建，spread 会漏旧字段）。
+5. **[C-SF-T8 埋点入 engine]** `markCommission` 埋点只挂 userStore 门面（store 编排层），engine 纯净铁律不得 import store（evolution-audit L101）。
+6. **[C-SF-T8 UI 进度条糊]** 委托卡与 SF-T3 驻留卡同处 ops-panel，两条进度条叠加易糊——委托用完成度摘要（X/N）+ 逐条领取，别再来一条大进度条（product-audit L15）。
+7. **[C-SF-T8 全清 bonus 空诺]** 若三条委托都可能做不了（毕业+破产账号），全清 bonus 变永远拿不到——`commission_idle` 保底（有入住即可结算）必须存在。
+8. **[C-SF-T8 daily reset 漏字段]** `daily.ts` `reset()`（L244-253）+ `serialize()`（L217-228）+ `deserialize()`（L230-242）三处都要加新字段，漏一处 → 登出/切账号残留或往返丢失（migrations.test 往返测试守）。
+9. **[定时器/飘字清除]** 若委托领取加飘字，setTimeout 必须登记 + onUnmounted 清（pitfalls setTimeout 假安全）；HomesteadHubView 已有 `timers[]` + `scheduleClear`（L301-312）范式，HomesteadView 有 rAF+idleTimer onUnmounted 清（L444-447）范式可仿。
+10. **[货币入口]** 委托/bonus 发奖只走 `profile.earn`（daily `claim` L148-152 已是此范式），绝不绕过。
 
-### B4. `components/nurture/InventoryPanel.vue`（Nice-to-have UI 标记）
-- 仿 SE-T3f 的 ⚡ modifier 角标做套装归属视觉标记（背包卡/候选/商店三处并列），颜色走语义令牌。低成本一致性加分，不阻塞验收。
-
-### B5. SC-T1 定位入口（方案 B 才用）
-- `data/squadSkillKits.ts:697 getArchetypeForCharacter` + `SquadArchetype` union（line 30，需 export 才能给 config 标注类型）。方案 A 完全用不到。
+### 已验证无需担心
+- `daily` 领域 store 自身不存档（由 userStore 门面统一 saveToServer，daily.ts L5 注释）——委托领取走 `userStore.claimCommission` 触发 saveToServer 即可。
+- `computeIdleYield` 0 入住返回全 0 yield（settleHomestead L453 早退），idle 埋点守卫天然成立。
+- schema `DailySave` 是 optional 兼容型（migrateDaily 字段级兜底），加字段迁移风险极低。
 
 ---
 
 ## C. 新发现的坑
 
-### C-1（🔴 高危，本轮头号坑）｜EquipPickerModal 预览 seam 与 resolveEquipBonus 不同源
-`EquipPickerModal.vue:151 previewEquipBonus` **不调 `resolveEquipBonus`，而是内联重算三槽 `enhancedBonus` 求和**（equipment.ts 求和逻辑的第二份拷贝）。这是 pitfalls S13-C2 明列的「预览≠实战」复发点——SE-T1 时已被 Scout C-2 提醒、Generator 靠内联补 `enhancedBonus` 才对齐。**SE-T2 加套装加成时，若只改 store `resolveEquipBonus`、忘同步 EquipPickerModal 内联预览，换装弹窗算出的战力 delta 会漏套装增量、实战却生效 → 玩家看到「装上第 3 件套装件预览没涨、进战斗却涨了」的口径打架。** 缓解：`previewEquipBonus` 用「替换当前槽后的假设 defId 列表」调同一个 config `resolveSetBonus`，与 store 端同源。（根治办法是把 previewEquipBonus 重构成复用 store 求和，超出本轮范围，首版同源即可。）
-
-### C-2（🟡 中危）｜SPRINT 的「resolveRole」在代码里不存在，实际是 getArchetypeForCharacter
-SPRINT line 29 写「复用 SC-T1 resolveRole」，但全仓**无 `resolveRole` 导出**。实际定位入口 = `squadSkillKits.getArchetypeForCharacter(character, activeSkill?, passiveSkill?)`（line 697），内部函数 `resolveArchetype`/`inferArchetypeByText` 未导出。Planner/Generator 若照字面找 `resolveRole` 会扑空。方案 B 才涉及此项；方案 A 无关。
-
-### C-3（🟡 中危）｜方案 B 引入 equipment store → gameDataStore 新依赖
-equipment store 当前依赖面极窄（只 import profile）。role 条件加成要在 store 层算，必须 `getCharacterCardById`（gameDataStore）+ `getArchetypeForCharacter`（data 层）。这是本 store 首次依赖 gameDataStore 与 data 层。方向上安全（gameDataStore 不反向依赖 equipment），但**测试成本上升**（equipment.test.ts 要 mock/装 gameDataStore 与角色卡）。**这是建议首版只做方案 A、把方案 B 留作可选叠加或后续轮次的核心理由。**
-
-### C-4（🟢 低危）｜套装加成不套 enhancedBonus、也不进 EquipmentItemSave
-套装加成是「装备整体」的确定性附加项，不属任一单件、不随强化放大（与 SE-T3 modifier 恒定同理）。别误在 `resolveSetBonus` 里套 `enhancedBonus`（会让套装加成随强化涨、破坏「强化只放大单件五维」的钉死边界）。setId 是 `EquipmentDef` 静态字段，**不进 `EquipmentItemSave`**（否则触发升档）。
-
-### C-5（🟢 低危）｜checkbox 收尾核对（末轮）
-本轮为 S14-E 末轮：Generator/Evaluator 完成 SE-T2 后须把 SPRINT.md line 28 的 SE-T2 主条目 + 其子项从 `[ ]` 补 `[x]`，并确认 SE-T1/SE-T3 仍 `[x]`（前两轮 eval 已确认无落后）。Orchestrator 收尾须核对 SE-T1..T3 全 `[x]` 才算 S14-E 完成（tier1-on 跑满 ≠ 达成）。
-
----
-
-**一句话回执**：scout.md 已写。SE-T2 可行性——**方案 A（确定性套装 setId）首选、完全成立**（纯 config 派生、经 `resolveEquipBonus` 单一 seam 进战力、无存档改动 SAVE_VERSION 维持 18，唯一必须手动同源的是 EquipPickerModal 内联预览 C-1）；**方案 B（原型条件加成）成立但成本更高**（需 equipment store 新引 gameDataStore 依赖、SPRINT 说的「resolveRole」实为 `getArchetypeForCharacter`），建议本轮只做方案 A 收尾 S14-E、方案 B 作可选叠加或不做。
+- **[SF-T8 存档协议：升 v19 而非「悄悄改结构」]** 研究审计倾向「不升版 `?? {}` 兜底」，但只要动 `DailySave` 结构就必须三处同改 + 往返测试（成本与升版无关）；升 v19 有明确版本锚点、更符合 SPRINT L16 协议、v19 额度本就留给 SF-T8。Scout 拍板**升 19**——避免「改了结构却不升版」的隐性协议违规。**一 sprint 只升一次，SF-T8 用掉即封顶。**
+- **[收官轮范围纪律]** 跑到 R3 ≠ SF-T8 已做（前两轮明令不做）。Orchestrator 收尾须核对「SF-T1..T8 全 `[x]` 且与实现一致」而非只看末轮 Evaluator 决策（S14-A SA-T6 被漏正是此坑，pitfalls L84）。SF-T8 是 S14 全局最后一块，做完 S14 家园 hub 深化整体收官。
+- **[commission_bonus key 复用不新增第 4 字段]** 全清 bonus 的「已领」标记复用 `commissionClaimed: string[]` 存特殊 key（如 `'__bonus__'`），避免为 bonus 单开第 4 序列化字段——省一次 schema 面积，跨天随 `ensureCommissionToday` 一并归零。

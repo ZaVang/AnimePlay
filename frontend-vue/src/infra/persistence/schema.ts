@@ -30,7 +30,9 @@
  * v18（S14-E SE-T1）：EquipmentItemSave 加 enhance（强化等级 0..MAX_ENHANCE，缺省 0）——装备毕业曲线从「拿到即满」
  *   拉长为「拿到 → KP+燃料强化到满」。每级按比例抬升该实例五维加成（config/equipment.ts enhancedBonus，
  *   经既有 resolveEquipBonus 单一 seam 进战力）。旧档实例补 enhance:0、clamp [0,MAX_ENHANCE]（脏档防放大）。
- *   本 Sprint 唯一存档变更。
+ * v19（S14-F SF-T8）：daily 扩字段——commissionDate/commissionProgress/commissionClaimed（家园日常委托，
+ *   与 daily task 平行的 commission 子域，复用 todayKey 跨天读时归零）。commissionClaimed 兼存全清 bonus 特殊 key
+ *   （COMMISSION_BONUS_KEY，不单开第 4 字段）。旧档迁移补缺省（''/{}/[]）。本 Sprint 唯一存档变更。
  */
 import type { PityState } from '@/engine/gacha/draw';
 import { defaultFacilityLevels } from '@/config/homestead';
@@ -45,7 +47,7 @@ import type {
   TowerProgress,
 } from '@/types/player';
 
-export const SAVE_VERSION = 18 as const;
+export const SAVE_VERSION = 19 as const;
 
 /** 商店单品的当日购买记录（跨天读取时自动视为 0）。 */
 export interface ShopPurchaseRecord {
@@ -71,6 +73,12 @@ export interface DailySave {
   weeklyClaimed: string[];
   /** ★ v7：连续登录天数（断签归 1，今日已领不变）。 */
   loginStreak: number;
+  /** ★ v19：家园日常委托集所属日期（todayKey：YYYY-M-D，跨天读时归零，与 daily task 独立日期桶）。 */
+  commissionDate: string;
+  /** ★ v19：commissionId → 进度计数（家园委托，与 daily progress 平行）。 */
+  commissionProgress: Record<string, number>;
+  /** ★ v19：当日已领取的 commissionId（兼存全清 bonus 特殊 key COMMISSION_BONUS_KEY）。 */
+  commissionClaimed: string[];
 }
 
 export interface GuessGameSave {
@@ -303,6 +311,10 @@ export function createDefaultDaily(): DailySave {
     weeklyProgress: {},
     weeklyClaimed: [],
     loginStreak: 0,
+    // v19：家园日常委托子域缺省
+    commissionDate: '',
+    commissionProgress: {},
+    commissionClaimed: [],
   };
 }
 

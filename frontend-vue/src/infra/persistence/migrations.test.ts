@@ -601,6 +601,9 @@ describe('v2 存档过迁移层', () => {
       weeklyProgress: {},
       weeklyClaimed: [],
       loginStreak: 0,
+      commissionDate: '',
+      commissionProgress: {},
+      commissionClaimed: [],
     });
     expect(out.codexMilestones).toEqual(['char_owned_50', 'anime_ur_complete']);
     expect(out.achievements).toEqual(['ach_first_ur', 'ach_first_win']);
@@ -629,6 +632,9 @@ describe('v2 存档过迁移层', () => {
       weeklyProgress: { weekly_gacha: 12 },
       weeklyClaimed: ['weekly_battle'],
       loginStreak: 9,
+      commissionDate: '',
+      commissionProgress: {},
+      commissionClaimed: [],
     });
   });
 
@@ -648,6 +654,9 @@ describe('v2 存档过迁移层', () => {
       weeklyProgress: {},
       weeklyClaimed: [],
       loginStreak: 0,
+      commissionDate: '',
+      commissionProgress: {},
+      commissionClaimed: [],
     });
     expect(out.codexMilestones).toEqual([]);
     expect(out.achievements).toEqual([]);
@@ -656,6 +665,87 @@ describe('v2 存档过迁移层', () => {
   it('appearance 形态损坏时回落默认皮肤', () => {
     expect(migrate({ version: 4, appearance: { skinId: 42 } }).appearance).toEqual({ skinId: 'warm' });
     expect(migrate({ version: 4, appearance: 'oops' }).appearance).toEqual({ skinId: 'warm' });
+  });
+});
+
+describe('v19 家园委托字段迁移（SF-T8）', () => {
+  it('SAVE_VERSION 已升至 19', () => {
+    expect(SAVE_VERSION).toBe(19);
+  });
+
+  it('v18 旧档 daily（无 commission 三字段）→ 迁移补缺省（保留日/周字段）', () => {
+    const out = migrate({
+      version: 18,
+      daily: {
+        date: '2026-6-16',
+        progress: { daily_gacha: 1 },
+        claimed: ['daily_gacha'],
+        lastLoginDate: '2026-6-16',
+        weekDate: '2026-W25',
+        weeklyProgress: { weekly_gacha: 3 },
+        weeklyClaimed: [],
+        loginStreak: 4,
+      },
+    });
+    expect(out.daily).toEqual({
+      date: '2026-6-16',
+      progress: { daily_gacha: 1 },
+      claimed: ['daily_gacha'],
+      lastLoginDate: '2026-6-16',
+      weekDate: '2026-W25',
+      weeklyProgress: { weekly_gacha: 3 },
+      weeklyClaimed: [],
+      loginStreak: 4,
+      // v19：委托三字段补缺省
+      commissionDate: '',
+      commissionProgress: {},
+      commissionClaimed: [],
+    });
+  });
+
+  it('v19 存档的 daily（含 commission）原样保真往返', () => {
+    const out = migrate({
+      version: 19,
+      daily: {
+        date: '2026-6-16',
+        progress: {},
+        claimed: [],
+        lastLoginDate: '',
+        weekDate: '',
+        weeklyProgress: {},
+        weeklyClaimed: [],
+        loginStreak: 0,
+        commissionDate: '2026-6-16',
+        commissionProgress: { commission_idle: 1, commission_tower: 1 },
+        commissionClaimed: ['commission_idle', '__bonus__'],
+      },
+    });
+    expect(out.daily.commissionDate).toBe('2026-6-16');
+    expect(out.daily.commissionProgress).toEqual({ commission_idle: 1, commission_tower: 1 });
+    expect(out.daily.commissionClaimed).toEqual(['commission_idle', '__bonus__']);
+  });
+
+  it('commission 字段损坏时按字段补默认（白名单重建）', () => {
+    const out = migrate({
+      version: 19,
+      daily: {
+        date: '2026-6-16',
+        commissionDate: 42,
+        commissionProgress: 'oops',
+        commissionClaimed: null,
+      },
+    });
+    expect(out.daily.commissionDate).toBe('');
+    expect(out.daily.commissionProgress).toEqual({});
+    expect(out.daily.commissionClaimed).toEqual([]);
+  });
+
+  it('缺失 daily 整体键 → createDefaultDaily 含 commission 缺省', () => {
+    const out = migrate({ version: 18 });
+    expect(out.daily).toEqual(createDefaultDaily());
+    expect(out.daily.commissionDate).toBe('');
+    expect(out.daily.commissionProgress).toEqual({});
+    expect(out.daily.commissionClaimed).toEqual([]);
   });
 });
 

@@ -6,6 +6,9 @@ import {
   tutoringExpGain,
   TUTORING_EXP_BASE,
   TUTORING_EXP_PER_LEVEL,
+  tutoringCost,
+  TUTORING_COST_BASE,
+  TUTORING_COST_PER_LEVEL,
   expOverflowExchange,
   EXP_OVERFLOW_PER_KP,
 } from './nurture';
@@ -21,6 +24,30 @@ describe('SD-T4 tutoringExpGain（补习产出随等级线性递增）', () => {
   it('严格递增', () => {
     for (let lv = 1; lv < 100; lv++) {
       expect(tutoringExpGain(lv + 1)).toBeGreaterThan(tutoringExpGain(lv));
+    }
+  });
+});
+
+describe('★ SF-T2 tutoringCost（补习成本随等级线性递增，修「越高级越便宜」漏洞）', () => {
+  it('base + level × k，level 钳到 ≥1', () => {
+    expect(tutoringCost(1)).toBe(TUTORING_COST_BASE + TUTORING_COST_PER_LEVEL);
+    expect(tutoringCost(50)).toBe(TUTORING_COST_BASE + 50 * TUTORING_COST_PER_LEVEL);
+    expect(tutoringCost(0)).toBe(tutoringCost(1)); // 钳到 1
+    expect(tutoringCost(-3)).toBe(tutoringCost(1));
+  });
+
+  it('严格随级递增', () => {
+    for (let lv = 1; lv < 100; lv++) {
+      expect(tutoringCost(lv + 1)).toBeGreaterThan(tutoringCost(lv));
+    }
+  });
+
+  it('单位经验单价随级不降（守「补习是 KP sink 不是提款机」基线）', () => {
+    let prevPrice = tutoringCost(1) / tutoringExpGain(1);
+    for (let lv = 2; lv <= 100; lv++) {
+      const price = tutoringCost(lv) / tutoringExpGain(lv);
+      expect(price).toBeGreaterThanOrEqual(prevPrice - 1e-9); // 不降（允许浮点误差）
+      prevPrice = price;
     }
   });
 });

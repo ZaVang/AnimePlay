@@ -11,8 +11,8 @@ import { MAX_BREAKTHROUGH, MAX_CHARACTER_LEVEL, getRequiredExpForLevel } from '@
 import {
   BOND_MAX_THRESHOLD,
   BOND_OVERFLOW_AFFECTION_PER_KP,
-  TUTORING_KP_COST,
   tutoringExpGain,
+  tutoringCost,
   EXP_OVERFLOW_PER_KP,
 } from '@/config/nurture';
 
@@ -126,7 +126,7 @@ describe('SD-T4 补习产出随等级递增（tutoringExpGain）', () => {
     expect(tutoringExpGain(99)).toBeGreaterThan(tutoringExpGain(50));
   });
 
-  it('tutorCharacter 按当前等级发放递增经验（走 profile.spend 扣 KP）', () => {
+  it('tutorCharacter 按当前等级发放递增经验（走 profile.spend 扣按级递增成本）', () => {
     const nurture = useNurtureStore();
     const profile = useProfileStore();
     profile.earn('knowledgePoints', 10000);
@@ -137,10 +137,88 @@ describe('SD-T4 补习产出随等级递增（tutoringExpGain）', () => {
     const kpBefore = profile.core.knowledgePoints;
     const expBefore = data.totalExperience;
     expect(nurture.tutorCharacter(CHAR)).toBe(true);
-    expect(profile.core.knowledgePoints).toBe(kpBefore - TUTORING_KP_COST);
+    // ★ SF-T2：成本随级递增（tutoringCost(20)），非旧定额 TUTORING_KP_COST。
+    expect(profile.core.knowledgePoints).toBe(kpBefore - tutoringCost(20));
     expect(data.totalExperience).toBe(expBefore + tutoringExpGain(20));
   });
 });
+
+describe('★ SF-T2 tutorCharacterBatch（批量逐份扣费 + 中途终止）', () => {
+  it('×10 逐份按当前等级扣费（成本递增，非先算总经验一次灌）', () => {
+    const nurture = useNurtureStore();
+    const profile = useProfileStore();
+    profile.earn('knowledgePoints', 100000);
+    const data = nurture.getNurtureData(CHAR);
+    data.totalExperience = getRequiredExpForLevel(5);
+    data.level = 5;
+    const kpBefore = profile.core.knowledgePoints;
+    const result = nurture.tutorCharacterBatch(CHAR, 'times', 10);
+    expect(result.times).toBe(10);
+    // 逐份扣费：合计 KP 等于 store 汇总的 spentKp（不是 10×首份成本）
+    expect(kpBefore - profile.core.knowledgePoints).toBe(result.spentKp);
+    expect(result.spentKp).toBeGreaterThan(0);
+    expect(result.gainedExp).toBeGreaterThan(0);
+  });
+
+  it('余额不足中途终止：返回已完成份数，不静默扣钱不给量', () => {
+    const nurture = useNurtureStore();
+    const profile = useProfileStore();
+    const data = nurture.getNurtureData(CHAR);
+    data.totalExperience = getRequiredExpForLevel(3);
+    data.level = 3;
+    // 只给足 2 份的钱（tutoringCost(3)×2 略多，第 3 份不足）
+    const c = tutoringCost(3);
+    profile.earn('knowledgePoints', c * 2 + Math.floor(c / 2));
+    const result = nurture.tutorCharacterBatch(CHAR, 'times', 10);
+    expect(result.times).toBeLessThan(10);
+    expect(result.times).toBeGreaterThanOrEqual(1);
+    // 完成后余额 < 下一份成本（钱花在完成的份上，没有静默吞钱）
+    expect(profile.core.knowledgePoints).toBeLessThan(tutoringCost(nurture.getNurtureData(CHAR).level));
+    expect(kpConservation(result, c * 2 + Math.floor(c / 2), profile.core.knowledgePoints)).toBe(true);
+  });
+
+  it('满级中途终止：满级角色批量返回 0 份、不扣钱', () => {
+    const nurture = useNurtureStore();
+    const profile = useProfileStore();
+    profile.earn('knowledgePoints', 100000);
+    const data = nurture.getNurtureData(CHAR);
+    data.totalExperience = getRequiredExpForLevel(MAX_CHARACTER_LEVEL);
+    data.level = MAX_CHARACTER_LEVEL;
+    const kpBefore = profile.core.knowledgePoints;
+    const result = nurture.tutorCharacterBatch(CHAR, 'times', 10);
+    expect(result.times).toBe(0);
+    expect(result.spentKp).toBe(0);
+    expect(profile.core.knowledgePoints).toBe(kpBefore); // 满级不扣钱
+  });
+
+  it('补到下一级：升 1 级即停', () => {
+    const nurture = useNurtureStore();
+    const profile = useProfileStore();
+    profile.earn('knowledgePoints', 1000000);
+    const data = nurture.getNurtureData(CHAR);
+    data.totalExperience = getRequiredExpForLevel(2);
+    data.level = 2;
+    const result = nurture.tutorCharacterBatch(CHAR, 'toNextLevel', 100);
+    expect(result.levelsGained).toBeGreaterThanOrEqual(1);
+    expect(nurture.getNurtureData(CHAR).level).toBeGreaterThan(2);
+  });
+
+  it('未登录 → 空结果不扣钱', () => {
+    useProfileStore().currentUser = '';
+    const nurture = useNurtureStore();
+    const result = nurture.tutorCharacterBatch(CHAR, 'times', 10);
+    expect(result).toEqual({ times: 0, spentKp: 0, gainedExp: 0, levelsGained: 0 });
+  });
+});
+
+/** 守恒校验：起始 KP = 剩余 KP + 本批 spentKp（钱没凭空消失/多扣）。 */
+function kpConservation(
+  result: { spentKp: number },
+  startKp: number,
+  remainingKp: number,
+): boolean {
+  return startKp === remainingKp + result.spentKp;
+}
 
 describe('SD-T4 满级经验溢出自动转 KP（addCharacterExp 满级分支）', () => {
   it('满级角色继续吃经验 → 溢出满一份自动 earn KP（不再净沉没）', () => {

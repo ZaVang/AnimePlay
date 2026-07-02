@@ -1,73 +1,120 @@
-# Negotiation — S14-E 第 3/3 轮（收尾轮，product-loop --tier1 on --mode all）
+# Negotiation — S14-F Round 3/3（product-loop --tier1 on --mode all · 收官轮）
 
-> 对三份三审报告 Prioritized Recommendations 逐条回应：接受 / 拒绝 / 部分接受 + 理由 + 本轮行动。超范围标 backlog。本轮切片 = **SE-T2｜确定性套装（3 组取向套装，方案 A / research 替代 C）**。
-> **总收敛**：四审（product / evolution / research / scout）一致落在「**只做 3 组取向套装、条件加成 backlog**」。product 与 research 深层分析都明确推荐套装；evolution/research 表层一句「优先条件加成」被其自身 tradeoff 矩阵与替代方案分析推翻（条件加成成本约套装 3~4 倍、build 深度不更高、引入跨 store 依赖）。**本轮以套装收尾。**
-
----
-
-## 一、product-audit-report.md
-
-### 🔴 Critical
-- **🔴-1 SE-T2 必须真落地、不得降级为回归确认** → **接受**。本轮唯一指派切片，工作树确认尚未动工（无 setId/setBonusFor）。行动：SE-T2a..e 真实现，收尾核对 SE-T1..T3 全 `[x]`。
-- **🔴-2 套装加成必须与强化正交（加法、非乘法）、绝不碰 modifier** → **接受（核心护栏）**。行动：套装奖基于固定值、加法追加到 `sumStatBonus` 之后（SE-T2c），绝不套 `enhancedBonus`、绝不塞 modifier；验收显式断言「不随强化放大」+「0 件时 `resolveEquipBonus` 逐字节一致」（SE-T2b/c 验收）。
-- **🔴-3 套装进度与奖励必须显形** → **接受**。行动：候选/背包 setId chip + 配装弹窗右栏「齐几件/齐套奖 delta」（SE-T2d）。
-
-### 🟡 Important
-- **🟡-1 采用 3 组取向互斥套装（非每稀有度一套）** → **接受（形态拍板）**。攻击/坦度/节奏跨稀有度打 setId，凑套需混稀有度 → 与堆最高稀有真实互斥（对冲 P2-14）。行动：SE-T2a。
-- **🟡-2 齐套奖 ≈ 半个稀有度档、config 集中可调 + 测试锁死** → **接受**。行动：3 套阶梯奖表集中 config 一处，测试锁量级（SE-T2a/b）。
-- **🟡-3 信息密度分工：候选卡只加 chip、进度/奖励放右栏子区** → **接受**。行动：仿「装备强化」子区分隔线范式，复用 delta 语言不追加行、不另开弹窗（SE-T2d）。
-
-### 🟢 Nice-to-have
-- **🟢-1 齐套瞬间 chip 点亮 + 战力 delta 既有 transition** → **接受（不阻塞）**。行动：SE-T2g。
-- **🟢-2 低稀有度（R/SR）也铺可凑套装、啊哈前移** → **接受**。行动：SE-T2a 打标签覆盖 R/SR。
-- **🟢-3 InventoryPanel 背包卡也显示 setId chip** → **接受（不阻塞）**。行动：SE-T2f。
-
-### 💡 Feature Idea（backlog）
-- **💡-1 套装图鉴只读面板** / **💡-2 齐套风味台词/取向角标** / **💡-3 条件加成（archetype 亲和）** / **💡-4 modifier 绑 slot 取向** → **全 backlog**，超本轮最小实现范围。条件加成明确不开跨 store 耦合口（见下 research/evolution 回应）。
+> 对三份 Reviewer 报告（product-audit / research-audit / evolution-audit）Prioritized Recommendations 逐条回应。本轮承诺切片 = **SF-T8｜家园日常委托（P3-10）** —— S14 收官任务。
+> 分诊：命中 SF-T8 → 接受并本轮落地；命中收官核对 → 接受本轮做；超 S14-F → backlog（S15+）。
+> 三份报告本轮镜头高度收敛（命名空间方案 B / 三守卫 / 全清 bonus / UI 清单勾选），无实质分歧，唯一需拍板项 = 「升不升 v19」——Scout 拍板**升 v19**，本 Negotiation 采信（理由见末尾）。
 
 ---
 
-## 二、evolution-audit-report.md
+## 一、evolution-audit（R3 SF-T8 镜头）逐条回应
 
-- **🔴 SE-T2 本轮必做，加确定性套装或原型条件加成（表层写「优先后者」）** → **部分接受 / 表层建议拒绝**。接受「SE-T2 必做、折进 `resolveEquipBonus` 单一 seam、随机词条不做、不匹配/不齐套明示不静默」；**拒绝表层「优先条件加成」**——该报告自身正文（line 113）明说条件加成「build 深度不比套装高、成本高得多，本轮不建议，backlog」，表层一句与其分析自相矛盾，从其分析结论走套装。行动：SE-T2 走套装（SE-T2a..e），条件加成 backlog。
-- **🔴 回归护栏：不破坏 SE-T1 五维 seam / SE-T3 modifier 独立 seam / SB-T3 暴击轴 / 战力单一 seam / S14-A..D；敌方不吃条件加成** → **接受**。行动：SE-T2e 回归；SE-T2c 断言敌方侧不吃套装加成、0 件逐字节一致。
-- **🟡 SE-T2 UI 显示套装进度或命中态，复用 delta 语言、不另开弹窗、颜色走语义令牌** → **接受**。行动：SE-T2d。
-- **🟢 条件加成若做，给适配度小标** → **拒绝（本轮不做条件加成）** → backlog。
-- **🟢 范围纪律：若只够一条，只做条件加成、套装标 backlog** → **拒绝该取舍方向**。四审一致套装性价比更高（零跨 store 依赖、回归最低），若只够一条应做套装。行动：本轮做套装。
-- **💡 叙事套装 / 适配★可视化 / 满强化+齐套毕业特效 / 定向掉落 / homeEffect 剥离** → **全 backlog**。
+### 接受 + 本轮落地｜🔴 Critical SF-T8 家园日常委托
+- **回应**：接受（本轮唯一必做）。采纳其全部落地判据：平行 commission 子域 + 独立模板/桶/`markCommission` 埋点 + 复用 `ensureToday` 跨天 + 三守卫（idle 守 `hours>0`... 见下修正 / tower 同埋 completeFloor+sweepFloor 绝不碰 battleWin / idle 保底可完成）+ 奖励小额走 `profile.earn` + UI 挂 home 面板与 SF-T3 共存。
+- **一处强化（采纳 product-audit + research-audit 更严口径）**：idle 守卫判据 evolution-audit 写「守 `yield.hours>0`」，但 product/research 指出首次基线 / 回拨钳位 / 0 入住空结算都可能 hours 存在但产出 0 —— 本轮**采信更严口径「守实际产出」**（埋在 `settleHomestead` 全 0 产出早退之后），比单纯 `hours>0` 更稳。已写进 plan 任务 1 决策 3①。
+- **行动**：写进 SPRINT 第 3 轮 SF-T8 + plan 任务 1。
 
----
+### 接受 + 本轮落地｜🔴 Critical SF-T8 存档拍板
+- **回应**：evolution-audit 倾向不升 v19，但 Scout 拍板升 v19，**本轮采信 Scout（升 v19）**。理由：只要动 `DailySave` 结构就必须三处同改 + 往返测试（成本与升版无关），升版有明确版本锚点、更符合 SPRINT L16 协议、v19 额度本就留给 SF-T8。**一 sprint 只升一次，SF-T8 用掉即封顶。**
+- **行动**：schema `SAVE_VERSION` 18→19 + 三处同改 + `migrations.test.ts` v18→v19 往返，写进 plan 决策 7。
 
-## 三、research-audit-report.md
+### 接受 + 本轮落地｜🟡 Important 今日全清 bonus
+- **回应**：接受（委托区别于 daily 的核心收尾正反馈）。采纳 `allCommissionsDone` 派生 + 一份 bonus；已领标记复用 commission 已领桶特殊 key（不新增第 4 字段，Scout C 段拍板）。R3 时间紧可 fallback 留收尾，但逐条 + 三守卫 + 保底必做。
+- **行动**：写进 plan 决策 4。
 
-- **🔴 High-impact-Low-effort 1｜走替代 C：套装=3 组取向标签，给现有目录打 setId、不新增装备** → **接受（形态拍板）**。行动：SE-T2a。
-- **🔴 2｜`setBonusFor(equippedDefIds)` config 纯函数，store `resolveEquipBonus` 与 EquipPicker `previewEquipBonus` 两处同源** → **接受（头号护栏）**。行动：SE-T2b（纯函数）+ SE-T2c（store）+ SE-T2d（预览同源），杜绝预览≠实战（scout C-1）。
-- **🔴 3｜单角色三槽内判定、齐 2/3 阶梯固定五维加法** → **接受**。行动：SE-T2b。
-- **🔴 4｜基于 def 原值/固定值、与强化正交（加法合并、不随强化涨）** → **接受**。行动：SE-T2b/c 不套 `enhancedBonus`。
-- **🔴 5｜只碰五维、绝不碰 modifier（守 SE-T3 clamp）** → **接受**。行动：SE-T2b。
-- **🔴 6｜幅度「齐套 ≈ 半档稀有度」** → **接受**。行动：SE-T2a/b。
-- **🔴 7｜EquipPicker/背包显示 setId 归属 + 齐几件 + 齐套奖（formatSetBonus helper、语义色）** → **接受**。行动：SE-T2d（复用 SE-T3 formatModifier 范式）。
-- **🔴 8｜特征测试：齐套真进战力 + 不齐套逐字节一致 + 不随强化 + 不含 modifier + 纯函数计数/阈值/互斥独立测试** → **接受**。行动：SE-T2b/c 验收。
-- **🟡 High-effort backlog｜原型条件加成（替代 B）** → **接受 backlog**。理由：需解析 `getArchetypeForCharacter`（跨 gameData/skill store 或改 `resolveEquipBonus` 签名波及 4 消费点），成本约套装 3~4 倍、build 深度不更高。
-- **🟡 灵感炸弹 1「套装补短板」（弱维补强而非强维叠强）** → **部分接受**：数值取向可在 SE-T2a 填数时倾向「补短板」以缓解膨胀，但不作硬性验收项（需调优验证），backlog 精调。
-- **🟢/💡 三选一张力 UI / 套装随强化成长 / 叙事套装** → **backlog**（长期，超本轮）。
+### 接受 + 本轮落地｜🟡 Important home 面板委托摘要（cue）
+- **回应**：接受。home 第一屏可见「委托 X/N」小徽章摘要（习惯循环 cue 轻量版）。
+- **行动**：写进 plan 决策 6。
 
-**结论**：research 深层（Phase 4 tradeoff 矩阵 + Prioritized Directions + 收敛结论）与 product/scout 完全一致 → 本轮套装收尾。research 表层「优先后者(条件加成)」被其自身矩阵推翻，不采纳。
+### 部分接受（本轮 nice-to-have，可省）｜🟢 委托卡点击直达对应 tab
+- **回应**：部分接受。顺手增强非必须；若实现成本低可带，否则不阻塞验收。不写进硬验收，标 nice-to-have。
 
----
+### 接受 + 本轮做｜🟢 收官一致性巡检
+- **回应**：接受。确认 SF-T1..T8 全 `[x]` + 五处视觉统一。写进 plan 任务 2。
 
-## 四、scout.md（A. 约束与可行性）
-- **A0 拍板建议：首版只做方案 A（确定性套装）** → **接受**（即本轮定案）。
-- **A1 无需升档、SAVE_VERSION 维持 18、不碰 schema/migrations/装配器、setId 不进 EquipmentItemSave** → **接受**。行动：SE-T2 无存档改动。
-- **A2 套装加成经 `resolveEquipBonus` 汇入、不另拼口径、不套 enhancedBonus** → **接受**。行动：SE-T2c。
-- **A3 4 个消费点：前 3 处改 store 自动生效、第 4 处 EquipPickerModal 需手动同源** → **接受（头号坑）**。行动：SE-T2d。
-- **A4「resolveRole」实为 getArchetypeForCharacter** → **接受（规避）**：本轮不走条件加成、绕开此坑；SPRINT「复用 resolveRole」不采纳。
-- **A5 engine 零改动 / 颜色语义令牌 / 组件清理** → **接受**。行动：解析全在 config+store，UI 走语义令牌。
-- **C-1..C-5 新坑** → **全接受**（C-1 预览同源已列 SE-T2d 头号护栏；C-4 双乘/越界已列护栏；C-5 收尾核对已列 SE-T2e）。
+### 拒绝本轮 / backlog｜💡 Feature Idea（委托叙事化 / 家园货币奖励 / 点名角色 / 红点接线）
+- **回应**：backlog（S15+）。均需角色维度进度模型 / 家园货币域 / 全站红点系统，超 S14-F P3 打磨范围，本轮克制不做。
 
 ---
 
-## 超范围 / backlog 汇总
-- 原型条件加成（archetype 亲和，替代 B / 💡-3）——跨 store 依赖成本高、build 深度不更高。
-- 叙事套装（Bangumi 番剧维度绑套装）、套装图鉴面板、适配★可视化、满强化+齐套毕业特效、定向掉落/碎片保底、homeEffect 彻底剥离到设施、重复件「拆/燃料/凑套」三选一张力 UI、套装随强化成长。
-- 灵感炸弹「套装补短板」数值取向的精调验证。
+## 二、research-audit（R3 SF-T8 设计研究镜头）逐条回应
+
+### 接受 + 本轮落地｜🔴 委托走平行 commission 子域（替代 1 方案 B）
+- **回应**：接受。三审 + Scout 收敛，语义纯度 > 省 2 字段迁移成本。三埋点挂 userStore 门面 saveToServer 前，与现有 5 个 markProgress 同位。
+- **行动**：plan 决策 1 + 5。
+
+### 接受 + 本轮落地（强化）｜🔴 挂机委托守「有实际产出」而非 `hours>0`
+- **回应**：接受，且这是本轮采信的更严口径（见 evolution 回应）。埋点在全 0 产出早退之后。
+- **行动**：plan 决策 3①。
+
+### 接受 + 本轮落地｜🔴 塔委托同埋 completeFloor+sweepFloor、绝不复用 battleWin
+- **回应**：接受。毕业玩家靠扫荡完成；battleWin 是宅理论战计数，语义错配。
+- **行动**：plan 决策 3②。
+
+### 接受 + 本轮落地｜🔴 至少一条委托保底可完成
+- **回应**：接受。`commission_idle`（有入住即结算）天然保底，防全清 bonus 空诺。
+- **行动**：plan 决策 3③。
+
+### 接受 + 本轮落地｜🟡 今日全清 bonus（替代 2 方案 B）
+- **回应**：接受（同 evolution 全清 bonus）。
+
+### 部分接受｜🟡 委托红点 / cue 显形
+- **回应**：部分接受。全站红点接线 backlog；本轮做 home 面板「委托 X/N」摘要（轻量 cue）。
+
+### 存档拍板分歧｜research-audit 倾向不升 v19
+- **回应**：research-audit 与 evolution 均倾向不升 v19，但**本轮采信 Scout 拍板升 v19**（存档结构变更三处同改成本与升版无关，升版有版本锚点更符合协议，v19 额度本就留 SF-T8）。这是本轮唯一实质分歧，已拍死。
+
+### 拒绝本轮 / backlog｜🟢🟢 命名空间方案 A 退路 + 🟢 委托与 SF-T3 UI 共存 + 💡 Wild
+- **回应**：方案 A（扩枚举）退路**不采用**（三审收敛方案 B）；SF-T3 UI 共存 → 接受（plan 决策 6，清单勾选而非横条区分）；💡 委托叙事化 / 家园货币奖励 → backlog S15+。
+
+---
+
+## 三、product-audit（R3 体验镜头）逐条回应
+
+### 接受 + 本轮落地｜🔴 委托平行子域 + 三埋点挂门面 + 复用 ensureToday
+- **回应**：接受（同上）。
+
+### 接受 + 本轮落地｜🔴 至少一条委托保底可完成
+- **回应**：接受（`commission_idle` 保底）。
+
+### 接受 + 本轮落地｜🔴 存档三处同改 + 往返测试
+- **回应**：接受。product-audit 亦把「升不升 v19」留给 Scout/Planner —— 本轮拍板升 v19。
+
+### 接受 + 本轮落地（本轮最关键 refine）｜🟡 委托与每日任务视觉分区 + 措辞差异化「家园本地小事」
+- **回应**：接受（product-audit 标为本轮最关键一条 refine）。三条全在 hub 内闭环、措辞强调「不用离开家园」、UI 与 daily task 分区。
+- **行动**：plan 决策 2 + 6。
+
+### 接受 + 本轮落地｜🟡 委托 cue 在 home 第一屏可见
+- **回应**：接受。home 面板「委托 X/N」醒目摘要，别埋在设施列滚动区外。
+- **行动**：plan 决策 6。
+
+### 接受 + 本轮落地｜🟡 委托卡与驻留卡视觉共存（清单勾选而非横条）
+- **回应**：接受（本轮收官轮最该盯的一致性点）。委托 target=1 本质布尔勾选，用 `○/✓` 清单 + X/N 小徽章，不再来一条大横条进度条，与 SF-T3 驻留横条天然区分。
+- **行动**：plan 决策 6 + 「可删掉的东西：别做委托进度横条」采纳。
+
+### 部分接受｜🟢 委托卡可点跳转对应 tab
+- **回应**：部分接受（nice-to-have，可省，不阻塞验收）。
+
+### 部分接受｜🟢 SF-T4-refine 余味：readinessHint 括号注释再收一档
+- **回应**：部分接受但**本轮不动**。R2 已把「（同口径）」黑话改为「（敌我同一把尺衡量）」白话，product-audit 亦评「可留」。为避免收官轮在已 COMPLETE 的 SF-T4 上开新改动引回归，本轮不碰；若 Generator 顺手且零风险可微收，非硬验收。
+
+### 拒绝本轮 / backlog｜💡 Feature Idea（红点接线 / 点名角色 / 叙事化 / 家园货币奖励）
+- **回应**：backlog（S15+），超本轮 P3 打磨范围。
+
+### 接受 + 本轮做｜收官轮附注（勿默认前轮已完成）
+- **回应**：接受。Evaluator 亲自复跑 5 条验收命令，SF-T8 完成后核对 SF-T1..T8 全 `[x]` 方为收官。写进 plan 任务 2。
+
+---
+
+## 四、存档拍板小结（本轮唯一实质分歧，已拍死）
+
+- **分歧**：research-audit + evolution-audit 倾向「不升 v19，`?? {}` 兜底」；Scout 拍板「升 v19」。
+- **本轮采信 Scout：升 SAVE_VERSION 18 → 19。**
+- **理由**：动 `DailySave` 结构必须 schema + migrations + 装配器三处同改 + 往返测试（成本与升不升版号无关）；升 v19 给 `migrations.test.ts` 明确版本锚点，更符合 SPRINT L16 存档协议、更易审计；v19 额度本就留给 SF-T8，一 sprint 只升一次，用掉即封顶。避免「改了结构却不升版」的隐性协议违规。
+
+## 五、超范围明确 backlog（本 Sprint 不做，S15+）
+
+- 委托叙事化 / 角色请求制（与 S14-C 好感联动）。
+- 委托奖励给家园货币 / comfort / 家具碎片（焊进 SD-T1 设施 + P3-4 家具 backlog 经营闭环）。
+- 委托点名入住角色（方舟基建心智，需角色维度进度模型）。
+- 委托红点接全站留存红点系统（完整 cue 显形，`docs/留存系统.md`）。
+- 命名空间方案 A（扩 `DailyTaskType` 枚举）——不采用，三审收敛方案 B。

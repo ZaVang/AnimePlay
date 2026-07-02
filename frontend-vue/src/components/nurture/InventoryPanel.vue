@@ -269,10 +269,17 @@ function dismantle(uid: string) {
         </div>
         <!-- ★ SD-T3 分解出口：仅游离件（未装备）可分解为 KP -->
         <div v-else-if="card.freeUid" class="mt-auto pt-1">
+          <!-- SF-T7②：双 sink 信息对称——count>1 的重复游离件既可分解回收 KP，也是同款强化燃料，
+               防新手拆光重复件后无料可强的不可逆误操作。纯文案提示，不改分解逻辑、不加确认弹窗。 -->
+          <p v-if="card.count > 1" class="text-[10px] text-ink-3 leading-snug mb-1">
+            重复件也可作强化燃料
+          </p>
           <button
             type="button"
             class="btn-ghost text-[10px] px-2 py-1 w-full text-danger hover:bg-danger/10"
-            :title="`分解 1 件回收 ${dismantleValueForRarity(card.def.rarity)} 知识点`"
+            :title="card.count > 1
+              ? `分解 1 件回收 ${dismantleValueForRarity(card.def.rarity)} 知识点；重复件也可留作同款强化燃料`
+              : `分解 1 件回收 ${dismantleValueForRarity(card.def.rarity)} 知识点`"
             @click="dismantle(card.freeUid)"
           >
             🔨 分解 (+{{ dismantleValueForRarity(card.def.rarity) }} KP)

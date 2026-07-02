@@ -15,6 +15,7 @@ import {
   facilityBonusPct,
   facilityUpgradeCost,
   offlineCapHours,
+  softCap,
   FACILITY_MIN_LEVEL,
   FACILITY_MAX_LEVEL,
 } from './homestead';
@@ -75,14 +76,15 @@ describe('computeIdleYield', () => {
       knowledgePct: 0.25,
       comfort: 7,
     });
-    expect(y.expEach).toBe(Math.floor(IDLE_EXP_PER_HOUR * 2 * 1.1));
-    expect(y.affectionEach).toBe(Math.floor(IDLE_AFFECTION_PER_HOUR * 2 * 1.2));
-    expect(y.knowledge).toBe(Math.floor(16 * 1.25));
+    // ★ SF-T5：装备 pct 经 softCap 软化（小 x 近似线性，略低于名义 pct），设施/comfort 另计。
+    expect(y.expEach).toBe(Math.floor(IDLE_EXP_PER_HOUR * 2 * (1 + softCap(0.1, HOMESTEAD_EFFECT_CAP.expPct))));
+    expect(y.affectionEach).toBe(Math.floor(IDLE_AFFECTION_PER_HOUR * 2 * (1 + softCap(0.2, HOMESTEAD_EFFECT_CAP.affectionPct))));
+    expect(y.knowledge).toBe(Math.floor(16 * (1 + softCap(0.25, HOMESTEAD_EFFECT_CAP.knowledgePct))));
     expect(y.comfort).toBe(7);
   });
 
-  it('装备家园收益倍率受上限保护，避免挂机盖过主动玩法（comfort 软加成另计）', () => {
-    // comfort 99 → 软加成 floor(99/10)×1% = 9%（未触 +20% 封顶）；装备 pct 仍受 0.6 cap 保护。
+  it('★ SF-T5 装备家园收益倍率受软化上限保护（softCap 渐近 ≈0.6，非硬顶断崖；comfort 软加成另计）', () => {
+    // comfort 99 → 软加成 floor(99/10)×1% = 9%（未触 +20% 封顶）；装备 pct 走 softCap 软化。
     const cm = 1 + comfortBonusPct(99); // 1.09
     const y = computeIdleYield(['UR'], 1 * H, {
       expPct: 9,
@@ -90,10 +92,47 @@ describe('computeIdleYield', () => {
       knowledgePct: 9,
       comfort: 99,
     });
-    expect(y.expEach).toBe(Math.floor(IDLE_EXP_PER_HOUR * (1 + HOMESTEAD_EFFECT_CAP.expPct) * cm));
-    expect(y.affectionEach).toBe(Math.floor(IDLE_AFFECTION_PER_HOUR * (1 + HOMESTEAD_EFFECT_CAP.affectionPct) * cm));
-    expect(y.knowledge).toBe(Math.floor(6 * (1 + HOMESTEAD_EFFECT_CAP.knowledgePct) * cm));
+    // 软化后倍率 = 1 + softCap(9, 0.6)（渐近 0.6 但达不到），非旧 Math.min 的恰 1.6。
+    expect(y.expEach).toBe(Math.floor(IDLE_EXP_PER_HOUR * (1 + softCap(9, HOMESTEAD_EFFECT_CAP.expPct)) * cm));
+    expect(y.affectionEach).toBe(Math.floor(IDLE_AFFECTION_PER_HOUR * (1 + softCap(9, HOMESTEAD_EFFECT_CAP.affectionPct)) * cm));
+    expect(y.knowledge).toBe(Math.floor(6 * (1 + softCap(9, HOMESTEAD_EFFECT_CAP.knowledgePct)) * cm));
     expect(y.comfort).toBe(99);
+  });
+});
+
+describe('★ SF-T5 softCap（装备 pct 平滑软化封顶：单调递增 + 渐近不超 cap + 小 x 近似线性）', () => {
+  const CAP = 0.6;
+
+  it('非正 value / 非正 cap → 0（与旧 cappedPct 边界一致）', () => {
+    expect(softCap(0, CAP)).toBe(0);
+    expect(softCap(-1, CAP)).toBe(0);
+    expect(softCap(undefined, CAP)).toBe(0);
+    expect(softCap(5, 0)).toBe(0);
+  });
+
+  it('对 x 严格单调递增（边际 >0，永不「加装备反降收益」）', () => {
+    let prev = softCap(0.0001, CAP);
+    for (let x = 0.05; x <= 20; x += 0.05) {
+      const cur = softCap(x, CAP);
+      expect(cur).toBeGreaterThan(prev);
+      prev = cur;
+    }
+  });
+
+  it('渐近不超 cap：现实堆叠区 < cap，超大 x 逼近 cap 不超', () => {
+    // 现实装备堆叠量级（x≈0..9）严格 < cap（渐近达不到）。
+    expect(softCap(9, CAP)).toBeLessThan(CAP);
+    // 超大 x（e^(-x/cap) 浮点下溢为 0）→ 恰达 cap，绝不超 cap（渐近上界守恒）。
+    expect(softCap(100, CAP)).toBeLessThanOrEqual(CAP);
+    // 大 x 已非常接近渐近上界（差距 < 0.1% cap）。
+    expect(softCap(20, CAP)).toBeGreaterThan(CAP * 0.999);
+  });
+
+  it('小 x 近似线性（x≪cap 时 softCap(x)≈x，无断崖）', () => {
+    expect(softCap(0.02, CAP)).toBeCloseTo(0.02, 2);
+    expect(softCap(0.05, CAP)).toBeCloseTo(0.05, 2);
+    // 消除断崖：触及旧硬顶量级（0.6）后再加装备边际仍 >0
+    expect(softCap(0.9, CAP)).toBeGreaterThan(softCap(0.6, CAP));
   });
 });
 
@@ -177,11 +216,12 @@ describe('computeIdleYield 设施乘区（独立于装备 0.6 cap，决策-5）'
     expect(upgraded.knowledge).toBe(base.knowledge);
   });
 
-  it('设施乘区与装备 pct、comfort 软加成三者相乘', () => {
+  it('设施乘区与装备 pct、comfort 软加成三者相乘（装备 pct 走 SF-T5 softCap）', () => {
     const y = computeIdleYield(['UR'], 1 * H, { expPct: 0.1, comfort: 30 }, { exp: 3, bond: 1, knowledge: 1 });
     const cm = 1 + comfortBonusPct(30); // 1.03
     const fac = 1 + facilityBonusPct(3); // 1.16
-    expect(y.expEach).toBe(Math.floor(IDLE_EXP_PER_HOUR * 1 * (1 + 0.1) * fac * cm));
+    // 装备 expPct 0.1 经 softCap 软化（小 x 近似线性，略低于 0.1），设施/comfort 仍独立相乘。
+    expect(y.expEach).toBe(Math.floor(IDLE_EXP_PER_HOUR * 1 * (1 + softCap(0.1, HOMESTEAD_EFFECT_CAP.expPct)) * fac * cm));
   });
 });
 

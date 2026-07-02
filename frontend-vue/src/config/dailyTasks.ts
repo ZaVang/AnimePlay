@@ -148,3 +148,63 @@ export function getDailyTaskById(id: string): DailyTaskDef | undefined {
 export function getWeeklyTaskById(id: string): DailyTaskDef | undefined {
   return WEEKLY_TASKS.find(t => t.id === id);
 }
+
+/**
+ * 家园日常委托（SF-T8 / P3-10）。与 DAILY_TASKS 平行的 commission 子域——不扩 DailyTaskType 通用枚举，
+ * 语义上是「今天在家里做的本地小事」（全在 hub 内闭环，不用离开家园），区别于「要离开家园」的 daily task。
+ * 委托是软钩子非硬 KPI：漏做无惩罚、奖励小到「做了开心不做无损」（动森村民请求哲学）。
+ * 跨天判定复用 daily 的 todayKey/ensureCommissionToday（进度/已领桶在 stores/daily.ts，进存档 v19）。
+ * 三守卫见 userStore 埋点（idle 守实际产出 / tower 同埋 completeFloor+sweepFloor / idle 保底可完成）。
+ */
+export type CommissionKind = 'idle' | 'tower' | 'enhance';
+
+export interface CommissionDef {
+  id: string;
+  kind: CommissionKind;
+  title: string;
+  description: string;
+  /** 委托本质是布尔勾选，恒为 1（UI 用 ○/✓ 而非横条）。 */
+  target: number;
+  /** 逐条小额奖励（对齐 daily task 30 KP 量级，走 profile.earn；守「回归补充不盖过主动收入」基线）。 */
+  rewards: DailyReward[];
+}
+
+/** 3 条固定委托（target=1）：全部命中家园本地成功点，措辞强调「不用离开家园」。 */
+export const COMMISSIONS: CommissionDef[] = [
+  {
+    id: 'commission_idle',
+    kind: 'idle',
+    title: '收取挂机',
+    description: '在家园收取一次挂机收益',
+    target: 1,
+    rewards: [{ currency: 'knowledgePoints', amount: 30 }],
+  },
+  {
+    id: 'commission_tower',
+    kind: 'tower',
+    title: '爬一层塔',
+    description: '通关或扫荡挑战塔一层',
+    target: 1,
+    rewards: [{ currency: 'knowledgePoints', amount: 30 }],
+  },
+  {
+    id: 'commission_enhance',
+    kind: 'enhance',
+    title: '强化装备',
+    description: '强化一件装备',
+    target: 1,
+    rewards: [{ currency: 'knowledgePoints', amount: 20 }],
+  },
+];
+
+/** 今日委托全清 bonus（3 条清完额外发一份，委托区别于 daily 的收尾正反馈）。 */
+export const COMMISSION_BONUS_REWARDS: DailyReward[] = [
+  { currency: 'knowledgePoints', amount: 50 },
+];
+
+/** 全清 bonus「已领」标记复用 commissionClaimed 桶的特殊 key（不新增第 4 序列化字段，跨天随委托归零）。 */
+export const COMMISSION_BONUS_KEY = '__bonus__';
+
+export function getCommissionById(id: string): CommissionDef | undefined {
+  return COMMISSIONS.find(c => c.id === id);
+}

@@ -5,15 +5,20 @@
  * 不触发存档（由门面统一控制）；发奖走 profile.earn（券为主、知识点为辅）。
  */
 import { defineStore } from 'pinia';
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
 import {
   DAILY_TASKS,
   WEEKLY_TASKS,
+  COMMISSIONS,
+  COMMISSION_BONUS_REWARDS,
+  COMMISSION_BONUS_KEY,
   DAILY_LOGIN_REWARDS,
   loginStreakRewardFor,
   getDailyTaskById,
   getWeeklyTaskById,
+  getCommissionById,
   type DailyTaskType,
+  type CommissionKind,
 } from '@/config/dailyTasks';
 import type { DailySave } from '@/infra/persistence';
 import { useProfileStore } from './profile';
@@ -60,6 +65,12 @@ export const useDailyStore = defineStore('daily', () => {
   const weeklyClaimed = ref<string[]>([]);
   /** 连续登录天数（断签归 1）。 */
   const loginStreak = ref<number>(0);
+  /** ★ SF-T8：家园日常委托集所属日期（todayKey，跨天读时归零，与 daily task 独立）。 */
+  const commissionDate = ref<string>('');
+  /** commissionId → 进度计数。 */
+  const commissionProgress = ref<Record<string, number>>({});
+  /** 当日已领取的 commissionId（兼存全清 bonus 特殊 key COMMISSION_BONUS_KEY）。 */
+  const commissionClaimed = ref<string[]>([]);
 
   /** 若已跨天，重置当日任务进度与领取状态（读时判定，幂等）。 */
   function ensureToday() {
@@ -78,6 +89,19 @@ export const useDailyStore = defineStore('daily', () => {
       weekDate.value = wk;
       weeklyProgress.value = {};
       weeklyClaimed.value = [];
+    }
+  }
+
+  /**
+   * SF-T8：若已跨天，重置家园委托进度与领取状态（含全清 bonus 特殊 key，随委托一并归零）。
+   * 复用 daily 的 todayKey 跨天口径（读时判定，幂等），绝不自造第二套跨天判定。
+   */
+  function ensureCommissionToday() {
+    const today = todayKey();
+    if (commissionDate.value !== today) {
+      commissionDate.value = today;
+      commissionProgress.value = {};
+      commissionClaimed.value = [];
     }
   }
 
@@ -176,6 +200,89 @@ export const useDailyStore = defineStore('daily', () => {
     return true;
   }
 
+  // --- SF-T8 家园日常委托（commission 子域，与 daily task 平行；跨天复用 todayKey） ---
+
+  /** 某委托当前进度。 */
+  function commissionProgressOf(id: string): number {
+    ensureCommissionToday();
+    return commissionProgress.value[id] || 0;
+  }
+
+  function isCommissionComplete(id: string): boolean {
+    const def = getCommissionById(id);
+    if (!def) return false;
+    return commissionProgressOf(id) >= def.target;
+  }
+
+  function isCommissionClaimed(id: string): boolean {
+    ensureCommissionToday();
+    return commissionClaimed.value.includes(id);
+  }
+
+  /**
+   * 推进某类委托进度（家园成功点埋点处调用；埋点全在 userStore 门面，engine 纯净不入）。
+   * 幂等钳到 target（仿 markProgress）。amount<=0 无操作。
+   */
+  function markCommission(kind: CommissionKind, amount = 1) {
+    if (amount <= 0) return;
+    ensureCommissionToday();
+    for (const def of COMMISSIONS) {
+      if (def.kind !== kind) continue;
+      const current = commissionProgress.value[def.id] || 0;
+      if (current >= def.target) continue;
+      commissionProgress.value[def.id] = Math.min(def.target, current + amount);
+    }
+  }
+
+  /** 领取已完成委托的奖励。返回是否成功领取（决定调用方是否存档）。发奖走 profile.earn。 */
+  function claimCommission(id: string): boolean {
+    ensureCommissionToday();
+    const def = getCommissionById(id);
+    if (!def) return false;
+    if (!isCommissionComplete(id) || commissionClaimed.value.includes(id)) return false;
+
+    const profile = useProfileStore();
+    commissionClaimed.value.push(id);
+    for (const r of def.rewards) {
+      profile.earn(r.currency, r.amount);
+    }
+    const rewardText = def.rewards
+      .map(r => `${r.amount} ${profile.currencyName(r.currency)}`)
+      .join('、');
+    profile.addLog(`完成家园委托「${def.title}」，获得 ${rewardText}！`, 'success');
+    return true;
+  }
+
+  /** 今日 3 条委托是否全部完成（全清 bonus 领取前置；idle 委托保底可完成，避免空诺）。 */
+  const allCommissionsDone = computed(() => {
+    ensureCommissionToday();
+    return COMMISSIONS.every(def => (commissionProgress.value[def.id] || 0) >= def.target);
+  });
+
+  /** 全清 bonus 是否已领（复用 commissionClaimed 桶存特殊 key，不新增第 4 字段）。 */
+  function isCommissionBonusClaimed(): boolean {
+    ensureCommissionToday();
+    return commissionClaimed.value.includes(COMMISSION_BONUS_KEY);
+  }
+
+  /** 领取今日全清 bonus。要求 3 条全完成且未领。返回是否成功（决定调用方是否存档）。 */
+  function claimCommissionBonus(): boolean {
+    ensureCommissionToday();
+    if (!allCommissionsDone.value) return false;
+    if (commissionClaimed.value.includes(COMMISSION_BONUS_KEY)) return false;
+
+    const profile = useProfileStore();
+    commissionClaimed.value.push(COMMISSION_BONUS_KEY);
+    for (const r of COMMISSION_BONUS_REWARDS) {
+      profile.earn(r.currency, r.amount);
+    }
+    const rewardText = COMMISSION_BONUS_REWARDS
+      .map(r => `${r.amount} ${profile.currencyName(r.currency)}`)
+      .join('、');
+    profile.addLog(`家园委托今日全清，额外奖励 ${rewardText}！`, 'success');
+    return true;
+  }
+
   /**
    * 每日登录奖励 + 连续登录递增。今日尚未发放 → 维护 loginStreak 并按档发奖，返回 true。
    * - 今日已领（lastLoginDate === today）：不变，返回 false。
@@ -224,6 +331,10 @@ export const useDailyStore = defineStore('daily', () => {
       weeklyProgress: weeklyProgress.value,
       weeklyClaimed: weeklyClaimed.value,
       loginStreak: loginStreak.value,
+      // v19：家园日常委托子域
+      commissionDate: commissionDate.value,
+      commissionProgress: commissionProgress.value,
+      commissionClaimed: commissionClaimed.value,
     };
   }
 
@@ -236,9 +347,14 @@ export const useDailyStore = defineStore('daily', () => {
     weeklyProgress.value = data?.weeklyProgress ?? {};
     weeklyClaimed.value = Array.isArray(data?.weeklyClaimed) ? data!.weeklyClaimed : [];
     loginStreak.value = typeof data?.loginStreak === 'number' ? data!.loginStreak : 0;
-    // 加载后立即做一次跨天/跨周判定：旧日期/旧周的进度直接归零（读时一致）。
+    // v19：家园委托（旧档缺 → 兜底空态；?? 保证跨版本反序列化不炸）
+    commissionDate.value = data?.commissionDate ?? '';
+    commissionProgress.value = data?.commissionProgress ?? {};
+    commissionClaimed.value = Array.isArray(data?.commissionClaimed) ? data!.commissionClaimed : [];
+    // 加载后立即做一次跨天/跨周判定：旧日期/旧周/旧委托的进度直接归零（读时一致）。
     ensureToday();
     ensureThisWeek();
+    ensureCommissionToday();
   }
 
   function reset() {
@@ -250,6 +366,9 @@ export const useDailyStore = defineStore('daily', () => {
     weeklyProgress.value = {};
     weeklyClaimed.value = [];
     loginStreak.value = 0;
+    commissionDate.value = '';
+    commissionProgress.value = {};
+    commissionClaimed.value = [];
   }
 
   return {
@@ -261,15 +380,26 @@ export const useDailyStore = defineStore('daily', () => {
     weeklyProgress,
     weeklyClaimed,
     loginStreak,
+    commissionDate,
+    commissionProgress,
+    commissionClaimed,
     progressOf,
     isComplete,
     isClaimed,
     weeklyProgressOf,
     isWeeklyComplete,
     isWeeklyClaimed,
+    commissionProgressOf,
+    isCommissionComplete,
+    isCommissionClaimed,
+    allCommissionsDone,
+    isCommissionBonusClaimed,
     markProgress,
+    markCommission,
     claim,
     claimWeekly,
+    claimCommission,
+    claimCommissionBonus,
     claimLoginReward,
     serialize,
     deserialize,

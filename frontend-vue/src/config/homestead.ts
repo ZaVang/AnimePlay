@@ -133,9 +133,17 @@ export const HOMESTEAD_EFFECT_CAP: Required<Pick<EquipmentHomeEffect, 'expPct' |
   knowledgePct: 0.6,
 };
 
-function cappedPct(value: number | undefined, cap: number): number {
-  if (!(value && value > 0)) return 0;
-  return Math.min(value, cap);
+/**
+ * ★ SF-T5 平滑软化封顶（替换旧 Math.min 硬顶断崖）：softCap(x, cap) = cap·(1 − e^(−x/cap))。
+ *  - 对 x 严格单调递增（边际 = e^(−x/cap) > 0，永不出现「加装备反降收益」），无断崖；
+ *  - x→∞ 渐近上界 = cap（≈0.6 量级，守「挂机不盖过主动收入」）、任意 x 恒 < cap（渐近达不到）；
+ *  - 小 x 近似线性（softCap(x,cap) ≈ x − x²/(2cap)，x≪cap 时 ≈ x）——低堆叠感知与原硬顶几乎一致。
+ * 与旧 Math.min 的区别：触顶后同向装备边际不再=0（断崖消除），S14-E 装备深度不再自我抵消。
+ * 只软化**装备 pct**；设施乘区/comfort 软加成是独立乘子，不进本函数（决策-5/-6）。
+ */
+export function softCap(value: number | undefined, cap: number): number {
+  if (!(value && value > 0) || !(cap > 0)) return 0;
+  return cap * (1 - Math.exp(-value / cap));
 }
 
 /**
@@ -189,9 +197,9 @@ export function computeIdleYield(
   const facExp = 1 + (facilityLevels ? facilityBonusPct(facilityLevels.exp) : 0);
   const facBond = 1 + (facilityLevels ? facilityBonusPct(facilityLevels.bond) : 0);
   const facKp = 1 + (facilityLevels ? facilityBonusPct(facilityLevels.knowledge) : 0);
-  const expMult = (1 + cappedPct(effect.expPct, HOMESTEAD_EFFECT_CAP.expPct)) * facExp * comfortMult;
-  const affectionMult = (1 + cappedPct(effect.affectionPct, HOMESTEAD_EFFECT_CAP.affectionPct)) * facBond * comfortMult;
-  const knowledgeMult = (1 + cappedPct(effect.knowledgePct, HOMESTEAD_EFFECT_CAP.knowledgePct)) * facKp * comfortMult;
+  const expMult = (1 + softCap(effect.expPct, HOMESTEAD_EFFECT_CAP.expPct)) * facExp * comfortMult;
+  const affectionMult = (1 + softCap(effect.affectionPct, HOMESTEAD_EFFECT_CAP.affectionPct)) * facBond * comfortMult;
+  const knowledgeMult = (1 + softCap(effect.knowledgePct, HOMESTEAD_EFFECT_CAP.knowledgePct)) * facKp * comfortMult;
   const expEach = Math.floor(IDLE_EXP_PER_HOUR * hours * expMult);
   const affectionEach = Math.floor(IDLE_AFFECTION_PER_HOUR * hours * affectionMult);
   const baseKnowledge = placedRarities.reduce(
