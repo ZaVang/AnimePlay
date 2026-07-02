@@ -19,6 +19,9 @@ import {
   dismantleValueForRarity,
   formatBonus,
   formatHomeEffect,
+  formatModifier,
+  enhancedBonus,
+  getEquipmentSet,
   type EquipmentSlot,
   type EquipmentDef,
 } from '@/config/equipment';
@@ -42,8 +45,21 @@ interface InventoryCard {
   count: number;
   equippedLabel: string;
   homeText: string;
+  /** SE-T1：该卡强化等级（同款不同强化级不合并；徽章 + 强化后 bonus 展示）。 */
+  enhance: number;
+  /** SE-T1：强化后五维文案（enhancedBonus(def.bonus, enhance)）。 */
+  bonusText: string;
+  /** SE-T3：战斗 modifier 文案（如「暴击率+7%」）；无 modifier 为空串（不渲染该行）。 */
+  modifierText: string;
+  /** SE-T2：套装归属短名（如「锋锐组曲」）；无 setId 为空串（不渲染 chip）。 */
+  setLabel: string;
   /** 游离件（未装备）取组内任一 uid 供分解；已装备件为 null（禁分解）。 */
   freeUid: string | null;
+}
+
+/** 取某 def 的套装短名（无 setId / 未知套 → 空串）。 */
+function setLabelForDef(def: EquipmentDef): string {
+  return def.setId ? (getEquipmentSet(def.setId)?.name ?? '') : '';
 }
 
 // 背包卡：已装备的逐件展示（带归属·槽位）；未装备的同 defId 合并为一张卡 + ×N
@@ -56,9 +72,11 @@ const inventoryCards = computed<InventoryCard[]>(() => {
     .filter(c => rarityFilter.value === 'all' || c.def.rarity === rarityFilter.value);
 
   const equipped: InventoryCard[] = [];
-  const freeByDef = new Map<string, InventoryCard>();
+  // 游离件按 (defId + enhance) 分桶：不同强化级同款不合并，各自展示徽章与强化后 bonus。
+  const freeByKey = new Map<string, InventoryCard>();
   for (const c of base) {
     const where = equipmentStore.findEquippedBy(c.item.uid);
+    const lv = c.item.enhance ?? 0;
     if (where) {
       const ownerName = gameDataStore.getCharacterCardById(where.charId)?.name;
       equipped.push({
@@ -67,22 +85,31 @@ const inventoryCards = computed<InventoryCard[]>(() => {
         count: 1,
         equippedLabel: `装备中·${ownerName || '角色'}·${SLOT_META[where.slot].label}`,
         homeText: formatHomeEffect(c.def.homeEffect ?? {}),
+        enhance: lv,
+        bonusText: formatBonus(enhancedBonus(c.def.bonus, lv)),
+        modifierText: formatModifier(c.def.modifier),
+        setLabel: setLabelForDef(c.def),
         freeUid: null, // 已装备件禁分解
       });
     } else {
-      const g = freeByDef.get(c.def.id);
+      const bucketKey = `${c.def.id}#${lv}`;
+      const g = freeByKey.get(bucketKey);
       if (g) g.count++;
-      else freeByDef.set(c.def.id, {
-        key: `free-${c.def.id}`,
+      else freeByKey.set(bucketKey, {
+        key: `free-${bucketKey}`,
         def: c.def,
         count: 1,
         equippedLabel: '',
         homeText: formatHomeEffect(c.def.homeEffect ?? {}),
+        enhance: lv,
+        bonusText: formatBonus(enhancedBonus(c.def.bonus, lv)),
+        modifierText: formatModifier(c.def.modifier),
+        setLabel: setLabelForDef(c.def),
         freeUid: c.item.uid, // 组内代表 uid（分解取一件）
       });
     }
   }
-  return [...equipped, ...freeByDef.values()].sort(
+  return [...equipped, ...freeByKey.values()].sort(
     (a, b) => (rarityOrder[b.def.rarity] || 0) - (rarityOrder[a.def.rarity] || 0),
   );
 });
@@ -195,6 +222,7 @@ function dismantle(uid: string) {
           <div class="min-w-0 flex-1">
             <div class="text-xs font-medium text-ink truncate">{{ SLOT_META[entry.def.slot].icon }} {{ entry.def.name }}</div>
             <div class="text-[10px] text-ink-3 truncate">{{ formatBonus(entry.def.bonus) }}</div>
+            <div v-if="formatModifier(entry.def.modifier)" class="text-[10px] text-highlight truncate">⚡ {{ formatModifier(entry.def.modifier) }}</div>
             <div v-if="entry.homeText" class="text-[10px] text-accent truncate">{{ entry.homeText }}</div>
           </div>
           <button
@@ -224,12 +252,15 @@ function dismantle(uid: string) {
             {{ card.def.rarity }}
           </span>
           <div class="flex items-center gap-1.5">
+            <span v-if="card.enhance > 0" class="text-[10px] font-bold text-highlight">+{{ card.enhance }}</span>
             <span v-if="card.count > 1" class="text-xs font-bold text-ink-2">×{{ card.count }}</span>
             <span class="text-lg" :title="SLOT_META[card.def.slot].label">{{ SLOT_META[card.def.slot].icon }}</span>
           </div>
         </div>
         <div class="text-sm font-semibold text-ink truncate">{{ card.def.name }}</div>
-        <div class="text-[11px] text-ink-2 leading-snug">{{ formatBonus(card.def.bonus) }}</div>
+        <div class="text-[11px] text-ink-2 leading-snug">{{ card.bonusText }}</div>
+        <div v-if="card.modifierText" class="text-[11px] text-highlight leading-snug">⚡ {{ card.modifierText }}</div>
+        <div v-if="card.setLabel" class="text-[11px] text-accent leading-snug">🎯 {{ card.setLabel }}</div>
         <div v-if="card.homeText" class="text-[11px] text-accent leading-snug">{{ card.homeText }}</div>
         <div v-if="card.equippedLabel" class="mt-auto pt-1">
           <span class="inline-block text-[10px] px-1.5 py-0.5 rounded bg-accent/15 text-accent font-medium">

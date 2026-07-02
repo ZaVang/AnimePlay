@@ -8,6 +8,7 @@ import {
   SQUAD_MEMBER_COUNT,
   TOWER_SQUAD_ALLOWED_RARITIES,
   assessSquadReadiness,
+  BASE_CRIT_RATE,
   calculateBattlePower,
   calculateTowerBattleRewards,
   canOverrideTarget,
@@ -313,14 +314,30 @@ function startTowerBattle(squadId: number) {
 }
 
 function unitSetups(): SquadUnitSetup[] {
-  const toSetup = (member: SquadMember, side: 'player' | 'enemy'): SquadUnitSetup => ({
-    id: member.unitId,
-    name: member.character.name,
-    side,
-    position: SQUAD_POSITIONS[member.position] ?? 'back',
-    stats: member.battleStats,
-    skills: getSquadSkillKitForCharacter(member.character),
-  });
+  const toSetup = (member: SquadMember, side: 'player' | 'enemy'): SquadUnitSetup => {
+    const setup: SquadUnitSetup = {
+      id: member.unitId,
+      name: member.character.name,
+      side,
+      position: SQUAD_POSITIONS[member.position] ?? 'back',
+      stats: member.battleStats,
+      skills: getSquadSkillKitForCharacter(member.character),
+    };
+    // ★ SE-T3：只给 player 侧注入装备 modifier（敌方塔单位不给，防塔层缩放联动）。
+    // resolveEquipModifiers 返回「装备额外增量」（已 clamp、不含 BASE）；critRate 增量在此显式叠在
+    // BASE_CRIT_RATE 之上再交给 setup.modifiers——因 createRuntimeUnit 用 spread 覆盖 critRate，
+    // 若只传增量会冲掉基础暴击（engine 语义不改，BASE 叠加收口到这条 View seam）。
+    if (side === 'player') {
+      const equipMods = equipmentStore.resolveEquipModifiers(member.character.id);
+      if (Object.keys(equipMods).length > 0) {
+        setup.modifiers = {
+          ...equipMods,
+          ...(equipMods.critRate != null ? { critRate: BASE_CRIT_RATE + equipMods.critRate } : {}),
+        };
+      }
+    }
+    return setup;
+  };
 
   return [
     ...playerSquad.value.map(member => toSetup(member, 'player')),

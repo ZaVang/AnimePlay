@@ -1,58 +1,73 @@
-# Negotiation — S14-D 收尾轮（对审计 Prioritized Recommendations 逐条回应）
+# Negotiation — S14-E 第 3/3 轮（收尾轮，product-loop --tier1 on --mode all）
 
-> 本 Sprint = S14-D 家园机制闭环 + 经济闭环，对应审计根因 **D（家园无机制闭环）/ E（经济终局塌陷）**。
-> 本轮切片 = **SD-T2 + SD-T4 + SD-T3**（收尾轮，一次补齐 Round 1 之后的全部剩余任务；工作树实证 Round 2 未落地）。
-> 「超范围标 backlog」= 超出 S14-D（SD-T1..T5）的建议记 backlog，不在本 Sprint 做。
+> 对三份三审报告 Prioritized Recommendations 逐条回应：接受 / 拒绝 / 部分接受 + 理由 + 本轮行动。超范围标 backlog。本轮切片 = **SE-T2｜确定性套装（3 组取向套装，方案 A / research 替代 C）**。
+> **总收敛**：四审（product / evolution / research / scout）一致落在「**只做 3 组取向套装、条件加成 backlog**」。product 与 research 深层分析都明确推荐套装；evolution/research 表层一句「优先条件加成」被其自身 tradeoff 矩阵与替代方案分析推翻（条件加成成本约套装 3~4 倍、build 深度不更高、引入跨 store 依赖）。**本轮以套装收尾。**
 
-## 一、本 Sprint 已完成映射（Round 1）
+---
 
-| 审计条 | 处置 | 落点 |
-|---|---|---|
-| P2-24 挂机封顶不成长 | 已接受·已做 | SD-T1（离线封顶 12h+总级数×0.5h） |
-| P2-25 设施纯展示不可升级 | 已接受·已做 | SD-T1（facility 域 v17 + KP 升级 +8%/级乘区） |
-| P2-26 comfort 死数值 | 已接受·已做 | SD-T1（comfort 每 10 点 +1% 真进产出，封顶 +20%） |
-| P2-20 缺无底 KP sink | 已接受·已做 | SD-T5（设施无硬上限 + 指数递增成本 `120×1.4^(level-1)`） |
+## 一、product-audit-report.md
 
-## 二、本轮逐条回应（S14-D 根因 D/E 相关，SD-T2/T4/T3）
+### 🔴 Critical
+- **🔴-1 SE-T2 必须真落地、不得降级为回归确认** → **接受**。本轮唯一指派切片，工作树确认尚未动工（无 setId/setBonusFor）。行动：SE-T2a..e 真实现，收尾核对 SE-T1..T3 全 `[x]`。
+- **🔴-2 套装加成必须与强化正交（加法、非乘法）、绝不碰 modifier** → **接受（核心护栏）**。行动：套装奖基于固定值、加法追加到 `sumStatBonus` 之后（SE-T2c），绝不套 `enhancedBonus`、绝不塞 modifier；验收显式断言「不随强化放大」+「0 件时 `resolveEquipBonus` 逐字节一致」（SE-T2b/c 验收）。
+- **🔴-3 套装进度与奖励必须显形** → **接受**。行动：候选/背包 setId chip + 配装弹窗右栏「齐几件/齐套奖 delta」（SE-T2d）。
 
-### P2-13｜装备 homeEffect 应剥离到设施 —— 接受，本轮做（SD-T2 / 任务 A）
-- **理由**：同件装备既定战斗五维又定家园挂机%，两目标抢同三槽、选装口径打架（根因 D）。Round 1 已把家园产出主体迁到设施乘区，装备 homeEffect 现在是冗余的第二主承载。
-- **本轮行动**：`config/equipment.ts EQUIPMENT_CATALOG` 每件 homeEffect 产出%大幅弱化（约 ×0.33，决策-11）退成小额佐料，comfort 全保留；`EquipPickerModal` 补挂机 before→after delta 预览（决策-13，⭐审计明列低成本子项）。走「弱化」非「彻底归零」（scout A 路径 1，更平滑、不砸档、不动签名）。
+### 🟡 Important
+- **🟡-1 采用 3 组取向互斥套装（非每稀有度一套）** → **接受（形态拍板）**。攻击/坦度/节奏跨稀有度打 setId，凑套需混稀有度 → 与堆最高稀有真实互斥（对冲 P2-14）。行动：SE-T2a。
+- **🟡-2 齐套奖 ≈ 半个稀有度档、config 集中可调 + 测试锁死** → **接受**。行动：3 套阶梯奖表集中 config 一处，测试锁量级（SE-T2a/b）。
+- **🟡-3 信息密度分工：候选卡只加 chip、进度/奖励放右栏子区** → **接受**。行动：仿「装备强化」子区分隔线范式，复用 delta 语言不追加行、不另开弹窗（SE-T2d）。
 
-### P2-19｜经验曲线与产出错配、满级经验沉没 —— 接受，本轮做（SD-T4 / 任务 B）
-- **理由**：满级需 980 万经验、单次产出几百到几千 → 满级遥不可及，满级后 `addCharacterExp` 照收但净沉没（根因 E）。
-- **本轮行动**：压曲线 `(level-1)^1.6×900`（决策-14，严格单调递增 + 守卫测试）；满级经验自动转少量 KP（决策-16，沉没点 `addCharacterExp` 满级分支走 `profile.earn`，仿好感溢出范式）；补习产出随等级递增 `tutoringExpGain(level)`（决策-17，顺带缓解 P3-2）。主走「压曲线」非「提产出」（scout C-1：改一处 engine 曲线更内聚，避开 `rewards.ts` 两处 exp 常量口径混淆）。
+### 🟢 Nice-to-have
+- **🟢-1 齐套瞬间 chip 点亮 + 战力 delta 既有 transition** → **接受（不阻塞）**。行动：SE-T2g。
+- **🟢-2 低稀有度（R/SR）也铺可凑套装、啊哈前移** → **接受**。行动：SE-T2a 打标签覆盖 R/SR。
+- **🟢-3 InventoryPanel 背包卡也显示 setId chip** → **接受（不阻塞）**。行动：SE-T2f。
 
-### P2-21｜重复装备无回收/分解出口 —— 接受，本轮做（SD-T3 / 任务 C）
-- **理由**：塔每层 50% 掉一件、`addItem` 只 push 从不去重，齐装后纯堆积（根因 E）。
-- **本轮行动**：`equipment.ts dismantleItem(uid)` 分解重复/游离装备为 KP（决策-18，`dismantleValueForRarity` 明显低于兑换价、走 `profile.earn`，对齐 codex `dismantleCard` 范式）；已装备件不可分解（决策-19，`findEquippedBy` 守卫 + UI 禁用双保险）；门面走 `userStore.dismantleEquipment`。**部分接受**：审计另提「N 件合成材料/碎片计数」——本轮**只做 KP 回收，不做材料/合成**（那属装备强化燃料 = S14-E，YAGNI，本 Sprint 唯一 bump 已用掉、不预留字段）。
+### 💡 Feature Idea（backlog）
+- **💡-1 套装图鉴只读面板** / **💡-2 齐套风味台词/取向角标** / **💡-3 条件加成（archetype 亲和）** / **💡-4 modifier 绑 slot 取向** → **全 backlog**，超本轮最小实现范围。条件加成明确不开跨 store 耦合口（见下 research/evolution 回应）。
 
-## 三、根因 D/E 相关但超 S14-D 或已裁定的条目
+---
 
-### P2-22｜成长零策略（随机加点+装备无词条/套装/职业限制） —— 部分接受·大部分 backlog
-- **理由/裁定**：加点已在 S14-A 改确定成长（SA-T3，非随机）；「装备套装/职业适配」= S14-E（P2-14/P2-16），非 S14-D。
-- **本轮行动**：不做套装/职业限制（backlog → S14-E）。SD-T3 分解为 S14-E 装备强化留经济位（本轮只回收 KP）。
+## 二、evolution-audit-report.md
 
-### P2-23｜好感一次性里程碑、无回归钩子 —— 已接受·已做（S14-C）
-- **裁定**：好感溢出转 KP + 永久加成已在 S14-C（SC-T4）落地（`bondOverflowExchange`/`claimBondOverflow` 现存）。本 Sprint 不重复；SD-T4 满级经验溢出**复用**这套溢出范式。
+- **🔴 SE-T2 本轮必做，加确定性套装或原型条件加成（表层写「优先后者」）** → **部分接受 / 表层建议拒绝**。接受「SE-T2 必做、折进 `resolveEquipBonus` 单一 seam、随机词条不做、不匹配/不齐套明示不静默」；**拒绝表层「优先条件加成」**——该报告自身正文（line 113）明说条件加成「build 深度不比套装高、成本高得多，本轮不建议，backlog」，表层一句与其分析自相矛盾，从其分析结论走套装。行动：SE-T2 走套装（SE-T2a..e），条件加成 backlog。
+- **🔴 回归护栏：不破坏 SE-T1 五维 seam / SE-T3 modifier 独立 seam / SB-T3 暴击轴 / 战力单一 seam / S14-A..D；敌方不吃条件加成** → **接受**。行动：SE-T2e 回归；SE-T2c 断言敌方侧不吃套装加成、0 件逐字节一致。
+- **🟡 SE-T2 UI 显示套装进度或命中态，复用 delta 语言、不另开弹窗、颜色走语义令牌** → **接受**。行动：SE-T2d。
+- **🟢 条件加成若做，给适配度小标** → **拒绝（本轮不做条件加成）** → backlog。
+- **🟢 范围纪律：若只够一条，只做条件加成、套装标 backlog** → **拒绝该取舍方向**。四审一致套装性价比更高（零跨 store 依赖、回归最低），若只够一条应做套装。行动：本轮做套装。
+- **💡 叙事套装 / 适配★可视化 / 满强化+齐套毕业特效 / 定向掉落 / homeEffect 剥离** → **全 backlog**。
 
-### P2-27｜家园挂机与战斗/探索是平行线 —— 部分接受·合并处理
-- **裁定（采信 1 票异议）**：挂机产出汇入同一批战斗单位，间接反馈已存在；项目刻意把家园定位「回归补充」。与 P2-25（Round 1 SD-T1）合并处理即可，不单独优先。**本轮不做**独立家园↔战斗反馈边（backlog，若做属 S14-E/F）。
+---
 
-### P2-28｜离线挂机信任客户端墙钟 —— 部分接受·backlog（P3 优先级）
-- **裁定（采信 1 票异议）**：单机向、存档可直接改 JSON，时钟利用不增新攻击面，无多人/排行榜危害，P1 过重。回拨钳位（now<lastSettleAt 记 0）是廉价卫生改动但**非 S14-D 任务范围**（SD-T1..T5 未含），标 backlog。**本轮不做**（不开新范围）。
+## 三、research-audit-report.md
 
-## 四、明确 backlog（超 S14-D，不在本 Sprint）
+- **🔴 High-impact-Low-effort 1｜走替代 C：套装=3 组取向标签，给现有目录打 setId、不新增装备** → **接受（形态拍板）**。行动：SE-T2a。
+- **🔴 2｜`setBonusFor(equippedDefIds)` config 纯函数，store `resolveEquipBonus` 与 EquipPicker `previewEquipBonus` 两处同源** → **接受（头号护栏）**。行动：SE-T2b（纯函数）+ SE-T2c（store）+ SE-T2d（预览同源），杜绝预览≠实战（scout C-1）。
+- **🔴 3｜单角色三槽内判定、齐 2/3 阶梯固定五维加法** → **接受**。行动：SE-T2b。
+- **🔴 4｜基于 def 原值/固定值、与强化正交（加法合并、不随强化涨）** → **接受**。行动：SE-T2b/c 不套 `enhancedBonus`。
+- **🔴 5｜只碰五维、绝不碰 modifier（守 SE-T3 clamp）** → **接受**。行动：SE-T2b。
+- **🔴 6｜幅度「齐套 ≈ 半档稀有度」** → **接受**。行动：SE-T2a/b。
+- **🔴 7｜EquipPicker/背包显示 setId 归属 + 齐几件 + 齐套奖（formatSetBonus helper、语义色）** → **接受**。行动：SE-T2d（复用 SE-T3 formatModifier 范式）。
+- **🔴 8｜特征测试：齐套真进战力 + 不齐套逐字节一致 + 不随强化 + 不含 modifier + 纯函数计数/阈值/互斥独立测试** → **接受**。行动：SE-T2b/c 验收。
+- **🟡 High-effort backlog｜原型条件加成（替代 B）** → **接受 backlog**。理由：需解析 `getArchetypeForCharacter`（跨 gameData/skill store 或改 `resolveEquipBonus` 签名波及 4 消费点），成本约套装 3~4 倍、build 深度不更高。
+- **🟡 灵感炸弹 1「套装补短板」（弱维补强而非强维叠强）** → **部分接受**：数值取向可在 SE-T2a 填数时倾向「补短板」以缓解膨胀，但不作硬性验收项（需调优验证），backlog 精调。
+- **🟢/💡 三选一张力 UI / 套装随强化成长 / 叙事套装** → **backlog**（长期，超本轮）。
 
-- **P2-14 / P2-16 确定性套装 / 原型条件加成** → S14-E（装备深度）。
-- **P1-7 装备强化 / 等级**（EquipmentItemSave 加 level/enhance，需升档）→ S14-E；SD-T3 分解本轮只回收 KP，为其留燃料位但不实现材料。
-- **P2-17 敌人预览≠实战** → 已在 S14-A 焊死同源种子（backlog 已闭）。
-- **P2-18 NurtureView 内嵌双壳** → 已在 S14-A（P2-18/SA 相关）处理（backlog 已闭）。
-- **P3-1..P3-12 打磨类**：P3-2 补习无决策定额被 SD-T4 决策-17 顺带部分缓解（补习改随等级递增）；其余（hero 胶囊、家具系统、入住羁绊、战力口径、60s 刷新定时器、archetype 兜底、结算复核拥有数、奖励预览概率化等）**全部 backlog**，非 S14-D 范围，本轮不做。
-- **P2-28 回拨钳位** → backlog（P3 优先级，单机向危害有限）。
+**结论**：research 深层（Phase 4 tradeoff 矩阵 + Prioritized Directions + 收敛结论）与 product/scout 完全一致 → 本轮套装收尾。research 表层「优先后者(条件加成)」被其自身矩阵推翻，不采纳。
 
-## 五、范围纪律声明
+---
 
-- 本轮**必须真落地 SD-T2 + SD-T4 + SD-T3 三个任务**（工作树实证 Round 2 未落地，收尾轮一次补齐让 S14-D 整体完成）。三审用于 refine HOW + 抓回归 + 微调，**不得把任一未完成 SD-T 任务降级为「回归确认」**（S14-A SA-T6 / S14-B 暴击 UI 教训：Sprint 合同内未完成任务永远 in-scope，跑满轮次 ≠ 目标达成）。
-- 超出 SD-T1..T5 的创意/建议一律标 backlog（见第四节），本 Sprint 不开新范围。
-- 本轮 SAVE_VERSION 保持 v17（无新存档字段），本 Sprint 唯一一次 bump 已在 Round 1 用掉。
+## 四、scout.md（A. 约束与可行性）
+- **A0 拍板建议：首版只做方案 A（确定性套装）** → **接受**（即本轮定案）。
+- **A1 无需升档、SAVE_VERSION 维持 18、不碰 schema/migrations/装配器、setId 不进 EquipmentItemSave** → **接受**。行动：SE-T2 无存档改动。
+- **A2 套装加成经 `resolveEquipBonus` 汇入、不另拼口径、不套 enhancedBonus** → **接受**。行动：SE-T2c。
+- **A3 4 个消费点：前 3 处改 store 自动生效、第 4 处 EquipPickerModal 需手动同源** → **接受（头号坑）**。行动：SE-T2d。
+- **A4「resolveRole」实为 getArchetypeForCharacter** → **接受（规避）**：本轮不走条件加成、绕开此坑；SPRINT「复用 resolveRole」不采纳。
+- **A5 engine 零改动 / 颜色语义令牌 / 组件清理** → **接受**。行动：解析全在 config+store，UI 走语义令牌。
+- **C-1..C-5 新坑** → **全接受**（C-1 预览同源已列 SE-T2d 头号护栏；C-4 双乘/越界已列护栏；C-5 收尾核对已列 SE-T2e）。
+
+---
+
+## 超范围 / backlog 汇总
+- 原型条件加成（archetype 亲和，替代 B / 💡-3）——跨 store 依赖成本高、build 深度不更高。
+- 叙事套装（Bangumi 番剧维度绑套装）、套装图鉴面板、适配★可视化、满强化+齐套毕业特效、定向掉落/碎片保底、homeEffect 彻底剥离到设施、重复件「拆/燃料/凑套」三选一张力 UI、套装随强化成长。
+- 灵感炸弹「套装补短板」数值取向的精调验证。

@@ -649,6 +649,13 @@ export const useUserStore = defineStore('user', () => {
       if (ok) saveToServer();
       return ok;
     },
+    // equipment（SE-T1）：强化装备一级（花 KP + 1 件同款燃料；满级/不足被 store 守卫拒绝；成功才存档）
+    enhanceEquipment: (uid: string) => {
+      if (!profile.isLoggedIn) return false;
+      const ok = useEquipmentStore().enhanceItem(uid);
+      if (ok) saveToServer();
+      return ok;
+    },
     // codex（evolution-2）：图鉴定向解锁（花知识点入库一张心仪卡）
     unlockCodexCard,
     // codex（evolution-1）：领取图鉴里程碑奖励 + 联动「收藏家」成就

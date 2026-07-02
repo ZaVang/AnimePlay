@@ -29,7 +29,7 @@
 | S0–S10 | 重构主线（文档/测试/engine 抽取/拆 store/功能闭环/视觉/技能/性能/安全） | ✅ | 已完成 → 详见 [HISTORY.md](HISTORY.md) |
 | — | 产品进化层 Evo-1..Evo-9 + 战斗可读性还债 + 2026-06-24 产品循环 | ✅ | 已完成 → 详见 [HISTORY.md](HISTORY.md) |
 | S13 | 家园综合系统（基地养成 + 小队战斗重构 + 挑战塔闭环） | ✅ | A/A2/B/C1/C2/D1–D5 全部落地合并 → 完成史见 [HISTORY.md](HISTORY.md) |
-| **S14** | **家园 hub 深化（差异化 + 决策 + 循环，audit-driven）** | 🔄 | **S14-A/B/C/D ✅ 已完成**（2026-07-01 product-loop）；S14-E/F 待做。源：[审计报告](orch/homestead-hub-audit-report.md) |
+| **S14** | **家园 hub 深化（差异化 + 决策 + 循环，audit-driven）** | 🔄 | **S14-A/B/C/D/E ✅ 已完成**（2026-07-01~02 product-loop）；仅剩 S14-F（P3 打磨）。源：[审计报告](orch/homestead-hub-audit-report.md) |
 | S11 | React 视图迁移 | ☐ | 演进 |
 | S12 | 权威后端 & 多人/PvP/排行榜 | ☐ | 终点 |
 
@@ -96,12 +96,15 @@
 - [x] **加无底 KP sink**（P2-20）：KP 唯一硬通货但 sink 全是买断目录（装备 45 件封顶、图鉴、补习），集齐后无处可花必然溢出贬值。装备强化 / 精炼、角色突破 / 星级、每日刷新定向兑换或塔商店限量高价物。 ✅ S14-D 第 1 轮：设施升级即无底 sink——无硬上限（Lv.99 极高上限）+ 成本指数递增 `120×1.4^(level-1)`（测试锁「第 N 级 > 第 N-1 级」），全走 `profile.spend('knowledgePoints')`，成型账号 KP 有持续去处。
 - **Exit（达成）**：家园从「单页面板」变成「可投资的经营系统」；KP 有长期去处（无底设施 sink）；重复装备有出口（分解回 KP）；经验不再打进黑洞（曲线重标定 + 满级溢出转 KP）。
 
-### ☐ S14-E · 装备深度（P2，塑造 build 与毕业曲线）
+### ✅ S14-E · 装备深度（P2）— 已完成 2026-07-02
 
-- [ ] **加装备强化 / 等级**（P1-7，多数票 P1 但资源紧张可作 P2）：`EquipmentItemSave` 现仅 `{uid,defId}`，数值恒等于 def 静态值、拿到即毕业。给实例加 level/enhance（schema+migrations+装配器三改），用重复装备 / 材料做强化燃料，把毕业曲线从「拿到即满」拉长为「拿到 → 强化到满」。（与 S14-D 的分解出口互为燃料。）
-- [ ] **加确定性套装 / 原型条件加成**（P2-14 / P2-16）：装备任意戴任意、稀有度纯线性、无搭配维度。**优先做确定性套装**（2~3 组，塑造 build），或对匹配原型角色给条件加成（复用 archetype）。**随机副词条谨慎**——审计对标指出 PCR rank 装恰是确定属性无随机 roll，随机词条是把原神 / 暗黑刷取误挂 PCR 名下，与本项目单机向定位不符。
-- [ ] **扩展 EquipmentDef 支持战斗 modifier**（P2-15，增强项）：`formulas.ts` 已内建 critRate/critDamage/damageUp/healUp 等且真实消费，但装备只能改 5 维。可选：给 EquipmentDef 加 modifier 字段，resolveEquipModifiers 注入 BattleModifiers，让装备够到更多战斗旋钮。
-- **Exit**：装备有可持续消耗（强化）与搭配空间（套装 / 条件加成）；装备开始塑造角色定位而非纯线性堆数值。
+> ✅ **S14-E 全部 3 项已完成**（product-loop `--tier1 on --mode all`，3 轮 + 1 收口纠偏；835 测试全绿、engine 纯净、SAVE_VERSION 17→18，S14-A/B/C/D 无回归）。落地实况：SE-T1 = 装备强化（`EquipmentItemSave.enhance` **v18** 三处同改 + v17→v18 迁移补 enhance:0/clamp[0,5]；`enhancedBonus` 纯函数每级 +8% 满级 Lv.5；`enhanceItem` 花 KP(`profile.spend`) + 吃 1 件同 defId 游离燃料，`findEquippedBy` 守卫，KP 成本远高于分解回收值防套利；经既有 `resolveEquipBonus` seam 进战力）；SE-T3 = `EquipmentDef.modifier`（critRate/damageUp/healUp/shieldUp 等）+ `resolveEquipModifiers` 独立 seam 求和 + 硬 clamp（critRate≤0.2），View 侧 **加法**注入 player setup（`BASE_CRIT_RATE + 装备值`，非覆盖 spread，守 SB-T3 基础暴击），8 件示例填充；SE-T2 = 3 组取向套装（攻击/坦度/节奏）`setBonusFor` 纯函数经 `resolveEquipBonus` 汇入、**只走五维加法、不碰 modifier、与 enhance 正交**，`previewEquipBonus`同源（预览=实战）。**关键架构**：强化(五维×enhance) / 套装(五维加法) 走 `resolveEquipBonus` 一条 seam，modifier(战斗旋钮) 走 `resolveEquipModifiers` 另一条 seam 注入 BattleModifiers——两条 seam 各司其职、无第 N 套战力口径。**收口纠偏**：R1 Generator 遇 API 中断致测试 fixture 未同步(gate RED)，补齐 4 处陈旧断言 + SE-T1a/T1c 缺失测试 + 修一个 TS4025 真 bug 后全绿。产物见 `docs/orch/`。**下一步 = S14-F（P3 打磨）。**
+> 🟢 未做（非阻塞 backlog）：SE-T2g 齐套瞬间点亮动画、重复件「既可分解也是强化燃料」双 sink 信息提示——归 S14-F 顺手补。
+
+- [x] **加装备强化 / 等级**（P1-7）：`EquipmentItemSave` 现仅 `{uid,defId}`，数值恒等于 def 静态值、拿到即毕业。给实例加 level/enhance（schema+migrations+装配器三改），用重复装备 / 材料做强化燃料，把毕业曲线从「拿到即满」拉长为「拿到 → 强化到满」。（与 S14-D 的分解出口互为燃料。）
+- [x] **加确定性套装 / 原型条件加成**（P2-14 / P2-16）：装备任意戴任意、稀有度纯线性、无搭配维度。**优先做确定性套装**（2~3 组，塑造 build），或对匹配原型角色给条件加成（复用 archetype）。**随机副词条谨慎**——审计对标指出 PCR rank 装恰是确定属性无随机 roll，随机词条是把原神 / 暗黑刷取误挂 PCR 名下，与本项目单机向定位不符。
+- [x] **扩展 EquipmentDef 支持战斗 modifier**（P2-15，增强项）：`formulas.ts` 已内建 critRate/critDamage/damageUp/healUp 等且真实消费，但装备只能改 5 维。可选：给 EquipmentDef 加 modifier 字段，resolveEquipModifiers 注入 BattleModifiers，让装备够到更多战斗旋钮。
+- **Exit（达成）**：装备有可持续消耗（强化到 Lv.5）与搭配空间（3 组套装 + modifier 战斗旋钮）；装备开始塑造角色定位而非纯线性堆数值。
 
 ### ☐ S14-F · P3 打磨（一致性与内容缺口，穿插进行）
 
@@ -170,4 +173,4 @@
   > 注：此项在历史上以两处不同措辞出现（Evolution 尾注的「按声优收集维度」与 2026-06-24 循环 round 1 的「声优维度」），是**同一个**跨栈/需后端项，此处已合并为一条，勿再拆。
 
 ---
-*本文只列「还剩什么」。完成史在 [HISTORY.md](HISTORY.md)；日常产品迭代需求源在 [SPRINT.md](SPRINT.md)。每完成一项请同步勾选；每完成一个 Sprint 请更新「进度总览」状态。最后整理 2026-07-01（S13 归档 HISTORY；S14 家园 hub 深化 A/B/C/D 已完成——A 六项 P1 急救 + B 五项战斗手感 + C 六项角色差异化与养成长线(星级突破 v16) + D 五项家园机制/经济闭环(facility 设施升级 v17)，均 product-loop `--tier1 on --mode all` 落地；S14-E/F 待做；源自对抗性审计 [orch/homestead-hub-audit-report.md](orch/homestead-hub-audit-report.md)）。*
+*本文只列「还剩什么」。完成史在 [HISTORY.md](HISTORY.md)；日常产品迭代需求源在 [SPRINT.md](SPRINT.md)。每完成一项请同步勾选；每完成一个 Sprint 请更新「进度总览」状态。最后整理 2026-07-02（S13 归档 HISTORY；S14 家园 hub 深化 A/B/C/D/E 已完成——A 六项 P1 急救 + B 五项战斗手感 + C 六项角色差异化与养成长线(星级突破 v16) + D 五项家园机制/经济闭环(facility v17) + E 三项装备深度(强化 v18 + 套装 + modifier)，均 product-loop `--tier1 on --mode all` 落地；仅剩 S14-F P3 打磨；源自对抗性审计 [orch/homestead-hub-audit-report.md](orch/homestead-hub-audit-report.md)）。*
