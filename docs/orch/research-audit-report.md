@@ -1,196 +1,154 @@
-# Product Research Audit — S14-F 第 3/3 轮（product-loop `--tier1 on --mode all`）
+# Research Audit Report — S15 第 3/3 轮（product-loop --tier1 on --mode all）
 
-> 设计研究员视角。本轮指派切片 = **SF-T8｜家园日常委托（P3-10，代表性中期项）**——S14 家园 hub 深化的收官任务。
-> 四镜头（核心假设质疑 / 相邻领域研究 / 逻辑完备性 / 替代设计提案），聚焦 SF-T8 的设计选择，给本质替代 + tradeoff。
-> **前情校准（已核实，勿再误判）**：Round 1（SF-T1/T4/T7）+ Round 2（SF-T2/T3/T5/T6 + 两条 refine）均已 **COMPLETE**——`docs/orch/eval.md` R2 记录 851 tests 全绿、`userStore.settleHomestead` L434-440 已见 SF-T6 回拨钳位、`config/nurture.ts` `tutoringCost` 批量补习已落地。**收官轮仍须复核前轮真落地**（勿因跑到 R3 默认前轮完成——SA-T6/S14-B 暴击 UI/S14-E R1 收口被漏教训在前），但地基确已成立，本报告聚焦 SF-T8 本体。
+> 设计研究员视角（四镜头：核心假设质疑 / 相邻领域研究 / 逻辑完备性 / 替代设计提案）。
+> 指派切片 = **S15-T4（装备定向掉落保底 / 碎片，P3-3）+ 收尾（确保 S15-T1..T4 全 `[x]`、S14 无回归）**。
+> 本轮性质 = **落地前 refine + 前瞻**：前两轮 T1/T2/T3/T2-E 已 COMPLETE（eval.md：test×3 全绿、SAVE_VERSION 已 =20）。本报告聚焦「T4 二选一怎么选、做多深才够、验收卡什么、防退化」。
+> 证据源：`engine/squad/drops.ts`、`config/equipment.ts`（掉落/兑换/分解全在此）、`stores/userStore.ts:242-286`（rollFloorDrop/purchaseEquipment）、`stores/userStore.ts:834-849`（completeFloor 门面）、`stores/pve.ts:73-80`（completeFloor 推进）、`types/player.ts:50-59`（TowerProgress）、`infra/persistence/schema.ts:55`（SAVE_VERSION=20）、`homestead-hub-audit-report.md` P3-3/P2-21。日期：2026-07-02。
 
 ---
 
 ## Executive Summary
 
-- **当前设计基于的关键假设**（均已核实源码）：
-  1. 「回归钩子 = 每日小目标清单」——委托被理解为「daily task 的家园分身」，天然复用 `daily` store 的 `todayKey`/`ensureToday` 跨天口径 + `markProgress`/`claim` 双阶段范式。
-  2. 「委托的成功点已经存在，只差埋点」——三类目标对应的 action 全部**已在 `userStore` 门面中转且带 `saveToServer` 事务边界**：`settleHomestead`(L422)、`completeFloor`(L749)/`sweepFloor`(L770)、`enhanceEquipment`(L661)；`markProgress` 已在 gacha/battleWin/watch/nurture/minigame 五处焊接（L161/365/537/603/692/704），新埋点与之同构同位。
-  3. 「委托是内容缺口而非机制缺口」——不引入新玩法，只把已有玩法完成行为再包一层动机外壳。
-  4. 「奖励量级 = 挂机零头级」——委托奖励须小额，绝不盖过塔/看番/小游戏主动收入，也不架空图鉴大 sink（守 `config/homestead.ts` 顶部基线）。
-  5. 「能不升存档就不升」——SPRINT.md 明令：委托进度优先派生/复用 daily 跨天口径，只有确需独立进度记录才升 v19（一 sprint 只升一次）。
-
-- **最大研究发现落在「逻辑完备性」维度**：`DailyTaskType`（`gacha|battleWin|watch|nurture|minigame`，见 `config/dailyTasks.ts` L9）**恰好不覆盖家园三大成功点**——idle/tower/enhance 全无对应 taskType。这意味着 SF-T8 无论怎么实现都**必然新增 3 个埋点 + 一组委托模板**；真正的岔路只在「模板/进度桶挂在哪个命名空间」（扩通用枚举 vs daily 内平行子域）。
-
-- **一句话最有价值的突破方向**：**把「家园委托」实现为 `daily` store 内的平行 `commission` 子域**（复用 `todayKey`/`ensureToday`/claim 机制，但用独立 `COMMISSIONS` 模板 + 独立 `commissionProgress`/`commissionClaimed` 桶 + 独立 `markCommission(kind)` 埋点），而非扩 `DailyTaskType` 通用枚举——家园语义不污染全站留存引擎、跨天口径 100% 复用（零新跨天逻辑），三个新埋点直接挂 `userStore` 已有的四个门面处，与现有 5 个 `markProgress` 埋点同位于 `saveToServer` 事务前。
+- **当前掉落系统基于的关键假设**：① 掉落 = **无记忆的独立伯努利试验**（每层 50% × 随机槽 × 层段稀有度，`rollTowerDrop` 是纯无状态函数，不看历史）；② 稀有度**完全由层段决定**（`dropRarityForFloor`），玩家对「想要哪一件」零控制；③ 装备获取**只有两条道**（塔掉落随机 / KP 兑换定向），二者不共享货币也不互相保底；④ 重复件出口已有（SD-T3 分解为 KP），但**分解回收 ≠ 定向获取**，垃圾件不能反向合成想要的件。
+- **最大发现所在维度**：**核心假设质疑 + 逻辑完备性**。P3-3 的痛点本质不是「没有保底」，而是「**掉落是无记忆随机 + 玩家零定向权**」——保底（pity）和碎片（shard）是治这个病的两种不同药方，且二者**不是二选一而是一个连续谱**：pity 治「运气差的长尾」，shard 治「想要特定件的定向权」。当前 SPRINT 让 Planner 二选一，本报告主张**优先 pity（槽位保底）**，理由见下。
+- **一句话**：如果重新思考这件事，最有价值的突破方向是——**把「重复件分解」与「定向获取」缝成一条闭环**（分解出的 KP/碎片能反向兑换想要的件），让 SD-T3 已建的分解出口从「止损」升级为「定向」，一举同时满足 P3-3（定向）与 P2-21（重复件出路），且**零新玩法概念、零 RNG 破坏、可能零存档**。
 
 ---
 
 ## Phase 1: 核心假设质疑
 
-### 假设清单（★ = 可质疑 / 本轮需拍板）
+### 假设清单（★ = 可质疑 / T4 会咬人）
+1. **★ 掉落是无记忆的独立试验**：`rollTowerDrop(floor, rng, ...)` 是纯无状态函数，每次掷骰不看历史。**这正是 pity 要打破的假设**——pity = 给掉落引入「连续未命中计数」的状态记忆。引入 pity 就必然要么破 drops.ts 纯无状态性（传入 counter），要么把 pity 逻辑留在 store 层（drops.ts 仍纯）。
+2. **★ 稀有度由层段单向决定**：`dropRarityForFloor` 把「爬多高」直接映射「掉多稀有」。玩家对稀有度零控制、对槽位零控制（`rng.pick(DROP_SLOTS)`）。P3-3 的「无定向」痛点根源在此——**定向的本质是给玩家一个能影响 slot/rarity/defId 的旋钮**。
+3. **★ 两条获取道互不保底**：塔掉落（随机免费）与 KP 兑换（定向付费）是两个孤岛。**碎片方案的机会**：碎片可以成为「连接两道的第三种货币」——塔掉落发碎片、碎片定向兑换，把「随机运气」转成「确定进度」。
+4. **重复件只能分解为 KP（单向止损）**：SD-T3 `dismantleValueForRarity` 已建重复件出口，但 KP 回收 ≈ 1/8 兑换价，**是止损不是定向**。玩家拆一堆垃圾 R 件换的 KP 远不够定向买一件想要的 UR。这条「分解→KP→兑换」链**理论上已闭环但汇率惩罚太重**，等于没闭环。
+5. **pity 若持久化必须复用 v20**：SPRINT 铁律「T4 pity 若持久化复用 v20，绝不升 v21」。但 SAVE_VERSION 已在第 2 轮 bump 到 20——**这意味着 pity 字段要么塞进已存在的 v20 迁移（补默认）、要么走派生免存档**。这是本轮存档决策的硬约束。
+6. **掉落只在「推进新层」时发生**：`completeFloor` 仅在 `pve.completeFloor(floor)===true`（推进到新层）分支内 `rollFloorDrop`，扫荡/重复低层不掉。**pity 计数只能挂在「推进新层」事件上**——毕业玩家（塔顶 completeFloor 返 false）永远不推进新层，pity 对他们冻结失效（与扫荡不掉落同源的边界）。
 
-1. ★「委托 = daily task 的家园换皮」。**可质疑**：daily task 成功点是全站行为（抽卡/理论战/看番），委托成功点是家园本地行为（挂机/塔/强化）；语义域不同，硬塞进 `DailyTaskType` 会让通用枚举承担家园细节，违反 `daily.ts` L21 注释「保持领域 store 自包含」的设计意图。
-2. ★「三个委托目标一定要新埋点」。**成立且不可避免**：`DailyTaskType` 无 idle/tower/enhance，三个成功点当前从不 markProgress（已 Grep 确认）。
-3. ★「委托进度不需要独立存档字段」。**可质疑**：daily 的 `progress`/`claimed` 按 taskId key 命中写入；若不扩枚举就必须给 commission 单开 record，即使不升 SAVE_VERSION 也是新增序列化字段，须 schema/migrations/装配器三处同改 + 往返测试。
-4. 「委托奖励纯正向、无成本」。**基本成立**：委托是回归激励，无 sink 语义。
-5. ★「委托 UI 挂 home 面板」。**可质疑**：home tab 当前直接 `<HomesteadView/>`（家园漫步 + 离线结算 + 已落地的 SF-T3 驻留定时结算），委托卡挂 HomesteadView 内 vs 挂 hub 壳 home section 头部——**影响与 SF-T3 60s 定时进度条的视觉共存**（收官轮须复核不打架）。
-6. 「每日 N 条固定委托」。**基本成立**，N 取值与是否轮换是设计自由度。
-7. 「委托完成即时可领 / 手动领」。**成立**，沿用 daily claim 双阶段最省心智。
+### 关键假设深挖（选 2）
 
-### 关键假设深挖
+**假设①「掉落无记忆」——pity 的存档位置是本轮真正的设计岔路。**
+pity 的本质 = 给「无记忆随机」注入「连续未命中计数」的状态。这个 counter 放哪里决定了整个改动的形状与成本：
+- **(a) 派生免存档**：不可行。pity 是「连续 N 次未出某类」的**累积历史**，无法从任何现有存档字段派生（不像羁绊能从 placedCharacterIds 派生）。连续未命中计数**必须持久化**，否则重开清零 = pity 形同虚设。
+- **(b) 塞进 TowerProgress（复用 v20）**：`TowerProgress`（`types/player.ts:50`）是天然归宿——它已是「塔进度状态」，pity 是「塔掉落状态」，语义同域。加一个扁平字段（如 `dropPityCount: number` 或 `pityBySlot: Record<slot,number>`）。**v20 已 bump，只需在 `createDefaultTowerProgress` 补默认 + migration 对旧档补 0**——这正是 SPRINT「复用 v20」的落点。**推荐此路**。
+- **(c) 独立 pity 域**：过度设计，pity 就三个字段，独立域是仪式感开销。
+**结论**：pity 必须持久化，且应扁平塞进 `TowerProgress`（复用 v20，不升 v21）。这也决定了「pity 计数在 store 层维护、drops.ts 保持纯无状态」——drops.ts 只加一个可选入参 `pityForced?: boolean` 或让 store 在 pity 触发时**绕过 rollTowerDrop 直接给保底件**，engine 纯净不破。
 
-**深挖 A（最重要）：假设 2「委托复用现有 taskType」不成立**
-`DailyTaskType = gacha|battleWin|watch|nurture|minigame`，**无 idle/tower/enhance**。三个候选目标全无对应，且各自的门面守卫已核实：
-- 「挂机结算一次」→ `settleHomestead`（L422）返回 `IdleYield`，**但空结算也返回对象**（L425 `empty` / L453 全 0 早退）。埋点须守**实际产出**（`result.knowledge>0 || result.expEach>0`），**不能只看 `hours>0`**——首次基线/回拨钳位/0 入住都可能 `hours` 存在但产出为 0，反复进出会刷委托。
-- 「打一层塔」→ `completeFloor`（L749）仅在真通新层返回 `{completed:true}`；`sweepFloor`（L770）返回 `outcome.ok`。**`battleWin` 专指宅理论战 `battleFlow.endGame`**，绝不复用。
-- 「强化一件装备」→ `enhanceEquipment`（L661）返回 `ok`，埋点挂 `ok===true` 分支（成功强化才计）。
-
-**结论**：SF-T8 必然新增 3 埋点 + 一组委托模板。岔路只在命名空间：
-- **(a) 扩 `DailyTaskType` 加 idle|tower|enhance**：委托进 `DAILY_TASKS`，进度复用现有 `progress` record，**零新存档字段**（新 taskId 是字符串 key，旧档 `|| 0` 天然兼容，无需升版无需迁移），但**通用留存枚举被家园语义污染**。
-- **(b) daily 域内开平行 commission 子域**：独立模板 + 独立 progress 桶 + 独立 markCommission，**语义干净**，但**新增 2 个序列化字段**（deserialize `?? {}` 兜底与现有 `progress` 同构，可不升 SAVE_VERSION，但须过 migrations 往返测试）。
-
-**深挖 B：假设 5「不升存档」的边界**
-「不升 SAVE_VERSION」≠「不改存档结构」。方案 (a) 真正零字段（新 key 塞进现有 record，旧档缺失 `|| 0`）。方案 (b) 新增 record 字段即使不升版本号也须在 `deserialize` 补 `?? {}` + `serialize`/`reset` 同改 + 过 migrations 往返测试——技术上可不升版（与 daily 现有 `progress`/`claimed` 完全同构，见 `daily.ts` L217-253），但**这是本轮唯一可能触存档的风险点，须 Scout/Planner 拍死「升不升 v19」**。倾向：**不升**（`?? {}` 兜底即可，v19 额度留给真需要的场景；`DailySave` 结构本就是 optional 兼容型）。
-
-**深挖 C：假设 1「委托 = daily 换皮」的心智陷阱**
-若委托与 daily task UI 长得一样（进度条 + 领取按钮），玩家会问「这跟每日任务有什么区别？」——**委托必须有辨识度**：它是**家园本地**的（目标全在 hub 内可完成，不用跳去抽卡/理论战），措辞强调「今天在家里做的事」（挂机一次 / 爬一层 / 强化一件）。这是产品层「为什么要有第二套任务」的回答。
+**假设④「分解只能止损」——这是 pity/shard 之外被忽略的第三条更优路径。**
+P3-3（无定向）与 P2-21（重复件无出路）在审计里是两条独立发现，但**它们其实是同一个硬币的两面**：玩家有一堆不想要的重复件（P2-21），却拿不到想要的件（P3-3）。当前 SD-T3 分解链「重复件→KP→兑换」在**汇率上被故意做死**（回收 1/8，防套利）。碎片方案（shard）如果设计成「**分解重复件产碎片 + 碎片定向兑换**」，本质是给这条死链换一条**不能套利但能定向**的汇率——碎片只能换装备不能换 KP，天然防「买 R 拆 R 套利」（因为碎片不回流成购买力），同时给了定向权。**这比纯 pity 更优雅**：pity 只解决「运气差」，这条链同时解决「运气差 + 有一堆垃圾 + 想要特定件」三个问题。
 
 ### 被隐喻限制的地方
-
-**隐喻「委托 = 任务清单」在「家园即时反馈」场景下牵强**：同类游戏的「家园委托」（明日方舟基建、崩坏书院委托、动森村民请求）多是**有叙事包装的角色请求**——「XX 想让你陪她挂机」，奖励是家园语境的（好感/家具/comfort）。当前把它做成「三条干巴巴进度条」，是被「daily 引擎现成」这个技术便利限制了想象。**本轮 P3 打磨不必叙事化**，但值得记：委托长期形态应向「角色请求 / 家园语境」靠拢（见 💡）。
+- **「掉落 = 抽卡」隐喻**：把塔掉落理解成 gacha（随机 + 保底）。但塔掉落和 gacha 有本质差异——gacha 是**付费**行为（保底是对付费的承诺），塔掉落是**免费副产物**（爬塔本身有 KP/经验主奖励，装备是 bonus）。给免费副产物加 pity，玩家心智负担（「我攒了多少 pity」）可能超过收益。**碎片隐喻（「掉落=攒材料」）比 pity 隐喻（「掉落=抽卡攒保底」）更贴免费副产物语境**。
+- **「稀有度 = 层段」隐喻**：把「装备强度」锁死成「爬多高」。这让定向变得困难——你想要一件 SSR supporter，只能在 16-30 层反复刷，且还要掷中 supporter 槽。碎片打破这个隐喻：碎片是跨层段通用货币，攒够就能定向兑换任意目录件。
 
 ---
 
 ## Phase 2: 相邻领域研究
 
 ### 领域扫描
+- **手游 gacha 保底（本产品自己的 gachaStore 就有）**：AnimePlay `gachaStore` 已有保底（pity）范式——软保底累计 + 硬保底触发。**T4 pity 可直接照抄自家 gachaStore 的计数器语义**（连续未命中 → 计数++ → 达阈值强制给），无需外部研究。关键差异：gacha 保底针对**稀有度**，塔掉落 pity 更适合针对**槽位**（玩家最痛的是「三武器零支援」而非「全 R 没 UR」，因为稀有度已由层段保证）。
+- **原神 / FGO 「圣遗物 / 素材本」定向**：哲学 = 「随机掉落 + 可分解重组 + 定向兑换商店（换算成通用货币/纠缠之缘/圣遗物本）」。**原神的『分解圣遗物→经验→喂养想要的』和『纪行/商店定向兑换』正是本报告主张的『分解→定向』闭环的成熟范式**。可迁移点：碎片不回流成 KP（防套利），只单向换装备。
+- **Roguelike 保底（Hades「镜中之暗」/ 尖塔遗物池去重）**：哲学 = 「已拥有的不再重复掉」（去重池）。**这是比 pity/shard 都轻的第三方案**——`getEquipmentDefsBySlotRarity` 已返回候选池，只需在 store 层过滤「已拥有且已满强化的 defId」优先掉未拥有件。零存档、零新概念、纯 store 层候选池过滤。缺点：目录全覆盖后（毕业）去重失效，不解决「想要特定件」。
+- **补给 / 材料经济（明日方舟合成玉 / 龙门币双币）**：哲学 = 「随机产出通用材料 + 定向合成」。碎片 = 装备专用货币，与 KP 双轨，避免装备兑换挤占 KP 的其它 sink（图鉴解锁/设施升级/家具/强化）。
 
-- **明日方舟「基建委托 / 干员派驻」**：委托与**驻留系统绑定**（谁挂机决定产出）。可迁移：AnimePlay 已有 `placedCharacterIds`（入住 6 槽），委托可「点名入住角色挂机」增语境，而非纯全局计数（本轮不做，backlog）。
-- **原神/崩坏3「每日委托」**：4 条固定 + **全部完成给额外总奖励（daily bonus）**。核心：完成度奖励比单条奖励更能驱动「今天回来清空」。**这是 daily task 现在没有的东西**（daily 逐条领、无全清 bonus）。
-- **动物森友会「村民请求」**：轻叙事、无压力、可跳过。核心：委托是**软钩子**不是硬 KPI，漏做无惩罚，奖励小到「做了开心、不做无损」。
-- **行为设计「习惯循环 cue-routine-reward」**：cue（进家园看到未完成委托）→ routine（做已有玩法）→ reward（小额即时奖励）。可迁移：委托位需**未完成/可领的显形信号**（红点/高亮），复用全站红点系统（`docs/留存系统.md`）。
-- **版本控制「idempotent replay」类比**：daily 的 `ensureToday()` 读时判定跨天归零、幂等——委托必须严格复用同一口径，**绝不自造 `todayKey`**（两套跨天判定漂移是回归温床）。
+### 可迁移模式（选 3）
+1. **自家 gachaStore 的 pity 计数器（照抄，零外部依赖）**：连续未命中 → store 层 counter++ → 达阈值下次强制给保底类。**为什么适合**：本仓已有验证过的保底语义，drops.ts 保持纯（counter 在 store），复用 v20 存档，是 T4-(a) 最低成本落地。**槽位保底优于稀有度保底**（稀有度已由层段定，痛点在槽位分布）。
+2. **原神式「分解→定向」单向碎片闭环**：塔掉落额外发碎片（或分解重复件产碎片）+ 碎片定向兑换任意目录件；碎片**只出不进 KP**（防套利）。**为什么适合**：一箭双雕同解 P3-3（定向）+ P2-21（重复件出路），把 SD-T3 已建的分解出口从止损升级为定向。这是本报告**首选**。
+3. **Roguelike 去重池（未拥有优先掉）**：store 层候选池过滤「已拥有满强化件」，优先掉未拥有件。**为什么适合**：零存档、零新概念、改动 <10 行（`rollFloorDrop` 里 `candidates` 过滤一层），可作为 pity/shard 之外的**廉价兜底或叠加**——即使做了 pity，也值得顺手加「同类多件时优先未拥有」。
 
-### 可迁移模式（选最值得借鉴）
-
-1. **「今日全清 bonus」（原神/崩坏3）**：daily task 没有的收尾正反馈。委托做完 N 条给额外 KP——低成本（一个 `allDone` 派生 + 一份额外奖励），高动机杠杆，正好回答「委托 vs daily 有何不同」。
-2. **「委托即家园本地行为」（方舟基建心智）**：三条委托全在 hub 内可完成（挂机在 home tab、塔在 explore/battle tab、强化在 characters tab 装备面板）——**闭环在 hub 内**，不像 daily 要跳去抽卡/理论战。这是委托差异化定位，措辞/图标强化「不用离开家园」。
-3. **「习惯 cue = 显形信号」**：委托位需要「有可做/可领」的视觉信号；至少给 home 面板「委托 X/N 完成」醒目摘要。
-4. **「幂等读时跨天」（daily 现成）**：`ensureToday()` 直接复用，零新跨天逻辑——本轮最该守死的复用点。
-
-### 竞品设计哲学对比
-
-| 维度 | 原神每日委托 | 方舟基建委托 | AnimePlay SF-T8（建议） |
-|---|---|---|---|
-| 委托本质 | 全站四处跑腿 | 设施 + 干员派驻 | **家园 hub 本地行为** |
-| 差异化点 | 全清 bonus + 派蒙叙事 | 与驻留角色绑定 | 与已有玩法成功点绑定（挂机/塔/强化） |
-| 奖励量级 | 中（原石/摩拉） | 高（合成玉主源之一） | **小（挂机零头级，守回归补充基线）** |
-| 存档负担 | 服务端 | 服务端 | **优先复用 daily 跨天，尽量零/极少字段** |
-
-**设计哲学差异**：原神/方舟委托是**主要产出渠道**（为奖励而做）；AnimePlay 单机向委托应是**回归动机**（为「今天有点小目标」而做，奖励点缀）。故奖励须克制、不做成「不做就吃亏」的硬 KPI。
+### 竞品设计哲学对比（非功能对比）
+- **原神圣遗物**：哲学 = 「随机是主体，定向是辅助出口（分解/纪行/商店三条定向道并存）」。对本产品的启示：**T4 不必二选一，pity 与 shard 可分期**——本轮先做 pity（快、复用 gachaStore 范式），shard/分解闭环标 backlog 或作为 pity 的补充。
+- **尖塔 / Hades（roguelike）**：哲学 = 「去重 + 有限池，让每次获取都有进度感」。对本产品：目录有限（3 槽 × 5 稀有度 × ~3 件 = 45 件），去重池天然适用，毕业前每一件都推进「集齐」进度。
+- **本产品自身（gachaStore vs 塔掉落）**：gachaStore 有保底、塔掉落无保底——**同一产品内两套获取哲学不一致**。T4 加 pity 会让二者对齐（都「随机+保底」），一致性收益本身就值得。
 
 ---
 
 ## Phase 3: 逻辑完备性
 
-### 概念体系评估（文字关系图）
-
+### 概念体系评估
 ```
-daily domain（跨天真相源 todayKey/ensureToday）
-├── DAILY_TASKS（gacha/battleWin/watch/nurture/minigame）——全站行为，markProgress 遍历
-├── WEEKLY_TASKS（同 taskType，weekKey 跨周）
-├── login streak（连签）
-└── [新增] COMMISSIONS（家园本地：idle/tower/enhance）——markCommission 遍历
-        ↑ 复用 ensureToday/claim 机制，独立 commissionProgress/commissionClaimed 桶
-        ↓ 埋点挂 userStore.settleHomestead / completeFloor+sweepFloor / enhanceEquipment
+爬塔通新层(completeFloor 推进=true)
+   │
+   ├─ rollTowerDrop(floor, rng, dropRarityForFloor)  [engine 纯无状态]
+   │     ├─ chance(0.5) ── 未命中 ──► null（★ pity 计数应在此 ++）
+   │     └─ 命中 ──► {rarity=层段定, slot=rng.pick}   （★ 玩家零定向权：slot/rarity 都随机）
+   │
+   └─ rollFloorDrop(store 层) ──► getEquipmentDefsBySlotRarity → rng.pick → addItem
+         （★ 候选池未去重：已拥有满强化件仍可能重复掉 = P2-21 重复堆积）
+
+重复件 ──► dismantleValueForRarity ──► KP（★ 1/8 汇率，止损非定向，与兑换链故意做死）
+KP ──► purchaseEquipment（定向，但价高：UR 24000）
 ```
+**模糊地带①**：pity 计数挂在「未命中」还是「命中但非想要槽」？——前者治「掉落率低」，后者治「槽位分布差」。**推荐后者（槽位 pity）**：连续 N 层未出某槽 → 下次保底该槽（痛点是槽位不均，不是掉落率）。
+**模糊地带②**：碎片来源是「塔掉落额外发」还是「分解重复件产」？——前者是新水龙头（通胀风险），后者是重复件转化（无通胀，且同解 P2-21）。**推荐后者**。
 
-**模糊地带**：
-- **「委托」与「每日任务」概念重叠**：都是「每天重置的小目标 + 领奖」。消除法：委托强调「家园本地 + 全清 bonus」，daily 强调「全站行为」，UI 分区展示。
-- **「爬塔委托」与 `battleWin` 语义边界**：`battleWin` 专指宅理论战（`battleFlow.endGame`）。**绝不能把塔通层塞进 `battleWin`**（会污染宅理论战任务计数）——最易踩的语义错配。
-- **「挂机结算一次」的触发定义**：`settleHomestead` 在登录静默 + 进家园 + 升设施 + place/unplace 多处调用（L477/486/504 均先 settle）。委托「挂机一次」应只认**有实际产出**（`knowledge>0 || expEach>0`），否则反复进出刷 0 产出也能完成。
-
-### 极端场景检验
-
-1. **0 个入住角色**：`settleHomestead` 返回 `characterCount:0` 空 yield（L425）。「挂机一次」若不守卫会被空结算刷满——**须守实际产出**。成立性：**需显式守卫**。
-2. **已达塔顶 / 无未通层**：`completeFloor` 返回 `{completed:false}`（不推进）；`sweepFloor` 是缩水扫荡。「打一层塔」应认**扫荡也算**（否则毕业玩家无法完成塔委托、卡死全清）——**须同时埋 `completeFloor`(completed) + `sweepFloor`(ok)**。
-3. **无重复装备可强化 / KP 不足**：`enhanceEquipment` 返回 false。「强化一件」在毕业/破产账号可能永远做不了——若三条委托全是「可能无法完成」的硬门槛，全清 bonus 会变「永远拿不到」。**须至少一条委托保底可完成**（有入住角色即可结算挂机）。成立性：**边界脆弱，需保底委托**。
+### 极端场景检验（选 3）
+1. **毕业玩家（塔顶 currentFloor=999，completeFloor 恒返 false）**：`rollFloorDrop` 永不触发 → pity 计数冻结、碎片零产出。**pity/碎片对毕业玩家失效**——这是与「扫荡不掉落」同源的既有边界。若碎片来源是「分解重复件」而非「掉落」，则毕业玩家仍能靠拆库存产碎片定向兑换，**碎片方案在此场景明显优于 pity**。✓ 验收须覆盖「顶层玩家 T4 行为」。
+2. **pity 计数在回拨/重开**：pity 若持久化进 v20 `TowerProgress`，重开保真（存档往返）。但**pity 无墙钟依赖**（纯事件计数，不像扫荡/挂机看时间），故无回拨风险——比 SF-T6 钳位那类简单。✓
+3. **脏档 pity 巨大值（篡改 dropPityCount=99999）**：若不 clamp，下次通层必触发保底放大获取。**须 clamp pity 到 [0, PITY_THRESHOLD]**（照 `clampEnhance` 范式，migration + action 共用）。✓ 验收须断言脏档 pity 被钳。
 
 ### 操作缺口（玩家想做但做不到）
-
-- 玩家想知道「今天委托做完没」→ 需 hub 级摘要（X/N），当前无。
-- 玩家想一眼看到委托奖励 → daily task 有 reward 展示，委托应对齐。
-- 玩家想跳转去做委托 → 委托卡若能点击直达对应 tab（塔→explore、强化→characters）顺手——增强非必须，本轮可省。
+- **无法把「一堆垃圾 R 件」变成「想要的一件」**：分解只回 KP（1/8 汇率），够不到定向兑换价。碎片闭环补此缺口。
+- **无法预知「再刷几层保底」**：即使做 pity，若不在 UI 显形「距槽位保底还差 N 层」，pity 又成 comfort 式死数值（重蹈 S15-T3 显形债教训）。**pity 必须 UI 显形**。
+- **无法定向刷某一件具体 defId**：pity 只保底到「槽/稀有度」类，到不了具体件（如就想要「后藤的吉他」）。只有碎片兑换能到 defId 粒度。
 
 ### 演化瓶颈
-
-- 委托将来若要**点名角色**（方舟式）→ 当前纯全局计数模型承载不了「特定角色」维度（本轮不做，backlog）。
-- 委托若要**叙事化 / 好感联动** → 需角色→委托模板映射，静态 `COMMISSIONS` 数组承载不了（backlog）。
+- **pity 若做「稀有度 pity」会与层段稀有度冲突**：层段已定稀有度，再叠稀有度 pity 是双重保证冗余。**这从逻辑上再次指向「槽位 pity」才是唯一非冗余的 pity 维度**。
+- **碎片若做成新货币**：`profile.spend/earn` 只认三种货币（`CurrencyKey`）。碎片要么扩 CurrencyKey（波及 profile/存档/UI），要么走独立计数（`TowerProgress` 里加 `shards: number`，不进 profile 货币口径）。**推荐独立计数**（碎片是装备专用、不通用、不该进通用货币口径，避免污染 spend/earn 语义）。
 
 ---
 
 ## Phase 4: 替代设计提案
 
-### 核心机制替代方案（对 SF-T8 给 2 个本质替代 + tradeoff）
+### 核心机制替代方案
 
-**替代 1：委托进度桶命名空间——「扩 DailyTaskType」vs「daily 内平行 commission 子域」**
-
-- **方案 A：扩 `DailyTaskType` 加 idle|tower|enhance，委托进 `DAILY_TASKS`**
-  - Tradeoff：✅ **零新存档字段**（新 taskId 字符串 key，旧档 `|| 0` 天然兼容，无需升版无需迁移）；✅ 复用 markProgress/claim/isComplete 全套，代码最少。❌ **通用留存引擎被家园语义污染**（`daily.ts` L21 明写「保持领域 store 自包含」，塞入「塔/强化」破坏抽象纯度）；❌ 委托与 daily task UI 更难区分，回答不了「为什么两套任务」。
-- **方案 B：daily 内开 `COMMISSIONS` 平行子域（独立模板 + `commissionProgress`/`commissionClaimed` + `markCommission`）**
-  - Tradeoff：✅ **语义干净**（家园委托独立概念，不污染 DailyTaskType）；✅ 跨天口径 100% 复用 `ensureToday`（零新跨天逻辑）；✅ UI 天然与 daily task 分开；✅ 可挂独立「全清 bonus」不影响 daily。❌ **新增 2 序列化字段**（deserialize `?? {}` 兜底与现有 `progress` 同构，可不升版，须过 migrations 往返测试）。
-  - **推荐 B**：语义纯度 > 省 2 字段的迁移成本。新字段与既有 `progress`/`claimed` 完全同构、迁移风险极低（旧档缺失 → `?? {}` → `ensureToday` 归零）。**升不升 v19 由 Scout/Planner 定，倾向不升**（`?? {}` 兜底即可）。
-
-**替代 2：委托奖励结构——「逐条固定奖励」vs「逐条小奖 + 全清 bonus」**
-
-- **方案 A（daily 现状克隆）**：每条各给固定小 KP/经验，无全清 bonus。✅ 最简单、与 daily 同构。❌ 缺「今天清空」收尾动机，委托沦为 daily 纯换皮。
-- **方案 B（原神/崩坏3）**：每条极小奖 + **今日全清额外一份 bonus**（如 3 条各 +20KP，全清额外 +50KP/+1 券）。✅ 制造「回来清空」habit loop 收尾正反馈，是委托区别于 daily 的核心；✅ 成本极低（`allDone` 派生 + 一份 bonus）。❌ 须处理「毕业账号做不了某条」导致全清 bonus 拿不到的边界（Phase 3 场景 3）——缓解：至少一条委托「总能做」。
-  - **推荐 B + 保底可完成委托**。若 R3 时间紧，可先做逐条奖励、全清 bonus 收尾补——但保底委托无论如何要有。
+**机制 A：定向获取（T4 主体）**
+- 现状：无定向。塔掉落全随机 + KP 兑换（价高）。
+- **替代 A1（SPRINT 选项 a·pity）：槽位保底**。store 层维护 `pityBySlot`（或单 `dropPityCount`），连续 N 层未出某槽 → 下次通层强制给该槽（rarity 仍走层段）。持久化进 v20 `TowerProgress`。**Tradeoff**：快（照抄 gachaStore）、drops.ts 保持纯（counter 在 store）、复用 v20；但只保底到「槽」不到「具体件」，且对毕业玩家失效，且是免费副产物加 pity 的心智负担。
+- **替代 A2（SPRINT 选项 b·shard，本报告首选）：分解→碎片→定向兑换单向闭环**。分解重复件产碎片（替代/并存于 KP 回收）+ 碎片定向兑换任意目录件（到 defId 粒度）；碎片独立计数（`TowerProgress.shards` 或独立字段，不进 profile 货币）、**只出不进 KP 防套利**。**Tradeoff**：一箭双雕同解 P3-3+P2-21、到 defId 粒度、毕业玩家仍可用（拆库存）、无通胀；但需一个碎片兑换 UI + 定价平衡（碎片兑换价 vs 分解产出比）。
+- **替代 A3（roguelike 去重池，最轻，可叠加任一方案）**：`rollFloorDrop` 候选池优先未拥有件（`candidates` 过滤已拥有满强化 defId，若全拥有再回退全池）。**Tradeoff**：零存档、<10 行、每次掉落都推进「集齐」进度；但毕业后失效、不到「想要特定件」。**建议无论选 A1/A2 都顺手叠加 A3**（成本几乎为零的体验提升）。
 
 ### 概念重组方案
-
-**把「委托」定位为「家园本地 daily」而非「第二套泛任务」**：不新增顶层概念，明确委托 = daily 家族里「成功点全在 hub 内」的子集。UI 卡片可复用（进度条 + 领取）但**分区展示**（委托在 home 面板、daily 在留存中心），措辞强化家园语境，避免「两套任务系统」认知负担。
+- **把「分解」与「兑换」缝成一条闭环货币**：现状 `dismantleValueForRarity`（重复件→KP）与 `purchaseEquipment`（KP→装备）已存在，但 KP 汇率做死使闭环名存实亡。**重组 = 引入碎片作为「分解与兑换之间的专用中间货币」**——重复件 --分解--> 碎片 --兑换--> 目标件，碎片不回流 KP。这不是新玩法，是把两条已存在的死链用一条不可套利的专用货币接活。**这是本报告的核心主张**：T4 选 shard，且 shard 定义为「分解产出 + 定向兑换」而非「掉落额外发放的新水龙头」。
+- **pity 与去重池统一为「掉落记忆」**：pity（连续未命中记忆）与去重池（已拥有记忆）都是「给无记忆掉落加记忆」。若都做，可统一为 store 层一个 `rollFloorDrop` 的「记忆增强」封装，drops.ts 仍纯。
 
 ### Tradeoff 矩阵
-
-| 方案 | 简洁性 | 语义纯度 | 存档负担 | 差异化(vs daily) | 推荐 |
+| 方案 | 简洁性 | 解决痛点 | 存档成本 | 毕业玩家可用 | 本轮推荐 |
 |---|---|---|---|---|---|
-| 命名空间 A：扩 DailyTaskType | ★★★ | ★ | 零字段 | ★ | |
-| 命名空间 B：平行 commission 子域 | ★★ | ★★★ | 2 字段(倾向不升版) | ★★★ | ✅ |
-| 奖励 A：逐条固定 | ★★★ | — | — | ★ | |
-| 奖励 B：小奖+全清 bonus | ★★ | — | — | ★★★ | ✅ |
+| A1 槽位 pity | 高（抄 gachaStore） | 仅「运气差」 | v20 复用（+clamp） | ✗ 冻结 | 🟡 可选、快 |
+| **A2 分解→碎片→定向** | 中 | P3-3 + P2-21 双解 | v20 复用（shards 计数） | ✓ 拆库存 | 🔴 **首选** |
+| A3 去重池 | 极高（<10 行） | 「集齐进度感」 | 零 | ✗ 毕业失效 | 🟢 无脑叠加 |
+| 现状 | — | 无 | — | — | ✗ |
 
-### 灵感炸弹（不受当前架构约束）
-
-- 💡 **委托叙事化：角色请求制**——「入住的 XX 想看你打一层塔给她看」，完成给该角色好感 + 一句台词。把委托从「留存 KPI」变成「角色关系触点」，与 S14-C 好感系统联动，让家园从「数值面板」向「有人住的家」演化。**本轮不做，S15+ 立项。**
-- 💡 **委托驱动家园经营正循环**——委托奖励不给 KP 而给「家园货币 / comfort / 家具碎片」，焊进 SD-T1 设施经营闭环（做委托 → 攒家园货币 → 升设施/买家具 → 挂机更快 → 更愿回来）。让委托成为家园日常燃料而非又一个通用 KP 水龙头。**与 P3-4 家具系统 backlog 联动，S15+ 一并设计。**
+### 灵感炸弹（💡）
+1. **「装备图鉴 + 集齐进度」**：目录仅 45 件，天然是可「集齐」的图鉴。把去重池（A3）+ 一个「装备图鉴完成度」显形（复用 codex 里程碑范式）——爬塔从「刷数值」变成「集邮」，每件未拥有件都是明确进度。碎片兑换补最后几件的定向缺口。**这把 T4 从『加个保底旋钮』升维成『装备收集玩法』**，且复用现成 codex 完成度范式。
+2. **「碎片 = 通用装备语言」**：所有获取道（掉落/分解/成就/周任务）都能产碎片，碎片能换任意目录件——碎片成为装备经济的统一底层货币，塔掉落、KP 兑换、分解三条孤岛用碎片连成一张网。长期把装备经济从「三条互不相通的道」整合成「一个碎片池 + 多个水龙头 + 一个定向出口」。
 
 ---
 
 ## Prioritized Research Directions
 
-### 🔴 High-impact, Low-effort（本轮落地）
+### 🔴 High-impact, Low-effort（本轮 T4 可考虑）
+- **T4 选 A2（分解→碎片→定向兑换），并顺手叠加 A3（去重池）**：一箭双雕同解 P3-3（无定向）+ P2-21（重复件无出路），复用 v20（碎片独立计数进 `TowerProgress`，不进 profile 货币口径），碎片只出不进 KP 天然防套利，毕业玩家仍可拆库存兑换。A3 去重池 <10 行零存档，无论选 A1/A2 都值得叠。
+- **T4 若选 A1（pity）→ 必做「槽位 pity」而非「稀有度 pity」**：层段已定稀有度，稀有度 pity 冗余；痛点在槽位分布不均。pity 计数持久化进 v20 `TowerProgress`（补默认 + migration + clamp 到 [0,阈值]），drops.ts 保持纯（counter 在 store，pity 触发时 store 层绕过随机直接给保底槽）。
+- **pity/碎片进度必须 UI 显形**（S15-T3 显形债的教训）：pity 显「距槽位保底还差 N 层」、碎片显「持有量 + 可兑换清单」，否则又成死数值。
 
-- **委托走「daily 内平行 commission 子域」（替代 1 方案 B）**：语义干净 + 跨天口径 100% 复用 + 与 daily 视觉分区。三个新埋点 `markCommission('idle'|'tower'|'enhance')` 挂 userStore 已有门面处（`settleHomestead` L459 产出发放后 / `completeFloor` L759 completed 分支 + `sweepFloor` L778 ok 分支 / `enhanceEquipment` L664 ok 分支），与现有 5 个 `markProgress` 埋点同位于 `saveToServer` 事务前。
-- **「挂机结算」委托守卫「有实际产出」而非 `hours>0`**：只在 `result.knowledge>0 || result.expEach>0` 时 `markCommission('idle')`（防空结算/首次基线/回拨钳位刷委托——场景 1）。
-- **「塔委托」同时埋 `completeFloor`(completed) + `sweepFloor`(ok)**：让毕业玩家用扫荡也能完成（场景 2），**绝不复用 `battleWin`**（语义错配污染宅理论战计数）。
-- **至少一条委托「保底可完成」**：避免全清 bonus 因毕业/破产账号永远拿不到（场景 3）。挂机委托只需有入住角色即可结算，是天然保底项。
-
-### 🟡 High-impact, High-effort（本轮争取 / 否则收尾补）
-
-- **今日全清 bonus（替代 2 方案 B）**：委托区别于 daily 的核心设计，成本不高但需处理保底可完成边界——若本轮时间紧可先做逐条奖励、全清 bonus 留收尾补。
-- **委托红点 / cue 显形**：接全站红点系统成本视现状而定；至少给 home 面板「委托 X/N」醒目摘要。
+### 🟡 High-impact, High-effort（backlog）
+- **装备图鉴 + 集齐完成度玩法**（💡1）：把 45 件目录做成可集齐图鉴，复用 codex 里程碑范式，爬塔升维成集邮玩法。
+- **碎片统一装备经济**（💡2）：所有获取道产碎片、碎片换任意件，整合三条孤岛为一张网。
 
 ### 🟢 Thought-provoking（长期）
-
-- **委托点名入住角色（方舟基建心智）**：需角色维度进度模型，纯全局计数承载不了。
-- **委托位与 SF-T3 驻留定时结算的 UI 共存**：二者都在 home 面板，收官轮须复核视觉不打架（假设 5）。
+- **掉落率与层段脱钩的「定向刷本」**：某层专掉某槽/某套（原神素材本范式），给爬塔加「今天刷什么」的选择。
+- **重复件合成升阶**（N 件同稀有度→升一档），把重复件转成升阶材料而非只回收 KP。
 
 ### 💡 Wild idea
-
-- **委托叙事化 / 角色请求制**（与好感联动，家园从数值面板变「有人住的家」）。
-- **委托奖励给家园货币而非 KP**（焊进设施/家具经营闭环，委托成为家园日常燃料）。
+- **装备图鉴集邮玩法**：目录有限 → 每件都是集齐进度，碎片补定向缺口。
+- **碎片作为装备经济统一底层货币**：掉落/分解/成就/周任务四条水龙头 + 一个碎片池 + 一个定向出口。
 
 ---
 
-## 收官轮附注（S14 整体一致性）
-
-- 前轮已核实真落地（eval.md R2 = 851 tests 全绿 / SF-T6 钳位见 `userStore` L437-440 / SF-T2 批量补习见 `userStore` L701）。收官轮 Evaluator 仍须亲自复跑验收命令，SF-T8 完成后确认 SF-T1..T8 全 `[x]` 方为 S14-F 收官。
-- SF-T8 若采用平行 commission 子域并新增 daily 序列化字段，须与 SF-T3（驻留定时结算，已落地）在 home 面板 UI 共存复核，且 persistence 往返测试须覆盖新字段旧档兼容。
-- **命名空间拍板留给 Scout/Planner**：本报告倾向方案 B（语义纯度）+ 不升 v19（`?? {}` 兜底）；若 Scout 判定 `?? {}` 迁移测试成本不划算，方案 A（扩枚举、真零字段）是可接受的退路——但 A 须在 UI 分区上补偿差异化，避免「委托 = daily 换皮」认知塌陷。
+## 收尾复审提示（本轮同时是 Sprint 收官轮）
+- **S15-T1/T2/T3/T2-E 前两轮已 COMPLETE**（eval.md：test×3 全绿、SAVE_VERSION=20、羁绊/家具 UI 显形已落地）。本轮 Generator 落 T4 后须复跑全套验收命令，确认 S14 的 33 项 + S15-T1..T3 全无回归。
+- **v20 铁律**：SAVE_VERSION 已=20（第 2 轮 furniture bump）。T4 若持久化（pity 计数 / 碎片），**复用 v20**——即在既有 v20 迁移里给 `TowerProgress` 补新字段默认，**绝不升 v21**（防版本漂移，Scout C-1）。
+- **engine 纯净铁律**：drops.ts 不得引入状态/RNG 之外依赖。pity 计数与碎片逻辑留在 store 层，drops.ts 若需感知 pity，只加纯入参（如 `forcedSlot?`），不在 engine 内维护计数。
+- **货币口径**：碎片是装备专用中间货币，**不进 `profile.spend/earn` 的 `CurrencyKey`**（避免污染通用货币语义）；走 `TowerProgress` 独立计数 + 装备兑换专用入口。若走 KP 定向兑换则复用既有 `purchaseEquipment` 口径，不另拼。

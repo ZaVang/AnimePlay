@@ -1,91 +1,101 @@
-# Scout Report — Iteration 3 / 3（S14-F 收官轮 · product-loop --tier1 on --mode all）
+# Scout Report — Iteration 2（S15 第 2/3 轮，product-loop --tier1 on --mode all）
 
-> 本轮指派切片 = **SF-T8｜家园日常委托（P3-10）** + S14-F 收尾（确认 SF-T1..T8 全落地、S14-A..E 无回归）。
-> SF-T1..T7 + 两条 refine 已在 R1/R2 落地并 COMPLETE（见 `eval.md` R2：851 tests 全绿）。本轮唯一新任务 = SF-T8，其余为收官核对。
-> 三份审计（product/research/evolution）已就 SF-T8 设计**高度一致收敛**：`daily` 域内平行 `commission` 子域 + 3 新埋点 + 逐条小奖 + 今日全清 bonus。本 Scout 已 Read 全部落点，确认可行性与坑。
+> 本轮指派切片 = **S15-T2（轻量家具 / 布局系统，P3-4）**（见 SPRINT.md 排期建议第 2 轮：「家具 v20，唯一存档重任务，单独做透三改+往返测试」）。
+> 前情：第 1 轮 **S15-T1 + S15-T3 已 COMPLETE**（eval.md：test×3 全绿、零存档、SAVE_VERSION 仍 19、羁绊 engine 纯函数 + UI 显形已落地）。
+> S15-T4 非本轮，仅在 B 节末尾给 Planner 排期用现状快照，Generator 本轮不要动。
+> **权威 SAVE_VERSION（schema.ts:50）= 19**。本轮是**本 Sprint 唯一升档轮 → v20**（furniture 域一次性 bump；若 T4 pity 也要持久化，第 3 轮复用同一 v20，别再单独升）。
 
 ---
 
 ## A. 约束与可行性（给 Planner）
 
-**SF-T8 是本轮唯一必做任务，必须真实现（不得降级为收尾核对）。** SA-T6 / S14-B 暴击 UI / S14-E R1 收口三次被漏教训在前——收官轮跑到 R3 ≠ 前轮已把 SF-T8 做了（前轮明令「不顺手做 SF-T8」，见 SPRINT L89 / plan.md L83）。**SF-T8 当前 `[ ]`（FUTURE.md L117 未勾、SPRINT L27 未勾）。**
-
-### 命名空间拍板（三份审计一致推荐，Scout 确认）
-**走「`daily` 域内平行 `commission` 子域」（研究审计替代 1 方案 B）**，不扩 `DailyTaskType` 枚举：
-- 复用 `daily.ts` 的 `todayKey()`/`ensureToday()` 跨天口径（零新跨天逻辑，绝不自造 `todayKey`——两套跨天判定漂移是回归温床）。
-- 新增独立 `COMMISSIONS` 模板（`config/dailyTasks.ts`）+ 独立 `commissionProgress`/`commissionClaimed` 桶 + 独立 `markCommission(kind)` 埋点 + `commissionKind = 'idle'|'tower'|'enhance'` 类型。
-- 语义干净（家园委托不污染全站留存枚举，守 `daily.ts` L21「保持领域 store 自包含」），UI 天然与 daily task 分区。
-
-### 存档决策：**升 SAVE_VERSION 18 → 19**（拍板，勿再犹豫）
-研究审计倾向「不升版、`?? {}` 兜底」，但 Scout 判定**应升 v19**，理由：
-- 一旦在 `DailySave` 新增 `commissionDate`/`commissionProgress`/`commissionClaimed`（3 字段），就是**存档结构变更**，SPRINT 存档协议（L16）明令「新增/改存档字段必须 schema + migrations + 装配器三处同改 + 往返测试」——这三处改动无论升不升版本号都要做，升版成本几乎为零（本 sprint 尚未升版，v19 额度就是留给 SF-T8 的，SPRINT L16 白纸黑字）。
-- 升 v19 让 `migrations.test.ts` 的往返/旧档兼容测试有明确版本锚点，比「悄悄改结构不升版」更符合协议、更易审计。**一次 sprint 只升一次**——SF-T8 是唯一候选，正好用掉。
-- 三处同改落点（照抄 v7 加 weekly 字段的范式，`migrateDaily` 已是「字段级缺省兜底」结构，加 3 行即可）：
-  1. `infra/persistence/schema.ts`：`DailySave` interface 加 3 字段（L57-74）+ `createDefaultDaily()` 加缺省（L296-307，空串/`{}`/`[]`）+ `SAVE_VERSION` 18→19（L30，权威）+ 顶部版本注释加 v19 段（L12 附近）。
-  2. `infra/persistence/migrations.ts`：`migrateDaily(raw)`（L91-106）加 3 行 `typeof raw.xxx === ... ? ... : defaults.xxx`（旧档缺 → 缺省，与 weekly 四字段同构）+ 顶部注释加 v19。
-  3. `stores/daily.ts`：`serialize()`（L217-228）/`deserialize()`（L230-242）/`reset()`（L244-253）三处加新字段（deserialize 里 `?? {}`/`?? []` 兜底 + 加载后 `ensureCommissionToday()`）。
-  - **SAVE_VERSION 权威在 `schema.ts:30`**；文档只指向不复述（pitfalls L61）。
-
-### 三个埋点落点（研究/产品审计已核实，Scout 复核确认）
-三类目标对应的 action **全部已在 `userStore` 门面且带 `saveToServer` 事务边界**，新埋点与现有 5 个 `markProgress` 同构同位（`saveToServer()` 前）：
-1. **`markCommission('idle')`｜挂机结算一次** → `userStore.settleHomestead`（L455-464 发放收益后、`saveToServer()` L464 前）。**必须守实际产出**：埋点写在 L453 早退（`if (全0) return result`）**之后**——只有真发放产出才到达该分支，天然守卫。**绝不用 `hours>0`**（首次基线 L429-431 早退 / 回拨钳位 L437-440 早退 / 0 入住空结算都可能 hours 存在但产出 0，反复进出刷委托）。
-2. **`markCommission('tower')`｜打一层塔** → **两处都埋**：`completeFloor` 的 `pve.completeFloor(floor)===true` 分支（L753-760，`saveToServer` L758 前）**+** `sweepFloor` 的 `outcome.ok && outcome.reward` 分支（L772-779，`saveToServer` L778 前）。毕业玩家（塔顶，completeFloor 返回 false）靠扫荡也能完成，否则卡死全清 bonus。**绝不复用 `battleWin`**（那是宅理论战 `battleFlow.endGame` L128 计数，语义污染）。
-3. **`markCommission('enhance')`｜强化一件装备** → `enhanceEquipment` 门面的 `ok===true` 分支（L661-666，`saveToServer` L664 前）。
-
-> 埋点全在 store 编排层（userStore 门面），**绝不进 engine**（engine 纯净铁律，evolution-audit L101 已警示）。`markCommission` 幂等钳到 target（仿 `markProgress` L122-139 结构），跨天读时归零（`ensureCommissionToday` 仿 `ensureToday` L65-72）。
-
-### 委托模板 + 保底 + 全清 bonus（拍板）
-- **3 条固定委托**（target=1）：`commission_idle`（挂机结算一次）/ `commission_tower`（打一层塔，含扫荡）/ `commission_enhance`（强化一件装备）。措辞强调「家园本地小事」（今天在家里做的事，全在 hub 内闭环，不用跳去抽卡/理论战）。
-- **保底可完成**：`commission_idle` 是天然保底（有入住角色即可结算挂机），确保全清 bonus 不因毕业/破产账号变「永远拿不到的空诺」（研究审计 Phase 3 场景 3）。
-- **奖励量级 = 挂机零头级 / KP 为主**：逐条小额（如各 20-30 KP，对齐 daily task 30 KP 量级，守「回归补充不盖过主动收入」基线，config/homestead.ts 顶部自述）。
-- **今日全清 bonus**（原神/崩坏3 范式，委托区别于 daily 的核心）：3 条清完给一份额外 bonus（如 +50 KP 或 +1 券）。实现 = `allCommissionsDone` 派生 + 全清「已领」标记复用 `commissionClaimed` 存一个特殊 key（如 `'__bonus__'`，不新增第 4 字段）+ `claimCommissionBonus()` action。**若 R3 时间紧，全清 bonus 可留 fallback，但逐条委托 + 保底项无论如何必做。**
-
-### UI 落点（拍板）
-- home tab 直接 `<HomesteadView/>`（HomesteadHubView L375-376），委托 UI **挂 `HomesteadView.vue` 的 `ops-panel`（右侧运营列，L505+）**，插在 **SF-T3 驻留卡（L521-537）之下**（同属「家园日常状态」语义簇）。
-- **视觉共存复核（收官轮最该盯）**：SF-T3 驻留卡已带一条进度条（`.idle-bar`）；委托位若再叠进度条容易糊。委托卡建议用「X/N 完成度摘要 + 逐条 checkbox/领取按钮」而非又一条大进度条，与驻留卡视觉区分（product-audit L15/L42 明示）。
-- 颜色走语义令牌（`--c-success`/`--c-warning`/`--c-accent`），禁 text-white 压浅底、禁拼接动态色类。
-
-### 收官核对（本轮必须一并确认）
-- SF-T1..T7 + 两条 refine 全 `[x]` 且真落地（R2 eval + product-audit R3 复审已逐项 Read 确认无回归；Evaluator 仍须亲自复跑 5 条验收命令）。
-- SF-T8 落地后：FUTURE.md L109-118 的 S14-F 全部 `[ ]` → `[x]`、进度总览 S14 → ✅、SPRINT L27 勾选。
+### S15-T2 可行性：**高**，`facility` 域是逐字对标的成熟范式，照抄即可
+- **一句话结论**：新增 `furniture` 独立存档域（v20），仿 `facility` 域五处对称落点（schema type + 默认工厂 + migration + store serialize/deserialize + 装配器两行），config 纯数据目录仿 `EQUIPMENT_CATALOG`，加成经既有 `computeIdleYield` 的 comfort/独立乘子口径汇入（**不新拼收益口径**），UI 在 `HomesteadView` 加兑换 + 摆放/收纳入口。风险主要在「存档三处同改 + 往返测试」的机械正确性，玩法数值风险低。
+- **升档协议（本轮必做，v19→v20）**：三处同改（`schema.ts` + `migrations.ts` + `stores/persistence.ts` 装配器）+ 往返测试。`SAVE_VERSION` 由 19 → **20**（schema.ts:50 一处改）。v19→v20 迁移：旧档无 `furniture` 键 → 补空家具默认（仿 `migrateFacility`：白名单重建，**禁 spread**，pitfalls S13-C1）。migrations.test.ts 已有「v17 facility 缺失补默认」范式（:149-151、:525-529），照抄写「v20 furniture 缺失补默认」+ 往返保真两例。
+- **收益口径铁律（不可绕开）**：家具加成**必须经既有口径汇入**，二选一（Planner 拍板，建议第一种最省事、零口径新增）：
+  1. **家具只贡献 comfort（复用既有 comfort 软加成轴）**：`computeIdleYield` 已有 `effect.comfort` → `comfortBonusPct`（每 10 点 +1%，封顶 +20%，config/homestead.ts:94/210）。家具各给 comfort 分，settle/预览把「家具 comfort 合计」并入传给 `computeIdleYield` 的 `effect.comfort`（与装备 comfort 相加）。**零新增口径、零新乘子**，与合同「经既有 comfort 软加成口径并入」完全吻合。缺点：家具与装备共用同一 comfort→+20% 硬顶，家具深度有限（但守住「挂机不盖过主动收入」基线，正确）。
+  2. **家具作新的独立乘子（仿设施乘区）**：若要家具有独立产出%（expPct/affectionPct/knowledgePct），则 `computeIdleYield` 内加一个 `furnitureMult`（与 comfort/bond/设施同层通乘）。**这会改 computeIdleYield 签名 + 全部调用点**（settle + HomesteadView 三处 + config/homestead.test.ts 断言），成本更高，且需明确它进不进 `HOMESTEAD_EFFECT_CAP`（建议独立温和封顶）。
+  - **强烈建议走方案 1**（comfort 复用）：合同原文「每件给小额 comfort / 产出加成——经既有 comfort 软加成 / 设施乘区口径并入」，comfort 轴是现成的、`computeIdleYield` 已消费、UI 已显形（ops-card-main 大字 + `comfortBonusText`）。家具走 comfort 即「摆家具→基地更舒适→全产出小幅提升」，语义自洽、改动面最小、往返测试最干净。
+- **摆放 / 布局**：合同说「复用 WALKABLE_ZONES 坐标或简单固定槽位」。**建议「简单固定槽位」**（如 furniture 域存 `Record<slotId, furnitureDefId | null>`，N 个固定装饰位），别硬绑 WALKABLE_ZONES 像素坐标（那是角色漫步区、16:9 百分比，塞家具会与漫步者/建筑重叠且需新美术）。**首版可不做「广场里可视化摆放渲染」**——合同验收只要求「摆放持久化跨重开保真 + 加成真进挂机收益」，一个「已摆放家具清单（给 comfort）」的 store 域 + HomesteadView 一个兑换/收纳面板即达标。可视化摆到广场是锦上添花，若做也应是独立固定槽位坐标，不改 WALKABLE_ZONES。
+- **KP 兑换**：走 `profile.spend('knowledgePoints', cost)` 成功才入库（照 `upgradeFacility` / `purchaseEquipment` 范式，userStore.ts:509-527）。门面新增 `buyFurniture(defId)` / `placeFurniture` / `unplaceFurniture` 编排（先 `settleHomestead()` 结清再变更再 `saveToServer()`，与家具影响 comfort→影响封顶/产出的口径一致，防「摆家具瞬间回溯放大已挂时间」——同 `upgradeFacility` 的先结清模式）。
+- **验收锚点**：可 KP 买家具（走 profile.spend）、摆放持久化跨重开保真、加成真进挂机收益（经 computeIdleYield 口径）、v20 迁移往返测试、type-check/test/build 通过。
 
 ---
 
 ## B. 代码地图与坑（给 Generator）
 
-### 落点文件（角色说明）
-- **`frontend-vue/src/config/dailyTasks.ts`**（151 行）——静态模板。加 `CommissionKind = 'idle'|'tower'|'enhance'` 类型 + `CommissionDef` interface（复用 `DailyReward`）+ `COMMISSIONS: CommissionDef[]`（3 条）+ `COMMISSION_BONUS_REWARDS`（全清 bonus）+ `getCommissionById`。**勿动 `DailyTaskType`**（不扩枚举）。
-- **`frontend-vue/src/stores/daily.ts`**（286 行）——委托运行时。加 `commissionDate`/`commissionProgress`/`commissionClaimed` refs + `ensureCommissionToday()`（仿 `ensureToday` L65-72）+ `commissionProgressOf`/`isCommissionComplete`/`isCommissionClaimed`（仿 L84-99）+ `markCommission(kind, amount=1)`（仿 `markProgress` L122-139，**只遍历 COMMISSIONS，不碰 weekly**）+ `claimCommission(id)`（仿 `claim` L142-158，发奖走 `profile.earn`）+ `allCommissionsDone` 派生 + `claimCommissionBonus()` + serialize/deserialize/reset 三处加字段。**导出全部新函数**（return 块 L255-277）。
-- **`frontend-vue/src/infra/persistence/schema.ts`**——`DailySave` +3 字段（L57-74）、`createDefaultDaily` +3 缺省（L296-307）、`SAVE_VERSION` 18→19（L30，权威）、顶部版本注释加 v19 段（L12 附近）。
-- **`frontend-vue/src/infra/persistence/migrations.ts`**——`migrateDaily` +3 行缺省兜底（L91-106，仿 v7 weekly 四字段）、顶部注释加 v19。
-- **`frontend-vue/src/stores/userStore.ts`**——3 埋点：`settleHomestead` L453 之后（idle）/ `completeFloor` L753-760 分支（tower）/ `sweepFloor` L772-779 分支（tower）/ `enhanceEquipment` L661-666 ok 分支（enhance）。委托领取门面 `claimCommission`/`claimCommissionBonus`（仿 `claimDailyTask` L629-631：`if (useDailyStore().claimCommission(id)) saveToServer()`）。
-- **`frontend-vue/src/views/HomesteadView.vue`**（790 行）——委托 UI 挂 `ops-panel`（L505+）驻留卡（L521-537）之下。读 `useDailyStore()` 的委托 getter，领取走 `userStore.claimCommission`。**未登录态守卫**（`userStore.isLoggedIn`，仿 L461）。
+### S15-T2 落点（本轮做）—— 五处对称改 + config + UI
 
-### 测试落点
-- **`frontend-vue/src/stores/daily.test.ts`**（已有 markProgress/claim/跨天 范式，L20 `freezeDate` helper）——补 commission 断言：markCommission 推进 + 完成判定 + 跨天归零（freezeDate 换日）+ claim 发奖 + allCommissionsDone/全清 bonus + 幂等钳 target。
-- **`frontend-vue/src/infra/persistence/migrations.test.ts`**——v18→v19 往返：旧档缺 commission 3 字段 → 缺省（`?? {}`/`?? []`）、新档往返保真、`not.toHaveProperty` 无关字段不漏。仿现有 daily v7 迁移测试。
+**范式样板（逐字对照抄）= `facility` 域**。下列每个落点都标注 facility 的对应行号供直接照搬：
 
-### 坑（照抄会踩）
-1. **[C-SF-T8 idle 空结算刷委托]** `settleHomestead` 有 3 条早退（未登录 L426 / 首次基线 L429-431 / 回拨钳位 L437-440）+ 全 0 产出早退（L453）。埋点**必须写在 L453 之后**（只有真发放产出才到达），否则空结算/0 入住反复进出刷委托。
-2. **[C-SF-T8 tower 语义错配]** 塔委托绝不复用 `battleWin`（宅理论战计数，`battleFlow.ts` L128）；必须同埋 `completeFloor`(completed 分支) + `sweepFloor`(ok 分支)，毕业玩家靠扫荡完成。
-3. **[C-SF-T8 跨天口径漂移]** 委托跨天必须复用 `daily.ts` 的 `todayKey()`（L22-25），**绝不自造第二套**（pitfalls：两套跨天判定漂移是回归温床）。`ensureCommissionToday` 仿 `ensureToday` 读时判定归零、幂等。
-4. **[C-SF-T8 瘦身迁移 spread 陷阱]** `migrateDaily` 已是白名单重建对象（非 spread），加字段照抄同结构；**勿改成 spread 旧档**（S13-C1 沉淀 pitfalls L67：删/改字段迁移必须白名单重建，spread 会漏旧字段）。
-5. **[C-SF-T8 埋点入 engine]** `markCommission` 埋点只挂 userStore 门面（store 编排层），engine 纯净铁律不得 import store（evolution-audit L101）。
-6. **[C-SF-T8 UI 进度条糊]** 委托卡与 SF-T3 驻留卡同处 ops-panel，两条进度条叠加易糊——委托用完成度摘要（X/N）+ 逐条领取，别再来一条大进度条（product-audit L15）。
-7. **[C-SF-T8 全清 bonus 空诺]** 若三条委托都可能做不了（毕业+破产账号），全清 bonus 变永远拿不到——`commission_idle` 保底（有入住即可结算）必须存在。
-8. **[C-SF-T8 daily reset 漏字段]** `daily.ts` `reset()`（L244-253）+ `serialize()`（L217-228）+ `deserialize()`（L230-242）三处都要加新字段，漏一处 → 登出/切账号残留或往返丢失（migrations.test 往返测试守）。
-9. **[定时器/飘字清除]** 若委托领取加飘字，setTimeout 必须登记 + onUnmounted 清（pitfalls setTimeout 假安全）；HomesteadHubView 已有 `timers[]` + `scheduleClear`（L301-312）范式，HomesteadView 有 rAF+idleTimer onUnmounted 清（L444-447）范式可仿。
-10. **[货币入口]** 委托/bonus 发奖只走 `profile.earn`（daily `claim` L148-152 已是此范式），绝不绕过。
+1. **`frontend-vue/src/config/homestead.ts`（家具目录 + 纯函数，仿 facility 常量区 :40-104 + EQUIPMENT_CATALOG）**
+   - 新增 `FurnitureDef`（`{ id, name, comfort, cost }`，名梗风，纯数据）+ `FURNITURE_CATALOG: readonly FurnitureDef[]`（仿 `EQUIPMENT_CATALOG`，config/equipment.ts:369）。
+   - 新增 `canonicalizePlacedFurnitureIds(raw)` 归一（仿 `canonicalizePlacedIds` :23-35：数字/去重/截断，脏档防重复放大 comfort）。
+   - 新增 `sumFurnitureComfort(placedFurnitureIds, catalog)` 纯函数：查目录求和 comfort。**这一步是「加成经既有口径汇入」的关键**——把家具 comfort 加到 settle/UI 传给 `computeIdleYield` 的 `effect.comfort`（与装备 comfort 相加），`computeIdleYield` 内部 `comfortBonusPct` 天然消费，**无须改 computeIdleYield 签名**（方案 1）。
+   - 坑：家具 comfort 与装备 comfort 相加后仍走同一 `comfortBonusPct`（+20% 硬顶）——**这是有意的**（守挂机基线）；别给家具单开一条突破 +20% 的口径。若 Planner 选方案 2（独立乘子）才改签名。
 
-### 已验证无需担心
-- `daily` 领域 store 自身不存档（由 userStore 门面统一 saveToServer，daily.ts L5 注释）——委托领取走 `userStore.claimCommission` 触发 saveToServer 即可。
-- `computeIdleYield` 0 入住返回全 0 yield（settleHomestead L453 早退），idle 埋点守卫天然成立。
-- schema `DailySave` 是 optional 兼容型（migrateDaily 字段级兜底），加字段迁移风险极低。
+2. **`frontend-vue/src/infra/persistence/schema.ts`（type + 默认工厂 + SAVE_VERSION + 沿革注释）**
+   - `SAVE_VERSION = 19` → **`20`**（:50 一处）。
+   - 顶部沿革注释加一行 `v20（S15-T2）：新增 furniture 域……`（仿 :27-35 facility 注释）。
+   - 新增 `FurnitureSave` interface（仿 `FacilitySave` :197-204，如 `{ placedIds: number[] }` 或 `{ owned: string[]; placed: (string|null)[] }`，按 Planner 定的摆放模型）+ `createDefaultFurniture()` 工厂（仿 `createDefaultFacility` :207-209）。
+   - `SavePayload` 加 `furniture: FurnitureSave` 字段（仿 :263-264 facility 行）。
+   - 坑：`createDefaultFurniture` 若 import config 需注意——`createDefaultFacility` 就 import 了 `defaultFacilityLevels`（schema.ts:38），有先例，可仿。但**若家具默认是空数组/空对象，直接内联即可，别引 config 制造循环**（schema 已被 config/homestead.ts import，反向再 import 有环风险；facility 的 `defaultFacilityLevels` 是纯常量工厂无环，家具默认空态更简单，建议直接内联 `{ placedIds: [] }`）。
+
+3. **`frontend-vue/src/infra/persistence/migrations.ts`（migrate 分支 + migrateFurniture）**
+   - 新增 `migrateFurniture(raw)`（仿 `migrateFacility` :174-182：白名单重建、类型守卫、归一，**禁 spread**）。旧档无 `furniture` 键 → `createDefaultFurniture()`。
+   - `migrate()` return 里加 `furniture: migrateFurniture(payload.furniture)`（仿 :315 facility 行）。
+   - import 加 `createDefaultFurniture` + `canonicalizePlacedFurnitureIds`（若用）。
+   - 坑：**禁 spread 浅拷贝旧档**（pitfalls S13-C1），逐字段类型守卫重建；家具 id 若走 defId 字符串则 `filter(typeof==='string')`，若走数字 index 则 `canonicalizePlacedFurnitureIds`。
+
+4. **`frontend-vue/src/stores/furniture.ts`（新建 store，仿 `stores/facility.ts` 全文）**
+   - `defineStore('furniture', ...)`：持有已拥有/已摆放家具状态；`buy`/`place`/`unplace` 纯改状态（**不碰货币、不 saveToServer**，货币/结算/存档由门面 userStore 编排——facility.ts 头注释明写此分工）。
+   - `serialize()/deserialize(data)`（仿 facility.ts:61-71，deserialize 二次兜底归一）+ `reset()`。
+   - `getComfort()` getter（供 settle/UI 同源取家具 comfort 合计喂进 computeIdleYield）。
+   - 坑：deserialize 二次 clamp/归一（迁移已归一，反序列化再保险，杜绝脏档，同 facility.ts:64-71 注释）。
+
+5. **`frontend-vue/src/stores/persistence.ts`（装配器两处 + reset）**
+   - import `useFurnitureStore`（:24 facility 旁）。
+   - `buildPayload()` 加 `furniture: useFurnitureStore().serialize()`（:72 facility 旁）。
+   - `applyPayload()` 加 `useFurnitureStore().deserialize(payload.furniture)`（:111 facility 旁）。
+   - `resetAllDomains()` 加 `useFurnitureStore().reset()`（:133 facility 旁）。
+
+6. **`frontend-vue/src/stores/userStore.ts`（门面编排，仿 `upgradeFacility` :509-527）**
+   - 新增 `buyFurniture(defId)`：`if (!profile.isLoggedIn) return false` → 查目录取 cost（Number.isFinite 守卫）→ **先 `settleHomestead()` 结清**（家具改 comfort→改产出，同 upgradeFacility 先结清模式，防回溯放大）→ `profile.spend('knowledgePoints', cost)` 成功才 `furniture.buy` → `saveToServer()`。失败回补 KP（仿 :522-525）。
+   - `placeFurniture`/`unplaceFurniture`：先 `settleHomestead()` → 改摆放 → `saveToServer()`（仿 `placeInHomestead` :484-493）。
+   - **货币只走 profile.spend/earn（架构铁律）**；先结清是口径一致命脉。
+
+7. **`frontend-vue/src/views/HomesteadView.vue`（UI 兑换 + 摆放/收纳入口 + settle 喂家具 comfort）**
+   - `homeEffect` computed（:184-188）现只 sum 装备 homeEffect；**改为把家具 comfort 并入**（`comfort: 装备comfort + furniture.getComfort()`），这样 `hourlyYield`/`projectedYield`（:199/:217）经 computeIdleYield 天然吃到家具 comfort，**预览=结算同源**（命脉，别只改 settle 不改 UI，重蹈「预览≠实战」P2-17）。
+   - `settleHomestead`（userStore.ts:454）里 `homeEffect = sumHomeEffects(...)` 同样把家具 comfort 并入 `effect.comfort`——**settle 与 UI 两处必须同源改**（口径命脉，Scout C-2 的 partial-migration 陷阱）。
+   - 加家具兑换面板（仿 `facility-grid` :651-674 或独立 modal，仿 `HomesteadManageModal`）：列 `FURNITURE_CATALOG`、显 cost/comfort、买/摆/收按钮、`:disabled="knowledgePoints < cost"`。
+   - 颜色走语义令牌（`rgb(var(--c-accent))` 等，禁 text-white 压浅底、禁动态拼色类 `bg-${}`）；新 setTimeout/setInterval 若有须登记 + onUnmounted 清除（本视图已有 `commissionTimers`/`idleTimer`/`raf` 清理范式 :498-503）。
+   - **可选**（锦上添花、非验收必需）：广场里可视化摆放。若做，用**独立固定槽位坐标**（新常量，别改 WALKABLE_ZONES :65-76——那是角色漫步区），且需家具美术资源（首版可用 emoji/纯 CSS 占位）。**建议首版不做可视化摆放**，只做「拥有清单 + 摆放开关（影响 comfort）」即达标。
+
+8. **测试**：
+   - `frontend-vue/src/infra/persistence/migrations.test.ts`：加「v20 furniture 缺失补默认」（仿 :149-151）+「往返保真」（仿 :396-413 enhance 往返范式：migrate→再 migrate 一致）+ 「脏档归一」两三例。
+   - `frontend-vue/src/config/homestead.test.ts`：加 `sumFurnitureComfort` 纯函数测试 + 「家具 comfort 经 computeIdleYield 汇入使产出更高」集成断言（仿第 1 轮羁绊 2 例范式，用满 12h 封顶使 floor 后可辨——**小加成被 floor 抹平**是已知坑，gen_status 第 1 轮记录）。
+   - 新建 `frontend-vue/src/stores/furniture.test.ts` 或在 `userStore` 编排测试里加 `buyFurniture` 走 profile.spend、余额不足不发货、成功入库（仿 `equipmentSource.test.ts` 兑换范式）。
+
+- **本轮坑清单**：
+  - **升档只升一次**：v20 是本 Sprint 唯一 bump，furniture 域 + （第 3 轮若做）pity 计数共用。本轮只做 furniture 那一份 v20；别顺手加别的字段。
+  - **禁 spread 迁移**（pitfalls S13-C1）：`migrateFurniture` 白名单重建。
+  - **口径同源命脉**：家具 comfort 必须 settle + UI（hourlyYield/projectedYield/nextHourlyYield）**全部**喂进 computeIdleYield，别只改一半（partial-migration，Scout 上轮 C-2 同型）。
+  - **先结清再变更**：`buyFurniture`/`placeFurniture` 前 `settleHomestead()`（同 upgradeFacility），否则家具改 comfort→改封顶/产出会回溯放大已挂时间。
+  - **别改玩法数值破 S14**：facility 乘区 / softCap / comfort +20% 硬顶 / 羁绊 cap 全不动；家具是**叠加一层新内容**，不改既有乘子。
+  - **别用 git stash 跑基线**（pitfalls S13-C1）。
+  - **fake timers 坑**（第 1 轮 gen_status）：若新 furniture 测试涉及 settle（读时钟），用 `settleHomestead(nowOverride)` 注入固定 now（第 1 轮已加此接缝，userStore.ts:422），别碰真时钟；persistence.test 那套 `useFakeTimers({toFake:['Date']})` 只冻 Date 的规避照旧。
+
+### S15-T4 现状快照（非本轮，仅供 Planner 第 3 轮排期）
+- **塔掉落纯函数** `engine/squad/drops.ts:27 rollTowerDrop(floor, rng, rarityForFloor, dropChance=0.5)`（注入 RNG，先掷 chance 再掷 slot，序列 RNG 可复现）。**调用链**：`SquadBattleView.vue:660 userStore.completeFloor(floor, rng)` → pve/userStore 内调 rollTowerDrop → `equipment.addItem`。
+- **pity（保底）若做**：需在**调用方**（userStore.completeFloor 或 pve store）喂「连续未出计数」进纯函数 + 注入 RNG，纯函数据 pity 值决定是否强制命中/抬稀有度；计数**若持久化 → 复用本轮 v20 bump**（第 3 轮与 furniture 同 SAVE_VERSION，一 sprint 只升一次——**故本轮 furniture 升 v20 时，Planner 可预告第 3 轮 pity 复用 v20，不再升 v21**）。特征测试断言 pity 边界（连 N 次未出后第 N+1 次必出）。
+- **碎片定向兑换若做**：走 `profile` 货币口径或独立计数；成就/周任务/扫荡发碎片 → 换指定装备。装备目录/分解/兑换价已在 `config/equipment.ts`（`EQUIPMENT_PRICES:79`、`dismantleValueForRarity:107`、`EQUIPMENT_CATALOG:369`）。
+- 现有测试 `stores/equipmentSource.test.ts` 已锁掉落 RNG 注入范式（:37/:53/:67 序列 RNG），T4 pity 测试可仿。
 
 ---
 
 ## C. 新发现的坑
 
-- **[SF-T8 存档协议：升 v19 而非「悄悄改结构」]** 研究审计倾向「不升版 `?? {}` 兜底」，但只要动 `DailySave` 结构就必须三处同改 + 往返测试（成本与升版无关）；升 v19 有明确版本锚点、更符合 SPRINT L16 协议、v19 额度本就留给 SF-T8。Scout 拍板**升 19**——避免「改了结构却不升版」的隐性协议违规。**一 sprint 只升一次，SF-T8 用掉即封顶。**
-- **[收官轮范围纪律]** 跑到 R3 ≠ SF-T8 已做（前两轮明令不做）。Orchestrator 收尾须核对「SF-T1..T8 全 `[x]` 且与实现一致」而非只看末轮 Evaluator 决策（S14-A SA-T6 被漏正是此坑，pitfalls L84）。SF-T8 是 S14 全局最后一块，做完 S14 家园 hub 深化整体收官。
-- **[commission_bonus key 复用不新增第 4 字段]** 全清 bonus 的「已领」标记复用 `commissionClaimed: string[]` 存特殊 key（如 `'__bonus__'`），避免为 bonus 单开第 4 序列化字段——省一次 schema 面积，跨天随 `ensureCommissionToday` 一并归零。
+- **C-1（T2 升档一次性）｜v20 是本 Sprint 唯一 bump，furniture + pity 共用**：SPRINT.md 明写「v20 bump 仅在做 furniture/pity 的那轮做一次」。本轮 furniture 升 v20；第 3 轮 pity 若持久化**复用 v20，绝不升 v21**。Planner 本轮就该在 plan 里预告第 3 轮 pity 复用 v20，避免第 3 轮 Generator 误升 v21（历史「文档版本漂移」坑家族）。
+- **C-2（T2 口径同源）｜家具 comfort 必须 settle + UI 三处（hourlyYield/projectedYield/nextHourlyYield）同源喂进 computeIdleYield**：现 `homeEffect` computed（HomesteadView:184-188）只 sum 装备；只改它一处不改 settle（userStore.ts:454）→ 预览显示家具加成但结算不发（预览≠实战，P2-17 换域重演）。反之亦然。**两处 sumHomeEffects/effect.comfort 必须同一口径把家具 comfort 并入**——这是本轮最易漏的半迁移点。
+- **C-3（T2 摆放模型别绑 WALKABLE_ZONES）｜广场可视化摆放是可选锦上添花，不是验收项**：验收只要「摆放持久化 + 加成进收益」。建议首版做「拥有/摆放清单（给 comfort）」即达标，别为「摆进广场像素位」硬绑 WALKABLE_ZONES（角色漫步区）导致家具与漫步者/建筑重叠 + 需新美术。若真做可视化，用**独立固定槽位常量**，WALKABLE_ZONES 一个字不改。
+- **C-4（T2 schema↔config 循环 import 风险）｜furniture 默认态直接内联，别学 facility 从 config import**：`schema.ts:38` import 了 `config/homestead.defaultFacilityLevels`，而 `config/homestead.ts:13` import 了 `@/engine`——链条已较绕。furniture 默认是空态（`{ placedIds: [] }` 之类），`createDefaultFurniture` **直接内联返回空**，别从 config import 制造 schema→config→engine 的更长依赖环（家具目录 `FURNITURE_CATALOG` 放 config 供 store/UI 用即可，schema 的默认工厂不需要它）。

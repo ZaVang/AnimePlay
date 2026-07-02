@@ -126,6 +126,99 @@ describe('塔通层掉落（completeFloor 注入 RNG）', () => {
   });
 });
 
+describe('槽位保底 slotPity 编排（S15-T4：只在 completeFloor 真掉落判定推进）', () => {
+  it('通新层未掉落（chance 未过）：各槽计数 +1', () => {
+    const profile = useProfileStore();
+    profile.currentUser = 'tester';
+    const pve = usePveStore();
+    const userStore = useUserStore();
+
+    userStore.completeFloor(1, createSequenceRng([0.99])); // 不掉落
+    expect(pve.towerProgress.slotPity).toEqual({ weapon: 1, armor: 1, supporter: 1 });
+  });
+
+  it('通新层命中某槽：该槽归零、其余 +1', () => {
+    const profile = useProfileStore();
+    profile.currentUser = 'tester';
+    const pve = usePveStore();
+    const userStore = useUserStore();
+    pve.towerProgress.slotPity = { weapon: 3, armor: 3, supporter: 3 };
+
+    userStore.completeFloor(1, createSequenceRng([0.0, 0.0])); // 命中 weapon
+    expect(pve.towerProgress.slotPity).toEqual({ weapon: 0, armor: 4, supporter: 4 });
+  });
+
+  it('★ 保底触发：某槽到阈值 → 下次通新层强制该槽（即便 RNG 不命中）', () => {
+    const profile = useProfileStore();
+    profile.currentUser = 'tester';
+    const pve = usePveStore();
+    const eq = useEquipmentStore();
+    const userStore = useUserStore();
+    // supporter 计数已到阈值（10）
+    pve.towerProgress.slotPity = { weapon: 0, armor: 0, supporter: 10 };
+
+    // RNG 恒不命中（0.99）也强制出 supporter
+    const r = userStore.completeFloor(1, createSequenceRng([0.99, 0.99]));
+    expect(r.completed).toBe(true);
+    expect(r.drop?.slot).toBe('supporter');
+    expect(eq.list()).toHaveLength(1);
+    expect(pve.towerProgress.slotPity.supporter).toBe(0); // 触发后归零
+  });
+
+  it('重复挑战已过低层：不推进进度 → slotPity 不动（防刷保底）', () => {
+    const profile = useProfileStore();
+    profile.currentUser = 'tester';
+    const pve = usePveStore();
+    const userStore = useUserStore();
+    userStore.completeFloor(1, createSequenceRng([0.99])); // 推进到第 2 层，各槽 →1
+    const before = { ...pve.towerProgress.slotPity };
+    // 再「通过」已过的第 1 层：completeFloor 返 false，slotPity 一动不动
+    userStore.completeFloor(1, createSequenceRng([0.99, 0.99]));
+    expect(pve.towerProgress.slotPity).toEqual(before);
+  });
+
+  it('封顶层 999：不推进 → slotPity 不动', () => {
+    const profile = useProfileStore();
+    profile.currentUser = 'tester';
+    const pve = usePveStore();
+    const userStore = useUserStore();
+    pve.towerProgress.currentFloor = 999;
+    pve.towerProgress.slotPity = { weapon: 5, armor: 5, supporter: 5 };
+    userStore.completeFloor(999, createSequenceRng([0.99, 0.99]));
+    expect(pve.towerProgress.slotPity).toEqual({ weapon: 5, armor: 5, supporter: 5 });
+  });
+
+  it('扫荡已通层：独立路径 → slotPity 不动（毕业玩家不能靠扫荡刷保底）', () => {
+    const profile = useProfileStore();
+    profile.currentUser = 'tester';
+    const pve = usePveStore();
+    const userStore = useUserStore();
+    // 先推进到第 3 层（通过 1、2），slotPity 各 →2
+    userStore.completeFloor(1, createSequenceRng([0.99]));
+    userStore.completeFloor(2, createSequenceRng([0.99]));
+    const before = { ...pve.towerProgress.slotPity };
+    // 扫荡第 1 层（已通层）：不掉装备、不推进 pity
+    const outcome = userStore.sweepFloor(1, 1);
+    expect(outcome.ok).toBe(true);
+    expect(pve.towerProgress.slotPity).toEqual(before);
+  });
+
+  it('getSlotPityStatus 显形：remaining = 阈值 - 最高计数，ready 满即真', () => {
+    const profile = useProfileStore();
+    profile.currentUser = 'tester';
+    const pve = usePveStore();
+    const userStore = useUserStore();
+    pve.towerProgress.slotPity = { weapon: 2, armor: 7, supporter: 1 };
+    const s = userStore.getSlotPityStatus();
+    expect(s.slot).toBe('armor'); // 最高计数
+    expect(s.remaining).toBe(3); // 10 - 7
+    expect(s.ready).toBe(false);
+
+    pve.towerProgress.slotPity = { weapon: 10, armor: 0, supporter: 0 };
+    expect(userStore.getSlotPityStatus().ready).toBe(true);
+  });
+});
+
 describe('知识点兑换 purchaseEquipment', () => {
   const SR_WEAPON = 'wpn_sr_zangetsu';
 

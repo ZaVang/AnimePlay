@@ -1,52 +1,91 @@
-# Gen Status — S14-F Round 3/3（product-loop --tier1 on --mode all · 收官轮）
+# Generator Status — S15 第 3/3 轮（product-loop --tier1 on --mode all，Sprint 收官轮）
 
-本轮承诺切片 = **SF-T8｜家园日常委托（P3-10）**。真实现，**触存档：升 SAVE_VERSION 18 → 19**（三处同改 + 往返测试）。S14-F（SF-T1..T8）整体收官。
+指派切片 = **S15-T4（装备定向掉落 = 槽位保底 pity，选项 a）+ Sprint 收尾（S15-T1..T4 全 `[x]`、S14 无回归）**。
+
+## 状态：PASSED
 
 ## 完成任务
 
-### SF-T8 家园日常委托（P3-10）
+### S15-T4 槽位保底 pity —— 真落地（拍板 A–F 全遵；G 去重池标 backlog）
 
-命名空间走「`daily` 域内平行 `commission` 子域」（不扩 `DailyTaskType`），复用 daily 跨天 `todayKey` 口径，绝不自造第二套跨天判定。
+复用 v20 存档（未升 v21），engine 纯净不破（计数留 store，drops.ts 零 config import / 零 Math.random），
+掉落经既有 `rollFloorDrop` 单一 seam 汇入（不另拼口径）。稀有度仍走层段（`dropRarityForFloor`），pity 只叠一层槽位下界。
 
-- **`config/dailyTasks.ts`**：新增 `CommissionKind='idle'|'tower'|'enhance'` 类型 + `CommissionDef` interface（复用 `DailyReward`）+ `COMMISSIONS`（3 条固定，target=1：收挂机 30KP / 爬一层塔 30KP / 强化装备 20KP，措辞「不用离开家园」）+ `COMMISSION_BONUS_REWARDS`（全清 +50KP）+ `COMMISSION_BONUS_KEY='__bonus__'` + `getCommissionById`。
-- **`stores/daily.ts`**：新增 `commissionDate`/`commissionProgress`/`commissionClaimed` refs + `ensureCommissionToday()`（仿 `ensureToday` 读时归零，复用 `todayKey`）+ getter（`commissionProgressOf`/`isCommissionComplete`/`isCommissionClaimed`）+ `markCommission(kind, amount=1)`（幂等钳 target，只遍历 COMMISSIONS）+ `claimCommission(id)`（发奖走 `profile.earn`）+ `allCommissionsDone` 派生 + `isCommissionBonusClaimed`/`claimCommissionBonus()`（复用 claimed 桶特殊 key，不新增第 4 字段）+ serialize/deserialize/reset 三处加字段（deserialize `?? {}`/`?? []` 兜底 + 加载后 `ensureCommissionToday`）+ return 块导出全部。
-- **`stores/userStore.ts`（三守卫埋点，全在门面 saveToServer 前，engine 零 import）**：
-  - ① idle：`markCommission('idle', 1)` 埋在 `settleHomestead` 全 0 产出早退**之后**、`saveToServer` 前（守实际产出，绝不用 `hours>0`）。
-  - ② tower 同埋两处：`completeFloor` 的 `completed===true` 分支 + `sweepFloor` 的 `ok && reward` 分支（毕业玩家靠扫荡完成；绝不复用 `battleWin`）。
-  - ③ 保底：`commission_idle`（有入住即可结算）天然可完成，全清 bonus 不空诺。
-  - enhance：`enhanceEquipment` 门面 `ok===true` 分支。
-  - 领取门面 `claimCommission`/`claimCommissionBonus`（仿 `claimDailyTask`，成功才 saveToServer）。
-- **存档三处同改 + 升 v19**：
-  - `infra/persistence/schema.ts`：`DailySave` +3 字段 + `createDefaultDaily` +3 缺省 + `SAVE_VERSION` 18→19（权威）+ 顶部版本注释加 v19 段。
-  - `infra/persistence/migrations.ts`：`migrateDaily` 白名单重建加 3 行字段级缺省兜底（仿 v7 weekly 四字段，禁 spread）。
-  - `stores/daily.ts`：serialize/deserialize/reset 三处（上）。
-- **`views/HomesteadView.vue` UI**：委托卡挂 `ops-panel`、插在 SF-T3 驻留卡（idle-card）之下。清单勾选（`○/✓ 标题·奖励`）而非横条；hub 级「委托 X/N」小徽章（在 home tab = `<HomesteadView/>` 第一屏 ops-panel 可见）；逐条「领取」按钮 + 今日全清 bonus 行（清完 3 条解锁）；未登录态由外层 `v-if="userStore.isLoggedIn"` 守卫（委托卡在 `v-else` 分支内）；颜色全走语义令牌（未完成 `--c-ink-3`、完成/已领 `--c-success`、bonus label `--c-highlight`），无 text-white / 动态色类；完成点亮走 CSS transition；全清 bonus 飘字 `setTimeout` 登记 `commissionTimers[]` + onUnmounted 一并 clear（与既有 rAF/idleTimer 同块清除）。
-- **测试**：
-  - `stores/daily.test.ts`：+9 断言（markCommission 推进/幂等钳/amount<=0 无操作、claim 发奖+重复领拒、跨天归零含 bonus 标记、全清 bonus 前置+重复领拒、保底守卫、序列化往返、旧档缺字段兜底跨天归零）。
-  - `infra/persistence/migrations.test.ts`：+4 断言（SAVE_VERSION=19、v18 旧档补 commission 缺省保留日/周字段、v19 含 commission 往返保真、commission 损坏字段白名单重建补默认、缺 daily 整键含 commission 缺省）+ 同步修正 3 处既有 daily `toEqual` 全量断言补 3 字段。
+- **T4-0｜config 阈值常量 + engine 纯函数（`config/equipment.ts` + `engine/squad/drops.ts`）**
+  - `config/equipment.ts`：新增 `SLOT_PITY_THRESHOLD = 10`（顶部集中，改这里即调平；远小于 gacha 70，因掉落频率本就低 50%×每层一次）+ `clampSlotPity(raw)` 归一（仿 `clampEnhance`：非数/非有限→0，clamp `[0, SLOT_PITY_THRESHOLD]`，脏档巨值不放大）。
+  - `engine/squad/drops.ts`：新增 `SlotPity`（3 键 weapon/armor/supporter）+ `createSlotPity()` + `TowerDropWithPity` + **`rollTowerDropWithPity(floor, rng, rarityForFloor, pity, threshold, dropChance)`** 纯函数——注入 RNG + 注入当前计数 + 注入阈值/映射，返回 `{ drop, pity }`（新副本，不改入参）。语义：① 某槽计数≥阈值→强制命中该槽跳过 chance（多槽到阈值按 DROP_SLOTS 固定序取第一个，确定性）；② chance 未过→无掉落各槽 +1；③ 命中槽归零、其余 +1。`threshold<=0` 关闭保底。空池 `rng.pick ?? 'weapon'` 兜底不抛错。
+- **T4-1｜pity 计数持久化（复用 v20，`TowerProgress` 定长字段，三处同改）**
+  - `types/player.ts`：`TowerProgress` 加 `slotPity: { weapon; armor; supporter }`（定长 3 键，非 Record，随层数/次数不膨胀，仿 `sweepUsedThisWeek`）。
+  - `infra/persistence/schema.ts`：`createDefaultTowerProgress` 补 `slotPity: {0,0,0}`（**内联缺省，禁 import engine，避免 schema→engine 依赖环**）+ v20 沿革注释补 pity 一行。**SAVE_VERSION 保持 20（未升 21）**。
+  - `infra/persistence/migrations.ts`：`migrateTowerProgress` 加 slotPity 白名单重建（**禁 spread**）——旧档无字段→补全零，三键各经 `clampSlotPity`（脏档巨值 clamp 到阈值、负数/非数→0）。import 加 `clampSlotPity`。
+  - `stores/pve.ts`：`deserialize` 二次兜底再 clamp slotPity（迁移已归一，反序列化再保险，双层杜绝脏档，仿装备强化）。
+- **T4-2｜store 编排 + 防退化守卫（`stores/userStore.ts`）**
+  - `rollFloorDrop` 改用 `rollTowerDropWithPity`：读 `pve.towerProgress.slotPity` → 传当前计数 + `SLOT_PITY_THRESHOLD` + `DROP_CHANCE` → **无条件写回新计数**（含未掉落各槽+1 的推进）→ 命中才 addItem。仍只在 `completeFloor` 的 `pve.completeFloor(floor)===true`（推进新层）分支调用——顶层（≥999 返 false）/ 重复低层（不推进）/ 扫荡（`sweepFloor` 独立路径）**绝不推进 pity**（防墙钟/刷保底漏洞）。
+- **T4-3｜UI 显形「距保底 N 次」（`views/HomesteadHubView.vue`）**
+  - 新增 `pve.getSlotPityStatus()`（纯读，返 `{slot, count, remaining, ready}`，最高计数槽 + 剩余 clamp≥0 + 满即 ready）→ 门面转发 → view `slotPity` computed（并入 SLOT_META 图标/标签 + 阈值）。
+  - 探索面板「奖励预览」卡新增 `.pity-line`：未满显「距 ⚔️武器 保底还差 N 次通层掉落判定」，满显「🎯 下次通新层必出 …（槽位保底已满）」高亮。**语义令牌配色**（`--c-accent` / `--c-accent-soft` / `--c-surface-2` / `--c-line` / `--c-ink-2`，全存在于 skins.css；无 text-white / 无动态色类 / 无反斜杠透明度）。无新 setTimeout/setInterval。
 
-## 文件结构变更自报
-
-- 无新增文件。改动：`config/dailyTasks.ts`、`stores/daily.ts`、`stores/userStore.ts`、`infra/persistence/{schema,migrations}.ts`、`views/HomesteadView.vue`、`stores/daily.test.ts`、`infra/persistence/migrations.test.ts`；文档 `docs/plans/SPRINT.md`（SF-T8 勾选）、`docs/FUTURE.md`（S14-F 全勾 + 进度表 S14 → ✅）。
-- **SAVE_VERSION 18 → 19**（本 sprint 唯一存档变更，v19 额度用掉即封顶）。
+### S15-T4-收尾｜Sprint 收官核对 —— 通过
+主清单 S15-T1/T2/T2-E/T3/T4 全 `[x]`；SAVE_VERSION=20 未误升 21；S14 33 项无回归（未动 facility 乘区/softCap/comfort 硬顶/羁绊 cap/层段稀有度映射；pity 只叠一层下界不改既有掉落率）。
 
 ## 验收命令实际输出
 
-1. `npm run type-check` → **通过**（vue-tsc --build，0 错误，无输出）。
-2. `npm run test` → **全绿**：`Test Files 65 passed (65) · Tests 865 passed (865)`（R2 为 851，本轮 +14 新测试）。
-3. `npm run build` → **成功**：`✓ built in 8.28s`（HomesteadHubView 126.42 kB / index 302.63 kB）。
-4. `.venv/Scripts/python.exe backend/test_security.py` → **PASS**：`RESULT: PASS — all security checks passed`，`EXIT=0`。
-5. `grep -rn "debug=True" backend/server.py api/index.py` → **零命中**（grep exit=1）。
+### 1. `npm run type-check`（期望 0 错误）→ PASS
+```
+> vue-tsc --build
+（无输出，退出 0）
+```
 
-## 新坑
+### 2. `npm run test`（期望全绿，连跑 3 次无偶发失败）→ PASS
+```
+第 1 次：Test Files 67 passed (67) / Tests 917 passed (917)
+第 2 次：Test Files 67 passed (67) / Tests 917 passed (917)
+第 3 次：Test Files 67 passed (67) / Tests 917 passed (917)
+```
+（898 → 917，+19：drops.test.ts pity 特征 7 例 + migrations.test.ts v20 slotPity 迁移 4 例 + equipmentSource.test.ts 编排/防退化/显形 7 例，扣除首例逼近路径合并。）
+新增/改测试：
+- `engine/squad/drops.test.ts`：`rollTowerDropWithPity` 特征——未掉落各槽+1 / 命中归零其余+1（入参不被改）/ **保底边界（计数达阈值→强制命中该槽跳过 chance + 连续未出逼近路径）** / 强制命中稀有度仍走层段 / 多槽到阈值固定序 / threshold≤0 关闭 / 序列 RNG 复现。
+- `infra/persistence/migrations.test.ts`：v19 旧档补全零 / 往返保真 / 脏档巨值-负数-非数 clamp / slotPity 整体非对象→全零。
+- `stores/equipmentSource.test.ts`：completeFloor 未掉落各槽+1 / 命中归零其余+1 / **保底触发强制该槽** / 重复低层不推进 / 顶层不推进 / **扫荡不推进 pity** / getSlotPityStatus 显形。
 
-- 既有 `migrations.test.ts` 有 3 处对 `daily` 做整对象 `toEqual` 全量断言——新增存档字段时**这三处必须同步补字段否则红**（本轮已修）。新增 daily 子字段者注意此耦合。
+### 3. `npm run build`（期望成功）→ PASS
+```
+✓ built in 8.26s
+（HomesteadHubView-*.js 130.67 kB 等产物正常）
+```
 
-## 收官核对
+### 4. `.venv/Scripts/python.exe backend/test_security.py`（期望退出码 0、全 PASS）→ PASS
+```
+RESULT: PASS — all security checks passed
+EXIT=0
+```
 
-- SF-T1..T8 全 `[x]`（SPRINT.md 主清单 L20-27 + 三轮追加块）；FUTURE.md S14-F 全 `[x]` + 进度表 S14 → ✅。
-- S14-A..E 25 项无回归：865 tests 全绿（含既有 equipment/nurture/homestead/facility/migrations 特征测试），engine 未新增 import store，货币仅走 profile.earn。
+### 5. `grep -rn "debug=True" backend/server.py api/index.py`（期望零命中）→ PASS
+```
+EXIT=1（零命中）
+```
 
-## 状态
+## 文件结构变更自报
+- 改（无新建文件）：
+  - `frontend-vue/src/config/equipment.ts`（SLOT_PITY_THRESHOLD + clampSlotPity）
+  - `frontend-vue/src/engine/squad/drops.ts`（SlotPity/createSlotPity/rollTowerDropWithPity）
+  - `frontend-vue/src/engine/squad/drops.test.ts`
+  - `frontend-vue/src/types/player.ts`（TowerProgress.slotPity）
+  - `frontend-vue/src/infra/persistence/schema.ts`（默认工厂 + 沿革注释）
+  - `frontend-vue/src/infra/persistence/migrations.ts`（migrateTowerProgress slotPity）
+  - `frontend-vue/src/infra/persistence/migrations.test.ts`
+  - `frontend-vue/src/stores/pve.ts`（deserialize clamp + getSlotPityStatus + 导出）
+  - `frontend-vue/src/stores/userStore.ts`（rollFloorDrop 接 pity + 转发 getSlotPityStatus + import）
+  - `frontend-vue/src/stores/equipmentSource.test.ts`
+  - `frontend-vue/src/views/HomesteadHubView.vue`（slotPity computed + .pity-line 显形 + 样式）
+  - `docs/plans/SPRINT.md`（S15-T4 主清单 + 第 3 轮子项 + 收尾勾选）
 
-**PASSED** — SF-T8 真实现（三守卫全落地 + 全清 bonus + 升 v19 三处同改 + 往返测试），5 条验收命令全绿，S14-F（SF-T1..T8）整体收官。
+## 未完成 / 卡点
+无。指派切片 S15-T4 + 收尾全部真落地并验收全绿。
+
+## 新坑 / 提醒
+- **pity 计数在「判定发生」而非「掉落」时推进**：未掉落（chance 未过）也让各槽 +1（因为「这次判定没出任何槽」），故保底逼近速度按每次通新层计（约每 10 层触发一次某槽兜底）。若后续要改成「只在真掉落时计」需重定义逼近曲线与测试。
+- **保底与掉落率解耦**：pity 强制命中直接给 drop（跳过 50% chance），不改 DROP_CHANCE 也不改层段稀有度——只对「槽位分布」加下界。S14 掉落数值口径未动。
+- **多槽同到阈值按 weapon→armor→supporter 固定序消化**：engine `DROP_SLOTS.find` 与 store `getSlotPityStatus` 并列取序一致（确定性，无随机破坏可复现）。
+- **T4 未做拍板-G 去重池叠加**（候选池优先未拥有件）：与 pity 主线正交但非验收项，成本/收益比在收官轮偏低，标 backlog（同 negotiation 中碎片/图鉴集邮/升维）。
+- v20 已被 furniture（第 2 轮）+ slotPity（本轮）共用；后续升档轮才动 v21。既有 `migrations.test.ts` `expect(SAVE_VERSION).toBe(20)` 断言仍成立、未改。

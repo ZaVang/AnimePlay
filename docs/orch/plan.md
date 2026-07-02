@@ -1,74 +1,73 @@
-# Plan — S14-F Round 3/3（product-loop --tier1 on --mode all · 收官轮）
+# S15 第 3 轮 Plan（product-loop --tier1 on --mode all，Sprint 收官轮）
 
-> 本轮承诺切片 = **SF-T8｜家园日常委托（P3-10）** —— S14 家园 hub 深化的最后一块。
-> 本轮唯一新任务 = SF-T8（必须真实现，不得降级为回归核对）；其余为 S14-F / S14 收官核对（Evaluator 亲自复跑 5 条验收命令 + 核对 SF-T1..T8 全 `[x]`、S14-A..E 25 项无回归）。
-> 触存档：走 `daily` 内平行 `commission` 子域，**升 SAVE_VERSION 18 → 19**（一 sprint 只升一次，用掉即封顶）。
-
----
-
-## 任务 1（本轮唯一必做）：SF-T8 家园日常委托（P3-10）
-
-**目标**：补 hub 缺失的「每天为什么回来」日回归钩子。把家园三个玩家本来就在做的本地成功点（挂机结算 / 打一层塔 / 强化一件装备）包成「今日委托」，闭环全在 hub 内，逐条给小奖 + 今日全清 bonus。委托是软钩子非硬 KPI（漏做无惩罚、奖励小到「做了开心不做无损」，动森村民请求哲学 / 守 config/homestead.ts 顶部「回归补充不盖过主动收入」基线）。
-
-**依赖**：SF-T1..T7（R1/R2 已 COMPLETE，851 tests 全绿）——SF-T8 UI 挂 `HomesteadView` ops-panel 须与 R2 落地的 SF-T3 驻留卡视觉共存。无代码级阻塞依赖。
-
-**来源**：homestead-hub-audit-report P3-10；research-audit R3（替代 1 方案 B + 替代 2 方案 B）；evolution-audit R3（🔴 Critical SF-T8 + 🟡 全清 bonus）；product-audit R3（🔴 三守卫 + 🟡 视觉分区/清单勾选/cue）；Scout Iteration 3/3 A/B/C 段。
-
-### 关键设计决策拍板（写进验收）
-
-1. **命名空间 = `daily` 内平行 `commission` 子域（方案 B）**，不扩 `DailyTaskType` 枚举。复用 `daily` 跨天口径（`todayKey`/`ensureToday` 范式，读时判定跨天归零、幂等），**绝不自造第二套跨天判定**。新增独立 `COMMISSIONS` 模板 + 独立 commission 进度/已领桶 + 独立 `markCommission(kind)` 埋点 + `commissionKind='idle'|'tower'|'enhance'` 类型。理由：语义纯度 > 省 2 字段迁移成本；家园语义不污染全站留存引擎；UI 天然与 daily task 分区；可挂独立全清 bonus。
-
-2. **委托模板 = 3 条固定（target=1）**：`commission_idle`（挂机结算一次）/ `commission_tower`（打一层塔，含扫荡）/ `commission_enhance`（强化一件装备）。措辞强调「家园本地小事 · 不用离开家园」（区别于 daily 全站行为）。逐条小额奖励（各 20~30 KP 量级，对齐现有 daily task 30 KP），走 `profile.earn`。
-
-3. **三守卫（不做会崩，验收专项卡）**：
-   - ① 挂机委托守**实际产出**——`markCommission('idle')` 埋在 `settleHomestead` 全 0 产出早退**之后**、`saveToServer` 前（只有真发放收益才到达）。**绝不用 `hours>0`**（首次基线早退 / SF-T6 回拨钳位早退 / 0 入住空结算都可能 hours 存在但产出 0，反复进出刷委托）。
-   - ② 塔委托**同埋两处**——`markCommission('tower')` 同挂 `completeFloor`（`completed===true` 分支）**和** `sweepFloor`（`ok && reward` 分支），毕业玩家（塔顶 completeFloor 返 false）靠扫荡也能完成。**绝不复用 `battleWin`**（宅理论战 `battleFlow.endGame` 计数，语义污染 = 最易踩错配）。
-   - ③ **保底可完成**——`commission_idle`（有入住角色即结算）是天然保底，确保全清 bonus 不因毕业/破产账号变空诺。
-
-4. **今日全清 bonus（委托区别于 daily 的核心，本轮做）**：3 条清完给一份额外 bonus（如 +50 KP 或 +1 券）。实现 = `allCommissionsDone` 派生 + 全清「已领」标记**复用 commission 已领桶存特殊 key**（如 `'__bonus__'`，**不新增第 4 序列化字段**，跨天随委托一并归零）+ 独立领取 action。R3 时间紧则 fallback 留收尾补，但**逐条委托 + 三守卫 + 保底无论如何必做**。
-
-5. **埋点层**：三个 `markCommission` 埋点**只挂 `userStore` 门面编排层**（与现有 5 个 `markProgress` 同构同位，写在各自 `saveToServer` 前），**绝不进 engine**（engine 纯净铁律）。委托领取门面仿 `claimDailyTask`（领取成功才 `saveToServer`）；发奖走 `profile.earn`。
-
-6. **UI 落点**：委托 UI 挂 `HomesteadView` 右侧 `ops-panel`、插在 SF-T3 驻留卡之下（「家园日常状态」语义簇）。**视觉与 SF-T3 驻留横条区分**——target=1 本质布尔勾选，**用清单勾选（`○/✓ 标题·奖励`）+ hub 级「委托 X/N」小徽章摘要，不再来一条大横条进度条**。cue（X/N 摘要）进 home 第一屏可见。未登录态守卫。颜色语义令牌（未完成 `--c-ink-3`、可领 `--c-accent`/`--c-highlight`、bonus success 绿），禁 text-white / 动态色类。完成/领取点亮走 CSS transition，全清 bonus 飘字复用 `.sweep-float-*`；飘字 setTimeout 必须登记 + onUnmounted 清除。
-
-7. **存档三处同改 + 升 v19**：commission 进度/已领桶字段（与 daily 现有 `progress`/`claimed` 同构）→
-   - schema：`DailySave` 加字段 + `createDefaultDaily` 缺省 + `SAVE_VERSION` 18→19（权威）+ 顶部版本注释加 v19 段。
-   - migrations：`migrateDaily` 加字段级缺省兜底（**白名单重建不用 spread**，仿 v7 weekly 四字段）+ 顶部注释 v19。
-   - 装配器：daily.ts `serialize`/`deserialize`/`reset` 三处加字段，deserialize `?? {}`/`?? []` 兜底 + 加载后跨天判定归零。
-   - 权威 SAVE_VERSION 在 schema.ts，文档只指向不复述。
-
-### 相关陷阱（照抄会踩，来自 Scout B 段 + pitfalls）
-
-- [C-SF-T8 idle 空结算刷委托] 埋点必须写在 `settleHomestead` 全 0 产出早退之后（未登录 / 首次基线 / 回拨钳位 / 0 入住空结算 4 条早退之后），绝不用 `hours>0`。
-- [C-SF-T8 tower 语义错配] 绝不复用 `battleWin`；必须同埋 `completeFloor`(completed) + `sweepFloor`(ok)，毕业玩家靠扫荡完成。
-- [C-SF-T8 跨天口径漂移] 委托跨天必须复用 daily 的 `todayKey`/`ensureToday` 范式，绝不自造第二套。
-- [C-SF-T8 迁移 spread 陷阱] `migrateDaily` 已是白名单重建对象（非 spread），加字段照抄同结构，勿改成 spread 旧档（删/改字段迁移必须白名单重建）。
-- [C-SF-T8 埋点入 engine] `markCommission` 只挂 userStore 门面，engine 纯净不得 import store。
-- [C-SF-T8 UI 进度条糊] 委托卡与 SF-T3 驻留卡同处 ops-panel，委托用完成度摘要 + 逐条勾选，别再来一条大横条。
-- [C-SF-T8 全清 bonus 空诺] `commission_idle` 保底必须存在。
-- [C-SF-T8 daily reset 漏字段] `reset`/`serialize`/`deserialize` 三处都要加新字段，漏一处 → 登出/切账号残留或往返丢失。
-- [定时器/飘字清除] 委托领取若加飘字，setTimeout 必须登记 + onUnmounted 清（HomesteadHubView 有 `timers[]`+`scheduleClear` 范式、HomesteadView 有 rAF+idleTimer onUnmounted 清范式）。
-- [货币入口] 委托/bonus 发奖只走 `profile.earn`。
-- [commission_bonus key 复用] 全清 bonus 已领标记复用 commission 已领桶特殊 key（如 `'__bonus__'`），不新增第 4 字段。
-
-### 验收
-
-- 委托走 daily 内平行 commission 子域（不扩 `DailyTaskType`、复用 `todayKey`/`ensureToday` 不自造跨天）；3 条委托模板存在、走 `profile.earn` 小额奖励。
-- 三守卫全落地（idle 守实际产出非 hours>0 / tower 同埋 completeFloor+sweepFloor 不碰 battleWin / idle 保底可完成，`daily.test.ts` 断言锁）。
-- 今日全清 bonus 派生 + 特殊 key 领取标记（不新增第 4 字段）。
-- 三个埋点在 userStore 门面 saveToServer 前、engine 零新增 import store。
-- UI 挂 ops-panel 驻留卡下、清单勾选而非横条、home 第一屏可见 X/N 摘要、未登录守卫、颜色语义令牌、飘字/定时器登记清除。
-- 存档三处同改 + `SAVE_VERSION`=19 + `migrations.test.ts` v18→v19 往返全绿（旧档缺字段兜底、新档往返保真、无关字段不漏）。
-- SF-T1..T8 全 `[x]`、S14-A..E 25 项无回归。
+> 指派切片 = **S15-T4（装备定向掉落保底 / 碎片，P3-3）+ 收尾（S15-T1..T4 全 `[x]`、S14 无回归）**（SPRINT 排期建议第 3 轮）。
+> **本任务必须真落地**（历史教训 SA-T6/暴击UI/SE-T1/SF-T8 曾被误判「新范围」漏做 → Evaluator 对空跑判 CONTINUE；指派任务永远 in-scope；tier1-on 跑满轮次 ≠ 目标达成）。
+> **本 Sprint 唯一 bump 已用于 furniture（v20）**：pity 若持久化**复用 v20**——挂进既有 `TowerProgress` 扁平字段、migration 对旧档补 0，SAVE_VERSION 保持 **20（权威 `infra/persistence/schema.ts`）绝不升 v21**（Scout C-1 防版本漂移）。
+> 前情：第 1 轮 S15-T1+T3、第 2 轮 S15-T2+T2-E 均已 COMPLETE（test×3 全绿、SAVE_VERSION=20、羁绊/家具 UI 显形已落地）。
+> 收益/掉落加成一律经既有口径汇入，严禁另拼。
 
 ---
 
-## 任务 2（收官核对，非新范围）：S14-F / S14 整体收官巡检
+## 关键设计决策拍板（三报告分歧，Planner 定，先定后做）
 
-- 核对 SPRINT.md 主清单 L20-27 + 三轮追加块 SF-T1..T8 全 `[x]`（SF-T8 落地后勾）。
-- 核对 `docs/FUTURE.md` S14-F 全部 `[ ]` → `[x]`、进度总览 S14 → ✅。
-- 收官一致性巡检：hero 流程示意（非导航）/ 战力口径措辞（去黑话）/ 套装 chip / 驻留进度条 / 委托卡在 home 面板视觉统一无割裂。
-- **Orchestrator 收尾勿只看末轮 Evaluator 决策**（S14-A SA-T6 被漏正是此坑），须核对「SF-T1..T8 全 `[x]` 且与实现一致」。
+- **拍板-A｜S15-T4 = 选项 (a) 槽位保底 pity，拒绝选项 (b) 碎片兑换**。三报告分歧：体验官/研究员倾向碎片（能到 defId 粒度 + 分解重复件闭环 + 图鉴集邮），进化策略师强推 pity（最省、最贴单机向、复用自家 gachaStore 保底范式）。**Planner 定 pity**，理由：① 本 Sprint **收官轮**，pity 改动面 + 退化风险最小（进化审计：碎片是「小 sink 重体验」，需新货币口径 + 新兑换 UI + 新发放埋点，改动面 2~3 倍，收官轮不宜引重体验）；② pity 复用项目自家 `gachaStore` 已验证的保底语义（连续未命中→计数→阈值强制给），零外部依赖、范式成熟；③ pity 持久化落点已被 Scout/研究员钉死（`TowerProgress` 扁平字段复用 v20），存档协议干净；④ 直接对应 SPRINT 主清单 S15-T4 选项 (a)。碎片方案价值确实更高但属独立轮次工程量 → **全标 backlog**（见 negotiation.md）。
+- **拍板-B｜pity 维度 = 槽位（slot），拒绝稀有度 pity，拒绝二维矩阵**。三报告一致：塔掉落稀有度**已由层段单向决定**（`dropRarityForFloor`），玩家不缺稀有度数量，缺的是「命中了却总不是想要的槽（三武器零支援）」——稀有度 pity 与层段稀有度**双重保证冗余**。故做**槽位 pity**：连续 N 次「掉落判定发生」未出某槽 → 下次强制命中该槽（稀有度仍走层段）。**单维度计数，拒绝「稀有度×槽」二维矩阵**（字段爆炸 + 心智负担 + 测试组合爆炸）。
+- **拍板-C｜engine 纯净不破，counter 在 store**。判定走 engine 纯函数 + 注入 RNG + 注入计数（仿 gacha「传入当前 pity → 返回新值 → 调用方持久化」，对齐 `rollTowerDrop` 已有注入 RNG 风格）。**pity 计数状态留 store 层，`engine/squad/drops.ts` 保持纯**（若需感知 pity 只加纯入参 / 返回新计数，绝不在 engine 内维护计数或碰持久化——pitfalls「engine 不 import config / 不维护状态」）。config 顶部集中**一个 pity 阈值常量**（改这里即调平），阈值取「体感能感知但不破坏惊喜」的中低值（远小于 gacha 70，因掉落频率本就低：50% × 每层一次）。
+- **拍板-D｜存档 = 复用 v20，扁平塞 `TowerProgress`，三处同改 + 往返测试 + 旧档补 0 + clamp**。pity 是「连续未命中累积历史」**无法派生、必须持久化**（不同于 T3 羁绊派生免存档；研究员 Phase1 已确认派生免存档不可行）。落点 = `TowerProgress`（`types/player.ts:50`）扁平字段（语义同域「塔状态」，仿 `sweepUsedThisWeek` 定长扁平、**不用 Record**）。三处同改：schema type + 默认工厂（`createDefaultTowerProgress` 补默认）/ migrations（补默认 + clamp）/ persistence 装配器往返 + 往返保真 + **v19→v20 旧档补 0** 迁移测试。**SAVE_VERSION 保持 20 绝不升 21**。脏档 pity 巨值 **clamp 到 [0, 阈值]**（migration + action 共用，仿 `clampEnhance`），防篡改放大获取。
+- **拍板-E｜防墙钟/刷取退化 3 条（回归守卫，本轮命脉）**：① pity 计数**只在 `completeFloor` 推进新层的真掉落判定分支累加**——顶层（floor≥999，`completeFloor` 返 false）/ 重复挑战低层（不推进）/ 扫荡（`sweepFloor` 独立路径，SA-T5 明确不掉装备）**绝不推进 pity**（否则毕业玩家扫荡刷保底 = 墙钟/刷取漏洞）；② 保底强制命中的槽仍走目录候选池 `rng.pick` 兜底、空池不抛错（`getEquipmentDefsBySlotRarity` 目录全覆盖，防御）；③ pity 触发命中后立即重置计数。
+- **拍板-F｜显形（本轮成败命门，与 T3/T2-E 显形债同型教训）**：pity 若只后台记数不显形 = 又一个 comfort 死数值 = 挫败没缓解 = 白做。**必须在爬塔/探索/结算处显形「距下次槽位保底还差 N 层」进度**（accent 语义令牌、就近取整、满即高亮）；命中瞬间「保底触发！」文案高亮顺手则加、否则 backlog（**但进度显形非选做，是验收项**）。
+- **拍板-G（nice-to-have，非验收必需）｜去重池叠加**：研究员 A3——`rollFloorDrop` 候选池优先未拥有件（`candidates` 过滤已拥有满强化 defId，全拥有再回退全池，零存档 <10 行）。若成本极低顺手叠加提升「集齐进度感」；**与 pity 主线冲突则降 backlog，不阻塞 T4 验收**。
+
+---
+
+## 本轮任务（按依赖顺序）
+
+### T4-0｜config 阈值常量 + engine 纯函数注入 pity（拍板-B/C，先做，零存档）
+- **目标**：给「无记忆掉落」注入「连续未出某槽计数」，达阈值强制命中该槽。config 顶部集中一个槽位 pity 阈值常量。判定纯函数注入 RNG + 注入当前计数，返回 `{ drop, 新计数 }`（或等价形态），engine 不维护状态、不碰持久化。
+- **依赖**：无（先于存档落地，确定纯函数签名后再接 store/存档）。
+- **验收**：engine 纯函数特征测试断言 pity 边界（连 N 次未出某槽 → 第 N+1 次必出该槽，序列 RNG 可精确复现）；稀有度仍走层段映射（不叠稀有度 pity）；空候选池 `rng.pick` 兜底不抛错。
+- **来源**：Scout B 节 S15-T4 快照 + 进化审计 Critical + 研究审计 A1 + product-audit Critical。
+- **相关陷阱**：engine 不 import config（S13-C2：稀有度↔层段映射作参数注入，pity 计数亦作参数注入）；engine 零 `Math.random`（RNG 注入）。
+
+### T4-1｜pity 计数持久化（复用 v20，`TowerProgress` 扁平字段，三处同改）（拍板-D）
+- **目标**：pity 计数落存档、跨重开保真、旧档补 0、脏档 clamp。
+- **依赖**：T4-0（先定纯函数签名与计数语义）。
+- **验收**：`TowerProgress` 新增扁平 pity 字段（仿 `sweepUsedThisWeek`）；`createDefaultTowerProgress` 补默认；migration 对 v19/无字段旧档补 0 + clamp 到 [0,阈值]；persistence 装配器往返；`SAVE_VERSION===20`（未误升 21）；迁移测试覆盖「旧档补 0 / 往返保真 / 脏档巨值被 clamp」。
+- **来源**：研究审计 Phase1 假设 5 + Phase3 极端场景 3（脏档 clamp）+ Scout C-1 + 进化审计存档协议风险。
+- **相关陷阱**：**禁 spread 浅拷贝旧档**（pitfalls S13-C1 白名单重建）；**三处同改 + 往返测试**（存档协议）；**SAVE_VERSION 权威在 schema.ts、复用 v20 绝不升 v21**（文档版本漂移坑家族）；脏档 clamp 仿 `clampEnhance`。
+
+### T4-2｜store 编排接线 + 防退化守卫（拍板-C/E）
+- **目标**：`completeFloor` 推进新层的真掉落分支消费/更新 pity 计数；顶层/重复层/扫荡绝不推进 pity。
+- **依赖**：T4-0、T4-1。
+- **验收**：pity 只在 `completeFloor` 的 `completed===true` 真掉落判定分支累加/重置；顶层（≥999 返 false）/ 重复低层 / 扫荡（`sweepFloor.ok`）不推进 pity（**新增确定性回归测试断言之**）；掉落序列 RNG 可复现（仿 `equipmentSource.test.ts` 序列 RNG）。
+- **来源**：进化审计 Critical 第 3 条 + product-audit Phase1 边界 + Important「发放挂 completed===true 分支」。
+- **相关陷阱**：pity 计数在 store，drops.ts 保持纯（engine 纯净）；发放挂现有防刷低层守卫，别新开绕过路径；fake timers 坑——若测试涉 settle 用注入 now（第 1 轮已加接缝），pity 本身无墙钟依赖（纯事件计数，无回拨风险）。
+
+### T4-3｜UI 显形「距保底 N 层」（拍板-F，本轮成败命门）
+- **目标**：爬塔/探索/结算处显形「距下次槽位保底还差 N 层」进度，命中高亮。
+- **依赖**：T4-1（读计数）。
+- **验收**：探索/爬塔面板可见「距保底 N 层」（accent 语义令牌、就近取整、满即高亮）；命中瞬间「保底触发！」文案高亮（顺手，否则 backlog）；**颜色走语义令牌**（禁 text-white 压浅底 / 禁动态拼色类 `bg-${}` / 禁反斜杠透明度）；新 setTimeout/setInterval 若有须登记 + onUnmounted 清除。
+- **来源**：三报告显形共识（product-audit Important / 进化审计 Nice-to-have#1 / 研究审计操作缺口）+ pitfalls「setTimeout 假安全」「未定义令牌双形态」。
+- **相关陷阱**：显形是验收项非选做（重蹈 comfort/S15-T3 死数值反模式 = 白做）；语义令牌真令牌名（`--c-line` / `--c-ink-2/-3` / `--sk-radius-panel`，别用未定义 `--c-ink-soft` / `text-ink-soft`）。
+
+### T4-收尾｜Sprint 收官核对（S15-T1..T4 全 `[x]` + S14 无回归）
+- **目标**：落 T4 后复跑全套验收命令，确认全清单 checkbox 与实现一致、S14 33 项无回归。
+- **依赖**：T4-0..T4-3。
+- **验收**：主清单 S15-T1..T4 全 `[x]`；下方 5 条验收命令全绿（test 连跑 3 次）；`SAVE_VERSION===20` 断言未被误改成 21。
+- **来源**：三报告收尾复审提示 + pitfalls SA-F 编排坑（合同全部 `[x]` 才算达成）。
+
+---
+
+## 相关陷阱汇总（本轮高发）
+
+- **版本漂移**：pity 复用 v20，**绝不升 v21**；SAVE_VERSION 权威在 `schema.ts`，文档只指向不复述（本 Sprint 唯一 bump 已用于 furniture）。
+- **禁 spread 迁移**（S13-C1）：`TowerProgress` pity 字段迁移白名单重建，别 spread 漏旧字段。
+- **engine 纯净**（S13-C2）：drops.ts 零 `@/config` import、零 `Math.random`、不维护状态；pity 计数/映射作注入参数，counter 留 store。
+- **防墙钟刷保底**：pity 只在真掉落分支累加，顶层/重复层/扫荡不推进（延续 SA-T5 扫荡独立于通层、SF-T6 钳位家族）。
+- **显形非选做**：不显形 = 死数值反模式（S15-T3/T2-E 显形债教训）。
+- **别把 Sprint 内任务误判「新范围」**（SA-T6 教训）：S15-T4 是 in-scope 必须真实现，严禁只做回归确认空跑。
+- **别用 git stash 跑基线**（S13-C1）：临时 worktree 或 `git archive HEAD`。
+- **别改玩法数值破 S14**：facility 乘区 / softCap / comfort +20% 硬顶 / 羁绊 cap / 层段稀有度映射全不动；pity 是叠加一层保底下界，不改既有掉落率/稀有度。
 
 ---
 
@@ -77,14 +76,14 @@
 ```bash
 # 1. 前端类型检查（期望 0 错误）
 cd frontend-vue && npm run type-check
-# 2. 前端测试（期望全绿，含本轮新增 commission + v18→v19 迁移测试）
+# 2. 前端测试（期望全绿，S15-T1 起要求连跑 3 次无偶发失败）
 cd frontend-vue && npm run test
 # 3. 前端生产构建（期望成功）
 cd frontend-vue && npm run build
-# 4. 后端安全基线（S14-F 不碰后端，期望退出码 0、全 PASS）—— 用仓库 .venv：.venv/Scripts/python.exe backend/test_security.py
+# 4. 后端安全基线（S15 不碰后端，期望退出码 0、全 PASS）—— 用仓库 .venv：.venv/Scripts/python.exe backend/test_security.py
 python backend/test_security.py
 # 5. debug 关闭核验（期望零命中）
 grep -rn "debug=True" backend/server.py api/index.py
 ```
 
-**通过标准**：命令 1/2/3/4 成功（4 退出码 0、全 PASS），命令 5 零命中，SF-T8 真实现且 `[x]`、SF-T1..T8 全 `[x]`。**S14-F 整体完成** = SF-T1..SF-T8 全 `[x]`（→ S14 家园 hub 深化全部收官）。
+**通过标准**：命令 1/2/3/4 成功（4 退出码 0、全 PASS，test 连跑 3 次稳定全绿），命令 5 零命中，且 `SAVE_VERSION===20`（未误升 21），当轮承诺的 S15-T4 + 收尾全部 `[x]` 并与实现一致。**S15 整体完成** = S15-T1..S15-T4 全 `[x]`。

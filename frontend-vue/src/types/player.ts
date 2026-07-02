@@ -56,6 +56,9 @@ export interface TowerProgress {
   // ★ v15（SA-T5）：扫荡（已通层重复挑战）周额度。扁平定长（非 Record<floor,count>，随层数不膨胀）。
   sweepWeekKey: string; // 当前额度所属周键（weekKey：YYYY-Www），跨周读时归零
   sweepUsedThisWeek: number; // 本周已用扫荡次数（受 SWEEP_WEEKLY_CAP 封顶）
+  // ★ v20（S15-T4）：槽位定向掉落保底计数（每槽 = 连续多少次通新层掉落判定未出该槽）。
+  // 定长 3 键（weapon/armor/supporter），随层数/次数不膨胀；各值 clamp 到 [0, SLOT_PITY_THRESHOLD]。复用 v20 存档，不升 v21。
+  slotPity: { weapon: number; armor: number; supporter: number };
 }
 
 /** 货币种类（profile.spend/earn 的唯一入口键）。 */

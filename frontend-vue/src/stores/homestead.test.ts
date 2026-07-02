@@ -3,7 +3,7 @@
  * - store：入住槽位上限 / 去重 / 序列化往返。
  * - settleHomestead（userStore 门面）：首次只建基线、2h 挂机发经验/好感/知识点、未登录返回零。
  */
-import { describe, it, expect, beforeEach, vi } from 'vitest';
+import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
 import { setActivePinia, createPinia } from 'pinia';
 
 // settleHomestead 末尾会 saveToServer → pushUserSave；mock 掉网络层（同 persistence.test）。
@@ -26,8 +26,19 @@ import type { CharacterCard } from '@/types/card';
 
 const H = 3600_000;
 
+// ★ S15-T1：把系统时间钉死（照抄 daily.test.ts freezeDate 范式），杜绝真实墙钟 ε 叠进 hours
+// 使 floor 边界的精确等值断言（expEach===400）在 back-to-back 长跑中偶发翻车。
+// FIXED 是一个固定 ms 基准；settle 内部 Date.now() 与测试侧读取的 Date.now() 在冻结下恒等。
+const FIXED = new Date(2026, 6, 1, 12, 0, 0).getTime();
+
 beforeEach(() => {
   setActivePinia(createPinia());
+  vi.useFakeTimers();
+  vi.setSystemTime(FIXED);
+});
+
+afterEach(() => {
+  vi.useRealTimers();
 });
 
 describe('homestead store：入住 / 槽位 / 往返', () => {
@@ -138,5 +149,44 @@ describe('settleHomestead（门面离线结算）', () => {
     h.setLastSettleAt(Date.now() - 5 * H);
     const y = useUserStore().settleHomestead();
     expect(y.knowledge).toBe(0);
+  });
+
+  // ★ S15-T3：入住羁绊经既有 computeIdleYield 口径汇入（预览=结算同源）。
+  function seedWithAnime(sameAnime: boolean) {
+    const profile = useProfileStore();
+    profile.currentUser = 'tester';
+    profile.core.knowledgePoints = 0;
+    const gameData = useGameDataStore();
+    // 两个 SR 角色：sameAnime=true 时同作品（命中羁绊），false 时各不相干（不命中）。
+    gameData.allCharacterCards = [
+      { id: 77, rarity: 'SR', anime_names: ['共鸣之作'] } as unknown as CharacterCard,
+      { id: 5, rarity: 'SR', anime_names: sameAnime ? ['共鸣之作'] : ['另一部'] } as unknown as CharacterCard,
+    ];
+    const h = useHomesteadStore();
+    h.place(77);
+    h.place(5);
+    return { h };
+  }
+
+  it('入住羁绊命中给确定加成：同作品 2 人的产出 > 不同作品', () => {
+    // 不命中组：两 SR 不同作品。用满封顶 12h 使加成后的 floor 值肉眼可辨地不同（小时长会被 floor 抹平）。
+    const noBond = seedWithAnime(false);
+    noBond.h.setLastSettleAt(Date.now() - 12 * H);
+    const yNo = useUserStore().settleHomestead();
+    expect(yNo.bondHits).toHaveLength(0);
+    expect(yNo.bondBonusPct).toBe(0);
+
+    // 重置 pinia 再来命中组（避免 nurture 累加污染断言）。
+    setActivePinia(createPinia());
+    const bond = seedWithAnime(true);
+    bond.h.setLastSettleAt(Date.now() - 12 * H);
+    const yBond = useUserStore().settleHomestead();
+    expect(yBond.bondHits).toHaveLength(1);
+    expect(yBond.bondBonusPct).toBeGreaterThan(0);
+
+    // 不同入住组合产出可辨：命中组严格 > 不命中组（口径同源，加成经 computeIdleYield 汇入）。
+    expect(yBond.expEach).toBeGreaterThan(yNo.expEach);
+    expect(yBond.affectionEach).toBeGreaterThan(yNo.affectionEach);
+    expect(yBond.knowledge).toBeGreaterThan(yNo.knowledge);
   });
 });

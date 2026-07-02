@@ -2,7 +2,7 @@
  * 存档装配器测试（S5）：buildPayload ⇄ applyPayload 往返保真 + resetAllDomains。
  * 这是「刷新不丢任何东西」的结构性保证：每个领域 store 的状态都必须经得起一轮序列化往返。
  */
-import { describe, it, expect, beforeEach, vi } from 'vitest';
+import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
 import { setActivePinia, createPinia } from 'pinia';
 
 vi.mock('@/infra/persistence/api', () => ({
@@ -31,15 +31,30 @@ import { useMiniGamesStore } from './minigames/higherLower';
 import { useHomesteadStore } from './homestead';
 import { useEquipmentStore } from './equipment';
 import { useFacilityStore } from './facility';
+import { useFurnitureStore } from './furniture';
 import { useThemeStore } from './theme';
 import { useDailyStore } from './daily';
 import { useCodexStore } from './codex';
 import { useAchievementsStore } from './achievements';
 import { createDefaultNurtureData } from '@/engine';
+import { FURNITURE_CATALOG } from '@/config/homestead';
 import { SAVE_VERSION } from '@/infra/persistence';
+
+// ★ S15-T1：冻结系统时间（照抄 daily.test.ts freezeDate 范式）。此前 todayKey()/weekKey() 在**模块加载期**
+// 用 new Date() 求值一次，与 store 运行期（applyPayload）独立求值可能跨自然日/ISO 周边界 → 往返键断言不等
+// = 「单跑必绿、back-to-back 偶挂」的定时炸弹。冻结后模块加载期与运行期同一时刻，两处求值恒等。
+const FIXED = new Date(2026, 6, 1, 12, 0, 0); // 2026-07-01 周三正午（远离日/周边界）
 
 beforeEach(() => {
   setActivePinia(createPinia());
+  // 只 fake `Date`（冻结墙钟供日期键求值），**不 fake setTimeout**——否则本文件 saveToServer 串行合并测试
+  // 里 pushUserSave mock 的 setTimeout(5) 永不 resolve → await 挂死。这是「按需只冻 Date」的精确接缝。
+  vi.useFakeTimers({ toFake: ['Date'] });
+  vi.setSystemTime(FIXED);
+});
+
+afterEach(() => {
+  vi.useRealTimers();
 });
 
 /** 给每个领域塞上可辨识的状态。 */
@@ -86,18 +101,18 @@ function populateAllDomains() {
   data.claimedBondMilestones = ['bond_1'];
   // v16（SC-T3/SC-T4）：星级/突破 + 每日互动日期键往返
   data.breakthrough = 3;
-  data.lastBondInteractionDate = TODAY_KEY;
+  data.lastBondInteractionDate = todayKey();
   useThemeStore().setSkin('neon'); // S7：皮肤随账号入档
 
   // evolution-1：每日任务 / 图鉴里程碑 / 成就
   // 用「今天」的本地日期键，使 deserialize 的 ensureToday 不会判为跨天而清零进度。
   const daily = useDailyStore();
-  daily.date = TODAY_KEY;
+  daily.date = todayKey();
   daily.progress = { daily_gacha: 1 };
   daily.claimed = ['daily_gacha'];
-  daily.lastLoginDate = TODAY_KEY;
+  daily.lastLoginDate = todayKey();
   // B1：周任务 / 连签（用「本周」周键，使 deserialize 的 ensureThisWeek 不判为跨周清零）
-  daily.weekDate = WEEK_KEY;
+  daily.weekDate = weekKey();
   daily.weeklyProgress = { weekly_gacha: 5 };
   daily.weeklyClaimed = ['weekly_battle'];
   daily.loginStreak = 4;
@@ -111,12 +126,12 @@ function populateAllDomains() {
   mg.quizHighScore = 60;
   mg.quizBestStreak = 8;
   mg.quizPlayCount = 5;
-  mg.dcLastDate = TODAY_KEY;
+  mg.dcLastDate = todayKey();
   mg.dcLastScore = 4;
   mg.dcBestScore = 5;
   mg.dcStreakDays = 6;
   mg.dcBestStreakDays = 9;
-  mg.awardDate = TODAY_KEY;
+  mg.awardDate = todayKey();
   mg.awardedToday = 30;
 
   // S13-B：家园挂机域（入住 + 结算基线）
@@ -132,16 +147,23 @@ function populateAllDomains() {
   // S14-D SD-T1/SD-T5：设施域（三设施等级往返）
   const facility = useFacilityStore();
   facility.levels = { exp: 4, bond: 2, knowledge: 7 };
+
+  // S15-T2：家具域（已拥有/已摆放家具往返）
+  const furniture = useFurnitureStore();
+  furniture.deserialize({ ownedIds: [FURNITURE_CATALOG[0].id, FURNITURE_CATALOG[1].id], placedIds: [FURNITURE_CATALOG[0].id] });
 }
 
-/** 与 daily store 同款本地日期键（YYYY-M-D）。 */
-const TODAY_KEY = (() => {
+/**
+ * 与 daily store 同款本地日期键（YYYY-M-D）。★ S15-T1：改为**运行期**求值（在冻结时钟下调用），
+ * 不再在模块加载期用 new Date() 定常量——消除「加载期 vs 运行期跨日边界」这条 flaky 源。
+ */
+function todayKey(): string {
   const d = new Date();
   return `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`;
-})();
+}
 
-/** 与 daily store 同款 ISO 周键（YYYY-Www）。 */
-const WEEK_KEY = (() => {
+/** 与 daily store 同款 ISO 周键（YYYY-Www）。★ S15-T1：同样改为运行期求值。 */
+function weekKey(): string {
   const date = new Date();
   const d = new Date(date.getFullYear(), date.getMonth(), date.getDate());
   const day = (d.getDay() + 6) % 7;
@@ -152,7 +174,7 @@ const WEEK_KEY = (() => {
   firstThursday.setDate(firstThursday.getDate() - firstDay + 3);
   const weekNo = 1 + Math.round((d.getTime() - firstThursday.getTime()) / (7 * 24 * 60 * 60 * 1000));
   return `${isoYear}-W${String(weekNo).padStart(2, '0')}`;
-})();
+}
 
 describe('buildPayload ⇄ applyPayload 往返', () => {
   it('全部领域状态经一轮序列化后逐项保真（含 ★ presetSquads / towerProgress）', () => {
@@ -200,19 +222,19 @@ describe('buildPayload ⇄ applyPayload 往返', () => {
     expect(useNurtureStore().characterNurtureData.get(12393)?.claimedBondMilestones).toEqual(['bond_1']);
     // v16（SC-T3/SC-T4）：星级/突破 + 每日互动日期键往返保真（nurture 域全量 Map 序列化天然覆盖新字段）
     expect(useNurtureStore().characterNurtureData.get(12393)?.breakthrough).toBe(3);
-    expect(useNurtureStore().characterNurtureData.get(12393)?.lastBondInteractionDate).toBe(TODAY_KEY);
+    expect(useNurtureStore().characterNurtureData.get(12393)?.lastBondInteractionDate).toBe(todayKey());
 
     // S7 新增域：皮肤装扮（中途手动切回默认，验证 applyPayload 恢复账号皮肤）
     expect(useThemeStore().currentSkinId).toBe('neon');
 
     // evolution-1 新增域：每日任务 / 图鉴里程碑 / 成就
     const daily = useDailyStore();
-    expect(daily.date).toBe(TODAY_KEY);
+    expect(daily.date).toBe(todayKey());
     expect(daily.progress).toEqual({ daily_gacha: 1 });
     expect(daily.claimed).toEqual(['daily_gacha']);
-    expect(daily.lastLoginDate).toBe(TODAY_KEY);
+    expect(daily.lastLoginDate).toBe(todayKey());
     // B1：周任务 / 连签经一轮往返保真
-    expect(daily.weekDate).toBe(WEEK_KEY);
+    expect(daily.weekDate).toBe(weekKey());
     expect(daily.weeklyProgress).toEqual({ weekly_gacha: 5 });
     expect(daily.weeklyClaimed).toEqual(['weekly_battle']);
     expect(daily.loginStreak).toBe(4);
@@ -246,6 +268,10 @@ describe('buildPayload ⇄ applyPayload 往返', () => {
 
     // S14-D 新增域：设施（三设施等级）经一轮往返保真
     expect(useFacilityStore().levels).toEqual({ exp: 4, bond: 2, knowledge: 7 });
+
+    // S15-T2 新增域：家具（已拥有/已摆放）经一轮往返保真
+    const furniture = useFurnitureStore();
+    expect(furniture.serialize()).toEqual({ ownedIds: [FURNITURE_CATALOG[0].id, FURNITURE_CATALOG[1].id], placedIds: [FURNITURE_CATALOG[0].id] });
   });
 
   it('payload 带版本号与全部 schema 键', () => {
@@ -258,7 +284,7 @@ describe('buildPayload ⇄ applyPayload 往返', () => {
       'animeHistory', 'characterHistory', 'favoriteAnime', 'favoriteCharacters',
       'characterNurtureData', 'presetSquads', 'towerProgress',
       'shopPurchases', 'guess', 'appearance',
-      'daily', 'codexMilestones', 'achievements', 'minigames', 'homestead', 'equipment', 'facility',
+      'daily', 'codexMilestones', 'achievements', 'minigames', 'homestead', 'equipment', 'facility', 'furniture',
     ]) {
       expect(payload).toHaveProperty(key);
     }
@@ -282,6 +308,7 @@ describe('resetAllDomains', () => {
     expect(useEquipmentStore().inventory).toEqual([]);
     expect(useEquipmentStore().equipped).toEqual({});
     expect(useFacilityStore().levels).toEqual({ exp: 1, bond: 1, knowledge: 1 });
+    expect(useFurnitureStore().serialize()).toEqual({ ownedIds: [], placedIds: [] });
   });
 });
 
