@@ -1,95 +1,86 @@
-# Plan — S14-D 收尾轮（product-loop --tier1 on --mode all，切片 = SD-T2 + SD-T4 + SD-T3）
+# Plan — S14-E 第 3/3 轮（收尾轮，指派切片 = SE-T2｜确定性套装）
 
-> **轮次判定（纠正模板占位符 `第 undefined 轮 / slice=[native code]`）**：以工作树实证为准。**只有 Round 1（SD-T1 + SD-T5）真实落地**（facility 域 v17 + `stores/facility.ts` 齐全）。排期建议里「第 2 轮 SD-T2+SD-T4」**从未落地**（实证见下）。故本轮 = **S14-D 收尾轮，一次补齐全部剩余任务 SD-T2 + SD-T4 + SD-T3**，让 S14-D 整体完成（SD-T1..T5 全 `[x]`）。**严禁只做回归确认而跳过任一任务**（S14-A SA-T6 / S14-B 暴击 UI 教训）。
->
-> 工作树实证（Round 2 未落地）：
-> - `engine/nurture/rules.ts:35 getRequiredExpForLevel` 仍 `(level-1)²×1000`（曲线未压）。
-> - `components/nurture/EquipPickerModal.vue` 仅静态 `homeText`，无挂机 before→after delta。
-> - `config/nurture.ts` / `stores/nurture.ts` 仅有好感溢出（SC-T4，S14-C 遗产），**无经验溢出**；`TUTORING_EXP_GAIN=500` 仍定额。
-> - `config/equipment.ts EQUIPMENT_CATALOG` homeEffect 仍是「主承载」量级（如 UR expPct 0.16）；`stores/equipment.ts` 无 `dismantle*`。
->
-> **本轮 SAVE_VERSION 不动（仍 v17，权威在 `infra/persistence/schema.ts:44`）**：三任务均无新存档字段——SD-T2 纯数据、SD-T4 纯计算 + `profile.earn` 溢出、SD-T3 删既有 inventory 元素 + `profile.earn` 得 KP。本 Sprint 唯一一次 bump 已在 Round 1 用掉（v17）。
+> product-loop `--tier1 on --mode all --max_iter 3`。前两轮 SE-T1（装备强化 v18）、SE-T3（EquipmentDef 战斗 modifier）均已在工作树落地并经 Evaluator 亲验全绿（eval.md：815 tests PASS、type-check/build PASS、SAVE_VERSION=18）。**本轮做 SE-T2 收尾 S14-E。**
+> **范围纪律**：SE-T2 是 Sprint 合同内第 3 任务、checkbox 仍 `[ ]`（in-scope）——**必须真实现，严禁降级为「回归确认」**（前车之鉴 SA-T6 / S14-B 暴击 UI）。tier1-on 跑满轮次 ≠ 目标达成；收尾须核对 SE-T1..T3 全 `[x]`。
+> **方案抉择拍板**：本轮**只做确定性套装（方案 A / research 替代 C：3 组取向套装）**，条件加成（archetype 亲和）**标 backlog 不做**（四审一致：套装纯 config/store 闭环、零跨 store 依赖、回归风险最低、build 深度不输而成本约 1/3）。SPRINT 主清单「复用 resolveRole」不采纳（代码无此导出，实际入口是 `getArchetypeForCharacter`，仅条件加成方案才需要，本轮不走）。
 
 ---
 
-## 任务（按依赖顺序）
+## 关键设计决策拍板（写进任务验收）
 
-### 任务 A｜SD-T2 装备家园 homeEffect 剥离到设施 + EquipPicker 挂机 delta（依赖 Round 1 已完成的设施乘区）
-
-- **目标**：把家园挂机加成主承载从「装备 homeEffect」迁到「设施升级（Round 1 设施乘区）」，装备 homeEffect 产出%退成小额佐料；在 `EquipPickerModal` 补挂机 before→after delta 预览让配装口径透明。装备回归以战斗为主、家园为辅，二者不再抢同一杠杆。
-- **依赖**：Round 1 设施乘区（`facilityBonusPct` 独立乘子，已是家园产出主体）——已完成，可直接弱化装备侧。
-- **验收**：
-  - 装备 homeEffect 产出% catalog 数值大幅弱化（决策-11：约 ×0.33，0.01 步进），comfort 全保留。
-  - 家园产出主体由设施驱动、装备选装不再两目标打架。
-  - EquipPickerModal 展示挂机 before→after delta（决策-13，仿战斗五维 delta 范式、三槽求和、语义色）。
-  - `resolveHomeEffect` 唯一口径同源不破（预览==结算）；catalog homeEffect 相关断言测试同步更新全绿；不破坏挂机/装备现有测试。
-  - type-check/test/build 通过。
-- **来源**：SPRINT.md 主清单 SD-T2 + 本轮决策-11/12/13；FUTURE.md S14-D「装备 homeEffect 逐步剥离到设施（P2-13）」；scout.md A 段 SD-T2、C 段坑 3/4。
-
-### 任务 B｜SD-T4 经验曲线—产出错配修正 + 满级溢出 + 补习递增（纯计算，无依赖）
-
-- **目标**：压曲线到与产出匹配量级；满级经验给自动溢出出口（转少量 KP）不再沉没；补习产出随等级递增。
-- **依赖**：无（纯计算 / 派生，立即对存量档生效——存量 totalExperience 不变，按新曲线重新派生 level 可能瞬间跳级，属预期，无需迁移）。
-- **验收**：
-  - `getRequiredExpForLevel` = `(level-1)^1.6×900`（决策-14，注释给标定依据）、严格单调递增（守卫测试）。
-  - `rules.test.ts` 全部硬编码断言按新曲线重算 + 递增守卫（决策-15，重标定非降覆盖）。
-  - 满级经验自动转少量 KP：沉没点 `addCharacterExp` 满级分支走 `profile.earn`（决策-16，仿 bondOverflow 范式，用「已满级角色继续吃经验」用例测）。
-  - 补习产出随等级递增 `tutoringExpGain(level)`（决策-17，UI 文案改动态）。
-  - 不破坏等级/加点/突破/好感链；货币只走 `profile.earn/spend`；type-check/test/build 通过。
-- **来源**：SPRINT.md 主清单 SD-T4 + 本轮决策-14/15/16/17；FUTURE.md S14-D「修经验曲线/产出错配（P2-19）」；scout.md A 段 SD-T4、C 段坑 1/2/3、B 段坑 1/2/6。
-
-### 任务 C｜SD-T3 重复装备分解出口（分解为 KP，无依赖）
-
-- **目标**：给背包重复/多余装备加分解出口——分解为 KP（走 `profile.earn`），已装备件与保护件不被误分解。为 S14-E 装备强化留经济位（本轮只做 KP 回收，不做材料/合成）。
-- **依赖**：无（equipment 域 v14 已存，inventory 是既有数组，删元素 + earn KP 无需新字段）。
-- **验收**：
-  - `dismantleItem(uid)`：移除背包实例 + 按稀有度得 KP（`dismantleValueForRarity` 纯函数，明显低于兑换价 `EQUIPMENT_PRICES`，决策-18）。
-  - 已装备件不可分解（`findEquippedBy` 守卫 + UI 禁用，双保险，决策-19）。
-  - 门面走 `userStore.dismantleEquipment(uid)` + saveToServer（决策-19）；组件禁直改 inventory/货币。
-  - engine/store/config 分层不破（决策-20，分解纯计算放 config，副作用在 store）。
-  - engine/store 分解测试（已装备拒绝、稀有度产出、count 保护）；type-check/test/build 通过。
-- **来源**：SPRINT.md 主清单 SD-T3 + 本轮决策-18/19/20；FUTURE.md S14-D「重复装备加回收/分解出口（P2-21）」；审计报告 P2-21；参照 codex `collection.dismantleCard` 范式。
+| 决策项 | 拍板 |
+|---|---|
+| 形态 | 3 组「取向」套装：攻击（偏 atk/sp）/ 坦度（偏 hp/def）/ 节奏（偏 spd/sp），跨稀有度给现有目录打 setId 标签、**不新增装备**；每套武器/防具/支援三槽各有成员；R/SR 也铺成员让啊哈前移 |
+| 触发 | 单角色三槽内 setId 计数，齐 2 / 齐 3 阶梯加成；判定域严格限单 charId（不跨角色，守 `resolveEquipBonus` 单角色语义） |
+| 奖励维度 | **只碰五维、纯加法、确定值**；绝不塞 modifier（守 SE-T3 暴击轴 clamp）；绝不套 `enhancedBonus`（不随强化涨、防双乘）；绝不随机 roll |
+| 幅度 | 「齐套 ≈ 提升半个稀有度档」；3 套阶梯奖表集中 config 一处、测试锁死量级 |
+| 单一 seam | 套装加成经既有 `resolveEquipBonus`（逐件求和后追加套装项一并 `sumStatBonus`）；严禁另拼第 N 套战力口径 |
+| 预览同源（头号护栏） | `EquipPickerModal.previewEquipBonus` 用「替换当前槽后假设 defId 列表」调**同一** config 套装纯函数，防预览≠实战 |
+| 显形 | 候选/背包 setId chip + 配装弹窗右栏「齐几件 / 齐套奖 delta」；复用 delta 语言不另开弹窗、不无脑追加行；颜色走语义令牌 |
+| 存档 | setId 是 `EquipmentDef` 静态字段、不进 `EquipmentItemSave`；**SAVE_VERSION 维持 18**，不碰 schema/migrations/装配器 |
 
 ---
 
-## 采纳的 Reviewer / Scout 改进项（钉进 HOW 边界）
+## 本轮任务（按依赖顺序）
 
-- **SD-T2 走「弱化」而非「彻底归零」**（scout A 路径 1）：更平滑、观感自然（毕业角色仍有微弱家园收益），不砸档、不动签名。
-- **SD-T2 只改 catalog 数据、禁第二口径**（scout 坑 4）：`resolveHomeEffect` 单一求和口 + 两调用点同源，Round 1 焊死的口径命脉不许破。
-- **SD-T2 comfort 留装备**（scout C 段坑 4）：comfort 是独立软加成轴（Round 1 已接真加成），剥离的是产出%不是 comfort。
-- **SD-T4 主走「压曲线」而非「提产出」**（scout C 段坑 1）：改一处 engine 曲线 vs 改多处产出常量，前者更内聚、副作用可控。`rewards.ts` 有两处 characterExp 常量（`:71 characterExpEach` / `:99 characterExp`），提产出会踩口径混淆，故不走提产出。
-- **SD-T4 溢出自动转、沉没点在 `addCharacterExp`**（scout 坑 2 / A 段建议自动）：避免「攒了不领」死数值；出口必须加在 `addCharacterExp` 满级分支（挂机/塔仍照灌），非已拒收的 `tutorCharacter`。
-- **SD-T3 只做 KP 回收、不做材料/合成、不升档**（YAGNI，S14-E 才做强化）：本 Sprint 唯一 bump 已用掉，本轮不预留任何字段。
-- **SD-T3 已装备件保护 + 门面 saveToServer**（对齐 codex `dismantleCard` count>1 保护范式 + 既有装备门面）。
+### SE-T2a｜`EquipmentDef.setId` 静态字段 + 套装目录 + 齐套加成表
+- **目标**：给 `EquipmentDef` 加可选 `setId?`（仿 SE-T3 `modifier?` 样式 + 「恒定不随强化涨」注释）；集中的 3 组取向套装目录 / 阶梯奖表（每套名称、成员 defId、齐 2/3 阶梯五维加成）；给现有目录成员打 setId 标签（三槽 + 跨稀有度含 R/SR）。
+- **依赖**：无（config 起点）。
+- **验收**：type-check 通过；setId 引用 defId 均存在于 catalog；每套三槽都有成员；未打标签装备缺省无 setId。
+- **来源**：SPRINT SE-T2a / research 🔴-1、A6 / product 🟡-1、🟢-2 / scout B1。
 
-## 相关陷阱（pitfalls.md + scout C 段）
+### SE-T2b｜config 纯函数 `setBonusFor`（三槽 setId 计数 → 阶梯五维加成）
+- **目标**：纯函数（仿 `sumEquipModifiers`/`sumHomeEffects`），入参三槽 defId 列表，按 setId 计数、齐 2/3 阶梯累加固定五维加法；不套 `enhancedBonus`、不含 modifier、零 RNG。
+- **依赖**：SE-T2a。
+- **验收**：`config/equipment.test.ts` 断言齐 2/3 阶梯确定加成、缺件不给、多套并存、只统计已装 defId、加成恒定且只碰五维；套装目录填充断言。
+- **来源**：SPRINT SE-T2b / research 🔴-2、8 / scout B1、A2。
 
-1. **曲线是「牵一发」**：`rules.test.ts` 5+ 处硬编码曲线值（1000/4000/81000/9801000 + getLevelFromExp 边界 + getLevelProgress 绝对值）全要按新公式重算，不是删。`getLevelFromExp` 靠 `while` 反推 → 新曲线必须严格单调递增（加守卫测试）。
-2. **满级沉没点是 `addCharacterExp`（nurture.ts:117）不是 tutorCharacter**：tutorCharacter 满级已拒（L168），但挂机/塔仍照灌 `addCharacterExp`——溢出出口加在此分支。
-3. **压曲线 = 存量档瞬间跳级**：level 是 `f(totalExperience)` 派生，上线即批量跳级+加点，属预期，注释说明，**不需要 migration**（别误以为要写迁移）。
-4. **SD-T2 装备 homeEffect 消费已同源**：`resolveHomeEffect` 唯一口 + 两调用点，弱化只改 catalog 数据，别在单个消费点打折（否则破 Round 1 口径命脉）。
-5. **EquipPicker 挂机 delta 别用 catalog 静态值冒充「该角色 delta」**：必须算三槽求和差值（仿 `previewEquipBonus`），不是单件文案。
-6. **补习改函数要传 level**：`tutorCharacter` 先取 `nurtureData.level` 再调 `tutoringExpGain(level)`；UI 静态「+500 经验」文案改动态。
-7. **货币只走 profile.spend/earn**：SD-T4 溢出转 KP / SD-T3 分解得 KP = `profile.earn('knowledgePoints')`；补习扣费 `profile.spend`。别直改 core.knowledgePoints。
-8. **engine 纯净**：曲线改动纯计算留 engine；补习递增/溢出汇率/分解产出（含查表/常量）放 config 纯函数，engine 只收 number。
-9. **颜色令牌**：EquipPicker 新增 delta 行用 `text-success`/`text-danger`/`text-ink-3`（复用 `deltaClass`），禁 text-white 压浅底、禁拼接动态色类、禁反斜杠透明度（`bg-accent\15` 静默失效）。
-10. **别开新范围但别跳任务**：本轮必须真落地 SD-T2 + SD-T4 + SD-T3 三个，全部在验收里可勾，不得只做回归确认。
-11. **SD-T2 弱化后某件 homeEffect 若被削到全 0**：`formatHomeEffect` 对空 effect 返回空串（`v-if="c.homeText"` 已守）——弱化保留数值故一般不空，但要确认边界不崩。
-12. **grep catalog homeEffect 断言测试**：弱化前先 `grep -rn "expPct\|homeEffect\|resolveHomeEffect" src/**/*.test.ts` 全量核对同步更新。
+### SE-T2c｜套装加成经 `resolveEquipBonus` 单一 seam 汇入
+- **目标**：改 store `resolveEquipBonus` 在逐件 `enhancedBonus` 求和之后追加 `setBonusFor(三槽 defIds)` 一并 `sumStatBonus`；不动 `resolveEquipModifiers`（SE-T3）/`enhanceItem`/`dismantleItem`（`findEquippedBy` 守卫）/存档序列化。
+- **依赖**：SE-T2b。
+- **验收**：`stores/equipment.test.ts` 断言齐套后 `resolveEquipBonus` 提升且经 `resolveMemberBattleStats` 真进战力、缺件不给、套装加成不随 enhance 变化；**0 套装件时 `resolveEquipBonus` 输出与 SE-T2 前逐字节一致**（既有断言不改而全绿）；敌方侧不吃套装加成。
+- **来源**：SPRINT SE-T2c / research 🔴-2、8、A2/A4 / product 🔴-2 / scout A2/A3/B2。
+
+### SE-T2d｜EquipPickerModal 换装预览同源（头号护栏）+ 套装显形
+- **目标**：`previewEquipBonus` 用「替换当前槽后假设 defId 列表」调同一 `setBonusFor`，与 `currentStats` 口径一致算对 delta；配装弹窗右栏子区显示套装进度（如「攻击套 2/3」）+ 齐套奖 delta，候选卡加 setId chip；复用 SE-T3 `formatModifier`/`text-highlight` + delta 语言，颜色走语义令牌。
+- **依赖**：SE-T2c。
+- **验收**：换装 delta 预览含套装增量（预览 = 实战）；带 setId 装备显示归属 + 进度 + 齐套奖；type-check 通过。
+- **来源**：SPRINT SE-T2d / scout C-1、B3 / research A8、7 / product 🔴-3、🟡-3。
+
+### SE-T2e｜回归 + 收尾核对
+- **目标**：不破坏 SE-T1 强化五维 seam（`resolveEquipBonus` 逐件 `enhancedBonus` 求和不被污染）、SE-T3 modifier 独立 seam、SB-T3 暴击轴、战力单一 seam、S14-A..D + SE-T1/SE-T3；**把 SE-T2 主清单 line 28 + 本轮子项从 `[ ]` 补 `[x]`，确认 SE-T1..T3 全 `[x]`**；type-check/test/build 全绿。
+- **依赖**：SE-T2a..d。
+- **验收**：验收命令 1-5 全绿；SE-T1..T3 全 `[x]`（S14-E 完成判据）。
+- **来源**：SPRINT SE-T2e / research 🔴-2（回归护栏）/ scout C-5。
+
+### 采纳的 Nice-to-have（不阻塞验收）
+- **SE-T2f（🟢）**：套装 chip 在 InventoryPanel 背包卡显示（复用 SE-T3f ⚡ 角标位范式），语义令牌。来源：product 🟢-3 / research 🟢。
+- **SE-T2g（🟢）**：齐套瞬间套装 chip 点亮 + 战力 delta 复用既有 transition（克制正反馈，不新造粒子）。来源：product 🟢-1。
+
+---
+
+## 相关陷阱（pitfalls / 本轮 scout 新发现）
+- **C-1（🔴 头号坑）预览≠实战**：`EquipPickerModal.previewEquipBonus` 是 `resolveEquipBonus` 求和逻辑的第二份内联拷贝——只改 store、忘同步内联预览 → 换装弹窗 delta 漏套装增量、实战却生效（pitfalls S13-C2 复发点，SE-T1 已踩过）。缓解：两处同源调 `setBonusFor`。
+- **C-4 双乘 / 越界**：套装加成绝不套 `enhancedBonus`（否则随强化涨、破坏「强化只放大单件五维」边界）、绝不塞 modifier（绕过 SE-T3 clamp 叠爆暴击轴）；setId 不进 `EquipmentItemSave`（进则触发升档）。
+- **战力单一 seam 铁律**（SPRINT line 20 / pitfalls S13-C2）：套装加成必须经 `resolveEquipBonus` → `resolveMemberBattleStats`，严禁新建第 N 套战力汇总。
+- **C-2 陷阱规避**：SPRINT 写的 `resolveRole` 代码里不存在（实际 `getArchetypeForCharacter`），仅条件加成方案才涉及——本轮不走条件加成、绕开此坑。
+- **engine 纯净 / 颜色 / 组件清理**：解析全在 config（纯函数）+ store（查表编排），engine 零改动；UI 颜色走皮肤语义令牌（禁 text-white 压浅底、禁动态色类拼接）；定时器登记 + onUnmounted 清除。
+
+---
 
 ## 验收命令（Evaluator 必须亲自重跑，记录实际输出）
 
 ```bash
 # 1. 前端类型检查（期望 0 错误）
 cd frontend-vue && npm run type-check
-# 2. 前端测试（期望全绿，含本轮更新的 rules/nurture/equipment/EquipPicker 测试）
+# 2. 前端测试（期望全绿，含本轮新增/更新的 equipment 套装测试）
 cd frontend-vue && npm run test
 # 3. 前端生产构建（期望成功）
 cd frontend-vue && npm run build
-# 4. 后端安全基线（S14-D 不碰后端，期望退出码 0、全 PASS）—— 用仓库 .venv：.venv/Scripts/python.exe backend/test_security.py
+# 4. 后端安全基线（S14-E 不碰后端，期望退出码 0、全 PASS）—— 用仓库 .venv：.venv/Scripts/python.exe backend/test_security.py
 python backend/test_security.py
 # 5. debug 关闭核验（期望零命中）
 grep -rn "debug=True" backend/server.py api/index.py
 ```
 
-**通过标准**：命令 1/2/3/4 成功（4 退出码 0、全 PASS），命令 5 零命中，且 **SD-T2/SD-T3/SD-T4 主清单全 `[x]`（至此 SD-T1..T5 全 `[x]` = S14-D 整体完成）**、FUTURE.md S14-D 三条同步勾、SAVE_VERSION 保持 v17。
+**通过标准**：命令 1/2/3/4 成功（4 退出码 0、全 PASS），命令 5 零命中，且本轮承诺 SE-T2a..e 全部 `[x]` 并与实现一致。**S14-E 整体完成** = SE-T1..SE-T3 全 `[x]`。

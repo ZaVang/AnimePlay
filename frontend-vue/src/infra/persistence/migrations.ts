@@ -28,7 +28,7 @@ import type { PresetSquad } from '@/types/player';
 import { createPityState } from '@/engine/gacha/draw';
 import { MAX_BREAKTHROUGH } from '@/engine/nurture/rules';
 import { canonicalizePlacedIds, clampFacilityLevel } from '@/config/homestead';
-import { sanitizeEquipped } from '@/config/equipment';
+import { sanitizeEquipped, clampEnhance } from '@/config/equipment';
 import { canonicalizeSquadMembers } from './schema';
 
 /* eslint-disable @typescript-eslint/no-explicit-any -- 迁移层的输入天然是未知形态 JSON */
@@ -216,6 +216,8 @@ function migrateNurtureData(entries: any): [number, CharacterNurtureData][] {
 /**
  * v14（S13-C1）：装备域（C1 空占位）。旧档无此键 → 默认空域；
  * 局部损坏按字段补默认。inventory 只收 {uid,defId} 形态；equipped 逐角色补三槽缺省。
+ * v18（S14-E SE-T1）：白名单重建 {uid, defId, enhance}——旧档实例无 enhance → 补 0，
+ * 脏档 enhance 经 clampEnhance 钳到 [0, MAX_ENHANCE]（防放大战力）；不识别的多余字段一律丢弃（pitfalls S13-C1）。
  */
 function migrateEquipment(raw: any): EquipmentSave {
   const defaults = createDefaultEquipment();
@@ -225,7 +227,8 @@ function migrateEquipment(raw: any): EquipmentSave {
   const inventory = Array.isArray(raw.inventory)
     ? raw.inventory
         .filter((it: any) => it && typeof it.uid === 'string' && typeof it.defId === 'string')
-        .map((it: any) => ({ uid: it.uid as string, defId: it.defId as string }))
+        // v18：白名单重建三字段，enhance 缺失补 0、脏档 clamp（禁 spread 漏进脏字段）
+        .map((it: any) => ({ uid: it.uid as string, defId: it.defId as string, enhance: clampEnhance(it.enhance) }))
         // uid 去重保留首条（与运行期 getItem = inventory.find 取首条一致；同 uid 双 defId 不再解释错位）
         .filter((it: { uid: string }) => {
           if (seenUid.has(it.uid)) return false;

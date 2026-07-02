@@ -126,7 +126,7 @@ function populateAllDomains() {
 
   // S13-C1：装备域（C1 空占位，但塞值验证往返保真）
   const equipment = useEquipmentStore();
-  equipment.inventory = [{ uid: 'eq-1', defId: 'wpn_ur_longinus' }];
+  equipment.inventory = [{ uid: 'eq-1', defId: 'wpn_ur_longinus', enhance: 0 }];
   equipment.equipped = { 12393: { weapon: 'eq-1', armor: null, supporter: null } };
 
   // S14-D SD-T1/SD-T5：设施域（三设施等级往返）
@@ -241,7 +241,7 @@ describe('buildPayload ⇄ applyPayload 往返', () => {
 
     // S13-C1 新增域：装备（背包 + 配装）经一轮往返保真
     const equipment = useEquipmentStore();
-    expect(equipment.inventory).toEqual([{ uid: 'eq-1', defId: 'wpn_ur_longinus' }]);
+    expect(equipment.inventory).toEqual([{ uid: 'eq-1', defId: 'wpn_ur_longinus', enhance: 0 }]);
     expect(equipment.equipped).toEqual({ 12393: { weapon: 'eq-1', armor: null, supporter: null } });
 
     // S14-D 新增域：设施（三设施等级）经一轮往返保真

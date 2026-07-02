@@ -1,107 +1,78 @@
-# AnimePlay 进化审计报告 — S14-D 家园机制闭环 + 经济闭环（第 3 轮）
+# AnimePlay 进化审计报告 — S14-E 装备深度（product-loop `--tier1 on --mode all`）
 
-> product-loop `--tier1 on --mode all` · Reviewer=Evolution Strategist · 2026-07-01
-> **本轮切片（排期建议）= SD-T3（重复装备回收 / 分解出口，P2-21）**。为 S14-E 装备强化留燃料，独立切片。
-> 地基：`docs/orch/homestead-hub-audit-report.md`（根因 E；P2-21/20/19/13）+ `docs/plans/SPRINT.md` + 第 1 轮 `eval.md`/`negotiation.md`。
-> 竞品参照（尊重单机向）：PCR 装备按 rank 消耗为素材、Arknights「Recycling」把冗余物资转化为通用货币/材料、Blue Archive 冗余装备走分解——**gear 冗余→货币/材料是收集向 gacha 的 table stakes**，本轮以内部 `collection.dismantleCard` 分解范式为一等一的落地锚。
-
----
+> 本轮 = **S14-E 第 3/3 轮**（product-loop）。指派切片 = **SE-T2｜确定性套装 / 原型条件加成（P2-14 / P2-16，纯静态派生、无存档改动）**。
+> 前情：第 1 轮 SE-T1（装备强化 v18）+ 第 2 轮 SE-T3（EquipmentDef 战斗 modifier）均已落地并经 Evaluator 亲自复跑全绿（815 tests，type-check/build/后端 PASS）。**SE-T2 是全 Sprint 最后一块未落地切片**——若本轮再降级为「回归确认」即整个 S14-E 未闭合（前车之鉴 S14-A SA-T6 / S14-B 暴击 UI 被误判「新范围」漏做，严禁重演）。
+> 审源为主（`.claude/scripts/get_page_state.js` 不存在）。竞品对标 PCR（rank 装/专武）+ 原神圣遗物套装 + 明日方舟基建/潜能，尊重单机向定位（**确定性套装/条件加成优先，随机副词条不做**，全 Sprint 三审一致定调）。
 
 ## Executive Summary
 
-**产品进化成熟度：6.5 / 10**（S14-A/B/C 补齐「差异化—决策」，S14-D 第 1 轮补齐家园经营核心 SD-T1+SD-T5；本轮 SD-T3 收口装备经济末端的最后一个「只进不出」漏斗）。
+**产品进化成熟度：8.5 / 10**（早期产品 → 成熟产品过渡期，本轮 +0.5 待 SE-T2 落地兑现）。
 
-四镜头一致结论：AnimePlay 是**有骨架、有战斗深度、有养成长线的早期产品**，家园经营轴（SD-T1 设施可升级 + SD-T5 无底 sink）已在第 1 轮立起来。本轮切片 SD-T3 处理的是**经济系统里最后一个纯堆积垃圾场**——塔每层 50% 掉一件装备（`drops.ts:33`），`equipment.ts addItem` 只 `push` 从不去重、无任何 sell/dismantle/merge（`equipment.ts:68-72`），45 件目录齐装后**100% 掉落都是无用途重复实例**。这不是深度缺口，是**闭环缺口**：收集向游戏最忌讳「奖励拿到手却毫无意义」，塔越爬、重复垃圾越堆，掉落这条本该驱动「再爬一层」的正反馈边直接失效。
+家园 hub 经 S14-A/B/C/D + S14-E 前两轮，装备系统已补齐两块深度维度：**SE-T1（强化 / 毕业曲线拉长）+ SE-T3（modifier / 够到暴击-增伤-治疗-护盾旋钮）**。装备现在有「可持续消耗 + 五维之外的战斗旋钮」，但仍缺**最后一块——「搭配空间」**：当前任意角色戴任意装、稀有度纯线性预算，`InventoryPanel` 按稀有度排序即最优解，装备不塑造角色定位（P2-14/P2-16 的核心未解）。SE-T2 补的正是这一块：**确定性套装或原型条件加成**，让「戴什么」从「无脑堆最高稀有度」变成「按角色定位/凑套装做取舍」——这是 build 深度的最后一环，也是把装备从「数值膨胀」升级为「配装决策」的关键。
 
-**最大进化机会（本轮）**：把重复装备**分解为 KP**，走已验证的 `profile.earn` + `collection.dismantleCard` 范式（按稀有度定回收价、已装备/最后一件保护、一键分解重复）。这一改动**低成本、高杠杆、零新范围**——它同时（a）让塔掉落重新有意义、（b）给第 1 轮的无底 KP sink（设施升级）再开一条**进账水龙头**形成「爬塔→分解→升设施→挂机更快→更能爬塔」的跨系统闭环、（c）为 S14-E 装备强化预留「分解得材料」的升级路径（本轮先只出 KP，材料字段属 S14-E，YAGNI 不预留）。
-
-> **范围纪律警报（重要，须上报 Planner）**：核对 `FUTURE.md`/工作树发现 **SD-T2（homeEffect 剥离到设施）与 SD-T4（经验曲线/满级溢出）在第 2 轮并未落地**——`rules.ts:37` 仍是 `(level-1)²×1000`（满级 980 万旧曲线未压平），`EquipPickerModal.vue` 仍是静态 `formatHomeEffect` 无 before→after delta（SD-T2 的挂机 delta 预览未补）。`FUTURE.md` S14-D 中 SD-T2/T3/T4 三条均仍 `[ ]`。**「S14-D 整体完成 = SD-T1..SD-T5 全 [x]」的验收无法仅靠本轮 SD-T3 达成**。这正是 pitfalls 反复警告的「被指派任务被漏做」模式（S14-A SA-T6、S14-B 暴击UI）的复发风险。建议：本轮先真落地 SD-T3（被指派切片，不得空跑），同时把 SD-T2+SD-T4 明确标为**未完成、需补轮**，勿把 S14-D 整体标 ✅。
+**本轮切片最关键的一条设计决策（决定 SE-T2 成败）**：条件加成/套装加成**必须折进既有单一战力 seam** `resolveEquipBonus(charId)` → `resolveMemberBattleStats(base, nurture, equipBonus)`（`utils/battleStats.ts:37`，玩家侧只吃**一个** `equipBonus: StatBonus` 入参）。**严禁另拼第 N 套战力口径**（架构铁律 + S14-C/D 已成的单一 seam 不可破）。而条件加成需要角色的 role/archetype——`resolveEquipBonus` 当前不知道角色定位，这是本轮唯一的接线难点：**复用 `getSquadSkillKitForCharacter(character).role`（`squadSkillKits.ts:455` 的 `CompleteSquadSkillKit.role`，即 SC-T1 `resolveArchetype` 的对外产物）取定位，而非重新导出内部 `resolveArchetype`**（后者未 export，重复导出会开两条定位口径）。这条如果走歪，要么破坏战力单一 seam，要么再造一套 archetype 解析——两者都是本轮的头号退化风险。
 
 ---
 
-## Phase 1: 核心完整性（装备经济末端闭环）
+## Phase 1: 核心完整性
 
-**当前循环（装备侧）**：抽卡不产装备 → 装备唯一来源 = 塔通层 50% 掉落（`drops.ts`）+ KP 定向兑换（`userStore` exchangeEquipment，R400..UR24000）。获得走 `addItem` 单纯 push 入 `inventory`。配装三槽 weapon/armor/supporter，换下旧件留背包。**出口：无。** `equipment.ts` 全域无 dismantle/sell/merge（Grep 零命中）。
+### 当前装备核心循环（SE-T1+T3 后）
+获取（塔掉落 50% / KP 兑换）→ 配装（3 槽任意角色任意）→ **强化（KP+同款燃料 Lv.0-5，SE-T1）** → **modifier 塑造战斗风格（暴击/治疗/护盾，SE-T3）** → 分解回收（SD-T3）。循环已闭环、有可持续消耗、有战斗旋钮。
 
-**断裂点（本轮 SD-T3 要补）**：
-- **重复实例永久堆积**：`addItem` 不去重，同一 defId 可无限堆。齐装（每槽戴最优）后，后续所有掉落均为重复垃圾，背包只增不减、UI 越翻越长。
-- **掉落正反馈边失效**：塔掉落本应是「再爬一层」的短期驱动力，但齐装后掉落 = 无意义。P2-21 的核心即此。
-- **对照内部已有范式**：角色卡侧早已闭环——`collection.dismantleCard(cardId)` 按 `rarityConfig.dismantleValue`（UR200/HR100/SSR50/SR25/R10/N3）走 `profile.earn('knowledgePoints')`，且有「只有一张 → 拒绝分解」保护 + `dismantleAllDuplicates` 一键分解。**装备侧缺的正是这套现成范式的平移。**
+### SE-T2 补的缺口（搭配维度）
+- **闭环里唯一还「无决策」的动作 = 选哪件装备戴**：稀有度纯线性 → 同槽永远选最高稀有度，没有「A 件基础低但凑套装/匹配定位后更强」的权衡。SE-T2 就是给「戴什么」注入取舍。
+- **两条可选路径的核心完整性对比**：
+  - **确定性套装（setId + 齐 N 件额外加成）**：塑造「牺牲最优单件去凑套装」的横向 build 决策，玩法感强但需要玩家凑齐 2~3 件同套（背包深度要求高，早期玩家可能凑不齐 → 空窗期无感）。
+  - **原型条件加成（装备带 archetype 倾向标签，戴在匹配 role 的角色上加成）**：塑造「把对的装备给对的角色」的纵向 build 决策，单件即生效、无凑套门槛、天然复用 SC-T1 `role`——**核心完整性更高（无空窗、即时可感）、接线成本更低**。
+- **建议（SE-T2）**：**优先原型条件加成**（单件即生效、复用 `role`、无背包深度门槛），套装作为可选叠加。若同时做，注意二者都必须经同一 `resolveEquipBonus` seam 汇总，不得各开一路。
 
-**边界与空状态（验收须卡）**：
-- **已装备保护**：`findEquippedBy(uid)` 已存在——分解前必须校验该 uid 未被任何角色任意槽占用（防误分解在用装备）。
-- **"最后一件"语义**：装备不像角色卡有「本体卡」概念（角色 `count>1` 才可分解保本体）。装备分解的合理保护 = **仅重复实例可分解**（同 defId 保留至少 1 件，或直接「只分解未装备的重复件」），而非按 uid 无脑分解。这是本轮最需要拍死的语义边界（下方深度节详述）。
-- **空状态**：无重复可分解时，一键分解应给「没有可分解的重复装备」提示（复用 `dismantleAllDuplicates` 的 info 日志范式），而非静默。
+### 边界与空状态
+- **不匹配/不齐套时必须「不给加成」且 UI 明示**（验收：不匹配不给）——不能静默 0，否则玩家不知道为何某件"看起来没用"。这是 SE-T2 的核心完整性红线（对齐 CLAUDE.md「不 ship 宣称未执行的效果」）。
+- **敌方塔单位不吃条件加成**（与 SE-T3 敌方不给 modifier 一致，防塔层缩放联动）——`buildCharacterStats` 敌方走 `generateBattleStats(base, EMPTY, EMPTY)`（`SquadBattleView.vue:270`），天然隔离，SE-T2 只需保证条件加成在玩家侧 `resolveEquipBonus` 内解析。
 
----
+## Phase 2: 竞争差距
 
-## Phase 2: 竞争差距（gear 回收是 table stakes）
-
-| 产品 | 冗余装备/物资出口 | 对 AnimePlay SD-T3 的启示 |
+| 产品 | 装备"搭配"深度机制 | 与 AnimePlay SE-T2 的关系 |
 |---|---|---|
-| **PCR（公主连结）** | 装备按 rank 被角色「消耗」进阶，冗余低级装可采购/被高需求消化；不存在「拿到即纯垃圾」 | 装备应有下游消耗去处（本轮先做「分解回 KP」，S14-E 再做「装备强化燃料」两级消化） |
-| **Arknights** | Recycling（回收）把冗余物资/凭证转化为通用货币或材料 | 「冗余 → 通用硬通货（KP）」是最省事、单机向友好的第一步，本轮采纳 |
-| **Blue Archive** | 冗余装备/物品可分解回收，喂给强化系统 | 分解产物长期应能喂「强化」（S14-E），本轮 KP、S14-E 材料，分两阶段不返工 |
-| **AnimePlay（现状）** | **无任何出口，纯堆积** | 这是明确的 table stakes 缺口，SD-T3 补上即达行业底线 |
+| **PCR（公主连结）** | rank 装是**确定属性、无随机词条**；深度靠专武（角色专属）+ 星级 | ★ 对标核心：SE-T2 走确定性套装/条件加成、拒随机 roll，与 PCR 定位完全一致（三审已定调） |
+| **原神圣遗物** | 2 件套 / 4 件套触发确定性套装效果（但底层词条随机） | 借鉴其**套装分档触发**（齐 N 件给确定加成）的确定性部分，弃其随机词条部分 |
+| **明日方舟** | 潜能（重复干员→永久小加成）+ 基建 buff 按职业分组 | 借鉴其**「按职业/定位分组加成」**思路 = SE-T2 原型条件加成的直接原型 |
 
-**结论**：任何一款收集向 gacha 都不会让「掉落物拿到手毫无意义」。SD-T3 不是创新、是补底线。**单机向定位下无需做复杂回收商店/兑换券**——一条「分解回 KP」+「一键分解重复」即足，走 `profile.earn`。
+**桌上赌注（table stakes）判断**：主流收集向养成，「同槽装备之间有非稀有度的搭配权衡」是标配（否则装备退化为纯数值条）。AnimePlay 在 SE-T2 之前正缺这一块——**SE-T2 是补齐 table stakes，不是超前创新**。竞品共识：**确定性套装/条件加成是单机向的正解，随机副词条是重氪刷取的取舍**（P2-16 异议已采信）。
 
-**竞品用户反馈机会点**：这类游戏玩家对回收的最大抱怨是「一件一件点太累」和「误分解在用的」。→ 本轮直接内建 `dismantleAllDuplicates`-式一键分解 + 已装备/唯一件双重保护，一次性堵住这两个痛点。
+## Phase 3: 功能深度
 
-## Phase 3: 功能深度（分解语义要一次做对）
-
-现有 `collection.dismantleCard` 范式是「浅但对」的样板，SD-T3 应平移其**深度而非仅表面**：
-
-- **分解回收价按稀有度分档**：不要一口价。复用 `EQUIPMENT_PRICES`（R400..UR24000 兑换价）为锚，回收价取兑换价的一个折扣系数（如 20~30%，即 R~100 / UR~6000），确保「回收价 < 兑换价」（否则刷分解套利）。此系数应是 `config/equipment.ts` 里的 config 常量 + engine/config 纯函数 `dismantleValueForRarity(rarity)`，可测。**这是本轮最该卡的数值卫生**：分解 KP 必须显著低于兑换/掉落获取成本，杜绝经济穿底。
-- **"只分解重复未装备件"是正确的默认深度**：
-  - power-user 想要「一键分解所有重复」→ 提供 `dismantleAllDuplicates` 式批量出口（每 defId 保留 1 件、跳过已装备）。
-  - 谨慎件想要「逐件分解」→ 单件 `dismantleEquipment(uid)` 带 `findEquippedBy` 保护。
-  - 两条都走同一 engine/config 纯函数算 KP，store 执行 `profile.earn` + 存档。
-- **背包 UI 深度**：`InventoryPanel.vue` 已按稀有度排序，补「重复」角标 + 「分解」入口即可，无需重构。
-
-**集成/协作**：SD-T3 产物本轮限定 KP（无底 sink 的进账端）。**为 S14-E 强化留燃料 = 设计意图（不是本轮实现）**——分解函数签名保持「输入装备实例 → 输出 { knowledgePoints }」，S14-E 时扩为 `{ knowledgePoints, materials }` 不破坏调用面。本轮**不新增材料字段/存档域**（YAGNI，v17 已用于 facility，本轮 SD-T3 不需要新存档字段——分解只删 inventory + earn KP）。
+- **SE-T2 让装备第一次有「非稀有度的选择维度」**：强化（SE-T1）是纵向深度（同件越强）、modifier（SE-T3）是横向风格（暴击/治疗流派）、**套装/条件加成（SE-T2）是搭配深度（组合 > 单件）**——三者正交，共同把装备从「一维稀有度条」升级为「三维 build 空间」。
+- **power-user 路径**：SE-T2 落地后，高玩可以「为 striker 角色专门凑攻击套 / 为 guardian 凑坦度套」，装备开始承接角色定位（补 P2-14「装备不塑造角色定位」）。
+- **深度上限自律**：套装组数首版 2~3 组即可、条件加成幅度「小而有感」（对齐 SE-T3 modifier 的克制原则），**避免让套装成为「不凑就打不过」的硬门槛**（单机向不做军备竞赛）。条件加成建议 ≤ 该件基础预算的 15~20%（与突破 ≤20%、强化 +40% 同量级克制）。
 
 ## Phase 4: 差异化与 Wow Factor
 
-> 均标 backlog，不进本轮 SD-T3。本轮聚焦「补底线闭环」，差异化留后续 sprint。
+> 均标 backlog（超 SE-T2 范围，不进本轮）。
 
-- 💡 **「装备图鉴/毕业墙」**（backlog）：把分解与收集对立起来——首次获得某 defId 记入「装备图鉴」，之后重复件才可无痛分解。让分解不产生「我是不是毁了收集」的焦虑。这是单机收集向的差异化点（竞品多无收集顾虑）。
-- 💡 **「熔铸/合成」升阶**（backlog，S14-E 邻接）：N 件同稀有度重复件 → 合成 1 件高一档，比纯 KP 分解多一条「攒垃圾换毕业」的长线，口碑传播点（「肝出来的毕业装」）。
-- 💡 **分解返还「精粹」软货币**（backlog）：分解除 KP 外产极少量「装备精粹」，专用于 S14-E 强化——把装备经济与 KP 经济解耦，避免装备产出稀释 KP sink 深度。**本轮不做（YAGNI），但函数签名为其预留扩展位。**
+- 💡 **叙事套装（backlog）**：套装按「同作品/同阵营」组队（如「EVA 三机体套」「Fate 从者套」），凑齐给主题加成 + 一句梗台词——把套装从数值机制升级为「收集同好角色的情感钩子」，是单机向收集游戏独有的口碑传播点（竞品的套装多是纯数值，叙事套装是差异化机会）。
+- 💡 **条件加成可视化「适配度」（backlog）**：配装弹窗给每件装备对当前角色打一个「适配★」（匹配 role = 高适配），把 SE-T2 的隐性条件显性成一眼可读的推荐——降低新手「为何这件对她更强」的理解成本。
+- 💡 **满强化 + 齐套双 buff 的「毕业特效」（backlog）**：三件满强化 + 齐套时给角色卡一个视觉徽章/光效，作为长线养成的成就展示（承接 S14-F）。
+- **口碑传播点**：叙事套装（"凑齐 EVA 三人有隐藏台词"）是最可能被玩家自发分享的点——它把数值决策裹进了 IP 情感，这是 AnimePlay 相对通用养成框架的独特资产（拥有 Bangumi 全量作品/角色关系数据）。
+- **值得简化的东西**：**若 SE-T2 同时做套装 + 条件加成两条，建议本轮只做一条（优先条件加成）**——两条都做会让 `resolveEquipBonus` 一次性膨胀、UI 要同时展示套装进度 + 适配度两套语言，增大退化面。宁可一条做透、另一条标 backlog。
 
-**值得删掉/简化的东西**：塔掉落 50% 概率（`DROP_CHANCE=0.5`）在齐装后纯产垃圾——SD-T3 落地后掉落有了分解去处，可**保留** 50%；但若 SD-T3 未做，应考虑把齐装后的掉落**直接转 KP**（掉落即分解）作为退路。SD-T3 是更好的方案，因它保留了「攒重复件换强化」的 S14-E 空间。
+## Technical Health
 
-## Technical Health（附带）
-
-- **架构扩展性**：SD-T3 应严守分层——分解 KP 计算走 `config/equipment.ts` 纯函数（`dismantleValueForRarity` / `sumDismantleValue`），`stores/equipment.ts` 加 `dismantleItem(uid)` / `dismantleAllDuplicates()`（删 inventory 实例），KP 入账 + 存档由 **`userStore` 门面**编排（`profile.earn('knowledgePoints', v)` + `saveToServer()`），组件禁直改 `core.knowledgePoints`（对齐第 1 轮 `upgradeFacility` 门面范式）。engine 不涉及（无随机、无战斗规则），无需碰 `engine/**`。
-- **存档**：SD-T3 **无需升 SAVE_VERSION**（v17 已由第 1 轮 facility 占用；分解只是删 inventory 元素，`EquipmentSave` 结构不变）。这是本轮相对第 1 轮的显著简化——不动 schema/migrations。
-- **数据一致性风险（本轮必测）**：分解删除 inventory 实例时，若该 uid 仍被 `equipped` 引用会产生孤儿槽引用。虽 `sanitizeEquipped` 载入边界会兜底清孤儿，但**运行时分解必须先过 `findEquippedBy` 保护拒绝已装备件**，不能依赖载入兜底（否则「分解后当场战力凭空掉」= 隐性回归）。
-- **测试卫生**：`equipment.test.ts` 已存在——加 `dismantleItem`（已装备拒绝 / 唯一件保护 / 重复件成功返 KP）+ `dismantleAllDuplicates`（保留 1 件、跳过已装备、空状态返 false）+ config `dismantleValueForRarity`（各档 + 回收价 < 兑换价断言）三组测试。
-- **回归复审（第 1 轮 SD-T1/T5 已落地面）**：抽查确认第 1 轮 facility 域 v17 / `upgradeFacility` 门面 / computeIdleYield 口径同源均在工作树中；本轮 SD-T3 不触及 homestead/facility 面，无交叉回归风险。**唯一需并行复审的是 SD-T2/T4 缺口**（见 Executive Summary 警报）。
-
----
+- **架构扩展性（本轮头号风险）**：SE-T2 的加成必须收口进 `resolveEquipBonus(charId): StatBonus` 这个**唯一**玩家侧战力 seam（下游 `resolveMemberBattleStats` 只吃一个 `equipBonus`）。当前 `resolveEquipBonus`（`stores/equipment.ts:241`）逐件 `enhancedBonus` 求和后 `sumStatBonus`——SE-T2 需在此**末尾追加**套装/条件加成项（同样进 `sumStatBonus` 的数组），**不新增第 4 参数、不另建函数**。条件加成取 role 建议在 store 层查 `getSquadSkillKitForCharacter(char).role`（char 从 gameDataStore 按 charId 取），engine 纯净不受影响。
+- **定位口径统一（退化风险）**：**只用 `CompleteSquadSkillKit.role`（SC-T1 对外产物）取定位**，不重新导出内部 `resolveArchetype`（`squadSkillKits.ts:152` 未 export）——否则装备条件加成与技能 kit 会读两条 archetype 口径，未来 role 规则改动会漂移（P2-7 已证正则误判频发，多口径必埋坑）。
+- **与 SE-T1/T3 正交性（回归风险）**：SE-T2 只碰五维加法（走 `resolveEquipBonus`），SE-T3 只碰 modifier（走 `resolveEquipModifiers`），两条独立 seam 不得混用；**条件加成/套装加成绝不套 `enhancedBonus`**（那是单件强化的 seam）除非明确要让套装也随强化涨（不建议，增大数值失衡面）。
+- **前两轮质量已验**：SE-T1 强化纯函数 + v18 三处同改 + 往返/迁移/clamp 测试；SE-T3 clamp + 注入特征测试；均经 Evaluator 亲自复跑全绿。SE-T2 应比照——engine/config 纯函数测试（套装计数命中 / 条件命中与不命中）+ store 测试（匹配给、不匹配不给、经 `resolveMemberBattleStats` 真进战力）。
+- **测试覆盖**：当前 815 tests。SE-T2 无存档改动（派生自 equipped defIds + role），**不碰 schema/migrations/装配器，SAVE_VERSION 维持 18**——测试面集中在 config 纯解析 + store 求和 + 一条战力口径特征测试即可。
 
 ## Prioritized Recommendations
 
-> 每条标 SD-T# 或 backlog。本轮被指派切片 = SD-T3，必须真落地。
-
-### 🔴 Critical（本轮必做，缺失即 S14-D 无法收口）
-- **SD-T3｜装备分解出口**：`config/equipment.ts` 加 `DISMANTLE_RATIO` 常量 + `dismantleValueForRarity(rarity)` / `sumDismantleValue(defs)` 纯函数（回收价 = 兑换价×20~30%，锁「回收价 < 兑换价」）；`stores/equipment.ts` 加 `dismantleItem(uid)`（`findEquippedBy` 拒绝已装备 + 同 defId 保留≥1 件保护 + 删 inventory）与 `dismantleAllDuplicates()`（保留 1/件、跳过已装备、空返 false）；`userStore` 加 `dismantleEquipment` 门面（`profile.earn` + 日志 + `saveToServer`）；`InventoryPanel.vue` 补「重复」角标 + 单件/一键分解入口 + 防呆确认。**无需升 SAVE_VERSION**。engine 不碰。测试三组。type-check/test/build/security 全绿 + `debug=True` 零命中。
-- **⚠️ 上报 Planner｜SD-T2 + SD-T4 未落地**：第 2 轮排期任务实际缺失（exp 曲线仍 980 万未压、EquipPicker 无挂机 delta）。**不得因本轮做完 SD-T3 就把 S14-D 整体标 ✅**；需补一轮完成 SD-T2/SD-T4，或明确记入 FUTURE.md 为未完成。
-
-### 🟡 Important（提升完整度，本轮可顺手）
-- **SD-T3 数值卫生**（SD-T3 子项）：回收价必须显著低于「获取成本」——不只低于兑换价，也应低于「爬同层重出该稀有度的期望 KP」，防「爬塔刷分解」套利。测试断言锁死。
-- **一键分解防呆**（SD-T3 子项）：批量分解前给「将分解 N 件、获得 M KP」二次确认，避免误触（复用 `useDialog` 范式）。
-
-### 🟢 Nice-to-have（power-user / 打磨）
-- 背包按「可分解重复件」筛选视图（backlog / SD-T3 可选）。
-- 分解结果 toast 汇总（分解 N 件 / +M KP），复用 profile.addLog success 范式（SD-T3 子项，低成本）。
-
-### 💡 Feature Idea（差异化，进 backlog）
-- 装备图鉴/毕业墙：首次获得记图鉴、重复件才无痛分解，消解收集焦虑（backlog）。
-- N 件同档合成升阶「熔铸」：攒垃圾换毕业装，肝度口碑点（backlog，S14-E 邻接）。
-- 分解产「装备精粹」软货币解耦装备经济与 KP sink（backlog；本轮仅在分解函数签名预留扩展位，不实现）。
+- 🔴 **Critical（SE-T2，本轮必做，不得降级为回归确认）**：加**确定性套装或原型条件加成**（首版 2~3 组套装 **或** 装备带 archetype 倾向标签 + 匹配 role 加成，**优先后者**：单件即生效、复用 `role`、无凑套空窗）。**折进既有 `resolveEquipBonus` 单一 seam → `resolveMemberBattleStats`，严禁另拼战力口径**；条件加成经 `getSquadSkillKitForCharacter(char).role` 取定位（不重导 `resolveArchetype`）；不匹配/不齐套不给加成且 UI 明示（不静默 0）；随机副词条不做。engine/config 纯函数测试（套装计数 / 条件命中与不命中）+ store 真进战力测试；type-check/test/build 全绿；SAVE_VERSION 维持 18。
+- 🔴 **Critical（回归护栏）**：确认 SE-T2 不破坏 SE-T1 强化五维 seam（`resolveEquipBonus` 逐件 `enhancedBonus` 求和不受污染）、SE-T3 modifier 独立 seam、SB-T3 暴击轴、战力单一 seam、S14-A..D。敌方塔单位不吃条件加成（玩家侧 `resolveEquipBonus` 内隔离）。
+- 🟡 **Important（SE-T2 UI，本轮内）**：配装弹窗/背包显示套装进度（如「攻击套 2/3」）或条件加成命中态（如「✓ 匹配 striker +12 ATK」），**复用现有 delta/分区语言，不另开弹窗、不无脑追加行**（对齐 SE-T3d 的 formatModifier 范式，颜色走皮肤语义令牌）。不匹配态明示「未匹配定位」而非留空。
+- 🟢 **Nice-to-have（本轮可做，不阻塞）**：SE-T2 若做条件加成，在 InventoryPanel/候选卡给「适配度」小标（匹配当前角色 role 时高亮），一致性加分、低成本；颜色走语义令牌。
+- 🟢 **Nice-to-have（backlog 但低成本）**：范围纪律——若本轮时间只够一条，**只做条件加成、套装标 backlog**（一条做透优于两条半吊子）。
+- 💡 **Feature Idea（backlog，不进本轮）**：叙事套装（同作品/阵营凑齐给主题加成 + 梗台词，口碑点）；条件加成「适配★」可视化推荐；满强化+齐套毕业特效（S14-F）；装备定向掉落/碎片保底；homeEffect 彻底剥离到设施。
 
 ---
 
-**一句话收尾**：本轮切片 SD-T3 是补经济系统最后一个「只进不出」漏斗——用内部 `collection.dismantleCard` 范式（按稀有度回收价 + 已装备/唯一件保护 + 一键分解）平移到装备，走 `profile.earn` 入账、无需升存档版本、engine 不碰；同时须向 Planner 上报 SD-T2/SD-T4 在第 2 轮实际未落地，S14-D 不可仅凭 SD-T3 收官。
+**一句话收尾**：SE-T2 是全 S14-E 最后一块拼图——把装备从「一维稀有度条」补成「强化(纵)×modifier(横)×套装/条件(搭配)」的三维 build 空间。本轮成败只系于一条：**新加成必须折进 `resolveEquipBonus` 单一战力 seam、条件加成复用 `role` 不另造口径**。做歪就破坏 S14-C/D 已成的单一 seam 或再开第二套 archetype 解析；做对则装备系统彻底立起来，S14-E 闭合。

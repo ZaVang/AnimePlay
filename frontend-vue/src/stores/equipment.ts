@@ -20,7 +20,15 @@ import {
   sanitizeEquipped,
   sumHomeEffects,
   dismantleValueForRarity,
+  enhancedBonus,
+  enhanceKpCost,
+  clampEnhance,
+  sumEquipModifiers,
+  setBonusFor,
+  MAX_ENHANCE,
+  ENHANCE_FUEL_COUNT,
   type EquipmentHomeEffect,
+  type EquipModifier,
   type EquipmentSlot,
 } from '@/config/equipment';
 import { sumStatBonus, type StatBonus } from '@/engine';
@@ -29,6 +37,22 @@ import { useProfileStore } from './profile';
 /** 空三槽（新角色首次配装时建）。 */
 function emptySlots(): EquippedSlots {
   return { weapon: null, armor: null, supporter: null };
+}
+
+/** 强化成本/可行性查询结果（UI 展示 + action 内部共用）。导出以便消费端类型标注。 */
+export interface EnhanceCost {
+  /** 目标等级（当前 +1）；已满级时 = 当前等级（MAX_ENHANCE）。 */
+  targetLevel: number;
+  /** 当前等级。 */
+  currentLevel: number;
+  /** 升到目标级的 KP 成本（已满级 / 未知 def → 0）。 */
+  kp: number;
+  /** 所需燃料件数（同 defId 游离重复件）。 */
+  fuelNeeded: number;
+  /** 当前可用燃料件数（同 defId、非本件、当前未被任意角色任意槽装备的游离实例）。 */
+  fuelOwned: number;
+  /** 是否已满级。 */
+  maxed: boolean;
 }
 
 export const useEquipmentStore = defineStore('equipment', () => {
@@ -66,10 +90,10 @@ export const useEquipmentStore = defineStore('equipment', () => {
 
   // --- 增删 ---
 
-  /** 获得一件装备：建实例入背包，返回 uid（uid 在 store 层用 crypto.randomUUID 生成）。 */
+  /** 获得一件装备：建实例入背包，返回 uid（uid 在 store 层用 crypto.randomUUID 生成）。enhance 初始 0（未强化）。 */
   function addItem(defId: string): string {
     const uid = crypto.randomUUID();
-    inventory.value.push({ uid, defId });
+    inventory.value.push({ uid, defId, enhance: 0 });
     return uid;
   }
 
@@ -96,6 +120,83 @@ export const useEquipmentStore = defineStore('equipment', () => {
     inventory.value = inventory.value.filter(it => it.uid !== uid);
     profile.earn('knowledgePoints', value);
     profile.addLog(`分解 [${def.rarity}] ${def.name}，回收 ${value} 知识点。`, 'success');
+    return true;
+  }
+
+  // --- 强化（SE-T1c）---
+
+  /**
+   * 同 defId 可当燃料的游离实例 uid 列表（正在装备中的实例、被强化件自身不可当燃料，复用 findEquippedBy 守卫）。
+   */
+  function freeFuelUids(selfUid: string, defId: string): string[] {
+    return inventory.value
+      .filter(it => it.defId === defId && it.uid !== selfUid && !findEquippedBy(it.uid))
+      .map(it => it.uid);
+  }
+
+  /**
+   * 取某实例强化到「下一级」的成本 + 拥有量（纯查询，不变更状态）。未知 uid / 未知 def → 全 0 且 maxed=true（不可强化）。
+   */
+  function getEnhanceCost(uid: string): EnhanceCost {
+    const item = getItem(uid);
+    const def = item ? getEquipmentDef(item.defId) : undefined;
+    if (!item || !def) {
+      return { targetLevel: 0, currentLevel: 0, kp: 0, fuelNeeded: 0, fuelOwned: 0, maxed: true };
+    }
+    const currentLevel = clampEnhance(item.enhance);
+    const maxed = currentLevel >= MAX_ENHANCE;
+    const targetLevel = maxed ? currentLevel : currentLevel + 1;
+    return {
+      targetLevel,
+      currentLevel,
+      kp: maxed ? 0 : enhanceKpCost(def.rarity, targetLevel),
+      fuelNeeded: maxed ? 0 : ENHANCE_FUEL_COUNT,
+      fuelOwned: freeFuelUids(uid, item.defId).length,
+      maxed,
+    };
+  }
+
+  /**
+   * ★ SE-T1c 强化装备：升一级，花 KP（走唯一货币出口 profile.spend）+ 吃 1 件同 defId 游离燃料。
+   * 先校验后扣（原子）：满级 / KP 不足 / 燃料不足 / 未登录 / 未知 uid 一律拒绝且不变更任何状态。
+   * 正在装备中的实例、被强化件自身不可当燃料（freeFuelUids 已排除）。
+   * 返回是否成功。
+   */
+  function enhanceItem(uid: string): boolean {
+    const profile = useProfileStore();
+    if (!profile.isLoggedIn) return false;
+
+    const item = getItem(uid);
+    if (!item) return false;
+    const def = getEquipmentDef(item.defId);
+    if (!def) return false;
+
+    const currentLevel = clampEnhance(item.enhance);
+    if (currentLevel >= MAX_ENHANCE) {
+      profile.addLog(`${def.name} 已强化到满级（Lv.${MAX_ENHANCE}）。`, 'info');
+      return false;
+    }
+
+    const targetLevel = currentLevel + 1;
+    const kpCost = enhanceKpCost(def.rarity, targetLevel);
+    const fuel = freeFuelUids(uid, item.defId);
+    if (fuel.length < ENHANCE_FUEL_COUNT) {
+      profile.addLog(`强化 ${def.name} 需要 ${ENHANCE_FUEL_COUNT} 件相同的空闲装备作燃料。`, 'warning');
+      return false;
+    }
+    if (profile.core.knowledgePoints < kpCost) {
+      profile.addLog(`强化 ${def.name} 到 Lv.${targetLevel} 需要 ${kpCost} 知识点，余额不足。`, 'warning');
+      return false;
+    }
+
+    // 校验全通过 → 扣 KP（唯一货币出口）+ 消耗燃料 + 升级
+    if (!profile.spend('knowledgePoints', kpCost)) return false; // 双保险：并发/竞态防负
+    const fuelUid = fuel[0];
+    inventory.value = inventory.value.filter(it => it.uid !== fuelUid);
+    // 直接改被强化实例的 enhance（inventory 里的对象引用）
+    const target = getItem(uid);
+    if (target) target.enhance = targetLevel;
+    profile.addLog(`强化 [${def.rarity}] ${def.name} → Lv.${targetLevel}（消耗 1 件同款 + ${kpCost} 知识点）。`, 'success');
     return true;
   }
 
@@ -135,19 +236,49 @@ export const useEquipmentStore = defineStore('equipment', () => {
 
   /**
    * 解析某角色三槽装备的合并五维加成（缺省维 0）。
-   * store 查表（uid→defId→def→bonus），委托 engine sumStatBonus 求和。
+   * store 查表（uid→defId→def→bonus），SE-T1 求和前逐件套用 enhancedBonus(def.bonus, item.enhance)
+   * （强化增益经此唯一 seam 进战力，与配装弹窗预览/候选展示同源），再委托 engine sumStatBonus 求和。
+   * ★ SE-T2：逐件求和后**追加套装加成** setBonusFor(三槽 defId)——套装是「装备整体」确定性五维加法附加项，
+   *   **不套 enhancedBonus**（不随强化涨、与 SE-T1 正交），一并 sumStatBonus。这一处改完，实战/养成详情/
+   *   家园 explore 三个消费点自动生效（EquipPickerModal 换装预览另需同源调 setBonusFor，见该组件）。
+   *   0 套装件时 setBonusFor 返回全 0，与 SE-T2 前逐字节一致（既有断言不受影响）。
    */
   function resolveEquipBonus(charId: number): StatBonus {
     const slots = equipped.value[charId];
     if (!slots) return sumStatBonus([]);
-    const bonuses = (['weapon', 'armor', 'supporter'] as EquipmentSlot[])
+    const items = (['weapon', 'armor', 'supporter'] as EquipmentSlot[])
+      .map(slot => slots[slot])
+      .filter((uid): uid is string => uid != null)
+      .map(uid => getItem(uid))
+      .filter((it): it is EquipmentItemSave => it != null);
+    const bonuses = items
+      .map(it => {
+        const def = getEquipmentDef(it.defId);
+        return def ? enhancedBonus(def.bonus, it.enhance) : null;
+      })
+      .filter((b): b is NonNullable<typeof b> => b != null);
+    // 套装加成：单角色三槽已装 defId 计数 → 确定性五维（不套 enhancedBonus，恒定）
+    const setBonus = setBonusFor(items.map(it => it.defId));
+    return sumStatBonus([...bonuses, setBonus]);
+  }
+
+  /**
+   * ★ SE-T3 解析某角色三槽装备的战斗 modifier（暴击/增伤/治疗/护盾），逐维求和后同类硬 clamp。
+   * 与 resolveEquipBonus 是**两条独立 seam**：本函数**绝不套 enhancedBonus**——modifier 恒定不随强化涨。
+   * 只返回有值（>0）的维（供 View seam 展开进 player 侧 SquadUnitSetup.modifiers，敌方不给）；
+   * critRate 增量由 createRuntimeUnit spread 叠在 BASE_CRIT_RATE 之上（本函数不含 BASE，只返装备增量）。
+   */
+  function resolveEquipModifiers(charId: number): EquipModifier {
+    const slots = equipped.value[charId];
+    if (!slots) return {};
+    const modifiers = (['weapon', 'armor', 'supporter'] as EquipmentSlot[])
       .map(slot => slots[slot])
       .filter((uid): uid is string => uid != null)
       .map(uid => getItem(uid))
       .filter((it): it is EquipmentItemSave => it != null)
-      .map(it => getEquipmentDef(it.defId)?.bonus)
-      .filter((b): b is NonNullable<typeof b> => b != null);
-    return sumStatBonus(bonuses);
+      .map(it => getEquipmentDef(it.defId)?.modifier)
+      .filter((m): m is EquipModifier => m != null);
+    return sumEquipModifiers(modifiers);
   }
 
   /** 解析某角色三槽装备的家园效果（经验/好感/KP 倍率 + 舒适度）。 */
@@ -167,7 +298,8 @@ export const useEquipmentStore = defineStore('equipment', () => {
   // --- 持久化装配 ---
   function serialize(): EquipmentSave {
     return {
-      inventory: inventory.value.map(it => ({ ...it })),
+      // v18：白名单重建 {uid, defId, enhance}（禁 spread 漏进脏字段，Scout C-1 / pitfalls S13-C1）。
+      inventory: inventory.value.map(it => ({ uid: it.uid, defId: it.defId, enhance: clampEnhance(it.enhance) })),
       equipped: Object.fromEntries(
         Object.entries(equipped.value).map(([id, slots]) => [id, { ...slots }]),
       ),
@@ -176,7 +308,8 @@ export const useEquipmentStore = defineStore('equipment', () => {
 
   function deserialize(data: EquipmentSave): void {
     // 二次兜底：把运行期 equip() 的不变式（在库 + 单件单戴 + 同槽）收口到载入边界，对齐迁移层与家园 canonicalize。
-    inventory.value = data.inventory.map(it => ({ ...it }));
+    // v18：白名单重建带 enhance（clamp [0,MAX]），杜绝脏字段/越界等级放大战力。
+    inventory.value = data.inventory.map(it => ({ uid: it.uid, defId: it.defId, enhance: clampEnhance(it.enhance) }));
     equipped.value = sanitizeEquipped(inventory.value, data.equipped);
   }
 
@@ -195,9 +328,12 @@ export const useEquipmentStore = defineStore('equipment', () => {
     findEquippedBy,
     addItem,
     dismantleItem,
+    getEnhanceCost,
+    enhanceItem,
     equip,
     unequip,
     resolveEquipBonus,
+    resolveEquipModifiers,
     resolveHomeEffect,
     serialize,
     deserialize,

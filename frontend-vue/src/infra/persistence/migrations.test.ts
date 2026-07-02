@@ -5,6 +5,7 @@
 import { describe, it, expect } from 'vitest';
 import { migrate } from './migrations';
 import { SAVE_VERSION, createDefaultDaily, createDefaultEquipment, createDefaultFacility, createDefaultHomestead, createDefaultMiniGames, createDefaultPresetSquads, createDefaultTowerProgress } from './schema';
+import { getEquipmentDef, enhancedBonus, MAX_ENHANCE } from '@/config/equipment';
 
 /** 模拟 S5 之前服务器上的真实 v1 存档形态。 */
 function buildV1Payload() {
@@ -296,7 +297,7 @@ describe('v14 装备域迁移', () => {
         equipped: { 12393: { weapon: 'a', armor: null, supporter: null }, bad: { weapon: 'x' } },
       },
     } as unknown);
-    expect(out.equipment.inventory).toEqual([{ uid: 'a', defId: 'wpn_ur_longinus' }]);
+    expect(out.equipment.inventory).toEqual([{ uid: 'a', defId: 'wpn_ur_longinus', enhance: 0 }]);
     expect(out.equipment.equipped[12393]).toEqual({ weapon: 'a', armor: null, supporter: null });
   });
 
@@ -339,7 +340,7 @@ describe('v14 装备域迁移', () => {
       },
     } as unknown);
     // 背包去重留首条（武器）
-    expect(out.equipment.inventory).toEqual([{ uid: 'X', defId: 'wpn_ur_longinus' }]);
+    expect(out.equipment.inventory).toEqual([{ uid: 'X', defId: 'wpn_ur_longinus', enhance: 0 }]);
     // 'X' 实为武器（首条）→ 放进 armor 槽按首条 def.slot 校验被拒，不再让校验按防具过、加成按武器生效
     expect(out.equipment.equipped[1].armor).toBeNull();
   });
@@ -359,6 +360,87 @@ describe('v14 装备域迁移', () => {
   it('equipment 局部损坏按字段补默认', () => {
     const out = migrate({ version: 14, equipment: { inventory: 'oops', equipped: 'nope' } } as unknown);
     expect(out.equipment).toEqual({ inventory: [], equipped: {} });
+  });
+});
+
+describe('v18 装备强化字段迁移（SE-T1a）', () => {
+  it('v17 旧档实例（{uid,defId} 无 enhance）→ 迁移后补 enhance:0', () => {
+    const out = migrate({
+      version: 17,
+      equipment: {
+        inventory: [{ uid: 'a', defId: 'wpn_ur_longinus' }, { uid: 'b', defId: 'arm_r_uniform' }],
+        equipped: { 12393: { weapon: 'a', armor: 'b', supporter: null } },
+      },
+    } as unknown);
+    expect(out.equipment.inventory).toEqual([
+      { uid: 'a', defId: 'wpn_ur_longinus', enhance: 0 },
+      { uid: 'b', defId: 'arm_r_uniform', enhance: 0 },
+    ]);
+  });
+
+  it('★ 强化前战力不变：v17 旧档补 enhance:0 后增益恒等于静态 def.bonus（enhance:0 增益为 0）', () => {
+    const out = migrate({
+      version: 17,
+      equipment: {
+        inventory: [{ uid: 'a', defId: 'wpn_ur_longinus' }],
+        equipped: { 1: { weapon: 'a', armor: null, supporter: null } },
+      },
+    } as unknown);
+    const item = out.equipment.inventory[0];
+    expect(item.enhance).toBe(0);
+    // enhance:0 经强化增益纯函数恒等返回静态值 → 迁移前后战力不变
+    const def = getEquipmentDef(item.defId)!;
+    expect(enhancedBonus(def.bonus, item.enhance)).toEqual(def.bonus);
+  });
+
+  it('★ 新档带 enhance 往返保真（合法级原样保留）', () => {
+    const saved = {
+      version: 18,
+      equipment: {
+        inventory: [{ uid: 'a', defId: 'wpn_ur_longinus', enhance: 3 }, { uid: 'b', defId: 'arm_r_uniform', enhance: MAX_ENHANCE }],
+        equipped: { 1: { weapon: 'a', armor: 'b', supporter: null } },
+      },
+    };
+    const out = migrate(saved as unknown);
+    expect(out.equipment.inventory).toEqual([
+      { uid: 'a', defId: 'wpn_ur_longinus', enhance: 3 },
+      { uid: 'b', defId: 'arm_r_uniform', enhance: MAX_ENHANCE },
+    ]);
+    // 再过一次迁移（模拟存→读往返）仍一致
+    const roundTrip = migrate(out as unknown);
+    expect(roundTrip.equipment.inventory).toEqual(out.equipment.inventory);
+  });
+
+  it('脏档 enhance clamp 到 [0, MAX_ENHANCE]（99→MAX、负数→0、非数→0）', () => {
+    const out = migrate({
+      version: 18,
+      equipment: {
+        inventory: [
+          { uid: 'a', defId: 'wpn_ur_longinus', enhance: 99 },
+          { uid: 'b', defId: 'arm_r_uniform', enhance: -4 },
+          { uid: 'c', defId: 'sup_r_glowstick', enhance: 'oops' },
+        ],
+        equipped: {},
+      },
+    } as unknown);
+    expect(out.equipment.inventory).toEqual([
+      { uid: 'a', defId: 'wpn_ur_longinus', enhance: MAX_ENHANCE },
+      { uid: 'b', defId: 'arm_r_uniform', enhance: 0 },
+      { uid: 'c', defId: 'sup_r_glowstick', enhance: 0 },
+    ]);
+  });
+
+  it('白名单重建：脏字段不带进迁移结果（只保留 uid/defId/enhance）', () => {
+    const out = migrate({
+      version: 18,
+      equipment: {
+        inventory: [{ uid: 'a', defId: 'wpn_ur_longinus', enhance: 2, junk: 'x', level: 999 }],
+        equipped: {},
+      },
+    } as unknown);
+    expect(out.equipment.inventory[0]).toEqual({ uid: 'a', defId: 'wpn_ur_longinus', enhance: 2 });
+    expect(out.equipment.inventory[0]).not.toHaveProperty('junk');
+    expect(out.equipment.inventory[0]).not.toHaveProperty('level');
   });
 });
 

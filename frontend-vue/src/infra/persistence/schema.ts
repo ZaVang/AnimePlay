@@ -27,6 +27,10 @@
  * v17（S14-D SD-T1/SD-T5）：新增 facility 域——三设施等级（exp 训练区 / bond 休息区 / knowledge 资料室）。
  *   设施用 KP 可升级（profile.spend），每级 +8% 对应产出乘区、封顶随总级数抬升、成本指数递增无硬上限
  *   （= 无底 KP sink 主体）。独立于 homestead 域（单一职责）。旧档迁移全设施补 Lv.1（+0%），杜绝挂机归零回归。
+ * v18（S14-E SE-T1）：EquipmentItemSave 加 enhance（强化等级 0..MAX_ENHANCE，缺省 0）——装备毕业曲线从「拿到即满」
+ *   拉长为「拿到 → KP+燃料强化到满」。每级按比例抬升该实例五维加成（config/equipment.ts enhancedBonus，
+ *   经既有 resolveEquipBonus 单一 seam 进战力）。旧档实例补 enhance:0、clamp [0,MAX_ENHANCE]（脏档防放大）。
+ *   本 Sprint 唯一存档变更。
  */
 import type { PityState } from '@/engine/gacha/draw';
 import { defaultFacilityLevels } from '@/config/homestead';
@@ -41,7 +45,7 @@ import type {
   TowerProgress,
 } from '@/types/player';
 
-export const SAVE_VERSION = 17 as const;
+export const SAVE_VERSION = 18 as const;
 
 /** 商店单品的当日购买记录（跨天读取时自动视为 0）。 */
 export interface ShopPurchaseRecord {
@@ -150,6 +154,11 @@ export interface HomesteadSave {
 export interface EquipmentItemSave {
   uid: string;
   defId: string;
+  /**
+   * ★ v18（SE-T1）：强化等级（0..MAX_ENHANCE）。缺省 0 = 未强化（数值恒等 def 静态值）。
+   * 每级按 config/equipment.ts enhancedBonus 比例抬升该实例五维加成，经 resolveEquipBonus 单一 seam 进战力。
+   */
+  enhance: number;
 }
 
 export interface EquippedSlots {
