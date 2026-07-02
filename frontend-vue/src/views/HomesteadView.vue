@@ -20,11 +20,14 @@ import { chibiImageSrc, fullImageSrc, spriteSheetSrc } from '@/utils/cardImage';
 import {
   computeIdleYield,
   comfortBonusPct,
+  offlineCapHours,
   IDLE_SETTLE_MODAL_MIN_HOURS,
   type FacilityKey,
   type IdleYield,
 } from '@/config/homestead';
 import { useFacilityStore } from '@/stores/facility';
+import { useDailyStore } from '@/stores/daily';
+import { COMMISSIONS, COMMISSION_BONUS_REWARDS } from '@/config/dailyTasks';
 import { formatHomeEffect, sumHomeEffects, SLOT_ORDER } from '@/config/equipment';
 import type { CharacterCard } from '@/types/card';
 import CardDetailModal from '@/components/CardDetailModal.vue';
@@ -38,6 +41,7 @@ const homestead = useHomesteadStore();
 const collection = useCollectionStore();
 const equipmentStore = useEquipmentStore();
 const facilityStore = useFacilityStore();
+const daily = useDailyStore();
 
 // --- sprite 表规格（与 codex 产出一致：3 列行走帧 × 4 行朝向，格 48×64）---
 type Dir = 'down' | 'up' | 'left' | 'right';
@@ -193,6 +197,37 @@ const hourlyYield = computed(() =>
   computeIdleYield(placedCards.value.map(c => c.rarity), 3600_000, homeEffect.value, facilityLevels.value),
 );
 
+// ── SF-T3 驻留低频定时结算：60s 刷「自上次结算起预计累积」预览 + 封顶进度条（只刷预览、绝不 settle）──
+const nowTick = ref(Date.now());
+let idleTimer = 0;
+
+/** 自上次结算起已流逝毫秒（首次 lastSettleAt=0 未建基线 → 显 0，别拿 now-0 算天量）。 */
+const elapsedMs = computed(() => {
+  if (homestead.lastSettleAt <= 0) return 0;
+  return Math.max(0, nowTick.value - homestead.lastSettleAt);
+});
+
+/**
+ * 预计累积预览：复用 computeIdleYield（喂同一 facilityLevels，与 settleHomestead 同源，防「预览≠实战」）。
+ * 只读展示，不落地、不调 settleHomestead。
+ */
+const projectedYield = computed<IdleYield>(() =>
+  computeIdleYield(placedCards.value.map(c => c.rarity), elapsedMs.value, homeEffect.value, facilityLevels.value),
+);
+
+/** 有效离线封顶小时数（随设施总级数抬升，与结算同口径）。 */
+const capHours = computed(() => offlineCapHours(facilityLevels.value));
+
+/** 封顶进度 [0,1]：min(1, 已累积有效小时 / 封顶小时)。首次未建基线 → 0。 */
+const capProgress = computed(() => {
+  if (capHours.value <= 0) return 0;
+  const rawHours = elapsedMs.value / 3600_000;
+  return Math.min(1, rawHours / capHours.value);
+});
+
+/** 是否已达封顶（满封顶显式提示「回来收取」）。 */
+const capReached = computed(() => homestead.lastSettleAt > 0 && capProgress.value >= 1);
+
 /** 升级后（该设施 +1 级）的每小时产出预览：与结算同函数、同口径。 */
 function nextHourlyYield(key: FacilityKey) {
   const lv = { ...facilityLevels.value, [key]: facilityLevels.value[key] + 1 };
@@ -263,6 +298,46 @@ const residentRows = computed(() =>
 
 function pctText(v: number): string {
   return v > 0 ? `+${Math.round(v * 100)}%` : '基础';
+}
+
+// --- SF-T8 家园日常委托（清单勾选式，非横条；埋点在 userStore 门面，此处只读+领取） ---
+const commissionRows = computed(() =>
+  COMMISSIONS.map(def => ({
+    id: def.id,
+    title: def.title,
+    description: def.description,
+    reward: def.rewards.map(r => `+${r.amount} 知识点`).join(' '),
+    complete: daily.isCommissionComplete(def.id),
+    claimed: daily.isCommissionClaimed(def.id),
+    claimable: daily.isCommissionComplete(def.id) && !daily.isCommissionClaimed(def.id),
+  })),
+);
+/** 已完成条数 X / 总条数 N（home 第一屏可见的摘要 cue）。 */
+const commissionDoneCount = computed(() => commissionRows.value.filter(r => r.complete).length);
+const commissionTotal = computed(() => commissionRows.value.length);
+const allCommissionsDone = computed(() => daily.allCommissionsDone);
+const commissionBonusClaimed = computed(() => daily.isCommissionBonusClaimed());
+const commissionBonusText = COMMISSION_BONUS_REWARDS.map(r => `+${r.amount} 知识点`).join(' ');
+
+const commissionFloat = ref<string | null>(null);
+const commissionTimers: ReturnType<typeof setTimeout>[] = [];
+function scheduleCommissionClear(fn: () => void, ms: number) {
+  const t = setTimeout(() => {
+    commissionTimers.splice(commissionTimers.indexOf(t), 1);
+    fn();
+  }, ms);
+  commissionTimers.push(t);
+}
+
+function onClaimCommission(id: string) {
+  userStore.claimCommission(id);
+}
+function onClaimCommissionBonus() {
+  userStore.claimCommissionBonus();
+  if (daily.isCommissionBonusClaimed()) {
+    commissionFloat.value = `今日全清 ${commissionBonusText}`;
+    scheduleCommissionClear(() => { commissionFloat.value = null; }, 1800);
+  }
 }
 
 /** 静态兜底图三级链：chibi（缺）→ 原立绘（缺）→ 隐藏。带 guard 防 onerror 死循环。 */
@@ -404,8 +479,18 @@ onMounted(() => {
   runSettle();   // 进家园结算一次离线收益（按 lastSettleAt 虚拟累积）
   buildPets();
   raf = requestAnimationFrame(tick);
+  // SF-T3：60s 低频刷预览（只更新 nowTick 触发 projectedYield/capProgress 重算，不 settle）。
+  nowTick.value = Date.now();
+  idleTimer = window.setInterval(() => { nowTick.value = Date.now(); }, 60_000);
 });
-onUnmounted(() => cancelAnimationFrame(raf));
+// SF-T3 命门：rAF 与 setInterval 在同一 onUnmounted 一并清除，无泄漏。
+// SF-T8：委托全清 bonus 飘字 setTimeout 也在此登记清除（pitfalls 明令）。
+onUnmounted(() => {
+  cancelAnimationFrame(raf);
+  clearInterval(idleTimer);
+  commissionTimers.forEach(clearTimeout);
+  commissionTimers.length = 0;
+});
 </script>
 
 <template>
@@ -476,6 +561,68 @@ onUnmounted(() => cancelAnimationFrame(raf));
         <div class="kp-strip">
           <span class="ops-kicker">可用知识点</span>
           <strong>{{ knowledgePoints }} KP</strong>
+        </div>
+
+        <!-- SF-T3：驻留时实时可见的「预计累积」+ 封顶进度条（60s 刷新，只预览不结算） -->
+        <div class="ops-card idle-card" aria-label="预计挂机累积">
+          <div class="idle-head">
+            <span class="ops-kicker">待收挂机收益</span>
+            <span class="idle-hours">{{ projectedYield.hours.toFixed(1) }}h / 上限 {{ capHours.toFixed(1) }}h</span>
+          </div>
+          <ul class="idle-list">
+            <li><span>经验</span><b>+{{ projectedYield.expEach }}</b></li>
+            <li><span>好感</span><b>+{{ projectedYield.affectionEach }}</b></li>
+            <li><span>知识点</span><b>+{{ projectedYield.knowledge }}</b></li>
+          </ul>
+          <div class="idle-bar" role="progressbar" :aria-valuenow="Math.round(capProgress * 100)" aria-valuemin="0" aria-valuemax="100">
+            <div class="idle-bar-fill" :class="capReached ? 'is-full' : 'is-growing'" :style="{ width: `${capProgress * 100}%` }"></div>
+          </div>
+          <small v-if="capReached" class="idle-cap-note">已达上限，回来收取吧</small>
+          <small v-else-if="homestead.lastSettleAt <= 0" class="idle-cap-hint">入住角色后开始累积</small>
+          <small v-else class="idle-cap-hint">离开再回来即可收取当前累积</small>
+        </div>
+
+        <!-- SF-T8：家园日常委托（清单勾选式，与 SF-T3 横条区分）。收挂机/爬塔/强化都在 hub 内闭环。 -->
+        <div class="ops-card commission-card" aria-label="家园日常委托">
+          <div class="commission-head">
+            <span class="ops-kicker">今日委托</span>
+            <span class="commission-badge" :class="{ 'is-done': allCommissionsDone }">{{ commissionDoneCount }}/{{ commissionTotal }}</span>
+          </div>
+          <ul class="commission-list">
+            <li v-for="row in commissionRows" :key="row.id" class="commission-row" :class="{ 'is-complete': row.complete }">
+              <span class="commission-check" aria-hidden="true">{{ row.complete ? '✓' : '○' }}</span>
+              <span class="commission-body">
+                <span class="commission-title">{{ row.title }}</span>
+                <span class="commission-reward">{{ row.reward }}</span>
+              </span>
+              <button
+                v-if="row.claimable"
+                type="button"
+                class="btn-primary commission-claim"
+                @click="onClaimCommission(row.id)"
+              >
+                领取
+              </button>
+              <span v-else-if="row.claimed" class="commission-state claimed">已领</span>
+              <span v-else class="commission-state pending">{{ row.description }}</span>
+            </li>
+          </ul>
+          <div class="commission-bonus">
+            <span class="commission-bonus-label">今日全清 · {{ commissionBonusText }}</span>
+            <button
+              v-if="allCommissionsDone && !commissionBonusClaimed"
+              type="button"
+              class="btn-primary commission-bonus-btn"
+              @click="onClaimCommissionBonus"
+            >
+              领全清
+            </button>
+            <span v-else-if="commissionBonusClaimed" class="commission-state claimed">已领</span>
+            <span v-else class="commission-state pending">清完 3 条解锁</span>
+          </div>
+          <transition name="commission-float">
+            <span v-if="commissionFloat" class="commission-float">{{ commissionFloat }}</span>
+          </transition>
         </div>
 
         <div class="facility-grid" aria-label="设施升级">
@@ -572,6 +719,58 @@ onUnmounted(() => cancelAnimationFrame(raf));
   background: rgb(var(--c-elevated) / .6);
 }
 .kp-strip strong { font-size: 1.05rem; font-weight: 800; color: rgb(var(--c-accent)); }
+/* SF-T3 待收挂机收益卡 + 封顶进度条（语义令牌，无 text-white） */
+.idle-card { gap: .5rem; }
+.idle-head { display: flex; align-items: baseline; justify-content: space-between; gap: .5rem; }
+.idle-hours { font-size: .72rem; font-weight: 700; color: rgb(var(--c-ink-2)); }
+.idle-list { display: flex; gap: 1rem; margin: 0; padding: 0; list-style: none; }
+.idle-list li { display: flex; flex-direction: column; gap: .1rem; }
+.idle-list li span { font-size: .68rem; color: rgb(var(--c-ink-3)); }
+.idle-list li b { font-size: 1rem; font-weight: 800; color: rgb(var(--c-ink)); }
+.idle-bar { width: 100%; height: 8px; border-radius: 999px; overflow: hidden; background: rgb(var(--c-elevated) / .8); }
+.idle-bar-fill { height: 100%; border-radius: 999px; transition: width .5s ease; }
+.idle-bar-fill.is-growing { background: rgb(var(--c-success)); }
+.idle-bar-fill.is-full { background: rgb(var(--c-warning)); }
+.idle-cap-note { color: rgb(var(--c-warning)) !important; font-weight: 700; }
+.idle-cap-hint { color: rgb(var(--c-ink-3)); }
+/* SF-T8 家园委托（清单勾选，语义令牌，无 text-white / 动态色类） */
+.commission-card { gap: .55rem; position: relative; }
+.commission-head { display: flex; align-items: center; justify-content: space-between; gap: .5rem; }
+.commission-badge {
+  flex: 0 0 auto; padding: .12rem .5rem; border-radius: 6px; font-size: .72rem; font-weight: 800;
+  background: rgb(var(--c-elevated) / .8); color: rgb(var(--c-ink-2)); border: 1px solid rgb(var(--c-line));
+  transition: color .3s ease, background .3s ease;
+}
+.commission-badge.is-done { background: rgb(var(--c-success) / .18); color: rgb(var(--c-success)); }
+.commission-list { display: flex; flex-direction: column; gap: .4rem; margin: 0; padding: 0; list-style: none; }
+.commission-row { display: flex; align-items: center; gap: .55rem; }
+.commission-check {
+  flex: 0 0 auto; width: 1.1rem; text-align: center; font-weight: 800; font-size: .95rem;
+  color: rgb(var(--c-ink-3)); transition: color .3s ease;
+}
+.commission-row.is-complete .commission-check { color: rgb(var(--c-success)); }
+.commission-body { display: flex; flex-direction: column; gap: .05rem; min-width: 0; flex: 1 1 auto; }
+.commission-title { font-size: .82rem; font-weight: 700; color: rgb(var(--c-ink)); }
+.commission-reward { font-size: .68rem; color: rgb(var(--c-ink-3)); }
+.commission-claim { flex: 0 0 auto; font-size: .72rem; padding: .22rem .7rem; }
+.commission-bonus-btn { flex: 0 0 auto; font-size: .72rem; padding: .22rem .7rem; }
+.commission-state { flex: 0 0 auto; font-size: .7rem; }
+.commission-state.claimed { color: rgb(var(--c-success)); font-weight: 700; }
+.commission-state.pending { color: rgb(var(--c-ink-3)); max-width: 9rem; text-align: right; line-height: 1.2; }
+.commission-bonus {
+  display: flex; align-items: center; justify-content: space-between; gap: .5rem;
+  margin-top: .1rem; padding-top: .5rem; border-top: 1px dashed rgb(var(--c-line));
+}
+.commission-bonus-label { font-size: .74rem; font-weight: 700; color: rgb(var(--c-highlight)); }
+.commission-float {
+  position: absolute; top: .5rem; right: .9rem; padding: .2rem .55rem; border-radius: 6px;
+  background: rgb(var(--c-success) / .16); color: rgb(var(--c-success)); font-size: .74rem; font-weight: 800;
+  pointer-events: none;
+}
+.commission-float-enter-active { transition: opacity .3s ease, transform .3s ease; }
+.commission-float-leave-active { transition: opacity .6s ease, transform .6s ease; }
+.commission-float-enter-from { opacity: 0; transform: translateY(6px); }
+.commission-float-leave-to { opacity: 0; transform: translateY(-8px); }
 .facility-card { min-height: auto; gap: .35rem; }
 .facility-head { display: flex; align-items: center; justify-content: space-between; gap: .5rem; }
 .facility-lv {

@@ -431,6 +431,14 @@ export const useUserStore = defineStore('user', () => {
       return empty;
     }
 
+    // ★ SF-T6 墙钟回拨钳位（放首次基线判定之后）：改系统时间/lastSettleAt 停在未来时，
+    // now < lastSettleAt → 本次记 0 收益 + 把 lastSettleAt 夹到 now，避免负时长喂进 computeIdleYield，
+    // 也避免「未来基线」吞掉后续正常时间。廉价卫生级（单机向），不做权威时间/每日封顶。
+    if (now < homestead.lastSettleAt) {
+      homestead.setLastSettleAt(now);
+      return empty;
+    }
+
     const gameData = useGameDataStore();
     const rarities = placed
       .map(id => gameData.getCharacterCardById(id)?.rarity)
@@ -453,6 +461,9 @@ export const useUserStore = defineStore('user', () => {
       `家园挂机 ${result.hours.toFixed(1)}h：全员 +${result.expEach} 经验 / +${result.affectionEach} 好感，合计 +${result.knowledge} 知识点`,
       'success',
     );
+    // SF-T8 委托守卫①：只有真发放收益（越过全 0 早退）才推进 idle 委托——
+    // 绝不用 hours>0（首次基线 / 回拨钳位 / 0 入住空结算都可能 hours 存在但产出 0，会反复刷委托）。
+    useDailyStore().markCommission('idle', 1);
     saveToServer();
     return result;
   }
@@ -627,6 +638,14 @@ export const useUserStore = defineStore('user', () => {
       if (useDailyStore().claimWeekly(taskId)) saveToServer();
     },
 
+    // daily（SF-T8）：领取家园委托奖励 / 今日全清 bonus（成功才存档；仿 claimDailyTask）
+    claimCommission: (id: string) => {
+      if (useDailyStore().claimCommission(id)) saveToServer();
+    },
+    claimCommissionBonus: () => {
+      if (useDailyStore().claimCommissionBonus()) saveToServer();
+    },
+
     // equipment（S13-C2）：知识点定向兑换装备（成功才入库 + 存档）
     purchaseEquipment,
     // equipment（S13-C2）：配装/卸下（成功才存档；查询直通 store）
@@ -653,7 +672,11 @@ export const useUserStore = defineStore('user', () => {
     enhanceEquipment: (uid: string) => {
       if (!profile.isLoggedIn) return false;
       const ok = useEquipmentStore().enhanceItem(uid);
-      if (ok) saveToServer();
+      if (ok) {
+        // SF-T8：强化成功才推进 enhance 委托（用返回值守卫，满级/不足不记）。
+        useDailyStore().markCommission('enhance', 1);
+        saveToServer();
+      }
       return ok;
     },
     // codex（evolution-2）：图鉴定向解锁（花知识点入库一张心仪卡）
@@ -688,6 +711,17 @@ export const useUserStore = defineStore('user', () => {
         return true;
       }
       return false;
+    },
+    // ★ SF-T2 批量补习门面：整批只存一次档，daily 传批量份数（逐份扣费在 store 内完成）。
+    tutorCharacterBatch: (characterId: number, mode: 'times' | 'toNextLevel', maxTimes?: number) => {
+      const result = nurture.tutorCharacterBatch(characterId, mode, maxTimes);
+      if (result.times > 0) {
+        useDailyStore().markProgress('nurture', result.times);
+        const isMaxLevel = (nurture.getNurtureData(characterId)?.level ?? 0) >= MAX_CHARACTER_LEVEL;
+        useAchievementsStore().check('nurture', { characterMaxLevel: isMaxLevel });
+        saveToServer();
+      }
+      return result;
     },
     claimBondMilestone: (characterId: number, milestoneId: string) => {
       if (nurture.claimBondMilestone(characterId, milestoneId)) {
@@ -734,6 +768,8 @@ export const useUserStore = defineStore('user', () => {
       if (pve.completeFloor(floor)) {
         // 留存埋点（evolution-1）：爬塔通层成就（用返回值守卫，floor 不匹配不记）
         useAchievementsStore().check('tower', { floor });
+        // SF-T8 委托守卫②-a：通层推进 tower 委托（绝不复用 battleWin，那是宅理论战计数语义污染）。
+        useDailyStore().markCommission('tower', 1);
         // S13-C2：通层装备掉落（50% + 层段稀有度 + 随机槽，命中入库），回传掉落件供结算面板展示
         const drop = rollFloorDrop(floor, rng);
         saveToServer();
@@ -756,6 +792,9 @@ export const useUserStore = defineStore('user', () => {
         for (const memberId of pve.getSquadMembers(squadId)) {
           if (memberId != null) nurture.addCharacterExp(memberId, outcome.reward.sweepCharacterExp);
         }
+        // SF-T8 委托守卫②-b：扫荡也推进 tower 委托——毕业玩家（塔顶 completeFloor 返 false）靠扫荡完成，
+        // 否则全清 bonus 卡死。与 completeFloor 同埋一类 kind='tower'。
+        useDailyStore().markCommission('tower', 1);
         saveToServer();
       }
       return outcome;

@@ -87,6 +87,8 @@ function migrateTowerProgress(raw: any) {
 /**
  * v6：每日任务/登录，字段级缺省兜底（缺失/损坏 → createDefaultDaily()）。
  * v7：补 weekDate/weeklyProgress/weeklyClaimed/loginStreak（旧 v6 档无此四字段 → 缺省）。
+ * v19：补 commissionDate/commissionProgress/commissionClaimed（旧档无此三字段 → 缺省）。
+ * 白名单重建（禁 spread，pitfalls S13-C1）——只保留 schema 已知字段。
  */
 function migrateDaily(raw: any): DailySave {
   const defaults = createDefaultDaily();
@@ -102,6 +104,13 @@ function migrateDaily(raw: any): DailySave {
       raw.weeklyProgress && typeof raw.weeklyProgress === 'object' ? raw.weeklyProgress : defaults.weeklyProgress,
     weeklyClaimed: Array.isArray(raw.weeklyClaimed) ? raw.weeklyClaimed : defaults.weeklyClaimed,
     loginStreak: typeof raw.loginStreak === 'number' ? raw.loginStreak : defaults.loginStreak,
+    // v18 → v19：家园日常委托子域（旧档缺 → 缺省，与 weekly 四字段同构）
+    commissionDate: typeof raw.commissionDate === 'string' ? raw.commissionDate : defaults.commissionDate,
+    commissionProgress:
+      raw.commissionProgress && typeof raw.commissionProgress === 'object'
+        ? raw.commissionProgress
+        : defaults.commissionProgress,
+    commissionClaimed: Array.isArray(raw.commissionClaimed) ? raw.commissionClaimed : defaults.commissionClaimed,
   };
 }
 

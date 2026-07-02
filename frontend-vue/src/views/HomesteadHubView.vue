@@ -236,14 +236,18 @@ const squadReadiness = computed<SquadReadinessAssessment | null>(() => {
   return assessSquadReadiness(squadPower(squad.id), preview.floorPower);
 });
 
-/** SC-T5：软提示文案（人话化，含推荐战力 + delta），随三档变化。 */
+/**
+ * SC-T5：软提示文案（人话化，含推荐战力 + delta），随三档变化。
+ * SF-T4-refine：措辞去「（同口径）」黑话；靠「同一把尺衡量」在提示里点一次可比性，敌我数字并排同尺自然传达。
+ */
 const readinessHint = computed<string>(() => {
   const r = squadReadiness.value;
   if (!r) return '';
   const gap = Math.abs(r.delta);
-  if (r.level === 'ready') return `战力 ${r.playerPower} / 建议 ~${r.recommendedPower} · 达标，放心开打`;
-  if (r.level === 'risky') return `战力 ${r.playerPower} / 建议 ~${r.recommendedPower} · 略微吃紧（差 ${gap}），谨慎应战`;
-  return `战力 ${r.playerPower} / 建议 ~${r.recommendedPower} · 差距较大（差 ${gap}），建议先养成或扫荡`;
+  const scale = '（敌我同一把尺衡量）';
+  if (r.level === 'ready') return `战力 ${r.playerPower} / 建议 ~${r.recommendedPower}${scale} · 达标，放心开打`;
+  if (r.level === 'risky') return `战力 ${r.playerPower} / 建议 ~${r.recommendedPower}${scale} · 略微吃紧（差 ${gap}），谨慎应战`;
+  return `战力 ${r.playerPower} / 建议 ~${r.recommendedPower}${scale} · 差距较大（差 ${gap}），建议先养成或扫荡`;
 });
 
 /** 开战被拦时给出的原因（留在 explore 显示，不进战）。 */
@@ -338,13 +342,20 @@ function positionLabel(index: number): string {
         <h1>基地 hub</h1>
         <p>从家园收益、角色养成、5 人编队，到探索挑战塔与横板战斗结算，都在同一个基地入口完成。</p>
       </div>
-      <div class="hub-loop">
+      <!-- SF-T1：非导航「循环示意」——箭头连接读作流程说明（不是可点 tab）。真导航在下方 .hub-tabs。 -->
+      <p class="hub-loop" aria-label="基地循环流程：家园 → 角色 → 编队 → 探索 → 战斗">
         <span>家园</span>
+        <span class="hub-loop-arrow" aria-hidden="true">→</span>
         <span>角色</span>
+        <span class="hub-loop-arrow" aria-hidden="true">→</span>
         <span>编队</span>
+        <span class="hub-loop-arrow" aria-hidden="true">→</span>
         <span>探索</span>
+        <span class="hub-loop-arrow" aria-hidden="true">→</span>
         <span>战斗</span>
-      </div>
+        <span class="hub-loop-arrow" aria-hidden="true">↻</span>
+        <span class="hub-loop-return">回到家园</span>
+      </p>
     </header>
 
     <nav class="hub-tabs" aria-label="基地面板">
@@ -392,6 +403,27 @@ function positionLabel(index: number): string {
 
       <div v-if="!userStore.isLoggedIn" class="hub-empty">请先登录后配置挑战塔小队。</div>
       <div v-else class="squad-layout">
+        <!-- SF-T4：编队页补敌方基准 + 复用 explore 同源三档提示（我方 squadPower 与敌方 floorPower 同调 calculateBattlePower）。 -->
+        <div v-if="enemyPreview" class="squad-baseline">
+          <div class="squad-baseline-nums">
+            <span>
+              <small>我方战力</small>
+              <strong>{{ selectedSquad ? squadPower(selectedSquad.id) : 0 }}</strong>
+            </span>
+            <span class="squad-baseline-vs" aria-hidden="true">vs</span>
+            <span>
+              <small>第 {{ currentFloor }} 层敌方战力</small>
+              <strong>{{ enemyPreview.floorPower }}</strong>
+            </span>
+          </div>
+          <p
+            v-if="squadReadiness"
+            class="readiness-hint"
+            :class="`readiness-${squadReadiness.level}`"
+          >
+            {{ readinessHint }}
+          </p>
+        </div>
         <aside class="squad-picker">
           <div
             v-for="squad in userStore.presetSquads"
@@ -489,7 +521,11 @@ function positionLabel(index: number): string {
               <span class="summary-kicker">敌方阵容</span>
               <h3>{{ enemyPreview.name }}</h3>
             </div>
-            <strong>{{ enemyPreview.floorPower }}</strong>
+            <!-- SF-T4：敌方战力（与我方 squadPower 同调 calculateBattlePower，同一把尺）。 -->
+            <div class="enemy-power">
+              <strong>{{ enemyPreview.floorPower }}</strong>
+              <small>敌方战力</small>
+            </div>
           </div>
           <p>{{ enemyPreview.description }} · {{ enemyPreview.difficulty }}</p>
           <div class="enemy-lineup">
@@ -600,11 +636,12 @@ function positionLabel(index: number): string {
 .hub-eyebrow, .summary-kicker { display: block; font-size: .72rem; font-weight: 800; color: rgb(var(--c-accent)); }
 .hub-hero h1 { margin: .1rem 0; font-size: 2rem; font-weight: 800; color: rgb(var(--c-ink)); }
 .hub-hero p { max-width: 760px; color: rgb(var(--c-ink-2)); font-size: .95rem; }
-.hub-loop { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: .4rem; }
-.hub-loop span {
-  padding: .35rem .55rem; border: 1px solid rgb(var(--c-line)); border-radius: 6px;
-  background: rgb(var(--c-surface) / .72); color: rgb(var(--c-ink-2)); font-size: .78rem; font-weight: 700;
-}
+/* SF-T1：循环示意（非导航）——无卡片/按钮态，纯箭头连接的流程文字，读作「同一入口的循环」。 */
+.hub-loop { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: .3rem; }
+.hub-loop span { color: rgb(var(--c-ink-2)); font-size: .78rem; font-weight: 700; }
+.hub-loop .hub-loop-arrow { color: rgb(var(--c-accent)); font-weight: 800; }
+/* SF-T1-refine：↻ 后补收尾词，让「回环」读得完整（非按钮，斜体轻提示态）。 */
+.hub-loop .hub-loop-return { color: rgb(var(--c-ink-3)); font-weight: 600; font-style: italic; }
 .hub-tabs { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: .55rem; }
 .hub-tab {
   min-height: 76px; padding: .75rem; border: 1px solid rgb(var(--c-line)); border-radius: 8px;
@@ -654,6 +691,16 @@ function positionLabel(index: number): string {
 .skill-row span, .skill-empty { color: rgb(var(--c-ink-2)); font-size: .76rem; line-height: 1.4; }
 .embedded-view { margin-top: 1rem; border-top: 1px solid rgb(var(--c-line)); }
 .squad-layout { display: grid; grid-template-columns: minmax(200px, 260px) minmax(0, 1fr); gap: 1rem; }
+/* SF-T4：编队页敌方基准条（跨双列，同口径战力对比 + 复用 explore 三档提示） */
+.squad-baseline {
+  grid-column: 1 / -1; display: flex; flex-direction: column; gap: .4rem;
+  padding: .75rem 1rem; border: 1px solid rgb(var(--c-line)); border-radius: 8px; background: rgb(var(--c-surface-2) / .78);
+}
+.squad-baseline-nums { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; }
+.squad-baseline-nums > span { display: flex; flex-direction: column; }
+.squad-baseline-nums small { color: rgb(var(--c-ink-2)); font-size: .72rem; }
+.squad-baseline-nums strong { color: rgb(var(--c-highlight)); font-size: 1.35rem; font-weight: 800; }
+.squad-baseline-vs { align-self: flex-end; color: rgb(var(--c-ink-3)); font-size: .85rem; font-weight: 800; padding-bottom: .35rem; }
 .squad-picker { display: grid; align-content: start; gap: .55rem; }
 .squad-select {
   min-height: 86px; padding: .75rem; border: 1px solid rgb(var(--c-line)); border-radius: 8px;
@@ -696,6 +743,9 @@ function positionLabel(index: number): string {
 .enemy-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; }
 .enemy-heading h3 { color: rgb(var(--c-ink)); font-size: 1.25rem; font-weight: 800; }
 .enemy-heading strong { color: rgb(var(--c-highlight)); font-size: 1.4rem; }
+.enemy-power { text-align: right; }
+.enemy-power strong { display: block; }
+.enemy-power small { color: rgb(var(--c-ink-2)); font-size: .72rem; }
 .enemy-preview p { margin: .35rem 0 .85rem; color: rgb(var(--c-ink-2)); font-size: .88rem; }
 .enemy-lineup { display: grid; grid-template-columns: repeat(5, minmax(110px, 1fr)); gap: .65rem; }
 .enemy-card { padding: .55rem; border: 1px solid rgb(var(--c-line)); border-radius: 8px; background: rgb(var(--c-surface-2)); }

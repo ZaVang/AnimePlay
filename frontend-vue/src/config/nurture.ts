@@ -8,8 +8,27 @@
  *  - 好感里程碑：6 档阈值 → 一次性 KP 奖励 + 羁绊称号。
  */
 
-/** 补习：一次花费的知识点（可调）。 */
+/** 补习：一次花费的知识点基线（可调）。低级补习起步价，随等级线性递增（tutoringCost）。 */
 export const TUTORING_KP_COST = 100;
+
+/**
+ * ★ SF-T2 补习成本随角色等级递增（线性缓增，纯函数）：base + level × k。
+ * 修「越高级越便宜」漏洞——旧定额 100/次 让高级补习性价比畸高（产出随级涨、成本不变）。
+ * 关键约束：成本增速须让**单位经验单价随级不降**（守 config 顶部「补习是 KP sink 不是提款机」基线）。
+ *  - 单价 = tutoringCost(lv) / tutoringExpGain(lv)。取 base=100 / k=15：
+ *    Lv.1  → 成本 115  / 经验 420  = 0.274 KP/经验
+ *    Lv.50 → 成本 850  / 经验 1400 = 0.607 KP/经验
+ *    Lv.99 → 成本 1585 / 经验 2380 = 0.666 KP/经验（单价随级单调不降）。
+ * 成本斜率 k(15) > 经验斜率(20)×起步单价 保证单价不降；曲线严格随级递增（测试锁）。
+ */
+export const TUTORING_COST_BASE = 100;
+export const TUTORING_COST_PER_LEVEL = 15;
+
+/** 补习一次的知识点成本（随角色等级递增）。level 钳到 ≥1。 */
+export function tutoringCost(level: number): number {
+  const lv = Math.max(1, Math.floor(level));
+  return TUTORING_COST_BASE + lv * TUTORING_COST_PER_LEVEL;
+}
 
 /**
  * ★ SD-T4 补习产出随等级递增（线性缓增，纯函数）：base + level × k。

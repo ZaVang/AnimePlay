@@ -23,7 +23,7 @@ import {
 } from '@/engine';
 import { useCollectionStore } from './collection';
 import {
-  TUTORING_KP_COST,
+  tutoringCost,
   tutoringExpGain,
   BATTLE_AFFECTION_GAIN,
   BOND_MILESTONES,
@@ -42,6 +42,18 @@ function todayKey(): string {
 
 /** 互动经验：每点好感度 ×5（好感增加联动经验）。 */
 const EXP_PER_AFFECTION = 5;
+
+/** SF-T2 批量补习结果摘要（供门面 daily.markProgress + 一次性汇总飘字/日志）。 */
+export interface TutorBatchResult {
+  /** 实际完成份数（中途余额不足/满级会 < 请求 times）。 */
+  times: number;
+  /** 本批合计花费 KP。 */
+  spentKp: number;
+  /** 本批合计增加经验。 */
+  gainedExp: number;
+  /** 本批提升的等级数（含跨级）。 */
+  levelsGained: number;
+}
 
 /** 缺省 base 五维（角色数据缺 battle_stats 或角色未找到时的兜底，与战力计算 fallback 一致）。 */
 const DEFAULT_BASE_STATS: StatPoints = { hp: 100, atk: 50, def: 30, sp: 40, spd: 60 };
@@ -187,8 +199,23 @@ export const useNurtureStore = defineStore('nurture', () => {
   }
 
   /**
-   * 补习（S13-C1）：花知识点换角色经验（新 KP sink，走唯一货币出口 profile.spend）。
-   * 余额不足 / 未登录 / 已满级返回 false 不变更。
+   * 补习一份（内部原子）：按角色**当前等级**取成本-收益 → spend 成功才 addExp。
+   * 逐份走此函数是 SF-T2「批量逐份扣费守成本递增」的命脉——绝不先算总经验一次灌。
+   * 返回本份是否成功（余额不足 / 满级 → false，不扣钱不给量）。**不播报、不存档**（由调用方汇总）。
+   */
+  function tutorOnce(characterId: number, profile: ReturnType<typeof useProfileStore>): boolean {
+    const nurtureData = getNurtureData(characterId);
+    if (nurtureData.level >= MAX_CHARACTER_LEVEL) return false;
+    const cost = tutoringCost(nurtureData.level);
+    if (!profile.spend('knowledgePoints', cost)) return false;
+    // ★ SD-T4：补习产出随角色等级递增；★ SF-T2：成本也随级递增（tutoringCost）。
+    addCharacterExp(characterId, tutoringExpGain(nurtureData.level));
+    return true;
+  }
+
+  /**
+   * 补习（S13-C1；SF-T2 成本随级递增）：花知识点换角色经验（KP sink，走唯一货币出口 profile.spend）。
+   * 余额不足 / 未登录 / 已满级返回 false 不变更。成本取当前等级 tutoringCost（非旧定额）。
    */
   function tutorCharacter(characterId: number): boolean {
     const profile = useProfileStore();
@@ -199,19 +226,69 @@ export const useNurtureStore = defineStore('nurture', () => {
       profile.addLog('该角色已满级，无需补习。', 'warning');
       return false;
     }
-    if (!profile.spend('knowledgePoints', TUTORING_KP_COST)) {
-      profile.addLog(`补习需要 ${TUTORING_KP_COST} 知识点，余额不足。`, 'warning');
+    const cost = tutoringCost(nurtureData.level);
+    const expGain = tutoringExpGain(nurtureData.level);
+    if (!tutorOnce(characterId, profile)) {
+      profile.addLog(`补习需要 ${cost} 知识点，余额不足。`, 'warning');
       return false;
     }
-
-    // ★ SD-T4：补习产出随角色等级递增（tutoringExpGain 纯函数，量级匹配新曲线）。
-    const expGain = tutoringExpGain(nurtureData.level);
-    addCharacterExp(characterId, expGain);
     const character = useGameDataStore().getCharacterCardById(characterId);
     if (character) {
-      profile.addLog(`为 ${character.name} 补习，消耗 ${TUTORING_KP_COST} 知识点 → +${expGain} 经验。`, 'success');
+      profile.addLog(`为 ${character.name} 补习，消耗 ${cost} 知识点 → +${expGain} 经验。`, 'success');
     }
     return true;
+  }
+
+  /**
+   * ★ SF-T2 批量补习：把补习从「几百次点击」变「一次决策的投资」。
+   * mode='times' 补 maxTimes 份；mode='toNextLevel' 补到升上一级为止（用 maxTimes 兜底防死循环）。
+   * **逐份 tutorOnce（每份按当前 level 取成本-收益）**——严禁先算总经验一次灌逃成本递增。
+   * 中途任一份余额不足 / 满级即停，返回已完成摘要。不存档（门面整批只存一次）。
+   */
+  function tutorCharacterBatch(
+    characterId: number,
+    mode: 'times' | 'toNextLevel',
+    maxTimes = 100,
+  ): TutorBatchResult {
+    const profile = useProfileStore();
+    const empty: TutorBatchResult = { times: 0, spentKp: 0, gainedExp: 0, levelsGained: 0 };
+    if (!profile.isLoggedIn) return empty;
+
+    const nurtureData = getNurtureData(characterId);
+    const startLevel = nurtureData.level;
+    let times = 0;
+    let spentKp = 0;
+    let gainedExp = 0;
+    const cap = Math.max(0, Math.floor(maxTimes));
+
+    for (let i = 0; i < cap; i++) {
+      if (nurtureData.level >= MAX_CHARACTER_LEVEL) break; // 满级停
+      const cost = tutoringCost(nurtureData.level);
+      const expGain = tutoringExpGain(nurtureData.level);
+      if (!tutorOnce(characterId, profile)) break; // 余额不足停（tutorOnce 内已 spend 失败）
+      times++;
+      spentKp += cost;
+      gainedExp += expGain;
+      // 「补到下一级」：一旦本份把等级顶上去就停。
+      if (mode === 'toNextLevel' && nurtureData.level > startLevel) break;
+    }
+
+    const levelsGained = nurtureData.level - startLevel;
+    if (times > 0) {
+      const character = useGameDataStore().getCharacterCardById(characterId);
+      if (character) {
+        const levelText = levelsGained > 0 ? `，升 ${levelsGained} 级` : '';
+        profile.addLog(
+          `为 ${character.name} 批量补习 ${times} 次：合计消耗 ${spentKp} 知识点 → +${gainedExp} 经验${levelText}。`,
+          'success',
+        );
+      }
+    } else if (nurtureData.level >= MAX_CHARACTER_LEVEL) {
+      profile.addLog('该角色已满级，无需补习。', 'warning');
+    } else {
+      profile.addLog(`补习需要 ${tutoringCost(nurtureData.level)} 知识点，余额不足。`, 'warning');
+    }
+    return { times, spentKp, gainedExp, levelsGained };
   }
 
   /**
@@ -359,6 +436,7 @@ export const useNurtureStore = defineStore('nurture', () => {
     getLevelProgress,
     addCharacterExp,
     tutorCharacter,
+    tutorCharacterBatch,
     claimBondMilestone,
     breakthroughCharacter,
     dailyBondInteraction,

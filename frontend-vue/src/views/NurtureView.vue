@@ -19,6 +19,8 @@ import { rarityStyle } from '@/config/equipmentColors';
 import {
   getEquipmentDef,
   formatBonus,
+  setProgressFor,
+  setBonusFor,
   SLOT_META,
   SLOT_ORDER,
   type EquipmentSlot,
@@ -35,7 +37,7 @@ import {
   bondOverflowExchange,
   DAILY_BOND_INTERACTION_AFFECTION,
   DAILY_BOND_INTERACTION_EXP,
-  TUTORING_KP_COST,
+  tutoringCost,
   tutoringExpGain,
 } from '@/config/nurture';
 
@@ -219,10 +221,16 @@ function doClaimOverflow() {
   if (c) userStore.claimBondOverflow(c.id);
 }
 
+// ★ SF-T2：补习成本随等级递增，按钮文案动态显示当前等级实际成本（非写死定额）。
+const tutorCost = computed(() => {
+  const c = selectedCharacter.value;
+  return c ? tutoringCost(c.nurtureData.level) : tutoringCost(1);
+});
+
 const canTutor = computed(() => {
   const c = selectedCharacter.value;
   if (!c) return false;
-  return c.nurtureData.level < 100 && userStore.playerState.knowledgePoints >= TUTORING_KP_COST;
+  return c.nurtureData.level < MAX_CHARACTER_LEVEL && userStore.playerState.knowledgePoints >= tutorCost.value;
 });
 
 // ★ SD-T4：补习产出随等级递增，按钮文案动态显示当前等级的实际经验（避免「描述≠行为」）。
@@ -233,7 +241,10 @@ const tutorExpGain = computed(() => {
 
 // 本次补习的随机加点增量（飘字提示用，仅展示）
 const lastGain = ref<Record<string, number> | null>(null);
+// ★ SF-T2 批量补习一次性汇总飘字（勿逐次闪烁）。
+const batchToast = ref<string>('');
 let gainClearTimer = 0;
+let batchToastTimer = 0;
 
 function tutor() {
   const c = selectedCharacter.value;
@@ -254,7 +265,20 @@ function tutor() {
   }
 }
 
-onUnmounted(() => clearTimeout(gainClearTimer));
+/** ★ SF-T2 批量补习（×10 / 补到下一级）：逐份扣费在 store 内完成，此处只汇总飘字。 */
+function tutorBatch(mode: 'times' | 'toNextLevel') {
+  const c = selectedCharacter.value;
+  if (!c) return;
+  const result = userStore.tutorCharacterBatch(c.id, mode, mode === 'times' ? 10 : 100);
+  if (result.times > 0) {
+    const levelText = result.levelsGained > 0 ? ` · 升 ${result.levelsGained} 级` : '';
+    batchToast.value = `本批 ${result.times} 次：+${result.gainedExp} 经验${levelText}（-${result.spentKp} KP）`;
+    clearTimeout(batchToastTimer);
+    batchToastTimer = window.setTimeout(() => { batchToast.value = ''; }, 2400);
+  }
+}
+
+onUnmounted(() => { clearTimeout(gainClearTimer); clearTimeout(batchToastTimer); });
 
 function claimMilestone(milestoneId: string) {
   if (selectedCharacter.value) userStore.claimBondMilestone(selectedCharacter.value.id, milestoneId);
@@ -275,6 +299,34 @@ const equippedDefs = computed(() => {
     out[s] = uid ? getEquipmentDef(equipmentStore.getItem(uid)?.defId ?? '') : undefined;
   }
   return out;
+});
+
+// SF-T7①：当前角色三槽已装 defId 列表（喂 setProgressFor / setBonusFor，单一真相源）。
+const equippedDefIds = computed<string[]>(() =>
+  SLOT_ORDER.map(s => equippedDefs.value[s]?.id).filter((id): id is string => !!id),
+);
+
+// SF-T7①：套装进度 chip（复用 config setProgressFor，与配装弹窗同源；tier>0 点亮，未齐灰显 count/3）。
+const setProgressRows = computed(() => setProgressFor(equippedDefIds.value));
+
+/**
+ * SF-T7①：齐套贡献的战力 delta（含套装 − 不含套装）。
+ * finalStats 已含 setBonus（resolveEquipBonus 内已叠 setBonusFor），此处从 finalStats **减去** setBonus 再重算，
+ * 得到齐套的边际战力增量——**不再叠一次 setBonusFor**，避免复现「预览≠实战」双算。
+ */
+const setPowerDelta = computed<number>(() => {
+  const rows = setProgressRows.value;
+  if (rows.length === 0 || !rows.some(r => r.tier > 0)) return 0;
+  const setBonus = setBonusFor(equippedDefIds.value);
+  const withSet = finalStats.value;
+  const withoutSet: BattleStats = {
+    hp: withSet.hp - (setBonus.hp ?? 0),
+    atk: withSet.atk - (setBonus.atk ?? 0),
+    def: withSet.def - (setBonus.def ?? 0),
+    sp: withSet.sp - (setBonus.sp ?? 0),
+    spd: withSet.spd - (setBonus.spd ?? 0),
+  };
+  return Math.max(0, calculateBattlePower(withSet) - calculateBattlePower(withoutSet));
 });
 
 // 配装弹窗状态
@@ -425,7 +477,24 @@ function quickUnequip(slot: EquipmentSlot) {
                   :disabled="!canTutor"
                   @click="tutor"
                 >
-                  📚 补习 (-{{ TUTORING_KP_COST }} KP → +{{ tutorExpGain }} 经验)
+                  📚 补习 (-{{ tutorCost }} KP → +{{ tutorExpGain }} 经验)
+                </button>
+                <!-- ★ SF-T2 批量入口：逐份按当前等级扣费（成本随级递增），中途余额不足/满级自动停 -->
+                <button
+                  type="button"
+                  class="btn-secondary text-sm px-3 py-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                  :disabled="!canTutor"
+                  @click="tutorBatch('times')"
+                >
+                  ×10
+                </button>
+                <button
+                  type="button"
+                  class="btn-secondary text-sm px-3 py-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                  :disabled="!canTutor"
+                  @click="tutorBatch('toNextLevel')"
+                >
+                  补到下一级
                 </button>
                 <button
                   type="button"
@@ -438,6 +507,7 @@ function quickUnequip(slot: EquipmentSlot) {
                 <span v-if="isLevelMax" class="text-xs text-accent">已满级</span>
                 <span v-else-if="!canTutor" class="text-xs text-warning">知识点不足</span>
                 <span v-if="!canDailyInteract" class="text-xs text-ink-3">今日已互动</span>
+                <span v-if="batchToast" class="text-xs text-success">{{ batchToast }}</span>
               </div>
 
               <!-- 好感溢出转 KP（领完最高档后可用） -->
@@ -558,6 +628,29 @@ function quickUnequip(slot: EquipmentSlot) {
             </div>
           </div>
           <p class="text-xs text-ink-3 mt-3">点击槽位选择装备，装上即时反映到五维与战力。</p>
+
+          <!-- SF-T7①：套装进度 chip（数据源 = config setProgressFor，与配装弹窗同源；tier>0 点亮，未齐灰显进度）。 -->
+          <div v-if="setProgressRows.length > 0" class="mt-4 pt-4 border-t border-line">
+            <div class="flex items-center justify-between mb-2">
+              <h5 class="text-xs font-semibold text-ink-2">套装搭配</h5>
+              <span v-if="setPowerDelta > 0" class="text-[11px] font-bold text-highlight">齐套战力 +{{ setPowerDelta }}</span>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span
+                v-for="p in setProgressRows"
+                :key="p.set.id"
+                class="inline-flex items-center gap-1 px-2 py-1 rounded-full border text-[11px] font-semibold transition-colors duration-300"
+                :class="p.tier > 0
+                  ? 'border-highlight/50 bg-highlight/10 text-highlight'
+                  : 'border-line bg-surface-2 text-ink-3'"
+                :title="p.tier > 0 ? formatBonus(p.currentBonus) : `凑齐 2 件解锁 ${p.set.hint}`"
+              >
+                🎯 {{ p.set.name }}
+                <span v-if="p.tier > 0">齐{{ p.tier }}</span>
+                <span v-else>{{ p.count }}/3</span>
+              </span>
+            </div>
+          </div>
         </div>
 
         <!-- 背包 -->
