@@ -337,12 +337,15 @@ describe('SC-T2 HR personal skill names', () => {
     expect(plain).toBeTruthy();
   });
 
-  it('不破坏 UR 路径：招牌 UR 名仍来自 SIGNATURE 覆盖 / 个人技（名覆盖表不含 UR）', () => {
+  it('不破坏招牌 UR 路径：招牌 UR 名仍来自 SIGNATURE 覆盖（不被逐角色 name-only 覆盖清洗）', () => {
     // 御坂美琴 skill1 仍是招牌名「超电磁炮」
     expect(getSquadSkillKitForCharacter(byId.get(3575))!.skill1.name).toBe('超电磁炮');
-    // HR 名覆盖表不应含任何 UR
-    for (const c of allCharacters.filter(c => c.rarity === 'UR')) {
-      expect(hasHrSkillNameOverride(c.id), `UR ${c.id} 不应在 HR 名覆盖表`).toBe(false);
+    // 10 个招牌 UR 仍是 signature（skill1/ultimate 带专属 effect），名不被 skill2/passive 名覆盖污染。
+    // 注：Step 3（2026-07-03）逐角色补设计起，非招牌角色（含 UR）可有 name-only 的 skill2/passive 名，
+    // 故不再断言「UR 不含 name 覆盖」——那是三表未合并前的旧不变量。
+    const SIGNATURE_IDS = [3575, 10440, 304, 706, 10439, 49, 12393, 10596, 1211, 303];
+    for (const id of SIGNATURE_IDS) {
+      if (byId.get(id)) expect(isSignatureKit(id), `${id} 仍应是 signature`).toBe(true);
     }
   });
 });
