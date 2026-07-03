@@ -141,6 +141,6 @@ print('SSR+HR+UR', c.get('SSR',0)+c.get('HR',0)+c.get('UR',0))"
 
 **设计简化 + 专属被动（2026-07-03，`9a3651a`）**：按产品决定把出战 kit 从 5 槽收成 4 槽——**移除第二个主动技能 skill2**，被动从「只改名」**升级为逐角色专属 effect**。战斗轮换 = 普攻穿插 → 专属技能(冷却) → 大招(能量)；被动开场施加、持续整场。全 **238 个已 bespoke 角色补了专属被动**（workflow 生成，持续型增益/光环/开场护盾为主）。引擎(`timedBattle`)/类型/校验/UI 同步移除 skill2。至此每个已设计角色 = 普攻 + 3 个专属技能（技能/被动/大招）。
 
-**可选后续**：① 80 个 name-only（44 UR + 36 HR，有招牌名但 skill1/passive/ultimate 仍沿用定位模板 effect）可补成三槽全专属；② 修 §5 测试/线上数据文件不一致；③ 少量被动含 `shield` 状态型 buff（引擎语义待确认是否生效，可后续统一为标准护盾 effect）。
+**收尾（2026-07-03）**：① **80 个 name-only 补成三槽全专属 ✅**（`f1ca0e6`，44 UR + 36 HR，沿用正统招牌技名）——至此**全 318 出战角色 100% 逐角色 bespoke，零模板回落**（Python 交叉核验 318/318）；③ **shield 状态型 buff 修复 ✅**（`fd9ffa2`：引擎只有 shield *effect* 走 addShield 置吸收池才真减伤，applyStatus 的 shield *状态* 无吸收池被立即滤掉 = 空过；已改标准 shield effect + `validateSlot` 加守卫拒绝 applyStatus{kind:'shield'}）。**剩：② 修 §5 测试/线上数据文件不一致**（`squadSkillKits.test.ts:26` 读 `data/character` ≠ 服务的 `selected_character`）。
 
 *审计于 2026-07-03。数据源 commit `cd75c09` 时点；进展更新至 `b770793`。*
