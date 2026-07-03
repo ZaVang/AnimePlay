@@ -24,14 +24,27 @@ describe('D2 tower squad eligibility', () => {
     [4, mkChar(4, 'HR')],
     [5, mkChar(5, 'UR')],
     [6, mkChar(6, 'SSR')],
+    [7, mkChar(7, 'SR')],
   ]);
 
-  it('defines a 5-member HR/UR tower squad contract', () => {
+  it('defines a 5-member SSR/HR/UR tower squad contract', () => {
     expect(SQUAD_MEMBER_COUNT).toBe(5);
-    expect(TOWER_SQUAD_ALLOWED_RARITIES).toEqual(['HR', 'UR']);
-    expect(isTowerSquadRarity('HR')).toBe(true);
+    expect(TOWER_SQUAD_ALLOWED_RARITIES).toEqual(['SSR', 'HR', 'UR']);
     expect(isTowerSquadRarity('UR')).toBe(true);
-    expect(isTowerSquadRarity('SSR')).toBe(false);
+    expect(isTowerSquadRarity('HR')).toBe(true);
+    expect(isTowerSquadRarity('SSR')).toBe(true); // SSR 立绘齐备后加入（2026-07）
+    expect(isTowerSquadRarity('SR')).toBe(false);
+    expect(isTowerSquadRarity(null)).toBe(false);
+  });
+
+  it('accepts an SSR member alongside HR/UR', () => {
+    const result = validateTowerSquadMembers({
+      members: [1, 2, 3, 6, 5], // 位置 4 = SSR
+      getCharacter: id => roster.get(id),
+      isOwned: () => true,
+    });
+    expect(result.ok).toBe(true);
+    expect(result.characters.map(c => c.rarity)).toContain('SSR');
   });
 
   it('accepts exactly five owned HR/UR characters', () => {
@@ -63,7 +76,7 @@ describe('D2 tower squad eligibility', () => {
     expect(unowned.slots[4].issue).toBe('unowned');
 
     const lowRarity = validateTowerSquadMembers({
-      members: [1, 2, 3, 4, 6],
+      members: [1, 2, 3, 4, 7], // 位置 4 = SR（低于 SSR 门槛）
       getCharacter: id => roster.get(id),
       isOwned: () => true,
     });

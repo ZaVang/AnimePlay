@@ -6,9 +6,11 @@
 import type { CharacterCard } from '@/types/card';
 import type { RNG } from '../rng';
 import { calculateBattlePower, type BattleStats } from './combat';
-import { SQUAD_MEMBER_COUNT, type TowerSquadAllowedRarity } from './eligibility';
+import { SQUAD_MEMBER_COUNT } from './eligibility';
 
 export type SquadTier = 'weak' | 'balanced' | 'strong';
+/** 塔敌人阵容稀有度（HR/UR 精英守关；与玩家可出战 SSR/HR/UR 刻意解耦——敌方仍 HR/UR）。 */
+type TowerEnemyRarity = 'HR' | 'UR';
 
 export interface GeneratedSquad {
   name: string;
@@ -183,7 +185,7 @@ export function generateMatchedAISquad(
 // ---------------------------------------------------------------------------
 
 /** 5 层循环的 HR/UR 阵容表（第 5 层 = 5 UR 守关）。 */
-export function getTowerRarityConfig(cyclePosition: number): TowerSquadAllowedRarity[] {
+export function getTowerRarityConfig(cyclePosition: number): TowerEnemyRarity[] {
   switch (cyclePosition) {
     case 1: return ['HR', 'HR', 'HR', 'HR', 'HR'];
     case 2: return ['UR', 'HR', 'HR', 'HR', 'HR'];
@@ -202,11 +204,11 @@ export function towerAttributeBonus(floor: number): number {
 /** 按稀有度配置从真实角色池选人（不重复；不足时跨稀有度兜底）。 */
 export function selectCharactersForTower(
   allCharacters: readonly CharacterCard[],
-  rarityConfig: readonly TowerSquadAllowedRarity[],
+  rarityConfig: readonly TowerEnemyRarity[],
   rng: RNG,
 ): CharacterCard[] {
   const selectedCharacters: CharacterCard[] = [];
-  const charactersByRarity: Record<TowerSquadAllowedRarity, CharacterCard[]> = {
+  const charactersByRarity: Record<TowerEnemyRarity, CharacterCard[]> = {
     UR: allCharacters.filter(c => c.rarity === 'UR'),
     HR: allCharacters.filter(c => c.rarity === 'HR'),
   };

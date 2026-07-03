@@ -248,7 +248,7 @@ function handleCharacterSelect(characterId: number, position: number) {
   if (editingSquadId.value === null) return;
   const character = gameDataStore.getCharacterCardById(characterId);
   if (!character || userStore.getCharacterCardCount(characterId) <= 0 || !isCharacterSelectableForTower(character)) {
-    userStore.addLog('挑战塔小队只能选择已拥有且拥有完整小队战技能的 HR/UR 角色。', 'warning');
+    userStore.addLog('挑战塔小队只能选择已拥有且拥有完整小队战技能的 SSR/HR/UR 角色。', 'warning');
     return;
   }
   userStore.updateSquadMember(editingSquadId.value, position, characterId);
@@ -289,7 +289,7 @@ function startTowerBattle(squadId: number) {
 
   const validation = getTowerSquadValidation(squadId);
   if (!validation.ok) {
-    userStore.addLog(validation.message ?? '挑战塔需要 5 人 HR/UR 满编小队。', 'warning');
+    userStore.addLog(validation.message ?? '挑战塔需要 5 人 SSR/HR/UR 满编小队。', 'warning');
     return;
   }
 
@@ -965,7 +965,7 @@ onBeforeUnmount(() => {
                 @click="startTowerBattle(squad.id)"
               >
                 <span v-if="getSquadMemberCount(squad.id) < SQUAD_MEMBER_COUNT">
-                  {{ getTowerSquadIssue(squad.id) || `需要5人 HR/UR 满编 (${getSquadMemberCount(squad.id)}/${SQUAD_MEMBER_COUNT})` }}
+                  {{ getTowerSquadIssue(squad.id) || `需要5人 SSR/HR/UR 满编 (${getSquadMemberCount(squad.id)}/${SQUAD_MEMBER_COUNT})` }}
                 </span>
                 <span v-else-if="userStore.hasCompletedFloor(currentTowerFloor)">本层已通过</span>
                 <span v-else-if="!towerEnemyData">载入敌人中…</span>
@@ -981,7 +981,7 @@ onBeforeUnmount(() => {
             <div>
               <h3 class="mb-2 font-bold text-info">爬塔规则</h3>
               <ul class="space-y-1 text-sm text-ink-2">
-                <li>挑战塔需要 5 名已拥有 HR/UR 角色</li>
+                <li>挑战塔需要 5 名已拥有 SSR/HR/UR 角色</li>
                 <li>胜利并通过当前层后获得角色经验、知识点和装备掉落机会</li>
                 <li>通过当前层后解锁下一层</li>
                 <li>每 5 层难度显著提升</li>

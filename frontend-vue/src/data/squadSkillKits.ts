@@ -1,4 +1,4 @@
-import type { CharacterCard, Rarity } from '@/types/card';
+import type { CharacterCard } from '@/types/card';
 import type { Skill } from '@/types/skill';
 import type {
   CompleteSquadSkillKit,
@@ -8,6 +8,7 @@ import type {
   StatusKind,
   TargetSelector,
 } from '@/engine/squad/types';
+import { isTowerSquadRarity } from '@/engine/squad/eligibility';
 import { urCharacterSkills } from './urCharacterSkills';
 import { characterSkillsMap } from './characterSkillsMap';
 
@@ -78,9 +79,8 @@ const archetypeLabels: Record<SquadArchetype, {
   tactical: { skill1: '战术穿插', skill2: '队列调度', passive: '先读阵线', ultimate: '决策终局' },
 };
 
-function isSquadRarity(rarity: Rarity | null | undefined): rarity is 'HR' | 'UR' {
-  return rarity === 'HR' || rarity === 'UR';
-}
+/** 出战/技能包稀有度门槛 —— 走 `eligibility` 单一真相源（含 SSR，2026-07 起）。 */
+const isSquadRarity = isTowerSquadRarity;
 
 function isPersonalSkillId(skillId: string | undefined): skillId is string {
   return typeof skillId === 'string'
@@ -793,7 +793,7 @@ export function validateSquadSkillCoverage(characters: readonly CharacterCard[])
       const result = validateSquadSkillKit(kit);
       if (!result.ok) issues.push(`${character.id} ${character.name}: ${result.issues.join(', ')}`);
     } else if (kit) {
-      issues.push(`${character.id} ${character.name}: non HR/UR unexpectedly has a squad skill kit`);
+      issues.push(`${character.id} ${character.name}: 非出战稀有度（SSR/HR/UR 外）意外拥有小队战技能包`);
     }
   }
   return { ok: issues.length === 0, issues };
