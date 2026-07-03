@@ -53,21 +53,23 @@ function makeState(kit: CompleteSquadSkillKit) {
 }
 
 describe('D3 squad skill kits', () => {
-  it('covers every real HR/UR character with a complete executable kit and excludes lower rarities', () => {
+  it('covers every real SSR/HR/UR character with a complete executable kit and excludes SR 及以下', () => {
     const coverage = validateSquadSkillCoverage(allCharacters);
     expect(coverage.ok, coverage.issues.join('\n')).toBe(true);
 
-    const highRarity = allCharacters.filter(c => c.rarity === 'HR' || c.rarity === 'UR');
-    expect(highRarity.length).toBeGreaterThan(0);
-    expect(highRarity.every(isSquadSkillKitReady)).toBe(true);
+    const eligible = allCharacters.filter(c => (['SSR', 'HR', 'UR'] as Rarity[]).includes(c.rarity));
+    expect(eligible.length).toBeGreaterThan(0);
+    expect(eligible.every(isSquadSkillKitReady)).toBe(true);
+    // SSR 立绘齐备后加入（2026-07）——确保 SSR 也真拿到可出战技能包。
+    expect(eligible.some(c => c.rarity === 'SSR')).toBe(true);
 
-    const lowRarity = allCharacters.filter(c => !(['HR', 'UR'] as Rarity[]).includes(c.rarity));
+    const lowRarity = allCharacters.filter(c => !(['SSR', 'HR', 'UR'] as Rarity[]).includes(c.rarity));
     expect(lowRarity.some(c => getSquadSkillKitForCharacter(c))).toBe(false);
   });
 
   it('uses only the D3 allowed effect catalog and provides descriptions from real effects', () => {
     const allowed = new Set<string>(ALLOWED_SQUAD_EFFECT_TYPES);
-    for (const character of allCharacters.filter(c => c.rarity === 'HR' || c.rarity === 'UR')) {
+    for (const character of allCharacters.filter(c => (['SSR', 'HR', 'UR'] as Rarity[]).includes(c.rarity))) {
       const kit = getSquadSkillKitForCharacter(character)!;
       const slots = SQUAD_SKILL_REQUIRED_SLOTS.map(slot => kit[slot]);
       expect(validateSquadSkillKit(kit).ok).toBe(true);
@@ -83,7 +85,7 @@ describe('D3 squad skill kits', () => {
   });
 
   it('executes every slot, including passive, through the timed battle runtime', () => {
-    for (const character of allCharacters.filter(c => c.rarity === 'HR' || c.rarity === 'UR')) {
+    for (const character of allCharacters.filter(c => (['SSR', 'HR', 'UR'] as Rarity[]).includes(c.rarity))) {
       const kit = getSquadSkillKitForCharacter(character)!;
       const state = makeState(kit);
       const actor = state.units.find(u => u.id === 'actor')!;
@@ -281,7 +283,7 @@ describe('SC-T1 explicit archetype single source', () => {
     const coverage = validateSquadSkillCoverage(allCharacters);
     expect(coverage.ok, coverage.issues.join('\n')).toBe(true);
     const readyCount = allCharacters.filter(isSquadSkillKitReady).length;
-    const highRarity = allCharacters.filter(c => c.rarity === 'HR' || c.rarity === 'UR').length;
+    const highRarity = allCharacters.filter(c => (['SSR', 'HR', 'UR'] as Rarity[]).includes(c.rarity)).length;
     expect(readyCount).toBe(highRarity); // 所有 HR/UR 仍 ready，无一因定位变化掉队
   });
 });

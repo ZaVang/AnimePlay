@@ -1,7 +1,13 @@
 import type { CharacterCard, Rarity } from '@/types/card';
 
 export const SQUAD_MEMBER_COUNT = 5 as const;
-export const TOWER_SQUAD_ALLOWED_RARITIES = ['HR', 'UR'] as const satisfies readonly Rarity[];
+/**
+ * 可进入挑战塔小队 / 拥有小队战技能包的稀有度（单一真相源）。
+ * SSR 立绘齐备后于 2026-07 起加入（此前 HR/UR 专属）。`isTowerSquadRarity` 与
+ * `data/squadSkillKits.isSquadRarity` 都必须走这里，别再各自硬编码——两者若漂移会出现
+ * 「有技能包却准入不过」或「准入过却无技能包」的错位。
+ */
+export const TOWER_SQUAD_ALLOWED_RARITIES = ['SSR', 'HR', 'UR'] as const satisfies readonly Rarity[];
 
 export type TowerSquadAllowedRarity = typeof TOWER_SQUAD_ALLOWED_RARITIES[number];
 export type TowerSquadSlotIssue = 'empty' | 'missing' | 'unowned' | 'rarity' | 'skillKit' | 'duplicate';
@@ -23,7 +29,7 @@ export interface TowerSquadValidation {
 }
 
 export function isTowerSquadRarity(rarity: Rarity | null | undefined): rarity is TowerSquadAllowedRarity {
-  return rarity === 'HR' || rarity === 'UR';
+  return rarity != null && (TOWER_SQUAD_ALLOWED_RARITIES as readonly Rarity[]).includes(rarity);
 }
 
 function issueMessage(issue: TowerSquadSlotIssue, slot: number, character?: CharacterCard | null): string {
@@ -36,7 +42,7 @@ function issueMessage(issue: TowerSquadSlotIssue, slot: number, character?: Char
     case 'unowned':
       return `${label} 的角色尚未拥有，不能加入挑战塔小队。`;
     case 'rarity':
-      return `${label} 的 ${character?.name ?? '角色'} 是 ${character?.rarity ?? '未知'}，挑战塔只允许 HR/UR。`;
+      return `${label} 的 ${character?.name ?? '角色'} 是 ${character?.rarity ?? '未知'}，挑战塔只允许 ${TOWER_SQUAD_ALLOWED_RARITIES.join('/')}。`;
     case 'skillKit':
       return `${label} 的 ${character?.name ?? '角色'} 小队战技能待设计，暂不能进入挑战塔。`;
     case 'duplicate':

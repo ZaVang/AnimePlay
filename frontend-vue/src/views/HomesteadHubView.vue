@@ -141,7 +141,7 @@ const selectedSquadSlots = computed(() => {
 
 // --- SA-T1：编队编辑（换人 / 改名 / 空槽加人；改动经 store action 即时刷新战力/校验）---
 
-/** 挑战塔可选：已拥有 + HR/UR + 拥有完整小队战技能。与 SquadBattleView 校验口径一致。 */
+/** 挑战塔可选：已拥有 + SSR/HR/UR + 拥有完整小队战技能。与 SquadBattleView 校验口径一致。 */
 function isCharacterSelectableForTower(character: CharacterCard): boolean {
   return isTowerSquadRarity(character.rarity) && isSquadSkillKitReady(character);
 }
@@ -173,7 +173,7 @@ function handleCharacterSelect(characterId: number, position: number) {
   if (editingSquadId.value == null) return;
   const character = gameDataStore.getCharacterCardById(characterId);
   if (!character || userStore.getCharacterCardCount(characterId) <= 0 || !isCharacterSelectableForTower(character)) {
-    userStore.addLog('挑战塔小队只能选择已拥有且拥有完整小队战技能的 HR/UR 角色。', 'warning');
+    userStore.addLog('挑战塔小队只能选择已拥有且拥有完整小队战技能的 SSR/HR/UR 角色。', 'warning');
     return;
   }
   userStore.updateSquadMember(editingSquadId.value, position, characterId);
@@ -263,7 +263,7 @@ const startBattleIssue = computed<string>(() => {
   if (!selectedSquad.value) return '请先在「编队」面板配置挑战塔小队。';
   if (currentFloorCleared.value) return '本层已通过，可在下方扫荡已通层，或等待解锁下一层。';
   const validation = exploreSquadValidation.value;
-  if (!validation?.ok) return validation?.message ?? '小队未满编，请在「编队」面板补齐 5 名 HR/UR 角色。';
+  if (!validation?.ok) return validation?.message ?? '小队未满编，请在「编队」面板补齐 5 名 SSR/HR/UR 角色。';
   return '';
 });
 
@@ -403,7 +403,7 @@ function positionLabel(index: number): string {
       <div class="panel-heading">
         <div>
           <h2>编队面板</h2>
-          <p>挑战塔要求 5 名已拥有且技能完整的 HR/UR 角色；站位、战力与技能摘要在开战前可见。</p>
+          <p>挑战塔要求 5 名已拥有且技能完整的 SSR/HR/UR 角色；站位、战力与技能摘要在开战前可见。</p>
         </div>
         <button class="btn-primary" type="button" @click="switchTab('explore')">去探索</button>
       </div>

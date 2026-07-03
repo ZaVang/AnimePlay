@@ -11,7 +11,7 @@ const props = defineProps<{
   position: number; // 0-based，选择的位置
   currentCharacterId?: number; // 当前位置已选中的角色ID
   usedCharacterIds?: number[]; // 已被其他位置使用的角色ID列表
-  allowedRarities?: readonly Rarity[]; // 为空时允许全部稀有度；挑战塔传 HR/UR
+  allowedRarities?: readonly Rarity[]; // 为空时允许全部稀有度；挑战塔传 SSR/HR/UR
   isCharacterSelectable?: (character: CharacterCard) => boolean;
 }>();
 
@@ -175,7 +175,7 @@ function handleBackdropClick(event: MouseEvent) {
       <div class="p-6 overflow-y-auto max-h-96">
         <div v-if="availableCharacters.length === 0" class="text-center py-8">
           <div class="text-ink-2 mb-4">
-            {{ searchKeyword ? '未找到匹配的角色' : (allowedRarities?.length ? '你还没有可加入挑战塔的 HR/UR 角色' : '你还没有收藏任何角色') }}
+            {{ searchKeyword ? '未找到匹配的角色' : (allowedRarities?.length ? '你还没有可加入挑战塔的 SSR/HR/UR 角色' : '你还没有收藏任何角色') }}
           </div>
           <router-link
             v-if="!searchKeyword"
