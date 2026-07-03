@@ -82,7 +82,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
       name: 'Geass契约',
       target: 'frontEnemy',
       effects: [
-        { type: 'applyStatus', target: 'frontEnemy', status: { kind: 'taunt', durationMs: 5000 } },
+        { type: 'applyStatus', target: 'self', status: { kind: 'taunt', durationMs: 5000 } },
         { type: 'shield', target: 'self', spRatio: 1.3, durationMs: 10000 },
         {
           type: 'applyStatus',
@@ -239,7 +239,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
       target: 'frontEnemy',
       effects: [
         { type: 'damage', target: 'frontEnemy', atkRatio: 1.7, canCrit: true },
-        { type: 'applyStatus', target: 'frontEnemy', status: { kind: 'taunt', durationMs: 4000 } },
+        { type: 'applyStatus', target: 'self', status: { kind: 'taunt', durationMs: 4000 } },
         {
           type: 'shield',
           target: 'self',
@@ -268,7 +268,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
       target: 'allEnemies',
       effects: [
         { type: 'damage', target: 'allEnemies', atkRatio: 0.9, canCrit: true },
-        { type: 'applyStatus', target: 'allEnemies', status: { kind: 'taunt', durationMs: 4500 } },
+        { type: 'applyStatus', target: 'self', status: { kind: 'taunt', durationMs: 4500 } },
         {
           type: 'shield',
           target: 'self',
@@ -409,7 +409,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
       target: 'allEnemies',
       effects: [
         { type: 'damage', target: 'allEnemies', spRatio: 0.9, canCrit: true },
-        { type: 'applyStatus', target: 'frontEnemy', status: { kind: 'taunt', durationMs: 5000 } },
+        { type: 'applyStatus', target: 'allEnemies', status: { kind: 'slow', durationMs: 5000, amount: 0.2 } },
       ],
       cooldownMs: 8500,
       initialCooldownMs: 1800,
@@ -446,6 +446,17 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
   },
   49: {
     role: 'controller',
+    skill1: {
+      name: '情报改写',
+      target: 'frontEnemy',
+      effects: [
+        { type: 'damage', target: 'frontEnemy', spRatio: 1.1, canCrit: true },
+        { type: 'applyStatus', target: 'frontEnemy', status: { kind: 'silence', durationMs: 4000 } },
+        { type: 'applyStatus', target: 'frontEnemy', status: { kind: 'defDown', durationMs: 6000, amount: 0.18 } },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1800,
+    },
     passive: {
       name: '情报统合思念体',
       target: 'allEnemies',
@@ -493,7 +504,6 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
           target: 'allAllies',
           status: { kind: 'hot', durationMs: 90000, amount: 22, tickIntervalMs: 2000 },
         },
-        { type: 'cleanse', target: 'allAllies' },
       ],
     },
     ultimate: {
@@ -660,7 +670,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
       initialCooldownMs: 1700,
     },
     passive: {
-      name: '菲·瓦伦坦·天赋',
+      name: '老千的好运',
       target: 'self',
       effects: [
         {
@@ -837,7 +847,6 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
           target: 'allAllies',
           status: { kind: 'hot', durationMs: 90000, amount: 24, tickIntervalMs: 2000 },
         },
-        { type: 'cleanse', target: 'allAllies' },
       ],
     },
     ultimate: {
@@ -1161,7 +1170,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
       initialCooldownMs: 1500,
     },
     passive: {
-      name: '绫波丽·天赋',
+      name: '零号机·同步',
       target: 'self',
       effects: [
         {
@@ -1937,7 +1946,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
       ],
     },
     ultimate: {
-      name: '吸血冲击',
+      name: '吸血冲击·终式',
       target: 'lowestHpEnemy',
       effects: [
         { type: 'damage', atkRatio: 1.8, spRatio: 0.4, canCrit: true },
@@ -2402,7 +2411,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
   2902: {
     role: 'tactical',
     skill1: {
-      name: 'TAROS战术指挥',
+      name: 'TDD-1·全舰指挥',
       target: 'allAllies',
       effects: [
         { type: 'applyStatus', status: { kind: 'haste', durationMs: 6000, amount: 0.2 } },
@@ -2654,7 +2663,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
       target: 'self',
       effects: [
         { type: 'shield', target: 'self', defRatio: 1.7, flatPower: 80, durationMs: 7000 },
-        { type: 'applyStatus', target: 'allEnemies', status: { kind: 'taunt', durationMs: 5000 } },
+        { type: 'applyStatus', target: 'self', status: { kind: 'taunt', durationMs: 5000 } },
       ],
       cooldownMs: 8500,
       initialCooldownMs: 1800,
@@ -2807,7 +2816,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
       name: '先把你那套幻想给打碎吧',
       target: 'self',
       effects: [
-        { type: 'applyStatus', target: 'allEnemies', status: { kind: 'taunt', durationMs: 5000 } },
+        { type: 'applyStatus', target: 'self', status: { kind: 'taunt', durationMs: 5000 } },
         { type: 'shield', spRatio: 1.2, defRatio: 1, flatPower: 80, durationMs: 8000 },
         { type: 'damage', target: 'allEnemies', atkRatio: 0.8, canCrit: true },
       ],
@@ -2958,7 +2967,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
       ],
     },
     ultimate: {
-      name: '百式全弹连射',
+      name: 'Zeta·全弹连射',
       target: 'allEnemies',
       effects: [
         { type: 'damage', target: 'allEnemies', atkRatio: 1.3, canCrit: true },
@@ -3227,6 +3236,16 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
   },
   10440: {
     role: 'controller',
+    skill1: {
+      name: '无限军械库',
+      target: 'frontEnemy',
+      effects: [
+        { type: 'damage', target: 'frontEnemy', atkRatio: 1.6, spRatio: 0.3, canCrit: true },
+        { type: 'applyStatus', target: 'frontEnemy', status: { kind: 'slow', durationMs: 5000, amount: 0.2 } },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1800,
+    },
     passive: {
       name: '时间的守望者',
       target: 'allEnemies',
@@ -3486,7 +3505,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
       initialCooldownMs: 1500,
     },
     passive: {
-      name: '两仪式·天赋',
+      name: '直死之魔眼',
       target: 'self',
       effects: [
         {
@@ -3531,7 +3550,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
       ],
     },
     ultimate: {
-      name: '宝石魔术',
+      name: '宝石魔术·终式',
       target: 'highestAtkEnemy',
       effects: [
         { type: 'damage', atkRatio: 0.4, spRatio: 2, canCrit: true },
@@ -3634,7 +3653,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
       initialCooldownMs: 2000,
     },
     passive: {
-      name: '折原临也·天赋',
+      name: '情报贩子的算计',
       target: 'allEnemies',
       effects: [
         {
@@ -3789,7 +3808,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
   10902: {
     role: 'striker',
     skill1: {
-      name: '直死之视线',
+      name: '洞察弱点',
       target: 'lowestHpEnemy',
       effects: [
         { type: 'damage', target: 'lowestHpEnemy', atkRatio: 2, canCrit: true },
@@ -3814,7 +3833,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
       ],
     },
     ultimate: {
-      name: '看破死之点线',
+      name: '看破本质',
       target: 'highestAtkEnemy',
       effects: [
         { type: 'execute', target: 'highestAtkEnemy', hpRatioThreshold: 0.3 },
@@ -3980,7 +3999,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
       initialCooldownMs: 1700,
     },
     passive: {
-      name: '风见一姬·天赋',
+      name: '诱惑的领域',
       target: 'allEnemies',
       effects: [
         {
@@ -4354,7 +4373,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
       initialCooldownMs: 3500,
     },
     passive: {
-      name: '牧濑红莉栖·天赋',
+      name: '天才少女的直觉',
       target: 'allAllies',
       effects: [
         {
@@ -4728,7 +4747,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
       initialCooldownMs: 1800,
     },
     passive: {
-      name: '小木曾雪菜·天赋',
+      name: '高岭之花的心事',
       target: 'allAllies',
       effects: [
         {
@@ -4976,7 +4995,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
   14960: {
     role: 'support',
     skill1: {
-      name: 'にっこにっこにー',
+      name: '小鸟的祝福',
       target: 'allAllies',
       effects: [
         { type: 'heal', target: 'allAllies', atkRatio: 0.9 },
@@ -4990,7 +5009,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
       initialCooldownMs: 1700,
     },
     passive: {
-      name: '宇宙No.1可爱',
+      name: '编织羁绊的针线',
       target: 'allAllies',
       effects: [
         {
@@ -5811,7 +5830,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
       ],
     },
     ultimate: {
-      name: '绝园的天使降临',
+      name: '绝灭天使降临',
       target: 'allEnemies',
       effects: [
         { type: 'damage', target: 'allEnemies', spRatio: 1.5, canCrit: true },
@@ -6568,7 +6587,6 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
           target: 'allAllies',
           status: { kind: 'spUp', durationMs: 90000, amount: 0.14 },
         },
-        { type: 'cleanse', target: 'allAllies' },
       ],
     },
     ultimate: {
@@ -6901,7 +6919,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
       target: 'self',
       effects: [
         { type: 'shield', spRatio: 0.5, defRatio: 1.3, durationMs: 8000 },
-        { type: 'applyStatus', target: 'allEnemies', status: { kind: 'taunt', durationMs: 5500 } },
+        { type: 'applyStatus', target: 'self', status: { kind: 'taunt', durationMs: 5500 } },
       ],
       cooldownMs: 8500,
       initialCooldownMs: 1800,
@@ -6948,7 +6966,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
       initialCooldownMs: 1800,
     },
     passive: {
-      name: '赫斯缇雅·天赋',
+      name: '神之恩惠',
       target: 'allAllies',
       effects: [
         {
@@ -7491,7 +7509,6 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
           target: 'allAllies',
           status: { kind: 'hot', durationMs: 90000, amount: 25, tickIntervalMs: 2000 },
         },
-        { type: 'cleanse', target: 'allAllies' },
       ],
     },
     ultimate: {
@@ -7548,7 +7565,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
       name: '以身承之',
       target: 'self',
       effects: [
-        { type: 'applyStatus', target: 'allEnemies', status: { kind: 'taunt', durationMs: 5000 } },
+        { type: 'applyStatus', target: 'self', status: { kind: 'taunt', durationMs: 5000 } },
         { type: 'shield', target: 'self', defRatio: 2, durationMs: 7000 },
       ],
       cooldownMs: 8500,
@@ -7578,7 +7595,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
         },
         {
           type: 'applyStatus',
-          target: 'highestAtkEnemy',
+          target: 'self',
           status: { kind: 'taunt', durationMs: 6000 },
         },
       ],
@@ -7609,10 +7626,10 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
       ],
     },
     ultimate: {
-      name: '爆裂魔法的传道者',
+      name: '上级魔法·连锁轰击',
       target: 'allEnemies',
       effects: [
-        { type: 'damage', spRatio: 1.4, canCrit: true },
+        { type: 'damage', spRatio: 1.8, canCrit: true },
         {
           type: 'applyStatus',
           status: { kind: 'dot', durationMs: 6000, amount: 70, tickIntervalMs: 2000 },
@@ -7628,7 +7645,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
       target: 'self',
       effects: [
         { type: 'shield', target: 'self', defRatio: 1.2, flatPower: 60, durationMs: 7000 },
-        { type: 'applyStatus', target: 'allEnemies', status: { kind: 'taunt', durationMs: 5000 } },
+        { type: 'applyStatus', target: 'self', status: { kind: 'taunt', durationMs: 5000 } },
       ],
       cooldownMs: 8500,
       initialCooldownMs: 1800,
@@ -7655,7 +7672,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
           target: 'self',
           status: { kind: 'defUp', durationMs: 6000, amount: 0.35 },
         },
-        { type: 'applyStatus', target: 'allEnemies', status: { kind: 'taunt', durationMs: 5000 } },
+        { type: 'applyStatus', target: 'self', status: { kind: 'taunt', durationMs: 5000 } },
       ],
       energyCost: 1000,
     },
@@ -7707,7 +7724,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
           durationMs: 9000,
         },
         { type: 'cleanse', target: 'allAllies' },
-        { type: 'applyStatus', target: 'allEnemies', status: { kind: 'taunt', durationMs: 4000 } },
+        { type: 'applyStatus', target: 'self', status: { kind: 'taunt', durationMs: 4000 } },
       ],
       energyCost: 1000,
     },
@@ -8112,7 +8129,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
       name: '无意识的绝对魅惑',
       target: 'highestAtkEnemy',
       effects: [
-        { type: 'applyStatus', status: { kind: 'taunt', durationMs: 5000 } },
+        { type: 'applyStatus', status: { kind: 'silence', durationMs: 5000 } },
         { type: 'applyStatus', status: { kind: 'atkDown', durationMs: 5000, amount: 0.25 } },
       ],
       cooldownMs: 8500,
@@ -8189,7 +8206,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
   42276: {
     role: 'support',
     skill1: {
-      name: '双簧管的呼吸',
+      name: '长笛的呼吸',
       target: 'lowestHpAlly',
       effects: [
         { type: 'heal', atkRatio: 1.4 },
@@ -9002,7 +9019,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
       target: 'self',
       effects: [
         { type: 'shield', target: 'self', defRatio: 1.6, durationMs: 7000 },
-        { type: 'applyStatus', target: 'allEnemies', status: { kind: 'taunt', durationMs: 5000 } },
+        { type: 'applyStatus', target: 'self', status: { kind: 'taunt', durationMs: 5000 } },
       ],
       cooldownMs: 8400,
       initialCooldownMs: 1700,
@@ -9397,7 +9414,6 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
           target: 'allAllies',
           status: { kind: 'spUp', durationMs: 90000, amount: 0.14 },
         },
-        { type: 'cleanse', target: 'allAllies' },
       ],
     },
     ultimate: {
@@ -10109,7 +10125,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
   70609: {
     role: 'controller',
     skill1: {
-      name: '夏美子的失败魔法',
+      name: 'シャミ子的失败魔法',
       target: 'frontEnemy',
       effects: [
         { type: 'applyStatus', target: 'frontEnemy', status: { kind: 'stun', durationMs: 2000 } },
@@ -10255,7 +10271,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
       initialCooldownMs: 1800,
     },
     passive: {
-      name: '花田家的守护',
+      name: '福杰家的守护',
       target: 'self',
       effects: [
         {
@@ -10634,7 +10650,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
       target: 'self',
       effects: [
         { type: 'shield', spRatio: 0.5, defRatio: 1.4, durationMs: 7000 },
-        { type: 'applyStatus', target: 'allEnemies', status: { kind: 'taunt', durationMs: 5000 } },
+        { type: 'applyStatus', target: 'self', status: { kind: 'taunt', durationMs: 5000 } },
       ],
       cooldownMs: 8500,
       initialCooldownMs: 1800,
@@ -10971,7 +10987,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
       target: 'self',
       effects: [
         { type: 'shield', spRatio: 0.6, defRatio: 1.2, durationMs: 8000 },
-        { type: 'applyStatus', target: 'allEnemies', status: { kind: 'taunt', durationMs: 5500 } },
+        { type: 'applyStatus', target: 'self', status: { kind: 'taunt', durationMs: 5500 } },
       ],
       cooldownMs: 8500,
       initialCooldownMs: 1800,
@@ -11010,7 +11026,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
       target: 'self',
       effects: [
         { type: 'shield', target: 'self', defRatio: 1.8, flatPower: 80, durationMs: 7000 },
-        { type: 'applyStatus', target: 'allEnemies', status: { kind: 'taunt', durationMs: 5000 } },
+        { type: 'applyStatus', target: 'self', status: { kind: 'taunt', durationMs: 5000 } },
       ],
       cooldownMs: 8500,
       initialCooldownMs: 1800,
@@ -11938,7 +11954,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
       name: '天然魅力',
       target: 'frontEnemy',
       effects: [
-        { type: 'applyStatus', target: 'frontEnemy', status: { kind: 'taunt', durationMs: 5000 } },
+        { type: 'applyStatus', target: 'self', status: { kind: 'taunt', durationMs: 5000 } },
         { type: 'shield', target: 'self', defRatio: 1.4, durationMs: 10000 },
       ],
       cooldownMs: 8500,
@@ -11959,7 +11975,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
       name: '天然魅力·终式',
       target: 'allEnemies',
       effects: [
-        { type: 'applyStatus', target: 'allEnemies', status: { kind: 'taunt', durationMs: 4000 } },
+        { type: 'applyStatus', target: 'self', status: { kind: 'taunt', durationMs: 4000 } },
         { type: 'shield', target: 'allAllies', defRatio: 1.3, durationMs: 12000 },
         {
           type: 'applyStatus',
@@ -12223,7 +12239,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
       ],
     },
     ultimate: {
-      name: '黑客帝国·致命突袭',
+      name: '单分子线·致命突袭',
       target: 'lowestHpEnemy',
       effects: [
         { type: 'damage', target: 'lowestHpEnemy', atkRatio: 2.4, canCrit: true },
@@ -12645,7 +12661,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
   130668: {
     role: 'striker',
     skill1: {
-      name: '键盘手的怒吼',
+      name: '贝斯的咆哮',
       target: 'highestAtkEnemy',
       effects: [
         { type: 'damage', atkRatio: 1.9, canCrit: true },
@@ -12738,7 +12754,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
       target: 'self',
       effects: [
         { type: 'shield', spRatio: 0.8, defRatio: 1.2, flatPower: 100, durationMs: 7000 },
-        { type: 'applyStatus', target: 'allEnemies', status: { kind: 'taunt', durationMs: 5000 } },
+        { type: 'applyStatus', target: 'self', status: { kind: 'taunt', durationMs: 5000 } },
       ],
       cooldownMs: 8500,
       initialCooldownMs: 1800,
@@ -12857,7 +12873,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
   133285: {
     role: 'tactical',
     skill1: {
-      name: '键盘的旋律',
+      name: '鼓点的旋律',
       target: 'allAllies',
       effects: [
         {
@@ -13358,7 +13374,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
       target: 'self',
       effects: [
         { type: 'shield', spRatio: 0.9, defRatio: 0.6, durationMs: 7000 },
-        { type: 'applyStatus', target: 'allEnemies', status: { kind: 'taunt', durationMs: 5000 } },
+        { type: 'applyStatus', target: 'self', status: { kind: 'taunt', durationMs: 5000 } },
       ],
       cooldownMs: 8500,
       initialCooldownMs: 1800,
@@ -13574,7 +13590,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
   189815: {
     role: 'arcane',
     skill1: {
-      name: '超时空·辉夜之光',
+      name: '超时空·月读之光',
       target: 'highestAtkEnemy',
       effects: [
         { type: 'damage', spRatio: 1.7, canCrit: true },
