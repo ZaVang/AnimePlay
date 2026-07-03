@@ -324,6 +324,10 @@ function validateSlot(slotName: RequiredSquadSkillSlot, skillDef: SquadSkillDef 
   if (!skillDef.effects.length) issues.push(`${slotName} has no executable effects`);
   for (const effect of skillDef.effects) {
     if (!allowedEffectTypes.has(effect.type)) issues.push(`${slotName} uses illegal effect ${effect.type}`);
+    // 护盾必须走 `shield` effect（引擎 addShield 才置 shieldRemaining）；applyStatus 的 shield 状态无吸收池 = 空过。
+    if (effect.type === 'applyStatus' && effect.status.kind === 'shield') {
+      issues.push(`${slotName} uses no-op shield status (use a shield effect instead)`);
+    }
   }
 }
 
