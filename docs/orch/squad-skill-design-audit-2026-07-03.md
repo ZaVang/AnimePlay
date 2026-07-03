@@ -125,4 +125,20 @@ print('SSR+HR+UR', c.get('SSR',0)+c.get('HR',0)+c.get('UR',0))"
 - 本报告为该 backlog 项的证据源（file:line 可回查）。
 - 相关铁律与既有模式:`frontend-vue/CLAUDE.md`（engine 纯净 / 依赖只向下 / 生成文件请勿手编）、[挑战塔系统.md](../挑战塔系统.md)（出战准入）。
 
-*审计于 2026-07-03。数据源 commit `cd75c09` 时点。*
+---
+
+## 7. 进展（2026-07-03 当日落地）
+
+三步方案已启动并完成到 SSR：
+
+| 步骤 | 状态 | commit | 要点 |
+|---|---|---|---|
+| Step1 配置/逻辑拆分 | ✅ | `a3dce5d` | 抽出 `data/squad/archetypeTemplates.ts`（6 模板+标签）+ `characterKits.ts`（3 覆盖表）；`squadSkillKits.ts` 纯逻辑。逐行 diff 174 数据行零变更 |
+| Step2 统一形状 | ✅ | `bb1be57` | 三表并成一张 `CHARACTER_KITS`（一角色一条目）；程序化迁移 + **3647 角色 kit 输出等价快照 0 差异**；解除「signature=UR 专属」测试约束 |
+| Step3 SSR 逐角色设计 | ✅ | `44fdeb5`+`b770793` | 8 小样评审通过 + 铺量 133 = **全 141 SSR 差异化**（workflow 8+2 agent 生成 + 人工 balance-lint 0 warning） |
+
+**差异化重算（服务名单 318 出战池）**：bespoke effect 从 **10 人（3.1%）→ 151 人（47.5%）**；SSR 通用克隆 **141 → 0**。附带修复 dot/hot 描述把每跳点数误渲染成 %。
+
+**剩余**：HR 74 + UR 13 通用（同法可续）；skill2/passive 目前只改名沿用定位模板（可选再深一层做四槽全专属）。§5 的测试/线上数据文件不一致仍待修。
+
+*审计于 2026-07-03。数据源 commit `cd75c09` 时点；进展更新至 `b770793`。*
