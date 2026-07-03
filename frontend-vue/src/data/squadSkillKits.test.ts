@@ -126,6 +126,8 @@ describe('D3 squad skill kits', () => {
 describe('SA-T4 signature UR skill kits', () => {
   const byId = new Map(allCharacters.map(c => [c.id, c] as const));
   const SIGNATURE_IDS = [3575, 10440, 304, 706, 10439, 49, 12393, 10596, 1211, 303];
+  // 出战池已全 bespoke（2026-07-03，无真实「未配置」角色）；用合成未配置角色验证 signature 判定不误报 + 模板回落路径仍在。
+  const uncovered: CharacterCard = { id: -1, name: '未配置测试角色', rarity: 'UR', image_path: '', activeSkillId: '', passiveSkillId: '' };
 
   it('每个招牌 id 都真实存在、为 UR、且被 isSignatureKit 识别（头部覆盖数在 8~12）', () => {
     expect(SIGNATURE_IDS.length).toBeGreaterThanOrEqual(8);
@@ -136,24 +138,24 @@ describe('SA-T4 signature UR skill kits', () => {
       expect(c!.rarity).toBe('UR');
       expect(isSignatureKit(id)).toBe(true);
     }
-    // 非覆盖角色不误报
-    expect(isSignatureKit(12392)).toBe(false); // 冈部伦太郎（有 UR 技能但未做签名覆盖）
+    // 不在 CHARACTER_KITS 的角色不误报（合成未配置角色作反例）。
+    expect(isSignatureKit(uncovered.id)).toBe(false);
   });
 
-  it('命中覆盖：招牌角色 kit 与「同原型但未覆盖」的他人不再逐字节相同（结构差异）', () => {
-    // 御坂美琴(striker) 覆盖 skill1；找一个同为 striker 原型且未覆盖的 UR 对照。
+  it('命中覆盖：招牌角色 kit 与「未配置走模板」的角色不再逐字节相同（结构差异）', () => {
     const misaka = getSquadSkillKitForCharacter(byId.get(3575))!;
-    const okabe = getSquadSkillKitForCharacter(byId.get(12392))!; // 冈部：未覆盖，走原型
+    const templ = getSquadSkillKitForCharacter(uncovered)!; // 未配置：走原型模板
     // skill1 结构（去掉带角色 id 的 name/id 字段）不同 => 机制层差异，非仅换名
     const shape = (s: SquadSkillDef) => JSON.stringify({ target: s.target, effects: s.effects });
-    expect(shape(misaka.skill1)).not.toBe(shape(okabe.skill1));
+    expect(shape(misaka.skill1)).not.toBe(shape(templ.skill1));
   });
 
-  it('回落原型：未覆盖 UR 的 skill1/ultimate 仍是原型模板（覆盖表未污染回落路径）', () => {
-    const okabe = getSquadSkillKitForCharacter(byId.get(12392))!;
-    // 未覆盖角色 skill1 名字应含角色名或个人技名（原型/个人技命名），不含任何招牌台词。
-    expect(okabe.skill1.name).not.toBe('超电磁炮');
-    expect(okabe.ultimate.name).not.toBe('时间停止');
+  it('回落原型：未配置角色 skill1/ultimate 走原型模板 + 通名（覆盖表未污染回落路径）', () => {
+    const templ = getSquadSkillKitForCharacter(uncovered)!;
+    // 未配置角色名走 `名·原型标签` 通名，不含任何招牌台词。
+    expect(templ.skill1.name.startsWith(`${uncovered.name}·`)).toBe(true);
+    expect(templ.skill1.name).not.toBe('超电磁炮');
+    expect(templ.ultimate.name).not.toBe('时间停止');
   });
 
   it('覆盖 kit 仍走工厂：description === describeSquadSkill（禁手写 description、锁死描述≠行为）', () => {
@@ -293,17 +295,22 @@ describe('SC-T2 HR personal skill names', () => {
   // scout 核实的未覆盖 HR 样本（无个人技绑定、原走原型通名）
   const UNCOVERED_HR = [13391, 127790, 10446, 35615, 19529, 19546, 71337, 57751, 26003];
 
-  it('未覆盖 HR 命中个人名：skill1 不再是 `角色名·原型标签` 通名', () => {
+  it('原「未覆盖 HR」现已逐角色 bespoke（skill1 非通名），且未配置角色仍干净回落通名', () => {
+    // 出战池全差异化后，这批曾走原型通名的 HR 现已 bespoke，skill1 名不再是 `角色名·标签`。
     for (const id of UNCOVERED_HR) {
       const c = byId.get(id);
-      expect(c, `${id} 应存在且为 HR`).toBeTruthy();
-      expect(c!.rarity).toBe('HR');
-      expect(hasHrSkillNameOverride(id)).toBe(true);
+      expect(c, `${id} 应存在`).toBeTruthy();
       const kit = getSquadSkillKitForCharacter(c)!;
-      // 名带个人特色：不含「角色名·」前缀（原型通名格式）
-      expect(kit.skill1.name.startsWith(`${c!.name}·`), `${id} skill1 应为个人名`).toBe(false);
-      expect(kit.ultimate.name.startsWith(`${c!.name}·`), `${id} ultimate 应为个人名`).toBe(false);
+      expect(kit.skill1.name.startsWith(`${c!.name}·`), `${id} skill1 应非通名`).toBe(false);
     }
+    // 回落路径仍在：合成未配置角色走原型模板 + 通名，description 由 describeSquadSkill 派生。
+    const templ: CharacterCard = { id: -2, name: '未配置HR', rarity: 'HR', image_path: '', activeSkillId: '', passiveSkillId: '' };
+    const kit = getSquadSkillKitForCharacter(templ)!;
+    for (const slot of SQUAD_SKILL_REQUIRED_SLOTS) {
+      expect(kit[slot].name.startsWith('未配置HR·'), slot).toBe(true);
+      expect(kit[slot].description).toBe(describeSquadSkill(kit[slot]));
+    }
+    expect(validateSquadSkillKit(kit).ok).toBe(true);
   });
 
   it('description 一律 describeSquadSkill 派生（红线 1：禁手写描述）', () => {
