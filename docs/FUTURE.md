@@ -79,6 +79,7 @@
   - **配置/逻辑耦合**：`data/squadSkillKits.ts`（801 行）把**配置数据**（`EXPLICIT_ARCHETYPE` 18 / `SIGNATURE_KIT_OVERRIDES` 10 / `HR_SKILL_NAME_OVERRIDES` 26 / `archetypeEffects` 6 套模板 / labels）和**生成逻辑**（`resolveArchetype` 归类 + `getSquadSkillKitForCharacter` 装配 + `describeSquadSkill` 描述派生 + `validate*` 校验）混在一个文件。诉求 = 把 per-character 技能配置拆进固定配置文件、与主逻辑分离。
   - **建议（三步，全程保留模板兜底 → 零回归）**：① **纯拆分**（无行为变更、测试全绿）——配置表抽到 `data/squad/`（如 `archetypeTemplates.ts` + 按 id 的 `characterKits.ts`），装配/校验/描述逻辑留纯函数模块；② **统一形状**——把 3 张 override 表并成一张 per-character kit 配置（`{ role?, slots?: { skillN?: { name, target, effects } } }`），可仿 UR 技能既有 **docs→generate** 管线（`docs/UR角色技能设计.md` + `scripts/generateUrSkills.js` → `urCharacterSkillsGenerated.ts`（标「请勿手动编辑」））做一份 `docs/小队技能设计.md` + `scripts/generateSquadKits.js`；③ **逐角色补设计**，优先 SSR（141，100% 通用、收益最大）→ HR 通用 74 → UR 通用 13。工作量按「每人 1 个 role + ≥1 招牌槽」≈228 人（不必五槽全手写，参照现有 10 UR 招牌粒度）。准入仍走 `engine/squad/eligibility.ts` 单一真相源，配置按 id 正交。
   - **附带须修**：coverage 测试 `squadSkillKits.test.ts:26` 读的是 `data/character/all_cards.json`（3647 人，UR 42 / HR 55 / SSR 201），**与线上实际服务的 `data/selected_character/all_cards.json`（2021 人，UR 67 / HR 110 / SSR 141，`backend/server.py:53`）不是同一份**——测试的稀有度分档 ≠ 线上，等于没在守真实出战名单（例：线上 0 个 SSR 有个人技名，测试文件里却有 9 个）。拆分时顺带把测试指到服务同源文件。
+  - **全文证据**：审计报告 [orch/squad-skill-design-audit-2026-07-03.md](orch/squad-skill-design-audit-2026-07-03.md)（含实测命令、file:line、三步方案与数据结构清单）。
 
 ### 🔌 需后端配合（归 S12，未做）
 

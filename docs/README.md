@@ -39,6 +39,8 @@ AnimePlay 项目文档导航。文档分为「游戏机制」「项目说明」�
 | 文档 | 内容 |
 |---|---|
 | [项目审计报告-2026-06-12.md](项目审计报告-2026-06-12.md) | 全面审计：功能完善度、架构、审美、性能、安全、全前端架构评估与重构路线图 |
+| [orch/homestead-hub-audit-report.md](orch/homestead-hub-audit-report.md) | 家园 hub 对抗性审计（2026-07-01）：三大根因 + P1 急救接线（驱动 S14/S15） |
+| [orch/squad-skill-design-audit-2026-07-03.md](orch/squad-skill-design-audit-2026-07-03.md) | 小队技能逐角色差异化审计：318 可出战中仅 10 人有专属 effect、141 SSR 全通用 + 配置拆分方案 |
 
 ## 🗄️ 历史归档（`archive/`）
 
