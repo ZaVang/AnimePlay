@@ -2468,11 +2468,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
           target: 'self',
           status: { kind: 'atkUp', durationMs: 90000, amount: 0.2 },
         },
-        {
-          type: 'applyStatus',
-          target: 'self',
-          status: { kind: 'shield', durationMs: 90000, amount: 0.15 },
-        },
+        { type: 'shield', target: 'self', defRatio: 1, flatPower: 50, durationMs: 90000 },
       ],
     },
     ultimate: {
