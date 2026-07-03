@@ -117,7 +117,6 @@ describe('D3 squad skill kits', () => {
     expect(result.ok).toBe(false);
     expect(result.issues).toContain('normalAttack uses illegal effect teleport');
     expect(result.issues).toContain('skill1 missing');
-    expect(result.issues).toContain('skill2 missing');
     expect(result.issues).toContain('passive missing');
     expect(result.issues).toContain('ultimate missing');
   });

@@ -32,7 +32,7 @@ import {
 // 暂缓设计排除表随配置迁至 data/squad/characterKits.ts；此处再导出以保持既有公共 API。
 export { SQUAD_SKILL_PENDING_DESIGN_IDS };
 
-export const SQUAD_SKILL_REQUIRED_SLOTS = ['normalAttack', 'skill1', 'skill2', 'passive', 'ultimate'] as const;
+export const SQUAD_SKILL_REQUIRED_SLOTS = ['normalAttack', 'skill1', 'passive', 'ultimate'] as const;
 export const ALLOWED_SQUAD_EFFECT_TYPES = [
   'damage',
   'heal',
@@ -46,8 +46,8 @@ export const ALLOWED_SQUAD_EFFECT_TYPES = [
 ] as const satisfies readonly SkillEffect['type'][];
 
 type RequiredSquadSkillSlot = typeof SQUAD_SKILL_REQUIRED_SLOTS[number];
-type ConfigSlot = 'skill1' | 'skill2' | 'passive' | 'ultimate';
-const CONFIG_SLOTS = ['skill1', 'skill2', 'passive', 'ultimate'] as const satisfies readonly ConfigSlot[];
+type ConfigSlot = 'skill1' | 'passive' | 'ultimate';
+const CONFIG_SLOTS = ['skill1', 'passive', 'ultimate'] as const satisfies readonly ConfigSlot[];
 
 const allowedEffectTypes = new Set<string>(ALLOWED_SQUAD_EFFECT_TYPES);
 const personalSkillById = new Map<string, Skill>(urCharacterSkills.map(skill => [skill.id, skill]));
@@ -284,7 +284,6 @@ export function getSquadSkillKitForCharacter(character: CharacterCard | null | u
   // 否则回落原型模板 effects；名优先级 = 个人技名 > 覆盖名 > 原型通名（ultimate 的个人技名走 `·终式`）。
   const kit = CHARACTER_KITS[character.id];
   const k1 = kit?.skill1;
-  const k2 = kit?.skill2;
   const kp = kit?.passive;
   const ku = kit?.ultimate;
 
@@ -295,9 +294,6 @@ export function getSquadSkillKitForCharacter(character: CharacterCard | null | u
     skill1: isBespokeSlot(k1)
       ? skill(character, 'skill1', k1.name ?? `${name}·${labels.skill1}`, k1.target ?? template.skill1.target, k1.effects, slotExtra(k1, { cooldownMs: 8000, initialCooldownMs: 1500 }))
       : skill(character, 'skill1', activeName ?? k1?.name ?? `${name}·${labels.skill1}`, template.skill1.target, template.skill1.effects, slotExtra(k1, { cooldownMs: 8000, initialCooldownMs: 1500 })),
-    skill2: isBespokeSlot(k2)
-      ? skill(character, 'skill2', k2.name ?? `${name}·${labels.skill2}`, k2.target ?? template.skill2.target, k2.effects, slotExtra(k2, { cooldownMs: 12000, initialCooldownMs: 4500 }))
-      : skill(character, 'skill2', k2?.name ?? `${name}·${labels.skill2}`, template.skill2.target, template.skill2.effects, slotExtra(k2, { cooldownMs: 12000, initialCooldownMs: 4500 })),
     passive: isBespokeSlot(kp)
       ? skill(character, 'passive', kp.name ?? `${name}·${labels.passive}`, kp.target ?? template.passive.target, kp.effects, slotExtra(kp, {}))
       : skill(character, 'passive', passiveName ?? kp?.name ?? `${name}·${labels.passive}`, template.passive.target, template.passive.effects, slotExtra(kp, {})),
@@ -335,7 +331,6 @@ export function validateSquadSkillKit(kit: Partial<CompleteSquadSkillKit> | unde
   const issues: string[] = [];
   validateSlot('normalAttack', kit?.normalAttack, issues);
   validateSlot('skill1', kit?.skill1, issues);
-  validateSlot('skill2', kit?.skill2, issues);
   validateSlot('passive', kit?.passive, issues);
   validateSlot('ultimate', kit?.ultimate, issues);
   return { ok: issues.length === 0, issues };

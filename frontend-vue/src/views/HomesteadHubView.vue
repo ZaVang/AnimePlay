@@ -134,7 +134,7 @@ const selectedSquadSlots = computed(() => {
       ok: validation.slots[index]?.ok ?? false,
       issue: validation.slots[index]?.message ?? '空位',
       power: character ? memberPower(character) : 0,
-      skills: kit ? [kit.skill1.name, kit.skill2.name, kit.ultimate.name] : [],
+      skills: kit ? [kit.skill1.name, kit.passive.name, kit.ultimate.name] : [],
     };
   });
 });

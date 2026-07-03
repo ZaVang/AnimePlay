@@ -50,18 +50,18 @@ function createSkillKit(skills: Partial<SquadSkillKit> | undefined): SquadSkillK
   return {
     normalAttack: normalizeSkill('normal', skills?.normalAttack) ?? defaultNormalAttack,
     skill1: normalizeSkill('skill1', skills?.skill1),
-    skill2: normalizeSkill('skill2', skills?.skill2),
     passive: normalizeSkill('passive', skills?.passive),
     ultimate: normalizeSkill('ultimate', skills?.ultimate),
   };
 }
 
-function defaultInitialCooldown(slot: 'skill1' | 'skill2'): number {
-  return slot === 'skill1' ? 2000 : 5000;
+// 简化（2026-07-03）：出战 kit 收成 普攻 + 专属技能(skill1) + 专属被动 + 大招，移除第二个主动技能 skill2。
+function defaultInitialCooldown(): number {
+  return 2000;
 }
 
-function defaultCooldown(slot: 'skill1' | 'skill2'): number {
-  return slot === 'skill1' ? 8000 : 12000;
+function defaultCooldown(): number {
+  return 8000;
 }
 
 function createRuntimeUnit(setup: SquadUnitSetup): SquadUnitRuntime {
@@ -81,8 +81,7 @@ function createRuntimeUnit(setup: SquadUnitSetup): SquadUnitRuntime {
     modifiers: { ...DEFAULT_BATTLE_MODIFIERS, critRate: BASE_CRIT_RATE, ...setup.modifiers },
     statuses: [],
     cooldownReadyAt: {
-      skill1: skills.skill1?.initialCooldownMs ?? defaultInitialCooldown('skill1'),
-      skill2: skills.skill2?.initialCooldownMs ?? defaultInitialCooldown('skill2'),
+      skill1: skills.skill1?.initialCooldownMs ?? defaultInitialCooldown(),
       ultimate: 0,
     },
     nextActionAt: 0,
@@ -227,7 +226,6 @@ function chooseActionSkill(state: TimedBattleState, unit: SquadUnitRuntime): Squ
 
   if (!hasActiveStatus(unit, 'stun', state.now) && !hasActiveStatus(unit, 'silence', state.now)) {
     if (unit.skills.skill1 && state.now >= unit.cooldownReadyAt.skill1) return unit.skills.skill1;
-    if (unit.skills.skill2 && state.now >= unit.cooldownReadyAt.skill2) return unit.skills.skill2;
   }
 
   return unit.skills.normalAttack;
@@ -240,12 +238,11 @@ function spendUltimateEnergy(unit: SquadUnitRuntime, skill: SquadSkillDef): void
 
 function applyActionEnergy(state: TimedBattleState, unit: SquadUnitRuntime, skill: SquadSkillDef): void {
   if (skill.slot === 'normal') gainEnergy(state, unit, 90, 'action');
-  if (skill.slot === 'skill1' || skill.slot === 'skill2') gainEnergy(state, unit, 120, 'action');
+  if (skill.slot === 'skill1') gainEnergy(state, unit, 120, 'action');
 }
 
 function scheduleCooldown(state: TimedBattleState, unit: SquadUnitRuntime, skill: SquadSkillDef): void {
-  if (skill.slot === 'skill1') unit.cooldownReadyAt.skill1 = state.now + (skill.cooldownMs ?? defaultCooldown('skill1'));
-  if (skill.slot === 'skill2') unit.cooldownReadyAt.skill2 = state.now + (skill.cooldownMs ?? defaultCooldown('skill2'));
+  if (skill.slot === 'skill1') unit.cooldownReadyAt.skill1 = state.now + (skill.cooldownMs ?? defaultCooldown());
   if (skill.slot === 'ultimate') unit.cooldownReadyAt.ultimate = state.now + (skill.cooldownMs ?? 0);
 }
 

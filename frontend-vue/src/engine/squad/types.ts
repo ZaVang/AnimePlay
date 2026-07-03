@@ -4,7 +4,7 @@ import type { BattleStats } from './combat';
 export type SquadSide = 'player' | 'enemy';
 export type SquadPosition = 'front' | 'middle' | 'back';
 
-export type SquadSkillSlot = 'normal' | 'skill1' | 'skill2' | 'passive' | 'ultimate';
+export type SquadSkillSlot = 'normal' | 'skill1' | 'passive' | 'ultimate';
 
 export type TargetSelector =
   | 'frontEnemy'
@@ -129,7 +129,6 @@ export interface SquadSkillDef {
 export interface SquadSkillKit {
   normalAttack: SquadSkillDef;
   skill1?: SquadSkillDef;
-  skill2?: SquadSkillDef;
   passive?: SquadSkillDef;
   ultimate?: SquadSkillDef;
 }
@@ -137,7 +136,6 @@ export interface SquadSkillKit {
 export interface CompleteSquadSkillKit extends SquadSkillKit {
   normalAttack: SquadSkillDef;
   skill1: SquadSkillDef;
-  skill2: SquadSkillDef;
   passive: SquadSkillDef;
   ultimate: SquadSkillDef;
 }
@@ -166,7 +164,7 @@ export interface SquadUnitRuntime {
   skills: SquadSkillKit;
   modifiers: BattleModifiers;
   statuses: StatusRuntime[];
-  cooldownReadyAt: Record<'skill1' | 'skill2' | 'ultimate', number>;
+  cooldownReadyAt: Record<'skill1' | 'ultimate', number>;
   nextActionAt: number;
   defeatedAt: number | null;
 }
