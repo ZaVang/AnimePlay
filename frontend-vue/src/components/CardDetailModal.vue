@@ -129,8 +129,7 @@ const passiveSkill = computed<Skill | undefined>(() => {
 
 const squadSkillSlotLabels = {
   normalAttack: '普攻',
-  skill1: '技能一',
-  skill2: '技能二',
+  skill1: '技能',
   passive: '被动',
   ultimate: '大招',
 } as const;

@@ -44,7 +44,7 @@ const unit = (
   ...over,
 });
 
-const damageSkill = (id: string, slot: 'normal' | 'skill1' | 'skill2' | 'ultimate', power: number): SquadSkillDef => ({
+const damageSkill = (id: string, slot: 'normal' | 'skill1' | 'ultimate', power: number): SquadSkillDef => ({
   id,
   name: id,
   slot,
