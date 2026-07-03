@@ -675,4 +675,225 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
       name: '时轴封锁',
     },
   },
+
+  // ==========================================================================
+  // SSR 逐角色设计（Step 3 · 2026-07-03 首批小样，覆盖全部 6 定位）
+  // 给 SSR 补「专属 role + skill1/ultimate 手写 effect + skill2/passive 名」，让 SSR 不再是通用克隆。
+  // 只用 9 种合法 squad effect；description 由 describeSquadSkill 自动派生（禁手写）。
+  // ==========================================================================
+
+  // striker · 一方通行（某科学的一方通行）——矢量反射：单体高伤自带反射护盾，大招矢量崩坏斩杀残血。
+  10639: {
+    role: 'striker',
+    skill1: {
+      name: '矢量反射',
+      target: 'highestAtkEnemy',
+      effects: [
+        { type: 'damage', atkRatio: 1.9, spRatio: 0.3, canCrit: true },
+        { type: 'shield', target: 'self', defRatio: 1.0, flatPower: 60, durationMs: 6000 },
+      ],
+      cooldownMs: 9000,
+      initialCooldownMs: 2000,
+    },
+    skill2: { name: '白翼' },
+    passive: { name: '一方通行' },
+    ultimate: {
+      name: '矢量崩坏',
+      target: 'lowestHpEnemy',
+      effects: [
+        { type: 'damage', atkRatio: 2.4, spRatio: 0.5, canCrit: true },
+        { type: 'execute', hpRatioThreshold: 0.25 },
+      ],
+      energyCost: 1000,
+    },
+  },
+
+  // striker · 卫宫士郎（Fate/stay night）——投影魔术：连击自强，大招剑之楼台群体破防。
+  3214: {
+    role: 'striker',
+    skill1: {
+      name: '投影·干将莫邪',
+      target: 'frontEnemy',
+      effects: [
+        { type: 'damage', atkRatio: 1.4, spRatio: 0.4, canCrit: true },
+        { type: 'applyStatus', target: 'self', status: { kind: 'atkUp', amount: 0.2, durationMs: 7000 } },
+      ],
+      cooldownMs: 8000,
+      initialCooldownMs: 1500,
+    },
+    skill2: { name: '强化魔术' },
+    passive: { name: '正义的伙伴' },
+    ultimate: {
+      name: '剑之楼台',
+      target: 'allEnemies',
+      effects: [
+        { type: 'damage', atkRatio: 1.2, spRatio: 0.5, canCrit: true },
+        { type: 'applyStatus', status: { kind: 'defDown', amount: 0.15, durationMs: 6000 } },
+      ],
+      energyCost: 1000,
+    },
+  },
+
+  // controller · 食蜂操祈（某科学的超电磁炮）——心理掌控：点名封技降攻，大招大量心理掌控群体沉默+眩晕。
+  17949: {
+    role: 'controller',
+    skill1: {
+      name: '心理掌控',
+      target: 'highestAtkEnemy',
+      effects: [
+        { type: 'applyStatus', status: { kind: 'silence', durationMs: 3500 } },
+        { type: 'applyStatus', status: { kind: 'atkDown', amount: 0.25, durationMs: 6000 } },
+        { type: 'damage', atkRatio: 0.3, spRatio: 0.6, canCrit: true },
+      ],
+      cooldownMs: 9000,
+      initialCooldownMs: 2000,
+    },
+    skill2: { name: '心理定势' },
+    passive: { name: '女王' },
+    ultimate: {
+      name: '大量心理掌控',
+      target: 'allEnemies',
+      effects: [
+        { type: 'applyStatus', status: { kind: 'silence', durationMs: 4000 } },
+        { type: 'applyStatus', status: { kind: 'stun', durationMs: 1500 } },
+      ],
+      energyCost: 1000,
+    },
+  },
+
+  // guardian · 美树沙耶香（魔法少女小圆）——治愈魔女之守：护盾+嘲讽+自回血，大招献身之剑自强硬抗。
+  10445: {
+    role: 'guardian',
+    skill1: {
+      name: '治愈魔女之守',
+      target: 'self',
+      effects: [
+        { type: 'shield', defRatio: 1.2, flatPower: 60, durationMs: 7000 },
+        { type: 'applyStatus', status: { kind: 'taunt', durationMs: 5000 } },
+        { type: 'applyStatus', status: { kind: 'hot', amount: 30, durationMs: 6000, tickIntervalMs: 2000 } },
+      ],
+      cooldownMs: 9000,
+      initialCooldownMs: 1500,
+    },
+    skill2: { name: '蓝色的誓约' },
+    passive: { name: '再生' },
+    ultimate: {
+      name: '献身之剑',
+      target: 'self',
+      effects: [
+        { type: 'applyStatus', status: { kind: 'atkUp', amount: 0.35, durationMs: 8000 } },
+        { type: 'shield', defRatio: 1.5, flatPower: 100, durationMs: 8000 },
+        { type: 'heal', spRatio: 0.8, flatPower: 60 },
+      ],
+      energyCost: 1000,
+    },
+  },
+
+  // arcane · 康娜卡姆依（小林家的龙女仆）——雷电吐息：单体术式+持续雷伤，大招龙之逆鳞群体破防。
+  47695: {
+    role: 'arcane',
+    skill1: {
+      name: '雷电吐息',
+      target: 'frontEnemy',
+      effects: [
+        { type: 'damage', atkRatio: 0.2, spRatio: 1.3, canCrit: true },
+        { type: 'applyStatus', status: { kind: 'dot', amount: 40, durationMs: 6000, tickIntervalMs: 2000 } },
+      ],
+      cooldownMs: 8000,
+      initialCooldownMs: 1500,
+    },
+    skill2: { name: '电球' },
+    passive: { name: '上古之龙' },
+    ultimate: {
+      name: '龙之逆鳞',
+      target: 'allEnemies',
+      effects: [
+        { type: 'damage', atkRatio: 0.4, spRatio: 1.5, canCrit: true },
+        { type: 'applyStatus', status: { kind: 'defDown', amount: 0.2, durationMs: 7000 } },
+      ],
+      energyCost: 1000,
+    },
+  },
+
+  // tactical · 杨文里（银河英雄传说）——魔术师杨：全队充能+加速抢节奏，大招用兵之妙点杀+全队加攻。
+  12423: {
+    role: 'tactical',
+    skill1: {
+      name: '魔术师杨',
+      target: 'allAllies',
+      effects: [
+        { type: 'energyGain', amount: 110 },
+        { type: 'applyStatus', status: { kind: 'haste', amount: 0.15, durationMs: 7000 } },
+      ],
+      cooldownMs: 12000,
+      initialCooldownMs: 3500,
+    },
+    skill2: { name: '回廊之战' },
+    passive: { name: '奇迹的杨' },
+    ultimate: {
+      name: '用兵之妙',
+      target: 'highestAtkEnemy',
+      effects: [
+        { type: 'damage', atkRatio: 0.8, spRatio: 1.0, canCrit: true },
+        { type: 'dispel' },
+        { type: 'applyStatus', target: 'allAllies', status: { kind: 'atkUp', amount: 0.18, durationMs: 7000 } },
+      ],
+      energyCost: 1000,
+    },
+  },
+
+  // support · 天野阳菜（天气之子）——晴天祈祷：群疗+净化，大招天气之子群疗+复活+加速。
+  68978: {
+    role: 'support',
+    skill1: {
+      name: '晴天祈祷',
+      target: 'allAllies',
+      effects: [
+        { type: 'heal', spRatio: 0.5, flatPower: 30 },
+        { type: 'cleanse' },
+      ],
+      cooldownMs: 8000,
+      initialCooldownMs: 1500,
+    },
+    skill2: { name: '晴间' },
+    passive: { name: '100%的晴女' },
+    ultimate: {
+      name: '天气之子',
+      target: 'allAllies',
+      effects: [
+        { type: 'heal', spRatio: 0.7, flatPower: 90 },
+        { type: 'revive', target: 'firstDefeatedAlly', hpRatio: 0.4 },
+        { type: 'applyStatus', status: { kind: 'haste', amount: 0.15, durationMs: 6000 } },
+      ],
+      energyCost: 1000,
+    },
+  },
+
+  // support · 阿尼亚·福杰（间谍过家家）——读心：全队净化+充能+SP提升（预知敌意），大招哇酷哇酷群疗+加速+暴击。
+  71479: {
+    role: 'support',
+    skill1: {
+      name: '读心',
+      target: 'allAllies',
+      effects: [
+        { type: 'cleanse' },
+        { type: 'energyGain', amount: 70 },
+        { type: 'applyStatus', status: { kind: 'spUp', amount: 0.12, durationMs: 6000 } },
+      ],
+      cooldownMs: 8000,
+      initialCooldownMs: 1500,
+    },
+    skill2: { name: '花生大人' },
+    passive: { name: '读心术' },
+    ultimate: {
+      name: '哇酷哇酷',
+      target: 'allAllies',
+      effects: [
+        { type: 'heal', spRatio: 0.55, flatPower: 60 },
+        { type: 'applyStatus', status: { kind: 'haste', amount: 0.18, durationMs: 6000 } },
+        { type: 'applyStatus', status: { kind: 'critRateUp', amount: 0.12, durationMs: 6000 } },
+      ],
+      energyCost: 1000,
+    },
+  },
 }
