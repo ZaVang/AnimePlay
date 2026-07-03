@@ -191,8 +191,15 @@ function describeEffect(effect: SkillEffect, fallbackTarget: TargetSelector): st
       if (effect.flatPower) parts.push(`${effect.flatPower}固定`);
       return `为${target}提供${parts.join(' + ') || '固定'}护盾，持续${duration(effect.durationMs)}`;
     }
-    case 'applyStatus':
-      return `使${target}获得${statusLabels[effect.status.kind]}${effect.status.amount ? ` ${percent(effect.status.amount)}` : ''}，持续${duration(effect.status.durationMs)}`;
+    case 'applyStatus': {
+      const st = effect.status;
+      // dot/hot 的 amount 是「每跳固定点数」而非比率，按每跳点数渲染（其余状态 amount 为比率，按 % 渲染）。
+      if (st.kind === 'dot' || st.kind === 'hot') {
+        const tick = Math.round((st.tickIntervalMs ?? 1000) / 1000);
+        return `使${target}获得${statusLabels[st.kind]}${st.amount ? `（每${tick}秒${st.amount}点）` : ''}，持续${duration(st.durationMs)}`;
+      }
+      return `使${target}获得${statusLabels[st.kind]}${st.amount ? ` ${percent(st.amount)}` : ''}，持续${duration(st.durationMs)}`;
+    }
     case 'cleanse':
       return `净化${target}的负面状态`;
     case 'energyGain':
