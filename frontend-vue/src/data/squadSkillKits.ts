@@ -1,7 +1,6 @@
 // 小队战技能包「装配 / 归类 / 描述 / 校验」逻辑。
-// Step 1 拆分（2026-07-03）：声明式配置已抽到 data/squad/——
-//   · archetypeTemplates.ts = 6 套共享定位模板 + 通名标签；
-//   · characterKits.ts = 三张按 id 键的逐角色覆盖表 + 暂缓设计排除表。
+// Step 1 拆分（2026-07-03）：声明式配置抽到 data/squad/（archetypeTemplates + characterKits）。
+// Step 2 统一形状（2026-07-03）：逐角色覆盖从原 3 张表并成一张 CHARACTER_KITS（一角色一条目）。
 // 本文件只保留纯逻辑：读配置 → 组装 kit → 派生描述 → 校验。配置与逻辑分离，便于逐角色补设计。
 // 现状与三步方案见 docs/orch/squad-skill-design-audit-2026-07-03.md。
 
@@ -25,10 +24,9 @@ import {
   type SquadArchetype,
 } from './squad/archetypeTemplates';
 import {
-  EXPLICIT_ARCHETYPE,
-  HR_SKILL_NAME_OVERRIDES,
-  SIGNATURE_KIT_OVERRIDES,
+  CHARACTER_KITS,
   SQUAD_SKILL_PENDING_DESIGN_IDS,
+  type SquadSlotConfig,
 } from './squad/characterKits';
 
 // 暂缓设计排除表随配置迁至 data/squad/characterKits.ts；此处再导出以保持既有公共 API。
@@ -48,6 +46,8 @@ export const ALLOWED_SQUAD_EFFECT_TYPES = [
 ] as const satisfies readonly SkillEffect['type'][];
 
 type RequiredSquadSkillSlot = typeof SQUAD_SKILL_REQUIRED_SLOTS[number];
+type ConfigSlot = 'skill1' | 'skill2' | 'passive' | 'ultimate';
+const CONFIG_SLOTS = ['skill1', 'skill2', 'passive', 'ultimate'] as const satisfies readonly ConfigSlot[];
 
 const allowedEffectTypes = new Set<string>(ALLOWED_SQUAD_EFFECT_TYPES);
 const personalSkillById = new Map<string, Skill>(urCharacterSkills.map(skill => [skill.id, skill]));
@@ -86,6 +86,23 @@ const statusLabels: Record<StatusKind, string> = {
 /** 出战/技能包稀有度门槛 —— 走 `eligibility` 单一真相源（含 SSR，2026-07 起）。 */
 const isSquadRarity = isTowerSquadRarity;
 
+/** 该槽覆盖是否声明了专属效果（有 effects = 专属，名优先级最高；仅 name = 只改名，让位个人技名）。 */
+function isBespokeSlot(cfg: SquadSlotConfig | undefined): cfg is SquadSlotConfig & { effects: readonly SkillEffect[] } {
+  return cfg?.effects !== undefined;
+}
+
+/** 组装单槽的 CD/能量额外字段：以槽默认值打底，config 显式提供的字段覆盖之（保持拆分前的字段结构）。 */
+function slotExtra(
+  cfg: SquadSlotConfig | undefined,
+  defaults: Pick<SquadSkillDef, 'cooldownMs' | 'initialCooldownMs' | 'energyCost'>,
+): Pick<SquadSkillDef, 'cooldownMs' | 'initialCooldownMs' | 'energyCost'> {
+  const extra: Pick<SquadSkillDef, 'cooldownMs' | 'initialCooldownMs' | 'energyCost'> = { ...defaults };
+  if (cfg?.cooldownMs !== undefined) extra.cooldownMs = cfg.cooldownMs;
+  if (cfg?.initialCooldownMs !== undefined) extra.initialCooldownMs = cfg.initialCooldownMs;
+  if (cfg?.energyCost !== undefined) extra.energyCost = cfg.energyCost;
+  return extra;
+}
+
 function isPersonalSkillId(skillId: string | undefined): skillId is string {
   return typeof skillId === 'string'
     && !skillId.startsWith('TPL_')
@@ -112,17 +129,16 @@ function textOf(character: CharacterCard): string {
 }
 
 /**
- * SC-T1：单一定位入口。显式表优先，未命中回落正则，再回落 battle_stats，最后稀有度兜底。
- * kit 生成 / 塔 / 未来养成都读这一处；`SIGNATURE_KIT_OVERRIDES[id].role` 通过显式表种子在此生效。
- * 显式表 `EXPLICIT_ARCHETYPE` 与招牌覆盖 `SIGNATURE_KIT_OVERRIDES` 现居 data/squad/characterKits.ts。
+ * SC-T1：单一定位入口。显式 role 优先，未命中回落正则，再回落 battle_stats，最后稀有度兜底。
+ * kit 生成 / 塔 / 未来养成都读这一处；显式 role 现居 data/squad/characterKits.ts 的 CHARACTER_KITS[id].role。
  */
 function resolveArchetype(character: CharacterCard, activeSkill?: Skill, passiveSkill?: Skill): SquadArchetype {
-  const explicit = EXPLICIT_ARCHETYPE[character.id];
+  const explicit = CHARACTER_KITS[character.id]?.role;
   if (explicit) return explicit;
   return inferArchetypeByText(character, activeSkill, passiveSkill);
 }
 
-/** 正则 + battle_stats 回落（仅在显式表未命中时使用）。 */
+/** 正则 + battle_stats 回落（仅在显式 role 未设时使用）。 */
 function inferArchetypeByText(character: CharacterCard, activeSkill?: Skill, passiveSkill?: Skill): SquadArchetype {
   const text = `${textOf(character)} ${activeSkill?.name ?? ''} ${passiveSkill?.name ?? ''}`;
   if (/治疗|治愈|鼓励|演奏|音乐|轻音|吹响|白色相簿|四月|莉兹|孤独摇滚|BanG Dream|MyGO|Ave Mujica|GIRLS BAND/i.test(text)) return 'support';
@@ -213,29 +229,36 @@ function skill(
   return { ...def, description: describeSquadSkill(def) };
 }
 
-/** SC-T2:暴露 HR 名覆盖表命中判定（测试用）。 */
+/** SC-T2：该角色是否有「只改名」型槽覆盖（原 HR 名覆盖表；供测试与 UI 消费）。 */
 export function hasHrSkillNameOverride(characterId: number): boolean {
-  return Object.prototype.hasOwnProperty.call(HR_SKILL_NAME_OVERRIDES, characterId);
+  const kit = CHARACTER_KITS[characterId];
+  if (!kit) return false;
+  return CONFIG_SLOTS.some(slot => {
+    const cfg = kit[slot];
+    return cfg?.name !== undefined && cfg.effects === undefined;
+  });
 }
 
-/** SA-T4 留口：该角色是否拥有招牌差异化 kit（供第 2 轮 UI「专属徽章」消费；本轮不做徽章）。 */
+/** SA-T4：该角色是否拥有招牌差异化 kit（任一槽声明了专属 effects；供 UI「专属徽章」消费）。 */
 export function isSignatureKit(characterId: number): boolean {
-  return Object.prototype.hasOwnProperty.call(SIGNATURE_KIT_OVERRIDES, characterId);
+  const kit = CHARACTER_KITS[characterId];
+  if (!kit) return false;
+  return CONFIG_SLOTS.some(slot => isBespokeSlot(kit[slot]));
 }
 
-/** SC-T1：招牌覆盖声明的 role（供测试守卫「显式 archetype === override.role」；未覆盖返回 undefined）。 */
+/** SC-T1：招牌 kit 的显式 role（未命中招牌返回 undefined）。 */
 export function signatureRoleOf(characterId: number): SquadArchetype | undefined {
-  return SIGNATURE_KIT_OVERRIDES[characterId]?.role;
+  return isSignatureKit(characterId) ? CHARACTER_KITS[characterId]?.role : undefined;
 }
 
-/** SC-T1：暴露单一定位入口给测试/未来消费端（显式表优先 → 正则回落 → stats/稀有度兜底）。 */
+/** SC-T1：暴露单一定位入口给测试/未来消费端（显式 role → 正则回落 → stats/稀有度兜底）。 */
 export function getArchetypeForCharacter(character: CharacterCard, activeSkill?: Skill, passiveSkill?: Skill): SquadArchetype {
   return resolveArchetype(character, activeSkill, passiveSkill);
 }
 
-/** SC-T1：显式定位表是否命中该角色（测试用：区分显式命中 vs 正则回落）。 */
+/** SC-T1：是否为该角色显式钉了 role（测试用：区分显式命中 vs 正则回落）。 */
 export function hasExplicitArchetype(characterId: number): boolean {
-  return Object.prototype.hasOwnProperty.call(EXPLICIT_ARCHETYPE, characterId);
+  return CHARACTER_KITS[characterId]?.role !== undefined;
 }
 
 export function getSquadSkillKitForCharacter(character: CharacterCard | null | undefined): CompleteSquadSkillKit | undefined {
@@ -245,43 +268,35 @@ export function getSquadSkillKitForCharacter(character: CharacterCard | null | u
   const passiveSkill = resolvePersonalSkill(character, 'passive');
   const archetype = resolveArchetype(character, activeSkill, passiveSkill);
   const labels = archetypeLabels[archetype];
-  const effects = archetypeEffects(archetype);
+  const template = archetypeEffects(archetype);
   const name = character.name;
   const activeName = activeSkill?.name;
   const passiveName = passiveSkill?.name;
 
-  // SA-T4：招牌 UR 覆盖层——命中则用手写差异化 effect，未命中回落原型模板（覆盖仍走 skill() 工厂，description 自动派生）。
-  const override = SIGNATURE_KIT_OVERRIDES[character.id];
-  const s1 = override?.skill1;
-  const ult = override?.ultimate;
-
-  // SC-T2：未覆盖 HR 名覆盖表——只改**名**（effect 仍走原型模板，description 仍自动派生）。
-  // 优先级：个人技名(activeName/passiveName) > HR 名覆盖 > 原型通名。招牌 UR effect 覆盖仍走 s1/ult，名不受此表影响。
-  const nameOverride = HR_SKILL_NAME_OVERRIDES[character.id];
+  // Step 2：逐角色覆盖统一读 CHARACTER_KITS[id]。每槽：有 effects = 专属（名优先级最高），
+  // 否则回落原型模板 effects；名优先级 = 个人技名 > 覆盖名 > 原型通名（ultimate 的个人技名走 `·终式`）。
+  const kit = CHARACTER_KITS[character.id];
+  const k1 = kit?.skill1;
+  const k2 = kit?.skill2;
+  const kp = kit?.passive;
+  const ku = kit?.ultimate;
 
   return {
     normalAttack: skill(character, 'normal', `${name}·牵制`, 'frontEnemy', [
       { type: 'damage', atkRatio: 1, canCrit: true },
     ]),
-    skill1: s1
-      ? skill(character, 'skill1', s1.name, s1.target, s1.effects, {
-          cooldownMs: s1.cooldownMs ?? 8000,
-          initialCooldownMs: s1.initialCooldownMs ?? 1500,
-        })
-      : skill(character, 'skill1', activeName ?? nameOverride?.skill1 ?? `${name}·${labels.skill1}`, effects.skill1.target, effects.skill1.effects, {
-          cooldownMs: 8000,
-          initialCooldownMs: 1500,
-        }),
-    skill2: skill(character, 'skill2', nameOverride?.skill2 ?? `${name}·${labels.skill2}`, effects.skill2.target, effects.skill2.effects, {
-      cooldownMs: 12000,
-      initialCooldownMs: 4500,
-    }),
-    passive: skill(character, 'passive', passiveName ?? nameOverride?.passive ?? `${name}·${labels.passive}`, effects.passive.target, effects.passive.effects),
-    ultimate: ult
-      ? skill(character, 'ultimate', ult.name, ult.target, ult.effects, { energyCost: ult.energyCost ?? 1000 })
-      : skill(character, 'ultimate', activeName ? `${activeName}·终式` : nameOverride?.ultimate ?? `${name}·${labels.ultimate}`, effects.ultimate.target, effects.ultimate.effects, {
-          energyCost: 1000,
-        }),
+    skill1: isBespokeSlot(k1)
+      ? skill(character, 'skill1', k1.name ?? `${name}·${labels.skill1}`, k1.target ?? template.skill1.target, k1.effects, slotExtra(k1, { cooldownMs: 8000, initialCooldownMs: 1500 }))
+      : skill(character, 'skill1', activeName ?? k1?.name ?? `${name}·${labels.skill1}`, template.skill1.target, template.skill1.effects, slotExtra(k1, { cooldownMs: 8000, initialCooldownMs: 1500 })),
+    skill2: isBespokeSlot(k2)
+      ? skill(character, 'skill2', k2.name ?? `${name}·${labels.skill2}`, k2.target ?? template.skill2.target, k2.effects, slotExtra(k2, { cooldownMs: 12000, initialCooldownMs: 4500 }))
+      : skill(character, 'skill2', k2?.name ?? `${name}·${labels.skill2}`, template.skill2.target, template.skill2.effects, slotExtra(k2, { cooldownMs: 12000, initialCooldownMs: 4500 })),
+    passive: isBespokeSlot(kp)
+      ? skill(character, 'passive', kp.name ?? `${name}·${labels.passive}`, kp.target ?? template.passive.target, kp.effects, slotExtra(kp, {}))
+      : skill(character, 'passive', passiveName ?? kp?.name ?? `${name}·${labels.passive}`, template.passive.target, template.passive.effects, slotExtra(kp, {})),
+    ultimate: isBespokeSlot(ku)
+      ? skill(character, 'ultimate', ku.name ?? `${name}·${labels.ultimate}`, ku.target ?? template.ultimate.target, ku.effects, slotExtra(ku, { energyCost: 1000 }))
+      : skill(character, 'ultimate', activeName ? `${activeName}·终式` : ku?.name ?? `${name}·${labels.ultimate}`, template.ultimate.target, template.ultimate.effects, slotExtra(ku, { energyCost: 1000 })),
   };
 }
 
