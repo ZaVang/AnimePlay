@@ -4826,4 +4826,2935 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
       energyCost: 1000,
     },
   },
+
+  // ==========================================================================
+  // HR/UR 逐角色设计（Step 3 收尾 · 87，把出战池最后的通用克隆全部补完）
+  // 同法：8+2+6 workflow agent 生成 + 人工 balance-lint（0 warning）+ 1 例手补（加藤羽未）。
+  // 至此 318 出战池零通用克隆。
+  // ==========================================================================
+  53: {
+    role: 'support',
+    skill1: {
+      name: '呐,一起去吧',
+      target: 'lowestHpAlly',
+      effects: [
+        { type: 'heal', atkRatio: 1.4 },
+        {
+          type: 'applyStatus',
+          target: 'lowestHpAlly',
+          status: { kind: 'hot', durationMs: 6000, amount: 60, tickIntervalMs: 2000 },
+        },
+      ],
+      cooldownMs: 8600,
+      initialCooldownMs: 1800,
+    },
+    skill2: { name: '千年的守望' },
+    passive: { name: '高高在上的夏空' },
+    ultimate: {
+      name: '到达远空的夏之翼',
+      target: 'allAllies',
+      effects: [
+        { type: 'heal', atkRatio: 1.1 },
+        { type: 'revive', target: 'firstDefeatedAlly', hpRatio: 0.5 },
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'defUp', durationMs: 6000, amount: 0.22 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  74: {
+    role: 'support',
+    skill1: {
+      name: '友人帐归还',
+      target: 'lowestHpAlly',
+      effects: [
+        { type: 'heal', spRatio: 1.4 },
+        {
+          type: 'applyStatus',
+          target: 'lowestHpAlly',
+          status: { kind: 'defUp', durationMs: 6000, amount: 0.2 },
+        },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1800,
+    },
+    skill2: { name: '看得见妖怪的少年' },
+    passive: { name: '温柔的羁绊' },
+    ultimate: {
+      name: '斑猫老师·妖力庇护',
+      target: 'allAllies',
+      effects: [
+        { type: 'heal', target: 'allAllies', spRatio: 0.9 },
+        { type: 'shield', target: 'allAllies', spRatio: 0.6, durationMs: 8000 },
+        { type: 'dispel', target: 'allEnemies' },
+      ],
+      energyCost: 1000,
+    },
+  },
+  79: {
+    role: 'striker',
+    skill1: {
+      name: '赏金猎人的直觉',
+      target: 'highestAtkEnemy',
+      effects: [
+        { type: 'damage', atkRatio: 1.9, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'highestAtkEnemy',
+          status: { kind: 'defDown', durationMs: 5000, amount: 0.2 },
+        },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1700,
+    },
+    skill2: { name: '扑克脸虚张声势' },
+    passive: { name: '失忆的女人' },
+    ultimate: {
+      name: '记忆的赌注',
+      target: 'frontEnemy',
+      effects: [
+        { type: 'damage', atkRatio: 2.4, canCrit: true },
+        { type: 'execute', hpRatioThreshold: 0.25 },
+        { type: 'energyGain', target: 'self', amount: 80 },
+      ],
+      energyCost: 1000,
+    },
+  },
+  468: {
+    role: 'tactical',
+    skill1: {
+      name: '节奏爆发',
+      target: 'allAllies',
+      effects: [
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'haste', durationMs: 6000, amount: 0.28 },
+        },
+        { type: 'energyGain', target: 'self', amount: 80 },
+      ],
+      cooldownMs: 8000,
+      initialCooldownMs: 1600,
+    },
+    skill2: { name: '部长的活力' },
+    passive: { name: '轻音部的鼓点' },
+    ultimate: {
+      name: '鼓手的全力独奏',
+      target: 'allAllies',
+      effects: [
+        { type: 'energyGain', target: 'self', amount: 110 },
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'atkUp', durationMs: 8000, amount: 0.3 },
+        },
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'haste', durationMs: 8000, amount: 0.25 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  469: {
+    role: 'support',
+    skill1: {
+      name: '大小姐的下午茶',
+      target: 'allAllies',
+      effects: [
+        { type: 'heal', target: 'allAllies', spRatio: 0.7 },
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'spUp', durationMs: 6000, amount: 0.2 },
+        },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1800,
+    },
+    skill2: { name: '有钱人的从容' },
+    passive: { name: '温柔的贵族气质' },
+    ultimate: {
+      name: '华丽的键盘协奏',
+      target: 'allAllies',
+      effects: [
+        { type: 'heal', target: 'allAllies', spRatio: 1 },
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'defUp', durationMs: 8000, amount: 0.3 },
+        },
+        { type: 'cleanse', target: 'allAllies' },
+      ],
+      energyCost: 1000,
+    },
+  },
+  951: {
+    role: 'arcane',
+    skill1: {
+      name: '真红之炎·飞焰',
+      target: 'frontEnemy',
+      effects: [
+        { type: 'damage', spRatio: 2, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'frontEnemy',
+          status: { kind: 'dot', durationMs: 6000, amount: 65, tickIntervalMs: 2000 },
+        },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1800,
+    },
+    skill2: { name: 'うるさいうるさいうるさい' },
+    passive: { name: '火雾战士の炎' },
+    ultimate: {
+      name: '天壤劫火·炎髪灼眼',
+      target: 'allEnemies',
+      effects: [
+        { type: 'damage', target: 'allEnemies', spRatio: 1.5, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'defDown', durationMs: 5000, amount: 0.22 },
+        },
+        {
+          type: 'applyStatus',
+          target: 'self',
+          status: { kind: 'spUp', durationMs: 6000, amount: 0.25 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  1227: {
+    role: 'arcane',
+    skill1: {
+      name: '王之财宝',
+      target: 'allEnemies',
+      effects: [
+        { type: 'damage', target: 'allEnemies', spRatio: 0.95, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'defDown', durationMs: 6000, amount: 0.2 },
+        },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1800,
+    },
+    skill2: { name: '杂种审判' },
+    passive: { name: '英雄王的傲慢' },
+    ultimate: {
+      name: '天地乖离开辟之星',
+      target: 'allEnemies',
+      effects: [
+        { type: 'damage', target: 'allEnemies', spRatio: 1.45, canCrit: true },
+        { type: 'applyStatus', target: 'allEnemies', status: { kind: 'stun', durationMs: 2000 } },
+        {
+          type: 'applyStatus',
+          target: 'self',
+          status: { kind: 'atkUp', durationMs: 8000, amount: 0.3 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  2215: {
+    role: 'controller',
+    skill1: {
+      name: '死神的注视',
+      target: 'highestAtkEnemy',
+      effects: [
+        { type: 'damage', spRatio: 1.6, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'highestAtkEnemy',
+          status: { kind: 'atkDown', durationMs: 6000, amount: 0.25 },
+        },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1800,
+    },
+    skill2: { name: '我早已看穿一切' },
+    passive: { name: '死亡笔记之主' },
+    ultimate: {
+      name: '计划通·新世界的神',
+      target: 'allEnemies',
+      effects: [
+        { type: 'damage', target: 'allEnemies', spRatio: 1.1, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'highestAtkEnemy',
+          status: { kind: 'stun', durationMs: 2500 },
+        },
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'silence', durationMs: 4000 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  2765: {
+    role: 'arcane',
+    skill1: {
+      name: '封印解除',
+      target: 'lowestHpEnemy',
+      effects: [
+        { type: 'damage', spRatio: 1.7, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'lowestHpEnemy',
+          status: { kind: 'dot', durationMs: 6000, amount: 55, tickIntervalMs: 2000 },
+        },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1800,
+    },
+    skill2: { name: '一定没问题的！' },
+    passive: { name: '库洛牌之主' },
+    ultimate: {
+      name: '库洛牌·全部收服',
+      target: 'allEnemies',
+      effects: [
+        { type: 'damage', target: 'allEnemies', spRatio: 1.4, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'spDown', durationMs: 6000, amount: 0.3 },
+        },
+        { type: 'shield', target: 'allAllies', spRatio: 0.5, durationMs: 7000 },
+      ],
+      energyCost: 1000,
+    },
+  },
+  3182: {
+    role: 'striker',
+    skill1: {
+      name: '锄头一闪',
+      target: 'frontEnemy',
+      effects: [
+        { type: 'damage', atkRatio: 2.2, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'frontEnemy',
+          status: { kind: 'defDown', durationMs: 5000, amount: 0.2 },
+        },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1800,
+    },
+    skill2: { name: '多值一份便当' },
+    passive: { name: 'L5发症の执念' },
+    ultimate: {
+      name: '嘘だ！——鬼隐狂乱',
+      target: 'frontEnemy',
+      effects: [
+        { type: 'damage', target: 'frontEnemy', atkRatio: 2.4, canCrit: true },
+        { type: 'execute', target: 'frontEnemy', hpRatioThreshold: 0.3 },
+        {
+          type: 'applyStatus',
+          target: 'self',
+          status: { kind: 'atkUp', durationMs: 6000, amount: 0.3 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  3215: {
+    role: 'arcane',
+    skill1: {
+      name: '影之侵蚀',
+      target: 'allEnemies',
+      effects: [
+        { type: 'damage', target: 'allEnemies', spRatio: 1, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'dot', durationMs: 6000, amount: 65, tickIntervalMs: 2000 },
+        },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1800,
+    },
+    skill2: { name: '圣杯的容器' },
+    passive: { name: '被侵蚀的少女' },
+    ultimate: {
+      name: '黑化樱·此花开耶姬',
+      target: 'allEnemies',
+      effects: [
+        { type: 'damage', target: 'allEnemies', spRatio: 1.5, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'defDown', durationMs: 6000, amount: 0.3 },
+        },
+        { type: 'heal', target: 'self', spRatio: 0.7 },
+      ],
+      energyCost: 1000,
+    },
+  },
+  3221: {
+    role: 'striker',
+    skill1: {
+      name: '起源弹·致命一击',
+      target: 'lowestHpEnemy',
+      effects: [
+        { type: 'damage', atkRatio: 2.3, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'lowestHpEnemy',
+          status: { kind: 'defDown', durationMs: 5000, amount: 0.22 },
+        },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1800,
+    },
+    skill2: { name: '为拯救世界の狠心' },
+    passive: { name: '不择手段の理想' },
+    ultimate: {
+      name: '魔术师杀手の必杀',
+      target: 'lowestHpEnemy',
+      effects: [
+        { type: 'execute', target: 'lowestHpEnemy', hpRatioThreshold: 0.35 },
+        { type: 'damage', target: 'lowestHpEnemy', atkRatio: 2.3, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'self',
+          status: { kind: 'critRateUp', durationMs: 6000, amount: 0.3 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  3576: {
+    role: 'striker',
+    skill1: {
+      name: '空间转移突袭',
+      target: 'backEnemy',
+      effects: [
+        { type: 'damage', atkRatio: 2, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'backEnemy',
+          status: { kind: 'defDown', durationMs: 5000, amount: 0.25 },
+        },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1700,
+    },
+    skill2: { name: '能力者的骄傲' },
+    passive: { name: '风纪委员' },
+    ultimate: {
+      name: '姐姐大人只属于我',
+      target: 'lowestHpEnemy',
+      effects: [
+        { type: 'damage', atkRatio: 2.3, canCrit: true },
+        { type: 'execute', target: 'lowestHpEnemy', hpRatioThreshold: 0.25 },
+        {
+          type: 'applyStatus',
+          target: 'self',
+          status: { kind: 'haste', durationMs: 5000, amount: 0.3 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  5088: {
+    role: 'tactical',
+    skill1: {
+      name: '作战指挥',
+      target: 'allEnemies',
+      effects: [
+        { type: 'damage', target: 'allEnemies', atkRatio: 0.8, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'atkDown', durationMs: 6000, amount: 0.2 },
+        },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1700,
+    },
+    skill2: { name: '作战部长的算计' },
+    passive: { name: '啤酒作战会议' },
+    ultimate: {
+      name: '矢岛作战·全军突击',
+      target: 'allAllies',
+      effects: [
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'haste', durationMs: 8000, amount: 0.35 },
+        },
+        { type: 'energyGain', target: 'self', amount: 100 },
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'atkUp', durationMs: 8000, amount: 0.25 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  5922: {
+    role: 'support',
+    skill1: {
+      name: '闪耀的笑容',
+      target: 'lowestHpAlly',
+      effects: [
+        { type: 'heal', atkRatio: 1.3 },
+        {
+          type: 'applyStatus',
+          target: 'lowestHpAlly',
+          status: { kind: 'critRateUp', durationMs: 5000, amount: 0.2 },
+        },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1800,
+    },
+    skill2: { name: '顶尖偶像' },
+    passive: { name: '永远的偶像' },
+    ultimate: {
+      name: '传递给所有人的HONEY HEARTBEAT',
+      target: 'allAllies',
+      effects: [
+        { type: 'heal', atkRatio: 1 },
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'atkUp', durationMs: 6000, amount: 0.25 },
+        },
+        { type: 'revive', target: 'firstDefeatedAlly', hpRatio: 0.4 },
+      ],
+      energyCost: 1000,
+    },
+  },
+  7043: {
+    role: 'arcane',
+    skill1: {
+      name: 'APTX-4869',
+      target: 'lowestHpEnemy',
+      effects: [
+        { type: 'damage', spRatio: 1, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'lowestHpEnemy',
+          status: { kind: 'dot', durationMs: 6000, amount: 70, tickIntervalMs: 2000 },
+        },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1800,
+    },
+    skill2: { name: '缩小之谜' },
+    passive: { name: '黑暗组织的逃亡者' },
+    ultimate: {
+      name: '科学家的赎罪',
+      target: 'allEnemies',
+      effects: [
+        { type: 'damage', spRatio: 1.1, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'dot', durationMs: 6000, amount: 60, tickIntervalMs: 2000 },
+        },
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'defDown', durationMs: 6000, amount: 0.25 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  10570: {
+    role: 'striker',
+    skill1: {
+      name: '直死之魔眼',
+      target: 'lowestHpEnemy',
+      effects: [
+        { type: 'damage', target: 'lowestHpEnemy', atkRatio: 1.9, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'lowestHpEnemy',
+          status: { kind: 'defDown', durationMs: 6000, amount: 0.28 },
+        },
+      ],
+      cooldownMs: 8000,
+      initialCooldownMs: 1500,
+    },
+    skill2: { name: '两仪的空' },
+    passive: { name: '根源之眼' },
+    ultimate: {
+      name: '斩断存在的死线',
+      target: 'lowestHpEnemy',
+      effects: [
+        { type: 'execute', target: 'lowestHpEnemy', hpRatioThreshold: 0.3 },
+        { type: 'damage', target: 'lowestHpEnemy', atkRatio: 2.3, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'self',
+          status: { kind: 'critRateUp', durationMs: 8000, amount: 0.35 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  10672: {
+    role: 'striker',
+    skill1: {
+      name: '赤红长枪连击',
+      target: 'frontEnemy',
+      effects: [
+        { type: 'damage', atkRatio: 2, canCrit: true },
+        { type: 'heal', target: 'self', atkRatio: 0.4 },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1700,
+    },
+    skill2: { name: '只为自己而战' },
+    passive: { name: '野性的求生本能' },
+    ultimate: {
+      name: '分裂之枪·穿刺',
+      target: 'allEnemies',
+      effects: [
+        { type: 'damage', target: 'allEnemies', atkRatio: 1, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'dot', durationMs: 6000, amount: 70, tickIntervalMs: 2000 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  10753: {
+    role: 'support',
+    skill1: {
+      name: '闪耀星愿',
+      target: 'lowestHpAlly',
+      effects: [
+        { type: 'heal', atkRatio: 1.4, flatPower: 60 },
+        {
+          type: 'applyStatus',
+          target: 'lowestHpAlly',
+          status: { kind: 'atkUp', durationMs: 6000, amount: 0.2 },
+        },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1800,
+    },
+    skill2: { name: '天真烂漫の节拍' },
+    passive: { name: '睡懒觉也要闪耀' },
+    ultimate: {
+      name: '偶像的最强光辉·Show Time',
+      target: 'allAllies',
+      effects: [
+        { type: 'heal', target: 'allAllies', atkRatio: 0.9, flatPower: 80 },
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'haste', durationMs: 6000, amount: 0.28 },
+        },
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'critRateUp', durationMs: 6000, amount: 0.22 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  11598: {
+    role: 'support',
+    skill1: {
+      name: '水乡的问候',
+      target: 'lowestHpAlly',
+      effects: [
+        { type: 'heal', target: 'lowestHpAlly', spRatio: 1.4 },
+        {
+          type: 'applyStatus',
+          target: 'lowestHpAlly',
+          status: { kind: 'defUp', durationMs: 6000, amount: 0.2 },
+        },
+      ],
+      cooldownMs: 8000,
+      initialCooldownMs: 1600,
+    },
+    skill2: { name: '神奇的邂逅' },
+    passive: { name: '水星的温柔' },
+    ultimate: {
+      name: '领航员的祝福',
+      target: 'allAllies',
+      effects: [
+        { type: 'revive', target: 'firstDefeatedAlly', hpRatio: 0.5 },
+        { type: 'heal', target: 'allAllies', spRatio: 0.9 },
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'hot', durationMs: 6000, amount: 55, tickIntervalMs: 2000 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  11833: {
+    role: 'support',
+    skill1: {
+      name: '喜翠庄的款待',
+      target: 'lowestHpAlly',
+      effects: [
+        { type: 'heal', atkRatio: 1.3, flatPower: 120 },
+        {
+          type: 'applyStatus',
+          target: 'lowestHpAlly',
+          status: { kind: 'defUp', durationMs: 6000, amount: 0.2 },
+        },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1800,
+    },
+    skill2: { name: '女将修行' },
+    passive: { name: '认真努力的女将' },
+    ultimate: {
+      name: '肚子饿扁了！·全力开工',
+      target: 'allAllies',
+      effects: [
+        { type: 'heal', atkRatio: 1, flatPower: 150 },
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'haste', durationMs: 6000, amount: 0.25 },
+        },
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'atkUp', durationMs: 6000, amount: 0.2 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  11853: {
+    role: 'support',
+    skill1: {
+      name: '面码的祈愿',
+      target: 'allAllies',
+      effects: [
+        { type: 'heal', target: 'allAllies', spRatio: 0.8, flatPower: 55 },
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'hot', durationMs: 6000, amount: 50, tickIntervalMs: 2000 },
+        },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1800,
+    },
+    skill2: { name: '永远的夏天' },
+    passive: { name: '那朵花的名字' },
+    ultimate: {
+      name: '找到了哦——重逢之约',
+      target: 'firstDefeatedAlly',
+      effects: [
+        { type: 'revive', target: 'firstDefeatedAlly', hpRatio: 0.5 },
+        { type: 'heal', target: 'allAllies', spRatio: 0.9, flatPower: 70 },
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'atkUp', durationMs: 6000, amount: 0.2 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  11856: {
+    role: 'controller',
+    skill1: {
+      name: '乐园的诱惑',
+      target: 'frontEnemy',
+      effects: [
+        { type: 'damage', target: 'frontEnemy', spRatio: 1.6, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'frontEnemy',
+          status: { kind: 'slow', durationMs: 5000, amount: 0.22 },
+        },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1700,
+    },
+    skill2: { name: '禁忌的游戏' },
+    passive: { name: '乐园的秘密' },
+    ultimate: {
+      name: '灰色的支配',
+      target: 'allEnemies',
+      effects: [
+        { type: 'applyStatus', target: 'allEnemies', status: { kind: 'stun', durationMs: 2200 } },
+        { type: 'damage', target: 'allEnemies', spRatio: 1, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'spDown', durationMs: 6000, amount: 0.25 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  12063: {
+    role: 'support',
+    skill1: {
+      name: '温柔的歌声',
+      target: 'allAllies',
+      effects: [
+        { type: 'heal', target: 'allAllies', atkRatio: 0.7 },
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'spUp', durationMs: 6000, amount: 0.18 },
+        },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1800,
+    },
+    skill2: { name: '青春的旋律' },
+    passive: { name: '轻音部的羁绊' },
+    ultimate: {
+      name: '全体大合唱',
+      target: 'allAllies',
+      effects: [
+        { type: 'heal', target: 'allAllies', atkRatio: 1 },
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'hot', durationMs: 6000, amount: 60, tickIntervalMs: 2000 },
+        },
+        { type: 'cleanse', target: 'allAllies' },
+      ],
+      energyCost: 1000,
+    },
+  },
+  12106: {
+    role: 'arcane',
+    skill1: {
+      name: '才华横溢の一笔',
+      target: 'highestAtkEnemy',
+      effects: [
+        { type: 'damage', spRatio: 1.9, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'highestAtkEnemy',
+          status: { kind: 'atkDown', durationMs: 5000, amount: 0.2 },
+        },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1800,
+    },
+    skill2: { name: '无意识的天才' },
+    passive: { name: '生活白痴の专注' },
+    ultimate: {
+      name: '世界级的杰作',
+      target: 'allEnemies',
+      effects: [
+        { type: 'damage', target: 'allEnemies', spRatio: 1.4, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'dot', durationMs: 6000, amount: 70, tickIntervalMs: 2000 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  12887: {
+    role: 'controller',
+    skill1: {
+      name: '名侦探的推理',
+      target: 'highestAtkEnemy',
+      effects: [
+        { type: 'damage', spRatio: 1.4, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'highestAtkEnemy',
+          status: { kind: 'silence', durationMs: 4000 },
+        },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1800,
+    },
+    skill2: { name: '冷静的洞察' },
+    passive: { name: '绝望学园的幸存者' },
+    ultimate: {
+      name: '揭穿真相的时刻',
+      target: 'allEnemies',
+      effects: [
+        { type: 'applyStatus', target: 'allEnemies', status: { kind: 'stun', durationMs: 2200 } },
+        { type: 'damage', target: 'allEnemies', spRatio: 1.1, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'defDown', durationMs: 5000, amount: 0.25 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  13390: {
+    role: 'support',
+    skill1: {
+      name: '在乎的温柔',
+      target: 'lowestHpAlly',
+      effects: [
+        { type: 'heal', spRatio: 1.5 },
+        {
+          type: 'applyStatus',
+          target: 'lowestHpAlly',
+          status: { kind: 'atkUp', durationMs: 6000, amount: 0.2 },
+        },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1800,
+    },
+    skill2: { name: '无法割舍的关系' },
+    passive: { name: '白色相簿的旋律' },
+    ultimate: {
+      name: '冬日与烟花的旋律',
+      target: 'allAllies',
+      effects: [
+        { type: 'heal', target: 'allAllies', spRatio: 1.1 },
+        { type: 'revive', target: 'firstDefeatedAlly', hpRatio: 0.45 },
+        { type: 'cleanse', target: 'allAllies' },
+      ],
+      energyCost: 1000,
+    },
+  },
+  14823: {
+    role: 'controller',
+    skill1: {
+      name: '我很好奇！',
+      target: 'frontEnemy',
+      effects: [
+        { type: 'damage', spRatio: 1.7, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'frontEnemy',
+          status: { kind: 'defDown', durationMs: 6000, amount: 0.25 },
+        },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1800,
+    },
+    skill2: { name: '省能推理' },
+    passive: { name: '蔷薇色的好奇心' },
+    ultimate: {
+      name: '数据库是我的翅膀',
+      target: 'allEnemies',
+      effects: [
+        { type: 'damage', target: 'allEnemies', spRatio: 1.2, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'silence', durationMs: 4500 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  16369: {
+    role: 'controller',
+    skill1: {
+      name: '进化调停',
+      target: 'allEnemies',
+      effects: [
+        { type: 'damage', spRatio: 0.9, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'slow', durationMs: 4000, amount: 0.25 },
+        },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1800,
+    },
+    skill2: { name: '娇小的调停者' },
+    passive: { name: '人类衰退之后' },
+    ultimate: {
+      name: '你们真是充满活力呢',
+      target: 'allEnemies',
+      effects: [
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'silence', durationMs: 5000 },
+        },
+        { type: 'damage', spRatio: 1.2, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'spDown', durationMs: 6000, amount: 0.3 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  16684: {
+    role: 'controller',
+    skill1: {
+      name: '推理的凝视',
+      target: 'highestAtkEnemy',
+      effects: [
+        { type: 'damage', spRatio: 1.5, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'highestAtkEnemy',
+          status: { kind: 'defDown', durationMs: 5000, amount: 0.28 },
+        },
+      ],
+      cooldownMs: 8600,
+      initialCooldownMs: 1800,
+    },
+    skill2: { name: '甜食的智慧' },
+    passive: { name: '世界最强侦探' },
+    ultimate: {
+      name: '我就是正义',
+      target: 'allEnemies',
+      effects: [
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'silence', durationMs: 5000 },
+        },
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'slow', durationMs: 5000, amount: 0.3 },
+        },
+        { type: 'damage', spRatio: 0.8, canCrit: true },
+      ],
+      energyCost: 1000,
+    },
+  },
+  16817: {
+    role: 'arcane',
+    skill1: {
+      name: '变形武器·全力轰击',
+      target: 'frontEnemy',
+      effects: [
+        { type: 'damage', target: 'frontEnemy', spRatio: 1.8, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'self',
+          status: { kind: 'atkUp', durationMs: 6000, amount: 0.2 },
+        },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1700,
+    },
+    skill2: { name: '戴比路克的公主' },
+    passive: { name: '跨越星海的心' },
+    ultimate: {
+      name: '宇宙最强的爱意',
+      target: 'allEnemies',
+      effects: [
+        { type: 'damage', target: 'allEnemies', spRatio: 1.4, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'dot', durationMs: 6000, amount: 70, tickIntervalMs: 2000 },
+        },
+        { type: 'energyGain', target: 'self', amount: 90 },
+      ],
+      energyCost: 1000,
+    },
+  },
+  18101: {
+    role: 'striker',
+    skill1: {
+      name: '立体机动斩',
+      target: 'frontEnemy',
+      effects: [
+        { type: 'damage', atkRatio: 2.1, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'frontEnemy',
+          status: { kind: 'defDown', durationMs: 5000, amount: 0.25 },
+        },
+      ],
+      cooldownMs: 8400,
+      initialCooldownMs: 1600,
+    },
+    skill2: { name: '驱逐所有敌人' },
+    passive: { name: '自由的代价' },
+    ultimate: {
+      name: '进击的巨人',
+      target: 'frontEnemy',
+      effects: [
+        { type: 'damage', atkRatio: 1.6, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'self',
+          status: { kind: 'atkUp', durationMs: 6000, amount: 0.4 },
+        },
+        { type: 'execute', target: 'frontEnemy', hpRatioThreshold: 0.3 },
+      ],
+      energyCost: 1000,
+    },
+  },
+  19039: {
+    role: 'controller',
+    skill1: {
+      name: '腹黑毒舌',
+      target: 'highestAtkEnemy',
+      effects: [
+        { type: 'damage', spRatio: 1.6, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'highestAtkEnemy',
+          status: { kind: 'atkDown', durationMs: 5000, amount: 0.28 },
+        },
+      ],
+      cooldownMs: 8600,
+      initialCooldownMs: 1800,
+    },
+    skill2: { name: '孤高的观察' },
+    passive: { name: '果然有问题' },
+    ultimate: {
+      name: '自我牺牲的解法',
+      target: 'allEnemies',
+      effects: [
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'silence', durationMs: 4000 },
+        },
+        { type: 'damage', spRatio: 1, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'spDown', durationMs: 6000, amount: 0.25 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  19526: {
+    role: 'arcane',
+    skill1: {
+      name: '天使的领域',
+      target: 'backEnemy',
+      effects: [
+        { type: 'damage', spRatio: 2, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'backEnemy',
+          status: { kind: 'spDown', durationMs: 5000, amount: 0.2 },
+        },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1800,
+    },
+    skill2: { name: '精灵之力' },
+    passive: { name: '无表情的狙击手' },
+    ultimate: {
+      name: '绝园的天使降临',
+      target: 'allEnemies',
+      effects: [
+        { type: 'damage', target: 'allEnemies', spRatio: 1.5, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'slow', durationMs: 5000, amount: 0.25 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  20363: {
+    role: 'support',
+    skill1: {
+      name: '元气应援',
+      target: 'lowestHpAlly',
+      effects: [
+        { type: 'heal', atkRatio: 1.4 },
+        {
+          type: 'applyStatus',
+          target: 'lowestHpAlly',
+          status: { kind: 'atkUp', durationMs: 5000, amount: 0.2 },
+        },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1800,
+    },
+    skill2: { name: '体育部的元气' },
+    passive: { name: '倒追的勇气' },
+    ultimate: {
+      name: '少女心的全垒打',
+      target: 'allAllies',
+      effects: [
+        { type: 'heal', atkRatio: 1.1 },
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'atkUp', durationMs: 6000, amount: 0.28 },
+        },
+        { type: 'cleanse', target: 'allAllies' },
+      ],
+      energyCost: 1000,
+    },
+  },
+  21368: {
+    role: 'tactical',
+    skill1: {
+      name: '哈喽哈喽~',
+      target: 'lowestHpAlly',
+      effects: [
+        { type: 'energyGain', target: 'lowestHpAlly', amount: 90 },
+        { type: 'heal', atkRatio: 0.8 },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1800,
+    },
+    skill2: { name: '悠哉的日常' },
+    passive: { name: '乡下的孩子' },
+    ultimate: {
+      name: '呐叽哦呐叽哦~',
+      target: 'allAllies',
+      effects: [
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'haste', durationMs: 6000, amount: 0.3 },
+        },
+        { type: 'energyGain', target: 'allAllies', amount: 80 },
+        { type: 'heal', target: 'allAllies', atkRatio: 0.7 },
+      ],
+      energyCost: 1000,
+    },
+  },
+  22520: {
+    role: 'arcane',
+    skill1: {
+      name: '埃罗芒阿老师的灵感',
+      target: 'frontEnemy',
+      effects: [
+        { type: 'damage', spRatio: 1.9, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'frontEnemy',
+          status: { kind: 'dot', durationMs: 6000, amount: 50, tickIntervalMs: 2000 },
+        },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1800,
+    },
+    skill2: { name: '闭门不出的执笔' },
+    passive: { name: '兄妹合作的羁绊' },
+    ultimate: {
+      name: '世界最棒的妹妹插画',
+      target: 'allEnemies',
+      effects: [
+        { type: 'damage', target: 'allEnemies', spRatio: 1.4, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'spDown', durationMs: 6000, amount: 0.25 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  23648: {
+    role: 'support',
+    skill1: {
+      name: '特调一杯',
+      target: 'lowestHpAlly',
+      effects: [
+        { type: 'heal', atkRatio: 1.2, flatPower: 110 },
+        { type: 'cleanse', target: 'lowestHpAlly' },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1900,
+    },
+    skill2: { name: '拉帕的陪伴' },
+    passive: { name: '咖啡厅的小小店员' },
+    ultimate: {
+      name: '请问您今天要来点治愈吗？',
+      target: 'allAllies',
+      effects: [
+        { type: 'heal', atkRatio: 0.9, flatPower: 140 },
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'hot', durationMs: 6000, amount: 60, tickIntervalMs: 2000 },
+        },
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'defUp', durationMs: 6000, amount: 0.2 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  24760: {
+    role: 'support',
+    skill1: {
+      name: '传达的手语',
+      target: 'lowestHpAlly',
+      effects: [
+        { type: 'heal', atkRatio: 1.5 },
+        { type: 'cleanse', target: 'lowestHpAlly' },
+      ],
+      cooldownMs: 8600,
+      initialCooldownMs: 1900,
+    },
+    skill2: { name: '无声的呼唤' },
+    passive: { name: '温柔的心声' },
+    ultimate: {
+      name: '声之形',
+      target: 'allAllies',
+      effects: [
+        { type: 'heal', target: 'allAllies', atkRatio: 1.1 },
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'defUp', durationMs: 6000, amount: 0.28 },
+        },
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'hot', durationMs: 6000, amount: 55, tickIntervalMs: 2000 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  26090: {
+    role: 'controller',
+    skill1: {
+      name: '看透一切の微笑',
+      target: 'highestAtkEnemy',
+      effects: [
+        { type: 'damage', atkRatio: 1, spRatio: 0.9, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'highestAtkEnemy',
+          status: { kind: 'spDown', durationMs: 5000, amount: 0.22 },
+        },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1800,
+    },
+    skill2: { name: '别有用心の可爱' },
+    passive: { name: '彩羽ちゃん的算计' },
+    ultimate: {
+      name: '后辈的温柔陷阱',
+      target: 'allEnemies',
+      effects: [
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'silence', durationMs: 4000 },
+        },
+        { type: 'damage', target: 'allEnemies', spRatio: 1.1, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'atkDown', durationMs: 5000, amount: 0.2 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  27601: {
+    role: 'arcane',
+    skill1: {
+      name: '火球术·魔法学者',
+      target: 'frontEnemy',
+      effects: [
+        { type: 'damage', spRatio: 1.9, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'frontEnemy',
+          status: { kind: 'dot', durationMs: 6000, amount: 60, tickIntervalMs: 2000 },
+        },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1800,
+    },
+    skill2: { name: '严禁吃魔物' },
+    passive: { name: '魔法学院首席' },
+    ultimate: {
+      name: '禁忌之术·完全回复魔法',
+      target: 'allAllies',
+      effects: [
+        { type: 'heal', target: 'allAllies', spRatio: 1.1, flatPower: 80 },
+        { type: 'cleanse', target: 'allAllies' },
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'spUp', durationMs: 6000, amount: 0.2 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  35678: {
+    role: 'support',
+    skill1: {
+      name: '净化之光',
+      target: 'allAllies',
+      effects: [
+        { type: 'heal', target: 'allAllies', spRatio: 0.9, flatPower: 60 },
+        { type: 'cleanse', target: 'allAllies' },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1800,
+    },
+    skill2: { name: '自称最强大祭司' },
+    passive: { name: '水之女神の恩宠' },
+    ultimate: {
+      name: '女神阿克娅の复活术',
+      target: 'firstDefeatedAlly',
+      effects: [
+        { type: 'revive', target: 'firstDefeatedAlly', hpRatio: 0.55 },
+        { type: 'heal', target: 'allAllies', spRatio: 0.8, flatPower: 70 },
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'defUp', durationMs: 6000, amount: 0.22 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  36489: {
+    role: 'support',
+    skill1: {
+      name: '抽象派的画笔',
+      target: 'lowestHpAlly',
+      effects: [
+        { type: 'heal', atkRatio: 1.3 },
+        {
+          type: 'applyStatus',
+          target: 'lowestHpAlly',
+          status: { kind: 'critRateUp', durationMs: 6000, amount: 0.18 },
+        },
+      ],
+      cooldownMs: 8600,
+      initialCooldownMs: 1900,
+    },
+    skill2: { name: '随性的创作' },
+    passive: { name: '内咲学长的追随者' },
+    ultimate: {
+      name: '美术社大有问题',
+      target: 'allAllies',
+      effects: [
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'atkUp', durationMs: 6000, amount: 0.3 },
+        },
+        { type: 'heal', target: 'allAllies', atkRatio: 0.9 },
+        { type: 'energyGain', target: 'allAllies', amount: 80 },
+      ],
+      energyCost: 1000,
+    },
+  },
+  37242: {
+    role: 'support',
+    skill1: {
+      name: '结绳之力',
+      target: 'allAllies',
+      effects: [
+        { type: 'heal', target: 'allAllies', atkRatio: 0.8 },
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'haste', durationMs: 5000, amount: 0.15 },
+        },
+      ],
+      cooldownMs: 8700,
+      initialCooldownMs: 1900,
+    },
+    skill2: { name: '口嚼酒的祈愿' },
+    passive: { name: '三年的错位' },
+    ultimate: {
+      name: '黄昏之时的重逢',
+      target: 'firstDefeatedAlly',
+      effects: [
+        { type: 'revive', target: 'firstDefeatedAlly', hpRatio: 0.5 },
+        { type: 'heal', target: 'allAllies', atkRatio: 0.9 },
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'hot', durationMs: 6000, amount: 60, tickIntervalMs: 2000 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  37344: {
+    role: 'support',
+    skill1: {
+      name: '代笔的心意',
+      target: 'lowestHpAlly',
+      effects: [
+        { type: 'heal', spRatio: 1.6 },
+        { type: 'cleanse', target: 'lowestHpAlly' },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1800,
+    },
+    skill2: { name: '自动手记人偶' },
+    passive: { name: '习得情感的心' },
+    ultimate: {
+      name: '我爱你——传达心意的信',
+      target: 'allAllies',
+      effects: [
+        { type: 'heal', target: 'allAllies', spRatio: 1 },
+        { type: 'revive', target: 'firstDefeatedAlly', hpRatio: 0.5 },
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'hot', durationMs: 8000, amount: 60, tickIntervalMs: 2000 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  38065: {
+    role: 'controller',
+    skill1: {
+      name: '浪速的白雪姬',
+      target: 'frontEnemy',
+      effects: [
+        { type: 'damage', atkRatio: 1.6, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'frontEnemy',
+          status: { kind: 'silence', durationMs: 4000 },
+        },
+      ],
+      cooldownMs: 8400,
+      initialCooldownMs: 1700,
+    },
+    skill2: { name: '读到最后的一手' },
+    passive: { name: '追赶师兄的执着' },
+    ultimate: {
+      name: '女流棋士的绝杀',
+      target: 'lowestHpEnemy',
+      effects: [
+        { type: 'execute', target: 'lowestHpEnemy', hpRatioThreshold: 0.3 },
+        { type: 'damage', target: 'lowestHpEnemy', atkRatio: 1.5, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'defDown', durationMs: 5000, amount: 0.3 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  41849: {
+    role: 'controller',
+    skill1: {
+      name: '捉弄一下你哦',
+      target: 'highestAtkEnemy',
+      effects: [
+        { type: 'damage', atkRatio: 0.9, spRatio: 1, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'highestAtkEnemy',
+          status: { kind: 'atkDown', durationMs: 5000, amount: 0.22 },
+        },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1800,
+    },
+    skill2: { name: '脸红了哦' },
+    passive: { name: '永远赢不了的游戏' },
+    ultimate: {
+      name: '赌注·你输定了',
+      target: 'allEnemies',
+      effects: [
+        { type: 'applyStatus', target: 'allEnemies', status: { kind: 'stun', durationMs: 2200 } },
+        { type: 'damage', target: 'allEnemies', spRatio: 1, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'slow', durationMs: 5000, amount: 0.25 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  42276: {
+    role: 'support',
+    skill1: {
+      name: '双簧管的呼吸',
+      target: 'lowestHpAlly',
+      effects: [
+        { type: 'heal', atkRatio: 1.4 },
+        {
+          type: 'applyStatus',
+          target: 'lowestHpAlly',
+          status: { kind: 'spUp', durationMs: 6000, amount: 0.18 },
+        },
+      ],
+      cooldownMs: 8600,
+      initialCooldownMs: 1900,
+    },
+    skill2: { name: '再来一次合奏' },
+    passive: { name: '追逐希美的背影' },
+    ultimate: {
+      name: '想成为特别的人',
+      target: 'allAllies',
+      effects: [
+        { type: 'heal', target: 'allAllies', atkRatio: 1 },
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'atkUp', durationMs: 6000, amount: 0.25 },
+        },
+        { type: 'cleanse', target: 'allAllies' },
+      ],
+      energyCost: 1000,
+    },
+  },
+  46463: {
+    role: 'arcane',
+    skill1: {
+      name: '无咏唱魔术',
+      target: 'frontEnemy',
+      effects: [
+        { type: 'damage', spRatio: 2.1, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'frontEnemy',
+          status: { kind: 'silence', durationMs: 3000 },
+        },
+      ],
+      cooldownMs: 8600,
+      initialCooldownMs: 1800,
+    },
+    skill2: { name: '天才魔术师' },
+    passive: { name: '守护你的誓言' },
+    ultimate: {
+      name: '精灵之王的加护',
+      target: 'allEnemies',
+      effects: [
+        { type: 'damage', spRatio: 1.4, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'spDown', durationMs: 6000, amount: 0.25 },
+        },
+        { type: 'heal', target: 'lowestHpAlly', spRatio: 0.6 },
+      ],
+      energyCost: 1000,
+    },
+  },
+  46582: {
+    role: 'controller',
+    skill1: {
+      name: '记忆篡改',
+      target: 'highestAtkEnemy',
+      effects: [
+        { type: 'damage', spRatio: 1.7, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'highestAtkEnemy',
+          status: { kind: 'atkDown', durationMs: 5000, amount: 0.28 },
+        },
+      ],
+      cooldownMs: 8600,
+      initialCooldownMs: 1800,
+    },
+    skill2: { name: '命运的抉择' },
+    passive: { name: '预知能力' },
+    ultimate: {
+      name: '重启的世界',
+      target: 'allEnemies',
+      effects: [
+        { type: 'dispel', target: 'allEnemies' },
+        { type: 'applyStatus', target: 'frontEnemy', status: { kind: 'stun', durationMs: 2500 } },
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'slow', durationMs: 5000, amount: 0.3 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  50578: {
+    role: 'striker',
+    skill1: {
+      name: '帝王的末脚',
+      target: 'backEnemy',
+      effects: [
+        { type: 'damage', atkRatio: 1.8, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'self',
+          status: { kind: 'haste', durationMs: 6000, amount: 0.25 },
+        },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1700,
+    },
+    skill2: { name: '王的骄傲' },
+    passive: { name: '宿敌之心的觉醒' },
+    ultimate: {
+      name: '不败神话·复活的帝王',
+      target: 'frontEnemy',
+      effects: [
+        { type: 'damage', atkRatio: 2.3, canCrit: true },
+        { type: 'heal', target: 'self', atkRatio: 0.6 },
+        {
+          type: 'applyStatus',
+          target: 'self',
+          status: { kind: 'atkUp', durationMs: 8000, amount: 0.3 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  54943: {
+    role: 'support',
+    skill1: {
+      name: '祝福之触',
+      target: 'lowestHpAlly',
+      effects: [
+        { type: 'heal', spRatio: 1.5 },
+        {
+          type: 'applyStatus',
+          target: 'lowestHpAlly',
+          status: { kind: 'hot', durationMs: 6000, amount: 50, tickIntervalMs: 2000 },
+        },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1800,
+    },
+    skill2: { name: '毛茸茸的治愈' },
+    passive: { name: '深渊的祝福' },
+    ultimate: {
+      name: '深渊祝福·不灭的信念',
+      target: 'allAllies',
+      effects: [
+        { type: 'heal', target: 'allAllies', spRatio: 1 },
+        { type: 'revive', target: 'firstDefeatedAlly', hpRatio: 0.4 },
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'spUp', durationMs: 8000, amount: 0.25 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  56778: {
+    role: 'guardian',
+    skill1: {
+      name: '野营铁壁·篝火结界',
+      target: 'self',
+      effects: [
+        { type: 'shield', defRatio: 1.6, flatPower: 80, durationMs: 7000 },
+        { type: 'applyStatus', target: 'self', status: { kind: 'taunt', durationMs: 5000 } },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1800,
+    },
+    skill2: { name: '独自旅行の悠然' },
+    passive: { name: '咖喱面的守护' },
+    ultimate: {
+      name: '全员温暖の露营时光',
+      target: 'allAllies',
+      effects: [
+        { type: 'shield', target: 'allAllies', defRatio: 1.3, flatPower: 90, durationMs: 8000 },
+        { type: 'heal', target: 'allAllies', flatPower: 60 },
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'defUp', durationMs: 6000, amount: 0.25 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  57715: {
+    role: 'tactical',
+    skill1: {
+      name: '指挥官的号令',
+      target: 'allAllies',
+      effects: [
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'atkUp', durationMs: 5000, amount: 0.18 },
+        },
+        { type: 'energyGain', target: 'self', amount: 80 },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1800,
+    },
+    skill2: { name: '送葬的指挥' },
+    passive: { name: '羁绊超越战区' },
+    ultimate: {
+      name: '血色女王的战术',
+      target: 'allEnemies',
+      effects: [
+        { type: 'damage', spRatio: 1.3, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'haste', durationMs: 6000, amount: 0.3 },
+        },
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'defDown', durationMs: 6000, amount: 0.25 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  57898: {
+    role: 'guardian',
+    skill1: {
+      name: '守护巢穴',
+      target: 'self',
+      effects: [
+        { type: 'shield', target: 'self', defRatio: 1.6, durationMs: 7000 },
+        { type: 'applyStatus', target: 'allEnemies', status: { kind: 'taunt', durationMs: 5000 } },
+      ],
+      cooldownMs: 8400,
+      initialCooldownMs: 1700,
+    },
+    skill2: { name: '精神稳定剂' },
+    passive: { name: '红色骑士的执念' },
+    ultimate: {
+      name: '叫龙骑士的觉悟',
+      target: 'allEnemies',
+      effects: [
+        { type: 'damage', target: 'allEnemies', atkRatio: 1, canCrit: true },
+        { type: 'shield', target: 'allAllies', defRatio: 2, durationMs: 8000 },
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'defUp', durationMs: 6000, amount: 0.3 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  58444: {
+    role: 'support',
+    skill1: {
+      name: '妹妹的照料',
+      target: 'lowestHpAlly',
+      effects: [
+        { type: 'heal', atkRatio: 1.3, flatPower: 55 },
+        {
+          type: 'applyStatus',
+          target: 'lowestHpAlly',
+          status: { kind: 'hot', durationMs: 6000, amount: 60, tickIntervalMs: 2000 },
+        },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1800,
+    },
+    skill2: { name: '别当欧尼酱了' },
+    passive: { name: '手足无措の温柔' },
+    ultimate: {
+      name: '变身少女の元气全开',
+      target: 'allAllies',
+      effects: [
+        { type: 'heal', target: 'allAllies', atkRatio: 0.9, flatPower: 75 },
+        { type: 'cleanse', target: 'allAllies' },
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'atkUp', durationMs: 6000, amount: 0.22 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  59847: {
+    role: 'controller',
+    skill1: {
+      name: '口袋的封印',
+      target: 'frontEnemy',
+      effects: [
+        { type: 'damage', spRatio: 1.5, canCrit: true },
+        { type: 'applyStatus', target: 'frontEnemy', status: { kind: 'stun', durationMs: 2000 } },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1900,
+    },
+    skill2: { name: '静谧的凝视' },
+    passive: { name: '夏日口袋的秘密' },
+    ultimate: {
+      name: '夏日的终结·时之停滞',
+      target: 'allEnemies',
+      effects: [
+        { type: 'damage', spRatio: 0.9, canCrit: true },
+        { type: 'applyStatus', target: 'allEnemies', status: { kind: 'stun', durationMs: 2500 } },
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'slow', durationMs: 6000, amount: 0.3 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  59849: {
+    role: 'arcane',
+    skill1: {
+      name: '文德斯之术',
+      target: 'highestAtkEnemy',
+      effects: [
+        { type: 'damage', spRatio: 1.6, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'highestAtkEnemy',
+          status: { kind: 'dot', durationMs: 6000, amount: 50, tickIntervalMs: 2000 },
+        },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1900,
+    },
+    skill2: { name: '静谧咏唱' },
+    passive: { name: '异界的访客' },
+    ultimate: {
+      name: '彼方之界·魔力奔流',
+      target: 'allEnemies',
+      effects: [
+        { type: 'damage', spRatio: 1.4, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'spDown', durationMs: 6000, amount: 0.25 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  61330: {
+    role: 'controller',
+    skill1: {
+      name: '毒物鉴定',
+      target: 'highestAtkEnemy',
+      effects: [
+        { type: 'damage', atkRatio: 0.6, spRatio: 1, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'highestAtkEnemy',
+          status: { kind: 'dot', durationMs: 6000, amount: 60, tickIntervalMs: 2000 },
+        },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1900,
+    },
+    skill2: { name: '药师的执着' },
+    passive: { name: '毒物的探求者' },
+    ultimate: {
+      name: '推理揭晓·投毒者伏诛',
+      target: 'allEnemies',
+      effects: [
+        { type: 'damage', spRatio: 0.8, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'atkDown', durationMs: 6000, amount: 0.3 },
+        },
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'silence', durationMs: 4000 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  61419: {
+    role: 'support',
+    skill1: {
+      name: '岛上的重逢',
+      target: 'lowestHpAlly',
+      effects: [
+        { type: 'heal', spRatio: 1.4 },
+        {
+          type: 'applyStatus',
+          target: 'lowestHpAlly',
+          status: { kind: 'spUp', durationMs: 6000, amount: 0.2 },
+        },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1800,
+    },
+    skill2: { name: '夏日的约定' },
+    passive: { name: '时光的孩子' },
+    ultimate: {
+      name: '永远的夏天',
+      target: 'allAllies',
+      effects: [
+        { type: 'heal', target: 'allAllies', spRatio: 1 },
+        { type: 'revive', target: 'firstDefeatedAlly', hpRatio: 0.5 },
+        { type: 'cleanse', target: 'allAllies' },
+      ],
+      energyCost: 1000,
+    },
+  },
+  64716: {
+    role: 'striker',
+    skill1: {
+      name: '星光斩',
+      target: 'highestAtkEnemy',
+      effects: [
+        { type: 'damage', atkRatio: 1.8, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'self',
+          status: { kind: 'atkUp', durationMs: 6000, amount: 0.2 },
+        },
+      ],
+      cooldownMs: 8000,
+      initialCooldownMs: 1700,
+    },
+    skill2: { name: '舞台的觉悟' },
+    passive: { name: '夺目的position zero' },
+    ultimate: {
+      name: '闪耀的Revue·夺星',
+      target: 'frontEnemy',
+      effects: [
+        { type: 'damage', atkRatio: 2.2, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'self',
+          status: { kind: 'critRateUp', durationMs: 6000, amount: 0.3 },
+        },
+        {
+          type: 'applyStatus',
+          target: 'frontEnemy',
+          status: { kind: 'defDown', durationMs: 6000, amount: 0.2 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  64717: {
+    role: 'controller',
+    skill1: {
+      name: '无限重演',
+      target: 'frontEnemy',
+      effects: [
+        { type: 'damage', atkRatio: 1, spRatio: 0.9, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'frontEnemy',
+          status: { kind: 'atkDown', durationMs: 6000, amount: 0.25 },
+        },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1800,
+    },
+    skill2: { name: '华丽的谢幕' },
+    passive: { name: '命运的舞台监督' },
+    ultimate: {
+      name: '百慕大三角·收束终演',
+      target: 'allEnemies',
+      effects: [
+        { type: 'damage', atkRatio: 0.6, spRatio: 0.7, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'silence', durationMs: 5000 },
+        },
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'slow', durationMs: 6000, amount: 0.3 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  66899: {
+    role: 'tactical',
+    skill1: {
+      name: '如何让对方先动手',
+      target: 'self',
+      effects: [
+        { type: 'energyGain', target: 'self', amount: 100 },
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'haste', durationMs: 6000, amount: 0.3 },
+        },
+      ],
+      cooldownMs: 8000,
+      initialCooldownMs: 1600,
+    },
+    skill2: { name: '傲娇的骄傲' },
+    passive: { name: '天才辈出四宫家' },
+    ultimate: {
+      name: '头脑战·完全胜利',
+      target: 'allAllies',
+      effects: [
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'atkUp', durationMs: 8000, amount: 0.35 },
+        },
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'critRateUp', durationMs: 8000, amount: 0.3 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  73831: {
+    role: 'controller',
+    skill1: {
+      name: '处刑之刃',
+      target: 'highestAtkEnemy',
+      effects: [
+        { type: 'damage', target: 'highestAtkEnemy', spRatio: 1.5, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'highestAtkEnemy',
+          status: { kind: 'silence', durationMs: 4000 },
+        },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1800,
+    },
+    skill2: { name: '第一处刑人' },
+    passive: { name: '纯粹概念·抹消' },
+    ultimate: {
+      name: '导力抹消·纯粹概念',
+      target: 'allEnemies',
+      effects: [
+        { type: 'dispel', target: 'allEnemies' },
+        { type: 'damage', target: 'allEnemies', spRatio: 1.2, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'silence', durationMs: 4000 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  74255: {
+    role: 'guardian',
+    skill1: {
+      name: '高性能机器人的守护',
+      target: 'self',
+      effects: [
+        { type: 'shield', target: 'self', defRatio: 2.2, durationMs: 7000 },
+        { type: 'applyStatus', target: 'self', status: { kind: 'taunt', durationMs: 5000 } },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1800,
+    },
+    skill2: { name: '机械之躯' },
+    passive: { name: '自主学习程序' },
+    ultimate: {
+      name: '挚爱时光的守望',
+      target: 'allAllies',
+      effects: [
+        { type: 'shield', target: 'allAllies', defRatio: 1.6, durationMs: 8000 },
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'defUp', durationMs: 8000, amount: 0.3 },
+        },
+        { type: 'heal', target: 'allAllies', atkRatio: 0.6 },
+      ],
+      energyCost: 1000,
+    },
+  },
+  88130: {
+    role: 'arcane',
+    skill1: {
+      name: '梦幻光辉·聚光灯',
+      target: 'frontEnemy',
+      effects: [
+        { type: 'damage', spRatio: 1.9, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'frontEnemy',
+          status: { kind: 'spDown', durationMs: 5000, amount: 0.2 },
+        },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1800,
+    },
+    skill2: { name: 'New Order' },
+    passive: { name: '梦芽的心跳' },
+    ultimate: {
+      name: '电光合体·超装光辉',
+      target: 'allEnemies',
+      effects: [
+        { type: 'damage', target: 'allEnemies', spRatio: 1.4, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'defDown', durationMs: 5000, amount: 0.22 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  90574: {
+    role: 'support',
+    skill1: {
+      name: '温柔的注视',
+      target: 'lowestHpAlly',
+      effects: [
+        { type: 'heal', atkRatio: 1.4 },
+        {
+          type: 'applyStatus',
+          target: 'lowestHpAlly',
+          status: { kind: 'defUp', durationMs: 5000, amount: 0.22 },
+        },
+      ],
+      cooldownMs: 8600,
+      initialCooldownMs: 1800,
+    },
+    skill2: { name: '距离的靠近' },
+    passive: { name: '图书委员的秘密' },
+    ultimate: {
+      name: '心里危险的悸动',
+      target: 'allAllies',
+      effects: [
+        { type: 'heal', atkRatio: 1 },
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'spUp', durationMs: 6000, amount: 0.25 },
+        },
+        { type: 'cleanse', target: 'allAllies' },
+      ],
+      energyCost: 1000,
+    },
+  },
+  97302: {
+    role: 'support',
+    skill1: {
+      name: '俄语的悄声鼓励',
+      target: 'lowestHpAlly',
+      effects: [
+        { type: 'heal', atkRatio: 1.1, flatPower: 100 },
+        {
+          type: 'applyStatus',
+          target: 'lowestHpAlly',
+          status: { kind: 'atkUp', durationMs: 6000, amount: 0.2 },
+        },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1900,
+    },
+    skill2: { name: '完美优等生' },
+    passive: { name: '遮羞的俄语' },
+    ultimate: {
+      name: 'Что?·藏不住的真心',
+      target: 'allAllies',
+      effects: [
+        { type: 'heal', atkRatio: 0.9, flatPower: 130 },
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'spUp', durationMs: 6000, amount: 0.25 },
+        },
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'critRateUp', durationMs: 6000, amount: 0.2 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  100857: {
+    role: 'striker',
+    skill1: {
+      name: '相合的刃',
+      target: 'highestAtkEnemy',
+      effects: [
+        { type: 'damage', atkRatio: 1.9, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'highestAtkEnemy',
+          status: { kind: 'defDown', durationMs: 6000, amount: 0.2 },
+        },
+      ],
+      cooldownMs: 8000,
+      initialCooldownMs: 1700,
+    },
+    skill2: { name: '锋利的注视' },
+    passive: { name: '手起刀落' },
+    ultimate: {
+      name: '一刀入魂·裁断',
+      target: 'frontEnemy',
+      effects: [
+        { type: 'damage', atkRatio: 2.3, canCrit: true },
+        { type: 'execute', hpRatioThreshold: 0.25 },
+        {
+          type: 'applyStatus',
+          target: 'self',
+          status: { kind: 'atkUp', durationMs: 6000, amount: 0.3 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  104093: {
+    role: 'arcane',
+    skill1: {
+      name: '冰霜精灵召唤',
+      target: 'lowestHpEnemy',
+      effects: [
+        { type: 'damage', spRatio: 1.7, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'lowestHpEnemy',
+          status: { kind: 'slow', durationMs: 6000, amount: 0.2 },
+        },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1900,
+    },
+    skill2: { name: '精灵语咏唱' },
+    passive: { name: '被驱逐的贤者' },
+    ultimate: {
+      name: '异世界返る·极大魔法',
+      target: 'allEnemies',
+      effects: [
+        { type: 'damage', spRatio: 1.4, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'dot', durationMs: 6000, amount: 70, tickIntervalMs: 2000 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  104598: {
+    role: 'tactical',
+    skill1: {
+      name: '孔明的策略',
+      target: 'allAllies',
+      effects: [
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'haste', durationMs: 6000, amount: 0.2 },
+        },
+        { type: 'energyGain', target: 'self', amount: 90 },
+      ],
+      cooldownMs: 8600,
+      initialCooldownMs: 1900,
+    },
+    skill2: { name: '歌声的号令' },
+    passive: { name: '军师的临场指挥' },
+    ultimate: {
+      name: '传说主唱的舞台',
+      target: 'allAllies',
+      effects: [
+        { type: 'energyGain', target: 'allAllies', amount: 110 },
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'atkUp', durationMs: 6000, amount: 0.28 },
+        },
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'spUp', durationMs: 6000, amount: 0.28 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  107704: {
+    role: 'support',
+    skill1: {
+      name: '拳击手的鼓舞',
+      target: 'lowestHpAlly',
+      effects: [
+        { type: 'heal', target: 'lowestHpAlly', atkRatio: 1.3 },
+        {
+          type: 'applyStatus',
+          target: 'lowestHpAlly',
+          status: { kind: 'atkUp', durationMs: 6000, amount: 0.2 },
+        },
+      ],
+      cooldownMs: 8000,
+      initialCooldownMs: 1600,
+    },
+    skill2: { name: '青春的重量' },
+    passive: { name: '不服输的心' },
+    ultimate: {
+      name: '永不认输的斗志',
+      target: 'allAllies',
+      effects: [
+        { type: 'heal', target: 'allAllies', atkRatio: 0.9 },
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'atkUp', durationMs: 8000, amount: 0.3 },
+        },
+        { type: 'cleanse', target: 'allAllies' },
+      ],
+      energyCost: 1000,
+    },
+  },
+  108660: {
+    role: 'arcane',
+    skill1: {
+      name: '契约之吻',
+      target: 'lowestHpEnemy',
+      effects: [
+        { type: 'damage', target: 'lowestHpEnemy', spRatio: 1.7, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'lowestHpEnemy',
+          status: { kind: 'spDown', durationMs: 6000, amount: 0.22 },
+        },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1700,
+    },
+    skill2: { name: '黑夜的低语' },
+    passive: { name: '血之契约' },
+    ultimate: {
+      name: '血族的黑夜降临',
+      target: 'allEnemies',
+      effects: [
+        { type: 'damage', target: 'allEnemies', spRatio: 1.35, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'dot', durationMs: 6000, amount: 75, tickIntervalMs: 2000 },
+        },
+        { type: 'heal', target: 'self', spRatio: 0.6 },
+      ],
+      energyCost: 1000,
+    },
+  },
+  108663: {
+    role: 'striker',
+    skill1: {
+      name: '不杀的枪术',
+      target: 'frontEnemy',
+      effects: [
+        { type: 'damage', target: 'frontEnemy', atkRatio: 1.8, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'self',
+          status: { kind: 'critRateUp', durationMs: 6000, amount: 0.25 },
+        },
+      ],
+      cooldownMs: 8000,
+      initialCooldownMs: 1500,
+    },
+    skill2: { name: '最强莉可丽丝' },
+    passive: { name: '超凡的动体视力' },
+    ultimate: {
+      name: '超凡的射击·全弹连射',
+      target: 'allEnemies',
+      effects: [
+        { type: 'damage', target: 'allEnemies', atkRatio: 1.2, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'self',
+          status: { kind: 'haste', durationMs: 8000, amount: 0.3 },
+        },
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'slow', durationMs: 5000, amount: 0.2 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  108664: {
+    role: 'striker',
+    skill1: {
+      name: '武装射击',
+      target: 'highestAtkEnemy',
+      effects: [
+        { type: 'damage', atkRatio: 2, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'highestAtkEnemy',
+          status: { kind: 'defDown', durationMs: 5000, amount: 0.2 },
+        },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1800,
+    },
+    skill2: { name: '专业莉可丽丝' },
+    passive: { name: '冷静的枪口' },
+    ultimate: {
+      name: '泷奈式歼灭战术',
+      target: 'allEnemies',
+      effects: [
+        { type: 'damage', target: 'allEnemies', atkRatio: 1.3, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'self',
+          status: { kind: 'atkUp', durationMs: 6000, amount: 0.3 },
+        },
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'slow', durationMs: 4000, amount: 0.25 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  111330: {
+    role: 'controller',
+    skill1: {
+      name: '毒舌吐槽',
+      target: 'highestAtkEnemy',
+      effects: [
+        { type: 'damage', atkRatio: 0.9, spRatio: 1, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'highestAtkEnemy',
+          status: { kind: 'silence', durationMs: 3500 },
+        },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1800,
+    },
+    skill2: { name: '不服输の小鞠' },
+    passive: { name: '败犬也要努力' },
+    ultimate: {
+      name: '败犬女主の逆袭宣言',
+      target: 'allEnemies',
+      effects: [
+        { type: 'damage', target: 'allEnemies', spRatio: 1.2, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'atkDown', durationMs: 5000, amount: 0.24 },
+        },
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'slow', durationMs: 5000, amount: 0.2 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  116353: {
+    role: 'striker',
+    skill1: {
+      name: '单分子线切割',
+      target: 'highestAtkEnemy',
+      effects: [
+        { type: 'damage', target: 'highestAtkEnemy', atkRatio: 2, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'highestAtkEnemy',
+          status: { kind: 'defDown', durationMs: 6000, amount: 0.25 },
+        },
+      ],
+      cooldownMs: 8000,
+      initialCooldownMs: 1500,
+    },
+    skill2: { name: '义体强化' },
+    passive: { name: '月球之梦' },
+    ultimate: {
+      name: '黑客帝国·致命突袭',
+      target: 'lowestHpEnemy',
+      effects: [
+        { type: 'damage', target: 'lowestHpEnemy', atkRatio: 2.4, canCrit: true },
+        { type: 'execute', target: 'lowestHpEnemy', hpRatioThreshold: 0.25 },
+        {
+          type: 'applyStatus',
+          target: 'self',
+          status: { kind: 'haste', durationMs: 8000, amount: 0.25 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  127792: {
+    role: 'tactical',
+    skill1: {
+      name: '随性の即兴独奏',
+      target: 'self',
+      effects: [
+        { type: 'energyGain', amount: 110 },
+        {
+          type: 'applyStatus',
+          target: 'self',
+          status: { kind: 'haste', durationMs: 6000, amount: 0.25 },
+        },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1800,
+    },
+    skill2: { name: '猫一样的自由' },
+    passive: { name: '喜多的即兴节奏' },
+    ultimate: {
+      name: '自由不羁の吉他咏叹',
+      target: 'allAllies',
+      effects: [
+        { type: 'energyGain', target: 'allAllies', amount: 90 },
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'haste', durationMs: 6000, amount: 0.28 },
+        },
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'spUp', durationMs: 6000, amount: 0.2 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  127793: {
+    role: 'controller',
+    skill1: {
+      name: '春日影',
+      target: 'lowestHpEnemy',
+      effects: [
+        { type: 'damage', spRatio: 1.6, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'lowestHpEnemy',
+          status: { kind: 'spDown', durationMs: 6000, amount: 0.25 },
+        },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1800,
+    },
+    skill2: { name: '执拗的挽留' },
+    passive: { name: '破碎的乐队' },
+    ultimate: {
+      name: '为什么要演奏春日影！',
+      target: 'allEnemies',
+      effects: [
+        { type: 'damage', target: 'allEnemies', spRatio: 1.3, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'slow', durationMs: 6000, amount: 0.35 },
+        },
+        {
+          type: 'applyStatus',
+          target: 'frontEnemy',
+          status: { kind: 'silence', durationMs: 3500 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  127794: {
+    role: 'tactical',
+    skill1: {
+      name: '节拍死守',
+      target: 'allAllies',
+      effects: [
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'haste', durationMs: 6000, amount: 0.2 },
+        },
+        { type: 'energyGain', target: 'self', amount: 80 },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1800,
+    },
+    skill2: { name: '冷静的鼓手' },
+    passive: { name: '乐队的支柱' },
+    ultimate: {
+      name: 'MyGO!!!!!·压轴鼓点',
+      target: 'allAllies',
+      effects: [
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'spUp', durationMs: 6000, amount: 0.3 },
+        },
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'critRateUp', durationMs: 6000, amount: 0.25 },
+        },
+        { type: 'energyGain', target: 'self', amount: 100 },
+      ],
+      energyCost: 1000,
+    },
+  },
+  130664: {
+    role: 'striker',
+    skill1: {
+      name: '迷茫地嘶吼',
+      target: 'frontEnemy',
+      effects: [
+        { type: 'damage', atkRatio: 1.9, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'self',
+          status: { kind: 'atkUp', durationMs: 5000, amount: 0.2 },
+        },
+      ],
+      cooldownMs: 8400,
+      initialCooldownMs: 1700,
+    },
+    skill2: { name: '孤独的呐喊' },
+    passive: { name: '不服输的倔强' },
+    ultimate: {
+      name: '哭泣少女乐队',
+      target: 'allEnemies',
+      effects: [
+        { type: 'damage', atkRatio: 1.4, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'self',
+          status: { kind: 'atkUp', durationMs: 6000, amount: 0.35 },
+        },
+        {
+          type: 'applyStatus',
+          target: 'self',
+          status: { kind: 'haste', durationMs: 6000, amount: 0.3 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  132476: {
+    role: 'arcane',
+    skill1: {
+      name: '圣咏·奏鸣',
+      target: 'highestAtkEnemy',
+      effects: [
+        { type: 'damage', spRatio: 1.7, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'highestAtkEnemy',
+          status: { kind: 'atkDown', durationMs: 6000, amount: 0.2 },
+        },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1800,
+    },
+    skill2: { name: '戴上假面' },
+    passive: { name: 'Oblivionis的领唱' },
+    ultimate: {
+      name: 'Ave Mujica·假面安魂曲',
+      target: 'allEnemies',
+      effects: [
+        { type: 'damage', spRatio: 1.4, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'silence', durationMs: 5000 },
+        },
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'spDown', durationMs: 6000, amount: 0.25 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  132477: {
+    role: 'guardian',
+    skill1: {
+      name: '沉默的守护',
+      target: 'self',
+      effects: [
+        { type: 'shield', spRatio: 0.8, defRatio: 1.2, flatPower: 100, durationMs: 7000 },
+        { type: 'applyStatus', target: 'allEnemies', status: { kind: 'taunt', durationMs: 5000 } },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1800,
+    },
+    skill2: { name: '无言的觉悟' },
+    passive: { name: '背负一切的姐姐' },
+    ultimate: {
+      name: 'Mortis·守护者的假面',
+      target: 'allAllies',
+      effects: [
+        { type: 'shield', spRatio: 0.6, defRatio: 1, flatPower: 130, durationMs: 8000 },
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'defUp', durationMs: 6000, amount: 0.3 },
+        },
+        { type: 'cleanse', target: 'allAllies' },
+      ],
+      energyCost: 1000,
+    },
+  },
+  133285: {
+    role: 'tactical',
+    skill1: {
+      name: '键盘的旋律',
+      target: 'allAllies',
+      effects: [
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'spUp', durationMs: 6000, amount: 0.2 },
+        },
+        { type: 'energyGain', target: 'self', amount: 80 },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1800,
+    },
+    skill2: { name: '怯生生的键盘手' },
+    passive: { name: 'Ave Mujica的合音' },
+    ultimate: {
+      name: 'Timoris·加速的乐章',
+      target: 'allAllies',
+      effects: [
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'haste', durationMs: 6000, amount: 0.3 },
+        },
+        { type: 'energyGain', target: 'self', amount: 110 },
+        {
+          type: 'applyStatus',
+          target: 'allAllies',
+          status: { kind: 'spUp', durationMs: 6000, amount: 0.2 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  150624: {
+    role: 'controller',
+    skill1: {
+      name: '小市民的观察',
+      target: 'highestAtkEnemy',
+      effects: [
+        { type: 'damage', target: 'highestAtkEnemy', atkRatio: 1.5, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'highestAtkEnemy',
+          status: { kind: 'atkDown', durationMs: 6000, amount: 0.25 },
+        },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1700,
+    },
+    skill2: { name: '低调的智谋' },
+    passive: { name: '互惠关系' },
+    ultimate: {
+      name: '看穿一切的推理',
+      target: 'allEnemies',
+      effects: [
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'silence', durationMs: 4500 },
+        },
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'spDown', durationMs: 6000, amount: 0.28 },
+        },
+        { type: 'damage', target: 'allEnemies', spRatio: 0.7, canCrit: true },
+      ],
+      energyCost: 1000,
+    },
+  },
+  167824: {
+    role: 'striker',
+    skill1: {
+      name: '机体同调突袭',
+      target: 'frontEnemy',
+      effects: [
+        { type: 'damage', target: 'frontEnemy', atkRatio: 2, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'self',
+          status: { kind: 'haste', durationMs: 6000, amount: 0.18 },
+        },
+      ],
+      cooldownMs: 8000,
+      initialCooldownMs: 1600,
+    },
+    skill2: { name: '驾驶员的直觉' },
+    passive: { name: '宇宙世纪之魂' },
+    ultimate: {
+      name: '让叶觉醒·全域压制',
+      target: 'highestAtkEnemy',
+      effects: [
+        { type: 'damage', target: 'highestAtkEnemy', atkRatio: 2.4, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'self',
+          status: { kind: 'critRateUp', durationMs: 8000, amount: 0.35 },
+        },
+        {
+          type: 'applyStatus',
+          target: 'highestAtkEnemy',
+          status: { kind: 'slow', durationMs: 5000, amount: 0.25 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
+  189813: {
+    role: 'arcane',
+    skill1: {
+      name: '月光辉射',
+      target: 'lowestHpEnemy',
+      effects: [
+        { type: 'damage', spRatio: 1.6, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'lowestHpEnemy',
+          status: { kind: 'spDown', durationMs: 6000, amount: 0.2 },
+        },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1900,
+    },
+    skill2: { name: '竹取之光' },
+    passive: { name: '月之公主' },
+    ultimate: {
+      name: '超时空·辉夜升天',
+      target: 'allEnemies',
+      effects: [
+        { type: 'damage', spRatio: 1.45, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'slow', durationMs: 6000, amount: 0.25 },
+        },
+      ],
+      energyCost: 1000,
+    },
+  },
 }
