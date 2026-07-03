@@ -23,7 +23,9 @@ import {
 } from './squadSkillKits';
 import { simulateTimedBattle } from '@/engine/squad/timedBattle';
 
-const rawPath = fileURLToPath(new URL('../../../data/character/all_cards.json', import.meta.url));
+// §5 修复：读**线上服务同源**的角色数据（backend/server.py:53 服务 selected_character），
+// 而非旧的 data/character（两份稀有度分档不同，旧测试没在守真实出战名单）。
+const rawPath = fileURLToPath(new URL('../../../data/selected_character/all_cards.json', import.meta.url));
 const allCharacters = JSON.parse(readFileSync(rawPath, 'utf8')) as CharacterCard[];
 
 const baseStats: BattleStats = { hp: 1000, atk: 160, def: 90, sp: 150, spd: 120 };
@@ -292,8 +294,9 @@ describe('SC-T1 explicit archetype single source', () => {
 /** SC-T2：未覆盖 HR 补个人技能名（命中个人名 / 回落原型通名 / description 派生 / 不破坏 UR）。 */
 describe('SC-T2 HR personal skill names', () => {
   const byId = new Map(allCharacters.map(c => [c.id, c] as const));
-  // scout 核实的未覆盖 HR 样本（无个人技绑定、原走原型通名）
-  const UNCOVERED_HR = [13391, 127790, 10446, 35615, 19529, 19546, 71337, 57751, 26003];
+  // 原「未覆盖」样本（原走原型通名，现已逐角色 bespoke）。§5 修复后读服务同源名单，
+  // 故仅保留在 selected_character 中真实存在的 id（利威尔 19546 不在服务名单，移除）。
+  const UNCOVERED_HR = [13391, 127790, 10446, 35615, 19529, 71337, 57751, 26003];
 
   it('原「未覆盖 HR」现已逐角色 bespoke（skill1 非通名），且未配置角色仍干净回落通名', () => {
     // 出战池全差异化后，这批曾走原型通名的 HR 现已 bespoke，skill1 名不再是 `角色名·标签`。
