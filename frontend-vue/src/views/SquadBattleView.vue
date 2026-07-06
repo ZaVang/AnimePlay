@@ -22,7 +22,6 @@ import {
   validateTowerSquadMembers,
   type BattleStats,
   type ManualUltimateOrder,
-  type SquadPosition,
   type SquadUnitSetup,
   type StatusKind,
   type TimedBattleEvent,
@@ -37,7 +36,7 @@ import CharacterSelectModal from '@/components/battle/CharacterSelectModal.vue';
 import SquadBattlefield from '@/components/battle/squad/SquadBattlefield.vue';
 import SquadBattleLog from '@/components/battle/squad/SquadBattleLog.vue';
 import SquadBattleResult from '@/components/battle/squad/SquadBattleResult.vue';
-import { getSquadSkillKitForCharacter, isSquadSkillKitReady } from '@/data/squadSkillKits';
+import { getSquadSkillKitForCharacter, isSquadSkillKitReady, getSquadRoleInfo } from '@/data/squadSkillKits';
 import type { CharacterCard } from '@/types/card';
 import type { SquadBattleRewardView, SquadBattleUnitView, SquadFloatingDamageView } from '@/components/battle/squad/types';
 
@@ -83,7 +82,6 @@ interface RuntimeUnitView extends SquadBattleUnitView {
 
 const BATTLE_STATE_KEY = 'squadBattleState';
 const EMPTY_STAT_BONUS: BattleStats = { hp: 0, atk: 0, def: 0, sp: 0, spd: 0 };
-const SQUAD_POSITIONS: SquadPosition[] = ['front', 'front', 'middle', 'middle', 'back'];
 const CONTROL_STATUSES: StatusKind[] = ['stun', 'silence', 'taunt'];
 const PLAYBACK_DELAY_MS = 180;
 // SB-T3 收尾①：浮动伤害数字的驻留时长（跟随 180ms 逐条回放节奏，略长于一帧让玩家看清）。
@@ -124,8 +122,10 @@ const battleRewards = ref<SquadBattleRewardView>({
 
 const towerSquadAllowedRarities = TOWER_SQUAD_ALLOWED_RARITIES;
 
-const playerBattleUnits = computed(() => battleUnits.value.filter(unit => unit.side === 'player'));
-const enemyBattleUnits = computed(() => battleUnits.value.filter(unit => unit.side === 'enemy'));
+// PCR 式：战场按固有站位前→后排列（前排在上，后排在下），一眼看出谁扛线、谁在后排输出。
+const byPositionOrder = (a: RuntimeUnitView, b: RuntimeUnitView) => a.positionOrder - b.positionOrder;
+const playerBattleUnits = computed(() => battleUnits.value.filter(unit => unit.side === 'player').slice().sort(byPositionOrder));
+const enemyBattleUnits = computed(() => battleUnits.value.filter(unit => unit.side === 'enemy').slice().sort(byPositionOrder));
 
 function isCharacterSelectableForTower(character: CharacterCard): boolean {
   return isTowerSquadRarity(character.rarity) && isSquadSkillKitReady(character);
@@ -319,7 +319,8 @@ function unitSetups(): SquadUnitSetup[] {
       id: member.unitId,
       name: member.character.name,
       side,
-      position: SQUAD_POSITIONS[member.position] ?? 'back',
+      // PCR 式：站位由角色 role 推导（前排坦克/中排近战/后排法师奶妈），不再看槽位次序。
+      position: getSquadRoleInfo(member.character)?.position ?? 'back',
       stats: member.battleStats,
       skills: getSquadSkillKitForCharacter(member.character),
     };
@@ -386,12 +387,17 @@ function resumeBattleSimulation(resumeFromMs: number) {
 function baseRuntimeUnits(): RuntimeUnitView[] {
   const fromMember = (member: SquadMember, side: 'player' | 'enemy'): RuntimeUnitView => {
     const ultimate = getSquadSkillKitForCharacter(member.character)?.ultimate;
+    const roleInfo = getSquadRoleInfo(member.character);
     return {
       id: member.unitId,
       name: member.character.name,
       imagePath: member.character.image_path || assetUrl('/data/images/character/77.jpg'),
       side,
       position: member.position,
+      roleLabel: roleInfo?.roleLabel ?? '',
+      roleIcon: roleInfo?.roleIcon ?? '',
+      positionLabel: roleInfo?.positionLabel ?? '',
+      positionOrder: roleInfo?.positionOrder ?? 2,
       hp: member.battleStats.hp,
       maxHp: member.battleStats.hp,
       energy: 0,

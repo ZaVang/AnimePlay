@@ -9,6 +9,7 @@ import type { Skill } from '@/types/skill';
 import type {
   CompleteSquadSkillKit,
   SkillEffect,
+  SquadPosition,
   SquadSkillDef,
   SquadSkillSlot,
   StatusKind,
@@ -21,6 +22,10 @@ import {
   PASSIVE_DURATION_MS,
   archetypeEffects,
   archetypeLabels,
+  ROLE_TO_POSITION,
+  ROLE_META,
+  POSITION_META,
+  SQUAD_POSITION_ORDER,
   type SquadArchetype,
 } from './squad/archetypeTemplates';
 import {
@@ -261,6 +266,42 @@ export function signatureRoleOf(characterId: number): SquadArchetype | undefined
 /** SC-T1：暴露单一定位入口给测试/未来消费端（显式 role → 正则回落 → stats/稀有度兜底）。 */
 export function getArchetypeForCharacter(character: CharacterCard, activeSkill?: Skill, passiveSkill?: Skill): SquadArchetype {
   return resolveArchetype(character, activeSkill, passiveSkill);
+}
+
+/** PCR 式「职业 + 固有站位」信息（展示层）。由角色 role 推导：职业名 + 前中后站位 + 图标/说明。 */
+export interface SquadRoleInfo {
+  role: SquadArchetype;
+  /** 固有站位（喂给引擎 SquadUnitSetup.position）。 */
+  position: SquadPosition;
+  /** 职业名（坦克/战士/奶妈…）。 */
+  roleLabel: string;
+  roleIcon: string;
+  roleBlurb: string;
+  /** 站位标签（前排/中排/后排）。 */
+  positionLabel: string;
+  /** 站位排序权重（前 0 / 中 1 / 后 2）。 */
+  positionOrder: number;
+}
+
+/**
+ * 由角色推导 PCR 式职业 + 固有站位（单一真相源：CHARACTER_KITS[id].role → 正则/stats 回落）。
+ * 编队展示、战场排列、单位条职业芯片都读这一处，保证「显示站位 === 战斗站位」不脱钩。
+ */
+export function getSquadRoleInfo(character: CharacterCard | null | undefined): SquadRoleInfo | null {
+  if (!character) return null;
+  const role = resolveArchetype(character, resolvePersonalSkill(character, 'active'), resolvePersonalSkill(character, 'passive'));
+  const position = ROLE_TO_POSITION[role];
+  const meta = ROLE_META[role];
+  const posMeta = POSITION_META[position];
+  return {
+    role,
+    position,
+    roleLabel: meta.label,
+    roleIcon: meta.icon,
+    roleBlurb: meta.blurb,
+    positionLabel: posMeta.label,
+    positionOrder: SQUAD_POSITION_ORDER[position],
+  };
 }
 
 /** SC-T1：是否为该角色显式钉了 role（测试用：区分显式命中 vs 正则回落）。 */

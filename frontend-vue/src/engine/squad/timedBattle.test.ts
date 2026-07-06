@@ -727,3 +727,36 @@ describe('D1 tower rewards', () => {
     });
   });
 });
+
+/**
+ * 回归：单位「带 hot/dot 阵亡」不能让主循环死转。
+ * 根因：nextStatusTickAt 曾统计所有单位（含死者）的 nextTickAt，但 processStatusTicks 跳过死者不推进它，
+ * 于是死者的一跳把 nextAt 钉在过去时刻，state.now 不前进、事件不增长 → 无限循环（5v5 常见，会卡死游戏）。
+ * 触发条件：死者不是本方最后一人（否则其阵亡即判负、循环立即结束），故用 2v1。
+ */
+describe('regression: dying with an active hot/dot must not spin the loop', () => {
+  const hotSelfPassive: SquadSkillDef = {
+    id: 'p-hot',
+    name: 'p-hot',
+    slot: 'passive',
+    target: 'self',
+    effects: [{ type: 'applyStatus', target: 'self', status: { kind: 'hot', amount: 5, durationMs: 90000, tickIntervalMs: 2000 } }],
+  };
+
+  it('terminates (battleEnd emitted) when a hot-bearing unit dies while an ally fights on', () => {
+    const result = simulateTimedBattle({
+      rng: createSequenceRng(Array.from({ length: 64 }, (_, i) => (i % 5) / 5)),
+      units: [
+        // 带自我 hot 的脆皮，会被秒杀但阵亡时仍持有未过期的 hot。
+        unit('victim', 'player', { stats: baseStats({ hp: 8, def: 0 }), skills: { passive: hotSelfPassive } }),
+        // 存活的队友：让战斗在 victim 死后继续（触发死者幽灵跳）。
+        unit('ally', 'player', { stats: baseStats({ hp: 4000, def: 0 }), skills: { normalAttack: damageSkill('ally-hit', 'normal', 40) } }),
+        unit('killer', 'enemy', { stats: baseStats({ hp: 4000, atk: 100, def: 0 }), skills: { normalAttack: damageSkill('killer-hit', 'normal', 999) } }),
+      ],
+    });
+    // 修复前：本行永不返回（同步死转）。修复后：正常结束。
+    expect(result.events.some(e => e.type === 'battleEnd')).toBe(true);
+    expect(result.events.some(e => e.type === 'defeated' && e.targetId === 'victim')).toBe(true);
+    expect(result.elapsedMs).toBeLessThanOrEqual(90_000);
+  });
+});

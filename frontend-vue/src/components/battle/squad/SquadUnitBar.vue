@@ -70,14 +70,27 @@ const statusLabels: Record<string, string> = {
         class="h-full w-full object-cover object-top"
         @error="($event.target as HTMLImageElement).src = assetUrl('/data/images/character/77.jpg')"
       >
-      <div class="absolute left-1 top-1 rounded bg-elevated/85 px-1.5 py-0.5 text-[10px] font-bold text-ink">
-        {{ unit.position + 1 }}
+      <!-- PCR 式：角标显示职业图标 + 站位（前/中/后），一眼看出这单位的定位。 -->
+      <div class="absolute left-1 top-1 rounded bg-elevated/85 px-1 py-0.5 text-[10px] font-bold text-ink" :title="`${unit.roleLabel} · ${unit.positionLabel}`">
+        {{ unit.roleIcon }}
       </div>
+      <div
+        v-if="unit.positionLabel"
+        class="absolute bottom-1 left-1 rounded px-1 py-0.5 text-[9px] font-black leading-none text-on-accent"
+        :class="{
+          'bg-danger': unit.positionOrder === 0,
+          'bg-highlight': unit.positionOrder === 1,
+          'bg-info': unit.positionOrder === 2,
+        }"
+      >{{ unit.positionLabel }}</div>
     </div>
 
     <div class="min-w-0 space-y-1">
       <div class="flex min-w-0 items-center gap-2">
         <div class="truncate text-sm font-bold text-ink">{{ unit.name }}</div>
+        <span v-if="unit.roleLabel" class="shrink-0 rounded bg-surface-2 px-1.5 py-0.5 text-[10px] font-bold text-ink-2">
+          {{ unit.roleIcon }}{{ unit.roleLabel }}
+        </span>
         <div v-if="unit.defeated" class="shrink-0 rounded bg-danger px-1.5 py-0.5 text-[10px] font-bold text-on-accent">
           击败
         </div>

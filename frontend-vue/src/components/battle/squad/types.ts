@@ -6,6 +6,11 @@ export interface SquadBattleUnitView {
   imagePath: string;
   side: 'player' | 'enemy';
   position: number;
+  // PCR 式职业 + 固有站位（展示层，由角色 role 推导；与战斗站位同源）。
+  roleLabel: string;
+  roleIcon: string;
+  positionLabel: string;
+  positionOrder: number;
   hp: number;
   maxHp: number;
   energy: number;
