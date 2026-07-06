@@ -75,6 +75,20 @@ export const ROLE_META: Record<SquadArchetype, SquadRoleMeta> = {
   controller: { label: '控场', icon: '🌀', blurb: '后排控制与削弱敌人' },
 }
 
+/**
+ * PCR 式「每定位」蓄能系数（问题②）：onAttack=自身行动充能倍率，onHit=受击充能倍率。
+ * 坦克受击充能快（冲在前面挨打→攒大招），输出/游击攻击充能快，法师靠施法、后排少挨打。
+ * 由 View 注入进 SquadUnitSetup.energyGain，引擎乘算——引擎保持纯净、不反向依赖本表。
+ */
+export const ENERGY_BY_ROLE: Record<SquadArchetype, { onAttack: number; onHit: number }> = {
+  guardian: { onAttack: 0.85, onHit: 1.6 },
+  striker: { onAttack: 1.3, onHit: 1.0 },
+  tactical: { onAttack: 1.25, onHit: 1.05 },
+  arcane: { onAttack: 1.2, onHit: 0.9 },
+  support: { onAttack: 1.1, onHit: 1.2 },
+  controller: { onAttack: 1.15, onHit: 1.05 },
+}
+
 /** 站位 → 展示元数据（标签 + 简称 + 用于配色的 tone）。 */
 export const POSITION_META: Record<SquadPosition, { label: string; short: string; tone: SquadPosition }> = {
   front: { label: '前排', short: '前', tone: 'front' },

@@ -213,5 +213,6 @@ export function calculateActionIntervalMs(
 
 export function energyFromDamage(damage: number, maxHp: number): number {
   if (damage <= 0 || maxHp <= 0) return 0;
-  return Math.floor(clamp(0, 100, (damage / maxHp) * 300));
+  // 问题②：受击充能上调（cap 100→150，斜率 300→420），配合定位 onHit 系数让坦克/前排更快攒大招。
+  return Math.floor(clamp(0, 150, (damage / maxHp) * 420));
 }

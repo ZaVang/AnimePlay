@@ -79,12 +79,14 @@ function createRuntimeUnit(setup: SquadUnitSetup): SquadUnitRuntime {
     // SB-T3: 全体基础暴击 = BASE_CRIT_RATE，落在运行时单位 base critRate（DEFAULT 保持 0）；
     // setup.modifiers 若显式给了 critRate 则以其为准（覆盖基础值）。
     modifiers: { ...DEFAULT_BATTLE_MODIFIERS, critRate: BASE_CRIT_RATE, ...setup.modifiers },
+    energyGain: { onAttack: setup.energyGain?.onAttack ?? 1, onHit: setup.energyGain?.onHit ?? 1 },
     statuses: [],
     cooldownReadyAt: {
       skill1: skills.skill1?.initialCooldownMs ?? defaultInitialCooldown(),
       ultimate: 0,
     },
     nextActionAt: 0,
+    lastEnergyRegenAt: 0,
     defeatedAt: null,
   };
   unit.nextActionAt = calculateActionIntervalMs(getEffectiveStats(unit, 0).spd, getSpeedModifier(unit, 0));
@@ -240,9 +242,15 @@ function spendUltimateEnergy(unit: SquadUnitRuntime, skill: SquadSkillDef): void
   unit.energy = Math.max(0, unit.energy - (skill.energyCost ?? DEFAULT_ULTIMATE_COST));
 }
 
+// 行动充能基值（问题②：整体上调让大招更常放，1000 上限约 ~4-5 次行动可满）。
+const ENERGY_ON_NORMAL = 200;
+const ENERGY_ON_SKILL1 = 280;
+
 function applyActionEnergy(state: TimedBattleState, unit: SquadUnitRuntime, skill: SquadSkillDef): void {
-  if (skill.slot === 'normal') gainEnergy(state, unit, 90, 'action');
-  if (skill.slot === 'skill1') gainEnergy(state, unit, 120, 'action');
+  // 攻击充能 × 定位系数（onAttack）：输出/游击攻击充能快，坦克略慢（由 View 注入）。
+  const mult = unit.energyGain.onAttack;
+  if (skill.slot === 'normal') gainEnergy(state, unit, ENERGY_ON_NORMAL * mult, 'action');
+  if (skill.slot === 'skill1') gainEnergy(state, unit, ENERGY_ON_SKILL1 * mult, 'action');
 }
 
 function scheduleCooldown(state: TimedBattleState, unit: SquadUnitRuntime, skill: SquadSkillDef): void {
@@ -254,8 +262,19 @@ function scheduleNextAction(state: TimedBattleState, unit: SquadUnitRuntime): vo
   unit.nextActionAt = state.now + calculateActionIntervalMs(getEffectiveStats(unit, state.now).spd, getSpeedModifier(unit, state.now));
 }
 
+// 被动蓄能（问题②）：按流逝时间给能量，与「攻击/受击」两条事件驱动来源叠加，保证后排/被控单位也能攒出大招。
+const ENERGY_REGEN_PER_SEC = 26;
+const ENERGY_REGEN_MAX_ELAPSED_MS = 10_000; // 复活/长时间未行动的补发上限，避免瞬间灌满。
+
+function applyPassiveEnergyRegen(state: TimedBattleState, unit: SquadUnitRuntime): void {
+  const elapsed = Math.min(state.now - unit.lastEnergyRegenAt, ENERGY_REGEN_MAX_ELAPSED_MS);
+  unit.lastEnergyRegenAt = state.now;
+  if (elapsed > 0) gainEnergy(state, unit, ENERGY_REGEN_PER_SEC * (elapsed / 1000), 'action');
+}
+
 function processUnitAction(state: TimedBattleState, unit: SquadUnitRuntime): void {
   if (!isAlive(unit)) return;
+  applyPassiveEnergyRegen(state, unit); // 被控/普攻/技能前都先结算被动蓄能。
   if (hasActiveStatus(unit, 'stun', state.now)) {
     state.events.push({ type: 'actionSkipped', at: state.now, actorId: unit.id, reason: 'stun' });
     scheduleNextAction(state, unit);

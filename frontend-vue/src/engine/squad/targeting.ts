@@ -1,5 +1,5 @@
 import type { BattleStats } from './combat';
-import type { SquadPosition, SquadSide, SquadUnitRuntime, StatusKind, TargetSelector } from './types';
+import type { SquadPosition, SquadSide, StatusKind, TargetSelector } from './types';
 
 export interface TargetableStatus {
   id?: string;
@@ -78,6 +78,20 @@ function byBackOrder<T extends TargetableUnit>(a: T, b: T): number {
   return positionRank(b.position) - positionRank(a.position);
 }
 
+// 问题③：命中某一排（前/中/后）的全部敌人；若该排无人，按 fallback 顺序回落到最近的有人排（不空放）。
+const ROW_FALLBACK: Record<'front' | 'middle' | 'back', SquadPosition[]> = {
+  front: ['front', 'middle', 'back'],
+  middle: ['middle', 'front', 'back'],
+  back: ['back', 'middle', 'front'],
+};
+function enemiesInRow<T extends TargetableUnit>(enemies: readonly T[], row: 'front' | 'middle' | 'back'): T[] {
+  for (const tier of ROW_FALLBACK[row]) {
+    const inTier = enemies.filter(u => u.position === tier);
+    if (inTier.length > 0) return inTier;
+  }
+  return [];
+}
+
 function applyTaunt(
   units: readonly TargetableUnit[],
   actor: TargetableUnit,
@@ -122,6 +136,15 @@ export function selectTargets<T extends TargetableUnit>(
       break;
     case 'allEnemies':
       selected = enemies;
+      break;
+    case 'frontRowEnemies':
+      selected = enemiesInRow(enemies, 'front');
+      break;
+    case 'middleRowEnemies':
+      selected = enemiesInRow(enemies, 'middle');
+      break;
+    case 'backRowEnemies':
+      selected = enemiesInRow(enemies, 'back');
       break;
     case 'self':
       selected = isAlive(actor) ? [actor] : [];

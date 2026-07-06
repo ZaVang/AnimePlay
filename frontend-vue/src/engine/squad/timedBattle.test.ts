@@ -255,7 +255,8 @@ describe('D1 timed battle simulation', () => {
       maxTimeMs: 2600,
     });
 
-    expect(result.events).toContainEqual(expect.objectContaining({ type: 'energy', targetId: 'p1', amount: 90, reason: 'action' }));
+    // 行动会给 p1 蓄能（问题② 调值后不再断言固定数，只断言「攻击/被动确实充能」）。
+    expect(result.events.some(e => e.type === 'energy' && e.targetId === 'p1' && e.reason === 'action' && e.amount > 0)).toBe(true);
     expect(result.events.some(event => event.type === 'energy' && event.targetId === 'e1' && event.reason === 'damage')).toBe(true);
   });
 
@@ -758,5 +759,36 @@ describe('regression: dying with an active hot/dot must not spin the loop', () =
     expect(result.events.some(e => e.type === 'battleEnd')).toBe(true);
     expect(result.events.some(e => e.type === 'defeated' && e.targetId === 'victim')).toBe(true);
     expect(result.elapsedMs).toBeLessThanOrEqual(90_000);
+  });
+});
+
+/** 问题②：每定位蓄能系数被引擎乘算（onAttack 放大攻击充能 / onHit 放大受击充能）+ 被动蓄能。 */
+describe('per-role energy gain multipliers', () => {
+  const energyTo = (r: { events: readonly { type: string; targetId?: string; reason?: string; amount?: number }[] }, id: string, reason: string) =>
+    r.events.filter(e => e.type === 'energy' && e.targetId === id && e.reason === reason).reduce((s, e) => s + (e.amount ?? 0), 0);
+
+  it('onAttack 放大自身行动充能', () => {
+    const mk = (mult: number) => simulateTimedBattle({
+      rng: createSequenceRng([0.5, 0.5, 0.5, 0.5]),
+      units: [
+        unit('a', 'player', { energyGain: { onAttack: mult, onHit: 1 }, stats: baseStats({ atk: 50 }) }),
+        unit('b', 'enemy', { stats: baseStats({ hp: 5000, atk: 1 }) }),
+      ],
+      maxTimeMs: 2600,
+    });
+    // 高 onAttack 单位的「行动」充能总量应明显更高（被动蓄能不含 onAttack，故差异来自攻击部分）。
+    expect(energyTo(mk(2), 'a', 'action')).toBeGreaterThan(energyTo(mk(1), 'a', 'action'));
+  });
+
+  it('onHit 放大受击充能', () => {
+    const mk = (mult: number) => simulateTimedBattle({
+      rng: createSequenceRng([0.5, 0.5, 0.5, 0.5]),
+      units: [
+        unit('tank', 'player', { energyGain: { onAttack: 1, onHit: mult }, stats: baseStats({ hp: 5000, atk: 1, def: 0 }) }),
+        unit('hitter', 'enemy', { skills: { normalAttack: damageSkill('h', 'normal', 200) }, stats: baseStats({ hp: 5000, atk: 1 }) }),
+      ],
+      maxTimeMs: 3000,
+    });
+    expect(energyTo(mk(2), 'tank', 'damage')).toBeGreaterThan(energyTo(mk(1), 'tank', 'damage'));
   });
 });

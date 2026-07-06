@@ -57,3 +57,25 @@ describe('D1 targeting', () => {
     expect(selectTargets(units, source, { type: 'allEnemies' }, 1000).map(t => t.id)).toEqual(['e-a', 'e-b']);
   });
 });
+
+// 问题③：分排（前/中/后）选择器 + 空排回落。
+describe('zone row selectors', () => {
+  const p = unit({ id: 'p', side: 'player', position: 'front' });
+  const enemies = [
+    unit({ id: 'ef1', side: 'enemy', position: 'front' }),
+    unit({ id: 'ef2', side: 'enemy', position: 'front' }),
+    unit({ id: 'em', side: 'enemy', position: 'middle' }),
+    unit({ id: 'eb', side: 'enemy', position: 'back' }),
+  ];
+
+  it('frontRowEnemies 命中全部前排敌人', () => {
+    expect(selectTargets([p, ...enemies], p, 'frontRowEnemies').map(u => u.id).sort()).toEqual(['ef1', 'ef2']);
+  });
+  it('backRowEnemies 命中后排敌人', () => {
+    expect(selectTargets([p, ...enemies], p, 'backRowEnemies').map(u => u.id)).toEqual(['eb']);
+  });
+  it('空排回落到最近有人排（back 空 → middle）', () => {
+    const noBack = [unit({ id: 'ef', side: 'enemy', position: 'front' }), unit({ id: 'em', side: 'enemy', position: 'middle' })];
+    expect(selectTargets([p, ...noBack], p, 'backRowEnemies').map(u => u.id)).toEqual(['em']);
+  });
+});

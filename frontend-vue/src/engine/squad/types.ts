@@ -12,6 +12,10 @@ export type TargetSelector =
   | 'highestAtkEnemy'
   | 'backEnemy'
   | 'allEnemies'
+  // 问题③：分区/排选择器——命中某一排的全部敌人（空排则回落最近的有人排，不空放）。
+  | 'frontRowEnemies'
+  | 'middleRowEnemies'
+  | 'backRowEnemies'
   | 'self'
   | 'lowestHpAlly'
   | 'firstDefeatedAlly'
@@ -140,6 +144,12 @@ export interface CompleteSquadSkillKit extends SquadSkillKit {
   ultimate: SquadSkillDef;
 }
 
+/** PCR 式蓄能系数：攻击（自身行动）与受击（被伤害）各一个倍率，由 View 按定位注入（引擎保持纯净）。 */
+export interface EnergyGainProfile {
+  onAttack: number;
+  onHit: number;
+}
+
 export interface SquadUnitSetup {
   id: string;
   name: string;
@@ -150,6 +160,8 @@ export interface SquadUnitSetup {
   energy?: number;
   skills?: Partial<SquadSkillKit>;
   modifiers?: Partial<BattleModifiers>;
+  /** 蓄能系数（缺省 {1,1}）。攻击/受击充能各按定位放大，让大招更常放（问题②）。 */
+  energyGain?: Partial<EnergyGainProfile>;
 }
 
 export interface SquadUnitRuntime {
@@ -163,9 +175,12 @@ export interface SquadUnitRuntime {
   energy: number;
   skills: SquadSkillKit;
   modifiers: BattleModifiers;
+  energyGain: EnergyGainProfile;
   statuses: StatusRuntime[];
   cooldownReadyAt: Record<'skill1' | 'ultimate', number>;
   nextActionAt: number;
+  /** 上次结算被动蓄能的时刻（问题②：按流逝时间发被动能量，即便被控/后排闲置也能攒大招）。 */
+  lastEnergyRegenAt: number;
   defeatedAt: number | null;
 }
 

@@ -28,6 +28,29 @@ export interface CharacterKitConfig {
 /** 暂缺设计、临时排除出小队战的角色 id（占位，空数组 = 无排除）。 */
 export const SQUAD_SKILL_PENDING_DESIGN_IDS: readonly number[] = []
 
+/** 问题③：PCR 式「分排」目标覆盖。把某角色某技能原本「打全体敌人」的部分改成只打某一排。 */
+export type RowSelector = 'frontRowEnemies' | 'middleRowEnemies' | 'backRowEnemies'
+export const ZONE_TARGET_OVERRIDES: Record<number, Partial<Record<'skill1' | 'ultimate', RowSelector>>> = {
+  // 由 workflow(anime 知识) 精选、人工复核后填入。近战扫击/冲锋/拳脚/刀剑 → 前排；狙击/枪械连射/远程炮击 → 后排。
+  // —— 前排（近战） ——
+  1762: { ultimate: 'frontRowEnemies' },   // 逢坂大河 掌中老虎·徒手近战横扫
+  10672: { ultimate: 'frontRowEnemies' },  // 佐仓杏子 长枪穿刺
+  229: { ultimate: 'frontRowEnemies' },    // 神乐 夜兔蛮力近身
+  14557: { ultimate: 'frontRowEnemies' },  // 阿良良木月火 正义拳
+  10488: { ultimate: 'frontRowEnemies' },  // Stocking 双刀横扫
+  7: { ultimate: 'frontRowEnemies' },      // 藤林杏 拳脚肉搏
+  13005: { ultimate: 'frontRowEnemies' },  // 岁纳京子 无双乱舞
+  167988: { skill1: 'frontRowEnemies' },   // 莉莉·贝克 街机连段
+  12062: { ultimate: 'frontRowEnemies' },  // 天王寺瑚太朗 挥剑横扫
+  19525: { ultimate: 'frontRowEnemies' },  // 夜刀神十香 剑之斩击
+  12702: { ultimate: 'frontRowEnemies' },  // 真希波 EVA 冲刺撞击
+  // —— 后排（远程/狙击/炮击） ——
+  4546: { ultimate: 'backRowEnemies' },    // 卡缪·维丹 Zeta 全弹连射
+  108663: { ultimate: 'backRowEnemies' },  // 锦木千束 枪械连射
+  108664: { ultimate: 'backRowEnemies' },  // 井之上泷奈 狙击歼灭
+  57715: { ultimate: 'backRowEnemies' },   // 弗拉迪蕾娜 指挥后方炮击
+}
+
 export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
   1: {
     role: 'guardian',

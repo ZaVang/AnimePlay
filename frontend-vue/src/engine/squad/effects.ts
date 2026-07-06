@@ -71,8 +71,10 @@ export const POSITION_DAMAGE_TAKEN: Readonly<Record<SquadPosition, number>> = {
   back: 0.85,
 };
 
-/** SB-T4：群体 selector —— 命中这些 selector 的伤害视为 AOE，不吃站位减伤。 */
-const AOE_SELECTORS: readonly TargetSelector[] = ['allEnemies', 'allAllies'];
+/** SB-T4：群体 selector —— 命中这些 selector 的伤害视为 AOE，不吃站位减伤。含问题③的分排选择器。 */
+const AOE_SELECTORS: readonly TargetSelector[] = [
+  'allEnemies', 'allAllies', 'frontRowEnemies', 'middleRowEnemies', 'backRowEnemies',
+];
 
 export function isAoeSelector(selector: TargetSelector): boolean {
   return AOE_SELECTORS.includes(selector);
@@ -302,10 +304,11 @@ export function dealDamage(
     absorbed,
   });
 
-  gainEnergy(state, target, energyFromDamage(hpDamage, target.maxHp), 'damage');
+  // 受击充能 × 定位系数（onHit）：坦克受击充能快、后排慢（问题②，由 View 注入）。
+  gainEnergy(state, target, energyFromDamage(hpDamage, target.maxHp) * target.energyGain.onHit, 'damage');
   defeatIfNeeded(state, target, actor?.id ?? null);
   if (target.defeatedAt === state.now && actor) {
-    gainEnergy(state, actor, 120, 'kill');
+    gainEnergy(state, actor, 120 * actor.energyGain.onAttack, 'kill');
   }
 }
 
