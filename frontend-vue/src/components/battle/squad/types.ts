@@ -2,6 +2,7 @@ import type { StatusKind } from '@/engine';
 
 export interface SquadBattleUnitView {
   id: string;
+  characterId: number;
   name: string;
   imagePath: string;
   side: 'player' | 'enemy';

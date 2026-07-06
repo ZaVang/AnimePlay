@@ -26,11 +26,13 @@ import {
   ROLE_META,
   POSITION_META,
   SQUAD_POSITION_ORDER,
+  ENERGY_BY_ROLE,
   type SquadArchetype,
 } from './squad/archetypeTemplates';
 import {
   CHARACTER_KITS,
   SQUAD_SKILL_PENDING_DESIGN_IDS,
+  ZONE_TARGET_OVERRIDES,
   type SquadSlotConfig,
 } from './squad/characterKits';
 
@@ -64,6 +66,9 @@ const targetLabels: Record<TargetSelector, string> = {
   highestAtkEnemy: '攻击最高敌人',
   backEnemy: '后排敌人',
   allEnemies: '全体敌人',
+  frontRowEnemies: '前排敌人',
+  middleRowEnemies: '中排敌人',
+  backRowEnemies: '后排敌人',
   self: '自身',
   lowestHpAlly: '生命最低队友',
   firstDefeatedAlly: '首名倒下队友',
@@ -222,6 +227,19 @@ export function describeSquadSkill(skill: SquadSkillDef): string {
   return skill.effects.map(effect => describeEffect(effect, skill.target)).join('；');
 }
 
+/**
+ * 问题③：把一个「打全体敌人」的技能重定向到某一排（allEnemies→rowSelector）。
+ * 只改原本命中 allEnemies 的效果，其它效果（自增益/自护盾等）目标不动；重派描述。
+ */
+function retargetAoeToRow(def: SquadSkillDef, row: TargetSelector): SquadSkillDef {
+  const effects = def.effects.map(effect => {
+    const orig = effect.target ?? def.target;
+    return { ...effect, target: orig === 'allEnemies' ? row : orig };
+  });
+  const next: SquadSkillDef = { ...def, target: row, effects };
+  return { ...next, description: describeSquadSkill(next) };
+}
+
 function skill(
   character: CharacterCard,
   slot: SquadSkillSlot,
@@ -281,6 +299,8 @@ export interface SquadRoleInfo {
   positionLabel: string;
   /** 站位排序权重（前 0 / 中 1 / 后 2）。 */
   positionOrder: number;
+  /** PCR 式蓄能系数（攻击/受击），供 View 注入进引擎（问题②）。 */
+  energyGain: { onAttack: number; onHit: number };
 }
 
 /**
@@ -301,6 +321,7 @@ export function getSquadRoleInfo(character: CharacterCard | null | undefined): S
     roleBlurb: meta.blurb,
     positionLabel: posMeta.label,
     positionOrder: SQUAD_POSITION_ORDER[position],
+    energyGain: ENERGY_BY_ROLE[role],
   };
 }
 
@@ -328,19 +349,25 @@ export function getSquadSkillKitForCharacter(character: CharacterCard | null | u
   const kp = kit?.passive;
   const ku = kit?.ultimate;
 
+  const skill1Def = isBespokeSlot(k1)
+    ? skill(character, 'skill1', k1.name ?? `${name}·${labels.skill1}`, k1.target ?? template.skill1.target, k1.effects, slotExtra(k1, { cooldownMs: 8000, initialCooldownMs: 1500 }))
+    : skill(character, 'skill1', activeName ?? k1?.name ?? `${name}·${labels.skill1}`, template.skill1.target, template.skill1.effects, slotExtra(k1, { cooldownMs: 8000, initialCooldownMs: 1500 }));
+  const ultimateDef = isBespokeSlot(ku)
+    ? skill(character, 'ultimate', ku.name ?? `${name}·${labels.ultimate}`, ku.target ?? template.ultimate.target, ku.effects, slotExtra(ku, { energyCost: 1000 }))
+    : skill(character, 'ultimate', activeName ? `${activeName}·终式` : ku?.name ?? `${name}·${labels.ultimate}`, template.ultimate.target, template.ultimate.effects, slotExtra(ku, { energyCost: 1000 }));
+
+  // 问题③：分排目标覆盖（allEnemies→某一排）。只对精选角色的指定槽生效。
+  const zone = ZONE_TARGET_OVERRIDES[character.id];
+
   return {
     normalAttack: skill(character, 'normal', `${name}·牵制`, 'frontEnemy', [
       { type: 'damage', atkRatio: 1, canCrit: true },
     ]),
-    skill1: isBespokeSlot(k1)
-      ? skill(character, 'skill1', k1.name ?? `${name}·${labels.skill1}`, k1.target ?? template.skill1.target, k1.effects, slotExtra(k1, { cooldownMs: 8000, initialCooldownMs: 1500 }))
-      : skill(character, 'skill1', activeName ?? k1?.name ?? `${name}·${labels.skill1}`, template.skill1.target, template.skill1.effects, slotExtra(k1, { cooldownMs: 8000, initialCooldownMs: 1500 })),
+    skill1: zone?.skill1 ? retargetAoeToRow(skill1Def, zone.skill1) : skill1Def,
     passive: isBespokeSlot(kp)
       ? skill(character, 'passive', kp.name ?? `${name}·${labels.passive}`, kp.target ?? template.passive.target, kp.effects, slotExtra(kp, {}))
       : skill(character, 'passive', passiveName ?? kp?.name ?? `${name}·${labels.passive}`, template.passive.target, template.passive.effects, slotExtra(kp, {})),
-    ultimate: isBespokeSlot(ku)
-      ? skill(character, 'ultimate', ku.name ?? `${name}·${labels.ultimate}`, ku.target ?? template.ultimate.target, ku.effects, slotExtra(ku, { energyCost: 1000 }))
-      : skill(character, 'ultimate', activeName ? `${activeName}·终式` : ku?.name ?? `${name}·${labels.ultimate}`, template.ultimate.target, template.ultimate.effects, slotExtra(ku, { energyCost: 1000 })),
+    ultimate: zone?.ultimate ? retargetAoeToRow(ultimateDef, zone.ultimate) : ultimateDef,
   };
 }
 

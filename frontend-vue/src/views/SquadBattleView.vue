@@ -101,6 +101,10 @@ const battleResult = ref<'victory' | 'defeat' | null>(null);
 const battleElapsedMs = ref(0);
 const battleEnded = ref(false);
 const autoUltimates = ref(true);
+// 问题①：回放倍速（1x/2x/4x），缩放事件回放间隔；不影响战斗内部结算，只影响观看速度。
+const playbackSpeed = ref<1 | 2 | 4>(2);
+// ④ PCR 舞台：当前回放事件的攻击者/被击者脉冲（nonce 每事件 +1，驱动 sprite 攻击/受击动画）。
+const battleFx = ref<{ attackerId: string | null; hitId: string | null; nonce: number }>({ attackerId: null, hitId: null, nonce: 0 });
 const manualUltimateOrders = ref<ManualUltimateOrder[]>([]);
 // SB-T2：正处于「选目标」态的施法者 unitId（单体敌方大招点击后置位，等待玩家点敌方目标）；null = 无。
 const ultimateTargetingUnitId = ref<string | null>(null);
@@ -321,6 +325,8 @@ function unitSetups(): SquadUnitSetup[] {
       side,
       // PCR 式：站位由角色 role 推导（前排坦克/中排近战/后排法师奶妈），不再看槽位次序。
       position: getSquadRoleInfo(member.character)?.position ?? 'back',
+      // PCR 式：蓄能系数按定位注入（问题②），坦克受击充能快、输出攻击充能快。
+      energyGain: getSquadRoleInfo(member.character)?.energyGain,
       stats: member.battleStats,
       skills: getSquadSkillKitForCharacter(member.character),
     };
@@ -390,6 +396,7 @@ function baseRuntimeUnits(): RuntimeUnitView[] {
     const roleInfo = getSquadRoleInfo(member.character);
     return {
       id: member.unitId,
+      characterId: member.character.id,
       name: member.character.name,
       imagePath: member.character.image_path || assetUrl('/data/images/character/77.jpg'),
       side,
@@ -552,6 +559,20 @@ function manualFailLabel(reason: 'notReady' | 'controlled' | 'missingSkill' | 'n
 
 // SB-T3 收尾①(A)：为「刚回放到的」damage 事件生成一条浮动伤害数字，暴击带 isCritical 醒目样式。
 // 放在 playNextBattleEvent（单条推进）而非 applyEventToUnits（后者会重放全部历史事件），避免每帧重复刷屏。
+// ④ PCR 舞台：把当前回放事件映射成攻击者/被击者脉冲，驱动 sprite 冲刺/受击动画。
+function applyBattleFx(event: TimedBattleEvent) {
+  let attackerId: string | null = null;
+  let hitId: string | null = null;
+  if (event.type === 'action') attackerId = event.actorId;
+  else if (event.type === 'damage') {
+    attackerId = event.actorId === 'status' ? null : event.actorId;
+    hitId = event.targetId;
+  } else if (event.type === 'defeated') hitId = event.targetId;
+  if (attackerId || hitId) {
+    battleFx.value = { attackerId, hitId, nonce: battleFx.value.nonce + 1 };
+  }
+}
+
 function spawnFloatingDamage(event: TimedBattleEvent) {
   if (event.type !== 'damage' || event.amount <= 0) return;
   const id = ++floatingDamageSeq;
@@ -577,12 +598,15 @@ function playNextBattleEvent() {
   rebuildVisibleBattle(battleEventCursor.value);
 
   const latest = battleEvents.value[battleEventCursor.value - 1];
-  if (latest) spawnFloatingDamage(latest);
+  if (latest) {
+    spawnFloatingDamage(latest);
+    applyBattleFx(latest);
+  }
   if (latest?.type === 'battleEnd') {
     finishTimedBattle();
     return;
   }
-  schedule(playNextBattleEvent, PLAYBACK_DELAY_MS);
+  schedule(playNextBattleEvent, PLAYBACK_DELAY_MS / playbackSpeed.value);
 }
 
 function handleToggleAutoUltimates() {
@@ -1022,12 +1046,15 @@ onBeforeUnmount(() => {
           :enemy-units="enemyBattleUnits"
           :floating-damages="floatingDamages"
           :auto-ultimates="autoUltimates"
+          :playback-speed="playbackSpeed"
+          :fx="battleFx"
           :battle-ended="battleEnded"
           :elapsed-ms="battleElapsedMs"
           :max-time-ms="DEFAULT_MAX_TIME_MS"
           :targeting-caster-id="ultimateTargetingUnitId"
           :targeting-caster-name="ultimateTargetingUnitId ? unitName(ultimateTargetingUnitId) : ''"
           @toggle-auto="handleToggleAutoUltimates"
+          @set-speed="playbackSpeed = $event"
           @cast-ultimate="handleManualUltimate"
           @select-target="handleSelectUltimateTarget"
           @cancel-targeting="ultimateTargetingUnitId = null"
