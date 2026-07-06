@@ -151,7 +151,11 @@ function nextActionAt(state: TimedBattleState): number {
 }
 
 function nextStatusTickAt(state: TimedBattleState): number {
+  // 只统计存活单位的下一跳——必须与 processStatusTicks 的 `if (!isAlive) continue` 一致。
+  // 否则「带 hot/dot 时阵亡」的单位其 nextTickAt 永不推进（死者不结算跳），却仍被这里计入 →
+  // nextAt 被钉在过去时刻、state.now 不前进、事件不增长 → 主循环死转（不阵亡不易触发，5v5 常见）。
   const times = state.units
+    .filter(isAlive)
     .flatMap(unit => activeStatuses(unit, state.now).map(status => status.nextTickAt ?? Number.POSITIVE_INFINITY))
     .filter(time => Number.isFinite(time));
   return times.length > 0 ? Math.min(...times) : Number.POSITIVE_INFINITY;

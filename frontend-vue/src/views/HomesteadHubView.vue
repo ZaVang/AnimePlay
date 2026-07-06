@@ -22,11 +22,13 @@ import {
   towerFloorEnemySeed,
   validateTowerSquadMembers,
   type BattleStats,
+  type SquadPosition,
   type SquadReadinessAssessment,
 } from '@/engine';
 import { CHARACTER_IMAGE_POOL } from '@/utils/imageUtils';
 import CharacterSelectModal from '@/components/battle/CharacterSelectModal.vue';
-import { getSquadSkillKitForCharacter, isSquadSkillKitReady } from '@/data/squadSkillKits';
+import { getSquadSkillKitForCharacter, isSquadSkillKitReady, getSquadRoleInfo, type SquadRoleInfo } from '@/data/squadSkillKits';
+import { POSITION_META } from '@/data/squad/archetypeTemplates';
 import { resolveMemberBattleStats } from '@/utils/battleStats';
 import type { CharacterCard } from '@/types/card';
 
@@ -129,7 +131,7 @@ const selectedSquadSlots = computed(() => {
     const kit = getSquadSkillKitForCharacter(character);
     return {
       position: index + 1,
-      role: positionLabel(index),
+      roleInfo: getSquadRoleInfo(character),
       character,
       ok: validation.slots[index]?.ok ?? false,
       issue: validation.slots[index]?.message ?? '空位',
@@ -138,6 +140,33 @@ const selectedSquadSlots = computed(() => {
     };
   });
 });
+
+// PCR 式阵型预览：把当前队伍的 5 人按固有站位归入 前排/中排/后排 三列，让玩家一眼看到
+// 「战斗时会怎么自动排列」+ 是否缺前排肉盾。站位由角色 role 推导，与战斗完全同源。
+const FORMATION_ORDER: SquadPosition[] = ['front', 'middle', 'back'];
+interface FormationMember { character: CharacterCard; roleInfo: SquadRoleInfo }
+const formationPreview = computed(() => {
+  const squad = selectedSquad.value;
+  const groups = FORMATION_ORDER.map(position => ({
+    position,
+    label: POSITION_META[position].label,
+    members: [] as FormationMember[],
+  }));
+  if (squad) {
+    for (const id of userStore.getSquadMembers(squad.id)) {
+      if (id == null) continue;
+      const character = gameDataStore.getCharacterCardById(id);
+      const roleInfo = getSquadRoleInfo(character);
+      if (character && roleInfo) {
+        groups.find(g => g.position === roleInfo.position)?.members.push({ character, roleInfo });
+      }
+    }
+  }
+  return groups;
+});
+/** 缺前排提醒：队伍非空却没有前排坦克 → DPS 会站最前吃满伤害（PCR 式编队直觉）。 */
+const formationHasFrontline = computed(() => (formationPreview.value.find(g => g.position === 'front')?.members.length ?? 0) > 0);
+const formationMemberCount = computed(() => formationPreview.value.reduce((sum, g) => sum + g.members.length, 0));
 
 // --- SA-T1：编队编辑（换人 / 改名 / 空槽加人；改动经 store action 即时刷新战力/校验）---
 
@@ -335,9 +364,6 @@ function rarityWeight(rarity: string): number {
   return ({ UR: 6, HR: 5, SSR: 4, SR: 3, R: 2, N: 1 } as Record<string, number>)[rarity] ?? 0;
 }
 
-function positionLabel(index: number): string {
-  return ['前排', '前排', '中排', '中排', '后排'][index] ?? '后排';
-}
 
 </script>
 
@@ -403,7 +429,7 @@ function positionLabel(index: number): string {
       <div class="panel-heading">
         <div>
           <h2>编队面板</h2>
-          <p>挑战塔要求 5 名已拥有且技能完整的 SSR/HR/UR 角色；站位、战力与技能摘要在开战前可见。</p>
+          <p>选 5 名角色，战斗时按<strong>职业自动站位</strong>：坦克在前扛伤害、法师/奶妈在后排输出治疗（类似公主连结）。</p>
         </div>
         <button class="btn-primary" type="button" @click="switchTab('explore')">去探索</button>
       </div>
@@ -431,6 +457,34 @@ function positionLabel(index: number): string {
             {{ readinessHint }}
           </p>
         </div>
+        <!-- PCR 式阵型预览：3 列 前排/中排/后排，显示战斗时的自动站位。缺前排时告警。 -->
+        <div class="formation-preview">
+          <div class="formation-preview-head">
+            <span>阵型预览 · 战斗自动排列</span>
+            <em
+              v-if="formationMemberCount > 0 && !formationHasFrontline"
+              class="formation-warn"
+            >⚠ 无前排坦克，输出会站最前吃满伤害</em>
+          </div>
+          <div class="formation-lanes">
+            <div
+              v-for="lane in formationPreview"
+              :key="lane.position"
+              class="formation-lane"
+              :class="`lane-${lane.position}`"
+            >
+              <span class="lane-title">{{ lane.label }}</span>
+              <div v-if="lane.members.length" class="lane-members">
+                <div v-for="m in lane.members" :key="m.character.id" class="lane-member" :title="`${m.roleInfo.roleLabel} · ${m.roleInfo.roleBlurb}`">
+                  <img :src="m.character.image_path" :alt="m.character.name" loading="lazy" decoding="async">
+                  <span class="lane-role">{{ m.roleInfo.roleIcon }}{{ m.roleInfo.roleLabel }}</span>
+                </div>
+              </div>
+              <div v-else class="lane-empty">—</div>
+            </div>
+          </div>
+        </div>
+
         <aside class="squad-picker">
           <div
             v-for="squad in userStore.presetSquads"
@@ -469,7 +523,12 @@ function positionLabel(index: number): string {
             @click="selectedSquad && openCharacterSelect(selectedSquad.id, slot.position - 1)"
           >
             <span class="slot-index">{{ slot.position }}</span>
-            <span class="slot-role">{{ slot.role }}</span>
+            <span
+              v-if="slot.roleInfo"
+              class="slot-role"
+              :class="`role-${slot.roleInfo.position}`"
+              :title="slot.roleInfo.roleBlurb"
+            >{{ slot.roleInfo.roleIcon }}{{ slot.roleInfo.roleLabel }}·{{ slot.roleInfo.positionLabel }}</span>
             <template v-if="slot.character">
               <img :src="slot.character.image_path" :alt="slot.character.name" loading="lazy" decoding="async">
               <strong>{{ slot.character.name }}</strong>
@@ -743,9 +802,33 @@ function positionLabel(index: number): string {
 .formation-slot:hover { border-color: rgb(var(--c-accent)); transform: translateY(-1px); box-shadow: inset 0 0 0 1px rgb(var(--c-accent)); }
 .formation-slot:hover .empty-slot { border-color: rgb(var(--c-accent)); color: rgb(var(--c-accent)); }
 .formation-slot.ready { border-style: solid; border-color: rgb(var(--c-success)); }
-.slot-index, .slot-role { position: absolute; top: .45rem; z-index: 1; font-size: .7rem; font-weight: 800; }
-.slot-index { left: .45rem; color: rgb(var(--c-accent)); }
-.slot-role { right: .45rem; color: rgb(var(--c-ink-3)); }
+.slot-index { position: absolute; top: .45rem; left: .45rem; z-index: 1; font-size: .7rem; font-weight: 800; color: rgb(var(--c-ink-3)); }
+.slot-role {
+  position: absolute; top: .4rem; right: .4rem; z-index: 1; font-size: .66rem; font-weight: 800;
+  padding: .1rem .35rem; border-radius: 999px; color: rgb(var(--c-on-accent)); white-space: nowrap;
+}
+.slot-role.role-front { background: rgb(var(--c-danger)); }
+.slot-role.role-middle { background: rgb(var(--c-highlight)); }
+.slot-role.role-back { background: rgb(var(--c-info)); }
+
+/* PCR 式阵型预览 */
+.formation-preview {
+  grid-column: 1 / -1; display: flex; flex-direction: column; gap: .5rem;
+  padding: .75rem 1rem; border: 1px solid rgb(var(--c-line)); border-radius: 8px; background: rgb(var(--c-surface-2) / .5);
+}
+.formation-preview-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .5rem; font-size: .8rem; font-weight: 800; color: rgb(var(--c-ink-2)); }
+.formation-warn { color: rgb(var(--c-danger)); font-style: normal; font-size: .74rem; font-weight: 700; }
+.formation-lanes { display: grid; grid-template-columns: repeat(3, 1fr); gap: .6rem; }
+.formation-lane { display: flex; flex-direction: column; gap: .4rem; padding: .5rem; border-radius: 8px; border: 1px solid rgb(var(--c-line)); background: rgb(var(--c-surface)); min-height: 84px; }
+.formation-lane.lane-front { border-top: 3px solid rgb(var(--c-danger)); }
+.formation-lane.lane-middle { border-top: 3px solid rgb(var(--c-highlight)); }
+.formation-lane.lane-back { border-top: 3px solid rgb(var(--c-info)); }
+.lane-title { font-size: .74rem; font-weight: 800; color: rgb(var(--c-ink-2)); }
+.lane-members { display: flex; flex-wrap: wrap; gap: .45rem; }
+.lane-member { display: flex; flex-direction: column; align-items: center; gap: .15rem; width: 46px; }
+.lane-member img { width: 46px; height: 46px; border-radius: 7px; object-fit: cover; object-position: top; border: 1px solid rgb(var(--c-line)); }
+.lane-role { font-size: .6rem; font-weight: 700; color: rgb(var(--c-ink-2)); white-space: nowrap; }
+.lane-empty { color: rgb(var(--c-ink-3)); font-size: .9rem; }
 .formation-slot img { width: 100%; height: 128px; margin-top: .8rem; border-radius: 7px; object-fit: cover; object-position: top; }
 .formation-slot strong, .formation-slot small, .formation-slot em { display: block; }
 .formation-slot strong { margin-top: .5rem; color: rgb(var(--c-ink)); font-size: .9rem; }

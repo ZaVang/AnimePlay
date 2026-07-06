@@ -18,9 +18,12 @@ import {
   isSignatureKit,
   isSquadSkillKitReady,
   signatureRoleOf,
+  getSquadRoleInfo,
   validateSquadSkillCoverage,
   validateSquadSkillKit,
 } from './squadSkillKits';
+import { ROLE_TO_POSITION, ROLE_META } from './squad/archetypeTemplates';
+import type { SquadArchetype } from './squad/archetypeTemplates';
 import { simulateTimedBattle } from '@/engine/squad/timedBattle';
 
 // §5 修复：读**线上服务同源**的角色数据（backend/server.py:53 服务 selected_character），
@@ -237,6 +240,65 @@ describe('SA-T4 signature UR skill kits', () => {
       ],
     });
     expect(result.events.some(e => e.type === 'battleEnd')).toBe(true);
+  });
+});
+
+/** PCR 式职业 + 固有站位（role 推导）：映射完备、每个出战角色都拿到合法站位/职业、与引擎同源。 */
+describe('PCR role position & job', () => {
+  const ALL_ROLES: SquadArchetype[] = ['striker', 'guardian', 'support', 'controller', 'arcane', 'tactical'];
+
+  it('ROLE_TO_POSITION / ROLE_META 覆盖全部 6 档 role', () => {
+    for (const role of ALL_ROLES) {
+      expect(['front', 'middle', 'back']).toContain(ROLE_TO_POSITION[role]);
+      expect(ROLE_META[role].label.length).toBeGreaterThan(0);
+      expect(ROLE_META[role].icon.length).toBeGreaterThan(0);
+    }
+  });
+
+  it('站位映射符合定位直觉：坦克前排 / 近战中排 / 法奶控后排', () => {
+    expect(ROLE_TO_POSITION.guardian).toBe('front');
+    expect(ROLE_TO_POSITION.striker).toBe('middle');
+    expect(ROLE_TO_POSITION.tactical).toBe('middle');
+    expect(ROLE_TO_POSITION.arcane).toBe('back');
+    expect(ROLE_TO_POSITION.support).toBe('back');
+    expect(ROLE_TO_POSITION.controller).toBe('back');
+  });
+
+  it('每个出战 SSR/HR/UR 角色都拿到合法站位 + 非空职业名（与技能 role 同源）', () => {
+    const eligible = allCharacters.filter(c => (['SSR', 'HR', 'UR'] as Rarity[]).includes(c.rarity));
+    for (const c of eligible) {
+      const info = getSquadRoleInfo(c)!;
+      expect(info, `${c.id} ${c.name}`).toBeTruthy();
+      expect(['front', 'middle', 'back']).toContain(info.position);
+      expect(info.role).toBe(getArchetypeForCharacter(c)); // 站位与技能定位同一真相源
+      expect(info.roleLabel.length).toBeGreaterThan(0);
+      expect(['前排', '中排', '后排']).toContain(info.positionLabel);
+    }
+  });
+
+  it('null/undefined 角色返回 null（空槽安全）', () => {
+    expect(getSquadRoleInfo(null)).toBeNull();
+    expect(getSquadRoleInfo(undefined)).toBeNull();
+  });
+
+  it('role 推导站位喂进引擎能跑完整场 5v5（可玩）+ 前排/后排各就各位', () => {
+    const byId = new Map(allCharacters.map(c => [c.id, c] as const));
+    // C.C.(坦克/前) 御坂(战士/中) 牧濑(游击/中) 惠惠(法师/后) 鹿目圆(奶妈/后)
+    const team = [3, 3575, 12393, 35681, 10439].filter(id => byId.has(id));
+    expect(team.length).toBe(5);
+    const build = (id: number, side: 'player' | 'enemy') => {
+      const c = byId.get(id)!;
+      const info = getSquadRoleInfo(c)!;
+      return unit(`${side}-${id}`, side, { position: info.position, skills: getSquadSkillKitForCharacter(c) });
+    };
+    const result = simulateTimedBattle({
+      rng: createSequenceRng(Array.from({ length: 128 }, (_, i) => (i % 9) / 9)),
+      units: [...team.map(id => build(id, 'player')), ...team.map(id => build(id, 'enemy'))],
+    });
+    expect(result.events.some(e => e.type === 'battleEnd')).toBe(true);
+    expect(['player', 'enemy', 'timeout']).toContain(result.winner);
+    expect(result.units.find(u => u.id === 'player-3')!.position).toBe('front'); // C.C. 坦克
+    expect(result.units.find(u => u.id === 'player-35681')!.position).toBe('back'); // 惠惠 法师
   });
 });
 

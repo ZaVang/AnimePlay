@@ -3,7 +3,7 @@
 // 装配 / 归类 / 校验逻辑留在 squadSkillKits.ts。未命中 per-character 覆盖（见 characterKits.ts）的
 // 角色，技能效果全部回落到本文件的模板。详见 docs/orch/squad-skill-design-audit-2026-07-03.md。
 
-import type { SkillEffect, TargetSelector } from '@/engine/squad/types'
+import type { SkillEffect, TargetSelector, SquadPosition } from '@/engine/squad/types'
 
 /** 小队战角色定位原型（6 类）——决定未命中 per-character 覆盖时的技能模板与通名。 */
 export type SquadArchetype =
@@ -32,6 +32,54 @@ export const archetypeLabels: Record<
   controller: { skill1: '封锁指令', passive: '压迫领域', ultimate: '全域拘束' },
   arcane: { skill1: '术式爆发', passive: '秘仪回路', ultimate: '星辉裁决' },
   tactical: { skill1: '战术穿插', passive: '先读阵线', ultimate: '决策终局' },
+}
+
+// —— PCR 式「职业 + 固有站位」展示层元数据（2026-07-04）——
+// 复用已有的 6 档 role，把每档映射到一个「玩家可读职业名 + 固有前中后站位」。
+// 站位喂给引擎的 SquadUnitSetup.position（现成的站位减伤 + 前后排选敌立即生效），
+// 职业名只做 UI 展示。逐角色不再手工赋站位——由 role 推导（全 318 出战角色已有 role）。
+
+/** 6 档 role → 固有站位（前排扛伤/中排近战/后排法术治疗）。 */
+export const ROLE_TO_POSITION: Record<SquadArchetype, SquadPosition> = {
+  guardian: 'front',
+  striker: 'middle',
+  tactical: 'middle',
+  arcane: 'back',
+  support: 'back',
+  controller: 'back',
+}
+
+/** 站位前→后排序权重（前排最前）。供编队阵型预览与战场排列。 */
+export const SQUAD_POSITION_ORDER: Record<SquadPosition, number> = {
+  front: 0,
+  middle: 1,
+  back: 2,
+}
+
+export interface SquadRoleMeta {
+  /** 玩家可读职业名（坦克/战士/奶妈…）。 */
+  label: string
+  /** 职业图标 emoji（一眼可辨）。 */
+  icon: string
+  /** 一句话定位说明。 */
+  blurb: string
+}
+
+/** 6 档 role → 职业展示元数据。 */
+export const ROLE_META: Record<SquadArchetype, SquadRoleMeta> = {
+  guardian: { label: '坦克', icon: '🛡️', blurb: '前排扛伤害、拉仇恨护住队友' },
+  striker: { label: '战士', icon: '⚔️', blurb: '中排近战爆发输出' },
+  tactical: { label: '游击', icon: '🎯', blurb: '中排高速突袭、切后排' },
+  arcane: { label: '法师', icon: '🔮', blurb: '后排法术远程输出' },
+  support: { label: '奶妈', icon: '💗', blurb: '后排治疗与增益' },
+  controller: { label: '控场', icon: '🌀', blurb: '后排控制与削弱敌人' },
+}
+
+/** 站位 → 展示元数据（标签 + 简称 + 用于配色的 tone）。 */
+export const POSITION_META: Record<SquadPosition, { label: string; short: string; tone: SquadPosition }> = {
+  front: { label: '前排', short: '前', tone: 'front' },
+  middle: { label: '中排', short: '中', tone: 'middle' },
+  back: { label: '后排', short: '后', tone: 'back' },
 }
 
 /** 各定位的共享技能效果模板（skill1/passive/ultimate 的 target + effects）。 */
