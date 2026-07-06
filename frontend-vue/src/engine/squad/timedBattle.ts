@@ -398,6 +398,13 @@ function runBattleLoop(
 ): BattleLoopResult {
   const checkpoints: BattleCheckpoint[] = [];
 
+  // 安全阀（防浏览器死锁）：正常战斗迭代数 = 事件时刻数，远小于此。若 state.now 因任何未来 bug
+  // 停止前进（如死者残留 hot/dot 的幽灵跳把 nextAt 钉在过去），此处强制推进到 maxTimeMs 走超时裁决，
+  // 而不是同步死循环卡死主线程（客户端引擎里死循环 = 整个页面冻结、连 F12 都按不了）。
+  // 上限按最坏情形留足余量：maxTimeMs 内每 1ms 一个事件（90000）× 单位数 × 状态数的宽松倍数。
+  const MAX_ITERATIONS = 2_000_000;
+  let iterations = 0;
+  let lastNow = -1;
   let end = battleEnd(state, maxTimeMs, false);
   while (!end) {
     const nextAt = Math.min(
@@ -408,10 +415,18 @@ function runBattleLoop(
       nextActionAt(state),
     );
 
-    if (!Number.isFinite(nextAt)) {
+    // 时间必须严格前进；若 nextAt 不前进（<= 上一 now）或非有限，直接跳到 maxTimeMs 收尾，绝不原地打转。
+    if (!Number.isFinite(nextAt) || nextAt <= lastNow) {
       state.now = maxTimeMs;
     } else {
       state.now = nextAt;
+    }
+    lastNow = state.now;
+
+    if (++iterations > MAX_ITERATIONS) {
+      state.now = maxTimeMs; // 迭代护栏兜底：强制超时裁决，宁可判个超时也不冻结页面。
+      end = battleEnd(state, maxTimeMs, true) ?? resolveTimeout(aliveBySide(state, 'player'), aliveBySide(state, 'enemy'));
+      break;
     }
 
     processStatusTicks(state);
