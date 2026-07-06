@@ -51,3 +51,7 @@ data/images
 data/user_data
 data/auth
 !frontend-vue/src/data/
+
+# 临时 / 草稿产物（日志、sprite 预览、临时脚本等，不入库）
+tmp/
+*.tmp
