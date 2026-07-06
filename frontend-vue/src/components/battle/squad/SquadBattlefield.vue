@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue';
 import SquadStageUnit from './SquadStageUnit.vue';
+import { layoutSide } from './stageLayout';
 import type { SquadBattleUnitView, SquadFloatingDamageView } from './types';
 
 const props = defineProps<{
@@ -44,17 +45,10 @@ const floatingByTarget = computed(() => {
 });
 const floatingFor = (id: string) => floatingByTarget.value.get(id) ?? [];
 
-// —— 前中后排编队：每队按 tier 分列，前排贴中线 ——
-type Col = { tier: number; units: SquadBattleUnitView[] };
-function columns(units: SquadBattleUnitView[], side: 'player' | 'enemy'): Col[] {
-  const byTier: Record<number, SquadBattleUnitView[]> = { 0: [], 1: [], 2: [] };
-  for (const u of units) (byTier[u.positionOrder] ??= []).push(u);
-  // player：后→中→前（前排在最右=贴中线）；enemy：前→中→后（前排在最左=贴中线）。
-  const order = side === 'player' ? [2, 1, 0] : [0, 1, 2];
-  return order.map(t => ({ tier: t, units: byTier[t] ?? [] })).filter(c => c.units.length > 0);
-}
-const playerCols = computed(() => columns(props.playerUnits, 'player'));
-const enemyCols = computed(() => columns(props.enemyUnits, 'enemy'));
+// —— 数轴式站位：己方负半侧 / 敌方正半侧 + 前中后排区域（有宽度、可容 3 人、溢出排到相邻区域）。
+// 纯布局逻辑抽到 stageLayout.ts（可测）。
+const playerLayout = computed(() => layoutSide(props.playerUnits, 'player'));
+const enemyLayout = computed(() => layoutSide(props.enemyUnits, 'enemy'));
 
 // 入场用纯 CSS 动画（见 style），静止态始终可见——绝不因动画未触发而把队伍卡在不可见态。
 
@@ -119,16 +113,19 @@ watch(() => props.fx?.nonce, () => {
       <div class="side-label side-label-enemy">敌方小队</div>
 
       <div class="team team-player">
-        <div v-for="col in playerCols" :key="`p-${col.tier}`" class="tier-col">
+        <div
+          v-for="p in playerLayout"
+          :key="p.unit.id"
+          class="unit-slot"
+          :style="{ left: `${p.left}%`, top: `${p.top}%`, zIndex: p.z }"
+        >
           <SquadStageUnit
-            v-for="u in col.units"
-            :key="u.id"
-            :unit="u"
-            :floating-damages="floatingFor(u.id)"
+            :unit="p.unit"
+            :floating-damages="floatingFor(p.unit.id)"
             :auto-ultimates="autoUltimates"
             :battle-ended="battleEnded"
-            :attacking="attackingId === u.id"
-            :hit="hitId === u.id"
+            :attacking="attackingId === p.unit.id"
+            :hit="hitId === p.unit.id"
             @cast-ultimate="emit('castUltimate', $event)"
           />
         </div>
@@ -137,18 +134,21 @@ watch(() => props.fx?.nonce, () => {
       <div class="vs">VS</div>
 
       <div class="team team-enemy">
-        <div v-for="col in enemyCols" :key="`e-${col.tier}`" class="tier-col">
+        <div
+          v-for="p in enemyLayout"
+          :key="p.unit.id"
+          class="unit-slot"
+          :style="{ left: `${p.left}%`, top: `${p.top}%`, zIndex: p.z }"
+        >
           <SquadStageUnit
-            v-for="u in col.units"
-            :key="u.id"
-            :unit="u"
-            :floating-damages="floatingFor(u.id)"
+            :unit="p.unit"
+            :floating-damages="floatingFor(p.unit.id)"
             :auto-ultimates="autoUltimates"
             :battle-ended="battleEnded"
-            :attacking="attackingId === u.id"
-            :hit="hitId === u.id"
-            :targetable="isTargeting && !u.defeated"
-            @click="isTargeting && !u.defeated ? emit('selectTarget', u.id) : undefined"
+            :attacking="attackingId === p.unit.id"
+            :hit="hitId === p.unit.id"
+            :targetable="isTargeting && !p.unit.defeated"
+            @click="isTargeting && !p.unit.defeated ? emit('selectTarget', p.unit.id) : undefined"
           />
         </div>
       </div>
@@ -158,30 +158,36 @@ watch(() => props.fx?.nonce, () => {
 
 <style scoped>
 .arena {
-  position: relative; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: .5rem;
-  min-height: 380px; padding: 2.2rem .5rem 1rem; overflow: hidden; border-radius: 10px;
+  position: relative; width: 100%; box-sizing: border-box; min-height: 440px; overflow: hidden; border-radius: 10px;
   background:
-    radial-gradient(120% 80% at 50% 0%, rgb(var(--c-surface-2) / .5), transparent 60%),
+    radial-gradient(60% 55% at 50% 42%, rgb(var(--c-surface-2) / .55), transparent 70%),
     linear-gradient(180deg, rgb(var(--c-elevated) / .35), rgb(var(--c-surface-2) / .25));
 }
-.side-label { position: absolute; top: .5rem; font-size: .75rem; font-weight: 800; letter-spacing: .04em; }
+/* 中线留白分隔 */
+.arena::before {
+  content: ''; position: absolute; top: 8%; bottom: 8%; left: 50%; width: 0;
+  border-left: 1px dashed rgb(var(--c-line) / .5); transform: translateX(-50%);
+}
+.side-label { position: absolute; top: .55rem; z-index: 30; font-size: .75rem; font-weight: 800; letter-spacing: .04em; }
 .side-label-player { left: .8rem; color: rgb(var(--c-info)); }
 .side-label-enemy { right: .8rem; color: rgb(var(--c-danger)); }
 
-/* 静止态始终可见；入场用一次性 CSS 动画（fill-mode:none → 动画不跑也照常可见，绝不卡在不可见）。 */
-.team { display: flex; align-items: center; gap: .4rem; }
-.team-player { justify-content: flex-end; animation: enter-left .55s cubic-bezier(.2,.7,.3,1); }
-.team-enemy { justify-content: flex-start; animation: enter-right .55s cubic-bezier(.2,.7,.3,1); }
-/* 起始 opacity 不归零（0.35）：即便动画因页面隐藏冻结在起点，队伍也始终可见，绝不整队消失。 */
-@keyframes enter-left { 0% { opacity: .35; transform: translateX(-48px); } 100% { opacity: 1; transform: translateX(0); } }
-@keyframes enter-right { 0% { opacity: .35; transform: translateX(48px); } 100% { opacity: 1; transform: translateX(0); } }
+/* 两队各占满整个坐标空间（内部单位绝对定位）；入场用一次性 CSS 动画，起点 opacity 不归零 → 恒可见。 */
+.team { position: absolute; inset: 0; }
+.team-player { animation: enter-left .55s cubic-bezier(.2,.7,.3,1); }
+.team-enemy { animation: enter-right .55s cubic-bezier(.2,.7,.3,1); }
+@keyframes enter-left { 0% { opacity: .35; transform: translateX(-40px); } 100% { opacity: 1; transform: translateX(0); } }
+@keyframes enter-right { 0% { opacity: .35; transform: translateX(40px); } 100% { opacity: 1; transform: translateX(0); } }
 @media (prefers-reduced-motion: reduce) { .team-player, .team-enemy { animation: none; } }
-.tier-col { display: flex; flex-direction: column; justify-content: center; gap: 1rem; }
 
-.vs { align-self: center; font-size: 1.1rem; font-weight: 900; color: rgb(var(--c-ink-2)); padding: 0 .3rem; }
+/* 数轴上的一个占位点：以中心对齐到 (left%, top%)。 */
+.unit-slot { position: absolute; transform: translate(-50%, -50%); }
 
-@media (max-width: 720px) {
-  .arena { grid-template-columns: 1fr auto 1fr; min-height: 320px; }
-  .tier-col { gap: .6rem; }
+.vs {
+  position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 25;
+  font-size: 1rem; font-weight: 900; color: rgb(var(--c-ink-2)); pointer-events: none;
+  padding: .1rem .35rem; border-radius: 6px; background: rgb(var(--c-surface) / .7);
 }
+
+@media (max-width: 720px) { .arena { min-height: 380px; } }
 </style>
