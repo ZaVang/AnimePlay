@@ -83,8 +83,7 @@ interface RuntimeUnitView extends SquadBattleUnitView {
 const BATTLE_STATE_KEY = 'squadBattleState';
 const EMPTY_STAT_BONUS: BattleStats = { hp: 0, atk: 0, def: 0, sp: 0, spd: 0 };
 const CONTROL_STATUSES: StatusKind[] = ['stun', 'silence', 'taunt'];
-const PLAYBACK_DELAY_MS = 180;
-// SB-T3 收尾①：浮动伤害数字的驻留时长（跟随 180ms 逐条回放节奏，略长于一帧让玩家看清）。
+// SB-T3 收尾①：浮动伤害数字的驻留时长（略长于一帧让玩家看清）。
 const FLOATING_DAMAGE_TTL_MS = 900;
 
 const currentPhase = ref<BattlePhase>('towerMode');
@@ -314,7 +313,7 @@ function startTowerBattle(squadId: number) {
   battleEnded.value = false;
   currentPhase.value = 'battle';
   regenerateBattleSimulation(0);
-  playNextBattleEvent();
+  startPlaybackLoop();
 }
 
 function unitSetups(): SquadUnitSetup[] {
@@ -399,6 +398,7 @@ function baseRuntimeUnits(): RuntimeUnitView[] {
       characterId: member.character.id,
       name: member.character.name,
       imagePath: member.character.image_path || assetUrl('/data/images/character/77.jpg'),
+      rarity: member.character.rarity,
       side,
       position: member.position,
       roleLabel: roleInfo?.roleLabel ?? '',
@@ -586,27 +586,62 @@ function spawnFloatingDamage(event: TimedBattleEvent) {
   }, FLOATING_DAMAGE_TTL_MS);
 }
 
-function playNextBattleEvent() {
-  clearPlaybackTimers();
+// 问题①：回放按「战斗内部时间轴」推进——虚拟时钟 = 真实时间 × 倍速，事件到点(at ≤ 时钟)才显形。
+// 一场战斗的观看时长 = 战斗内部时长 / 倍速（满 90s 战斗 4x ≤ 22.5s 放完），倒计时随时钟平滑递减。
+// 取代旧「每条固定 180ms/倍速」——旧节奏时长取决于事件数量而非战斗时长，与倒计时脱钩。
+let playbackRaf = 0;
+let lastTickAt = 0;
+let virtualClockMs = 0;
+
+function stopPlaybackLoop() {
+  if (playbackRaf) {
+    cancelAnimationFrame(playbackRaf);
+    playbackRaf = 0;
+  }
+}
+
+/** 从当前已回放到的时间（start=0 / resume=battleElapsedMs）起，按倍速缩放的真实时间轴续跑。 */
+function startPlaybackLoop() {
+  stopPlaybackLoop();
   if (currentPhase.value !== 'battle' || battleEnded.value) return;
-  if (battleEventCursor.value >= battleEvents.value.length) {
+  virtualClockMs = battleElapsedMs.value;
+  lastTickAt = performance.now();
+  playbackRaf = requestAnimationFrame(tickPlayback);
+}
+
+function tickPlayback(frameNow: number) {
+  playbackRaf = 0;
+  if (currentPhase.value !== 'battle' || battleEnded.value) return;
+
+  virtualClockMs += (frameNow - lastTickAt) * playbackSpeed.value;
+  lastTickAt = frameNow;
+
+  // 显形所有 at ≤ 虚拟时钟 的事件（一帧可跨多条：倍速越高 / 帧间隔越大，一帧显形越多）。
+  const startCursor = battleEventCursor.value;
+  let endReached = false;
+  while (
+    battleEventCursor.value < battleEvents.value.length &&
+    battleEvents.value[battleEventCursor.value].at <= virtualClockMs
+  ) {
+    const event = battleEvents.value[battleEventCursor.value];
+    battleEventCursor.value += 1;
+    spawnFloatingDamage(event);
+    if (event.type === 'battleEnd') { endReached = true; break; }
+  }
+
+  if (battleEventCursor.value > startCursor) {
+    rebuildVisibleBattle(battleEventCursor.value);
+    const lastRevealed = battleEvents.value[battleEventCursor.value - 1];
+    if (lastRevealed) applyBattleFx(lastRevealed);
+  }
+  // 倒计时平滑：显形时间跟虚拟时钟（封顶 maxTime），两事件之间也持续推进。
+  battleElapsedMs.value = Math.min(virtualClockMs, DEFAULT_MAX_TIME_MS);
+
+  if (endReached || battleEventCursor.value >= battleEvents.value.length) {
     finishTimedBattle();
     return;
   }
-
-  battleEventCursor.value += 1;
-  rebuildVisibleBattle(battleEventCursor.value);
-
-  const latest = battleEvents.value[battleEventCursor.value - 1];
-  if (latest) {
-    spawnFloatingDamage(latest);
-    applyBattleFx(latest);
-  }
-  if (latest?.type === 'battleEnd') {
-    finishTimedBattle();
-    return;
-  }
-  schedule(playNextBattleEvent, PLAYBACK_DELAY_MS / playbackSpeed.value);
+  playbackRaf = requestAnimationFrame(tickPlayback);
 }
 
 function handleToggleAutoUltimates() {
@@ -616,7 +651,7 @@ function handleToggleAutoUltimates() {
   autoUltimates.value = !autoUltimates.value;
   // SB-T2：前缀冻结续跑，切换自动大招不再整场重算致回放跳变。
   resumeBattleSimulation(cursorTime);
-  playNextBattleEvent();
+  startPlaybackLoop();
 }
 
 /**
@@ -665,7 +700,7 @@ function enqueueManualUltimate(unitId: string, targetId?: string) {
   const order: ManualUltimateOrder = targetId ? { unitId, atMs: orderAt, targetId } : { unitId, atMs: orderAt };
   manualUltimateOrders.value = [...manualUltimateOrders.value, order];
   resumeBattleSimulation(battleElapsedMs.value);
-  playNextBattleEvent();
+  startPlaybackLoop();
 }
 
 function finishTimedBattle() {
@@ -763,18 +798,9 @@ function ensureTowerEnemies() {
   }
 }
 
-// 回放推进定时器（单条，逐条 180ms）+ 浮动伤害清除定时器（多条，各自 TTL）分池管理：
-// clearPlaybackTimers 只掐推进链（避免重复排下一帧），clearBattleTimers 全清（含浮动数字清除定时器）+ 清空浮动数字。
-const playbackTimers = new Set<number>();
+// 回放推进走 rAF 时间轴循环（stopPlaybackLoop 取消）；浮动伤害清除定时器（多条，各自 TTL）单独池管理。
+// clearPlaybackTimers 停回放循环，clearBattleTimers 再清浮动数字定时器 + 清空浮动数字。
 const floatingTimers = new Set<number>();
-
-function schedule(fn: () => void, delay: number) {
-  const id = window.setTimeout(() => {
-    playbackTimers.delete(id);
-    fn();
-  }, delay);
-  playbackTimers.add(id);
-}
 
 function scheduleFloatingClear(fn: () => void, delay: number) {
   const id = window.setTimeout(() => {
@@ -785,8 +811,7 @@ function scheduleFloatingClear(fn: () => void, delay: number) {
 }
 
 function clearPlaybackTimers() {
-  playbackTimers.forEach(id => clearTimeout(id));
-  playbackTimers.clear();
+  stopPlaybackLoop();
 }
 
 function clearBattleTimers() {
@@ -847,9 +872,10 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <div class="min-h-screen py-8">
-    <div class="container mx-auto px-4">
-      <div class="mb-8 text-center">
+  <div :class="props.embedded ? '' : 'min-h-screen py-8'">
+    <div :class="props.embedded ? '' : 'container mx-auto px-4'">
+      <!-- 独立路由（非内嵌）保留原页头；hub 内嵌已有 HUD + 返回条，去掉最外层大标题避免双标题。 -->
+      <div v-if="!props.embedded" class="mb-8 text-center">
         <h1 class="mb-2 text-4xl font-bold text-ink">挑战塔</h1>
         <p class="text-ink-2">逐层挑战，难度递增，证明你的实力！</p>
       </div>
@@ -1022,10 +1048,9 @@ onBeforeUnmount(() => {
       </div>
 
       <div v-else-if="currentPhase === 'battle'" class="space-y-6">
-        <div v-if="towerEnemyData" class="flex flex-wrap items-center gap-2 rounded-lg border border-line bg-surface p-4 text-sm">
-          <span class="font-semibold text-accent">第 {{ currentTowerFloor }} 层</span>
-          <span class="text-ink-3">·</span>
-          <span class="font-medium text-danger">{{ towerEnemyData.name }}</span>
+        <div v-if="towerEnemyData" class="battle-info-bar flex flex-wrap items-center gap-2 text-sm">
+          <span class="rounded-full bg-accent-soft px-2.5 py-0.5 font-bold text-accent-strong">第 {{ currentTowerFloor }} 层</span>
+          <span class="font-bold text-danger">{{ towerEnemyData.name }}</span>
           <!-- SC-T5：我方战力 + 软战力门槛提示（推荐 + delta + 三档，不硬拦）。 -->
           <span v-if="battleReadiness" class="text-ink-2">
             我方战力 <span class="font-bold text-highlight">{{ battleReadiness.playerPower }}</span>
@@ -1087,3 +1112,20 @@ onBeforeUnmount(() => {
     />
   </div>
 </template>
+
+<style scoped>
+/* 战斗态顶部信息条：借鉴 hub .g-card（面 + 线 + 面板圆角 + 柔和投影 + 顶部 40% 高光）。 */
+.battle-info-bar {
+  position: relative; overflow: hidden;
+  padding: .75rem 1rem;
+  border: 1px solid rgb(var(--c-line)); border-radius: var(--sk-radius-panel);
+  background: rgb(var(--c-surface)); box-shadow: var(--sk-shadow-card);
+}
+.battle-info-bar::before {
+  content: ""; position: absolute; inset: 0 0 auto 0; height: 40%; z-index: 0;
+  border-radius: var(--sk-radius-panel) var(--sk-radius-panel) 0 0;
+  background: linear-gradient(180deg, rgb(var(--c-elevated) / .5), transparent);
+  pointer-events: none;
+}
+.battle-info-bar > * { position: relative; z-index: 1; }
+</style>

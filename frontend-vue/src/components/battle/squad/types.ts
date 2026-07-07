@@ -5,6 +5,8 @@ export interface SquadBattleUnitView {
   characterId: number;
   name: string;
   imagePath: string;
+  /** 稀有度（战斗头像框按稀有度描边用；复用既有稀有度识别色）。 */
+  rarity: string;
   side: 'player' | 'enemy';
   position: number;
   // PCR 式职业 + 固有站位（展示层，由角色 role 推导；与战斗站位同源）。
