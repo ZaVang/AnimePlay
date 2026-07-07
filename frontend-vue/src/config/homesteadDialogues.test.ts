@@ -78,3 +78,56 @@ describe('S16-T4 广场偶遇对话（一来一回、缺则通用兜底、纯展
     }
   });
 });
+
+describe('逐角色专属 tap 台词（命中专属池 / 缺回落通用 / 闲聊忽略 id）', () => {
+  it('已知角色 id + 给好感 → 专属问候，非空且确定复现', () => {
+    const a = pickTapDialogue(true, 0, 48); // 凉宫春日
+    expect(a.length).toBeGreaterThan(0);
+    expect(pickTapDialogue(true, 0, 48)).toBe(a);
+  });
+
+  it('专属问候 ≠ 通用问候（同 index）——证明确实取了专属池', () => {
+    expect(pickTapDialogue(true, 0, 48)).not.toBe(pickTapDialogue(true, 0));
+    expect(pickTapDialogue(true, 0, 87968)).not.toBe(pickTapDialogue(true, 0)); // 后藤一里
+  });
+
+  it('未知角色 id → 回落通用问候池（等于无 id 结果）', () => {
+    expect(pickTapDialogue(true, 2, 999999999)).toBe(pickTapDialogue(true, 2));
+  });
+
+  it('闲聊（已互动，gaveAffection=false）忽略 characterId → 恒取通用闲聊池', () => {
+    expect(pickTapDialogue(false, 1, 48)).toBe(pickTapDialogue(false, 1));
+  });
+
+  it('专属池 index 环绕 + 容忍负数/非整，永不空白', () => {
+    for (const idx of [0, 1, 5, 99, -1, -8, 2.7]) {
+      expect(pickTapDialogue(true, idx, 48).length).toBeGreaterThan(0);
+    }
+  });
+});
+
+describe('逐作品专属偶遇台词（命中专属池 / 季名变体别名同池 / 缺回落）', () => {
+  it('已知作品 → 专属一来一回非空、确定复现', () => {
+    const d = pickEncounterDialogue('孤独摇滚！', 0);
+    expect(d.opener.length).toBeGreaterThan(0);
+    expect(d.reply.length).toBeGreaterThan(0);
+    expect(pickEncounterDialogue('孤独摇滚！', 0)).toEqual(d);
+  });
+
+  it('季名变体别名到同一池（命运石之门 0 === 命运石之门；轻音少女 第二季 === 轻音少女）', () => {
+    expect(pickEncounterDialogue('命运石之门 0', 0)).toEqual(pickEncounterDialogue('命运石之门', 0));
+    expect(pickEncounterDialogue('轻音少女 第二季', 3)).toEqual(pickEncounterDialogue('轻音少女', 3));
+  });
+
+  it('专属对话 ≠ 通用对话（同 index）——证明确实取了专属池', () => {
+    expect(pickEncounterDialogue('孤独摇滚！', 0)).not.toEqual(
+      pickEncounterDialogue('从未见过的作品', 0),
+    );
+  });
+
+  it('未知作品 → 回落通用池，不报错、非空', () => {
+    const d = pickEncounterDialogue('完全不存在的作品XYZ', 0);
+    expect(d.opener.length).toBeGreaterThan(0);
+    expect(d.reply.length).toBeGreaterThan(0);
+  });
+});

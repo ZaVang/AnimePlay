@@ -96,7 +96,8 @@ function onPetTap(pet: Pet) {
     // 无论今日是否已互动，今日特殊角色都说今日专属台词（区别于普通问候/闲聊）。
     plaza.onPetTap(pet, () => pickTodaySpecialDialogue(idx));
   } else {
-    plaza.onPetTap(pet, pickTapDialogue);
+    // 逐角色专属问候：把 pet.id 透传给 pickTapDialogue（命中专属池说专属句，缺则回落通用）。
+    plaza.onPetTap(pet, (gaveAffection, index) => pickTapDialogue(gaveAffection, index, pet.id));
   }
 }
 
