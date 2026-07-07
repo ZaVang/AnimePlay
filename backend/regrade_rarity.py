@@ -16,8 +16,10 @@
 分档**保持各稀有度当前数量不变**（即同样多的 UR/HR/…，只是换更合理的卡填进去），
 故抽卡概率盘面/图鉴规模不变，纯粹是「谁该是什么档」的重排。
 
-只改写 rarity（角色另改 comprehensive_popularity），其余字段与数组顺序原样保留 → diff 最小。
-稀有度不进存档、不影响对战强度，故安全可回滚（git checkout 即还原）。
+改写 rarity（角色另改 comprehensive_popularity）后**同步重算 battle_stats**（按最终 rarity，见
+fix_battle_stats.compute_battle_stats）：稀有度经 battle_stats 档位**影响对战强度**——早期误以为不影响、
+只改 rarity 未同步 stats，导致升档角色属性冻结在旧档（近半 roster 低一档，已由 fix_battle_stats 修复）。
+其余字段与数组顺序原样保留。稀有度不进存档，可回滚（git checkout 即还原）。
 """
 
 import bisect
@@ -27,6 +29,7 @@ from collections import Counter
 from typing import Dict, List
 
 from create_curated_dataset import ANIME_RARITY_SCORE_BONUS
+from fix_battle_stats import compute_battle_stats
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
@@ -97,6 +100,10 @@ def regrade_characters(chars: List[dict], anime_rarity: Dict[int, str]) -> None:
         chars, lambda c: ((c.get("popularity_score") or 0), collects_of(c), c.get("id", 0))
     )
     logging.info("角色重排：%d/%d 变更档位；保持分布 %s", info["changed"], len(chars), info["counts"])
+
+    # 改档后**同步重算 battle_stats**（按最终 rarity），防止升/降档与属性档脱钩（本次数据债根因）。
+    for c in chars:
+        c["battle_stats"] = compute_battle_stats(c.get("rarity"), c.get("popularity_score"), c.get("id"))
 
 
 def report(anime: List[dict]) -> None:
