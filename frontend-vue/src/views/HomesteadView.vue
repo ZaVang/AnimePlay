@@ -34,6 +34,7 @@ import { formatHomeEffect, sumHomeEffects, SLOT_ORDER } from '@/config/equipment
 import type { CharacterCard } from '@/types/card';
 import CardDetailModal from '@/components/CardDetailModal.vue';
 import HomesteadManageModal from '@/components/homestead/HomesteadManageModal.vue';
+import CharacterAvatar from '@/components/CharacterAvatar.vue';
 
 const homesteadMapSrc = new URL('../assets/homestead/sky-island-map-v1.png', import.meta.url).href;
 
@@ -560,12 +561,11 @@ onUnmounted(() => {
 <template>
   <div class="homestead">
     <header class="hs-header">
-      <div>
-        <span class="hs-eyebrow">LIVING QUARTERS</span>
-        <h1 class="text-2xl font-bold text-ink">🏠 家园</h1>
-        <p class="text-sm text-ink-2">角色会在基地里漫步、休息和训练；装备词条会转化为离线成长效率。</p>
+      <div class="hs-summary">
+        <span class="hs-summary-chip"><span class="hs-summary-label">基地舒适度</span><strong>{{ homeEffect.comfort }}</strong></span>
+        <span class="hs-summary-chip"><span class="hs-summary-label">可用知识点</span><strong>{{ knowledgePoints }} KP</strong></span>
       </div>
-      <button v-if="userStore.isLoggedIn" class="btn-primary text-sm px-3 py-2" @click="showManage = true">管理入住</button>
+      <button v-if="userStore.isLoggedIn" class="btn-secondary hs-manage-btn" @click="showManage = true">管理入住</button>
     </header>
 
     <div v-if="!userStore.isLoggedIn" class="hs-empty">请先登录，把角色放进家园挂机成长。</div>
@@ -613,110 +613,61 @@ onUnmounted(() => {
       </div>
 
       <aside class="ops-panel" aria-label="家园运营">
-        <div class="ops-card ops-card-main">
-          <span class="ops-kicker">基地舒适度</span>
-          <div class="comfort-row">
-            <strong>{{ homeEffect.comfort }}</strong>
-            <span class="resident-count">入住 {{ residentRows.length }}</span>
+        <!-- 挂机收益主 CTA 大卡（金色收取）：SF-T3 预计累积 + 封顶进度 + 入住羁绊 -->
+        <div class="g-card g-idle" aria-label="待收挂机收益">
+          <div class="g-idle-top">
+            <div>
+              <span class="g-eyebrow">待收挂机收益</span>
+              <div class="g-idle-hours">{{ projectedYield.hours.toFixed(1) }}h / 上限 {{ capHours.toFixed(1) }}h</div>
+            </div>
+            <span class="g-chip gold">{{ knowledgePoints }} KP</span>
           </div>
-          <small>{{ comfortBonusText }}<template v-if="effectText"> · {{ effectText }}</template></small>
-        </div>
-
-        <div class="kp-strip">
-          <span class="ops-kicker">可用知识点</span>
-          <strong>{{ knowledgePoints }} KP</strong>
-        </div>
-
-        <!-- SF-T3：驻留时实时可见的「预计累积」+ 封顶进度条（60s 刷新，只预览不结算） -->
-        <div class="ops-card idle-card" aria-label="预计挂机累积">
-          <div class="idle-head">
-            <span class="ops-kicker">待收挂机收益</span>
-            <span class="idle-hours">{{ projectedYield.hours.toFixed(1) }}h / 上限 {{ capHours.toFixed(1) }}h</span>
-          </div>
-          <ul class="idle-list">
-            <li><span>经验</span><b>+{{ projectedYield.expEach }}</b></li>
-            <li><span>好感</span><b>+{{ projectedYield.affectionEach }}</b></li>
-            <li><span>知识点</span><b>+{{ projectedYield.knowledge }}</b></li>
+          <ul class="g-idle-amt">
+            <li><small>经验</small><b>+{{ projectedYield.expEach }}</b></li>
+            <li><small>好感</small><b>+{{ projectedYield.affectionEach }}</b></li>
+            <li><small>知识点</small><b>+{{ projectedYield.knowledge }}</b></li>
           </ul>
           <!-- ★ S15-T3 入住羁绊显形：命中给 accent 徽章 + 加成 pct（口径同源，预览=结算）。 -->
-          <div class="bond-row" aria-label="入住羁绊">
-            <span class="bond-kicker">入住羁绊</span>
+          <div class="g-bond" aria-label="入住羁绊">
+            <span class="g-bond-kicker">入住羁绊</span>
             <template v-if="bondHits.length > 0">
-              <span class="bond-total">全产出 +{{ Math.round(bondBonusPct * 100) }}%</span>
-              <ul class="bond-hits">
-                <li v-for="hit in bondHits" :key="hit.anime" class="bond-chip" :title="`${hit.anime} · 同住 ${hit.members} 人`">
+              <span class="g-bond-total">全产出 +{{ Math.round(bondBonusPct * 100) }}%</span>
+              <ul class="g-bond-hits">
+                <li v-for="hit in bondHits" :key="hit.anime" class="g-chip bond-chip" :title="`${hit.anime} · 同住 ${hit.members} 人`">
                   {{ hit.anime }} ×{{ hit.members }} · +{{ Math.round(hit.pct * 100) }}%
                 </li>
               </ul>
             </template>
-            <span v-else class="bond-empty">同作品 ≥2 人同住可触发加成</span>
+            <span v-else class="g-bond-empty">同作品 ≥2 人同住可触发加成</span>
           </div>
-          <div class="idle-bar" role="progressbar" :aria-valuenow="Math.round(capProgress * 100)" aria-valuemin="0" aria-valuemax="100">
-            <div class="idle-bar-fill" :class="capReached ? 'is-full' : 'is-growing'" :style="{ width: `${capProgress * 100}%` }"></div>
+          <div class="g-bar" role="progressbar" :aria-valuenow="Math.round(capProgress * 100)" aria-valuemin="0" aria-valuemax="100">
+            <i :class="capReached ? 'is-full' : 'is-growing'" :style="{ width: `${capProgress * 100}%` }"></i>
           </div>
-          <small v-if="capReached" class="idle-cap-note">已达上限，回来收取吧</small>
-          <small v-else-if="homestead.lastSettleAt <= 0" class="idle-cap-hint">入住角色后开始累积</small>
-          <small v-else class="idle-cap-hint">离开再回来即可收取当前累积</small>
+          <div class="g-idle-foot">
+            <small v-if="capReached" class="g-cap-note">已达上限，回来收取吧</small>
+            <small v-else-if="homestead.lastSettleAt <= 0" class="g-cap-hint">入住角色后开始累积</small>
+            <small v-else class="g-cap-hint">离开再回来即可收取当前累积</small>
+            <button type="button" class="g-cta-gold" @click="runSettle()">收取</button>
+          </div>
         </div>
 
-        <!-- SF-T8：家园日常委托（清单勾选式，与 SF-T3 横条区分）。收挂机/爬塔/强化都在 hub 内闭环。 -->
-        <div class="ops-card commission-card" aria-label="家园日常委托">
-          <div class="commission-head">
-            <span class="ops-kicker">今日委托</span>
-            <span class="commission-badge" :class="{ 'is-done': allCommissionsDone }">{{ commissionDoneCount }}/{{ commissionTotal }}</span>
-          </div>
-          <ul class="commission-list">
-            <li v-for="row in commissionRows" :key="row.id" class="commission-row" :class="{ 'is-complete': row.complete }">
-              <span class="commission-check" aria-hidden="true">{{ row.complete ? '✓' : '○' }}</span>
-              <span class="commission-body">
-                <span class="commission-title">{{ row.title }}</span>
-                <span class="commission-reward">{{ row.reward }}</span>
-              </span>
-              <button
-                v-if="row.claimable"
-                type="button"
-                class="btn-primary commission-claim"
-                @click="onClaimCommission(row.id)"
-              >
-                领取
-              </button>
-              <span v-else-if="row.claimed" class="commission-state claimed">已领</span>
-              <span v-else class="commission-state pending">{{ row.description }}</span>
-            </li>
-          </ul>
-          <div class="commission-bonus">
-            <span class="commission-bonus-label">今日全清 · {{ commissionBonusText }}</span>
-            <button
-              v-if="allCommissionsDone && !commissionBonusClaimed"
-              type="button"
-              class="btn-primary commission-bonus-btn"
-              @click="onClaimCommissionBonus"
-            >
-              领全清
-            </button>
-            <span v-else-if="commissionBonusClaimed" class="commission-state claimed">已领</span>
-            <span v-else class="commission-state pending">清完 3 条解锁</span>
-          </div>
-          <transition name="commission-float">
-            <span v-if="commissionFloat" class="commission-float">{{ commissionFloat }}</span>
-          </transition>
-        </div>
-
-        <div class="facility-grid" aria-label="设施升级">
-          <div v-for="row in facilityRows" :key="row.key" class="ops-card facility-card">
-            <div class="facility-head">
-              <span class="ops-kicker">{{ row.label }}</span>
-              <span class="facility-lv">Lv.{{ row.level }}</span>
+        <!-- 设施快捷条：升级三设施（可升级项加角标提示） -->
+        <div class="g-facil" aria-label="设施升级">
+          <div v-for="row in facilityRows" :key="row.key" class="g-card g-facil-item">
+            <span v-if="row.affordable" class="g-facil-up" aria-hidden="true">↑</span>
+            <div class="g-facil-head">
+              <b>{{ row.label }}</b>
+              <span class="g-chip">Lv.{{ row.level }}</span>
             </div>
-            <strong>{{ row.value }}</strong>
-            <small>设施加成 {{ pctText(row.bonus) }}</small>
-            <div class="facility-upgrade">
-              <span v-if="row.maxed" class="facility-maxed">已满级</span>
+            <span class="g-facil-value">{{ row.value }}</span>
+            <span class="g-facil-bonus">设施加成 {{ pctText(row.bonus) }}</span>
+            <div class="g-facil-upgrade">
+              <span v-if="row.maxed" class="g-facil-maxed">已满级</span>
               <template v-else>
-                <span class="facility-next">下一级 +{{ row.nextDelta }} {{ row.unit }}/h · {{ row.cost }} KP</span>
+                <span class="g-facil-next">下一级 +{{ row.nextDelta }} {{ row.unit }}/h · {{ row.cost }} KP</span>
                 <button
                   type="button"
-                  class="btn-primary facility-btn"
+                  class="btn-primary g-facil-btn"
                   :disabled="!row.affordable"
                   @click="onUpgradeFacility(row.key)"
                 >
@@ -727,65 +678,128 @@ onUnmounted(() => {
           </div>
         </div>
 
+        <!-- SF-T8：家园日常委托（默认展开）。收挂机/爬塔/强化都在 hub 内闭环。 -->
+        <details class="g-card g-acc" open>
+          <summary class="g-acc-sum">
+            <span class="g-acc-ttl">
+              <span class="g-ring" :style="{ '--p': commissionTotal ? (commissionDoneCount / commissionTotal) * 100 : 0 }">
+                <i>{{ commissionDoneCount }}/{{ commissionTotal }}</i>
+              </span>
+              今日委托
+            </span>
+            <span class="g-chip good" :class="{ 'is-dim': !allCommissionsDone }">全清 · {{ commissionBonusText }}</span>
+          </summary>
+          <div class="g-acc-body">
+            <ul class="commission-list">
+              <li v-for="row in commissionRows" :key="row.id" class="commission-row" :class="{ 'is-complete': row.complete }">
+                <span class="commission-check" aria-hidden="true">{{ row.complete ? '✓' : '○' }}</span>
+                <span class="commission-body">
+                  <span class="commission-title">{{ row.title }}</span>
+                  <span class="commission-reward">{{ row.reward }}</span>
+                </span>
+                <button
+                  v-if="row.claimable"
+                  type="button"
+                  class="btn-primary commission-claim"
+                  @click="onClaimCommission(row.id)"
+                >
+                  领取
+                </button>
+                <span v-else-if="row.claimed" class="commission-state claimed">已领</span>
+                <span v-else class="commission-state pending">{{ row.description }}</span>
+              </li>
+            </ul>
+            <div class="commission-bonus">
+              <span class="commission-bonus-label">今日全清 · {{ commissionBonusText }}</span>
+              <button
+                v-if="allCommissionsDone && !commissionBonusClaimed"
+                type="button"
+                class="btn-primary commission-bonus-btn"
+                @click="onClaimCommissionBonus"
+              >
+                领全清
+              </button>
+              <span v-else-if="commissionBonusClaimed" class="commission-state claimed">已领</span>
+              <span v-else class="commission-state pending">清完 3 条解锁</span>
+            </div>
+            <transition name="commission-float">
+              <span v-if="commissionFloat" class="commission-float">{{ commissionFloat }}</span>
+            </transition>
+          </div>
+        </details>
+
         <!-- S15-T2 家具兑换 + 摆放/收纳：KP → 家具 → comfort（经既有软加成轴，摆放持久化） -->
-        <div class="ops-card furniture-card" aria-label="家具布置">
-          <div class="furniture-head">
-            <span class="ops-kicker">家具布置</span>
-            <span class="furniture-comfort" :title="`已摆放家具舒适度合计 ${placedFurnitureComfort}`">
+        <details class="g-card g-acc">
+          <summary class="g-acc-sum">
+            <span class="g-acc-ttl">家具布置</span>
+            <span class="g-chip" :title="`已摆放家具舒适度合计 ${placedFurnitureComfort}`">
               舒适 +{{ placedFurnitureComfort }} · 全产出 {{ comfortPctText(homeEffect.comfort) }}
             </span>
+          </summary>
+          <div class="g-acc-body">
+            <ul class="furniture-list">
+              <li v-for="row in furnitureRows" :key="row.id" class="furniture-row" :class="{ 'is-placed': row.placed }">
+                <span class="furniture-body">
+                  <span class="furniture-name">{{ row.name }}</span>
+                  <span class="furniture-meta">舒适 +{{ row.comfort }}<template v-if="!row.owned"> · {{ row.cost }} KP</template></span>
+                </span>
+                <template v-if="!row.owned">
+                  <span v-if="row.deltaPct > 0" class="furniture-delta">摆放后全产出 +{{ Math.round(row.deltaPct * 100) }}%</span>
+                  <button
+                    type="button"
+                    class="btn-primary furniture-btn"
+                    :disabled="!row.affordable"
+                    @click="onBuyFurniture(row.id)"
+                  >
+                    购买
+                  </button>
+                </template>
+                <template v-else>
+                  <button
+                    type="button"
+                    class="furniture-btn"
+                    :class="row.placed ? 'btn-secondary' : 'btn-primary'"
+                    @click="onToggleFurniture(row.id)"
+                  >
+                    {{ row.placed ? '收纳' : '摆放' }}
+                  </button>
+                </template>
+              </li>
+            </ul>
           </div>
-          <ul class="furniture-list">
-            <li v-for="row in furnitureRows" :key="row.id" class="furniture-row" :class="{ 'is-placed': row.placed }">
-              <span class="furniture-body">
-                <span class="furniture-name">{{ row.name }}</span>
-                <span class="furniture-meta">舒适 +{{ row.comfort }}<template v-if="!row.owned"> · {{ row.cost }} KP</template></span>
-              </span>
-              <template v-if="!row.owned">
-                <span v-if="row.deltaPct > 0" class="furniture-delta">摆放后全产出 +{{ Math.round(row.deltaPct * 100) }}%</span>
-                <button
-                  type="button"
-                  class="btn-primary furniture-btn"
-                  :disabled="!row.affordable"
-                  @click="onBuyFurniture(row.id)"
-                >
-                  购买
-                </button>
-              </template>
-              <template v-else>
-                <button
-                  type="button"
-                  class="furniture-btn"
-                  :class="row.placed ? 'btn-secondary' : 'btn-primary'"
-                  @click="onToggleFurniture(row.id)"
-                >
-                  {{ row.placed ? '收纳' : '摆放' }}
-                </button>
-              </template>
-            </li>
-          </ul>
-        </div>
+        </details>
 
-        <div class="resident-strip">
-          <div class="resident-heading">
-            <span>入住名单</span>
-            <small>点击查看详情</small>
+        <!-- 入住名单折叠 -->
+        <details class="g-card g-acc">
+          <summary class="g-acc-sum">
+            <span class="g-acc-ttl">入住名单</span>
+            <span class="g-chip">入住 {{ residentRows.length }}</span>
+          </summary>
+          <div class="g-acc-body">
+            <div v-if="residentRows.length === 0" class="resident-empty">
+              还没有入住角色
+            </div>
+            <div v-else class="resident-list">
+              <button
+                v-for="row in residentRows"
+                :key="row.id"
+                type="button"
+                class="resident-pill"
+                @click="openDetailById(row.id)"
+              >
+                <CharacterAvatar
+                  class="resident-avatar"
+                  :character-id="row.id"
+                  :size="34"
+                  rounded
+                />
+                <span class="resident-name">{{ row.name }}</span>
+                <span class="resident-meta">{{ row.rarity }} · Lv.{{ row.level }} · 装备{{ row.equippedCount }}/3</span>
+                <span class="resident-effect">{{ row.effectText || '基础产出' }}</span>
+              </button>
+            </div>
           </div>
-          <div v-if="residentRows.length === 0" class="resident-empty">
-            还没有入住角色
-          </div>
-          <button
-            v-for="row in residentRows"
-            :key="row.id"
-            type="button"
-            class="resident-pill"
-            @click="openDetailById(row.id)"
-          >
-            <span class="resident-name">{{ row.name }}</span>
-            <span class="resident-meta">{{ row.rarity }} · Lv.{{ row.level }} · 装备{{ row.equippedCount }}/3</span>
-            <span class="resident-effect">{{ row.effectText || '基础产出' }}</span>
-          </button>
-        </div>
+        </details>
       </aside>
     </div>
 
@@ -811,8 +825,20 @@ onUnmounted(() => {
 
 <style scoped>
 .homestead { width: 100%; }
-.hs-header { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 1rem; }
-.hs-eyebrow { display: block; margin-bottom: .2rem; font-size: .72rem; font-weight: 800; color: rgb(var(--c-accent)); }
+/* [A] 纤细摘要条：hub HUD 已显身份/资源，这里只留一行摘要 + 管理入住 */
+.hs-header {
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  margin-bottom: .85rem; padding: .4rem .2rem;
+}
+.hs-summary { display: flex; align-items: center; gap: .55rem; flex-wrap: wrap; }
+.hs-summary-chip {
+  display: inline-flex; align-items: baseline; gap: .4rem;
+  padding: .28rem .7rem; border-radius: 999px;
+  background: rgb(var(--c-surface-2) / .7); border: 1px solid rgb(var(--c-line));
+}
+.hs-summary-label { font-size: .68rem; font-weight: 700; color: rgb(var(--c-ink-3)); }
+.hs-summary-chip strong { font-size: .92rem; font-weight: 800; color: rgb(var(--c-accent)); font-variant-numeric: tabular-nums; }
+.hs-manage-btn { font-size: .82rem; padding: .4rem 1rem; white-space: nowrap; }
 .hs-empty { text-align: center; padding: 3rem 1rem; color: rgb(var(--c-ink-2)); }
 .hs-empty-scene { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; z-index: 9999; }
 .hs-empty-card {
@@ -827,48 +853,129 @@ onUnmounted(() => {
   gap: 1rem; align-items: stretch;
 }
 .scene-panel { min-width: 0; }
-.ops-panel { display: flex; flex-direction: column; gap: .75rem; min-width: 0; }
-.facility-grid { display: grid; grid-template-columns: 1fr; gap: .75rem; }
-.kp-strip {
-  display: flex; align-items: baseline; justify-content: space-between; gap: .75rem;
-  padding: .55rem .9rem; border: 1px solid rgb(var(--c-line)); border-radius: 8px;
-  background: rgb(var(--c-elevated) / .6);
+.ops-panel { display: flex; flex-direction: column; gap: .7rem; min-width: 0; }
+
+/* ============ 外壳共同语言（与样稿一致的类名/质感）============ */
+/* 胖卡：面 + 1px 线边 + 圆角 + 柔和投影 + 顶部 40% 高光 */
+.g-card {
+  position: relative; background: rgb(var(--c-surface));
+  border: 1px solid rgb(var(--c-line)); border-radius: var(--sk-radius-panel);
+  box-shadow: var(--sk-shadow-card);
 }
-.kp-strip strong { font-size: 1.05rem; font-weight: 800; color: rgb(var(--c-accent)); }
-/* SF-T3 待收挂机收益卡 + 封顶进度条（语义令牌，无 text-white） */
-.idle-card { gap: .5rem; }
-.idle-head { display: flex; align-items: baseline; justify-content: space-between; gap: .5rem; }
-.idle-hours { font-size: .72rem; font-weight: 700; color: rgb(var(--c-ink-2)); }
-.idle-list { display: flex; gap: 1rem; margin: 0; padding: 0; list-style: none; }
-.idle-list li { display: flex; flex-direction: column; gap: .1rem; }
-.idle-list li span { font-size: .68rem; color: rgb(var(--c-ink-3)); }
-.idle-list li b { font-size: 1rem; font-weight: 800; color: rgb(var(--c-ink)); }
-.idle-bar { width: 100%; height: 8px; border-radius: 999px; overflow: hidden; background: rgb(var(--c-elevated) / .8); }
-.idle-bar-fill { height: 100%; border-radius: 999px; transition: width .5s ease; }
-.idle-bar-fill.is-growing { background: rgb(var(--c-success)); }
-.idle-bar-fill.is-full { background: rgb(var(--c-warning)); }
-.idle-cap-note { color: rgb(var(--c-warning)) !important; font-weight: 700; }
-.idle-cap-hint { color: rgb(var(--c-ink-3)); }
-/* ★ S15-T3 入住羁绊显形（语义令牌，命中给 accent，无 text-white / 动态色类） */
-.bond-row { display: flex; flex-direction: column; gap: .3rem; margin-top: .1rem; }
-.bond-kicker { font-size: .68rem; font-weight: 800; letter-spacing: .04em; color: rgb(var(--c-ink-3)); }
-.bond-total { font-size: .8rem; font-weight: 800; color: rgb(var(--c-accent)); }
-.bond-hits { display: flex; flex-wrap: wrap; gap: .32rem; margin: 0; padding: 0; list-style: none; }
-.bond-chip {
-  font-size: .68rem; font-weight: 700; padding: .16rem .44rem; border-radius: 999px;
-  color: rgb(var(--c-accent)); background: rgb(var(--c-accent) / .12); border: 1px solid rgb(var(--c-accent) / .35);
+.g-card::before {
+  content: ''; position: absolute; inset: 0 0 auto 0; height: 40%; pointer-events: none;
+  border-radius: var(--sk-radius-panel) var(--sk-radius-panel) 0 0;
+  background: linear-gradient(180deg, rgb(255 255 255 / .5), transparent);
+}
+.g-eyebrow {
+  display: inline-block; font-size: .62rem; font-weight: 900; letter-spacing: .12em;
+  text-transform: uppercase; color: rgb(var(--c-accent-2));
+}
+/* 胶囊 chip：语义令牌淡底 + 同色字 */
+.g-chip {
+  display: inline-flex; align-items: center; gap: .3rem; font-size: .66rem; font-weight: 800;
+  padding: .16rem .5rem; border-radius: 999px;
+  background: rgb(var(--c-accent-soft)); color: rgb(var(--c-accent-2));
   max-width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
-.bond-empty { font-size: .68rem; color: rgb(var(--c-ink-3)); }
-/* SF-T8 家园委托（清单勾选，语义令牌，无 text-white / 动态色类） */
-.commission-card { gap: .55rem; position: relative; }
-.commission-head { display: flex; align-items: center; justify-content: space-between; gap: .5rem; }
-.commission-badge {
-  flex: 0 0 auto; padding: .12rem .5rem; border-radius: 6px; font-size: .72rem; font-weight: 800;
-  background: rgb(var(--c-elevated) / .8); color: rgb(var(--c-ink-2)); border: 1px solid rgb(var(--c-line));
-  transition: color .3s ease, background .3s ease;
+.g-chip.warn { background: rgb(var(--c-warning) / .16); color: rgb(var(--c-warning)); }
+.g-chip.good { background: rgb(var(--c-success) / .16); color: rgb(var(--c-success)); }
+.g-chip.good.is-dim { background: rgb(var(--c-surface-2) / .8); color: rgb(var(--c-ink-3)); }
+.g-chip.gold { background: rgb(var(--c-highlight) / .16); color: rgb(var(--c-highlight)); }
+/* 金色主 CTA：由 highlight 深浅两档组成 + 立体下缘 */
+.g-cta-gold {
+  flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center;
+  font-weight: 800; font-size: .84rem; padding: .5rem 1.2rem; white-space: nowrap;
+  border: 0; cursor: pointer; border-radius: var(--sk-radius-control);
+  color: rgb(var(--c-on-accent));
+  background: linear-gradient(180deg, rgb(var(--c-highlight)), rgb(var(--c-highlight) / .82));
+  box-shadow: 0 3px 0 rgb(var(--c-highlight) / .55), 0 6px 14px rgb(var(--c-highlight) / .4);
+  transition: transform .12s ease, box-shadow .12s ease, filter .12s ease;
 }
-.commission-badge.is-done { background: rgb(var(--c-success) / .18); color: rgb(var(--c-success)); }
+.g-cta-gold:hover { filter: brightness(1.05); }
+.g-cta-gold:active { transform: translateY(1px); box-shadow: 0 1px 0 rgb(var(--c-highlight) / .55); }
+/* 进度条 */
+.g-bar {
+  width: 100%; height: 8px; border-radius: 999px; overflow: hidden;
+  background: rgb(var(--c-surface-2)); border: 1px solid rgb(var(--c-line));
+}
+.g-bar i { display: block; height: 100%; border-radius: 999px; transition: width .5s ease; }
+.g-bar i.is-growing { background: linear-gradient(90deg, rgb(var(--c-accent)), rgb(var(--c-accent-2))); }
+.g-bar i.is-full { background: linear-gradient(90deg, rgb(var(--c-highlight)), rgb(var(--c-highlight) / .8)); }
+
+/* ============ [C-1] 挂机收益主卡 ============ */
+.g-idle {
+  padding: .95rem; overflow: hidden;
+  background:
+    linear-gradient(135deg, rgb(var(--c-accent-soft) / .9), rgb(var(--c-surface)) 66%);
+}
+.g-idle-top { display: flex; align-items: flex-start; justify-content: space-between; gap: .5rem; }
+.g-idle-hours { margin-top: .15rem; font-size: .72rem; font-weight: 700; color: rgb(var(--c-ink-2)); }
+.g-idle-amt { display: flex; gap: 1rem; margin: .55rem 0 .4rem; padding: 0; list-style: none; }
+.g-idle-amt li { display: flex; flex-direction: column; gap: .05rem; }
+.g-idle-amt small { font-size: .62rem; color: rgb(var(--c-ink-3)); }
+.g-idle-amt b { font-size: 1.1rem; font-weight: 900; color: rgb(var(--c-ink)); font-variant-numeric: tabular-nums; }
+/* 入住羁绊显形（命中给 accent，无 text-white / 动态色类） */
+.g-bond { display: flex; flex-direction: column; gap: .3rem; margin: .1rem 0 .5rem; }
+.g-bond-kicker { font-size: .66rem; font-weight: 800; letter-spacing: .04em; color: rgb(var(--c-ink-3)); }
+.g-bond-total { font-size: .78rem; font-weight: 800; color: rgb(var(--c-accent-2)); }
+.g-bond-hits { display: flex; flex-wrap: wrap; gap: .32rem; margin: 0; padding: 0; list-style: none; }
+.g-chip.bond-chip { background: rgb(var(--c-accent) / .12); color: rgb(var(--c-accent-2)); border: 1px solid rgb(var(--c-accent) / .3); }
+.g-bond-empty { font-size: .66rem; color: rgb(var(--c-ink-3)); }
+.g-idle-foot { display: flex; align-items: center; justify-content: space-between; gap: .6rem; margin-top: .55rem; }
+.g-idle-foot small { font-size: .68rem; line-height: 1.3; }
+.g-cap-note { color: rgb(var(--c-warning)); font-weight: 700; }
+.g-cap-hint { color: rgb(var(--c-ink-3)); }
+
+/* ============ [C-2] 设施快捷条 ============ */
+.g-facil { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .55rem; }
+.g-facil-item { padding: .6rem .55rem; display: flex; flex-direction: column; gap: .22rem; }
+.g-facil-up {
+  position: absolute; top: -6px; right: -6px; z-index: 2;
+  width: 18px; height: 18px; border-radius: 50%; display: grid; place-items: center;
+  font-size: .7rem; font-weight: 900; color: rgb(var(--c-on-accent));
+  background: rgb(var(--c-success)); box-shadow: 0 2px 5px rgb(var(--c-success) / .4);
+}
+.g-facil-head { display: flex; align-items: center; justify-content: space-between; gap: .35rem; }
+.g-facil-head b { font-size: .74rem; font-weight: 800; color: rgb(var(--c-ink)); }
+.g-facil-head .g-chip { padding: .1rem .4rem; font-size: .6rem; background: rgb(var(--c-accent-soft) / .8); }
+.g-facil-value { font-size: .9rem; font-weight: 900; color: rgb(var(--c-ink)); font-variant-numeric: tabular-nums; }
+.g-facil-bonus { font-size: .6rem; color: rgb(var(--c-ink-3)); }
+.g-facil-upgrade { display: flex; flex-direction: column; gap: .3rem; margin-top: .15rem; }
+.g-facil-next { font-size: .6rem; line-height: 1.3; color: rgb(var(--c-ink-2)); }
+.g-facil-btn { width: 100%; font-size: .72rem; padding: .28rem .4rem; }
+.g-facil-btn:disabled { opacity: .5; cursor: not-allowed; }
+.g-facil-maxed { font-size: .68rem; font-weight: 700; color: rgb(var(--c-ink-3)); }
+
+/* ============ [C-3/4/5] 折叠收纳 <details> ============ */
+.g-acc { padding: 0; overflow: hidden; }
+.g-acc > .g-acc-sum {
+  list-style: none; cursor: pointer; user-select: none;
+  display: flex; align-items: center; justify-content: space-between; gap: .5rem;
+  padding: .7rem .85rem;
+}
+.g-acc > .g-acc-sum::-webkit-details-marker { display: none; }
+.g-acc-sum:focus-visible { outline: 2px solid rgb(var(--c-accent)); outline-offset: -2px; border-radius: var(--sk-radius-panel); }
+.g-acc-ttl { display: flex; align-items: center; gap: .45rem; font-size: .82rem; font-weight: 800; color: rgb(var(--c-ink)); }
+.g-acc-ttl::after {
+  content: '▾'; margin-left: .1rem; font-size: .7rem; color: rgb(var(--c-ink-3));
+  transition: transform .18s ease;
+}
+.g-acc[open] > .g-acc-sum .g-acc-ttl::after { transform: rotate(180deg); }
+.g-acc-body { padding: 0 .85rem .8rem; }
+/* 进度环 */
+.g-ring {
+  --p: 0; width: 32px; height: 32px; flex: 0 0 auto; border-radius: 50%;
+  display: grid; place-items: center; font-size: .55rem; font-weight: 900; color: rgb(var(--c-accent-2));
+  background: conic-gradient(rgb(var(--c-accent)) calc(var(--p) * 1%), rgb(var(--c-surface-2)) 0);
+}
+.g-ring i {
+  width: 24px; height: 24px; border-radius: 50%; font-style: normal;
+  display: grid; place-items: center; background: rgb(var(--c-surface));
+  font-variant-numeric: tabular-nums;
+}
+/* SF-T8 家园委托（清单勾选，语义令牌，无 text-white / 动态色类） */
+.g-acc { position: relative; }
 .commission-list { display: flex; flex-direction: column; gap: .4rem; margin: 0; padding: 0; list-style: none; }
 .commission-row { display: flex; align-items: center; gap: .55rem; }
 .commission-check {
@@ -898,25 +1005,11 @@ onUnmounted(() => {
 .commission-float-leave-active { transition: opacity .6s ease, transform .6s ease; }
 .commission-float-enter-from { opacity: 0; transform: translateY(6px); }
 .commission-float-leave-to { opacity: 0; transform: translateY(-8px); }
-.facility-card { min-height: auto; gap: .35rem; }
-.facility-head { display: flex; align-items: center; justify-content: space-between; gap: .5rem; }
-.facility-lv {
-  flex: 0 0 auto; padding: .12rem .5rem; border-radius: 6px; font-size: .72rem; font-weight: 800;
-  background: rgb(var(--c-accent-soft) / .8); color: rgb(var(--c-accent)); border: 1px solid rgb(var(--c-line));
-}
-.facility-upgrade { display: flex; align-items: center; justify-content: space-between; gap: .5rem; margin-top: .25rem; }
-.facility-next { font-size: .7rem; line-height: 1.3; color: rgb(var(--c-ink-2)); }
-.facility-btn { flex: 0 0 auto; font-size: .74rem; padding: .3rem .8rem; }
-.facility-btn:disabled { opacity: .5; cursor: not-allowed; }
-.facility-maxed { font-size: .74rem; font-weight: 700; color: rgb(var(--c-ink-3)); }
 /* S15-T2 家具布置（语义令牌，无 text-white / 动态色类） */
-.furniture-card { gap: .55rem; }
-.furniture-head { display: flex; align-items: baseline; justify-content: space-between; gap: .5rem; }
-.furniture-comfort { font-size: .72rem; font-weight: 700; color: rgb(var(--c-accent)); }
 .furniture-list { display: flex; flex-direction: column; gap: .4rem; margin: 0; padding: 0; list-style: none; }
 .furniture-row {
   display: flex; align-items: center; gap: .55rem;
-  padding: .35rem .5rem; border-radius: 8px; border: 1px solid rgb(var(--c-line));
+  padding: .35rem .5rem; border-radius: var(--sk-radius-control); border: 1px solid rgb(var(--c-line));
   background: rgb(var(--c-surface-2) / .5); transition: border-color .15s ease, background .15s ease;
 }
 .furniture-row.is-placed { border-color: rgb(var(--c-accent) / .5); background: rgb(var(--c-accent-soft) / .35); }
@@ -926,44 +1019,19 @@ onUnmounted(() => {
 .furniture-delta { flex: 0 0 auto; font-size: .68rem; font-weight: 700; color: rgb(var(--c-success)); text-align: right; line-height: 1.2; }
 .furniture-btn { flex: 0 0 auto; font-size: .72rem; padding: .24rem .7rem; }
 .furniture-btn:disabled { opacity: .5; cursor: not-allowed; }
-.ops-card {
-  min-height: 92px; padding: .9rem; border: 1px solid rgb(var(--c-line));
-  border-radius: 8px; background: rgb(var(--c-surface) / .94);
-  display: flex; flex-direction: column; justify-content: space-between;
-  box-shadow: 0 12px 30px rgb(37 47 58 / .08);
-}
-.ops-card-main {
-  min-height: 132px; overflow: hidden; position: relative;
-  background:
-    linear-gradient(135deg, rgb(var(--c-accent-soft) / .84), rgb(var(--c-surface) / .96) 62%),
-    linear-gradient(90deg, rgb(var(--c-highlight) / .18), transparent);
-}
-.ops-card-main::after {
-  content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 5px;
-  background: linear-gradient(90deg, rgb(var(--c-accent)), rgb(var(--c-highlight)), rgb(var(--c-info)));
-}
-.ops-kicker { font-size: .75rem; font-weight: 700; color: rgb(var(--c-ink-2)); }
-.ops-card strong { display: block; font-size: 1.35rem; line-height: 1.15; color: rgb(var(--c-ink)); }
-.ops-card small { display: block; min-height: 1rem; font-size: .72rem; line-height: 1.35; color: rgb(var(--c-ink-3)); }
-.comfort-row { display: flex; align-items: flex-end; justify-content: space-between; gap: .75rem; }
-.comfort-row strong { font-size: 2.35rem; }
-.resident-count {
-  flex: 0 0 auto; padding: .22rem .5rem; border-radius: 6px;
-  background: rgb(var(--c-elevated) / .8); border: 1px solid rgb(var(--c-line));
-  color: rgb(var(--c-ink-2)); font-size: .72rem; font-weight: 700;
-}
-.resident-strip {
-  display: flex; flex-direction: column; gap: .55rem; min-width: 0;
-  padding-top: .15rem;
-}
-.resident-heading { display: flex; align-items: baseline; justify-content: space-between; gap: .75rem; }
-.resident-heading span { font-size: .86rem; font-weight: 800; color: rgb(var(--c-ink)); }
-.resident-heading small { font-size: .7rem; color: rgb(var(--c-ink-3)); }
+/* 入住名单 */
+.resident-list { display: grid; grid-template-columns: 1fr; gap: .5rem; }
 .resident-pill {
   min-height: 76px; padding: .7rem .75rem; border: 1px solid rgb(var(--c-line));
-  border-radius: 8px; background: rgb(var(--c-surface-2) / .82);
+  border-radius: var(--sk-radius-control); background: rgb(var(--c-surface-2) / .82);
   text-align: left; transition: border-color .15s ease, transform .15s ease, box-shadow .15s ease;
+  display: grid; grid-template-columns: auto 1fr; align-items: center; column-gap: .6rem;
+  grid-template-areas: 'avatar name' 'avatar meta' 'avatar effect';
 }
+.resident-avatar { grid-area: avatar; flex: none; align-self: center; }
+.resident-name { grid-area: name; }
+.resident-meta { grid-area: meta; }
+.resident-effect { grid-area: effect; }
 .resident-pill:hover { border-color: rgb(var(--c-accent)); transform: translateY(-1px); box-shadow: 0 10px 24px rgb(37 47 58 / .08); }
 .resident-name { display: block; font-size: .86rem; font-weight: 800; color: rgb(var(--c-ink)); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .resident-meta { display: block; margin-top: .18rem; font-size: .72rem; color: rgb(var(--c-ink-2)); }
@@ -1038,24 +1106,16 @@ onUnmounted(() => {
 .settle-list li { display: flex; align-items: center; justify-content: space-between; font-size: .9rem; color: rgb(var(--c-ink-2)); }
 .settle-list li b { color: rgb(var(--c-accent)); font-size: 1rem; }
 
+/* 桌面优先：窄屏时右栏落到场景下方，收纳仍单列堆叠不破版 */
 @media (max-width: 1120px) {
   .homestead-shell { grid-template-columns: 1fr; }
-  .ops-panel { display: grid; grid-template-columns: minmax(220px, 280px) minmax(0, 1fr); align-items: stretch; }
-  .facility-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  .resident-strip {
-    grid-column: 1 / -1; display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-  }
-  .resident-heading { grid-column: 1 / -1; }
-}
-@media (max-width: 760px) {
-  .ops-panel { grid-template-columns: 1fr; }
-  .facility-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  .resident-strip { display: flex; flex-direction: column; }
+  /* 单栏落地后可用更宽的横向空间：入住名单铺成自适应网格 */
+  .resident-list { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
 }
 @media (max-width: 560px) {
   .hs-header { align-items: flex-start; flex-direction: column; }
   .homestead-shell { gap: .75rem; }
-  .facility-grid { grid-template-columns: 1fr; }
-  .comfort-row { align-items: flex-start; flex-direction: column; }
+  .g-facil { grid-template-columns: 1fr; }
+  .resident-list { grid-template-columns: 1fr; }
 }
 </style>

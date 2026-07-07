@@ -479,6 +479,89 @@ describe('SE-T2 套装加成经 resolveEquipBonus 单一 seam 汇入', () => {
   });
 });
 
+describe('养成流·阶段1 autoEquipBest（一键装备：逐槽贪心最大化战力）', () => {
+  // base 五维缺 gameData 时兜底 {hp:100,atk:50,def:30,sp:40,spd:60}，nurture 缺省全 0 → 纯装备驱动
+  const NURTURE_ZERO = { statPoints: { hp: 0, atk: 0, def: 0, sp: 0, spd: 0 }, breakthrough: 0, claimedBondMilestones: [] };
+  const BASE = { hp: 100, atk: 50, def: 30, sp: 40, spd: 60 };
+
+  it('空背包不报错：返回 changed:0、战力不变', () => {
+    const eq = useEquipmentStore();
+    const r = eq.autoEquipBest(1);
+    expect(r.changed).toBe(0);
+    expect(r.powerAfter).toBe(r.powerBefore);
+    expect(eq.getEquipped(1)).toEqual({ weapon: null, armor: null, supporter: null });
+  });
+
+  it('三槽各有候选：三槽装满、战力不降、装的都是槽匹配件', () => {
+    const eq = useEquipmentStore();
+    eq.addItem(WPN_R);
+    eq.addItem(ARM_R);
+    eq.addItem(SUP_R);
+    const r = eq.autoEquipBest(1);
+    expect(r.changed).toBe(3);
+    expect(r.powerAfter).toBeGreaterThanOrEqual(r.powerBefore);
+    const slots = eq.getEquipped(1);
+    expect(getEquipmentDef(eq.getItem(slots.weapon!)!.defId)!.slot).toBe('weapon');
+    expect(getEquipmentDef(eq.getItem(slots.armor!)!.defId)!.slot).toBe('armor');
+    expect(getEquipmentDef(eq.getItem(slots.supporter!)!.defId)!.slot).toBe('supporter');
+  });
+
+  it('同槽多候选：选中的是使战力最大的那一件（UR 武器 > R 武器）', () => {
+    const eq = useEquipmentStore();
+    const weak = eq.addItem(WPN_R); // atk:13, sp:5
+    const strong = eq.addItem(WPN_UR); // atk:98, sp:42
+    eq.autoEquipBest(1);
+    // 选中的是最优件（UR），弱件游离
+    expect(eq.getEquipped(1).weapon).toBe(strong);
+    expect(eq.findEquippedBy(weak)).toBeNull();
+    // 该 uid 装上后确实是候选中战力最大者（对拍：手算两件各自战力）
+    const powerStrong = calculateBattlePower(
+      resolveMemberBattleStats(BASE, NURTURE_ZERO, eq.resolveEquipBonus(1)),
+    );
+    eq.equip(1, 'weapon', weak);
+    const powerWeak = calculateBattlePower(
+      resolveMemberBattleStats(BASE, NURTURE_ZERO, eq.resolveEquipBonus(1)),
+    );
+    expect(powerStrong).toBeGreaterThan(powerWeak);
+  });
+
+  it('已装更优件时保留不换（幂等：再次一键 changed:0）', () => {
+    const eq = useEquipmentStore();
+    const strong = eq.addItem(WPN_UR);
+    eq.addItem(WPN_R); // 更弱的备选
+    eq.equip(1, 'weapon', strong); // 已装最优
+    const r = eq.autoEquipBest(1);
+    expect(r.changed).toBe(0); // 无更优 → 不换
+    expect(eq.getEquipped(1).weapon).toBe(strong);
+    // 再跑一次仍稳定
+    expect(eq.autoEquipBest(1).changed).toBe(0);
+  });
+
+  it('已被别的角色占用的道具不重复用', () => {
+    const eq = useEquipmentStore();
+    const shared = eq.addItem(WPN_UR);
+    eq.equip(2, 'weapon', shared); // 角色 2 先戴着
+    const own = eq.addItem(WPN_R); // 角色 1 唯一可用武器
+    eq.autoEquipBest(1);
+    // 角色 1 不能抢角色 2 的件，只能用自己的 R 件
+    expect(eq.getEquipped(1).weapon).toBe(own);
+    expect(eq.getEquipped(2).weapon).toBe(shared); // 角色 2 仍持有
+  });
+
+  it('全局战力口径对拍：一键后战力 = 当前配装真实战力，且 ≥ before', () => {
+    const eq = useEquipmentStore();
+    eq.addItem(WPN_UR);
+    eq.addItem(ARM_R);
+    eq.addItem(SUP_R);
+    const r = eq.autoEquipBest(1);
+    const actual = calculateBattlePower(
+      resolveMemberBattleStats(BASE, NURTURE_ZERO, eq.resolveEquipBonus(1)),
+    );
+    expect(r.powerAfter).toBe(actual);
+    expect(r.powerAfter).toBeGreaterThanOrEqual(r.powerBefore);
+  });
+});
+
 describe('serialize ⇄ deserialize 往返 + reset', () => {
   it('往返保真', () => {
     const eq = useEquipmentStore();

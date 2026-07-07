@@ -4,6 +4,7 @@ import { useUserStore } from '@/stores/userStore';
 import { useGameDataStore } from '@/stores/gameDataStore';
 import { assetUrl } from '@/utils/assetUrl';
 import VirtualGrid from '@/components/VirtualGrid.vue';
+import { getSquadRoleInfo } from '@/data/squadSkillKits';
 import type { CharacterCard, Rarity } from '@/types/card';
 
 const props = defineProps<{
@@ -70,6 +71,11 @@ const availableCharacters = computed(() => {
       return (rarityOrder[b.rarity] || 0) - (rarityOrder[a.rarity] || 0);
     });
 });
+
+// PCR 式职业/定位信息（与编队板同源 helper，保证「显示定位 === 战斗站位」）
+function roleInfoFor(character: CharacterCard) {
+  return getSquadRoleInfo(character);
+}
 
 // 选择角色
 function selectCharacter(character: CharacterCard) {
@@ -244,9 +250,19 @@ function handleBackdropClick(event: MouseEvent) {
               >
                 ×{{ character.count }}
               </div>
-              
+
               <!-- 角色信息 -->
               <div class="absolute bottom-0 left-0 right-0 p-3">
+                <!-- 职业/定位徽标（编队同源 role helper，让玩家选人即知坦/输出/辅助 + 前/中/后排） -->
+                <template v-for="role in [roleInfoFor(character)]" :key="'role'">
+                  <div v-if="role" class="text-center mb-1">
+                    <span
+                      class="csm-role"
+                      :class="`role-${role.position}`"
+                      :title="role.roleBlurb"
+                    >{{ role.roleIcon }}{{ role.roleLabel }}·{{ role.positionLabel }}</span>
+                  </div>
+                </template>
                 <div class="text-xs text-white font-medium text-center mb-1">
                   {{ character.name }}
                 </div>
@@ -279,6 +295,24 @@ function handleBackdropClick(event: MouseEvent) {
 </template>
 
 <style scoped>
+/* 职业/定位徽标——语义色按站位区分（前=danger / 中=highlight / 后=info），与编队板同源 */
+.csm-role {
+  display: inline-block;
+  max-width: 100%;
+  font-size: 0.64rem;
+  font-weight: 800;
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+  color: rgb(var(--c-on-accent));
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-shadow: var(--sk-shadow-card);
+}
+.csm-role.role-front { background: rgb(var(--c-danger)); }
+.csm-role.role-middle { background: rgb(var(--c-highlight)); }
+.csm-role.role-back { background: rgb(var(--c-info)); }
+
 /* 弹窗动画 */
 .fixed {
   animation: fadeIn 0.2s ease-out;
