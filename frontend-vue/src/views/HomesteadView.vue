@@ -4,36 +4,54 @@
  * 并随时间挂机成长。
  * - 入住者 = homestead.placedCharacterIds（「管理入住」里选，≤HOMESTEAD_SLOTS）。
  * - 进家园（onMounted）结算一次离线收益（settleHomestead，按 lastSettleAt 虚拟累积）。
- * - 立绘三级兜底：四向行走表 sprite（data/images/character/sprite/<id>.png，3列×4行/格48×64）
- *   → 缺表回退 Q版 chibi（chibi/<id>.png）→ 再缺回退原立绘 → 都缺才隐藏。
- *   sprite 是否存在用 new Image() 探测一次（增量填充，无需硬编码 id 名单）。
- * - 移动矢量决定朝向行（下/上/左/右），行走时 3 帧循环、静止显中间帧；y 越大越靠前（z 排序 + 轻微放大景深）。
- * 走动用单个 rAF 循环驱动（卸载时取消）。本视图允许 Math.random（非 engine 层）。
+ * - **漫步 / 偶遇场景层已抽为 composable `usePlazaWalk`（S16-T4/T5）**：pets 状态 + rAF 巡游 +
+ *   多气泡并发模型 + pet-to-pet 同作品偶遇对话都在那里；本视图只保留运营面板 + tap 台词编排。
+ * - 立绘三级兜底：四向行走表 sprite → 缺回退 chibi → 再缺回退原立绘 → 都缺隐藏（见 composable）。
+ * 本视图允许 Math.random（非 engine 层）。
  */
-import { ref, computed, watch, onMounted, onUnmounted } from 'vue';
+import { ref, computed, onMounted, onUnmounted } from 'vue';
 import { useUserStore } from '@/stores/userStore';
 import { useGameDataStore } from '@/stores/gameDataStore';
 import { useHomesteadStore } from '@/stores/homestead';
 import { useCollectionStore } from '@/stores/collection';
 import { useEquipmentStore } from '@/stores/equipment';
-import { chibiImageSrc, fullImageSrc, spriteSheetSrc } from '@/utils/cardImage';
 import {
   computeIdleYield,
   comfortBonusPct,
   offlineCapHours,
   FURNITURE_CATALOG,
+  getFurnitureSlot,
   IDLE_SETTLE_MODAL_MIN_HOURS,
   type FacilityKey,
   type IdleYield,
 } from '@/config/homestead';
 import { useFacilityStore } from '@/stores/facility';
 import { useFurnitureStore } from '@/stores/furniture';
+import { useCodexStore } from '@/stores/codex';
 import { useDailyStore } from '@/stores/daily';
 import { COMMISSIONS, COMMISSION_BONUS_REWARDS } from '@/config/dailyTasks';
 import { formatHomeEffect, sumHomeEffects, SLOT_ORDER } from '@/config/equipment';
+import {
+  BOND_MILESTONES,
+  bondTitleFor,
+  isMilestoneClaimable,
+  DAILY_BOND_INTERACTION_AFFECTION,
+  milestoneCelebrationTier,
+  type MilestoneCelebrationTier,
+} from '@/config/nurture';
+import { pickTapDialogue, pickMilestoneDialogue, pickTodaySpecialDialogue } from '@/config/homesteadDialogues';
+import {
+  todayKey as makeTodayKey,
+  pickTodaySpecialId,
+  pickShowcaseRarity,
+  currentSeason,
+} from '@/config/homesteadDaily';
+import type { Rarity } from '@/types/card';
+import { usePlazaWalk, type Pet } from '@/composables/usePlazaWalk';
 import type { CharacterCard } from '@/types/card';
 import CardDetailModal from '@/components/CardDetailModal.vue';
 import HomesteadManageModal from '@/components/homestead/HomesteadManageModal.vue';
+import HomesteadShareCard from '@/components/homestead/HomesteadShareCard.vue';
 import CharacterAvatar from '@/components/CharacterAvatar.vue';
 
 const homesteadMapSrc = new URL('../assets/homestead/sky-island-map-v1.png', import.meta.url).href;
@@ -45,145 +63,84 @@ const collection = useCollectionStore();
 const equipmentStore = useEquipmentStore();
 const facilityStore = useFacilityStore();
 const furnitureStore = useFurnitureStore();
+const codex = useCodexStore();
 const daily = useDailyStore();
 
-// --- sprite 表规格（与 codex 产出一致：3 列行走帧 × 4 行朝向，格 48×64）---
-type Dir = 'down' | 'up' | 'left' | 'right';
-/** 朝向 → sheet 行号。下=正面/上=背面/左/右（若实测左右相反，只需对调此表）。 */
-const ROW: Record<Dir, number> = { down: 0, up: 1, left: 2, right: 3 };
-/** 3 帧行走循环（中间帧复用一次，RPG-Maker 惯例）；静止时显第 1 帧（站姿）。 */
-const WALK_SEQ = [0, 1, 2, 1];
-const FRAME_MS = 150;                 // 每帧时长
-const DISP_W = 66;                    // 展示格宽（48 × 1.375）
-const DISP_H = 88;                    // 展示格高（64 × 1.375）
+// ── S16-T4/T5 广场漫步 + 偶遇场景层（composable）──
+// pets / 气泡 / 偶遇符号 / rAF 循环 / 定时器全在 composable 里自管生命周期。
+const isLoggedInRef = computed(() => userStore.isLoggedIn);
+const placedIdsRef = computed(() => homestead.placedCharacterIds);
+const plaza = usePlazaWalk({
+  isLoggedIn: isLoggedInRef,
+  placedCharacterIds: () => placedIdsRef.value,
+  getCard: (id: number) => gameData.getCharacterCardById(id) ?? undefined,
+  canTapInteract: (id: number) => userStore.canDailyBondInteract(id),
+  doTapInteract: (id: number) => userStore.dailyBondInteraction(id),
+  tapAffectionAmount: DAILY_BOND_INTERACTION_AFFECTION,
+});
+const { pets, sparks, visibleCount, bubbleFor, onPetImgError, spriteStyle, petStyle, depthScale, chibiImageSrc } =
+  plaza;
 
-// 广场活动范围（%）：留出顶部名牌、底部影子余量
-const MIN_X = 7, MAX_X = 93, MIN_Y = 22, MAX_Y = 86;
+// ★ S16-T10 今日特殊台词轮换计数（view 层纯展示分支，不碰 composable 的发放逻辑）。
+let todaySpecialTick = 0;
 
-type WalkZone =
-  | { kind: 'rect'; x1: number; y1: number; x2: number; y2: number }
-  | { kind: 'ellipse'; cx: number; cy: number; rx: number; ry: number };
-
-// D-map-2 的第一版可行走区域：中央广场 + 主路 + 各建筑入口平台。
-// 使用百分比坐标，保持 scene 为 16:9 时与底图稳定对齐。
-const WALKABLE_ZONES: WalkZone[] = [
-  { kind: 'ellipse', cx: 50, cy: 53, rx: 17, ry: 12 },
-  { kind: 'rect', x1: 28, y1: 42, x2: 74, y2: 59 },
-  { kind: 'rect', x1: 43, y1: 25, x2: 58, y2: 83 },
-  { kind: 'ellipse', cx: 19, cy: 26, rx: 13, ry: 11 },
-  { kind: 'rect', x1: 18, y1: 24, x2: 47, y2: 39 },
-  { kind: 'ellipse', cx: 21, cy: 60, rx: 10, ry: 15 },
-  { kind: 'rect', x1: 13, y1: 49, x2: 38, y2: 70 },
-  { kind: 'ellipse', cx: 71, cy: 28, rx: 13, ry: 10 },
-  { kind: 'rect', x1: 57, y1: 31, x2: 86, y2: 53 },
-  { kind: 'ellipse', cx: 50, cy: 83, rx: 9, ry: 7 },
-];
-
-interface Pet {
-  id: number;
-  name: string;
-  x: number;          // 横向中心（%）
-  y: number;          // 纵向脚点（%，0 顶 → 100 底）
-  dir: Dir;           // 当前朝向 / 移动方向
-  moving: boolean;    // 行走 or 站立
-  speed: number;      // %/秒
-  targetX: number;    // 当前巡游目标点（%）
-  targetY: number;
-  frame: number;      // 行走序列下标 0..WALK_SEQ.length-1
-  frameT: number;     // 帧计时累加（ms）
-  stateT: number;     // 当前 行走/站立 状态剩余秒数
-  hasSprite: boolean; // 四向行走表是否可用（探测命中）
-  hidden: boolean;    // sprite + chibi + 原立绘都缺 → 隐藏（终极兜底）
-}
-
-const pets = ref<Pet[]>([]);
-
-function randomDir(): Dir {
-  return (['down', 'up', 'left', 'right'] as const)[Math.floor(Math.random() * 4)];
-}
-
-function isInZone(x: number, y: number, zone: WalkZone): boolean {
-  if (zone.kind === 'rect') {
-    return x >= zone.x1 && x <= zone.x2 && y >= zone.y1 && y <= zone.y2;
-  }
-  const dx = (x - zone.cx) / zone.rx;
-  const dy = (y - zone.cy) / zone.ry;
-  return dx * dx + dy * dy <= 1;
-}
-
-function isWalkable(x: number, y: number): boolean {
-  return WALKABLE_ZONES.some(zone => isInZone(x, y, zone));
-}
-
-function randomWalkablePoint(): { x: number; y: number } {
-  for (let i = 0; i < 120; i++) {
-    const x = MIN_X + Math.random() * (MAX_X - MIN_X);
-    const y = MIN_Y + Math.random() * (MAX_Y - MIN_Y);
-    if (isWalkable(x, y)) return { x, y };
-  }
-  return { x: 50, y: 53 };
-}
-
-function dirToward(fromX: number, fromY: number, toX: number, toY: number): Dir {
-  const dx = toX - fromX;
-  const dy = toY - fromY;
-  if (Math.abs(dx) > Math.abs(dy)) return dx < 0 ? 'left' : 'right';
-  return dy < 0 ? 'up' : 'down';
-}
-
-function assignTarget(pet: Pet) {
-  const target = randomWalkablePoint();
-  pet.targetX = target.x;
-  pet.targetY = target.y;
-  pet.dir = dirToward(pet.x, pet.y, target.x, target.y);
-}
-
-/** 入住角色化作广场漫步者（随机初始位置/朝向/速度）。 */
-function buildPets() {
-  if (!userStore.isLoggedIn) { pets.value = []; return; }
-  pets.value = homestead.placedCharacterIds
-    .map((id): Pet | null => {
-      const card = gameData.getCharacterCardById(id);
-      if (!card) return null;
-      const start = randomWalkablePoint();
-      return {
-        id,
-        name: card.name,
-        x: start.x,
-        y: start.y,
-        dir: randomDir(),
-        moving: Math.random() < 0.7,
-        speed: 3 + Math.random() * 4,
-        targetX: start.x,
-        targetY: start.y,
-        frame: 0,
-        frameT: 0,
-        stateT: 0.6 + Math.random() * 2,
-        hasSprite: false,
-        hidden: false,
-      };
-    })
-    .filter((p): p is Pet => p !== null);
-  probeSprites();
-}
-
-/** 探测每个角色的四向行走表是否存在（命中即切 sprite 模式，否则保持静态兜底）。 */
-function probeSprites() {
-  for (const pet of pets.value) {
-    const img = new Image();
-    img.onload = () => { pet.hasSprite = true; };
-    img.onerror = () => { pet.hasSprite = false; };
-    img.src = spriteSheetSrc(pet.id);
+/**
+ * 广场角色 tap：委托 composable，台词编排留在 view 层（纯展示）。
+ * ★ S16-T10：今日特殊角色被 tap 时改喂 pickTodaySpecialDialogue（今日专属台词），
+ * 与普通 tap 台词可分辨；**tap 的好感发放仍走原样 dailyBondInteraction**（标准 20，未做双倍）——
+ * 这里只替换台词文本，是纯展示分支，不改任何数值口径。
+ */
+function onPetTap(pet: Pet) {
+  if (pet.id === todaySpecialId.value) {
+    const idx = todaySpecialTick++;
+    // 无论今日是否已互动，今日特殊角色都说今日专属台词（区别于普通问候/闲聊）。
+    plaza.onPetTap(pet, () => pickTodaySpecialDialogue(idx));
+  } else {
+    plaza.onPetTap(pet, pickTapDialogue);
   }
 }
-
-const visibleCount = computed(() => pets.value.filter(p => !p.hidden).length);
 
 const placedCards = computed(() =>
   homestead.placedCharacterIds
     .map(id => gameData.getCharacterCardById(id))
     .filter((card): card is CharacterCard => card != null),
 );
+
+// ── ★ S16-T10 回访新鲜：date-seeded 今日特殊角色（纯派生、零存档）──
+// 今日键 view 内联同款 YYYY-M-D（与 daily.ts/nurture.ts 跨天判定一致，零改 daily.ts，Scout C-6）。
+// nowTick 每 60s 刷（onMounted 已建），跨天时 todayKey 随之更新 → 今日特殊自动换人。
+const todayKey = computed(() => makeTodayKey(new Date(nowTick.value)));
+/**
+ * 今日特殊角色 id：由 todayKey + 入住名单 date-seeded 派生。
+ * 同一天恒定、次日换人、0 入住 → null（空态优雅）。**零字段进存档。**
+ */
+const todaySpecialId = computed<number | null>(() =>
+  pickTodaySpecialId(homestead.placedCharacterIds, todayKey.value),
+);
+/** 今日特殊角色卡（供右栏运营面板显式点名「今天谁心情好」）。 */
+const todaySpecialCard = computed(() =>
+  todaySpecialId.value != null ? gameData.getCharacterCardById(todaySpecialId.value) ?? null : null,
+);
+
+// ── ★ S16-T11 季节浮层：由真实日期派生（纯 CSS/emoji，零存档零素材）──
+const season = computed(() => currentSeason(new Date(nowTick.value)));
+/** 季节浮层的飘落粒子（emoji + 随位/时长错峰，纯展示）。 */
+interface SeasonParticle { symbol: string; left: number; delay: number; duration: number; drift: number; }
+const seasonParticles = computed<SeasonParticle[]>(() => {
+  const syms = season.value.particles;
+  const out: SeasonParticle[] = [];
+  const COUNT = 9; // 稀疏（不糊角色脸）
+  for (let i = 0; i < COUNT; i++) {
+    out.push({
+      symbol: syms[i % syms.length],
+      left: Math.round(((i * 37 + 11) % 100)),      // 确定性铺开（非 rAF、非随机抖动）
+      delay: Number((((i * 1.7) % 8)).toFixed(2)),   // 错峰起飞
+      duration: 7 + (i % 4) * 1.5,                    // 7~11.5s 慢飘
+      drift: (i % 2 === 0 ? 1 : -1) * (6 + (i % 3) * 4),
+    });
+  }
+  return out;
+});
 
 const homeEffect = computed(() => {
   void equipmentStore.equipped;
@@ -296,6 +253,90 @@ const placedFurnitureComfort = computed(() => {
   void furnitureStore.placedIds;
   return furnitureStore.getComfort();
 });
+
+/**
+ * ★ S16-T7 已摆放家具进广场场景可见：从 placedIds 派生「已摆放且有固定槽位的家具」，
+ * 供场景 v-for 渲染 emoji + 名牌卡。摆放/收纳靠 placedIds 响应式 computed 天然即时反映
+ * （**纯静态派生层，绝不进 rAF/tick**，Scout C-4）。缺槽位/图标的 id 直接跳过（防漏配静默错位）。
+ */
+interface PlacedFurniture {
+  id: string;
+  name: string;
+  icon: string;
+  x: number;
+  y: number;
+}
+const placedFurniture = computed<PlacedFurniture[]>(() => {
+  void furnitureStore.placedIds;
+  const out: PlacedFurniture[] = [];
+  for (const def of FURNITURE_CATALOG) {
+    if (!furnitureStore.isPlaced(def.id)) continue;
+    const slot = getFurnitureSlot(def.id);
+    if (!slot) continue;
+    out.push({ id: def.id, name: def.name, icon: def.icon, x: slot.x, y: slot.y });
+  }
+  return out;
+});
+
+/**
+ * 家具槽位样式：与角色 petStyle 完全同一坐标系 + 同一 y-sort 公式（zIndex=round(y*10)），
+ * 接进同一深度排序 → 家具与漫步角色按脚点 y 正确互相遮挡（Scout C-2，别做固定背景层）。
+ */
+function furnitureStyle(item: PlacedFurniture) {
+  return { left: item.x + '%', top: item.y + '%', zIndex: Math.round(item.y * 10) };
+}
+
+/** ★ S16-T8 陈列计数（纯派生、零持久化、零奖励、不复用 claimedMilestones）：仅显数字。 */
+const displayCount = computed(() => {
+  void furnitureStore.placedIds;
+  return placedFurniture.value.length;
+});
+const displayTotal = FURNITURE_CATALOG.length;
+
+// ── ★ S16-T9 收藏陈列：家园作抽卡战果橱窗（纯派生自 collection + codex，零升档）──
+// 只读 codex.characterCompletion（纯派生 owned/total/byRarity，读它零副作用）+ collection owned Map。
+// 🔴 绝不触碰 codex.claim / codex.claimedMilestones（那是图鉴里程碑领取制，与陈列展示墙是两回事）。
+const characterCompletion = computed(() => codex.characterCompletion);
+/** 整体图鉴完成度百分比（正着念「已拥有」，分母用 .length 非硬编码）。 */
+const codexPercent = computed(() => {
+  const c = characterCompletion.value;
+  return c.total > 0 ? Math.round((c.owned / c.total) * 100) : 0;
+});
+/**
+ * 陈列展示的稀有度：优先 UR；0 UR 降级到玩家确实拥有的最高稀有度（读同一 byRarity 次高档）。
+ * 一张都没拥有 → null（走引导态，绝不空墙 / 绝不「UR 0/318」缺口条，Scout C-4 命门）。
+ */
+const showcaseRarity = computed<Rarity | null>(() => {
+  const byR = characterCompletion.value.byRarity;
+  const owned: Partial<Record<Rarity, number>> = {};
+  for (const r of Object.keys(byR) as Rarity[]) owned[r] = byR[r].owned;
+  return pickShowcaseRarity(owned);
+});
+/**
+ * 橱窗内容：已拥有的「陈列稀有度」角色卡（抽到新卡即时反映，响应式读 collection）。
+ * 命门守「橱窗非进度条」：只列已拥有的脸、不列未拥有缺口。头像墙横滑上限保护。
+ */
+const SHOWCASE_MAX = 24;
+const showcaseCards = computed<CharacterCard[]>(() => {
+  void collection.characterCollection; // 触发响应式（抽新卡即时反映，仿 furnitureRows 范式）
+  const r = showcaseRarity.value;
+  if (r == null) return [];
+  const out: CharacterCard[] = [];
+  for (const card of gameData.allCharacterCards) {
+    if (card.rarity !== r) continue;
+    if (collection.getCharacterCardCount(card.id) <= 0) continue;
+    out.push(card);
+    if (out.length >= SHOWCASE_MAX) break;
+  }
+  return out;
+});
+/** 陈列稀有度的「已拥有 / 总数」（正着念拥有数，如「UR 12/48」；分母来自 byRarity.total，非硬编码）。 */
+const showcaseRarityCount = computed(() => {
+  const r = showcaseRarity.value;
+  if (r == null) return null;
+  const rc = characterCompletion.value.byRarity[r];
+  return { rarity: r, owned: rc.owned, total: rc.total };
+});
 /** comfort → 全产出软加成 pct（家具+装备合计 comfort 经同一 comfortBonusPct）。 */
 function comfortPctText(comfort: number): string {
   const pct = comfortBonusPct(comfort);
@@ -336,27 +377,31 @@ function onToggleFurniture(id: string) {
   else userStore.placeFurniture(id);
 }
 
-const effectText = computed(() => formatHomeEffect(homeEffect.value));
-/** comfort 真实软加成（每 10 点 +1%，封顶 +20%）——不再纯展示死数值。 */
-const comfortBonusText = computed(() => {
-  const pct = comfortBonusPct(homeEffect.value.comfort ?? 0);
-  return pct > 0 ? `全产出 +${Math.round(pct * 100)}%` : '满 10 点提升全产出';
-});
-
 const residentRows = computed(() =>
   placedCards.value.map(card => {
     const slots = equipmentStore.getEquipped(card.id);
     const equippedCount = SLOT_ORDER.filter(slot => slots[slot] != null).length;
     const effect = equipmentStore.resolveHomeEffect(card.id);
     const nurture = userStore.getNurtureData(card.id);
+    const affection = nurture.affection;
+    const claimedIds = nurture.claimedBondMilestones;
+    // ★ S16-T1 好感里程碑在家园显形：复用养成域 BOND_MILESTONES / isMilestoneClaimable（同源、零升档）。
+    // 可领 = 达阈值且未领的最低一档；下一未领档 = 进度显形（距下一档还需多少好感）。
+    const claimable = BOND_MILESTONES.find(m => isMilestoneClaimable(affection, claimedIds, m)) ?? null;
+    const nextUnclaimed = BOND_MILESTONES.find(m => !claimedIds.includes(m.id)) ?? null;
+    const toNext = nextUnclaimed ? Math.max(0, nextUnclaimed.threshold - affection) : 0;
     return {
       id: card.id,
       name: card.name,
       rarity: card.rarity,
       level: nurture.level,
-      affection: nurture.affection,
+      affection,
       equippedCount,
       effectText: formatHomeEffect(effect),
+      bondTitle: bondTitleFor(affection),
+      claimable,
+      nextUnclaimed,
+      toNext,
     };
   }),
 );
@@ -364,6 +409,9 @@ const residentRows = computed(() =>
 function pctText(v: number): string {
   return v > 0 ? `+${Math.round(v * 100)}%` : '基础';
 }
+
+/** ★ S16-T1 有可领里程碑的入住角色数（入住名单摘要红点 cue，引导玩家去领）。 */
+const claimableBondCount = computed(() => residentRows.value.filter(r => r.claimable).length);
 
 // --- SF-T8 家园日常委托（清单勾选式，非横条；埋点在 userStore 门面，此处只读+领取） ---
 const commissionRows = computed(() =>
@@ -405,125 +453,97 @@ function onClaimCommissionBonus() {
   }
 }
 
-/** 静态兜底图三级链：chibi（缺）→ 原立绘（缺）→ 隐藏。带 guard 防 onerror 死循环。 */
-function onPetImgError(e: Event, pet: Pet) {
-  const img = e.target as HTMLImageElement;
-  if (!img.dataset.fullFallback) {
-    img.dataset.fullFallback = '1';
-    img.src = fullImageSrc('character', pet.id);
-  } else {
-    pet.hidden = true;
-  }
-}
-
-// --- sprite 渲染 ---
-/** 当前帧的 background-position（行走取序列帧，静止取中间帧）。 */
-function spriteStyle(pet: Pet) {
-  const col = pet.moving ? WALK_SEQ[pet.frame] : 1;
-  const row = ROW[pet.dir];
-  return {
-    backgroundImage: `url(${spriteSheetSrc(pet.id)})`,
-    backgroundPosition: `-${col * DISP_W}px -${row * DISP_H}px`,
-  };
-}
-
-/** y 越靠下越「近」：轻微放大（0.82→1.12）+ 提升 z 排序。 */
-function depthScale(y: number): number {
-  const t = (Math.min(MAX_Y, Math.max(MIN_Y, y)) - MIN_Y) / (MAX_Y - MIN_Y);
-  return 0.82 + t * 0.3;
-}
-function petStyle(pet: Pet) {
-  return { left: pet.x + '%', top: pet.y + '%', zIndex: Math.round(pet.y * 10) };
-}
-
-// --- 漫步循环 ---
-let raf = 0;
-let lastT = 0;
-
-/** 状态结束：在 行走/站立 间切换，行走时重选朝向。 */
-function pickState(pet: Pet) {
-  if (Math.random() < 0.72) {
-    pet.moving = true;
-    assignTarget(pet);
-    pet.frame = 0;
-    pet.frameT = 0;
-    pet.stateT = 0.9 + Math.random() * 2.4;
-  } else {
-    pet.moving = false;
-    pet.stateT = 0.6 + Math.random() * 1.8;
-  }
-}
-
-function tick(t: number) {
-  const dt = lastT ? Math.min(0.05, (t - lastT) / 1000) : 0;
-  lastT = t;
-  for (const p of pets.value) {
-    if (p.hidden) continue;
-    if (!isWalkable(p.x, p.y)) {
-      const point = randomWalkablePoint();
-      p.x = point.x;
-      p.y = point.y;
-      p.targetX = point.x;
-      p.targetY = point.y;
-      assignTarget(p);
-    }
-    p.stateT -= dt;
-    if (p.stateT <= 0) pickState(p);
-    if (!p.moving) continue;
-
-    if (!Number.isFinite(p.targetX) || !Number.isFinite(p.targetY) || !isWalkable(p.targetX, p.targetY)) {
-      assignTarget(p);
-    }
-    const dx = p.targetX - p.x;
-    const dy = p.targetY - p.y;
-    const dist = Math.hypot(dx, dy);
-    if (dist < 0.65) {
-      pickState(p);
-      continue;
-    }
-    p.dir = dirToward(p.x, p.y, p.targetX, p.targetY);
-    const step = Math.min(dist, p.speed * dt);
-    const nextX = p.x + (dx / dist) * step;
-    const nextY = p.y + (dy / dist) * step;
-    if (isWalkable(nextX, nextY)) {
-      p.x = nextX;
-      p.y = nextY;
-    } else {
-      assignTarget(p);
-      p.stateT = 0.35 + Math.random() * 0.9;
-    }
-
-    // 行走帧推进
-    p.frameT += dt * 1000;
-    if (p.frameT >= FRAME_MS) {
-      p.frameT -= FRAME_MS;
-      p.frame = (p.frame + 1) % WALK_SEQ.length;
-    }
-  }
-  raf = requestAnimationFrame(tick);
-}
-
-// --- 点击看详情（复用卡详情弹窗） ---
+// --- 点击看详情（复用卡详情弹窗；广场角色改为 tap 互动，详情从入住名单进） ---
 const detailCard = ref<CharacterCard | null>(null);
 const detailCount = computed(() => (detailCard.value ? collection.getCharacterCardCount(detailCard.value.id) : 0));
-function openDetail(pet: Pet) {
-  const card = gameData.getCharacterCardById(pet.id);
-  if (card) detailCard.value = card;
-  // 被点到就驻足一下回应（点击反馈，避免「点的人跑了才弹窗」的割裂感）
-  pet.moving = false;
-  pet.stateT = Math.max(pet.stateT, 0.8);
-}
 
 function openDetailById(id: number) {
   const card = gameData.getCharacterCardById(id);
   if (card) detailCard.value = card;
 }
 
+// ── S16-T1/T3 里程碑领取的角色感言飘字（tap 气泡已迁入 composable 的多气泡模型）──
+// bondFloat 的 setTimeout 登记 dialogueTimers，onUnmounted 一并清除（防 false safety，pitfalls 明令）。
+const bondFloat = ref<{ name: string; text: string } | null>(null);
+const dialogueTimers: ReturnType<typeof setTimeout>[] = [];
+let dialogueTick = 0;
+function scheduleDialogueClear(fn: () => void, ms: number) {
+  const t = setTimeout(() => {
+    dialogueTimers.splice(dialogueTimers.indexOf(t), 1);
+    fn();
+  }, ms);
+  dialogueTimers.push(t);
+}
+
+/**
+ * ★ S16-T12 高档里程碑（bond_4/5/6）的 Crowning 隆重庆祝弹层状态（区别于低档 bondFloat 轻飘字）。
+ * 纯展示：只是发放成功后的视觉分支，不携带任何数值 / 不发奖。连领多个高档时「后领覆盖前领」——
+ * 一次只显一个（`v-if` 单弹层，不叠层打断，research 极端③）。可点击关闭或自动淡出。
+ */
+const crownCelebration = ref<{
+  charId: number;
+  name: string;
+  title: string;
+  line: string;
+  tier: MilestoneCelebrationTier; // 'crowning' | 'finale'（finale = bond_6 命运，再加最隆重一档）
+} | null>(null);
+/** Crowning 弹层自动关闭时长（finale 停留更久，让「命运」时刻更值得截图）。 */
+const CROWNING_AUTO_MS = 5200;
+const FINALE_AUTO_MS = 6500;
+// 自增令牌：连领多个高档时，旧的自动关闭定时器不会误关新弹层（后领覆盖前领）。
+let crownToken = 0;
+function closeCrownCelebration() {
+  crownCelebration.value = null;
+}
+
+/**
+ * ★ S16-T1 在家园领取好感里程碑（复用门面 claimBondMilestone，同源发放 KP + 已领态 + 感言）。
+ * ★ S16-T12 领取成功后按档位分级庆祝（纯展示分支，发放逻辑一字不碰）：
+ *  - 低档 bond_1/2/3（highfive）→ 保持现有 bondFloat 轻飘字（克制，别过度打磨低档）。
+ *  - 高档 bond_4/5/6（crowning/finale）→ 升级 Crowning 隆重弹层（称号加冕 + 角色脸 + 光效 + 更长停留）。
+ * 定时器一律登记 dialogueTimers + onUnmounted 清除（pitfalls 明令）；动效走 CSS @keyframes 不进 rAF。
+ */
+function onClaimBondMilestone(charId: number, milestoneId: string) {
+  if (!userStore.claimBondMilestone(charId, milestoneId)) return;
+  const card = gameData.getCharacterCardById(charId);
+  const line = pickMilestoneDialogue(milestoneId, dialogueTick++);
+  const tier = milestoneCelebrationTier(milestoneId);
+  const milestone = BOND_MILESTONES.find(m => m.id === milestoneId);
+  if (tier === 'highfive') {
+    // 低档：保持轻飘字（High-Five）。
+    bondFloat.value = { name: card?.name ?? '', text: line };
+    scheduleDialogueClear(() => { bondFloat.value = null; }, 3200);
+  } else {
+    // 高档：Crowning 隆重弹层（后领覆盖前领，一次只显一个）。
+    crownCelebration.value = {
+      charId,
+      name: card?.name ?? '',
+      title: milestone?.title ?? '',
+      line,
+      tier,
+    };
+    const myToken = ++crownToken;
+    // 令牌守卫：只有本次庆祝的定时器才关本次弹层，避免旧定时器误关后领的新弹层。
+    scheduleDialogueClear(() => {
+      if (myToken === crownToken) closeCrownCelebration();
+    }, tier === 'finale' ? FINALE_AUTO_MS : CROWNING_AUTO_MS);
+  }
+}
+
 // --- 入住管理 + 离线收益结算 ---
 const showManage = ref(false);
 const settleResult = ref<IdleYield | null>(null);
+// ★ S16-T13 晒图弹窗开关（基地身份卡，纯只读快照晒图）。
+const showShareCard = ref(false);
 
-function runSettle() {
+/**
+ * ★ S16-T15（收取瞬间到手反馈，纯 CSS 可视化已发生的入账，product R3）：
+ * 收取按钮上冒一个「+X KP」到手小飘字（只在**用户点击**收取时，非 onMounted 的初始结算）。
+ * 纯展示：只可视化 settleHomestead 已发放的 knowledge，绝不改任何数值 / 不二次发奖。
+ * setTimeout 登记 dialogueTimers（onUnmounted 清）。
+ */
+const collectFloat = ref<string | null>(null);
+function runSettle(fromClick = false) {
   const y = userStore.settleHomestead();
   const has = y.expEach > 0 || y.affectionEach > 0 || y.knowledge > 0;
   if (!has) return;
@@ -533,28 +553,30 @@ function runSettle() {
   } else {
     userStore.addLog(`🏠 挂机已结算：经验+${y.expEach} · 好感+${y.affectionEach} · 知识点+${y.knowledge}`, 'info');
   }
+  // 用户主动点「收取」且有 KP 入账 → 冒到手小飘字（初始 onMounted 结算不冒，免打断）。
+  if (fromClick && y.knowledge > 0) {
+    collectFloat.value = `+${y.knowledge} KP`;
+    scheduleDialogueClear(() => { collectFloat.value = null; }, 1400);
+  }
 }
 
-// 入住名单变化（管理弹窗里增删）时重建漫步者
-watch(() => homestead.placedCharacterIds.slice(), () => buildPets(), { deep: true });
-// 登录态变化（重载后再登录）重建
-watch(() => userStore.isLoggedIn, () => buildPets());
+// 注：漫步者 pets 的重建（入住名单/登录态变化）+ rAF 循环 + 偶遇定时器已由 usePlazaWalk 自管。
 
 onMounted(() => {
   runSettle();   // 进家园结算一次离线收益（按 lastSettleAt 虚拟累积）
-  buildPets();
-  raf = requestAnimationFrame(tick);
   // SF-T3：60s 低频刷预览（只更新 nowTick 触发 projectedYield/capProgress 重算，不 settle）。
   nowTick.value = Date.now();
   idleTimer = window.setInterval(() => { nowTick.value = Date.now(); }, 60_000);
 });
-// SF-T3 命门：rAF 与 setInterval 在同一 onUnmounted 一并清除，无泄漏。
+// SF-T3 命门：预览 setInterval 在 onUnmounted 清除，无泄漏。
 // SF-T8：委托全清 bonus 飘字 setTimeout 也在此登记清除（pitfalls 明令）。
 onUnmounted(() => {
-  cancelAnimationFrame(raf);
   clearInterval(idleTimer);
   commissionTimers.forEach(clearTimeout);
   commissionTimers.length = 0;
+  // S16-T1 里程碑感言飘字定时器一并清除。
+  dialogueTimers.forEach(clearTimeout);
+  dialogueTimers.length = 0;
 });
 </script>
 
@@ -572,8 +594,40 @@ onUnmounted(() => {
 
     <div v-else class="homestead-shell">
       <div class="scene-panel" aria-label="家园场景">
-        <div class="scene">
+        <div class="scene" :data-season="season.season">
           <img class="scene-bg" :src="homesteadMapSrc" alt="" draggable="false" />
+
+          <!-- ★ S16-T11 季节浮层（纯 CSS/emoji，零素材零存档）：垫在 bg 之上、角色之下（z-index:3），
+               pointer-events:none 稀疏飘落，绝不盖偶遇气泡(pet z200+)/偶遇符号(z7)/角色脸。
+               粒子纯 CSS @keyframes 驱动，**不进 usePlazaWalk 的 rAF**（仿家具静态层纪律）。 -->
+          <div class="season-layer" aria-hidden="true">
+            <span
+              v-for="(p, i) in seasonParticles"
+              :key="i"
+              class="season-particle"
+              :style="{
+                left: p.left + '%',
+                animationDelay: p.delay + 's',
+                animationDuration: p.duration + 's',
+                '--drift': p.drift + 'px',
+              }"
+            >{{ p.symbol }}</span>
+          </div>
+
+          <!-- ★ S16-T7 已摆放家具进场景可见（零素材 emoji + 名牌）：从 placedIds 派生的静态层，
+               脚点锚定 + 与角色同一 zIndex=round(y*10) y-sort，站家具前后的角色正确互相遮挡。
+               纯派生静态 DOM，不进 rAF/tick；摆放/收纳靠 placedFurniture 响应式即时反映。 -->
+          <div
+            v-for="item in placedFurniture"
+            :key="item.id"
+            class="furniture"
+            :style="furnitureStyle(item)"
+            :title="item.name"
+          >
+            <span class="furniture-icon" aria-hidden="true">{{ item.icon }}</span>
+            <span class="furniture-tag">{{ item.name }}</span>
+            <div class="furniture-shadow"></div>
+          </div>
 
           <!-- 角色漫步者 -->
           <div
@@ -581,12 +635,26 @@ onUnmounted(() => {
             v-show="!pet.hidden"
             :key="pet.id"
             class="pet"
-            :class="{ 'is-idle': !pet.moving }"
+            :class="{ 'is-idle': !pet.moving, 'is-today': pet.id === todaySpecialId }"
             :style="petStyle(pet)"
-            :title="pet.name"
-            @click="openDetail(pet)"
+            :title="pet.id === todaySpecialId ? `${pet.name} · 今天心情特别好 · 点击互动` : `${pet.name} · 点击互动`"
+            @click="onPetTap(pet)"
           >
             <div class="pet-inner" :style="{ transform: `scale(${depthScale(pet.y)})` }">
+              <!-- ★ S16-T10 今日特殊角色显式标识：emoji 徽章 + 淡光晕（CSS，不进 rAF），与普通入住角色可分辨。 -->
+              <span v-if="pet.id === todaySpecialId" class="pet-today-badge" aria-label="今日特殊角色">☀</span>
+              <!-- ★ S16-T2/T3 tap 气泡 + ★ S16-T4/T5 偶遇气泡（多气泡模型，按 petId 索引；
+                   kind='encounter' 加 accent 边区分「双角色偶遇」与「单角色 tap 回应」，纯展示）。 -->
+              <transition name="pet-bubble">
+                <div
+                  v-if="bubbleFor(pet.id)"
+                  class="pet-bubble"
+                  :class="{ 'is-encounter': bubbleFor(pet.id)!.kind === 'encounter' }"
+                >
+                  <span class="pet-bubble-text">{{ bubbleFor(pet.id)!.text }}</span>
+                  <span v-if="bubbleFor(pet.id)!.gain > 0" class="pet-bubble-gain">好感 +{{ bubbleFor(pet.id)!.gain }}</span>
+                </div>
+              </transition>
               <span class="pet-name">{{ pet.name }}</span>
               <div class="pet-shadow"></div>
               <!-- 四向行走表 -->
@@ -602,6 +670,17 @@ onUnmounted(() => {
               </div>
             </div>
           </div>
+
+          <!-- ★ S16-T4 偶遇上浮小符号（♡/✧/♪）：两同作品角色偶遇时在中点轻轻上浮消失，纯展示 -->
+          <transition-group name="spark" tag="div">
+            <span
+              v-for="spark in sparks"
+              :key="spark.key"
+              class="encounter-spark"
+              :style="{ left: spark.x + '%', top: spark.y + '%' }"
+              aria-hidden="true"
+            >{{ spark.symbol }}</span>
+          </transition-group>
 
           <div v-if="visibleCount === 0" class="hs-empty-scene">
             <div class="hs-empty-card">
@@ -647,7 +726,59 @@ onUnmounted(() => {
             <small v-if="capReached" class="g-cap-note">已达上限，回来收取吧</small>
             <small v-else-if="homestead.lastSettleAt <= 0" class="g-cap-hint">入住角色后开始累积</small>
             <small v-else class="g-cap-hint">离开再回来即可收取当前累积</small>
-            <button type="button" class="g-cta-gold" @click="runSettle()">收取</button>
+            <div class="g-collect-wrap">
+              <transition name="collect-float">
+                <span v-if="collectFloat" class="g-collect-float">{{ collectFloat }}</span>
+              </transition>
+              <button type="button" class="g-cta-gold" :class="{ 'is-pulsing': collectFloat }" @click="runSettle(true)">收取</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ★ S16-T9 收藏陈列 + ★ S16-T10 今日特殊角色（抽卡战果橱窗 + 回访新鲜软钩子）。
+             纯派生自 collection + codex.characterCompletion（只读，绝不碰 claim/claimedMilestones）。 -->
+        <div class="g-card g-showcase" aria-label="收藏陈列">
+          <div class="g-showcase-head">
+            <span class="g-eyebrow">收藏橱窗</span>
+            <div class="g-showcase-head-right">
+              <!-- 完成度 chip：正着念「拥有 X」（endowment 正向），绝不念「还差 Y」（反 completionist）。 -->
+              <span
+                v-if="showcaseRarityCount"
+                class="display-count-chip"
+                :title="`已拥有 ${showcaseRarityCount.rarity} ${showcaseRarityCount.owned}/${showcaseRarityCount.total} · 图鉴完成度 ${codexPercent}%`"
+              >
+                {{ showcaseRarityCount.rarity }} {{ showcaseRarityCount.owned }}/{{ showcaseRarityCount.total }} · 图鉴 {{ codexPercent }}%
+              </span>
+              <!-- ★ S16-T13 晒图入口：把家园状态出成一张「基地身份卡」（纯本地快照，系统分享/下载 PNG）。 -->
+              <button type="button" class="g-share-btn" title="生成家园基地身份卡（分享/下载）" @click="showShareCard = true">
+                📤 晒基地
+              </button>
+            </div>
+          </div>
+
+          <!-- ★ S16-T10 今日特殊角色点名（回访钩子的「今天是谁心情好」，与广场徽章互为印证）。 -->
+          <div v-if="todaySpecialCard" class="g-today">
+            <span class="g-today-badge" aria-hidden="true">☀</span>
+            <span class="g-today-text">
+              今天 <b>{{ todaySpecialCard.name }}</b> 心情特别好，去广场找它聊两句吧
+            </span>
+          </div>
+
+          <!-- UR/最高稀有度头像墙（真橱窗，横滑）；空态走引导，绝不空墙 -->
+          <div v-if="showcaseCards.length > 0" class="g-showcase-wall">
+            <button
+              v-for="card in showcaseCards"
+              :key="card.id"
+              type="button"
+              class="g-showcase-item"
+              :title="`${card.name} · ${card.rarity}`"
+              @click="openDetailById(card.id)"
+            >
+              <CharacterAvatar :character-id="card.id" :name="card.name" :size="44" rounded />
+            </button>
+          </div>
+          <div v-else class="g-showcase-empty">
+            抽到你的第一张角色卡，它会陈列在这里 ✨
           </div>
         </div>
 
@@ -732,6 +863,10 @@ onUnmounted(() => {
         <details class="g-card g-acc">
           <summary class="g-acc-sum">
             <span class="g-acc-ttl">家具布置</span>
+            <!-- ★ S16-T8 陈列计数（纯派生显数字，摆放/收纳即时变化；无奖励、不进存档、不复用领取制） -->
+            <span class="display-count-chip" :title="`已摆放 ${displayCount} / ${displayTotal} 件家具，摆在广场场景里`">
+              陈列 {{ displayCount }}/{{ displayTotal }}
+            </span>
             <span class="g-chip" :title="`已摆放家具舒适度合计 ${placedFurnitureComfort}`">
               舒适 +{{ placedFurnitureComfort }} · 全产出 {{ comfortPctText(homeEffect.comfort) }}
             </span>
@@ -769,35 +904,55 @@ onUnmounted(() => {
           </div>
         </details>
 
-        <!-- 入住名单折叠 -->
-        <details class="g-card g-acc">
+        <!-- 入住名单折叠（★ S16-T1 好感里程碑在家园显形 + 领取，同源养成域 claimBondMilestone） -->
+        <details class="g-card g-acc" open>
           <summary class="g-acc-sum">
             <span class="g-acc-ttl">入住名单</span>
-            <span class="g-chip">入住 {{ residentRows.length }}</span>
+            <span class="g-chip" :class="{ good: claimableBondCount > 0 }">
+              <template v-if="claimableBondCount > 0">{{ claimableBondCount }} 个里程碑可领</template>
+              <template v-else>入住 {{ residentRows.length }}</template>
+            </span>
           </summary>
           <div class="g-acc-body">
             <div v-if="residentRows.length === 0" class="resident-empty">
               还没有入住角色
             </div>
             <div v-else class="resident-list">
-              <button
+              <div
                 v-for="row in residentRows"
                 :key="row.id"
-                type="button"
                 class="resident-pill"
-                @click="openDetailById(row.id)"
+                :class="{ 'has-claim': row.claimable }"
               >
-                <CharacterAvatar
-                  class="resident-avatar"
-                  :character-id="row.id"
-                  :size="34"
-                  rounded
-                />
-                <span class="resident-name">{{ row.name }}</span>
-                <span class="resident-meta">{{ row.rarity }} · Lv.{{ row.level }} · 装备{{ row.equippedCount }}/3</span>
-                <span class="resident-effect">{{ row.effectText || '基础产出' }}</span>
-              </button>
+                <button type="button" class="resident-main" @click="openDetailById(row.id)">
+                  <CharacterAvatar
+                    class="resident-avatar"
+                    :character-id="row.id"
+                    :size="34"
+                    rounded
+                  />
+                  <span class="resident-info">
+                    <span class="resident-name">{{ row.name }}</span>
+                    <span class="resident-meta">{{ row.rarity }} · Lv.{{ row.level }} · 装备{{ row.equippedCount }}/3</span>
+                    <span class="resident-bond">
+                      羁绊「{{ row.bondTitle }}」 · 好感 {{ row.affection }}<template v-if="row.nextUnclaimed"> · 距「{{ row.nextUnclaimed.title }}」还需 {{ row.toNext }}</template><template v-else> · 里程碑全达成</template>
+                    </span>
+                    <span class="resident-effect">{{ row.effectText || '基础产出' }}</span>
+                  </span>
+                </button>
+                <button
+                  v-if="row.claimable"
+                  type="button"
+                  class="btn-primary resident-claim"
+                  @click="onClaimBondMilestone(row.id, row.claimable.id)"
+                >
+                  领取「{{ row.claimable.title }}」+{{ row.claimable.reward }} KP
+                </button>
+              </div>
             </div>
+            <transition name="commission-float">
+              <span v-if="bondFloat" class="bond-float">「{{ bondFloat.name }}」：{{ bondFloat.text }}</span>
+            </transition>
           </div>
         </details>
       </aside>
@@ -818,8 +973,38 @@ onUnmounted(() => {
       </div>
     </div>
 
+    <!-- ★ S16-T12 高档里程碑 Crowning 隆重庆祝弹层（bond_4/5/6；bond_6=finale 再加最隆重一档）。
+         纯展示：发放成功后的视觉分支，零数值 / 零发奖。光效走 CSS @keyframes 不进 rAF。
+         点击遮罩或「收下」关闭；自动淡出定时器已登记 dialogueTimers（onUnmounted 清）。 -->
+    <transition name="crown-pop">
+      <div
+        v-if="crownCelebration"
+        class="crown-pop"
+        :class="`is-${crownCelebration.tier}`"
+        @click.self="closeCrownCelebration"
+      >
+        <div class="crown-card">
+          <div class="crown-rays" aria-hidden="true"></div>
+          <div class="crown-sparkles" aria-hidden="true">
+            <span v-for="n in 6" :key="n" class="crown-sparkle" :style="{ '--i': n }">✦</span>
+          </div>
+          <span class="crown-kicker">{{ crownCelebration.tier === 'finale' ? '关系的顶点 · 命运降临' : '羁绊里程碑达成' }}</span>
+          <div class="crown-avatar-ring">
+            <CharacterAvatar :character-id="crownCelebration.charId" :name="crownCelebration.name" :size="96" rounded />
+          </div>
+          <h3 class="crown-title">「{{ crownCelebration.title }}」达成</h3>
+          <p class="crown-name">{{ crownCelebration.name }}</p>
+          <p class="crown-line">{{ crownCelebration.line }}</p>
+          <button type="button" class="btn-primary crown-close" @click="closeCrownCelebration">收下</button>
+        </div>
+      </div>
+    </transition>
+
     <HomesteadManageModal :is-open="showManage" @close="showManage = false" />
     <CardDetailModal v-if="detailCard" :card="detailCard" card-type="character" :count="detailCount" @close="detailCard = null" />
+
+    <!-- ★ S16-T13 家园基地身份卡晒图（纯只读快照聚合 → Canvas → 系统分享/下载 PNG，零升档零联机） -->
+    <HomesteadShareCard v-if="showShareCard" @close="showShareCard = false" />
   </div>
 </template>
 
@@ -894,6 +1079,25 @@ onUnmounted(() => {
 }
 .g-cta-gold:hover { filter: brightness(1.05); }
 .g-cta-gold:active { transform: translateY(1px); box-shadow: 0 1px 0 rgb(var(--c-highlight) / .55); }
+/* ★ S16-T15 收取瞬间到手反馈（纯 CSS，只可视化已入账的 KP，零数值改） */
+.g-collect-wrap { position: relative; display: inline-flex; }
+.g-cta-gold.is-pulsing { animation: collectPulse .5s ease; }
+@keyframes collectPulse {
+  0% { transform: scale(1); }
+  40% { transform: scale(1.08); box-shadow: 0 3px 0 rgb(var(--c-highlight) / .55), 0 6px 18px rgb(var(--c-highlight) / .55); }
+  100% { transform: scale(1); }
+}
+.g-collect-float {
+  position: absolute; bottom: 100%; left: 50%; transform: translateX(-50%); margin-bottom: 4px;
+  padding: .12rem .5rem; border-radius: 999px; white-space: nowrap; pointer-events: none;
+  font-size: .74rem; font-weight: 900; font-variant-numeric: tabular-nums;
+  color: rgb(var(--c-on-accent)); background: rgb(var(--c-highlight));
+  box-shadow: 0 3px 10px rgb(var(--c-highlight) / .5);
+}
+.collect-float-enter-active { transition: opacity .2s ease, transform .3s ease; }
+.collect-float-leave-active { transition: opacity .5s ease, transform .6s ease; }
+.collect-float-enter-from { opacity: 0; transform: translateX(-50%) translateY(6px); }
+.collect-float-leave-to { opacity: 0; transform: translateX(-50%) translateY(-10px); }
 /* 进度条 */
 .g-bar {
   width: 100%; height: 8px; border-radius: 999px; overflow: hidden;
@@ -1019,24 +1223,34 @@ onUnmounted(() => {
 .furniture-delta { flex: 0 0 auto; font-size: .68rem; font-weight: 700; color: rgb(var(--c-success)); text-align: right; line-height: 1.2; }
 .furniture-btn { flex: 0 0 auto; font-size: .72rem; padding: .24rem .7rem; }
 .furniture-btn:disabled { opacity: .5; cursor: not-allowed; }
-/* 入住名单 */
+/* 入住名单（★ S16-T1 好感里程碑显形 + 领取） */
 .resident-list { display: grid; grid-template-columns: 1fr; gap: .5rem; }
 .resident-pill {
-  min-height: 76px; padding: .7rem .75rem; border: 1px solid rgb(var(--c-line));
+  display: flex; flex-direction: column; gap: .5rem;
+  padding: .7rem .75rem; border: 1px solid rgb(var(--c-line));
   border-radius: var(--sk-radius-control); background: rgb(var(--c-surface-2) / .82);
-  text-align: left; transition: border-color .15s ease, transform .15s ease, box-shadow .15s ease;
-  display: grid; grid-template-columns: auto 1fr; align-items: center; column-gap: .6rem;
-  grid-template-areas: 'avatar name' 'avatar meta' 'avatar effect';
+  transition: border-color .15s ease, transform .15s ease, box-shadow .15s ease;
 }
-.resident-avatar { grid-area: avatar; flex: none; align-self: center; }
-.resident-name { grid-area: name; }
-.resident-meta { grid-area: meta; }
-.resident-effect { grid-area: effect; }
+.resident-pill.has-claim { border-color: rgb(var(--c-accent) / .55); background: rgb(var(--c-accent-soft) / .3); }
 .resident-pill:hover { border-color: rgb(var(--c-accent)); transform: translateY(-1px); box-shadow: 0 10px 24px rgb(37 47 58 / .08); }
+.resident-main {
+  display: flex; align-items: center; gap: .6rem; width: 100%; text-align: left;
+  background: transparent; border: 0; padding: 0; cursor: pointer;
+}
+.resident-avatar { flex: none; }
+.resident-info { min-width: 0; flex: 1 1 auto; }
 .resident-name { display: block; font-size: .86rem; font-weight: 800; color: rgb(var(--c-ink)); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .resident-meta { display: block; margin-top: .18rem; font-size: .72rem; color: rgb(var(--c-ink-2)); }
+.resident-bond { display: block; margin-top: .18rem; font-size: .7rem; color: rgb(var(--c-highlight)); }
 .resident-effect { display: block; margin-top: .22rem; font-size: .68rem; color: rgb(var(--c-accent)); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.resident-claim { align-self: stretch; font-size: .74rem; padding: .3rem .7rem; }
 .resident-empty { padding: 1rem; border: 1px dashed rgb(var(--c-line)); border-radius: 8px; color: rgb(var(--c-ink-2)); text-align: center; }
+/* ★ S16-T1 里程碑领取后的角色感言飘字（复用 commission-float 过渡） */
+.bond-float {
+  display: block; margin-top: .5rem; padding: .35rem .6rem; border-radius: var(--sk-radius-control);
+  background: rgb(var(--c-accent-soft) / .5); border: 1px solid rgb(var(--c-accent) / .4);
+  color: rgb(var(--c-ink)); font-size: .74rem; font-weight: 700;
+}
 
 .scene {
   position: relative; width: 100%; aspect-ratio: 16 / 9; overflow: hidden;
@@ -1099,12 +1313,261 @@ onUnmounted(() => {
 .pet:hover .pet-name { opacity: 1; background: rgb(0 0 0 / .62); }
 @keyframes petbob { from { transform: translateY(0); } to { transform: translateY(-3px); } }
 
+/* ★ S16-T7 场景可见家具（零素材 emoji + surface 名牌，脚点锚定；zIndex 走内联 y-sort 接进角色景深） */
+.furniture {
+  position: absolute; transform: translate(-50%, -100%);
+  display: flex; flex-direction: column; align-items: center; pointer-events: none;
+  will-change: left, top;
+}
+.furniture-icon {
+  font-size: 34px; line-height: 1; display: block;
+  filter: drop-shadow(0 6px 6px rgb(44 64 54 / .3));
+}
+/* 名牌用 surface 卡片 + ink 文（语义令牌，非白字压图；短名安全在场景底图上可读） */
+.furniture-tag {
+  margin-top: 3px; padding: 1px 7px; border-radius: 7px; white-space: nowrap;
+  font-size: 10px; font-weight: 700; color: rgb(var(--c-ink));
+  background: rgb(var(--c-surface) / .92); border: 1px solid rgb(var(--c-line));
+  box-shadow: 0 2px 6px rgb(0 0 0 / .18); opacity: .9;
+}
+.furniture-shadow {
+  position: absolute; bottom: -4px; left: 50%; width: 34px; height: 9px; margin-left: -17px;
+  border-radius: 50%; background: rgb(0 0 0 / .18); filter: blur(.5px);
+}
+/* ★ S16-T8 陈列计数 chip（纯派生显数字，无奖励语义） */
+.display-count-chip {
+  display: inline-flex; align-items: center; gap: .3rem;
+  padding: .12rem .5rem; border-radius: 999px; font-size: .72rem; font-weight: 700;
+  color: rgb(var(--c-ink-2)); background: rgb(var(--c-surface));
+  border: 1px solid rgb(var(--c-line));
+}
+
+/* ★ S16-T9 收藏陈列橱窗（surface 卡片非白字压图，纯派生展示墙无奖励语义） */
+.g-showcase { padding: .8rem .85rem; display: flex; flex-direction: column; gap: .55rem; }
+.g-showcase-head { display: flex; align-items: center; justify-content: space-between; gap: .5rem; flex-wrap: wrap; }
+.g-showcase-head-right { display: inline-flex; align-items: center; gap: .4rem; flex-wrap: wrap; }
+.g-showcase-head .display-count-chip { background: rgb(var(--c-accent-soft)); color: rgb(var(--c-accent-2)); border-color: rgb(var(--c-accent) / .3); }
+/* ★ S16-T13 晒图入口按钮（语义令牌，非白字压浅底 / 非动态拼色类） */
+.g-share-btn {
+  display: inline-flex; align-items: center; gap: .25rem; flex: 0 0 auto;
+  font-size: .68rem; font-weight: 800; padding: .2rem .55rem; border-radius: 999px; cursor: pointer;
+  color: rgb(var(--c-accent-2)); background: rgb(var(--c-accent-soft));
+  border: 1px solid rgb(var(--c-accent) / .35); white-space: nowrap;
+  transition: background .15s ease, transform .12s ease, border-color .15s ease;
+}
+.g-share-btn:hover { background: rgb(var(--c-accent) / .18); border-color: rgb(var(--c-accent) / .55); }
+.g-share-btn:active { transform: translateY(1px); }
+.g-share-btn:focus-visible { outline: 2px solid rgb(var(--c-accent)); outline-offset: 2px; }
+/* 今日特殊角色点名（highlight 语义色淡底，非白字压图） */
+.g-today {
+  display: flex; align-items: center; gap: .45rem;
+  padding: .4rem .55rem; border-radius: var(--sk-radius-control);
+  background: rgb(var(--c-highlight) / .12); border: 1px solid rgb(var(--c-highlight) / .32);
+}
+.g-today-badge { flex: 0 0 auto; font-size: 1rem; line-height: 1; }
+.g-today-text { font-size: .72rem; line-height: 1.35; color: rgb(var(--c-ink-2)); }
+.g-today-text b { color: rgb(var(--c-highlight)); font-weight: 800; }
+/* UR/最高稀有度头像墙：横滑橱窗（overflow-x:auto 不撑爆右栏） */
+.g-showcase-wall {
+  display: flex; gap: .4rem; overflow-x: auto; overflow-y: hidden;
+  padding: .1rem .1rem .3rem; margin: -.1rem;
+  scrollbar-width: thin;
+}
+.g-showcase-item {
+  flex: 0 0 auto; padding: 0; border: 0; background: transparent; cursor: pointer;
+  border-radius: var(--sk-radius-control); line-height: 0;
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.g-showcase-item:hover { transform: translateY(-2px); box-shadow: 0 6px 14px rgb(37 47 58 / .16); }
+.g-showcase-item:focus-visible { outline: 2px solid rgb(var(--c-accent)); outline-offset: 2px; }
+.g-showcase-empty {
+  padding: .9rem .75rem; border: 1px dashed rgb(var(--c-line)); border-radius: var(--sk-radius-control);
+  color: rgb(var(--c-ink-2)); font-size: .74rem; text-align: center; line-height: 1.4;
+}
+
+/* ★ S16-T10 今日特殊角色显式标识：emoji 徽章 + 淡光晕（CSS，不进 rAF） */
+.pet.is-today .pet-inner {
+  filter: drop-shadow(0 0 6px rgb(var(--c-highlight) / .75)) drop-shadow(0 0 14px rgb(var(--c-highlight) / .45));
+}
+.pet-today-badge {
+  position: absolute; bottom: 100%; left: 50%; transform: translateX(-50%);
+  margin-bottom: 20px; z-index: 3; pointer-events: none;
+  font-size: 15px; line-height: 1;
+  filter: drop-shadow(0 1px 2px rgb(0 0 0 / .35));
+  animation: todaybob 2.4s ease-in-out infinite;
+}
+@keyframes todaybob {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(-3px); }
+}
+
+/* ★ S16-T11 季节浮层（纯 CSS/emoji 稀疏飘落，z 垫在 bg 之上、角色之下；pointer-events:none 不糊脸） */
+.season-layer {
+  position: absolute; inset: 0; z-index: 3; overflow: hidden;
+  pointer-events: none;
+}
+.season-particle {
+  position: absolute; top: -6%;
+  font-size: 15px; line-height: 1; opacity: 0;
+  will-change: transform, opacity;
+  animation-name: seasonfall; animation-timing-function: linear; animation-iteration-count: infinite;
+}
+@keyframes seasonfall {
+  0% { opacity: 0; transform: translate(0, 0) rotate(0deg); }
+  12% { opacity: .5; }
+  88% { opacity: .5; }
+  100% { opacity: 0; transform: translate(var(--drift, 8px), 118vh) rotate(220deg); }
+}
+/* 场景高度有限，用容器高度而非视口高度收束落程（避免超长飘出）。 */
+.scene .season-particle { animation-name: seasonfallscene; }
+@keyframes seasonfallscene {
+  0% { opacity: 0; transform: translate(0, 0) rotate(0deg); }
+  12% { opacity: .55; }
+  85% { opacity: .5; }
+  100% { opacity: 0; transform: translate(var(--drift, 8px), 340px) rotate(200deg); }
+}
+
+/* ★ S16-T2/T3 tap 互动情境气泡（语义令牌 surface 卡片，非白字压图） */
+.pet-bubble {
+  position: absolute; bottom: 100%; left: 50%; transform: translateX(-50%);
+  margin-bottom: 22px; width: max-content; max-width: 176px; padding: .32rem .5rem;
+  border-radius: 10px; background: rgb(var(--c-surface)); border: 1px solid rgb(var(--c-line));
+  box-shadow: 0 6px 18px rgb(0 0 0 / .22); z-index: 6; pointer-events: none;
+  display: flex; flex-direction: column; gap: .12rem; text-align: center;
+}
+.pet-bubble::after {
+  content: ''; position: absolute; top: 100%; left: 50%; transform: translateX(-50%);
+  border: 6px solid transparent; border-top-color: rgb(var(--c-surface));
+}
+.pet-bubble-text { font-size: 11px; line-height: 1.3; color: rgb(var(--c-ink)); white-space: normal; }
+.pet-bubble-gain { font-size: 10px; font-weight: 800; color: rgb(var(--c-success)); }
+.pet-bubble-enter-active { transition: opacity .2s ease, transform .2s ease; }
+.pet-bubble-leave-active { transition: opacity .45s ease, transform .45s ease; }
+.pet-bubble-enter-from { opacity: 0; transform: translateX(-50%) translateY(6px); }
+.pet-bubble-leave-to { opacity: 0; transform: translateX(-50%) translateY(-6px); }
+/* ★ S16-T4 偶遇气泡：accent 语义色边框 + 淡底，视觉区分「双角色偶遇」与「单角色 tap」 */
+.pet-bubble.is-encounter {
+  border-color: rgb(var(--c-accent) / .55);
+  background: rgb(var(--c-accent-soft) / .96);
+}
+.pet-bubble.is-encounter::after { border-top-color: rgb(var(--c-accent-soft) / .96); }
+.pet-bubble.is-encounter .pet-bubble-text { color: rgb(var(--c-accent-2)); }
+
+/* ★ S16-T4 偶遇上浮符号（accent/highlight 语义色，非硬编码；轻轻上浮淡出） */
+.encounter-spark {
+  position: absolute; z-index: 7; transform: translate(-50%, -50%);
+  font-size: 18px; line-height: 1; pointer-events: none;
+  color: rgb(var(--c-highlight));
+  text-shadow: 0 1px 3px rgb(0 0 0 / .28);
+  animation: sparkfloat 2.2s ease-out forwards;
+}
+@keyframes sparkfloat {
+  0%   { opacity: 0; transform: translate(-50%, -30%) scale(.6); }
+  22%  { opacity: 1; transform: translate(-50%, -60%) scale(1.08); }
+  100% { opacity: 0; transform: translate(-50%, -190%) scale(.9); }
+}
+/* transition-group 进出（与动画协同，卸载时不留残影） */
+.spark-enter-active { transition: opacity .2s ease; }
+.spark-leave-active { transition: opacity .4s ease; }
+.spark-enter-from, .spark-leave-to { opacity: 0; }
+
 /* 离线收益弹窗 */
 .settle-pop { position: fixed; inset: 0; z-index: 50; display: flex; align-items: center; justify-content: center; background: rgb(0 0 0 / .5); padding: 1rem; }
 .settle-card { background: rgb(var(--c-surface)); border: 1px solid rgb(var(--c-line)); border-radius: var(--sk-radius-panel); padding: 1.25rem 1.5rem; width: 100%; max-width: 320px; box-shadow: 0 10px 40px rgb(0 0 0 / .25); }
 .settle-list { display: flex; flex-direction: column; gap: .5rem; }
 .settle-list li { display: flex; align-items: center; justify-content: space-between; font-size: .9rem; color: rgb(var(--c-ink-2)); }
 .settle-list li b { color: rgb(var(--c-accent)); font-size: 1rem; }
+
+/* ★ S16-T12 高档里程碑 Crowning 隆重庆祝弹层（bond_4/5/6；finale=bond_6 命运最隆重）。
+   颜色走语义令牌（accent/highlight），无 text-white 压浅底 / 无动态拼色类。光效纯 CSS @keyframes。 */
+.crown-pop {
+  position: fixed; inset: 0; z-index: 60; display: flex; align-items: center; justify-content: center;
+  background: rgb(0 0 0 / .58); padding: 1rem;
+}
+.crown-card {
+  position: relative; overflow: hidden; text-align: center;
+  width: 100%; max-width: 340px; padding: 1.6rem 1.4rem 1.4rem;
+  border-radius: var(--sk-radius-panel);
+  background:
+    radial-gradient(120% 90% at 50% 0%, rgb(var(--c-highlight) / .22), transparent 60%),
+    rgb(var(--c-surface));
+  border: 1px solid rgb(var(--c-highlight) / .5);
+  box-shadow: 0 18px 54px rgb(0 0 0 / .32), 0 0 0 1px rgb(var(--c-highlight) / .12) inset;
+  animation: crownRise .42s cubic-bezier(.2, .9, .3, 1.15) both;
+}
+/* 背后旋转光芒（highlight 语义色，极淡，慢转） */
+.crown-rays {
+  position: absolute; top: -40%; left: 50%; width: 320px; height: 320px; margin-left: -160px;
+  pointer-events: none; opacity: .5;
+  background: conic-gradient(from 0deg,
+    rgb(var(--c-highlight) / .18) 0deg, transparent 18deg, rgb(var(--c-highlight) / .18) 36deg,
+    transparent 54deg, rgb(var(--c-highlight) / .18) 72deg, transparent 90deg,
+    rgb(var(--c-highlight) / .18) 108deg, transparent 126deg, rgb(var(--c-highlight) / .18) 144deg,
+    transparent 162deg, rgb(var(--c-highlight) / .18) 180deg, transparent 198deg);
+  animation: crownSpin 14s linear infinite;
+}
+.crown-sparkles { position: absolute; inset: 0; pointer-events: none; }
+.crown-sparkle {
+  position: absolute; top: 50%; left: 50%; font-size: 14px; color: rgb(var(--c-highlight));
+  opacity: 0; text-shadow: 0 1px 4px rgb(0 0 0 / .25);
+  animation: crownSparkle 2.6s ease-out infinite;
+  animation-delay: calc(var(--i) * .32s);
+  transform-origin: center;
+}
+.crown-sparkle:nth-child(1) { transform: translate(-70px, -46px); }
+.crown-sparkle:nth-child(2) { transform: translate(64px, -52px); }
+.crown-sparkle:nth-child(3) { transform: translate(-84px, 30px); }
+.crown-sparkle:nth-child(4) { transform: translate(80px, 22px); }
+.crown-sparkle:nth-child(5) { transform: translate(-40px, -72px); }
+.crown-sparkle:nth-child(6) { transform: translate(48px, 60px); }
+.crown-kicker {
+  position: relative; display: inline-block; margin-bottom: .7rem;
+  font-size: .64rem; font-weight: 900; letter-spacing: .16em; text-transform: uppercase;
+  color: rgb(var(--c-accent-2));
+}
+.crown-avatar-ring {
+  position: relative; display: inline-flex; padding: 4px; border-radius: 50%;
+  background: linear-gradient(140deg, rgb(var(--c-highlight)), rgb(var(--c-accent)));
+  box-shadow: 0 0 0 4px rgb(var(--c-highlight) / .18), 0 8px 22px rgb(0 0 0 / .22);
+  animation: crownGlow 2.4s ease-in-out infinite;
+}
+.crown-title {
+  position: relative; margin: .85rem 0 .1rem; font-size: 1.5rem; font-weight: 900;
+  color: rgb(var(--c-highlight)); letter-spacing: .01em;
+}
+.crown-name { position: relative; font-size: .82rem; font-weight: 800; color: rgb(var(--c-ink)); }
+.crown-line {
+  position: relative; margin: .55rem auto .95rem; max-width: 17rem; line-height: 1.5;
+  font-size: .82rem; color: rgb(var(--c-ink-2));
+}
+.crown-close { position: relative; width: 100%; }
+/* finale（bond_6 命运）再加最隆重一档：金光更强 + 卡边描金 + 大号称号 */
+.crown-pop.is-finale .crown-card {
+  border-color: rgb(var(--c-highlight) / .7);
+  box-shadow: 0 22px 64px rgb(0 0 0 / .4), 0 0 46px rgb(var(--c-highlight) / .35), 0 0 0 1px rgb(var(--c-highlight) / .3) inset;
+}
+.crown-pop.is-finale .crown-rays { opacity: .8; animation-duration: 10s; }
+.crown-pop.is-finale .crown-title { font-size: 1.75rem; }
+.crown-pop.is-finale .crown-avatar-ring { box-shadow: 0 0 0 5px rgb(var(--c-highlight) / .28), 0 0 30px rgb(var(--c-highlight) / .5); }
+
+@keyframes crownRise {
+  from { opacity: 0; transform: translateY(18px) scale(.92); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+@keyframes crownSpin { to { transform: rotate(360deg); } }
+@keyframes crownGlow {
+  0%, 100% { box-shadow: 0 0 0 4px rgb(var(--c-highlight) / .18), 0 8px 22px rgb(0 0 0 / .22); }
+  50%      { box-shadow: 0 0 0 6px rgb(var(--c-highlight) / .32), 0 8px 26px rgb(0 0 0 / .26); }
+}
+@keyframes crownSparkle {
+  0%   { opacity: 0; }
+  30%  { opacity: 1; }
+  100% { opacity: 0; }
+}
+/* 弹层进出（transition wrapper） */
+.crown-pop-enter-active { transition: opacity .2s ease; }
+.crown-pop-leave-active { transition: opacity .35s ease; }
+.crown-pop-enter-from, .crown-pop-leave-to { opacity: 0; }
 
 /* 桌面优先：窄屏时右栏落到场景下方，收纳仍单列堆叠不破版 */
 @media (max-width: 1120px) {
