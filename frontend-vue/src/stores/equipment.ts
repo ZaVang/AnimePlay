@@ -25,14 +25,23 @@ import {
   clampEnhance,
   sumEquipModifiers,
   setBonusFor,
+  SLOT_ORDER,
   MAX_ENHANCE,
   ENHANCE_FUEL_COUNT,
   type EquipmentHomeEffect,
   type EquipModifier,
   type EquipmentSlot,
 } from '@/config/equipment';
-import { sumStatBonus, type StatBonus } from '@/engine';
+import {
+  sumStatBonus,
+  calculateBattlePower,
+  type StatBonus,
+  type BattleStats,
+} from '@/engine';
+import { resolveMemberBattleStats } from '@/utils/battleStats';
 import { useProfileStore } from './profile';
+import { useGameDataStore } from './gameDataStore';
+import { useNurtureStore } from './nurture';
 
 /** 空三槽（新角色首次配装时建）。 */
 function emptySlots(): EquippedSlots {
@@ -235,6 +244,87 @@ export const useEquipmentStore = defineStore('equipment', () => {
   }
 
   /**
+   * ★ 养成流·阶段1「一键装备」：对 SLOT_ORDER 三槽逐槽贪心，各挑一件使该角色**战力最大化**的装备装上。
+   *
+   * 战力口径与全站单一收口一致：calculateBattlePower(resolveMemberBattleStats(base, nurture, 合成装备加成))
+   * （合成装备加成经纯解析 bonusForSlots，含逐件 enhancedBonus + 套装 setBonusFor，与实战/详情同源）。
+   *
+   * 逐槽规则：
+   *  - 候选 = 背包中 def.slot 匹配、且未被**别的角色**占用、且未在本次已被本角色其它槽/本槽选走的游离/在位件；
+   *    当前该槽已装件本身始终作为「保留」候选参与比较（否则空槽有候选就装）。
+   *  - 对每个候选把它假设进该槽（其余槽维持本次已定结果），走 bonusForSlots → resolveMemberBattleStats →
+   *    calculateBattlePower，取战力最大者；平手保留当前档（稳定、不无谓换装）。
+   *  - 一件只戴一处：本次已选中的 uid 记入 used，后续槽不再复用；落地仍走既有 equip()（不新增存档字段）。
+   *
+   * 返回 { changed, powerBefore, powerAfter } 供 UI 飘字（changed = 实际发生变更的槽数，powerAfter ≥ powerBefore）。
+   */
+  function autoEquipBest(charId: number): { changed: number; powerBefore: number; powerAfter: number } {
+    // base 五维 + 养成数据（缺角色/缺数据兜底，与 battleStats/nurture 缺省口径一致，不因缺数据报错）
+    const character = useGameDataStore().getCharacterCardById(charId);
+    const base: BattleStats = character?.battle_stats ?? { hp: 100, atk: 50, def: 30, sp: 40, spd: 60 };
+    const nurtureData = useNurtureStore().getNurtureData(charId);
+
+    const powerFor = (slots: EquippedSlots): number =>
+      calculateBattlePower(resolveMemberBattleStats(base, nurtureData, bonusForSlots(slots)));
+
+    // 从当前配装出发（未记录则空三槽），逐槽在候选中贪心择优
+    const current = equipped.value[charId] ?? emptySlots();
+    const chosen: EquippedSlots = { ...current };
+    const powerBefore = powerFor(chosen);
+
+    // 本次已选中的 uid（含从当前配装继承的）——一件只戴一处，后续槽不复用
+    const used = new Set<string>();
+    for (const slot of SLOT_ORDER) {
+      const uid = chosen[slot];
+      if (uid) used.add(uid);
+    }
+
+    for (const slot of SLOT_ORDER) {
+      const currentUid = chosen[slot];
+      // 候选：槽匹配 + 未被别的角色占用 + 未在本次被别的槽选走（currentUid 自身允许，作保留项）
+      const candidates = inventory.value.filter(it => {
+        if (getEquipmentDef(it.defId)?.slot !== slot) return false;
+        if (it.uid !== currentUid && used.has(it.uid)) return false; // 本次已被占用
+        const where = findEquippedBy(it.uid);
+        if (where && where.charId !== charId) return false; // 被别的角色戴着
+        return true;
+      });
+
+      // 评估集 = 当前保留（含空）+ 每个候选装入该槽
+      let bestUid: string | null = currentUid;
+      let bestPower = powerFor(chosen);
+      for (const cand of candidates) {
+        if (cand.uid === currentUid) continue; // 保留档已计入 bestPower
+        const trial: EquippedSlots = { ...chosen, [slot]: cand.uid };
+        const p = powerFor(trial);
+        if (p > bestPower) {
+          bestPower = p;
+          bestUid = cand.uid;
+        }
+      }
+
+      chosen[slot] = bestUid;
+      if (bestUid) used.add(bestUid);
+    }
+
+    // 落地：逐槽对比当前实际配装，仅对有变化的槽走既有 equip/unequip（equip 内含一件单戴自动卸原位）
+    let changed = 0;
+    const live = equipped.value[charId] ?? emptySlots();
+    for (const slot of SLOT_ORDER) {
+      const target = chosen[slot];
+      if (live[slot] === target) continue;
+      if (target == null) {
+        if (unequip(charId, slot)) changed += 1;
+      } else if (equip(charId, slot, target)) {
+        changed += 1;
+      }
+    }
+
+    const powerAfter = powerFor(equipped.value[charId] ?? emptySlots());
+    return { changed, powerBefore, powerAfter };
+  }
+
+  /**
    * 解析某角色三槽装备的合并五维加成（缺省维 0）。
    * store 查表（uid→defId→def→bonus），SE-T1 求和前逐件套用 enhancedBonus(def.bonus, item.enhance)
    * （强化增益经此唯一 seam 进战力，与配装弹窗预览/候选展示同源），再委托 engine sumStatBonus 求和。
@@ -244,7 +334,15 @@ export const useEquipmentStore = defineStore('equipment', () => {
    *   0 套装件时 setBonusFor 返回全 0，与 SE-T2 前逐字节一致（既有断言不受影响）。
    */
   function resolveEquipBonus(charId: number): StatBonus {
-    const slots = equipped.value[charId];
+    return bonusForSlots(equipped.value[charId] ?? null);
+  }
+
+  /**
+   * ★ 三槽 uid 组合 → 合并五维加成的**纯解析**（不读 equipped.value，供 resolveEquipBonus 与
+   * autoEquipBest 候选评估同源消费）。逐件套 enhancedBonus（随强化涨）+ 追加 setBonusFor 套装项
+   * （不套 enhancedBonus，恒定）。传 null / 全空 → 全 0（sumStatBonus([]) 归一）。
+   */
+  function bonusForSlots(slots: EquippedSlots | null): StatBonus {
     if (!slots) return sumStatBonus([]);
     const items = (['weapon', 'armor', 'supporter'] as EquipmentSlot[])
       .map(slot => slots[slot])
@@ -332,6 +430,7 @@ export const useEquipmentStore = defineStore('equipment', () => {
     enhanceItem,
     equip,
     unequip,
+    autoEquipBest,
     resolveEquipBonus,
     resolveEquipModifiers,
     resolveHomeEffect,
