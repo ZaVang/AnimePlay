@@ -139,7 +139,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
     },
   },
   4: {
-    role: 'guardian',
+    role: 'support',
     skill1: {
       name: '团子治愈',
       target: 'lowestHpAlly',
@@ -715,7 +715,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
     },
   },
   84: {
-    role: 'guardian',
+    role: 'controller',
     skill1: {
       name: '电子战',
       target: 'highestAtkEnemy',
@@ -1204,6 +1204,17 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
         { type: 'shield', target: 'self', defRatio: 1, flatPower: 50, durationMs: 90000 },
       ],
     },
+    ultimate: {
+      name: '零号机·暴走',
+      target: 'allAllies',
+      effects: [
+        { type: 'shield', target: 'allAllies', spRatio: 0.7, defRatio: 1.4, flatPower: 90, durationMs: 10000 },
+        { type: 'applyStatus', target: 'self', status: { kind: 'taunt', durationMs: 6000 } },
+        { type: 'applyStatus', target: 'self', status: { kind: 'defUp', durationMs: 8000, amount: 0.25 } },
+        { type: 'damage', target: 'allEnemies', atkRatio: 0.9, spRatio: 0.4, canCrit: true },
+      ],
+      energyCost: 1000,
+    },
   },
   304: {
     role: 'striker',
@@ -1228,6 +1239,16 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
           status: { kind: 'atkUp', durationMs: 90000, amount: 0.18 },
         },
       ],
+    },
+    ultimate: {
+      name: '贰号机·暴走',
+      target: 'frontRowEnemies',
+      effects: [
+        { type: 'damage', target: 'frontRowEnemies', atkRatio: 1.1, spRatio: 0.4, canCrit: true },
+        { type: 'applyStatus', target: 'self', status: { kind: 'atkUp', durationMs: 8000, amount: 0.25 } },
+        { type: 'applyStatus', target: 'self', status: { kind: 'haste', durationMs: 8000, amount: 0.2 } },
+      ],
+      energyCost: 1000,
     },
   },
   319: {
@@ -1643,6 +1664,16 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
         },
       ],
     },
+    ultimate: {
+      name: '文具乱舞',
+      target: 'allEnemies',
+      effects: [
+        { type: 'damage', target: 'allEnemies', atkRatio: 1.0, spRatio: 0.4, canCrit: true },
+        { type: 'applyStatus', target: 'allEnemies', status: { kind: 'silence', durationMs: 4000 } },
+        { type: 'applyStatus', target: 'allEnemies', status: { kind: 'defDown', durationMs: 8000, amount: 0.2 } },
+      ],
+      energyCost: 1000,
+    },
   },
   707: {
     role: 'controller',
@@ -1952,6 +1983,16 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
   },
   1211: {
     role: 'striker',
+    skill1: {
+      name: '吸血冲击',
+      target: 'frontEnemy',
+      effects: [
+        { type: 'damage', target: 'frontEnemy', atkRatio: 1.6, spRatio: 0.3, canCrit: true },
+        { type: 'heal', target: 'self', spRatio: 0.7, flatPower: 50 },
+      ],
+      cooldownMs: 8000,
+      initialCooldownMs: 1800,
+    },
     passive: {
       name: '传说的吸血鬼·怪异之王',
       target: 'self',
@@ -2027,7 +2068,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
     },
   },
   1667: {
-    role: 'controller',
+    role: 'striker',
     skill1: {
       name: '射击精准',
       target: 'lowestHpEnemy',
@@ -2246,45 +2287,40 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
   2354: {
     role: 'striker',
     skill1: {
-      name: '冲锋螺旋',
-      target: 'frontEnemy',
+      name: '精准狙击',
+      target: 'highestAtkEnemy',
       effects: [
-        { type: 'damage', target: 'frontEnemy', atkRatio: 1.9, canCrit: true },
+        { type: 'damage', target: 'highestAtkEnemy', atkRatio: 2.0, canCrit: true },
         { type: 'energyGain', target: 'self', amount: 80 },
       ],
       cooldownMs: 8000,
       initialCooldownMs: 1500,
     },
     passive: {
-      name: '相信自己的螺旋',
+      name: '百发百中的枪手',
       target: 'self',
       effects: [
         {
           type: 'applyStatus',
           target: 'self',
-          status: { kind: 'atkUp', durationMs: 90000, amount: 0.16 },
+          status: { kind: 'critRateUp', durationMs: 90000, amount: 0.2 },
         },
         {
           type: 'applyStatus',
-          target: 'allAllies',
-          status: { kind: 'atkUp', durationMs: 90000, amount: 0.08 },
+          target: 'self',
+          status: { kind: 'atkUp', durationMs: 90000, amount: 0.1 },
         },
       ],
     },
     ultimate: {
-      name: '钻头贯穿天际',
-      target: 'allEnemies',
+      name: '狙击歼灭·后阵扫射',
+      target: 'backRowEnemies',
       effects: [
-        { type: 'damage', target: 'allEnemies', atkRatio: 1.1, canCrit: true },
+        { type: 'damage', target: 'backRowEnemies', atkRatio: 1.2, canCrit: true },
         {
           type: 'applyStatus',
           target: 'self',
-          status: { kind: 'atkUp', durationMs: 6000, amount: 0.35 },
-        },
-        {
-          type: 'applyStatus',
-          target: 'allAllies',
-          status: { kind: 'haste', durationMs: 6000, amount: 0.18 },
+          status: { kind: 'critRateUp', durationMs: 6000, amount: 0.25 },
         },
       ],
       energyCost: 1000,
@@ -2874,6 +2910,16 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
         },
       ],
     },
+    ultimate: {
+      name: '超电磁炮·终式',
+      target: 'highestAtkEnemy',
+      effects: [
+        { type: 'damage', target: 'highestAtkEnemy', atkRatio: 2.0, spRatio: 0.6, canCrit: true },
+        { type: 'applyStatus', target: 'highestAtkEnemy', status: { kind: 'stun', durationMs: 3500 } },
+        { type: 'applyStatus', target: 'highestAtkEnemy', status: { kind: 'defDown', durationMs: 9000, amount: 0.25 } },
+      ],
+      energyCost: 1000,
+    },
   },
   3576: {
     role: 'striker',
@@ -2898,12 +2944,12 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
         {
           type: 'applyStatus',
           target: 'self',
-          status: { kind: 'haste', durationMs: 90000, amount: 0.45 },
+          status: { kind: 'haste', durationMs: 90000, amount: 0.18 },
         },
         {
           type: 'applyStatus',
           target: 'self',
-          status: { kind: 'critRateUp', durationMs: 90000, amount: 0.45 },
+          status: { kind: 'critRateUp', durationMs: 90000, amount: 0.18 },
         },
       ],
     },
@@ -2980,12 +3026,12 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
         {
           type: 'applyStatus',
           target: 'self',
-          status: { kind: 'critRateUp', durationMs: 90000, amount: 0.45 },
+          status: { kind: 'critRateUp', durationMs: 90000, amount: 0.15 },
         },
         {
           type: 'applyStatus',
           target: 'self',
-          status: { kind: 'haste', durationMs: 90000, amount: 0.45 },
+          status: { kind: 'haste', durationMs: 90000, amount: 0.15 },
         },
       ],
     },
@@ -3026,7 +3072,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
         {
           type: 'applyStatus',
           target: 'allAllies',
-          status: { kind: 'haste', durationMs: 90000, amount: 0.45 },
+          status: { kind: 'haste', durationMs: 90000, amount: 0.18 },
         },
         { type: 'energyGain', target: 'self', amount: 80 },
       ],
@@ -3208,7 +3254,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
         {
           type: 'applyStatus',
           target: 'allAllies',
-          status: { kind: 'critRateUp', durationMs: 90000, amount: 0.45 },
+          status: { kind: 'critRateUp', durationMs: 90000, amount: 0.15 },
         },
         {
           type: 'applyStatus',
@@ -3230,6 +3276,17 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
   },
   10439: {
     role: 'support',
+    skill1: {
+      name: '希望的祈愿',
+      target: 'lowestHpAlly',
+      effects: [
+        { type: 'heal', target: 'lowestHpAlly', spRatio: 1.4, flatPower: 40 },
+        { type: 'shield', target: 'lowestHpAlly', spRatio: 1.1, durationMs: 8000 },
+        { type: 'energyGain', target: 'allAllies', amount: 60 },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 2000,
+    },
     passive: {
       name: '圆环之理的祈愿',
       target: 'allAllies',
@@ -3276,7 +3333,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
         {
           type: 'applyStatus',
           target: 'allEnemies',
-          status: { kind: 'slow', durationMs: 90000, amount: 0.45 },
+          status: { kind: 'slow', durationMs: 90000, amount: 0.25 },
         },
         {
           type: 'applyStatus',
@@ -3442,7 +3499,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
         {
           type: 'applyStatus',
           target: 'allAllies',
-          status: { kind: 'haste', durationMs: 90000, amount: 0.45 },
+          status: { kind: 'haste', durationMs: 90000, amount: 0.15 },
         },
         {
           type: 'applyStatus',
@@ -3534,7 +3591,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
         {
           type: 'applyStatus',
           target: 'self',
-          status: { kind: 'critRateUp', durationMs: 90000, amount: 0.45 },
+          status: { kind: 'critRateUp', durationMs: 90000, amount: 0.25 },
         },
         {
           type: 'applyStatus',
@@ -3560,6 +3617,20 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
   },
   10596: {
     role: 'arcane',
+    skill1: {
+      name: '宝石魔术',
+      target: 'frontEnemy',
+      effects: [
+        { type: 'damage', target: 'frontEnemy', atkRatio: 0.3, spRatio: 1.5, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'frontEnemy',
+          status: { kind: 'defDown', durationMs: 6000, amount: 0.2 },
+        },
+      ],
+      cooldownMs: 8500,
+      initialCooldownMs: 1800,
+    },
     passive: {
       name: '宝石魔术的才华',
       target: 'self',
@@ -3588,11 +3659,15 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
   10609: {
     role: 'guardian',
     skill1: {
-      name: '天使守护',
-      target: 'lowestHpAlly',
+      name: 'Hand Sonic',
+      target: 'frontEnemy',
       effects: [
-        { type: 'shield', target: 'lowestHpAlly', spRatio: 1.1, defRatio: 0.5, durationMs: 8000 },
-        { type: 'heal', target: 'lowestHpAlly', spRatio: 0.7 },
+        { type: 'damage', target: 'frontEnemy', atkRatio: 1.4, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'frontEnemy',
+          status: { kind: 'defDown', durationMs: 6000, amount: 0.15 },
+        },
       ],
       cooldownMs: 8500,
       initialCooldownMs: 2000,
@@ -3603,7 +3678,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
       effects: [{ type: 'shield', target: 'self', spRatio: 0.6, defRatio: 0.4, durationMs: 90000 }],
     },
     ultimate: {
-      name: '天使守护·终式',
+      name: 'Distortion',
       target: 'allAllies',
       effects: [
         { type: 'shield', target: 'allAllies', spRatio: 1, defRatio: 0.45, durationMs: 9000 },
@@ -3614,47 +3689,39 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
     },
   },
   10612: {
-    role: 'arcane',
+    role: 'striker',
     skill1: {
-      name: '吉他独奏·刃',
+      name: '白刃突袭',
       target: 'frontEnemy',
       effects: [
-        { type: 'damage', target: 'frontEnemy', spRatio: 1.9, canCrit: true },
-        {
-          type: 'applyStatus',
-          target: 'frontEnemy',
-          status: { kind: 'atkDown', durationMs: 6000, amount: 0.2 },
-        },
+        { type: 'damage', target: 'frontEnemy', atkRatio: 1.6, canCrit: true },
+        { type: 'energyGain', target: 'self', amount: 75 },
       ],
-      cooldownMs: 8500,
-      initialCooldownMs: 1800,
+      cooldownMs: 8000,
+      initialCooldownMs: 1500,
     },
     passive: {
-      name: '生前的遗憾',
+      name: '战线指挥官',
       target: 'self',
       effects: [
         {
           type: 'applyStatus',
           target: 'self',
-          status: { kind: 'spUp', durationMs: 90000, amount: 0.16 },
+          status: { kind: 'atkUp', durationMs: 90000, amount: 0.16 },
         },
         {
           type: 'applyStatus',
           target: 'self',
-          status: { kind: 'atkUp', durationMs: 90000, amount: 0.1 },
+          status: { kind: 'critRateUp', durationMs: 90000, amount: 0.1 },
         },
       ],
     },
     ultimate: {
-      name: 'Girls Dead Monster·终章',
-      target: 'allEnemies',
+      name: '手枪连射·清剿',
+      target: 'frontEnemy',
       effects: [
-        { type: 'damage', target: 'allEnemies', spRatio: 1.4, canCrit: true },
-        {
-          type: 'applyStatus',
-          target: 'allEnemies',
-          status: { kind: 'slow', durationMs: 6000, amount: 0.3 },
-        },
+        { type: 'damage', target: 'frontEnemy', atkRatio: 2.0, canCrit: true },
+        { type: 'execute', target: 'frontEnemy', hpRatioThreshold: 0.18 },
       ],
       energyCost: 1000,
     },
@@ -3687,7 +3754,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
         {
           type: 'applyStatus',
           target: 'allEnemies',
-          status: { kind: 'slow', durationMs: 90000, amount: 0.45 },
+          status: { kind: 'slow', durationMs: 90000, amount: 0.15 },
         },
       ],
     },
@@ -4406,6 +4473,17 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
         },
         { type: 'energyGain', target: 'self', amount: 80 },
       ],
+    },
+    ultimate: {
+      name: '命运石之门的选择',
+      target: 'allAllies',
+      effects: [
+        { type: 'energyGain', target: 'allAllies', amount: 120 },
+        { type: 'applyStatus', target: 'allAllies', status: { kind: 'haste', durationMs: 9000, amount: 0.2 } },
+        { type: 'applyStatus', target: 'allEnemies', status: { kind: 'slow', durationMs: 8000, amount: 0.2 } },
+        { type: 'applyStatus', target: 'allEnemies', status: { kind: 'atkDown', durationMs: 8000, amount: 0.2 } },
+      ],
+      energyCost: 1000,
     },
   },
   12394: {
@@ -5257,44 +5335,52 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
     },
   },
   16817: {
-    role: 'arcane',
+    role: 'controller',
     skill1: {
-      name: '变形武器·全力轰击',
-      target: 'frontEnemy',
+      name: '植物操纵·缠缚',
+      target: 'highestAtkEnemy',
       effects: [
-        { type: 'damage', target: 'frontEnemy', spRatio: 1.8, canCrit: true },
+        { type: 'damage', target: 'highestAtkEnemy', spRatio: 1.2, canCrit: true },
         {
           type: 'applyStatus',
-          target: 'self',
-          status: { kind: 'atkUp', durationMs: 6000, amount: 0.2 },
+          target: 'highestAtkEnemy',
+          status: { kind: 'slow', durationMs: 6000, amount: 0.22 },
         },
       ],
       cooldownMs: 8500,
-      initialCooldownMs: 1700,
+      initialCooldownMs: 1800,
     },
     passive: {
-      name: '跨越星海的心',
-      target: 'self',
+      name: '植物心灵感应',
+      target: 'allAllies',
       effects: [
         {
           type: 'applyStatus',
-          target: 'self',
-          status: { kind: 'spUp', durationMs: 90000, amount: 0.2 },
+          target: 'allAllies',
+          status: { kind: 'spUp', durationMs: 90000, amount: 0.12 },
         },
-        { type: 'energyGain', target: 'self', amount: 80 },
-      ],
-    },
-    ultimate: {
-      name: '宇宙最强的爱意',
-      target: 'allEnemies',
-      effects: [
-        { type: 'damage', target: 'allEnemies', spRatio: 1.4, canCrit: true },
         {
           type: 'applyStatus',
           target: 'allEnemies',
-          status: { kind: 'dot', durationMs: 6000, amount: 70, tickIntervalMs: 2000 },
+          status: { kind: 'slow', durationMs: 90000, amount: 0.1 },
         },
-        { type: 'energyGain', target: 'self', amount: 90 },
+      ],
+    },
+    ultimate: {
+      name: 'D-Powaa·藤蔓天狱',
+      target: 'allEnemies',
+      effects: [
+        { type: 'applyStatus', target: 'frontEnemy', status: { kind: 'stun', durationMs: 2500 } },
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'slow', durationMs: 7000, amount: 0.25 },
+        },
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'dot', durationMs: 6000, amount: 45, tickIntervalMs: 2000 },
+        },
       ],
       energyCost: 1000,
     },
@@ -5737,7 +5823,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
     },
   },
   19041: {
-    role: 'controller',
+    role: 'support',
     skill1: {
       name: '察言观色',
       target: 'lowestHpAlly',
@@ -5908,12 +5994,6 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
       ],
       energyCost: 1000,
     },
-  },
-  19546: {
-    role: 'striker',
-    skill1: { name: '立体机动斩' },
-    passive: { name: '人类最强' },
-    ultimate: { name: '必杀回旋斩' },
   },
   19915: {
     role: 'guardian',
@@ -6809,7 +6889,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
     },
   },
   27235: {
-    role: 'guardian',
+    role: 'support',
     skill1: {
       name: '原画创作',
       target: 'lowestHpAlly',
@@ -7111,11 +7191,6 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
       energyCost: 1000,
     },
   },
-  29511: {
-    skill1: { name: '隐身护持' },
-    passive: { name: '姐系可靠' },
-    ultimate: { name: '守护约定' },
-  },
   32675: {
     role: 'tactical',
     skill1: {
@@ -7305,7 +7380,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
       initialCooldownMs: 1800,
     },
     passive: {
-      name: '死亡回归',
+      name: '不屈的意志',
       target: 'self',
       effects: [
         {
@@ -7321,7 +7396,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
       ],
     },
     ultimate: {
-      name: '我要拯救大家！',
+      name: '死亡回归',
       target: 'allAllies',
       effects: [
         { type: 'revive', target: 'firstDefeatedAlly', hpRatio: 0.5 },
@@ -8395,12 +8470,12 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
     },
   },
   46464: {
-    role: 'arcane',
+    role: 'striker',
     skill1: {
       name: '狂犬突击',
       target: 'frontEnemy',
       effects: [
-        { type: 'damage', target: 'frontEnemy', atkRatio: 1.6, spRatio: 0.6, canCrit: true },
+        { type: 'damage', target: 'frontEnemy', atkRatio: 2, canCrit: true },
         {
           type: 'applyStatus',
           target: 'self',
@@ -8489,40 +8564,45 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
   46582: {
     role: 'controller',
     skill1: {
-      name: '记忆篡改',
+      name: '再构成·天秤倾覆',
       target: 'highestAtkEnemy',
       effects: [
-        { type: 'damage', spRatio: 1.7, canCrit: true },
+        { type: 'damage', target: 'highestAtkEnemy', spRatio: 1.5, canCrit: true },
         {
           type: 'applyStatus',
           target: 'highestAtkEnemy',
-          status: { kind: 'atkDown', durationMs: 5000, amount: 0.28 },
+          status: { kind: 'atkDown', durationMs: 6000, amount: 0.25 },
         },
       ],
       cooldownMs: 8600,
       initialCooldownMs: 1800,
     },
     passive: {
-      name: '预知能力',
+      name: '超越者的领域',
       target: 'allEnemies',
       effects: [
         {
           type: 'applyStatus',
           target: 'allEnemies',
-          status: { kind: 'defDown', durationMs: 90000, amount: 0.12 },
+          status: { kind: 'defDown', durationMs: 90000, amount: 0.13 },
+        },
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'spDown', durationMs: 90000, amount: 0.1 },
         },
       ],
     },
     ultimate: {
-      name: '重启的世界',
+      name: '大地之力·再构成',
       target: 'allEnemies',
       effects: [
-        { type: 'dispel', target: 'allEnemies' },
+        { type: 'damage', target: 'allEnemies', spRatio: 1.0, canCrit: true },
         { type: 'applyStatus', target: 'frontEnemy', status: { kind: 'stun', durationMs: 2500 } },
         {
           type: 'applyStatus',
           target: 'allEnemies',
-          status: { kind: 'slow', durationMs: 5000, amount: 0.3 },
+          status: { kind: 'defDown', durationMs: 7000, amount: 0.2 },
         },
       ],
       energyCost: 1000,
@@ -9520,7 +9600,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
         {
           type: 'applyStatus',
           target: 'self',
-          status: { kind: 'critRateUp', durationMs: 90000, amount: 0.45 },
+          status: { kind: 'critRateUp', durationMs: 90000, amount: 0.15 },
         },
       ],
     },
@@ -9647,7 +9727,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
         {
           type: 'applyStatus',
           target: 'self',
-          status: { kind: 'critRateUp', durationMs: 90000, amount: 0.45 },
+          status: { kind: 'critRateUp', durationMs: 90000, amount: 0.15 },
         },
       ],
     },
@@ -9688,12 +9768,12 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
         {
           type: 'applyStatus',
           target: 'self',
-          status: { kind: 'critRateUp', durationMs: 90000, amount: 0.45 },
+          status: { kind: 'critRateUp', durationMs: 90000, amount: 0.18 },
         },
         {
           type: 'applyStatus',
           target: 'self',
-          status: { kind: 'haste', durationMs: 90000, amount: 0.45 },
+          status: { kind: 'haste', durationMs: 90000, amount: 0.18 },
         },
       ],
     },
@@ -9739,7 +9819,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
         {
           type: 'applyStatus',
           target: 'allEnemies',
-          status: { kind: 'slow', durationMs: 90000, amount: 0.45 },
+          status: { kind: 'slow', durationMs: 90000, amount: 0.18 },
         },
         {
           type: 'applyStatus',
@@ -9874,7 +9954,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
         {
           type: 'applyStatus',
           target: 'allEnemies',
-          status: { kind: 'slow', durationMs: 90000, amount: 0.45 },
+          status: { kind: 'slow', durationMs: 90000, amount: 0.15 },
         },
       ],
     },
@@ -9993,7 +10073,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
         {
           type: 'applyStatus',
           target: 'allAllies',
-          status: { kind: 'haste', durationMs: 90000, amount: 0.45 },
+          status: { kind: 'haste', durationMs: 90000, amount: 0.18 },
         },
         { type: 'energyGain', target: 'allAllies', amount: 80 },
       ],
@@ -10235,7 +10315,7 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
     },
   },
   71337: {
-    role: 'striker',
+    role: 'controller',
     skill1: {
       name: '支配压制',
       target: 'highestAtkEnemy',
@@ -12989,14 +13069,14 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
   137906: {
     role: 'controller',
     skill1: {
-      name: '机械女仆的锁定',
-      target: 'highestAtkEnemy',
+      name: '火焰喷发',
+      target: 'frontEnemy',
       effects: [
-        { type: 'damage', atkRatio: 1.2, canCrit: true },
+        { type: 'damage', target: 'frontEnemy', atkRatio: 1.4, canCrit: true },
         {
           type: 'applyStatus',
-          target: 'highestAtkEnemy',
-          status: { kind: 'silence', durationMs: 4000 },
+          target: 'frontEnemy',
+          status: { kind: 'dot', durationMs: 6000, amount: 20, tickIntervalMs: 2000 },
         },
       ],
       cooldownMs: 8500,
@@ -13019,11 +13099,16 @@ export const CHARACTER_KITS: Record<number, CharacterKitConfig> = {
       ],
     },
     ultimate: {
-      name: '2099年的制裁',
+      name: '狱炎地狱',
       target: 'allEnemies',
       effects: [
-        { type: 'damage', target: 'allEnemies', atkRatio: 0.9, canCrit: true },
-        { type: 'applyStatus', target: 'allEnemies', status: { kind: 'stun', durationMs: 2200 } },
+        { type: 'damage', target: 'allEnemies', atkRatio: 0.95, canCrit: true },
+        {
+          type: 'applyStatus',
+          target: 'allEnemies',
+          status: { kind: 'dot', durationMs: 8000, amount: 18, tickIntervalMs: 2000 },
+        },
+        { type: 'applyStatus', target: 'allEnemies', status: { kind: 'stun', durationMs: 2000 } },
       ],
       energyCost: 1000,
     },
