@@ -11,6 +11,8 @@ import {
   TUTORING_COST_PER_LEVEL,
   expOverflowExchange,
   EXP_OVERFLOW_PER_KP,
+  milestoneCelebrationTier,
+  BOND_MILESTONES,
 } from './nurture';
 
 describe('SD-T4 tutoringExpGain（补习产出随等级线性递增）', () => {
@@ -67,5 +69,39 @@ describe('SD-T4 expOverflowExchange（满级经验溢出转 KP，带 carry 结�
   it('非正 gainedExp 不新增（保留 carry）', () => {
     expect(expOverflowExchange(0, 500)).toEqual({ kp: 0, carry: 500 });
     expect(expOverflowExchange(-100, 500)).toEqual({ kp: 0, carry: 500 });
+  });
+});
+
+describe('S16-T12 milestoneCelebrationTier（里程碑庆祝分级音量，纯展示判据）', () => {
+  it('低档 bond_1/2/3 → highfive（保持轻飘字，克制）', () => {
+    expect(milestoneCelebrationTier('bond_1')).toBe('highfive');
+    expect(milestoneCelebrationTier('bond_2')).toBe('highfive');
+    expect(milestoneCelebrationTier('bond_3')).toBe('highfive');
+  });
+
+  it('高档 bond_4/5 → crowning（隆重弹层）', () => {
+    expect(milestoneCelebrationTier('bond_4')).toBe('crowning');
+    expect(milestoneCelebrationTier('bond_5')).toBe('crowning');
+  });
+
+  it('最高档 bond_6「命运」→ finale（Crowning 之上最隆重一档）', () => {
+    expect(milestoneCelebrationTier('bond_6')).toBe('finale');
+  });
+
+  it('未知 id 保守回落 highfive（不误升庆祝音量）', () => {
+    expect(milestoneCelebrationTier('bond_999')).toBe('highfive');
+    expect(milestoneCelebrationTier('')).toBe('highfive');
+  });
+
+  it('分级判据与 statBonusPct 数据分层一致（0.02 档=highfive，0.03 档=crowning/finale）', () => {
+    // 有数据支撑的分界：statBonusPct 0.02（低档）vs 0.03（高档）应对上庆祝分级。
+    for (const m of BOND_MILESTONES) {
+      const tier = milestoneCelebrationTier(m.id);
+      if (m.statBonusPct <= 0.02) {
+        expect(tier).toBe('highfive');
+      } else {
+        expect(tier === 'crowning' || tier === 'finale').toBe(true);
+      }
+    }
   });
 });

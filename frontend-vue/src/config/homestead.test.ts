@@ -23,6 +23,8 @@ import {
   getFurnitureDef,
   FURNITURE_CATALOG,
   FURNITURE_PLACED_MAX,
+  FURNITURE_SLOTS,
+  getFurnitureSlot,
 } from './homestead';
 
 const H = 3600_000;
@@ -306,6 +308,65 @@ describe('computeIdleYield 设施乘区（独立于装备 0.6 cap，决策-5）'
     const fac = 1 + facilityBonusPct(3); // 1.16
     // 装备 expPct 0.1 经 softCap 软化（小 x 近似线性，略低于 0.1），设施/comfort 仍独立相乘。
     expect(y.expEach).toBe(Math.floor(IDLE_EXP_PER_HOUR * 1 * (1 + softCap(0.1, HOMESTEAD_EFFECT_CAP.expPct)) * fac * cm));
+  });
+});
+
+describe('★ S16-T7 家具场景可见（icon + 固定槽位坐标，零素材 + 零升档）', () => {
+  it('每件家具都有非空 emoji 图标（可见性唯一解=零素材 emoji）', () => {
+    for (const d of FURNITURE_CATALOG) {
+      expect(typeof d.icon).toBe('string');
+      expect(d.icon.length).toBeGreaterThan(0);
+    }
+  });
+
+  it('每件家具都配了固定槽位坐标（防漏配导致静默不渲染）', () => {
+    for (const d of FURNITURE_CATALOG) {
+      const slot = getFurnitureSlot(d.id);
+      expect(slot, `${d.id} 缺槽位坐标`).toBeDefined();
+    }
+  });
+
+  it('槽位坐标在合法范围 [0,100]（% 坐标，脚点锚定在场景内）', () => {
+    for (const d of FURNITURE_CATALOG) {
+      const slot = getFurnitureSlot(d.id)!;
+      expect(slot.x).toBeGreaterThanOrEqual(0);
+      expect(slot.x).toBeLessThanOrEqual(100);
+      expect(slot.y).toBeGreaterThanOrEqual(0);
+      expect(slot.y).toBeLessThanOrEqual(100);
+    }
+  });
+
+  it('槽位落在角色活动带内（x∈[7,93]、y∈[22,86]）→ 与角色同坐标系、不被 overflow 切', () => {
+    // 与 usePlazaWalk 的 MIN_X/MAX_X/MIN_Y/MAX_Y 对齐：家具脚点在同一可见地面带内，
+    // 避开场景四角悬崖（overflow:hidden 会切）与顶部名牌溢出区。
+    for (const d of FURNITURE_CATALOG) {
+      const slot = getFurnitureSlot(d.id)!;
+      expect(slot.x).toBeGreaterThanOrEqual(7);
+      expect(slot.x).toBeLessThanOrEqual(93);
+      expect(slot.y).toBeGreaterThanOrEqual(22);
+      expect(slot.y).toBeLessThanOrEqual(86);
+    }
+  });
+
+  it('各家具槽位互不重叠（同坐标会视觉叠一起 = 陈列错乱）', () => {
+    const seen = new Set<string>();
+    for (const d of FURNITURE_CATALOG) {
+      const slot = getFurnitureSlot(d.id)!;
+      const key = `${slot.x}:${slot.y}`;
+      expect(seen.has(key), `${d.id} 槽位与他件重叠`).toBe(false);
+      seen.add(key);
+    }
+  });
+
+  it('FURNITURE_SLOTS 只含目录内 id（无孤儿槽位）', () => {
+    const catalogIds = new Set(FURNITURE_CATALOG.map(d => d.id));
+    for (const id of Object.keys(FURNITURE_SLOTS)) {
+      expect(catalogIds.has(id), `${id} 是孤儿槽位（目录里无此家具）`).toBe(true);
+    }
+  });
+
+  it('getFurnitureSlot：未知 id → undefined（渲染层据此跳过）', () => {
+    expect(getFurnitureSlot('fn_nope')).toBeUndefined();
   });
 });
 
