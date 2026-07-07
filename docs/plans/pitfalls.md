@@ -24,8 +24,8 @@
 - 颜色规则：界面色用语义类（`bg-surface/text-ink/accent`）或 `rgb(var(--c-*))`，登录框加密码字段时沿用，**禁止 `text-white` 压浅底、禁止拼接动态颜色类**。
 
 ## product-loop 通信
-- 本 sprint 合同在 **`docs/SPRINT.md`**（非默认 `docs/plans/SPRINT.md`），启动带 `--sprint docs/SPRINT.md`。
-- 本 sprint 用 `--tier1 off`（人写的 SPRINT 当需求源，目标驱动停），无 Reviewer 审计报告、无 negotiation.md。
+- **合同路径按当轮启动参数为准**（历史某 sprint 曾用 `docs/SPRINT.md` + `--tier1 off`；**当前 S16 用默认 `docs/plans/SPRINT.md` + `--tier1 on --mode all`**，有三审报告 + negotiation.md）。别照搬旧笔记里的路径/tier1 设定。
+- tier1 on 时：Reviewer 审计报告在 `docs/orch/{product,evolution,research}-audit-report.md`，Planner 回应在 `docs/orch/negotiation.md`，本轮计划在 `docs/orch/plan.md`。
 
 ## S10 沉淀（2026-06-16 完成后追加）
 - [依赖] `requirements.txt` 只钉 Flask 不钉 Werkzeug → fresh install 拉 Werkzeug 3.x（移除 `__version__`）与 Flask 2.3.2 不兼容（test client 炸）。**Flask 与 Werkzeug 必须成对钉版本**（已钉 Werkzeug==2.3.8）。
@@ -82,3 +82,23 @@
 - [扫荡日循环独立于通层] 扫荡已通层（`pve.sweepFloor`）是**独立 action，绝不调 `completeFloor`、绝不推进 currentFloor**；只读 `hasCompletedFloor`。奖励为首通的缩水（30-50%，边际递减防 AFK 死区），**用周期封顶**（`sweepWeekKey` + `sweepUsedThisWeek`，扁平定长字段，跨周归零，复用 `daily` 跨天/周判定），非逐层 Record（防膨胀）。存档 v15：schema+migrations+装配器三处同改 + 往返测试。
 - [hub 内嵌 SquadBattleView 直达进战] 消除三 tab 冗余（Plan A）：squad tab 唯一编队入口、explore「开始挑战」带 squadId 直达、battle tab 仅演出。`SquadBattleView` 加 `entrySquadId/embedded` props + `exit-to-explore` emit；`embedded=true` 时**模板里「最小占位」分支必须排在完整 towerMode 编成器分支之前**（`v-else-if` 短路使整套编成器不可达）——否则深链/刷新 `?tab=battle` 会复活第三套编成器，SA-T6 白做。
 - [product-loop 编排坑：别把 Sprint 内任务误判为「新范围」] 第 3 轮 Planner 把 SA-T6（S14-A 的第 6 个任务）误当「不开新范围」跳过，导致 max_iter 跑满但目标只完成 5/6、Evaluator 却报 COMPLETE。教训：Planner 提示里的「不开新范围」指「不超出 Sprint 合同」，**Sprint 合同内的未完成任务永远是 in-scope**；tier1-on 跑满轮次 ≠ 目标达成，Orchestrator 必须核对「合同全部 `[x]`」而非只看末轮 Evaluator 决策。
+
+## S16 第 1 轮沉淀（2026-07-07，家园 hub 关系回路，product-loop --tier1 on --mode all --max_iter 5）
+- [先接地再规划：好感不是「通往虚空」] 三审一致断言「家园产好感却无消费端」，Scout 查证发现**养成域早有完整消费端**：`config/nurture.ts` 的 `BOND_MILESTONES`（6 档：阈值/一次性 KP/称号/永久加成%）+ `isMilestoneClaimable` 纯函数 + `claimedBondMilestones`（v14 已存档）+ 每日羁绊互动 `dailyBondInteraction`/`canDailyBondInteract`（`DAILY_BOND_INTERACTION_AFFECTION` + `lastBondInteractionDate` v16）。真缺口是「关系机制**只在养成页显形、没搬进家园**」+「缺情感/叙事层（全仓无角色台词数据）」。**教训：审计报告的「缺失 X」断言必须经 Scout 代码接地核实，X 常已存在只是没接通/没显形——复用不重造，零升档。**
+- [userStore 门面已备关系动作] `userStore.claimBondMilestone(charId, milestoneId)`/`dailyBondInteraction(charId)`/`canDailyBondInteract` 已存在且内部 `saveToServer`——家园侧接关系功能直接调门面，**别在 view 里绕过门面直改 nurture store**（门面统一存档 + 同源）。
+- [家园 tap = 复用养成每日互动，共用同一每日封顶] 广场角色 tap 互动走 `dailyBondInteraction`，与养成页每日互动**共用同一 `lastBondInteractionDate` 跨天闸**——是同一次每日机会（非各给一次），防两入口刷双倍好感。这是「同源」正确语义，别为家园单造第二个每日 tap 字段。
+- [台词层纯展示红线] 情感/叙事台词做成**纯 config**（`config/homesteadDialogues.ts`）：纯函数 `pickTapDialogue`/`pickMilestoneDialogue` 按 index modulo 取句、缺专属回落通用池不报错，**绝不携带数值效果/绝不驱动奖励**（奖励只由 nurture 既有数值逻辑决定）。把「名字≠行为」换皮点在台词域结构性锁死（对齐 S14-A squad 教训）。
+- [pet 气泡等场景浮层用 surface 卡片非白字压图] 广场角色头顶台词气泡用 `rgb(var(--c-surface))` 卡 + `rgb(var(--c-ink))` 文（语义令牌）；只有 `pet-name`（短名压在写实底图上）沿用既有 `#fff` 压图例外。含长句的气泡别用白字压图（可读性 + 令牌纪律）。
+- [button 不可嵌 button] 入住名单 pill 原为单 `<button>`，加子「领取」按钮须外层改 `div` + 内层 `resident-main` 按钮 + 同级 `resident-claim` 按钮（否则嵌套交互元素非法 HTML）；同步把 CSS 从 grid-areas 改 flex column。
+- [product-loop 子 agent 本机批量 stall] 本轮一 reviewer + Planner + Generator + Evaluator 均「API Error: Response stalled/Connection closed mid-stream」掉线；掉线前 git diff/已写文件可见，orchestrator 接管续做即可。**教训：重型/长跑阶段优先用 Workflow 工具（内建 retry-on-terminal-API-error）跑，比裸 Agent 后台调用抗 stall。**
+
+## S16 第 2-5 轮沉淀（2026-07-07，家园 hub 关系深化→家具→陈列→打磨，全程 Workflow 流水线、零升档）
+- [Workflow 跑 product-loop 五阶段抗 stall] 第 2-5 轮用 Workflow（Review×3 ∥ → Scout → Plan → Generate → Evaluate）跑：第 2 轮 research/scout 两阶段中途掉线，但 retry/降级让流水线跑完、关键阶段全产出；第 3-5 轮 7 agent 零掉线。**比裸 Agent 后台调用可靠得多。** 注意：**Workflow 脚本是纯 JS——模板字符串（反引号定界）内绝不能再用反引号做代码标注**（会提前闭合模板→解析错误，`node --check` 先自检）；代码标识符用「」或裸文本。
+- [广场偶遇 = pet-to-pet 邻近检测，纯 view 层] 第2轮同作品角色广场偶遇对话：漫步 tick 里加 pet-to-pet 邻近检测（`Math.hypot` 原只算 pet→目标），命中同作品对触发「驻足→A 冒句→~1.2s B 错峰回句→中点上浮 ♡/✧/♪→散开」。**偶遇纯展示零好感、冷却纯内存 Map<pairKey,ts> 零升档、engine 零改**（配对复用 `engine/homestead/bonds.ts` 的 `anime_names` 稳定键 `computeBondPairs`）。三审一致划红线「绝不为偶遇引入 CP 关系值/进度条数值轴」。
+- [多气泡并发模型] 单值 `petBubble` 升成按 petId 索引的 `Map<number,PetBubble>` 才能支撑两角色错峰对话；硬性要求 tap 无回归（仍走 `dailyBondInteraction` 同源每日封顶）。所有 setTimeout 登记 composable 内 `timers[]` + onUnmounted 清除。
+- [家具进场景零素材 emoji + y-sort] 全仓无家具美术资源 → 家具进广场用 **emoji + 名牌**（`FurnitureDef.icon` 纯展示字段 + `FURNITURE_SLOTS` 坐标常量，零升档）。**家具必须接进角色同一 y-sort 公式 `zIndex=Math.round(y*10)` + 脚点锚定**，别做固定背景层；家具是纯派生静态层**绝不进 rAF 循环**。comfort 数值轴（`sumFurnitureComfort`→`computeIdleYield`）一字不碰。
+- [收藏陈列 = 只读 completion，禁碰 claim] 家园收藏橱窗只读 `codex.characterCompletion`（纯派生 computed），**绝不碰 `codex.claim`/`claimedMilestones`**（领取制=升 schema + 撞「展示墙非待办地狱」红线）。0 UR 优雅降级（最高稀有度墙/引导态），**绝不做「UR 0/N」缺口条**（晒身份不晒缺口，正着念拥有数）。
+- [回访新鲜 date-seeded 派生免存档] 「今日特殊角色」= `pickTodaySpecialId(todayKey + 排序后入住名单 → mulberry32)`（`config/homesteadDaily.ts`），**同天恒定/跨天换人/顺序无关/零存档**。⚠️ date-seed 取 id 必须从**排序后的稳定副本**取（否则入住顺序变→今日特殊角色跳，特征测试锁死）。`daily.ts` 的 `todayKey()` 私有未导出 → view 内联同款 `YYYY-M-D` key（零改 daily）。「双倍好感」做不到零碰养成（`dailyBondInteraction` 好感增量写死常量无参数）→ 收窄为纯情感（今日标识+特殊台词、tap 走标准好感），别为双倍碰 nurture。
+- [纯前端晒图 Canvas 无远程图] 家园快照分享图：复用现成三件套 `wrapped/buildXxxStats.ts`(纯函数聚合) + `ShareCard.vue`(Canvas 手绘) + `shareImage.ts`(toBlob IO)。**绝不 drawImage 远程角色图**（cross-origin taint→toBlob 抛错）——角色脸用「名字首字自绘」代替。**无基地名字段**（`stores/homestead` 只有 placedCharacterIds+lastSettleAt）→ 主标题走 `profile.currentUser`「XX 的家园」，别为装饰字段耗 sprint 唯一 v21 bump。聚合抽纯函数便于单测。
+- [里程碑庆祝分级] `onClaimBondMilestone` 原给 bond_1「初识」和 bond_6「命运」相同飘字 → 抽纯函数 `milestoneCelebrationTier`（白名单，按 `BOND_MILESTONES` statBonusPct 0.02/0.03 + reward 跳变分层）：低档 High-Five 轻飘字 / 高档 bond_4-6 Crowning 隆重弹层（复用 `.settle-pop`+CharacterAvatar+dialogueTimers 清除，CSS 动效不进 rAF）。纯展示零发奖。
+- [五轮零升档纪律成立] S16 全 5 轮 15 任务全程 SAVE_VERSION=20 零升档、从未污染 `computeIdleYield`：情感/关系/偶遇/陈列/回访/晒图**全部纯派生或纯展示**，验证了「在数值口径旁开非数值情感/收集轴」这条设计哲学。sprint 唯一 v21 bump 五轮未消耗（偶遇图鉴去重等真需持久化的候选全判低价值留 backlog）。测试基线 917→1009（+92）。

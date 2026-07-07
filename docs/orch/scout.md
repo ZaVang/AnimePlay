@@ -1,101 +1,168 @@
-# Scout Report — Iteration 2（S15 第 2/3 轮，product-loop --tier1 on --mode all）
+# Code Scout — S16 第 5 轮（收官：打磨 + 晒图 + 收尾）接地报告
 
-> 本轮指派切片 = **S15-T2（轻量家具 / 布局系统，P3-4）**（见 SPRINT.md 排期建议第 2 轮：「家具 v20，唯一存档重任务，单独做透三改+往返测试」）。
-> 前情：第 1 轮 **S15-T1 + S15-T3 已 COMPLETE**（eval.md：test×3 全绿、零存档、SAVE_VERSION 仍 19、羁绊 engine 纯函数 + UI 显形已落地）。
-> S15-T4 非本轮，仅在 B 节末尾给 Planner 排期用现状快照，Generator 本轮不要动。
-> **权威 SAVE_VERSION（schema.ts:50）= 19**。本轮是**本 Sprint 唯一升档轮 → v20**（furniture 域一次性 bump；若 T4 pity 也要持久化，第 3 轮复用同一 v20，别再单独升）。
+> Scout 只读（Read/Glob/Grep），唯一产出本文件（覆盖写，覆盖前四轮 scout.md）。为 Planner 拍板 / Generator 落点 / Evaluator 回归核对接地。
+> 基线：亲读 `HomesteadView.vue`(1366 行) + `ShareCard.vue` + `shareImage.ts` + `buildWrappedStats.ts(.test)` + `nurture.ts`(BOND_MILESTONES) + `homesteadDialogues.ts` + `homestead.ts`(FURNITURE_CATALOG/IdleYield) + `stores/homestead.ts` + 三份审计报告 + `plan.md`/`negotiation.md`/`gen_status.md`/`eval.md`/`pitfalls.md`/`SPRINT.md`。日期 2026-07-07。
+> **本轮天然零升档**（打磨 = 纯前端动效；晒图 = 只读快照聚合出图，无存档需求）。SAVE_VERSION 权威 `frontend-vue/src/infra/persistence/schema.ts:57 = 20`，本轮预期不动。
 
 ---
 
 ## A. 约束与可行性（给 Planner）
 
-### S15-T2 可行性：**高**，`facility` 域是逐字对标的成熟范式，照抄即可
-- **一句话结论**：新增 `furniture` 独立存档域（v20），仿 `facility` 域五处对称落点（schema type + 默认工厂 + migration + store serialize/deserialize + 装配器两行），config 纯数据目录仿 `EQUIPMENT_CATALOG`，加成经既有 `computeIdleYield` 的 comfort/独立乘子口径汇入（**不新拼收益口径**），UI 在 `HomesteadView` 加兑换 + 摆放/收纳入口。风险主要在「存档三处同改 + 往返测试」的机械正确性，玩法数值风险低。
-- **升档协议（本轮必做，v19→v20）**：三处同改（`schema.ts` + `migrations.ts` + `stores/persistence.ts` 装配器）+ 往返测试。`SAVE_VERSION` 由 19 → **20**（schema.ts:50 一处改）。v19→v20 迁移：旧档无 `furniture` 键 → 补空家具默认（仿 `migrateFacility`：白名单重建，**禁 spread**，pitfalls S13-C1）。migrations.test.ts 已有「v17 facility 缺失补默认」范式（:149-151、:525-529），照抄写「v20 furniture 缺失补默认」+ 往返保真两例。
-- **收益口径铁律（不可绕开）**：家具加成**必须经既有口径汇入**，二选一（Planner 拍板，建议第一种最省事、零口径新增）：
-  1. **家具只贡献 comfort（复用既有 comfort 软加成轴）**：`computeIdleYield` 已有 `effect.comfort` → `comfortBonusPct`（每 10 点 +1%，封顶 +20%，config/homestead.ts:94/210）。家具各给 comfort 分，settle/预览把「家具 comfort 合计」并入传给 `computeIdleYield` 的 `effect.comfort`（与装备 comfort 相加）。**零新增口径、零新乘子**，与合同「经既有 comfort 软加成口径并入」完全吻合。缺点：家具与装备共用同一 comfort→+20% 硬顶，家具深度有限（但守住「挂机不盖过主动收入」基线，正确）。
-  2. **家具作新的独立乘子（仿设施乘区）**：若要家具有独立产出%（expPct/affectionPct/knowledgePct），则 `computeIdleYield` 内加一个 `furnitureMult`（与 comfort/bond/设施同层通乘）。**这会改 computeIdleYield 签名 + 全部调用点**（settle + HomesteadView 三处 + config/homestead.test.ts 断言），成本更高，且需明确它进不进 `HOMESTEAD_EFFECT_CAP`（建议独立温和封顶）。
-  - **强烈建议走方案 1**（comfort 复用）：合同原文「每件给小额 comfort / 产出加成——经既有 comfort 软加成 / 设施乘区口径并入」，comfort 轴是现成的、`computeIdleYield` 已消费、UI 已显形（ops-card-main 大字 + `comfortBonusText`）。家具走 comfort 即「摆家具→基地更舒适→全产出小幅提升」，语义自洽、改动面最小、往返测试最干净。
-- **摆放 / 布局**：合同说「复用 WALKABLE_ZONES 坐标或简单固定槽位」。**建议「简单固定槽位」**（如 furniture 域存 `Record<slotId, furnitureDefId | null>`，N 个固定装饰位），别硬绑 WALKABLE_ZONES 像素坐标（那是角色漫步区、16:9 百分比，塞家具会与漫步者/建筑重叠且需新美术）。**首版可不做「广场里可视化摆放渲染」**——合同验收只要求「摆放持久化跨重开保真 + 加成真进挂机收益」，一个「已摆放家具清单（给 comfort）」的 store 域 + HomesteadView 一个兑换/收纳面板即达标。可视化摆到广场是锦上添花，若做也应是独立固定槽位坐标，不改 WALKABLE_ZONES。
-- **KP 兑换**：走 `profile.spend('knowledgePoints', cost)` 成功才入库（照 `upgradeFacility` / `purchaseEquipment` 范式，userStore.ts:509-527）。门面新增 `buyFurniture(defId)` / `placeFurniture` / `unplaceFurniture` 编排（先 `settleHomestead()` 结清再变更再 `saveToServer()`，与家具影响 comfort→影响封顶/产出的口径一致，防「摆家具瞬间回溯放大已挂时间」——同 `upgradeFacility` 的先结清模式）。
-- **验收锚点**：可 KP 买家具（走 profile.spend）、摆放持久化跨重开保真、加成真进挂机收益（经 computeIdleYield 口径）、v20 迁移往返测试、type-check/test/build 通过。
+### A0. 收官轮定性：这是打磨轮，不是「再塞一个系统」轮
+三份审计罕见一致（product 8.3/10、evolution 8.3/10、research 收官逻辑闭环）：**前 4 轮把「有什么」做全了，本轮只需两把刀**——① 把情感高点擦亮（里程碑分级庆祝），② 给家园一张对外的脸（Canvas 晒图）。外加顺手收尾（删 dead computed + Sprint 收官核对）。**克制比堆功能更对**（三审共同定调）。全轮 100% 纯前端 · 零数值 · 零升档 · 零素材（emoji/CSS/Canvas 自绘）。
+
+### A1. 优先级仲裁点（留给 Planner 拍板）
+两把刀都是 🔴 必做，但两份审计对「谁第一」排序相反，Planner 需拍板顺序（不影响都要做）：
+- **product-audit**：R1 = 里程碑分级庆祝（情感最高 ROI），R2 = 晒图。
+- **evolution-audit**：R1 = 晒图（长留存结构性命门），R2 = 高档里程碑 fanfare。
+- **research-audit**：两者并列，理论框架给足（High-Five vs Crowning + ACNH 异步快照）。
+- **negotiation.md:128-131**：Planner 早已把「可分享基地快照/晒图」拍进第 5 轮（方向性接受）。
+- **Scout 建议**：晒图工程量更大（新纯函数 + 新组件 + 新测试）、庆祝分级更轻（改 1 函数 + 加 CSS）。若单轮吃不下，**先做庆祝分级（低风险高情感 ROI）再做晒图**；两者互相独立可分别合并。
+
+### A2. 硬约束清单（务必守，违反 = Evaluator 拦死）
+1. **晒图铁律（pitfalls:44 + `ShareCard.vue:5` 代码印证）**：纯前端 Canvas（`toBlob`+`createObjectURL`+`a.download`+`revokeObjectURL`）；**别引 html2canvas**；**首版绝不 `drawImage` 任何远程角色/封面图**——AnimePlay 角色图走 `/data/images/...`（可能 offload 到 GitHub Release/OSS `VITE_IMAGE_BASE_URL`），跨域 `drawImage` 会 taint canvas → `toBlob` 抛 `SecurityError`。角色「脸」用 emoji/纯 CSS-Canvas 绘制（首字/稀有度色块），别嵌真图。
+2. **晒图晒身份不晒缺口（research 深挖② + 第 4 轮陈列纪律一脉相承）**：放「陈列 5/7」「拥有 UR 12/48」（正着念拥有数），**绝不放**「图鉴还差 260」「UR 0/67」缺口/低完成度指标（把骄傲的晒图做成焦虑仪表盘 = 踩反-completionist 红线）。
+3. **晒图是安全异步、绝不联机（research 深挖② 破 B）**：出一张 PNG → 系统分享面板或下载，玩家自行发。**绝不为「晒图」开联机/上传/排行榜/headless 后端**（那是 S12，本 sprint 严禁触碰）。`utils/shareImage.ts` 已把这条路铺好。
+4. **庆祝分级 = 分级音量不是统一动效（research 深挖① 唯一危险读法）**：Yu-kai Chou 决定性警告「用同一音量庆祝一切，会让大小成就都失去情感落点」。低档 bond_1-3 保持轻飘字（High-Five），高档 bond_4/5/6 升级隆重弹层（Crowning）。**别给所有档加同款彩带**（那只是把「都很轻」换成「都很响」，问题没解）。
+5. **庆祝/晒图 100% 纯展示、零数值（可见性命门 + 名字≠行为红线）**：庆祝只是 `claimBondMilestone` 发放成功**之后**的视觉分支，发放逻辑一字不碰；晒图是只读快照，不写状态、不发奖、零升档。
+6. **定时器登记清除（pitfalls:59 + 假设 F 真风险）**：Crowning 弹层若用 setTimeout 必须登记 `dialogueTimers` 数组 + `onUnmounted` 清除（复用现有范式）；任何动效走 CSS `@keyframes` 不进 rAF（`usePlazaWalk` 的 rAF 一字不动）。
+7. **颜色语义令牌（pitfalls:48）**：界面 UI 走 `rgb(var(--c-*))` / 语义类；**唯独** Canvas 导出图本体可用固定品牌色（属图片压片类合理例外，`ShareCard.vue:73-87` 有先例）。庆祝弹层 UI 仍走令牌。
+
+### A3. ★ 关键代码现实校正（审计报告的前提，Scout 核实）
+**「基地名（baseName）」不存在！** 三份审计都假设晒图卡放「基地名」，但代码核实 `stores/homestead.ts` **只有 `placedCharacterIds` + `lastSettleAt` 两个字段，无任何基地名概念**（grep「基地名/baseName/homesteadName」在 store/schema 零命中；header 只显「基地舒适度」「可用知识点」，`HomesteadView.vue:531-532`）。
+- **拍板需求（给 Planner）**：晒图卡的「归属核心」不能用不存在的基地名。**选项**：
+  - **选项 A（Scout 推荐，零升档）**：用 `profile.currentUser`（玩家名，`stores/profile.ts:38`）作卡片主标题，如「XX 的家园」——现成、零改、零升档。
+  - 选项 B（不推荐）：新增可编辑基地名字段 → 逼升 schema v21（消耗 sprint 唯一 bump 于一个纯装饰字段，三审都没主张，**别做**）。
+- **结论**：晒图主标题走 `currentUser`「XX 的家园」，绝不为基地名升档。
+
+### A4. 晒图卡本地可得数据清单（全部只读派生，零 taint，Scout 逐条核实落点）
+| 卡面内容 | 数据源（现成 store/computed） | 落点 |
+|---|---|---|
+| 玩家名 / 等级 | `profile.currentUser` / `profile.core.level` | `stores/profile.ts:38` |
+| 入住数 + 阵容名 | `homestead.placedCharacterIds` → `gameData.getCharacterCardById(id).name` | `HomesteadView.vue:100-104` placedCards 范式 |
+| 陈列 X/7（家具数） | `furnitureStore` 已摆放数 / `FURNITURE_CATALOG.length` | `HomesteadView.vue:287-291` displayCount |
+| 收藏完成度（UR owned/total + 图鉴%） | `codex.characterCompletion`（byRarity/owned/total） | `HomesteadView.vue:296-301` codexPercent |
+| 羁绊命中（作品名×人数） | `hourlyYield.bondHits`（`BondHit{anime,members}`，`bonds.ts:23-27`） | `HomesteadView.vue:188` bondHits |
+| 今日特殊角色名（传播钩子） | `todaySpecialCard.name`（date-seeded） | `HomesteadView.vue:118-120` |
+| 舒适度 / KP | `homeEffect.comfort` / `knowledgePoints` | `HomesteadView.vue:142/240` |
+
+**全部本地可得、纯文字/数字/emoji，零远程图。** 阵容「脸」若要视觉，用 emoji 头像位或名字首字 + 稀有度色块（Canvas fillText/roundRect 自绘，`ShareCard.vue:89-97` roundRect 现成可抄）。
+
+### A5. 空态命门（research 收官债①）
+首日/0 入住/0 收藏玩家的晒图必须优雅——**别晒出一张空基地羞辱新人**。0 入住 → 阵容区显引导文案（如「快去让角色入住吧」）不显空网格；0 UR → 收藏区正着念已拥有最高档（沿用第 4 轮 `pickShowcaseRarity` 降级逻辑）不显「UR 0/N」。`buildHomesteadSnapshot` 纯函数须对空输入返回可安全渲染的默认结构（有特征测试锁死）。
+
+### A6. 升档核对（本轮天然零升档）
+- SAVE_VERSION `schema.ts:57 = 20`，本轮**不动**（打磨/晒图无存档需求）。
+- sprint 唯一 v21 bump 前 4 轮全未消耗（gen_status/eval 证实），本轮也不消耗，留 backlog。
+- **收官核对项（给 Evaluator）**：确认 `infra/persistence/{schema,migrations}.ts` + `stores/persistence.ts` 三处本轮 diff 全空。
 
 ---
 
-## B. 代码地图与坑（给 Generator）
+## B. 代码地图与坑（给 Generator，含精确行号）
 
-### S15-T2 落点（本轮做）—— 五处对称改 + config + UI
+### B1. 🔴 里程碑分级庆祝（改 `HomesteadView.vue` 1 处 + 加 CSS + 可选加 1 纯函数）
+**现状（Scout 核实，`HomesteadView.vue:482-489`）**：
+```ts
+function onClaimBondMilestone(charId, milestoneId) {
+  if (!userStore.claimBondMilestone(charId, milestoneId)) return;  // 发放（不碰）
+  const card = gameData.getCharacterCardById(charId);
+  const line = pickMilestoneDialogue(milestoneId, dialogueTick++);   // 台词已分级（好）
+  bondFloat.value = { name: card?.name ?? '', text: line };         // ← 视觉：任何档同一飘字
+  scheduleDialogueClear(() => { bondFloat.value = null; }, 3200);    // ← 同一 3.2s 过渡
+}
+```
+渲染在 `HomesteadView.vue:886-888`（入住名单 details 内 `<span class="bond-float">`），CSS `.bond-float` 在 `1132-1137`（复用 `commission-float` transition）。
 
-**范式样板（逐字对照抄）= `facility` 域**。下列每个落点都标注 facility 的对应行号供直接照搬：
+**分级判据现成（`config/nurture.ts:112-119` BOND_MILESTONES）**：
+- bond_1/2/3（初识/熟络/要好）：`statBonusPct 0.02`，`reward` 50/100/200 → **低档 = High-Five**。
+- bond_4/5/6（挚友/羁绊/命运）：`statBonusPct 0.03`，`reward` 400/800/1500 → **高档 = Crowning**。
+- 建议加纯函数 `milestoneCelebrationTier(id): 'highfive' | 'crowning'`（放 `config/nurture.ts` 或 `homesteadDialogues.ts`，按 id 白名单 bond_4/5/6 = crowning，可测）——research 深挖① 主张，便于特征测试锁「分级判据」。
 
-1. **`frontend-vue/src/config/homestead.ts`（家具目录 + 纯函数，仿 facility 常量区 :40-104 + EQUIPMENT_CATALOG）**
-   - 新增 `FurnitureDef`（`{ id, name, comfort, cost }`，名梗风，纯数据）+ `FURNITURE_CATALOG: readonly FurnitureDef[]`（仿 `EQUIPMENT_CATALOG`，config/equipment.ts:369）。
-   - 新增 `canonicalizePlacedFurnitureIds(raw)` 归一（仿 `canonicalizePlacedIds` :23-35：数字/去重/截断，脏档防重复放大 comfort）。
-   - 新增 `sumFurnitureComfort(placedFurnitureIds, catalog)` 纯函数：查目录求和 comfort。**这一步是「加成经既有口径汇入」的关键**——把家具 comfort 加到 settle/UI 传给 `computeIdleYield` 的 `effect.comfort`（与装备 comfort 相加），`computeIdleYield` 内部 `comfortBonusPct` 天然消费，**无须改 computeIdleYield 签名**（方案 1）。
-   - 坑：家具 comfort 与装备 comfort 相加后仍走同一 `comfortBonusPct`（+20% 硬顶）——**这是有意的**（守挂机基线）；别给家具单开一条突破 +20% 的口径。若 Planner 选方案 2（独立乘子）才改签名。
+**落地范式（Generator）**：
+- 低档（High-Five）：保持现有 `bondFloat` 轻飘字，至多加极轻 ✨ 微光。**别过度打磨低档**（低档就该轻，research 明令）。
+- 高档（Crowning）：升级为**卡片级/半屏庆祝弹层**——**直接复用 `.settle-pop`/`.settle-card` 范式**（`HomesteadView.vue:895-906` 模板 + `1347-1351` CSS，已有 fixed inset 遮罩 + 居中卡 + 点击关闭）。弹层带：① 大号称号加冕（「「命运」达成」）+ 角色名 + 角色的脸（用现成 `CharacterAvatar` 组件，传 `characterId`，本地 sprite 非远程 drawImage，安全）；② 纯 CSS `@keyframes` 光晕/星屑上浮（**别进 rAF**）；③ 停留更久（4-6s 或点击关闭）；bond_6 可再加最隆重一档（全屏淡金闪）。
+- **新 ref 建议**：加 `crownCelebration = ref<{name,title,charId,line} | null>(null)`，Crowning 走它、High-Five 仍走 `bondFloat`。弹层若自动关闭的 setTimeout **必须登记 `dialogueTimers`**（`scheduleDialogueClear` 现成，`HomesteadView.vue:474-480`）。
+- **红线**：`claimBondMilestone` 发放逻辑一字不碰；庆祝纯视觉分支。
 
-2. **`frontend-vue/src/infra/persistence/schema.ts`（type + 默认工厂 + SAVE_VERSION + 沿革注释）**
-   - `SAVE_VERSION = 19` → **`20`**（:50 一处）。
-   - 顶部沿革注释加一行 `v20（S15-T2）：新增 furniture 域……`（仿 :27-35 facility 注释）。
-   - 新增 `FurnitureSave` interface（仿 `FacilitySave` :197-204，如 `{ placedIds: number[] }` 或 `{ owned: string[]; placed: (string|null)[] }`，按 Planner 定的摆放模型）+ `createDefaultFurniture()` 工厂（仿 `createDefaultFacility` :207-209）。
-   - `SavePayload` 加 `furniture: FurnitureSave` 字段（仿 :263-264 facility 行）。
-   - 坑：`createDefaultFurniture` 若 import config 需注意——`createDefaultFacility` 就 import 了 `defaultFacilityLevels`（schema.ts:38），有先例，可仿。但**若家具默认是空数组/空对象，直接内联即可，别引 config 制造循环**（schema 已被 config/homestead.ts import，反向再 import 有环风险；facility 的 `defaultFacilityLevels` 是纯常量工厂无环，家具默认空态更简单，建议直接内联 `{ placedIds: [] }`）。
+### B2. 🔴 家园快照晒图（新 2 文件 + 改 `HomesteadView.vue` 加入口，全仿现成三件套）
+**现成三件套（逐条对上合同硬约束，直接克隆）**：
+- `frontend-vue/src/wrapped/buildWrappedStats.ts`（143 行）= **纯函数聚合范式**：零 Vue/Pinia/DOM，输入 store 快照 plain object → 输出视图模型，`safePercent` 除零兜底。仿它写 `wrapped/buildHomesteadSnapshot.ts`（或 `homestead/` 下）。
+- `frontend-vue/src/wrapped/buildWrappedStats.test.ts`（`baseInput()` 工厂 + 分组 describe）= **特征测试范式**。仿它写 `buildHomesteadSnapshot.test.ts`（覆盖满态 / 0 入住 / 0 收藏三态）。
+- `frontend-vue/src/components/ShareCard.vue`（322 行）= **Canvas 手绘 + toBlob + 分享/下载范式**：`drawCard(canvas)` 用 `createLinearGradient`/`roundRect`(89-97)/`fillText` 全套；`onMounted`→`nextTick(renderPreview)` 画预览；`shareOrDownload()` 用户手势内同步 `drawCard`→`canvasToPngBlob`→`shareOrDownloadImage`。**CARD_W/H=600/800、COL 品牌色对象、2×3 指标网格全可抄**。仿它写 `components/homestead/HomesteadShareCard.vue`。
+- `frontend-vue/src/utils/shareImage.ts`（83 行）= **零改直接 import 复用**：`canShareImage()` 特性检测、`shareOrDownloadImage(blob,filename,meta)`（系统分享 → 下载回落 → AbortError 不报错）、`canvasToPngBlob(canvas)`（toBlob Promise 化、taint 时 reject）。**本轮零新基建。**
 
-3. **`frontend-vue/src/infra/persistence/migrations.ts`（migrate 分支 + migrateFurniture）**
-   - 新增 `migrateFurniture(raw)`（仿 `migrateFacility` :174-182：白名单重建、类型守卫、归一，**禁 spread**）。旧档无 `furniture` 键 → `createDefaultFurniture()`。
-   - `migrate()` return 里加 `furniture: migrateFurniture(payload.furniture)`（仿 :315 facility 行）。
-   - import 加 `createDefaultFurniture` + `canonicalizePlacedFurnitureIds`（若用）。
-   - 坑：**禁 spread 浅拷贝旧档**（pitfalls S13-C1），逐字段类型守卫重建；家具 id 若走 defId 字符串则 `filter(typeof==='string')`，若走数字 index 则 `canonicalizePlacedFurnitureIds`。
+**调用/挂载范式（`CollectionsView.vue` 现成样板）**：
+- `CollectionsView.vue:17` import、`:44-45` `const showShareCard = ref(false)`、`:173-175` 触发按钮、`:320-321` `<ShareCard v-if="showShareCard" @close="showShareCard = false" />` 挂在 view 根。
+- **HomesteadShareCard 同款**：`HomesteadView.vue` 加 `showShareCard` ref + 晒图入口按钮 + view 根挂 `<HomesteadShareCard v-if=... @close=... />`。
 
-4. **`frontend-vue/src/stores/furniture.ts`（新建 store，仿 `stores/facility.ts` 全文）**
-   - `defineStore('furniture', ...)`：持有已拥有/已摆放家具状态；`buy`/`place`/`unplace` 纯改状态（**不碰货币、不 saveToServer**，货币/结算/存档由门面 userStore 编排——facility.ts 头注释明写此分工）。
-   - `serialize()/deserialize(data)`（仿 facility.ts:61-71，deserialize 二次兜底归一）+ `reset()`。
-   - `getComfort()` getter（供 settle/UI 同源取家具 comfort 合计喂进 computeIdleYield）。
-   - 坑：deserialize 二次 clamp/归一（迁移已归一，反序列化再保险，杜绝脏档，同 facility.ts:64-71 注释）。
+**晒图入口按钮落点建议**：
+- product-audit R2 主张放**橱窗卡头** `.g-showcase-head`（`HomesteadView.vue:680-690`，顺带抬升橱窗存在感）——那里已有 `g-eyebrow「收藏橱窗」`+ 完成度 chip，右侧加一个「📤 晒基地」小按钮自然。
+- 或放 header `.hs-header`（`:529-535`，管理入住按钮旁）。**建议橱窗卡头**（更贴「战果外化」语义）。
 
-5. **`frontend-vue/src/stores/persistence.ts`（装配器两处 + reset）**
-   - import `useFurnitureStore`（:24 facility 旁）。
-   - `buildPayload()` 加 `furniture: useFurnitureStore().serialize()`（:72 facility 旁）。
-   - `applyPayload()` 加 `useFurnitureStore().deserialize(payload.furniture)`（:111 facility 旁）。
-   - `resetAllDomains()` 加 `useFurnitureStore().reset()`（:133 facility 旁）。
+**调性方向（research 深挖② + product 2.3）**：家园卡是**「基地身份卡」非「图鉴成绩单」**——暖色渐变（呼应 PCR 暖色城镇 + 夏日主题，别照抄 ShareCard 的深紫冷调）、主体是基地/角色/家具/羁绊的身份表达。可加一句 date-seeded「今日特殊角色寄语」（`todaySpecialCard.name`，每天生成的图不同 → 鼓励重复晒）。
 
-6. **`frontend-vue/src/stores/userStore.ts`（门面编排，仿 `upgradeFacility` :509-527）**
-   - 新增 `buyFurniture(defId)`：`if (!profile.isLoggedIn) return false` → 查目录取 cost（Number.isFinite 守卫）→ **先 `settleHomestead()` 结清**（家具改 comfort→改产出，同 upgradeFacility 先结清模式，防回溯放大）→ `profile.spend('knowledgePoints', cost)` 成功才 `furniture.buy` → `saveToServer()`。失败回补 KP（仿 :522-525）。
-   - `placeFurniture`/`unplaceFurniture`：先 `settleHomestead()` → 改摆放 → `saveToServer()`（仿 `placeInHomestead` :484-493）。
-   - **货币只走 profile.spend/earn（架构铁律）**；先结清是口径一致命脉。
+**buildHomesteadSnapshot 纯函数输入契约（Scout 拟）**：接收 plain object 快照（username/level/placedCharacterNames[]/furniturePlacedCount/furnitureTotal/urOwned/urTotal/codexPercent/bondHits[]/todaySpecialName/comfort），输出可直接喂 Canvas 的视图模型；空输入（0 入住/0 收藏）返回安全默认（见 A5）。**零 Vue/Pinia/DOM**，view 层把 live store 喂进来（仿 `ShareCard.vue:52-69` stats computed）。
 
-7. **`frontend-vue/src/views/HomesteadView.vue`（UI 兑换 + 摆放/收纳入口 + settle 喂家具 comfort）**
-   - `homeEffect` computed（:184-188）现只 sum 装备 homeEffect；**改为把家具 comfort 并入**（`comfort: 装备comfort + furniture.getComfort()`），这样 `hourlyYield`/`projectedYield`（:199/:217）经 computeIdleYield 天然吃到家具 comfort，**预览=结算同源**（命脉，别只改 settle 不改 UI，重蹈「预览≠实战」P2-17）。
-   - `settleHomestead`（userStore.ts:454）里 `homeEffect = sumHomeEffects(...)` 同样把家具 comfort 并入 `effect.comfort`——**settle 与 UI 两处必须同源改**（口径命脉，Scout C-2 的 partial-migration 陷阱）。
-   - 加家具兑换面板（仿 `facility-grid` :651-674 或独立 modal，仿 `HomesteadManageModal`）：列 `FURNITURE_CATALOG`、显 cost/comfort、买/摆/收按钮、`:disabled="knowledgePoints < cost"`。
-   - 颜色走语义令牌（`rgb(var(--c-accent))` 等，禁 text-white 压浅底、禁动态拼色类 `bg-${}`）；新 setTimeout/setInterval 若有须登记 + onUnmounted 清除（本视图已有 `commissionTimers`/`idleTimer`/`raf` 清理范式 :498-503）。
-   - **可选**（锦上添花、非验收必需）：广场里可视化摆放。若做，用**独立固定槽位坐标**（新常量，别改 WALKABLE_ZONES :65-76——那是角色漫步区），且需家具美术资源（首版可用 emoji/纯 CSS 占位）。**建议首版不做可视化摆放**，只做「拥有清单 + 摆放开关（影响 comfort）」即达标。
+### B3. 🟢 删 dead computed（收尾，零风险，Scout 已核实安全）
+- `HomesteadView.vue:377` `const effectText = computed(...)`（top-level）— **模板零引用**。
+- `HomesteadView.vue:379` `const comfortBonusText = computed(...)`（top-level）— **模板零引用**。
+- **核实证据**：`grep effectText|comfortBonusText` 全命中 = {377/379 定义、404 `residentRows` 内部字段 `effectText:` 是**另一个**局部字段、873 模板用 `row.effectText`（residentRows 的字段，非 top-level computed）}。comfort 显示走 `comfortPctText(homeEffect.comfort)`(`338-341`)。**两个 top-level computed 删掉零风险**（第 2-3 轮重构残留）。
+- ⚠️ **别误删 `residentRows` 里的 `effectText: formatHomeEffect(effect)`（404）**——那是模板 `row.effectText`(873) 的真实数据源，删了会炸入住名单。只删 377/379 两行 top-level。
 
-8. **测试**：
-   - `frontend-vue/src/infra/persistence/migrations.test.ts`：加「v20 furniture 缺失补默认」（仿 :149-151）+「往返保真」（仿 :396-413 enhance 往返范式：migrate→再 migrate 一致）+ 「脏档归一」两三例。
-   - `frontend-vue/src/config/homestead.test.ts`：加 `sumFurnitureComfort` 纯函数测试 + 「家具 comfort 经 computeIdleYield 汇入使产出更高」集成断言（仿第 1 轮羁绊 2 例范式，用满 12h 封顶使 floor 后可辨——**小加成被 floor 抹平**是已知坑，gen_status 第 1 轮记录）。
-   - 新建 `frontend-vue/src/stores/furniture.test.ts` 或在 `userStore` 编排测试里加 `buyFurniture` 走 profile.spend、余额不足不发货、成功入库（仿 `equipmentSource.test.ts` 兑换范式）。
+### B4. 🟡/💡 可选打磨（有余量才做，非命门）
+- **R3 收取瞬间到手反馈**（product 🟡）：`runSettle`(`HomesteadView.vue:495-505`)——不够弹窗阈值时只加一行日志，缺即时反馈。给 `g-cta-gold` 按钮（`:673` + CSS `974-984`，已有 `:active`）扩一个成功态脉冲 + 「+X KP」小飘字（纯 CSS，零数值改，只可视化已发生的入账）。
+- **R4 新 UR 入橱窗高光**（product 🟡）：`showcaseCards`(`:317-329`) 最新那张给入场描边脉冲（纯 CSS）。R1/R2 吃满预算可降 💡。
+- **R7 偶遇符号/气泡微打磨 + 今日寄语上分享图**（合同 A 点名）：偶遇符号 `.encounter-spark`(`:621-623` + CSS `1329`)、气泡 `.pet-bubble.is-encounter`(`:596` + CSS `1321-1326`) 可微调；今日寄语画进晒图卡（见 B2 调性）。纯 config/派生/CSS，非命门。
 
-- **本轮坑清单**：
-  - **升档只升一次**：v20 是本 Sprint 唯一 bump，furniture 域 + （第 3 轮若做）pity 计数共用。本轮只做 furniture 那一份 v20；别顺手加别的字段。
-  - **禁 spread 迁移**（pitfalls S13-C1）：`migrateFurniture` 白名单重建。
-  - **口径同源命脉**：家具 comfort 必须 settle + UI（hourlyYield/projectedYield/nextHourlyYield）**全部**喂进 computeIdleYield，别只改一半（partial-migration，Scout 上轮 C-2 同型）。
-  - **先结清再变更**：`buyFurniture`/`placeFurniture` 前 `settleHomestead()`（同 upgradeFacility），否则家具改 comfort→改封顶/产出会回溯放大已挂时间。
-  - **别改玩法数值破 S14**：facility 乘区 / softCap / comfort +20% 硬顶 / 羁绊 cap 全不动；家具是**叠加一层新内容**，不改既有乘子。
-  - **别用 git stash 跑基线**（pitfalls S13-C1）。
-  - **fake timers 坑**（第 1 轮 gen_status）：若新 furniture 测试涉及 settle（读时钟），用 `settleHomestead(nowOverride)` 注入固定 now（第 1 轮已加此接缝，userStore.ts:422），别碰真时钟；persistence.test 那套 `useFakeTimers({toFake:['Date']})` 只冻 Date 的规避照旧。
-
-### S15-T4 现状快照（非本轮，仅供 Planner 第 3 轮排期）
-- **塔掉落纯函数** `engine/squad/drops.ts:27 rollTowerDrop(floor, rng, rarityForFloor, dropChance=0.5)`（注入 RNG，先掷 chance 再掷 slot，序列 RNG 可复现）。**调用链**：`SquadBattleView.vue:660 userStore.completeFloor(floor, rng)` → pve/userStore 内调 rollTowerDrop → `equipment.addItem`。
-- **pity（保底）若做**：需在**调用方**（userStore.completeFloor 或 pve store）喂「连续未出计数」进纯函数 + 注入 RNG，纯函数据 pity 值决定是否强制命中/抬稀有度；计数**若持久化 → 复用本轮 v20 bump**（第 3 轮与 furniture 同 SAVE_VERSION，一 sprint 只升一次——**故本轮 furniture 升 v20 时，Planner 可预告第 3 轮 pity 复用 v20，不再升 v21**）。特征测试断言 pity 边界（连 N 次未出后第 N+1 次必出）。
-- **碎片定向兑换若做**：走 `profile` 货币口径或独立计数；成就/周任务/扫荡发碎片 → 换指定装备。装备目录/分解/兑换价已在 `config/equipment.ts`（`EQUIPMENT_PRICES:79`、`dismantleValueForRarity:107`、`EQUIPMENT_CATALOG:369`）。
-- 现有测试 `stores/equipmentSource.test.ts` 已锁掉落 RNG 注入范式（:37/:53/:67 序列 RNG），T4 pity 测试可仿。
+### B5. 现成可复用件速查（别重造）
+| 要用的能力 | 现成件 | 位置 |
+|---|---|---|
+| Canvas toBlob + 系统分享/下载回落 | `shareImage.ts` 全套 | `utils/shareImage.ts`（零改 import） |
+| 纯函数聚合 + 特征测试范式 | `buildWrappedStats.ts(.test)` | `wrapped/`（仿写） |
+| Canvas 手绘卡（渐变/圆角/网格/预览/分享） | `ShareCard.vue` | `components/ShareCard.vue`（仿写） |
+| 晒图弹窗挂载/toggle | `CollectionsView.vue` | `:44/173/320` 范式 |
+| Crowning 弹层遮罩 + 居中卡 | `.settle-pop`/`.settle-card` | `HomesteadView.vue:895-906 + 1347-1351` |
+| 角色脸（本地 sprite 非远程，安全） | `CharacterAvatar` 组件 | `components/CharacterAvatar.vue`（传 characterId） |
+| 台词纯函数（缺回落不报错） | `pickMilestoneDialogue`/`pickFrom` | `config/homesteadDialogues.ts:90-114` |
+| 定时器登记清除 | `dialogueTimers`+`scheduleDialogueClear` | `HomesteadView.vue:472-480 + 517-524` |
+| 收藏降级/空态纯函数 | `pickShowcaseRarity` | `config/homesteadDaily.ts` |
 
 ---
 
-## C. 新发现的坑
+## C. 新发现的坑（给全角色）
 
-- **C-1（T2 升档一次性）｜v20 是本 Sprint 唯一 bump，furniture + pity 共用**：SPRINT.md 明写「v20 bump 仅在做 furniture/pity 的那轮做一次」。本轮 furniture 升 v20；第 3 轮 pity 若持久化**复用 v20，绝不升 v21**。Planner 本轮就该在 plan 里预告第 3 轮 pity 复用 v20，避免第 3 轮 Generator 误升 v21（历史「文档版本漂移」坑家族）。
-- **C-2（T2 口径同源）｜家具 comfort 必须 settle + UI 三处（hourlyYield/projectedYield/nextHourlyYield）同源喂进 computeIdleYield**：现 `homeEffect` computed（HomesteadView:184-188）只 sum 装备；只改它一处不改 settle（userStore.ts:454）→ 预览显示家具加成但结算不发（预览≠实战，P2-17 换域重演）。反之亦然。**两处 sumHomeEffects/effect.comfort 必须同一口径把家具 comfort 并入**——这是本轮最易漏的半迁移点。
-- **C-3（T2 摆放模型别绑 WALKABLE_ZONES）｜广场可视化摆放是可选锦上添花，不是验收项**：验收只要「摆放持久化 + 加成进收益」。建议首版做「拥有/摆放清单（给 comfort）」即达标，别为「摆进广场像素位」硬绑 WALKABLE_ZONES（角色漫步区）导致家具与漫步者/建筑重叠 + 需新美术。若真做可视化，用**独立固定槽位常量**，WALKABLE_ZONES 一个字不改。
-- **C-4（T2 schema↔config 循环 import 风险）｜furniture 默认态直接内联，别学 facility 从 config import**：`schema.ts:38` import 了 `config/homestead.defaultFacilityLevels`，而 `config/homestead.ts:13` import 了 `@/engine`——链条已较绕。furniture 默认是空态（`{ placedIds: [] }` 之类），`createDefaultFurniture` **直接内联返回空**，别从 config import 制造 schema→config→engine 的更长依赖环（家具目录 `FURNITURE_CATALOG` 放 config 供 store/UI 用即可，schema 的默认工厂不需要它）。
+- **[C-1 基地名不存在，别照抄审计的「基地名」]**：三份审计都写晒图卡放「基地名」，但 `stores/homestead.ts` 无此字段（只有 placedCharacterIds/lastSettleAt）。晒图主标题走 `profile.currentUser`「XX 的家园」，**绝不为一个装饰字段升 schema v21**（见 A3）。
+
+- **[C-2 晒图卡「脸」= emoji/首字/色块，绝不 drawImage 远程图]**：角色图 `/data/images/...` 可能跨域（offload 到 GitHub Release/OSS）→ `drawImage` taint canvas → `toBlob` 抛 `SecurityError`（`shareImage.ts:79` 注释 + `ShareCard.vue:5` 注释双印证）。若要角色视觉，用 `CharacterAvatar` 只在**屏幕预览区**（DOM，非 Canvas）显真图、**Canvas 导出**用 emoji/名字首字。别把 DOM 头像塞进 Canvas（同「图表不进 Canvas」家族，pitfalls:54）。
+
+- **[C-3 dead computed 删 377/379 两行，别误删 residentRows.effectText]**：`effectText` 名字撞了——top-level 377（死）vs residentRows 内部字段 404（活，喂模板 873）。只删 377/379，误删 404 会炸入住名单效果显示（见 B3）。
+
+- **[C-4 庆祝分级 = 分级音量，不是给所有档加同款动效]**：research 深挖① 点名的唯一危险读法。给 6 档全加彩带只是「都很轻→都很响」，仍 desensitize。必须 bond_1-3 轻 / bond_4-6 隆重（见 A2.4 / B1）。
+
+- **[C-5 Crowning 弹层 setTimeout 必登记清除]**：若加自动关闭定时器，走现成 `scheduleDialogueClear`→`dialogueTimers`→`onUnmounted` 清（`HomesteadView.vue:474-524`）。pitfalls:59「setTimeout 假安全」明令。动效走 CSS `@keyframes` 不进 rAF。
+
+- **[C-6 晒图空态优雅，别羞辱新人]**：0 入住/0 收藏玩家晒图必须有引导文案不显空网格；`buildHomesteadSnapshot` 对空输入返回安全默认结构 + 特征测试锁死（research 收官债①，见 A5）。
+
+- **[C-7 晒图晒身份不晒缺口]**：卡面正着念「陈列 5/7」「拥有 UR 12/48」，绝不放「还差 260」「UR 0/67」（反 completionist 红线，第 4 轮陈列纪律延续，见 A2.2）。
+
+- **[C-8 orch 未提交产物是正常累积非脏树]**：`git status` 里 HomesteadView.vue/homestead.ts/HomesteadManageModal/bonds/usePlazaWalk/homesteadDialogues/homesteadDaily 等改动/未跟踪文件 = S16 第 1-4 轮累积的未提交产物（orchestrator 不每轮 commit，pitfalls:64）。本轮 Generator 会看到前轮产物，属正常；Evaluator 核回归时以「合同 T1-T11 全 [x] 且与实现一致」为准，别把累积当脏树。
+
+---
+
+## D. Sprint 收官核对落点（给 Evaluator，本轮必做的收官任务）
+
+- **checkbox 核对**：`docs/plans/SPRINT.md` 的 S16-T1..T11 当前**全部 `[x]`**（Scout 已核）；本轮若加新 T（庆祝/晒图）也须 `[x]` 且与实现一致（`grep "\[ \]"` 主线任务应零命中）。
+- **验收命令**（`SPRINT.md:96-109`，Evaluator 亲自重跑，cwd = 仓库根 `D:\work\AnimePlay`）：
+  1. `cd frontend-vue && npm run type-check`（期望 0 错误）
+  2. `cd frontend-vue && npm run test`（当前基线 **991 passed / 72 files**；涉时序改动**连跑 3 次**稳定；本轮加晒图纯函数测试后应升）
+  3. `cd frontend-vue && npm run build`（期望成功）
+  4. `.venv/Scripts/python.exe backend/test_security.py`（期望 exit 0 全 PASS；S16 不碰后端）
+  5. `grep -rn "debug=True" backend/server.py api/index.py`（期望零命中）
+- **零升档核对**：`schema.ts:57 SAVE_VERSION=20` 不变；`infra/persistence/{schema,migrations}.ts` + `stores/persistence.ts` 本轮 diff 全空。
+- **S14/S15 + 1-4 轮机制无回归**（product-audit §1.5 抽查主干无回归，Evaluator 亲验 diff）：computeIdleYield 单 seam（预览=结算，`hourlyYield`/`projectedYield`/`nextHourlyYield` 同喂 facilityLevels+placedAnimeNames）/ comfort 软加成汇入(`:149`)/ 羁绊 bondHits 同源(`:188`)/ 墙钟回拨钳位(`capProgress`/`capReached`)/ setTimeout 全登记清除(`517-524`)/ 家具进场景 y-sort(`:282-284`)/ 收藏橱窗+今日特殊+季节(`:296-336`/`:114-140`) 均在。
+- **关键**：tier1-on 跑满轮次 ≠ 目标达成；收官核对以「合同全部 `[x]` 且与实现一致 + 5 命令全绿 + 零升档 + 无回归」为准（pitfalls:84 教训）。
+
+---
+
+## 附：一句话给 Planner
+本轮 = 两把刀 + 一次收尾。**刀一（庆祝分级）**改 `onClaimBondMilestone` 1 处 + 加 Crowning 弹层（抄 `.settle-pop` 范式）+ 可选 `milestoneCelebrationTier` 纯函数，低风险高情感 ROI。**刀二（晒图）**新增 `buildHomesteadSnapshot.ts(.test)` + `HomesteadShareCard.vue`（三件套逐条克隆 `ShareCard`/`buildWrappedStats`/`shareImage`）+ `HomesteadView` 加入口，零新基建、零升档。**收尾**删 377/379 两行 dead computed + Sprint 收官核对。**唯一需 Planner 拍板**：① 晒图 vs 庆祝谁先（都要做，Scout 倾向先庆祝）；② 晒图主标题用 `profile.currentUser`「XX 的家园」不引基地名字段（零升档）。守住「巅峰分级隆重、晒图晒身份不晒缺口、安全异步不联机、绝不 drawImage 远程图」，收官轮就赢了。

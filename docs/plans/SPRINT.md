@@ -1,123 +1,130 @@
-# AnimePlay — SPRINT 合同（S15：家园 hub 内容补完 + 测试稳定 · S14 遗留收尾）
+# AnimePlay — SPRINT 合同（S16：家园 hub 玩法进一步深化）
 
-> product-loop 执行合同（建议 `--tier1 on --mode all --max_iter 3`）。**尚未开始**——本文件即 S15 合同，说「跑 S15」即可启动。
-> **本 Sprint 唯一目标 = 完成 `docs/FUTURE.md` 的 S15 全部任务（S15-T1..S15-T4）**。
-> Tier1 三审用于 **refine HOW + 抓回归 + 微调**；「不开新范围」= 不超出 S15，**绝不表示可以跳过本轮被指派的 S15-T 任务**（历史教训 SA-T6/暴击UI/SE-T1收口/SF-T8-resume 均因误判「新范围」或中断被漏，Evaluator 须对空跑判 CONTINUE；见 pitfalls）。
-> **实现前必读**：`frontend-vue/CLAUDE.md`、`docs/plans/pitfalls.md`、`docs/FUTURE.md` S15、`docs/HISTORY.md` S14 节（33 项已落地机制）、`docs/orch/homestead-hub-audit-report.md`（P3-3/4/5 证据源）。
+> product-loop 执行合同（本次启动：`--tier1 on --mode all --max_iter 5`，北极星 = **家园 hub `/homestead` 的玩法进一步优化**）。
+> **本 Sprint 北极星 = 把家园 hub 从「数值挂机面板」进一步做成「有决策、有循环、有情感回报的基地玩法」**。具体「要做什么」由 Tier1 三审（体验/进化/研究）审计当前家园 hub 后生成，Planner 逐轮拍板并追加到本文件；每轮 Generator 落地、Evaluator 独立复验。
+> **实现前必读**：`frontend-vue/CLAUDE.md`、`docs/plans/pitfalls.md`、`docs/orch/scout.md`（本轮接地）、以及三份审计报告（`docs/orch/{product,evolution,research}-audit-report.md`）。
 
 ## 产品背景
 - AnimePlay：Bangumi 数据的抽卡+收集+多玩法二次元网页游戏（单机向，对标 PCR 但不追付费竞技）。前端 Vue3+TS+Pinia+Tailwind(Vite)，后端 Flask。
-- 启动：前端 `cd frontend-vue && npm run dev`（:5173）；后端 `python start_server.py`（:5001）。
-- 相关面：`views/HomesteadView.vue`（家园广场 WALKABLE_ZONES / 设施 / 离线收益 / 60s 驻留定时器）、`stores/homestead.ts` + `config/homestead.ts`（`computeIdleYield` / comfort 软加成 / `HOMESTEAD_EFFECT_CAP` softCap）、`stores/facility.ts`（设施乘区，v17）、`stores/userStore.ts`（`settleHomestead` 含回拨钳位）、`stores/daily.ts`（`ensureToday`/`todayKey` + commission 子域 v19）、`data/squadSkillKits.ts`（`resolveRole` 定位单源，SC-T1）、`engine/squad/drops.ts` + `config/equipment.ts`（塔掉落 / 目录 / dismantle / 强化 / 套装）、`stores/collection.ts`（`getCharacterCardCount`）、`stores/profile.ts`（spend/earn）；存档 `infra/persistence/{schema,migrations}.ts` + `stores/persistence.ts`（当前 **SAVE_VERSION=19**）。
-- 本 Sprint = **S15 家园 hub 内容补完 + 测试稳定**：收干净 S14 遗留的 flaky 测试 + 补上 S14-F 标「留 S15+」的中期内容（家具 / 入住羁绊 / 装备定向掉落）。
+- 启动：前端 `cd frontend-vue && npm run dev`（:5173）；后端 `python start_server.py`（:5001）。登录：字母数字用户名+密码，首登即注册。
+- **本 Sprint 聚焦面 = 家园 hub `/homestead`**（HomesteadHubView 五面板：home/characters/squad/explore/battle）。核心相关面：
+  - `views/HomesteadView.vue`（家园广场 WALKABLE_ZONES / 设施 / 家具 / 入住 / 离线收益 / 驻留定时器，~1121 行）
+  - `stores/homestead.ts`（入住名单）+ `config/homestead.ts`（`computeIdleYield` / comfort 软加成 / 设施乘区 / 家具 comfort / softCap / 离线封顶）
+  - `engine/homestead/bonds.ts`（`computeBondBonus` 同作品羁绊，纯函数）
+  - `stores/facility.ts`（设施乘区，v17 域）、`stores/furniture.ts`（家具域，v20）
+  - `stores/userStore.ts`（`settleHomestead` 含回拨钳位 + 家具/设施门面编排）、`stores/daily.ts`（跨天/周判定 + 委托子域）
+  - `components/homestead/HomesteadManageModal.vue`（入住/家具/羁绊显形的唯一物理决策点）
+  - 存档 `infra/persistence/{schema,migrations}.ts` + `stores/persistence.ts`（**SAVE_VERSION 权威在 `schema.ts` 顶部，当前 =20**）
+
+## 当前家园 hub 已有机制（进化的地基，别推倒重来）
+1. **离线挂机**：6 入住槽，每角色 flat exp(200/h)/affection(5/h) + 按稀有度加权 KP(2/h×系数)，离线 12h 封顶（随设施总级数每级 +0.5h）。
+2. **三设施**（exp/bond/knowledge）：KP 指数成本无底 sink，每级 +8% 对应单一产出（独立乘子，不受装备 0.6 cap 钳制）。
+3. **家具**（7 件名梗风目录，v20）：KP buy-out sink，只贡献 comfort，复用 comfort 软加成轴（每 10 点 +1%，与装备共用 +20% 硬顶）。
+4. **入住羁绊**（S15-T3，派生免存档）：同作品 ≥2 人 → 队伍级独立乘子并入 `computeIdleYield`，`HomesteadManageModal` 显形命中羁绊。
+5. **comfort 软加成 / softCap 平滑封顶 / 墙钟回拨钳位**：守「挂机不盖过主动收入」基线（满挂机一次 ≈ 一趟塔零头）。
+6. **hub 统一入口**：explore（爬塔/扫荡）、squad（编队）、battle（半自动战斗演出）、characters（养成/配装）都从 `/homestead` 进。
 
 ## 架构铁律（不可违反）
-engine 纯净（`frontend-vue/src/engine/**` 零 Vue/Pinia/DOM/`Math.random`；掉落/羁绊/家具加成走纯函数 + 注入 RNG）/ 依赖只向下 / **货币只走 `profile.spend·earn`** / 颜色走皮肤语义令牌（禁 text-white 压浅底、禁运行时拼接动态色类，稀有度色用完整字面映射）/ 组件 setTimeout·rAF 登记并卸载清除 / 改文件前先 Read / 改养成或挂机规则前先看对应 `*.test.ts`。**别破坏 S14-A~F 已成 33 项**（战力单一 seam / facility v17 / 装备强化 v18+套装+modifier / 暴击轴 / 扫荡+委托日循环 v19 / comfort 软加成 / softCap 分层封顶 / 墙钟钳位…）。
-**存档变更协议（S15-T2 必、S15-T4 可能）**：新增/改存档字段必须 **schema + migrations + 装配器三处同改 + 往返测试**；SAVE_VERSION 现=19，本 Sprint 升 **20**（一次 sprint 只升一次，furniture 域 + pity 计数等共用同一 bump；v19→v20 迁移旧档补默认）。S15-T1/S15-T3 预期零存档。**收益/战力加成经既有 `computeIdleYield` / `resolveEquipBonus` 口径汇入，严禁另拼。**
+- engine 纯净（`frontend-vue/src/engine/**` 零 Vue/Pinia/DOM/`Math.random`/IO；挂机/羁绊/掉落走纯函数 + 注入 RNG/时钟）
+- 依赖只向下（views→components→stores→engine）
+- **货币只走 `profile.spend·earn`**
+- 颜色走皮肤语义令牌（禁 `text-white` 压浅底、禁运行时拼接动态色类，稀有度色用完整字面映射）
+- 组件 `setTimeout`/`rAF` 登记并卸载清除；改文件前先 Read；改挂机/养成规则前先看对应 `*.test.ts`
+- **收益/战力加成经既有 `computeIdleYield` / `resolveEquipBonus` 口径汇入，严禁另拼**（预览=结算同源，最易漏的半迁移点）
+- 别破坏 S14-A~F / S15 已成机制（战力单一 seam / facility v17 / 装备强化+套装+modifier / 暴击轴 / 扫荡+委托日循环 v19 / comfort 软加成 / softCap / 家具 v20 / 羁绊 / pity v20 / 墙钟钳位）
 
-## 任务清单（S15 = S15-T1..S15-T4）
+## 存档变更协议
+新增/改存档字段必须 **schema + migrations + 装配器三处同改 + 往返测试**；SAVE_VERSION 权威在 `schema.ts` 顶部（当前 **=20**）。**一次 sprint 最多升一次**——本 Sprint 若需升档，全部新域共用同一次 bump（→21），第一次动存档的那轮做，后续轮复用绝不再升。**能派生免存档就优先派生**（仿 S15-T3 羁绊）。
 
-- [x] **S15-T1｜flaky 测试稳定化（工程债，零玩法改动）**
-  - 目标：定位并根除 S14-F 期间 back-to-back 跑偶发的 2 个 flaky 失败（standalone 全绿）。先 grep `setInterval`/`setTimeout`/`Date.now`/`new Date` in 测试与被测组件，重点查 `HomesteadView` 60s 驻留定时器、`stores/userStore.settle.test.ts`、`daily`/`settle` 跨天判定；用注入时钟 / `vi.useFakeTimers` / 固定种子替换真实时间与真随机依赖。**只改测试与（必要时）为可测性做的最小时钟注入，不改玩法数值。**
-  - 验收：连跑 `npm run test` 3 次全绿（无偶发失败）；被测路径无裸 `Date.now`/`setInterval` 依赖真实时间导致的时序不稳定；type-check/build 通过。
-- [x] **S15-T2｜轻量家具 / 布局系统（P3-4，本 Sprint 唯一存档重任务 v20）** ✅ 第 2 轮落地
-  - 目标：新增 `furniture` 存档域（v20，独立域仿 facility），KP 兑换家具目录（名梗风、仿 `EQUIPMENT_CATALOG` 结构，纯数据 config），摆放进家园广场（复用 `WALKABLE_ZONES` 坐标或简单固定槽位），每件给**小额 comfort / 产出加成**——**经既有 comfort 软加成 / 设施乘区口径并入 `computeIdleYield`，不新拼收益口径**。存档三处同改 + 往返测试 + SAVE_VERSION→20（旧档补空家具）。UI 在 `HomesteadView` 给家具兑换 + 摆放/收纳入口。
-  - 落地：`config/homestead.ts`（`FurnitureDef`/`FURNITURE_CATALOG` 7 件名梗风 + `canonicalizeFurnitureIds`/`sumFurnitureComfort`/`getFurnitureDef` 纯函数）；schema v19→**20** + `FurnitureSave`{ownedIds,placedIds} + 内联 `createDefaultFurniture`；`migrateFurniture`（白名单重建、未知/重复归一、placedIds 收敛为 ownedIds 子集）；新建 `stores/furniture.ts`（buy/place/unplace/getComfort）；`stores/persistence.ts` 四处装配；`userStore` 门面 `buyFurniture`（先结清→profile.spend→furniture.buy，失败回补）/`placeFurniture`/`unplaceFurniture`；家具 comfort 经 settle + UI `homeEffect` 同源并入 `effect.comfort`（预览=结算）；`HomesteadView` 家具面板（买/摆/收 + 产出 delta）。测试：migrations（缺省/往返/脏档/子集 5 例）、config（目录/纯函数/comfort 汇入）、furniture.test（store + 门面编排）、persistence 往返 + 全键 + reset。
-  - 验收：可 KP 买家具（走 `profile.spend`）、摆放持久化跨重开保真、加成真进挂机收益（经 computeIdleYield 口径）；v20 迁移往返测试；type-check/test/build 通过。
-- [x] **S15-T3｜入住羁绊 / 差异化速率（P3-5）**
-  - 目标：让「选谁入住」有策略。二选一或都做（Planner 定）——(a) 入住角色差异化挂机速率（按 role/rarity 倾斜 exp/affection，复用 SC-T1 `resolveRole`）；(b) 入住组合羁绊（特定角色/同作品同住 → 小额加成）。engine 纯函数 + config，加成经 `computeIdleYield` 口径；**羁绊/速率优先派生免存档**（派生自 placedCharacterIds + role/anime）。
-  - 验收：不同入住组合的挂机产出可辨、羁绊命中给确定加成/不命中不给、加成经既有口径；engine 纯函数测试（速率倾斜 / 羁绊计数）；不破坏现有挂机口径；type-check/test/build 通过。
-- [x] **S15-T4｜装备定向掉落保底 / 碎片（P3-3）** ✅ 第 3 轮落地（选项 a 槽位保底 pity；engine 纯函数注入计数 + v20 复用 + UI 显形）
-  - 目标：缓解「塔掉落纯随机无定向」。二选一（Planner 定）——(a) **保底**：连续 N 次未出某槽/稀有度后保底该类（pity 计数）；(b) **碎片定向兑换**：成就/周任务/扫荡发碎片 → 换指定装备。掉落 RNG 注入不破确定性测试；pity 计数若需持久化则复用 v20 bump（三处同改）；碎片走 `profile` 货币口径或独立计数。
-  - 验收：保底/定向真生效（特征测试断言 pity 边界 / 碎片兑换）、若持久化则往返保真、掉落纯函数注入 RNG 可复现；type-check/test/build 通过。
+## 任务清单（由 Tier1 三审 + Planner 逐轮生成，追加于文末）
 
-> **排期建议（每轮必须完成被指派任务，不得空跑）**：
-> - 第 1 轮 = **S15-T1 + S15-T3**（测试稳定夯地基 + 入住羁绊 engine/config 轻量，零存档）。
-> - 第 2 轮 = **S15-T2**（家具 v20，唯一存档重任务，单独做透三改+往返测试）。
-> - 第 3 轮 = **S15-T4**（定向掉落/保底）+ 收尾（确保 S15-T1..T4 全 `[x]`、S14 无回归）。
-> 每轮务必保持验收命令全绿、每子项独立可合并。v20 bump 仅在做 furniture/pity 的那轮做一次。
+> Reviewer 审计 → Planner 拍板后在下方按轮追加。每轮务必保持验收命令全绿、每子项独立可合并。
+
+### 第 1 轮追加任务（S16 product-loop --tier1 on --mode all，指派切片 = 关系回路接通 S16-T1/T2/T3，零升档）
+
+> 本轮承诺 = 把家园从「产好感却通往另一个 tab 才能消费」补成「家园产好感 → 家园当场消费 → 角色跟你说话」这条最短情感回路。**关键拍板**：据 Scout 接地校正三审"好感→void"前提——养成域已有好感里程碑（v14 `claimedBondMilestones`）+ 每日羁绊互动（v16 `lastBondInteractionDate`），本轮**复用不重造**、**零升档纯派生**；真缺口是"关系机制没搬进家园 + 缺情感/叙事层（无台词数据）"。**家具空间化 + 邻接加成走哪条轴的拍板留给第 3 轮**（Planner 倾向开新的非数值回报轴，不折进 comfort +20% 硬顶）。详见 `docs/orch/plan.md`。
+
+- [x] **S16-T1｜好感里程碑在家园显形 + 领取（P0，最高杠杆）**
+  - 目标：把养成域已有的好感里程碑（6 档）搬进家园入住/运营视野，让玩家在家园就能看到入住角色"好感达阈值、有里程碑可领"并一键领取（发放既有 KP + 称号 + 永久加成），闭合"家园产好感 → 家园消费好感"回路。
+  - 验收：① 家园里能看到入住角色好感里程碑进度/可领状态（**可见性命门**：不显形=死数值反模式，不通过）；② 家园领取后奖励实际入账，已领状态与养成页同源一致（双向）；③ 领取走既有 `profile.earn`，不新拼货币口径；④ 零新增存档字段、SAVE_VERSION 不变；type-check/test/build 全绿。
+- [x] **S16-T2｜广场角色 tap 互动 + 每日封顶（P0，与 T1 配套）**
+  - 目标：家园广场漫步的入住角色可被"互动"——点击角色除现有驻足/详情外，每日给一次少量好感 + 一句情境反馈（台词见 T3），每日每角色封顶防刷（跨天重置）。把"纯装饰漫步"接入好感轴。
+  - 验收：① 点击入住角色当日首次给好感增益 + 情境反馈可见，同日再点不重复发放（有"今日已互动"态）；② 跨天后可再互动；③ 好感增益温和克制（守挂机/互动不盖过主动收入基线，量级参照养成域每日互动）；④ 零新增存档字段、SAVE_VERSION 不变；涉及跨天/时序，test 连跑 3 次稳定全绿。
+- [x] **S16-T3｜情境台词层（P0 情感内核，纯 config 零存档）**
+  - 目标：建一个**纯 config 情境台词库**，为家园关系时刻（里程碑达成/领取、tap 互动、可选进家园问候）提供"角色对你说的话"，让 T1/T2 从"数值变化"变成"角色在跟你说话"。首版允许通用模板兜底（按里程碑档位/互动类型），不要求逐角色专属；缺台词回落通用模板不报错。
+  - 验收：① 里程碑达成/领取时、tap 互动时能看到与情境匹配的台词（**可见性命门**：情感层必须在家园 UI 显形）；② 缺专属台词的情境有通用兜底不报错不空白；③ 台词库纯 config、零存档、**不携带任何数值效果**（台词改文本不影响奖励，守"名字≠行为"红线）；④ type-check/test/build 全绿。
+
+### 第 2 轮追加任务（S16 product-loop --tier1 on --mode all，指派切片 = 关系深化：角色↔角色偶遇 + 入住决策关系权重 S16-T4/T5/T6，零升档）
+
+> 本轮承诺 = 把第 1 轮闭合的「角色↔玩家」关系扩到「角色↔角色」——让命中同作品羁绊的两个入住角色在广场里**偶遇并对话**，并让「选谁入住」在决策点承载关系权重。**关键拍板**：三审罕见高度一致——第 1 轮 6 个入住角色彼此零交集、「谁和谁是一伙」（同作品羁绊）早已算好却只显示成 `+6%` 百分比；本轮把它变成广场里肉眼可见的偶遇对话（本产品 968 番真实数据差异化首个可见落点）。**偶遇一律纯展示、零好感、零升档、零数值效果**（三审一致强烈建议 + 红线）；**绝不为偶遇引入 CP 关系值/进度条新数值轴**（那会逼升 schema，本 sprint 唯一 bump 留第 3 轮家具坐标）。复用第 1 轮三块地基（漫步 walk 循环 / 台词库 `homesteadDialogues.ts` 的 `pickFrom` 范式 / `computeBondBonus` 的 `hits`），唯一实质工程增量 = 广场循环里一次 pet-to-pet 邻近检测。**叠 UI 前强烈建议先拆 `HomesteadView.vue`（已 1239 行）的漫步/偶遇场景层为 composable**（软约束）。详见 `docs/orch/plan.md`。
+
+- [x] **S16-T4｜广场同作品偶遇对话（P0，本轮成败命门）**
+  - 目标：让命中同作品羁绊的两个入住角色在广场漫步中偶发一次对话——两人短暂驻足面向对方 → A 冒一句 → 约 1.2s 后 B 错峰回一句 → 两人之间冒一个 ♡/✧ 小符号轻轻上浮消失 → 各自散开。把藏在右栏 chip 的 `+6%` 变成广场里肉眼可见、此刻正在发生的在场偶遇。**偶遇纯展示、零好感、零数值轴。**
+  - 验收：① **可见性命门（第一条）**：广场里肉眼可见两同作品角色靠近时错峰弹出彼此对话气泡 + 中间上浮小符号，且视觉可分辨「双角色偶遇」与「单角色 tap 回应」（只在内存配对不冒气泡 = 死数值 = 白做）；② 只在同作品羁绊命中的角色对之间触发，缺专属对话回落通用偶遇池不报错不空白；③ 偶遇**纯展示、零好感、零数值效果**（守「名字≠行为」红线）；④ 零新增存档字段、SAVE_VERSION 不变、偶遇冷却纯内存态；⑤ 涉 tick/挂机时序，test 连跑 3 次稳定全绿，type-check/build 全绿。
+- [x] **S16-T5｜广场气泡多角色并发模型（P0，T4 前置技术项）**
+  - 目标：把当前单值 `petBubble` 升级为支持多角色同时/错峰冒泡的模型（按 petId 索引），让「两角色一来一回对话」技术上成立。必须完全兼容第 1 轮 tap 行为（单角色气泡 + 好感 +N 不回归）；所有气泡 setTimeout 一律登记 `dialogueTimers` + `onUnmounted` 清除。
+  - 验收：① 两角色能同时/错峰各自冒气泡且互不顶掉（T4 依赖此能力）；② 第 1 轮 tap 单角色气泡 + 好感增益 + 每日封顶/跨天行为**无回归**；③ 所有气泡 setTimeout 登记 `dialogueTimers` 并 `onUnmounted` 清除、无泄漏；④ type-check/test/build 全绿。
+- [x] **S16-T6｜入住决策的关系预告（P1，让切片闭环、对冲伪决策）**
+  - 目标：在 `HomesteadManageModal` 把羁绊从「结果 chip（+6%）」升级为「关系预告」——选中/悬停组合命中同作品组时加一层情感语言「和 XX、YY 是《作品名》的同伴 · 住一起会在广场偶遇聊天」+ 高亮已入住同作品角色头像。**不改任何数值**（挂机大卡 +% 口径不变），复用现有 `bondHits`，只加「命中组→偶遇预告文案」翻译。与 T4 互为闭环（决策点预告 → 广场兑现）。
+  - 验收：① **可见性命门**：入住决策处肉眼可见关系预告 + 同作品已入住头像高亮（关系权重必须在决策点可见，否则死数值）；② 预告不改任何数值、纯展示不驱动奖励；③ 无命中同作品组时不显示预告、不报错不空白；④ 零新增存档字段、SAVE_VERSION 不变；type-check/test/build 全绿。
+
+### 第 3 轮追加任务（S16 product-loop --tier1 on --mode all，指派切片 = 家具空间化：已摆放家具进广场场景可见 S16-T7，零升档 · 零素材）
+
+> 本轮承诺 = 把家园最贵的资产（16:9 可行走场景）第一次和家具系统缝起来——让**已摆放家具**（`placedIds`）从「右栏一行字」落地进广场场景的固定槽位，**用零素材 emoji/图标 + 名牌肉眼可见**「我买的家具摆在我的基地里」，补上三审首轮点名的「最致命审美断裂：场景是壁纸不是基地」。**两个关键拍板**（详见 `docs/orch/plan.md` + `docs/orch/negotiation.md`）：**① 回报轴 = 视觉可见的所有权本身（endowment / 陈列满足感）——不开数值、不折进 comfort +20% 硬顶、绝不新增进 `computeIdleYield` 的乘子；成套/主题房完成度评分留第 4 轮（7 件 + 零标签撑不起）**；**② 摆位模型 = 固定槽位零升档（坐标写死 config 常量，`placedIds` 决定摆哪几件、config 决定摆哪个位，`SAVE_VERSION` 保持 20，三处存档装配器不动）——自定义拖拽摆位留 backlog，不耗掉本 sprint 唯一 v21 bump（留第 4 轮陈列 UR / 偶遇去重）。** 全仓零家具美术 → 可见性唯一解 = emoji/CSS 图标，别依赖不存在的 png。家具是纯派生静态层（不进 rAF/tick），z-order 必须接进角色 y-sort（别做固定背景层）。复用第 2 轮抽出的 `usePlazaWalk.ts` 场景坐标系（`%` 坐标 + 脚点锚定 + `zIndex=按脚点 y` 同一公式）。**家具数值仍走既有 `sumFurnitureComfort → comfortBonusPct → computeIdleYield` 口径，本轮 `config/homestead.ts` 数值区零改。** 详见 `docs/orch/plan.md`。
+
+- [x] **S16-T7｜已摆放家具进广场场景可见（P0，本轮成败命门）**
+  - 目标：让已摆放的家具（`placedIds`）从「右栏一行字」落地到广场 16:9 场景的**固定槽位坐标**上，用**零素材 emoji/CSS 图标 + 名牌**渲染，肉眼可见「我买的家具摆在我的基地里」。摆放一件 → 它出现在场景对应槽位；收纳一件 → 它从场景消失。把家具系统与家园最贵的资产（可行走场景）第一次缝起来，补上「场景是壁纸不是基地」的审美断裂。**回报轴 = 视觉可见的所有权本身，不开数值、不折 comfort、不碰 computeIdleYield；固定槽位零升档。**
+  - 验收：① **可见性命门（第一条）**：广场场景里肉眼可见已摆放的每件家具以 emoji/图标 + 名牌出现在其固定槽位，**摆放一件即时出现、收纳即时消失**（场景里即时反映摆放状态）——只在右栏显示、场景看不见 = 白做；② 家具与漫步角色**按深度正确互相遮挡**（接进角色同一 y-sort、非固定背景层），家具不落水池/悬崖、不严重挡角色主漫步区；③ 家具卡/名牌用 **surface 卡片非白字压图**（语义令牌，短名压底图可沿用 `pet-name` 的 `#fff` 例外），无未定义令牌/动态拼色类/反斜杠透明度；④ **零素材**（不引入家具 png/远程图）、**零升档**（`SAVE_VERSION`=20，`schema.ts`/`migrations.ts`/`stores/persistence.ts` 未触碰）、**零数值改**（`config/homestead.ts` comfort/cost/`computeIdleYield`/`sumFurnitureComfort`/`canonicalizeFurnitureIds` 口径不变，`HomesteadView` 的 comfort 汇入行未动）；⑤ 家具是纯派生静态层、**不进 rAF/tick**（不给家具加定时器/动画循环），`usePlazaWalk` 的 rAF 循环未因家具改动；⑥ 建议补特征测试：`FURNITURE_CATALOG` 每件都有对应槽位坐标 + 图标、坐标在 `[0,100]`；⑦ `type-check`/`test`/`build` 全绿，`test` 连跑 3 次稳定。
+- [x] **S16-T8｜陈列计数轻显形（可选加分项，非硬验收，纯派生零持久化）**
+  - 目标：若 Generator 有工程余量，给场景/右栏加一个**纯派生、无持久化、无奖励**的「陈列 X/7」计数 chip（派生自 `placedIds.length`），给「摆家具」一点轻量陈列成就感——只显数字，不发奖、不记已领、不触发任何数值。**本项非本轮成败命门，可完全不做**（research 倾向连这都不做、只做可见）。
+  - 验收（仅当实现时适用）：① 若实现：显示「陈列 X/7」类纯派生计数，X 随摆放/收纳即时变化，**零新增存档字段、`SAVE_VERSION` 不变、不复用 `claimedMilestones`、不发任何奖励、文案不携带数值效果**（守「名字≠行为」红线）；② 不做「主题房/成套完成度评分系统」（留第 4 轮）；③ 若不实现：不算缺陷。
+
+### 第 4 轮追加任务（S16 product-loop --tier1 on --mode all，指派切片 = 收藏陈列 + 回访新鲜 S16-T9/T10，零升档 · 零素材）
+
+> 本轮承诺 = 站在第 3 轮「家具进场景」的场景能力之上，把家园升级成**抽卡战果橱窗**（收藏在家园显形）+ 给一个**「明天为什么回来」的软钩子**（date-seeded 今日特殊角色）。补两块结构性缺口：家园和玩家最大的资产（收藏）零咬合、家园每天打开一模一样。**★ 本轮唯一升档拍板：维持零升档、不动用 sprint 唯一 v21 bump**——两大支柱（收藏陈列 UR 橱窗 + 完成度 chip 纯派生自 `codex.characterCompletion`/`collection`；date-seeded 今日特殊角色 `todayKey+placedCharacterIds→mulberry32`）全部纯派生 / date-seeded，`SAVE_VERSION` 保持 20、三处存档装配器一字不动。唯一真需 v21 的候选「偶遇图鉴去重」三审一致判定价值低于两大支柱、留 backlog，不耗掉唯一 bump（Scout C-2 伪需求陷阱）。**★★ 本轮唯一实现级硬约束：今日特殊角色「双倍好感」——既有 `dailyBondInteraction` 给不了双倍（好感增量写死常量无参数 + `lastBondInteractionDate` 硬锁一次/天，Scout A0-红格/C-1 三审集体漏算），本轮采纳 Scout 选项 B 收窄为纯情感**（今日显式标识 + 今日专属台词、tap 走原样标准好感），零碰 `nurture.ts`、零升档、零测试风险；绝不做「气泡显 +40 实发 20」（踩名字≠行为红线）。收藏陈列**只读** `codex.characterCompletion`、**绝不碰** `codex.claim`/`claimedMilestones`（领取制混用 = 发奖 + 升 schema 面 + 撞「展示墙非待办地狱」）；0 UR 玩家必须优雅空态（引导 / 降级墙，绝不空墙 / 缺口条）。今日标识 / 陈列 / 季节都是**纯 view 层派生叠加**，`usePlazaWalk` 的 rAF / 偶遇 / Pet 接口本轮一字不动。复用第 1 轮台词库范式（`pickTapDialogue`）、第 3 轮场景坐标系 + chip 范式、`CharacterAvatar` 现成头像组件、`mulberry32` engine 纯函数。详见 `docs/orch/plan.md` + `docs/orch/negotiation.md`。
+
+- [x] **S16-T9｜收藏陈列：家园作抽卡战果橱窗（P0，本轮成败命门之一）**
+  - 目标：把玩家最大的资产（收藏）在家园**肉眼显形成橱窗**——展示「已拥有的 UR 角色的脸」（头像墙）+ 一个纯派生收藏完成度 chip（如「UR 12/48 · 图鉴 63%」）。抽到一张新 UR → 它即时出现在橱窗；完成度随收藏即时变化。把家园从「看不到自己收藏的 hub」升级成「这些角色都是我的」的抽卡战果橱窗（endowment / 陈列满足感）。**纯派生自 `codex.characterCompletion` + `collection`，零升档。**
+  - 验收：① **可见性命门（第一条）**：家园里肉眼可见已拥有的 UR 角色头像 / 陈列（形态 B/C）**或**至少一个纯派生完成度 chip（形态 A），**抽到 / 新增一张 UR 后陈列 / 完成度即时反映**（`collection` 响应式，非一次性快照）——收藏只在图鉴 tab 显示、家园看不见 = 白做；② **空态优雅（命门级）**：0 UR 玩家看到引导态「抽到第一张 UR 会陈列在这里」**或**降级到已拥有的最高稀有度墙，**绝不空墙 / 绝不「UR 0/318」缺口进度条**，0 入住 / 0 收藏不报错；③ **纯派生零持久化零奖励零领取制**：只读 `codex.characterCompletion` + `collection`，**零新增存档字段、`SAVE_VERSION`=20、绝不触发 `codex.claim`、绝不 push `claimedMilestones`、绝不复用领取制、不发任何奖励**，文案正着念「拥有 X」不念「还差 Y」（反 completionist / 名字≠行为红线）；④ 陈列卡 / 名牌用 **surface 卡片非白字压图**（语义令牌），稀有度识别色用完整字面映射，无未定义令牌 / 动态拼色类 / 反斜杠透明度；⑤ **复用不重造**（完成度读现成 `codex.characterCompletion`、头像用现成 `CharacterAvatar`、chip 抄第 3 轮 `display-count-chip` 范式，未造第二套遍历 / 组件）；⑥ 建议补特征测试（UR-owned computed 在有 UR / 0 UR 降级 / 0 收藏三态正确，完成度总数用 `.length` 非硬编码）；⑦ `type-check`/`test`/`build` 全绿，`test` 连跑 3 次稳定。
+- [x] **S16-T10｜回访新鲜：date-seeded 今日特殊角色（P0，本轮成败命门之一）**
+  - 目标：给家园一个「明天为什么回来」的软钩子——**每天由 date-seeded 派生选出一个入住角色作「今日特殊角色」**（今天心情特别好），在广场给它**显式标识**（徽章 / 淡光晕）+ tap 它说一句**今日专属台词**。同一天恒定、次日自动换人、零存储。让家园从「每天打开一模一样」变成「今天是谁心情好 + 它对我说了句特别的话」。**date-seeded 纯派生（`todayKey+placedCharacterIds→mulberry32`），零升档；回访主菜=纯情感，不做双倍好感（tap 走原样标准好感）。**
+  - 验收：① **可见性命门（第一条）**：广场里肉眼可见今日特殊角色的**显式标识**（徽章 / 光晕，与普通入住角色可分辨）+ tap 它时说**今日专属台词**（与普通 tap 台词可分辨）——无标识 / 台词与平时一样 = 白做；② **date-seeded 确定性**：同一天 + 同入住名单 → 今日特殊角色恒定（同 seed 同结果）、跨天 → 自动换人，这两条有特征测试锁死，**零字段进存档、`SAVE_VERSION`=20**；③ **回访主菜=纯情感、tap 走原样口径**：今日特殊角色 tap 拿标准好感（走原样 `dailyBondInteraction`、与普通角色同 20、共用同一 `lastBondInteractionDate` 每日封顶），**未新造奖励口径、未碰 `nurture.ts`、未做「双倍」数值**（守合同「回访是惊喜非债务」+ 双倍收窄，见 plan ★★★ 拍板）；④ **空态优雅**：0 入住 → 今日特殊 null、标识 / 特殊台词分支不显示不报错；⑤ **纯 view 层叠加、零改 composable**：`usePlazaWalk` 的 rAF / 偶遇 / Pet 接口未因今日特殊角色改动（今日标识是模板 `:class` 叠加、今日台词是 view 层 `onPetTap` 展示分支），今日光晕若有动画走 CSS `@keyframes` 不进 rAF；⑥ 台词纯 config、零存档、**不携带数值效果**（改台词文本不影响任何发放），缺专属今日特殊台词回落通用池不报错不空白；⑦ `type-check`/`test`/`build` 全绿，`test` 连跑 3 次稳定（涉跨天 / date-seed）。
+- [x] **S16-T11｜季节性场景微调（可选加分项，非硬验收，纯派生零素材 CSS 浮层）**
+  - 目标：若 Generator 有工程余量，给广场场景加一层**随真实日期派生的季节氛围**（今天 2026-07 盛夏 → 🌻/☀️ 浮层；可预留秋 🍂/冬 ❄️/春 🌸），给回访新鲜一点长期常驻的季节回响。**本项非本轮成败命门，可完全不做**（回访新鲜命门由 S16-T10 达成）。
+  - 验收（仅当实现时适用）：① 若实现：广场有随真实月份派生的季节氛围浮层（当前盛夏可见），**零新增存档字段、`SAVE_VERSION`=20**；② 季节浮层 `pointer-events:none`、**不盖偶遇气泡 / 偶遇符号 / 角色脸**（z-index 合规，垫底则 z 介于 0-200），**粒子纯 CSS `@keyframes` 不进 rAF**（`usePlazaWalk` rAF 未因季节改动），别一次铺满四季（首版当前季 + 可预留 1-2 显著季）；③ 若不实现：不算缺陷。
+
+### 第 5 轮追加任务（收官）（S16 product-loop --tier1 on --mode all，指派切片 = 打磨 + 晒图 + 收尾 S16-T12/T13/T14/T15，零升档 · 零素材）
+
+> **本轮 = 5 轮弧线收官轮。** 前 4 轮把「关系/偶遇/家具/陈列/回访」做齐，三审罕见全盘一致（product 8.3、evolution 8.3、research 收官逻辑闭环无裂缝）：本轮只需两把刀 + 一次收尾——**刀一（打磨）** 把情感高点擦亮：领 bond_6「命运」（4000 好感巅峰）和领 bond_1「初识」现在**反馈一模一样**（都走同一个 `.bond-float` 淡绿飘字），巅峰时刻被做平了（Yu-kai Chou win-state 框架点名的「同音量庆祝一切 → desensitize」反模式）；正解 = **分级音量**（低档 High-Five 轻飘字 / 高档 Crowning 隆重弹层），纯 CSS 零数值。**刀二（晒图）** 给家园一张对外的脸：把攒了 5 轮的一切（基地/入住真实番剧角色/陈列/家具/羁绊/今日特殊）聚合成一张**纯前端 Canvas「基地身份卡」**（安全异步晒图，仿 ACNH 梦境门牌冻结快照），系统分享/下载 PNG——长留存外化出口 + 968 番护城河社交传播首块砖。**收尾** = 清两个 pre-existing dead computed + 一个显式 Sprint 收官核对任务。**★ 三个拍板：① 先庆祝（T12）后晒图（T13），两者独立、都做实；② 晒图主标题走 `profile.currentUser`「XX 的家园」——`stores/homestead.ts` 无基地名字段（Scout 核实），绝不为装饰字段升 v21；③ Crowning 锚定 bond_4/5/6 = 高档（有 `statBonusPct` 0.02/0.03 分层 + reward 200→400 跳变数据支撑）。★ 升档拍板：本轮天然零升档（打磨=纯动效、晒图=只读快照聚合）、`SAVE_VERSION`=20 不变、三处存档装配器一字不动——sprint 唯一 v21 bump 五轮全程未消耗，是刻意的健康纪律，留 backlog（给未来「自定义家具摆位」F1）。★ 晒图硬约束（pitfalls 明令）：纯 Canvas `toBlob`+`createObjectURL`+`a.download`+`revokeObjectURL`、**别引 html2canvas**、**首版绝不 `drawImage` 远程角色/封面图**（跨域 taint → `toBlob` 抛 `SecurityError`，角色脸用 emoji/首字/色块自绘）、**聚合抽纯函数**仿 `buildWrappedStats.ts`（零 Vue/Pinia/DOM 便于单测）、**只读快照**（零 claim/earn/spend）、**晒身份不晒缺口**（正着念「陈列 5/7」绝不「还差 260」）、**安全异步绝不联机**（绝不开上传/排行榜/后端、绝不「分享得奖励」dark pattern）、**空态优雅**（0 入住/空基地愿景文案软化、聚合容错不 NaN、特征测试锁死）。复用现成三件套 `ShareCard.vue`+`shareImage.ts`+`buildWrappedStats.ts` + `CharacterAvatar`（仅屏幕预览用真图、Canvas 导出用文字）；庆祝复用 `.settle-pop` 弹窗范式 + `dialogueTimers` 清除范式。详见 `docs/orch/plan.md` + `docs/orch/negotiation.md`。
+
+- [x] **S16-T12｜里程碑庆祝按档位分级：High-Five / Crowning（P0，本轮命门之一）**
+  - 目标：把里程碑领取反馈从「所有档一个模板」升级成**分级音量**——低档（bond_1/2/3）保持现有轻飘字（High-Five，克制），高档（bond_4/5/6）升级为**居中/半屏隆重庆祝弹层**（Crowning：大号称号加冕「XX 达成」+ 角色名 + 角色的脸 + 光效 + 略长停留/点击关闭），bond_6「命运」可再加最隆重一档。让「领命运」和「领初识」**肉眼可辨隆重度差异**，把玩家最大的关系投入隆重化。**纯 CSS 动效、零数值、零存档、零升档。**
+  - 验收：① **可见性命门（第一条）**：领 bond_6「命运」（或任一 bond_4/5/6 高档）与领 bond_1「初识」（或任一 bond_1/2/3 低档）**反馈肉眼可分辨**（高档 Crowning 隆重弹层 + 称号加冕 + 角色脸 + 光效 + 更长停留、低档 High-Five 轻飘字）——领命运和领初识反馈一样 = 白做；② **分级不是统一动效**（research 深挖① 唯一危险读法）：给 6 档全加同款彩带只是「都很轻→都很响」仍 desensitize，必须低档轻/高档隆重；分级判据锚定 bond_4/5/6=Crowning（建议抽纯函数 `milestoneCelebrationTier(id)` 便于特征测试锁分级判据）；③ **纯展示零数值零发奖**：`claimBondMilestone` 发放逻辑一字未碰、庆祝仅是发放成功后视觉分支、不携带数值/不发奖/不改奖励（审 diff 确认庆祝分支无 `spend/earn/claim` 新调用），守「名字≠行为」红线；④ **定时器登记清除 + 不进 rAF**：Crowning 弹层若用 setTimeout 自动关闭须登记 `dialogueTimers` + `onUnmounted` 清除无泄漏，动效走 CSS `@keyframes`，`usePlazaWalk` 的 rAF 未因庆祝改动；⑤ **连领不叠弹**：多个高档同时可领时（`claimableBondCount`>1）Crowning 一次只弹一个（不叠层打断，首版「一次弹一个 + 需手动关」即可）；⑥ 颜色令牌零违规（庆祝弹层走 `rgb(var(--c-*))`/`--c-highlight`/`--c-accent`，无 `text-white` 压浅底/动态拼色类/未定义令牌/反斜杠透明度）；⑦ `type-check`/`test`/`build` 全绿，`test` 连跑 3 次稳定。
+- [x] **S16-T13｜家园快照晒图：一键出「基地身份卡」（P0，本轮命门之一）**
+  - 目标：给家园一个**对外的脸**——加「晒图/分享基地」入口，点击把家园状态聚合成一张**纯前端 Canvas 绘制的暖色「基地身份卡」**（主标题「XX 的家园」走 `profile.currentUser` + 入住真实番剧角色名 + 陈列完成度正着念 + 家具数 + 命中羁绊作品名 + 今日特殊角色 + 舒适度等本地可得数据），系统分享面板/下载 PNG 出图。把 5 轮攒下的一切从「我看得见」推到「给人看」，成为长留存外化出口 + 968 番护城河社交传播首块砖。**纯前端只读快照聚合、零升档、零 cross-origin 风险。**
+  - 验收：① **可见性命门（第一条）**：家园有「晒图/分享基地」入口，点击**生成一张纯本地数据的暖色基地身份卡**（「XX 的家园」+ 入住真实番剧角色名 + 陈列/家具/羁绊命中/今日特殊），可**系统分享或下载 PNG 成功**，**968 番差异化务必显形**（入住角色名 + 羁绊作品名 = 社交货币）——点了没图/图里看不到家园身份 = 白做；② **零 cross-origin taint**：Canvas 零 `drawImage` 远程图（角色用 emoji/首字/色块自绘），`toBlob` 不抛 `SecurityError`，未引 html2canvas；③ **晒身份不晒缺口**：正着念「陈列 X/7」「入住 N」「拥有 UR X/N」「《XX》羁绊命中」，**绝无**「还差 Y」「UR 0/N」「完成度 13%」缺口/焦虑指标（反 completionist）；④ **空态优雅（命门级）**：0 入住/0 收藏/空基地 → `buildHomesteadSnapshot` 不崩/不 NaN/不 undefined，空基地愿景文案软化不显缺口条/不晒羞辱空卡，特征测试锁死空态；⑤ **纯派生只读零升档零奖励零联机**：只读现成派生源（`profile`/`homestead.placedCharacterIds`/`codex.characterCompletion`/`collection`/`furnitureStore.placedIds`/`hourlyYield.bondHits`/`todaySpecialId`），**零新增存档字段、`SAVE_VERSION`=20、`schema.ts`/`migrations.ts`/`stores/persistence.ts` 未触碰、零 claim/earn/spend、绝不「分享得奖励」、绝不联机/上传/排行榜后端**（审 diff 确认）；⑥ **聚合抽纯函数 + 薄接入**：`buildHomesteadSnapshot.ts` 零 Vue/Pinia/DOM（仿 `buildWrappedStats.ts`）+ `.test.ts` 特征测试（满配/0 入住/0 收藏三态 + 正着念计数），Canvas 绘制在独立 `HomesteadShareCard.vue`、**未把绘制代码堆进已 1366 行的 HomesteadView**；⑦ **复用不重造**（IO 复用 `shareImage.ts` 的 `canvasToPngBlob`/`shareOrDownloadImage`、聚合仿 `buildWrappedStats.ts`、手绘仿 `ShareCard.vue`、弹窗挂载仿 `CollectionsView.vue`，未造第二套晒图基建）；⑧ `type-check`/`test`/`build` 全绿，`test` 连跑 3 次稳定。
+- [x] **S16-T14｜Sprint 收官核对（P0 收官任务，本轮必做）**
+  - 目标：本轮是 S16 收官轮，落完打磨/晒图后做一次显式的全 Sprint 收官核对——确认全部任务勾选与实现一致、S14/S15 既有机制无回归、验收命令全绿、零升档。这是收官轮独有的、把 5 轮成果封存的核对任务。
+  - 验收：① **勾选一致**：`docs/plans/SPRINT.md` 的 S16-T1..T11 全 `[x]`（已核实、`grep "\[ \].*S16-T"` 主线零命中）+ 本轮 S16-T12/T13（+T15 若做）全 `[x]` 且与实现一致（打磨分级肉眼可辨/晒图肉眼可出图，非仅内存态）——**注意** `docs/SPRINT.md`（非 `docs/plans/SPRINT.md`）里的 `[ ]` 是 S11/S12 未来路线图残留、**非 S16 项勿误判**；② **S14/S15 + 1-4 轮机制无回归**（亲验 diff/读码）：computeIdleYield 单 seam（预览=结算）/ facility v17 / 装备强化套装 modifier / 暴击轴 / 扫荡+委托日循环 v19 / comfort 软加成 / softCap / 家具 v20 y-sort / 羁绊 bondHits 同源 / pity v20 / 墙钟回拨钳位 / setTimeout·rAF 全登记清除 / 收藏橱窗+今日特殊+季节 均在；③ **零升档**：`schema.ts:57 SAVE_VERSION`=20 不变、`infra/persistence/{schema,migrations}.ts`+`stores/persistence.ts` 本轮 diff 全空、sprint 唯一 v21 bump 五轮全程未消耗留 backlog；④ **5 命令全绿**：type-check 0 错 / test 连跑 3 次稳定全绿（基线 991，加晒图纯函数测试后应升）/ build 成功 / 后端安全 exit 0 全 PASS / `debug=True` 零命中。
+- [x] **S16-T15｜收尾清债 + 可选微打磨（收尾必做「清 dead computed」+ 可选加分）**
+  - 目标：清两个 pre-existing dead computed（收尾必做，合同 C 明列）+ 若有工程余量做几处纯 CSS 微打磨（可选加分，非硬验收）。
+  - 验收：① **【必做】清 dead computed**：删 `HomesteadView.vue:377` `effectText` + `:379` `comfortBonusText`（两个 top-level computed，模板零引用，已核实模板只用 `row.effectText`（residentRows 内部字段）+ `comfortPctText(homeEffect.comfort)`）；⚠️ **别误删 `residentRows` 里的 `effectText: formatHomeEffect(...)`**（那是模板 `row.effectText` 的真实数据源，删了炸入住名单效果显示）——只删 377/379 两行 top-level；`type-check`/`test`/`build` 全绿、入住名单效果显示无回归；② **【可选加分，有余量才做，非硬验收】**收取瞬间到手反馈（`g-cta-gold` 成功态脉冲 +「+X KP」小飘字，纯 CSS 零数值改）/ 新 UR 入橱窗高光（`showcaseCards` 最新那张入场描边脉冲）/ 偶遇符号·气泡缓动微抛光（别破 `usePlazaWalk` rAF/偶遇符号 z 分层）/ 禁用态正向提示（「再攒 X KP 可购」正向文案非焦虑条）——一律纯 CSS/派生、零数值、零存档、颜色令牌合规；③ 若不做可选项：不算缺陷。
 
 ## 验收命令（Evaluator 必须亲自重跑，记录实际输出）
 
 ```bash
 # 1. 前端类型检查（期望 0 错误）
 cd frontend-vue && npm run type-check
-# 2. 前端测试（期望全绿，S15-T1 要求连跑 3 次无偶发失败）
+# 2. 前端测试（期望全绿；涉及时序/挂机的改动要求连跑 3 次无偶发失败）
 cd frontend-vue && npm run test
 # 3. 前端生产构建（期望成功）
 cd frontend-vue && npm run build
-# 4. 后端安全基线（S15 不碰后端，期望退出码 0、全 PASS）—— 用仓库 .venv：.venv/Scripts/python.exe backend/test_security.py
+# 4. 后端安全基线（S16 不碰后端，期望退出码 0、全 PASS）—— 用仓库 .venv：.venv/Scripts/python.exe backend/test_security.py
 python backend/test_security.py
 # 5. debug 关闭核验（期望零命中）
 grep -rn "debug=True" backend/server.py api/index.py
 ```
 
-**通过标准**：命令 1/2/3/4 成功（4 退出码 0、全 PASS，S15-T1 起 test 连跑 3 次稳定全绿），命令 5 零命中，且当轮承诺的 S15-T* 任务全部 `[x]` 并与实现一致。**S15 整体完成** = S15-T1..S15-T4 全 `[x]`。
+**通过标准**：命令 1/2/3/4 成功（4 退出码 0、全 PASS，涉及挂机时序的改动 test 连跑 3 次稳定全绿），命令 5 零命中，且当轮承诺的任务全部 `[x]` 并与实现一致。
 
 ---
-
-## 第 1 轮追加任务（S15 product-loop --tier1 on --mode all，指派切片 = S15-T1 + S15-T3，零升档）
-
-> 本轮承诺 = 主清单 **S15-T1 + S15-T3** 真落地（非回归确认）。以下为采纳的 refine 子项 + 关键设计决策拍板；主清单 S15-T1/T3 条目不复述。
-> **拍板：本轮零存档改动**（三份报告 + Scout 一致：T1 走注入时钟接缝/派生自现有字段，T3 派生自 placedCharacterIds+role/anime）。SAVE_VERSION 保持 19，v20 留给第 2 轮 furniture 一次性 bump。
-
-- [x] **S15-T1｜flaky 根因根除（注入时钟接缝 T1-A 为主 + 统一 fake timers T1-B 兜底）**
-  - 目标：把「back-to-back 偶发 2 失败、standalone 全绿」的时序不稳定从根上消除，而非等它复现。**拍板根因 = 缺一条统一的注入时钟接缝**：`settleHomestead` 直读 `Date.now()`、测试侧 `homestead.test.ts` 用真实 `Date.now()` 做历史算术（两次读之间的真实 ε 叠进 hours 使 `expEach===400` 精确断言在 floor 边界翻车），而 `daily.test.ts` 用 fake timers——两套不兼容时间模型在同一 vitest worker 共存，teardown 有缝时互相污染。
-  - **拍板修法（HOW 由 Generator 定，此处定方向）**：(a) 给挂机结算引入可注入 `now` 接缝（与 engine「RNG 注入」原则对称地把「时钟」也降级为注入依赖），测试传固定 now，不再碰真时钟、也不受邻居文件 fake timers 影响；(b) 同时把 `homestead.test.ts` / `userStore.settle.test.ts` 的真实 `Date.now()` 算术统一改用 `vi.useFakeTimers()+vi.setSystemTime(FIXED)`（照抄 `daily.test.ts` 既有 `freezeDate` 范式，`afterEach` 严格 `vi.useRealTimers()`）。**只改测试 + 为可测性做的最小时钟注入，零玩法数值改动、零存档。**
-  - **回归守卫**：新增/保留「注入 now < lastSettleAt（回拨）记 0 收益并把基线夹到 now」的确定性回归测试（SF-T6 钳位必须在注入 now 下同样成立）。
-  - 验收：连跑 `npm run test` **3-5 次**全绿（单跑绿不算数）；被测/测试路径无裸真实 `Date.now()` 算术喂进时序断言；type-check/build 通过。
-
-- [x] **S15-T3｜入住羁绊（确定性集合加成 T3-A）+ 差异化可见性**
-  - 目标：把「选谁入住」从「放最高稀有度」的伪决策变成真决策。**拍板做法 = 确定性集合羁绊（PCR/原神共鸣范式），作为新的独立乘子并入 `computeIdleYield`，派生免存档**——不破 `IdleYield.expEach`/`affectionEach` 单值接口（避免 T3-B 逐角色 map 破接口+波及 UI/结算/文案+正则 archetype 漂移风险）。
-  - **拍板加成口径**：羁绊倍率作为**队伍级独立乘子**并入 `computeIdleYield`（与 comfort/设施同层，经既有口径汇入，**严禁在 settle 里另拼**）；纯函数派生自 `placedCharacterIds` → 命中阈值给固定 pct（如「同作品 ≥2 人 +X%」）。
-  - **拍板防退化 3 条**：① 羁绊只派生自**稳定键**（角色 `anime_names` 同作品），**不派生自正则 archetype**（避免「换数据/规则→加成无声消失」）；若并做 role 倾斜，role 倾斜也须折进**队伍级整体乘子**、不破 `...Each` 接口；② 派生源 `anime_names?` 可选可缺 → 纯函数对 undefined/空数组容忍（不命中不加成，不抛错）；③ **集合加成设硬上限**（命中即固定档、不按 C(n,2) 组合数叠加爆炸；0 入住不除零不给加成）——守 config 顶部「挂机不盖过主动收入」基线。
-  - **拍板可见性（本轮成败命门，三报告共识）**：差异化/羁绊**必须在 UI 显形**，否则重蹈 comfort 死数值反模式=白做。在入住名单 `resident-pill`（或待收卡）显示「命中了哪条羁绊 +多少 pct」，命中给 accent 徽章、不命中不显/灰显；`projectedYield` 待收卡因入住组合变化而肉眼可辨地变化（口径同源，预览=结算）。
-  - 验收：不同入住组合产出可辨（engine 纯函数特征测试断言两组不同 placed 的 yield 不等）；羁绊命中给确定加成 / 不命中不给（穷举边界，含 6 同作品不爆炸的硬上限断言、0 入住不除零）；加成经既有 `computeIdleYield` 口径（预览与结算同源）；UI 显式展示命中羁绊；不破坏现有挂机口径；type-check/test/build 通过。
-
----
-
-## 第 2 轮追加任务（S15 product-loop --tier1 on --mode all，指派切片 = S15-T2 + 收尾 T2-E，本 Sprint 唯一升档 v20）
-
-> 本轮承诺 = 主清单 **S15-T2** 真落地（家具 v20 唯一存档重任务，非回归确认）+ 附带收尾子项 **T2-E**（上一切片 S15-T3 显形债）。以下为采纳的 refine 子项 + 关键设计决策拍板；主清单 S15-T2 条目不复述。
-> **拍板：SAVE_VERSION 19→20（本 Sprint 唯一 bump，furniture 域一次性）**；第 3 轮 S15-T4 pity 若持久化复用同一 v20，**绝不升 v21**（防版本漂移，Scout C-1）。
-> **拍板：家具收益走既有口径（方案 1 = comfort 轴复用），零新口径、零新乘子、不改 `computeIdleYield` 签名**（三报告 + Scout 一致）。
-
-- [x] **S15-T2｜轻量家具 / 布局系统（v20，本 Sprint 唯一存档重任务）** ✅ 落地（拍板 A–E 全遵，见主清单落地摘要）
-  - 目标：把家园从「数据面板」补上「KP → 家具 → 小额 comfort + 更好看的家」这条继设施之后的**第二条 KP sink**（广度 buy-out 目录 sink，与设施无底指数 sink 互补，不重叠）。让「投入 KP」除了「数值更快」还有「看得见的所有权」。
-  - **拍板-A｜收益口径 = 方案 1（家具只贡献 comfort，复用既有 comfort 软加成轴）**：家具各给 comfort 分，settle/预览把「家具 comfort 合计」并入传给 `computeIdleYield` 的 `effect.comfort`（与装备 comfort 相加），走既有 `comfortBonusPct`（每 10 点 +1%，封顶 +20%）。**零新增口径、零新乘子、不改 `computeIdleYield` 签名。** 拒绝方案 2（独立乘子改签名 + 全调用点）。家具与装备共用 +20% 硬顶**是有意的**（守「挂机不盖过主动收入」基线，别给家具单开突破口径）。
-  - **拍板-B｜摆放模型 = 固定槽位「拥有 + 摆放清单」，不绑 WALKABLE_ZONES**：首版做「已拥有家具 + 已摆放家具清单（摆放的给 comfort）」，**不做广场像素可视化渲染**（验收只要求「摆放持久化 + 加成进收益」）。广场可视化摆放标 backlog；若将来做须**独立固定槽位常量**，WALKABLE_ZONES（角色漫步区）一字不改。
-  - **拍板-C｜存档 = furniture 独立域，v19→v20，四处一次性对齐 + 往返测试**：仿 v17 facility 域模板（schema type + 默认工厂 + migration + persistence 装配器 + config）。**禁 spread 浅拷贝旧档**（白名单重建，pitfalls S13-C1）；`createDefaultFurniture` **内联空态、禁 import config**（避免 schema→config→engine 循环依赖环）。旧档无 furniture 键 → 补空家具。
-  - **拍板-D｜家具目录 = 纯数据 config（名梗风，仿 EQUIPMENT_CATALOG）+ KP 兑换走 profile.spend**：每件 `{ id, name, comfort, cost }`，名梗风（对标装备「死亡笔记/超电磁炮/AT力场」），零 Vue/Pinia 依赖；买家具走 `profile.spend('knowledgePoints', cost)` 成功才入库，余额不足拒绝。
-  - **拍板-E｜口径同源命脉（最易漏的半迁移点）**：家具 comfort 必须 settle（`settleHomestead` 的 `sumHomeEffects`）+ UI 三处（hourlyYield/projectedYield/nextHourlyYield）**全部**并入 `effect.comfort` 喂进 `computeIdleYield`，别只改一半（预览≠实战，P2-17 换域重演，Scout C-2）。`buyFurniture`/`placeFurniture` 前**先 `settleHomestead()` 结清**（同 upgradeFacility，防家具改 comfort 回溯放大已挂时间）。
-  - 验收：可 KP 买家具（走 `profile.spend`）、余额不足不发货；摆放持久化跨重开保真；家具 comfort 真进挂机收益（经 `computeIdleYield` 口径，预览=结算同源，满 12h 封顶断言使 floor 后可辨）；v20 迁移往返测试（v19 旧档缺 furniture 补空家具不崩、v20 往返保真、脏档/未知 id 反序列化被归一或丢弃）；`SAVE_VERSION=20`（一次性 bump）；engine 纯净 / 货币只走 profile.spend / 颜色语义令牌（禁 text-white/动态拼色类）/ 定时器登记清除；type-check/test/build 全绿。
-
-- [x] **S15-T2-E｜羁绊 / 家具决策页显形（附带收尾子项，上一切片 S15-T3 显形债）** ✅ 落地
-  - 落地：`HomesteadManageModal` 头部新增「入住羁绊」显形（复用 `computeBondBonus` 纯计算，无新口径/无新存档：当前入住组合命中作品 + 同住人数 chip + 全产出 +N%），副标题补「同作品 ≥2 人触发羁绊」；家具面板每件显 comfort + 未拥有件显「摆放后全产出 +N%」delta（复用 `comfortBonusPct` 边际增量，语义令牌 chip/accent）。
-  - 目标：补上一切片 S15-T3「差异化看得见吗」只答对一半的收尾债——把羁绊反馈从「收益卡（结果页）」搬进 `HomesteadManageModal`（选谁入住的**唯一物理决策点**，副标题至今仍只讲稀有度），并顺带给家具兑换/摆放面板加 delta 预览。避免「方向盘装后备箱」+ 避免家具成为第二个 comfort 死数值。
-  - **拍板方向**：`HomesteadManageModal` 显示当前入住组合命中的羁绊（**复用第 1 轮 `computeBondBonus` 纯计算，无新口径/无新存档**）+ 同作品可辨分组信号；家具兑换/摆放面板显示每件 comfort 及「摆放后全产出 +N%」delta。复用既有 chip/accent/delta 范式 + 语义令牌。命中瞬间 chip 微亮动效顺手则加、否则 backlog。
-  - **范围守则**：**低成本、无新口径、无新存档**。**与 T2 存档主线冲突时 T2 优先，此项可降为 T2 内 nice-to-have**（不阻塞 T2 验收全绿）。
-  - 验收：管理弹窗能看到当前入住组合命中的羁绊（+N%）及同作品分组信号；家具面板有 comfort/产出 delta；不破坏预览=结算同源；type-check/test/build 全绿。
-
-> **第 3 轮预告（非本轮）**：S15-T4（装备定向掉落保底 / 碎片，P3-3）+ 收尾（确保 S15-T1..T4 全 `[x]`、S14 无回归）。**pity 若持久化 → 复用本轮 v20 bump，绝不升 v21**；本轮 Generator 不要动 `drops.ts` / `completeFloor`。
-
----
-
-## 第 3 轮追加任务（S15 product-loop --tier1 on --mode all，指派切片 = S15-T4 + 收尾，本 Sprint 收官轮，复用 v20 绝不升 v21）
-
-> 本轮承诺 = 主清单 **S15-T4** 真落地（装备定向掉落缓解，非回归确认）+ Sprint 收官（确保 S15-T1..T4 全 `[x]`、S14 33 项无回归）。以下为采纳的 refine 子项 + 关键设计决策拍板；主清单 S15-T4 条目不复述。
-> **拍板：S15-T4 = 选项 (a) 槽位保底（slot pity），拒绝选项 (b) 碎片兑换**（三报告分歧，Planner 定；碎片/图鉴集邮/去重池升维全标 backlog）。理由见下。
-> **拍板：pity 计数持久化复用 v20（本 Sprint 唯一 bump，第 2 轮已用于 furniture）——挂进既有 `TowerProgress` 扁平字段，migration 对旧档补 0，SAVE_VERSION 保持 20，绝不升 v21**（Scout C-1 / 三报告一致钉死版本漂移）。
-
-- [x] **S15-T4｜装备定向掉落 = 槽位保底 pity（选项 a，engine 纯函数注入计数 + v20 复用 + UI 显形）** ✅ 落地（拍板 A–F 全遵；G 去重池未叠加，标 backlog）
-  - **拍板-A｜选 pity 拒绝碎片**：三报告分歧（体验官/研究员倾向碎片，进化策略师强推 pity）。**Planner 定 pity**，理由：① 本 Sprint 收官轮，pity 改动面 + 退化风险最小（进化审计：碎片是「小 sink 重体验」，需新货币口径 + 新兑换 UI + 新发放埋点，改动面 2~3 倍）；② pity 复用项目自家 `gachaStore` 已验证的保底范式（连续未命中→计数→阈值强制给），零外部依赖；③ pity 持久化落点已被 Scout/研究员钉死（`TowerProgress` 扁平字段复用 v20），存档协议干净；④ 直接对应 SPRINT 主清单 S15-T4 选项 (a)。碎片方案的「定向到 defId 粒度 + 分解重复件闭环 + 图鉴集邮」价值确实更高，但属独立轮次工程量 → **全标 backlog**（见 negotiation）。
-  - **拍板-B｜pity 维度 = 槽位（slot），拒绝稀有度 pity**：三报告一致——塔掉落稀有度**已由层段单向决定**（`dropRarityForFloor`，玩家不缺稀有度数量），再叠稀有度 pity 是**双重保证冗余**；真痛点是「命中了却总不是想要的槽（三武器零支援）」。故做**槽位 pity**：连续 N 次「掉落判定发生」未出某槽 → 下次强制命中该槽（稀有度仍走层段）。单维度计数，**拒绝「稀有度×槽」二维矩阵**（字段爆炸 + 心智负担）。
-  - **拍板-C｜engine 纯净不破**：判定逻辑走 engine 纯函数 + 注入 RNG + 注入计数（仿 `gachaStore` 的「传入当前 pity 值 → 返回新值 → 调用方持久化」范式，对齐 `rollTowerDrop` 已有的注入 RNG 风格）。**pity 计数状态留在 store 层，`engine/squad/drops.ts` 保持纯**（若需感知 pity 只加纯入参 / 返回新计数，绝不在 engine 内维护计数或碰持久化）。config 顶部集中一个 pity 阈值常量（改这里即调平），阈值取「体感能感知但不破坏惊喜」的中低值（远小于 gacha 70，因掉落频率本就低）。
-  - **拍板-D｜存档 = 复用 v20，扁平塞 `TowerProgress`，三处同改 + 往返测试**：pity 是「连续未命中累积历史」**无法派生、必须持久化**（不同于 T3 羁绊派生免存档）。落点 = `TowerProgress` 扁平字段（语义同域「塔状态」，仿 `sweepUsedThisWeek` 定长扁平、不用 Record）。三处同改（schema type/默认工厂 + migrations 补默认 + persistence 装配器）+ 往返保真 + **旧档补 0** 迁移测试。**SAVE_VERSION 保持 20 绝不升 21**（本 Sprint 唯一 bump 已用于 furniture）；脏档 pity 巨值必须 clamp 到 [0, 阈值]（migration + action 共用，仿 `clampEnhance`），防篡改放大获取。
-  - **拍板-E｜防墙钟/刷取退化 3 条（回归守卫，本轮命脉）**：① pity 计数**只在 `completeFloor` 推进新层的真掉落判定分支累加**——顶层（floor≥999，`completeFloor` 返 false）/ 重复挑战低层（不推进）/ 扫荡（`sweepFloor` 独立路径）**绝不推进 pity**（否则毕业玩家扫荡刷保底 = 墙钟/刷取漏洞）；② 保底强制命中的槽仍走目录候选池 `rng.pick` 兜底、空池不抛错（目录全覆盖，防御）；③ pity 触发命中后立即重置计数。**新增确定性回归测试断言顶层/重复层/扫荡不推进 pity。**
-  - **拍板-F｜显形（本轮成败命门，与 T3/T2-E 显形债同型教训）**：pity 若只后台记数不显形 = 又一个 comfort 死数值 = 挫败没缓解 = 白做。**必须在爬塔/探索/结算处显形「距下次槽位保底还差 N 层」进度**（accent 语义令牌、就近取整、满即高亮），命中瞬间给一次「保底触发！」文案高亮（顺手则加，否则 backlog 但进度显形非选做）。
-  - **拍板-G（nice-to-have，非验收必需）｜去重池叠加**：若成本极低（研究员 A3：`rollFloorDrop` 候选池优先未拥有件，`candidates` 过滤已拥有满强化 defId，全拥有再回退全池，零存档 <10 行），可顺手叠加提升「集齐进度感」。**与 pity 主线冲突则降 backlog，不阻塞 T4 验收**。
-  - 验收：槽位保底真生效（engine 纯函数特征测试断言 pity 边界：连 N 次未出某槽 → 第 N+1 次必出该槽，序列 RNG 可复现）；顶层/重复低层/扫荡不推进 pity（确定性回归测试）；pity 计数往返保真（v20 旧档补 0、脏档巨值被 clamp）；`SAVE_VERSION` 仍 =20（未误升 21）；UI 显形「距保底 N 层」；不破坏现有掉落口径 / S14 33 项；type-check/test（连跑 3 次全绿）/build 通过。
-
-- [x] **S15-T4-收尾｜Sprint 收官核对（S15-T1..T4 全 `[x]` + S14 无回归）** ✅ 落地（5 条验收命令全绿、test 连跑 3 次 917 全通、SAVE_VERSION=20 未误升 21、S14 无回归）
-  - 目标：本轮是 S15 收官轮。落 T4 后复跑全套验收命令，确认 S15-T1/T2/T2-E/T3/T4 全 `[x]` 与实现一致、S14 的 33 项（战力单一 seam / facility v17 / 装备强化套装 modifier / 暴击轴 / 扫荡+委托日循环 / comfort 软加成 / softCap / 墙钟钳位…）无回归。
-  - 验收：主清单 S15-T1..T4 全 `[x]`；`npm run test` 连跑 3 次全绿（898+ 用例，含 T4 新增 pity 特征/回归测试）；type-check/build/后端安全基线/debug-grep 全绿；`SAVE_VERSION===20` 断言未被误改成 21。
