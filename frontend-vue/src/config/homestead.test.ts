@@ -25,6 +25,9 @@ import {
   FURNITURE_PLACED_MAX,
   FURNITURE_SLOTS,
   getFurnitureSlot,
+  encounterPairKey,
+  canonicalizeSeenEncounterKeys,
+  SEEN_ENCOUNTER_MAX,
 } from './homestead';
 
 const H = 3600_000;
@@ -384,5 +387,31 @@ describe('canonicalizePlacedIds（存档边界规整入住名单）', () => {
     const out = canonicalizePlacedIds(many);
     expect(out).toHaveLength(HOMESTEAD_SLOTS);
     expect(out).toEqual(many.slice(0, HOMESTEAD_SLOTS));
+  });
+});
+
+describe('★ v21 偶遇图鉴：encounterPairKey / canonicalizeSeenEncounterKeys', () => {
+  it('encounterPairKey：小 id 在前、顺序无关、截整', () => {
+    expect(encounterPairKey(48, 49)).toBe('48-49');
+    expect(encounterPairKey(49, 48)).toBe('48-49'); // 顺序无关
+    expect(encounterPairKey(48, 48)).toBe('48-48'); // 同 id 容忍
+    expect(encounterPairKey(3.9, 9.1)).toBe('3-9'); // 截整
+  });
+
+  it('canonicalizeSeenEncounterKeys：合法键归一 + 去重 + 丢畸形', () => {
+    expect(canonicalizeSeenEncounterKeys(['49-48', '48-49', '3-9', 'bad', '7', 'x-y', 5 as unknown as string]))
+      .toEqual(['48-49', '3-9']); // 49-48 与 48-49 归一去重、3-9 保留、其余畸形丢弃
+    expect(canonicalizeSeenEncounterKeys(null)).toEqual([]);
+    expect(canonicalizeSeenEncounterKeys('nope' as unknown)).toEqual([]);
+    expect(canonicalizeSeenEncounterKeys([])).toEqual([]);
+  });
+
+  it('canonicalizeSeenEncounterKeys：负数键丢弃（防畸形）', () => {
+    expect(canonicalizeSeenEncounterKeys(['-1-5', '2-3'])).toEqual(['2-3']);
+  });
+
+  it('canonicalizeSeenEncounterKeys：截断到 SEEN_ENCOUNTER_MAX（防脏档膨胀）', () => {
+    const many = Array.from({ length: SEEN_ENCOUNTER_MAX + 50 }, (_, i) => `${i}-${i + 100000}`);
+    expect(canonicalizeSeenEncounterKeys(many)).toHaveLength(SEEN_ENCOUNTER_MAX);
   });
 });

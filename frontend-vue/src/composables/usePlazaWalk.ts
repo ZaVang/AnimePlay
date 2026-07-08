@@ -15,6 +15,7 @@
 import { ref, computed, watch, onMounted, onUnmounted, type Ref } from 'vue';
 import { spriteSheetSrc, chibiImageSrc, fullImageSrc } from '@/utils/cardImage';
 import { computeBondPairs } from '@/engine';
+import { encounterPairKey } from '@/config/homestead';
 import { pickEncounterDialogue } from '@/config/homesteadDialogues';
 import type { CharacterCard } from '@/types/card';
 
@@ -113,6 +114,10 @@ export interface PlazaWalkDeps {
   doTapInteract: (id: number) => boolean;
   /** tap 首次互动发放的好感数（用于气泡 +N 展示）。 */
   tapAffectionAmount: number;
+  /** ★ v21 偶遇图鉴：该偶遇对是否已看过（去重优先未见，纯读）。缺省视为「都没看过」。 */
+  hasSeenEncounter?: (pairKey: string) => boolean;
+  /** ★ v21 偶遇图鉴：记录看过一场偶遇（落地 + 存档，纯展示收集无数值）。 */
+  markEncounterSeen?: (pairKey: string) => void;
 }
 
 function randomDir(): Dir {
@@ -148,10 +153,6 @@ function assignTarget(pet: Pet) {
   pet.targetX = target.x;
   pet.targetY = target.y;
   pet.dir = dirToward(pet.x, pet.y, target.x, target.y);
-}
-/** 稳定 pairKey（小 id 在前），偶遇冷却用。 */
-function pairKey(a: number, b: number): string {
-  return a < b ? `${a}:${b}` : `${b}:${a}`;
 }
 
 export function usePlazaWalk(deps: PlazaWalkDeps) {
@@ -318,11 +319,24 @@ export function usePlazaWalk(deps: PlazaWalkDeps) {
     const pairs = computeBondPairs(animeNames);
     if (pairs.length === 0) return;
 
+    // ★ v21 去重优先未见：把「还没看过的偶遇对」排前面，让玩家先解锁新的（全看过后再回放旧的）。
+    // computeBondPairs 返回全新数组，就地排序无副作用；stable sort（现代引擎保证）保留原有优先序。
+    const isSeen = deps.hasSeenEncounter;
+    if (isSeen) {
+      const seenOf = (pair: { a: number; b: number }): number => {
+        const A = list[pair.a];
+        const B = list[pair.b];
+        if (!A || !B) return 1;
+        return isSeen(encounterPairKey(A.id, B.id)) ? 1 : 0;
+      };
+      pairs.sort((p, q) => seenOf(p) - seenOf(q));
+    }
+
     for (const pair of pairs) {
       const A = list[pair.a];
       const B = list[pair.b];
       if (!A || !B || A.hidden || B.hidden) continue;
-      const key = pairKey(A.id, B.id);
+      const key = encounterPairKey(A.id, B.id);
       if ((encounterCooldownUntil.get(key) ?? 0) > nowMs) continue;
       const dist = Math.hypot(A.x - B.x, A.y - B.y);
       if (dist > ENCOUNTER_NEAR_DIST) continue;
@@ -332,9 +346,12 @@ export function usePlazaWalk(deps: PlazaWalkDeps) {
     }
   }
 
-  /** 触发一场偶遇：两人驻足面向 → A opener → 错峰 B reply → 中点 ♡ 上浮 → 冷却。 */
+  /** 触发一场偶遇：两人驻足面向 → A opener → 错峰 B reply → 中点 ♡ 上浮 → 冷却 + 记入偶遇图鉴。 */
   function triggerEncounter(A: Pet, B: Pet, anime: string, nowMs: number) {
-    encounterCooldownUntil.set(pairKey(A.id, B.id), nowMs + ENCOUNTER_COOLDOWN_MS);
+    const key = encounterPairKey(A.id, B.id);
+    encounterCooldownUntil.set(key, nowMs + ENCOUNTER_COOLDOWN_MS);
+    // ★ v21 记入偶遇图鉴（纯展示收集，新增才存档；缺省注入时无副作用）。
+    deps.markEncounterSeen?.(key);
 
     // 两人驻足、面向对方（纯展示、不移动位置）。
     A.moving = false;

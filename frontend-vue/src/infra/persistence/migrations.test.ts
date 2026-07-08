@@ -551,7 +551,7 @@ describe('v12 minigames.tasteProfile 迁移', () => {
 describe('v13 homestead 迁移', () => {
   it('保留旧档已入住角色 + 结算基线（只收数字 id）', () => {
     const out = migrate({ version: 13, homestead: { placedCharacterIds: [12393, 77, 'bad', null], lastSettleAt: 1700000000000 } } as unknown);
-    expect(out.homestead).toEqual({ placedCharacterIds: [12393, 77], lastSettleAt: 1700000000000 });
+    expect(out.homestead).toEqual({ placedCharacterIds: [12393, 77], lastSettleAt: 1700000000000, seenEncounterKeys: [] });
   });
 
   it('v12 旧档（无 homestead 键）→ 默认空态', () => {
@@ -561,7 +561,7 @@ describe('v13 homestead 迁移', () => {
 
   it('homestead 局部损坏按字段补默认', () => {
     const out = migrate({ version: 13, homestead: { placedCharacterIds: 'oops', lastSettleAt: 'x' } } as unknown);
-    expect(out.homestead).toEqual({ placedCharacterIds: [], lastSettleAt: 0 });
+    expect(out.homestead).toEqual({ placedCharacterIds: [], lastSettleAt: 0, seenEncounterKeys: [] });
   });
 
   it('脏档入住名单：去重 + 截断到槽位上限（防放大挂机收益）', () => {
@@ -765,8 +765,8 @@ describe('v2 存档过迁移层', () => {
 });
 
 describe('v19 家园委托字段迁移（SF-T8）', () => {
-  it('SAVE_VERSION 已升至 20（S15-T2 furniture 域）', () => {
-    expect(SAVE_VERSION).toBe(20);
+  it('SAVE_VERSION 已升至 21（S16 偶遇图鉴 seenEncounterKeys）', () => {
+    expect(SAVE_VERSION).toBe(21);
   });
 
   it('v18 旧档 daily（无 commission 三字段）→ 迁移补缺省（保留日/周字段）', () => {
@@ -866,5 +866,30 @@ describe('损坏/缺失字段兜底', () => {
     expect(out.towerProgress.currentFloor).toBe(5);
     expect(out.towerProgress.maxFloor).toBe(1);
     expect(out.towerProgress.floorRewards).toEqual({});
+  });
+});
+
+describe('★ v21 偶遇图鉴 seenEncounterKeys 迁移', () => {
+  it('旧档无 seenEncounterKeys 键 → 补空 []（不影响既有入住）', () => {
+    const out = migrate({ version: 20, homestead: { placedCharacterIds: [77, 5], lastSettleAt: 123 } });
+    expect(out.homestead.seenEncounterKeys).toEqual([]);
+    expect(out.homestead.placedCharacterIds).toEqual([77, 5]);
+    expect(out.version).toBe(SAVE_VERSION); // = 21
+  });
+
+  it('往返保真：合法键保留（顺序无关归一 + 去重）', () => {
+    const out = migrate({
+      version: 21,
+      homestead: { placedCharacterIds: [], lastSettleAt: 0, seenEncounterKeys: ['48-49', '49-48', '3-9'] },
+    });
+    expect(out.homestead.seenEncounterKeys).toEqual(['48-49', '3-9']);
+  });
+
+  it('脏档畸形键被规整/丢弃（防篡改膨胀）', () => {
+    const out = migrate({
+      version: 21,
+      homestead: { placedCharacterIds: [], lastSettleAt: 0, seenEncounterKeys: ['bad', '7', 'x-y', '2-3', 12] },
+    });
+    expect(out.homestead.seenEncounterKeys).toEqual(['2-3']);
   });
 });

@@ -34,6 +34,46 @@ export function canonicalizePlacedIds(raw: unknown): number[] {
   return out;
 }
 
+// ── 偶遇图鉴（v21）：记录「看过哪些同作品偶遇对」→ 去重优先未见 + 图鉴显形 ──
+
+/** 已见偶遇对的持久化上限（防脏档/篡改无限膨胀；正常游玩远达不到）。 */
+export const SEEN_ENCOUNTER_MAX = 4096;
+
+/**
+ * 稳定的偶遇对键（小 id 在前）：两个同作品同住角色一次偶遇的收集单元。
+ * 生成端（广场触发偶遇）、消费端（图鉴显形 / 去重优先未见 / 存档规整）**必须共用此函数**，键才对得上。
+ */
+export function encounterPairKey(a: number, b: number): string {
+  const x = Math.trunc(a);
+  const y = Math.trunc(b);
+  return x <= y ? `${x}-${y}` : `${y}-${x}`;
+}
+
+/**
+ * 规整「已见偶遇对」键清单（迁移 + 反序列化共用，同 canonicalizePlacedIds 边界纪律）：
+ * 只收合法 "min-max" 两非负整数键、归一为 min 在前、去重、截断到 SEEN_ENCOUNTER_MAX。
+ * 杜绝脏档/篡改塞入畸形键或无限膨胀。纯展示收集数据，不接任何数值奖励。
+ */
+export function canonicalizeSeenEncounterKeys(raw: unknown): string[] {
+  if (!Array.isArray(raw)) return [];
+  const seen = new Set<string>();
+  const out: string[] = [];
+  for (const x of raw) {
+    if (typeof x !== 'string') continue;
+    const parts = x.split('-');
+    if (parts.length !== 2) continue;
+    const a = Number(parts[0]);
+    const b = Number(parts[1]);
+    if (!Number.isInteger(a) || !Number.isInteger(b) || a < 0 || b < 0) continue;
+    const key = encounterPairKey(a, b);
+    if (seen.has(key)) continue;
+    seen.add(key);
+    out.push(key);
+    if (out.length >= SEEN_ENCOUNTER_MAX) break;
+  }
+  return out;
+}
+
 /** 离线产出封顶时长（小时）：超过这个时长的离线不再累积，即软节流。 */
 export const OFFLINE_CAP_HOURS = 12;
 

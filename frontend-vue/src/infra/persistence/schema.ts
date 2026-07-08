@@ -40,6 +40,9 @@
  *   本 Sprint 唯一存档变更（v19→v20 一次性 bump）。
  *   v20（S15-T4，复用同一 bump，绝不升 v21）：TowerProgress 加 slotPity（槽位定向掉落保底计数，定长 3 键 weapon/armor/supporter）。
  *   连续 N 次通新层掉落判定未出某槽 → 强制命中该槽（稀有度仍走层段）。旧档无此字段 → 补全零 + clamp [0, 阈值]（脏档防放大获取）。
+ * v21（S16 偶遇图鉴）：HomesteadSave 加 seenEncounterKeys（看过的同作品偶遇对键 "min-max"，纯展示收集数据）。
+ *   去重优先未见 + 图鉴显形；不接任何数值奖励（名字≠行为红线）。旧档无此键 → 补空 []。归一/上限权威在
+ *   config/homestead.ts（canonicalizeSeenEncounterKeys / SEEN_ENCOUNTER_MAX），杜绝脏档畸形键/无限膨胀。S16 唯一 bump。
  */
 import type { PityState } from '@/engine/gacha/draw';
 import { defaultFacilityLevels } from '@/config/homestead';
@@ -54,7 +57,7 @@ import type {
   TowerProgress,
 } from '@/types/player';
 
-export const SAVE_VERSION = 20 as const;
+export const SAVE_VERSION = 21 as const;
 
 /** 商店单品的当日购买记录（跨天读取时自动视为 0）。 */
 export interface ShopPurchaseRecord {
@@ -158,6 +161,12 @@ export interface HomesteadSave {
   placedCharacterIds: number[];
   /** 上次离线结算的墙钟时间戳(ms)；0 = 尚未建立基线（首次进家园即以"现在"为准，不补发历史）。 */
   lastSettleAt: number;
+  /**
+   * ★ v21 偶遇图鉴：看过的同作品偶遇对键（"min-max"，config/homestead.ts encounterPairKey 生成）。
+   * 纯展示收集数据——去重优先未见 + 图鉴显形；**不接任何数值奖励**（名字≠行为红线）。
+   * 归一/上限见 canonicalizeSeenEncounterKeys / SEEN_ENCOUNTER_MAX。旧档无此键 → []。
+   */
+  seenEncounterKeys: string[];
 }
 
 /**
@@ -365,11 +374,12 @@ export function createDefaultMiniGames(): MiniGamesSave {
   };
 }
 
-/** v13：家园挂机域默认空态（新档/旧档迁移补默认）。 */
+/** v13：家园挂机域默认空态（新档/旧档迁移补默认）。v21 起含空偶遇图鉴。 */
 export function createDefaultHomestead(): HomesteadSave {
   return {
     placedCharacterIds: [],
     lastSettleAt: 0,
+    seenEncounterKeys: [],
   };
 }
 

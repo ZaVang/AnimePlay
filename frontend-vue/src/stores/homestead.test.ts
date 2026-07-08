@@ -75,6 +75,34 @@ describe('homestead store：入住 / 槽位 / 往返', () => {
     expect(h.placedCharacterIds).toEqual([77, 5]);
     expect(h.lastSettleAt).toBe(1700000000000);
   });
+
+  it('★ v21 偶遇图鉴：markEncounterSeen 去重、hasSeenEncounter、序列化往返 + 脏档规整', () => {
+    const h = useHomesteadStore();
+    expect(h.hasSeenEncounter('48-49')).toBe(false);
+    expect(h.markEncounterSeen('48-49')).toBe(true); // 首次新增
+    expect(h.markEncounterSeen('48-49')).toBe(false); // 重复不再新增
+    expect(h.hasSeenEncounter('48-49')).toBe(true);
+    h.markEncounterSeen('5-12393');
+    expect(h.seenEncounterKeys.size).toBe(2);
+
+    // 序列化含 seenEncounterKeys；往返保真。
+    const snap = JSON.parse(JSON.stringify(h.serialize()));
+    expect(snap.seenEncounterKeys.sort()).toEqual(['48-49', '5-12393'].sort());
+    h.reset();
+    expect(h.seenEncounterKeys.size).toBe(0);
+    h.deserialize(snap);
+    expect(h.hasSeenEncounter('48-49')).toBe(true);
+    expect(h.hasSeenEncounter('5-12393')).toBe(true);
+
+    // 反序列化脏档：畸形键被规整/丢弃、乱序键归一为 min-max、去重。
+    h.deserialize({
+      placedCharacterIds: [],
+      lastSettleAt: 0,
+      seenEncounterKeys: ['49-48', '48-49', 'bad', '7', 'x-y', '3-9'] as unknown as string[],
+    });
+    // '49-48' 与 '48-49' 归一同键去重 → 只剩一个 '48-49'；'3-9' 保留；其余畸形丢弃。
+    expect([...h.seenEncounterKeys].sort()).toEqual(['3-9', '48-49']);
+  });
 });
 
 describe('settleHomestead（门面离线结算）', () => {

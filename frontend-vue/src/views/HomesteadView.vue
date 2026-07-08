@@ -21,10 +21,12 @@ import {
   offlineCapHours,
   FURNITURE_CATALOG,
   getFurnitureSlot,
+  encounterPairKey,
   IDLE_SETTLE_MODAL_MIN_HOURS,
   type FacilityKey,
   type IdleYield,
 } from '@/config/homestead';
+import { computeBondPairs } from '@/engine';
 import { useFacilityStore } from '@/stores/facility';
 import { useFurnitureStore } from '@/stores/furniture';
 import { useCodexStore } from '@/stores/codex';
@@ -77,6 +79,9 @@ const plaza = usePlazaWalk({
   canTapInteract: (id: number) => userStore.canDailyBondInteract(id),
   doTapInteract: (id: number) => userStore.dailyBondInteraction(id),
   tapAffectionAmount: DAILY_BOND_INTERACTION_AFFECTION,
+  // ★ v21 偶遇图鉴：去重优先未见 + 触发即记入（纯展示收集，无数值发放）。
+  hasSeenEncounter: (key: string) => homestead.hasSeenEncounter(key),
+  markEncounterSeen: (key: string) => userStore.markHomesteadEncounterSeen(key),
 });
 const { pets, sparks, visibleCount, bubbleFor, onPetImgError, spriteStyle, petStyle, depthScale, chibiImageSrc } =
   plaza;
@@ -413,6 +418,23 @@ function pctText(v: number): string {
 
 /** ★ S16-T1 有可领里程碑的入住角色数（入住名单摘要红点 cue，引导玩家去领）。 */
 const claimableBondCount = computed(() => residentRows.value.filter(r => r.claimable).length);
+
+// ── ★ v21 偶遇图鉴：当前入住组合可解锁的同作品偶遇对 + 已看/未看状态（派生自 placedCards + 已看集合）──
+// 与广场偶遇同源（同一 computeBondPairs 判据 + 同一 encounterPairKey）：图鉴列出的对，广场里真能偶遇。
+// 纯展示收集——不接任何数值奖励（名字≠行为红线）。
+const encounterDex = computed(() => {
+  const cards = placedCards.value;
+  return computeBondPairs(cards.map(c => c.anime_names)).map(p => {
+    const A = cards[p.a];
+    const B = cards[p.b];
+    const key = encounterPairKey(A.id, B.id);
+    return { key, aName: A.name, bName: B.name, anime: p.anime, seen: homestead.hasSeenEncounter(key) };
+  });
+});
+/** 累计已发现的偶遇场次（跨入住组合、全时段，读持久化的已看集合）。 */
+const encounterSeenTotal = computed(() => homestead.seenEncounterKeys.size);
+/** 当前入住组合里已解锁 / 可解锁的偶遇对数（引导「换人凑对」的可见进度）。 */
+const encounterDexUnlocked = computed(() => encounterDex.value.filter(e => e.seen).length);
 
 // --- SF-T8 家园日常委托（清单勾选式，非横条；埋点在 userStore 门面，此处只读+领取） ---
 const commissionRows = computed(() =>
@@ -956,6 +978,34 @@ onUnmounted(() => {
             </transition>
           </div>
         </details>
+
+        <!-- ★ v21 偶遇图鉴：当前入住组合可解锁的同作品偶遇对 + 已看/未看 + 累计已发现（纯展示收集、无奖励） -->
+        <details class="g-card g-acc">
+          <summary class="g-acc-sum">
+            <span class="g-acc-ttl">偶遇图鉴</span>
+            <span class="g-chip" :class="{ good: encounterSeenTotal > 0 }">已发现 {{ encounterSeenTotal }} 场</span>
+          </summary>
+          <div class="g-acc-body">
+            <p v-if="encounterDex.length === 0" class="encdex-empty">
+              入住同一部作品的 2 个角色，他们就会在广场上偶遇聊天~
+            </p>
+            <template v-else>
+              <p class="encdex-hint">
+                当前入住可触发 {{ encounterDex.length }} 对偶遇，已解锁 {{ encounterDexUnlocked }} 对——让 TA 们在广场多待一会儿就会相遇。
+              </p>
+              <ul class="encdex-list">
+                <li v-for="e in encounterDex" :key="e.key" class="encdex-row" :class="{ 'is-seen': e.seen }">
+                  <span class="encdex-status" aria-hidden="true">{{ e.seen ? '✓' : '？' }}</span>
+                  <span class="encdex-body">
+                    <span class="encdex-pair">{{ e.aName }} <i>×</i> {{ e.bName }}</span>
+                    <span class="encdex-anime">{{ e.anime }}</span>
+                  </span>
+                  <span class="encdex-state">{{ e.seen ? '已解锁' : '未解锁' }}</span>
+                </li>
+              </ul>
+            </template>
+          </div>
+        </details>
       </aside>
     </div>
 
@@ -1252,6 +1302,25 @@ onUnmounted(() => {
   background: rgb(var(--c-accent-soft) / .5); border: 1px solid rgb(var(--c-accent) / .4);
   color: rgb(var(--c-ink)); font-size: .74rem; font-weight: 700;
 }
+
+/* ★ v21 偶遇图鉴（语义令牌，纯展示收集墙；已解锁 accent、未解锁灰显） */
+.encdex-empty { padding: 1rem; border: 1px dashed rgb(var(--c-line)); border-radius: 8px; color: rgb(var(--c-ink-2)); text-align: center; font-size: .78rem; }
+.encdex-hint { margin: 0 0 .5rem; font-size: .72rem; color: rgb(var(--c-ink-2)); }
+.encdex-list { display: flex; flex-direction: column; gap: .4rem; margin: 0; padding: 0; list-style: none; }
+.encdex-row {
+  display: flex; align-items: center; gap: .55rem;
+  padding: .35rem .5rem; border-radius: var(--sk-radius-control);
+  border: 1px solid rgb(var(--c-line)); background: rgb(var(--c-surface-2) / .5);
+}
+.encdex-row.is-seen { border-color: rgb(var(--c-accent) / .5); background: rgb(var(--c-accent-soft) / .3); }
+.encdex-status { flex: none; width: 1.2rem; text-align: center; font-weight: 800; color: rgb(var(--c-ink-3)); }
+.encdex-row.is-seen .encdex-status { color: rgb(var(--c-accent)); }
+.encdex-body { display: flex; flex-direction: column; gap: .05rem; min-width: 0; flex: 1 1 auto; }
+.encdex-pair { font-size: .8rem; font-weight: 700; color: rgb(var(--c-ink)); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.encdex-pair i { font-style: normal; color: rgb(var(--c-accent)); font-weight: 800; }
+.encdex-anime { font-size: .66rem; color: rgb(var(--c-ink-3)); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.encdex-state { flex: none; font-size: .68rem; font-weight: 700; color: rgb(var(--c-ink-3)); }
+.encdex-row.is-seen .encdex-state { color: rgb(var(--c-accent)); }
 
 .scene {
   position: relative; width: 100%; aspect-ratio: 16 / 9; overflow: hidden;
