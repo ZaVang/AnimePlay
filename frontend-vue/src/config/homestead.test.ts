@@ -28,6 +28,12 @@ import {
   encounterPairKey,
   canonicalizeSeenEncounterKeys,
   SEEN_ENCOUNTER_MAX,
+  clampFurniturePos,
+  canonicalizeFurniturePositions,
+  FURNITURE_POS_MIN_X,
+  FURNITURE_POS_MAX_X,
+  FURNITURE_POS_MIN_Y,
+  FURNITURE_POS_MAX_Y,
 } from './homestead';
 
 const H = 3600_000;
@@ -413,5 +419,37 @@ describe('★ v21 偶遇图鉴：encounterPairKey / canonicalizeSeenEncounterKey
   it('canonicalizeSeenEncounterKeys：截断到 SEEN_ENCOUNTER_MAX（防脏档膨胀）', () => {
     const many = Array.from({ length: SEEN_ENCOUNTER_MAX + 50 }, (_, i) => `${i}-${i + 100000}`);
     expect(canonicalizeSeenEncounterKeys(many)).toHaveLength(SEEN_ENCOUNTER_MAX);
+  });
+});
+
+describe('★ v21 自定义家具摆位：clampFurniturePos / canonicalizeFurniturePositions', () => {
+  it('clampFurniturePos：区内保一位小数、越界钳到可落区、非法 → null', () => {
+    expect(clampFurniturePos(30, 40)).toEqual({ x: 30, y: 40 });
+    expect(clampFurniturePos(30.44, 40.55)).toEqual({ x: 30.4, y: 40.6 }); // 保一位小数
+    expect(clampFurniturePos(999, -5)).toEqual({ x: FURNITURE_POS_MAX_X, y: FURNITURE_POS_MIN_Y });
+    expect(clampFurniturePos(-999, 999)).toEqual({ x: FURNITURE_POS_MIN_X, y: FURNITURE_POS_MAX_Y });
+    expect(clampFurniturePos('bad' as unknown, 5)).toBeNull();
+    expect(clampFurniturePos(5, NaN)).toBeNull();
+  });
+
+  it('canonicalizeFurniturePositions：只收已知家具、坐标钳位、丢畸形', () => {
+    const idA = FURNITURE_CATALOG[0].id;
+    const idB = FURNITURE_CATALOG[1].id;
+    const out = canonicalizeFurniturePositions({
+      [idA]: { x: 30, y: 40 },
+      [idB]: { x: 999, y: 999 }, // 越界 → 钳位
+      fn_unknown: { x: 10, y: 10 }, // 未知 id → 丢弃
+      [FURNITURE_CATALOG[2].id]: { x: 'bad', y: 5 }, // 非法坐标 → 丢弃
+    } as unknown);
+    expect(out[idA]).toEqual({ x: 30, y: 40 });
+    expect(out[idB]).toEqual({ x: FURNITURE_POS_MAX_X, y: FURNITURE_POS_MAX_Y });
+    expect(out).not.toHaveProperty('fn_unknown');
+    expect(out).not.toHaveProperty(FURNITURE_CATALOG[2].id);
+  });
+
+  it('canonicalizeFurniturePositions：非对象 → 空表', () => {
+    expect(canonicalizeFurniturePositions(null)).toEqual({});
+    expect(canonicalizeFurniturePositions('nope' as unknown)).toEqual({});
+    expect(canonicalizeFurniturePositions([1, 2] as unknown)).toEqual({});
   });
 });

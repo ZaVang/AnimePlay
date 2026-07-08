@@ -221,6 +221,42 @@ export function getFurnitureSlot(id: string): FurnitureSlot | undefined {
   return FURNITURE_SLOTS[id];
 }
 
+// ── 自定义摆位（v21 复用同一 bump）：玩家拖拽家具到自定坐标，覆盖固定槽位；缺则回落槽位 ──
+// 拍板：复用第 3 轮固定槽位为「默认/回落」，玩家拖动即存自定坐标（placedPositions）覆盖之。
+// 坐标同 % 脚点坐标系（与角色/固定槽位同一系），钳到场景可见带内防拖出 overflow:hidden 被切没。
+
+/** 自定义摆位可落区（%，避让场景四角悬崖，留出脚点/名牌余量）。 */
+export const FURNITURE_POS_MIN_X = 4;
+export const FURNITURE_POS_MAX_X = 96;
+export const FURNITURE_POS_MIN_Y = 14;
+export const FURNITURE_POS_MAX_Y = 92;
+
+/** 把一个（可能脏/越界）坐标钳到可落区并保一位小数（存档/拖拽共用，杜绝拖出场景或脏档畸形坐标）。 */
+export function clampFurniturePos(x: unknown, y: unknown): FurnitureSlot | null {
+  const nx = typeof x === 'number' && Number.isFinite(x) ? x : NaN;
+  const ny = typeof y === 'number' && Number.isFinite(y) ? y : NaN;
+  if (Number.isNaN(nx) || Number.isNaN(ny)) return null;
+  const cx = Math.min(FURNITURE_POS_MAX_X, Math.max(FURNITURE_POS_MIN_X, nx));
+  const cy = Math.min(FURNITURE_POS_MAX_Y, Math.max(FURNITURE_POS_MIN_Y, ny));
+  return { x: Math.round(cx * 10) / 10, y: Math.round(cy * 10) / 10 };
+}
+
+/**
+ * 规整自定义摆位表（迁移 + 反序列化共用）：只收目录内已知家具 defId、坐标钳到可落区、丢弃畸形。
+ * 未知 id / 非法坐标直接丢弃（回落固定槽位）。杜绝脏档/篡改用未知键或越界坐标（拖出场景 / 遮挡）。
+ */
+export function canonicalizeFurniturePositions(raw: unknown): Record<string, FurnitureSlot> {
+  const out: Record<string, FurnitureSlot> = {};
+  if (!raw || typeof raw !== 'object') return out;
+  for (const [id, val] of Object.entries(raw as Record<string, unknown>)) {
+    if (!FURNITURE_BY_ID.has(id)) continue;
+    if (!val || typeof val !== 'object') continue;
+    const pos = clampFurniturePos((val as { x?: unknown }).x, (val as { y?: unknown }).y);
+    if (pos) out[id] = pos;
+  }
+  return out;
+}
+
 /** defId → 定义的查表（懒建，供 store/UI/纯函数共用）。 */
 const FURNITURE_BY_ID: ReadonlyMap<string, FurnitureDef> = new Map(FURNITURE_CATALOG.map(d => [d.id, d]));
 

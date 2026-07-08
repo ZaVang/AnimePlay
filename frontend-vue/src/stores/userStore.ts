@@ -603,6 +603,14 @@ export const useUserStore = defineStore('user', () => {
     return ok;
   }
 
+  /** ★ v21 自定义摆位：拖拽家具落点持久化（纯位置、不碰 comfort/收益）；成功才存档。 */
+  function moveFurniture(defId: string, x: number, y: number): boolean {
+    if (!profile.isLoggedIn) return false;
+    const ok = useFurnitureStore().setPosition(defId, x, y);
+    if (ok) saveToServer();
+    return ok;
+  }
+
   // --- 各领域委托（动作完成后统一触发存档） ---
 
   const withSave = <A extends unknown[]>(fn: (...args: A) => unknown) => (...args: A) => {
@@ -718,6 +726,7 @@ export const useUserStore = defineStore('user', () => {
     buyFurniture,
     placeFurniture,
     unplaceFurniture,
+    moveFurniture,
 
     // daily（evolution-1）：领取每日任务奖励（领域 store 自己不存档）
     claimDailyTask: (taskId: string) => {

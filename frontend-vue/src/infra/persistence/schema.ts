@@ -43,9 +43,12 @@
  * v21（S16 偶遇图鉴）：HomesteadSave 加 seenEncounterKeys（看过的同作品偶遇对键 "min-max"，纯展示收集数据）。
  *   去重优先未见 + 图鉴显形；不接任何数值奖励（名字≠行为红线）。旧档无此键 → 补空 []。归一/上限权威在
  *   config/homestead.ts（canonicalizeSeenEncounterKeys / SEEN_ENCOUNTER_MAX），杜绝脏档畸形键/无限膨胀。S16 唯一 bump。
+ *   v21（自定义家具摆位，复用同一 bump 绝不升 v22）：FurnitureSave 加 placedPositions（defId → 自定 % 坐标，
+ *   拖拽落点覆盖固定槽位，缺则回落）。纯展示位置、不影响 comfort/收益。旧档无此键 → {}；归一/钳位在
+ *   config/homestead.ts（canonicalizeFurniturePositions / clampFurniturePos），未知 id/越界坐标丢弃。
  */
 import type { PityState } from '@/engine/gacha/draw';
-import { defaultFacilityLevels } from '@/config/homestead';
+import { defaultFacilityLevels, type FurnitureSlot } from '@/config/homestead';
 import { SQUAD_MEMBER_COUNT } from '@/engine/squad/eligibility';
 import type { CharacterNurtureData } from '@/types/nurture';
 import type {
@@ -236,6 +239,12 @@ export interface FurnitureSave {
   ownedIds: string[];
   /** 当前摆放中的家具 defId（子集于 ownedIds；只有摆放的给 comfort）。 */
   placedIds: string[];
+  /**
+   * ★ v21 自定义摆位：defId → 自定 % 坐标（拖拽落点）。覆盖 config 固定槽位（getFurnitureSlot），
+   * 缺则回落固定槽位。纯展示位置——**不影响 comfort/收益**（comfort 只看 placedIds）。
+   * 归一/钳位见 config/homestead.ts canonicalizeFurniturePositions / clampFurniturePos。旧档无此键 → {}。
+   */
+  placedPositions: Record<string, FurnitureSlot>;
 }
 
 /**
@@ -247,6 +256,7 @@ export function createDefaultFurniture(): FurnitureSave {
   return {
     ownedIds: [],
     placedIds: [],
+    placedPositions: {},
   };
 }
 

@@ -150,7 +150,7 @@ function populateAllDomains() {
 
   // S15-T2：家具域（已拥有/已摆放家具往返）
   const furniture = useFurnitureStore();
-  furniture.deserialize({ ownedIds: [FURNITURE_CATALOG[0].id, FURNITURE_CATALOG[1].id], placedIds: [FURNITURE_CATALOG[0].id] });
+  furniture.deserialize({ ownedIds: [FURNITURE_CATALOG[0].id, FURNITURE_CATALOG[1].id], placedIds: [FURNITURE_CATALOG[0].id], placedPositions: {} });
 }
 
 /**
@@ -271,7 +271,7 @@ describe('buildPayload ⇄ applyPayload 往返', () => {
 
     // S15-T2 新增域：家具（已拥有/已摆放）经一轮往返保真
     const furniture = useFurnitureStore();
-    expect(furniture.serialize()).toEqual({ ownedIds: [FURNITURE_CATALOG[0].id, FURNITURE_CATALOG[1].id], placedIds: [FURNITURE_CATALOG[0].id] });
+    expect(furniture.serialize()).toEqual({ ownedIds: [FURNITURE_CATALOG[0].id, FURNITURE_CATALOG[1].id], placedIds: [FURNITURE_CATALOG[0].id], placedPositions: {} });
   });
 
   it('payload 带版本号与全部 schema 键', () => {
@@ -308,7 +308,7 @@ describe('resetAllDomains', () => {
     expect(useEquipmentStore().inventory).toEqual([]);
     expect(useEquipmentStore().equipped).toEqual({});
     expect(useFacilityStore().levels).toEqual({ exp: 1, bond: 1, knowledge: 1 });
-    expect(useFurnitureStore().serialize()).toEqual({ ownedIds: [], placedIds: [] });
+    expect(useFurnitureStore().serialize()).toEqual({ ownedIds: [], placedIds: [], placedPositions: {} });
   });
 });
 

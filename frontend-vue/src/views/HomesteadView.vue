@@ -21,6 +21,7 @@ import {
   offlineCapHours,
   FURNITURE_CATALOG,
   getFurnitureSlot,
+  clampFurniturePos,
   encounterPairKey,
   IDLE_SETTLE_MODAL_MIN_HOURS,
   type FacilityKey,
@@ -274,22 +275,58 @@ interface PlacedFurniture {
 }
 const placedFurniture = computed<PlacedFurniture[]>(() => {
   void furnitureStore.placedIds;
+  void furnitureStore.placedPositions; // ★ v21 自定摆位变化即重算
   const out: PlacedFurniture[] = [];
   for (const def of FURNITURE_CATALOG) {
     if (!furnitureStore.isPlaced(def.id)) continue;
-    const slot = getFurnitureSlot(def.id);
-    if (!slot) continue;
-    out.push({ id: def.id, name: def.name, icon: def.icon, x: slot.x, y: slot.y });
+    // ★ v21：优先自定义摆位（拖拽落点），缺则回落 config 固定槽位。
+    const pos = furnitureStore.getPosition(def.id) ?? getFurnitureSlot(def.id);
+    if (!pos) continue;
+    out.push({ id: def.id, name: def.name, icon: def.icon, x: pos.x, y: pos.y });
   }
   return out;
 });
 
+// ── ★ v21 自定义家具拖拽摆位（pointer 拖动 → 落点存档，纯位置不碰 comfort/收益）──
+const sceneEl = ref<HTMLElement | null>(null);
+const MOVE_THRESHOLD = 0.8; // % 位移阈值：小于此视为点按非拖动，不存档（防误触把家具挪半格）
+/** 拖拽中家具的实时坐标（跟手渲染 + 起点用于阈值判断）；null = 未拖拽。 */
+const dragging = ref<{ id: string; x: number; y: number; startX: number; startY: number } | null>(null);
+
 /**
  * 家具槽位样式：与角色 petStyle 完全同一坐标系 + 同一 y-sort 公式（zIndex=round(y*10)），
  * 接进同一深度排序 → 家具与漫步角色按脚点 y 正确互相遮挡（Scout C-2，别做固定背景层）。
+ * ★ v21：拖拽中的那件跟手实时坐标 + 提到最前（zIndex 高），避免被角色/其他家具盖住。
  */
 function furnitureStyle(item: PlacedFurniture) {
+  const d = dragging.value;
+  if (d && d.id === item.id) {
+    return { left: d.x + '%', top: d.y + '%', zIndex: 100000 };
+  }
   return { left: item.x + '%', top: item.y + '%', zIndex: Math.round(item.y * 10) };
+}
+
+function onFurniturePointerDown(e: PointerEvent, item: PlacedFurniture) {
+  (e.currentTarget as HTMLElement).setPointerCapture?.(e.pointerId);
+  dragging.value = { id: item.id, x: item.x, y: item.y, startX: item.x, startY: item.y };
+  e.preventDefault();
+}
+function onFurniturePointerMove(e: PointerEvent) {
+  const d = dragging.value;
+  const rect = sceneEl.value?.getBoundingClientRect();
+  if (!d || !rect || rect.width <= 0 || rect.height <= 0) return;
+  const x = ((e.clientX - rect.left) / rect.width) * 100;
+  const y = ((e.clientY - rect.top) / rect.height) * 100;
+  const pos = clampFurniturePos(x, y);
+  if (pos) dragging.value = { ...d, x: pos.x, y: pos.y };
+}
+function onFurniturePointerUp() {
+  const d = dragging.value;
+  dragging.value = null;
+  if (!d) return;
+  // 位移小于阈值 = 点按非拖动，不存档（保留原摆位，避免误触）。
+  if (Math.abs(d.x - d.startX) < MOVE_THRESHOLD && Math.abs(d.y - d.startY) < MOVE_THRESHOLD) return;
+  userStore.moveFurniture(d.id, d.x, d.y);
 }
 
 /** ★ S16-T8 陈列计数（纯派生、零持久化、零奖励、不复用 claimedMilestones）：仅显数字。 */
@@ -617,7 +654,7 @@ onUnmounted(() => {
 
     <div v-else class="homestead-shell">
       <div class="scene-panel" aria-label="家园场景">
-        <div class="scene" :data-season="season.season">
+        <div ref="sceneEl" class="scene" :data-season="season.season">
           <img class="scene-bg" :src="homesteadMapSrc" alt="" draggable="false" />
 
           <!-- ★ S16-T11 季节浮层（纯 CSS/emoji，零素材零存档）：垫在 bg 之上、角色之下（z-index:3），
@@ -644,8 +681,13 @@ onUnmounted(() => {
             v-for="item in placedFurniture"
             :key="item.id"
             class="furniture"
+            :class="{ 'is-dragging': dragging?.id === item.id }"
             :style="furnitureStyle(item)"
-            :title="item.name"
+            :title="`${item.name} · 拖动可自由摆放`"
+            @pointerdown="onFurniturePointerDown($event, item)"
+            @pointermove="onFurniturePointerMove($event)"
+            @pointerup="onFurniturePointerUp()"
+            @pointercancel="onFurniturePointerUp()"
           >
             <span class="furniture-icon" aria-hidden="true">{{ item.icon }}</span>
             <span class="furniture-tag">{{ item.name }}</span>
@@ -895,6 +937,7 @@ onUnmounted(() => {
             </span>
           </summary>
           <div class="g-acc-body">
+            <p class="furniture-drag-hint">💡 摆放的家具可在广场上<b>拖动自由摆位</b>——摆成你喜欢的家。</p>
             <ul class="furniture-list">
               <li v-for="row in furnitureRows" :key="row.id" class="furniture-row" :class="{ 'is-placed': row.placed }">
                 <span class="furniture-body">
@@ -1261,6 +1304,8 @@ onUnmounted(() => {
 .commission-float-enter-from { opacity: 0; transform: translateY(6px); }
 .commission-float-leave-to { opacity: 0; transform: translateY(-8px); }
 /* S15-T2 家具布置（语义令牌，无 text-white / 动态色类） */
+.furniture-drag-hint { margin: 0 0 .5rem; font-size: .72rem; color: rgb(var(--c-ink-2)); }
+.furniture-drag-hint b { color: rgb(var(--c-accent)); font-weight: 700; }
 .furniture-list { display: flex; flex-direction: column; gap: .4rem; margin: 0; padding: 0; list-style: none; }
 .furniture-row {
   display: flex; align-items: center; gap: .55rem;
@@ -1386,12 +1431,20 @@ onUnmounted(() => {
 /* ★ S16-T7 场景可见家具（零素材 emoji + surface 名牌，脚点锚定；zIndex 走内联 y-sort 接进角色景深） */
 .furniture {
   position: absolute; transform: translate(-50%, -100%);
-  display: flex; flex-direction: column; align-items: center; pointer-events: none;
+  display: flex; flex-direction: column; align-items: center;
+  /* ★ v21 可拖拽摆位：接管指针 + 抓手光标 + touch-action:none 防触屏拖动时页面滚动劫持。 */
+  pointer-events: auto; cursor: grab; touch-action: none;
   will-change: left, top;
 }
+.furniture.is-dragging { cursor: grabbing; }
 .furniture-icon {
   font-size: 34px; line-height: 1; display: block;
   filter: drop-shadow(0 6px 6px rgb(44 64 54 / .3));
+  transition: transform .1s ease, filter .1s ease;
+}
+.furniture.is-dragging .furniture-icon {
+  transform: scale(1.1);
+  filter: drop-shadow(0 13px 11px rgb(44 64 54 / .45));
 }
 /* 名牌用 surface 卡片 + ink 文（语义令牌，非白字压图；短名安全在场景底图上可读） */
 .furniture-tag {

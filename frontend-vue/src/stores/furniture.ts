@@ -10,9 +10,12 @@ import { defineStore } from 'pinia';
 import { ref } from 'vue';
 import {
   canonicalizeFurnitureIds,
+  canonicalizeFurniturePositions,
+  clampFurniturePos,
   getFurnitureDef,
   sumFurnitureComfort,
   FURNITURE_PLACED_MAX,
+  type FurnitureSlot,
 } from '@/config/homestead';
 import type { FurnitureSave } from '@/infra/persistence/schema';
 
@@ -21,9 +24,24 @@ export const useFurnitureStore = defineStore('furniture', () => {
   const ownedIds = ref<string[]>([]);
   /** 当前摆放中的家具 defId（子集于 ownedIds；只有摆放的贡献 comfort）。 */
   const placedIds = ref<string[]>([]);
+  /** ★ v21 自定义摆位：defId → 自定 % 坐标（拖拽落点，覆盖固定槽位）。纯展示位置，不影响 comfort。 */
+  const placedPositions = ref<Record<string, FurnitureSlot>>({});
 
   function owns(id: string): boolean {
     return ownedIds.value.includes(id);
+  }
+
+  /** 取某家具的自定义摆位（未拖过 → undefined，渲染层回落固定槽位 getFurnitureSlot）。 */
+  function getPosition(id: string): FurnitureSlot | undefined {
+    return placedPositions.value[id];
+  }
+  /** 设自定义摆位（钳到可落区；未知 defId / 非法坐标 → false 不变更）。纯位置、不碰 comfort。 */
+  function setPosition(id: string, x: number, y: number): boolean {
+    if (!getFurnitureDef(id)) return false;
+    const pos = clampFurniturePos(x, y);
+    if (!pos) return false;
+    placedPositions.value = { ...placedPositions.value, [id]: pos };
+    return true;
   }
   function isPlaced(id: string): boolean {
     return placedIds.value.includes(id);
@@ -66,6 +84,7 @@ export const useFurnitureStore = defineStore('furniture', () => {
     return {
       ownedIds: [...ownedIds.value],
       placedIds: [...placedIds.value],
+      placedPositions: { ...placedPositions.value },
     };
   }
   function deserialize(data: FurnitureSave): void {
@@ -74,17 +93,23 @@ export const useFurnitureStore = defineStore('furniture', () => {
     const ownedSet = new Set(owned);
     ownedIds.value = owned;
     placedIds.value = canonicalizeFurnitureIds(data?.placedIds).filter(id => ownedSet.has(id));
+    // v21 自定义摆位：只收已知家具的合法坐标、越界钳位（旧档无此键 → {}）。
+    placedPositions.value = canonicalizeFurniturePositions(data?.placedPositions);
   }
   function reset(): void {
     ownedIds.value = [];
     placedIds.value = [];
+    placedPositions.value = {};
   }
 
   return {
     ownedIds,
     placedIds,
+    placedPositions,
     owns,
     isPlaced,
+    getPosition,
+    setPosition,
     buy,
     place,
     unplace,

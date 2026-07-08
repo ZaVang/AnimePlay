@@ -54,12 +54,44 @@ describe('furniture store 纯状态', () => {
 
   it('serialize/deserialize：往返保真 + 脏档归一（未拥有的摆放项丢弃）', () => {
     const f = useFurnitureStore();
-    f.deserialize({ ownedIds: [idA, idB, 'fn_nope'], placedIds: [idA, idB] });
+    f.deserialize({ ownedIds: [idA, idB, 'fn_nope'], placedIds: [idA, idB], placedPositions: {} });
     expect(f.ownedIds).toEqual([idA, idB]);
-    expect(f.serialize()).toEqual({ ownedIds: [idA, idB], placedIds: [idA, idB] });
+    expect(f.serialize()).toEqual({ ownedIds: [idA, idB], placedIds: [idA, idB], placedPositions: {} });
     // 摆放含未拥有项 → 收敛为拥有子集
-    f.deserialize({ ownedIds: [idA], placedIds: [idA, idB] });
-    expect(f.serialize()).toEqual({ ownedIds: [idA], placedIds: [idA] });
+    f.deserialize({ ownedIds: [idA], placedIds: [idA, idB], placedPositions: {} });
+    expect(f.serialize()).toEqual({ ownedIds: [idA], placedIds: [idA], placedPositions: {} });
+  });
+
+  it('★ v21 自定义摆位：setPosition 钳位/未知丢弃 + getPosition + 序列化往返 + 脏档归一', () => {
+    const f = useFurnitureStore();
+    // 未知 defId → false 不变更
+    expect(f.setPosition('fn_nope', 50, 50)).toBe(false);
+    // 已知 defId → 存自定坐标
+    expect(f.setPosition(idA, 30, 40)).toBe(true);
+    expect(f.getPosition(idA)).toEqual({ x: 30, y: 40 });
+    // 越界坐标被钳到可落区（x>96→96, y<14→14）
+    expect(f.setPosition(idB, 200, -5)).toBe(true);
+    expect(f.getPosition(idB)).toEqual({ x: 96, y: 14 });
+    // 未拖过的家具 → undefined（渲染层回落固定槽位）
+    expect(f.getPosition(FURNITURE_CATALOG[2].id)).toBeUndefined();
+
+    // 序列化含 placedPositions；往返保真。
+    const snap = JSON.parse(JSON.stringify(f.serialize()));
+    expect(snap.placedPositions[idA]).toEqual({ x: 30, y: 40 });
+    f.reset();
+    expect(f.getPosition(idA)).toBeUndefined();
+    f.deserialize(snap);
+    expect(f.getPosition(idA)).toEqual({ x: 30, y: 40 });
+
+    // 反序列化脏档：未知 id / 非法坐标丢弃、越界钳位。
+    f.deserialize({
+      ownedIds: [idA],
+      placedIds: [idA],
+      placedPositions: { [idA]: { x: 999, y: 50 }, fn_nope: { x: 10, y: 10 }, [idB]: { x: 'bad' } } as unknown as Record<string, { x: number; y: number }>,
+    });
+    expect(f.getPosition(idA)).toEqual({ x: 96, y: 50 }); // 越界钳位
+    expect(f.getPosition('fn_nope')).toBeUndefined(); // 未知 id 丢弃
+    expect(f.getPosition(idB)).toBeUndefined(); // 非法坐标丢弃
   });
 });
 
