@@ -23,6 +23,11 @@ import {
   getFurnitureDef,
   FURNITURE_CATALOG,
   FURNITURE_PLACED_MAX,
+  FURNITURE_SLOTS,
+  getFurnitureSlot,
+  encounterPairKey,
+  canonicalizeSeenEncounterKeys,
+  SEEN_ENCOUNTER_MAX,
 } from './homestead';
 
 const H = 3600_000;
@@ -309,6 +314,65 @@ describe('computeIdleYield 设施乘区（独立于装备 0.6 cap，决策-5）'
   });
 });
 
+describe('★ S16-T7 家具场景可见（icon + 固定槽位坐标，零素材 + 零升档）', () => {
+  it('每件家具都有非空 emoji 图标（可见性唯一解=零素材 emoji）', () => {
+    for (const d of FURNITURE_CATALOG) {
+      expect(typeof d.icon).toBe('string');
+      expect(d.icon.length).toBeGreaterThan(0);
+    }
+  });
+
+  it('每件家具都配了固定槽位坐标（防漏配导致静默不渲染）', () => {
+    for (const d of FURNITURE_CATALOG) {
+      const slot = getFurnitureSlot(d.id);
+      expect(slot, `${d.id} 缺槽位坐标`).toBeDefined();
+    }
+  });
+
+  it('槽位坐标在合法范围 [0,100]（% 坐标，脚点锚定在场景内）', () => {
+    for (const d of FURNITURE_CATALOG) {
+      const slot = getFurnitureSlot(d.id)!;
+      expect(slot.x).toBeGreaterThanOrEqual(0);
+      expect(slot.x).toBeLessThanOrEqual(100);
+      expect(slot.y).toBeGreaterThanOrEqual(0);
+      expect(slot.y).toBeLessThanOrEqual(100);
+    }
+  });
+
+  it('槽位落在角色活动带内（x∈[7,93]、y∈[22,86]）→ 与角色同坐标系、不被 overflow 切', () => {
+    // 与 usePlazaWalk 的 MIN_X/MAX_X/MIN_Y/MAX_Y 对齐：家具脚点在同一可见地面带内，
+    // 避开场景四角悬崖（overflow:hidden 会切）与顶部名牌溢出区。
+    for (const d of FURNITURE_CATALOG) {
+      const slot = getFurnitureSlot(d.id)!;
+      expect(slot.x).toBeGreaterThanOrEqual(7);
+      expect(slot.x).toBeLessThanOrEqual(93);
+      expect(slot.y).toBeGreaterThanOrEqual(22);
+      expect(slot.y).toBeLessThanOrEqual(86);
+    }
+  });
+
+  it('各家具槽位互不重叠（同坐标会视觉叠一起 = 陈列错乱）', () => {
+    const seen = new Set<string>();
+    for (const d of FURNITURE_CATALOG) {
+      const slot = getFurnitureSlot(d.id)!;
+      const key = `${slot.x}:${slot.y}`;
+      expect(seen.has(key), `${d.id} 槽位与他件重叠`).toBe(false);
+      seen.add(key);
+    }
+  });
+
+  it('FURNITURE_SLOTS 只含目录内 id（无孤儿槽位）', () => {
+    const catalogIds = new Set(FURNITURE_CATALOG.map(d => d.id));
+    for (const id of Object.keys(FURNITURE_SLOTS)) {
+      expect(catalogIds.has(id), `${id} 是孤儿槽位（目录里无此家具）`).toBe(true);
+    }
+  });
+
+  it('getFurnitureSlot：未知 id → undefined（渲染层据此跳过）', () => {
+    expect(getFurnitureSlot('fn_nope')).toBeUndefined();
+  });
+});
+
 describe('canonicalizePlacedIds（存档边界规整入住名单）', () => {
   it('非数组 → 空', () => {
     expect(canonicalizePlacedIds(null)).toEqual([]);
@@ -323,5 +387,31 @@ describe('canonicalizePlacedIds（存档边界规整入住名单）', () => {
     const out = canonicalizePlacedIds(many);
     expect(out).toHaveLength(HOMESTEAD_SLOTS);
     expect(out).toEqual(many.slice(0, HOMESTEAD_SLOTS));
+  });
+});
+
+describe('★ v21 偶遇图鉴：encounterPairKey / canonicalizeSeenEncounterKeys', () => {
+  it('encounterPairKey：小 id 在前、顺序无关、截整', () => {
+    expect(encounterPairKey(48, 49)).toBe('48-49');
+    expect(encounterPairKey(49, 48)).toBe('48-49'); // 顺序无关
+    expect(encounterPairKey(48, 48)).toBe('48-48'); // 同 id 容忍
+    expect(encounterPairKey(3.9, 9.1)).toBe('3-9'); // 截整
+  });
+
+  it('canonicalizeSeenEncounterKeys：合法键归一 + 去重 + 丢畸形', () => {
+    expect(canonicalizeSeenEncounterKeys(['49-48', '48-49', '3-9', 'bad', '7', 'x-y', 5 as unknown as string]))
+      .toEqual(['48-49', '3-9']); // 49-48 与 48-49 归一去重、3-9 保留、其余畸形丢弃
+    expect(canonicalizeSeenEncounterKeys(null)).toEqual([]);
+    expect(canonicalizeSeenEncounterKeys('nope' as unknown)).toEqual([]);
+    expect(canonicalizeSeenEncounterKeys([])).toEqual([]);
+  });
+
+  it('canonicalizeSeenEncounterKeys：负数键丢弃（防畸形）', () => {
+    expect(canonicalizeSeenEncounterKeys(['-1-5', '2-3'])).toEqual(['2-3']);
+  });
+
+  it('canonicalizeSeenEncounterKeys：截断到 SEEN_ENCOUNTER_MAX（防脏档膨胀）', () => {
+    const many = Array.from({ length: SEEN_ENCOUNTER_MAX + 50 }, (_, i) => `${i}-${i + 100000}`);
+    expect(canonicalizeSeenEncounterKeys(many)).toHaveLength(SEEN_ENCOUNTER_MAX);
   });
 });

@@ -5,6 +5,7 @@
 import { describe, it, expect } from 'vitest';
 import {
   computeBondBonus,
+  computeBondPairs,
   BOND_SAME_ANIME_PCT,
   BOND_BONUS_CAP,
 } from './bonds';
@@ -101,5 +102,63 @@ describe('computeBondBonus：同作品集合羁绊', () => {
     // 只有「正片」两个角色共享 → 命中一条。
     expect(r.hits).toHaveLength(1);
     expect(r.hits[0].anime).toBe('正片');
+  });
+});
+
+describe('computeBondPairs：广场偶遇同作品配对（S16-T4 触发判据）', () => {
+  it('0/1 入住：不成对', () => {
+    expect(computeBondPairs([])).toEqual([]);
+    expect(computeBondPairs([['作品A']])).toEqual([]);
+  });
+
+  it('同作品 2 人：一对，代表作品正确', () => {
+    const pairs = computeBondPairs([['命运石之门'], ['命运石之门']]);
+    expect(pairs).toEqual([{ a: 0, b: 1, anime: '命运石之门' }]);
+  });
+
+  it('不同作品：不成对', () => {
+    expect(computeBondPairs([['A'], ['B'], ['C']])).toEqual([]);
+  });
+
+  it('同作品 3 人：C(3,2)=3 对，(a,b) 升序稳定', () => {
+    const pairs = computeBondPairs([['作品'], ['作品'], ['作品']]);
+    expect(pairs).toEqual([
+      { a: 0, b: 1, anime: '作品' },
+      { a: 0, b: 2, anime: '作品' },
+      { a: 1, b: 2, anime: '作品' },
+    ]);
+  });
+
+  it('两人共享多部作品：代表取字典序最小者（稳定）', () => {
+    const pairs = computeBondPairs([
+      ['乙', '甲', '丙'],
+      ['丙', '甲', '乙'],
+    ]);
+    expect(pairs).toHaveLength(1);
+    // 甲/乙/丙 三部都共享 → 代表取字典序最小（中文按 code point）。
+    const min = ['甲', '乙', '丙'].slice().sort()[0];
+    expect(pairs[0].anime).toBe(min);
+  });
+
+  it('缺失 / null / 空 / 非字符串 / 空白：容忍不抛错、不成对', () => {
+    expect(computeBondPairs([undefined, null, [], ['孤独']])).toEqual([]);
+    const pairs = computeBondPairs([
+      ['  ', '正片' as string],
+      [123 as unknown as string, '正片'],
+    ]);
+    expect(pairs).toEqual([{ a: 0, b: 1, anime: '正片' }]);
+  });
+
+  it('同一角色重复列同作品：不自我成对', () => {
+    expect(computeBondPairs([['X', 'X']])).toEqual([]);
+  });
+
+  it('多组同作品：各组内成对、跨组不成对', () => {
+    // 0,1 同属「甲」；2,3 同属「乙」→ 两对，组间无交集。
+    const pairs = computeBondPairs([['甲'], ['甲'], ['乙'], ['乙']]);
+    expect(pairs).toEqual([
+      { a: 0, b: 1, anime: '甲' },
+      { a: 2, b: 3, anime: '乙' },
+    ]);
   });
 });

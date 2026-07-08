@@ -76,3 +76,52 @@ export function computeBondBonus(
 
   return { hits, bonusPct };
 }
+
+/** 一对「共享同作品」的入住角色（供广场偶遇 S16-T4 触发判据）。 */
+export interface BondPair {
+  /** 两个角色在入住列表中的下标（a < b，稳定）。 */
+  a: number;
+  b: number;
+  /** 两人共享的作品名（若共享多部，取字典序最小的一部作稳定代表）。 */
+  anime: string;
+}
+
+/**
+ * 纯计算（S16-T4）：从逐入住角色的 anime_names 派生「哪两个角色是同作品同伴」的配对清单。
+ * 与 computeBondBonus 同源（同一稳定键 anime_names），是广场偶遇的**触发判据**——
+ * 只有命中同作品的两个角色才会在广场偶遇对话，把右栏的 `+6%` 变成场景里可见的关系。
+ *
+ * 纯展示派生、零好感、零数值效果：本函数只回答「谁和谁能偶遇」，不产生任何加成/奖励。
+ *
+ * @param placedAnimeNames 逐入住角色的 anime_names（顺序 = 入住下标；可含 undefined/null/空）。
+ * @returns 配对清单，按 (a,b) 下标升序稳定排序（可穷举测试）。每对只出现一次，取共享作品字典序最小者。
+ */
+export function computeBondPairs(
+  placedAnimeNames: ReadonlyArray<readonly string[] | undefined | null>,
+): BondPair[] {
+  // 预处理：每个角色去重后的作品名集合（非字符串/空白忽略）。
+  const sets: Set<string>[] = placedAnimeNames.map(names => {
+    const s = new Set<string>();
+    if (Array.isArray(names)) {
+      for (const raw of names) {
+        if (typeof raw !== 'string') continue;
+        const anime = raw.trim();
+        if (anime) s.add(anime);
+      }
+    }
+    return s;
+  });
+
+  const pairs: BondPair[] = [];
+  for (let i = 0; i < sets.length; i++) {
+    for (let j = i + 1; j < sets.length; j++) {
+      // 两集合的交集里取字典序最小的作品作稳定代表（无交集则不成对）。
+      let shared: string | null = null;
+      for (const anime of sets[i]) {
+        if (sets[j].has(anime) && (shared === null || anime < shared)) shared = anime;
+      }
+      if (shared !== null) pairs.push({ a: i, b: j, anime: shared });
+    }
+  }
+  return pairs;
+}

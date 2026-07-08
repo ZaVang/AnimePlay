@@ -119,6 +119,31 @@ export const BOND_MILESTONES: readonly BondMilestone[] = [
 ];
 
 /**
+ * ★ S16-T12 里程碑庆祝分级音量（纯展示派生，零数值效果）。
+ *  - `highfive`：低档（bond_1/2/3，statBonusPct 0.02、reward ≤200）——保持现有轻飘字，克制。
+ *  - `crowning`：高档（bond_4/5/6，statBonusPct 0.03、reward ≥400）——升级隆重庆祝弹层。
+ *  - `finale`：最高档 bond_6「命运」（全游戏关系顶点）——Crowning 之上再加最隆重一档。
+ *
+ * 分级判据有数据支撑：BOND_MILESTONES 在 statBonusPct 上是 0.02（bond_1/2/3）vs 0.03（bond_4/5/6）
+ * 两档分层、reward 在 bond_3→bond_4 处从 200 跳到 400——bond_4 是数值分层的天然分界。
+ * 抽成纯函数是为了「分级判据」可被特征测试锁死（research 深挖①）；未知 id 保守回落 highfive。
+ * **纯展示：只决定庆祝音量，绝不携带任何数值 / 不发奖 / 不改奖励**（名字≠行为红线）。
+ */
+export type MilestoneCelebrationTier = 'highfive' | 'crowning' | 'finale';
+
+/** 高档 Crowning 的里程碑 id 白名单（bond_4/5/6，与 statBonusPct 0.03 档一致）。 */
+const CROWNING_MILESTONE_IDS: readonly string[] = ['bond_4', 'bond_5', 'bond_6'];
+/** 最高档 finale 的里程碑 id（bond_6「命运」，关系顶点，再加最隆重一档）。 */
+const FINALE_MILESTONE_ID = 'bond_6';
+
+/** 里程碑庆祝音量分级（highfive / crowning / finale）。未知 id 保守回落 highfive。 */
+export function milestoneCelebrationTier(id: string): MilestoneCelebrationTier {
+  if (id === FINALE_MILESTONE_ID) return 'finale';
+  if (CROWNING_MILESTONE_IDS.includes(id)) return 'crowning';
+  return 'highfive';
+}
+
+/**
  * ★ SC-T4 每日好感互动（送礼/对话形式）：每日一次跨天重置，给固定好感 + 少量经验。
  * 跨天判定复用 daily 的 todayKey 范式（nurtureData.lastBondInteractionDate 扁平字段）。
  */

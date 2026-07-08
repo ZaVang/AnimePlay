@@ -49,6 +49,28 @@ const bond = computed(() => computeBondBonus(placedCards.value.map(c => c.anime_
 const bondHits = computed(() => bond.value.hits);
 const bondBonusPct = computed(() => bond.value.bonusPct);
 
+// ── ★ S16-T6 入住决策的「关系预告」：把命中羁绊从「结果 chip（+6%）」翻译成情感语言 ──
+// 复用 bondHits（既有 computeBondBonus 派生），只加一层「命中组 → 同住角色名 → 偶遇预告文案」，
+// 零新数值逻辑、零存档、纯展示（守「名字≠行为」镜像：这是「行为的预告」，不驱动任何数值）。
+const bondPreviews = computed(() =>
+  bondHits.value.map(hit => {
+    const names = placedCards.value
+      .filter(c => (c.anime_names ?? []).includes(hit.anime))
+      .map(c => c.name);
+    return { anime: hit.anime, names };
+  }),
+);
+
+// 已入住角色所属的「命中同作品组」集合（供决策网格头像高亮：谁和谁会成一伙）。
+const highlightedAnimeSet = computed(() => new Set(bondHits.value.map(h => h.anime)));
+/** 某角色是否属于「已入住且命中同作品组」——是则头像加语义色光环，视觉连起「谁和谁一伙」。 */
+function isBondHighlighted(id: number): boolean {
+  if (!isPlaced(id)) return false;
+  const card = gameData.getCharacterCardById(id);
+  if (!card) return false;
+  return (card.anime_names ?? []).some(a => highlightedAnimeSet.value.has(a));
+}
+
 function toggle(id: number) {
   if (isPlaced(id)) userStore.unplaceFromHomestead(id);
   else userStore.placeInHomestead(id);
@@ -58,6 +80,8 @@ function rarityClass(rarity: Rarity): string {
   return GAME_CONFIG.characterSystem.rarityConfig[rarity]?.c || 'bg-gray-500';
 }
 function cellClass(id: number): string {
+  // ★ S16-T6 同作品已入住角色加 highlight 语义色光环——让「谁和谁会成一伙」在决策网格视觉连起来。
+  if (isBondHighlighted(id)) return 'border-highlight ring-2 ring-highlight bg-surface-2';
   if (isPlaced(id)) return 'border-accent ring-2 ring-accent bg-surface-2';
   if (!canPlaceMore.value) return 'border-line opacity-40 cursor-not-allowed';
   return 'border-line hover:border-accent';
@@ -88,6 +112,20 @@ function cellClass(id: number): string {
             >{{ hit.anime }} ×{{ hit.members }} · +{{ Math.round(hit.pct * 100) }}%</span>
           </template>
           <span v-else class="text-xs text-ink-3">同作品 ≥2 人同住可触发加成</span>
+        </div>
+        <!-- ★ S16-T6 关系预告：把「加成」隐去、把「会发生什么」显出来（情感语言，纯展示、零数值） -->
+        <div v-if="bondPreviews.length > 0" class="mt-2 flex flex-col gap-1" aria-label="关系预告">
+          <p
+            v-for="pv in bondPreviews"
+            :key="pv.anime"
+            class="text-[11px] leading-snug text-ink-2 flex items-start gap-1.5 rounded-lg bg-accent/[0.06] border border-accent/20 px-2 py-1"
+          >
+            <span class="text-accent flex-none" aria-hidden="true">♡</span>
+            <span>
+              <b class="text-ink">{{ pv.names.join('、') }}</b>
+              是《{{ pv.anime }}》的同伴 · 住一起会在广场偶遇聊天
+            </span>
+          </p>
         </div>
       </header>
 

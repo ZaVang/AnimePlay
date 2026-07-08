@@ -34,6 +34,46 @@ export function canonicalizePlacedIds(raw: unknown): number[] {
   return out;
 }
 
+// ── 偶遇图鉴（v21）：记录「看过哪些同作品偶遇对」→ 去重优先未见 + 图鉴显形 ──
+
+/** 已见偶遇对的持久化上限（防脏档/篡改无限膨胀；正常游玩远达不到）。 */
+export const SEEN_ENCOUNTER_MAX = 4096;
+
+/**
+ * 稳定的偶遇对键（小 id 在前）：两个同作品同住角色一次偶遇的收集单元。
+ * 生成端（广场触发偶遇）、消费端（图鉴显形 / 去重优先未见 / 存档规整）**必须共用此函数**，键才对得上。
+ */
+export function encounterPairKey(a: number, b: number): string {
+  const x = Math.trunc(a);
+  const y = Math.trunc(b);
+  return x <= y ? `${x}-${y}` : `${y}-${x}`;
+}
+
+/**
+ * 规整「已见偶遇对」键清单（迁移 + 反序列化共用，同 canonicalizePlacedIds 边界纪律）：
+ * 只收合法 "min-max" 两非负整数键、归一为 min 在前、去重、截断到 SEEN_ENCOUNTER_MAX。
+ * 杜绝脏档/篡改塞入畸形键或无限膨胀。纯展示收集数据，不接任何数值奖励。
+ */
+export function canonicalizeSeenEncounterKeys(raw: unknown): string[] {
+  if (!Array.isArray(raw)) return [];
+  const seen = new Set<string>();
+  const out: string[] = [];
+  for (const x of raw) {
+    if (typeof x !== 'string') continue;
+    const parts = x.split('-');
+    if (parts.length !== 2) continue;
+    const a = Number(parts[0]);
+    const b = Number(parts[1]);
+    if (!Number.isInteger(a) || !Number.isInteger(b) || a < 0 || b < 0) continue;
+    const key = encounterPairKey(a, b);
+    if (seen.has(key)) continue;
+    seen.add(key);
+    out.push(key);
+    if (out.length >= SEEN_ENCOUNTER_MAX) break;
+  }
+  return out;
+}
+
 /** 离线产出封顶时长（小时）：超过这个时长的离线不再累积，即软节流。 */
 export const OFFLINE_CAP_HOURS = 12;
 
@@ -115,6 +155,12 @@ export interface FurnitureDef {
   comfort: number;
   /** 知识点兑换价（走 profile.spend；一次性买断）。 */
   cost: number;
+  /**
+   * ★ S16-T7 纯展示图标（emoji）：家具进广场场景可见时渲染的零素材图标。
+   * **仅目录定义层的展示字段**——不进 FurnitureSave、不进 canonicalizeFurnitureIds、不进 sumFurnitureComfort，
+   * 加它不升档（拍板-二 / Scout C-3）。全仓零家具美术，emoji 是可见性唯一解，别依赖不存在的 png。
+   */
+  icon: string;
 }
 
 /**
@@ -123,17 +169,57 @@ export interface FurnitureDef {
  * 与装备 comfort 相加共用同一软加成轴才是设计意图（守挂机基线）。cost 从入门到高端拉开梯度（承接 KP sink）。
  */
 export const FURNITURE_CATALOG: readonly FurnitureDef[] = [
-  { id: 'fn_beanbag', name: '瘫痪懒人沙发', comfort: 3, cost: 300 },
-  { id: 'fn_kotatsu', name: '续命暖桌', comfort: 5, cost: 600 },
-  { id: 'fn_bookshelf', name: '设定集书墙', comfort: 6, cost: 1000 },
-  { id: 'fn_figure_shelf', name: '手办展示柜', comfort: 8, cost: 1800 },
-  { id: 'fn_arcade', name: '街机一号机', comfort: 10, cost: 3000 },
-  { id: 'fn_hotspring', name: '温泉泡澡桶', comfort: 12, cost: 5000 },
-  { id: 'fn_shrine', name: '祈愿绘马神社', comfort: 16, cost: 9000 },
+  { id: 'fn_beanbag', name: '瘫痪懒人沙发', comfort: 3, cost: 300, icon: '🛋️' },
+  { id: 'fn_kotatsu', name: '续命暖桌', comfort: 5, cost: 600, icon: '🔥' },
+  { id: 'fn_bookshelf', name: '设定集书墙', comfort: 6, cost: 1000, icon: '📚' },
+  { id: 'fn_figure_shelf', name: '手办展示柜', comfort: 8, cost: 1800, icon: '🎎' },
+  { id: 'fn_arcade', name: '街机一号机', comfort: 10, cost: 3000, icon: '🕹️' },
+  { id: 'fn_hotspring', name: '温泉泡澡桶', comfort: 12, cost: 5000, icon: '♨️' },
+  { id: 'fn_shrine', name: '祈愿绘马神社', comfort: 16, cost: 9000, icon: '⛩️' },
 ];
 
 /** 已摆放家具数量上限（防脏档摆放清单无限膨胀放大 comfort）。=目录条数（首版全摆即封顶）。 */
 export const FURNITURE_PLACED_MAX = FURNITURE_CATALOG.length;
+
+/** 场景固定槽位坐标（%，脚点锚定，与角色 pet 同坐标系）。 */
+export interface FurnitureSlot {
+  /** 横向中心（%，0 左 → 100 右）。 */
+  x: number;
+  /** 纵向脚点（%，0 顶 → 100 底）；家具用与角色同一 zIndex=round(y*10) 公式接进 y-sort 景深。 */
+  y: number;
+}
+
+/**
+ * ★ S16-T7 家具固定槽位坐标表（拍板-二：固定槽位零升档，坐标写死 config 常量、不进存档）。
+ *
+ * `placedIds` 决定「摆哪几件」、本表决定「每件摆哪个位」——两者合流即得可见的家具层。
+ * 坐标是 `%`（脚点锚定 translate(-50%,-100%)），与 `usePlazaWalk` 的角色同坐标系 → 16:9 场景等比缩放稳定。
+ * 家具 DOM 用 `zIndex=Math.round(y*10)`（与角色 petStyle 同公式）接进同一 y-sort：站家具前的角色遮家具、站家具后的被家具遮。
+ *
+ * 选址原则（Scout B2）：散布在实景平地、避让角色主漫步区正中 / 三处水池 / 场景四角悬崖（overflow:hidden 会切）；
+ * 语义贴合实景为加分（书墙近图书馆塔、绘马神社近神社建筑、温泉近池边平地等）。y ∈ [22,86] 与角色同活动带、脚点在地面。
+ */
+export const FURNITURE_SLOTS: Readonly<Record<string, FurnitureSlot>> = {
+  // 🛋️ 懒人沙发：右侧草坪偏上（漫步区外的开阔平地）。
+  fn_beanbag: { x: 87, y: 50 },
+  // 🔥 续命暖桌：右侧草坪偏下（与沙发错开、成休闲区意象）。
+  fn_kotatsu: { x: 90, y: 66 },
+  // 📚 设定集书墙：左侧图书馆塔前平地（语义贴合）。
+  fn_bookshelf: { x: 9, y: 74 },
+  // 🎎 手办展示柜：左上圆形旗帜平台旁（展示位，避让漫步 rect 正中，落其上缘外侧）。
+  fn_figure_shelf: { x: 33, y: 24 },
+  // 🕹️ 街机一号机：右上神社/小屋门口平台旁。
+  fn_arcade: { x: 88, y: 33 },
+  // ♨️ 温泉泡澡桶：右下池边平地（池边不入水）。
+  fn_hotspring: { x: 82, y: 82 },
+  // ⛩️ 祈愿绘马神社：上方神社建筑旁（语义贴合，脚点在可见地面带内）。
+  fn_shrine: { x: 64, y: 24 },
+};
+
+/** 取某家具的固定槽位坐标（未配置 → undefined，渲染层据此跳过，防漏配静默渲染错位）。 */
+export function getFurnitureSlot(id: string): FurnitureSlot | undefined {
+  return FURNITURE_SLOTS[id];
+}
 
 /** defId → 定义的查表（懒建，供 store/UI/纯函数共用）。 */
 const FURNITURE_BY_ID: ReadonlyMap<string, FurnitureDef> = new Map(FURNITURE_CATALOG.map(d => [d.id, d]));

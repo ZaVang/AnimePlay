@@ -520,6 +520,12 @@ export const useUserStore = defineStore('user', () => {
     return ok;
   }
 
+  /** ★ v21 偶遇图鉴：记录看过一场同作品偶遇（纯展示收集，无数值发放）；新增才触发存档。 */
+  function markHomesteadEncounterSeen(pairKey: string): void {
+    if (!profile.isLoggedIn) return;
+    if (useHomesteadStore().markEncounterSeen(pairKey)) saveToServer();
+  }
+
   /**
    * 升级一个设施（S14-D SD-T1/SD-T5）：先结清现有挂机收益（避免升级瞬间抬升封顶回溯放大已挂时间）
    * → profile.spend('knowledgePoints', cost) 成功才 facility.levelUp → 存档。
@@ -705,6 +711,7 @@ export const useUserStore = defineStore('user', () => {
     settleHomestead,
     placeInHomestead,
     unplaceFromHomestead,
+    markHomesteadEncounterSeen,
     // facility（S14-D SD-T1/SD-T5）：设施升级（扣 KP 成功才提级 + 存档）
     upgradeFacility,
     // furniture（S15-T2）：KP 买断家具 + 摆放/收纳（成功才存档；先结清再变更）

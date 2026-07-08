@@ -29,7 +29,12 @@ import type { CharacterNurtureData } from '@/types/nurture';
 import type { PresetSquad } from '@/types/player';
 import { createPityState } from '@/engine/gacha/draw';
 import { MAX_BREAKTHROUGH } from '@/engine/nurture/rules';
-import { canonicalizePlacedIds, clampFacilityLevel, canonicalizeFurnitureIds } from '@/config/homestead';
+import {
+  canonicalizePlacedIds,
+  clampFacilityLevel,
+  canonicalizeFurnitureIds,
+  canonicalizeSeenEncounterKeys,
+} from '@/config/homestead';
 import { sanitizeEquipped, clampEnhance, clampSlotPity } from '@/config/equipment';
 import { canonicalizeSquadMembers } from './schema';
 
@@ -172,6 +177,8 @@ function migrateHomestead(raw: any): HomesteadSave {
     // 数字 + 去重 + 截断到槽位上限（脏档防放大收益，见 canonicalizePlacedIds）
     placedCharacterIds: canonicalizePlacedIds(raw.placedCharacterIds),
     lastSettleAt: typeof raw.lastSettleAt === 'number' ? raw.lastSettleAt : defaults.lastSettleAt,
+    // v21 偶遇图鉴：合法 "min-max" 键、去重、截断（旧档无此键 → []）。
+    seenEncounterKeys: canonicalizeSeenEncounterKeys(raw.seenEncounterKeys),
   };
 }
 
