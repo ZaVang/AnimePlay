@@ -154,7 +154,7 @@ describe('v1 → v2 迁移', () => {
 
   it('v20 新键：furniture 缺失补默认（空拥有 + 空摆放）', () => {
     expect(v2.furniture).toEqual(createDefaultFurniture());
-    expect(v2.furniture).toEqual({ ownedIds: [], placedIds: [] });
+    expect(v2.furniture).toEqual({ ownedIds: [], placedIds: [], placedPositions: {} });
   });
 });
 
@@ -608,16 +608,37 @@ describe('v20 furniture 迁移（S15-T2）', () => {
   it('v19 旧档（无 furniture 键）→ 空家具缺省（不影响既有挂机）', () => {
     const out = migrate({ version: 19 } as unknown);
     expect(out.furniture).toEqual(createDefaultFurniture());
-    expect(out.furniture).toEqual({ ownedIds: [], placedIds: [] });
+    expect(out.furniture).toEqual({ ownedIds: [], placedIds: [], placedPositions: {} });
   });
 
   it('★ 已存家具往返保真（合法 id 原样保留，摆放是拥有子集）', () => {
     const saved = { version: 20, furniture: { ownedIds: [idA, idB], placedIds: [idA] } };
     const out = migrate(saved as unknown);
-    expect(out.furniture).toEqual({ ownedIds: [idA, idB], placedIds: [idA] });
+    expect(out.furniture).toEqual({ ownedIds: [idA, idB], placedIds: [idA], placedPositions: {} });
     // 再过一次迁移（模拟存→读往返）仍一致
     const roundTrip = migrate(out as unknown);
     expect(roundTrip.furniture).toEqual(out.furniture);
+  });
+
+  it('★ v21 自定义摆位往返 + 旧档补 {} + 脏档规整（未知 id/越界钳位丢弃）', () => {
+    // 旧 v20 furniture 无 placedPositions → 补 {}
+    const oldOut = migrate({ version: 20, furniture: { ownedIds: [idA], placedIds: [idA] } } as unknown);
+    expect(oldOut.furniture.placedPositions).toEqual({});
+    // 合法坐标往返保真
+    const out = migrate({
+      version: 21,
+      furniture: { ownedIds: [idA, idB], placedIds: [idA], placedPositions: { [idA]: { x: 30, y: 40 } } },
+    } as unknown);
+    expect(out.furniture.placedPositions).toEqual({ [idA]: { x: 30, y: 40 } });
+    // 脏档：未知 id 丢弃、越界坐标钳位、非法坐标丢弃
+    const dirty = migrate({
+      version: 21,
+      furniture: {
+        ownedIds: [idA], placedIds: [idA],
+        placedPositions: { [idA]: { x: 999, y: -5 }, fn_unknown: { x: 10, y: 10 }, [idB]: { x: 'bad', y: 5 } },
+      },
+    } as unknown);
+    expect(dirty.furniture.placedPositions).toEqual({ [idA]: { x: 96, y: 14 } });
   });
 
   it('脏档：未知 id / 非字符串 / 重复项被归一丢弃（防放大 comfort）', () => {

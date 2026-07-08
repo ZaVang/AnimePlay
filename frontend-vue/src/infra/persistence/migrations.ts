@@ -34,6 +34,7 @@ import {
   clampFacilityLevel,
   canonicalizeFurnitureIds,
   canonicalizeSeenEncounterKeys,
+  canonicalizeFurniturePositions,
 } from '@/config/homestead';
 import { sanitizeEquipped, clampEnhance, clampSlotPity } from '@/config/equipment';
 import { canonicalizeSquadMembers } from './schema';
@@ -210,7 +211,9 @@ function migrateFurniture(raw: any): FurnitureSave {
   const ownedIds = canonicalizeFurnitureIds(raw.ownedIds);
   const ownedSet = new Set(ownedIds);
   const placedIds = canonicalizeFurnitureIds(raw.placedIds).filter(id => ownedSet.has(id));
-  return { ownedIds, placedIds };
+  // v21 自定义摆位：只收已知家具的合法坐标、越界钳位（旧档无此键 → {}）。
+  const placedPositions = canonicalizeFurniturePositions(raw.placedPositions);
+  return { ownedIds, placedIds, placedPositions };
 }
 
 /**
