@@ -23,6 +23,10 @@
 - `/squad-battle`、`/nurture`、`/guess` 是兼容重定向；除非明确做破坏性路由迁移，不要让它们变成 404。
 - 界面颜色优先使用 `assets/skins.css` 的语义 token/classes；避免在浅色主题上写死 `text-white`，也不要拼接动态 Tailwind 类名。
 - 组件中的 timer、interval、animation frame 和 observer 必须在卸载时清理。
+- 结算幂等要覆盖完整副作用链：调用 domain store 前先记录本局是否仍为 active，只允许第一次结束推进任务、发奖或保存；不要用奖励金额推断是否首次结算。
+- 把“是否结束”和“为何结束”分开建模；手动退出、答错等会话原因保持为瞬态状态，不写进存档。
+- 重玩已结算内容时，当前局分数与首通/官方分数必须分开，回看不能覆盖或伪装成首通结果。
+- 可拖拽容器保持非交互语义；选择、详情、移除使用并列的原生按钮，避免按钮嵌套和仅拖拽可达的操作。
 
 ## Generated and large artifacts
 

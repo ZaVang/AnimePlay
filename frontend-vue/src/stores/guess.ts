@@ -181,8 +181,11 @@ export const useGuessStore = defineStore('guess', () => {
 
   // 猜测角色
   function guessCharacter(guess: string): { correct: boolean; message: string } {
-    if (!currentCharacter.value) {
+    if (!isGameActive.value || !currentCharacter.value) {
       return { correct: false, message: '游戏未开始' };
+    }
+    if (isGameOver.value) {
+      return { correct: false, message: '本局已结束，请开始新游戏' };
     }
 
     attempts.value++;

@@ -480,6 +480,11 @@ S8 把技能「真实现」了，但 2026-06-17 的全量复审（132 技能 × 
 > ✅ **SSR 立绘齐备后开放出战 / 入住**（commit `6d9f9f3` / merge `91a8f36`）。SSR 与 HR/UR 同权：可入住家园、可编入 5 人挑战塔小队参战。改造走**单一真相源** `TOWER_SQUAD_ALLOWED_RARITIES`（`engine/squad/eligibility.ts`，`['HR','UR']`→`['SSR','HR','UR']`）——准入闸 `isTowerSquadRarity` / 技能包闸 `data/squadSkillKits.isSquadRarity`（统一为前者）/ 编队 picker `allowed-rarities` 三处同源，杜绝「准入过却无技能包」漂移。SSR 技能包由 archetype 模板**程序化生成**完整 5 槽（`resolveArchetype` 回落 → `archetypeEffects`），无需手写 per-character 数据即可满足 `hasCompleteSkillKit` 参战。塔敌方阵容 decouple 为独立 `TowerEnemyRarity=HR|UR`（敌人仍 HR/UR 精英守关；玩家 SSR/HR/UR 的非对称是设计选择）。家园入住 modal 本就无稀有度过滤、picker `allowed-rarities` 本就绑定准入常量——两处零逻辑改动即随准入常量放开。UI 文案 + `docs/挑战塔系统.md` 玩家准入行更新为 SSR/HR/UR（敌方行仍 HR/UR）。验证：type-check 0 / 918 tests（+1 SSR 用例，coverage 断言真实全角色数据集含可出战 SSR）/ build / backend PASS。**遗留**：SSR 目前只有 archetype 模板级通用 kit，无 per-character 差异化技能设计——待「技能配置表拆分 + SSR 逐角色设计」议题（见 [FUTURE.md](FUTURE.md)）。
 
 ---
+## ✅ 增量 — 小游戏结算与家园 Hub 可达性（2026-07-15）
+
+> ✅ **两轮 product-loop 完成小游戏与家园 Hub 收口**。小游戏统一补齐首次结算幂等：猜角色会推进共享日/周任务，高低猜与问答在答错或主动退出时都能结算，重复退出不会重复推进任务；问答明确区分答错与手动结算。每日挑战把当前回看成绩与今日首通成绩分离，回看不覆盖官方成绩且无奖励。Tier List 增加点击选中、详情与移除按钮，触屏和键盘无需 HTML5 拖拽即可完成整局，并移除嵌套交互语义。家园 Hub 底栏移除面向玩家的宅理论战入口，保留内部状态兼容；从小游戏返回 Hub 增加未结算确认。全过程未修改存档 schema、路由表或 `/battle` 领域。最终验证：前端 74 个测试文件、1040 项测试通过，type-check / build / backend security / diff check 全绿。
+
+---
 ## 🔗 附录：审计问题 → Sprint 映射
 
 历史可追溯表：审计各章节 → 处理它的 Sprint。S1–S10 行均已完成（纯回溯）；S11 / S12 行指向仍未开始的未来 Sprint（前瞻，非已完成工作，见 [FUTURE.md](FUTURE.md)）。

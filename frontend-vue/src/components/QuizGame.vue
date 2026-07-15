@@ -37,6 +37,10 @@ function choose(i: number) {
 }
 
 function playAgain() { start(); }
+function endAndSettle() {
+  if (busy.value || !store.quizPlaying) return;
+  userStore.settleQuiz();
+}
 function backToMenu() { store.quitQuiz(); }
 </script>
 
@@ -69,8 +73,18 @@ function backToMenu() { store.quitQuiz(); }
         @choose="choose"
       />
 
+      <button
+        v-if="!store.quizOver"
+        class="btn-ghost quiz-settle-btn"
+        :disabled="busy"
+        @click="endAndSettle"
+      >结束并结算当前成绩</button>
+
       <div v-if="store.quizOver" class="quiz-over">
-        <p class="quiz-over-title">答错了！</p>
+        <p
+          class="quiz-over-title"
+          :class="{ 'quiz-over-title-wrong': store.quizEndReason === 'wrong' }"
+        >{{ store.quizEndReason === 'wrong' ? '答错了！' : '本局已结算' }}</p>
         <p class="quiz-over-streak">本局连答 <b>{{ store.quizStreak }}</b> 题 · 得分 <b>{{ finalScore }}</b></p>
         <p v-if="store.quizLastAward > 0" class="quiz-over-award">🎉 兑换 {{ store.quizLastAward }} 知识点</p>
         <p v-else class="text-xs text-ink-2">（今日小游戏奖励已达上限或未达 5 连，下次再来~）</p>
@@ -89,8 +103,10 @@ function backToMenu() { store.quitQuiz(); }
 .quiz-topbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
 .quiz-streak { font-size: 1.1rem; color: rgb(var(--c-ink)); }
 .quiz-streak b { color: rgb(var(--c-accent)); }
+.quiz-settle-btn { margin-top: 1rem; font-size: 0.8rem; }
 .quiz-over { margin-top: 1.25rem; }
-.quiz-over-title { font-size: 1.1rem; font-weight: 700; color: rgb(var(--c-danger)); }
+.quiz-over-title { font-size: 1.1rem; font-weight: 700; color: rgb(var(--c-accent)); }
+.quiz-over-title-wrong { color: rgb(var(--c-danger)); }
 .quiz-over-streak { color: rgb(var(--c-ink)); margin-top: 0.25rem; }
 .quiz-over-streak b { color: rgb(var(--c-accent)); }
 .quiz-over-award { color: rgb(var(--c-accent)); font-weight: 700; margin-top: 0.25rem; }

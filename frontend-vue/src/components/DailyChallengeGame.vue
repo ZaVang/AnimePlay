@@ -64,10 +64,16 @@ function choose(i: number) {
 
     <!-- 完成 -->
     <div v-else class="dc-result">
-      <p class="dc-result-title">🎉 今日挑战完成！</p>
-      <p class="dc-result-score">得分 <b>{{ store.dcLastScore }}</b> / 5</p>
-      <p v-if="store.dcLastAward > 0" class="dc-result-award">兑换 {{ store.dcLastAward }} 知识点</p>
-      <p v-else class="text-xs text-ink-2">（今日已领过奖励，明天再来~）</p>
+      <p class="dc-result-title">{{ store.dcIsReview ? '今日题目回看完成' : '🎉 今日挑战完成！' }}</p>
+      <template v-if="store.dcIsReview">
+        <p class="dc-result-score">本次回看 <b>{{ store.dcScore }}</b> / 5</p>
+        <p class="dc-result-score dc-result-official">今日首通 <b>{{ store.dcLastScore }}</b> / 5</p>
+        <p class="text-xs text-ink-2">回看无奖励，不影响今日首通、最佳成绩与连签。</p>
+      </template>
+      <template v-else>
+        <p class="dc-result-score">本次首通 <b>{{ store.dcScore }}</b> / 5</p>
+        <p class="dc-result-award">本次奖励 {{ store.dcLastAward }} 知识点</p>
+      </template>
       <p class="dc-streak mt-1">🔥 连续挑战 {{ store.dcStreakDays }} 天（最长 {{ store.dcBestStreakDays }} 天）</p>
       <p class="text-xs text-ink-2 mt-1">历史最佳 {{ store.dcBestScore }} / 5 · 明天换新题</p>
     </div>
@@ -84,5 +90,6 @@ function choose(i: number) {
 .dc-result-title { font-size: 1.2rem; font-weight: 700; color: rgb(var(--c-accent)); }
 .dc-result-score { color: rgb(var(--c-ink)); margin-top: 0.5rem; font-size: 1.05rem; }
 .dc-result-score b { color: rgb(var(--c-accent)); }
+.dc-result-official { margin-top: 0.15rem; font-size: 0.9rem; color: rgb(var(--c-ink-2)); }
 .dc-result-award { color: rgb(var(--c-accent)); font-weight: 700; margin-top: 0.25rem; }
 </style>

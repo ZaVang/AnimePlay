@@ -3,7 +3,7 @@
  * 锐评 Tier 表（小游戏 #6，evolution-11）。
  * 选番剧/角色 → 拖进 5 个档位行（夯/顶级/人上人/npc/拉完了）做锐评。
  * 行内 flex-wrap，超出自动换行。棋盘存 localStorage（设备级，不进存档）。
- * 桌面优先：用原生 HTML5 拖放。
+ * 桌面保留原生 HTML5 拖放；触屏/键盘通过单卡操作条完成同一套移动。
  */
 import { ref, reactive, computed, watch } from 'vue';
 import { useGameDataStore } from '@/stores/gameDataStore';
@@ -14,6 +14,14 @@ import { assetUrl } from '@/utils/assetUrl';
 import type { AnimeCard, CharacterCard, Card } from '@/types/card';
 import CardDetailModal from '@/components/CardDetailModal.vue';
 import { useDialog } from '@/composables/useDialog';
+import {
+  TIER_ROW_IDS,
+  findTierItemRow,
+  moveTierItem,
+  removeTierItem,
+  type TierBoard,
+  type TierRowId,
+} from '@/utils/tierBoard';
 
 const gameData = useGameDataStore();
 const minigames = useMiniGamesStore();
@@ -28,13 +36,13 @@ const TIERS = [
   { id: 'C', label: 'npc', color: '#94d82d' },
   { id: 'D', label: '拉完了', color: '#74c0fc' },
 ] as const;
-type RowId = 'pool' | (typeof TIERS)[number]['id'];
-const ROW_IDS: RowId[] = ['S', 'A', 'B', 'C', 'D'];
+type RowId = TierRowId;
+const ROW_IDS = [...TIER_ROW_IDS];
 
 type Domain = 'anime' | 'character';
 const domain = ref<Domain>('anime');
 
-interface Board { pool: number[]; S: number[]; A: number[]; B: number[]; C: number[]; D: number[]; }
+type Board = TierBoard;
 const emptyBoard = (): Board => ({ pool: [], S: [], A: [], B: [], C: [], D: [] });
 const boards = reactive<Record<Domain, Board>>({ anime: emptyBoard(), character: emptyBoard() });
 const board = computed(() => boards[domain.value]);
@@ -124,19 +132,47 @@ const ADD_ALL_CAP = 60;
 
 // --- 候选多选 + 批量导入 ---
 const selected = ref<Set<number>>(new Set());
-watch(domain, () => { selected.value = new Set(); });
+const selectedItemId = ref<number | null>(null);
+const selectedRow = computed(() => selectedItemId.value == null
+  ? null
+  : findTierItemRow(board.value, selectedItemId.value));
+watch(domain, () => {
+  selected.value = new Set();
+  selectedItemId.value = null;
+  detailCard.value = null;
+});
 
 function toggleSelect(id: number) {
   if (selected.value.has(id)) selected.value.delete(id);
   else selected.value.add(id);
 }
+function activateCandidate(id: number) {
+  selectedItemId.value = id;
+  toggleSelect(id);
+}
+function selectBoardItem(id: number) {
+  selectedItemId.value = id;
+}
+function moveItem(id: number, target: RowId) {
+  boards[domain.value] = moveTierItem(board.value, id, target);
+  selectedItemId.value = id;
+  selected.value.delete(id);
+}
+function moveSelectedItem(target: RowId) {
+  if (selectedItemId.value == null) return;
+  moveItem(selectedItemId.value, target);
+}
 /** 导入勾选中的候选到待评区。 */
 function importSelected() {
-  for (const id of selected.value) if (!onBoardIds.value.has(id)) board.value.pool.push(id);
+  const ids = [...selected.value];
+  for (const id of ids) if (!onBoardIds.value.has(id)) moveItem(id, 'pool');
+  if (ids.length > 0) selectedItemId.value = ids[ids.length - 1];
   selected.value = new Set();
 }
 function addAllFiltered() {
-  for (const c of candidates.value.slice(0, ADD_ALL_CAP)) board.value.pool.push(c.id);
+  const cards = candidates.value.slice(0, ADD_ALL_CAP);
+  for (const c of cards) moveItem(c.id, 'pool');
+  if (cards.length > 0) selectedItemId.value = cards[cards.length - 1].id;
 }
 /** 从「番剧品味」已勾选的看过番批量导入（仅动画域）。 */
 const tasteImportCount = computed(() =>
@@ -145,19 +181,31 @@ const tasteImportCount = computed(() =>
     : 0,
 );
 function importFromTaste() {
+  let lastImported: number | null = null;
   for (const id of minigames.tasteWatchedIds) {
-    if (!onBoardIds.value.has(id) && cardById.value.has(id)) board.value.pool.push(id);
+    if (!onBoardIds.value.has(id) && cardById.value.has(id)) {
+      moveItem(id, 'pool');
+      lastImported = id;
+    }
   }
+  if (lastImported != null) selectedItemId.value = lastImported;
 }
 function removeFromBoard(id: number) {
-  for (const k of ['pool', ...ROW_IDS] as RowId[]) {
-    const i = board.value[k].indexOf(id);
-    if (i >= 0) board.value[k].splice(i, 1);
-  }
+  boards[domain.value] = removeTierItem(board.value, id);
+  if (selectedItemId.value === id) selectedItemId.value = null;
+}
+function removeSelectedItem() {
+  if (selectedItemId.value != null) removeFromBoard(selectedItemId.value);
+}
+function openSelectedDetail() {
+  if (selectedItemId.value != null) openDetail(selectedItemId.value);
 }
 async function clearBoard() {
   if (onBoardIds.value.size === 0) return;
-  if (await confirm('清空当前锐评棋盘？', { confirmText: '清空', danger: true })) boards[domain.value] = emptyBoard();
+  if (await confirm('清空当前锐评棋盘？', { confirmText: '清空', danger: true })) {
+    boards[domain.value] = emptyBoard();
+    selectedItemId.value = null;
+  }
 }
 
 // --- 拖放 ---
@@ -169,16 +217,6 @@ function onDragStart(id: number, from: RowId) {
   dragId.value = id;
   dragFrom.value = from;
 }
-function onDrop(to: RowId) {
-  dragOverRow.value = null;
-  if (dragId.value == null || dragFrom.value == null) return;
-  const fromArr = board.value[dragFrom.value];
-  const i = fromArr.indexOf(dragId.value);
-  if (i >= 0) fromArr.splice(i, 1);
-  if (!board.value[to].includes(dragId.value)) board.value[to].push(dragId.value);
-  dragId.value = null;
-  dragFrom.value = null;
-}
 // 候选区拖入棋盘：dragstart 用特殊来源 'cand'
 function onCandDragStart(id: number) {
   dragId.value = id;
@@ -187,14 +225,7 @@ function onCandDragStart(id: number) {
 function onDropFromAny(to: RowId) {
   dragOverRow.value = null;
   if (dragId.value == null) return;
-  if (dragFrom.value !== null) {
-    const fromArr = board.value[dragFrom.value];
-    const i = fromArr.indexOf(dragId.value);
-    if (i >= 0) fromArr.splice(i, 1);
-  }
-  if (!onBoardIds.value.has(dragId.value)) board.value[to].push(dragId.value);
-  else if (!board.value[to].includes(dragId.value)) board.value[to].push(dragId.value);
-  selected.value.delete(dragId.value);
+  moveItem(dragId.value, to);
   dragId.value = null;
   dragFrom.value = null;
 }
@@ -319,6 +350,41 @@ async function exportImage() {
 
     <p v-if="exportError" class="text-xs text-danger mb-2">{{ exportError }}</p>
 
+    <div v-if="selectedItemId != null" class="tier-operations" aria-live="polite">
+      <span class="tier-operations-title">
+        已选：{{ nameOf(selectedItemId) }} · {{ selectedRow === null ? '候选区' : (selectedRow === 'pool' ? '待评区' : `${selectedRow} 档`) }}
+      </span>
+      <button
+        v-if="selectedRow === null"
+        type="button"
+        class="btn-primary text-sm px-3 py-1.5"
+        @click="moveSelectedItem('pool')"
+      >导入待评区</button>
+      <template v-else>
+        <button
+          v-for="t in TIERS"
+          :key="t.id"
+          type="button"
+          class="tier-operation-btn"
+          :disabled="selectedRow === t.id"
+          @click="moveSelectedItem(t.id)"
+        >移到 {{ t.label }}（{{ t.id }}）</button>
+        <button
+          type="button"
+          class="tier-operation-btn"
+          :disabled="selectedRow === 'pool'"
+          @click="moveSelectedItem('pool')"
+        >回待评区</button>
+      </template>
+      <button type="button" class="tier-operation-btn" @click="openSelectedDetail">查看详情</button>
+      <button
+        v-if="selectedRow !== null"
+        type="button"
+        class="tier-operation-btn tier-operation-danger"
+        @click="removeSelectedItem"
+      >移出棋盘</button>
+    </div>
+
     <!-- Tier 棋盘 -->
     <div class="tier-board">
       <div
@@ -336,13 +402,35 @@ async function exportImage() {
             v-for="id in board[t.id]"
             :key="id"
             class="tier-item"
+            :class="{ 'tier-item-selected': selectedItemId === id }"
             draggable="true"
             :title="nameOf(id)"
             @contextmenu.prevent="openDetail(id)"
             @dragstart="onDragStart(id, t.id)"
           >
-            <img :src="thumbSrc(id)" loading="lazy" decoding="async" @error="onThumbError" />
-            <button class="tier-item-x" title="移出棋盘" @click="removeFromBoard(id)">×</button>
+            <button
+              type="button"
+              class="tier-item-select"
+              :aria-label="`选择 ${nameOf(id)}，当前在 ${t.label} 档`"
+              :aria-pressed="selectedItemId === id"
+              @click.stop="selectBoardItem(id)"
+            >
+              <img :src="thumbSrc(id)" loading="lazy" decoding="async" @error="onThumbError" />
+            </button>
+            <button
+              type="button"
+              class="tier-item-action tier-item-detail"
+              title="查看详情"
+              :aria-label="`查看 ${nameOf(id)} 详情`"
+              @click.stop="openDetail(id)"
+            >i</button>
+            <button
+              type="button"
+              class="tier-item-action tier-item-x"
+              title="移出棋盘"
+              :aria-label="`将 ${nameOf(id)} 移出棋盘`"
+              @click.stop="removeFromBoard(id)"
+            >×</button>
           </div>
         </div>
       </div>
@@ -365,13 +453,35 @@ async function exportImage() {
         v-for="id in board.pool"
         :key="id"
         class="tier-item"
+        :class="{ 'tier-item-selected': selectedItemId === id }"
         draggable="true"
         :title="nameOf(id)"
         @contextmenu.prevent="openDetail(id)"
         @dragstart="onDragStart(id, 'pool')"
       >
-        <img :src="imageSrc(id)" loading="lazy" decoding="async" />
-        <button class="tier-item-x" title="移出棋盘" @click="removeFromBoard(id)">×</button>
+        <button
+          type="button"
+          class="tier-item-select"
+          :aria-label="`选择待评区中的 ${nameOf(id)}`"
+          :aria-pressed="selectedItemId === id"
+          @click.stop="selectBoardItem(id)"
+        >
+          <img :src="imageSrc(id)" loading="lazy" decoding="async" />
+        </button>
+        <button
+          type="button"
+          class="tier-item-action tier-item-detail"
+          title="查看详情"
+          :aria-label="`查看 ${nameOf(id)} 详情`"
+          @click.stop="openDetail(id)"
+        >i</button>
+        <button
+          type="button"
+          class="tier-item-action tier-item-x"
+          title="移出棋盘"
+          :aria-label="`将 ${nameOf(id)} 移出棋盘`"
+          @click.stop="removeFromBoard(id)"
+        >×</button>
       </div>
       <p v-if="board.pool.length === 0" class="text-xs text-ink-2 p-2">从下方选取对象添加到这里，再拖进档位。</p>
     </div>
@@ -407,17 +517,23 @@ async function exportImage() {
         @click="importFromTaste"
       >导入品味已看（{{ tasteImportCount }}）</button>
     </div>
-    <p class="text-xs text-ink-2 mb-2">点缩略图多选、再「导入选中」批量加入；也可直接把缩略图拖进档位；右键任意卡看详情（共 {{ candidates.length }} 个可选）。</p>
+    <p class="text-xs text-ink-2 mb-2">点缩略图多选、再「导入选中」批量加入；也可选择单卡后用上方操作条导入、分档或看详情。桌面仍可直接拖放（共 {{ candidates.length }} 个可选）。</p>
     <div class="cand-strip">
       <div
         v-for="c in candidates.slice(0, 120)"
         :key="c.id"
         class="cand-item"
-        :class="{ 'cand-selected': selected.has(c.id) }"
+        :class="{ 'cand-selected': selected.has(c.id), 'cand-active': selectedItemId === c.id }"
         :title="c.name"
         draggable="true"
+        role="button"
+        tabindex="0"
+        :aria-label="`选择候选 ${c.name}`"
+        :aria-pressed="selected.has(c.id)"
         @dragstart="onCandDragStart(c.id)"
-        @click="toggleSelect(c.id)"
+        @click="activateCandidate(c.id)"
+        @keydown.enter.prevent="activateCandidate(c.id)"
+        @keydown.space.prevent="activateCandidate(c.id)"
         @contextmenu.prevent="openDetail(c.id)"
       >
         <img :src="thumbSrc(c.id)" loading="lazy" decoding="async" @error="onThumbError" />
@@ -437,6 +553,20 @@ async function exportImage() {
 <style scoped>
 .tier { width: 100%; color: rgb(var(--c-ink)); }
 
+.tier-operations {
+  display: flex; flex-wrap: wrap; align-items: center; gap: .45rem;
+  margin-bottom: .75rem; padding: .7rem; border: 1px solid rgb(var(--c-accent) / .45);
+  border-radius: .65rem; background: rgb(var(--c-accent) / .08);
+}
+.tier-operations-title { width: 100%; font-size: .82rem; font-weight: 700; color: rgb(var(--c-ink)); }
+.tier-operation-btn {
+  padding: .38rem .65rem; border: 1px solid rgb(var(--c-line)); border-radius: .5rem;
+  background: rgb(var(--c-surface)); color: rgb(var(--c-ink)); font-size: .75rem;
+}
+.tier-operation-btn:hover:not(:disabled), .tier-operation-btn:focus-visible { border-color: rgb(var(--c-accent)); }
+.tier-operation-btn:disabled { opacity: .45; cursor: not-allowed; }
+.tier-operation-danger { color: rgb(var(--c-danger)); }
+
 .tier-board { display: flex; flex-direction: column; gap: 3px; border-radius: 0.5rem; overflow: hidden; }
 .tier-row {
   display: flex; align-items: stretch; min-height: 116px;
@@ -455,14 +585,21 @@ async function exportImage() {
   border: 1px dashed rgb(var(--c-line)); border-radius: 0.5rem; background: rgb(var(--c-surface) / 0.4);
 }
 
-.tier-item { position: relative; width: 72px; height: 102px; border-radius: 4px; overflow: hidden; cursor: grab; background: rgb(var(--c-surface)); }
-.tier-item img { width: 100%; height: 100%; object-fit: cover; object-position: top; pointer-events: none; }
-.tier-item-x {
-  position: absolute; top: 0; right: 0; width: 20px; height: 20px; line-height: 18px; text-align: center;
-  font-size: 14px; font-weight: 800; color: #fff; background: rgb(0 0 0 / 0.6); border: 0; cursor: pointer;
-  opacity: 0; transition: opacity .12s;
+.tier-item { position: relative; width: 72px; height: 102px; border-radius: 4px; cursor: grab; background: rgb(var(--c-surface)); }
+.tier-item-selected { outline: 3px solid rgb(var(--c-accent)); outline-offset: 1px; }
+.tier-item-select { display: block; width: 100%; height: 100%; padding: 0; border: 0; border-radius: 4px; overflow: hidden; cursor: grab; background: transparent; }
+.tier-item-select:focus-visible { outline: 3px solid rgb(var(--c-accent)); outline-offset: -3px; }
+.tier-item-select img { width: 100%; height: 100%; object-fit: cover; object-position: top; pointer-events: none; }
+.tier-item-action {
+  position: absolute; top: 0; width: 20px; height: 20px; line-height: 18px; text-align: center;
+  font-size: 14px; font-weight: 800; color: #fff; background: rgb(0 0 0 / 0.68); border: 0; cursor: pointer;
+  opacity: .82; transition: opacity .12s;
 }
-.tier-item:hover .tier-item-x { opacity: 1; }
+.tier-item-detail { left: 0; font-family: serif; font-style: italic; }
+.tier-item-x {
+  right: 0;
+}
+.tier-item:hover .tier-item-action, .tier-item-action:focus-visible { opacity: 1; }
 
 .cand-strip {
   display: flex; flex-wrap: wrap; gap: 5px; max-height: 360px; overflow-y: auto;
@@ -470,6 +607,7 @@ async function exportImage() {
 }
 .cand-item { position: relative; width: 72px; height: 102px; border-radius: 4px; overflow: hidden; cursor: pointer; background: rgb(var(--c-surface-2)); transition: transform .1s; }
 .cand-item:hover { transform: translateY(-2px); outline: 2px solid rgb(var(--c-accent)); }
+.cand-item:focus-visible, .cand-active { outline: 3px solid rgb(var(--c-accent)); outline-offset: 1px; }
 .cand-item img { width: 100%; height: 100%; object-fit: cover; object-position: top; pointer-events: none; }
 .cand-selected { outline: 3px solid rgb(var(--c-accent)); }
 .cand-check {

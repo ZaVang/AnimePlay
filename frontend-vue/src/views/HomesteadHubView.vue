@@ -691,7 +691,7 @@ function rarityWeight(rarity: string): number {
       />
     </section>
 
-    <!-- ===== 底部指令栏（替代原 hub-tabs）：5 个胖图标按钮，sticky 吸底 ===== -->
+    <!-- ===== 底部公开指令栏：战斗仅能从探索校验后进入内部状态 ===== -->
     <nav class="hub-dock" aria-label="基地面板">
       <button
         type="button"
@@ -729,15 +729,6 @@ function rarityWeight(rarity: string): number {
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 6v6c0 5 3.5 8 8 10 4.5-2 8-5 8-10V6z"/><path d="m9 12 2 2 4-4"/></svg>
         <span>探索</span>
         <span class="hub-dock-dot" aria-hidden="true"></span>
-      </button>
-      <button
-        type="button"
-        class="hub-dock-btn"
-        :class="{ active: activeTab === 'battle' }"
-        @click="switchTab('battle')"
-      >
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m14.5 4 5.5 5.5-9 9L5.5 13z"/><path d="m4 20 3-3"/><path d="M18 4 20 6"/></svg>
-        <span>战斗</span>
       </button>
     </nav>
   </div>

@@ -146,6 +146,7 @@ export const useMiniGamesStore = defineStore('minigames', () => {
   const quizStreak = ref(0);
   const quizPlaying = ref(false);
   const quizOver = ref(false);
+  const quizEndReason = ref<'wrong' | 'manual' | null>(null);
   const quizSettled = ref(false);
   const quizLastAward = ref(0);
 
@@ -164,6 +165,7 @@ export const useMiniGamesStore = defineStore('minigames', () => {
   const dcActive = ref(false);
   const dcDone = ref(false);
   const dcLastAward = ref(0);
+  const dcIsReview = ref(false);
 
   // 番剧品味画像（v12）：勾选「看过」的番剧 id 集（持久化；纯收藏态，无战绩/无每日封顶）。
   const tasteWatchedIds = ref<Set<number>>(new Set());
@@ -267,6 +269,7 @@ export const useMiniGamesStore = defineStore('minigames', () => {
     if (score > highScore.value) highScore.value = score;
     lastAward.value = kp;
     isPlaying.value = false;
+    isGameOver.value = true;
     return { score, streak: finalStreak, kpToAward: kp };
   }
 
@@ -285,6 +288,7 @@ export const useMiniGamesStore = defineStore('minigames', () => {
     quizStreak.value = 0;
     quizPlaying.value = !!quizQuestion.value;
     quizOver.value = false;
+    quizEndReason.value = null;
     quizSettled.value = false;
     quizLastAward.value = 0;
   }
@@ -295,7 +299,10 @@ export const useMiniGamesStore = defineStore('minigames', () => {
     quizChosen.value = index;
     const correct = quizIsCorrect(quizQuestion.value, index);
     if (correct) quizStreak.value += 1;
-    else quizOver.value = true;
+    else {
+      quizOver.value = true;
+      quizEndReason.value = 'wrong';
+    }
     return correct;
   }
 
@@ -314,18 +321,21 @@ export const useMiniGamesStore = defineStore('minigames', () => {
     const score = streakReward(finalStreak);
     if (quizSettled.value) return { score, streak: finalStreak, kpToAward: 0 };
     quizSettled.value = true;
+    if (quizEndReason.value === null) quizEndReason.value = 'manual';
     const kp = grantAward(score);
     quizPlayCount.value += 1;
     if (finalStreak > quizBestStreak.value) quizBestStreak.value = finalStreak;
     if (score > quizHighScore.value) quizHighScore.value = score;
     quizLastAward.value = kp;
     quizPlaying.value = false;
+    quizOver.value = true;
     return { score, streak: finalStreak, kpToAward: kp };
   }
 
   function quitQuiz() {
     quizPlaying.value = false;
     quizOver.value = false;
+    quizEndReason.value = null;
     quizQuestion.value = null;
   }
 
@@ -342,6 +352,7 @@ export const useMiniGamesStore = defineStore('minigames', () => {
 
   /** 开始今日挑战：用当日种子确定性生成 DC_QUESTION_COUNT 题（全员同题）。 */
   function startDailyChallenge(rng: RNG = createSeededRng(dateSeed())) {
+    dcIsReview.value = dcCompletedToday.value;
     const { anime, characters } = quizPool();
     const qs: QuizQuestion[] = [];
     for (let i = 0; i < DC_QUESTION_COUNT; i++) {
@@ -470,6 +481,7 @@ export const useMiniGamesStore = defineStore('minigames', () => {
     dcQuestions.value = [];
     dcActive.value = false;
     dcDone.value = false;
+    dcIsReview.value = false;
     tasteWatchedIds.value = new Set();
     awardDate.value = '';
     awardedToday.value = 0;
@@ -489,10 +501,10 @@ export const useMiniGamesStore = defineStore('minigames', () => {
     startGame, guess, nextRound, settle, quit,
     // Quiz 战绩 + 会话态 + 方法
     quizHighScore, quizBestStreak, quizPlayCount,
-    quizQuestion, quizChosen, quizStreak, quizPlaying, quizOver, quizLastAward,
+    quizQuestion, quizChosen, quizStreak, quizPlaying, quizOver, quizEndReason, quizLastAward,
     startQuiz, answerQuiz, nextQuestion, settleQuiz, quitQuiz,
     // 每日挑战 战绩 + 会话态 + 方法
-    dcLastDate, dcLastScore, dcBestScore, dcStreakDays, dcBestStreakDays, dcScore, dcChosen, dcActive, dcDone, dcLastAward, dcIndex, dcQuestions,
+    dcLastDate, dcLastScore, dcBestScore, dcStreakDays, dcBestStreakDays, dcScore, dcChosen, dcActive, dcDone, dcLastAward, dcIsReview, dcIndex, dcQuestions,
     dcCompletedToday, dcCurrentQuestion, dcTotal,
     startDailyChallenge, answerDailyChallenge, nextDailyChallenge, settleDailyChallenge,
     // 品味画像（v12）

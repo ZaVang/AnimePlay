@@ -33,7 +33,7 @@ import { useNurtureStore } from './nurture';
 import { usePveStore } from './pve';
 import { useShopStore } from './shop';
 import { useGuessStore } from './guess';
-import { useMiniGamesStore } from './minigames/higherLower';
+import { streakReward, useMiniGamesStore } from './minigames/higherLower';
 import { useHomesteadStore } from './homestead';
 import { useEquipmentStore } from './equipment';
 import { useFacilityStore } from './facility';
@@ -343,7 +343,9 @@ export const useUserStore = defineStore('user', () => {
 
   function submitGuess(guess: string): { correct: boolean; message: string; knowledgeAwarded: number } {
     const guessStore = useGuessStore();
+    const wasActive = guessStore.isGameActive && !guessStore.isGameOver;
     const result = guessStore.guessCharacter(guess);
+    const completedNow = wasActive && guessStore.isGameOver;
     let knowledgeAwarded = 0;
 
     if (result.correct) {
@@ -356,11 +358,18 @@ export const useUserStore = defineStore('user', () => {
         }
         // 留存埋点（evolution-1）：猜对成就（连对/累计）
         useAchievementsStore().check('guess');
-        saveToServer(); // 最高分/知识点可能更新
+        // 猜角色专属成就仍只在答对时推进；统一小游戏任务以首次终局为口径。
       }
-    } else if (profile.isLoggedIn) {
+    } else if (profile.isLoggedIn && wasActive) {
       // 猜错打断连对计数（不存档：streak 是会话态）
       useAchievementsStore().resetGuessStreak();
+    }
+
+    if (profile.isLoggedIn && completedNow) {
+      useDailyStore().markProgress('minigame', 1);
+      saveToServer(); // 最高分、知识点与日/周任务同一次落盘
+    } else if (profile.isLoggedIn && result.correct) {
+      saveToServer(); // 防御：保持既有答对存档语义
     }
 
     return { ...result, knowledgeAwarded };
@@ -370,6 +379,10 @@ export const useUserStore = defineStore('user', () => {
 
   function settleHigherLower(): { score: number; streak: number; knowledgeAwarded: number } {
     const minigames = useMiniGamesStore();
+    const isFirstSettlement = minigames.isPlaying;
+    if (!isFirstSettlement) {
+      return { score: streakReward(minigames.streak), streak: minigames.streak, knowledgeAwarded: 0 };
+    }
     const { score, streak, kpToAward } = minigames.settle();
     if (profile.isLoggedIn) {
       if (kpToAward > 0) {
@@ -386,6 +399,10 @@ export const useUserStore = defineStore('user', () => {
 
   function settleQuiz(): { score: number; streak: number; knowledgeAwarded: number } {
     const minigames = useMiniGamesStore();
+    const isFirstSettlement = minigames.quizPlaying;
+    if (!isFirstSettlement) {
+      return { score: streakReward(minigames.quizStreak), streak: minigames.quizStreak, knowledgeAwarded: 0 };
+    }
     const { score, streak, kpToAward } = minigames.settleQuiz();
     if (profile.isLoggedIn) {
       if (kpToAward > 0) {

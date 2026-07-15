@@ -51,6 +51,10 @@ async function onGuess(dir: HLGuess) {
 function playAgain() {
   start(store.category);
 }
+function endAndSettle() {
+  if (busy.value || !store.isPlaying) return;
+  userStore.settleHigherLower();
+}
 function backToMenu() {
   store.quit();
 }
@@ -119,6 +123,7 @@ function backToMenu() {
           <button class="btn-primary hl-btn" :disabled="busy" @click="onGuess('higher')">⬆️ 更高</button>
           <button class="btn-secondary hl-btn" :disabled="busy" @click="onGuess('lower')">⬇️ 更低</button>
         </div>
+        <button class="btn-ghost hl-settle-btn" :disabled="busy" @click="endAndSettle">结束并结算当前成绩</button>
       </div>
 
       <div v-else class="hl-over">
@@ -170,6 +175,7 @@ function backToMenu() {
 .hl-actions { text-align: center; margin-top: 1.25rem; }
 .hl-btn-row { display: flex; gap: 0.75rem; justify-content: center; }
 .hl-btn { min-width: 120px; }
+.hl-settle-btn { margin-top: 0.75rem; font-size: 0.8rem; }
 
 .hl-over { text-align: center; margin-top: 1.25rem; }
 .hl-over-title { font-size: 1.1rem; font-weight: 700; color: rgb(var(--c-danger)); }

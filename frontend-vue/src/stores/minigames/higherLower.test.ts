@@ -174,6 +174,30 @@ describe('store 流程 + 每日封顶经济', () => {
     expect(store.quizPlayCount).toBe(1);
   });
 
+  it('Quiz 终局原因区分真实错答与主动结算，且通用结算不覆盖错答原因', () => {
+    const store = useMiniGamesStore();
+    store.startQuiz(createSeededRng(12));
+    expect(store.quizQuestion).not.toBeNull();
+    expect(store.quizEndReason).toBeNull();
+
+    const wrongIndex = (store.quizQuestion!.correctIndex + 1) % store.quizQuestion!.options.length;
+    expect(store.answerQuiz(wrongIndex)).toBe(false);
+    expect(store.quizEndReason).toBe('wrong');
+    store.settleQuiz();
+    expect(store.quizEndReason).toBe('wrong');
+
+    store.startQuiz(createSeededRng(13));
+    expect(store.quizEndReason).toBeNull();
+    store.settleQuiz();
+    expect(store.quizEndReason).toBe('manual');
+
+    store.quitQuiz();
+    expect(store.quizEndReason).toBeNull();
+    store.quizEndReason = 'wrong';
+    store.reset();
+    expect(store.quizEndReason).toBeNull();
+  });
+
   it('serialize/deserialize 往返保真（含 quiz）', () => {
     const store = useMiniGamesStore();
     store.streak = 15;
@@ -223,6 +247,44 @@ describe('每日挑战（evolution-8）', () => {
     const second = store.settleDailyChallenge();
     expect(second.alreadyDone).toBe(true);
     expect(second.kpToAward).toBe(0);
+  });
+
+  it('同日回看保留本次成绩与回看标记，不覆盖首通官方状态', () => {
+    const store = useMiniGamesStore();
+    store.startDailyChallenge(createSeededRng(21));
+    expect(store.dcIsReview).toBe(false);
+    store.dcScore = 4;
+    store.dcDone = true;
+    expect(store.settleDailyChallenge()).toEqual({ score: 4, kpToAward: 48, alreadyDone: false });
+
+    const official = {
+      lastDate: store.dcLastDate,
+      lastScore: store.dcLastScore,
+      bestScore: store.dcBestScore,
+      streakDays: store.dcStreakDays,
+      bestStreakDays: store.dcBestStreakDays,
+      lastAward: store.dcLastAward,
+    };
+
+    store.startDailyChallenge(createSeededRng(22));
+    expect(store.dcIsReview).toBe(true);
+    expect(store.dcLastAward).toBe(0);
+    store.dcScore = 2;
+    store.dcDone = true;
+    expect(store.settleDailyChallenge()).toEqual({ score: 2, kpToAward: 0, alreadyDone: true });
+    expect(store.dcScore).toBe(2);
+    expect(store.dcLastDate).toBe(official.lastDate);
+    expect(store.dcLastScore).toBe(official.lastScore);
+    expect(store.dcBestScore).toBe(official.bestScore);
+    expect(store.dcStreakDays).toBe(official.streakDays);
+    expect(store.dcBestStreakDays).toBe(official.bestStreakDays);
+    expect(store.dcLastAward).toBe(0);
+
+    store.startDailyChallenge(createSeededRng(23));
+    store.dcScore = official.lastScore;
+    expect(store.dcIsReview).toBe(true);
+    store.reset();
+    expect(store.dcIsReview).toBe(false);
   });
 
   it('答题流程：answer 计分、next 推进、末题置 dcDone', () => {

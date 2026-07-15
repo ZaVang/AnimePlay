@@ -6,6 +6,9 @@
 import { computed, watchEffect } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 import { MINIGAMES, isMiniGameId, type MiniGameId } from '@/config/minigames';
+import { useMiniGamesStore } from '@/stores/minigames/higherLower';
+import { useUserStore } from '@/stores/userStore';
+import { useDialog } from '@/composables/useDialog';
 import GuessCharacter from '@/components/GuessCharacter.vue';
 import HigherLowerGame from '@/components/HigherLowerGame.vue';
 import QuizGame from '@/components/QuizGame.vue';
@@ -15,6 +18,9 @@ import TierListGame from '@/components/TierListGame.vue';
 
 const route = useRoute();
 const router = useRouter();
+const minigames = useMiniGamesStore();
+const userStore = useUserStore();
+const { confirm } = useDialog();
 
 const COMPONENTS: Partial<Record<MiniGameId, unknown>> = {
   guess: GuessCharacter,
@@ -35,12 +41,33 @@ watchEffect(() => {
     router.replace('/minigames');
   }
 });
+
+async function returnToHub() {
+  const activeHigherLower = gameId.value === 'higherlower' && minigames.isPlaying;
+  const activeQuiz = gameId.value === 'quiz' && minigames.quizPlaying;
+  if (!activeHigherLower && !activeQuiz) {
+    await router.push('/minigames');
+    return;
+  }
+
+  const shouldSettle = await confirm('当前对局仍在进行。要结算已有成绩并返回小游戏中心吗？', {
+    title: '返回小游戏中心',
+    confirmText: '结算并返回',
+    cancelText: '继续游戏',
+  });
+  if (!shouldSettle) return;
+
+  // 确认期间揭示 timer 可能已经自动结算；门面会再次检查活动态，保证整条副作用幂等。
+  if (activeHigherLower) userStore.settleHigherLower();
+  if (activeQuiz) userStore.settleQuiz();
+  await router.push('/minigames');
+}
 </script>
 
 <template>
   <div class="mg-play">
     <div class="mg-play-bar">
-      <RouterLink to="/minigames" class="btn-ghost text-sm px-3 py-1.5">← 小游戏中心</RouterLink>
+      <button type="button" class="btn-ghost text-sm px-3 py-1.5" @click="returnToHub">← 小游戏中心</button>
       <h1 v-if="meta" class="mg-play-title">{{ meta.icon }} {{ meta.title }}</h1>
       <span class="mg-play-spacer"></span>
     </div>
