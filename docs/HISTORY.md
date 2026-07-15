@@ -2,7 +2,7 @@
 
 > **这是已完成工作的归档。** 记录已交付的 Sprint（S0–S10）、产品进化层（Evolution Evo-1..Evo-9）、战斗可读性还债、2026-06-24 产品循环，以及已勾选的自由项与审计映射表。
 >
-> **未完成的前进路线（S11 / S12 + Backlog）见 [FUTURE.md](FUTURE.md)。** 本文只管「做过什么、怎么做的、达到什么 Exit」，每个任务的「为什么/证据」见 [项目审计报告-2026-06-12.md](项目审计报告-2026-06-12.md)。
+> **未完成的前进路线（S11 / S12 + Backlog）见 [FUTURE.md](FUTURE.md)。** 本文只管「做过什么、怎么做的、达到什么 Exit」；更细的过程证据与当时的审计快照请查 Git 历史。
 
 **状态图例**：☐ 未开始 · 🔄 进行中 · ✅ 完成
 
@@ -32,10 +32,10 @@
 ## ✅ S0 — 文档重构（已完成 2026-06-12）
 
 - [x] 删除 4 份过时文档（旧前端/错误数值）
-- [x] 归档 4 份历史 snapshot 到 `docs/archive/`
+- [x] 整理 4 份历史 snapshot（当前文档树已清理，仍可从 Git 历史追溯）
 - [x] 小修 2 份（战斗系统 / UR技能）、更新 2 份（开发计划 / 前端界面）
 - [x] 新建 5 份机制文档（抽卡 / 挑战塔 / 养成 / 猜角色 / 主题）
-- [x] 新建根 README、docs 索引；重写前端 README、CLAUDE.md
+- [x] 新建根 README、docs 索引并整理前端开发说明（现统一由根 `AGENTS.md` 维护）
 - [x] 产出审计报告 + 本 Roadmap
 
 ---
@@ -243,7 +243,7 @@
 
 ## 🔁 产品进化层（Evolution，Evo-1..Evo-9，2026-06-16）
 
-S-roadmap 是「重构 + 上线前置」主线；下面是在 S10 之上由产品进化审计（`/product-loop --mode evolution` 三轮 + backlog 推进 + 小游戏 5 轮）驱动加的**留存/差异化功能层**（不占 S 编号，详见 [SPRINT.md](SPRINT.md) 的 Evolution 各轮 + `docs/orch/`）：
+S-roadmap 是「重构 + 上线前置」主线；下面是在 S10 之上由多轮产品评估、backlog 推进和小游戏迭代驱动的**留存/差异化功能层**（不占 S 编号，过程记录可查 Git 历史）：
 
 | 轮 | 主题 | 交付 | commit |
 |---|---|---|---|
@@ -281,7 +281,7 @@ S8 把技能「真实现」了，但 2026-06-17 的全量复审（132 技能 × 
 
 **第二批可读性（批二，提交 `6d783cc`）**：① 对撞区强度拆「卡面 + 光环/效果」分解 + 防御阶段即显攻方最终强度（`ClashZone` + 新建 `skills/strengthPreview.ts` 非消费预览 + `status.ts` `hasAuraSuppression`）② 防御弹窗出牌前预判「你 X · 对手 Y · 净差→档位」（`CardActionModal`）③ 结算浮动显示声望/议题增减（`ClashInfo` 加 `rewards?` 类型）。测试 413 → **418**（+预览 helper），preview 实测确认（防御阶段攻方强度可见、预判与结算档位一致、浮字数值吻合）。
 
-**验收**：type-check 0 错、测试 **418** 全绿、改动文件 ESLint 干净、preview 实测确认（强度角标 / 对撞反馈 / 首局自动规则 / 强度分解 / 防御预判 / 结算浮字）。同步：`frontend-vue/CLAUDE.md` Known Debt、`docs/战斗系统.md`、`docs/UR角色技能设计.md`。
+**验收**：type-check 0 错、测试 **418** 全绿、改动文件 ESLint 干净、preview 实测确认（强度角标 / 对撞反馈 / 首局自动规则 / 强度分解 / 防御预判 / 结算浮字）。同步：开发约束、`docs/战斗系统.md`、`docs/UR角色技能设计.md`。
 
 > ⚠️ **当时遗留的一条 gameplay bug（已于 2026-06-17 后续修复，但本节交付时仍开放）**：`beforeResolve 临时强度不参与结算档位`。本节交付时该 bug 仍开放（曾作为已知项写进 FUTURE.md）；提交 `ca9d135` 把它记进 FUTURE.md，**随后提交 `3c359cd`「fix(battle): beforeResolve 临时强度计入结算档位（修描述≠行为）」已修复**。现状（`frontend-vue/src/stores/battleFlow.ts:441-453`）：engine 拿到的最终强度已含 `extraAttacker/extraDefender`（beforeResolve 临时加成），展示与判定一致，学霸气质/圆环理/运动天赋/牺牲觉悟 等被动现在真正影响胜负。**此项已 RESOLVED；FUTURE.md 仅保留为「已修复·待回访的设计决策路标」，不再当未决 bug 携带。**
 
@@ -358,13 +358,13 @@ S8 把技能「真实现」了，但 2026-06-17 的全量复审（132 技能 × 
 
 **Exit（达成）**：家园闭环「入住挂机 → 配装提战力 → HR/UR 小队打塔 → 回流」跑通；旧路由不 404；type-check/test/build 通过。
 
-**后续**：S13 交付了完整骨架与数值管线，但 2026-07-01 对家园 hub 做的对抗性审计（8 维 × 每条 4 票投票，225 agent；50 确认/3 争议/1 否决）发现「角色差异化 / 养成决策 / 可重复循环」三处深度缺口 → 转为 [FUTURE.md](FUTURE.md) 的 **S14** 打磨路线。审计报告：[orch/homestead-hub-audit-report.md](orch/homestead-hub-audit-report.md)。
+**后续**：S13 交付了完整骨架与数值管线，但 2026-07-01 的对抗性评估发现「角色差异化 / 养成决策 / 可重复循环」三处深度缺口，因此转为 **S14** 打磨路线；原始评估快照已从当前文档树移除，可查 Git 历史。
 
 ---
 
 ## ✅ S14 — 家园 hub 深化（差异化 + 决策 + 循环）— 全部完成 2026-07-02
 
-**背景**：S13 把家园 hub 的骨架（UI / 数据 / 数值管线）搭完了，能跑、不崩、数字算得对。但 2026-07-01 对抗性审计（8 维 × 每条 4 票投票，225 agent；50 确认 / 3 争议 / 1 否决，报告：[orch/homestead-hub-audit-report.md](orch/homestead-hub-audit-report.md)）判定它是**「五环拼装的半成品」**——在「差异化—决策—闭环」三个决定可玩性的关节上同时断裂。
+**背景**：S13 把家园 hub 的骨架（UI / 数据 / 数值管线）搭完了，能跑、不崩、数字算得对。但当时的对抗性评估判定它是**「五环拼装的半成品」**——在「差异化—决策—闭环」三个决定可玩性的关节上同时断裂。
 
 **三大系统性根因**（S14 就是逐个拆解它们）：
 1. **角色在战斗层零差异化**：`data/squadSkillKits.ts` 用 6 个原型模板套 200+ 角色，同原型技能数值逐字节相同只换名；项目已有的 66×2 条唯一技能资产（`/battle` 域跑着 134 个 handler）在小队战斗里被 `getSquadSkillKitForCharacter` 只取 `.name`，effect 整块丢弃。
@@ -377,7 +377,7 @@ S8 把技能「真实现」了，但 2026-06-17 的全量复审（132 技能 × 
 
 ### ✅ S14-A · P1 急救（把「半成品」补成「完整玩法」，多为接线级，独立可上线）— 已完成 2026-07-01
 
-> ✅ **S14-A 全部 6 项已完成**（product-loop `--tier1 on --mode all`，3 轮 + 1 纠偏轮；17 源文件 +1124/−85，SAVE_VERSION→15，653 测试全绿，engine 纯净）。落地实况与原始设想的偏差（以实现为准）：SA-T3 走「base 五维比例确定分配」而非新增 role 存档字段（正则定位不可靠，绑上去会扩散误判）；SA-T4 = **10 个招牌 UR 纯数据覆盖**（`SIGNATURE_KIT_OVERRIDES`，description 由 `describeSquadSkill` 自动派生锁死「描述≠行为」，**严禁复用 /battle effectId**——两套运行时不通）；SA-T5 = **周期封顶 + 缩水扫荡**（`sweepFloor` 独立 action，不推进层）；SA-T6 = Plan A（explore「开始挑战」直达进战、battle tab 不复活 towerMode 编成器）。产物见 `docs/orch/`（product/evolution/research-audit-report + scout + plan + negotiation + gen_status + eval），沉淀见 `docs/plans/pitfalls.md` S14-A 段。**下一步 = S14-B（战斗手感与深度）。**
+> ✅ **S14-A 全部 6 项已完成**（product-loop `--tier1 on --mode all`，3 轮 + 1 纠偏轮；17 源文件 +1124/−85，SAVE_VERSION→15，653 测试全绿，engine 纯净）。落地实况与原始设想的偏差（以实现为准）：SA-T3 走「base 五维比例确定分配」而非新增 role 存档字段（正则定位不可靠，绑上去会扩散误判）；SA-T4 = **10 个招牌 UR 纯数据覆盖**（`SIGNATURE_KIT_OVERRIDES`，description 由 `describeSquadSkill` 自动派生锁死「描述≠行为」，**严禁复用 /battle effectId**——两套运行时不通）；SA-T5 = **周期封顶 + 缩水扫荡**（`sweepFloor` 独立 action，不推进层）；SA-T6 = Plan A（explore「开始挑战」直达进战、battle tab 不复活 towerMode 编成器）。原始编排产物可从 Git 历史追溯。**下一步 = S14-B（战斗手感与深度）。**
 
 - [x] ⭐ **接通编队编辑**（P1-3 / P1-4）：`HomesteadHubView.vue` 的 squad 面板当前全只读、formation-slot 无 `@click`；而 `stores/pve.ts` 的 `updateSquadMember` / `updateSquadName` 已存在并经 userStore 暴露。给 slot 加点击 → 复用 `CharacterSelectModal` 换人、squad-select 加改名、空位显示可点「+添加」。**纯接线。**
 - [x] ⭐ **统一敌人预览种子**（P2-17，真 bug）：hub 探索面板 `enemyPreview` 用 `createSeededRng(floor*7919+17)`，而 `SquadBattleView` `refreshTowerEnemies` 用 `Math.random` → 玩家看到的敌人 ≠ 打到的敌人。让两者共用同一确定性种子（按 floor 派生），或预览读持久化的 towerEnemyData；同步决定是否保留「刷新敌人」。
@@ -389,7 +389,7 @@ S8 把技能「真实现」了，但 2026-06-17 的全量复审（132 技能 × 
 
 ### ✅ S14-B · 战斗手感与深度（P2）— 已完成 2026-07-01
 
-> ✅ **S14-B 全部 5 项已完成**（product-loop `--tier1 on --mode all`，3 轮 + 1 纠偏；纯战斗规则/UI，零存档改动 SAVE_VERSION 仍 15，670 测试全绿，engine 纯净）。落地实况（以实现为准）：SB-T1 = 超时按「存活数 + HP%」三态裁决 `resolveTimeout`（`timeoutWin` 发奖 / `timeoutLoss` / `timeoutDraw` 全 0）+ 战场倒计时/进度条 + `DEFAULT_MAX_TIME_MS` 单一时限源；SB-T2 = `resumeTimedBattle` 前缀冻结 + RNG 快照/恢复（**真无跳变**，非「整场重算截后缀」伪平滑）+ `ManualUltimateOrder.targetId` 单体大招选目标（AOE/self 忽略、死目标回退）+ View 复用同一 engine 判据 gate「选目标」UI；SB-T3 = `BASE_CRIT_RATE=0.05` 运行时单位注入（`DEFAULT_BATTLE_MODIFIERS` 保持 0、不删 crit 字段）+ 复用 `critRateUp` 加成轴，**收尾①暴击 UI 显形**（浮动金色 `CRIT` 数字 + 日志记暴击，纯 view）；SB-T4 = `POSITION_DAMAGE_TAKEN` 后/中排单体减伤、前排 =1、AOE 不减伤（engine 纯层）；SB-T5 = `sumStackableStatusValues` 按来源累加 + per-kind 上限 clamp（两处聚合一致改），控制类/shield/dot/hot 不进累加。产物见 `docs/orch/`。**下一步 = S14-C（角色差异化与养成长线）。**
+> ✅ **S14-B 全部 5 项已完成**（product-loop `--tier1 on --mode all`，3 轮 + 1 纠偏；纯战斗规则/UI，零存档改动 SAVE_VERSION 仍 15，670 测试全绿，engine 纯净）。落地实况（以实现为准）：SB-T1 = 超时按「存活数 + HP%」三态裁决 `resolveTimeout`（`timeoutWin` 发奖 / `timeoutLoss` / `timeoutDraw` 全 0）+ 战场倒计时/进度条 + `DEFAULT_MAX_TIME_MS` 单一时限源；SB-T2 = `resumeTimedBattle` 前缀冻结 + RNG 快照/恢复（**真无跳变**，非「整场重算截后缀」伪平滑）+ `ManualUltimateOrder.targetId` 单体大招选目标（AOE/self 忽略、死目标回退）+ View 复用同一 engine 判据 gate「选目标」UI；SB-T3 = `BASE_CRIT_RATE=0.05` 运行时单位注入（`DEFAULT_BATTLE_MODIFIERS` 保持 0、不删 crit 字段）+ 复用 `critRateUp` 加成轴，**收尾①暴击 UI 显形**（浮动金色 `CRIT` 数字 + 日志记暴击，纯 view）；SB-T4 = `POSITION_DAMAGE_TAKEN` 后/中排单体减伤、前排 =1、AOE 不减伤（engine 纯层）；SB-T5 = `sumStackableStatusValues` 按来源累加 + per-kind 上限 clamp（两处聚合一致改），控制类/shield/dot/hot 不进累加。**下一步 = S14-C（角色差异化与养成长线）。**
 
 - [x] **90s 超时改按剩余 HP% 判胜 + 加倒计时**（P2-4）：`timedBattle.ts` 超时当前一刀切判负；UI（`SquadBattlefield.vue`）只显 elapsedMs 无倒计时。加醒目倒计时 / 进度条；超时按双方剩余 HP% 裁决。
 - [x] **手动大招能选目标 + 增量推进**（P2-5）：当前 autoUltimates 默认 true、手动开大会整场 `regenerateBattleSimulation` 重算导致回放跳变，且目标是 skill 写死。让手动大招能选目标；默认设关或首战引导；改增量推进而非整场重算。
@@ -400,7 +400,7 @@ S8 把技能「真实现」了，但 2026-06-17 的全量复审（132 技能 × 
 
 ### ✅ S14-C · 角色差异化与养成长线（P2）— 已完成 2026-07-01
 
-> ✅ **S14-C 全部 6 项已完成**（product-loop `--tier1 on --mode all`，2 轮即达成——第 2 轮 Planner 把 SC-T4/SC-T6 与 SC-T3 的 v16 bump 合批、省一次迁移；714 测试全绿、engine 纯净、SAVE_VERSION 15→16）。落地实况（以实现为准）：SC-T1 = `resolveRole` **单一定位真相源**（种子 `SIGNATURE_KIT_OVERRIDES.role` → 显式 `id→archetype` 表 → 正则兜底），`override.role` 终于生效、纠正 Fate/音乐/爆裂系误判、补上 SA-T4 缺的 CI 守卫；SC-T2 = 26 个 HR **个人技名**（只改名、`describeSquadSkill` 自动派生描述、守死「描述≠行为」+「名不暗示冲突机制」双红线；差异化被动留 backlog 待突破解锁）；SC-T3 = **星级/突破**（`breakthroughCharacter` 经 `collection.consumeCharacterCards` 消耗重复卡保本体、`breakthrough` 标量存档 v16、永久五维加成派生）；SC-T4 = 好感里程碑给**永久小幅加成**（封顶 +15%，纯派生）+ 每日好感互动（跨天重置）+ 好感溢出转 KP；SC-T5 = `assessSquadReadiness` 纯函数塔层**软战力门槛**（ready/risky/underpowered，不改 eligibility、我方=敌方同口径顺带收敛 P3-6）；SC-T6 = NurtureView 拆无壳可内嵌、hub characters 单标题单空态、/nurture 重定向保留。**关键架构**：突破 + 好感永久加成均经**单一 seam** `resolveNurturedBattleStats`/`resolveMemberBattleStats`（statPoints + 突破 + 好感% 纯加法）进战力，squadPower 消费端统一 → 永不新增第 4 条战力通路，且突破/好感真进 squadPower → 联动 SC-T5 门槛。产物见 `docs/orch/`。**下一步 = S14-D（家园机制闭环 + 经济闭环）。**
+> ✅ **S14-C 全部 6 项已完成**（product-loop `--tier1 on --mode all`，2 轮即达成——第 2 轮 Planner 把 SC-T4/SC-T6 与 SC-T3 的 v16 bump 合批、省一次迁移；714 测试全绿、engine 纯净、SAVE_VERSION 15→16）。落地实况（以实现为准）：SC-T1 = `resolveRole` **单一定位真相源**（种子 `SIGNATURE_KIT_OVERRIDES.role` → 显式 `id→archetype` 表 → 正则兜底），`override.role` 终于生效、纠正 Fate/音乐/爆裂系误判、补上 SA-T4 缺的 CI 守卫；SC-T2 = 26 个 HR **个人技名**（只改名、`describeSquadSkill` 自动派生描述、守死「描述≠行为」+「名不暗示冲突机制」双红线；差异化被动留 backlog 待突破解锁）；SC-T3 = **星级/突破**（`breakthroughCharacter` 经 `collection.consumeCharacterCards` 消耗重复卡保本体、`breakthrough` 标量存档 v16、永久五维加成派生）；SC-T4 = 好感里程碑给**永久小幅加成**（封顶 +15%，纯派生）+ 每日好感互动（跨天重置）+ 好感溢出转 KP；SC-T5 = `assessSquadReadiness` 纯函数塔层**软战力门槛**（ready/risky/underpowered，不改 eligibility、我方=敌方同口径顺带收敛 P3-6）；SC-T6 = NurtureView 拆无壳可内嵌、hub characters 单标题单空态、/nurture 重定向保留。**关键架构**：突破 + 好感永久加成均经**单一 seam** `resolveNurturedBattleStats`/`resolveMemberBattleStats`（statPoints + 突破 + 好感% 纯加法）进战力，squadPower 消费端统一 → 永不新增第 4 条战力通路，且突破/好感真进 squadPower → 联动 SC-T5 门槛。**下一步 = S14-D（家园机制闭环 + 经济闭环）。**
 
 - [x] **废弃正则 inferArchetype，改显式 archetype 字段**（P2-7）：当前靠拼接文本跑 6 条正则 first-match-wins，误判频发（阿尔托莉雅被 `圣剑|Fate` 判成魔法师、含「音乐」角色一律先命中 support…）。在角色数据显式声明 archetype（生成脚本一次性人工校对 66 UR），过渡期至少按「专属技能名 > description > name > tags」加权。
 - [x] **HR 角色补个人技能绑定**（P2-8）：`urCharacterSkillMap` 只登记 UR，HR 名与效果 100% 走原型模板，而塔允许 HR 出战。为 HR 补个人技能名映射，长期给至少 1 条差异化被动。
@@ -412,7 +412,7 @@ S8 把技能「真实现」了，但 2026-06-17 的全量复审（132 技能 × 
 
 ### ✅ S14-D · 家园机制闭环 + 经济闭环（P2 深度）— 已完成 2026-07-01
 
-> ✅ **S14-D 全部 5 项已完成**（product-loop `--tier1 on --mode all`，2 轮达成——第 2 轮 Planner 把 SD-T3 与 SD-T2/T4 合批；765 测试全绿、engine 纯净、SAVE_VERSION 16→17，S14-A/B/C 无回归）。审计根因 D/E 收口：家园从「静态面板」变「可投资经营系统」——`facility` 独立存档域 v17（三设施 KP 升级 +8%/级乘区 + comfort 每 10 点 +1% 封顶 20% 真进产出 + 离线封顶随级抬升）；无底 KP sink（设施无硬上限 + 成本指数递增 `120×1.4^(lv-1)`）；装备 homeEffect% ×0.33 弱化、家园产出主体归设施、comfort 独立保留、EquipPicker 补挂机 delta；重复装备 `dismantleItem` 按稀有度回收 KP（`findEquippedBy` 守卫 + 明显低于兑换价防套利，材料/合成留 S14-E）；经验曲线 `(level-1)^1.6×900`（满级 140 万 ≈ 旧 1/7）+ 满级经验每 2000 溢出兑 1 KP + 补习随等级递增。**关键防回归**：SD-T2 弱化装备 homeEffect 时保留了 comfort 轴，未熄灭 SD-T1 的 comfort 软加成（跨轮硬回归风险被规避）。产物见 `docs/orch/`。**下一步 = S14-E（装备深度）。**
+> ✅ **S14-D 全部 5 项已完成**（product-loop `--tier1 on --mode all`，2 轮达成——第 2 轮 Planner 把 SD-T3 与 SD-T2/T4 合批；765 测试全绿、engine 纯净、SAVE_VERSION 16→17，S14-A/B/C 无回归）。审计根因 D/E 收口：家园从「静态面板」变「可投资经营系统」——`facility` 独立存档域 v17（三设施 KP 升级 +8%/级乘区 + comfort 每 10 点 +1% 封顶 20% 真进产出 + 离线封顶随级抬升）；无底 KP sink（设施无硬上限 + 成本指数递增 `120×1.4^(lv-1)`）；装备 homeEffect% ×0.33 弱化、家园产出主体归设施、comfort 独立保留、EquipPicker 补挂机 delta；重复装备 `dismantleItem` 按稀有度回收 KP（`findEquippedBy` 守卫 + 明显低于兑换价防套利，材料/合成留 S14-E）；经验曲线 `(level-1)^1.6×900`（满级 140 万 ≈ 旧 1/7）+ 满级经验每 2000 溢出兑 1 KP + 补习随等级递增。**关键防回归**：SD-T2 弱化装备 homeEffect 时保留了 comfort 轴，未熄灭 SD-T1 的 comfort 软加成（跨轮硬回归风险被规避）。**下一步 = S14-E（装备深度）。**
 
 - [x] **三设施做成可升级产出乘区**（P2-25 / P2-26 / P2-24，核心动作）：`HomesteadView.vue` 三设施（训练区 / 休息区 / 资料室）现纯展示、comfort 是死数值、挂机产出恒定不随进度成长。新增 facility 存档域（schema/migrations/装配器三改），用 KP 升级每级 +X% 对应产出，comfort 接一档真实软加成，封顶随设施等级抬升 → 形成「挂机产 KP → 升设施 → 挂机更快」自循环与无底 KP sink。 ✅ S14-D 第 1 轮：facility 域 v17（独立 store），每级 +8% 乘区（独立于装备 0.6 cap）、comfort 每 10 点 +1%（封顶 +20%）真进产出、离线封顶 12h+总级数×0.5h，UI 三设施升级入口 + 下一级收益预览同源结算。
 - [x] **装备的家园 homeEffect 逐步剥离到设施**（P2-13）：同一件装备既定战斗五维又定家园挂机%，两套目标抢同槽、选装口径打架。把家园加成移到「设施升级」承载，装备回归纯战斗；过渡期先在 `EquipPickerModal` 补挂机 delta 预览（⭐ 低成本子项）。 ✅ S14-D 收尾轮：`EQUIPMENT_CATALOG` 每件 homeEffect 产出%（exp/affection/knowledge）统一 ×0.33 弱化到「小额佐料」量级（≤6%），家园产出主体归设施乘区（SD-T1）；comfort 全保留（独立软加成轴）；`EquipPickerModal` 新增家园挂机 before→after delta（三槽求和、语义色、同 resolveHomeEffect 口径）。
@@ -423,7 +423,7 @@ S8 把技能「真实现」了，但 2026-06-17 的全量复审（132 技能 × 
 
 ### ✅ S14-E · 装备深度（P2）— 已完成 2026-07-02
 
-> ✅ **S14-E 全部 3 项已完成**（product-loop `--tier1 on --mode all`，3 轮 + 1 收口纠偏；835 测试全绿、engine 纯净、SAVE_VERSION 17→18，S14-A/B/C/D 无回归）。落地实况：SE-T1 = 装备强化（`EquipmentItemSave.enhance` **v18** 三处同改 + v17→v18 迁移补 enhance:0/clamp[0,5]；`enhancedBonus` 纯函数每级 +8% 满级 Lv.5；`enhanceItem` 花 KP(`profile.spend`) + 吃 1 件同 defId 游离燃料，`findEquippedBy` 守卫，KP 成本远高于分解回收值防套利；经既有 `resolveEquipBonus` seam 进战力）；SE-T3 = `EquipmentDef.modifier`（critRate/damageUp/healUp/shieldUp 等）+ `resolveEquipModifiers` 独立 seam 求和 + 硬 clamp（critRate≤0.2），View 侧 **加法**注入 player setup（`BASE_CRIT_RATE + 装备值`，非覆盖 spread，守 SB-T3 基础暴击），8 件示例填充；SE-T2 = 3 组取向套装（攻击/坦度/节奏）`setBonusFor` 纯函数经 `resolveEquipBonus` 汇入、**只走五维加法、不碰 modifier、与 enhance 正交**，`previewEquipBonus`同源（预览=实战）。**关键架构**：强化(五维×enhance) / 套装(五维加法) 走 `resolveEquipBonus` 一条 seam，modifier(战斗旋钮) 走 `resolveEquipModifiers` 另一条 seam 注入 BattleModifiers——两条 seam 各司其职、无第 N 套战力口径。**收口纠偏**：R1 Generator 遇 API 中断致测试 fixture 未同步(gate RED)，补齐 4 处陈旧断言 + SE-T1a/T1c 缺失测试 + 修一个 TS4025 真 bug 后全绿。产物见 `docs/orch/`。**下一步 = S14-F（P3 打磨）。**
+> ✅ **S14-E 全部 3 项已完成**（product-loop `--tier1 on --mode all`，3 轮 + 1 收口纠偏；835 测试全绿、engine 纯净、SAVE_VERSION 17→18，S14-A/B/C/D 无回归）。落地实况：SE-T1 = 装备强化（`EquipmentItemSave.enhance` **v18** 三处同改 + v17→v18 迁移补 enhance:0/clamp[0,5]；`enhancedBonus` 纯函数每级 +8% 满级 Lv.5；`enhanceItem` 花 KP(`profile.spend`) + 吃 1 件同 defId 游离燃料，`findEquippedBy` 守卫，KP 成本远高于分解回收值防套利；经既有 `resolveEquipBonus` seam 进战力）；SE-T3 = `EquipmentDef.modifier`（critRate/damageUp/healUp/shieldUp 等）+ `resolveEquipModifiers` 独立 seam 求和 + 硬 clamp（critRate≤0.2），View 侧 **加法**注入 player setup（`BASE_CRIT_RATE + 装备值`，非覆盖 spread，守 SB-T3 基础暴击），8 件示例填充；SE-T2 = 3 组取向套装（攻击/坦度/节奏）`setBonusFor` 纯函数经 `resolveEquipBonus` 汇入、**只走五维加法、不碰 modifier、与 enhance 正交**，`previewEquipBonus`同源（预览=实战）。**关键架构**：强化(五维×enhance) / 套装(五维加法) 走 `resolveEquipBonus` 一条 seam，modifier(战斗旋钮) 走 `resolveEquipModifiers` 另一条 seam 注入 BattleModifiers——两条 seam 各司其职、无第 N 套战力口径。**收口纠偏**：R1 Generator 遇 API 中断致测试 fixture 未同步(gate RED)，补齐 4 处陈旧断言 + SE-T1a/T1c 缺失测试 + 修一个 TS4025 真 bug 后全绿。**下一步 = S14-F（P3 打磨）。**
 > 🟢 未做（非阻塞 backlog）：SE-T2g 齐套瞬间点亮动画、重复件「既可分解也是强化燃料」双 sink 信息提示——归 S14-F 顺手补。
 
 - [x] **加装备强化 / 等级**（P1-7）：`EquipmentItemSave` 现仅 `{uid,defId}`，数值恒等于 def 静态值、拿到即毕业。给实例加 level/enhance（schema+migrations+装配器三改），用重复装备 / 材料做强化燃料，把毕业曲线从「拿到即满」拉长为「拿到 → 强化到满」。（与 S14-D 的分解出口互为燃料。）
@@ -451,17 +451,17 @@ S8 把技能「真实现」了，但 2026-06-17 的全量复审（132 技能 × 
 
 **S14 整体 Exit**：家园 hub 从「能跑的半成品」变成「有收集意义的完整玩法」——角色在战斗里有差异、养成 / 配装有玩家决策、循环有可重复产出（卡关不断更）、家园是可投资的经营系统。每个 S14 子阶段独立可合并、做完游戏都可玩。
 
-> **最脆弱假设**：一次性给全部 HR/UR 手写差异化技能会膨胀。变形求生：S14-A 只接通「个人技驱动一条技能位 + 头部 20 UR 手写」，其余回落原型；差异化按角色热度增量补齐，绝不上线「描述≠行为」的假技能（CLAUDE.md Known Debt 明令根除）。
+> **最脆弱假设**：一次性给全部 HR/UR 手写差异化技能会膨胀。变形求生：S14-A 只接通「个人技驱动一条技能位 + 头部 20 UR 手写」，其余回落原型；差异化按角色热度增量补齐，绝不上线「描述≠行为」的假技能（现由根 `AGENTS.md` 固化）。
 
 
-> **后续 / 交叉引用**：S14 源自 2026-07-01「家园 hub 对抗性审计」（[orch/homestead-hub-audit-report.md](orch/homestead-hub-audit-report.md)，8 维 × 4 票投票，225 agent）；A~F 共 33 项经 6 轮 product-loop `--tier1 on --mode all` 落地，逐 sprint 的 feat+merge 提交见 git 历史（`c564c74` A / `df9db39` B / `531b599` C / `76881c1` D / `ac63b04` E / `55b5e89` F）。存档 v15→v19。中期内容（家具/羁绊/定向掉落）留 S15+。
+> **后续 / 交叉引用**：S14 源自 2026-07-01 的家园 hub 对抗性评估；A~F 共 33 项经 6 轮 product-loop 落地，逐 sprint 的 feat+merge 提交见 Git 历史（`c564c74` A / `df9db39` B / `531b599` C / `76881c1` D / `ac63b04` E / `55b5e89` F）。存档 v15→v19。中期内容（家具/羁绊/定向掉落）留 S15+。
 
 ---
 ## ✅ S15 — 家园 hub 内容补完 + 测试稳定（S14 遗留收尾）— 全部完成 2026-07-02
 
-> ✅ **S15 全部 4 项已完成**（product-loop `--tier1 on --mode all`，3 轮，R2/R3 各遇一次 API 中断后 resume；917 测试全绿、连跑 3 次无 flaky、engine 纯净、SAVE_VERSION 19→20、S14 无回归）。落地实况：S15-T1 = **注入时钟接缝** `settleHomestead(nowOverride)`（把「时钟」与 RNG 一样降级为注入依赖，根除 `homestead.test.ts` 真实 `Date.now()` 双读 × 邻居 fake-timers 的跨 worker flaky，并为 S12 权威时间预留唯一入口）+ 统一 fake timers；S15-T3 = `engine/homestead/bonds.ts` `computeBondBonus`（同作品 ≥2 人等确定性集合羁绊，硬上限，**队伍级独立乘子经 `computeIdleYield` 口径**，派生免存档）+ 三处 UI 显形（含决策页 `HomesteadManageModal`）；S15-T2 = `furniture` 独立存档域 **v20**（KP 兑换家具目录 + 广场摆放 + 加成复用 `EquipmentHomeEffect` 形状经 `sumHomeEffects` 并入 `computeIdleYield`，三处同改 + 往返/脏档/子集测试）；S15-T4 = 槽位**保底 pity** `rollTowerDropWithPity`（engine 纯函数注入 RNG+计数、复用 v20、**防墙钟守卫：重复低层/顶层 999/扫荡均不推进 pity**、脏档 clamp、UI 显形）。产物见 `docs/orch/`。**中期内容剩项（家具布局深化/更多羁绊/碎片兑换）与 flaky 已根除——家园 hub 内容层补完。下一主线 = S11 / S12。**
+> ✅ **S15 全部 4 项已完成**（product-loop `--tier1 on --mode all`，3 轮，R2/R3 各遇一次 API 中断后 resume；917 测试全绿、连跑 3 次无 flaky、engine 纯净、SAVE_VERSION 19→20、S14 无回归）。落地实况：S15-T1 = **注入时钟接缝** `settleHomestead(nowOverride)`（把「时钟」与 RNG 一样降级为注入依赖，根除 `homestead.test.ts` 真实 `Date.now()` 双读 × 邻居 fake-timers 的跨 worker flaky，并为 S12 权威时间预留唯一入口）+ 统一 fake timers；S15-T3 = `engine/homestead/bonds.ts` `computeBondBonus`（同作品 ≥2 人等确定性集合羁绊，硬上限，**队伍级独立乘子经 `computeIdleYield` 口径**，派生免存档）+ 三处 UI 显形（含决策页 `HomesteadManageModal`）；S15-T2 = `furniture` 独立存档域 **v20**（KP 兑换家具目录 + 广场摆放 + 加成复用 `EquipmentHomeEffect` 形状经 `sumHomeEffects` 并入 `computeIdleYield`，三处同改 + 往返/脏档/子集测试）；S15-T4 = 槽位**保底 pity** `rollTowerDropWithPity`（engine 纯函数注入 RNG+计数、复用 v20、**防墙钟守卫：重复低层/顶层 999/扫荡均不推进 pity**、脏档 clamp、UI 显形）。**中期内容剩项（家具布局深化/更多羁绊/碎片兑换）与 flaky 已根除——家园 hub 内容层补完。下一主线 = S11 / S12。**
 
-**背景**：S14（A~F，33 项）已把家园 hub 从「半成品」补成完整玩法并全部合并归档。收尾时留下两类未做项——① 一处 flaky 测试（S14-F 复验时 back-to-back 跑偶发 2 失败、standalone 全绿，疑与 SF-T3 60s 定时器 / SF-T6 settle 的 `Date` 或并行争用相关）；② S14-F 明确标「留 S15+」的中期内容（比 P3 打磨重、属内容扩展而非收尾）。本 Sprint 把这两类收干净，让家园 hub 内容层也补完。**证据源**：[orch/homestead-hub-audit-report.md](orch/homestead-hub-audit-report.md)（P3-3/4/5）+ S14 完成史见 [HISTORY.md](HISTORY.md)。
+**背景**：S14（A~F，33 项）已把家园 hub 从「半成品」补成完整玩法并全部合并归档。收尾时留下两类未做项——① 一处 flaky 测试（S14-F 复验时 back-to-back 跑偶发 2 失败、standalone 全绿，疑与 SF-T3 60s 定时器 / SF-T6 settle 的 `Date` 或并行争用相关）；② S14-F 明确标「留 S15+」的中期内容（比 P3 打磨重、属内容扩展而非收尾）。本 Sprint 把这两类收干净，让家园 hub 内容层也补完。
 
 **定位守则**：延续 S14——单机向二次元收集网页游戏，内容做「轻量、确定性、塑造选择」，不追随机刷取/付费深度。凡触 engine 守四条铁律；存档变更三处同改（schema/migrations/装配器）+ 往返测试，本 Sprint 至多升一次 SAVE_VERSION（现 19 → 20）。战力/收益仍走既有单一 seam（`resolveEquipBonus`/`resolveMemberBattleStats`/`computeIdleYield`），别另拼口径。
 
@@ -470,7 +470,7 @@ S8 把技能「真实现」了，但 2026-06-17 的全量复审（132 技能 × 
 - [x] **S15-T3｜入住羁绊 / 差异化速率（P3-5）**：让「选谁入住」有策略——给入住角色差异化挂机速率（按 role/rarity 倾斜 exp/affection，复用 SC-T1 `resolveRole`）或入住组合羁绊（特定角色/作品同住给小额加成）。engine 纯函数 + config，加成经 `computeIdleYield` 口径；羁绊/速率优先派生免存档。**Exit**：不同入住组合产出可辨、羁绊命中给确定加成、纯函数测试覆盖。
 - [x] **S15-T4｜装备定向掉落保底 / 碎片（P3-3）**：塔掉落加**保底**（连续 N 次未出某槽/稀有度后保底该类）或碎片定向兑换（成就/周任务发碎片 → 换指定装备），缓解「纯随机掉落无定向」。保底计数若需持久化则复用 v20 bump（三处同改）；掉落 RNG 注入不破确定性测试。**Exit**：保底/定向真生效、pity 计数存档保真、掉落纯函数测试覆盖概率与保底边界。
 
-> **排期建议**：第 1 轮 = S15-T1（测试稳定，先把地基夯实）+ S15-T3（入住羁绊，engine/config 轻量）；第 2 轮 = S15-T2（家具 v20，唯一存档重任务）；第 3 轮 = S15-T4（定向掉落）+ 收尾。合同见 [SPRINT.md](plans/SPRINT.md)（已就绪，`product-loop --tier1 on --mode all --max_iter 3` 可跑）。
+> **排期**：第 1 轮 = S15-T1（测试稳定）+ S15-T3（入住羁绊）；第 2 轮 = S15-T2（家具 v20）；第 3 轮 = S15-T4（定向掉落）+ 收尾。原 Sprint 合同已完成并从当前文档树清理。
 
 > **后续 / 交叉引用**：S15 是 S14 家园 hub 深化的遗留收尾（flaky 测试 + S14-F 标 S15+ 的中期内容），3 轮 product-loop `--tier1 on --mode all` 落地（R2/R3 各遇一次 API 中断后 resume）。feat+merge 提交 `548d68b`/`308f222`；存档 v19→v20（家具 + 掉落 pity）。剩余 backlog（家具布局深化 / 更多羁绊 / 碎片兑换）见 [FUTURE.md](FUTURE.md)。
 

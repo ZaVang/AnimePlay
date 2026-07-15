@@ -1,7 +1,7 @@
 // 小队战「定位原型」模板配置（声明式数据，无逻辑）。
 // Step 1 拆分（2026-07-03）：从 squadSkillKits.ts 抽出——这里只放「6 套共享模板 + 通名标签」，
 // 装配 / 归类 / 校验逻辑留在 squadSkillKits.ts。未命中 per-character 覆盖（见 characterKits.ts）的
-// 角色，技能效果全部回落到本文件的模板。详见 docs/orch/squad-skill-design-audit-2026-07-03.md。
+// 未配置专属 kit 的角色，技能效果回落到本文件的模板；保持模板与逐角色配置分离。
 
 import type { SkillEffect, TargetSelector, SquadPosition } from '@/engine/squad/types'
 

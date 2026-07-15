@@ -2,7 +2,7 @@
 
 一个基于 [Bangumi](https://bangumi.tv) 番剧 / 角色数据的动画题材**抽卡 + 收集 + 多玩法**网页游戏。收集了大量动画与角色数据，做成抽卡，并围绕收集设计了多套玩法。
 
-> 这是个长期个人项目，当前处于「功能广度足够、待重构」阶段。完整的代码审计、已知问题与重构路线图见 [`docs/项目审计报告-2026-06-12.md`](docs/项目审计报告-2026-06-12.md)。
+> 这是个长期个人项目，当前功能主体已较完整。未完成方向与已知债统一维护在 [`docs/FUTURE.md`](docs/FUTURE.md)，已完成演进见 [`docs/HISTORY.md`](docs/HISTORY.md)。
 
 ## 玩法一览
 
@@ -30,7 +30,7 @@
                                           data/  (卡牌数据 + 图片 + 用户存档)
 ```
 
-**后端只是"带文件柜的静态/数据服务器"**：战斗判定、抽卡 RNG、数值结算全部在前端。这对单机自娱是合理的；若将来要做排行榜/联机，权威逻辑需迁移到后端（分析见审计报告第六节）。
+**后端只是"带文件柜的静态/数据服务器"**：战斗判定、抽卡 RNG、数值结算全部在前端。这对单机自娱是合理的；若将来要做排行榜/联机，权威逻辑需迁移到后端。
 
 ## 本地启动
 
@@ -56,13 +56,13 @@ npm run dev
 
 Vite 已配置把 `/api` 和 `/data` 代理到 `:5001`，所以直接访问 http://localhost:5173 即可。
 
-> 登录：字母数字用户名 + 密码（S10 起）。首次登录即注册（密码盐哈希存 `data/auth/credentials.json`），读写存档需登录后签发的会话 token；存档仍存 `data/user_data/<用户名>.json`。详见 [部署方案.md](docs/部署方案.md) / 审计安全章节。
+> 登录：字母数字用户名 + 密码（S10 起）。首次登录即注册（密码盐哈希存 `data/auth/credentials.json`），读写存档需登录后签发的会话 token；存档仍存 `data/user_data/<用户名>.json`。详见 [部署方案.md](docs/部署方案.md)。
 
 ## 目录结构
 
 ```
 AnimePlay/
-├── frontend-vue/        # 前端主体（Vue 3），见其 CLAUDE.md
+├── frontend-vue/        # 前端主体（Vue 3）
 │   ├── src/
 │   │   ├── engine/      # 纯游戏规则（battle/gacha/squad/skills/nurture/ai + 注入式 RNG），零 Vue/Pinia/DOM/IO（S2–S4 抽出，原 core/ 已删）
 │   │   ├── stores/      # Pinia 状态 + 薄编排（含 minigames/）
@@ -77,6 +77,7 @@ AnimePlay/
 ├── data/                # 卡牌数据、图片、用户存档（~419MB，未入库大文件见 .gitignore）
 ├── api/index.py         # Vercel serverless 版用户接口（部署预备）
 ├── docs/                # 文档（见 docs/README.md）
+├── AGENTS.md            # AI 编码助手的项目规则与验证命令
 └── start_server.py      # 后端启动脚本
 ```
 

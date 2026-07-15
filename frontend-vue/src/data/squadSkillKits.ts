@@ -2,7 +2,7 @@
 // Step 1 拆分（2026-07-03）：声明式配置抽到 data/squad/（archetypeTemplates + characterKits）。
 // Step 2 统一形状（2026-07-03）：逐角色覆盖从原 3 张表并成一张 CHARACTER_KITS（一角色一条目）。
 // 本文件只保留纯逻辑：读配置 → 组装 kit → 派生描述 → 校验。配置与逻辑分离，便于逐角色补设计。
-// 现状与三步方案见 docs/orch/squad-skill-design-audit-2026-07-03.md。
+// 保持装配/校验、逐角色配置与回落模板三层分离；项目约束见根 AGENTS.md。
 
 import type { CharacterCard } from '@/types/card';
 import type { Skill } from '@/types/skill';

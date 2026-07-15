@@ -1,6 +1,7 @@
 # IDE / OS files
 .DS_Store
 .vscode/
+.cursor/
 *.suo
 *.user
 *.userosscache

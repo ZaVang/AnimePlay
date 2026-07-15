@@ -1,46 +1,50 @@
-# frontend-vue —— 动画宅的自我修养（前端）
+# frontend-vue
 
-本项目的前端主体：Vue 3 + TypeScript + Pinia + TailwindCSS，Vite 构建。游戏的全部玩法逻辑（抽卡、战斗、养成）都在这里。
-
-> 这是整个项目的前端包。项目总览、架构图与后端启动见[上层 README](../README.md)。给 AI 助手的开发指南见 [`CLAUDE.md`](CLAUDE.md)。
+AnimePlay 的前端主体：Vue 3 + TypeScript + Pinia + TailwindCSS，使用 Vite 构建。项目总览和后端启动方式见 [根 README](../README.md)，AI 编码约束见 [AGENTS.md](../AGENTS.md)。
 
 ## 前置条件
 
-- Node ≥ 20.19（见 `package.json` engines）
-- **后端需先启动**（端口 5001），否则首屏拉不到卡牌主数据。见上层 README。
+- Node `^20.19.0 || >=22.12.0`。
+- 开发时先启动根目录 Flask 服务（默认 `:5001`），否则主数据请求会失败。
 
 ## 常用命令
 
+在本目录运行：
+
 ```bash
-npm install          # 安装依赖
-npm run dev          # 开发服务器（:5173，已代理 /api /data 到 :5001）
-npm run type-check   # vue-tsc 类型检查（当前 0 错误）
-npm run lint         # ESLint 自动修复
-npm run format       # Prettier 格式化
-npm run build        # 类型检查 + 生产构建
-npm run preview      # 预览生产构建
+npm install
+npm run dev
+npm run type-check
+npm run test
+npm run build
+npm run preview
 ```
 
-> 注意：当前**未配置测试运行器**（无 vitest），`src/**/*.test.ts` 不会运行。
+`npm run lint` 和 `npm run format` 会改写文件。日常检查优先对改动文件运行 `npx eslint <paths>`，不要无意中格式化全仓。
 
-## 目录速览（`src/`）
+## 目录速览
 
-| 目录 | 内容 |
+| 目录 | 职责 |
 |---|---|
-| `views/` | 8 个页面（Home/Gacha/Collections/Battle/SquadBattle/Nurture/Guess/Settings） |
-| `components/` | UI 组件，按域分子目录（`battle/` `nurture/` `gacha/` `decks/` …） |
-| `stores/` | Pinia 状态（`userStore` 为主，偏大；`gachaStore`/`battle`/`theme`/`guess`…） |
-| `core/` | 战斗引擎（`battle/` `ai/` `calculation/` `systems/`） |
-| `skills/` | 技能定义与效果注册表（`effects/index.ts`） |
-| `config/` | `gameConfig.ts`——抽卡概率/保底/数值配置 |
-| `data/` | 生成的 UR 技能数据等 |
-| `types/` | TS 类型定义 |
-| `themes/` | 议题偏向条主题组件 |
+| `src/engine/` | 纯游戏规则、可注入 RNG/时间，不依赖 Vue/Pinia/DOM/IO |
+| `src/stores/` | Pinia 状态与跨域薄编排 |
+| `src/views/` | 路由页面 |
+| `src/components/` | 按玩法域组织的 UI 组件 |
+| `src/skills/` | 宅理论战技能运行时与 effect handlers |
+| `src/infra/persistence/` | 存档 schema、迁移、序列化与 API IO |
+| `src/config/` | 游戏配置、任务、成就、皮肤与玩法常量 |
+| `src/data/` | 技能和小队 kit 等声明式/生成数据 |
+| `src/composables/` | 可复用的 Vue 交互与生命周期逻辑 |
 
-## 机制文档
+## 文档与验证
 
-游戏机制不在代码注释里堆砌，集中在仓库 [`docs/`](../docs/README.md)：抽卡、战斗、挑战塔、养成、猜角色、主题、UR 技能设计。改数值/机制前先读对应文档。
+机制文档集中在 [docs/](../docs/README.md)。改规则或数值前先读对应文档，完成后同步实现、测试和文档。
 
-## 当前状态
+常规前端改动至少通过：
 
-`npm run type-check` 通过、运行时无 JS 异常，但存在若干结构性与体验问题（god store、循环依赖、假技能、浅色主题泛白等），详见 [`../docs/项目审计报告-2026-06-12.md`](../docs/项目审计报告-2026-06-12.md) 与 `CLAUDE.md` 的 Known Debt。
+```bash
+npm run type-check
+npm run test
+```
+
+涉及 Vue 页面、构建配置或依赖时再运行 `npm run build`。修复回归时还要重跑能复现原问题的最小测试。

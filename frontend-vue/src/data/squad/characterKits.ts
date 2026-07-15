@@ -2,7 +2,7 @@
 // 简化（2026-07-03）：每角色 = 普攻(通用) + 专属技能 skill1(冷却) + 专属被动 passive(开场持续) + 大招(能量)。
 // 移除第二个主动技能 skill2；被动升级为逐角色专属 effect（开场施加一次、持续整场）。
 // 装配/校验逻辑在 squadSkillKits.ts，回落模板在 archetypeTemplates.ts。
-// 现状与方案见 docs/orch/squad-skill-design-audit-2026-07-03.md。
+// 逐角色差异只放声明式配置，装配规则与模板不要回填到本文件。
 
 import type { SkillEffect, TargetSelector } from '@/engine/squad/types'
 import type { SquadArchetype } from './archetypeTemplates'
